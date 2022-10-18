@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lumi.mrhe.ro/blog</id>
-    <title>My Site Blog</title>
+    <title>Luminescent Version Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lumi.mrhe.ro/blog"/>
-    <subtitle>My Site Blog</subtitle>
+    <subtitle>Luminescent Version Blog</subtitle>
     <icon>https://lumi.mrhe.ro/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
