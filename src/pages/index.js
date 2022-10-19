@@ -17,8 +17,16 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/blog/2-0-beta">
+            Download Luminescent Version ⬇️
+          </Link>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/rom-hacking">
+            Learn how to make your own ROM Hack ⏱️
           </Link>
         </div>
       </div>
@@ -30,8 +38,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Pokemon Luminescent Version, A ROM Hack for Pokemon Brilliant Diamond and Shining Pearl">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

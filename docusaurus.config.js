@@ -54,6 +54,19 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'rom-hacking',
+        path: 'rom-hacking',
+        routeBasePath: 'rom-hacking',
+        sidebarPath: require.resolve('./sidebarsROMHacking.js'),
+        // ... other options
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -70,10 +83,11 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {to: '/rom-hacking', label: 'ROM Hacking', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/Heroj04/luminescent-team',
-            label: 'GitHub',
+            label: 'Discord',
+            href: 'https://discord.gg/luminescent',
             position: 'right',
           },
         ],
