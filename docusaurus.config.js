@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'heroj04', // Usually your GitHub org/user name.
+  organizationName: 'TeamLumi', // Usually your GitHub org/user name.
   projectName: 'luminescent-team', // Usually your repo name.
   trailingSlash: false,
 
@@ -38,14 +38,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Heroj04/luminescent-team/',
+            'https://github.com/TeamLumi/luminescent-team/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Heroj04/luminescent-team/',
+            'https://github.com/TeamLumi/luminescent-team/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -126,7 +126,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Heroj04/luminescent-team',
+                href: 'https://github.com/TeamLumi/luminescent-team',
               },
             ],
           },
