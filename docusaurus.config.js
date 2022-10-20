@@ -81,7 +81,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Mod Docs',
           },
           {to: '/rom-hacking', label: 'ROM Hacking', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
@@ -99,8 +99,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Mod Docs',
+                to: '/docs/',
+              },
+              {
+                label: 'ROM Hacking',
+                to: '/rom-hacking/',
               },
             ],
           },
