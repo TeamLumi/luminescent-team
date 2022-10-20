@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"2.0 Beta Update","permalink":"/blog/2-0-beta"},{"title":"2.0 Alpha Update","permalink":"/blog/2-0-alpha"}]}')}}]);

@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[2.0 Beta Update]]></title>
-            <link>https://lumi.mrhe.ro/blog/2-0-beta</link>
-            <guid>2-0-beta</guid>
+            <link>https://lumi.mrhe.ro/blog/2022/10/12/update2-0-beta</link>
+            <guid>/2022/10/12/update2-0-beta</guid>
             <pubDate>Wed, 12 Oct 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Hey Everyone! New build of 2.0. Here's what you need to know:]]></description>
             <content:encoded><![CDATA[<p>Hey Everyone! New build of 2.0. Here's what you need to know:</p><ul><li>If you fuck up the install on hardware you'll lose your save. Please back them up.</li><li>Pikatwo (the clone Pikachu) in the last release was bugged, please release it.</li><li>This update breaks our compatibility with our PkHax-Luminescent branch. No ETA on when it will work again.</li><li>After a successful update, please visit a Pokémon Center and heal to update your save. Any bug reports and other help requests that have yet to do this will be ignored.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="luminescent-update-20-beta">LUMINESCENT UPDATE 2.0 BETA:<a class="hash-link" href="#luminescent-update-20-beta" title="Direct link to heading">​</a></h2><p>🚨🚨🚨<br>
@@ -47,13 +47,14 @@ Any bug reports to these effects will be closed without conversation. We figured
 • 901 Ursaluna</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="form-locations-and-evolution-methods">Form locations and evolution methods:<a class="hash-link" href="#form-locations-and-evolution-methods" title="Direct link to heading">​</a></h3><p><a href="https://docs.google.com/spreadsheets/d/1GTp-J1s9zQ4Pd6n1rMU0_gg0D9lpHR_xKL8nSKbJUxc/" target="_blank" rel="noopener noreferrer">https://docs.google.com/spreadsheets/d/1GTp-J1s9zQ4Pd6n1rMU0_gg0D9lpHR_xKL8nSKbJUxc/</a></p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="form-bststypesmovesets">Form BSTs/types/movesets:<a class="hash-link" href="#form-bststypesmovesets" title="Direct link to heading">​</a></h3><p><a href="https://docs.google.com/document/d/1Vn9p53I8O6Br37bvZwLoChlLaVLkUhy447cSlIMTfyA/" target="_blank" rel="noopener noreferrer">https://docs.google.com/document/d/1Vn9p53I8O6Br37bvZwLoChlLaVLkUhy447cSlIMTfyA/</a>
 (Also, between you and me... it looks like there's someone new in the Trainer School. Wonder what happens if you talk to him a few times?)</p>]]></content:encoded>
             <category>update</category>
+            <category>2-0</category>
             <category>beta</category>
             <category>luminescent</category>
         </item>
         <item>
             <title><![CDATA[2.0 Alpha Update]]></title>
-            <link>https://lumi.mrhe.ro/blog/2-0-alpha</link>
-            <guid>2-0-alpha</guid>
+            <link>https://lumi.mrhe.ro/blog/2022/08/30/update2-0-alpha</link>
+            <guid>/2022/08/30/update2-0-alpha</guid>
             <pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Trainers, the time has come.]]></description>
             <content:encoded><![CDATA[<p>Trainers, the time has come.

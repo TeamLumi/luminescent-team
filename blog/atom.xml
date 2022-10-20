@@ -9,8 +9,8 @@
     <icon>https://lumi.mrhe.ro/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[2.0 Beta Update]]></title>
-        <id>2-0-beta</id>
-        <link href="https://lumi.mrhe.ro/blog/2-0-beta"/>
+        <id>/2022/10/12/update2-0-beta</id>
+        <link href="https://lumi.mrhe.ro/blog/2022/10/12/update2-0-beta"/>
         <updated>2022-10-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hey Everyone! New build of 2.0. Here's what you need to know:]]></summary>
         <content type="html"><![CDATA[<p>Hey Everyone! New build of 2.0. Here's what you need to know:</p><ul><li>If you fuck up the install on hardware you'll lose your save. Please back them up.</li><li>Pikatwo (the clone Pikachu) in the last release was bugged, please release it.</li><li>This update breaks our compatibility with our PkHax-Luminescent branch. No ETA on when it will work again.</li><li>After a successful update, please visit a Pokémon Center and heal to update your save. Any bug reports and other help requests that have yet to do this will be ignored.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="luminescent-update-20-beta">LUMINESCENT UPDATE 2.0 BETA:<a class="hash-link" href="#luminescent-update-20-beta" title="Direct link to heading">​</a></h2><p>🚨🚨🚨<br>
@@ -54,13 +54,14 @@ Any bug reports to these effects will be closed without conversation. We figured
             <uri>https://discord.gg/luminescent</uri>
         </author>
         <category label="update" term="update"/>
+        <category label="2-0" term="2-0"/>
         <category label="beta" term="beta"/>
         <category label="luminescent" term="luminescent"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0 Alpha Update]]></title>
-        <id>2-0-alpha</id>
-        <link href="https://lumi.mrhe.ro/blog/2-0-alpha"/>
+        <id>/2022/08/30/update2-0-alpha</id>
+        <link href="https://lumi.mrhe.ro/blog/2022/08/30/update2-0-alpha"/>
         <updated>2022-08-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Trainers, the time has come.]]></summary>
         <content type="html"><![CDATA[<p>Trainers, the time has come.
