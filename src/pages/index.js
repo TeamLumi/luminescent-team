@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/blog/2-0-beta">
+            to="https://gamebanana.com/mods/338507">
             Download Luminescent Version ⬇️
           </Link>
         </div>
