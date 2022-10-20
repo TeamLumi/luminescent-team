@@ -1,5 +1,4 @@
 ---
-slug: 2-0-alpha
 title: 2.0 Alpha Update
 authors: [ttin, team-lumi]
 tags: [update, 2-0, alpha, luminescent]

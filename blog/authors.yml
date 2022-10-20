@@ -1,8 +1,8 @@
 team-lumi:
   name: Team Luminescent
-  title: just so many people
+  title: Just like so many people
   url: https://discord.gg/luminescent
-  image_url: ../img/teamLumi.png
+  image_url: ./img/teamLumi.png
 
 ttin:
   name: TTIN
