@@ -1,17 +1,17 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+team-lumi:
+  name: Team Luminescent
+  title: just so many people
+  url: https://discord.gg/luminescent
+  image_url: https://lumi.mrhe.ro/img/teamLumi.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
+ttin:
+  name: TTIN
+  title: Somehow not a cult leader
   url: https://github.com/yangshun
   image_url: https://github.com/yangshun.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+dj:
+  name: DJ
+  title: OMG DJ Hi
+  url: https://github.com/yangshun
+  image_url: https://github.com/yangshun.png

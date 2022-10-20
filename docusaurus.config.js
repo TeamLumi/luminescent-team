@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'heroj04', // Usually your GitHub org/user name.
+  organizationName: 'TeamLumi', // Usually your GitHub org/user name.
   projectName: 'luminescent-team', // Usually your repo name.
   trailingSlash: false,
 
@@ -38,19 +38,32 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Heroj04/luminescent-team/blob/main/',
+            'https://github.com/TeamLumi/luminescent-team/blob/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Heroj04/luminescent-team/blob/main/',
+            'https://github.com/TeamLumi/luminescent-team/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'rom-hacking',
+        path: 'rom-hacking',
+        routeBasePath: 'rom-hacking',
+        sidebarPath: require.resolve('./sidebarsROMHacking.js'),
+        // ... other options
+      },
     ],
   ],
 
@@ -70,10 +83,11 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {to: '/rom-hacking', label: 'ROM Hacking', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/Heroj04/luminescent-team',
-            label: 'GitHub',
+            label: 'Discord',
+            href: 'https://discord.gg/luminescent',
             position: 'right',
           },
         ],
@@ -112,7 +126,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Heroj04/luminescent-team',
+                href: 'https://github.com/TeamLumi/luminescent-team',
               },
             ],
           },
