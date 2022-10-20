@@ -2,16 +2,16 @@ team-lumi:
   name: Team Luminescent
   title: just so many people
   url: https://discord.gg/luminescent
-  image_url: https://lumi.mrhe.ro/img/teamLumi.png
+  image_url: ../img/teamLumi.png
 
 ttin:
   name: TTIN
   title: Somehow not a cult leader
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+  url: https://twitter.com/T_T_I_N
+  image_url: ./img/ttin.png
 
 dj:
   name: DJ
   title: OMG DJ Hi
   url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+  image_url: ./img/dj.png

@@ -38,14 +38,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/TeamLumi/luminescent-team/',
+            'https://github.com/TeamLumi/luminescent-team/blob/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/TeamLumi/luminescent-team/',
+            'https://github.com/TeamLumi/luminescent-team/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -81,7 +81,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Mod Docs',
           },
           {to: '/rom-hacking', label: 'ROM Hacking', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
@@ -99,8 +99,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Mod Docs',
+                to: '/docs/',
+              },
+              {
+                label: 'ROM Hacking',
+                to: '/rom-hacking/',
               },
             ],
           },
@@ -136,6 +140,10 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: true,
       },
     }),
 };

@@ -2,5 +2,6 @@
 sidebar_position: 1
 slug: /
 ---
-# romhack-docs
-A repository for documentation
+# ROM Hacking
+
+Learn how to make your own modifications to the Pokemon BDSP ROM.
