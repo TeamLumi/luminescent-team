@@ -112,7 +112,7 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Game Bannana',
+                label: 'Game Banana',
                 href: 'https://gamebanana.com/mods/338507',
               },
               {
