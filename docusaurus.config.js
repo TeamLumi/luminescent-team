@@ -62,7 +62,7 @@ const config = {
         path: 'rom-hacking',
         routeBasePath: 'rom-hacking',
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
-        // ... other options
+        editUrl: 'https://github.com/TeamLumi/luminescent-team/blob/main/',
       },
     ],
   ],
