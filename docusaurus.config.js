@@ -62,7 +62,7 @@ const config = {
         path: 'rom-hacking',
         routeBasePath: 'rom-hacking',
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
-        // ... other options
+        editUrl: 'https://github.com/TeamLumi/luminescent-team/blob/main/',
       },
     ],
   ],
@@ -112,7 +112,7 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Game Bannana',
+                label: 'Game Banana',
                 href: 'https://gamebanana.com/mods/338507',
               },
               {
