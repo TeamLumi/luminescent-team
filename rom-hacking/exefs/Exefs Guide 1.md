@@ -61,7 +61,7 @@ This is something you could pretty easily do without Starlight but its a decent 
    ```
    [target=main, version=bd_130]
    020378d0:  // Dpr.Battle.Logic.MainModule$$IsFriendshipActive
-   b affection
+      b affection
    ```
 
 4. Create a `c++` file in the `src` directory which contains the code to be run.
