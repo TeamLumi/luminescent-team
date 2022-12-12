@@ -63,6 +63,11 @@ This is something you could pretty easily do without Starlight but its a decent 
    020378d0:  // Dpr.Battle.Logic.MainModule$$IsFriendshipActive
       b affection
    ```
+   :::info
+
+   `affection` is the name of a global namespace function we will define in the next step
+
+   :::
 
 4. Create a `c++` file in the `src` directory which contains the code to be run.
 
@@ -82,3 +87,9 @@ This is something you could pretty easily do without Starlight but its a decent 
 5. Build your mod as above.
 
 6. Install and test your new mod on your target platform.
+
+## Next Steps
+
+To accomplish mods that are more complicated you'll need to learn more about AARCH64 opcodes and c++ [headers](Headers.md). If you want to access internal functions, you will need to add their [Symbol locations](Symbols.md) to `symbols.ld`. When you run in to issues, [debugging](Debugging.md) and [logging](Logging.md) are useful tools to help resolve them.
+
+Check the side bar for more info on these topics.
