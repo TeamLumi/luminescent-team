@@ -5,10 +5,10 @@
 Do not install any other mods with Luminescent Platinum! You will risk breaking your game!
 :::
 
-1. Download the mod [from here]()
+1. Download the mod [from here]().
 2. Extract the files somewhere on your computer.
 3. Open your Switch SD folder and drop "exefs" and "romfs" into atmosphere/contents/0100000011D90000/ 
-    - Create any folders that do not exist
+    - Create any folders that do not exist.
 4. **THIS STEP IS THE MOST IMPORTANT ONE FOR SWITCH USERS**:  
    Go into the exefs folder and move the .ips file to /atmosphere/exefs_patches/Luminescent 
     - Once again, create any folders that don't exist.
