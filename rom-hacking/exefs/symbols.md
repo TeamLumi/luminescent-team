@@ -13,6 +13,7 @@ You will need to find these symbols in Ghidra and add their offsets to the `link
 
 C++ mangles any symbol names used in your program, these are unique between namespaces. You will need to use the mangled name in your symbols definition file.  
 You can find the mangled names of the symbols you need in a few different ways.
+
 1. `nm CMakeFiles/<Repo Name>.dir/src/<Your .cpp file>.obj`
    1. You'll need to build your project first for this field to be populated
    2. You'll find every symbol your file references inside here with its mangled name

@@ -60,11 +60,12 @@ This is something you could pretty easily do without Starlight but its a decent 
    3. Add the offset where we want to inject our code and a colon, `020378d0:`
    4. Each line under this thats indented is the code to run as ASM codes. (See the ARM opcodes reference) As we want to branch to a new function lets add `b` and the name of the function we will be making in the next step. e.g., `b affection`
 
-   ```
+   ```asm
    [target=main, version=bd_130]
    020378d0:  // Dpr.Battle.Logic.MainModule$$IsFriendshipActive
       b affection
    ```
+
    :::info
 
    `affection` is the name of a global namespace function we will define in the next step

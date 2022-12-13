@@ -9,15 +9,17 @@ Also, when copying over your script changes to your emulator/switch for testing,
 Now you have the context on how to get your scripts interacting with the game, lets get to adding things.
 
 ## Baby steps
+
 For our first attempt at scripting, we will change what an NPC says. Open VSC (Visual Studio Code)
 
-In `c01.ev`, which is Jubilife external's scripts. Find `ev_c01_woman3` which should have a function body of 
-```
+In `c01.ev`, which is Jubilife external's scripts. Find `ev_c01_woman3` which should have a function body of
+
+```evscript
 _EASY_OBJ_MSG('dp_scenario1%27-msg_c01_woman3_01')
 END()
 ```
 
-The game looks for messages in this manner, find the `dp_scenario1` file, then find `27-msg_c01_woman3_01` inside it. `%` is just a separator. 
+The game looks for messages in this manner, find the `dp_scenario1` file, then find `27-msg_c01_woman3_01` inside it. `%` is just a separator.
 
 Back in the early days of scripting, we had to use tooling to create new messages in these files, but thankfully, with the addition of macros, you no longer need to do this.
 Most dialogue commands have been extended to have what is known as a "Macro" variant, which you can pass text to, which will then be displayed as dialogue. In this instance,  it would be `_MACRO_EASY_OBJ_MSG`.

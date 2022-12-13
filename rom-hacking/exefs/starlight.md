@@ -108,7 +108,7 @@ I prefer to use VSCode for pretty much everything as its very extensible with it
 
 1. To get started install [VSCode here](https://code.visualstudio.com/download). We will then need to install a few plugins.
 
-2. Next install the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension. 
+2. Next install the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension.
 
 3. With this extension installed you can run `code .` within your WSL Ubuntu console to open vscode to that location or click the double arrows in the bottom left of VSCode. The terminal in VSCode gives access to the WSL Terminal.  
 

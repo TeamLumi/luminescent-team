@@ -20,12 +20,14 @@ This tutorial assumes you're using Ghidra, Windows with WSL and Yuzu.
    2. In Atmosphere
       1. Ensure your version of Atmosphere is at least version 1.2.4 (System Settings → System → "Current version: ... | AMS X.Y.Z | ..." under the 'System Update' button)
       2. Modify sd:/atmosphere/config/system_settings.ini (or create it if it doesn't exist) and ensure the following values are set accordingly:
-		```ini
-		[atmosphere]
-		enable_htc = u8!0x0
-		enable_standalone_gdbstub = u8!0x1
-		```
-	  3. Reboot your Switch
+
+      ```ini
+      [atmosphere]
+      enable_htc = u8!0x0
+      enable_standalone_gdbstub = u8!0x1
+      ```
+
+   3. Reboot your Switch
 2. Set up GDB
    1. Set up WSL on your PC
    2. Enable SSH into your WSL VM
