@@ -1,0 +1,21 @@
+#Incense Burner & Regional Pokemon
+## Incense Burner
+![Shaymin-Shaped Incense Burner](static/img/incense.png)
+
+The Incense Burner is an entirely new item in Luminescent Platinum. Using it will allow you to encounter regional forms of Pokemon! 
+
+To acquire it in a new game, simply progress the story: you get it very, very early. If you are continuing a save from before 2.0.1 or later, please visit a Pokemon Center and heal to place it in your inventory.
+
+Simply activate it from your key items, and certain encounter slots will be overwritten to allow for finding new regional forms. [This document](https://docs.google.com/spreadsheets/d/1hhvXvWWuAhTGwA0cKJdOx85r1jwNT9cxzOdlXoZq1OY/edit#gid=1793465380) contains all locations of regional forms, and also methods to evolve them.
+
+:::tip
+It does not matter which flower you pick in 2.0! These flowers are in preparation for the full National Dex update to determine which region's Pokemon you will meet in the grass depending on which flower is active.
+You will eventually get all of them by the end of the game.
+:::
+
+##Regional Pokemon
+![Alolan Rattata](static/img/alolan_rattata.png)
+
+Currently, we only have regional forms for Pokemon that were *already in the base BDSP's Pokedex*. This means that there is Hisuian Typhlosion (gen 2) but not Hisuian Braviary (gen 5) because BDSP is based off of gen 4.
+
+For more information on the Pokemon that have special forms, any adjusted evolution methods, or their movesets, please see our [pokedex documentation](https://docs.google.com/document/d/1Vn9p53I8O6Br37bvZwLoChlLaVLkUhy447cSlIMTfyA/edit). Note that anything that evolves by knowing a move currently learns that move through level-up.
