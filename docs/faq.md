@@ -9,7 +9,7 @@ sidebar_position: 4
 ### What is Luminescent Platinum?
 Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond (and eventually Shining Pearl), inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
 
-### Yeah, but what's so special about it?
+### What's so special about it?
 
 Check out the [features](./features) page for details of all our features and adjustments!
 
@@ -43,15 +43,15 @@ Come apply in the [discord](https://discord.gg/luminescent). If we think you fit
 
 ### The mod doesn't work, what do I do?
 
-If it doesn't properly apply, you have likely done something wrong. For that, visit the [discord](https://discord.gg/luminescent).
+If it doesn't properly apply, you have likely done something wrong. Double check your [installation](./category/installation) just to be sure, then visit the [discord](https://discord.gg/luminescent) if you need further help.
 
 ### Will you be adding new Pokemon? What about regional forms?
 
-As of 2.0.1 beta, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. Generation 5+ Pokémon will not be added until 3.0 (estimated mid-2023). See [this page](./incense-regional) for more info.
+As of 2.0.1 beta, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. Generation 5+ Pokémon will not be added until 3.0 (estimated mid-2023). See [this page](incense-regional.mdx) for more info.
 
 ### How do I encounter regional Pokémon?
 
-See [Incense Burner & Regional Pokemon](./incense-regional) for further information.
+See [Incense Burner & Regional Pokémon](incense-regional.mdx) for further information.
 
 ### Megas?
 
@@ -73,7 +73,7 @@ No way. Months of work for maybe 15 minutes of gameplay where a cutscene in Stra
 
 Definitely come check out our partnered server, [Pokemon Switch Modding](https://discord.gg/8Dkm8YNmYy) - However, we will be launching our own section to help out with modding when more of our documentation is done, and I will ping you all when that is ready.
 
-### One last thing: what is Affection? Will turning it off stop friendship evolutions?
+### What is Affection? Will turning it off stop friendship evolutions?
 
 [Affection](https://bulbapedia.bulbagarden.net/wiki/Affection) is the "[Pokémon] held on so you wouldn't be sad!" mechanic. It scales on the same number as friendship/happiness, but will not affect other mechanics related to friendship. This includes Sylveon, despite previous generations specifically being tied to the affection mechanic. It's friendship now.
 
