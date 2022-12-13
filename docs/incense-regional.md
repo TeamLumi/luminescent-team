@@ -1,6 +1,6 @@
 #Incense Burner & Regional Pokemon
 ## Incense Burner
-![Shaymin-Shaped Incense Burner](static/img/incense.png)
+![Shaymin-Shaped Incense Burner](/static/img/incense.png)
 
 The Incense Burner is an entirely new item in Luminescent Platinum. Using it will allow you to encounter regional forms of Pokemon! 
 
@@ -13,8 +13,8 @@ It does not matter which flower you pick in 2.0! These flowers are in preparatio
 You will eventually get all of them by the end of the game.
 :::
 
-##Regional Pokemon
-![Alolan Rattata](static/img/alolan_rattata.png)
+## Regional Pokemon
+![Alolan Rattata](/static/img/alolan_rattata.png)
 
 Currently, we only have regional forms for Pokemon that were *already in the base BDSP's Pokedex*. This means that there is Hisuian Typhlosion (gen 2) but not Hisuian Braviary (gen 5) because BDSP is based off of gen 4.
 
