@@ -1,6 +1,8 @@
-# Headers
+---
+sidebar_position: 4
+---
 
-## WIP - These docs are a Work In Progress and are currently mostly for my own use
+# Headers
 
 ## Introduction
 

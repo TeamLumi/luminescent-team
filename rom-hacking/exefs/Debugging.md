@@ -1,6 +1,8 @@
-# Debugging
+---
+sidebar_position: 7
+---
 
-## WIP - These docs are a Work In Progress and are currently mostly for my own use
+# Debugging
 
 ## Introduction
 

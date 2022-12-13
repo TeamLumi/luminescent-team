@@ -1,6 +1,8 @@
-# Symbol Linking
+---
+sidebar_position: 5
+---
 
-## WIP - These docs are a Work In Progress and are currently mostly for my own use
+# Symbol Linking
 
 ## Introduction
 

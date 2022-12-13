@@ -1,6 +1,8 @@
-# Setting Up Starlight
+---
+sidebar_position: 3
+---
 
-## WIP - These docs are a Work In Progress and are currently mostly for my own use
+# Setting Up Starlight
 
 ## Introduction
 

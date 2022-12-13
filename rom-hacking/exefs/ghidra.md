@@ -1,6 +1,8 @@
-# Setting Up Ghidra
+---
+sidebar_position: 2
+---
 
-## WIP - These docs are a Work In Progress and are currently mostly for my own use
+# Setting Up Ghidra
 
 ## Introduction
 

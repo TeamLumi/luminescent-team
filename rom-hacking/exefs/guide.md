@@ -1,6 +1,8 @@
-# Exefs Modding Guide
+---
+sidebar_position: 1
+---
 
-## WIP - These docs are a Work In Progress and are currently mostly for my own use
+# Exefs Modding Guide
 
 ## Introduction
 
@@ -14,9 +16,9 @@ The basic format is to use ghidra to find an offset where we want to inject cust
 
 ## Setup
 
-- [Set up Ghidra](./Setting%20Up%20Ghidra.md)
+- [Set up Ghidra](ghidra.md)
 
-- [Set up Starlight](./Setting%20Up%20Starlight.md)
+- [Set up Starlight](starlight.md)
 
 ## Building
 
@@ -90,6 +92,6 @@ This is something you could pretty easily do without Starlight but its a decent 
 
 ## Next Steps
 
-To accomplish mods that are more complicated you'll need to learn more about AARCH64 opcodes and c++ [headers](Headers.md). If you want to access internal functions, you will need to add their [Symbol locations](Symbols.md) to `symbols.ld`. When you run in to issues, [debugging](Debugging.md) and [logging](Logging.md) are useful tools to help resolve them.
+To accomplish mods that are more complicated you'll need to learn more about AARCH64 opcodes and c++ [headers](headers.md). If you want to access internal functions, you will need to add their [Symbol locations](symbols.md) to `symbols.ld`. When you run in to issues, [debugging](debugging.md) and [logging](logging.md) are useful tools to help resolve them.
 
 Check the side bar for more info on these topics.
