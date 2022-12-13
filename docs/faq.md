@@ -7,20 +7,19 @@ sidebar_position: 4
 ## Luminescent FAQ
 
 ### What is Luminescent Platinum?
-
 Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond (and eventually Shining Pearl), inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
 
 ### Yeah, but what's so special about it?
 
-Check out the [features](./category/features) page for details of all our features and adjustments!
+Check out the [features](./features) page for details of all our features and adjustments!
 
 ### Where do I download the mod?
 
-The latest link is always pinned in the [Discord](https://discord.gg/luminescent)
+The latest link is always pinned in the [discord](https://discord.gg/luminescent).
 
 ### How do I install it?
 
-[Installation](./category/installation)
+Check our [installation](./category/installation) page.
 
 ### Does PkHax work with this romhack?
 
@@ -36,23 +35,23 @@ When it's done. Don't ask us because we don't know either.
 
 ### Are you gonna add [X]?
 
-Maybe. Check the [features](./category/features) page before asking, then check the [Discord](https://discord.gg/luminescent). We reserve the right to reject any suggestions we don't feel would fit in the romhack. Arguing when/if we reject your suggestion (not explaining your side) will only lead to a warning.
+Maybe. Check the [features](./features) page before asking, then check the [discord](https://discord.gg/luminescent). We reserve the right to reject any suggestions we don't feel would fit in the romhack. Arguing when/if we reject your suggestion (not explaining your side) will only lead to a warning.
 
 ### Is there any way I can help with development?
 
-Come apply in the [Discord](https://discord.gg/luminescent). If we think you fit our needs, we may bring you on.
+Come apply in the [discord](https://discord.gg/luminescent). If we think you fit our needs, we may bring you on.
 
 ### The mod doesn't work, what do I do?
 
-If it doesn't properly apply, you have likely done something wrong. For that, visit the [Discord](https://discord.gg/luminescent).
+If it doesn't properly apply, you have likely done something wrong. For that, visit the [discord](https://discord.gg/luminescent).
 
 ### Will you be adding new Pokemon? What about regional forms?
 
-As of 2.0.1 beta, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. Generation 5+ Pokémon will not be added until 3.0 (estimated mid-2023).
+As of 2.0.1 beta, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. Generation 5+ Pokémon will not be added until 3.0 (estimated mid-2023). See [this page](./incense-regional) for more info.
 
 ### How do I encounter regional Pokémon?
 
-At the beginning of the game (or after healing at a Pokémon Center), you will receive an Incense Burner. Activate it to have a chance of encountering new 'mons. In 2.0, all "flower" options give the same results. (In the future, they will decide what region the altered encounters are drawn from.)
+See [Incense Burner & Regional Pokemon](./incense-regional) for further information.
 
 ### Megas?
 
@@ -66,7 +65,7 @@ Probably not. De-chibification, Z-moves, Terastalling and anything else are not 
 
 Currently no, but because we don't have the understanding to do all that yet. We'd like to but for now it isn't happening.
 
-### Got it! What about Distortion World?
+### What about Distortion World?
 
 No way. Months of work for maybe 15 minutes of gameplay where a cutscene in Strange Space will suffice. Ain't happening.
 
@@ -76,7 +75,7 @@ Definitely come check out our partnered server, [Pokemon Switch Modding](https:/
 
 ### One last thing: what is Affection? Will turning it off stop friendship evolutions?
 
-[Affection](https://bulbapedia.bulbagarden.net/wiki/Affection) is the "[Pokémon] held on so you wouldn't be sad!" mechanic. It scales on the same number as friendship/happiness, but will not affect other mechanics related to friendship.
+[Affection](https://bulbapedia.bulbagarden.net/wiki/Affection) is the "[Pokémon] held on so you wouldn't be sad!" mechanic. It scales on the same number as friendship/happiness, but will not affect other mechanics related to friendship. This includes Sylveon, despite previous generations specifically being tied to the affection mechanic. It's friendship now.
 
 ## Install FAQs
 
@@ -92,9 +91,15 @@ If you are starting a new game, the language select screen should have a gold ba
 
 If you have a currently running game, the Pokémon party screen should have extra options for nicknaming/changing moves of Pokémon. You can also try the EXP Share check.
 
+### What languages can I play in?
+
+Only in English. Other languages are currently not supported for Luminescent Platinum. Running the game in any other language will result in crashes when trying to find our new text that, obviously, is not actually there.
+
+We are not looking for translators at this time, as we are still constantly adding and tweaking text to all of our new features. We'll let all of you know when we have the script at a point we're comfortable calling "finalized" to be translated.
+
 ### Do other mods work with Luminescent Platinum?
 
-No. If you have other mods, your game may work, but we will offer no support if anything breaks.
+No. If you have other mods, your game may work, but we will offer no support if anything breaks. See [this page](./mods) for more info about what mods are packaged in.
 
 ### What Switch Emulator should I use?
 
