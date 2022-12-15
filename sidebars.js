@@ -30,4 +30,12 @@ const sidebars = {
    */
 };
 
-module.exports = sidebars;
+module.exports = sidebars; = {
+  themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
+  },
+};
