@@ -46,7 +46,7 @@ const sidebars = {
   'evolutions',
   'npcs',
   'mods',
-  'changelog'
+  'changelog',
   };
   // But you can create a sidebar manually
   /*
