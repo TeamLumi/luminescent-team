@@ -30,7 +30,7 @@ const sidebars = {
    */
 };
 
-module.exports = sidebars; = {
+module.exports = {
   themeConfig: {
     docs: {
       sidebar: {
