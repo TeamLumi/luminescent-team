@@ -19,7 +19,7 @@ The latest link is always pinned in the [discord](https://discord.gg/luminescent
 
 ### How do I install it?
 
-Check our [installation](https://lumi.mrhe.ro/docs/category/installation) page.
+Check our [installation](./category/installation-guide) page.
 
 ### Does PkHax work with this romhack?
 
@@ -43,7 +43,7 @@ Come apply in the [discord](https://discord.gg/luminescent). If we think you fit
 
 ### The mod doesn't work, what do I do?
 
-If it doesn't properly apply, you have likely done something wrong. Double check your [installation](https://lumi.mrhe.ro/docs/category/installation) just to be sure, then visit the [discord](https://discord.gg/luminescent) if you need further help.
+If it doesn't properly apply, you have likely done something wrong. Double check your [installation](./category/installation-guide) just to be sure, then visit the [discord](https://discord.gg/luminescent) if you need further help.
 
 ### Will you be adding new Pokemon? What about regional forms?
 
