@@ -34,7 +34,7 @@ const sidebars = {
       type: 'category',
       label: 'Special Pokémon',
       link: {
-        type: 'special-pokémon',
+        type: 'generated-index',
       },
       collapsed: true,
       items: [
