@@ -19,7 +19,7 @@ const sidebars = {
       type: 'category',
       label: 'Installation Guide',
       link: {
-        type: 'installation',
+        type: 'generated-index',
       },
       collapsed: true,
       items: [
