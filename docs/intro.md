@@ -28,4 +28,4 @@ We hope you enjoy our romhack!
 <h4><a href="https://docs.google.com/spreadsheets/d/133FFeo8GooaxUnlbInP5TL-bEwhwB2bMoxhqLdfEl94/edit#gid=1663592077">Professor Oak Challenge Tracker</a></h4>
 <ul><li>What's a "Professor Oak Challenge"? Why, it's catching everything possible as you go along to complete your Pokédex! This tracker helps you mark off when you've caught everything possible on a route before moving on, as well as tracking your full Pokédex at the bottom.</li>
 <li>You must make your own copy before it will work.</li>
-<li>Made by Astorius.</li>
+<li>Made by Astorius.</li></ul>
