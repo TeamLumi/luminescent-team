@@ -81,7 +81,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Mod Docs',
+            label: 'Luminescent Documents',
           },
           {to: '/rom-hacking', label: 'ROM Hacking', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
