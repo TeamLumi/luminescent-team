@@ -8,6 +8,8 @@ Luminescent Platinum is a romhack for Pokemon Brilliant Diamond and Shining Pear
 
 We hope you enjoy our romhack!
 
+<strong>WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, DISTORTION WORLD, OR OTHER GIMMICKS</strong>. Please see our [FAQ](/faq.md) for more information.
+
 ### Useful Links
 <h4><a href="https://drive.google.com/drive/folders/1b3b3GDXKCP6KY1E0cMStnYg6y0gTPZYM">Pokédex</a></h4>
 <ul><li>Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, locations, we've got everything here. If you need information on individual Pokémon, this is the page you want to peruse!</li>
