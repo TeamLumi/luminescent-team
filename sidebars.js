@@ -38,9 +38,9 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'special-pokémon/gifts',
-        'special-pokémon/static',
-        'special-pokémon/legendaries',
+        'special-events/gifts',
+        'special-events/static',
+        'special-events/legendaries',
       ],
     },
   'evolutions',
