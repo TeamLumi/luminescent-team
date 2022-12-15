@@ -47,7 +47,8 @@ const sidebars = {
   'npcs',
   'mods',
   'changelog',
-  }
+  ],
+  };
   // But you can create a sidebar manually
   /*
   tutorialSidebar: [
