@@ -17,9 +17,7 @@ The `il2cpp.h` header includes all the types defined in the main program but the
 See here an example header file I've written for the UnityAction Class. It include function definitions, a super class, nested namespaces, forward declarations, external pointer.  
 Note: This does not include the linked symbols, those will also need to be defined in the `symbols.ld` file if you want to access a static value or a method.
 
-`include/UnityEngine/Events/UnityAction.hpp`
-
-```c++
+```cpp title="include/UnityEngine/Events/UnityAction.hpp"
 #pragma once
 #include "System/MulticastDelegate.hpp"
 

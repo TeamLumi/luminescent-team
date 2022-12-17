@@ -60,7 +60,7 @@ This is something you could pretty easily do without Starlight but its a decent 
    3. Add the offset where we want to inject our code and a colon, `020378d0:`
    4. Each line under this thats indented is the code to run as ASM codes. (See the ARM opcodes reference) As we want to branch to a new function lets add `b` and the name of the function we will be making in the next step. e.g., `b affection`
 
-   ```asm
+   ```asm title="patches\affection.slpatch"
    [target=main, version=bd_130]
    020378d0:  // Dpr.Battle.Logic.MainModule$$IsFriendshipActive
       b affection
@@ -79,7 +79,7 @@ This is something you could pretty easily do without Starlight but its a decent 
    You'll notice that to make it match it needs to take an argument `Dpr_Battle_Logic_MainModule_o* mainModule`, we will need to add `#include "il2cpp.h"` to the top of the file to include the types from the original program.
    3. Inside this function lets just make it `return false;`
 
-   ```cpp
+   ```cpp title="src\affection.cpp"
    #include "il2cpp.h"
 
    bool affection(Dpr_Battle_Logic_MainModule_o* mainModule) {
