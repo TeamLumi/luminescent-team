@@ -8,25 +8,34 @@ Luminescent Platinum is a romhack for Pokemon Brilliant Diamond and Shining Pear
 
 We hope you enjoy our romhack!
 
-<strong>WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, DISTORTION WORLD, OR OTHER GIMMICKS</strong>. Please see our [FAQ](/faq.md) for more information.
+:::info
 
-### Useful Links
-<h4><a href="https://drive.google.com/drive/folders/1b3b3GDXKCP6KY1E0cMStnYg6y0gTPZYM">Pokédex</a></h4>
-<ul><li>Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, locations, we've got everything here. If you need information on individual Pokémon, this is the page you want to peruse!</li>
-<ul><li>Includes locations and evolution methods for regional forms and evolutions.</li></ul></ul>
+**WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, DISTORTION WORLD, OR OTHER GIMMICKS**. Please see our [FAQ](/faq.md) for more information.
 
-<h4><a href="https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit?usp=sharing">Pokémon Locations By Route</a></h4>
-<ul><li>If you want to know what all Pokémon are on each route as you go, this document is for you. It lists all wild encounter locations in the game, and circumstances for Pokémon to spawn in.</li>
-<li>You must make your own copy before it will work.</li>
-<li>Made by Solarance.</li></ul>
+:::
 
-<h4><a href="https://docs.google.com/spreadsheets/d/1hUVPaxr0norFBDfCRX1lp8hy3eae0zno36Cg2cMH080/edit?usp=sharing">Boss Trainer Documentation</a></h4>
-<ul><li>Use this document to see all boss trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, document will help you stay ahead!</li>
-<ul><li> <em>Currently only goes up to Fantina.</em> The full version will be made available when 2.0Final is released.</li></ul>
-<li>You must make your own copy before it will work.</li>
-<li>Made by Solarance.</li></ul>
+## Useful Links
 
-<h4><a href="https://docs.google.com/spreadsheets/d/133FFeo8GooaxUnlbInP5TL-bEwhwB2bMoxhqLdfEl94/edit#gid=1663592077">Professor Oak Challenge Tracker</a></h4>
-<ul><li>What's a "Professor Oak Challenge"? Why, it's catching everything possible as you go along to complete your Pokédex! This tracker helps you mark off when you've caught everything possible on a route before moving on, as well as tracking your full Pokédex at the bottom.</li>
-<li>You must make your own copy before it will work.</li>
-<li>Made by Astorius.</li></ul>
+### [Pokédex](https://drive.google.com/drive/folders/1b3b3GDXKCP6KY1E0cMStnYg6y0gTPZYM)
+
+- Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, locations, we've got everything here. If you need information on individual Pokémon, this is the page you want to peruse!
+- Includes locations and evolution methods for regional forms and evolutions.
+
+### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit?usp=sharing)
+
+- If you want to know what all Pokémon are on each route as you go, this document is for you. It lists all wild encounter locations in the game, and circumstances for Pokémon to spawn in.
+- You must make your own copy before it will work.
+- Made by Solarance.
+
+### [Boss Trainer Documentation](https://docs.google.com/spreadsheets/d/1hUVPaxr0norFBDfCRX1lp8hy3eae0zno36Cg2cMH080/edit?usp=sharing)
+
+- Use this document to see all boss trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, document will help you stay ahead!
+- *Currently only goes up to Fantina*. The full version will be made available when 2.0Final is released.
+- You must make your own copy before it will work.
+- Made by Solarance.
+
+### [Professor Oak Challenge Tracker](https://docs.google.com/spreadsheets/d/133FFeo8GooaxUnlbInP5TL-bEwhwB2bMoxhqLdfEl94/edit#gid=1663592077)
+
+- What's a "Professor Oak Challenge"? Why, it's catching everything possible as you go along to complete your Pokédex! This tracker helps you mark off when you've caught everything possible on a route before moving on, as well as tracking your full Pokédex at the bottom.
+- You must make your own copy before it will work.
+- Made by Astorius.
