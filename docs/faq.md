@@ -77,7 +77,7 @@ Definitely come check out our partnered server, [Pokemon Switch Modding](https:/
 
 ## Install FAQs
 
-These are just some basic installation FAQs that we frequently get asked:
+These are just some basic [installation](./category/installation) questions that we frequently get asked:
 
 ### What version of the game do I need?
 
@@ -101,7 +101,7 @@ No. If you have other mods, your game may work, but we will offer no support if 
 
 ### What Switch Emulator should I use?
 
-We personally suggest Ryujinx. Yuzu has severe graphical bugs and is extremely unstable, but technically both of them should work. In preparation for 3.0 (where the full national dex will be available), we do recommend moving off of Yuzu — due to a maximum file read limit, it will not be able to run the mod once every single Pokémon has been added.
+We personally suggest Ryujinx. Yuzu has severe graphical bugs and is notably unstable, but technically both of them should work. In preparation for 3.0 (where the full national dex will be available), we do recommend moving off of Yuzu — due to a maximum file read limit, it will not be able to run the mod once every single Pokémon has been added.
 
 ### Can I play this on my Switch?
 
@@ -109,7 +109,7 @@ If it's modded, yes.
 
 ### How do I mod my Switch?
 
-We're not a Switch hacking server. First [check to see if it's patched](https://ismyswitchpatched.com/); if it is, you're out of luck. Don't tell us about it. If it's not, proceed to [this homebrew installation guide](https://nh-server.github.io/switch-guide/).
+We're not a Switch hacking group. First [check to see if it's patched](https://ismyswitchpatched.com/); if it is, you're out of luck. Don't tell us about it. If it's not, proceed to [this homebrew installation guide](https://nh-server.github.io/switch-guide/).
 
 ### Can you help me set up Ryujinx/Yuzu?
 
