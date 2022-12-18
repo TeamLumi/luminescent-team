@@ -73,7 +73,7 @@ Definitely come check out our partnered server, [Pokemon Switch Modding](https:/
 
 ### What is Affection? Will turning it off stop friendship evolutions?
 
-[Affection](https://bulbapedia.bulbagarden.net/wiki/Affection) is the "[Pokémon] held on so you wouldn't be sad!" mechanic. It scales on the same number as friendship/happiness, but will not affect other mechanics related to friendship. This includes Sylveon, despite previous generations specifically being tied to the affection mechanic. It's friendship now.
+[Affection](https://bulbapedia.bulbagarden.net/wiki/Affection) is the "[Pokémon] held on so you wouldn't be sad!" mechanic. It scales on the same number as friendship/happiness, but will not affect other mechanics related to friendship. This includes Sylveon's evolution, despite previous generations specifically being tied to the affection mechanic. It's friendship now.
 
 ## Install FAQs
 
