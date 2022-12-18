@@ -57,7 +57,7 @@ No. Stop asking. We are researching how to properly implement them, but they're 
 
 ### What about these cool things I saw on a video showcase?
 
-Probably not. De-chibification, Z-moves, Terastalling and anything else are not going to happen in Luminescent Platinum. Again, we research things in addition to adding stuff to our mod. Not everything we show off will become a feature so much as a place of inspiration for modders later.
+Probably not. De-chibification, Z-moves, Terastalizing and anything else are not going to happen in Luminescent Platinum. Again, we research things in addition to adding stuff to our mod. Not everything we show off will become a feature so much as a place of inspiration for modders later.
 
 ### Battle Frontier...?
 
