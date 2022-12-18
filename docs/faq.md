@@ -77,7 +77,7 @@ Definitely come check out our partnered server, [Pokemon Switch Modding](https:/
 
 ## Install FAQs
 
-These are just some basic [installation](./category/installation) questions that we frequently get asked:
+These are just some basic [installation](./category/installation-guide) questions that we frequently get asked:
 
 ### What version of the game do I need?
 
