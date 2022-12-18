@@ -46,6 +46,7 @@ const sidebars = {
     },
   'evolutions',
   'npc',
+  'devquests',
   'mods',
   'changelog',
   ],
