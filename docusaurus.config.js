@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Luminescent Version',
   tagline: 'A BDSP ROM Hack',
-  url: 'https://lumi.mrhe.ro',
+  url: 'https://luminescent.team',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
