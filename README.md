@@ -1,4 +1,4 @@
-# [Luminescent Team Website](https://lumi.mrhe.ro/)
+# [Luminescent Team Website](https://luminescent.team)
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
