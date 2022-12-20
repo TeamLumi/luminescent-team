@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Luminescent Version Blog</title>
-        <link>https://lumi.mrhe.ro/blog</link>
+        <link>https://luminescent.team/blog</link>
         <description>Luminescent Version Blog</description>
         <lastBuildDate>Wed, 12 Oct 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[2.0 Beta Update]]></title>
-            <link>https://lumi.mrhe.ro/blog/2022/10/12/update2-0-beta</link>
+            <link>https://luminescent.team/blog/2022/10/12/update2-0-beta</link>
             <guid>/2022/10/12/update2-0-beta</guid>
             <pubDate>Wed, 12 Oct 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Hey Everyone! New build of 2.0. Here's what you need to know:]]></description>
@@ -24,7 +24,7 @@ Any bug reports to these effects will be closed without conversation. We figured
         </item>
         <item>
             <title><![CDATA[2.0 Alpha Update]]></title>
-            <link>https://lumi.mrhe.ro/blog/2022/08/30/update2-0-alpha</link>
+            <link>https://luminescent.team/blog/2022/08/30/update2-0-alpha</link>
             <guid>/2022/08/30/update2-0-alpha</guid>
             <pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Trainers, the time has come.]]></description>
