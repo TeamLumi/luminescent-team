@@ -19,7 +19,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Installation Guide',
-      link: 'installation',
+      link: {
+        type: 'generated-index',
+        slug: 'category/installation',
+      },
       collapsed: true,
       items: [
         'installation/atmosphere',
@@ -34,6 +37,7 @@ const sidebars = {
       label: 'Special Pokémon',
       link: {
         type: 'generated-index',
+        slug: 'category/special-events',
       },
       collapsed: true,
       items: [
