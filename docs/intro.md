@@ -29,7 +29,7 @@ We hope you enjoy our romhack!
 
 ### [Boss Trainer Documentation](https://docs.google.com/spreadsheets/d/1hUVPaxr0norFBDfCRX1lp8hy3eae0zno36Cg2cMH080/edit?usp=sharing)
 
-- Use this document to see all boss trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, document will help you stay ahead!
+- Use this document to see all boss trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, our document will help you stay ahead!
 - *Currently only goes up to Fantina*. The full version will be made available when 2.0Final is released.
 - You must make your own copy before it will work.
 - Made by Solarance.
