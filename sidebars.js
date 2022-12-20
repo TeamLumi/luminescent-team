@@ -19,9 +19,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Installation Guide',
-      link: {
-        type: 'generated-index',
-      },
+      link: 'installation',
       collapsed: true,
       items: [
         'installation/atmosphere',
