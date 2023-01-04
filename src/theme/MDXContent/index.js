@@ -16,11 +16,11 @@ const lightTheme = createTheme({
 });
 
 export default function MDXContentWrapper(props) {
-  const {isDarkTheme} = useColorMode();
+  const {colorMode} = useColorMode();
 
   return (
     <>
-      <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <ThemeProvider theme={colorMode === "dark" ? darkTheme : lightTheme}>
         <MDXContent {...props} />
       </ThemeProvider>
     </>
