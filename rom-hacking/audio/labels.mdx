@@ -1,0 +1,29 @@
+# Audio File Labels
+
+import Paper from '@mui/material/Paper';
+const rows = require('./audioLabels.json');
+
+<TableContainer component={Paper}>
+	<Table sx={{ minWidth: 650 }} aria-label="simple table">
+	<TableHead>
+		<TableRow>
+		<TableCell>File Name</TableCell>
+		<TableCell align="right">Song Name</TableCell>
+		<TableCell align="right">Details</TableCell>
+		</TableRow>
+	</TableHead>
+	<TableBody>
+		{rows.map((row) => (
+		<TableRow
+			key={row.name}
+		>
+			<TableCell component="th" scope="row">
+			{row.file}
+			</TableCell>
+			<TableCell align="right">{row.name}</TableCell>
+			<TableCell align="right">{row.description}</TableCell>
+		</TableRow>
+		))}
+	</TableBody>
+	</Table>
+</TableContainer>
