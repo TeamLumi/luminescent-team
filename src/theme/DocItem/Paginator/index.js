@@ -8,7 +8,6 @@ const disabledBases = [
 
 export default function PaginatorWrapper(props) {
   const location = useLocation();
-  console.log(location);
 
   // Check each disabled base and return null if in list
   for (let i = 0; i < disabledBases.length; i++) {
