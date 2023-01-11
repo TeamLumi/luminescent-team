@@ -43,7 +43,6 @@ const sidebars = {
       items: [
         'special-events/gifts',
         'special-events/static',
-        'special-events/trade',
         'special-events/legendaries',
       ],
     },
