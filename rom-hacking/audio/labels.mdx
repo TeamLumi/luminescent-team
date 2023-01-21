@@ -13,9 +13,9 @@ const rows = require('./audioLabels.json');
 	<TableHead>
 		<TableRow>
 		<TableCell>File Name</TableCell>
-		<TableCell>Type</TableCell>
+		<TableCell>Category</TableCell>
 		<TableCell>Song Name</TableCell>
-		<TableCell>Conditions</TableCell>
+		<TableCell>Details</TableCell>
 		</TableRow>
 	</TableHead>
 	<TableBody>
@@ -26,9 +26,9 @@ const rows = require('./audioLabels.json');
 			<TableCell component="th" scope="row">
 			{row.file}
 			</TableCell>
-			<TableCell>{row.type}</TableCell>
+			<TableCell>{row.category}</TableCell>
 			<TableCell>{row.name}</TableCell>
-			<TableCell>{row.conditions}</TableCell>
+			<TableCell>{row.details}</TableCell>
 		</TableRow>
 		))}
 	</TableBody>
