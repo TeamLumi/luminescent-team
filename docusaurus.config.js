@@ -44,8 +44,6 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/TeamLumi/luminescent-team/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -62,7 +60,6 @@ const config = {
         path: 'rom-hacking',
         routeBasePath: 'rom-hacking',
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
-        editUrl: 'https://github.com/TeamLumi/luminescent-team/blob/main/',
       },
     ],
   ],
