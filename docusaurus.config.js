@@ -114,10 +114,6 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Game Banana',
-                href: 'https://gamebanana.com/mods/338507',
-              },
-              {
                 label: 'Discord',
                 href: 'https://discord.gg/luminescent',
               }
