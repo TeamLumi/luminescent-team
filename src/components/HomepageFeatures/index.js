@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/LuminescentTitle.svg').default,
     description: (
       <>
-        Pokemon Luminescent Version is a difficulty mod for Pokemon Brilliant Diamond and Shining Pearl
+        Pokemon Luminescent Platinum is an enhancement mod for Pokemon Brilliant Diamond (and eventually Shining Pearl)
         based heavily on Renegade Platinum by Drayano.
       </>
     ),
