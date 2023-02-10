@@ -116,7 +116,7 @@ const config = {
               {
                 label: 'Discord',
                 href: 'https://discord.gg/luminescent',
-              }
+              },
               {
                 label: 'Nexus Mods',
                 href: 'https://www.nexusmods.com/pokemonbdsp/mods/1',
