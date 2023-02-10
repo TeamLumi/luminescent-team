@@ -17,8 +17,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://www.mediafire.com/file/dq05lpfbivirbhj/Lumi+Beta+2.0.2.7z/file">
-            Download Luminescent Platinum 2.0.2b ⬇️
+            to="https://www.nexusmods.com/pokemonbdsp/mods/1">
+            Download Luminescent Platinum ⬇️
           </Link>
         </div>
         <br />
