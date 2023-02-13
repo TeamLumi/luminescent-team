@@ -44,6 +44,7 @@ const sidebars = {
         'special-events/gifts',
         'special-events/static',
         'special-events/legendaries',
+        'special-events/trade',
       ],
     },
   'evolutions',
