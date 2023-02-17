@@ -54,3 +54,7 @@
 ._2FKZL > span {
   visibility: hidden;
 }
+
+div.evolutionTables > table {
+  margin-bottom: 0;
+}
