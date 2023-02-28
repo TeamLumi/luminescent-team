@@ -77,17 +77,17 @@ Definitely come check out our partnered server, [Pokemon Switch Modding](https:/
 
 [Affection](https://bulbapedia.bulbagarden.net/wiki/Affection) is the "[Pokémon] held on so you wouldn't be sad!" mechanic. It scales on the same number as friendship/happiness, but will not affect other mechanics related to friendship. This includes Sylveon's evolution, despite previous generations specifically being tied to the affection mechanic. It's friendship now.
 
-## Install FAQs
+## Install FAQ
 
 These are just some basic [installation](./category/installation) questions that we frequently get asked:
 
 ### What version of the game do I need?
 
-Currently, the game only works on 1.3.0 of Brilliant Diamond - we will support Shining Pearl in the future, but it is not worth adding that compatibility while the development is in progress.
+Currently, the game only works on 1.3.0 of Brilliant Diamond. We will support Shining Pearl in the future, but it is not worth adding that compatibility while the development is in progress.
 
 ### How do I know it's working?
 
-If you are starting a new game, the language select screen should have a gold background, and all languages except English should be crossed out. Make sure to double check that the EXP Share is off as soon as you have more than one Pokémon. If it isn't, you have a bad install. Once that's been done, you can turn it on if you so desire from the computer in a Pokémon Center.
+If you are starting a new game, the language select screen should have a gold background, and all languages except English should be crossed out. Make sure to double check that the EXP Share is off as soon as you have more than one Pokémon. If it isn't, you have a bad install. Once that's been done, you can turn EXP Share on if you so desire from the computer in a Pokémon Center.
 
 If you have a currently running game, the Pokémon party screen should have extra options for nicknaming/changing moves of Pokémon. You can also try the EXP Share check.
 
@@ -103,7 +103,7 @@ No. If you have other mods, your game may work, but we will offer no support if 
 
 ### What Switch Emulator should I use?
 
-We personally suggest Ryujinx. Yuzu has severe graphical bugs and is notably unstable, but technically both of them should work. In preparation for 3.0 (where the full national dex will be available), we do recommend moving off of Yuzu — due to a maximum file read limit, it will not be able to run the mod once every single Pokémon has been added.
+We personally suggest Ryujinx. Yuzu has frequent graphical bugs and is notably unstable, but technically both of them should work. In preparation for 3.0 (where the full national dex will be available), we do recommend moving off of Yuzu — due to a maximum file read limit, it will not be able to run the mod once every single Pokémon has been added.
 
 ### Can I play this on my Switch?
 
