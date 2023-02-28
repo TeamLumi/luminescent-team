@@ -1,4 +1,6 @@
-
+---
+toc_min_heading_level: 2
+---
 # Frequently Asked Questions
 
 ## Luminescent FAQ
