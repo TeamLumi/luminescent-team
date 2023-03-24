@@ -69,3 +69,10 @@ div.evolutionTables > table th:nth-child(even),
 div.evolutionTables > table td:nth-child(even) {
   min-width: 124px; /* Set width for even columns */
 }
+
+.dexEvolutionContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
