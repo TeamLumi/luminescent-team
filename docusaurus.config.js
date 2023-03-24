@@ -60,8 +60,8 @@ const config = {
         path: 'rom-hacking',
         routeBasePath: 'rom-hacking',
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
-      },
-    ],
+      }
+    ]
   ],
 
   themeConfig:
@@ -76,7 +76,7 @@ const config = {
         title: 'Team Luminescent',
         logo: {
           alt: 'Pokemon Luminescent Platinum Logo',
-          src: 'img/lumiLogo.png',
+          src: 'img/lumiLogo-small.webp',
         },
         items: [
           {
@@ -87,6 +87,7 @@ const config = {
           },
           {to: '/rom-hacking', label: 'ROM Hacking', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/dex', label: 'Pokedex', position: 'left'},
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',
