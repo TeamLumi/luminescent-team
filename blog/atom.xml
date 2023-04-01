@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://luminescent.team/blog</id>
-    <title>Luminescent Version Blog</title>
+    <title>Luminescent Platinum Blog</title>
     <updated>2022-10-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://luminescent.team/blog"/>
-    <subtitle>Luminescent Version Blog</subtitle>
+    <subtitle>Luminescent Platinum Blog</subtitle>
     <icon>https://luminescent.team/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[2.0 Beta Update]]></title>
