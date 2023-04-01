@@ -21,6 +21,13 @@ function HomepageHeader() {
             Download Luminescent Platinum ⬇️
           </Link>
         </div>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://luminescent.team/docs">
+            View all of Luminescent Platinum's documentation and features!
+          </Link>
+        </div>
         <br />
         <div className={styles.buttons}>
           <Link
