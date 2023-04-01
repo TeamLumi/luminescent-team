@@ -121,6 +121,9 @@ const config = {
                 label: 'Nexus Mods',
                 href: 'https://www.nexusmods.com/pokemonbdsp/mods/1',
               }
+              {
+                label: 'Twitter',
+                href: 'https://mobile.twitter.com/LuminescentTeam/',
             ],
           },
           {
