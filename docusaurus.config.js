@@ -124,6 +124,7 @@ const config = {
               {
                 label: 'Twitter',
                 href: 'https://mobile.twitter.com/LuminescentTeam/',
+              }
             ],
           },
           {
