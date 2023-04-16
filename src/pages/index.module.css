@@ -19,8 +19,8 @@
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  max-width: 200px;
-  width: 100%;
   align-items: center;
   justify-content: center;
+  max-width: 200px;
+  width: 100%;
 }
