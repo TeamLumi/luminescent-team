@@ -9,6 +9,10 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const linkStyles = {
+      wordWrap: 'break-word',
+      whiteSpace: 'normal',
+      };
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -17,7 +21,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="https://www.nexusmods.com/pokemonbdsp/mods/1">
+            to="https://www.nexusmods.com/pokemonbdsp/mods/1"  style={linkStyles}>
             Download Luminescent Platinum ⬇️
           </Link>
         </div>
@@ -25,7 +29,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs">
+            to="/docs" style={linkStyles}>
             View all of Luminescent Platinum's<br /> documentation and features! 📖
           </Link>
         </div>
@@ -33,7 +37,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/rom-hacking">
+            to="/rom-hacking" style={linkStyles}>
             Learn how to make your own romhack ⏱️
           </Link>
         </div>
