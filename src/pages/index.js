@@ -30,7 +30,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs" style={linkStyles}>
-            View all of Luminescent Platinum's<br /> documentation and features! 📖
+            View all of Luminescent Platinum's documentation and features! 📖
           </Link>
         </div>
         <br />
