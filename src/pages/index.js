@@ -34,7 +34,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/rom-hacking">
-            Learn how to make your own ROM Hack ⏱️
+            Learn how to make your own romhack ⏱️
           </Link>
         </div>
       </div>
