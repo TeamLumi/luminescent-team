@@ -8,6 +8,16 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 $ npm install
 ```
 
+### Plugin Setup
+
+Install the extension/plugin for your favorite IDE (VSCode, JetBrains, NVIM, ...).
+
+1. [EditorConfig](https://editorconfig.org/) - EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
+2. [Prettier](https://prettier.io/) - An opinionated code formatter
+3. [ESLint](https://eslint.org/) - ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
+
+> Note: Prettier is disabled for Markdown files for now - requires configuring to comply with Docusaurus
+
 ### Local Development
 
 ```
