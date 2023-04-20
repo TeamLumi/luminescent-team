@@ -5,7 +5,7 @@ import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../../dexUti
 import Type from './type';
 import PokedexAccordion from './pokedexAccordion';
 import EvolutionGraph from './EvolutionGraph';
-import { PokemonStats } from './PokemonStats/PokemonStats';
+import { PokemonStats } from './PokemonStats';
 import { PokemonSearch } from './PokemonSearch';
 
 export default function PokedexFeatures() {
