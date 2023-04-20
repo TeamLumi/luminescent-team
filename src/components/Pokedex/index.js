@@ -4,7 +4,7 @@ import { Grid, Typography, Avatar } from '@mui/material';
 import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../../dexUtils';
 import Type from './type';
 import PokedexAccordion from './pokedexAccordion';
-import EvolutionGraph from './evolutionGraph';
+import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats/PokemonStats';
 
 export default function PokedexFeatures(props) {
