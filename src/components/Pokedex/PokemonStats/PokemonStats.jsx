@@ -68,16 +68,24 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
             <Typography variant="h6">Base Stats:</Typography>
           </Box>
           <Box gridColumn="span 1">
-            <Typography variant="h6">min-</Typography>
+            <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+              min-
+            </Typography>
           </Box>
           <Box gridColumn="span 1">
-            <Typography variant="h6">min</Typography>
+            <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+              min
+            </Typography>
           </Box>
           <Box gridColumn="span 1">
-            <Typography variant="h6">max</Typography>
+            <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+              max
+            </Typography>
           </Box>
           <Box gridColumn="span 1">
-            <Typography variant="h6">max+</Typography>
+            <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+              max+
+            </Typography>
           </Box>
           <Box gridColumn="span 1" />
         </>
@@ -96,16 +104,24 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
               <Box gridColumn="span 3">{<PokemonStatBar width={width} color={color} />}</Box>
               <Box gridColumn="span 2" />
               <Box gridColumn="span 1">
-                <Typography>{calcMinNegStat(stat.value, stat.isHpStat, level)}</Typography>
+                <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
+                  {calcMinNegStat(stat.value, stat.isHpStat, level)}
+                </Typography>
               </Box>
               <Box gridColumn="span 1">
-                <Typography>{calcMinStat(stat.value, stat.isHpStat, level)}</Typography>
+                <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
+                  {calcMinStat(stat.value, stat.isHpStat, level)}
+                </Typography>
               </Box>
               <Box gridColumn="span 1">
-                <Typography>{calcMaxStat(stat.value, stat.isHpStat, level)}</Typography>
+                <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
+                  {calcMaxStat(stat.value, stat.isHpStat, level)}
+                </Typography>
               </Box>
               <Box gridColumn="span 1">
-                <Typography>{calcMaxPosStat(stat.value, stat.isHpStat, level)}</Typography>
+                <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
+                  {calcMaxPosStat(stat.value, stat.isHpStat, level)}
+                </Typography>
               </Box>
               <Box gridColumn="span 1" />
             </Fragment>
@@ -121,7 +137,7 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
           </Box>
           <Box gridColumn="span 5" />
           <Box gridColumn="span 4">
-            <Box display="flex" alignItems="center" justifyContent="center">
+            <Box alignItems="center" justifyContent="center" sx={{ display: { xs: 'none', sm: 'flex' } }}>
               <Typography variant="body1" component="p" marginRight="12px">
                 at level
               </Typography>
