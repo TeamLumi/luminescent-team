@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@docusaurus/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "prettier/prettier": "off",
+    "no-unused-vars": "off",
+    "react/prop-types": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

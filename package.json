@@ -28,7 +28,15 @@
     "react-spoiler-tag": "^1.1.7"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.1.0"
+    "@babel/core": "^7.21.4",
+    "@babel/eslint-parser": "^7.21.3",
+    "@docusaurus/eslint-plugin": "^2.4.0",
+    "@docusaurus/module-type-aliases": "2.1.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.7"
   },
   "browserslist": {
     "production": [
