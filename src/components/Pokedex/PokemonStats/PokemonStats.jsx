@@ -99,9 +99,13 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
                 <Typography textAlign="right">{stat.label}</Typography>
               </Box>
               <Box gridColumn="span 1">
-                <Typography>{stat.value}</Typography>
+                <Typography sx={{ marginLeft: { xs: '10px', sm: '0' } }}>{stat.value}</Typography>
               </Box>
-              <Box gridColumn="span 3">{<PokemonStatBar width={width} color={color} />}</Box>
+              <Box gridColumn="span 3">
+                <Box sx={{ marginLeft: { xs: '16px', sm: '0' } }}>
+                  <PokemonStatBar width={width} color={color} />
+                </Box>
+              </Box>
               <Box gridColumn="span 2" />
               <Box gridColumn="span 1">
                 <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
