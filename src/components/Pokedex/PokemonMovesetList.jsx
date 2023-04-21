@@ -1,4 +1,4 @@
-import { Box, List, ListItem, Typography } from '@mui/material';
+import { Box, List, Typography } from '@mui/material';
 import React from 'react';
 import { getMoveProperties } from '../../../dexUtils';
 
@@ -38,7 +38,7 @@ const responsiveFontSize = { fontSize: { xs: '0.7rem', sm: '0.8rem', md: '1rem' 
 //   }[]
 // }
 
-export const MovesetList = ({ moveset }) => {
+export const PokemonMovesetList = ({ moveset }) => {
   return (
     <List>
       {moveset.map((move) => (

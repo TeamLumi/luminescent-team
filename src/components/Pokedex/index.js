@@ -7,7 +7,7 @@ import PokedexAccordion from './pokedexAccordion';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';
 import { PokemonSearch } from './PokemonSearch';
-import { MovesetList } from './MovesetList';
+import { PokemonMovesetList } from './PokemonMovesetList';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -69,7 +69,7 @@ export default function PokedexFeatures() {
         <EvolutionGraph dexId={pokemonDexId} />
       </div>
 
-      <MovesetList moveset={moveList} />
+      <PokemonMovesetList moveset={moveList} />
     </Container>
   );
 }
