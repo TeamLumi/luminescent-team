@@ -29,7 +29,7 @@ const TYPE_COLOR_MAP = {
   17: { name: 'Fairy', color: '#eb92e4' },
 };
 
-const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.6rem', md: '1rem' } };
+const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.6rem', md: '0.9rem', lg: '1rem' } };
 
 // interface props {
 //   moveset: {
@@ -44,30 +44,14 @@ export const PokemonMovesetList = ({ moveset }) => {
       sx={{
         display: 'grid',
         gridTemplateColumns: {
-          xs: `0.5fr 1.5fr 50px 50px 0.5fr 0.5fr 0.5fr`,
+          xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
           sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
-          // sm: '35px 105px 80px 56px 50px 50px 24px 1fr',
-          // md: '35px 120px 30px 80px 64px 56px 72px 30px 500px',
+          md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
         },
-        // gridTemplateColumns: {
-        //   xs: '30px 92px 56px 48px 38px 50px 24px',
-        //   sm: '35px 105px 80px 56px 50px 50px 24px 1fr',
-        //   md: '35px 120px 30px 80px 64px 56px 72px 30px 500px',
-        // },
-        // gridTemplateAreas: {
-        //   xs: '"icon name type dmg_type power accuracy pp"',
-        //   sm: '"icon name type dmg_type power accuracy pp desc"',
-        //   md: '"icon name . type dmg_type power accuracy pp desc"',
-        // },
-        // gridTemplateRows: `repeat(${moveset.length}, 1fr)`,
         gridTemplateRows: `repeat(${moveset.length}, 40px)`,
         alignItems: 'center',
-        columnGap: {
-          xs: '2px',
-        },
-        rowGap: {
-          sm: '8px',
-        },
+        columnGap: '4px',
+        rowGap: '8px',
         marginBottom: '8px',
       }}
     >
@@ -81,13 +65,15 @@ export const PokemonMovesetList = ({ moveset }) => {
 const MoveIcon = ({ moveIconType }) => {
   if (typeof moveIconType === 'number') {
     return (
-      <Typography sx={{ textAlign: 'center', fontSize: { xs: '0.7rem', sm: '0.8rem' } }}>{moveIconType}</Typography>
+      <Typography sx={{ textAlign: 'center', fontSize: { xs: '0.7rem', sm: '0.8rem', md: '1rem' } }}>
+        {moveIconType}
+      </Typography>
     );
   }
 
   if (moveIconType === 'egg') {
     return (
-      <Box display="flex" alignItems="center" justifyContent="center" width="18px">
+      <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '18px', sm: '26px', md: '32px' }}>
         <img src="/img/pm0000_00_00_00_L.webp" alt="Egg Move" />
       </Box>
     );
@@ -95,7 +81,7 @@ const MoveIcon = ({ moveIconType }) => {
 
   if (moveIconType === 'tm') {
     return (
-      <Box display="flex" alignItems="center" justifyContent="center" width="30px">
+      <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '30px', sm: '40px' }}>
         <img src="/img/Item_TM.webp" alt="Technical Machine" />
       </Box>
     );
@@ -114,7 +100,9 @@ const MovesetListItem = ({ moveLevel, moveId }) => {
       </Box>
 
       <Box>
-        <Typography sx={{ fontWeight: 700, fontSize: { xs: '0.7rem', sm: '0.8rem' } }}>{move.name}</Typography>
+        <Typography sx={{ fontWeight: 700, fontSize: { xs: '0.7rem', sm: '0.8rem', md: '1rem' } }}>
+          {move.name}
+        </Typography>
       </Box>
 
       <Box>
@@ -122,7 +110,7 @@ const MovesetListItem = ({ moveLevel, moveId }) => {
       </Box>
 
       <Box display="flex" alignItems="center">
-        <img src={DMG_TYPE_ICONS[move.damageType]} alt="Damage Type" />
+        <img src={DMG_TYPE_ICONS[move.damageType]} alt="Damage Type" width="100%" />
       </Box>
 
       <Box display="flex" flexDirection="column" alignItems="center">
@@ -151,51 +139,6 @@ const MovesetListItem = ({ moveLevel, moveId }) => {
       </Box>
     </>
   );
-
-  // return (
-  //   <>
-  //     <Box gridArea="icon" display="flex" alignItems="center">
-  //       <MoveIcon moveIconType={moveLevel} />
-  //     </Box>
-
-  //     <Box gridArea="name">
-  //       <Typography sx={{ fontWeight: 700, ...responsiveFontSize }}>{move.name}</Typography>
-  //     </Box>
-
-  //     <Box gridArea="type">
-  //       <PokemonMoveType typeColor={TYPE_COLOR_MAP[move.type].color} typeName={TYPE_COLOR_MAP[move.type].name} />
-  //     </Box>
-
-  //     <Box gridArea="dmg_type" display="flex" alignItems="center">
-  //       <img src={DMG_TYPE_ICONS[move.damageType]} alt="Damage Type" />
-  //     </Box>
-
-  //     <Box display="flex" flexDirection="column" alignItems="center" gridArea="power">
-  //       {move.power > 0 && (
-  //         <>
-  //           <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>Power</Typography>
-  //           <Typography sx={{ ...responsiveFontSize }}>{move.power}</Typography>
-  //         </>
-  //       )}
-  //     </Box>
-
-  //     <Box display="flex" flexDirection="column" alignItems="center" gridArea="accuracy">
-  //       <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>Accuracy</Typography>
-  //       <Typography sx={{ ...responsiveFontSize }}>{move.accuracy === 101 ? '--' : move.accuracy}</Typography>
-  //     </Box>
-
-  //     <Box display="flex" flexDirection="column" alignItems="center" gridArea="pp">
-  //       <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>PP</Typography>
-  //       <Typography sx={{ ...responsiveFontSize }}>{move.maxPP}</Typography>
-  //     </Box>
-
-  //     <Box sx={{ display: { xs: 'none', sm: 'block' } }} gridArea="desc">
-  //       <Typography variant="body1" sx={{ ...responsiveFontSize }}>
-  //         {move.desc}
-  //       </Typography>
-  //     </Box>
-  //   </>
-  // );
 };
 
 const PokemonMoveType = ({ typeName, typeColor }) => {
@@ -224,6 +167,7 @@ const PokemonMoveType = ({ typeName, typeColor }) => {
           fontSize: {
             xs: '0.5rem',
             sm: '0.6rem',
+            md: '1rem',
           },
         }}
       >
