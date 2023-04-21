@@ -70,39 +70,6 @@ export default function PokedexFeatures() {
       </div>
 
       <MovesetList moveset={moveList} />
-      <PokedexAccordion
-        dexId={pokemonDexId}
-        learnset={moveList}
-        panelId="panel1"
-        headerId="panel1bh-header"
-        ariaLabel="panel1bh-content"
-        expanded={expanded}
-        handleChange={handleChange}
-        learnsetName="Moves learnt via level-up"
-      />
-      {/* <Grid item xs={12}>
-        
-        <PokedexAccordion
-          dexId={pokemonDexId}
-          learnset={tmLearnset}
-          panelId="panel2"
-          headerId="panel2bh-header"
-          ariaLabel="panel2bh-content"
-          expanded={expanded}
-          handleChange={handleChange}
-          learnsetName="Moves learnt via Technical Machine"
-        />
-        <PokedexAccordion
-          dexId={pokemonDexId}
-          learnset={eggLearnset}
-          panelId="panel3"
-          headerId="panel3bh-header"
-          ariaLabel="panel3bh-content"
-          expanded={expanded}
-          handleChange={handleChange}
-          learnsetName="Moves learnt via breeding"
-        />
-      </Grid> */}
     </Container>
   );
 }
