@@ -3,7 +3,6 @@ import style from './styles.module.css';
 import { Box, Typography, Avatar, Container } from '@mui/material';
 import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../../dexUtils';
 import Type from './type';
-import PokedexAccordion from './pokedexAccordion';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';
 import { PokemonSearch } from './PokemonSearch';
