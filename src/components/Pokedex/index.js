@@ -7,6 +7,7 @@ import PokedexAccordion from './pokedexAccordion';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';
 import { PokemonSearch } from './PokemonSearch';
+import { MovesetList } from './MovesetList';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -67,17 +68,20 @@ export default function PokedexFeatures() {
       <div className="container">
         <EvolutionGraph dexId={pokemonDexId} />
       </div>
-      <Grid item xs={12}>
-        <PokedexAccordion
-          dexId={pokemonDexId}
-          learnset={moveList}
-          panelId="panel1"
-          headerId="panel1bh-header"
-          ariaLabel="panel1bh-content"
-          expanded={expanded}
-          handleChange={handleChange}
-          learnsetName="Moves learnt via level-up"
-        />
+
+      <MovesetList moveset={moveList} />
+      <PokedexAccordion
+        dexId={pokemonDexId}
+        learnset={moveList}
+        panelId="panel1"
+        headerId="panel1bh-header"
+        ariaLabel="panel1bh-content"
+        expanded={expanded}
+        handleChange={handleChange}
+        learnsetName="Moves learnt via level-up"
+      />
+      {/* <Grid item xs={12}>
+        
         <PokedexAccordion
           dexId={pokemonDexId}
           learnset={tmLearnset}
@@ -98,7 +102,7 @@ export default function PokedexFeatures() {
           handleChange={handleChange}
           learnsetName="Moves learnt via breeding"
         />
-      </Grid>
+      </Grid> */}
     </Container>
   );
 }
