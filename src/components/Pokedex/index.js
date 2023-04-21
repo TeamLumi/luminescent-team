@@ -1,30 +1,37 @@
 import React, { useState } from 'react';
 import style from './styles.module.css';
-import { Grid, Typography, Avatar } from '@mui/material';
+import { Grid, Typography, Avatar, Container, Box } from '@mui/material';
 import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../../dexUtils';
 import Type from './type';
 import PokedexAccordion from './pokedexAccordion';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats/PokemonStats';
+import { PokemonSearch } from './PokemonSearch';
 
-export default function PokedexFeatures(props) {
-  const pokemonInfo = getPokemonInfo(props.dexId ?? 0);
+export default function PokedexFeatures() {
+  const [pokemonDexId, setPokemonDexId] = useState(1);
+  const pokemonInfo = getPokemonInfo(pokemonDexId ?? 0);
   const [expanded, setExpanded] = useState('panel1');
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
 
-  const learnset = getPokemonLearnset(props.dexId);
+  const learnset = getPokemonLearnset(pokemonDexId);
   const moveList = [];
   for (let i = 0; i < learnset.length; i += 2) {
     moveList.push({ level: learnset[i], moveId: learnset[i + 1] });
   }
 
   const tmLearnset = pokemonInfo.tmLearnset;
-  const eggLearnset = getEggMoves(props.dexId);
+  const eggLearnset = getEggMoves(pokemonDexId);
 
   return (
-    <div>
+    <Container>
+      <Container>
+        <Box display="flex" justifyContent="center" marginTop="16px">
+          <PokemonSearch setPokemonDexId={setPokemonDexId} />
+        </Box>
+      </Container>
       <div className="container">
         <div className="row">
           <Typography variant="h2" component="h3" sx={{ paddingLeft: '16px' }}>
@@ -58,11 +65,11 @@ export default function PokedexFeatures(props) {
       </div>
       <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
       <div className="container">
-        <EvolutionGraph dexId={props.dexId} />
+        <EvolutionGraph dexId={pokemonDexId} />
       </div>
       <Grid item xs={12}>
         <PokedexAccordion
-          dexId={props.dexId}
+          dexId={pokemonDexId}
           learnset={moveList}
           panelId="panel1"
           headerId="panel1bh-header"
@@ -72,7 +79,7 @@ export default function PokedexFeatures(props) {
           learnsetName="Moves learnt via level-up"
         />
         <PokedexAccordion
-          dexId={props.dexId}
+          dexId={pokemonDexId}
           learnset={tmLearnset}
           panelId="panel2"
           headerId="panel2bh-header"
@@ -82,7 +89,7 @@ export default function PokedexFeatures(props) {
           learnsetName="Moves learnt via Technical Machine"
         />
         <PokedexAccordion
-          dexId={props.dexId}
+          dexId={pokemonDexId}
           learnset={eggLearnset}
           panelId="panel3"
           headerId="panel3bh-header"
@@ -92,6 +99,6 @@ export default function PokedexFeatures(props) {
           learnsetName="Moves learnt via breeding"
         />
       </Grid>
-    </div>
+    </Container>
   );
 }
