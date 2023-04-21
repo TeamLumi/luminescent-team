@@ -12,10 +12,6 @@ import { PokemonAccordion } from './PokemonAccordion';
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
   const pokemonInfo = getPokemonInfo(pokemonDexId ?? 0);
-  const [expanded, setExpanded] = useState('panel1');
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
 
   const learnset = getPokemonLearnset(pokemonDexId);
   const moveList = [];
