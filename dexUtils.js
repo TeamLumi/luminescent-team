@@ -391,9 +391,9 @@ function getMoveDescription(moveId = 0) {
     return description;
 }
 
-function getEvolutionStages(monsno = 0) {
-    const evos = EVOLUTION_MAP[monsno];
-}
+// function getEvolutionStages(monsno = 0) {
+//     const evos = EVOLUTION_MAP[monsno];
+// }
 
 function getPastEvolutionStages(monsno = 0) {
 
