@@ -73,10 +73,10 @@ export default function PokedexFeatures() {
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
           <PokemonMovesetList moveset={moveList} />
         </PokemonAccordion>
-        <PokemonAccordion title="Moves learnt via Technical Machine" id="levelMoveset">
+        <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
           <PokemonMovesetList moveset={tmLearnset} />
         </PokemonAccordion>
-        <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
+        <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
           <PokemonMovesetList moveset={eggLearnset} />
         </PokemonAccordion>
       </Container>
