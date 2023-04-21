@@ -29,7 +29,7 @@ const TYPE_COLOR_MAP = {
   17: { name: 'Fairy', color: '#eb92e4' },
 };
 
-const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.8rem', md: '1rem' } };
+const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.6rem', md: '1rem' } };
 
 // interface props {
 //   moveset: {
@@ -45,8 +45,9 @@ export const PokemonMovesetList = ({ moveset }) => {
         display: 'grid',
         gridTemplateColumns: {
           xs: `0.5fr 1.5fr 50px 50px 0.5fr 0.5fr 0.5fr`,
-          sm: '35px 105px 80px 56px 50px 50px 24px 1fr',
-          md: '35px 120px 30px 80px 64px 56px 72px 30px 500px',
+          sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
+          // sm: '35px 105px 80px 56px 50px 50px 24px 1fr',
+          // md: '35px 120px 30px 80px 64px 56px 72px 30px 500px',
         },
         // gridTemplateColumns: {
         //   xs: '30px 92px 56px 48px 38px 50px 24px',
@@ -63,7 +64,9 @@ export const PokemonMovesetList = ({ moveset }) => {
         alignItems: 'center',
         columnGap: {
           xs: '2px',
-          sm: '6px',
+        },
+        rowGap: {
+          sm: '8px',
         },
         marginBottom: '8px',
       }}
@@ -77,7 +80,9 @@ export const PokemonMovesetList = ({ moveset }) => {
 
 const MoveIcon = ({ moveIconType }) => {
   if (typeof moveIconType === 'number') {
-    return <Typography sx={{ textAlign: 'center', fontSize: { xs: '0.7rem' } }}>{moveIconType}</Typography>;
+    return (
+      <Typography sx={{ textAlign: 'center', fontSize: { xs: '0.7rem', sm: '0.8rem' } }}>{moveIconType}</Typography>
+    );
   }
 
   if (moveIconType === 'egg') {
@@ -109,7 +114,7 @@ const MovesetListItem = ({ moveLevel, moveId }) => {
       </Box>
 
       <Box>
-        <Typography sx={{ fontWeight: 700, fontSize: { xs: '0.7rem' } }}>{move.name}</Typography>
+        <Typography sx={{ fontWeight: 700, fontSize: { xs: '0.7rem', sm: '0.8rem' } }}>{move.name}</Typography>
       </Box>
 
       <Box>
@@ -218,8 +223,7 @@ const PokemonMoveType = ({ typeName, typeColor }) => {
             '0 1px 0 #000,0 0 1px rgba(0,0,0,.6),0 0 2px rgba(0,0,0,.7),0 0 3px rgba(0,0,0,.8),0 0 4px rgba(0,0,0,.9)',
           fontSize: {
             xs: '0.5rem',
-            sm: '0.7rem',
-            md: '0.9rem',
+            sm: '0.6rem',
           },
         }}
       >
