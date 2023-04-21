@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import style from './styles.module.css';
-import { Grid, Typography, Avatar, Container, Box } from '@mui/material';
+import { Box, Typography, Avatar, Container } from '@mui/material';
 import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../../dexUtils';
 import Type from './type';
 import PokedexAccordion from './pokedexAccordion';
@@ -8,6 +8,7 @@ import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';
 import { PokemonSearch } from './PokemonSearch';
 import { PokemonMovesetList } from './PokemonMovesetList';
+import { PokemonAccordion } from './PokemonAccordion';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -69,7 +70,17 @@ export default function PokedexFeatures() {
         <EvolutionGraph dexId={pokemonDexId} />
       </div>
 
-      <PokemonMovesetList moveset={moveList} />
+      <Container>
+        <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
+          <PokemonMovesetList moveset={moveList} />
+        </PokemonAccordion>
+        <PokemonAccordion title="Moves learnt via Technical Machine" id="levelMoveset">
+          <PokemonMovesetList moveset={tmLearnset} />
+        </PokemonAccordion>
+        <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
+          <PokemonMovesetList moveset={eggLearnset} />
+        </PokemonAccordion>
+      </Container>
     </Container>
   );
 }

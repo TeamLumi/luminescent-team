@@ -1,4 +1,4 @@
-import { Box, List, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { getMoveProperties } from '../../../dexUtils';
 
@@ -29,7 +29,7 @@ const TYPE_COLOR_MAP = {
   17: { name: 'Fairy', color: '#eb92e4' },
 };
 
-const responsiveFontSize = { fontSize: { xs: '0.7rem', sm: '0.8rem', md: '1rem' } };
+const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.8rem', md: '1rem' } };
 
 // interface props {
 //   moveset: {
@@ -40,25 +40,60 @@ const responsiveFontSize = { fontSize: { xs: '0.7rem', sm: '0.8rem', md: '1rem' 
 
 export const PokemonMovesetList = ({ moveset }) => {
   return (
-    <List>
+    <Box
+      sx={{
+        display: 'grid',
+        gridTemplateColumns: {
+          xs: `0.5fr 1.5fr 50px 50px 0.5fr 0.5fr 0.5fr`,
+          sm: '35px 105px 80px 56px 50px 50px 24px 1fr',
+          md: '35px 120px 30px 80px 64px 56px 72px 30px 500px',
+        },
+        // gridTemplateColumns: {
+        //   xs: '30px 92px 56px 48px 38px 50px 24px',
+        //   sm: '35px 105px 80px 56px 50px 50px 24px 1fr',
+        //   md: '35px 120px 30px 80px 64px 56px 72px 30px 500px',
+        // },
+        // gridTemplateAreas: {
+        //   xs: '"icon name type dmg_type power accuracy pp"',
+        //   sm: '"icon name type dmg_type power accuracy pp desc"',
+        //   md: '"icon name . type dmg_type power accuracy pp desc"',
+        // },
+        // gridTemplateRows: `repeat(${moveset.length}, 1fr)`,
+        gridTemplateRows: `repeat(${moveset.length}, 40px)`,
+        alignItems: 'center',
+        columnGap: {
+          xs: '2px',
+          sm: '6px',
+        },
+        marginBottom: '8px',
+      }}
+    >
       {moveset.map((move) => (
         <MovesetListItem key={`move-${move.moveId}`} moveId={move.moveId} moveLevel={move.level} />
       ))}
-    </List>
+    </Box>
   );
 };
 
 const MoveIcon = ({ moveIconType }) => {
   if (typeof moveIconType === 'number') {
-    return <Typography sx={{ textAlign: 'center', ...responsiveFontSize }}>{moveIconType}</Typography>;
+    return <Typography sx={{ textAlign: 'center', fontSize: { xs: '0.7rem' } }}>{moveIconType}</Typography>;
   }
 
   if (moveIconType === 'egg') {
-    return <img src="/img/pm0000_00_00_00_L.webp" alt="Egg Move" width="30px" height="35px" />;
+    return (
+      <Box display="flex" alignItems="center" justifyContent="center" width="18px">
+        <img src="/img/pm0000_00_00_00_L.webp" alt="Egg Move" />
+      </Box>
+    );
   }
 
   if (moveIconType === 'tm') {
-    return <img src="/img/Item_TM.webp" alt="Technical Machine" width="35px" height="35px" />;
+    return (
+      <Box display="flex" alignItems="center" justifyContent="center" width="30px">
+        <img src="/img/Item_TM.webp" alt="Technical Machine" />
+      </Box>
+    );
   }
 
   return null;
@@ -68,44 +103,24 @@ const MovesetListItem = ({ moveLevel, moveId }) => {
   const move = getMoveProperties(moveId);
 
   return (
-    <Box
-      sx={{
-        display: 'grid',
-        gridTemplateColumns: {
-          xs: '18px 92px 56px 48px 50px 50px 24px',
-          sm: '35px 105px 80px 56px 50px 50px 24px 1fr',
-          md: '35px 120px 30px 80px 64px 56px 72px 30px 500px',
-        },
-        gridTemplateAreas: {
-          xs: '"icon name type dmg_type power accuracy pp"',
-          sm: '"icon name type dmg_type power accuracy pp desc"',
-          md: '"icon name . type dmg_type power accuracy pp desc"',
-        },
-        alignItems: 'center',
-        columnGap: {
-          xs: '2px',
-          sm: '6px',
-        },
-        marginBottom: '8px',
-      }}
-    >
-      <Box gridArea="icon">
+    <>
+      <Box display="flex" alignItems="center" justifyContent="center">
         <MoveIcon moveIconType={moveLevel} />
       </Box>
 
-      <Box gridArea="name">
-        <Typography sx={{ fontWeight: 700, ...responsiveFontSize }}>{move.name}</Typography>
+      <Box>
+        <Typography sx={{ fontWeight: 700, fontSize: { xs: '0.7rem' } }}>{move.name}</Typography>
       </Box>
 
-      <Box gridArea="type">
+      <Box>
         <PokemonMoveType typeColor={TYPE_COLOR_MAP[move.type].color} typeName={TYPE_COLOR_MAP[move.type].name} />
       </Box>
 
-      <Box gridArea="dmg_type" display="flex" alignItems="center">
+      <Box display="flex" alignItems="center">
         <img src={DMG_TYPE_ICONS[move.damageType]} alt="Damage Type" />
       </Box>
 
-      <Box display="flex" flexDirection="column" alignItems="center" gridArea="power">
+      <Box display="flex" flexDirection="column" alignItems="center">
         {move.power > 0 && (
           <>
             <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>Power</Typography>
@@ -114,23 +129,68 @@ const MovesetListItem = ({ moveLevel, moveId }) => {
         )}
       </Box>
 
-      <Box display="flex" flexDirection="column" alignItems="center" gridArea="accuracy">
+      <Box display="flex" flexDirection="column" alignItems="center">
         <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>Accuracy</Typography>
         <Typography sx={{ ...responsiveFontSize }}>{move.accuracy === 101 ? '--' : move.accuracy}</Typography>
       </Box>
 
-      <Box display="flex" flexDirection="column" alignItems="center" gridArea="pp">
+      <Box display="flex" flexDirection="column" alignItems="center">
         <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>PP</Typography>
         <Typography sx={{ ...responsiveFontSize }}>{move.maxPP}</Typography>
       </Box>
 
-      <Box sx={{ display: { xs: 'none', sm: 'block' } }} gridArea="desc">
+      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
         <Typography variant="body1" sx={{ ...responsiveFontSize }}>
           {move.desc}
         </Typography>
       </Box>
-    </Box>
+    </>
   );
+
+  // return (
+  //   <>
+  //     <Box gridArea="icon" display="flex" alignItems="center">
+  //       <MoveIcon moveIconType={moveLevel} />
+  //     </Box>
+
+  //     <Box gridArea="name">
+  //       <Typography sx={{ fontWeight: 700, ...responsiveFontSize }}>{move.name}</Typography>
+  //     </Box>
+
+  //     <Box gridArea="type">
+  //       <PokemonMoveType typeColor={TYPE_COLOR_MAP[move.type].color} typeName={TYPE_COLOR_MAP[move.type].name} />
+  //     </Box>
+
+  //     <Box gridArea="dmg_type" display="flex" alignItems="center">
+  //       <img src={DMG_TYPE_ICONS[move.damageType]} alt="Damage Type" />
+  //     </Box>
+
+  //     <Box display="flex" flexDirection="column" alignItems="center" gridArea="power">
+  //       {move.power > 0 && (
+  //         <>
+  //           <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>Power</Typography>
+  //           <Typography sx={{ ...responsiveFontSize }}>{move.power}</Typography>
+  //         </>
+  //       )}
+  //     </Box>
+
+  //     <Box display="flex" flexDirection="column" alignItems="center" gridArea="accuracy">
+  //       <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>Accuracy</Typography>
+  //       <Typography sx={{ ...responsiveFontSize }}>{move.accuracy === 101 ? '--' : move.accuracy}</Typography>
+  //     </Box>
+
+  //     <Box display="flex" flexDirection="column" alignItems="center" gridArea="pp">
+  //       <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>PP</Typography>
+  //       <Typography sx={{ ...responsiveFontSize }}>{move.maxPP}</Typography>
+  //     </Box>
+
+  //     <Box sx={{ display: { xs: 'none', sm: 'block' } }} gridArea="desc">
+  //       <Typography variant="body1" sx={{ ...responsiveFontSize }}>
+  //         {move.desc}
+  //       </Typography>
+  //     </Box>
+  //   </>
+  // );
 };
 
 const PokemonMoveType = ({ typeName, typeColor }) => {
@@ -146,6 +206,7 @@ const PokemonMoveType = ({ typeName, typeColor }) => {
     >
       <Typography
         sx={{
+          width: '100%',
           color: '#fff',
           whiteSpace: 'nowrap',
           overflow: 'hidden',
@@ -156,7 +217,7 @@ const PokemonMoveType = ({ typeName, typeColor }) => {
           textShadow:
             '0 1px 0 #000,0 0 1px rgba(0,0,0,.6),0 0 2px rgba(0,0,0,.7),0 0 3px rgba(0,0,0,.8),0 0 4px rgba(0,0,0,.9)',
           fontSize: {
-            xs: '0.6rem',
+            xs: '0.5rem',
             sm: '0.7rem',
             md: '0.9rem',
           },
