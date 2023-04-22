@@ -27193,6 +27193,3156 @@
                     "strWidth": 129.453125
                 }
             ]
+        },
+        {
+            "labelIndex": 906,
+            "arrayIndex": 906,
+            "labelName": "MONSNAME_906",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sprigatito",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 907,
+            "arrayIndex": 907,
+            "labelName": "MONSNAME_907",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Floragato",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 908,
+            "arrayIndex": 908,
+            "labelName": "MONSNAME_908",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Meowscarada",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 909,
+            "arrayIndex": 909,
+            "labelName": "MONSNAME_909",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Fuecoco",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 910,
+            "arrayIndex": 910,
+            "labelName": "MONSNAME_910",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Crocalor",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 911,
+            "arrayIndex": 911,
+            "labelName": "MONSNAME_911",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Skeledirge",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 912,
+            "arrayIndex": 912,
+            "labelName": "MONSNAME_912",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Quaxly",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 913,
+            "arrayIndex": 913,
+            "labelName": "MONSNAME_913",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Quaxwell",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 914,
+            "arrayIndex": 914,
+            "labelName": "MONSNAME_914",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Quaquaval",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 915,
+            "arrayIndex": 915,
+            "labelName": "MONSNAME_915",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Lechonk",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 916,
+            "arrayIndex": 916,
+            "labelName": "MONSNAME_916",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Oinkologne",
+                    "strWidth": 102.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 917,
+            "arrayIndex": 917,
+            "labelName": "MONSNAME_917",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tarountula",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 918,
+            "arrayIndex": 918,
+            "labelName": "MONSNAME_918",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Spidops",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 919,
+            "arrayIndex": 919,
+            "labelName": "MONSNAME_919",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Nymble",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 920,
+            "arrayIndex": 920,
+            "labelName": "MONSNAME_920",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Lokix",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 921,
+            "arrayIndex": 921,
+            "labelName": "MONSNAME_921",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pawmi",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 922,
+            "arrayIndex": 922,
+            "labelName": "MONSNAME_922",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pawmo",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 923,
+            "arrayIndex": 923,
+            "labelName": "MONSNAME_923",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pawmot",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 924,
+            "arrayIndex": 924,
+            "labelName": "MONSNAME_924",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tandemaus",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 925,
+            "arrayIndex": 925,
+            "labelName": "MONSNAME_925",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Maushold",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 926,
+            "arrayIndex": 926,
+            "labelName": "MONSNAME_926",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Fidough",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 927,
+            "arrayIndex": 927,
+            "labelName": "MONSNAME_927",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Dachsbun",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 928,
+            "arrayIndex": 928,
+            "labelName": "MONSNAME_928",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Smoliv",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 929,
+            "arrayIndex": 929,
+            "labelName": "MONSNAME_929",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Dolliv",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 930,
+            "arrayIndex": 930,
+            "labelName": "MONSNAME_930",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Arboliva",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 931,
+            "arrayIndex": 931,
+            "labelName": "MONSNAME_931",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Squawkabilly",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 932,
+            "arrayIndex": 932,
+            "labelName": "MONSNAME_932",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Nacli",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 933,
+            "arrayIndex": 933,
+            "labelName": "MONSNAME_933",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Naclstack",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 934,
+            "arrayIndex": 934,
+            "labelName": "MONSNAME_934",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Garganacl",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 935,
+            "arrayIndex": 935,
+            "labelName": "MONSNAME_935",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Charcadet",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 936,
+            "arrayIndex": 936,
+            "labelName": "MONSNAME_936",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Armarouge",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 937,
+            "arrayIndex": 937,
+            "labelName": "MONSNAME_937",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ceruledge",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 938,
+            "arrayIndex": 938,
+            "labelName": "MONSNAME_938",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tadbulb",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 939,
+            "arrayIndex": 939,
+            "labelName": "MONSNAME_939",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Bellibolt",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 940,
+            "arrayIndex": 940,
+            "labelName": "MONSNAME_940",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Wattrel",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 941,
+            "arrayIndex": 941,
+            "labelName": "MONSNAME_941",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Kilowattrel",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 942,
+            "arrayIndex": 942,
+            "labelName": "MONSNAME_942",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Maschiff",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 943,
+            "arrayIndex": 943,
+            "labelName": "MONSNAME_943",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mabosstiff",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 944,
+            "arrayIndex": 944,
+            "labelName": "MONSNAME_944",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Shroodle",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 945,
+            "arrayIndex": 945,
+            "labelName": "MONSNAME_945",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Grafaiai",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 946,
+            "arrayIndex": 946,
+            "labelName": "MONSNAME_946",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Bramblin",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 947,
+            "arrayIndex": 947,
+            "labelName": "MONSNAME_947",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Brambleghast",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 948,
+            "arrayIndex": 948,
+            "labelName": "MONSNAME_948",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Toedscool",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 949,
+            "arrayIndex": 949,
+            "labelName": "MONSNAME_949",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Toedscruel",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 950,
+            "arrayIndex": 950,
+            "labelName": "MONSNAME_950",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Klawf",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 951,
+            "arrayIndex": 951,
+            "labelName": "MONSNAME_951",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Capsakid",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 952,
+            "arrayIndex": 952,
+            "labelName": "MONSNAME_952",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Scovillain",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 953,
+            "arrayIndex": 953,
+            "labelName": "MONSNAME_953",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Rellor",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 954,
+            "arrayIndex": 954,
+            "labelName": "MONSNAME_954",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Rabsca",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 955,
+            "arrayIndex": 955,
+            "labelName": "MONSNAME_955",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Flittle",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 956,
+            "arrayIndex": 956,
+            "labelName": "MONSNAME_956",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Espathra",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 957,
+            "arrayIndex": 957,
+            "labelName": "MONSNAME_957",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tinkatink",
+                    "strWidth": 86.078125
+                }
+            ]
+        },
+        {
+            "labelIndex": 958,
+            "arrayIndex": 958,
+            "labelName": "MONSNAME_958",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tinkatuff",
+                    "strWidth": 86.078125
+                }
+            ]
+        },
+        {
+            "labelIndex": 959,
+            "arrayIndex": 959,
+            "labelName": "MONSNAME_959",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tinkaton",
+                    "strWidth": 86.078125
+                }
+            ]
+        },
+        {
+            "labelIndex": 960,
+            "arrayIndex": 960,
+            "labelName": "MONSNAME_960",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Wiglett",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 961,
+            "arrayIndex": 961,
+            "labelName": "MONSNAME_961",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Wugtrio",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 962,
+            "arrayIndex": 962,
+            "labelName": "MONSNAME_962",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Bombirdier",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 963,
+            "arrayIndex": 963,
+            "labelName": "MONSNAME_963",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Finizen",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 964,
+            "arrayIndex": 964,
+            "labelName": "MONSNAME_964",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Palafin",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 965,
+            "arrayIndex": 965,
+            "labelName": "MONSNAME_965",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Varoom",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 966,
+            "arrayIndex": 966,
+            "labelName": "MONSNAME_966",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Revravroom",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 967,
+            "arrayIndex": 967,
+            "labelName": "MONSNAME_967",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Cyclizar",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 968,
+            "arrayIndex": 968,
+            "labelName": "MONSNAME_968",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Orthworm",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 969,
+            "arrayIndex": 969,
+            "labelName": "MONSNAME_969",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Glimmet",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 970,
+            "arrayIndex": 970,
+            "labelName": "MONSNAME_970",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Glimmora",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 971,
+            "arrayIndex": 971,
+            "labelName": "MONSNAME_971",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Greavard",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 972,
+            "arrayIndex": 972,
+            "labelName": "MONSNAME_972",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Houndstone",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 973,
+            "arrayIndex": 973,
+            "labelName": "MONSNAME_973",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Flamigo",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 974,
+            "arrayIndex": 974,
+            "labelName": "MONSNAME_974",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Cetoddle",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 975,
+            "arrayIndex": 975,
+            "labelName": "MONSNAME_975",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Cetitan",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 976,
+            "arrayIndex": 976,
+            "labelName": "MONSNAME_976",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Veluza",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 977,
+            "arrayIndex": 977,
+            "labelName": "MONSNAME_977",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Dondozo",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 978,
+            "arrayIndex": 978,
+            "labelName": "MONSNAME_978",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tatsugiri",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 979,
+            "arrayIndex": 979,
+            "labelName": "MONSNAME_979",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Annihilape",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 980,
+            "arrayIndex": 980,
+            "labelName": "MONSNAME_980",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Clodsire",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 981,
+            "arrayIndex": 981,
+            "labelName": "MONSNAME_981",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Farigiraf",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 982,
+            "arrayIndex": 982,
+            "labelName": "MONSNAME_982",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Dudunsparce",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 983,
+            "arrayIndex": 983,
+            "labelName": "MONSNAME_983",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Kingambit",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 984,
+            "arrayIndex": 984,
+            "labelName": "MONSNAME_984",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Great Tusk",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 985,
+            "arrayIndex": 985,
+            "labelName": "MONSNAME_985",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Scream Tail",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 986,
+            "arrayIndex": 986,
+            "labelName": "MONSNAME_986",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Brute Bonnet",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 987,
+            "arrayIndex": 987,
+            "labelName": "MONSNAME_987",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Flutter Mane",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 988,
+            "arrayIndex": 988,
+            "labelName": "MONSNAME_988",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Slither Wing",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 989,
+            "arrayIndex": 989,
+            "labelName": "MONSNAME_989",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sandy Shocks",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 990,
+            "arrayIndex": 990,
+            "labelName": "MONSNAME_990",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Treads",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 991,
+            "arrayIndex": 991,
+            "labelName": "MONSNAME_991",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Bundle",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 992,
+            "arrayIndex": 992,
+            "labelName": "MONSNAME_992",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Hands",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 993,
+            "arrayIndex": 993,
+            "labelName": "MONSNAME_993",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Jugulis",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 994,
+            "arrayIndex": 994,
+            "labelName": "MONSNAME_994",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Moth",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 995,
+            "arrayIndex": 995,
+            "labelName": "MONSNAME_995",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Thorns",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 996,
+            "arrayIndex": 996,
+            "labelName": "MONSNAME_996",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Frigibax",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 997,
+            "arrayIndex": 997,
+            "labelName": "MONSNAME_997",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Arctibax",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 998,
+            "arrayIndex": 998,
+            "labelName": "MONSNAME_998",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Baxcalibur",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 999,
+            "arrayIndex": 999,
+            "labelName": "MONSNAME_999",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Gimmighoul",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1000,
+            "arrayIndex": 1000,
+            "labelName": "MONSNAME_1000",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Gholdengo",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1001,
+            "arrayIndex": 1001,
+            "labelName": "MONSNAME_1001",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Wo-Chien",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1002,
+            "arrayIndex": 1002,
+            "labelName": "MONSNAME_1002",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Chien-Pao",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1003,
+            "arrayIndex": 1003,
+            "labelName": "MONSNAME_1003",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ting-Lu",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1004,
+            "arrayIndex": 1004,
+            "labelName": "MONSNAME_1004",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Chi-Yu",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1005,
+            "arrayIndex": 1005,
+            "labelName": "MONSNAME_1005",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Roaring Moon",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1006,
+            "arrayIndex": 1006,
+            "labelName": "MONSNAME_1006",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Valiant",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1007,
+            "arrayIndex": 1007,
+            "labelName": "MONSNAME_1007",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Koraidon",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1008,
+            "arrayIndex": 1008,
+            "labelName": "MONSNAME_1008",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Miraidon",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1009,
+            "arrayIndex": 1009,
+            "labelName": "MONSNAME_1009",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Walking Wake",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1010,
+            "arrayIndex": 1010,
+            "labelName": "MONSNAME_1010",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Leaves",
+                    "strWidth": 106.609375
+                }
+            ]
         }
     ]
 }
