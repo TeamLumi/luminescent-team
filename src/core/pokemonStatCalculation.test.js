@@ -47,7 +47,7 @@ describe('calculate min stat', () => {
 describe('calculate max pos stat', () => {
   test('with hp stat, level 100', () => {
     const stat = calcMaxPosStat(45, true, 100);
-    expect(stat).toBe(295);
+    expect(stat).toBe(294);
   });
 
   test('with hp stat, level 50', () => {
