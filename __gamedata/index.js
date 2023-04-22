@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 //All the important numbers
 const PersonalTable = require('./PersonalTable.json');
 const GrowTable = require('./GrowTable.json');
@@ -21,28 +24,34 @@ const abilityNames = require('./english_ss_tokusei.json');
 const abilityInfo = require('./english_ss_tokuseiinfo.json');
 const typeName = require('./english_ss_typename.json');
 const moveNames = require('./english_ss_wazaname.json');
-const moveInfo = require('./english_ss_wazainfo.json')
+const moveInfo = require('./english_ss_wazainfo.json');
 const itemNames = require('./english_ss_itemname.json');
 
+//Custom files
+const moveEnum = require('./moveEnum.json');
+const smogonMoves = require('./smogonMoves.json');
+
 module.exports = {
-    PersonalTable,
-    GrowTable,
-    EvolveTable,
-    EggMovesTable,
-    LearnsetTable,
-    MovesTable,
-    basePokemonNames,
-    formPokemonNames,
-    pokemonHeight,
-    pokemonWeight,
-    pokemonDexType,
-    pokemonPokedexInfo,
-    natureNames,
-    abilityNames,
-    abilityInfo,
-    typeName,
-    moveNames,
-    moveInfo,
-    ItemTable,
-    itemNames
-}
+  PersonalTable,
+  GrowTable,
+  EvolveTable,
+  EggMovesTable,
+  LearnsetTable,
+  MovesTable,
+  basePokemonNames,
+  formPokemonNames,
+  pokemonHeight,
+  pokemonWeight,
+  pokemonDexType,
+  pokemonPokedexInfo,
+  natureNames,
+  abilityNames,
+  abilityInfo,
+  typeName,
+  moveNames,
+  moveInfo,
+  ItemTable,
+  itemNames,
+  moveEnum,
+  smogonMoves,
+};
