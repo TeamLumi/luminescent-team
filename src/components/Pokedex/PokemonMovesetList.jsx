@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
-import { getMoveProperties } from '../../../dexUtils';
+import { POKEMON_MOVE_LEVEL_TYPE, getMoveProperties } from '../../../dexUtils';
 
 const DMG_TYPE_ICONS = {
   0: '/img/status_dmg_type.png',
@@ -30,13 +30,6 @@ const TYPE_COLOR_MAP = {
 };
 
 const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.6rem', md: '0.9rem', lg: '1rem' } };
-
-// interface props {
-//   moveset: {
-//     level: 'egg' | 'tm' | number;
-//     moveId: number
-//   }[]
-// }
 
 export const PokemonMovesetList = ({ moveset }) => {
   return (
@@ -71,7 +64,7 @@ const MoveIcon = ({ moveIconType }) => {
     );
   }
 
-  if (moveIconType === 'egg') {
+  if (moveIconType === POKEMON_MOVE_LEVEL_TYPE.EGG) {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '18px', sm: '26px', md: '32px' }}>
         <img src="/img/pm0000_00_00_00_L.webp" alt="Egg Move" />
@@ -79,7 +72,7 @@ const MoveIcon = ({ moveIconType }) => {
     );
   }
 
-  if (moveIconType === 'tm') {
+  if (moveIconType === POKEMON_MOVE_LEVEL_TYPE.TM) {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '30px', sm: '40px' }}>
         <img src="/img/Item_TM.webp" alt="Technical Machine" />
