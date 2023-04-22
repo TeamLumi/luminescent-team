@@ -409,7 +409,7 @@ function getEggMoves(dexId = 0) {
     }))
 }
 
-module.exports = {
+export {
     getPokemonInfo,
     getAbilityInfo,
     getEvolutionData,
