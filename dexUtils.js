@@ -21,6 +21,10 @@ const {
     itemNames
 } = require('./__gamedata');
 
+export const POKEMON_MOVE_LEVEL_TYPE = {
+  EGG: 'egg',
+  TM: 'tm'
+}
 
 const POKEMON_MAP = basePokemonNames.labelDataArray.reduce((acc, curr, i) => {
     const name = curr.wordDataArray[0].str;
@@ -312,7 +316,7 @@ function getTechMachineLearnset(m1, m2, m3, m4) {
         if (learnset[i] === 0) continue;
 
         const tm = ItemTable.WazaMachine[i];
-        canLearn.push({level: 'tm', moveId: tm.wazaNo});
+        canLearn.push({level: POKEMON_MOVE_LEVEL_TYPE.TM, moveId: tm.wazaNo});
     }
 
     return canLearn;
@@ -391,10 +395,6 @@ function getMoveDescription(moveId = 0) {
     return description;
 }
 
-// function getEvolutionStages(monsno = 0) {
-//     const evos = EVOLUTION_MAP[monsno];
-// }
-
 function getPastEvolutionStages(monsno = 0) {
 
 }
@@ -404,7 +404,7 @@ function getEggMoves(dexId = 0) {
     const formNo = getPokemonFormId(monsno, dexId);
     const eggMoves = EggMovesTable.Data.find(e => e.no === monsno && e.formNo === formNo)?.wazaNo ?? [];
     return eggMoves.map(moveId => ({
-        level: 'egg',
+        level: POKEMON_MOVE_LEVEL_TYPE.EGG,
         moveId
     }))
 }
