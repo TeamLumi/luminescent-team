@@ -20,7 +20,7 @@ export default function EvolutionGraph() {
         <Typography variant="h6">→</Typography>
         <img src="/img/pm0002_00_00_00_L.webp" alt="Stage 2 Evo" />
         <Typography variant="h6">→</Typography>
-        <img src="/img/pm0003_00_00_00_L.webp" alt="Stage 3 Evo" />
+        <img src="/img/pm0003_00_00_00_L.webp" width={90} alt="Stage 3 Evo" />
       </Box>
     </div>
   );

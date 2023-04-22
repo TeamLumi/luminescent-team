@@ -5,6 +5,11 @@
     "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "parser": "@babel/eslint-parser",
   "rules": {
     "prettier/prettier": "off",
