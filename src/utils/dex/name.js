@@ -31,6 +31,11 @@ function getPokemonName(pokemonId = 0) {
   return POKEMON_NAME_MAP[pokemonId];
 }
 
+function getPokemonIdFromName(name = 'Egg') {
+  const id = Object.values(POKEMON_NAME_MAP).findIndex((e) => e === name);
+  return id === -1 ? 0 : id;
+}
+
 function getFormNameOfProblematicPokemon(id = 0) {
   switch (id) {
     case 1242:
@@ -55,4 +60,8 @@ function getPokemonMonsNoFromName(pokemonName) {
   return basePokemonNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === pokemonName);
 }
 
-export { getPokemonMonsNoFromName, getFormName, getFormNameOfProblematicPokemon, getPokemonName };
+function getPokemonNames(maxMonsno) {
+  return Object.values(POKEMON_NAME_MAP).slice(0, maxMonsno);
+}
+
+export { getPokemonMonsNoFromName, getFormName, getFormNameOfProblematicPokemon, getPokemonName, getPokemonIdFromName };
