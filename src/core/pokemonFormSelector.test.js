@@ -44,19 +44,31 @@ function getAllPokemonFormImageFilenames() {
   return filenames;
 }
 
-test.each([...getAllPokemonFormImageFilenames()])('pokemon form image %s exists', (filename, done) => {
-  const imgFilePath = path.join(__dirname, '../../static/img/', filename);
-  fs.access(imgFilePath, fs.constants.F_OK, (err) => {
-    let fileExists = true;
-    if (err) {
-      fileExists = false;
-    }
+describe('static images', () => {
+  const allPokemonFilenames = getAllPokemonFormImageFilenames();
+  const BATCH_SIZE = 300;
 
-    try {
-      expect(fileExists).toBe(true);
-      done();
-    } catch (err) {
-      done(err);
-    }
-  });
+  for (let batch = 0; batch < allPokemonFilenames.length; batch += BATCH_SIZE) {
+    describe(`in batches ${batch}`, () => {
+      test.each([...allPokemonFilenames.slice(batch, batch + BATCH_SIZE)])(
+        'pokemon form image %s exists',
+        (filename, done) => {
+          const imgFilePath = path.join(__dirname, '../../static/img/', filename);
+          fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+            let fileExists = true;
+            if (err) {
+              fileExists = false;
+            }
+
+            try {
+              expect(fileExists).toBe(true);
+              done();
+            } catch (err) {
+              done(err);
+            }
+          });
+        },
+      );
+    });
+  }
 });
