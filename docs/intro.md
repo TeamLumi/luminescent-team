@@ -43,5 +43,5 @@ We hope you enjoy our romhack!
 - Made by Astorious.
 
 ### [Randomization Guide](https://www.nexusmods.com/pokemonbdsp/articles/3)
-- This guide has all the information necessary to randomize Luminescent Platinum! Please follow it step by step to ensure proper implementation. Further questions can be asked in our discord.
+- This guide has all the information necessary to randomize Luminescent Platinum! Please follow it step by step to ensure proper implementation. Further questions can be asked in our discord, or as comments to the article.
 - Made by DJ.
