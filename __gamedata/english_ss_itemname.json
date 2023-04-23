@@ -52093,6 +52093,36 @@
                     "strWidth": 140.828125
                 }
             ]
+        },
+        {
+            "labelIndex": 1636,
+            "arrayIndex": 1836,
+            "labelName": "ITEMNAME_1636",
+            "styleInfo": {
+                "styleIndex": 121,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 420,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Old Mewtwo Armor",
+                    "strWidth": 140.828125
+                }
+            ]
         }
     ]
 }
