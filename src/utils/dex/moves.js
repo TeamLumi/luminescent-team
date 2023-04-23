@@ -98,4 +98,12 @@ function getTechMachineLearnset(m1, m2, m3, m4) {
   return canLearn;
 }
 
-export { generateMovesViaLearnset, getMoveId, getMoveString, isMoveNameSmogonCompatible };
+export {
+  generateMovesViaLearnset,
+  getMoveId,
+  getMoveString,
+  isMoveNameSmogonCompatible,
+  getEggMoves,
+  getTechMachineLearnset,
+  getMoveProperties,
+};
