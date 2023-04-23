@@ -41,3 +41,8 @@ We hope you enjoy our romhack!
 - What's a "Professor Oak Challenge"? Why, it's catching everything possible as you go along to complete your Pokédex! This tracker helps you mark off when you've caught everything possible on a route before moving on, as well as tracking your full Pokédex at the bottom.
 - You must make your own copy before it will work.
 - Made by Astorious.
+
+### [Randomization Guide](https://www.nexusmods.com/pokemonbdsp/articles/3)
+- This guide has all the information necessary to randomize Luminescent Platinum!
+- Currently there is a bug where it may generate some "shiny female Pikachus" as wild encounters, but they cannot be fought or caught and the only option is to run. The tool creator is aware and working on it. Thank you for your patience.
+- Made by DJ.
