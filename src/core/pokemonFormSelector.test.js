@@ -1,4 +1,6 @@
 import { POKEMON_FORM_ID_MAP, getPokemonFormIndexById, getPokemonImageFilename } from './pokemonFormSelector';
+import fs from 'fs';
+import path from 'path';
 
 test('pokemon Venusaur should have 4 different forms', () => {
   const venusaurMonsno = 3;
@@ -28,4 +30,33 @@ test.each([
   [1036, 1, 'pm1036_01_00_00_L.webp'],
 ])('get pokemon image file name', (monsno, formIndex, filename) => {
   expect(getPokemonImageFilename(monsno, formIndex)).toBe(filename);
+});
+
+function getAllPokemonFormImageFilenames() {
+  const filenames = [];
+
+  for (const [key, value] of Object.entries(POKEMON_FORM_ID_MAP)) {
+    for (const pokemonId in value) {
+      filenames.push(getPokemonImageFilename(key, pokemonId));
+    }
+  }
+
+  return filenames;
+}
+
+test.each([...getAllPokemonFormImageFilenames()])('pokemon form image %s exists', (filename, done) => {
+  const imgFilePath = path.join(__dirname, '../../static/img/', filename);
+  fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+    let fileExists = true;
+    if (err) {
+      fileExists = false;
+    }
+
+    try {
+      expect(fileExists).toBe(true);
+      done();
+    } catch (err) {
+      done(err);
+    }
+  });
 });
