@@ -42,4 +42,46 @@ function getGrassKnotPower(weightkg) {
   return 20;
 }
 
-export { FORM_MAP, getPokemonIdFromFormMap, getGender };
+function getPokemonIdFromMonsNoAndForm(monsno, formno) {
+  return PersonalTable.Personal.find((e) => e.monsno === monsno && FORM_MAP[e.monsno][formno] === e.id)?.id;
+}
+
+function getPokemonInfo(monsno = 0) {
+  const p = PersonalTable.Personal[monsno];
+  return {
+    monsno: monsno,
+    name: getName(monsno),
+    ability1: getAbility(p.tokusei1),
+    ability2: getAbility(p.tokusei2),
+    abilityH: getAbility(p.tokusei3),
+    tmLearnset: getTechMachineLearnset(p.machine1, p.machine2, p.machine3, p.machine4),
+    prettyBaseStats: formatBaseStats(p),
+    baseStats: {
+      hp: p.basic_hp,
+      atk: p.basic_atk,
+      def: p.basic_def,
+      spa: p.basic_spatk,
+      spd: p.basic_spdef,
+      spe: p.basic_agi,
+    },
+    baseStatsTotal: p.basic_hp + p.basic_atk + p.basic_def + p.basic_spatk + p.basic_spdef + p.basic_agi,
+    weight: getWeight(monsno),
+    height: getHeight(monsno),
+    grassKnotPower: getGrassKnotPower(getWeight(monsno)),
+    type1: getType(p.type1),
+    type2: getType(p.type2),
+    imageSrc: getImage(monsno),
+  };
+}
+
+export {
+  FORM_MAP,
+  getPokemonIdFromFormMap,
+  getGender,
+  getGrassKnotPower,
+  getImage,
+  formatBaseStats,
+  parseTmLearnsetSection,
+  getPokemonIdFromMonsNoAndForm,
+  getPokemonInfo,
+};
