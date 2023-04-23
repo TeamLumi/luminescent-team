@@ -44,4 +44,58 @@ function getMoveString(id = 0) {
   return str;
 }
 
+function getMoveProperties(moveId = 0) {
+  const { type, damageType, power, hitPer, basePP } = MovesTable.Waza[moveId];
+  const maxPP = (basePP ?? 0) * (8 / 5);
+  return {
+    name: moveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
+    desc: getMoveDescription(moveId),
+    type,
+    damageType, //0 = Status, 1 = Physical, 2 = Special
+    maxPP,
+    power,
+    accuracy: hitPer,
+  };
+}
+
+function getEggMoves(dexId = 0) {
+  const { monsno } = PersonalTable.Personal[dexId];
+  const formNo = getPokemonFormId(monsno, dexId);
+  const eggMoves = EggMovesTable.Data.find((e) => e.no === monsno && e.formNo === formNo)?.wazaNo ?? [];
+  return eggMoves.map((moveId) => ({
+    level: 'egg',
+    moveId,
+  }));
+}
+
+function getMoveDescription(moveId = 0) {
+  const wordData = moveInfo.labelDataArray[moveId].wordDataArray;
+  let description = wordData.reduce((moveDescription, currentString) => {
+    return moveDescription + currentString.str + ' ';
+  }, '');
+  return description;
+}
+
+function getTechMachineLearnset(m1, m2, m3, m4) {
+  const learnset = [
+    parseTmLearnsetSection(m1),
+    parseTmLearnsetSection(m2),
+    parseTmLearnsetSection(m3),
+    parseTmLearnsetSection(m4),
+  ]
+    .join('')
+    .split('')
+    .flatMap((e) => parseInt(e));
+
+  const canLearn = [];
+  for (let i = 0; i < learnset.length; i++) {
+    if (learnset[i] === 0) continue;
+
+    const tm = ItemTable.WazaMachine[i];
+    canLearn.push({ level: 'tm', moveId: tm.wazaNo });
+  }
+
+  return canLearn;
+}
+
 export { generateMovesViaLearnset, getMoveId, getMoveString, isMoveNameSmogonCompatible };
