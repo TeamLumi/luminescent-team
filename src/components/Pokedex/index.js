@@ -8,6 +8,7 @@ import { PokemonStats } from './PokemonStats';
 import { PokemonSearch } from './PokemonSearch';
 import { PokemonMovesetList } from './PokemonMovesetList';
 import { PokemonAccordion } from './PokemonAccordion';
+import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -64,6 +65,10 @@ export default function PokedexFeatures() {
       <div className="container">
         <EvolutionGraph dexId={pokemonDexId} />
       </div>
+
+      <Container>
+        <PokemonAlternativeFormsList pokemonDexId={pokemonDexId} />
+      </Container>
 
       <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">

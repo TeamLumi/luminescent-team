@@ -34,6 +34,7 @@
     "@babel/preset-env": "^7.21.4",
     "@docusaurus/eslint-plugin": "^2.4.0",
     "@docusaurus/module-type-aliases": "2.1.0",
+    "@types/jest": "^29.5.1",
     "babel-jest": "^29.5.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
