@@ -32,19 +32,24 @@ test.each([
   expect(getPokemonImageFilename(monsno, formIndex)).toBe(filename);
 });
 
-function getAllPokemonFormImageFilenames() {
-  const filenames = [];
+function getAllPokemonFormImageData() {
+  const pokemonFormData = [];
 
-  for (const [key, value] of Object.entries(POKEMON_FORM_ID_MAP)) {
-    for (const pokemonId in value) {
-      filenames.push(getPokemonImageFilename(key, pokemonId));
+  for (const entry of Object.entries(POKEMON_FORM_ID_MAP)) {
+    const monsno = entry[0];
+    const pokemonForms = entry[1];
+
+    for (let i = 0; i < pokemonForms.length; i++) {
+      const pokemonForm = pokemonForms[i];
+      const filename = getPokemonImageFilename(monsno, getPokemonFormIndexById(monsno, pokemonForm.pokemonId));
+      pokemonFormData.push([filename, pokemonForm.formName]);
     }
   }
 
-  return filenames;
+  return pokemonFormData;
 }
 
-test.skip.each([...getAllPokemonFormImageFilenames()])('pokemon form image %s exists', (filename, done) => {
+test.skip.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, formName, done) => {
   const imgFilePath = path.join(__dirname, '../../static/img/', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
     let fileExists = true;
