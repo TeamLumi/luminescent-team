@@ -25,4 +25,4 @@ function getAbilityInfo(id) {
   return abilityInfo.labelDataArray[id]?.wordDataArray[0]?.str || 'None';
 }
 
-export { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString };
+export { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString, getAbilityInfo };
