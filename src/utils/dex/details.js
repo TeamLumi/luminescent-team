@@ -18,3 +18,5 @@ function getWeight(monsno = 0) {
   const poundsInKilogram = pounds * 0.453592;
   return poundsInKilogram.toFixed(2);
 }
+
+export { getHeight, getWeight };
