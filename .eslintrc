@@ -5,6 +5,11 @@
     "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "parser": "@babel/eslint-parser",
   "rules": {
     "prettier/prettier": "off",
@@ -13,6 +18,8 @@
   },
   "env": {
     "browser": true,
-    "node": true
-  }
+    "node": true,
+    "jest/globals": true
+  },
+  "plugins": ["jest"]
 }

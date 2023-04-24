@@ -1,5 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import { Box, Typography, TextField } from '@mui/material';
+import { calcMaxPosStat, calcMaxStat, calcMinNegStat, calcMinStat } from '../../core/pokemonStatCalculation';
+
+const POKEMON_MIN_LEVEL = 1;
+const POKEMON_MAX_LEVEL = 100;
 
 function getStatBarValues(stat) {
   let width = Math.floor((stat * 200) / 200);
@@ -8,46 +12,6 @@ function getStatBarValues(stat) {
   if (color > 360) color = 360;
   return { width, color };
 }
-
-const NATURE_MULTIPLIER = {
-  LOW: 0.9,
-  STANDARD: 1.0,
-  HIGH: 1.1,
-};
-
-const IV = {
-  MIN: 0,
-  MAX: 31,
-};
-
-const EV = {
-  MIN: 0,
-  MAX: 255,
-};
-
-const MIN_LEVEL = 1;
-const MAX_LEVEL = 100;
-
-function calcStat(baseStat, isHP, level, individualValue = 0, effortValue = 0, natureMult) {
-  if (isHP) {
-    if (baseStat === 1) return 1;
-    return Math.floor(
-      (Math.floor(2 * baseStat + individualValue + Math.floor(effortValue / 4) + 100) * level) / 100 + 10,
-    );
-  }
-  let val = Math.floor((Math.floor(2 * baseStat + individualValue + Math.floor(effortValue / 4)) * level) / 100 + 5);
-
-  if (natureMult && !isHP) {
-    val *= natureMult;
-  }
-
-  return Math.floor(val);
-}
-
-const calcMinNegStat = (stat, isHp, level) => calcStat(stat, isHp, level, IV.MIN, EV.MIN, NATURE_MULTIPLIER.LOW);
-const calcMinStat = (stat, isHp, level) => calcStat(stat, isHp, level, IV.MAX, EV.MIN, NATURE_MULTIPLIER.STANDARD);
-const calcMaxStat = (stat, isHp, level) => calcStat(stat, isHp, level, IV.MAX, EV.MAX, NATURE_MULTIPLIER.STANDARD);
-const calcMaxPosStat = (stat, isHp, level) => calcStat(stat, isHp, level, IV.MAX, EV.MAX, NATURE_MULTIPLIER.HIGH);
 
 export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
   const [level, setLevel] = useState(100);
@@ -149,13 +113,13 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
                 sx={{ marginTop: '10px', float: 'right', color: 'inherit' }}
                 type="number"
                 size="small"
-                inputProps={{ min: MIN_LEVEL, max: MAX_LEVEL }}
+                inputProps={{ min: POKEMON_MIN_LEVEL, max: POKEMON_MAX_LEVEL }}
                 value={level}
                 onChange={(e) => {
                   let value = parseInt(e.target.value);
 
-                  if (value > MAX_LEVEL) value = MAX_LEVEL;
-                  if (value < MIN_LEVEL) value = MIN_LEVEL;
+                  if (value > POKEMON_MAX_LEVEL) value = POKEMON_MAX_LEVEL;
+                  if (value < POKEMON_MIN_LEVEL) value = POKEMON_MIN_LEVEL;
                   setLevel(value);
                 }}
                 label="Level"

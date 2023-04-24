@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
 import style from './styles.module.css';
-import { Grid, Typography, Avatar, Container, Box } from '@mui/material';
+import { Box, Typography, Avatar, Container } from '@mui/material';
 import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../../dexUtils';
 import Type from './type';
-import PokedexAccordion from './pokedexAccordion';
 import EvolutionGraph from './EvolutionGraph';
-import { PokemonStats } from './PokemonStats/PokemonStats';
+import { PokemonStats } from './PokemonStats';
 import { PokemonSearch } from './PokemonSearch';
+import { PokemonMovesetList } from './PokemonMovesetList';
+import { PokemonAccordion } from './PokemonAccordion';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
   const pokemonInfo = getPokemonInfo(pokemonDexId ?? 0);
-  const [expanded, setExpanded] = useState('panel1');
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
 
   const learnset = getPokemonLearnset(pokemonDexId);
   const moveList = [];
@@ -67,38 +64,18 @@ export default function PokedexFeatures() {
       <div className="container">
         <EvolutionGraph dexId={pokemonDexId} />
       </div>
-      <Grid item xs={12}>
-        <PokedexAccordion
-          dexId={pokemonDexId}
-          learnset={moveList}
-          panelId="panel1"
-          headerId="panel1bh-header"
-          ariaLabel="panel1bh-content"
-          expanded={expanded}
-          handleChange={handleChange}
-          learnsetName="Moves learnt via level-up"
-        />
-        <PokedexAccordion
-          dexId={pokemonDexId}
-          learnset={tmLearnset}
-          panelId="panel2"
-          headerId="panel2bh-header"
-          ariaLabel="panel2bh-content"
-          expanded={expanded}
-          handleChange={handleChange}
-          learnsetName="Moves learnt via Technical Machine"
-        />
-        <PokedexAccordion
-          dexId={pokemonDexId}
-          learnset={eggLearnset}
-          panelId="panel3"
-          headerId="panel3bh-header"
-          ariaLabel="panel3bh-content"
-          expanded={expanded}
-          handleChange={handleChange}
-          learnsetName="Moves learnt via breeding"
-        />
-      </Grid>
+
+      <Container>
+        <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
+          <PokemonMovesetList moveset={moveList} />
+        </PokemonAccordion>
+        <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
+          <PokemonMovesetList moveset={tmLearnset} />
+        </PokemonAccordion>
+        <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
+          <PokemonMovesetList moveset={eggLearnset} />
+        </PokemonAccordion>
+      </Container>
     </Container>
   );
 }
