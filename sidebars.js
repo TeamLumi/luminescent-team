@@ -22,6 +22,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         slug: 'category/installation',
+       description: 'Full installation instructions for Luminescent Platinum on various supported platforms. We recommend you use hardware, or Ryujinx if your machine is strong enough for it.',
       },
       collapsed: true,
       items: [
@@ -38,6 +39,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         slug: 'category/special-events',
+        description: 'See where to get special Pokémon in Luminescent Platinum. When possible, shiny hunting has been made as easy as possible for your convenience!',
       },
       collapsed: true,
       items: [
