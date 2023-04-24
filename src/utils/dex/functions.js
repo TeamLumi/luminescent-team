@@ -1,4 +1,14 @@
-const { PersonalTable } = require('../../../__gamedata');
+import { PersonalTable } from '../../../__gamedata';
+import {
+  getPokemonName,
+  getAbilityString,
+  getTechMachineLearnset,
+  formatBaseStats,
+  getWeight,
+  getHeight,
+  getGrassKnotPower,
+  getTypeName,
+} from './';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = PersonalTable.Personal.reduce((formMap, currentPokemon) => {
@@ -50,10 +60,10 @@ function getPokemonInfo(monsno = 0) {
   const p = PersonalTable.Personal[monsno];
   return {
     monsno: monsno,
-    name: getName(monsno),
-    ability1: getAbility(p.tokusei1),
-    ability2: getAbility(p.tokusei2),
-    abilityH: getAbility(p.tokusei3),
+    name: getPokemonName(monsno),
+    ability1: getAbilityString(p.tokusei1),
+    ability2: getAbilityString(p.tokusei2),
+    abilityH: getAbilityString(p.tokusei3),
     tmLearnset: getTechMachineLearnset(p.machine1, p.machine2, p.machine3, p.machine4),
     prettyBaseStats: formatBaseStats(p),
     baseStats: {
@@ -68,8 +78,8 @@ function getPokemonInfo(monsno = 0) {
     weight: getWeight(monsno),
     height: getHeight(monsno),
     grassKnotPower: getGrassKnotPower(getWeight(monsno)),
-    type1: getType(p.type1),
-    type2: getType(p.type2),
+    type1: getTypeName(p.type1),
+    type2: getTypeName(p.type2),
     imageSrc: getImage(monsno),
   };
 }

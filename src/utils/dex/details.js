@@ -1,3 +1,5 @@
+import { pokemonHeight, pokemonWeight } from '../../../__gamedata';
+
 function getHeight(monsno = 0) {
   const heightString = pokemonHeight.labelDataArray[monsno]?.wordDataArray[0]?.str || '0';
   const [feetString, inchesString] = heightString.split("'");
