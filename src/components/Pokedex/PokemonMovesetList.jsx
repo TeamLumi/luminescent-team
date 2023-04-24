@@ -31,7 +31,7 @@ const TYPE_COLOR_MAP = {
 
 const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.6rem', md: '0.9rem', lg: '1rem' } };
 
-export const PokemonMovesetList = ({ moveset }) => {
+export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => {
   return (
     <Box
       sx={{
@@ -48,8 +48,12 @@ export const PokemonMovesetList = ({ moveset }) => {
         marginBottom: '8px',
       }}
     >
-      {moveset.map((move) => (
-        <MovesetListItem key={`move-${move.moveId}`} moveId={move.moveId} moveLevel={move.level} />
+      {moveset.map((move, i) => (
+        <MovesetListItem
+          key={`${pokemonDexId}-${movesetPrefix}-move-${move.moveId}-${i}`}
+          moveLevel={move.level}
+          move={getMoveProperties(move.moveId)}
+        />
       ))}
     </Box>
   );
@@ -83,9 +87,7 @@ const MoveIcon = ({ moveIconType }) => {
   return null;
 };
 
-const MovesetListItem = ({ moveLevel, moveId }) => {
-  const move = getMoveProperties(moveId);
-
+const MovesetListItem = ({ moveLevel, move }) => {
   return (
     <>
       <Box display="flex" alignItems="center" justifyContent="center">
