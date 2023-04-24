@@ -64,4 +64,11 @@ function getPokemonNames(maxMonsno) {
   return Object.values(POKEMON_NAME_MAP).slice(0, maxMonsno);
 }
 
-export { getPokemonMonsNoFromName, getFormName, getFormNameOfProblematicPokemon, getPokemonName, getPokemonIdFromName };
+export {
+  getPokemonMonsNoFromName,
+  getFormName,
+  getFormNameOfProblematicPokemon,
+  getPokemonName,
+  getPokemonIdFromName,
+  getPokemonNames,
+};
