@@ -9,6 +9,7 @@ import { PokemonSearch } from './PokemonSearch';
 import { PokemonMovesetList } from './PokemonMovesetList';
 import { PokemonAccordion } from './PokemonAccordion';
 import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
+import { PokemonAbilities } from './PokemonAbilities';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -61,6 +62,15 @@ export default function PokedexFeatures() {
           </div>
         </div>
       </div>
+
+      <Container>
+        <PokemonAbilities
+          abilityName1={pokemonInfo.ability1}
+          abilityName2={pokemonInfo.ability2}
+          abilityNameHidden={pokemonInfo.abilityH}
+        />
+      </Container>
+
       <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
       <div className="container">
         <EvolutionGraph dexId={pokemonDexId} />
