@@ -350,7 +350,8 @@ function getPokemonInfo(monsno = 0) {
         grassKnotPower: getGrassKnotPower(getWeight(monsno)),
         type1: getType(p.type1),
         type2: getType(p.type2),
-        imageSrc: getImage(monsno)
+        imageSrc: getImage(monsno),
+        genderDecimalValue: p.sex
     }
 }
 
