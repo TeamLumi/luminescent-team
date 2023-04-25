@@ -5,6 +5,7 @@ const config = {
     ['jest-junit', { outputDirectory: 'reports', outputName: 'jest-report.xml' }],
     'summary',
   ],
+  testEnvironment: 'jsdom',
 };
 
 module.exports = config;
