@@ -9,24 +9,24 @@ const DMG_TYPE_ICONS = {
 };
 
 const TYPE_COLOR_MAP = {
-  0: { name: 'Normal', color: '#929da3' },
-  1: { name: 'Fighting', color: '#ce436a' },
-  2: { name: 'Flying', color: '#8caadc' },
-  3: { name: 'Poison', color: '#ac66c8' },
-  4: { name: 'Ground', color: '#d97946' },
-  5: { name: 'Rock', color: '#c7b887' },
-  6: { name: 'Bug', color: '#90c127' },
-  7: { name: 'Ghost', color: '#4e6caa' },
-  8: { name: 'Steel', color: '#518ea3' },
-  9: { name: 'Fire', color: '#ff9d54' },
-  10: { name: 'Water', color: '#4f92d6' },
-  11: { name: 'Grass', color: '#65bd55' },
-  12: { name: 'Electric', color: '#fad143' },
-  13: { name: 'Psychic', color: '#f97175' },
-  14: { name: 'Ice', color: '#72cfbd' },
-  15: { name: 'Dragon', color: '#116ac4' },
-  16: { name: 'Dark', color: '#5b5464' },
-  17: { name: 'Fairy', color: '#eb92e4' },
+  0: { name: 'Normal', color: '#929da3', iconFilename: 'Normal.webp' },
+  1: { name: 'Fighting', color: '#ce436a', iconFilename: 'Fighting.webp' },
+  2: { name: 'Flying', color: '#8caadc', iconFilename: 'Flying.webp' },
+  3: { name: 'Poison', color: '#ac66c8', iconFilename: 'Poison.webp' },
+  4: { name: 'Ground', color: '#d97946', iconFilename: 'Ground.webp' },
+  5: { name: 'Rock', color: '#c7b887', iconFilename: 'Rock.webp' },
+  6: { name: 'Bug', color: '#90c127', iconFilename: 'Bug.webp' },
+  7: { name: 'Ghost', color: '#4e6caa', iconFilename: 'Ghost.webp' },
+  8: { name: 'Steel', color: '#518ea3', iconFilename: 'Steel.webp' },
+  9: { name: 'Fire', color: '#ff9d54', iconFilename: 'Fire.webp' },
+  10: { name: 'Water', color: '#4f92d6', iconFilename: 'Water.webp' },
+  11: { name: 'Grass', color: '#65bd55', iconFilename: 'Grass.webp' },
+  12: { name: 'Electric', color: '#fad143', iconFilename: 'Electric.webp' },
+  13: { name: 'Psychic', color: '#f97175', iconFilename: 'Psychic.webp' },
+  14: { name: 'Ice', color: '#72cfbd', iconFilename: 'Ice.webp' },
+  15: { name: 'Dragon', color: '#116ac4', iconFilename: 'Dragon.webp' },
+  16: { name: 'Dark', color: '#5b5464', iconFilename: 'Dark.webp' },
+  17: { name: 'Fairy', color: '#eb92e4', iconFilename: 'Fairy.webp' },
 };
 
 const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.6rem', md: '0.9rem', lg: '1rem' } };
@@ -59,7 +59,7 @@ export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => 
   );
 };
 
-const MoveIcon = ({ moveIconType }) => {
+const MoveIcon = ({ moveIconType, moveTypeId }) => {
   if (typeof moveIconType === 'number') {
     return (
       <Typography sx={{ textAlign: 'center', fontSize: { xs: '0.7rem', sm: '0.8rem', md: '1rem' } }}>
@@ -79,7 +79,7 @@ const MoveIcon = ({ moveIconType }) => {
   if (moveIconType === POKEMON_MOVE_LEVEL_TYPE.TM) {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '30px', sm: '40px' }}>
-        <img src="/img/Item_TM.webp" alt="Technical Machine" />
+        <img src={`/img/tms/${TYPE_COLOR_MAP[moveTypeId].iconFilename}`} alt="Technical Machine" />
       </Box>
     );
   }
@@ -91,7 +91,7 @@ const MovesetListItem = ({ moveLevel, move }) => {
   return (
     <>
       <Box display="flex" alignItems="center" justifyContent="center">
-        <MoveIcon moveIconType={moveLevel} />
+        <MoveIcon moveIconType={moveLevel} moveTypeId={move.type} />
       </Box>
 
       <Box>
