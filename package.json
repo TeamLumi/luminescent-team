@@ -64,8 +64,5 @@
   },
   "engines": {
     "node": ">=16.14"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
   }
 }
