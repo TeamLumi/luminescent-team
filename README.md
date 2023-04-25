@@ -46,3 +46,12 @@ There is also an Action to attempt building the site on any pull requests made t
 
 1. `npm run test` generates the junit jest report in `/reports/jest-report.xml`
 2. `node scripts/junitReportParser.js` creates a csv with missing pokemon forms + expected filename in `/reports/missing-images.csv`
+
+### Convert Image Folder to webp with CLI tool cwebp (MacOS)
+
+This inline script will convert all images for a given folder into webp format with a quality of 85%.
+
+More info under: https://web.dev/codelab-serve-images-webp/
+
+1. `brew install webp`
+2. ``$ `for file in IMAGES/*; do cwebp -q 85 "$file" -o "${file%.*}.webp"; done` `` - replace `IMAGES` with folder location, don't forget the backtick quotes for the inline script
