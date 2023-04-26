@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export const PokemonAccordion = ({ children, title, id }) => {
   return (
-    <Accordion expanded={true} sx={{ color: 'inherit', backgroundColor: 'inherit' }}>
+    <Accordion sx={{ color: 'inherit', backgroundColor: 'inherit' }}>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon sx={{ color: '#777', backgroundColor: 'inherit' }} />}
         aria-controls={`panel-${id}-content`}
