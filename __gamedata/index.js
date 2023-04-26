@@ -1,6 +1,3 @@
-const fs = require('fs');
-const path = require('path');
-
 //All the important numbers
 const PersonalTable = require('./PersonalTable.json');
 const GrowTable = require('./GrowTable.json');
