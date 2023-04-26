@@ -1,8 +1,4 @@
 import { PersonalTable } from '../../../__gamedata';
-import { getPokemonName } from './name';
-import { getAbilityString } from './ability';
-import { getWeight, getHeight } from './details';
-import { getTypeName } from './types';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});
