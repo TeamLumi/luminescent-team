@@ -12,8 +12,11 @@ import {
 import { parseTmLearnsetSection, getPokemonFormId } from '.';
 
 function generateMovesViaLearnset(monsNo, level) {
-  //In BDSP, a trainer's Pokemon, when provided no moves,
-  //will use the four most recent moves in the learnset.
+  /**
+   * In BDSP, a trainer's Pokemon, when provided no moves,
+   * will use the four most recent moves in the learnset.
+   */
+
   const cutoffIndex = LearnsetTable.WazaOboe[monsNo].ar.findIndex((e, i) => {
     if (i % 2 === 1) return;
     return e > level;
