@@ -1,5 +1,4 @@
 import { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString, getAbilityInfo } from './ability';
-import { FORM_MAP, getPokemonIdFromFormMap, getGender } from './functions';
 import { getItemIdFromItemName, getItemString } from './item';
 import {
   generateMovesViaLearnset,
@@ -9,6 +8,7 @@ import {
   getEggMoves,
   getTechMachineLearnset,
   getMoveProperties,
+  getPokemonLearnset,
 } from './moves';
 import {
   getPokemonMonsNoFromName,
@@ -31,7 +31,13 @@ import {
   parseTmLearnsetSection,
   getPokemonIdFromMonsNoAndForm,
   getPokemonInfo,
+  getPokemonFormId,
 } from './functions';
+
+const POKEMON_MOVE_LEVEL_TYPE = {
+  EGG: 'egg',
+  TM: 'tm',
+};
 
 export {
   FORM_MAP,
@@ -68,4 +74,7 @@ export {
   getNatureName,
   getTypeName,
   getTypes,
+  getPokemonLearnset,
+  getPokemonFormId,
+  POKEMON_MOVE_LEVEL_TYPE,
 };
