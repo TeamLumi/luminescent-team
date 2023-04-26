@@ -64,6 +64,10 @@ function getPokemonNames(maxMonsno) {
   return Object.values(POKEMON_NAME_MAP).slice(0, maxMonsno);
 }
 
+function getPokemonFormId(monsno = 0, id) {
+  return FORM_MAP[monsno].findIndex((e) => e === id);
+}
+
 export {
   getPokemonMonsNoFromName,
   getFormName,
@@ -71,4 +75,5 @@ export {
   getPokemonName,
   getPokemonIdFromName,
   getPokemonNames,
+  getPokemonFormId,
 };
