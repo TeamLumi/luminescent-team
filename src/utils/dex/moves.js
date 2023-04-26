@@ -9,7 +9,7 @@ import {
   moveNames,
   moveInfo,
 } from '../../../__gamedata';
-import { parseTmLearnsetSection, getPokemonFormId } from '.';
+import { getPokemonFormId } from './name';
 
 function generateMovesViaLearnset(monsNo, level) {
   /**
@@ -115,6 +115,10 @@ function getPokemonLearnset(pokemonId = 0) {
   return LearnsetTable.WazaOboe[pokemonId].ar;
 }
 
+function parseTmLearnsetSection(decimal) {
+  return (decimal >>> 0).toString(2).split('').reverse().join('').padStart(32, 0);
+}
+
 export {
   generateMovesViaLearnset,
   getMoveId,
@@ -124,4 +128,5 @@ export {
   getTechMachineLearnset,
   getMoveProperties,
   getPokemonLearnset,
+  parseTmLearnsetSection,
 };
