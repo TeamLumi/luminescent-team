@@ -1,0 +1,154 @@
+import {
+  getPokemonIdFromFormMap,
+  getGender,
+  getGrassKnotPower,
+  getImage,
+  formatBaseStats,
+  getPokemonIdFromMonsNoAndForm,
+  createFormMap,
+} from './functions';
+
+describe('Dex utils function tests', () => {
+  it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
+    const result = getPokemonIdFromFormMap(3, 3); //Clone Venusaur
+    const result2 = getPokemonIdFromFormMap(3, 0); //Venusaur
+    const CLONE_VENUSAUR = 1013;
+    const VENUSAUR = 3;
+    expect(result).toBe(CLONE_VENUSAUR);
+    expect(result2).toBe(VENUSAUR);
+  });
+  it('Should return undefined when provided a bad monsno or pokemon ID', () => {
+    const result = getPokemonIdFromFormMap(9999, 0);
+    expect(result).toBeUndefined();
+  });
+  it('Should return M, F or N for a valid number', () => {
+    const resultM = getGender(0);
+    const resultF = getGender(254);
+    const resultN = getGender(255);
+    const MALE = 'M',
+      FEMALE = 'F',
+      NEUTRAL = 'N';
+    expect(resultM).toBe(MALE);
+    expect(resultF).toBe(FEMALE);
+    expect(resultN).toBe(NEUTRAL);
+  });
+
+  it('Should return null otherwise', () => {
+    expect(getGender(123)).toBeNull();
+  });
+
+  describe('getGrassKnotPower', () => {
+    it('should return 120 when weight is greater than or equal to 200', () => {
+      expect(getGrassKnotPower(200)).toBe(120);
+      expect(getGrassKnotPower(300)).toBe(120);
+    });
+
+    it('should return 100 when weight is greater than or equal to 100 but less than 200', () => {
+      expect(getGrassKnotPower(100)).toBe(100);
+      expect(getGrassKnotPower(150)).toBe(100);
+      expect(getGrassKnotPower(199)).toBe(100);
+    });
+
+    it('should return 80 when weight is greater than or equal to 50 but less than 100', () => {
+      expect(getGrassKnotPower(50)).toBe(80);
+      expect(getGrassKnotPower(75)).toBe(80);
+      expect(getGrassKnotPower(99)).toBe(80);
+    });
+
+    it('should return 60 when weight is greater than or equal to 25 but less than 50', () => {
+      expect(getGrassKnotPower(25)).toBe(60);
+      expect(getGrassKnotPower(35)).toBe(60);
+      expect(getGrassKnotPower(49)).toBe(60);
+    });
+
+    it('should return 40 when weight is greater than or equal to 10 but less than 25', () => {
+      expect(getGrassKnotPower(10)).toBe(40);
+      expect(getGrassKnotPower(15)).toBe(40);
+      expect(getGrassKnotPower(24)).toBe(40);
+    });
+
+    it('should return 20 when weight is less than 10', () => {
+      expect(getGrassKnotPower(5)).toBe(20);
+      expect(getGrassKnotPower(9)).toBe(20);
+    });
+  });
+  describe('getImage', () => {
+    test('should return the correct image URL with default values', () => {
+      expect(getImage()).toEqual('/img/pm0000_00_00_00_L.webp');
+    });
+
+    test('should return the correct image URL with specified monsno and default formindex', () => {
+      expect(getImage(25)).toEqual('/img/pm0025_00_00_00_L.webp');
+    });
+
+    test('should return the correct image URL with specified monsno and formindex', () => {
+      expect(getImage(25, 3)).toEqual('/img/pm0025_03_00_00_L.webp');
+    });
+
+    test('should pad monsno with leading zeros', () => {
+      expect(getImage(123)).toEqual('/img/pm0123_00_00_00_L.webp');
+    });
+
+    test('should pad formindex with leading zeros', () => {
+      expect(getImage(25, 9)).toEqual('/img/pm0025_09_00_00_L.webp');
+    });
+  });
+
+  describe('formatBaseStats', () => {
+    const p = {
+      basic_hp: 80,
+      basic_atk: 100,
+      basic_def: 70,
+      basic_spatk: 60,
+      basic_spdef: 70,
+      basic_agi: 90,
+    };
+
+    test('should return the correctly formatted base stats string', () => {
+      expect(formatBaseStats(p)).toEqual('HP: 80 / ATK: 100 / DEF: 70 / SPA: 60 / SPD: 70 / SPE: 90');
+    });
+
+    test('should return the correctly formatted base stats string for different input', () => {
+      const p2 = {
+        basic_hp: 100,
+        basic_atk: 150,
+        basic_def: 80,
+        basic_spatk: 120,
+        basic_spdef: 80,
+        basic_agi: 110,
+      };
+      expect(formatBaseStats(p2)).toEqual('HP: 100 / ATK: 150 / DEF: 80 / SPA: 120 / SPD: 80 / SPE: 110');
+    });
+  });
+  describe('getPokemonIdFromMonsNoAndForm', () => {
+    test('should return the correct Pokemon ID with valid monsno and formno', () => {
+      expect(getPokemonIdFromMonsNoAndForm(25, 0)).toEqual(25);
+    });
+
+    test('should return undefined with invalid monsno and formno', () => {
+      expect(getPokemonIdFromMonsNoAndForm(-1, 0)).toBeUndefined();
+    });
+
+    test('should return the correct Pokemon ID for a different monsno and formno', () => {
+      expect(getPokemonIdFromMonsNoAndForm(493, 1)).toEqual(1193);
+    });
+  });
+
+  describe('createFormMap', () => {
+    test('should add an ID to an existing form array', () => {
+      const formMap = { 25: [1, 2, 3] };
+      const currentPokemon = { monsno: 25, id: 4 };
+      const expectedFormMap = { 25: [1, 2, 3, 4] };
+      const actualFormMap = createFormMap(formMap, currentPokemon);
+      expect(actualFormMap).toEqual(expectedFormMap);
+    });
+
+    test('should create a new form array if none exists for the monsno', () => {
+      const formMap = { 25: [1, 2, 3] };
+      const currentPokemon = { monsno: 700, id: 1 };
+      const expectedFormMap = { 25: [1, 2, 3], 700: [1] };
+      const actualFormMap = createFormMap(formMap, currentPokemon);
+      expect(actualFormMap).toEqual(expectedFormMap);
+    });
+  });
+});
