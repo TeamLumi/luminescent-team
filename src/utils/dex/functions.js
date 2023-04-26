@@ -1,14 +1,5 @@
 import { PersonalTable } from '../../../__gamedata';
-import {
-  getPokemonName,
-  getAbilityString,
-  getTechMachineLearnset,
-  formatBaseStats,
-  getWeight,
-  getHeight,
-  getGrassKnotPower,
-  getTypeName,
-} from './';
+import { getPokemonName, getAbilityString, getTechMachineLearnset, getWeight, getHeight, getTypeName } from './';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = PersonalTable.Personal.reduce((formMap, currentPokemon) => {
@@ -84,6 +75,10 @@ function getPokemonInfo(monsno = 0) {
   };
 }
 
+function getPokemonFormId(monsno = 0, id) {
+  return FORM_MAP[monsno].findIndex((e) => e === id);
+}
+
 export {
   FORM_MAP,
   getPokemonIdFromFormMap,
@@ -94,4 +89,5 @@ export {
   parseTmLearnsetSection,
   getPokemonIdFromMonsNoAndForm,
   getPokemonInfo,
+  getPokemonFormId,
 };
