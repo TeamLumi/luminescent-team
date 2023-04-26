@@ -41,3 +41,8 @@ This command generates static content into the `build` directory and can be serv
 This site is automatically built and deployed to GitHub Pages using an Action.  
 Every commit to main will build and deploy a new version of the site.  
 There is also an Action to attempt building the site on any pull requests made targeting main.
+
+### Generate Missing Pokemon Form Image CSV
+
+1. `npm run test` generates the junit jest report in `/reports/jest-report.xml`
+2. `node scripts/junitReportParser.js` creates a csv with missing pokemon forms + expected filename in `/reports/missing-images.csv`

@@ -8,6 +8,8 @@ import { PokemonStats } from './PokemonStats';
 import { PokemonSearch } from './PokemonSearch';
 import { PokemonMovesetList } from './PokemonMovesetList';
 import { PokemonAccordion } from './PokemonAccordion';
+import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
+import { PokemonAbilities } from './PokemonAbilities';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -60,20 +62,33 @@ export default function PokedexFeatures() {
           </div>
         </div>
       </div>
+
+      <Container>
+        <PokemonAbilities
+          abilityName1={pokemonInfo.ability1}
+          abilityName2={pokemonInfo.ability2}
+          abilityNameHidden={pokemonInfo.abilityH}
+        />
+      </Container>
+
       <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
       <div className="container">
         <EvolutionGraph dexId={pokemonDexId} />
       </div>
 
       <Container>
+        <PokemonAlternativeFormsList pokemonDexId={pokemonDexId} />
+      </Container>
+
+      <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
-          <PokemonMovesetList moveset={moveList} />
+          <PokemonMovesetList moveset={moveList} movesetPrefix="levelup" pokemonDexId={pokemonDexId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={tmLearnset} />
+          <PokemonMovesetList moveset={tmLearnset} movesetPrefix="tm" pokemonDexId={pokemonDexId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
-          <PokemonMovesetList moveset={eggLearnset} />
+          <PokemonMovesetList moveset={eggLearnset} movesetPrefix="egg" pokemonDexId={pokemonDexId} />
         </PokemonAccordion>
       </Container>
     </Container>
