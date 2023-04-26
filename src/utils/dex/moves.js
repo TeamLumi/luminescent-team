@@ -1,4 +1,15 @@
-const { LearnsetTable, moveEnum, smogonMoves } = require('../../../__gamedata');
+import {
+  LearnsetTable,
+  EggMovesTable,
+  MovesTable,
+  moveEnum,
+  smogonMoves,
+  ItemTable,
+  PersonalTable,
+  moveNames,
+  moveInfo,
+} from '../../../__gamedata';
+import { parseTmLearnsetSection, getPokemonFormId } from '.';
 
 function generateMovesViaLearnset(monsNo, level) {
   //In BDSP, a trainer's Pokemon, when provided no moves,
@@ -97,6 +108,9 @@ function getTechMachineLearnset(m1, m2, m3, m4) {
 
   return canLearn;
 }
+function getPokemonLearnset(pokemonId = 0) {
+  return LearnsetTable.WazaOboe[pokemonId].ar;
+}
 
 export {
   generateMovesViaLearnset,
@@ -106,4 +120,5 @@ export {
   getEggMoves,
   getTechMachineLearnset,
   getMoveProperties,
+  getPokemonLearnset,
 };
