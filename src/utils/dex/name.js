@@ -1,6 +1,9 @@
-const { PersonalTable, basePokemonNames, formPokemonNames } = require('../../../__gamedata');
+import { PersonalTable, basePokemonNames, formPokemonNames } from '../../../__gamedata';
+import { FORM_MAP } from './functions';
 
-const POKEMON_NAME_MAP = PersonalTable.Personal.reduce((pokemonNameMap, currentPokemon) => {
+const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
+
+function createPokemonMap(pokemonNameMap, currentPokemon) {
   try {
     const { id } = currentPokemon;
 
@@ -21,7 +24,7 @@ const POKEMON_NAME_MAP = PersonalTable.Personal.reduce((pokemonNameMap, currentP
   } catch (e) {
     throw Error(`${currentPokemon.id} - ${e}`);
   }
-}, {});
+}
 
 function getFormName(id = 0) {
   return POKEMON_NAME_MAP[id];
@@ -65,7 +68,7 @@ function getPokemonNames(maxMonsno) {
 }
 
 function getPokemonFormId(monsno = 0, id) {
-  return FORM_MAP[monsno].findIndex((e) => e === id);
+  return FORM_MAP[monsno]?.findIndex((e) => e === id) ?? -1;
 }
 
 export {
@@ -76,4 +79,6 @@ export {
   getPokemonIdFromName,
   getPokemonNames,
   getPokemonFormId,
+  createPokemonMap,
+  POKEMON_NAME_MAP,
 };
