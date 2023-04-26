@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from './styles.module.css';
 import { Box, Typography, Avatar, Container } from '@mui/material';
-import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../../dexUtils';
+import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../utils/dex';
 import Type from './type';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';
