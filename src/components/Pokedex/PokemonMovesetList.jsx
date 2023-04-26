@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
 import { POKEMON_MOVE_LEVEL_TYPE, getMoveProperties } from '../../utils/dex';
 
@@ -32,6 +32,14 @@ const TYPE_COLOR_MAP = {
 const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.6rem', md: '0.9rem', lg: '1rem' } };
 
 export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => {
+  if (moveset.length === 0) {
+    return (
+      <Container>
+        <Typography fontSize="0.9rem">There are no moves here.</Typography>
+      </Container>
+    );
+  }
+
   return (
     <Box
       sx={{
