@@ -10,6 +10,7 @@ import { PokemonMovesetList } from './PokemonMovesetList';
 import { PokemonAccordion } from './PokemonAccordion';
 import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
 import { PokemonAbilities } from './PokemonAbilities';
+import { PokemonGenderRatio } from './PokemonGenderRatio';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -78,6 +79,10 @@ export default function PokedexFeatures() {
 
       <Container>
         <PokemonAlternativeFormsList pokemonDexId={pokemonDexId} />
+      </Container>
+
+      <Container>
+        <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} />
       </Container>
 
       <Container>
