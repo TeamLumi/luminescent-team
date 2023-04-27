@@ -6,10 +6,8 @@ describe('Ability dex utils', () => {
     const desiredObject = { 0: 'Stench' };
     expect(abilityObject).toMatchObject(desiredObject);
   });
-  it('Should return null when an invalid ability Id is supplied', () => {
-    const abilityObject = makeSmogonAbilityObject(-1);
-    const desiredResult = null;
-    expect(abilityObject).toBe(desiredResult);
+  it('Should throw an error when an invalid ability Id is supplied', () => {
+    expect(() => makeSmogonAbilityObject(-1)).toThrow('Bad ability ID: -1');
   });
 
   it('Should return a valid numerical ID when supplied with a valid ability name.', () => {
@@ -32,9 +30,8 @@ describe('Ability dex utils', () => {
   });
 
   it('Should return null when supplied with an invalid ability Id.', () => {
-    const abilityName = getAbilityString('woogly');
-    const desiredResult = null;
-    expect(abilityName).toBe(desiredResult);
+    const DUMMY_DATA = 'woogly';
+    expect(() => getAbilityString(DUMMY_DATA)).toThrow(`Bad ability ID: ${DUMMY_DATA}`);
   });
 
   it('Should return a string when supplied with a valid ability Id.', () => {

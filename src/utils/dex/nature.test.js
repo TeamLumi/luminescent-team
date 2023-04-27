@@ -2,10 +2,9 @@ import { getNatureId, getNatureName } from './nature';
 
 describe('Dex utils Nature getters', () => {
   describe('getNatureId', () => {
-    test('should return -1 if the input is falsy', () => {
+    test('should throw an error if the input is falsy', () => {
       const natureString = '';
-      const actual = getNatureId(natureString);
-      expect(actual).toBe(-1);
+      expect(() => getNatureId(natureString)).toThrow(`Bad natureString: ${natureString}`);
     });
 
     test('should throw an error if the input is not a valid nature string', () => {

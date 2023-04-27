@@ -2,14 +2,14 @@ import { PersonalTable, basePokemonNames, formPokemonNames } from '../../../__ga
 import { FORM_MAP } from './functions';
 
 const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
-
+const POKEMON_NAME_LIST = Object.values(POKEMON_NAME_MAP);
 function createPokemonMap(pokemonNameMap, currentPokemon) {
   try {
     const { id } = currentPokemon;
 
-    const baseFormname = basePokemonNames.labelDataArray[id]?.wordDataArray[0]?.str;
-    if (typeof baseFormname === 'string' && baseFormname.length > 0) {
-      pokemonNameMap[id] = baseFormname;
+    const baseFormName = basePokemonNames.labelDataArray[id]?.wordDataArray[0]?.str;
+    if (typeof baseFormName === 'string' && baseFormName.length > 0) {
+      pokemonNameMap[id] = baseFormName;
       return pokemonNameMap;
     }
 
@@ -58,13 +58,14 @@ function getFormNameOfProblematicPokemon(id = 0) {
   }
 }
 
-function getPokemonMonsNoFromName(pokemonName) {
+function getPokemonMonsnoFromName(pokemonName) {
   if (!pokemonName) return -1;
   return basePokemonNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === pokemonName);
 }
 
-function getPokemonNames(maxMonsno) {
-  return Object.values(POKEMON_NAME_MAP).slice(0, maxMonsno);
+function getPokemonNames(to, from = 0) {
+  if (typeof to !== 'number' || to < 0) return [];
+  return POKEMON_NAME_LIST.slice(from, to);
 }
 
 function getPokemonFormId(monsno = 0, id) {
@@ -72,7 +73,7 @@ function getPokemonFormId(monsno = 0, id) {
 }
 
 export {
-  getPokemonMonsNoFromName,
+  getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
   getPokemonName,

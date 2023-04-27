@@ -12,7 +12,7 @@ import {
   parseTmLearnsetSection,
 } from './moves';
 import {
-  getPokemonMonsNoFromName,
+  getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
   getPokemonName,
@@ -93,7 +93,7 @@ export {
   getEggMoves,
   getTechMachineLearnset,
   getMoveProperties,
-  getPokemonMonsNoFromName,
+  getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
   getPokemonName,

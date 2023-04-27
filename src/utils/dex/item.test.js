@@ -2,9 +2,8 @@ import { getItemIdFromItemName, getItemString } from './item';
 
 describe('Dex utils Item getter tests', () => {
   describe('getItemIdFromItemName', () => {
-    test('should return -1 if no item name is given', () => {
-      const actual = getItemIdFromItemName();
-      expect(actual).toBe(-1);
+    test('should throw an error if no item name is given', () => {
+      expect(() => getItemIdFromItemName()).toThrow('Bad item name: undefined');
     });
 
     test('should return the correct ID for a valid item name', () => {

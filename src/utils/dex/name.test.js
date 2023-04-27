@@ -1,5 +1,5 @@
 import {
-  getPokemonMonsNoFromName,
+  getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
   getPokemonName,
@@ -7,7 +7,6 @@ import {
   getPokemonNames,
   getPokemonFormId,
   createPokemonMap,
-  POKEMON_NAME_MAP,
 } from './name';
 
 describe('Dex utils Name getters', () => {
@@ -26,8 +25,8 @@ describe('Dex utils Name getters', () => {
 
     test('creates a map with the default form name of a problematic pokemon', () => {
       const pokemon = { id: 25 };
-      let basePokemonNames = { labelDataArray: [] };
-      let formPokemonNames = { labelDataArray: [] };
+      const basePokemonNames = { labelDataArray: [] };
+      const formPokemonNames = { labelDataArray: [] };
       basePokemonNames.labelDataArray[pokemon.id] = undefined;
       formPokemonNames.labelDataArray[pokemon.id] = undefined;
       const result = createPokemonMap({}, pokemon);
@@ -42,9 +41,8 @@ describe('Dex utils Name getters', () => {
 
   describe('getFormName', () => {
     test('returns the name of a pokemon form', () => {
-      POKEMON_NAME_MAP[800] = 'Necrozma (Dusk Mane)';
       const result = getFormName(800);
-      expect(result).toBe('Necrozma (Dusk Mane)');
+      expect(result).toBe('Necrozma');
     });
 
     test('returns undefined if the pokemon id is invalid', () => {
@@ -55,7 +53,6 @@ describe('Dex utils Name getters', () => {
 
   describe('getPokemonName', () => {
     test('returns the name of a pokemon', () => {
-      POKEMON_NAME_MAP[25] = 'Pikachu';
       const result = getPokemonName(25);
       expect(result).toBe('Pikachu');
     });
@@ -90,21 +87,21 @@ describe('Dex utils Name getters', () => {
     });
   });
 
-  describe('getPokemonMonsNoFromName()', () => {
-    test('getPokemonMonsNoFromName() returns the correct index for a given pokemon name', () => {
-      expect(getPokemonMonsNoFromName('Bulbasaur')).toBe(1);
-      expect(getPokemonMonsNoFromName('Charmander')).toBe(4);
-      expect(getPokemonMonsNoFromName('Pikachu')).toBe(25);
+  describe('getPokemonMonsnoFromName()', () => {
+    test('getPokemonMonsnoFromName() returns the correct index for a given pokemon name', () => {
+      expect(getPokemonMonsnoFromName('Bulbasaur')).toBe(1);
+      expect(getPokemonMonsnoFromName('Charmander')).toBe(4);
+      expect(getPokemonMonsnoFromName('Pikachu')).toBe(25);
     });
 
-    test('getPokemonMonsNoFromName() returns -1 for an empty input', () => {
-      expect(getPokemonMonsNoFromName()).toBe(-1);
-      expect(getPokemonMonsNoFromName('')).toBe(-1);
+    test('getPokemonMonsnoFromName() returns -1 for an empty input', () => {
+      expect(getPokemonMonsnoFromName()).toBe(-1);
+      expect(getPokemonMonsnoFromName('')).toBe(-1);
     });
 
-    test('getPokemonMonsNoFromName() returns -1 for an invalid pokemon name', () => {
-      expect(getPokemonMonsNoFromName('Missingno.')).toBe(-1);
-      expect(getPokemonMonsNoFromName('Mewthree')).toBe(-1);
+    test('getPokemonMonsnoFromName() returns -1 for an invalid pokemon name', () => {
+      expect(getPokemonMonsnoFromName('Missingno.')).toBe(-1);
+      expect(getPokemonMonsnoFromName('Mewthree')).toBe(-1);
     });
   });
 
@@ -121,15 +118,19 @@ describe('Dex utils Name getters', () => {
       expect(names[0]).toBe('Egg');
       expect(names[808]).toBe('Meltan');
     });
+    test('getPokemonNames() returns an empty array if maxMonsno is less than 0', () => {
+      const names = getPokemonNames(-1);
+      expect(Array.isArray(names)).toBeTruthy();
+      expect(names).toHaveLength(0);
+    });
+    test('getPokemonNames() returns an empty array if maxMonsno is not a number', () => {
+      const names = getPokemonNames('wibblywobbly');
+      expect(Array.isArray(names)).toBeTruthy();
+      expect(names).toHaveLength(0);
+    });
   });
 
   describe('getPokemonFormId', () => {
-    const FORM_MAP = {
-      25: [0, 1],
-      133: [0],
-      800: [0, 1, 2],
-    };
-
     it('should return the correct index for a valid form ID', () => {
       expect(getPokemonFormId(25, 1027)).toBe(1);
       expect(getPokemonFormId(133, 133)).toBe(0);

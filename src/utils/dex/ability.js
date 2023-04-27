@@ -1,30 +1,30 @@
 const { abilityNames, abilityInfo } = require('../../../__gamedata');
 
 function makeSmogonAbilityObject(abilityId = 0) {
-  const abilitiyString = abilityNames.labelDataArray[abilityId]?.wordDataArray[0]?.str ?? null;
-  if (abilitiyString === null) return null;
-  return { 0: abilitiyString };
+  const abilityString = abilityNames.labelDataArray[abilityId]?.wordDataArray[0]?.str ?? null;
+  if (abilityString === null || !abilityString) throw Error(`Bad ability ID: ${abilityId}`);
+  return { 0: abilityString };
 }
 
 function getAbilityIdFromAbilityName(abilityString) {
-  if (!abilityString) return -1;
+  if (!abilityString) throw Error(`Bad ability string: ${abilityString}`);
+
   const abilityId = abilityNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === abilityString);
-  if (abilityId === -1) throw Error(`Bad ability name: ${abilityString}`);
+
+  if (abilityId === -1) throw Error(`Bad ability string: ${abilityString}`);
   return abilityId;
 }
 
 function getAbilityString(abiltiyId = 0) {
-  const abilityString = abilityNames.labelDataArray[abiltiyId]?.wordDataArray[0]?.str ?? null;
-  if (!abilityString) {
-    return null;
-  }
-  return abilityString;
+  const abilityName = abilityNames.labelDataArray[abiltiyId]?.wordDataArray[0]?.str ?? null;
+  if (abilityName === null || !abilityName) throw Error(`Bad ability ID: ${abiltiyId}`);
+  return abilityName;
 }
 
 function getAbilityInfo(id) {
   const wordData = abilityInfo.labelDataArray[id]?.wordDataArray;
   if (wordData === null || wordData === undefined || wordData.length === 0) return 'None';
-  let description = wordData.reduce((abilityDescription, currentString) => {
+  const description = wordData.reduce((abilityDescription, currentString) => {
     return abilityDescription + currentString.str + ' ';
   }, '');
 
