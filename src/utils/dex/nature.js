@@ -1,7 +1,7 @@
 const { natureNames } = require('../../../__gamedata');
 
 function getNatureId(natureString) {
-  if (!natureString) return -1;
+  if (!natureString) throw Error(`Bad natureString: ${natureString}`);
   const index = natureNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === natureString);
   if (index === -1) throw Error(`Bad natureString: ${natureString}`);
   return index;

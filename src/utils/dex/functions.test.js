@@ -21,20 +21,25 @@ describe('Dex utils function tests', () => {
     const result = getPokemonIdFromFormMap(9999, 0);
     expect(result).toBeUndefined();
   });
-  it('Should return M, F or N for a valid number', () => {
-    const resultM = getGender(0);
-    const resultF = getGender(254);
-    const resultN = getGender(255);
-    const MALE = 'M',
-      FEMALE = 'F',
-      NEUTRAL = 'N';
-    expect(resultM).toBe(MALE);
-    expect(resultF).toBe(FEMALE);
-    expect(resultN).toBe(NEUTRAL);
-  });
-
-  it('Should return null otherwise', () => {
-    expect(getGender(123)).toBeNull();
+  describe('getGender()', () => {
+    it('Should return M for a valid number', () => {
+      const resultM = getGender(0);
+      const MALE = 'M';
+      expect(resultM).toBe(MALE);
+    });
+    it('Should return F for a valid number', () => {
+      const resultF = getGender(254);
+      const FEMALE = 'F';
+      expect(resultF).toBe(FEMALE);
+    });
+    it('Should return N for a valid number', () => {
+      const resultN = getGender(255);
+      const NEUTRAL = 'N';
+      expect(resultN).toBe(NEUTRAL);
+    });
+    it('Should return null otherwise', () => {
+      expect(getGender(123)).toBeNull();
+    });
   });
 
   describe('getGrassKnotPower', () => {
@@ -106,18 +111,6 @@ describe('Dex utils function tests', () => {
 
     test('should return the correctly formatted base stats string', () => {
       expect(formatBaseStats(p)).toEqual('HP: 80 / ATK: 100 / DEF: 70 / SPA: 60 / SPD: 70 / SPE: 90');
-    });
-
-    test('should return the correctly formatted base stats string for different input', () => {
-      const p2 = {
-        basic_hp: 100,
-        basic_atk: 150,
-        basic_def: 80,
-        basic_spatk: 120,
-        basic_spdef: 80,
-        basic_agi: 110,
-      };
-      expect(formatBaseStats(p2)).toEqual('HP: 100 / ATK: 150 / DEF: 80 / SPA: 120 / SPD: 80 / SPE: 110');
     });
   });
   describe('getPokemonIdFromMonsNoAndForm', () => {

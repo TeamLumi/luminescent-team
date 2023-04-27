@@ -1,5 +1,9 @@
 import { pokemonHeight, pokemonWeight } from '../../../__gamedata';
 
+const FEET_TO_CM = 30.48;
+const INCHES_TO_CM = 2.54;
+const POUNDS_TO_KG = 0.453592;
+
 function getHeight(pokemonId = 0) {
   const heightString = pokemonHeight.labelDataArray[pokemonId]?.wordDataArray[0]?.str ?? null;
 
@@ -9,8 +13,8 @@ function getHeight(pokemonId = 0) {
   const inches = parseFloat(inchesString.substring(0, inchesString.length - 1));
   const feet = parseInt(feetString);
 
-  const feetInCentimeters = feet * 30.48;
-  const inchesInCentimeters = inches * 2.54;
+  const feetInCentimeters = feet * FEET_TO_CM;
+  const inchesInCentimeters = inches * INCHES_TO_CM;
   return ((feetInCentimeters + inchesInCentimeters) / 100).toFixed(2);
 }
 
@@ -22,7 +26,7 @@ function getWeight(pokemonId = 0) {
   const [poundsString] = weightString.split(' ');
   const pounds = parseFloat(poundsString.trim());
 
-  const poundsInKilogram = pounds * 0.453592;
+  const poundsInKilogram = pounds * POUNDS_TO_KG;
   return poundsInKilogram.toFixed(2);
 }
 

@@ -11,15 +11,17 @@ import {
 } from '../../../__gamedata';
 import { getPokemonFormId } from './name';
 
+const IS_MOVE_INDEX = false;
+
 function generateMovesViaLearnset(monsNo, level) {
   /**
    * In BDSP, a trainer's Pokemon, when provided no moves,
    * will use the four most recent moves in the learnset.
    */
 
-  const cutoffIndex = LearnsetTable.WazaOboe[monsNo].ar.findIndex((e, i) => {
-    if (i % 2 === 1) return;
-    return e > level;
+  const cutoffIndex = LearnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
+    if (i % 2 === 1) return IS_MOVE_INDEX;
+    return currentMoveOrLevel > level;
   });
 
   const moves = LearnsetTable.WazaOboe[monsNo].ar.slice(0, cutoffIndex);
@@ -60,7 +62,10 @@ function getMoveString(id = 0) {
 
 function getMoveProperties(moveId = 0) {
   const { type, damageType, power, hitPer, basePP } = MovesTable.Waza[moveId];
-  const maxPP = (basePP ?? 0) * (8 / 5);
+  const BASE_PP = basePP ?? 0;
+  const MAX_PP_MULTIPLIER = 1.6;
+  const maxPP = BASE_PP * MAX_PP_MULTIPLIER;
+
   return {
     name: moveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
     desc: getMoveDescription(moveId),
@@ -84,10 +89,10 @@ function getEggMoves(dexId = 0) {
 
 function getMoveDescription(moveId = 0) {
   const wordData = moveInfo.labelDataArray[moveId].wordDataArray;
-  let description = wordData.reduce((moveDescription, currentString) => {
+  const description = wordData.reduce((moveDescription, currentString) => {
     return moveDescription + currentString.str + ' ';
   }, '');
-  return description;
+  return description.trim();
 }
 
 function getTechMachineLearnset(m1, m2, m3, m4) {
