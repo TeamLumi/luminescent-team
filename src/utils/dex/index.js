@@ -65,6 +65,7 @@ function getPokemonInfo(monsno = 0) {
     type1: getTypeName(p.type1),
     type2: getTypeName(p.type2),
     imageSrc: getImage(monsno),
+    genderDecimalValue: p.sex,
   };
 }
 
