@@ -13,7 +13,7 @@ export const PokemonSearch = ({ setPokemonDexId }) => {
     <Autocomplete
       disablePortal
       id="pokemonIdSelector"
-      sx={{ width: 300, color: 'inherit' }}
+      sx={{ width: 300 }}
       options={pokemonNames}
       value={selectedPokemonName}
       onChange={(_, newValue) => {

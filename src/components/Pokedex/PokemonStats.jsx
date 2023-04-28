@@ -110,7 +110,7 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
                 at level
               </Typography>
               <TextField
-                sx={{ marginTop: '10px', float: 'right', color: 'inherit' }}
+                sx={{ marginTop: '10px', float: 'right' }}
                 type="number"
                 size="small"
                 inputProps={{ min: POKEMON_MIN_LEVEL, max: POKEMON_MAX_LEVEL }}
@@ -123,8 +123,6 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
                   setLevel(value);
                 }}
                 label="Level"
-                InputLabelProps={{ style: { color: 'inherit' } }}
-                InputProps={{ style: { color: 'inherit' } }}
               />
             </Box>
           </Box>
