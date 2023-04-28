@@ -5,7 +5,8 @@ import { getPokemonNames, getPokemonIdFromName } from '../../utils/dex';
 const MAX_CURRENT_POKEMON = 493;
 
 export const PokemonSearch = ({ setPokemonDexId }) => {
-  const pokemonNames = getPokemonNames(MAX_CURRENT_POKEMON);
+  // pokemonNameEndRange number is not including
+  const pokemonNames = getPokemonNames(MAX_CURRENT_POKEMON + 1);
   const [selectedPokemonName, setSelectedPokemonName] = useState(pokemonNames[1]);
   const [inputValue, setInputValue] = React.useState('');
 
