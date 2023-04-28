@@ -19,10 +19,12 @@ export const PokemonSearch = ({ setPokemonDexId }) => {
       onChange={(_, newValue) => {
         setSelectedPokemonName(newValue);
 
-        const pokemonId = getPokemonIdFromName(newValue);
-        if (pokemonId != null) {
-          setPokemonDexId(pokemonId);
+        if (!newValue) {
+          return;
         }
+
+        const pokemonId = getPokemonIdFromName(newValue);
+        setPokemonDexId(pokemonId);
       }}
       inputValue={inputValue}
       onInputChange={(_, newInputValue) => {
