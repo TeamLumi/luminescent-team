@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Autocomplete, TextField } from '@mui/material';
-import { getPokemonNames, getPokemonIdFromName } from '../../../dexUtils';
+import { getPokemonNames, getPokemonIdFromName } from '../../utils/dex';
 
 const MAX_CURRENT_POKEMON = 493;
 

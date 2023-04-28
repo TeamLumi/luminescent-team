@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
-import { POKEMON_MOVE_LEVEL_TYPE, getMoveProperties } from '../../../dexUtils';
+import { POKEMON_MOVE_LEVEL_TYPE, getMoveProperties } from '../../utils/dex';
 
 const DMG_TYPE_ICONS = {
   0: '/img/status_dmg_type.png',
