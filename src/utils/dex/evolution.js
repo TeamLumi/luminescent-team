@@ -1,3 +1,7 @@
+import EvolutionData from '../../../__gamedata/evolution.json';
+import { getPokemonIdFromMonsNoAndForm } from './functions';
+import { getPokemonName } from './name';
+
 const None = 0,
   Item = 1,
   Move = 2,
@@ -157,3 +161,82 @@ const EVOLUTION_METHOD_PARAM_TYPE = [
   None,
   None,
 ];
+
+const PARAM_TYPE = ['None', 'Item', 'Move', 'Pokemon', 'Typing', 'GameVersion'];
+
+function getEvolutionPath(pokemonId = '0') {
+  if (typeof pokemonId !== 'string' || isNaN(parseInt(pokemonId)) || pokemonId === '')
+    throw new Error(`Bad pokemonId: ${pokemonId}`);
+
+  return EvolutionData[pokemonId];
+}
+
+function getEvolutionMethodString(method = 0) {
+  if (!Number.isInteger(method) || method < 0) throw new Error(`Bad method: ${method}`);
+  return EVOLUTION_METHODS[method];
+}
+
+function doesEvolutionMethodRequireLevel(method = 0) {
+  if (!Number.isInteger(method) || method < 0) throw new Error(`Bad method: ${method}`);
+  return EVOLUTION_METHOD_REQUIRES_LEVEL[method];
+}
+
+function getParameterTypeByMethodId(method = 0) {
+  if (!Number.isInteger(method) || method < 0) throw new Error(`Bad method: ${method}`);
+  const paramType = EVOLUTION_METHOD_PARAM_TYPE[method];
+  const paramTypeString = PARAM_TYPE[paramType];
+  return paramTypeString;
+}
+
+/**
+ *
+ * @param {{path: number[], method: [], ar: number[][]]}} evolutionObject
+ */
+function displayEvolutionData(id = '156') {
+  const evolutionObject = EvolutionData[id];
+  const validPath = validIds(evolutionObject.path, evolutionObject.ar);
+  console.log(evolutionObject.path, validPath);
+  let stage1id = evolutionObject.path[0];
+  let stage1data = evolutionObject.ar[0];
+  const stageOneTargetId = getPokemonIdFromMonsNoAndForm(evolutionObject.ar[0][2], evolutionObject.ar[0][3]);
+  const stageOneName = getPokemonName(stage1id);
+  const stageOneTargetName = getPokemonName(stageOneTargetId);
+  console.log(stageOneName, stageOneTargetName);
+  const stageOne = {
+    id: stage1id,
+    target: stageOneTargetId,
+    name: stageOneName,
+    targetName: stageOneTargetName,
+    method: {
+      data: stage1data,
+      text: getEvolutionMethodString(stage1data[0]),
+      param: getParameterTypeByMethodId(stage1data[0]),
+      requiresLevel: doesEvolutionMethodRequireLevel(stage1data[0]),
+      level: stage1data[4],
+    },
+  };
+
+  return stageOne;
+}
+
+function validIds(path, ar) {
+  return path.filter((pokemonId, idx) => {
+    if (idx === 0) return pokemonId;
+    for (let currentArray of ar) {
+      for (let i = 0; i < currentArray.length; i += 5) {
+        const monsno = currentArray[i + 2];
+        const formno = currentArray[i + 3];
+        const targetId = getPokemonIdFromMonsNoAndForm(monsno, formno);
+        if (pokemonId === targetId) return true;
+      }
+    }
+
+    return false;
+  });
+}
+
+/**
+ For each index in path, the same index in ar is the evolution information 
+ 
+ */
+export { getEvolutionPath, displayEvolutionData };
