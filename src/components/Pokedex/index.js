@@ -42,11 +42,13 @@ export default function PokedexFeatures() {
       <div className="container">
         <div className="row">
           <div className="col col-4">
-            <Avatar
+            <img
               alt={pokemonInfo.name}
               src={pokemonInfo.imageSrc}
-              sx={{ width: 80, height: 80, textAlign: 'center', margin: '16px' }}
-            ></Avatar>
+              style={{ objectFit: 'contain', margin: '16px' }}
+              width="80px"
+              height="80px"
+            />
           </div>
           <div className="col col-4">
             <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
