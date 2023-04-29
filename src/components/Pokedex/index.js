@@ -11,6 +11,8 @@ import { PokemonAccordion } from './PokemonAccordion';
 import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
 import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
+import { PokemonEggGroups } from './PokemonEggGroups';
+import { getEggGroupViaPokemonId } from '../../utils/dex/egggroup';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -84,7 +86,10 @@ export default function PokedexFeatures() {
       </Container>
 
       <Container>
-        <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} />
+        <Box display="flex">
+          <PokemonEggGroups eggGroupIds={getEggGroupViaPokemonId(pokemonDexId)} sx={{ marginRight: '16px' }} />
+          <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} />
+        </Box>
       </Container>
 
       <Container>
