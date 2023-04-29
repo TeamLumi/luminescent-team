@@ -58,4 +58,5 @@
 div.evolutionTables > table {
   margin-bottom: 0;
   min-width: 148;
+  max-width: 180;
 }
