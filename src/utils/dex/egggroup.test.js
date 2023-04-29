@@ -1,4 +1,4 @@
-import { getPokemonInEggGroup, getEggGroupNameById, getEggGroupViaPokemonId } from './egggroup';
+import { getPokemonIdsInEggGroup, getEggGroupNameById, getEggGroupViaPokemonId } from './egggroup';
 
 describe('Dex Utils Egg Group Tests', () => {
   describe('getEggGroupViaPokemonId', () => {
@@ -95,7 +95,7 @@ describe('Dex Utils Egg Group Tests', () => {
 
     validIds.forEach(({ id, count }) => {
       test(`should return an array of ${count} Pokemon for egg group ID ${id}`, () => {
-        const result = getPokemonInEggGroup(id);
+        const result = getPokemonIdsInEggGroup(id);
         expect(Array.isArray(result)).toBe(true);
         expect(result.length).toBe(count);
       });
@@ -103,7 +103,7 @@ describe('Dex Utils Egg Group Tests', () => {
 
     invalidIds.forEach(({ id, message }) => {
       test(`should throw an error for invalid egg group ID ${id}`, () => {
-        expect(() => getPokemonInEggGroup(id)).toThrow(Error(message));
+        expect(() => getPokemonIdsInEggGroup(id)).toThrow(Error(message));
       });
     });
   });
