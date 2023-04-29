@@ -11,29 +11,26 @@ import { PokemonAccordion } from './PokemonAccordion';
 import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
 import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
-import { MAX_CURRENT_POKEMON } from './pokedexConstants';
+import { usePokemonQuery } from '../../hooks/usePokemonQuery';
 
-const isValidPokemonDexId = (pokemonDexId) => pokemonDexId >= 0 && pokemonDexId <= MAX_CURRENT_POKEMON;
+export default function PokedexFeatures() {
+  const { pokemonDexId, setPokemonDexId } = usePokemonQuery();
+  const pokemonInfo = getPokemonInfo(pokemonDexId);
 
-export default function PokedexFeatures({ pokemonDexId }) {
-  const validPokemonDexId = isValidPokemonDexId(pokemonDexId) ? pokemonDexId : 0;
-  console.log('w', pokemonDexId, validPokemonDexId);
-  const pokemonInfo = getPokemonInfo(validPokemonDexId);
-
-  const learnset = getPokemonLearnset(validPokemonDexId);
+  const learnset = getPokemonLearnset(pokemonDexId);
   const moveList = [];
   for (let i = 0; i < learnset.length; i += 2) {
     moveList.push({ level: learnset[i], moveId: learnset[i + 1] });
   }
 
   const tmLearnset = pokemonInfo.tmLearnset;
-  const eggLearnset = getEggMoves(validPokemonDexId);
+  const eggLearnset = getEggMoves(pokemonDexId);
 
   return (
     <Container>
       <Container>
         <Box display="flex" justifyContent="center" marginTop="16px">
-          <PokemonSearch pokemonDexId={pokemonDexId} setPokemonDexId={undefined} />
+          <PokemonSearch pokemonDexId={pokemonDexId} setPokemonDexId={setPokemonDexId} />
         </Box>
       </Container>
       <div className="container">
@@ -80,11 +77,11 @@ export default function PokedexFeatures({ pokemonDexId }) {
 
       <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
       <div className="container">
-        <EvolutionGraph dexId={validPokemonDexId} />
+        <EvolutionGraph dexId={pokemonDexId} />
       </div>
 
       <Container>
-        <PokemonAlternativeFormsList pokemonDexId={validPokemonDexId} />
+        <PokemonAlternativeFormsList pokemonDexId={pokemonDexId} />
       </Container>
 
       <Container>
@@ -93,13 +90,13 @@ export default function PokedexFeatures({ pokemonDexId }) {
 
       <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
-          <PokemonMovesetList moveset={moveList} movesetPrefix="levelup" pokemonDexId={validPokemonDexId} />
+          <PokemonMovesetList moveset={moveList} movesetPrefix="levelup" pokemonDexId={pokemonDexId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={tmLearnset} movesetPrefix="tm" pokemonDexId={validPokemonDexId} />
+          <PokemonMovesetList moveset={tmLearnset} movesetPrefix="tm" pokemonDexId={pokemonDexId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
-          <PokemonMovesetList moveset={eggLearnset} movesetPrefix="egg" pokemonDexId={validPokemonDexId} />
+          <PokemonMovesetList moveset={eggLearnset} movesetPrefix="egg" pokemonDexId={pokemonDexId} />
         </PokemonAccordion>
       </Container>
     </Container>
