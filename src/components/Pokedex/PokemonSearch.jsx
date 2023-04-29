@@ -24,9 +24,7 @@ export const PokemonSearch = ({ pokemonDexId, setPokemonDexId }) => {
         }
 
         const pokemonId = getPokemonIdFromName(newValue);
-        if (pokemonId != null) {
-          setPokemonDexId(pokemonId);
-        }
+        setPokemonDexId(pokemonId);
       }}
       inputValue={inputValue}
       onInputChange={(_, newInputValue) => {
