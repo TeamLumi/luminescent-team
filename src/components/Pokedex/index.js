@@ -86,7 +86,7 @@ export default function PokedexFeatures() {
       </Container>
 
       <Container>
-        <Box display="flex">
+        <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
           <PokemonEggGroups eggGroupIds={getEggGroupViaPokemonId(pokemonDexId)} sx={{ marginRight: '16px' }} />
           <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} />
         </Box>
