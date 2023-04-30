@@ -1,4 +1,4 @@
-import { pokemonHeight, pokemonWeight } from '../../../__gamedata';
+const { pokemonHeight, pokemonWeight } = require('../../../../__gamedata/data');
 
 const FEET_TO_CM = 30.48;
 const INCHES_TO_CM = 2.54;
@@ -30,4 +30,4 @@ function getWeight(pokemonId = 0) {
   return poundsInKilogram.toFixed(2);
 }
 
-export { getHeight, getWeight };
+module.exports = { getHeight, getWeight };

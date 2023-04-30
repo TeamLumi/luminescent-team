@@ -1,4 +1,4 @@
-const { abilityNames, abilityInfo } = require('../../../__gamedata');
+const { abilityNames, abilityInfo } = require('../../../../__gamedata/data');
 
 function makeSmogonAbilityObject(abilityId = 0) {
   const abilityString = abilityNames.labelDataArray[abilityId]?.wordDataArray[0]?.str ?? null;
@@ -31,4 +31,4 @@ function getAbilityInfo(id) {
   return description.trim();
 }
 
-export { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString, getAbilityInfo };
+module.exports = { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString, getAbilityInfo };

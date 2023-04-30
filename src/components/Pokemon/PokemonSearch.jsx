@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Autocomplete, TextField } from '@mui/material';
-import { getPokemonNames, getPokemonIdFromName } from '../../utils/dex';
 
 const MAX_CURRENT_POKEMON = 493;
+const getPokemonNames = () => [];
+const getPokemonIdFromName = () => 1;
 
 export const PokemonSearch = ({ setPokemonDexId }) => {
   // pokemonNameEndRange number is not including

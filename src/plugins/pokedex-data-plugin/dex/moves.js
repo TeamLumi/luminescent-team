@@ -1,4 +1,4 @@
-import {
+const {
   LearnsetTable,
   EggMovesTable,
   MovesTable,
@@ -8,8 +8,8 @@ import {
   PersonalTable,
   moveNames,
   moveInfo,
-} from '../../../__gamedata';
-import { getPokemonFormId } from './name';
+} = require('../../../../__gamedata/data');
+const { getPokemonFormId } = require('./name');
 
 const IS_MOVE_INDEX = false;
 
@@ -137,7 +137,7 @@ function parseTmLearnsetSection(decimal) {
   return (decimal >>> 0).toString(2).split('').reverse().join('').padStart(32, 0);
 }
 
-export {
+module.exports = {
   generateMovesViaLearnset,
   getMoveId,
   getMoveString,

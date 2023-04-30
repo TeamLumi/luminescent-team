@@ -1,4 +1,4 @@
-const { itemNames } = require('../../../__gamedata');
+const { itemNames } = require('../../../../__gamedata/data');
 
 function getItemIdFromItemName(itemName) {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
@@ -13,4 +13,4 @@ function getItemString(itemId = 0) {
   return itemNames.labelDataArray[itemId].wordDataArray[0].str;
 }
 
-export { getItemIdFromItemName, getItemString };
+module.exports = { getItemIdFromItemName, getItemString };

@@ -1,4 +1,4 @@
-const { natureNames } = require('../../../__gamedata');
+const { natureNames } = require('../../../../__gamedata/data');
 
 function getNatureId(natureString) {
   if (!natureString) throw Error(`Bad natureString: ${natureString}`);
@@ -11,4 +11,4 @@ function getNatureName(natureId = 0) {
   return natureNames.labelDataArray[natureId].wordDataArray[0].str;
 }
 
-export { getNatureId, getNatureName };
+module.exports = { getNatureId, getNatureName };

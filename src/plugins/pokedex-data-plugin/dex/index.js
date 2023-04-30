@@ -1,6 +1,6 @@
-import { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString, getAbilityInfo } from './ability';
-import { getItemIdFromItemName, getItemString } from './item';
-import {
+const { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString, getAbilityInfo } = require('./ability');
+const { getItemIdFromItemName, getItemString } = require('./item');
+const {
   generateMovesViaLearnset,
   getMoveId,
   getMoveString,
@@ -10,8 +10,8 @@ import {
   getMoveProperties,
   getPokemonLearnset,
   parseTmLearnsetSection,
-} from './moves';
-import {
+} = require('./moves');
+const {
   getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
@@ -19,11 +19,12 @@ import {
   getPokemonIdFromName,
   getPokemonNames,
   getPokemonFormId,
-} from './name';
-import { getNatureId, getNatureName } from './nature';
-import { getTypeName, getTypes } from './types';
-import { getWeight, getHeight } from './details';
-import {
+} = require('./name');
+const { getNatureId, getNatureName } = require('./nature');
+const { getTypeName, getTypes } = require('./types');
+const { getWeight, getHeight } = require('./details');
+
+const {
   FORM_MAP,
   getPokemonIdFromFormMap,
   getGender,
@@ -31,9 +32,9 @@ import {
   getImage,
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
-} from './functions';
+} = require('./functions');
 
-import { PersonalTable } from '../../../__gamedata';
+const PersonalTable = require('../../../../__gamedata/PersonalTable.json');
 
 const POKEMON_MOVE_LEVEL_TYPE = {
   EGG: 'egg',
@@ -69,42 +70,46 @@ function getPokemonInfo(monsno = 0) {
   };
 }
 
-export {
-  FORM_MAP,
-  getPokemonIdFromFormMap,
-  getGender,
-  getGrassKnotPower,
-  getImage,
-  formatBaseStats,
-  parseTmLearnsetSection,
-  getPokemonIdFromMonsNoAndForm,
+module.exports = {
   getPokemonInfo,
-  makeSmogonAbilityObject,
-  getAbilityIdFromAbilityName,
-  getAbilityString,
-  getAbilityInfo,
-  getWeight,
-  getHeight,
-  getItemIdFromItemName,
-  getItemString,
-  generateMovesViaLearnset,
-  getMoveId,
-  getMoveString,
-  isMoveNameSmogonCompatible,
-  getEggMoves,
-  getTechMachineLearnset,
-  getMoveProperties,
-  getPokemonMonsnoFromName,
-  getFormName,
-  getFormNameOfProblematicPokemon,
-  getPokemonName,
-  getPokemonIdFromName,
-  getPokemonNames,
-  getNatureId,
-  getNatureName,
-  getTypeName,
-  getTypes,
-  getPokemonLearnset,
-  getPokemonFormId,
-  POKEMON_MOVE_LEVEL_TYPE,
 };
+
+// module.exports ={
+//   FORM_MAP,
+//   getPokemonIdFromFormMap,
+//   getGender,
+//   getGrassKnotPower,
+//   getImage,
+//   formatBaseStats,
+//   parseTmLearnsetSection,
+//   getPokemonIdFromMonsNoAndForm,
+//   getPokemonInfo,
+//   makeSmogonAbilityObject,
+//   getAbilityIdFromAbilityName,
+//   getAbilityString,
+//   getAbilityInfo,
+//   getWeight,
+//   getHeight,
+//   getItemIdFromItemName,
+//   getItemString,
+//   generateMovesViaLearnset,
+//   getMoveId,
+//   getMoveString,
+//   isMoveNameSmogonCompatible,
+//   getEggMoves,
+//   getTechMachineLearnset,
+//   getMoveProperties,
+//   getPokemonMonsnoFromName,
+//   getFormName,
+//   getFormNameOfProblematicPokemon,
+//   getPokemonName,
+//   getPokemonIdFromName,
+//   getPokemonNames,
+//   getNatureId,
+//   getNatureName,
+//   getTypeName,
+//   getTypes,
+//   getPokemonLearnset,
+//   getPokemonFormId,
+//   POKEMON_MOVE_LEVEL_TYPE,
+// };

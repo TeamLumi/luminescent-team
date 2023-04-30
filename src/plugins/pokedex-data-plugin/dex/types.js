@@ -1,4 +1,4 @@
-const { typeName } = require('../../../__gamedata');
+const { typeName } = require('../../../../__gamedata/data');
 
 function getTypeName(typeId = 0) {
   const type = typeName.labelDataArray[typeId]?.wordDataArray[0]?.str;
@@ -12,4 +12,4 @@ function getTypes(pokemonObject) {
     : [getTypeName(pokemonObject.type1), getTypeName(pokemonObject.type2)];
 }
 
-export { getTypeName, getTypes };
+module.exports = { getTypeName, getTypes };

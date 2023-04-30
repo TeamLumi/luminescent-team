@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import style from './styles.module.css';
 import { Box, Typography, Avatar, Container } from '@mui/material';
-import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../utils/dex';
 import Type from './type';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';
@@ -12,28 +11,29 @@ import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
 import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
 import { PokemonEggGroups } from './PokemonEggGroups';
-import { getEggGroupViaPokemonId } from '../../utils/dex/egggroup';
 
-export default function PokedexFeatures() {
-  const [pokemonDexId, setPokemonDexId] = useState(1);
-  const pokemonInfo = getPokemonInfo(pokemonDexId ?? 0);
+export const PokemonPageContent = ({ data }) => {
+  const pokemonId = data.pokemonId;
+  const pokemonInfo = data.pokemonInfo;
+  const eggGroupNames = ['Monster'];
+  const learnset = [];
+  const eggLearnset = [];
 
-  const learnset = getPokemonLearnset(pokemonDexId);
   const moveList = [];
   for (let i = 0; i < learnset.length; i += 2) {
     moveList.push({ level: learnset[i], moveId: learnset[i + 1] });
   }
 
   const tmLearnset = pokemonInfo.tmLearnset;
-  const eggLearnset = getEggMoves(pokemonDexId);
+  // const eggLearnset = getEggMoves(pokemonId);
 
   return (
     <Container>
-      <Container>
-        <Box display="flex" justifyContent="center" marginTop="16px">
-          <PokemonSearch setPokemonDexId={setPokemonDexId} />
-        </Box>
-      </Container>
+      {/* <Container> */}
+      {/*   <Box display="flex" justifyContent="center" marginTop="16px"> */}
+      {/*     <PokemonSearch setPokemonDexId={setPokemonDexId} /> */}
+      {/*   </Box> */}
+      {/* </Container> */}
       <div className="container">
         <div className="row">
           <Typography variant="h2" component="h3" sx={{ paddingLeft: '16px' }}>
@@ -68,7 +68,7 @@ export default function PokedexFeatures() {
         </div>
       </div>
 
-      <Container>
+      {/* <Container>
         <PokemonAbilities
           abilityName1={pokemonInfo.ability1}
           abilityName2={pokemonInfo.ability2}
@@ -78,31 +78,31 @@ export default function PokedexFeatures() {
 
       <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
       <div className="container">
-        <EvolutionGraph dexId={pokemonDexId} />
+        <EvolutionGraph dexId={pokemonId} />
       </div>
 
       <Container>
-        <PokemonAlternativeFormsList pokemonDexId={pokemonDexId} />
+        <PokemonAlternativeFormsList pokemonDexId={pokemonId} />
       </Container>
 
       <Container>
         <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
-          <PokemonEggGroups eggGroupIds={getEggGroupViaPokemonId(pokemonDexId)} sx={{ marginRight: '16px' }} />
+          <PokemonEggGroups eggGroupNames={eggGroupNames} sx={{ marginRight: '16px' }} />
           <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} />
         </Box>
       </Container>
 
       <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
-          <PokemonMovesetList moveset={moveList} movesetPrefix="levelup" pokemonDexId={pokemonDexId} />
+          <PokemonMovesetList moveset={moveList} movesetPrefix="levelup" pokemonDexId={pokemonId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={tmLearnset} movesetPrefix="tm" pokemonDexId={pokemonDexId} />
+          <PokemonMovesetList moveset={tmLearnset} movesetPrefix="tm" pokemonDexId={pokemonId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
-          <PokemonMovesetList moveset={eggLearnset} movesetPrefix="egg" pokemonDexId={pokemonDexId} />
+          <PokemonMovesetList moveset={eggLearnset} movesetPrefix="egg" pokemonDexId={pokemonId} />
         </PokemonAccordion>
-      </Container>
+      </Container> */}
     </Container>
   );
-}
+};

@@ -1,9 +1,9 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import PokedexFeatures from '@site/src/components/Pokedex';
+import { PokemonPageContent } from './PokemonPageContent';
 
-export default function PokedexPage() {
+export default function PokemonPage({ data }) {
   const { siteConfig } = useDocusaurusContext();
 
   return (
@@ -11,7 +11,7 @@ export default function PokedexPage() {
       title={siteConfig.title}
       description="Pokemon Luminescent Version, A ROM Hack for Pokemon Brilliant Diamond and Shining Pearl"
     >
-      <PokedexFeatures />
+      <PokemonPageContent data={data} />
     </Layout>
   );
 }

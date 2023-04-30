@@ -71,6 +71,7 @@ const config = {
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
       },
     ],
+    './src/plugins/pokedex-data-plugin',
   ],
 
   themeConfig:
@@ -130,11 +131,12 @@ const config = {
               {
                 label: 'Nexus Mods',
                 href: 'https://www.nexusmods.com/pokemonbdsp/mods/1',
-              },              {
+              },
+              {
                 label: 'Twitter',
                 href: 'https://mobile.twitter.com/LuminescentTeam/',
               },
-           ],
+            ],
           },
           {
             title: 'More',

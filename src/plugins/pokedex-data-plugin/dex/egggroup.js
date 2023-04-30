@@ -1,4 +1,4 @@
-import { PersonalTable } from '../../../__gamedata';
+const { PersonalTable } = require('../../../../__gamedata/data');
 
 const EGG_GROUPS = {
   0: 'None',
@@ -59,4 +59,4 @@ function getPokemonIdsInEggGroup(eggGroupId = 0) {
   return Array.from(POKEMON_IDS_BY_EGG_GROUP[eggGroupId]); //Back to array for easier handling
 }
 
-export { getPokemonIdsInEggGroup, getEggGroupNameById, getEggGroupViaPokemonId };
+module.exports = { getPokemonIdsInEggGroup, getEggGroupNameById, getEggGroupViaPokemonId };

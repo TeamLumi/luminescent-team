@@ -1,5 +1,5 @@
-import { PersonalTable, basePokemonNames, formPokemonNames } from '../../../__gamedata';
-import { FORM_MAP } from './functions';
+const { PersonalTable, basePokemonNames, formPokemonNames } = require('../../../../__gamedata/data');
+const { FORM_MAP } = require('./functions');
 
 const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
 const POKEMON_NAME_LIST = Object.values(POKEMON_NAME_MAP);
@@ -72,7 +72,7 @@ function getPokemonFormId(monsno = 0, id) {
   return FORM_MAP[monsno]?.findIndex((e) => e === id) ?? -1;
 }
 
-export {
+module.exports = {
   getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
