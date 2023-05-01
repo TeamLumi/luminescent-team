@@ -1,3 +1,5 @@
+// @ts-check
+
 const PersonalTable = require('../../__gamedata/PersonalTable.json');
 const { getPokemonInfo } = require('./dex');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./dex/egggroup');
@@ -5,7 +7,12 @@ const { getPokemonFormIds, getPokemonFormIndexById, getImage } = require('./dex/
 const { getEggMoves, getPokemonLearnset, getMoveProperties } = require('./dex/moves');
 const { getPokemonName } = require('./dex/name');
 
-module.exports = async function pokedexDataPlugin(context, options) {
+/**
+ * @param {Record<string, unknown>} options
+ * @param {import('@docusaurus/types').LoadContext} context
+ * @returns {import('@docusaurus/types').Plugin<any>}
+ */
+function pokedexDataPlugin(context, options) {
   return {
     name: 'luminescent-pokedex-data-plugin',
     async loadContent() {
@@ -35,24 +42,29 @@ module.exports = async function pokedexDataPlugin(context, options) {
           pokemonForms: pokemonForms,
         };
       });
+
       return {
         data: data,
       };
     },
+
     async contentLoaded({ content, actions }) {
       // TODO: create sub routes instead
-      for (const data of content.data) {
-        const dataJson = await actions.createData(`lumi${data.pokemonId}.json`, JSON.stringify(data));
-
-        actions.addRoute({
-          path: `/pokemon/${data.pokemonId}`,
-          component: '@site/src/components/Pokemon/PokemonPage.jsx',
-          exact: true,
-          modules: {
-            data: dataJson,
-          },
-        });
-      }
+      await Promise.all(
+        content.data.map(async (data) => {
+          const dataJson = await actions.createData(`lumi${data.pokemonId}.json`, JSON.stringify(data));
+          actions.addRoute({
+            path: `/${data.pokemonId}`,
+            component: '@site/src/components/Pokemon/PokemonPage.jsx',
+            exact: true,
+            modules: {
+              data: dataJson,
+            },
+          });
+        }),
+      );
     },
   };
-};
+}
+
+module.exports = pokedexDataPlugin;
