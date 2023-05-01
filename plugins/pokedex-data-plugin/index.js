@@ -1,4 +1,5 @@
 // @ts-check
+const { Joi } = require('@docusaurus/utils-validation');
 
 const PersonalTable = require('../../__gamedata/PersonalTable.json');
 const { getPokemonInfo } = require('./dex');
@@ -54,8 +55,8 @@ function pokedexDataPlugin(context, options) {
         content.data.map(async (data) => {
           const dataJson = await actions.createData(`lumi${data.pokemonId}.json`, JSON.stringify(data));
           return {
-            path: `/pokemon/${data.pokemonId}`,
-            component: '@site/src/components/Pokemon/PokemonPage.jsx',
+            path: `${options.path}/${data.pokemonId}`,
+            component: options.pokemonComponent,
             exact: true,
             modules: {
               data: dataJson,
@@ -68,5 +69,15 @@ function pokedexDataPlugin(context, options) {
     },
   };
 }
+
+const optionsSchema = Joi.object({
+  path: Joi.string(),
+  pokemonComponent: Joi.string(),
+});
+
+pokedexDataPlugin.validateOptions = ({ options, validate }) => {
+  const validatedOptions = validate(optionsSchema, options);
+  return validatedOptions;
+};
 
 module.exports = pokedexDataPlugin;

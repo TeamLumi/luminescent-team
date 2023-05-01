@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import { PokemonPageContent } from './PokemonPageContent';
+import { PokemonPageContent } from '../components/Pokedex/PokemonPageContent';
 
 export default function PokemonPage({ data }) {
   const { siteConfig } = useDocusaurusContext();
