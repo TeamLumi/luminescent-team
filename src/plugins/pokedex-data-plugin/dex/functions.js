@@ -20,6 +20,10 @@ const getPokemonFormIndexById = (monsno, id) => {
   return FORM_MAP[monsno].findIndex((pokemonId) => pokemonId === id);
 };
 
+const getPokemonFormIds = (monsno) => {
+  return FORM_MAP[monsno];
+};
+
 function getGender(sex) {
   if (sex === 0) return 'M';
   if (sex === 254) return 'F';
@@ -30,7 +34,7 @@ function getGender(sex) {
 function getImage(monsno = 0, formIndex = 0) {
   const paddedMonsno = monsno.toString().padStart(4, 0);
   const paddedFormIndex = formIndex.toString().padStart(2, 0);
-  return `/img/pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
+  return `pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
 }
 
 function formatBaseStats(p) {
@@ -60,4 +64,5 @@ module.exports = {
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
   getPokemonFormIndexById,
+  getPokemonFormIds,
 };

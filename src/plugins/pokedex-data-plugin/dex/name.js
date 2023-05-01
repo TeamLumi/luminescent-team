@@ -2,7 +2,6 @@ const { PersonalTable, basePokemonNames, formPokemonNames } = require('../../../
 const { FORM_MAP } = require('./functions');
 
 const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
-const POKEMON_NAME_LIST = Object.values(POKEMON_NAME_MAP);
 function createPokemonMap(pokemonNameMap, currentPokemon) {
   try {
     const { id } = currentPokemon;
@@ -65,7 +64,7 @@ function getPokemonMonsnoFromName(pokemonName) {
 
 function getPokemonNames(to, from = 0) {
   if (typeof to !== 'number' || to < 0) return [];
-  return POKEMON_NAME_LIST.slice(from, to);
+  return Object.values(POKEMON_NAME_MAP).slice(from, to);
 }
 
 function getPokemonFormId(monsno = 0, id) {

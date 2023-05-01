@@ -1,7 +1,9 @@
 const PersonalTable = require('../../../__gamedata/PersonalTable.json');
 const { getPokemonInfo } = require('./dex');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./dex/egggroup');
+const { getPokemonFormIds, getPokemonFormIndexById, getImage } = require('./dex/functions');
 const { getEggMoves, getPokemonLearnset, getMoveProperties } = require('./dex/moves');
+const { getPokemonName } = require('./dex/name');
 
 module.exports = async function pokedexDataPlugin(context, options) {
   return {
@@ -16,12 +18,21 @@ module.exports = async function pokedexDataPlugin(context, options) {
           moveList.push({ level: learnset[i], move: getMoveProperties(i + 1) });
         }
 
+        const pokemonForms = getPokemonFormIds(p.monsno).map((id) => {
+          const formIndex = getPokemonFormIndexById(p.monsno, id);
+          return {
+            name: getPokemonName(id),
+            filename: getImage(p.monsno, formIndex),
+          };
+        });
+
         return {
           pokemonId: p.id,
           pokemonInfo: getPokemonInfo(p.id),
           eggGroupNames: eggGroupNames,
           eggLearnset: getEggMoves(p.id),
           lvlLearnset: moveList,
+          pokemonForms: pokemonForms,
         };
       });
       return {

@@ -19,6 +19,7 @@ export const PokemonPageContent = ({ data }) => {
   const lvlLearnset = data.lvlLearnset;
   const eggLearnset = data.eggLearnset;
   const tmLearnset = pokemonInfo.tmLearnset;
+  const pokemonForms = data.pokemonForms;
 
   return (
     <Container>
@@ -39,7 +40,7 @@ export const PokemonPageContent = ({ data }) => {
           <div className="col col-4">
             <img
               alt={pokemonInfo.name}
-              src={pokemonInfo.imageSrc}
+              src={`/img/${pokemonInfo.imageSrc}`}
               style={{ objectFit: 'contain', margin: '16px' }}
               width="80px"
               height="80px"
@@ -75,7 +76,7 @@ export const PokemonPageContent = ({ data }) => {
       </div>
 
       <Container>
-        <PokemonAlternativeFormsList pokemonDexId={pokemonId} />
+        <PokemonAlternativeFormsList pokemonForms={pokemonForms} />
       </Container>
 
       <Container>
