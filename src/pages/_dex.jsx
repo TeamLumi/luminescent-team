@@ -3,7 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import { PokemonPageContent } from '../components/Pokedex/PokemonPageContent';
 
-export default function PokemonPage({ data }) {
+export default function PokemonPage({ data, pokemonNames }) {
   const { siteConfig } = useDocusaurusContext();
 
   return (
@@ -11,7 +11,7 @@ export default function PokemonPage({ data }) {
       title={siteConfig.title}
       description="Pokemon Luminescent Version, A ROM Hack for Pokemon Brilliant Diamond and Shining Pearl"
     >
-      <PokemonPageContent data={data} />
+      <PokemonPageContent data={data} pokemonNames={pokemonNames} />
     </Layout>
   );
 }

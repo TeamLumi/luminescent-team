@@ -12,7 +12,7 @@ import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
 import { PokemonEggGroups } from './PokemonEggGroups';
 
-export const PokemonPageContent = ({ data }) => {
+export const PokemonPageContent = ({ data, pokemonNames }) => {
   const pokemonId = data.pokemonId;
   const pokemonInfo = data.pokemonInfo;
   const eggGroupNames = data.eggGroupNames;
@@ -23,11 +23,11 @@ export const PokemonPageContent = ({ data }) => {
 
   return (
     <Container>
-      {/* <Container> */}
-      {/*   <Box display="flex" justifyContent="center" marginTop="16px"> */}
-      {/*     <PokemonSearch setPokemonDexId={setPokemonDexId} /> */}
-      {/*   </Box> */}
-      {/* </Container> */}
+      <Container>
+        <Box display="flex" justifyContent="center" marginTop="16px">
+          <PokemonSearch pokemonNames={pokemonNames} pokemonId={pokemonId} />
+        </Box>
+      </Container>
       <div className="container">
         <div className="row">
           <Typography variant="h2" component="h3" sx={{ paddingLeft: '16px' }}>

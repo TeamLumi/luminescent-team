@@ -17,7 +17,7 @@ function pokedexDataPlugin(context, options) {
   return {
     name: 'luminescent-pokedex-data-plugin',
     async loadContent() {
-      const data = PersonalTable.Personal.map((p) => {
+      const pokemons = PersonalTable.Personal.map((p) => {
         const eggGroupNames = getEggGroupViaPokemonId(p.id).map((eggId) => getEggGroupNameById(eggId));
         const learnset = getPokemonLearnset(p.id);
 
@@ -44,22 +44,28 @@ function pokedexDataPlugin(context, options) {
         };
       });
 
+      const pokemonNames = pokemons.map((p) => ({ id: p.pokemonId, name: p.pokemonInfo.name }));
+
       return {
-        data: data,
+        pokemons: pokemons,
+        pokemonNames: pokemonNames,
       };
     },
 
     async contentLoaded({ content, actions }) {
       // TODO: create sub routes instead
+      const pokemonNamesJson = await actions.createData('pokemonNames.json', JSON.stringify(content.pokemonNames));
+
       const routes = await Promise.all(
-        content.data.map(async (data) => {
-          const dataJson = await actions.createData(`lumi${data.pokemonId}.json`, JSON.stringify(data));
+        content.pokemons.map(async (pokemon) => {
+          const dataJson = await actions.createData(`lumi${pokemon.pokemonId}.json`, JSON.stringify(pokemon));
           return {
-            path: `${options.path}/${data.pokemonId}`,
+            path: `${options.path}/${pokemon.pokemonId}`,
             component: options.pokemonComponent,
             exact: true,
             modules: {
               data: dataJson,
+              pokemonNames: pokemonNamesJson,
             },
           };
         }),

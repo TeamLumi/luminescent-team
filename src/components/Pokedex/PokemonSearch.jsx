@@ -1,36 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Autocomplete, TextField } from '@mui/material';
+import { useHistory } from '@docusaurus/router';
 
-const MAX_CURRENT_POKEMON = 493;
-const getPokemonNames = () => [];
-const getPokemonIdFromName = () => 1;
-
-export const PokemonSearch = ({ setPokemonDexId }) => {
-  // pokemonNameEndRange number is not including
-  const pokemonNames = getPokemonNames(MAX_CURRENT_POKEMON + 1);
-  const [selectedPokemonName, setSelectedPokemonName] = useState(pokemonNames[1]);
-  const [inputValue, setInputValue] = React.useState('');
+export const PokemonSearch = ({ pokemonNames, pokemonId }) => {
+  const history = useHistory();
+  const options = pokemonNames.map((pokemon) => ({ id: pokemon.id, label: pokemon.name }));
+  const pokemonName = options.find((p) => p.id === pokemonId);
 
   return (
     <Autocomplete
       disablePortal
       id="pokemonIdSelector"
       sx={{ width: 300 }}
-      options={pokemonNames}
-      value={selectedPokemonName}
-      onChange={(_, newValue) => {
-        setSelectedPokemonName(newValue);
-
-        if (!newValue) {
-          return;
-        }
-
-        const pokemonId = getPokemonIdFromName(newValue);
-        setPokemonDexId(pokemonId);
+      options={options}
+      value={pokemonName}
+      onChange={(_, pokemon) => {
+        history.push(`/dex/${pokemon.id}`);
       }}
-      inputValue={inputValue}
-      onInputChange={(_, newInputValue) => {
-        setInputValue(newInputValue);
+      isOptionEqualToValue={(option, value) => {
+        return option.id === value.id;
+      }}
+      renderOption={(props, option) => {
+        return (
+          <li {...props} key={`search-field-${option.id}`}>
+            {option.label}
+          </li>
+        );
       }}
       renderInput={(params) => <TextField {...params} label="Search Pokemon" />}
     />
