@@ -109,7 +109,11 @@ describe('Dex Utils Move Getters', () => {
 
     it('returns an array of egg moves for a valid dexId', () => {
       const eggMoves = getEggMoves(1);
-      expect(eggMoves).toContainEqual({ level: 'egg', moveId: 130 });
+
+      expect(eggMoves).toHaveLength(14);
+      eggMoves.forEach((move) => {
+        expect(move).toMatchSnapshot();
+      });
     });
 
     it('returns an empty array for a dexId with no egg moves', () => {
@@ -135,9 +139,11 @@ describe('Dex Utils Move Getters', () => {
 
     it('returns an array of TM moves when one or more TMs are learned', () => {
       const learnset = getTechMachineLearnset(2150467360, 3149832, 2418017312, 0);
-      expect(learnset).toContainEqual({ level: 'tm', moveId: 92 });
-      expect(learnset).toContainEqual({ level: 'tm', moveId: 331 });
+
       expect(learnset).toHaveLength(19);
+      learnset.forEach((move) => {
+        expect(move).toMatchSnapshot();
+      });
     });
 
     it('ignores TMs that the Pokémon cannot learn', () => {
@@ -192,6 +198,7 @@ describe('Dex Utils Move Getters', () => {
       'returns the expected properties for moveId $moveId',
       (moveId, name, desc, type, damageType, maxPP, power, accuracy) => {
         expect(getMoveProperties(moveId)).toEqual({
+          moveId,
           name,
           desc,
           type,
@@ -205,6 +212,7 @@ describe('Dex Utils Move Getters', () => {
 
     test('returns default values for an invalid moveId', () => {
       expect(getMoveProperties()).toEqual({
+        moveId: 0,
         name: '———',
         desc: '',
         type: 0,

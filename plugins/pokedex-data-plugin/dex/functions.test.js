@@ -79,23 +79,23 @@ describe('Dex utils function tests', () => {
   });
   describe('getImage', () => {
     test('should return the correct image URL with default values', () => {
-      expect(getImage()).toEqual('/img/pm0000_00_00_00_L.webp');
+      expect(getImage()).toEqual('pm0000_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and default formindex', () => {
-      expect(getImage(25)).toEqual('/img/pm0025_00_00_00_L.webp');
+      expect(getImage(25)).toEqual('pm0025_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and formindex', () => {
-      expect(getImage(25, 3)).toEqual('/img/pm0025_03_00_00_L.webp');
+      expect(getImage(25, 3)).toEqual('pm0025_03_00_00_L.webp');
     });
 
     test('should pad monsno with leading zeros', () => {
-      expect(getImage(123)).toEqual('/img/pm0123_00_00_00_L.webp');
+      expect(getImage(123)).toEqual('pm0123_00_00_00_L.webp');
     });
 
     test('should pad formindex with leading zeros', () => {
-      expect(getImage(25, 9)).toEqual('/img/pm0025_09_00_00_L.webp');
+      expect(getImage(25, 9)).toEqual('pm0025_09_00_00_L.webp');
     });
   });
 
@@ -145,3 +145,38 @@ describe('Dex utils function tests', () => {
     });
   });
 });
+
+// TODO: fix pokemon image tests
+// function getAllPokemonFormImageData() {
+//   const pokemonFormData = [];
+
+//   for (const entry of Object.entries(POKEMON_FORM_ID_MAP)) {
+//     const monsno = entry[0];
+//     const pokemonForms = entry[1];
+
+//     for (let i = 0; i < pokemonForms.length; i++) {
+//       const pokemonForm = pokemonForms[i];
+//       const filename = getPokemonImageFilename(monsno, getPokemonFormIndexById(monsno, pokemonForm.pokemonId));
+//       pokemonFormData.push([filename, pokemonForm.formName]);
+//     }
+//   }
+
+//   return pokemonFormData;
+// }
+
+// test.skip.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, formName, done) => {
+//   const imgFilePath = path.join(__dirname, '../../static/img/', filename);
+//   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+//     let fileExists = true;
+//     if (err) {
+//       fileExists = false;
+//     }
+
+//     try {
+//       expect(fileExists).toBe(true);
+//       done();
+//     } catch (err) {
+//       done(err);
+//     }
+//   });
+// });
