@@ -34,7 +34,7 @@ const {
   getPokemonIdFromMonsNoAndForm,
 } = require('./functions');
 
-const PersonalTable = require('../../../../__gamedata/PersonalTable.json');
+const PersonalTable = require('../../../__gamedata/PersonalTable.json');
 
 const POKEMON_MOVE_LEVEL_TYPE = {
   EGG: 'egg',

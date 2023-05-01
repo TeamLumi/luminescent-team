@@ -1,4 +1,4 @@
-const { abilityNames, abilityInfo } = require('../../../../__gamedata/data');
+const { abilityNames, abilityInfo } = require('../../../__gamedata/data');
 
 function makeSmogonAbilityObject(abilityId = 0) {
   const abilityString = abilityNames.labelDataArray[abilityId]?.wordDataArray[0]?.str ?? null;

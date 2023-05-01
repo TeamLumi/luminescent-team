@@ -71,7 +71,7 @@ const config = {
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
       },
     ],
-    './src/plugins/pokedex-data-plugin',
+    './plugins/pokedex-data-plugin',
   ],
 
   themeConfig:

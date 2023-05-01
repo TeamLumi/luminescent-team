@@ -1,4 +1,4 @@
-const PersonalTable = require('../../../__gamedata/PersonalTable.json');
+const PersonalTable = require('../../__gamedata/PersonalTable.json');
 const { getPokemonInfo } = require('./dex');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./dex/egggroup');
 const { getPokemonFormIds, getPokemonFormIndexById, getImage } = require('./dex/functions');
