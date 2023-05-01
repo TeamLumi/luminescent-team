@@ -60,18 +60,19 @@ const config = {
         path: 'rom-hacking',
         routeBasePath: 'rom-hacking',
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
-      }
-    ]
+      },
+    ],
+    './plugins/lumi-data',
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       docs: {
-      sidebar: {
-        hideable: true,
+        sidebar: {
+          hideable: true,
+        },
       },
-    },
       navbar: {
         title: 'Team Luminescent',
         logo: {
@@ -85,9 +86,9 @@ const config = {
             position: 'left',
             label: 'Luminescent Documents',
           },
-          {to: '/rom-hacking', label: 'ROM Hacking', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/dex', label: 'Pokedex', position: 'left'},
+          { to: '/rom-hacking', label: 'ROM Hacking', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/dex', label: 'Pokedex', position: 'left' },
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',
@@ -121,7 +122,7 @@ const config = {
               {
                 label: 'Nexus Mods',
                 href: 'https://www.nexusmods.com/pokemonbdsp/mods/1',
-              }
+              },
             ],
           },
           {
