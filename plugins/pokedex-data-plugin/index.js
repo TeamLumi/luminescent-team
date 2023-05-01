@@ -2,7 +2,7 @@
 const { Joi } = require('@docusaurus/utils-validation');
 
 const PersonalTable = require('../../__gamedata/PersonalTable.json');
-const { getPokemonInfo } = require('./dex');
+const { getPokemonInfo } = require('./dex/info');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./dex/egggroup');
 const { getPokemonFormIds, getPokemonFormIndexById, getImage } = require('./dex/functions');
 const { getEggMoves, getPokemonLearnset, getMoveProperties } = require('./dex/moves');

@@ -1,23 +1,8 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
-// import {
-//   POKEMON_FORM_ID_MAP,
-//   getPokemonFormIndexById,
-//   getPokemonImageFilename,
-// } from '../../plugins/pokedex-data-plugin/dex/pokemonFormSelector';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 
-export const PokemonAlternativeFormsList = ({ pokemonDexId, pokemonForms }) => {
-  // const allPokemonForms = POKEMON_FORM_ID_MAP[pokemonDexId].map((form) => {
-  //   const formIndex = getPokemonFormIndexById(pokemonDexId, form.pokemonId);
-  //   const formFilename = getPokemonImageFilename(pokemonDexId, formIndex);
-
-  //   return {
-  //     formName: form.formName,
-  //     formFilename: formFilename,
-  //   };
-  // });
-
+export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
   return pokemonForms.length > 1 ? (
     <Box>
       <Typography fontSize="2rem">Alternative Forms</Typography>

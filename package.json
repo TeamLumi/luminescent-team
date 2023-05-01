@@ -13,7 +13,8 @@
     "test": "jest",
     "test:ci": "jest -c ./jest-ci.config.js",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "lint": "eslint . --ext .jsx,.js"
   },
   "dependencies": {
     "@docusaurus/core": "^2.4.0",

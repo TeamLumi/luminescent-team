@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './styles.module.css';
-import { Box, Typography, Avatar, Container } from '@mui/material';
+import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';

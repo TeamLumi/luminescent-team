@@ -1,7 +1,5 @@
-import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
-// import { POKEMON_MOVE_LEVEL_TYPE, getMoveProperties } from '../../utils/dex';
-const getMoveProperties = () => ({ moveLevel: '1', move: {} });
+import { Box, Container, Typography } from '@mui/material';
 
 const DMG_TYPE_ICONS = {
   0: '/img/status_dmg_type.png',

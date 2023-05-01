@@ -13,7 +13,7 @@
   "parser": "@babel/eslint-parser",
   "rules": {
     "prettier/prettier": "off",
-    "no-unused-vars": "off",
+    "no-unused-vars": "warn",
     "react/prop-types": "off"
   },
   "env": {
