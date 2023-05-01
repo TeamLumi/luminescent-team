@@ -50,19 +50,21 @@ function pokedexDataPlugin(context, options) {
 
     async contentLoaded({ content, actions }) {
       // TODO: create sub routes instead
-      await Promise.all(
+      const routes = await Promise.all(
         content.data.map(async (data) => {
           const dataJson = await actions.createData(`lumi${data.pokemonId}.json`, JSON.stringify(data));
-          actions.addRoute({
-            path: `/${data.pokemonId}`,
+          return {
+            path: `/pokemon/${data.pokemonId}`,
             component: '@site/src/components/Pokemon/PokemonPage.jsx',
             exact: true,
             modules: {
               data: dataJson,
             },
-          });
+          };
         }),
       );
+
+      routes.forEach(actions.addRoute);
     },
   };
 }
