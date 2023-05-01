@@ -8,7 +8,7 @@ const {
   PersonalTable,
   moveNames,
   moveInfo,
-} = require('../../../__gamedata/data');
+} = require('../../../__gamedata');
 const { getPokemonFormId } = require('./name');
 
 const IS_MOVE_INDEX = false;
