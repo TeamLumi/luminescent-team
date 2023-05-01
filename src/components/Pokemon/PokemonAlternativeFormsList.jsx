@@ -1,6 +1,10 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
-import { POKEMON_FORM_ID_MAP, getPokemonFormIndexById, getPokemonImageFilename } from '../../core/pokemonFormSelector';
+import {
+  POKEMON_FORM_ID_MAP,
+  getPokemonFormIndexById,
+  getPokemonImageFilename,
+} from '../../plugins/pokedex-data-plugin/dex/pokemonFormSelector';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 
 export const PokemonAlternativeFormsList = ({ pokemonDexId }) => {

@@ -16,6 +16,10 @@ function getPokemonIdFromFormMap(monsNo = 0, formNo = 0) {
   return FORM_MAP[monsNo]?.[formNo] ?? undefined;
 }
 
+const getPokemonFormIndexById = (monsno, id) => {
+  return FORM_MAP[monsno].findIndex((pokemonId) => pokemonId === id);
+};
+
 function getGender(sex) {
   if (sex === 0) return 'M';
   if (sex === 254) return 'F';
@@ -55,4 +59,5 @@ module.exports = {
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
+  getPokemonFormIndexById,
 };

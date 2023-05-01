@@ -59,9 +59,9 @@ export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => 
     >
       {moveset.map((move, i) => (
         <MovesetListItem
-          key={`${pokemonDexId}-${movesetPrefix}-move-${move.moveId}-${i}`}
+          key={`${pokemonDexId}-${movesetPrefix}-move-${move.move.moveId}-${i}`}
           moveLevel={move.level}
-          move={getMoveProperties(move.moveId)}
+          move={move.move}
         />
       ))}
     </Box>

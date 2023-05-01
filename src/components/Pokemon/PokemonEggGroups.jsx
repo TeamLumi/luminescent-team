@@ -13,7 +13,7 @@ export const PokemonEggGroups = ({ eggGroupNames, sx }) => {
               return (
                 <Typography key={`eggGroupName-${eggGroupName}`} marginLeft="8px">
                   {eggGroupName}
-                  {i < eggGroupName.length - 1 && ','}
+                  {i < eggGroupNames.length - 1 && ','}
                 </Typography>
               );
             } catch (err) {

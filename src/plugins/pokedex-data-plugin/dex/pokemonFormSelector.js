@@ -1,4 +1,4 @@
-import { PersonalTable, formPokemonNames, basePokemonNames } from '../../__gamedata';
+import { PersonalTable, formPokemonNames, basePokemonNames } from '../../../../__gamedata';
 
 const UNKNOWN_POKEMON_FORM_NAME = 'Egg';
 
@@ -13,10 +13,6 @@ export const POKEMON_FORM_ID_MAP = PersonalTable.Personal.reduce((formMap, pokem
 
   return formMap;
 }, {});
-
-export const getPokemonFormIndexById = (monsno, id) => {
-  return POKEMON_FORM_ID_MAP[monsno].findIndex((pokemonForm) => pokemonForm.pokemonId === id);
-};
 
 export const getPokemonImageFilename = (monsno, formIndex) => {
   const paddedMonsno = monsno.toString().padStart(4, 0);

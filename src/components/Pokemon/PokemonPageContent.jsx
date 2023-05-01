@@ -15,17 +15,10 @@ import { PokemonEggGroups } from './PokemonEggGroups';
 export const PokemonPageContent = ({ data }) => {
   const pokemonId = data.pokemonId;
   const pokemonInfo = data.pokemonInfo;
-  const eggGroupNames = ['Monster'];
-  const learnset = [];
-  const eggLearnset = [];
-
-  const moveList = [];
-  for (let i = 0; i < learnset.length; i += 2) {
-    moveList.push({ level: learnset[i], moveId: learnset[i + 1] });
-  }
-
+  const eggGroupNames = data.eggGroupNames;
+  const lvlLearnset = data.lvlLearnset;
+  const eggLearnset = data.eggLearnset;
   const tmLearnset = pokemonInfo.tmLearnset;
-  // const eggLearnset = getEggMoves(pokemonId);
 
   return (
     <Container>
@@ -68,7 +61,7 @@ export const PokemonPageContent = ({ data }) => {
         </div>
       </div>
 
-      {/* <Container>
+      <Container>
         <PokemonAbilities
           abilityName1={pokemonInfo.ability1}
           abilityName2={pokemonInfo.ability2}
@@ -94,7 +87,7 @@ export const PokemonPageContent = ({ data }) => {
 
       <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
-          <PokemonMovesetList moveset={moveList} movesetPrefix="levelup" pokemonDexId={pokemonId} />
+          <PokemonMovesetList moveset={lvlLearnset} movesetPrefix="levelup" pokemonDexId={pokemonId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
           <PokemonMovesetList moveset={tmLearnset} movesetPrefix="tm" pokemonDexId={pokemonId} />
@@ -102,7 +95,7 @@ export const PokemonPageContent = ({ data }) => {
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
           <PokemonMovesetList moveset={eggLearnset} movesetPrefix="egg" pokemonDexId={pokemonId} />
         </PokemonAccordion>
-      </Container> */}
+      </Container>
     </Container>
   );
 };

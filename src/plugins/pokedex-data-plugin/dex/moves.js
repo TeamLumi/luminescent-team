@@ -77,6 +77,7 @@ function getMoveProperties(moveId = 0) {
   const maxPP = BASE_PP * MAX_PP_MULTIPLIER;
 
   return {
+    moveId: moveId,
     name: moveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
     desc: getMoveDescription(moveId),
     type,
@@ -94,7 +95,7 @@ function getEggMoves(dexId = 0) {
   const eggMoves = EggMovesTable.Data.find((e) => e.no === monsno && e.formNo === formNo)?.wazaNo ?? [];
   return eggMoves.map((moveId) => ({
     level: 'egg',
-    moveId,
+    move: getMoveProperties(moveId),
   }));
 }
 
@@ -122,7 +123,7 @@ function getTechMachineLearnset(m1, m2, m3, m4) {
     if (learnset[i] === 0) continue;
 
     const tm = ItemTable.WazaMachine[i];
-    canLearn.push({ level: 'tm', moveId: tm.wazaNo });
+    canLearn.push({ level: 'tm', move: getMoveProperties(tm.wazaNo) });
   }
 
   return canLearn;
