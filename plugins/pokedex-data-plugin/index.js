@@ -1,7 +1,7 @@
 // @ts-check
 const { Joi } = require('@docusaurus/utils-validation');
 
-const PersonalTable = require('../../__gamedata/PersonalTable.json');
+const { PersonalTable } = require('../../__gamedata');
 const { getPokemonInfo } = require('./dex/info');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./dex/egggroup');
 const { getPokemonFormIds, getPokemonFormIndexById, getImage } = require('./dex/functions');
@@ -36,7 +36,7 @@ function pokedexDataPlugin(context, options) {
 
         return {
           pokemonId: p.id,
-          pokemonInfo: getPokemonInfo(p.id),
+          pokemonInfo: getPokemonInfo(p.monsno, p.id),
           eggGroupNames: eggGroupNames,
           eggLearnset: getEggMoves(p.id),
           lvlLearnset: moveList,
