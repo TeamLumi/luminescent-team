@@ -48,7 +48,6 @@ export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => 
           sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
           md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
         },
-        gridTemplateRows: `repeat(${moveset.length}, 40px)`,
         alignItems: 'center',
         columnGap: '4px',
         rowGap: '8px',

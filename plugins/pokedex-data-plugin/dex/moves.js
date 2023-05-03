@@ -134,6 +134,17 @@ function getPokemonLearnset(pokemonId = 0) {
   return LearnsetTable.WazaOboe[pokemonId]?.ar ?? [];
 }
 
+function getLevelLearnset(pokemonId = 0) {
+  const learnset = getPokemonLearnset(pokemonId);
+
+  const moveList = [];
+  for (let i = 0; i < learnset.length; i += 2) {
+    moveList.push({ level: learnset[i], move: getMoveProperties(learnset[i + 1]) });
+  }
+
+  return moveList;
+}
+
 function parseTmLearnsetSection(decimal) {
   return (decimal >>> 0).toString(2).split('').reverse().join('').padStart(32, 0);
 }
@@ -148,4 +159,5 @@ module.exports = {
   getMoveProperties,
   getPokemonLearnset,
   parseTmLearnsetSection,
+  getLevelLearnset,
 };
