@@ -23,7 +23,7 @@ function pokedexDataPlugin(context, options) {
 
         const moveList = [];
         for (let i = 0; i < learnset.length; i += 2) {
-          moveList.push({ level: learnset[i], move: getMoveProperties(i + 1) });
+          moveList.push({ level: learnset[i], move: getMoveProperties(learnset[i + 1]) });
         }
 
         const pokemonForms = getPokemonFormIds(p.monsno).map((id) => {
