@@ -39,17 +39,12 @@ function getPokemon(pokemonId) {
     egg: getEggMoves(pokemonId),
   };
   const eggGroupNames = getEggGroupViaPokemonId(p.id).map((eggId) => getEggGroupNameById(eggId));
-  let forms = [];
-  try {
-    forms = getPokemonFormIds(p.monsno).map((formId) => {
-      return {
-        name: getPokemonName(formId),
-        imageSrc: getImage(p.monsno, getPokemonFormIndexById(p.monsno, formId)),
-      };
-    });
-  } catch (e) {
-    console.log(p.id);
-  }
+  const forms = getPokemonFormIds(p.monsno).map((formId) => {
+    return {
+      name: getPokemonName(formId),
+      imageSrc: getImage(p.monsno, getPokemonFormIndexById(p.monsno, formId)),
+    };
+  });
 
   return {
     id,

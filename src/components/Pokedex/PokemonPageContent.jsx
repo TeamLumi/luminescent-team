@@ -11,6 +11,7 @@ import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
 import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
 import { PokemonEggGroups } from './PokemonEggGroups';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
   return (
@@ -30,9 +31,10 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       <div className="container">
         <div className="row">
           <div className="col col-4">
-            <img
+            <ImageWithFallback
               alt={pokemon.name}
               src={`/img/${pokemon.imageSrc}`}
+              fallbackSrc={`/img/${pokemon.forms[0].imageSrc}`}
               style={{ objectFit: 'contain', margin: '16px' }}
               width="80px"
               height="80px"
