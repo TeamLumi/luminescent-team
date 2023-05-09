@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Luminescent Version',
+  title: 'Luminescent Platinum',
   tagline: 'A BDSP ROM Hack',
   url: 'https://luminescent.team',
   baseUrl: '/',
@@ -120,7 +120,11 @@ const config = {
               {
                 label: 'Nexus Mods',
                 href: 'https://www.nexusmods.com/pokemonbdsp/mods/1',
-              }
+              },
+              {
+                label: 'Twitter',
+                href: 'https://mobile.twitter.com/LuminescentTeam/',
+              },
             ],
           },
           {

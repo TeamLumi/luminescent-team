@@ -6,6 +6,8 @@ slug: /
 
 Luminescent Platinum is a romhack for Pokemon Brilliant Diamond and Shining Pearl based on [Drayano's Renegade Platinum](https://pokehacking.com/fangames/renegade-platinum/). These documents are all about this mod; if you want to learn about ROM Hacking to make your own mod, check out the **ROM Hacking** tab and join the Discord.
 
+Please see the sidebar for all of our various pages, including information on our unique features, the incense burner, regional Pokémon, special NPCs, unique Pokémon, item locations, and more! 
+
 We hope you enjoy our romhack!
 
 :::info
@@ -39,3 +41,7 @@ We hope you enjoy our romhack!
 - What's a "Professor Oak Challenge"? Why, it's catching everything possible as you go along to complete your Pokédex! This tracker helps you mark off when you've caught everything possible on a route before moving on, as well as tracking your full Pokédex at the bottom.
 - You must make your own copy before it will work.
 - Made by Astorious.
+
+### [Randomization Guide](https://www.nexusmods.com/pokemonbdsp/articles/3)
+- This guide has all the information necessary to randomize Luminescent Platinum! Please follow it step by step to ensure proper implementation. Further questions can be asked in our discord, or as comments to the article.
+- Made by DJ.

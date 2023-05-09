@@ -1,0 +1,11 @@
+.spoiler {
+  background-color: rgb(68, 68, 68);
+  color: transparent;
+  user-select: none;
+  border-radius: 0.3em;
+}
+
+.spoiler:hover {
+  background-color: inherit;
+  color: inherit;
+}
