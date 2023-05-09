@@ -1,8 +1,8 @@
 // @ts-check
 const { Joi } = require('@docusaurus/utils-validation');
 
-const { PersonalTable } = require('../../__gamedata');
 const { getPokemon } = require('./dex/pokemon');
+const { FORM_MAP } = require('./dex/functions');
 
 /**
  * @param {{path: string, pokemonComponent: string, listComponent: string, wrapperComponent: string}} options
@@ -13,7 +13,10 @@ function pokedexDataPlugin(context, options) {
   return {
     name: 'luminescent-pokedex-data-plugin',
     async loadContent() {
-      const pokemons = PersonalTable.Personal.slice(1).map((p) => getPokemon(p.id));
+      const pokemons = Object.values(FORM_MAP)
+        .flat()
+        .slice(1) // remove Egg
+        .map((id) => getPokemon(id));
       const pokemonList = pokemons.map((p) => ({
         id: p.id,
         monsno: p.monsno,
