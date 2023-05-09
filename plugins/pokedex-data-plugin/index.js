@@ -2,11 +2,6 @@
 const { Joi } = require('@docusaurus/utils-validation');
 
 const { PersonalTable } = require('../../__gamedata');
-const { getPokemonInfo } = require('./dex/info');
-const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./dex/egggroup');
-const { getPokemonFormIds, getPokemonFormIndexById, getImage, FORM_MAP } = require('./dex/functions');
-const { getEggMoves, getPokemonLearnset, getMoveProperties } = require('./dex/moves');
-const { getPokemonName } = require('./dex/name');
 const { getPokemon } = require('./dex/pokemon');
 
 /**
