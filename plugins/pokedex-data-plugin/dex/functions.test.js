@@ -1,3 +1,5 @@
+import path from 'path';
+import fs from 'fs';
 import {
   getPokemonIdFromFormMap,
   getGender,
@@ -6,7 +8,10 @@ import {
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
+  getPokemonFormIndexById,
+  FORM_MAP,
 } from './functions';
+import { getPokemon } from './pokemon';
 
 describe('Dex utils function tests', () => {
   it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
@@ -144,39 +149,42 @@ describe('Dex utils function tests', () => {
       expect(actualFormMap).toEqual(expectedFormMap);
     });
   });
+
+  function getAllPokemonFormImageData() {
+    const pokemonFormData = [];
+
+    for (const entry of Object.entries(FORM_MAP)) {
+      const monsno = entry[0];
+      const pokemonForms = entry[1];
+
+      for (let i = 0; i < pokemonForms.length; i++) {
+        const pokemonForm = pokemonForms[i];
+        const name = getPokemon(pokemonForm).name;
+        const filename = getImage(monsno, getPokemonFormIndexById(monsno, pokemonForm));
+        pokemonFormData.push([filename, name]);
+      }
+    }
+
+    return pokemonFormData;
+  }
+
+  test.skip.each([...getAllPokemonFormImageData()])(
+    'pokemon form image %s for %s exists',
+    (filename, formName, done) => {
+      const imgFilePath = path.join(__dirname, '../../../static/img/', filename);
+      fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+        let fileExists = true;
+        if (err) {
+          fileExists = false;
+        }
+
+        try {
+          expect(fileExists).toBe(true);
+          done();
+        } catch (err) {
+          done(err);
+        }
+      });
+    },
+  );
 });
-
-// TODO: fix pokemon image tests
-// function getAllPokemonFormImageData() {
-//   const pokemonFormData = [];
-
-//   for (const entry of Object.entries(POKEMON_FORM_ID_MAP)) {
-//     const monsno = entry[0];
-//     const pokemonForms = entry[1];
-
-//     for (let i = 0; i < pokemonForms.length; i++) {
-//       const pokemonForm = pokemonForms[i];
-//       const filename = getPokemonImageFilename(monsno, getPokemonFormIndexById(monsno, pokemonForm.pokemonId));
-//       pokemonFormData.push([filename, pokemonForm.formName]);
-//     }
-//   }
-
-//   return pokemonFormData;
-// }
-
-// test.skip.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, formName, done) => {
-//   const imgFilePath = path.join(__dirname, '../../static/img/', filename);
-//   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
-//     let fileExists = true;
-//     if (err) {
-//       fileExists = false;
-//     }
-
-//     try {
-//       expect(fileExists).toBe(true);
-//       done();
-//     } catch (err) {
-//       done(err);
-//     }
-//   });
-// });
