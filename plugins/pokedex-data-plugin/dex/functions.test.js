@@ -15,7 +15,7 @@ import { getPokemon } from './pokemon';
 
 describe('Dex utils function tests', () => {
   it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
-    const result = getPokemonIdFromFormMap(3, 3); //Clone Venusaur
+    const result = getPokemonIdFromFormMap(3, 1); //Clone Venusaur
     const result2 = getPokemonIdFromFormMap(3, 0); //Venusaur
     const CLONE_VENUSAUR = 1013;
     const VENUSAUR = 3;
@@ -168,23 +168,20 @@ describe('Dex utils function tests', () => {
     return pokemonFormData;
   }
 
-  test.skip.each([...getAllPokemonFormImageData()])(
-    'pokemon form image %s for %s exists',
-    (filename, formName, done) => {
-      const imgFilePath = path.join(__dirname, '../../../static/img/', filename);
-      fs.access(imgFilePath, fs.constants.F_OK, (err) => {
-        let fileExists = true;
-        if (err) {
-          fileExists = false;
-        }
+  test.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, formName, done) => {
+    const imgFilePath = path.join(__dirname, '../../../static/img/', filename);
+    fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+      let fileExists = true;
+      if (err) {
+        fileExists = false;
+      }
 
-        try {
-          expect(fileExists).toBe(true);
-          done();
-        } catch (err) {
-          done(err);
-        }
-      });
-    },
-  );
+      try {
+        expect(fileExists).toBe(true);
+        done();
+      } catch (err) {
+        done(err);
+      }
+    });
+  });
 });

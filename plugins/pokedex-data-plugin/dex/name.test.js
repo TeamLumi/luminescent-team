@@ -134,7 +134,6 @@ describe('Dex utils Name getters', () => {
     it('should return the correct index for a valid form ID', () => {
       expect(getPokemonFormId(25, 1027)).toBe(1);
       expect(getPokemonFormId(133, 133)).toBe(0);
-      expect(getPokemonFormId(800, 1353)).toBe(2);
     });
 
     it('should return -1 for an invalid form ID', () => {

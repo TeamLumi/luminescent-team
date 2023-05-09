@@ -1,7 +1,7 @@
 const { PersonalTable } = require('../../../__gamedata');
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
-const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});
+const FORM_MAP = PersonalTable.Personal.filter((p) => p.valid_flag === 1).reduce(createFormMap, {});
 
 function createFormMap(formMap, currentPokemon) {
   if (!Array.isArray(formMap[currentPokemon.monsno])) {
