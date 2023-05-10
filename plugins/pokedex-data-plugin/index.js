@@ -16,7 +16,8 @@ function pokedexDataPlugin(context, options) {
       const pokemons = Object.values(FORM_MAP)
         .flat()
         .slice(1) // remove Egg
-        .map((id) => getPokemon(id));
+        .map((id) => getPokemon(id))
+        .filter((p) => p.isValid);
       const pokemonList = pokemons.map((p) => ({
         id: p.id,
         monsno: p.monsno,

@@ -46,6 +46,8 @@ function getPokemon(pokemonId) {
     };
   });
 
+  const isValid = p.valid_flag === 1;
+
   return {
     id,
     monsno,
@@ -65,6 +67,7 @@ function getPokemon(pokemonId) {
     learnset,
     eggGroupNames,
     forms,
+    isValid,
   };
 }
 
