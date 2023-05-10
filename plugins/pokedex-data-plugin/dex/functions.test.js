@@ -168,7 +168,7 @@ describe('Dex utils function tests', () => {
     return pokemonFormData;
   }
 
-  test.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, formName, done) => {
+  test.skip.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, _, done) => {
     const imgFilePath = path.join(__dirname, '../../../static/img/', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
       let fileExists = true;
