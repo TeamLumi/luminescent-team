@@ -15,7 +15,7 @@ import { getPokemon } from './pokemon';
 
 describe('Dex utils function tests', () => {
   it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
-    const result = getPokemonIdFromFormMap(3, 1); //Clone Venusaur
+    const result = getPokemonIdFromFormMap(3, 3); //Clone Venusaur
     const result2 = getPokemonIdFromFormMap(3, 0); //Venusaur
     const CLONE_VENUSAUR = 1013;
     const VENUSAUR = 3;
@@ -150,7 +150,7 @@ describe('Dex utils function tests', () => {
     });
   });
 
-  function getAllPokemonFormImageData() {
+  function getAllPokemonFormImageData(onlyValidPokemons = false) {
     const pokemonFormData = [];
 
     for (const entry of Object.entries(FORM_MAP)) {
@@ -159,16 +159,19 @@ describe('Dex utils function tests', () => {
 
       for (let i = 0; i < pokemonForms.length; i++) {
         const pokemonForm = pokemonForms[i];
-        const name = getPokemon(pokemonForm).name;
+        const pokemon = getPokemon(pokemonForm);
+        if (onlyValidPokemons && !pokemon.isValid) {
+          continue;
+        }
         const filename = getImage(monsno, getPokemonFormIndexById(monsno, pokemonForm));
-        pokemonFormData.push([filename, name]);
+        pokemonFormData.push([filename, pokemon.name]);
       }
     }
 
     return pokemonFormData;
   }
 
-  test.skip.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, _, done) => {
+  test.skip.each([...getAllPokemonFormImageData(true)])('pokemon form image %s for %s exists', (filename, _, done) => {
     const imgFilePath = path.join(__dirname, '../../../static/img/', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
       let fileExists = true;
