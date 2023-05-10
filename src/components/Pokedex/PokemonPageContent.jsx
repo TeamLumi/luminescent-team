@@ -4,7 +4,7 @@ import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';
-import { PokemonSearch } from './PokemonSearch';
+import { PokemonSearchBox } from './PokemonSearchBox';
 import { PokemonMovesetList } from './PokemonMovesetList';
 import { PokemonAccordion } from './PokemonAccordion';
 import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
@@ -18,7 +18,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
     <Container>
       <Container>
         <Box display="flex" justifyContent="center" marginTop="16px">
-          <PokemonSearch pokemonNames={pokemonNames} pokemonId={pokemon.id} />
+          <PokemonSearchBox pokemonNames={pokemonNames} pokemonId={pokemon.id} />
         </Box>
       </Container>
       <div className="container">

@@ -2,7 +2,7 @@ import React from 'react';
 import { Autocomplete, TextField } from '@mui/material';
 import { useHistory } from '@docusaurus/router';
 
-export const PokemonSearch = ({ pokemonNames, pokemonId }) => {
+export const PokemonSearchBox = ({ pokemonNames, pokemonId }) => {
   const history = useHistory();
   const options = pokemonNames.map((pokemon) => ({ id: pokemon.id, label: pokemon.name }));
   const pokemonName = options.find((p) => p.id === pokemonId);
