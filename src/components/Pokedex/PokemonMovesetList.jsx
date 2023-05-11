@@ -7,7 +7,7 @@ const DMG_TYPE_ICONS = {
   2: '/img/special_dmg_type.png',
 };
 
-const TYPE_COLOR_MAP = {
+export const TYPE_COLOR_MAP = {
   0: { name: 'Normal', color: '#929da3', iconFilename: 'Normal.webp' },
   1: { name: 'Fighting', color: '#ce436a', iconFilename: 'Fighting.webp' },
   2: { name: 'Flying', color: '#8caadc', iconFilename: 'Flying.webp' },
@@ -142,7 +142,7 @@ const MovesetListItem = ({ moveLevel, move }) => {
   );
 };
 
-const PokemonMoveType = ({ typeName, typeColor }) => {
+export const PokemonMoveType = ({ typeName, typeColor }) => {
   return (
     <Box
       sx={{

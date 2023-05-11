@@ -25,6 +25,8 @@ function getPokemon(pokemonId) {
   const height = getHeight(pokemonId);
   const type1 = getTypeName(p.type1);
   const type2 = getTypeName(p.type2);
+  const type1Id = p.type1;
+  const type2Id = p.type2;
   const genderDecimalValue = p.sex;
   const imageSrc = getImage(p.monsno, getPokemonFormIndexById(p.monsno, p.id));
   const grassKnotPower = getGrassKnotPower(weight);
@@ -58,6 +60,8 @@ function getPokemon(pokemonId) {
     height,
     type1,
     type2,
+    type1Id,
+    type2Id,
     genderDecimalValue,
     imageSrc,
     grassKnotPower,
