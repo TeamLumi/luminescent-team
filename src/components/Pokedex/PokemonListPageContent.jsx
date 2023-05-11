@@ -40,16 +40,22 @@ const PokemonListEntry = ({ pokemon, style }) => {
             <img src={`/img/${pokemon.imageSrc}`} height={48} width={48} />
           </ListItemIcon>
           <Typography>{pokemon.name}</Typography>
-          <PokemonMoveType
-            typeName={TYPE_COLOR_MAP[pokemon.type1].name}
-            typeColor={TYPE_COLOR_MAP[pokemon.type1].color}
-          />
-          {pokemon.type1 !== pokemon.type2 && (
-            <PokemonMoveType
-              typeName={TYPE_COLOR_MAP[pokemon.type2].name}
-              typeColor={TYPE_COLOR_MAP[pokemon.type2].color}
-            />
-          )}
+          <Box display="flex" flexDirection="row" marginX="8px">
+            <Box width="80px">
+              <PokemonMoveType
+                typeName={TYPE_COLOR_MAP[pokemon.type1].name}
+                typeColor={TYPE_COLOR_MAP[pokemon.type1].color}
+              />
+            </Box>
+            {pokemon.type1 !== pokemon.type2 && (
+              <Box width="80px" marginLeft="8px">
+                <PokemonMoveType
+                  typeName={TYPE_COLOR_MAP[pokemon.type2].name}
+                  typeColor={TYPE_COLOR_MAP[pokemon.type2].color}
+                />
+              </Box>
+            )}
+          </Box>
           <PokemonAbilities
             abilityName1={pokemon.ability1}
             abilityName2={pokemon.ability2}
