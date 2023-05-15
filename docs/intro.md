@@ -29,11 +29,10 @@ We hope you enjoy our romhack!
 - You must make your own copy before it will work.
 - Made by Solarance.
 
-### [Boss Trainer Documentation](https://docs.google.com/spreadsheets/d/1hUVPaxr0norFBDfCRX1lp8hy3eae0zno36Cg2cMH080/edit?usp=sharing)
+### [Trainer Documentation](https://docs.google.com/spreadsheets/d/17d7xfiqRDJQp5j6LZIAE8QVCQi7tCgjU_gu5_vE0l2I/edit?usp=sharing)
 
-- Use this document to see all boss trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, our document will help you stay ahead!
-- *Currently only goes up to Fantina*. The full version will be made available when 2.0Final is released.
-- You must make your own copy before it will work.
+- Use this document to see all trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, our document will help you stay ahead!
+- You must make your own copy on gdocs before it will work.
 - Made by Solarance.
 
 ### [Professor Oak Challenge Tracker](https://docs.google.com/spreadsheets/d/133FFeo8GooaxUnlbInP5TL-bEwhwB2bMoxhqLdfEl94/edit#gid=1663592077)
