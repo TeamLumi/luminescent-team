@@ -3,7 +3,7 @@
 
 require('dotenv').config();
 
-const BASE_URL = '/';
+const BASE_URL = '/luminescent-team-dev';
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -12,7 +12,7 @@ const isDexEnabled = process.env.DEX_ENABLED === 'true';
 const pageExclusions = !isDexEnabled ? ['**/dex.js'] : [];
 
 const isPokedexEnabled = process.env.POKEDEX_ENABLED === 'true';
-const POKEDEX_BASE_PATH = 'pokedex';
+const POKEDEX_BASE_PATH = '/pokedex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
