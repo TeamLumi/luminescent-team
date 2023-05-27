@@ -1,4 +1,4 @@
-const { PersonalTable, basePokemonNames, formPokemonNames } = require('../../../__gamedata');
+const { PersonalTable, basePokemonNames, formPokemonNames } = require('./data');
 const { FORM_MAP } = require('./functions');
 
 const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});

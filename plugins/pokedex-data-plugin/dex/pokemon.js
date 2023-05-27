@@ -1,4 +1,4 @@
-const { PersonalTable } = require('../../../__gamedata');
+const { PersonalTable } = require('./data');
 const { getAbilityString } = require('./ability');
 const { getTechMachineLearnset, getLevelLearnset, getEggMoves } = require('./moves');
 const { getPokemonName } = require('./name');

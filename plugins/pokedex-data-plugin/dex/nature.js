@@ -1,4 +1,4 @@
-const { natureNames } = require('../../../__gamedata');
+const { natureNames } = require('./data');
 
 function getNatureId(natureString) {
   if (!natureString) throw Error(`Bad natureString: ${natureString}`);

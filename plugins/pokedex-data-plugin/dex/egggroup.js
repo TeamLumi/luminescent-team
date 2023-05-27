@@ -1,4 +1,4 @@
-const { PersonalTable } = require('../../../__gamedata');
+const { PersonalTable } = require('./data');
 
 const EGG_GROUPS = {
   0: 'None',

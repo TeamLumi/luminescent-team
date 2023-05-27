@@ -33,7 +33,7 @@ import {
   getPokemonIdFromMonsNoAndForm,
 } from './functions';
 
-import { PersonalTable } from '../../../__gamedata';
+import { PersonalTable } from './data';
 
 const POKEMON_MOVE_LEVEL_TYPE = {
   EGG: 'egg',

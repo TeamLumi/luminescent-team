@@ -6,7 +6,7 @@ const { getWeight, getHeight } = require('./details');
 
 const { getGrassKnotPower, getImage, formatBaseStats, getPokemonFormIndexById } = require('./functions');
 
-const { PersonalTable } = require('../../../__gamedata');
+const { PersonalTable } = require('./data');
 
 function getPokemonInfo(monsno = 0, pokemonId = 0) {
   const p = PersonalTable.Personal[pokemonId];
