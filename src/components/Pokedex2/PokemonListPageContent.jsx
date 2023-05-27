@@ -37,7 +37,7 @@ const PokemonListEntry = ({ pokemon, style }) => {
   const { path } = usePluginData('luminescent-pokedex-data-plugin');
 
   return (
-    <a href={`${path}/${pokemon.id}`} style={{ ...style, textDecoration: 'none' }}>
+    <a href={useBaseUrl(`${path}/${pokemon.id}`)} style={{ ...style, textDecoration: 'none' }}>
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
