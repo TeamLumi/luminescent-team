@@ -3,6 +3,11 @@ import Layout from '@theme/Layout';
 import { PokemonPageContent } from '../components/Pokedex2/PokemonPageContent';
 
 export default function PokemonPage({ pokemon, pokemonList }) {
+  // required for webpack SSR
+  if (typeof pokemon === 'undefined' || typeof pokemonList === 'undefined') {
+    return null;
+  }
+
   return (
     <Layout
       title={pokemon.name}
