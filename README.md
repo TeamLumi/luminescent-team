@@ -20,6 +20,14 @@ Install the extension/plugin for your favorite IDE (VSCode, JetBrains, NVIM, ...
 
 > Note: Prettier is disabled for Markdown files for now - requires configuring to comply with Docusaurus
 
+### Pokedex Feature Flag
+
+The Pokedex is still a work in progress feature, which we have hidden behind a "feature flag". We basically tell
+Docusaurus to not include anything related to the Pokedex (including gamedata). We achieve this via environment variables.
+
+If you want to work on the Pokedex Feature - you need to load the environment variable. The easiest way is to
+copy the `.example.env` file as `.env`.
+
 ### Local Development
 
 ```
