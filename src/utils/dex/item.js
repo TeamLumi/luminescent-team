@@ -1,4 +1,4 @@
-const { itemNames } = require('./data');
+const { itemNames } = require('../../../__gamedata');
 
 function getItemIdFromItemName(itemName) {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);

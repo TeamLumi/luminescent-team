@@ -1,4 +1,4 @@
-import { PersonalTable } from './data';
+import { PersonalTable } from '../../../__gamedata';
 
 const EGG_GROUPS = {
   0: 'None',

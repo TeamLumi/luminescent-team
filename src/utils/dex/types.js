@@ -1,4 +1,4 @@
-const { typeName } = require('./data');
+const { typeName } = require('../../../__gamedata');
 
 function getTypeName(typeId = 0) {
   const type = typeName.labelDataArray[typeId]?.wordDataArray[0]?.str;

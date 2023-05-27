@@ -1,4 +1,4 @@
-import { PersonalTable } from './data';
+import { PersonalTable } from '../../../__gamedata';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});

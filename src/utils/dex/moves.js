@@ -8,7 +8,7 @@ import {
   PersonalTable,
   moveNames,
   moveInfo,
-} from './data';
+} from '../../../__gamedata';
 import { getPokemonFormId } from './name';
 
 const IS_MOVE_INDEX = false;

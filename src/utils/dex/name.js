@@ -1,4 +1,4 @@
-import { PersonalTable, basePokemonNames, formPokemonNames } from './data';
+import { PersonalTable, basePokemonNames, formPokemonNames } from '../../../__gamedata';
 import { FORM_MAP } from './functions';
 
 const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
