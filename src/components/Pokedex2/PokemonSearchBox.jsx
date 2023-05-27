@@ -2,6 +2,7 @@ import React from 'react';
 import { Autocomplete, TextField } from '@mui/material';
 import { useHistory } from '@docusaurus/router';
 import { usePluginData } from '@docusaurus/useGlobalData';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const PokemonSearchBox = ({ pokemonNames, pokemonId }) => {
   const history = useHistory();
@@ -17,7 +18,7 @@ export const PokemonSearchBox = ({ pokemonNames, pokemonId }) => {
       options={options}
       value={pokemonName}
       onChange={(_, pokemon) => {
-        history.push(`${path}/${pokemon.id}`);
+        history.push(useBaseUrl(`${path}/${pokemon.id}`));
       }}
       isOptionEqualToValue={(option, value) => {
         return option.id === value.id;
