@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 /**
  * WIP, styling and logic implementation is TBD
@@ -16,11 +17,11 @@ export default function EvolutionGraph() {
       </div>
 
       <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center">
-        <img src="/img/pm0001_00_00_00_L.webp" alt="Stage 1 Evo" />
+        <img src={useBaseUrl('/img/pm0001_00_00_00_L.webp')} alt="Stage 1 Evo" />
         <Typography variant="h6">→</Typography>
-        <img src="/img/pm0002_00_00_00_L.webp" alt="Stage 2 Evo" />
+        <img src={useBaseUrl('/img/pm0002_00_00_00_L.webp')} alt="Stage 2 Evo" />
         <Typography variant="h6">→</Typography>
-        <img src="/img/pm0003_00_00_00_L.webp" width={90} alt="Stage 3 Evo" />
+        <img src={useBaseUrl('/img/pm0003_00_00_00_L.webp')} width={90} alt="Stage 3 Evo" />
       </Box>
     </div>
   );

@@ -1,6 +1,7 @@
 import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
 import { POKEMON_MOVE_LEVEL_TYPE, getMoveProperties } from '../../utils/dex';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const DMG_TYPE_ICONS = {
   0: '/img/status_dmg_type.png',
@@ -79,7 +80,7 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
   if (moveIconType === POKEMON_MOVE_LEVEL_TYPE.EGG) {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '18px', sm: '26px', md: '32px' }}>
-        <img src="/img/pm0000_00_00_00_L.webp" alt="Egg Move" />
+        <img src={useBaseUrl('/img/pm0000_00_00_00_L.webp')} alt="Egg Move" />
       </Box>
     );
   }
@@ -87,7 +88,7 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
   if (moveIconType === POKEMON_MOVE_LEVEL_TYPE.TM) {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '30px', sm: '40px' }}>
-        <img src={`/img/tms/${TYPE_COLOR_MAP[moveTypeId].iconFilename}`} alt="Technical Machine" />
+        <img src={useBaseUrl(`/img/tms/${TYPE_COLOR_MAP[moveTypeId].iconFilename}`)} alt="Technical Machine" />
       </Box>
     );
   }
@@ -113,7 +114,7 @@ const MovesetListItem = ({ moveLevel, move }) => {
       </Box>
 
       <Box display="flex" alignItems="center">
-        <img src={DMG_TYPE_ICONS[move.damageType]} alt="Damage Type" width="100%" />
+        <img src={useBaseUrl(DMG_TYPE_ICONS[move.damageType])} alt="Damage Type" width="100%" />
       </Box>
 
       <Box display="flex" flexDirection="column" alignItems="center">

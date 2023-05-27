@@ -6,6 +6,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 import { PokemonMoveType, TYPE_COLOR_MAP } from './PokemonMovesetList';
 import { PokemonAbilities } from './PokemonAbilities';
 import { usePluginData } from '@docusaurus/useGlobalData';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const PokemonListPageContent = ({ pokemonList }) => {
   const [pokemons, setPokemons] = useState(pokemonList);
@@ -40,7 +41,7 @@ const PokemonListEntry = ({ pokemon, style }) => {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <img src={`/img/${pokemon.imageSrc}`} height={48} width={48} />
+            <img src={useBaseUrl(`/img/${pokemon.imageSrc}`)} height={48} width={48} />
           </ListItemIcon>
           <Typography>{pokemon.name}</Typography>
           <Box display="flex" flexDirection="row" marginX="8px">

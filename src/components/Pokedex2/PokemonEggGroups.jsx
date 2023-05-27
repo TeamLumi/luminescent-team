@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const PokemonEggGroups = ({ eggGroupNames, sx }) => {
   return (
@@ -7,7 +8,7 @@ export const PokemonEggGroups = ({ eggGroupNames, sx }) => {
       <Typography sx={{ fontWeight: 800, fontSize: '0.8rem' }}>Egg Groups:</Typography>
       <Container>
         <Box display="flex" alignItems="center">
-          <img src="/img/pm0000_00_00_00_L.webp" alt="Pokemon Egg" width="16px" height="20px" />
+          <img src={useBaseUrl('/img/pm0000_00_00_00_L.webp')} alt="Pokemon Egg" width="16px" height="20px" />
           {eggGroupNames.map((eggGroupName, i) => {
             try {
               return (

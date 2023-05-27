@@ -5,7 +5,7 @@ const { getPokemon } = require('./dex/pokemon');
 const { FORM_MAP } = require('./dex/functions');
 
 /**
- * @param {{path: string, pokemonComponent: string, listComponent: string, wrapperComponent: string}} options
+ * @param {{path: string, routeBasePath: string, pokemonComponent: string, listComponent: string, wrapperComponent: string}} options
  * @param {import('@docusaurus/types').LoadContext} context
  * @returns {import('@docusaurus/types').Plugin<any>}
  */
@@ -41,7 +41,7 @@ function pokedexDataPlugin(context, options) {
       const pokemonListJson = await actions.createData('pokemonList.json', JSON.stringify(content.pokemonList));
 
       const pokemonListRoute = {
-        path: options.path,
+        path: options.routeBasePath + options.path,
         component: options.listComponent,
         exact: true,
         modules: {
@@ -52,7 +52,7 @@ function pokedexDataPlugin(context, options) {
         content.pokemons.map(async (pokemon) => {
           const pokemonJson = await actions.createData(`lumi${pokemon.id}.json`, JSON.stringify(pokemon));
           return {
-            path: `${options.path}/${pokemon.id}`,
+            path: options.routeBasePath + `${options.path}/${pokemon.id}`,
             component: options.pokemonComponent,
             exact: true,
             modules: {
@@ -65,7 +65,7 @@ function pokedexDataPlugin(context, options) {
 
       const subRoutes = [pokemonListRoute, ...pokemonRoutes];
       actions.addRoute({
-        path: options.path,
+        path: options.routeBasePath + options.path,
         component: options.wrapperComponent,
         exact: false,
         routes: subRoutes,
@@ -80,6 +80,7 @@ function pokedexDataPlugin(context, options) {
 
 const optionsSchema = Joi.object({
   path: Joi.string(),
+  routeBasePath: Joi.string(),
   pokemonComponent: Joi.string(),
   listComponent: Joi.string(),
   wrapperComponent: Joi.string(),
