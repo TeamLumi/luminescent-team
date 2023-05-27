@@ -10,6 +10,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const isDexEnabled = process.env.DEX_ENABLED === 'true';
 const pageExclusions = !isDexEnabled ? ['**/dex.js'] : [];
 
+const isPokedexEnabled = process.env.POKEDEX_ENABLED === 'true';
+const POKEDEX_BASE_PATH = '/pokedex';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Luminescent Platinum',
@@ -71,6 +74,20 @@ const config = {
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
       },
     ],
+    // enable plugin
+    ...(isPokedexEnabled
+      ? [
+          [
+            './plugins/pokedex-data-plugin',
+            {
+              path: POKEDEX_BASE_PATH,
+              pokemonComponent: '@site/src/pages/_dex.jsx',
+              listComponent: '@site/src/pages/_dexlist.jsx',
+              wrapperComponent: '@site/src/components/Pokedex2/PokedexPageWrapper.jsx',
+            },
+          ],
+        ]
+      : []),
   ],
 
   themeConfig:
@@ -97,6 +114,7 @@ const config = {
           { to: '/rom-hacking', label: 'ROM Hacking', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
           ...(isDexEnabled ? [{ to: '/dex', label: 'Pokedex', position: 'left' }] : []),
+          ...(isPokedexEnabled ? [{ to: POKEDEX_BASE_PATH, label: 'Pokedex', position: 'left' }] : []),
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',
@@ -130,11 +148,12 @@ const config = {
               {
                 label: 'Nexus Mods',
                 href: 'https://www.nexusmods.com/pokemonbdsp/mods/1',
-              },              {
+              },
+              {
                 label: 'Twitter',
                 href: 'https://mobile.twitter.com/LuminescentTeam/',
               },
-           ],
+            ],
           },
           {
             title: 'More',

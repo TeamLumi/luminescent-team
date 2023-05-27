@@ -70,6 +70,10 @@ function pokedexDataPlugin(context, options) {
         exact: false,
         routes: subRoutes,
       });
+
+      actions.setGlobalData({
+        path: options.path,
+      });
     },
   };
 }
