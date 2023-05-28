@@ -71,6 +71,10 @@ function getPokemonFormId(monsno = 0, id) {
   return FORM_MAP[monsno]?.findIndex((e) => e === id) ?? -1;
 }
 
+function normalizePokemonName(name) {
+  return name.toLowerCase().replace(/\s+/g, '').replaceAll("'", '');
+}
+
 module.exports = {
   getPokemonMonsnoFromName,
   getFormName,
@@ -81,4 +85,5 @@ module.exports = {
   getPokemonFormId,
   createPokemonMap,
   POKEMON_NAME_MAP,
+  normalizePokemonName,
 };

@@ -49,6 +49,7 @@ function getPokemon(pokemonId) {
   });
 
   const isValid = p.valid_flag === 1;
+  const isBaseForm = p.form_index === 0;
 
   return {
     id,
@@ -72,6 +73,7 @@ function getPokemon(pokemonId) {
     eggGroupNames,
     forms,
     isValid,
+    isBaseForm,
   };
 }
 

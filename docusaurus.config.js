@@ -84,6 +84,7 @@ const config = {
               path: POKEDEX_BASE_PATH,
               routeBasePath: BASE_URL,
               pokemonComponent: '@site/src/pages/_dex.jsx',
+              pokemonRedirectComponent: '@site/src/components/common/RedirectComponent.jsx',
               listComponent: '@site/src/pages/_dexlist.jsx',
               wrapperComponent: '@site/src/components/Pokedex2/PokedexPageWrapper.jsx',
             },

@@ -3,9 +3,10 @@ const { Joi } = require('@docusaurus/utils-validation');
 
 const { getPokemon } = require('./dex/pokemon');
 const { FORM_MAP } = require('./dex/functions');
+const { normalizePokemonName } = require('./dex/name');
 
 /**
- * @param {{path: string, routeBasePath: string, pokemonComponent: string, listComponent: string, wrapperComponent: string}} options
+ * @param {{path: string, routeBasePath: string, pokemonComponent: string, pokemonRedirectComponent: string, listComponent: string, wrapperComponent: string}} options
  * @param {import('@docusaurus/types').LoadContext} context
  * @returns {import('@docusaurus/types').Plugin<any>}
  */
@@ -38,34 +39,55 @@ function pokedexDataPlugin(context, options) {
     },
 
     async contentLoaded({ content, actions }) {
+      const pokedexPath = options.routeBasePath + options.path;
       const pokemonListJson = await actions.createData('pokemonList.json', JSON.stringify(content.pokemonList));
 
       const pokemonListRoute = {
-        path: options.routeBasePath + options.path,
+        path: pokedexPath,
         component: options.listComponent,
         exact: true,
         modules: {
           pokemonList: pokemonListJson,
         },
       };
-      const pokemonRoutes = await Promise.all(
+
+      const pokemonRedirectRoutes = [];
+      const pokemonRoutes = [];
+
+      await Promise.all(
         content.pokemons.map(async (pokemon) => {
+          const pokemonName = normalizePokemonName(pokemon.name);
+          const pokemonSlug = pokemon.isBaseForm ? pokemonName : pokemon.id;
+          const pokemonPath = `${pokedexPath}/${pokemonSlug}`;
           const pokemonJson = await actions.createData(`lumi${pokemon.id}.json`, JSON.stringify(pokemon));
-          return {
-            path: options.routeBasePath + `${options.path}/${pokemon.id}`,
+
+          if (pokemon.isBaseForm) {
+            const redirectPathJson = await actions.createData(`lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
+            pokemonRedirectRoutes.push({
+              path: `${pokedexPath}/${pokemon.id}`,
+              component: options.pokemonRedirectComponent,
+              exact: true,
+              modules: {
+                redirectPath: redirectPathJson,
+              },
+            });
+          }
+
+          pokemonRoutes.push({
+            path: pokemonPath,
             component: options.pokemonComponent,
             exact: true,
             modules: {
               pokemon: pokemonJson,
               pokemonList: pokemonListJson,
             },
-          };
+          });
         }),
       );
 
-      const subRoutes = [pokemonListRoute, ...pokemonRoutes];
+      const subRoutes = [pokemonListRoute, ...pokemonRoutes, ...pokemonRedirectRoutes];
       actions.addRoute({
-        path: options.routeBasePath + options.path,
+        path: pokedexPath,
         component: options.wrapperComponent,
         exact: false,
         routes: subRoutes,
@@ -82,6 +104,7 @@ const optionsSchema = Joi.object({
   path: Joi.string(),
   routeBasePath: Joi.string(),
   pokemonComponent: Joi.string(),
+  pokemonRedirectComponent: Joi.string(),
   listComponent: Joi.string(),
   wrapperComponent: Joi.string(),
 });
