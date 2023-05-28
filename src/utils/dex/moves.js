@@ -12,6 +12,7 @@ import {
 import { getPokemonFormId } from './name';
 
 const IS_MOVE_INDEX = false;
+const MAX_TM_COUNT = 104;
 
 function generateMovesViaLearnset(monsNo, level) {
   /**
@@ -26,19 +27,18 @@ function generateMovesViaLearnset(monsNo, level) {
     throw new Error('Invalid level');
   }
 
-  const cutoffIndex = LearnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
+  let cutoffIndex = LearnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
     if (i % 2 === 1) return IS_MOVE_INDEX;
     return currentMoveOrLevel > level;
   });
-
+  if (cutoffIndex === -1) {
+    cutoffIndex = LearnsetTable.WazaOboe[monsNo].ar.length;
+  }
   const moves = LearnsetTable.WazaOboe[monsNo].ar.slice(0, cutoffIndex);
 
-  return [
-    getMoveString(moves.at(-7)),
-    getMoveString(moves.at(-5)),
-    getMoveString(moves.at(-3)),
-    getMoveString(moves.at(-1)),
-  ];
+  const moveset = [moves.at(-7) || 0, moves.at(-5) || 0, moves.at(-3) || 0, moves.at(-1) || 0];
+
+  return moveset.map(getMoveString);
 }
 
 function isMoveNameSmogonCompatible(moveString) {
@@ -106,23 +106,42 @@ function getMoveDescription(moveId = 0) {
   return description.trim();
 }
 
-function getTechMachineLearnset(m1, m2, m3, m4) {
-  const learnset = [
-    parseTmLearnsetSection(m1),
-    parseTmLearnsetSection(m2),
-    parseTmLearnsetSection(m3),
-    parseTmLearnsetSection(m4),
-  ]
-    .join('')
-    .split('')
-    .flatMap((e) => parseInt(e));
+function getTMCompatibility(pokemonId = 0) {
+  const { machine1, machine2, machine3, machine4 } = PersonalTable.Personal[pokemonId];
+  let tmCompatibility = [];
+
+  for (let i = 0; i < 32; i++) {
+    tmCompatibility[i] = (machine1 & (1 << i)) != 0;
+  }
+  for (let i = 0; i < 32; i++) {
+    tmCompatibility[i + 32] = (machine2 & (1 << i)) != 0;
+  }
+  for (let i = 0; i < 32; i++) {
+    tmCompatibility[i + 64] = (machine3 & (1 << i)) != 0;
+  }
+  for (let i = 0; i < 32; i++) {
+    tmCompatibility[i + 96] = (machine4 & (1 << i)) != 0;
+  }
+
+  return tmCompatibility;
+}
+
+function getTechMachineLearnset(pokemonId = 0) {
+  const learnset = getTMCompatibility(pokemonId);
 
   const canLearn = [];
-  for (let i = 0; i < learnset.length; i++) {
-    if (learnset[i] === 0) continue;
-
+  for (let i = 0; i <= MAX_TM_COUNT; i++) {
     const tm = ItemTable.WazaMachine[i];
-    canLearn.push({ level: 'tm', moveId: tm.wazaNo });
+
+    const legalitySetValue = ItemTable.Item[tm.itemNo].group_id;
+    const isLearnable = learnset[legalitySetValue - 1];
+    if (tm.wazaNo === 216) {
+      console.log(legalitySetValue, learnset[legalitySetValue - 1], isLearnable);
+    }
+
+    if (isLearnable) {
+      canLearn.push({ level: 'tm', moveId: tm.wazaNo });
+    }
   }
 
   return canLearn;
@@ -131,10 +150,6 @@ function getTechMachineLearnset(m1, m2, m3, m4) {
 function getPokemonLearnset(pokemonId = 0) {
   if (!Number.isInteger(pokemonId) || pokemonId < 0) return [];
   return LearnsetTable.WazaOboe[pokemonId]?.ar ?? [];
-}
-
-function parseTmLearnsetSection(decimal) {
-  return (decimal >>> 0).toString(2).split('').reverse().join('').padStart(32, 0);
 }
 
 export {
@@ -146,5 +161,5 @@ export {
   getTechMachineLearnset,
   getMoveProperties,
   getPokemonLearnset,
-  parseTmLearnsetSection,
+  getTMCompatibility,
 };
