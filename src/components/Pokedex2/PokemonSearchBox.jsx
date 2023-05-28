@@ -7,6 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 export const PokemonSearchBox = ({ pokemonNames, pokemonId }) => {
   const history = useHistory();
   const { path } = usePluginData('luminescent-pokedex-data-plugin');
+  const pokedexPath = useBaseUrl(path);
   const options = pokemonNames.map((pokemon) => ({ id: pokemon.id, label: pokemon.name }));
   const pokemonName = options.find((p) => p.id === pokemonId);
 
@@ -18,7 +19,7 @@ export const PokemonSearchBox = ({ pokemonNames, pokemonId }) => {
       options={options}
       value={pokemonName}
       onChange={(_, pokemon) => {
-        history.push(useBaseUrl(`${path}/${pokemon.id}`));
+        history.push(`${pokedexPath}/${pokemon.id}`);
       }}
       isOptionEqualToValue={(option, value) => {
         return option.id === value.id;
