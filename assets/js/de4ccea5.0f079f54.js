@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[7626],{1962:e=>{e.exports="/luminescent-team-dev/pokedex/silcoon"}}]);

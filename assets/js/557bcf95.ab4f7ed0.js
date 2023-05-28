@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[46582],{68934:e=>{e.exports="/luminescent-team-dev/pokedex/octillery"}}]);
