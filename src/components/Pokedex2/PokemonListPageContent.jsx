@@ -60,11 +60,6 @@ const PokemonListEntry = ({ pokemon, style }) => {
               </Box>
             )}
           </Box>
-          <PokemonAbilities
-            abilityName1={pokemon.ability1}
-            abilityName2={pokemon.ability2}
-            abilityNameHidden={pokemon.abilityH}
-          />
         </ListItemButton>
       </ListItem>
     </a>
