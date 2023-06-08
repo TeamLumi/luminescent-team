@@ -1,5 +1,5 @@
 
-# Introduction
+# EV-AS Guide
 
 This guide is for the setup of z80Rotom's [ev-as scripting tool](https://github.com/z80rotom/ev-as) and expects a few bare minimum skills. You should know how to download GitHub repositories, whether by downloading the zip or cloning the repo. You should also be comfortable with running commands such as `python` and `cd` from the terminal/command prompt/PowerShell.
 
@@ -21,7 +21,7 @@ Finally, create a folder called `scripts`. We will use this later.
 
 # Additional Setup
 
-For the purpose of macro commands, you will need to install the [BDSP Repacker](https://github.com/Ai0796/BDSP-Repacker) and unpack your `romfs\Data\StreamingAssets\AssetAssistant\Message\english` file. Once unpacked, you will have the various JSONs that ev-as requires. No further setup is necessary at this point.
+For the purpose of macro commands, you will need to install the [BDSP Repacker](https://github.com/Ai0796/BDSP-Repacker) and unpack your `romfs\Data\StreamingAssets\AssetAssistant\Message\english` file. Once unpacked, you will have the various JSONs that ev-as requires. No further setup is necessary at this point. The `AssetFolder` must be copied into ev-as' main folder after unpacking.
 
 ## Usages
 
