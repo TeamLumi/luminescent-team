@@ -9,7 +9,7 @@ import {
   getTechMachineLearnset,
   getMoveProperties,
   getPokemonLearnset,
-  parseTmLearnsetSection,
+  getTMCompatibility,
 } from './moves';
 import {
   getPokemonMonsnoFromName,
@@ -48,7 +48,7 @@ function getPokemonInfo(monsno = 0) {
     ability1: getAbilityString(p.tokusei1),
     ability2: getAbilityString(p.tokusei2),
     abilityH: getAbilityString(p.tokusei3),
-    tmLearnset: getTechMachineLearnset(p.machine1, p.machine2, p.machine3, p.machine4),
+    tmLearnset: getTechMachineLearnset(p.id),
     prettyBaseStats: formatBaseStats(p),
     baseStats: {
       hp: p.basic_hp,
@@ -65,6 +65,7 @@ function getPokemonInfo(monsno = 0) {
     type1: getTypeName(p.type1),
     type2: getTypeName(p.type2),
     imageSrc: getImage(monsno),
+    genderDecimalValue: p.sex,
   };
 }
 
@@ -75,7 +76,7 @@ export {
   getGrassKnotPower,
   getImage,
   formatBaseStats,
-  parseTmLearnsetSection,
+  getTMCompatibility,
   getPokemonIdFromMonsNoAndForm,
   getPokemonInfo,
   makeSmogonAbilityObject,

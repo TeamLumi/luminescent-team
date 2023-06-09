@@ -5,7 +5,8 @@ import { getPokemonNames, getPokemonIdFromName } from '../../utils/dex';
 const MAX_CURRENT_POKEMON = 493;
 
 export const PokemonSearch = ({ setPokemonDexId }) => {
-  const pokemonNames = getPokemonNames(MAX_CURRENT_POKEMON);
+  // pokemonNameEndRange number is not including
+  const pokemonNames = getPokemonNames(MAX_CURRENT_POKEMON + 1);
   const [selectedPokemonName, setSelectedPokemonName] = useState(pokemonNames[1]);
   const [inputValue, setInputValue] = React.useState('');
 
@@ -13,16 +14,18 @@ export const PokemonSearch = ({ setPokemonDexId }) => {
     <Autocomplete
       disablePortal
       id="pokemonIdSelector"
-      sx={{ width: 300, color: 'inherit' }}
+      sx={{ width: 300 }}
       options={pokemonNames}
       value={selectedPokemonName}
       onChange={(_, newValue) => {
         setSelectedPokemonName(newValue);
 
-        const pokemonId = getPokemonIdFromName(newValue);
-        if (pokemonId != null) {
-          setPokemonDexId(pokemonId);
+        if (!newValue) {
+          return;
         }
+
+        const pokemonId = getPokemonIdFromName(newValue);
+        setPokemonDexId(pokemonId);
       }}
       inputValue={inputValue}
       onInputChange={(_, newInputValue) => {

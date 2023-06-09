@@ -57,6 +57,17 @@
 
 div.evolutionTables > table {
   margin-bottom: 0;
+  width: 100%;
+}
+
+div.evolutionTables > table th:nth-child(odd),
+div.evolutionTables > table td:nth-child(odd) {
+  min-width: 140px; /* Set width for odd columns */
+}
+
+div.evolutionTables > table th:nth-child(even),
+div.evolutionTables > table td:nth-child(even) {
+  min-width: 124px; /* Set width for even columns */
 }
 
 .dexEvolutionContainer {

@@ -11,6 +11,8 @@ import { PokemonAccordion } from './PokemonAccordion';
 import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
 import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
+import { PokemonEggGroups } from './PokemonEggGroups';
+import { getEggGroupViaPokemonId } from '../../utils/dex/egggroup';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -42,11 +44,13 @@ export default function PokedexFeatures() {
       <div className="container">
         <div className="row">
           <div className="col col-4">
-            <Avatar
+            <img
               alt={pokemonInfo.name}
               src={pokemonInfo.imageSrc}
-              sx={{ width: 80, height: 80, textAlign: 'center', margin: '16px' }}
-            ></Avatar>
+              style={{ objectFit: 'contain', margin: '16px' }}
+              width="80px"
+              height="80px"
+            />
           </div>
           <div className="col col-4">
             <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
@@ -82,7 +86,10 @@ export default function PokedexFeatures() {
       </Container>
 
       <Container>
-        <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} />
+        <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
+          <PokemonEggGroups eggGroupIds={getEggGroupViaPokemonId(pokemonDexId)} sx={{ marginRight: '16px' }} />
+          <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} />
+        </Box>
       </Container>
 
       <Container>

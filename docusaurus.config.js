@@ -1,12 +1,18 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+require('dotenv').config();
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// Pokedex is disabled by default
+const isDexEnabled = process.env.DEX_ENABLED === 'true';
+const pageExclusions = !isDexEnabled ? ['**/dex.js'] : [];
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Luminescent Version',
+  title: 'Luminescent Platinum',
   tagline: 'A BDSP ROM Hack',
   url: 'https://luminescent.team',
   baseUrl: '/',
@@ -48,6 +54,9 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        pages: {
+          exclude: [...pageExclusions],
+        },
       }),
     ],
   ],
@@ -60,18 +69,18 @@ const config = {
         path: 'rom-hacking',
         routeBasePath: 'rom-hacking',
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
-      }
-    ]
+      },
+    ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       docs: {
-      sidebar: {
-        hideable: true,
+        sidebar: {
+          hideable: true,
+        },
       },
-    },
       navbar: {
         title: 'Team Luminescent',
         logo: {
@@ -85,9 +94,9 @@ const config = {
             position: 'left',
             label: 'Luminescent Documents',
           },
-          {to: '/rom-hacking', label: 'ROM Hacking', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/dex', label: 'Pokedex', position: 'left'},
+          { to: '/rom-hacking', label: 'ROM Hacking', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'left' },
+          ...(isDexEnabled ? [{ to: '/dex', label: 'Pokedex', position: 'left' }] : []),
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',
@@ -121,8 +130,11 @@ const config = {
               {
                 label: 'Nexus Mods',
                 href: 'https://www.nexusmods.com/pokemonbdsp/mods/1',
-              }
-            ],
+              },              {
+                label: 'Twitter',
+                href: 'https://mobile.twitter.com/LuminescentTeam/',
+              },
+           ],
           },
           {
             title: 'More',

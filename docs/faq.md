@@ -77,6 +77,14 @@ Definitely come check out our partnered server, [Pokemon Switch Modding](https:/
 
 [Affection](https://bulbapedia.bulbagarden.net/wiki/Affection) is the "[Pokémon] held on so you wouldn't be sad!" mechanic. It scales on the same number as friendship/happiness, but will not affect other mechanics related to friendship. This includes Sylveon's evolution, despite previous generations specifically being tied to the affection mechanic. It's friendship now.
 
+### What are the level caps throughout the game?
+
+Level caps (an option you can turn on from any Pokémon Center PC) prevent you from going past the highest-leveled Pokémon of the next major fight. Those specific levels are as follow: <br />
+> Roark: <Spoiler>16</Spoiler> / Gardenia: <Spoiler>26</Spoiler> / Fantina: <Spoiler>33</Spoiler> / Maylene: <Spoiler>39</Spoiler>  
+  Wake: <Spoiler>44</Spoiler> / Byron: <Spoiler>53</Spoiler> / Candice: <Spoiler>56</Spoiler> / Spear Pillar: <Spoiler>60</Spoiler> / Volkner: <Spoiler>62</Spoiler>  
+ Cynthia: <Spoiler>78</Spoiler> / Stark Mountain: <Spoiler>85</Spoiler> / Postgame: <Spoiler>100</Spoiler>
+
+
 ## Install FAQ
 
 These are just some basic [installation](./category/installation) questions that we frequently get asked:

@@ -46,12 +46,6 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno) {
   return PersonalTable.Personal.find((e) => e.monsno === monsno && FORM_MAP[e.monsno][formno] === e.id)?.id;
 }
 
-function getPokemonMonsNoAndFormFromId(pokemonId) {
-  const monsNo = PersonalTable.Personal[pokemonId].monsno;
-  const formNo = FORM_MAP[monsNo].indexOf(pokemonId);
-  return { monsNo, formNo };
-}
-
 export {
   FORM_MAP,
   getPokemonIdFromFormMap,
@@ -61,5 +55,4 @@ export {
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
-  getPokemonMonsNoAndFormFromId,
 };
