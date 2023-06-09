@@ -135,9 +135,6 @@ function getTechMachineLearnset(pokemonId = 0) {
 
     const legalitySetValue = ItemTable.Item[tm.itemNo].group_id;
     const isLearnable = learnset[legalitySetValue - 1];
-    if (tm.wazaNo === 216) {
-      console.log(legalitySetValue, learnset[legalitySetValue - 1], isLearnable);
-    }
 
     if (isLearnable) {
       canLearn.push({ level: 'tm', moveId: tm.wazaNo });
