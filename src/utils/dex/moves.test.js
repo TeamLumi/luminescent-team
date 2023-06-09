@@ -7,7 +7,7 @@ import {
   getTechMachineLearnset,
   getMoveProperties,
   getPokemonLearnset,
-  parseTmLearnsetSection,
+  getTMCompatibility,
 } from './moves';
 
 describe('Dex Utils Move Getters', () => {
@@ -116,32 +116,161 @@ describe('Dex Utils Move Getters', () => {
       expect(getEggMoves(2)).toEqual([]);
     });
   });
-  describe('parseTmLearnsetSection', () => {
-    it('returns the correct binary string for a decimal number', () => {
-      expect(parseTmLearnsetSection(2150467360)).toBe('00000100111000011011010000000001');
-      expect(parseTmLearnsetSection(3149832)).toBe('00000000000001000000001000000011');
-      expect(parseTmLearnsetSection(2418017312)).toBe('00000100001000000000010000001001');
+  describe('getTMCompatibility', () => {
+    const TM_LEARNSET = [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+    ];
+
+    it('returns the correct array for a decimal number', () => {
+      expect(getTMCompatibility(3)).toStrictEqual(TM_LEARNSET);
     });
 
     it('returns a 32-character string for any input', () => {
-      const binaryString = parseTmLearnsetSection(8);
-      expect(binaryString).toHaveLength(32);
+      const learnsetArray = getTMCompatibility(8);
+      expect(learnsetArray).toHaveLength(128);
     });
   });
   describe('getTechMachineLearnset', () => {
     it('returns an empty array when no TMs are learned', () => {
-      expect(getTechMachineLearnset(0, 0, 0, 0)).toEqual([]);
+      expect(getTechMachineLearnset(0)).toEqual([]);
     });
 
     it('returns an array of TM moves when one or more TMs are learned', () => {
-      const learnset = getTechMachineLearnset(2150467360, 3149832, 2418017312, 0);
+      const learnset = getTechMachineLearnset(3);
       expect(learnset).toContainEqual({ level: 'tm', moveId: 92 });
       expect(learnset).toContainEqual({ level: 'tm', moveId: 331 });
-      expect(learnset).toHaveLength(19);
+      expect(learnset).toHaveLength(33);
     });
 
     it('ignores TMs that the Pokémon cannot learn', () => {
-      const learnset = getTechMachineLearnset(2150467360, 3149832, 2418017312, 0);
+      const learnset = getTechMachineLearnset(3);
       expect(learnset).not.toContainEqual({ level: 'tm', moveId: 3 });
       expect(learnset).not.toContainEqual({ level: 'tm', moveId: 4 });
     });
