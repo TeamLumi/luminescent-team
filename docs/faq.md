@@ -15,7 +15,7 @@ Check out the [features](./features) page for details of all our features and ad
 
 ### Where do I download the mod?
 
-The latest link is always pinned in the [discord](https://discord.gg/luminescent).
+The latest update is always available on our [NexusMods page](https://www.nexusmods.com/pokemonbdsp/mods/1).
 
 ### How do I install it?
 
@@ -23,11 +23,11 @@ Check our [installation](./category/installation) page.
 
 ### Does PkHax work with this romhack?
 
-No. We have a custom branch that will, [which you can click here to find](https://github.com/hp3721/PKHeX-Luminescent/releases/). However, it does not work with release 2.0.1 beta yet.
+No. We have a custom branch that will, [which you can click here to find](https://github.com/hp3721/PKHeX-Luminescent/releases/). However, it does not work with releases after 2.0.1 beta yet.
 
 ### So I have to grind everything out?
 
-Not really. This mod gives an "infinite Rare Candies" item at the Trainer School, there's an EV trainer to fight in Solaceon Daycare, and other sorts of editing can be attempted through use of [Imposter's Ordeal](https://github.com/Nifyr/Imposters-Ordeal/).
+Not really. This mod gives an "infinite Rare Candies" item at the Trainer School, there's an EV trainer to fight in Solaceon Daycare, hyper-training is available in Jubilife and no longer level locked, and other sorts of editing can be attempted through use of [Imposter's Ordeal](https://github.com/Nifyr/Imposters-Ordeal/).
 
 ### When will the next version release?
 
@@ -47,7 +47,7 @@ If it doesn't properly apply, you have likely done something wrong. Double check
 
 ### Will you be adding new Pokemon? What about regional forms?
 
-As of 2.0.1 beta, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. Generation 5+ Pokémon will not be added until 3.0 (estimated mid-2023). See [this page](incense-regional.mdx) for more info.
+As of 2.0.1 beta, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
 
 ### How do I encounter regional Pokémon?
 
@@ -80,8 +80,8 @@ Definitely come check out our partnered server, [Pokemon Switch Modding](https:/
 ### What are the level caps throughout the game?
 
 Level caps (an option you can turn on from any Pokémon Center PC) prevent you from going past the highest-leveled Pokémon of the next major fight. Those specific levels are as follow: <br />
-> Roark: <Spoiler>16</Spoiler> / Gardenia: <Spoiler>26</Spoiler> / Fantina: <Spoiler>33</Spoiler> / Maylene: <Spoiler>39</Spoiler>  
-  Wake: <Spoiler>44</Spoiler> / Byron: <Spoiler>53</Spoiler> / Candice: <Spoiler>56</Spoiler> / Spear Pillar: <Spoiler>60</Spoiler> / Volkner: <Spoiler>62</Spoiler>  
+> Roark: <Spoiler>16</Spoiler> / Mars: <Spoiler>19</Spoiler> / Gardenia: <Spoiler>26</Spoiler> / Fantina: <Spoiler>33</Spoiler> / Maylene: <Spoiler>39</Spoiler>  
+  Wake: <Spoiler>44</Spoiler> / Rival: <Spoiler>49</Spoiler> / Byron: <Spoiler>53</Spoiler> / Candice: <Spoiler>56</Spoiler> / Spear Pillar: <Spoiler>60</Spoiler> / Volkner: <Spoiler>62</Spoiler>  
  Cynthia: <Spoiler>78</Spoiler> / Stark Mountain: <Spoiler>85</Spoiler> / Postgame: <Spoiler>100</Spoiler>
 
 
