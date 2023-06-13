@@ -237,14 +237,21 @@ function validIds(path, ar) {
 }
 
 function genForms() {
+  /*
+  This is for generating a form object based on each labelName and arrayIndex from the zkn_form.json
+  The format for the labelName is 'ZKN_FORM_{monsNo}_{formNo}'
+  It iterates through labelNames and checks if the formNo is > 0
+  If the formNo is > 0 it's added to the object.
+  */
   const formNamedata = formPokemonNames;
   const formsList = formNamedata["labelDataArray"];
   const forms = {};
-
+  
   for (let i = 0; i < formsList.length; i++) {
-    const allForms = formsList[i];
-    if (allForms["arrayIndex"] !== 0 && parseInt(allForms["labelName"].slice(-3)) > 0) {
-      forms[allForms["labelName"]] = allForms["arrayIndex"];
+    const monForm = formsList[i];
+    const formNo = parseInt(monForm["labelName"].split("_")[-1])
+    if (monForm["arrayIndex"] !== 0 && formNo > 0) {
+      forms[monForm["labelName"]] = monForm["arrayIndex"];
     }
   }
 
@@ -263,12 +270,7 @@ function getFormFormat(monsNo, formNo) {
 }
 
 function removeDuplicates(pathDictionary) {
-  const newPath = [];
-  for (const pathElement of pathDictionary) {
-    if (!newPath.includes(pathElement)) {
-      newPath.push(pathElement);
-    }
-  }
+  const newPath = Array.from(new Set(pathDictionary));
   return newPath;
 }
 
@@ -310,7 +312,7 @@ function updateEvolvePaths(evolutionPaths, currentMon, currentMonPath) {
   for (let i = 0; i < currentMonPath.length; i++) {
     evolutionPaths[currentMonPath[i]].path.push(currentMon);
     evolutionPaths[currentMonPath[i]].path = evolutionPaths[currentMonPath[i]].path.filter(
-      (x, j) => !new Set(evolutionPaths[currentMonPath[i]].path.slice(j + 1)).has(x)
+      (pokemon, evo_index) => !new Set(evolutionPaths[currentMonPath[i]].path.slice(evo_index + 1)).has(pokemon)
     );
   }
 }
