@@ -23,11 +23,11 @@ Check our [installation](./category/installation) page.
 
 ### Does PkHax work with this romhack?
 
-No. We have a custom branch that will, [which you can click here to find](https://github.com/hp3721/PKHeX-Luminescent/releases/). However, it does not work with releases after 2.0.1 beta yet.
+Yes, although we have to use a [custom branch](https://github.com/TalonSabre/LumiHeX). Please be aware of any limitations listed on the main page and always download from the releases link on the side.
 
-### So I have to grind everything out?
+### And if I don't want to edit my save?
 
-Not really. This mod gives an "infinite Rare Candies" item at the Trainer School, there's an EV trainer to fight in Solaceon Daycare, hyper-training is available in Jubilife and no longer level locked, and other sorts of editing can be attempted through use of [Imposter's Ordeal](https://github.com/Nifyr/Imposters-Ordeal/).
+You don't have to. This mod gives an "infinite Rare Candies" item at the Trainer School, there's an EV trainer to fight in Solaceon Daycare, hyper-training is available in Jubilife and no longer level locked, and other sorts of editing can be attempted through use of [Imposter's Ordeal](https://github.com/Nifyr/Imposters-Ordeal/).
 
 ### When will the next version release?
 
