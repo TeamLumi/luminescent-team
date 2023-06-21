@@ -22,6 +22,7 @@ We hope you enjoy our romhack!
 
 - Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, locations, we've got everything here. If you need information on individual Pokémon, this is the page you want to peruse!
 - Includes locations and evolution methods for regional forms and evolutions.
+- Made by Hudie.
 
 ### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit?usp=sharing)
 
