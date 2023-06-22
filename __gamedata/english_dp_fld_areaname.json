@@ -1,0 +1,6558 @@
+{
+    "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 3652094840918934080
+    },
+    "m_Name": "english_dp_fld_areaname",
+    "hash": 317892330,
+    "langID": 2,
+    "isResident": 0,
+    "isKanji": 0,
+    "labelDataArray": [
+        {
+            "labelIndex": 0,
+            "arrayIndex": 0,
+            "labelName": "DP_fld_arenames_000",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mystery Zone",
+                    "strWidth": 177.46875
+                }
+            ]
+        },
+        {
+            "labelIndex": 1,
+            "arrayIndex": 1,
+            "labelName": "DP_fld_arenames_001",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "GWS",
+                    "strWidth": 67.421875
+                }
+            ]
+        },
+        {
+            "labelIndex": 2,
+            "arrayIndex": 2,
+            "labelName": "DP_fld_arenames_002",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Jubilife City",
+                    "strWidth": 155.15625
+                }
+            ]
+        },
+        {
+            "labelIndex": 3,
+            "arrayIndex": 3,
+            "labelName": "DP_fld_arenames_003",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokétch Company",
+                    "strWidth": 235.09375
+                }
+            ]
+        },
+        {
+            "labelIndex": 4,
+            "arrayIndex": 4,
+            "labelName": "DP_fld_arenames_004",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Trainers’ School",
+                    "strWidth": 206.984375
+                }
+            ]
+        },
+        {
+            "labelIndex": 5,
+            "arrayIndex": 5,
+            "labelName": "DP_fld_arenames_005",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Jubilife TV",
+                    "strWidth": 140.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 6,
+            "arrayIndex": 6,
+            "labelName": "DP_fld_arenames_006",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Canalave City",
+                    "strWidth": 180.5
+                }
+            ]
+        },
+        {
+            "labelIndex": 7,
+            "arrayIndex": 7,
+            "labelName": "DP_fld_arenames_007",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mining Museum",
+                    "strWidth": 204.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 8,
+            "arrayIndex": 8,
+            "labelName": "DP_fld_arenames_008",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Oreburgh City",
+                    "strWidth": 185.21875
+                }
+            ]
+        },
+        {
+            "labelIndex": 9,
+            "arrayIndex": 9,
+            "labelName": "DP_fld_arenames_009",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Cycle Shop",
+                    "strWidth": 146.4375
+                }
+            ]
+        },
+        {
+            "labelIndex": 10,
+            "arrayIndex": 10,
+            "labelName": "DP_fld_arenames_010",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Eterna City",
+                    "strWidth": 143.34375
+                }
+            ]
+        },
+        {
+            "labelIndex": 11,
+            "arrayIndex": 11,
+            "labelName": "DP_fld_arenames_011",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Foreign Building",
+                    "strWidth": 211.921875
+                }
+            ]
+        },
+        {
+            "labelIndex": 12,
+            "arrayIndex": 12,
+            "labelName": "DP_fld_arenames_012",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Contest Hall",
+                    "strWidth": 162.109375
+                }
+            ]
+        },
+        {
+            "labelIndex": 13,
+            "arrayIndex": 13,
+            "labelName": "DP_fld_arenames_013",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Poffin House",
+                    "strWidth": 167.0625
+                }
+            ]
+        },
+        {
+            "labelIndex": 14,
+            "arrayIndex": 14,
+            "labelName": "DP_fld_arenames_014",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Hearthome City",
+                    "strWidth": 205.359375
+                }
+            ]
+        },
+        {
+            "labelIndex": 15,
+            "arrayIndex": 15,
+            "labelName": "DP_fld_arenames_015",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pastoria City",
+                    "strWidth": 163.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 16,
+            "arrayIndex": 16,
+            "labelName": "DP_fld_arenames_016",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Veilstone Store",
+                    "strWidth": 198.578125
+                }
+            ]
+        },
+        {
+            "labelIndex": 17,
+            "arrayIndex": 17,
+            "labelName": "DP_fld_arenames_018",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Veilstone City",
+                    "strWidth": 182.578125
+                }
+            ]
+        },
+        {
+            "labelIndex": 18,
+            "arrayIndex": 18,
+            "labelName": "DP_fld_arenames_019",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Canalave Library",
+                    "strWidth": 217.03125
+                }
+            ]
+        },
+        {
+            "labelIndex": 19,
+            "arrayIndex": 19,
+            "labelName": "DP_fld_arenames_020",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sunyshore Market",
+                    "strWidth": 231.296875
+                }
+            ]
+        },
+        {
+            "labelIndex": 20,
+            "arrayIndex": 20,
+            "labelName": "DP_fld_arenames_021",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sunyshore City",
+                    "strWidth": 191.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 21,
+            "arrayIndex": 21,
+            "labelName": "DP_fld_arenames_022",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Vista Lighthouse",
+                    "strWidth": 213.328125
+                }
+            ]
+        },
+        {
+            "labelIndex": 22,
+            "arrayIndex": 22,
+            "labelName": "DP_fld_arenames_023",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Snowpoint City",
+                    "strWidth": 196.59375
+                }
+            ]
+        },
+        {
+            "labelIndex": 23,
+            "arrayIndex": 23,
+            "labelName": "DP_fld_arenames_024",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon League",
+                    "strWidth": 222.3125
+                }
+            ]
+        },
+        {
+            "labelIndex": 24,
+            "arrayIndex": 24,
+            "labelName": "DP_fld_arenames_025",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Fight Area",
+                    "strWidth": 135.296875
+                }
+            ]
+        },
+        {
+            "labelIndex": 25,
+            "arrayIndex": 25,
+            "labelName": "DP_fld_arenames_026",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Oreburgh Mine",
+                    "strWidth": 198.078125
+                }
+            ]
+        },
+        {
+            "labelIndex": 26,
+            "arrayIndex": 26,
+            "labelName": "DP_fld_arenames_027",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Valley Windworks",
+                    "strWidth": 231.9375
+                }
+            ]
+        },
+        {
+            "labelIndex": 27,
+            "arrayIndex": 27,
+            "labelName": "DP_fld_arenames_028",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Eterna Forest",
+                    "strWidth": 171.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 28,
+            "arrayIndex": 28,
+            "labelName": "DP_fld_arenames_029",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Fuego Ironworks",
+                    "strWidth": 213.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 29,
+            "arrayIndex": 29,
+            "labelName": "DP_fld_arenames_030",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Hall of Origin",
+                    "strWidth": 178.171875
+                }
+            ]
+        },
+        {
+            "labelIndex": 30,
+            "arrayIndex": 30,
+            "labelName": "DP_fld_arenames_031",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Spear Pillar",
+                    "strWidth": 146.703125
+                }
+            ]
+        },
+        {
+            "labelIndex": 31,
+            "arrayIndex": 31,
+            "labelName": "DP_fld_arenames_032",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mount Coronet",
+                    "strWidth": 198.828125
+                }
+            ]
+        },
+        {
+            "labelIndex": 32,
+            "arrayIndex": 32,
+            "labelName": "DP_fld_arenames_033",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Great Marsh",
+                    "strWidth": 161.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 33,
+            "arrayIndex": 33,
+            "labelName": "DP_fld_arenames_034",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Solaceon Ruins",
+                    "strWidth": 194.921875
+                }
+            ]
+        },
+        {
+            "labelIndex": 34,
+            "arrayIndex": 34,
+            "labelName": "DP_fld_arenames_035",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Victory Road",
+                    "strWidth": 168.828125
+                }
+            ]
+        },
+        {
+            "labelIndex": 35,
+            "arrayIndex": 35,
+            "labelName": "DP_fld_arenames_036",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Renegade Park",
+                    "strWidth": 178.046875
+                }
+            ]
+        },
+        {
+            "labelIndex": 36,
+            "arrayIndex": 36,
+            "labelName": "DP_fld_arenames_037",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Amity Square",
+                    "strWidth": 172.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 37,
+            "arrayIndex": 37,
+            "labelName": "DP_fld_arenames_038",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ravaged Path",
+                    "strWidth": 177.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 38,
+            "arrayIndex": 38,
+            "labelName": "DP_fld_arenames_039",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Floaroma Meadow",
+                    "strWidth": 241.390625
+                }
+            ]
+        },
+        {
+            "labelIndex": 39,
+            "arrayIndex": 39,
+            "labelName": "DP_fld_arenames_040",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Oreburgh Gate",
+                    "strWidth": 197.578125
+                }
+            ]
+        },
+        {
+            "labelIndex": 40,
+            "arrayIndex": 40,
+            "labelName": "DP_fld_arenames_041",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Fullmoon Island",
+                    "strWidth": 204.421875
+                }
+            ]
+        },
+        {
+            "labelIndex": 41,
+            "arrayIndex": 41,
+            "labelName": "DP_fld_arenames_042",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Stark Mountain",
+                    "strWidth": 196.765625
+                }
+            ]
+        },
+        {
+            "labelIndex": 42,
+            "arrayIndex": 42,
+            "labelName": "DP_fld_arenames_043",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Turnback Cave",
+                    "strWidth": 193.515625
+                }
+            ]
+        },
+        {
+            "labelIndex": 43,
+            "arrayIndex": 43,
+            "labelName": "DP_fld_arenames_044",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sendoff Spring",
+                    "strWidth": 191.375
+                }
+            ]
+        },
+        {
+            "labelIndex": 44,
+            "arrayIndex": 44,
+            "labelName": "DP_fld_arenames_045",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Flower Paradise",
+                    "strWidth": 204.109375
+                }
+            ]
+        },
+        {
+            "labelIndex": 45,
+            "arrayIndex": 45,
+            "labelName": "DP_fld_arenames_046",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Snowpoint Temple",
+                    "strWidth": 241.125
+                }
+            ]
+        },
+        {
+            "labelIndex": 46,
+            "arrayIndex": 46,
+            "labelName": "DP_fld_arenames_047",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Wayward Cave",
+                    "strWidth": 194.625
+                }
+            ]
+        },
+        {
+            "labelIndex": 47,
+            "arrayIndex": 47,
+            "labelName": "DP_fld_arenames_048",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ruin Maniac Cave",
+                    "strWidth": 233.046875
+                }
+            ]
+        },
+        {
+            "labelIndex": 48,
+            "arrayIndex": 48,
+            "labelName": "DP_fld_arenames_049",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Maniac Tunnel",
+                    "strWidth": 190.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 49,
+            "arrayIndex": 49,
+            "labelName": "DP_fld_arenames_050",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Trophy Garden",
+                    "strWidth": 196.921875
+                }
+            ]
+        },
+        {
+            "labelIndex": 50,
+            "arrayIndex": 50,
+            "labelName": "DP_fld_arenames_051",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Island",
+                    "strWidth": 135.296875
+                }
+            ]
+        },
+        {
+            "labelIndex": 51,
+            "arrayIndex": 51,
+            "labelName": "DP_fld_arenames_052",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Old Chateau",
+                    "strWidth": 166.140625
+                }
+            ]
+        },
+        {
+            "labelIndex": 52,
+            "arrayIndex": 52,
+            "labelName": "DP_fld_arenames_053",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Galactic HQ",
+                    "strWidth": 162.34375
+                }
+            ]
+        },
+        {
+            "labelIndex": 53,
+            "arrayIndex": 53,
+            "labelName": "DP_fld_arenames_054",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Verity Cavern",
+                    "strWidth": 177.15625
+                }
+            ]
+        },
+        {
+            "labelIndex": 54,
+            "arrayIndex": 54,
+            "labelName": "DP_fld_arenames_055",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Lake Verity",
+                    "strWidth": 147.375
+                }
+            ]
+        },
+        {
+            "labelIndex": 55,
+            "arrayIndex": 55,
+            "labelName": "DP_fld_arenames_056",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Valor Cavern",
+                    "strWidth": 169.390625
+                }
+            ]
+        },
+        {
+            "labelIndex": 56,
+            "arrayIndex": 56,
+            "labelName": "DP_fld_arenames_057",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Lake Valor",
+                    "strWidth": 139.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 57,
+            "arrayIndex": 57,
+            "labelName": "DP_fld_arenames_058",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Acuity Cavern",
+                    "strWidth": 181.1875
+                }
+            ]
+        },
+        {
+            "labelIndex": 58,
+            "arrayIndex": 58,
+            "labelName": "DP_fld_arenames_059",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Lake Acuity",
+                    "strWidth": 151.40625
+                }
+            ]
+        },
+        {
+            "labelIndex": 59,
+            "arrayIndex": 59,
+            "labelName": "DP_fld_arenames_060",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Newmoon Island",
+                    "strWidth": 214.53125
+                }
+            ]
+        },
+        {
+            "labelIndex": 60,
+            "arrayIndex": 60,
+            "labelName": "DP_fld_arenames_061",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Battle Park",
+                    "strWidth": 141.171875
+                }
+            ]
+        },
+        {
+            "labelIndex": 61,
+            "arrayIndex": 61,
+            "labelName": "DP_fld_arenames_062",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Battle Tower",
+                    "strWidth": 164.84375
+                }
+            ]
+        },
+        {
+            "labelIndex": 62,
+            "arrayIndex": 62,
+            "labelName": "DP_fld_arenames_063",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Verity Lakefront",
+                    "strWidth": 209.578125
+                }
+            ]
+        },
+        {
+            "labelIndex": 63,
+            "arrayIndex": 63,
+            "labelName": "DP_fld_arenames_064",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Valor Lakefront",
+                    "strWidth": 201.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 64,
+            "arrayIndex": 64,
+            "labelName": "DP_fld_arenames_065",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Hotel Grand Lake",
+                    "strWidth": 232.5
+                }
+            ]
+        },
+        {
+            "labelIndex": 65,
+            "arrayIndex": 65,
+            "labelName": "DP_fld_arenames_066",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Restaurant",
+                    "strWidth": 136.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 66,
+            "arrayIndex": 66,
+            "labelName": "DP_fld_arenames_067",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Acuity Lakefront",
+                    "strWidth": 213.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 67,
+            "arrayIndex": 67,
+            "labelName": "DP_fld_arenames_068",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Spring Path",
+                    "strWidth": 147.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 68,
+            "arrayIndex": 68,
+            "labelName": "DP_fld_arenames_069",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 201",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 69,
+            "arrayIndex": 69,
+            "labelName": "DP_fld_arenames_070",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 202",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 70,
+            "arrayIndex": 70,
+            "labelName": "DP_fld_arenames_071",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 203",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 71,
+            "arrayIndex": 71,
+            "labelName": "DP_fld_arenames_072",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 204",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 72,
+            "arrayIndex": 72,
+            "labelName": "DP_fld_arenames_073",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 205",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 73,
+            "arrayIndex": 73,
+            "labelName": "DP_fld_arenames_074",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 206",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 74,
+            "arrayIndex": 74,
+            "labelName": "DP_fld_arenames_075",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 207",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 75,
+            "arrayIndex": 75,
+            "labelName": "DP_fld_arenames_076",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 208",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 76,
+            "arrayIndex": 76,
+            "labelName": "DP_fld_arenames_077",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 209",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 77,
+            "arrayIndex": 77,
+            "labelName": "DP_fld_arenames_078",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 210",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 78,
+            "arrayIndex": 78,
+            "labelName": "DP_fld_arenames_079",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Café Cabin",
+                    "strWidth": 145.9375
+                }
+            ]
+        },
+        {
+            "labelIndex": 79,
+            "arrayIndex": 79,
+            "labelName": "DP_fld_arenames_080",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 211",
+                    "strWidth": 131.00001525878906
+                }
+            ]
+        },
+        {
+            "labelIndex": 80,
+            "arrayIndex": 80,
+            "labelName": "DP_fld_arenames_081",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 212",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 81,
+            "arrayIndex": 81,
+            "labelName": "DP_fld_arenames_082",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Mansion",
+                    "strWidth": 237.0625
+                }
+            ]
+        },
+        {
+            "labelIndex": 82,
+            "arrayIndex": 82,
+            "labelName": "DP_fld_arenames_083",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 213",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 83,
+            "arrayIndex": 83,
+            "labelName": "DP_fld_arenames_085",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 214",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 84,
+            "arrayIndex": 84,
+            "labelName": "DP_fld_arenames_086",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 215",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 85,
+            "arrayIndex": 85,
+            "labelName": "DP_fld_arenames_087",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 216",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 86,
+            "arrayIndex": 86,
+            "labelName": "DP_fld_arenames_088",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 217",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 87,
+            "arrayIndex": 87,
+            "labelName": "DP_fld_arenames_089",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 218",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 88,
+            "arrayIndex": 88,
+            "labelName": "DP_fld_arenames_090",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 219",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 89,
+            "arrayIndex": 89,
+            "labelName": "DP_fld_arenames_091",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 221",
+                    "strWidth": 135.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 90,
+            "arrayIndex": 90,
+            "labelName": "DP_fld_arenames_092",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 222",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 91,
+            "arrayIndex": 91,
+            "labelName": "DP_fld_arenames_093",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 224",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 92,
+            "arrayIndex": 92,
+            "labelName": "DP_fld_arenames_094",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 225",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 93,
+            "arrayIndex": 93,
+            "labelName": "DP_fld_arenames_095",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 227",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 94,
+            "arrayIndex": 94,
+            "labelName": "DP_fld_arenames_096",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 228",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 95,
+            "arrayIndex": 95,
+            "labelName": "DP_fld_arenames_097",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 229",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 96,
+            "arrayIndex": 96,
+            "labelName": "DP_fld_arenames_098",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Twinleaf Town",
+                    "strWidth": 187.28125
+                }
+            ]
+        },
+        {
+            "labelIndex": 97,
+            "arrayIndex": 97,
+            "labelName": "DP_fld_arenames_099",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sandgem Town",
+                    "strWidth": 196.828125
+                }
+            ]
+        },
+        {
+            "labelIndex": 98,
+            "arrayIndex": 98,
+            "labelName": "DP_fld_arenames_100",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Flower Shop",
+                    "strWidth": 160.640625
+                }
+            ]
+        },
+        {
+            "labelIndex": 99,
+            "arrayIndex": 99,
+            "labelName": "DP_fld_arenames_101",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Floaroma Town",
+                    "strWidth": 199.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 100,
+            "arrayIndex": 100,
+            "labelName": "DP_fld_arenames_102",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Nursery",
+                    "strWidth": 226.71875
+                }
+            ]
+        },
+        {
+            "labelIndex": 101,
+            "arrayIndex": 101,
+            "labelName": "DP_fld_arenames_103",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Solaceon Town",
+                    "strWidth": 196.6875
+                }
+            ]
+        },
+        {
+            "labelIndex": 102,
+            "arrayIndex": 102,
+            "labelName": "DP_fld_arenames_104",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Celestic Town",
+                    "strWidth": 181.4375
+                }
+            ]
+        },
+        {
+            "labelIndex": 103,
+            "arrayIndex": 103,
+            "labelName": "DP_fld_arenames_105",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Survival Area",
+                    "strWidth": 169.25
+                }
+            ]
+        },
+        {
+            "labelIndex": 104,
+            "arrayIndex": 104,
+            "labelName": "DP_fld_arenames_106",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Resort Area",
+                    "strWidth": 151.6875
+                }
+            ]
+        },
+        {
+            "labelIndex": 105,
+            "arrayIndex": 105,
+            "labelName": "DP_fld_arenames_107",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 220",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 106,
+            "arrayIndex": 106,
+            "labelName": "DP_fld_arenames_108",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 223",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 107,
+            "arrayIndex": 107,
+            "labelName": "DP_fld_arenames_109",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 226",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 108,
+            "arrayIndex": 108,
+            "labelName": "DP_fld_arenames_110",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Route 230",
+                    "strWidth": 139.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 109,
+            "arrayIndex": 109,
+            "labelName": "DP_fld_arenames_111",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Seabreak Path",
+                    "strWidth": 185.578125
+                }
+            ]
+        },
+        {
+            "labelIndex": 110,
+            "arrayIndex": 110,
+            "labelName": "DP_fld_arenames_112",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Oreburgh Gym",
+                    "strWidth": 193.359375
+                }
+            ]
+        },
+        {
+            "labelIndex": 111,
+            "arrayIndex": 111,
+            "labelName": "DP_fld_arenames_113",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Eterna Gym",
+                    "strWidth": 151.484375
+                }
+            ]
+        },
+        {
+            "labelIndex": 112,
+            "arrayIndex": 112,
+            "labelName": "DP_fld_arenames_114",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pastoria Gym",
+                    "strWidth": 171.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 113,
+            "arrayIndex": 113,
+            "labelName": "DP_fld_arenames_115",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Veilstone Gym",
+                    "strWidth": 190.71875
+                }
+            ]
+        },
+        {
+            "labelIndex": 114,
+            "arrayIndex": 114,
+            "labelName": "DP_fld_arenames_116",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Hearthome Gym",
+                    "strWidth": 213.5
+                }
+            ]
+        },
+        {
+            "labelIndex": 115,
+            "arrayIndex": 115,
+            "labelName": "DP_fld_arenames_117",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Snowpoint Gym",
+                    "strWidth": 204.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 116,
+            "arrayIndex": 116,
+            "labelName": "DP_fld_arenames_118",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Canalave Gym",
+                    "strWidth": 188.640625
+                }
+            ]
+        },
+        {
+            "labelIndex": 117,
+            "arrayIndex": 117,
+            "labelName": "DP_fld_arenames_119",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sunyshore Gym",
+                    "strWidth": 199.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 126,
+            "arrayIndex": 118,
+            "labelName": "DP_fld_arenames_226",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Grand Underground",
+                    "strWidth": 261.078125
+                }
+            ]
+        },
+        {
+            "labelIndex": 119,
+            "arrayIndex": 119,
+            "labelName": "DP_fld_arenames_121",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Hoenn region",
+                    "strWidth": 227.390625
+                }
+            ]
+        },
+        {
+            "labelIndex": 120,
+            "arrayIndex": 120,
+            "labelName": "DP_fld_arenames_123",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Kanto region",
+                    "strWidth": 218.21875
+                }
+            ]
+        },
+        {
+            "labelIndex": 123,
+            "arrayIndex": 121,
+            "labelName": "DP_fld_arenames_128",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a distant land",
+                    "strWidth": 175.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 124,
+            "arrayIndex": 122,
+            "labelName": "DP_fld_arenames_130",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Johto region",
+                    "strWidth": 213.671875
+                }
+            ]
+        },
+        {
+            "labelIndex": 125,
+            "arrayIndex": 123,
+            "labelName": "DP_fld_arenames_131",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a faraway place",
+                    "strWidth": 202.390625
+                }
+            ]
+        },
+        {
+            "labelIndex": 127,
+            "arrayIndex": 124,
+            "labelName": "DP_fld_arenames_227",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Unova region",
+                    "strWidth": 224.546875
+                }
+            ]
+        },
+        {
+            "labelIndex": 128,
+            "arrayIndex": 125,
+            "labelName": "DP_fld_arenames_228",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Kalos region",
+                    "strWidth": 211.890625
+                }
+            ]
+        },
+        {
+            "labelIndex": 129,
+            "arrayIndex": 126,
+            "labelName": "DP_fld_arenames_229",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Alola region",
+                    "strWidth": 209.234375
+                }
+            ]
+        },
+        {
+            "labelIndex": 130,
+            "arrayIndex": 127,
+            "labelName": "DP_fld_arenames_230",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Galar region",
+                    "strWidth": 212.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 131,
+            "arrayIndex": 128,
+            "labelName": "DP_fld_arenames_231",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon GO",
+                    "strWidth": 176.0625
+                }
+            ]
+        },
+        {
+            "labelIndex": 118,
+            "arrayIndex": 129,
+            "labelName": "DP_fld_arenames_120",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Riley",
+                    "strWidth": 63.359375
+                }
+            ]
+        },
+        {
+            "labelIndex": 121,
+            "arrayIndex": 130,
+            "labelName": "DP_fld_arenames_126",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Nursery Couple",
+                    "strWidth": 201.03125
+                }
+            ]
+        },
+        {
+            "labelIndex": 122,
+            "arrayIndex": 131,
+            "labelName": "DP_fld_arenames_127",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Traveling Man",
+                    "strWidth": 184.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 132,
+            "arrayIndex": 132,
+            "labelName": "DP_fld_arenames_232",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Link Trade",
+                    "strWidth": 160.9375
+                }
+            ]
+        },
+        {
+            "labelIndex": 133,
+            "arrayIndex": 133,
+            "labelName": "DP_fld_arenames_233",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Link Trade",
+                    "strWidth": 160.9375
+                }
+            ]
+        },
+        {
+            "labelIndex": 134,
+            "arrayIndex": 134,
+            "labelName": "DP_fld_arenames_234",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Sinnoh region",
+                    "strWidth": 228.046875
+                }
+            ]
+        },
+        {
+            "labelIndex": 135,
+            "arrayIndex": 135,
+            "labelName": "DP_fld_arenames_235",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "——————",
+                    "strWidth": 153.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 136,
+            "arrayIndex": 136,
+            "labelName": "DP_fld_arenames_236",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Link",
+                    "strWidth": 181.3125
+                }
+            ]
+        },
+        {
+            "labelIndex": 137,
+            "arrayIndex": 137,
+            "labelName": "DP_fld_arenames_237",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Poké Pelago",
+                    "strWidth": 161.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 138,
+            "arrayIndex": 138,
+            "labelName": "DP_fld_arenames_238",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon HOME",
+                    "strWidth": 216.578125
+                }
+            ]
+        },
+        {
+            "labelIndex": 139,
+            "arrayIndex": 139,
+            "labelName": "DP_fld_arenames_239",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a lovely place",
+                    "strWidth": 180.03125
+                }
+            ]
+        },
+        {
+            "labelIndex": 140,
+            "arrayIndex": 140,
+            "labelName": "DP_fld_arenames_240",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Pokémon movie",
+                    "strWidth": 229.84375
+                }
+            ]
+        },
+        {
+            "labelIndex": 141,
+            "arrayIndex": 141,
+            "labelName": "DP_fld_arenames_241",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2019 Pokémon movie",
+                    "strWidth": 306.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 142,
+            "arrayIndex": 142,
+            "labelName": "DP_fld_arenames_242",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2020 Pokémon movie",
+                    "strWidth": 310.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 143,
+            "arrayIndex": 143,
+            "labelName": "DP_fld_arenames_243",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2021 Pokémon movie",
+                    "strWidth": 306.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 144,
+            "arrayIndex": 144,
+            "labelName": "DP_fld_arenames_244",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2022 Pokémon movie",
+                    "strWidth": 310.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 145,
+            "arrayIndex": 145,
+            "labelName": "DP_fld_arenames_245",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2023 Pokémon movie",
+                    "strWidth": 310.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 146,
+            "arrayIndex": 146,
+            "labelName": "DP_fld_arenames_246",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2024 Pokémon movie",
+                    "strWidth": 310.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 147,
+            "arrayIndex": 147,
+            "labelName": "DP_fld_arenames_247",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Pokémon animated show",
+                    "strWidth": 371.140625
+                }
+            ]
+        },
+        {
+            "labelIndex": 148,
+            "arrayIndex": 148,
+            "labelName": "DP_fld_arenames_248",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Pokémon Center",
+                    "strWidth": 239.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 149,
+            "arrayIndex": 149,
+            "labelName": "DP_fld_arenames_249",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Center Tohoku",
+                    "strWidth": 321.890625
+                }
+            ]
+        },
+        {
+            "labelIndex": 150,
+            "arrayIndex": 150,
+            "labelName": "DP_fld_arenames_250",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a WCS",
+                    "strWidth": 88.3125
+                }
+            ]
+        },
+        {
+            "labelIndex": 151,
+            "arrayIndex": 151,
+            "labelName": "DP_fld_arenames_251",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "WCS 2019",
+                    "strWidth": 140.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 152,
+            "arrayIndex": 152,
+            "labelName": "DP_fld_arenames_252",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "WCS 2020",
+                    "strWidth": 144.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 153,
+            "arrayIndex": 153,
+            "labelName": "DP_fld_arenames_253",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "WCS 2021",
+                    "strWidth": 140.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 154,
+            "arrayIndex": 154,
+            "labelName": "DP_fld_arenames_254",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "WCS 2022",
+                    "strWidth": 144.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 155,
+            "arrayIndex": 155,
+            "labelName": "DP_fld_arenames_255",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "WCS 2023",
+                    "strWidth": 144.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 156,
+            "arrayIndex": 156,
+            "labelName": "DP_fld_arenames_256",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "WCS 2024",
+                    "strWidth": 144.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 157,
+            "arrayIndex": 157,
+            "labelName": "DP_fld_arenames_257",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Worlds",
+                    "strWidth": 92.03125
+                }
+            ]
+        },
+        {
+            "labelIndex": 158,
+            "arrayIndex": 158,
+            "labelName": "DP_fld_arenames_258",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "2019 Worlds",
+                    "strWidth": 168.640625
+                }
+            ]
+        },
+        {
+            "labelIndex": 159,
+            "arrayIndex": 159,
+            "labelName": "DP_fld_arenames_259",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "2020 Worlds",
+                    "strWidth": 172.640625
+                }
+            ]
+        },
+        {
+            "labelIndex": 160,
+            "arrayIndex": 160,
+            "labelName": "DP_fld_arenames_260",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "2021 Worlds",
+                    "strWidth": 168.640625
+                }
+            ]
+        },
+        {
+            "labelIndex": 161,
+            "arrayIndex": 161,
+            "labelName": "DP_fld_arenames_261",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "2022 Worlds",
+                    "strWidth": 172.640625
+                }
+            ]
+        },
+        {
+            "labelIndex": 162,
+            "arrayIndex": 162,
+            "labelName": "DP_fld_arenames_262",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "2023 Worlds",
+                    "strWidth": 172.640625
+                }
+            ]
+        },
+        {
+            "labelIndex": 163,
+            "arrayIndex": 163,
+            "labelName": "DP_fld_arenames_263",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "2024 Worlds",
+                    "strWidth": 172.640625
+                }
+            ]
+        },
+        {
+            "labelIndex": 164,
+            "arrayIndex": 164,
+            "labelName": "DP_fld_arenames_264",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a VGE",
+                    "strWidth": 83.140625
+                }
+            ]
+        },
+        {
+            "labelIndex": 165,
+            "arrayIndex": 165,
+            "labelName": "DP_fld_arenames_265",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "VGE 2019",
+                    "strWidth": 135.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 166,
+            "arrayIndex": 166,
+            "labelName": "DP_fld_arenames_266",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "VGE 2020",
+                    "strWidth": 139.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 167,
+            "arrayIndex": 167,
+            "labelName": "DP_fld_arenames_267",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "VGE 2021",
+                    "strWidth": 135.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 168,
+            "arrayIndex": 168,
+            "labelName": "DP_fld_arenames_268",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "VGE 2022",
+                    "strWidth": 139.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 169,
+            "arrayIndex": 169,
+            "labelName": "DP_fld_arenames_269",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "VGE 2023",
+                    "strWidth": 139.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 170,
+            "arrayIndex": 170,
+            "labelName": "DP_fld_arenames_270",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "VGE 2024",
+                    "strWidth": 139.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 171,
+            "arrayIndex": 171,
+            "labelName": "DP_fld_arenames_271",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Pokémon event",
+                    "strWidth": 223.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 172,
+            "arrayIndex": 172,
+            "labelName": "DP_fld_arenames_272",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Battle Competition",
+                    "strWidth": 270.484375
+                }
+            ]
+        },
+        {
+            "labelIndex": 173,
+            "arrayIndex": 173,
+            "labelName": "DP_fld_arenames_273",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a game event",
+                    "strWidth": 174.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 174,
+            "arrayIndex": 174,
+            "labelName": "DP_fld_arenames_274",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Pokémon Daisuki Club",
+                    "strWidth": 342.671875
+                }
+            ]
+        },
+        {
+            "labelIndex": 175,
+            "arrayIndex": 175,
+            "labelName": "DP_fld_arenames_275",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Pokémon TV program",
+                    "strWidth": 306.03125
+                }
+            ]
+        },
+        {
+            "labelIndex": 176,
+            "arrayIndex": 176,
+            "labelName": "DP_fld_arenames_276",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a concert",
+                    "strWidth": 120.28125
+                }
+            ]
+        },
+        {
+            "labelIndex": 177,
+            "arrayIndex": 177,
+            "labelName": "DP_fld_arenames_277",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "an online present",
+                    "strWidth": 223.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 178,
+            "arrayIndex": 178,
+            "labelName": "DP_fld_arenames_278",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the PGL",
+                    "strWidth": 104.84375
+                }
+            ]
+        },
+        {
+            "labelIndex": 179,
+            "arrayIndex": 179,
+            "labelName": "DP_fld_arenames_279",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2019 Pokémon event",
+                    "strWidth": 300.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 180,
+            "arrayIndex": 180,
+            "labelName": "DP_fld_arenames_280",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2020 Pokémon event",
+                    "strWidth": 304.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 181,
+            "arrayIndex": 181,
+            "labelName": "DP_fld_arenames_281",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2021 Pokémon event",
+                    "strWidth": 300.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 182,
+            "arrayIndex": 182,
+            "labelName": "DP_fld_arenames_282",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2022 Pokémon event",
+                    "strWidth": 304.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 183,
+            "arrayIndex": 183,
+            "labelName": "DP_fld_arenames_283",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2023 Pokémon event",
+                    "strWidth": 304.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 184,
+            "arrayIndex": 184,
+            "labelName": "DP_fld_arenames_284",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2024 Pokémon event",
+                    "strWidth": 304.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 185,
+            "arrayIndex": 185,
+            "labelName": "DP_fld_arenames_285",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Pokémon event",
+                    "strWidth": 223.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 186,
+            "arrayIndex": 186,
+            "labelName": "DP_fld_arenames_286",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2019 Pokémon event",
+                    "strWidth": 300.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 187,
+            "arrayIndex": 187,
+            "labelName": "DP_fld_arenames_287",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2020 Pokémon event",
+                    "strWidth": 304.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 188,
+            "arrayIndex": 188,
+            "labelName": "DP_fld_arenames_288",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2021 Pokémon event",
+                    "strWidth": 300.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 189,
+            "arrayIndex": 189,
+            "labelName": "DP_fld_arenames_289",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2022 Pokémon event",
+                    "strWidth": 304.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 190,
+            "arrayIndex": 190,
+            "labelName": "DP_fld_arenames_290",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2023 Pokémon event",
+                    "strWidth": 304.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 191,
+            "arrayIndex": 191,
+            "labelName": "DP_fld_arenames_291",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a 2024 Pokémon event",
+                    "strWidth": 304.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 192,
+            "arrayIndex": 192,
+            "labelName": "DP_fld_arenames_292",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "PokéPark",
+                    "strWidth": 120.265625
+                }
+            ]
+        },
+        {
+            "labelIndex": 193,
+            "arrayIndex": 193,
+            "labelName": "DP_fld_arenames_293",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "PokéPark 2019",
+                    "strWidth": 196.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 194,
+            "arrayIndex": 194,
+            "labelName": "DP_fld_arenames_294",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "PokéPark 2020",
+                    "strWidth": 200.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 195,
+            "arrayIndex": 195,
+            "labelName": "DP_fld_arenames_295",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "PokéPark 2021",
+                    "strWidth": 196.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 196,
+            "arrayIndex": 196,
+            "labelName": "DP_fld_arenames_296",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "PokéPark 2022",
+                    "strWidth": 200.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 197,
+            "arrayIndex": 197,
+            "labelName": "DP_fld_arenames_297",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "PokéPark 2023",
+                    "strWidth": 200.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 198,
+            "arrayIndex": 198,
+            "labelName": "DP_fld_arenames_298",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "PokéPark 2024",
+                    "strWidth": 200.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 199,
+            "arrayIndex": 199,
+            "labelName": "DP_fld_arenames_299",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "an event site",
+                    "strWidth": 165.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 200,
+            "arrayIndex": 200,
+            "labelName": "DP_fld_arenames_300",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "GAME FREAK",
+                    "strWidth": 182.75
+                }
+            ]
+        },
+        {
+            "labelIndex": 201,
+            "arrayIndex": 201,
+            "labelName": "DP_fld_arenames_301",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a stadium",
+                    "strWidth": 124.015625
+                }
+            ]
+        },
+        {
+            "labelIndex": 202,
+            "arrayIndex": 202,
+            "labelName": "DP_fld_arenames_302",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a VGC event",
+                    "strWidth": 167.859375
+                }
+            ]
+        },
+        {
+            "labelIndex": 203,
+            "arrayIndex": 203,
+            "labelName": "DP_fld_arenames_303",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the VGC 2019",
+                    "strWidth": 190.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 204,
+            "arrayIndex": 204,
+            "labelName": "DP_fld_arenames_304",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the VGC 2020",
+                    "strWidth": 194.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 205,
+            "arrayIndex": 205,
+            "labelName": "DP_fld_arenames_305",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the VGC 2021",
+                    "strWidth": 190.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 206,
+            "arrayIndex": 206,
+            "labelName": "DP_fld_arenames_306",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the VGC 2022",
+                    "strWidth": 194.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 207,
+            "arrayIndex": 207,
+            "labelName": "DP_fld_arenames_307",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the VGC 2023",
+                    "strWidth": 194.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 208,
+            "arrayIndex": 208,
+            "labelName": "DP_fld_arenames_308",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the VGC 2024",
+                    "strWidth": 194.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 209,
+            "arrayIndex": 209,
+            "labelName": "DP_fld_arenames_309",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Virtual Console game",
+                    "strWidth": 302.859375
+                }
+            ]
+        },
+        {
+            "labelIndex": 210,
+            "arrayIndex": 210,
+            "labelName": "DP_fld_arenames_310",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Bank",
+                    "strWidth": 191.34375
+                }
+            ]
+        },
+        {
+            "labelIndex": 211,
+            "arrayIndex": 211,
+            "labelName": "DP_fld_arenames_311",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Pokémon shop",
+                    "strWidth": 213.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 212,
+            "arrayIndex": 212,
+            "labelName": "DP_fld_arenames_312",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a demo version",
+                    "strWidth": 197.328125
+                }
+            ]
+        },
+        {
+            "labelIndex": 213,
+            "arrayIndex": 213,
+            "labelName": "DP_fld_arenames_313",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Poké Ball Plus",
+                    "strWidth": 231.15625
+                }
+            ]
+        },
+        {
+            "labelIndex": 214,
+            "arrayIndex": 214,
+            "labelName": "DP_fld_arenames_314",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a stranger",
+                    "strWidth": 127.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 215,
+            "arrayIndex": 215,
+            "labelName": "DP_fld_arenames_315",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a Nursery worker",
+                    "strWidth": 218.078125
+                }
+            ]
+        },
+        {
+            "labelIndex": 216,
+            "arrayIndex": 216,
+            "labelName": "DP_fld_arenames_316",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a treasure hunter",
+                    "strWidth": 218.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 217,
+            "arrayIndex": 217,
+            "labelName": "DP_fld_arenames_317",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "an old hot-springs visitor",
+                    "strWidth": 320.078125
+                }
+            ]
+        }
+    ]
+}
