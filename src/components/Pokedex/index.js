@@ -13,6 +13,7 @@ import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
 import { PokemonEggGroups } from './PokemonEggGroups';
 import { getEggGroupViaPokemonId } from '../../utils/dex/egggroup';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function PokedexFeatures() {
   const [pokemonDexId, setPokemonDexId] = useState(1);
@@ -46,7 +47,7 @@ export default function PokedexFeatures() {
           <div className="col col-4">
             <img
               alt={pokemonInfo.name}
-              src={pokemonInfo.imageSrc}
+              src={useBaseUrl(pokemonInfo.imageSrc)}
               style={{ objectFit: 'contain', margin: '16px' }}
               width="80px"
               height="80px"
