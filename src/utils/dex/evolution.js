@@ -426,7 +426,7 @@ function evolutionPathfinding() {
 function writeEvolutionDataToFile(evolutionPaths) {
   const graphData = evolutionPathfinding;
 
-  const jsonData = JSON.stringify(graphData, null, 2);
+  const jsonData = JSON.stringify(graphData);
 
   fs.writeFile(EvolutionData, jsonData, 'utf8', (err) => {
     if (err) {
