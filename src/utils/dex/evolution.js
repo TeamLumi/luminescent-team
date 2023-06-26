@@ -3,6 +3,8 @@ import { EvolveTable, formPokemonNames  } from '../../../__gamedata';
 import { getPokemonIdFromMonsNoAndForm } from './functions';
 import { getPokemonName } from './name';
 
+const fs = require('fs');
+
 const None = 0,
   Item = 1,
   Move = 2,
@@ -385,6 +387,8 @@ function firstPathfind(pokemon, evolutionPaths, graph, queue, newQueue) {
   for (const extra of evolutionPaths[pokemon].path) {
     for (let i = 0; i < graph[extra].ar.length; i += 5) {
       evolutionPaths[pokemon].method.push(graph[extra].ar[i]);
+      evolutionPaths[pokemon].method_paramater.push(graph[extra].ar[i + 1]);
+      evolutionPaths[pokemon].level.push(graph[extra].ar[i + 4]);
     }
     evolutionPaths[pokemon].ar.push(graph[extra].ar);
   }
@@ -410,13 +414,27 @@ function evolutionPathfinding() {
   const evolutionPaths = {};
 
   for (const node of graph) {
-    evolutionPaths[node.id] = { path: [], method: [], ar: [], targets: [] };
+    evolutionPaths[node.id] = { path: [], method: [], targets: [], method_paramater: [], level:[], ar: [] };
   }
 
   startPathfinding(evolutionPaths, graph);
 
   removeDuplicateForms(evolutionPaths);
   return evolutionPaths;
+}
+
+function writeEvolutionDataToFile(evolutionPaths) {
+  const graphData = evolutionPathfinding;
+
+  const jsonData = JSON.stringify(graphData, null, 2);
+
+  fs.writeFile(EvolutionData, jsonData, 'utf8', (err) => {
+    if (err) {
+      console.error('Error writing to file:', err);
+    } else {
+      console.log('Evolution data has been updated.');
+    }
+  });
 }
 
 /**
