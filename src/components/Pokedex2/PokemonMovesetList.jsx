@@ -1,6 +1,5 @@
-import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
-import { POKEMON_MOVE_LEVEL_TYPE, getMoveProperties } from '../../utils/dex';
+import { Box, Container, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const DMG_TYPE_ICONS = {
@@ -9,7 +8,7 @@ const DMG_TYPE_ICONS = {
   2: '/img/special_dmg_type.png',
 };
 
-const TYPE_COLOR_MAP = {
+export const TYPE_COLOR_MAP = {
   0: { name: 'Normal', color: '#929da3', iconFilename: 'Normal.webp' },
   1: { name: 'Fighting', color: '#ce436a', iconFilename: 'Fighting.webp' },
   2: { name: 'Flying', color: '#8caadc', iconFilename: 'Flying.webp' },
@@ -50,7 +49,6 @@ export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => 
           sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
           md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
         },
-        gridTemplateRows: `repeat(${moveset.length}, 40px)`,
         alignItems: 'center',
         columnGap: '4px',
         rowGap: '8px',
@@ -59,9 +57,9 @@ export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => 
     >
       {moveset.map((move, i) => (
         <MovesetListItem
-          key={`${pokemonDexId}-${movesetPrefix}-move-${move.moveId}-${i}`}
+          key={`${pokemonDexId}-${movesetPrefix}-move-${move.move.moveId}-${i}`}
           moveLevel={move.level}
-          move={getMoveProperties(move.moveId)}
+          move={move.move}
         />
       ))}
     </Box>
@@ -77,7 +75,7 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
     );
   }
 
-  if (moveIconType === POKEMON_MOVE_LEVEL_TYPE.EGG) {
+  if (moveIconType === 'egg') {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '18px', sm: '26px', md: '32px' }}>
         <img src={useBaseUrl('/img/pm0000_00_00_00_L.webp')} alt="Egg Move" />
@@ -85,7 +83,7 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
     );
   }
 
-  if (moveIconType === POKEMON_MOVE_LEVEL_TYPE.TM) {
+  if (moveIconType === 'tm') {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '30px', sm: '40px' }}>
         <img src={useBaseUrl(`/img/tms/${TYPE_COLOR_MAP[moveTypeId].iconFilename}`)} alt="Technical Machine" />
@@ -145,7 +143,7 @@ const MovesetListItem = ({ moveLevel, move }) => {
   );
 };
 
-const PokemonMoveType = ({ typeName, typeColor }) => {
+export const PokemonMoveType = ({ typeName, typeColor }) => {
   return (
     <Box
       sx={{

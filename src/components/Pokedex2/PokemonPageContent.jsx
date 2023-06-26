@@ -1,68 +1,55 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './styles.module.css';
-import { Box, Typography, Avatar, Container } from '@mui/material';
-import { getPokemonInfo, getPokemonLearnset, getEggMoves } from '../../utils/dex';
+import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
 import EvolutionGraph from './EvolutionGraph';
 import { PokemonStats } from './PokemonStats';
-import { PokemonSearch } from './PokemonSearch';
+import { PokemonSearchBox } from './PokemonSearchBox';
 import { PokemonMovesetList } from './PokemonMovesetList';
 import { PokemonAccordion } from './PokemonAccordion';
 import { PokemonAlternativeFormsList } from './PokemonAlternativeFormsList';
 import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
 import { PokemonEggGroups } from './PokemonEggGroups';
-import { getEggGroupViaPokemonId } from '../../utils/dex/egggroup';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
-export default function PokedexFeatures() {
-  const [pokemonDexId, setPokemonDexId] = useState(1);
-  const pokemonInfo = getPokemonInfo(pokemonDexId ?? 0);
-
-  const learnset = getPokemonLearnset(pokemonDexId);
-  const moveList = [];
-  for (let i = 0; i < learnset.length; i += 2) {
-    moveList.push({ level: learnset[i], moveId: learnset[i + 1] });
-  }
-
-  const tmLearnset = pokemonInfo.tmLearnset;
-  const eggLearnset = getEggMoves(pokemonDexId);
-
+export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
   return (
     <Container>
       <Container>
         <Box display="flex" justifyContent="center" marginTop="16px">
-          <PokemonSearch setPokemonDexId={setPokemonDexId} />
+          <PokemonSearchBox pokemonNames={pokemonNames} pokemonId={pokemon.id} />
         </Box>
       </Container>
       <div className="container">
         <div className="row">
           <Typography variant="h2" component="h3" sx={{ paddingLeft: '16px' }}>
-            {pokemonInfo.name}
+            {pokemon.name}
           </Typography>
         </div>
       </div>
       <div className="container">
         <div className="row">
           <div className="col col-4">
-            <img
-              alt={pokemonInfo.name}
-              src={useBaseUrl(pokemonInfo.imageSrc)}
+            <ImageWithFallback
+              alt={pokemon.name}
+              src={`/img/${pokemon.imageSrc}`}
+              fallbackSrc={`/img/${pokemon.forms[0].imageSrc}`}
               style={{ objectFit: 'contain', margin: '16px' }}
               width="80px"
               height="80px"
             />
           </div>
           <div className="col col-4">
-            <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
+            <Type type1={pokemon.type1} type2={pokemon.type2} />
           </div>
           <div className="col col-4">
             <Typography variant="h6" component="h6">
               <p className={style.flex}>Size:</p>
-              {pokemonInfo.height}m, {pokemonInfo.weight}kg
+              {pokemon.height}m, {pokemon.weight}kg
               <br />
               <span style={{ fontSize: '0.8rem' }}>
-                <i>Grass Knot: {pokemonInfo.grassKnotPower}</i>
+                <i>Grass Knot: {pokemon.grassKnotPower}</i>
               </span>
             </Typography>
           </div>
@@ -71,39 +58,39 @@ export default function PokedexFeatures() {
 
       <Container>
         <PokemonAbilities
-          abilityName1={pokemonInfo.ability1}
-          abilityName2={pokemonInfo.ability2}
-          abilityNameHidden={pokemonInfo.abilityH}
+          abilityName1={pokemon.ability1}
+          abilityName2={pokemon.ability2}
+          abilityNameHidden={pokemon.abilityH}
         />
       </Container>
 
-      <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
+      <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
       <div className="container">
-        <EvolutionGraph dexId={pokemonDexId} />
+        <EvolutionGraph />
       </div>
 
       <Container>
-        <PokemonAlternativeFormsList pokemonDexId={pokemonDexId} />
+        <PokemonAlternativeFormsList pokemonForms={pokemon.forms} />
       </Container>
 
       <Container>
         <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
-          <PokemonEggGroups eggGroupIds={getEggGroupViaPokemonId(pokemonDexId)} sx={{ marginRight: '16px' }} />
-          <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} />
+          <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginRight: '16px' }} />
+          <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} />
         </Box>
       </Container>
 
       <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
-          <PokemonMovesetList moveset={moveList} movesetPrefix="levelup" pokemonDexId={pokemonDexId} />
+          <PokemonMovesetList moveset={pokemon.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={tmLearnset} movesetPrefix="tm" pokemonDexId={pokemonDexId} />
+          <PokemonMovesetList moveset={pokemon.learnset.tm} movesetPrefix="tm" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
-          <PokemonMovesetList moveset={eggLearnset} movesetPrefix="egg" pokemonDexId={pokemonDexId} />
+          <PokemonMovesetList moveset={pokemon.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
       </Container>
     </Container>
   );
-}
+};
