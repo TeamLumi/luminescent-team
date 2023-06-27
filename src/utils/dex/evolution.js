@@ -1,9 +1,6 @@
-import EvolutionData from '../../../__gamedata/evolution.json';
-import { EvolveTable, formPokemonNames  } from '../../../__gamedata';
+import { EvolutionData } from '../../../__gamedata';
 import { getPokemonIdFromMonsNoAndForm } from './functions';
-import { getPokemonName } from './name';
 
-const fs = require('fs');
 
 const None = 0,
   Item = 1,
@@ -167,13 +164,6 @@ const EVOLUTION_METHOD_PARAM_TYPE = [
 
 const PARAM_TYPE = ['None', 'Item', 'Move', 'Pokemon', 'Typing', 'GameVersion'];
 
-function getEvolutionPath(pokemonId = '0') {
-  if (typeof pokemonId !== 'string' || isNaN(parseInt(pokemonId)) || pokemonId === '')
-    throw new Error(`Bad pokemonId: ${pokemonId}`);
-
-  return EvolutionData[pokemonId];
-}
-
 function getEvolutionMethodString(method = 0) {
   if (!Number.isInteger(method) || method < 0) throw new Error(`Bad method: ${method}`);
   return EVOLUTION_METHODS[method];
@@ -191,254 +181,41 @@ function getParameterTypeByMethodId(method = 0) {
   return paramTypeString;
 }
 
-/**
- *
- * @param {{path: number[], method: [], ar: number[][]]}} evolutionObject
- */
-function displayEvolutionData(id = '156') {
-  const evolutionObject = EvolutionData[id];
-  const validPath = validIds(evolutionObject.path, evolutionObject.ar);
-  console.log(evolutionObject.path, validPath);
-  let stage1id = evolutionObject.path[0];
-  let stage1data = evolutionObject.ar[0];
-  const stageOneTargetId = getPokemonIdFromMonsNoAndForm(evolutionObject.ar[0][2], evolutionObject.ar[0][3]);
-  const stageOneName = getPokemonName(stage1id);
-  const stageOneTargetName = getPokemonName(stageOneTargetId);
-  console.log(stageOneName, stageOneTargetName);
-  const stageOne = {
-    id: stage1id,
-    target: stageOneTargetId,
-    name: stageOneName,
-    targetName: stageOneTargetName,
-    method: {
-      data: stage1data,
-      text: getEvolutionMethodString(stage1data[0]),
-      param: getParameterTypeByMethodId(stage1data[0]),
-      requiresLevel: doesEvolutionMethodRequireLevel(stage1data[0]),
-      level: stage1data[4],
-    },
-  };
+function getEvolutionTree(pokemonId = 0) {
+  const currentTree = EvolutionData[pokemonId];
+  if(currentTree.path.length <= 1) return null;
+  const evolutionTree = {
+    id: currentTree.path[0],
+    children: currentTree.targets.map((target) => createChildrenObject(target, currentTree.path[0]))
+  }
 
-  return stageOne;
+  return evolutionTree;
 }
 
-function validIds(path, ar) {
-  return path.filter((pokemonId, idx) => {
-    if (idx === 0) return pokemonId;
-    for (let currentArray of ar) {
-      for (let i = 0; i < currentArray.length; i += 5) {
-        const monsno = currentArray[i + 2];
-        const formno = currentArray[i + 3];
-        const targetId = getPokemonIdFromMonsNoAndForm(monsno, formno);
-        if (pokemonId === targetId) return true;
+function createChildrenObject(pokemonId, previousId) {
+  const currentTargetEvolutionData = EvolutionData[pokemonId];
+  const previousEvoData = EvolutionData[previousId];
+  const {} = getPokemonIdFromMonsNoAndForm
+  let methodProperties = [];
+  for(let evoDetails of previousEvoData.ar) {
+      for(let i = 0; i< evoDetails.length; i += 5) {
+          if(evoDetails[i + 2] === pokemonId) {
+              methodProperties = evoDetails.slice(i, i + 5);
+              break;
+          }
       }
-    }
-
-    return false;
-  });
-}
-
-function genForms() {
-  /*
-  This is for generating a form object based on each labelName and arrayIndex from the zkn_form.json
-  The format for the labelName is 'ZKN_FORM_{monsNo}_{formNo}'
-  It iterates through labelNames and checks if the formNo is > 0
-  If the formNo is > 0 it's added to the object.
-  */
-  const formNamedata = formPokemonNames;
-  const formsList = formNamedata["labelDataArray"];
-  const forms = {};
-  
-  for (let i = 0; i < formsList.length; i++) {
-    const monForm = formsList[i];
-    const formNo = parseInt(monForm["labelName"].split("_")[-1])
-    if (monForm["arrayIndex"] !== 0 && formNo > 0) {
-      forms[monForm["labelName"]] = monForm["arrayIndex"];
-    }
   }
-
-  return forms;
-}
-
-const forms = genForms();
-
-function getFormFormat(monsNo, formNo) {
-  const monZeros = 3 - String(monsNo).length;
-  const formZeros = 3 - String(formNo).length;
-  if (String(monsNo).length > 3) {
-    return `ZKN_FORM_$${monsNo}_${'0'.repeat(formZeros)}${formNo}`;
-  }
-  return `ZKN_FORM_${'0'.repeat(monZeros)}${monsNo}_${'0'.repeat(formZeros)}${formNo}`;
-}
-
-function removeDuplicates(pathDictionary) {
-  const newPath = Array.from(new Set(pathDictionary));
-  return newPath;
-}
-
-function removeDuplicateForms(evolutionPaths) {
-  for (const pokemon in evolutionPaths) {
-    evolutionPaths[pokemon].path = removeDuplicates(evolutionPaths[pokemon].path);
+  return {
+    id: pokemonId,
+    evolutionDetails: methodProperties,//[method, methodParameter, monsNo, formNo, level]
+    children: currentTargetEvolutionData.targets.map(target => createChildrenObject(target, pokemonId))
   }
 }
 
-function processNextMon(adjacentNodes) {
-  let nextMon = adjacentNodes[2];
-  const nextForm = adjacentNodes[3];
-  const formFormat = getFormFormat(nextMon, nextForm);
-  
-  if (formFormat in forms) {
-    nextMon = forms[formFormat];
-    return [parseInt(nextMon), nextForm];
-  }  
-  return [parseInt(nextMon), nextForm];
+export default {
+  getEvolutionMethodString,
+  getEvolutionTree,
+  getParameterTypeByMethodId,
+  doesEvolutionMethodRequireLevel,
+
 }
-
-function processCurrentMon(queue) {
-  let currentMon = queue.shift();
-  const currentForm = queue.shift();
-  const formFormat = getFormFormat(currentMon, currentForm);
-
-  if (formFormat in forms) {
-    currentMon = forms[formFormat];
-    return [parseInt(currentMon), currentForm];
-  }
-
-  return [parseInt(currentMon), currentForm];
-}
-
-function updateEvolvePaths(evolutionPaths, currentMon, currentMonPath) {
-  evolutionPaths[currentMon].path.push(currentMon);
-  evolutionPaths[currentMon].path = [...new Set(evolutionPaths[currentMon].path)];
-
-  for (let i = 0; i < currentMonPath.length; i++) {
-    evolutionPaths[currentMonPath[i]].path.push(currentMon);
-    evolutionPaths[currentMonPath[i]].path = evolutionPaths[currentMonPath[i]].path.filter(
-      (pokemon, evo_index) => !new Set(evolutionPaths[currentMonPath[i]].path.slice(evo_index + 1)).has(pokemon)
-    );
-  }
-}
-
-function getSecondPathfindTargets(evolutionPaths, previousMon, currentMon, graph) {
-  const targets = evolutionPaths[previousMon].targets;
-  const currentMonPath = evolutionPaths[currentMon].path;
-  const firstMonPath = evolutionPaths[currentMonPath[0]].path;
-  const firstMonArray = graph[currentMonPath[0]].ar;
-
-  if (!targets.includes(currentMon)) {
-    if (previousMon === 265 || previousMon === 704) { // These are Wurmple and Goomy respectively
-      evolutionPaths[265].targets = [266, 268]; // Wurmple targets are Silcoon and Cascoon
-      /*
-      Uncomment this for when Goomy is actually able to evolve into Hisuian Sliggo
-      evolutionPaths[704].targets = [705, 1287; // Goomy targets are Sliggoo and Hisuian Sliggoo
-      */
-    } else if (firstMonPath.length > 3) {
-      // This is for when a pokemon has a branching path at its second form and not its first form
-      evolutionPaths[previousMon].targets.push(currentMon);
-    } else if (firstMonArray.length > 5) {
-      // This is for mons that have multiple evolutions in their first evo array like Burmy or Snorunt.
-      evolutionPaths[previousMon].targets.push(currentMon);
-    }
-  }
-}
-
-function secondPathfind(pokemon, evolutionPaths, newQueue, graph) {
-  while (newQueue.length > 0) {
-    const [currentMon, currentForm] = processCurrentMon(newQueue);
-
-    evolutionPaths[currentMon].path.push(parseInt(pokemon));
-    const currentMonPath = evolutionPaths[currentMon].path;
-    updateEvolvePaths(evolutionPaths, currentMon, currentMonPath);
-    getSecondPathfindTargets(evolutionPaths, pokemon, currentMon, graph);
-  }
-}
-
-function firstPathfind(pokemon, evolutionPaths, graph, queue, newQueue) {
-  while (queue.length > 0) {
-    const [currentMon, currentForm] = processCurrentMon(queue);
-
-    const adjacentNodes = graph[currentMon].ar;
-    if (adjacentNodes.length === 0) {
-      continue;
-    }
-    const [nextMon, nextForm] = processNextMon(adjacentNodes);
-
-    const targets = evolutionPaths[currentMon].targets;
-    if (!targets.includes(nextMon)) {
-      evolutionPaths[currentMon].targets.push(parseInt(nextMon));
-    }
-
-    evolutionPaths[nextMon].path = evolutionPaths[currentMon].path.concat(parseInt(nextMon));
-    for (let i = 2; i < adjacentNodes.length; i += 5) {
-      // Increments by 5 starting on the third value which is the target evolution
-      newQueue.push(adjacentNodes[i]);
-      newQueue.push(adjacentNodes[i + 1]);
-
-      secondPathfind(pokemon, evolutionPaths, newQueue, graph);
-
-      newQueue.push(adjacentNodes[i]);
-      newQueue.push(adjacentNodes[i + 1]);
-    }
-
-    queue.push(nextMon);
-    queue.push(nextForm);
-  }
-
-  for (const extra of evolutionPaths[pokemon].path) {
-    for (let i = 0; i < graph[extra].ar.length; i += 5) {
-      evolutionPaths[pokemon].method.push(graph[extra].ar[i]);
-      evolutionPaths[pokemon].method_paramater.push(graph[extra].ar[i + 1]);
-      evolutionPaths[pokemon].level.push(graph[extra].ar[i + 4]);
-    }
-    evolutionPaths[pokemon].ar.push(graph[extra].ar);
-  }
-}
-
-function startPathfinding(evolutionPaths, graph) {
-  for (const pokemon in evolutionPaths) {
-    const queue = [];
-    queue.push(pokemon);
-    queue.push(0);
-    const newQueue = [];
-    const evoPath = evolutionPaths[pokemon].path;
-    if (!evoPath.includes(parseInt(pokemon))) {
-      evolutionPaths[pokemon].path.push(parseInt(pokemon));
-    }
-    firstPathfind(pokemon, evolutionPaths, graph, queue, newQueue);
-  }
-}
-
-function evolutionPathfinding() {
-  const graphData = EvolveTable;
-  const graph = graphData.Evolve;
-  const evolutionPaths = {};
-
-  for (const node of graph) {
-    evolutionPaths[node.id] = { path: [], method: [], targets: [], method_paramater: [], level:[], ar: [] };
-  }
-
-  startPathfinding(evolutionPaths, graph);
-
-  removeDuplicateForms(evolutionPaths);
-  return evolutionPaths;
-}
-
-function writeEvolutionDataToFile(evolutionPaths) {
-  const graphData = evolutionPathfinding;
-
-  const jsonData = JSON.stringify(graphData);
-
-  fs.writeFile(EvolutionData, jsonData, 'utf8', (err) => {
-    if (err) {
-      console.error('Error writing to file:', err);
-    } else {
-      console.log('Evolution data has been updated.');
-    }
-  });
-}
-
-/**
- For each index in path, the same index in ar is the evolution information 
- 
- */
-export { getEvolutionPath, displayEvolutionData };
