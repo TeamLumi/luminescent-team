@@ -199,7 +199,8 @@ function createChildrenObject(pokemonId, previousId) {
   let methodProperties = [];
   for(let evoDetails of previousEvoData.ar) {
       for(let i = 0; i< evoDetails.length; i += 5) {
-          if(evoDetails[i + 2] === pokemonId) {
+        const evoPokemonId = getPokemonIdFromMonsNoAndForm(evoDetails[i +2], evoDetails[i + 3])
+          if(evoPokemonId === pokemonId) {
               methodProperties = evoDetails.slice(i, i + 5);
               break;
           }
