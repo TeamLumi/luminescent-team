@@ -1,43 +1,44 @@
 import { EvolutionData } from '../../../__gamedata';
 import { getPokemonIdFromMonsNoAndForm } from './functions';
 
-function getEvolutionTree(pokemonId = 0) {
-  const currentPokemon = EvolutionData[pokemonId];
-  const rootId = currentPokemon.path[0];
-  const currentTree = EvolutionData[rootId];
+function getEvolutionTree(pokemonId = 0, fromRoot = true) {
+  const pokemon = EvolutionData[pokemonId];
+  const startPokemonId = fromRoot ? pokemon.path[0] : pokemonId;
 
-  if (currentTree.path.length <= 1) return null;
+  const evolution = EvolutionData[startPokemonId];
 
-  const evolutionTree = {
-    id: rootId,
-    children: currentTree.targets.map((target) => createChildrenObject(target)),
+  return {
+    pokemonId: startPokemonId,
+    evolutionDetails: getEvolutionDetails(startPokemonId),
+    evolvesInto: evolution.targets.map((nextStagePokemonId) => getEvolutionTree(nextStagePokemonId, false)),
   };
-
-  return evolutionTree;
 }
 
-function createChildrenObject(pokemonId) {
-  const currentTargetEvolutionData = EvolutionData[pokemonId];
-  const previousEvoData = EvolutionData[currentTargetEvolutionData.path[0]];
+function getEvolutionDetails(pokemonId) {
+  const evolutionDetails = EvolutionData[pokemonId].ar;
 
-  let methodProperties = [];
-  for (let j = 0; j < previousEvoData.ar.length; j++) {
-    const evoDetails = previousEvoData.ar[j];
+  for (let i = 0; i < evolutionDetails.length; i++) {
+    const evolutionData = evolutionDetails[i];
 
-    for (let i = 0; i < evoDetails.length; i += 5) {
-      const evoPokemonId = getPokemonIdFromMonsNoAndForm(evoDetails[i + 2], evoDetails[i + 3]);
-      if (evoPokemonId === pokemonId) {
-        methodProperties = evoDetails.slice(i, i + 5);
-        break;
-      }
+    const methodId = evolutionData[0];
+    const methodParameter = evolutionData[1];
+    const monsNo = evolutionData[2];
+    const formNo = evolutionData[3];
+    const level = evolutionData[4];
+
+    const evolutionPokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo);
+    if (evolutionPokemonId === pokemonId) {
+      return {
+        methodId,
+        methodParameter,
+        monsNo,
+        formNo,
+        level,
+      };
     }
   }
 
-  return {
-    id: pokemonId,
-    evolutionDetails: methodProperties, //[method, methodParameter, monsNo, formNo, level]
-    children: currentTargetEvolutionData.targets.map((target) => createChildrenObject(target, pokemonId)),
-  };
+  return null;
 }
 
 export { getEvolutionTree };
