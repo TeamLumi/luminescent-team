@@ -2,19 +2,23 @@ import { EvolutionData } from '../../../__gamedata';
 import { getPokemonIdFromMonsNoAndForm } from './functions';
 
 function getEvolutionTree(pokemonId = 0) {
-  const currentTree = EvolutionData[pokemonId];
+  const currentPokemon = EvolutionData[pokemonId];
+  const rootId = currentPokemon.path[0];
+  const currentTree = EvolutionData[rootId];
+
   if (currentTree.path.length <= 1) return null;
+
   const evolutionTree = {
-    id: currentTree.path[0],
-    children: currentTree.targets.map((target) => createChildrenObject(target, currentTree.path[0])),
+    id: rootId,
+    children: currentTree.targets.map((target) => createChildrenObject(target)),
   };
 
   return evolutionTree;
 }
 
-function createChildrenObject(pokemonId, previousId) {
+function createChildrenObject(pokemonId) {
   const currentTargetEvolutionData = EvolutionData[pokemonId];
-  const previousEvoData = EvolutionData[previousId];
+  const previousEvoData = EvolutionData[currentTargetEvolutionData.path[0]];
 
   let methodProperties = [];
   for (let j = 0; j < previousEvoData.ar.length; j++) {
