@@ -48,4 +48,4 @@ function getEvolutionDetails(pokemonId) {
   return null;
 }
 
-export { getEvolutionTree };
+export { getEvolutionTree, getEvolutionMethodDetail };

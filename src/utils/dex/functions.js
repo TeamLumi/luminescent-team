@@ -47,7 +47,7 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno) {
 }
 
 function getMonsNoAndFormNoFromPokemonId(pokemonId = 0) {
-  const monsNo = Object.values(FORM_MAP).includes((e) => e.includes(pokemonId))[0];
+  const monsNo = Object.values(FORM_MAP).find((forms) => forms.includes(pokemonId))[0];
   const formNo = FORM_MAP[monsNo].indexOf(pokemonId);
   return {
     monsNo,

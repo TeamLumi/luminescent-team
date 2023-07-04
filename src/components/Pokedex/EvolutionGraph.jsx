@@ -1,27 +1,12 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
-import { getEvolutionPath, displayEvolutionData } from '../../utils/dex/evolution';
-import { getImage, getPokemonMonsNoAndFormFromId } from '../../utils/dex/functions';
+import { getEvolutionTree, getEvolutionMethodDetail } from '../../utils/dex/evolution';
+import { getImage, getMonsNoAndFormNoFromPokemonId } from '../../utils/dex/functions';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-/**
- * WIP, styling and logic implementation is TBD
- */
+export const EvolutionGraph = ({ dexId }) => {
+  const evolutionTree = getEvolutionTree(dexId);
 
-function EvolutionStage(props) {
-  const {pokemonId} = props;
-  const data = displayEvolutionData(pokemonId);
-  const {monsNo, formNo} = getPokemonMonsNoAndFormFromId(data.id);
-  const methodString = `${data.method.text} ${data.method.param === 'None' ? '' : data.method.param} ${data.method.requiresLevel ? `at level ${data.method.level}` : ''}`
-  return (
-    <>
-      <img src={getImage(monsNo, formNo)} title={data.name} alt={data.name} />
-      <Typography variant="h6" title={data.method.text}>→ {methodString}</Typography>
-    </>
-  )
-}
-export default function EvolutionGraph(props) {
-  const {dexId} = props;
   return (
     <div className="container">
       <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
@@ -33,12 +18,31 @@ export default function EvolutionGraph(props) {
       </div>
 
       <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center">
-        <img src={useBaseUrl('/img/pm0001_00_00_00_L.webp')} alt="Stage 1 Evo" />
-        <Typography variant="h6">→</Typography>
-        <img src={useBaseUrl('/img/pm0002_00_00_00_L.webp')} alt="Stage 2 Evo" />
-        <Typography variant="h6">→</Typography>
-        <img src={useBaseUrl('/img/pm0003_00_00_00_L.webp')} width={90} alt="Stage 3 Evo" />
+        <EvolutionStage evolutionTree={evolutionTree} />
       </Box>
     </div>
   );
-}
+};
+
+const EvolutionStage = ({ evolutionTree }) => {
+  const { monsNo, formNo } = getMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId);
+  const image = getImage(monsNo, formNo);
+  const methodId = evolutionTree.evolutionDetails?.methodId;
+  const level = evolutionTree.evolutionDetails?.level;
+  const evoMethodDetail = methodId ? getEvolutionMethodDetail(methodId) : null;
+
+  return (
+    <div>
+      <div>
+        {methodId && <p>{evoMethodDetail.method}</p>}
+        {level && <p>{level}</p>}
+        <img src={useBaseUrl(image)} />
+      </div>
+      <Box paddingLeft={20}>
+        {evolutionTree.evolvesInto.map((evoStage) => (
+          <EvolutionStage key={evoStage.pokemonId} evolutionTree={evoStage} />
+        ))}
+      </Box>
+    </div>
+  );
+};
