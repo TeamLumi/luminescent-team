@@ -14,6 +14,8 @@ $ npm install
 
 Install the extension/plugin for your favorite IDE (VSCode, JetBrains, NVIM, ...).
 
+VSCode is the best!
+
 1. [EditorConfig](https://editorconfig.org/) - EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
 2. [Prettier](https://prettier.io/) - An opinionated code formatter
 3. [ESLint](https://eslint.org/) - ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
