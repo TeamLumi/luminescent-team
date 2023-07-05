@@ -27,21 +27,23 @@ function getEvolutionDetails(pokemonId) {
   for (let i = 0; i < evolutionDetails.length; i++) {
     const evolutionData = evolutionDetails[i];
 
-    const methodId = evolutionData[0];
-    const methodParameter = evolutionData[1];
-    const monsNo = evolutionData[2];
-    const formNo = evolutionData[3];
-    const level = evolutionData[4];
+    for (let j = 0; j < evolutionData.length; j += 5) {
+      const methodId = evolutionData[j + 0];
+      const methodParameter = evolutionData[j + 1];
+      const monsNo = evolutionData[j + 2];
+      const formNo = evolutionData[j + 3];
+      const level = evolutionData[j + 4];
 
-    const evolutionPokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo);
-    if (evolutionPokemonId === pokemonId) {
-      return {
-        methodId,
-        methodParameter,
-        monsNo,
-        formNo,
-        level,
-      };
+      const evolutionPokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo);
+      if (evolutionPokemonId === pokemonId) {
+        return {
+          methodId,
+          methodParameter,
+          monsNo,
+          formNo,
+          level,
+        };
+      }
     }
   }
 
