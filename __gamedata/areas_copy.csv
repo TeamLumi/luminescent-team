@@ -246,9 +246,9 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 244,チャンピオンロード:チャンピオンロードー1,Champion Road : Champion Road 1,,Victory Road 1F,prefab_map/d09r0101,D09R0101
 245,チャンピオンロード:チャンピオンロードー2,Champion Road : Champion Road 2,,Victory Road 2F,prefab_map/d09r0102,D09R0102
 246,チャンピオンロード:チャンピオンロードー3,Champion Road : Champion Road 3,,Victory Road B1F,prefab_map/d09r0103,D09R0103
-247,チャンピオンロード:チャンピオンロードー4,Champion Road : Champion Road 4,,Victory Road Nat Dex Area,prefab_map/d09r0104,D09R0104
-248,チャンピオンロード:チャンピオンロードー5,Champion Road : Champion Road 5,,Victory Road Nat Dex Area B1F,prefab_map/d09r0105,D09R0105
-249,チャンピオンロード:チャンピオンロードー6,Champion Road : Champion Road 6,,Victory Road Nat Dex Area,prefab_map/d09r0106,D09R0106
+247,チャンピオンロード:チャンピオンロードー4,Champion Road : Champion Road 4,,Victory Road 1F Back 1,prefab_map/d09r0104,D09R0104
+248,チャンピオンロード:チャンピオンロードー5,Champion Road : Champion Road 5,,Victory Road 1F Back 2,prefab_map/d09r0105,D09R0105
+249,チャンピオンロード:チャンピオンロードー6,Champion Road : Champion Road 6,,Victory Road 1F Back 3,prefab_map/d09r0106,D09R0106
 250,パルパーク,Palpark,,,prefab_map/d10r0101,D10R0101
 251,ふれあいひろば,Fureai Hiroba,,Amity Square (Hearthome),prefab_map/d11r0101,D11R0101
 252,あれたぬけみち,Aye noke 6,,Ravaged Path,prefab_map/d12r0101,D12R0101
