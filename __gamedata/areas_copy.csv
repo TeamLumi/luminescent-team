@@ -379,9 +379,9 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 377,211ばんどうろa（ハクタイ側）,211 Bandoro a(Hakutai side),,Route 211 West,fields/area003,R211A
 378,211ばんどうろb（カンナギ側）,211 Bandoro b(Kanagi side),,Route 211 East,fields/area005,R211B
 379,212ばんどうろa（ノモセ側）,212 Bandoro a(Nomose side),,Route 212 North,fields/area007,R212A
-380,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Route 212 North,prefab_map/r212ar0101,R212AR0101
-381,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Route 212 North,prefab_map/r212ar0102,R212AR0102
-382,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Route 212 South,prefab_map/r212ar0103,R212AR0103
+380,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Pokémon Mansion - Lobby,prefab_map/r212ar0101,R212AR0101
+381,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Pokémon Mansion - Rooms (Left),prefab_map/r212ar0102,R212AR0102
+382,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Pokémon Mansion - Backlot Room,prefab_map/r212ar0103,R212AR0103
 383,212ばんどうろb（ヨスガ側）,212 Bandoro b(Yosuga side),,Route 212 South,fields/area007,R212B
 384,212ばんどうろb:民家,212 Bandoro b: Private House,,Route 212 South,prefab_map/c04r0801,R212BR0101
 385,213ばんどうろ,213 Bandoro,,Route 213,fields/area013,R213

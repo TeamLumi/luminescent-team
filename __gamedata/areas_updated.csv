@@ -1,31 +1,31 @@
 ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
-0,コトブキシティ,Kotobuki City,Jubilife,Jubilife City,fields/area001,C01
-1,コトブキ:フレンドリーショップ,Kotobuki : Friendly Shop,Jubilife,Jubilife - Poké Mart,prefab_map/t02fs0101,C01FS0101
-2,コトブキ:ポケモンセンター 1F,Kotobuki : Pokémon Center 1F,Jubilife,Jubilife - Center 1F,prefab_map/t02pc0101,C01PC0101
-3,コトブキ:ポケモンセンター 2F,Kotobuki : Pokémon Center 2F,Jubilife,Jubilife - Center 2F,prefab_map/t02pc0102,C01PC0102
-4,コトブキ:ポケモンセンター B1F,Kotobuki : Pokémon Center B1F,Jubilife,Jubilife - Center B1F,prefab_map/t02pc0103,C01PC0103
-5,コトブキ:ポケッチカンパニー 1F,Kotobuki : Pokéttsch Company 1F,Jubilife,Jubilife - Pokétch Company 1F,prefab_map/c01r0101,C01R0101
-6,コトブキ:ポケッチカンパニー 2F,Kotobuki : Pokéch Company 2F,Jubilife,Jubilife - Pokétch Company 2F,prefab_map/c01r0102,C01R0102
-7,コトブキ:ポケッチカンパニー 3F,Kotobuki : Pokéttsch Company 3F,Jubilife,Jubilife - Pokétch Company 3F,prefab_map/c01r0103,C01R0103
-8,コトブキ:TV局 1F,Kotobuki: TV Station 1F,Jubilife,Jubilife TV - 1F,prefab_map/c01r0201,C01R0201
-9,コトブキ:TV局 2F,Kotobuki: TV Station 2F,Jubilife,Jubilife TV - 2F,prefab_map/c01r0202,C01R0202
-10,コトブキ:TV局 3F,Kotobuki: TV Station 3F,Jubilife,Jubilife TV - 3F,prefab_map/c01r0203,C01R0203
-11,コトブキ:TV局 4F,Kotobuki: TV Station 4F,Jubilife,Jubilife TV - 4F,prefab_map/c01r0204,C01R0204
-12,コトブキ:TV局 クリップの部屋（への道）,Kotobuki : TV station clip room (road to),Jubilife,Jubilife TV - Gym Leader Capsules,prefab_map/c01r0205,C01R0205
-13,コトブキ:TV局 ギネスの部屋1,Kotobuki: Tv Station Guinness Room 1,Jubilife,Jubilife TV - Global Ranking Room,prefab_map/c01r0206,C01R0206
-14,コトブキ:TV局 ギネスの部屋2,Kotobuki: Tv Station Guinness Room 2,Jubilife,Jubilife TV - Group Ranking Room,prefab_map/c01r0207,C01R0207
-15,コトブキ:TV局 EV,Kotobuki : TV Station EV,Jubilife,Jubilife TV - Elv.,prefab_map/c01r0208,C01R0208
-16,コトブキ:ビル1 1F,Kotobuki : Building 1 1F,Jubilife,Jubilife - Bdg. 1 1F (South),prefab_map/c01r0301,C01R0301
-17,コトブキ:ビル1 2F,Kotobuki : Building 1 2F,Jubilife,Jubilife - Bdg. 1 2F (South),prefab_map/c01r0302,C01R0302
-18,コトブキ:ビル2 1F,Kotobuki : Building 2 1F,Jubilife,Jubilife - Bdg. 2 1F (Condominiums),prefab_map/c01r0301,C01R0501
-19,コトブキ:ビル2 2F,Kotobuki : Building 2 2F,Jubilife,Jubilife - Bdg. 2 2F (Condominiums),prefab_map/c01r0302,C01R0502
-20,コトブキ:GTC,Kotobuki: GTC,Jubilife,Jubilife - GWS,prefab_map/c01r0601,C01R0601
-21,コトブキ:トレーナースクール 1F,Kotobuki : Trainer School 1F,Jubilife,Jubilife - Trainer's School,prefab_map/c01r0701,C01R0701
-22,コトブキ:コトブキビル3 1F,Kotobuki : Kotobuki Building 3 1F,Jubilife,Jubilife - Bdg. 3 1F (SW by GWS),prefab_map/c01r0301,C01R0801
-23,コトブキ:コトブキ:ビル3 2F,Kotobuki : Kotobuki : Bill 3 2F,Jubilife,Jubilife - Bdg. 3 2F (SW by GWS),prefab_map/c01r0302,C01R0802
+0,コトブキシティ,Kotobuki City,Jubilife City,Jubilife City,fields/area001,C01
+1,コトブキ:フレンドリーショップ,Kotobuki : Friendly Shop,Jubilife City,Jubilife - Poké Mart,prefab_map/t02fs0101,C01FS0101
+2,コトブキ:ポケモンセンター 1F,Kotobuki : Pokémon Center 1F,Jubilife City,Jubilife - Center 1F,prefab_map/t02pc0101,C01PC0101
+3,コトブキ:ポケモンセンター 2F,Kotobuki : Pokémon Center 2F,Jubilife City,Jubilife - Center 2F,prefab_map/t02pc0102,C01PC0102
+4,コトブキ:ポケモンセンター B1F,Kotobuki : Pokémon Center B1F,Jubilife City,Jubilife - Center B1F,prefab_map/t02pc0103,C01PC0103
+5,コトブキ:ポケッチカンパニー 1F,Kotobuki : Pokéttsch Company 1F,Jubilife City,Jubilife - Pokétch Company 1F,prefab_map/c01r0101,C01R0101
+6,コトブキ:ポケッチカンパニー 2F,Kotobuki : Pokéch Company 2F,Jubilife City,Jubilife - Pokétch Company 2F,prefab_map/c01r0102,C01R0102
+7,コトブキ:ポケッチカンパニー 3F,Kotobuki : Pokéttsch Company 3F,Jubilife City,Jubilife - Pokétch Company 3F,prefab_map/c01r0103,C01R0103
+8,コトブキ:TV局 1F,Kotobuki: TV Station 1F,Jubilife City,Jubilife TV - 1F,prefab_map/c01r0201,C01R0201
+9,コトブキ:TV局 2F,Kotobuki: TV Station 2F,Jubilife City,Jubilife TV - 2F,prefab_map/c01r0202,C01R0202
+10,コトブキ:TV局 3F,Kotobuki: TV Station 3F,Jubilife City,Jubilife TV - 3F,prefab_map/c01r0203,C01R0203
+11,コトブキ:TV局 4F,Kotobuki: TV Station 4F,Jubilife City,Jubilife TV - 4F,prefab_map/c01r0204,C01R0204
+12,コトブキ:TV局 クリップの部屋（への道）,Kotobuki : TV station clip room (road to),Jubilife City,Jubilife TV - Gym Leader Capsules,prefab_map/c01r0205,C01R0205
+13,コトブキ:TV局 ギネスの部屋1,Kotobuki: Tv Station Guinness Room 1,Jubilife City,Jubilife TV - Global Ranking Room,prefab_map/c01r0206,C01R0206
+14,コトブキ:TV局 ギネスの部屋2,Kotobuki: Tv Station Guinness Room 2,Jubilife City,Jubilife TV - Group Ranking Room,prefab_map/c01r0207,C01R0207
+15,コトブキ:TV局 EV,Kotobuki : TV Station EV,Jubilife City,Jubilife TV - Elv.,prefab_map/c01r0208,C01R0208
+16,コトブキ:ビル1 1F,Kotobuki : Building 1 1F,Jubilife City,Jubilife - Bdg. 1 1F (South),prefab_map/c01r0301,C01R0301
+17,コトブキ:ビル1 2F,Kotobuki : Building 1 2F,Jubilife City,Jubilife - Bdg. 1 2F (South),prefab_map/c01r0302,C01R0302
+18,コトブキ:ビル2 1F,Kotobuki : Building 2 1F,Jubilife City,Jubilife - Bdg. 2 1F (Condominiums),prefab_map/c01r0301,C01R0501
+19,コトブキ:ビル2 2F,Kotobuki : Building 2 2F,Jubilife City,Jubilife - Bdg. 2 2F (Condominiums),prefab_map/c01r0302,C01R0502
+20,コトブキ:GTC,Kotobuki: GTC,Jubilife City,Jubilife - GWS,prefab_map/c01r0601,C01R0601
+21,コトブキ:トレーナースクール 1F,Kotobuki : Trainer School 1F,Jubilife City,Jubilife - Trainer's School,prefab_map/c01r0701,C01R0701
+22,コトブキ:コトブキビル3 1F,Kotobuki : Kotobuki Building 3 1F,Jubilife City,Jubilife - Bdg. 3 1F (SW by GWS),prefab_map/c01r0301,C01R0801
+23,コトブキ:コトブキ:ビル3 2F,Kotobuki : Kotobuki : Bill 3 2F,Jubilife City,Jubilife - Bdg. 3 2F (SW by GWS),prefab_map/c01r0302,C01R0802
 24,ミオシティ,Mio City,Canalave City,Canalave City,fields/area001,C02
 25,ミオ:フレンドリィショップ,Mio : Friendly Shop,Canalave City,Canalave - Poké Mart,prefab_map/t02fs0101,C02FS0101
-26,ミオ:ミオジム（鋼）,Mio : Mio Gym (Steel),Canalave City,Canalave - Gym,prefab_map/c02gym0101,C02GYM0101
+26,ミオ:ミオジム（鋼）,Mio : Mio Gym (Steel),,Canalave - Gym,prefab_map/c02gym0101,C02GYM0101
 27,ミオ:ポケモンセンター 1F,Mio : Pokémon Center 1F,Canalave City,Canalave - Center 1F,prefab_map/t02pc0101,C02PC0101
 28,ミオ:ポケモンセンター 2F,Mio : Pokémon Center 2F,Canalave City,Canalave - Center 2F,prefab_map/t02pc0102,C02PC0102
 29,ミオ:ポケモンセンター B1F,Mio : Pokémon Center B1F,Canalave City,Canalave - Center B1F,prefab_map/t02pc0103,C02PC0103
@@ -37,34 +37,34 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 35,ミオ:民家3（ダークイベント用民家）,Mio : Private House 3(Dark Event Private House),Canalave City,Canalave - Darkrai House,prefab_map/c02r0501,C02R0401
 36,ミオ:民家4（ムーバスイベント用民家）,Mio : Private House 4(Private House for Moobus Event),Canalave City,Canalave - House 4 (SW),prefab_map/c02r0501,C02R0501
 37,ミオ:民家5（インタビュアー）,Mio : Private House 5(Interviewer),Canalave City,Canalave - House 5 (South of Gym),prefab_map/c04r0701,C02R0601
-38,クロガネシティ,Kurogane City,Oreburgh,Oreburgh City,fields/area002,C03
-39,クロガネ:フレンドリィショップ,Kurogane : Friendly Shop,Oreburgh,Oreburgh - Poké Mart,prefab_map/t02fs0101,C03FS0101
-40,クロガネ:クロガネジム（岩）,Black Crab : Kuroganesim (Rock),Oreburgh,Oreburgh - Gym,prefab_map/c03gym0101,C03GYM0101
-41,クロガネ:ポケモンセンター 1F,Black Crab : Pokémon Center 1F,Oreburgh,Oreburgh - Center 1F,prefab_map/t02pc0101,C03PC0101
-42,クロガネ:ポケモンセンター 2F,Black Crab : Pokémon Center 2F,Oreburgh,Oreburgh - Center 2F,prefab_map/t02pc0102,C03PC0102
-43,クロガネ:ポケモンセンター B1F,Black Crab : Pokémon Center B1F,Oreburgh,Oreburgh - Center B1F,prefab_map/t02pc0103,C03PC0103
-44,クロガネ:ビル1 1F,Black crab : Bill 1 1F,Oreburgh,Oreburgh - Bdg. 1 1F (most NW),prefab_map/c01r0301,C03R0101
-45,クロガネ:ビル1 2F,Black Crab : Bill 1 2F,Oreburgh,Oreburgh - Bdg. 1 2F (most NW),prefab_map/c01r0302,C03R0102
-46,クロガネ:ビル2 1F,Black crab : Bill 2 1F,Oreburgh,Oreburgh - Bdg. 2 1F (West of Mart),prefab_map/c01r0301,C03R0201
-47,クロガネ:ビル2 2F,Black Crab : Bill 2 2F,Oreburgh,Oreburgh - Bdg. 2 2F (West of Mart),prefab_map/c01r0302,C03R0202
-48,クロガネ:民家1,Black crab : Private house 1,Oreburgh,Oreburgh - House 1 (West of Center),prefab_map/t01r0301,C03R0301
-49,クロガネ:炭坑博物館 1F,Black crab : Coal Mine Museum 1F,Oreburgh,Oreburgh - Mining Museum,prefab_map/c03r0401,C03R0401
-50,クロガネ:民家2,Black crab : Private house 2,Oreburgh,Oreburgh - House 2 (West of Gym),prefab_map/t01r0301,C03R0501
-51,クロガネ:ビル3 1F,Black crab : Bill 3 1F,Oreburgh,Oreburgh - Bdg. 3 1F (SE of Center),prefab_map/c01r0301,C03R0601
-52,クロガネ:ビル3 2F,Black Crab : Bill 3 2F,Oreburgh,Oreburgh - Bdg. 3 2F (SE of Center),prefab_map/c01r0302,C03R0602
-53,クロガネ:民家3,Black crab : Private house 3,Oreburgh,Oreburgh - House 3 (Near Mine),prefab_map/t01r0301,C03R0701
+38,クロガネシティ,Kurogane City,Oreburgh City,Oreburgh City,fields/area002,C03
+39,クロガネ:フレンドリィショップ,Kurogane : Friendly Shop,Oreburgh City,Oreburgh - Poké Mart,prefab_map/t02fs0101,C03FS0101
+40,クロガネ:クロガネジム（岩）,Black Crab : Kuroganesim (Rock),,Oreburgh - Gym,prefab_map/c03gym0101,C03GYM0101
+41,クロガネ:ポケモンセンター 1F,Black Crab : Pokémon Center 1F,Oreburgh City,Oreburgh - Center 1F,prefab_map/t02pc0101,C03PC0101
+42,クロガネ:ポケモンセンター 2F,Black Crab : Pokémon Center 2F,Oreburgh City,Oreburgh - Center 2F,prefab_map/t02pc0102,C03PC0102
+43,クロガネ:ポケモンセンター B1F,Black Crab : Pokémon Center B1F,Oreburgh City,Oreburgh - Center B1F,prefab_map/t02pc0103,C03PC0103
+44,クロガネ:ビル1 1F,Black crab : Bill 1 1F,Oreburgh City,Oreburgh - Bdg. 1 1F (most NW),prefab_map/c01r0301,C03R0101
+45,クロガネ:ビル1 2F,Black Crab : Bill 1 2F,Oreburgh City,Oreburgh - Bdg. 1 2F (most NW),prefab_map/c01r0302,C03R0102
+46,クロガネ:ビル2 1F,Black crab : Bill 2 1F,Oreburgh City,Oreburgh - Bdg. 2 1F (West of Mart),prefab_map/c01r0301,C03R0201
+47,クロガネ:ビル2 2F,Black Crab : Bill 2 2F,Oreburgh City,Oreburgh - Bdg. 2 2F (West of Mart),prefab_map/c01r0302,C03R0202
+48,クロガネ:民家1,Black crab : Private house 1,Oreburgh City,Oreburgh - House 1 (West of Center),prefab_map/t01r0301,C03R0301
+49,クロガネ:炭坑博物館 1F,Black crab : Coal Mine Museum 1F,Oreburgh City,Oreburgh - Mining Museum,prefab_map/c03r0401,C03R0401
+50,クロガネ:民家2,Black crab : Private house 2,Oreburgh City,Oreburgh - House 2 (West of Gym),prefab_map/t01r0301,C03R0501
+51,クロガネ:ビル3 1F,Black crab : Bill 3 1F,Oreburgh City,Oreburgh - Bdg. 3 1F (SE of Center),prefab_map/c01r0301,C03R0601
+52,クロガネ:ビル3 2F,Black Crab : Bill 3 2F,Oreburgh City,Oreburgh - Bdg. 3 2F (SE of Center),prefab_map/c01r0302,C03R0602
+53,クロガネ:民家3,Black crab : Private house 3,Oreburgh City,Oreburgh - House 3 (Near Mine),prefab_map/t01r0301,C03R0701
 54,ハクタイシティ,Hakutai City,Eterna City,Eterna City,fields/area003,C04
 55,ハクタイ:フレンドリィショップ,Hakutai : Friendly Shop,Eterna City,Eterna - Poké Mart,prefab_map/t02fs0101,C04FS0101
-56,ハクタイ:ハクタイポケモンジム1（草）,Hakutai : Hakutai Pokémon Gym 1(Grass),Eterna City,Eterna - Gym Lobby,prefab_map/c04gym0101,C04GYM0101
-57,ハクタイ:ハクタイポケモンジム2（草）,Hakutai : Hakutai Pokémon Gym 2(Grass),Eterna City,Eterna - Gym Main Room,prefab_map/c04gym0102,C04GYM0102
+56,ハクタイ:ハクタイポケモンジム1（草）,Hakutai : Hakutai Pokémon Gym 1(Grass),,Eterna - Gym Lobby,prefab_map/c04gym0101,C04GYM0101
+57,ハクタイ:ハクタイポケモンジム2（草）,Hakutai : Hakutai Pokémon Gym 2(Grass),,Eterna - Gym Main Room,prefab_map/c04gym0102,C04GYM0102
 58,ハクタイ:ポケモンセンター 1F,Hakutai : Pokémon Center 1F,Eterna City,Eterna - Center 1F,prefab_map/t02pc0101,C04PC0101
 59,ハクタイ:ポケモンセンター 2F,Hakutai : Pokémon Center 2F,Eterna City,Eterna - Center 2F,prefab_map/t02pc0102,C04PC0102
 60,ハクタイ:ポケモンセンター B1F,Hakutai : Pokémon Center B1F,Eterna City,Eterna - Center B1F,prefab_map/t02pc0103,C04PC0103
 61,ハクタイ:自転車屋,Hakutai : Bicycle Shop,Eterna City,Eterna - Cycle Shop,prefab_map/c04r0101,C04R0101
-62,ハクタイ:ギンガ団支部ビル 1F,Hakutai : Gyinga Branch Building 1F,Eterna City,Eterna - Galac. Bdg. 1F,prefab_map/c04r0201,C04R0201
-63,ハクタイ:ギンガ団支部ビル 2F,Hakutai : Ginga Branch Building 2F,Eterna City,Eterna - Galac. Bdg. 2F,prefab_map/c04r0202,C04R0202
-64,ハクタイ:ギンガ団支部ビル 3F,Hakutai : Ginga Branch Building 3F,Eterna City,Eterna - Galac. Bdg. 3F,prefab_map/c04r0203,C04R0203
-65,ハクタイ:ギンガ団支部ビル 4F,Hakutai : 4F Ginga Branch Building,Eterna City,Eterna - Galac. Bdg. 4F,prefab_map/c01r0302,C04R0204
+62,ハクタイ:ギンガ団支部ビル 1F,Hakutai : Gyinga Branch Building 1F,,T.G. Building 1F,prefab_map/c04r0201,C04R0201
+63,ハクタイ:ギンガ団支部ビル 2F,Hakutai : Ginga Branch Building 2F,,T.G. Building 2F,prefab_map/c04r0202,C04R0202
+64,ハクタイ:ギンガ団支部ビル 3F,Hakutai : Ginga Branch Building 3F,,T.G. Building 3F,prefab_map/c04r0203,C04R0203
+65,ハクタイ:ギンガ団支部ビル 4F,Hakutai : 4F Ginga Branch Building,,T.G. Building 4F,prefab_map/c01r0302,C04R0204
 66,ハクタイ:一般住居ビル 1F,Hakutai : General Residence Building 1F,Eterna City,Eterna - Eterna Condominums 1F,prefab_map/c01r0301,C04R0301
 67,ハクタイ:一般住居ビル 2F（姓名判断）,Hakutai : General Residence Building 2F(Surname Judgment),Eterna City,Eterna - Eterna Condominums 2F,prefab_map/c04r0302,C04R0302
 68,ハクタイ:一般住居ビル 3F,Hakutai : General Residence Building 3F,Eterna City,Eterna - Eterna Condominums 3F,prefab_map/c01r0302,C04R0303
@@ -73,45 +73,45 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 71,ハクタイ:民家2,Hakutai : Private House 2,Eterna City,Eterna - House 2 (West of Gym),prefab_map/c04r0701,C04R0601
 72,ハクタイ:民家3,Hakutai : Private Houses 3,Eterna City,Eterna - House 3 (South of Statue),prefab_map/c04r0701,C04R0701
 73,ハクタイ:民家（地下オヤジの家）,Hakutai : Private House (House of The Underground Oyaji),Eterna City,Eterna - Underground Man's House,prefab_map/c04r0801,C04R0801
-74,ヨスガシティ,Josga City,HeartHome,Hearthome City,fields/area004,C05
-75,ヨスガ:フレンドリィショップ,Josga : Friendly Shop,HeartHome,Hearthome - Poké Mart,prefab_map/t02fs0101,C05FS0101
-76,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Lobby,prefab_map/c05gym0101,C05GYM0101
-77,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Trainer Room 1,prefab_map/c05gym0102,C05GYM0102
-78,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Trainer Room 2,prefab_map/c05gym0102,C05GYM0103
-79,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Question 2,prefab_map/c05gym0104,C05GYM0104
-80,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Trainer Room 3,prefab_map/c05gym0102,C05GYM0105
-81,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Question 3,prefab_map/c05gym0104,C05GYM0106
-82,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Trainer Room 4,prefab_map/c05gym0102,C05GYM0107
-83,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Question 4,prefab_map/c05gym0104,C05GYM0108
-84,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Trainer Room 5,prefab_map/c05gym0102,C05GYM0109
-85,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Trainer Room 6,prefab_map/c05gym0102,C05GYM0110
-86,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Trainer Room 7,prefab_map/c05gym0102,C05GYM0111
-87,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Trainer Room 8,prefab_map/c05gym0102,C05GYM0112
-88,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),HeartHome,Hearthome - Gym Leader Room,prefab_map/c05gym0113,C05GYM0113
-89,ヨスガ:ポケモンセンター 1F,Yosuga : Pokémon Center 1F,HeartHome,Hearthome - Center 1F,prefab_map/t02pc0101,C05PC0101
-90,ヨスガ:ポケモンセンター 2F,Yosuga : Pokémon Center 2F,HeartHome,Hearthome - Center 2F,prefab_map/t02pc0102,C05PC0102
-91,ヨスガ:ポケモンセンター B1F,Yosuga : Pokémon Center B1F,HeartHome,Hearthome - Center B1F,prefab_map/t02pc0103,C05PC0103
-92,ヨスガ:一般EVビル1 1F,Yosuga : General EV Building 1 1F,HeartHome,Hearthome - Bdg. 1 1F (East of Fanclub),prefab_map/c05r0101,C05R0101
-93,ヨスガ:一般EVビル1 2F,Yosuga : General EV Building 1 2F,HeartHome,Hearthome - Bdg. 1 2F (East of Fanclub),prefab_map/c05r0102,C05R0102
-94,ヨスガ:一般EVビル1 EV,Yosuga : General EV Building 1 EV,HeartHome,Hearthome - Bdg. 1 Elv. (East of Fanclub),prefab_map/c01r0208,C05R0103
-95,ヨスガ:大好きクラブ,Josga : My favorite club,HeartHome,Hearthome - Pokémon Fan Club,prefab_map/c05r0201,C05R0201
-96,ヨスガ:自然公園ゲート（縦）,Yosuga : Nature Park Gate (Portrait),HeartHome,Hearthome - Amity Square West Gate,prefab_map/c05r0301,C05R0301
-97,ヨスガ:自然公園ゲート（縦）,Yosuga : Nature Park Gate (Portrait),HeartHome,Hearthome - Amity Square East Gate,prefab_map/c05r0301,C05R0401
-98,ヨスガ:208ゲート,Yosga : 208 Gate,HeartHome,Hearthome - Route 208 Gate,prefab_map/r218r0101,C05R0501
-99,ヨスガ:209ゲート,Yosuga : 209 Gate,HeartHome,Hearthome - Route 209 Gate,prefab_map/r218r0101,C05R0601
-100,ヨスガ:212aゲート,Yosuga:212a Gate,HeartHome,Hearthome - Route 212 Gate,prefab_map/c05r0301,C05R0701
-101,ヨスガ:一般EVビル2 1F,Yosuga : General EV Building 2 1F,HeartHome,Hearthome - Bdg. 2 1F (West of Gym),prefab_map/c05r0801,C05R0801
-102,ヨスガ:一般EVビル2 2F,Yosuga : General EV Building 2 2F,HeartHome,Hearthome - Bdg. 2 2F (West of Gym),prefab_map/c05r0102,C05R0802
-103,ヨスガ:一般EVビル2 EV,Yosuga : General EV Building 2 EV,HeartHome,Hearthome - Bdg. 2 Elv. (West of Gym),prefab_map/c01r0208,C05R0803
-104,ヨスガ:民家1,Josuga : Private House 1,HeartHome,Hearthome - Bebe's House (East of Center),prefab_map/c05r0901,C05R0901
-105,ヨスガ:民家2（料理教室）,Josga : Private House 2(Cooking Class),HeartHome,Hearthome - Poffin House (West of Mart),prefab_map/c05r1001,C05R1001
-106,ヨスガ:コンテスト会場受付,Josuga : Reception of the contest venue,HeartHome,Hearthome - Contest Hall (Main Lobby),prefab_map/c05r1101,C05R1101
-107,ヨスガ:コンテスト会場（ダミー）,Josga : Contest Venue (Dummy),HeartHome,Hearthome - Contest Hall? (inaccessible?),prefab_map/c05r1102,C05R1102
-108,ヨスガ:コンテスト会場 接続先正規,Yosuga : Contest venue Connection destination regular,HeartHome,Hearthome - Contest Hall (Stage room),prefab_map/c05r1102,C05R1103
-109,ヨスガ:異文化の建物,Josga : Intercultural buildings,HeartHome,Hearthome - Church,prefab_map/c05r1201,C05R1201
+74,ヨスガシティ,Josga City,Hearthome City,Hearthome City,fields/area004,C05
+75,ヨスガ:フレンドリィショップ,Josga : Friendly Shop,Hearthome City,Hearthome - Poké Mart,prefab_map/t02fs0101,C05FS0101
+76,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Lobby,prefab_map/c05gym0101,C05GYM0101
+77,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Trainer Room 1,prefab_map/c05gym0102,C05GYM0102
+78,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Trainer Room 2,prefab_map/c05gym0102,C05GYM0103
+79,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Question 2,prefab_map/c05gym0104,C05GYM0104
+80,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Trainer Room 3,prefab_map/c05gym0102,C05GYM0105
+81,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Question 3,prefab_map/c05gym0104,C05GYM0106
+82,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Trainer Room 4,prefab_map/c05gym0102,C05GYM0107
+83,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Question 4,prefab_map/c05gym0104,C05GYM0108
+84,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Trainer Room 5,prefab_map/c05gym0102,C05GYM0109
+85,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Trainer Room 6,prefab_map/c05gym0102,C05GYM0110
+86,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Trainer Room 7,prefab_map/c05gym0102,C05GYM0111
+87,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Trainer Room 8,prefab_map/c05gym0102,C05GYM0112
+88,ヨスガ:ヨスガジム（ゴースト）,Josuga : Josga Gym (Ghost),,Hearthome - Gym Leader Room,prefab_map/c05gym0113,C05GYM0113
+89,ヨスガ:ポケモンセンター 1F,Yosuga : Pokémon Center 1F,Hearthome City,Hearthome - Center 1F,prefab_map/t02pc0101,C05PC0101
+90,ヨスガ:ポケモンセンター 2F,Yosuga : Pokémon Center 2F,Hearthome City,Hearthome - Center 2F,prefab_map/t02pc0102,C05PC0102
+91,ヨスガ:ポケモンセンター B1F,Yosuga : Pokémon Center B1F,Hearthome City,Hearthome - Center B1F,prefab_map/t02pc0103,C05PC0103
+92,ヨスガ:一般EVビル1 1F,Yosuga : General EV Building 1 1F,Hearthome City,Hearthome - Bdg. 1 1F (East of Fanclub),prefab_map/c05r0101,C05R0101
+93,ヨスガ:一般EVビル1 2F,Yosuga : General EV Building 1 2F,Hearthome City,Hearthome - Bdg. 1 2F (East of Fanclub),prefab_map/c05r0102,C05R0102
+94,ヨスガ:一般EVビル1 EV,Yosuga : General EV Building 1 EV,Hearthome City,Hearthome - Bdg. 1 Elv. (East of Fanclub),prefab_map/c01r0208,C05R0103
+95,ヨスガ:大好きクラブ,Josga : My favorite club,Hearthome City,Hearthome - Pokémon Fan Club,prefab_map/c05r0201,C05R0201
+96,ヨスガ:自然公園ゲート（縦）,Yosuga : Nature Park Gate (Portrait),Hearthome City,Hearthome - Amity Square West Gate,prefab_map/c05r0301,C05R0301
+97,ヨスガ:自然公園ゲート（縦）,Yosuga : Nature Park Gate (Portrait),Hearthome City,Hearthome - Amity Square East Gate,prefab_map/c05r0301,C05R0401
+98,ヨスガ:208ゲート,Yosga : 208 Gate,Hearthome City,Hearthome - Route 208 Gate,prefab_map/r218r0101,C05R0501
+99,ヨスガ:209ゲート,Yosuga : 209 Gate,Hearthome City,Hearthome - Route 209 Gate,prefab_map/r218r0101,C05R0601
+100,ヨスガ:212aゲート,Yosuga:212a Gate,Hearthome City,Hearthome - Route 212 Gate,prefab_map/c05r0301,C05R0701
+101,ヨスガ:一般EVビル2 1F,Yosuga : General EV Building 2 1F,Hearthome City,Hearthome - Bdg. 2 1F (West of Gym),prefab_map/c05r0801,C05R0801
+102,ヨスガ:一般EVビル2 2F,Yosuga : General EV Building 2 2F,Hearthome City,Hearthome - Bdg. 2 2F (West of Gym),prefab_map/c05r0102,C05R0802
+103,ヨスガ:一般EVビル2 EV,Yosuga : General EV Building 2 EV,Hearthome City,Hearthome - Bdg. 2 Elv. (West of Gym),prefab_map/c01r0208,C05R0803
+104,ヨスガ:民家1,Josuga : Private House 1,Hearthome City,Hearthome - Bebe's House (East of Center),prefab_map/c05r0901,C05R0901
+105,ヨスガ:民家2（料理教室）,Josga : Private House 2(Cooking Class),Hearthome City,Hearthome - Poffin House (West of Mart),prefab_map/c05r1001,C05R1001
+106,ヨスガ:コンテスト会場受付,Josuga : Reception of the contest venue,Hearthome City,Hearthome - Contest Hall (Main Lobby),prefab_map/c05r1101,C05R1101
+107,ヨスガ:コンテスト会場（ダミー）,Josga : Contest Venue (Dummy),Hearthome City,Hearthome - Contest Hall? (inaccessible?),prefab_map/c05r1102,C05R1102
+108,ヨスガ:コンテスト会場 接続先正規,Yosuga : Contest venue Connection destination regular,Hearthome City,Hearthome - Contest Hall (Stage room),prefab_map/c05r1102,C05R1103
+109,ヨスガ:異文化の建物,Josga : Intercultural buildings,Hearthome City,Hearthome - Church,prefab_map/c05r1201,C05R1201
 110,ノモセシティ,Nomose City,Pastoria City,Pastoria City,fields/area007,C06
 111,ノモセ:フレンドリィショップ,Nomose : Friendly Shop,Pastoria City,Pastoria - Poké Mart,prefab_map/t02fs0101,C06FS0101
-112,ノモセ:ノモセジム（水）,Nomose : Nomosé Gym (Wed),Pastoria City,Pastoria - Gym,prefab_map/c06gym0101,C06GYM0101
+112,ノモセ:ノモセジム（水）,Nomose : Nomosé Gym (Wed),,Pastoria - Gym,prefab_map/c06gym0101,C06GYM0101
 113,ノモセ:ポケモンセンター 1F,Nomose : Pokémon Center 1F,Pastoria City,Pastoria - Center 1F,prefab_map/t02pc0101,C06PC0101
 114,ノモセ:ポケモンセンター 2F,Nomose : Pokémon Center 2F,Pastoria City,Pastoria - Center 2F,prefab_map/t02pc0102,C06PC0102
 115,ノモセ:ポケモンセンター B1F,Nomose : Pokémon Center B1F,Pastoria City,Pastoria - Center B1F,prefab_map/t02pc0103,C06PC0103
@@ -122,30 +122,30 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 120,ノモセ:民家3（技教え）,Nomose : Private House 3(Teaching),Pastoria City,Pastoria - House 3 (NW of Mart),prefab_map/c05r0901,C06R0401
 121,ノモセ:民家4,Nomosé : Private house 4,Pastoria City,Pastoria - House 4 (East of Gym),prefab_map/t01r0301,C06R0501
 122,ノモセ:民家5,Nomose : Private House 5,Pastoria City,Pastoria - House 5 (East of Marsh Gate),prefab_map/t01r0301,C06R0601
-123,トバリシティ,Tovary City,Veilstone,Veilstone City,fields/area006,C07
-124,トバリ:トバリジム（格闘）,Tobari : Tobari Gym (Fighting),Veilstone,Veilstone - Gym,prefab_map/c07gym0101,C07GYM0101
-125,トバリ:ポケモンセンター 1F,Tobari : Pokémon Center 1F,Veilstone,Veilstone - Center 1F,prefab_map/t02pc0101,C07PC0101
-126,トバリ:ポケモンセンター 2F,Tobari : Pokémon Center 2F,Veilstone,Veilstone - Center 2F,prefab_map/t02pc0102,C07PC0102
-127,トバリ:ポケモンセンター B1F,Tobari : Pokémon Center B1F,Veilstone,Veilstone - Center B1F,prefab_map/t02pc0103,C07PC0103
-128,トバリ:ゲームコーナー,Tobari : Game Corner,Veilstone,Veilstone - Style Shop,prefab_map/c07r0101,C07R0101
-129,トバリ:デパート 1F,Tobari : Department Store 1F,Veilstone,Veilstone - Department Store 1F,prefab_map/c07r0201,C07R0201
-130,トバリ:デパート 2F,Tobari : Department Store 2F,Veilstone,Veilstone - Department Store 2F,prefab_map/c07r0202,C07R0202
-131,トバリ:デパート 3F,Tobari : Department Store 3F,Veilstone,Veilstone - Department Store 3F,prefab_map/c07r0203,C07R0203
-132,トバリ:デパート 4F,Tobari : Department store 4F,Veilstone,Veilstone - Department Store 4F,prefab_map/c07r0204,C07R0204
-133,トバリ:デパート 5F,Tobari : Department Store 5F,Veilstone,Veilstone - Department Store 5F,prefab_map/c07r0205,C07R0205
-134,トバリ:デパートEV,Tobari : Department store EV,Veilstone,Veilstone - Department Store Elv.,prefab_map/c01r0208,C07R0206
-135,トバリ:倉庫,Tobari : Warehouse,Veilstone,Veilstone - Warehouse,prefab_map/c07r0301,C07R0301
-136,トバリ:景品交換,Tobari : Freebies Exchange,Veilstone,Veilstone - Style Shop Storage,prefab_map/c07r0401,C07R0401
-137,トバリ:民家1,Tobari : Private houses 1,Veilstone,"Veilstone - House 1 (South of Gym, right)",prefab_map/c05r0901,C07R0501
-138,トバリ:民家2,Tobari : Private houses 2,Veilstone,Veilstone - House 2 (East of Dept. Store),prefab_map/c05r0901,C07R0601
-139,トバリ:民家3,Tobari : Private houses 3,Veilstone,Veilstone - House 3 (North of Center),prefab_map/t01r0301,C07R0701
-140,トバリ:民家4,Tobari : Private houses 4,Veilstone,"Veilstone - House 4 (South of Gym, left)",prefab_map/t01r0301,C07R0801
-141,トバリ:215ゲート,Tobari : 215 Gate,Veilstone,Veilstone - Route 215 Gate,prefab_map/r218r0101,C07R0901
+123,トバリシティ,Tovary City,Veilstone City,Veilstone City,fields/area006,C07
+124,トバリ:トバリジム（格闘）,Tobari : Tobari Gym (Fighting),,Veilstone - Gym,prefab_map/c07gym0101,C07GYM0101
+125,トバリ:ポケモンセンター 1F,Tobari : Pokémon Center 1F,Veilstone City,Veilstone - Center 1F,prefab_map/t02pc0101,C07PC0101
+126,トバリ:ポケモンセンター 2F,Tobari : Pokémon Center 2F,Veilstone City,Veilstone - Center 2F,prefab_map/t02pc0102,C07PC0102
+127,トバリ:ポケモンセンター B1F,Tobari : Pokémon Center B1F,Veilstone City,Veilstone - Center B1F,prefab_map/t02pc0103,C07PC0103
+128,トバリ:ゲームコーナー,Tobari : Game Corner,Veilstone City,Veilstone - Style Shop,prefab_map/c07r0101,C07R0101
+129,トバリ:デパート 1F,Tobari : Department Store 1F,Veilstone City,Veilstone - Department Store 1F,prefab_map/c07r0201,C07R0201
+130,トバリ:デパート 2F,Tobari : Department Store 2F,Veilstone City,Veilstone - Department Store 2F,prefab_map/c07r0202,C07R0202
+131,トバリ:デパート 3F,Tobari : Department Store 3F,Veilstone City,Veilstone - Department Store 3F,prefab_map/c07r0203,C07R0203
+132,トバリ:デパート 4F,Tobari : Department store 4F,Veilstone City,Veilstone - Department Store 4F,prefab_map/c07r0204,C07R0204
+133,トバリ:デパート 5F,Tobari : Department Store 5F,Veilstone City,Veilstone - Department Store 5F,prefab_map/c07r0205,C07R0205
+134,トバリ:デパートEV,Tobari : Department store EV,Veilstone City,Veilstone - Department Store Elv.,prefab_map/c01r0208,C07R0206
+135,トバリ:倉庫,Tobari : Warehouse,Veilstone City,Veilstone - Warehouse,prefab_map/c07r0301,C07R0301
+136,トバリ:景品交換,Tobari : Freebies Exchange,Veilstone City,Veilstone - Style Shop Storage,prefab_map/c07r0401,C07R0401
+137,トバリ:民家1,Tobari : Private houses 1,Veilstone City,"Veilstone - House 1 (South of Gym, right)",prefab_map/c05r0901,C07R0501
+138,トバリ:民家2,Tobari : Private houses 2,Veilstone City,Veilstone - House 2 (East of Dept. Store),prefab_map/c05r0901,C07R0601
+139,トバリ:民家3,Tobari : Private houses 3,Veilstone City,Veilstone - House 3 (North of Center),prefab_map/t01r0301,C07R0701
+140,トバリ:民家4,Tobari : Private houses 4,Veilstone City,"Veilstone - House 4 (South of Gym, left)",prefab_map/t01r0301,C07R0801
+141,トバリ:215ゲート,Tobari : 215 Gate,Veilstone City,Veilstone - Route 215 Gate,prefab_map/r218r0101,C07R0901
 142,ナギサシティ,Nagisa City,Sunyshore City,Sunyshore City,fields/area008,C08
 143,ナギサ:フレンドリィショップ,Nagisa : Friendly Shop,Sunyshore City,Sunyshore - Poké Mart,prefab_map/t02fs0101,C08FS0101
-144,ナギサ:ナギサジム（電気）,Nagisa : Nagisa Gym (Electric),Sunyshore City,Sunyshore - Gym Room 1,prefab_map/c08gym0101,C08GYM0101
-145,ナギサ:ナギサジム（電気）,Nagisa : Nagisa Gym (Electric),Sunyshore City,Sunyshore - Gym Room 2,prefab_map/c08gym0102,C08GYM0102
-146,ナギサ:ナギサジム（電気）,Nagisa : Nagisa Gym (Electric),Sunyshore City,Sunyshore - Gym Room 3,prefab_map/c08gym0103,C08GYM0103
+144,ナギサ:ナギサジム（電気）,Nagisa : Nagisa Gym (Electric),,Sunyshore - Gym Room 1,prefab_map/c08gym0101,C08GYM0101
+145,ナギサ:ナギサジム（電気）,Nagisa : Nagisa Gym (Electric),,Sunyshore - Gym Room 2,prefab_map/c08gym0102,C08GYM0102
+146,ナギサ:ナギサジム（電気）,Nagisa : Nagisa Gym (Electric),,Sunyshore - Gym Room 3,prefab_map/c08gym0103,C08GYM0103
 147,ナギサ:ポケモンセンター 1F,Nagisa : Pokémon Center 1F,Sunyshore City,Sunyshore - Center 1F,prefab_map/t02pc0101,C08PC0101
 148,ナギサ:ポケモンセンター 2F,Nagisa : Pokémon Center 2F,Sunyshore City,Sunyshore - Center 2F,prefab_map/t02pc0102,C08PC0102
 149,ナギサ:ポケモンセンター B1F,Nagisa : Pokémon Center B1F,Sunyshore City,Sunyshore - Center B1F,prefab_map/t02pc0103,C08PC0103
@@ -158,14 +158,14 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 156,ナギサ:民家6,Nagisa : Private house 6,Sunyshore City,Sunyshore - House 6 (SE),prefab_map/c05r0901,C08R0701
 157,ナギサ:展望台,Nagisa : Observation Deck,Sunyshore City,Sunyshore - Lighthouse Top,prefab_map/c08r0801,C08R0801
 158,ナギサ:展望台EV,Nagisa : Observatory EV,Sunyshore City,Sunyshore - Lighthouse Elv.,prefab_map/c01r0208,C08R0802
-159,キッサキシティ,Kissaki City,Snowpoint,Snowpoint City,fields/area009,C09
-160,キッサキ:フレンドリィショップ,Kissaki : Friendly Shop,Snowpoint,Snowpoint - Poké Mart,prefab_map/t02fs0101,C09FS0101
-161,キッサキ:キッサキジム（氷）,Kisaki : Kisaki Gym (Ice),Snowpoint,Snowpoint - Gym,prefab_map/c09gym0101,C09GYM0101
-162,キッサキ:ポケモンセンター 1F,Kisaki : Pokémon Center 1F,Snowpoint,Snowpoint - Center 1F,prefab_map/t02pc0101,C09PC0101
-163,キッサキ:ポケモンセンター 2F,Kisaki : Pokémon Center 2F,Snowpoint,Snowpoint - Center 2F,prefab_map/t02pc0102,C09PC0102
-164,キッサキ:ポケモンセンター B1F,Kisaki : Pokémon Center B1F,Snowpoint,Snowpoint - Center B1F,prefab_map/t02pc0103,C09PC0103
-165,キッサキ:民家1,Kisaki : Private House 1,Snowpoint,Snowpoint - House 1 (NW),prefab_map/t01r0301,C09R0101
-166,キッサキ:民家2,Kisaki : Private House 2,Snowpoint,Snowpoint - House 2 (NE),prefab_map/t01r0301,C09R0201
+159,キッサキシティ,Kissaki City,Snowpoint City,Snowpoint City,fields/area009,C09
+160,キッサキ:フレンドリィショップ,Kissaki : Friendly Shop,Snowpoint City,Snowpoint - Poké Mart,prefab_map/t02fs0101,C09FS0101
+161,キッサキ:キッサキジム（氷）,Kisaki : Kisaki Gym (Ice),,Snowpoint - Gym,prefab_map/c09gym0101,C09GYM0101
+162,キッサキ:ポケモンセンター 1F,Kisaki : Pokémon Center 1F,Snowpoint City,Snowpoint - Center 1F,prefab_map/t02pc0101,C09PC0101
+163,キッサキ:ポケモンセンター 2F,Kisaki : Pokémon Center 2F,Snowpoint City,Snowpoint - Center 2F,prefab_map/t02pc0102,C09PC0102
+164,キッサキ:ポケモンセンター B1F,Kisaki : Pokémon Center B1F,Snowpoint City,Snowpoint - Center B1F,prefab_map/t02pc0103,C09PC0103
+165,キッサキ:民家1,Kisaki : Private House 1,Snowpoint City,Snowpoint - House 1 (NW),prefab_map/t01r0301,C09R0101
+166,キッサキ:民家2,Kisaki : Private House 2,Snowpoint City,Snowpoint - House 2 (NE),prefab_map/t01r0301,C09R0201
 167,ポケモンリーグ,Pokémon League,Pokemon League,Pokémon League,fields/area008,C10
 168,リーグ:ポケモンセンター 1F,League : Pokémon Center 1F,Pokemon League,Pokémon League - VR Center 1F,prefab_map/t02pc0101,C10PC0101
 169,リーグ:ポケモンセンター 2F,League : Pokémon Center 2F,Pokemon League,Pokémon League - VR Center 2F,prefab_map/t02pc0102,C10PC0102
@@ -215,7 +215,7 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 213,てんがんざん:てんがんざんー9,Tenganzan : Tenganzan9,,Mt. Coronet - Route 216 Entrance,prefab_map/d05r0111,D05R0111
 214,てんがんざん:てんがんざんー10,Tenganzan : TenganZan10,,Mt. Coronet - Route 211 Entrance,prefab_map/d05r0112,D05R0112
 215,てんがんざん:てんがんざんー11,Tenganzan : Tenganzan11,,Mt. Coronet - B1F,prefab_map/d05r0113,D05R0113
-216,やりのはしら（ダイヤモンド）,Diamond,,Spear Pillar - Diamond,prefab_map/d05r0114,D05R0114
+216,やりのはしら（ダイヤモンド）,Diamond,,Spear Pillar,prefab_map/d05r0114,D05R0114
 217,やりのはしら（パール）,Spear Ladder (Pearl),,Spear Pillar - Pearl,prefab_map/d05r0115,D05R0115
 218,はじまりのま（ダイヤモンド）,Beginning (Diamond),,Hall of Origin - Diamond,prefab_map/d05r0116,D05R0116
 219,だいしつげん,Daishitsu-1,,Great Marsh - Area 1,fields/safari,D06R0201
@@ -404,7 +404,7 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 402,218ばんどうろ:c02ゲート,218 Bandoro: c02 Gate,,Route 218 - Canalave Gate,prefab_map/r218r0101,R218R0201
 403,219ばんどうろ,219 Bandoro,,Route 219,fields/area001,R219
 404,221ばんどうろ,221 Bandoro,,Route 221,fields/area001,R221
-405,221ばんどうろ:パルパークゲート,221 Bandoro : Palpark Gate,,Ramanas Park - Lobby,prefab_map/r221r0101,R221R0101
+405,221ばんどうろ:パルパークゲート,221 Bandoro : Palpark Gate,,Ramanas Park,prefab_map/r221r0101,R221R0101
 406,221ばんどうろ:民家,221 Bandoro : Private House,,Route 221 - House,prefab_map/c04r0801,R221R0201
 407,222ばんどうろ,222 Bandoro,,Route 222,fields/area013,R222
 408,222ばんどうろ:民家1,222 Bandoro : Private House 1,,Route 222 - House 1 (Left),prefab_map/t01r0301,R222R0101
@@ -437,24 +437,24 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 435,マサゴ:サポートの家 1F,Masago: Support House 1F,Sandgem,Sandgem - Dawn/Lucas' House 1F,prefab_map/t02r0201,T02R0201
 436,マサゴ:サポートの家 2F,Masago: Support House 2F,Sandgem,Sandgem - Dawn/Lucas' House 2F,prefab_map/t02r0202,T02R0202
 437,マサゴ:民家1,Masago : Private House 1,Sandgem,Sandgem - House (SW),prefab_map/t01r0301,T02R0301
-438,ソノオタウン,Sonoh Town,Floaroma,Floaroma Town,fields/area003,T03
-439,ソノオ:フレンドリィショップ,Sonoh : Friendly Shop,Floaroma,Floaroma - Poké Mart,prefab_map/t02fs0101,T03FS0101
-440,ソノオ:ポケモンセンター 1F,Sonoh : Pokémon Center 1F,Floaroma,Floaroma - Center 1F,prefab_map/t02pc0101,T03PC0101
-441,ソノオ:ポケモンセンター 2F,Sonoh : Pokémon Center 2F,Floaroma,Floaroma - Center 2F,prefab_map/t02pc0102,T03PC0102
-442,ソノオ:ポケモンセンター B1F,Sonoh : Pokémon Center B1F,Floaroma,Floaroma - Center B1F,prefab_map/t02pc0103,T03PC0103
-443,ソノオ:花屋,Sonoh : Florist,Floaroma,Floaroma - Flower Shop,prefab_map/t03r0101,T03R0101
-444,ソノオ:民家1,Sonoh : Private House 1,Floaroma,Floaroma - House 1 (East of Center),prefab_map/t01r0301,T03R0201
-445,ソノオ:民家2,Sonoh : Private House 2,Floaroma,Floaroma - House 2 (NW of Center),prefab_map/t01r0301,T03R0301
-446,ズイタウン,Zui Town,Solaceon,Solaceon Town,fields/area005,T04
-447,ズイ:フレンドリィショップ,Zui : Friendly Shop,Solaceon,Solaceon - Poké Mart,prefab_map/t02fs0101,T04FS0101
-448,ズイ:ポケモンセンター 1F,Zui : Pokémon Center 1F,Solaceon,Solaceon - Center 1F,prefab_map/t02pc0101,T04PC0101
-449,ズイ:ポケモンセンター 2F,Zui : Pokémon Center 2F,Solaceon,Solaceon - Center 2F,prefab_map/t02pc0102,T04PC0102
-450,ズイ:ポケモンセンター B1F,Zui : Pokémon Center B1F,Solaceon,Solaceon - Center B1F,prefab_map/t02pc0103,T04PC0103
-451,ズイ:育て屋・助け屋,Zui : Grower/ Helper,Solaceon,Solaceon - Pokémon Nursery,prefab_map/t04r0101,T04R0101
-452,ズイ:民家1,Zui : Private House 1,Solaceon,Solaceon - House 1 (NW),prefab_map/t01r0301,T04R0201
-453,ズイ:民家2,Zui : Private House 2,Solaceon,Solaceon - Pokémon News Press,prefab_map/t04r0301,T04R0301
-454,ズイ:民家3,Zui : Private House 3,Solaceon,Solaceon - House 2 (North of Center),prefab_map/t01r0301,T04R0401
-455,ズイ:民家4,Zui : Private House 4,Solaceon,Solaceon - House 3 (West of Ruins),prefab_map/t01r0301,T04R0501
+438,ソノオタウン,Sonoh Town,Floaroma Town,Floaroma Town,fields/area003,T03
+439,ソノオ:フレンドリィショップ,Sonoh : Friendly Shop,Floaroma Town,Floaroma - Poké Mart,prefab_map/t02fs0101,T03FS0101
+440,ソノオ:ポケモンセンター 1F,Sonoh : Pokémon Center 1F,Floaroma Town,Floaroma - Center 1F,prefab_map/t02pc0101,T03PC0101
+441,ソノオ:ポケモンセンター 2F,Sonoh : Pokémon Center 2F,Floaroma Town,Floaroma - Center 2F,prefab_map/t02pc0102,T03PC0102
+442,ソノオ:ポケモンセンター B1F,Sonoh : Pokémon Center B1F,Floaroma Town,Floaroma - Center B1F,prefab_map/t02pc0103,T03PC0103
+443,ソノオ:花屋,Sonoh : Florist,Floaroma Town,Floaroma - Flower Shop,prefab_map/t03r0101,T03R0101
+444,ソノオ:民家1,Sonoh : Private House 1,Floaroma Town,Floaroma - House 1 (East of Center),prefab_map/t01r0301,T03R0201
+445,ソノオ:民家2,Sonoh : Private House 2,Floaroma Town,Floaroma - House 2 (NW of Center),prefab_map/t01r0301,T03R0301
+446,ズイタウン,Zui Town,Solaceon Town,Solaceon Town,fields/area005,T04
+447,ズイ:フレンドリィショップ,Zui : Friendly Shop,Solaceon Town,Solaceon - Poké Mart,prefab_map/t02fs0101,T04FS0101
+448,ズイ:ポケモンセンター 1F,Zui : Pokémon Center 1F,Solaceon Town,Solaceon - Center 1F,prefab_map/t02pc0101,T04PC0101
+449,ズイ:ポケモンセンター 2F,Zui : Pokémon Center 2F,Solaceon Town,Solaceon - Center 2F,prefab_map/t02pc0102,T04PC0102
+450,ズイ:ポケモンセンター B1F,Zui : Pokémon Center B1F,Solaceon Town,Solaceon - Center B1F,prefab_map/t02pc0103,T04PC0103
+451,ズイ:育て屋・助け屋,Zui : Grower/ Helper,Solaceon Town,Solaceon - Pokémon Nursery,prefab_map/t04r0101,T04R0101
+452,ズイ:民家1,Zui : Private House 1,Solaceon Town,Solaceon - House 1 (NW),prefab_map/t01r0301,T04R0201
+453,ズイ:民家2,Zui : Private House 2,Solaceon Town,Solaceon - Pokémon News Press,prefab_map/t04r0301,T04R0301
+454,ズイ:民家3,Zui : Private House 3,Solaceon Town,Solaceon - House 2 (North of Center),prefab_map/t01r0301,T04R0401
+455,ズイ:民家4,Zui : Private House 4,Solaceon Town,Solaceon - House 3 (West of Ruins),prefab_map/t01r0301,T04R0501
 456,カンナギタウン,Kannagi Town,Celestic Town,Celestic Town,fields/area005,T05
 457,カンナギ:ポケモンセンター 1F,Kannagi : Pokémon Center 1F,Celestic Town,Celestic - Center 1F,prefab_map/t02pc0101,T05PC0101
 458,カンナギ:ポケモンセンター 2F,Kannagi : Pokémon Center 2F,Celestic Town,Celestic - Center 2F,prefab_map/t02pc0102,T05PC0102
@@ -463,7 +463,7 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 461,カンナギ:民家1（どうぐや）,Kannagi : Private House 1(Doguya),Celestic Town,Celestic - House 1 (Shop),prefab_map/c04r0501,T05R0201
 462,カンナギ:民家2,Kannagi : Private House 2,Celestic Town,Celestic - House 2 (NE),prefab_map/c04r0701,T05R0301
 463,カンナギ:民家3,Kannagi : Private House 3,Celestic Town,Celestic - House 3 (SW),prefab_map/c04r0701,T05R0401
-464,カンナギ:ほこら,Kannagi : Hokora,,Celestic - Cave,prefab_map/t05r0501,T05R0501
+464,カンナギ:ほこら,Kannagi : Hokora,Celestic Town,Celestic - Cave,prefab_map/t05r0501,T05R0501
 465,サバイバルエリア,Survival Area,,Survival Area,fields/area012,T06
 466,サバイバルエリア:フレンドリィショップ,Survival Area: Friendly Shop,,Survival Area - Poké Mart,prefab_map/t02fs0101,T06FS0101
 467,サバイバルエリア:ポケモンセンター 1F,Survival Area : Pokémon Center 1F,,Survival Area - Center 1F,prefab_map/t02pc0101,T06PC0101
@@ -623,7 +623,7 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 621,ひみつきち,Himitsukichi,,Underground - Secret Base 2,underground/ugsecretbase02,UGSECRETBASE02
 622,ひみつきち,Himitsukichi,,Underground - Secret Base 3,underground/ugsecretbase03,UGSECRETBASE03
 623,ひみつきち,Himitsukichi,,Underground - Secret Base 4,underground/ugsecretbase04,UGSECRETBASE04
-624,パルパーク:破れた部屋:天地,Palpark : Torn Room: Heaven and Earth,,Ramanas Park - d10r0902,prefab_map/d10r0902,D10R0902
+624,パルパーク:破れた部屋:天地,Palpark : Torn Room: Heaven and Earth,Ramanas Park,Ramanas Park - d10r0902,prefab_map/d10r0902,D10R0902
 625,海マップ,Sea Map,,Boat Cutscene,prefab_map/sea01,SEA01
 626,コトブキ:TV局 奥クリップの間,Kotobuki: Tv station between the back clips,,Jubilife TV (?room behind guy in Clip Room),prefab_map/c01r0209,C01R0209
 627,中央西のひみつきち1,Central West Secret 1,,,underground/ugaasecretbase01,UGAASECRETBASE01
