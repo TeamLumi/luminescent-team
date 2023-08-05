@@ -18,13 +18,12 @@ We hope you enjoy our romhack!
 
 ## Useful Links
 
-### [Pokédex](https://drive.google.com/drive/folders/1b3b3GDXKCP6KY1E0cMStnYg6y0gTPZYM)
+### [Pokédex](https://drive.google.com/drive/folders/16Kwc09xli5e9WdXBeE6Kcd5vQ6LdoW5b)
 
 - Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, locations, we've got everything here. If you need information on individual Pokémon, this is the page you want to peruse!
-- Includes locations and evolution methods for regional forms and evolutions.
-- Made by Hudie.
+- Includes locations and evolution methods for regional forms and Luminescent exclusives.
 
-### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit?usp=sharing)
+### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit)
 
 - If you want to know what all Pokémon are on each route as you go, this document is for you. It lists all wild encounter locations in the game, and circumstances for Pokémon to spawn in.
 - You must make your own copy before it will work.
