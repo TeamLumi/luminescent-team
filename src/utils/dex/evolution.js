@@ -9,7 +9,15 @@ function getEvolutionMethodDetail(methodId) {
 }
 
 function getEvolutionTree(pokemonId = 0, fromRoot = true) {
+  if (!Number.isInteger(pokemonId) || pokemonId < 0) {
+    throw new Error(`Bad pokemon ID: ${pokemonId}`);
+  }
+
   const pokemon = EvolutionData[pokemonId];
+  if (!pokemon) {
+    throw new Error(`Bad pokemon ID: ${pokemonId}`);
+  }
+
   const startPokemonId = fromRoot ? pokemon.path[0] : pokemonId;
 
   const evolution = EvolutionData[startPokemonId];
@@ -23,6 +31,10 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true) {
 
 function getEvolutionDetails(pokemonId) {
   const evolutionDetails = EvolutionData[pokemonId].ar;
+
+  if (!evolutionDetails) {
+    return null;
+  }
 
   for (let i = 0; i < evolutionDetails.length; i++) {
     const evolutionData = evolutionDetails[i];
