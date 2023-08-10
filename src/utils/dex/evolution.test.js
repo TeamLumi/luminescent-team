@@ -32,7 +32,30 @@ describe('getEvolutionTree', () => {
     }).toThrow('Bad pokemon ID: 9999');
   });
 
-  it('should return the evolution tree for a simple Pokemon', () => {
+  it('works for a simple Pokemon (one stage)', () => {
+    const pokemonId = 21; // Spearow
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 21,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 22,
+          evolutionDetails: {
+            formNo: 0,
+            level: 20,
+            methodId: 4,
+            methodParameter: 0,
+            monsNo: 22,
+          },
+          evolvesInto: [],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a simple Pokemon (two stages)', () => {
     const pokemonId = 1; // Bulbasaur
     const result = getEvolutionTree(pokemonId);
     const expected = {
@@ -67,7 +90,145 @@ describe('getEvolutionTree', () => {
     expect(result).toEqual(expected);
   });
 
-  it('should return the evolution tree for a Pokemon with many Evolutions', () => {
+  it('works for a simple Pokemon (one stage across gens)', () => {
+    const pokemonId = 465; // Tangrowth
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 114,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 465,
+          evolutionDetails: {
+            formNo: 0,
+            level: 0,
+            methodId: 21,
+            methodParameter: 246,
+            monsNo: 465,
+          },
+          evolvesInto: [],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a simple Pokemon (two stage across gens)', () => {
+    const pokemonId = 116; // Horsea
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 116,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 117,
+          evolutionDetails: {
+            formNo: 0,
+            level: 32,
+            methodId: 4,
+            methodParameter: 0,
+            monsNo: 117,
+          },
+          evolvesInto: [
+            {
+              pokemonId: 230,
+              evolutionDetails: {
+                formNo: 0,
+                level: 0,
+                methodId: 8,
+                methodParameter: 235,
+                monsNo: 230,
+              },
+              evolvesInto: [],
+            },
+          ],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a Pokemon with branching Evolutions (across the same gen)', () => {
+    const pokemonId = 367; // Huntail
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 366,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          evolutionDetails: {
+            formNo: 0,
+            level: 0,
+            methodId: 8,
+            methodParameter: 226,
+            monsNo: 367,
+          },
+          evolvesInto: [],
+          pokemonId: 367,
+        },
+        {
+          evolutionDetails: {
+            formNo: 0,
+            level: 0,
+            methodId: 8,
+            methodParameter: 227,
+            monsNo: 368,
+          },
+          evolvesInto: [],
+          pokemonId: 368,
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a Pokemon with a 2 stage branching Evolution (across the same gen)', () => {
+    const pokemonId = 789; // Cosmog
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 789,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          evolutionDetails: {
+            formNo: 0,
+            level: 43,
+            methodId: 4,
+            methodParameter: 0,
+            monsNo: 790,
+          },
+          evolvesInto: [
+            {
+              evolutionDetails: {
+                formNo: 0,
+                level: 53,
+                methodId: 32,
+                methodParameter: 0,
+                monsNo: 791,
+              },
+              evolvesInto: [],
+              pokemonId: 791,
+            },
+            {
+              evolutionDetails: {
+                formNo: 0,
+                level: 53,
+                methodId: 33,
+                methodParameter: 0,
+                monsNo: 792,
+              },
+              evolvesInto: [],
+              pokemonId: 792,
+            },
+          ],
+          pokemonId: 790,
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a Pokemon with many branching Evolutions (across multiple gens)', () => {
     const pokemonId = 133; // Eevee
     const result = getEvolutionTree(pokemonId);
     const expected = {
@@ -167,7 +328,133 @@ describe('getEvolutionTree', () => {
     expect(result).toEqual(expected);
   });
 
-  it('should return the evolution tree for a Pokemon with a cross-generation branching evo.', () => {
+  it('branching 1st stage evo with 2 stage evos on each side', () => {
+    const pokemonId = 265; // Wurmple
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 265,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          evolutionDetails: {
+            formNo: 0,
+            level: 7,
+            methodId: 12,
+            methodParameter: 0,
+            monsNo: 266,
+          },
+          evolvesInto: [
+            {
+              evolutionDetails: {
+                formNo: 0,
+                level: 10,
+                methodId: 4,
+                methodParameter: 0,
+                monsNo: 267,
+              },
+              evolvesInto: [],
+              pokemonId: 267,
+            },
+          ],
+          pokemonId: 266,
+        },
+        {
+          evolutionDetails: {
+            formNo: 0,
+            level: 7,
+            methodId: 13,
+            methodParameter: 0,
+            monsNo: 268,
+          },
+          evolvesInto: [
+            {
+              evolutionDetails: {
+                formNo: 0,
+                level: 10,
+                methodId: 4,
+                methodParameter: 0,
+                monsNo: 269,
+              },
+              evolvesInto: [],
+              pokemonId: 269,
+            },
+          ],
+          pokemonId: 268,
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a baby pokemon (across generations)', () => {
+    const pokemonId = 124; // Jinx
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 238,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 124,
+          evolutionDetails: {
+            formNo: 0,
+            level: 30,
+            methodId: 4,
+            methodParameter: 0,
+            monsNo: 124,
+          },
+          evolvesInto: [],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a baby pokemon (branching evo across generations)', () => {
+    const pokemonId = 236; // Tyrogue
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 236,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 107,
+          evolutionDetails: {
+            formNo: 0,
+            level: 20,
+            methodId: 11,
+            methodParameter: 0,
+            monsNo: 107,
+          },
+          evolvesInto: [],
+        },
+        {
+          pokemonId: 106,
+          evolutionDetails: {
+            formNo: 0,
+            level: 20,
+            methodId: 9,
+            methodParameter: 0,
+            monsNo: 106,
+          },
+          evolvesInto: [],
+        },
+        {
+          pokemonId: 237,
+          evolutionDetails: {
+            formNo: 0,
+            level: 20,
+            methodId: 10,
+            methodParameter: 0,
+            monsNo: 237,
+          },
+          evolvesInto: [],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a baby Pokemon with a 2 stage branching Evolution (across multiple gens)', () => {
     const pokemonId = 172; // Pichu
     const result = getEvolutionTree(pokemonId);
     const expected = {
@@ -213,11 +500,57 @@ describe('getEvolutionTree', () => {
     expect(result).toEqual(expected);
   });
 
-  it('should return the evolution tree for a Pokemon with alternate form evolutions.', () => {
+  it('works for a baby Pokemon with a 2 stage evo on an alternate form (across multiple gens)', () => {
+    const pokemonId = 122; // Mr. Mime
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 439,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 122,
+          evolutionDetails: {
+            formNo: 0,
+            level: 0,
+            methodId: 21,
+            methodParameter: 102,
+            monsNo: 122,
+          },
+          evolvesInto: [],
+        },
+        {
+          pokemonId: 1083,
+          evolutionDetails: {
+            formNo: 1,
+            level: 32,
+            methodId: 8,
+            methodParameter: 849,
+            monsNo: 122,
+          },
+          evolvesInto: [
+            {
+              pokemonId: 866,
+              evolutionDetails: {
+                formNo: 0,
+                level: 42,
+                methodId: 4,
+                methodParameter: 0,
+                monsNo: 866,
+              },
+              evolvesInto: [],
+            },
+          ],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a Pokemon with alternate form Evolutions (different evo for each form)', () => {
     const pokemonId = 1173; // Burmy Trash Cloak
     const result = getEvolutionTree(pokemonId);
     const expected = {
-      pokemonId: 412,
+      pokemonId: 1173,
       evolutionDetails: null,
       evolvesInto: [
         {
@@ -240,14 +573,14 @@ describe('getEvolutionTree', () => {
             monsNo: 414,
           },
           evolvesInto: [],
-          pokemonId: 1173,
+          pokemonId: 414,
         },
       ],
     };
     expect(result).toEqual(expected);
   });
 
-  it('should properly grab those same evolutions as previous running backwards.', () => {
+  it('works for a Pokemon with alternate form Evolutions backwards (assumes base form)', () => {
     const pokemonId = 414; // Mothim
     const result = getEvolutionTree(pokemonId);
     const expected = {
