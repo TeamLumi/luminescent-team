@@ -23,6 +23,7 @@ import typeName from './english_ss_typename.json';
 import moveNames from './english_ss_wazaname.json';
 import moveInfo from './english_ss_wazainfo.json';
 import itemNames from './english_ss_itemname.json';
+import encounterData from './encounter_locations.json';
 
 //Custom files
 import moveEnum from './moveEnum.json';
@@ -35,6 +36,7 @@ export {
   EggMovesTable,
   LearnsetTable,
   MovesTable,
+  encounterData,
   basePokemonNames,
   formPokemonNames,
   pokemonHeight,
