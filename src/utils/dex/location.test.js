@@ -1,4 +1,4 @@
-import { getEncounterLocations } from './location';
+import { getEncounterLocations } from './location.cjs';
 
 describe('Dex utils encounter Location getter tests', () => {
   it('should throw an error for an invalid pokemonId number', () => {

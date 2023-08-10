@@ -233,4 +233,4 @@ function optimizeLocations(cleanedLocations) {
   return filteredLocations;
 }
 
-export { getEncounterLocations };
+module.exports = { getEncounterLocations };
