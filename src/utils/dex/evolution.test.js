@@ -32,6 +32,17 @@ describe('getEvolutionTree', () => {
     }).toThrow('Bad pokemon ID: 9999');
   });
 
+  it('should return only the Pokemon for a Pokemon without evolutions', () => {
+    const pokemonId = 151; // Mew
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 151,
+      evolutionDetails: null,
+      evolvesInto: [],
+    };
+    expect(result).toEqual(expected);
+  });
+
   it('works for a simple Pokemon (one stage)', () => {
     const pokemonId = 21; // Spearow
     const result = getEvolutionTree(pokemonId);
@@ -328,7 +339,53 @@ describe('getEvolutionTree', () => {
     expect(result).toEqual(expected);
   });
 
-  it('branching 1st stage evo with 2 stage evos on each side', () => {
+  it('works for pokemon with 2nd stage branching evo (across generations)', () => {
+    const pokemonId = 60; // Poliwag
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 60,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 61,
+          evolutionDetails: {
+            formNo: 0,
+            level: 25,
+            methodId: 4,
+            methodParameter: 0,
+            monsNo: 61,
+          },
+          evolvesInto: [
+            {
+              pokemonId: 62,
+              evolutionDetails: {
+                formNo: 0,
+                level: 0,
+                methodId: 8,
+                methodParameter: 84,
+                monsNo: 62,
+              },
+              evolvesInto: [],
+            },
+            {
+              pokemonId: 186,
+              evolutionDetails: {
+                formNo: 0,
+                level: 0,
+                methodId: 8,
+                methodParameter: 221,
+                monsNo: 186,
+              },
+              evolvesInto: [],
+            },
+          ],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a branching 1st stage evo with 2 stage evos on each side', () => {
     const pokemonId = 265; // Wurmple
     const result = getEvolutionTree(pokemonId);
     const expected = {
@@ -403,6 +460,41 @@ describe('getEvolutionTree', () => {
             monsNo: 124,
           },
           evolvesInto: [],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a baby pokemon (across generations with 2 stages)', () => {
+    const pokemonId = 174; // Igglybuff
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 174,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 39,
+          evolutionDetails: {
+            formNo: 0,
+            level: 0,
+            methodId: 1,
+            methodParameter: 0,
+            monsNo: 39,
+          },
+          evolvesInto: [
+            {
+              pokemonId: 40,
+              evolutionDetails: {
+                formNo: 0,
+                level: 0,
+                methodId: 8,
+                methodParameter: 81,
+                monsNo: 40,
+              },
+              evolvesInto: [],
+            },
+          ],
         },
       ],
     };
@@ -536,6 +628,86 @@ describe('getEvolutionTree', () => {
                 methodId: 4,
                 methodParameter: 0,
                 monsNo: 866,
+              },
+              evolvesInto: [],
+            },
+          ],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a simple pokemon with a an extra form added to first evo (across generations)', () => {
+    const pokemonId = 105; // Marowack
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 104,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 105,
+          evolutionDetails: {
+            formNo: 0,
+            level: 28,
+            methodId: 32,
+            methodParameter: 0,
+            monsNo: 105,
+          },
+          evolvesInto: [],
+        },
+        {
+          pokemonId: 1079,
+          evolutionDetails: {
+            formNo: 1,
+            level: 28,
+            methodId: 33,
+            methodParameter: 0,
+            monsNo: 105,
+          },
+          evolvesInto: [],
+        },
+      ],
+    };
+    expect(result).toEqual(expected);
+  });
+
+  it('works for a simple pokemon with a an extra form added to second evo (across generations)', () => {
+    const pokemonId = 156; // Quilava
+    const result = getEvolutionTree(pokemonId);
+    const expected = {
+      pokemonId: 155,
+      evolutionDetails: null,
+      evolvesInto: [
+        {
+          pokemonId: 156,
+          evolutionDetails: {
+            formNo: 0,
+            level: 14,
+            methodId: 4,
+            methodParameter: 0,
+            monsNo: 156,
+          },
+          evolvesInto: [
+            {
+              pokemonId: 1102,
+              evolutionDetails: {
+                formNo: 1,
+                level: 36,
+                methodId: 21,
+                methodParameter: 506,
+                monsNo: 157,
+              },
+              evolvesInto: [],
+            },
+            {
+              pokemonId: 157,
+              evolutionDetails: {
+                formNo: 0,
+                level: 36,
+                methodId: 4,
+                methodParameter: 0,
+                monsNo: 157,
               },
               evolvesInto: [],
             },
