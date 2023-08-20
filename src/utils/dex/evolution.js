@@ -22,11 +22,21 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true) {
 
   const evolution = EvolutionData[startPokemonId];
 
-  return {
+  const evolutionTree = {
     pokemonId: startPokemonId,
     evolutionDetails: getEvolutionDetails(startPokemonId),
     evolvesInto: evolution.targets.map((nextStagePokemonId) => getEvolutionTree(nextStagePokemonId, false)),
   };
+  return evolutionTree;
+}
+
+function checkEvolutionPath(evolutionData, originalPokemonId) {
+  const originalPath = EvolutionData[originalPokemonId].path;
+
+  function comparePath(treeNode, expectedId) {
+  }
+
+  comparePath(evolutionData, originalPath[0]);
 }
 
 function getEvolutionDetails(pokemonId) {

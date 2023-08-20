@@ -1,3 +1,4 @@
+import { FourMpTwoTone } from '@mui/icons-material';
 import { getEvolutionMethodDetail, getEvolutionTree } from './evolution';
 
 describe('getEvolutionMethodDetail', () => {
@@ -33,8 +34,10 @@ describe('getEvolutionTree', () => {
   });
 
   it('works for a simple Pokemon (one stage)', () => {
-    const pokemonId = 21; // Spearow
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 21; // Spearow
+    const secondPokemonId = 22; // Fearow
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
     const expected = {
       pokemonId: 21,
       evolutionDetails: null,
@@ -52,12 +55,16 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected);
   });
 
   it('works for a simple Pokemon (two stages)', () => {
-    const pokemonId = 1; // Bulbasaur
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 1; // Bulbasaur
+    const secondPokemonId = 2; // Ivysaur
+    const thirdPokemonId = 3; // Venusaur
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
     const expected = {
       pokemonId: 1,
       evolutionDetails: null,
@@ -87,12 +94,14 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected);
   });
 
   it('works for a simple Pokemon (one stage across gens)', () => {
-    const pokemonId = 465; // Tangrowth
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 114; // Tangela
+    const secondPokemonId = 465; // Tangrowth
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
     const expected = {
       pokemonId: 114,
       evolutionDetails: null,
@@ -110,12 +119,16 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected);
   });
 
   it('works for a simple Pokemon (two stage across gens)', () => {
-    const pokemonId = 116; // Horsea
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 116; // Horsea
+    const secondPokemonId = 117; // Seadra
+    const thirdPokemonId = 230; // Kingdra
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
     const expected = {
       pokemonId: 116,
       evolutionDetails: null,
@@ -145,12 +158,16 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected);
   });
 
   it('works for a Pokemon with branching Evolutions (across the same gen)', () => {
-    const pokemonId = 367; // Huntail
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 366; // Clamperl
+    const secondPokemonId = 367; // Huntail
+    const thirdPokemonId = 368; // Gorebyss
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
     const expected = {
       pokemonId: 366,
       evolutionDetails: null,
@@ -179,12 +196,18 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected);
   });
 
   it('works for a Pokemon with a 2 stage branching Evolution (across the same gen)', () => {
-    const pokemonId = 789; // Cosmog
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 789; // Cosmog
+    const secondPokemonId = 790; // Cosmeom
+    const thirdPokemonId = 791; // Solgaleo
+    const fourthPokemonId = 792; // Lunala
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
+    const fourthResult = getEvolutionTree(fourthPokemonId);
     const expected = {
       pokemonId: 789,
       evolutionDetails: null,
@@ -225,12 +248,28 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
   });
 
   it('works for a Pokemon with many branching Evolutions (across multiple gens)', () => {
-    const pokemonId = 133; // Eevee
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 133; // Eevee
+    const secondPokemonId = 134; // Vaporeon
+    const thirdPokemonId = 135; // Jolteon
+    const fourthPokemonId = 136; // Flareon
+    const fifthPokemonId = 196; // Espeon
+    const sixthPokemonId = 197; // Umbreon
+    const seventhPokemonId = 470; // Leafeon
+    const eighthPokemonId = 471; // Glaceon
+    const ninthPokemonId = 700; // Sylveon
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
+    const fourthResult = getEvolutionTree(fourthPokemonId);
+    const fifthResult = getEvolutionTree(fifthPokemonId);
+    const sixthResult = getEvolutionTree(sixthPokemonId);
+    const seventhResult = getEvolutionTree(seventhPokemonId);
+    const eighthResult = getEvolutionTree(eighthPokemonId);
+    const ninthResult = getEvolutionTree(ninthPokemonId);
     const expected = {
       pokemonId: 133,
       evolutionDetails: null,
@@ -325,12 +364,22 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
+    expect(fifthResult).toEqual(expected) && expect(sixthResult).toEqual(expected) && expect(seventhResult).toEqual(expected) && expect(eighthResult).toEqual(expected);
+    expect(ninthResult).toEqual(expected);
   });
 
   it('branching 1st stage evo with 2 stage evos on each side', () => {
-    const pokemonId = 265; // Wurmple
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 265; // Wurmple
+    const secondPokemonId = 266; // Silcoon
+    const thirdPokemonId = 267; // Beautifly
+    const fourthPokemonId = 268; // Cascoon
+    const fifthPokemonId = 269; // Dustox
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
+    const fourthResult = getEvolutionTree(fourthPokemonId);
+    const fifthResult = getEvolutionTree(fifthPokemonId);
     const expected = {
       pokemonId: 265,
       evolutionDetails: null,
@@ -383,12 +432,15 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
+    expect(fifthResult).toEqual(expected);
   });
 
   it('works for a baby pokemon (across generations)', () => {
-    const pokemonId = 124; // Jinx
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 124; // Jynx
+    const secondPokemonId = 238; // Smoochum
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
     const expected = {
       pokemonId: 238,
       evolutionDetails: null,
@@ -406,12 +458,18 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected);
   });
 
   it('works for a baby pokemon (branching evo across generations)', () => {
-    const pokemonId = 236; // Tyrogue
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 236; // Tyrogue
+    const secondPokemonId = 237; // Hitmontop
+    const thirdPokemonId = 106; // Hitmonlee
+    const fourthPokemonId = 107; // Hitmonchan
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
+    const fourthResult = getEvolutionTree(fourthPokemonId);
     const expected = {
       pokemonId: 236,
       evolutionDetails: null,
@@ -451,12 +509,18 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
   });
 
   it('works for a baby Pokemon with a 2 stage branching Evolution (across multiple gens)', () => {
-    const pokemonId = 172; // Pichu
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 172; // Pichu
+    const secondPokemonId = 25; // Pikachu
+    const thirdPokemonId = 26; // Raichu
+    const fourthPokemonId = 1044; // Alolan Raichu
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
+    const fourthResult = getEvolutionTree(fourthPokemonId);
     const expected = {
       pokemonId: 172,
       evolutionDetails: null,
@@ -497,12 +561,18 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
   });
 
   it('works for a baby Pokemon with a 2 stage evo on an alternate form (across multiple gens)', () => {
-    const pokemonId = 122; // Mr. Mime
-    const result = getEvolutionTree(pokemonId);
+    const firstPokemonId = 439; // Mime Jr.
+    const secondPokemonId = 122; // Mr. Mime
+    const thirdPokemonId = 1083; // Galarian Mr. Mime
+    const fourthPokemonId = 866; // Mr Rime
+    const firstResult = getEvolutionTree(firstPokemonId);
+    const secondResult = getEvolutionTree(secondPokemonId);
+    const thirdResult = getEvolutionTree(thirdPokemonId);
+    const fourthResult = getEvolutionTree(fourthPokemonId);
     const expected = {
       pokemonId: 439,
       evolutionDetails: null,
@@ -543,7 +613,7 @@ describe('getEvolutionTree', () => {
         },
       ],
     };
-    expect(result).toEqual(expected);
+    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
   });
 
   it('works for a Pokemon with alternate form Evolutions (different evo for each form)', () => {
