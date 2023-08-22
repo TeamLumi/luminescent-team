@@ -1,159 +1,75 @@
-const None = 0,
-  Item = 1,
-  Move = 2,
-  Pokemon = 3,
-  Typing = 4,
-  GameVersion = 5;
+import { EvolutionData } from '../../../__gamedata';
+import { EVOLUTION_METHOD_DETAILS } from './evolutionConstants';
+import { getPokemonIdFromMonsNoAndForm } from './functions';
 
-const EVOLUTION_METHOD_REQUIRES_LEVEL = [
-  false,
-  false,
-  false,
-  false,
-  true,
-  false,
-  false,
-  false,
-  false,
-  true,
-  true,
-  true,
-  true,
-  true,
-  true,
-  true,
-  false,
-  false,
-  false,
-  true,
-  true,
-  false,
-  false,
-  true,
-  true,
-  false,
-  false,
-  false,
-  true,
-  false,
-  true,
-  true,
-  true,
-  true,
-  true,
-  false,
-  true,
-  true,
-  true,
-  false,
-  true,
-  true,
-  false,
-  false,
-  false,
-  false,
-  true,
-  true,
-];
+function getEvolutionMethodDetail(methodId) {
+  if (!Number.isInteger(methodId) || methodId < 0) throw new Error(`Bad method: ${methodId}`);
 
-const EVOLUTION_METHODS = [
-  '',
-  'On LvUp: high friendship',
-  'On LvUp: high friendship & is day',
-  'On LvUp: high friendship & is night',
-  'On LvUp: Lv ≥ LvReq',
-  'On Trade',
-  'On Trade: holds item',
-  'Karrablast/Shelmet Trade',
-  'On UseItem',
-  'On LvUp: Lv ≥ LvReq & Atk > Def',
-  'On LvUp: Lv ≥ LvReq & Def > Atk',
-  'On LvUp: Lv ≥ LvReq & Atk = Def',
-  'On LvUp: Lv ≥ LvReq & rng(0-9) ≤ 4',
-  'On LvUp: Lv ≥ LvReq & rng(0-9) > 4',
-  'On LvUp: Lv ≥ LvReq → Get Shedinja',
-  'SPECIAL_NUKENIN',
-  'On LvUp: high beauty',
-  'On UseItem: is male',
-  'On UseItem: is female',
-  'On LvUp: Lv ≥ LvReq & holds item & is day',
-  'On LvUp: Lv ≥ LvReq & holds item & is night',
-  'On LvUp: has move',
-  'On LvUp: Pokémon in party',
-  'On LvUp: Lv ≥ LvReq & is male',
-  'On LvUp: Lv ≥ LvReq & is female',
-  'On LvUp: is by magnetic field',
-  'On LvUp: is by moss rock',
-  'On LvUp: is by ice rock',
-  'On LvUp: Lv ≥ LvReq & device upside down',
-  'On LvUp: high friendship & has move of type',
-  'On LvUp: Lv ≥ LvReq & Dark Pokémon in party',
-  'On LvUp: Lv ≥ LvReq & is raining',
-  'On LvUp: Lv ≥ LvReq & is day',
-  'On LvUp: Lv ≥ LvReq & is night',
-  'On LvUp: Lv ≥ LvReq & is female → set form to 1',
-  'FRIENDLY',
-  'On LvUp: Lv ≥ LvReq & is game version',
-  'On LvUp: Lv ≥ LvReq & is game version & is day',
-  'On LvUp: Lv ≥ LvReq & is game version & is night',
-  'On LvUp: is by summit',
-  'On LvUp: Lv ≥ LvReq & is dusk',
-  'On LvUp: Lv ≥ LvReq & is outside region',
-  'On UseItem: is outside region',
-  "Galarian Farfetch'd Evolution",
-  'Galarian Yamask Evolution',
-  'Milcery Evolution',
-  'On LvUp: Lv ≥ LvReq & has amped nature',
-  'On LvUp: Lv ≥ LvReq & has low-key nature',
-];
+  return EVOLUTION_METHOD_DETAILS[methodId];
+}
 
-const EVOLUTION_METHOD_PARAM_TYPE = [
-  None,
-  None,
-  None,
-  None,
-  None,
-  None,
-  Item,
-  None,
-  Item,
-  None,
-  None,
-  None,
-  None,
-  None,
-  None,
-  None,
-  None,
-  Item,
-  Item,
-  Item,
-  Item,
-  Move,
-  Pokemon,
-  None,
-  None,
-  None,
-  None,
-  None,
-  None,
-  Typing,
-  None,
-  None,
-  None,
-  None,
-  None,
-  None,
-  GameVersion,
-  GameVersion,
-  GameVersion,
-  None,
-  None,
-  None,
-  Item,
-  None,
-  None,
-  None,
-  None,
-  None,
-];
+function getEvolutionTree(pokemonId = 0, fromRoot = true) {
+  if (!Number.isInteger(pokemonId) || pokemonId < 0) {
+    throw new Error(`Bad pokemon ID: ${pokemonId}`);
+  }
+
+  const pokemon = EvolutionData[pokemonId];
+  if (!pokemon) {
+    throw new Error(`Bad pokemon ID: ${pokemonId}`);
+  }
+
+  const startPokemonId = fromRoot ? pokemon.path[0] : pokemonId;
+
+  const evolution = EvolutionData[startPokemonId];
+
+  const evolutionTree = {
+    pokemonId: startPokemonId,
+    evolutionDetails: getEvolutionDetails(startPokemonId),
+    evolvesInto: evolution.targets.map((nextStagePokemonId) => getEvolutionTree(nextStagePokemonId, false)),
+  };
+  return evolutionTree;
+}
+
+function checkEvolutionPath(evolutionData, originalPokemonId) {
+  const originalPath = EvolutionData[originalPokemonId].path;
+
+  function comparePath(treeNode, expectedId) {
+  }
+
+  comparePath(evolutionData, originalPath[0]);
+}
+
+function getEvolutionDetails(pokemonId) {
+  const evolutionDetails = EvolutionData[pokemonId].ar;
+
+  if (!evolutionDetails) {
+    return null;
+  }
+
+  for (let i = 0; i < evolutionDetails.length; i++) {
+    const evolutionData = evolutionDetails[i];
+
+    for (let j = 0; j < evolutionData.length; j += 5) {
+      const methodId = evolutionData[j + 0];
+      const methodParameter = evolutionData[j + 1];
+      const monsNo = evolutionData[j + 2];
+      const formNo = evolutionData[j + 3];
+      const level = evolutionData[j + 4];
+
+      const evolutionPokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo);
+      if (evolutionPokemonId === pokemonId) {
+        return {
+          methodId,
+          methodParameter,
+          monsNo,
+          formNo,
+          level,
+        };
+      }
+    }
+  }
+
+  return null;
+}
+
+export { getEvolutionTree, getEvolutionMethodDetail };
