@@ -1,36 +1,40 @@
-export const EVOLUTION_METHOD_DETAILS = {
+import { getItemString } from './item';
+import { getMoveString, getMoveProperties } from './moves';
+import { getPokemonName } from './name';
+
+export const EVOLUTION_METHOD_DETAILS = (methodParameter) => ({
   0: {
     method: '',
     requiresLevel: false,
     parameterType: 'None',
   },
   1: {
-    method: 'On LvUp: high friendship',
+    method: 'Friendship',
     requiresLevel: false,
     parameterType: 'None',
   },
   2: {
-    method: 'On LvUp: high friendship & is day',
+    method: 'Friendship + Day',
     requiresLevel: false,
     parameterType: 'None',
   },
   3: {
-    method: 'On LvUp: high friendship & is night',
+    method: 'Friendship + Night',
     requiresLevel: false,
     parameterType: 'None',
   },
   4: {
-    method: 'On LvUp: Lv ≥ LvReq',
+    method: `Level ${methodParameter}`,
     requiresLevel: true,
     parameterType: 'None',
   },
   5: {
-    method: 'On Trade',
+    method: 'Trade',
     requiresLevel: false,
     parameterType: 'None',
   },
   6: {
-    method: 'On Trade: holds item',
+    method: `Trade with ${getItemString(methodParameter)}`,
     requiresLevel: false,
     parameterType: 'Item',
   },
@@ -40,37 +44,37 @@ export const EVOLUTION_METHOD_DETAILS = {
     parameterType: 'None',
   },
   8: {
-    method: 'On UseItem',
+    method: `Use ${getItemString(methodParameter)}`,
     requiresLevel: false,
     parameterType: 'Item',
   },
   9: {
-    method: 'On LvUp: Lv ≥ LvReq & Atk > Def',
+    method: `Level ${methodParameter} & Atk > Def`,
     requiresLevel: true,
     parameterType: 'None',
   },
   10: {
-    method: 'On LvUp: Lv ≥ LvReq & Def > Atk',
+    method: `Level ${methodParameter} & Def > Atk`,
     requiresLevel: true,
     parameterType: 'None',
   },
   11: {
-    method: 'On LvUp: Lv ≥ LvReq & Atk = Def',
+    method: `Level ${methodParameter} & Atk = Def`,
     requiresLevel: true,
     parameterType: 'None',
   },
   12: {
-    method: 'On LvUp: Lv ≥ LvReq & rng(0-9) ≤ 4',
+    method: `Level ${methodParameter} + RNG`,
     requiresLevel: true,
     parameterType: 'None',
   },
   13: {
-    method: 'On LvUp: Lv ≥ LvReq & rng(0-9) > 4',
+    method: `Level ${methodParameter} + RNG`,
     requiresLevel: true,
     parameterType: 'None',
   },
   14: {
-    method: 'On LvUp: Lv ≥ LvReq → Get Shedinja',
+    method: `Level ${methodParameter} & Free Space + Poké Ball`,
     requiresLevel: true,
     parameterType: 'None',
   },
@@ -80,92 +84,92 @@ export const EVOLUTION_METHOD_DETAILS = {
     parameterType: 'None',
   },
   16: {
-    method: 'On LvUp: high beauty',
+    method: 'High Beauty',
     requiresLevel: false,
     parameterType: 'None',
   },
   17: {
-    method: 'On UseItem: is male',
+    method: `Use ${getItemString(methodParameter)} & Male`,
     requiresLevel: false,
     parameterType: 'Item',
   },
   18: {
-    method: 'On UseItem: is female',
+    method: `Use ${getItemString(methodParameter)} & Female`,
     requiresLevel: false,
     parameterType: 'Item',
   },
   19: {
-    method: 'On LvUp: Lv ≥ LvReq & holds item & is day',
+    method: `Hold ${getItemString(methodParameter)} & Day`,
     requiresLevel: true,
     parameterType: 'Item',
   },
   20: {
-    method: 'On LvUp: Lv ≥ LvReq & holds item & is night',
+    method: `Hold ${getItemString(methodParameter)} & Night`,
     requiresLevel: true,
     parameterType: 'Item',
   },
   21: {
-    method: 'On LvUp: has move',
+    method: `Knows ${getMoveString(methodParameter)}`,
     requiresLevel: false,
     parameterType: 'Move',
   },
   22: {
-    method: 'On LvUp: Pokémon in party',
+    method: `${getPokemonName(methodParameter)} in party`,
     requiresLevel: false,
     parameterType: 'Pokemon',
   },
   23: {
-    method: 'On LvUp: Lv ≥ LvReq & is male',
+    method: `Level ${methodParameter} & Male`,
     requiresLevel: true,
     parameterType: 'None',
   },
   24: {
-    method: 'On LvUp: Lv ≥ LvReq & is female',
+    method: `Level ${methodParameter} & Female`,
     requiresLevel: true,
     parameterType: 'None',
   },
   25: {
-    method: 'On LvUp: is by magnetic field',
+    method: 'Level Up in Magnetic Field',
     requiresLevel: false,
     parameterType: 'None',
   },
   26: {
-    method: 'On LvUp: is by moss rock',
+    method: 'Level Up By Moss Rock',
     requiresLevel: false,
     parameterType: 'None',
   },
   27: {
-    method: 'On LvUp: is by ice rock',
+    method: 'Level Up By Ice Rock',
     requiresLevel: false,
     parameterType: 'None',
   },
   28: {
-    method: 'On LvUp: Lv ≥ LvReq & device upside down',
+    method: 'Level Up & Device Upside-Down',
     requiresLevel: true,
     parameterType: 'None',
   },
   29: {
-    method: 'On LvUp: high friendship & has move of type',
+    method: `Friendship with ${getMoveProperties(methodParameter).type} Move`,
     requiresLevel: false,
     parameterType: 'Typing',
   },
   30: {
-    method: 'On LvUp: Lv ≥ LvReq & Dark Pokémon in party',
+    method: `Level ${methodParameter} with Dark-Type in Party`,
     requiresLevel: true,
     parameterType: 'None',
   },
   31: {
-    method: 'On LvUp: Lv ≥ LvReq & is raining',
+    method: `Level ${methodParameter} in Rain`,
     requiresLevel: true,
     parameterType: 'None',
   },
   32: {
-    method: 'On LvUp: Lv ≥ LvReq & is day',
+    method: `Level ${methodParameter} During Day`,
     requiresLevel: true,
     parameterType: 'None',
   },
   33: {
-    method: 'On LvUp: Lv ≥ LvReq & is night',
+    method: `Level ${methodParameter} During Night`,
     requiresLevel: true,
     parameterType: 'None',
   },
@@ -195,27 +199,27 @@ export const EVOLUTION_METHOD_DETAILS = {
     parameterType: 'GameVersion',
   },
   39: {
-    method: 'On LvUp: is by summit',
+    method: 'Level Up on Summit',
     requiresLevel: false,
     parameterType: 'None',
   },
   40: {
-    method: 'On LvUp: Lv ≥ LvReq & is dusk',
+    method: `Level ${methodParameter} 7:00-7:59PM`,
     requiresLevel: true,
     parameterType: 'None',
   },
   41: {
-    method: 'On LvUp: Lv ≥ LvReq & is outside region',
+    method: `Level ${methodParameter} & Non-Native region`,
     requiresLevel: true,
     parameterType: 'None',
   },
   42: {
-    method: 'On UseItem: is outside region',
+    method: `Use ${getItemString(methodParameter)} & Non-Native region`,
     requiresLevel: false,
     parameterType: 'Item',
   },
   43: {
-    method: "Galarian Farfetch'd Evolution",
+    method: "3 Crits in One Battle",
     requiresLevel: false,
     parameterType: 'None',
   },
@@ -225,18 +229,18 @@ export const EVOLUTION_METHOD_DETAILS = {
     parameterType: 'None',
   },
   45: {
-    method: 'Milcery Evolution',
+    method: 'PokéSafe Blender',
     requiresLevel: false,
     parameterType: 'None',
   },
   46: {
-    method: 'On LvUp: Lv ≥ LvReq & has amped nature',
+    method: `Level ${methodParameter} & Amped Nature`,
     requiresLevel: true,
     parameterType: 'None',
   },
   47: {
-    method: 'On LvUp: Lv ≥ LvReq & has low-key nature',
+    method: `Level ${methodParameter} & Low-Key Nature`,
     requiresLevel: true,
     parameterType: 'None',
   },
-};
+});

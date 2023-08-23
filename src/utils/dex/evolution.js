@@ -3,7 +3,7 @@ import { EVOLUTION_METHOD_DETAILS } from './evolutionConstants';
 import { getPokemonIdFromMonsNoAndForm } from './functions';
 
 function getEvolutionMethodDetail(methodId) {
-  if (!Number.isInteger(methodId) || methodId < 0) throw new Error(`Bad method: ${methodId}`);
+  if (!Number.isInteger(methodId) || methodId < 0 || methodId > 47) throw new Error(`Bad method: ${methodId}`);
 
   return EVOLUTION_METHOD_DETAILS[methodId];
 }
