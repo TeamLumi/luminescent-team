@@ -48,6 +48,11 @@ function getEvolutionDetails(pokemonId) {
 
   for (let i = 0; i < evolutionDetails.length; i++) {
     const evolutionData = evolutionDetails[i];
+    let methodIds = [];
+    let methodParameters = [];
+    let monsNos = [];
+    let formNos = [];
+    let levels = [];
 
     for (let j = 0; j < evolutionData.length; j += 5) {
       const methodId = evolutionData[j + 0];
@@ -58,17 +63,23 @@ function getEvolutionDetails(pokemonId) {
 
       const evolutionPokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo);
       if (evolutionPokemonId === pokemonId) {
-        return {
-          methodId,
-          methodParameter,
-          monsNo,
-          formNo,
-          level,
-        };
+        methodIds.push(methodId);
+        methodParameters.push(methodParameter);
+        monsNos.push(monsNo);
+        formNos.push(formNo);
+        levels.push(level);
       }
     }
+    if (methodIds.length > 0) {
+      return {
+        methodIds,
+        methodParameters,
+        monsNos,
+        formNos,
+        levels,
+      };
+    }
   }
-
   return null;
 }
 

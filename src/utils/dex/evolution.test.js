@@ -55,11 +55,11 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 22,
           evolutionDetails: {
-            formNo: 0,
-            level: 20,
-            methodId: 4,
-            methodParameter: 0,
-            monsNo: 22,
+            formNos: [0],
+            levels: [20],
+            methodIds: [4],
+            methodParameters: [0],
+            monsNos: [22],
           },
           evolvesInto: [],
         },
@@ -82,21 +82,21 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 2,
           evolutionDetails: {
-            formNo: 0,
-            level: 16,
-            methodId: 4,
-            methodParameter: 0,
-            monsNo: 2,
+            formNos: [0],
+            levels: [16],
+            methodIds: [4],
+            methodParameters: [0],
+            monsNos: [2],
           },
           evolvesInto: [
             {
               pokemonId: 3,
               evolutionDetails: {
-                formNo: 0,
-                level: 32,
-                methodId: 4,
-                methodParameter: 0,
-                monsNo: 3,
+                formNos: [0],
+                levels: [32],
+                methodIds: [4],
+                methodParameters: [0],
+                monsNos: [3],
               },
               evolvesInto: [],
             },
@@ -106,7 +106,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected);
   });
-
+  
   it('works for a simple Pokemon (one stage across gens)', () => {
     const firstPokemonId = 114; // Tangela
     const secondPokemonId = 465; // Tangrowth
@@ -119,11 +119,11 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 465,
           evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 21,
-            methodParameter: 246,
-            monsNo: 465,
+            formNos: [0],
+            levels: [0],
+            methodIds: [21],
+            methodParameters: [246],
+            monsNos: [465],
           },
           evolvesInto: [],
         },
@@ -131,7 +131,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected);
   });
-
+  
   it('works for a simple Pokemon (two stage across gens)', () => {
     const firstPokemonId = 116; // Horsea
     const secondPokemonId = 117; // Seadra
@@ -146,21 +146,21 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 117,
           evolutionDetails: {
-            formNo: 0,
-            level: 32,
-            methodId: 4,
-            methodParameter: 0,
-            monsNo: 117,
+            formNos: [0],
+            levels: [32],
+            methodIds: [4],
+            methodParameters: [0],
+            monsNos: [117],
           },
           evolvesInto: [
             {
               pokemonId: 230,
               evolutionDetails: {
-                formNo: 0,
-                level: 0,
-                methodId: 8,
-                methodParameter: 235,
-                monsNo: 230,
+                formNos: [0],
+                levels: [0],
+                methodIds: [8],
+                methodParameters: [235],
+                monsNos: [230],
               },
               evolvesInto: [],
             },
@@ -170,7 +170,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected);
   });
-
+  
   it('works for a Pokemon with branching Evolutions (across the same gen)', () => {
     const firstPokemonId = 366; // Clamperl
     const secondPokemonId = 367; // Huntail
@@ -184,22 +184,22 @@ describe('getEvolutionTree', () => {
       evolvesInto: [
         {
           evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 8,
-            methodParameter: 226,
-            monsNo: 367,
+            formNos: [0],
+            levels: [0],
+            methodIds: [8],
+            methodParameters: [226],
+            monsNos: [367],
           },
           evolvesInto: [],
           pokemonId: 367,
         },
         {
           evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 8,
-            methodParameter: 227,
-            monsNo: 368,
+            formNos: [0],
+            levels: [0],
+            methodIds: [8],
+            methodParameters: [227],
+            monsNos: [368],
           },
           evolvesInto: [],
           pokemonId: 368,
@@ -208,7 +208,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected);
   });
-
+  
   it('works for a Pokemon with a 2 stage branching Evolution (across the same gen)', () => {
     const firstPokemonId = 789; // Cosmog
     const secondPokemonId = 790; // Cosmeom
@@ -224,31 +224,31 @@ describe('getEvolutionTree', () => {
       evolvesInto: [
         {
           evolutionDetails: {
-            formNo: 0,
-            level: 43,
-            methodId: 4,
-            methodParameter: 0,
-            monsNo: 790,
+            formNos: [0],
+            levels: [43],
+            methodIds: [4],
+            methodParameters: [0],
+            monsNos: [790],
           },
           evolvesInto: [
             {
               evolutionDetails: {
-                formNo: 0,
-                level: 53,
-                methodId: 32,
-                methodParameter: 0,
-                monsNo: 791,
+                formNos: [0],
+                levels: [53],
+                methodIds: [32],
+                methodParameters: [0],
+                monsNos: [791],
               },
               evolvesInto: [],
               pokemonId: 791,
             },
             {
               evolutionDetails: {
-                formNo: 0,
-                level: 53,
-                methodId: 33,
-                methodParameter: 0,
-                monsNo: 792,
+                formNos: [0],
+                levels: [53],
+                methodIds: [33],
+                methodParameters: [0],
+                monsNos: [792],
               },
               evolvesInto: [],
               pokemonId: 792,
@@ -260,7 +260,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
   });
-
+  
   it('works for a Pokemon with many branching Evolutions (across multiple gens)', () => {
     const firstPokemonId = 133; // Eevee
     const secondPokemonId = 134; // Vaporeon
@@ -281,98 +281,98 @@ describe('getEvolutionTree', () => {
     const eighthResult = getEvolutionTree(eighthPokemonId);
     const ninthResult = getEvolutionTree(ninthPokemonId);
     const expected = {
-      pokemonId: 133,
-      evolutionDetails: null,
-      evolvesInto: [
+      "pokemonId": 133,
+      "evolutionDetails": null,
+      "evolvesInto": [
         {
-          evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 8,
-            methodParameter: 85,
-            monsNo: 470,
+          "pokemonId": 470,
+          "evolutionDetails": {
+            "methodIds": [ 8, 26 ],
+            "methodParameters": [ 85, 0 ],
+            "monsNos": [ 470, 470 ],
+            "formNos": [ 0, 0 ],
+            "levels": [ 0, 0 ]
           },
-          evolvesInto: [],
-          pokemonId: 470,
+          "evolvesInto": []
         },
         {
-          evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 8,
-            methodParameter: 849,
-            monsNo: 471,
+          "pokemonId": 471,
+          "evolutionDetails": {
+            "methodIds": [ 8, 27 ],
+            "methodParameters": [ 849, 0 ],
+            "monsNos": [ 471, 471 ],
+            "formNos": [ 0, 0 ],
+            "levels": [ 0, 0 ]
           },
-          evolvesInto: [],
-          pokemonId: 471,
+          "evolvesInto": []
         },
         {
-          evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 8,
-            methodParameter: 83,
-            monsNo: 135,
+          "pokemonId": 135,
+          "evolutionDetails": {
+            "methodIds": [ 8 ],
+            "methodParameters": [ 83 ],
+            "monsNos": [ 135 ],
+            "formNos": [ 0 ],
+            "levels": [ 0 ]
           },
-          evolvesInto: [],
-          pokemonId: 135,
+          "evolvesInto": []
         },
         {
-          evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 8,
-            methodParameter: 84,
-            monsNo: 134,
+          "pokemonId": 134,
+          "evolutionDetails": {
+            "methodIds": [ 8 ],
+            "methodParameters": [ 84 ],
+            "monsNos": [ 134 ],
+            "formNos": [ 0 ],
+            "levels": [ 0 ]
           },
-          evolvesInto: [],
-          pokemonId: 134,
+          "evolvesInto": []
         },
         {
-          evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 8,
-            methodParameter: 82,
-            monsNo: 136,
+          "pokemonId": 136,
+          "evolutionDetails": {
+            "methodIds": [ 8 ],
+            "methodParameters": [ 82 ],
+            "monsNos": [ 136 ],
+            "formNos": [ 0 ],
+            "levels": [ 0 ]
           },
-          evolvesInto: [],
-          pokemonId: 136,
+          "evolvesInto": []
         },
         {
-          evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 29,
-            methodParameter: 17,
-            monsNo: 700,
+          "pokemonId": 700,
+          "evolutionDetails": {
+            "methodIds": [ 29, 8 ],
+            "methodParameters": [ 17, 107 ],
+            "monsNos": [ 700, 700 ],
+            "formNos": [ 0, 0 ],
+            "levels": [ 0, 0 ]
           },
-          evolvesInto: [],
-          pokemonId: 700,
+          "evolvesInto": []
         },
         {
-          evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 2,
-            methodParameter: 0,
-            monsNo: 196,
+          "pokemonId": 196,
+          "evolutionDetails": {
+            "methodIds": [ 2, 8 ],
+            "methodParameters": [ 0, 80 ],
+            "monsNos": [ 196, 196 ],
+            "formNos": [ 0, 0 ],
+            "levels": [ 0, 0 ]
           },
-          evolvesInto: [],
-          pokemonId: 196,
+          "evolvesInto": []
         },
         {
-          evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 3,
-            methodParameter: 0,
-            monsNo: 197,
+          "pokemonId": 197,
+          "evolutionDetails": {
+            "methodIds": [ 3, 8 ],
+            "methodParameters": [ 0, 81 ],
+            "monsNos": [ 197, 197 ],
+            "formNos": [ 0, 0 ],
+            "levels": [ 0, 0 ]
           },
-          evolvesInto: [],
-          pokemonId: 197,
-        },
-      ],
+          "evolvesInto": []
+        }
+      ]
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
     expect(fifthResult).toEqual(expected) && expect(sixthResult).toEqual(expected) && expect(seventhResult).toEqual(expected) && expect(eighthResult).toEqual(expected);
@@ -389,32 +389,32 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 61,
           evolutionDetails: {
-            formNo: 0,
-            level: 25,
-            methodId: 4,
-            methodParameter: 0,
-            monsNo: 61,
+            formNos: [0],
+            levels: [25],
+            methodIds: [4],
+            methodParameters: [0],
+            monsNos: [61],
           },
           evolvesInto: [
             {
               pokemonId: 62,
               evolutionDetails: {
-                formNo: 0,
-                level: 0,
-                methodId: 8,
-                methodParameter: 84,
-                monsNo: 62,
+                formNos: [0],
+                levels: [0],
+                methodIds: [8],
+                methodParameters: [84],
+                monsNos: [62],
               },
               evolvesInto: [],
             },
             {
               pokemonId: 186,
               evolutionDetails: {
-                formNo: 0,
-                level: 0,
-                methodId: 8,
-                methodParameter: 221,
-                monsNo: 186,
+                formNos: [0],
+                levels: [0],
+                methodIds: [8],
+                methodParameters: [221],
+                monsNos: [186],
               },
               evolvesInto: [],
             },
@@ -424,7 +424,7 @@ describe('getEvolutionTree', () => {
     };
     expect(result).toEqual(expected);
   });
-
+  
   it('works for a branching 1st stage evo with 2 stage evos on each side', () => {
     const firstPokemonId = 265; // Wurmple
     const secondPokemonId = 266; // Silcoon
@@ -442,20 +442,20 @@ describe('getEvolutionTree', () => {
       evolvesInto: [
         {
           evolutionDetails: {
-            formNo: 0,
-            level: 7,
-            methodId: 12,
-            methodParameter: 0,
-            monsNo: 266,
+            formNos: [0],
+            levels: [7],
+            methodIds: [12],
+            methodParameters: [0],
+            monsNos: [266],
           },
           evolvesInto: [
             {
               evolutionDetails: {
-                formNo: 0,
-                level: 10,
-                methodId: 4,
-                methodParameter: 0,
-                monsNo: 267,
+                formNos: [0],
+                levels: [10],
+                methodIds: [4],
+                methodParameters: [0],
+                monsNos: [267],
               },
               evolvesInto: [],
               pokemonId: 267,
@@ -465,20 +465,20 @@ describe('getEvolutionTree', () => {
         },
         {
           evolutionDetails: {
-            formNo: 0,
-            level: 7,
-            methodId: 13,
-            methodParameter: 0,
-            monsNo: 268,
+            formNos: [0],
+            levels: [7],
+            methodIds: [13],
+            methodParameters: [0],
+            monsNos: [268],
           },
           evolvesInto: [
             {
               evolutionDetails: {
-                formNo: 0,
-                level: 10,
-                methodId: 4,
-                methodParameter: 0,
-                monsNo: 269,
+                formNos: [0],
+                levels: [10],
+                methodIds: [4],
+                methodParameters: [0],
+                monsNos: [269],
               },
               evolvesInto: [],
               pokemonId: 269,
@@ -491,7 +491,7 @@ describe('getEvolutionTree', () => {
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
     expect(fifthResult).toEqual(expected);
   });
-
+  
   it('works for a baby pokemon (across generations)', () => {
     const firstPokemonId = 124; // Jynx
     const secondPokemonId = 238; // Smoochum
@@ -504,11 +504,11 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 124,
           evolutionDetails: {
-            formNo: 0,
-            level: 30,
-            methodId: 4,
-            methodParameter: 0,
-            monsNo: 124,
+            formNos: [0],
+            levels: [30],
+            methodIds: [4],
+            methodParameters: [0],
+            monsNos: [124],
           },
           evolvesInto: [],
         },
@@ -516,7 +516,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected);
   });
-
+  
   it('works for a baby pokemon (across generations with 2 stages)', () => {
     const pokemonId = 174; // Igglybuff
     const result = getEvolutionTree(pokemonId);
@@ -527,21 +527,21 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 39,
           evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 1,
-            methodParameter: 0,
-            monsNo: 39,
+            formNos: [0],
+            levels: [0],
+            methodIds: [1],
+            methodParameters: [0],
+            monsNos: [39],
           },
           evolvesInto: [
             {
               pokemonId: 40,
               evolutionDetails: {
-                formNo: 0,
-                level: 0,
-                methodId: 8,
-                methodParameter: 81,
-                monsNo: 40,
+                formNos: [0],
+                levels: [0],
+                methodIds: [8],
+                methodParameters: [81],
+                monsNos: [40],
               },
               evolvesInto: [],
             },
@@ -551,7 +551,7 @@ describe('getEvolutionTree', () => {
     };
     expect(result).toEqual(expected);
   });
-
+  
   it('works for a baby pokemon (branching evo across generations)', () => {
     const firstPokemonId = 236; // Tyrogue
     const secondPokemonId = 237; // Hitmontop
@@ -568,33 +568,33 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 107,
           evolutionDetails: {
-            formNo: 0,
-            level: 20,
-            methodId: 11,
-            methodParameter: 0,
-            monsNo: 107,
+            formNos: [0],
+            levels: [20],
+            methodIds: [11],
+            methodParameters: [0],
+            monsNos: [107],
           },
           evolvesInto: [],
         },
         {
           pokemonId: 106,
           evolutionDetails: {
-            formNo: 0,
-            level: 20,
-            methodId: 9,
-            methodParameter: 0,
-            monsNo: 106,
+            formNos: [0],
+            levels: [20],
+            methodIds: [9],
+            methodParameters: [0],
+            monsNos: [106],
           },
           evolvesInto: [],
         },
         {
           pokemonId: 237,
           evolutionDetails: {
-            formNo: 0,
-            level: 20,
-            methodId: 10,
-            methodParameter: 0,
-            monsNo: 237,
+            formNos: [0],
+            levels: [20],
+            methodIds: [10],
+            methodParameters: [0],
+            monsNos: [237],
           },
           evolvesInto: [],
         },
@@ -602,7 +602,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
   });
-
+  
   it('works for a baby Pokemon with a 2 stage branching Evolution (across multiple gens)', () => {
     const firstPokemonId = 172; // Pichu
     const secondPokemonId = 25; // Pikachu
@@ -619,31 +619,31 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 25,
           evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 1,
-            methodParameter: 0,
-            monsNo: 25,
+            formNos: [0],
+            levels: [0],
+            methodIds: [1],
+            methodParameters: [0],
+            monsNos: [25],
           },
           evolvesInto: [
             {
               evolutionDetails: {
-                formNo: 0,
-                level: 0,
-                methodId: 8,
-                methodParameter: 83,
-                monsNo: 26,
+                formNos: [0],
+                levels: [0],
+                methodIds: [8],
+                methodParameters: [83],
+                monsNos: [26],
               },
               evolvesInto: [],
               pokemonId: 26,
             },
             {
               evolutionDetails: {
-                formNo: 1,
-                level: 0,
-                methodId: 8,
-                methodParameter: 80,
-                monsNo: 26,
+                formNos: [1],
+                levels: [0],
+                methodIds: [8],
+                methodParameters: [80],
+                monsNos: [26],
               },
               evolvesInto: [],
               pokemonId: 1044,
@@ -654,7 +654,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
   });
-
+  
   it('works for a baby Pokemon with a 2 stage evo on an alternate form (across multiple gens)', () => {
     const firstPokemonId = 439; // Mime Jr.
     const secondPokemonId = 122; // Mr. Mime
@@ -671,32 +671,32 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 122,
           evolutionDetails: {
-            formNo: 0,
-            level: 0,
-            methodId: 21,
-            methodParameter: 102,
-            monsNo: 122,
+            formNos: [0],
+            levels: [0],
+            methodIds: [21],
+            methodParameters: [102],
+            monsNos: [122],
           },
           evolvesInto: [],
         },
         {
           pokemonId: 1083,
           evolutionDetails: {
-            formNo: 1,
-            level: 32,
-            methodId: 8,
-            methodParameter: 849,
-            monsNo: 122,
+            formNos: [1],
+            levels: [32],
+            methodIds: [8],
+            methodParameters: [849],
+            monsNos: [122],
           },
           evolvesInto: [
             {
               pokemonId: 866,
               evolutionDetails: {
-                formNo: 0,
-                level: 42,
-                methodId: 4,
-                methodParameter: 0,
-                monsNo: 866,
+                formNos: [0],
+                levels: [42],
+                methodIds: [4],
+                methodParameters: [0],
+                monsNos: [866],
               },
               evolvesInto: [],
             },
@@ -706,7 +706,7 @@ describe('getEvolutionTree', () => {
     };
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
   });
-
+  
   it('works for a simple pokemon with a an extra form added to first evo (across generations)', () => {
     const pokemonId = 105; // Marowak
     const result = getEvolutionTree(pokemonId);
@@ -717,22 +717,22 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 105,
           evolutionDetails: {
-            formNo: 0,
-            level: 28,
-            methodId: 32,
-            methodParameter: 0,
-            monsNo: 105,
+            formNos: [0],
+            levels: [28],
+            methodIds: [32],
+            methodParameters: [0],
+            monsNos: [105],
           },
           evolvesInto: [],
         },
         {
           pokemonId: 1079,
           evolutionDetails: {
-            formNo: 1,
-            level: 28,
-            methodId: 33,
-            methodParameter: 0,
-            monsNo: 105,
+            formNos: [1],
+            levels: [28],
+            methodIds: [33],
+            methodParameters: [0],
+            monsNos: [105],
           },
           evolvesInto: [],
         },
@@ -740,7 +740,7 @@ describe('getEvolutionTree', () => {
     };
     expect(result).toEqual(expected);
   });
-
+  
   it('works for a simple pokemon with a an extra form added to second evo (across generations)', () => {
     const pokemonId = 156; // Quilava
     const result = getEvolutionTree(pokemonId);
@@ -751,32 +751,32 @@ describe('getEvolutionTree', () => {
         {
           pokemonId: 156,
           evolutionDetails: {
-            formNo: 0,
-            level: 14,
-            methodId: 4,
-            methodParameter: 0,
-            monsNo: 156,
+            formNos: [0],
+            levels: [14],
+            methodIds: [4],
+            methodParameters: [0],
+            monsNos: [156],
           },
           evolvesInto: [
             {
               pokemonId: 1102,
               evolutionDetails: {
-                formNo: 1,
-                level: 36,
-                methodId: 21,
-                methodParameter: 506,
-                monsNo: 157,
+                formNos: [1],
+                levels: [36],
+                methodIds: [21],
+                methodParameters: [506],
+                monsNos: [157],
               },
               evolvesInto: [],
             },
             {
               pokemonId: 157,
               evolutionDetails: {
-                formNo: 0,
-                level: 36,
-                methodId: 4,
-                methodParameter: 0,
-                monsNo: 157,
+                formNos: [0],
+                levels: [36],
+                methodIds: [4],
+                methodParameters: [0],
+                monsNos: [157],
               },
               evolvesInto: [],
             },
@@ -786,7 +786,7 @@ describe('getEvolutionTree', () => {
     };
     expect(result).toEqual(expected);
   });
-
+  
   it('works for a Pokemon with alternate form Evolutions (different evo for each form)', () => {
     const pokemonId = 1173; // Burmy Trash Cloak
     const result = getEvolutionTree(pokemonId);
@@ -796,22 +796,22 @@ describe('getEvolutionTree', () => {
       evolvesInto: [
         {
           evolutionDetails: {
-            formNo: 2,
-            level: 20,
-            methodId: 24,
-            methodParameter: 0,
-            monsNo: 413,
+            formNos: [2],
+            levels: [20],
+            methodIds: [24],
+            methodParameters: [0],
+            monsNos: [413],
           },
           evolvesInto: [],
           pokemonId: 1175,
         },
         {
           evolutionDetails: {
-            formNo: 0,
-            level: 20,
-            methodId: 23,
-            methodParameter: 0,
-            monsNo: 414,
+            formNos: [0],
+            levels: [20],
+            methodIds: [23],
+            methodParameters: [0],
+            monsNos: [414],
           },
           evolvesInto: [],
           pokemonId: 414,
@@ -830,28 +830,66 @@ describe('getEvolutionTree', () => {
       evolvesInto: [
         {
           evolutionDetails: {
-            formNo: 0,
-            level: 20,
-            methodId: 24,
-            methodParameter: 0,
-            monsNo: 413,
+            formNos: [0],
+            levels: [20],
+            methodIds: [24],
+            methodParameters: [0],
+            monsNos: [413],
           },
           evolvesInto: [],
           pokemonId: 413,
         },
         {
           evolutionDetails: {
-            formNo: 0,
-            level: 20,
-            methodId: 23,
-            methodParameter: 0,
-            monsNo: 414,
+            formNos: [0],
+            levels: [20],
+            methodIds: [23],
+            methodParameters: [0],
+            monsNos: [414],
           },
           evolvesInto: [],
           pokemonId: 414,
         },
       ],
     };
-    expect(result).toEqual(expected);
+  expect(result).toEqual(expected);
+  });
+
+  it('works for a Pokemon with multiple methods of evolution', () => {
+    const pokemonId = 349; // Feebas
+    const result = getEvolutionTree(pokemonId)
+    const expected = {
+      "pokemonId": 349,
+      "evolutionDetails": null,
+      "evolvesInto": [
+        {
+          "pokemonId": 350,
+          "evolutionDetails": {
+            "methodIds": [
+              16,
+              8
+            ],
+            "methodParameters": [
+              170,
+              537
+            ],
+            "monsNos": [
+              350,
+              350
+            ],
+            "formNos": [
+              0,
+              0
+            ],
+            "levels": [
+              0,
+              0
+            ]
+          },
+          "evolvesInto": []
+        }
+      ]
+    };
+    expect(result).toEqual(expected)
   });
 });
