@@ -21,13 +21,39 @@ export default function EvolutionGraph(props) {
     evolvesInto: [],
   };
 
+  let fullEvolutionTree = (
+    <div className="container">
+      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+        <span className="col col-12">
+          <Typography variant="h6" sx={{ margin: 'auto' }}>
+            Evolutions
+          </Typography>
+        </span>
+      </div>
+
+      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+        <span className="col col-12">
+          <Typography variant="h6" sx={{ margin: 'auto' }}>
+            Does Not Evolve
+          </Typography>
+        </span>
+      </div>
+    </div>
+  );
+
   const secondEvolvesInto = evolutionTree.evolvesInto;
-  if (secondEvolvesInto.length > 1 && secondEvolvesInto[0].evolvesInto.length > 0) {
-    evolutionTree.evolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
-  } else if (secondEvolvesInto[0].evolvesInto.length === 0 && secondEvolvesInto[1].evolvesInto.length > 0) {
-    evolutionTree.evolvesInto[0].evolvesInto.push(defaultEvo)
-    evolutionTree.evolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+  if (secondEvolvesInto.length === 0) {
+    return fullEvolutionTree
   }
+
+  if (secondEvolvesInto.length > 1) {
+    if (secondEvolvesInto[0].evolvesInto.length > 0) {
+      evolutionTree.evolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+    } else if (secondEvolvesInto[0].evolvesInto.length === 0 && secondEvolvesInto[1].evolvesInto.length > 0) {
+      evolutionTree.evolvesInto[0].evolvesInto.push(defaultEvo)
+      evolutionTree.evolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+    }
+  } 
 
   console.log(evolutionTree);
 
@@ -99,48 +125,28 @@ export default function EvolutionGraph(props) {
     );
   };
 
-  const renderEvolutionTreeSet = (tree) => {
-    const { evolvesInto } = tree;
-    console.log(evolvesInto.length);
+  if (secondEvolvesInto.length > 0) {
+    fullEvolutionTree = (
+      <div className="container">
+        <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+          <span className="col col-12">
+            <Typography variant="h6" sx={{ margin: 'auto' }}>
+              Evolutions
+            </Typography>
+          </span>
+        </div>
 
-    // Render the first evolvesInto
-    const firstEvolutionSet = evolvesInto[0];
-    const firstEvolutionComponent = renderEvolutionTree(firstEvolutionSet);
-
-    // Render the second evolvesInto if available
-    let secondEvolutionComponent = [];
-    if (evolvesInto.length > 1) {
-      const secondEvolutionSet = evolvesInto[1];
-      secondEvolutionComponent = renderEvolutionTree(secondEvolutionSet);
-    }
-
-    return (
-      <Box className={styles.firstEvolution}>
-        {firstEvolutionComponent}
-        {secondEvolutionComponent.length > 0 &&(
-          secondEvolutionComponent
-        )}
-      </Box>
-    );
-  };
-
-  return (
-    <div className="container">
-      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-        <span className="col col-12">
-          <Typography variant="h6" sx={{ margin: 'auto' }}>
-            Evolutions
-          </Typography>
-        </span>
+        <Box className={styles.evolutionContainer}>
+          <img src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)} alt="Stage 1 Evo" />
+          {renderEvolutionTree(evolutionTree)}
+          {secondEvolvesInto.length > 0 && (
+            renderEvolutionTree(secondEvolvesInto[0])
+          )}
+        </Box>
       </div>
+    )
+  }
 
-      <Box className={styles.evolutionContainer}>
-        <img src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)} alt="Stage 1 Evo" />
-        {renderEvolutionTree(evolutionTree)}
-        {secondEvolvesInto.length > 0 && (
-          renderEvolutionTree(secondEvolvesInto[0])
-        )}
-      </Box>
-    </div>
-  );
+
+  return (fullEvolutionTree);
 }
