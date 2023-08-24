@@ -66,7 +66,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
 
       <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
       <div className="container">
-        <EvolutionGraph />
+        <EvolutionGraph pokemonID={pokemon.id}/>
       </div>
 
       <Container>
