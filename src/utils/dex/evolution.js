@@ -1,11 +1,30 @@
 import { EvolutionData } from '../../../__gamedata';
-import { EVOLUTION_METHOD_DETAILS } from './evolutionConstants';
+import { EVOLUTION_METHOD_DETAILS, evolutionFunctions } from './evolutionConstants';
 import { getPokemonIdFromMonsNoAndForm } from './functions';
+import { getItemString } from './item';
+import { getMoveString, getMoveProperties } from './moves';
+import { getPokemonName } from './name';
+import { getTypeName } from './types';
 
-function getEvolutionMethodDetail(methodId) {
+function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
+  if (methodId === -1) {
+    return -1;
+  }
   if (!Number.isInteger(methodId) || methodId < 0 || methodId > 47) throw new Error(`Bad method: ${methodId}`);
-
-  return EVOLUTION_METHOD_DETAILS[methodId];
+  const evolutionDetails = { ...EVOLUTION_METHOD_DETAILS[methodId] };
+  const evoFunction = evolutionFunctions[methodId];
+  if (evoFunction === "Level") {
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", level);
+  } else if (evoFunction === "getItemString") {
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", getItemString(methodParameter));
+  } else if (evoFunction === "getMoveString") {
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", getMoveString(methodParameter));
+  } else if (evoFunction === "getPokemonName") {
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", getPokemonName(methodParameter));
+  } else if (evoFunction === "getMoveProperties") {
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", getTypeName(methodParameter));
+  }
+  return evolutionDetails;
 }
 
 function getEvolutionTree(pokemonId = 0, fromRoot = true) {

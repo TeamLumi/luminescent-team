@@ -3,15 +3,127 @@ import { Box, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { getEvolutionMethodDetail, getEvolutionTree } from '../../utils/dex/evolution';
 import styles from './styles.module.css';
+import { getPokemonImageFilename } from '../../core/pokemonFormSelector';
+import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../utils/dex/name';
 
-/**
- * @param {object} props
- * @param {number} props.pokemonID The ID of the Pokémon for which the evolution graph is shown.
- */
 export default function EvolutionGraph(props) {
   const evolutionTree = getEvolutionTree(props.pokemonID);
+  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId);
+  const defaultEvo = {
+    pokemonId: -1,
+    evolutionDetails: {
+      formNos: [-1],
+      levels: [-1],
+      methodIds: [-1],
+      methodParameters: [-1],
+      monsNos: [-1],
+    },
+    evolvesInto: [],
+  };
+
+  const secondEvolvesInto = evolutionTree.evolvesInto;
+  if (secondEvolvesInto.length > 1 && secondEvolvesInto[0].evolvesInto.length > 0) {
+    evolutionTree.evolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+  } else if (secondEvolvesInto[0].evolvesInto.length === 0 && secondEvolvesInto[1].evolvesInto.length > 0) {
+    evolutionTree.evolvesInto[0].evolvesInto.push(defaultEvo)
+    evolutionTree.evolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+  }
 
   console.log(evolutionTree);
+
+  const renderMethods = (methodIds, methodParameters, levels) => {
+    const firstMethodId = methodIds[0];
+    const firstMethodParameter = parseInt(methodParameters[0]);
+    const firstMethodDetail = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, levels[0]);
+    if (firstMethodDetail === -1) {
+      return (
+        <Box className={styles.method}>
+        </Box>
+      )
+    }
+    return (
+      <Box className={styles.method}>
+        Method: {firstMethodDetail.method}
+        <img src={useBaseUrl('/img/Item_Water_Stone.webp')} width="40" alt="Water Stone" />
+        {methodIds.length > 1 && (
+          <>
+            Or
+            <img src={useBaseUrl('/img/Item_Water_Stone.webp')} width="40" alt="Water Stone" />
+            Method: {getEvolutionMethodDetail(methodIds[1], parseInt(methodParameters[1]), levels[1]).method}
+          </>
+        )}
+      </Box>
+    );
+  };
+
+  const renderEvolutionTree = (tree) => {
+    const { evolvesInto } = tree;
+    console.log(evolvesInto);
+
+    // Collect data for methods and images from all evolutions
+    const allMethods = [];
+    const allImages = [];
+
+    evolvesInto.forEach((evolution) => {
+      const { methodIds, methodParameters, monsNos, formNos, levels } = evolution.evolutionDetails;
+      const methods = renderMethods(methodIds, methodParameters, levels);
+      allMethods.push(methods);
+
+      if (methodIds[0] === -1) {
+        const ImageComponents = (
+          <Box className={styles.imageRow} key="Blank"></Box>
+        );
+        allImages.push(ImageComponents);
+      } else {
+        const imageComponents = monsNos.map((monsno, index) => (
+          index === 0 ? (
+            <Box className={styles.imageRow} key={monsno}>
+              <img
+                key={monsno}
+                src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
+                alt={`Stage ${formNos[index]} Evo`}
+              />
+            </Box>
+          ) : <div key={monsno}></div>
+        ));
+        allImages.push(imageComponents);
+      }
+    });
+
+    // Render a single firstEvolution component with all methods and images
+    return (
+      <Box className={styles.firstEvolution}>
+        <Box className={styles.methodContainer}>{allMethods}</Box>
+        <Box className={styles.imageColumn}>{allImages}</Box>
+      </Box>
+    );
+  };
+
+  const renderEvolutionTreeSet = (tree) => {
+    const { evolvesInto } = tree;
+    console.log(evolvesInto.length);
+
+    // Render the first evolvesInto
+    const firstEvolutionSet = evolvesInto[0];
+    const firstEvolutionComponent = renderEvolutionTree(firstEvolutionSet);
+
+    // Render the second evolvesInto if available
+    let secondEvolutionComponent = [];
+    if (evolvesInto.length > 1) {
+      const secondEvolutionSet = evolvesInto[1];
+      secondEvolutionComponent = renderEvolutionTree(secondEvolutionSet);
+    }
+
+    return (
+      <Box className={styles.firstEvolution}>
+        {firstEvolutionComponent}
+        {secondEvolutionComponent.length > 0 &&(
+          secondEvolutionComponent
+        )}
+      </Box>
+    );
+  };
+
   return (
     <div className="container">
       <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
@@ -23,72 +135,11 @@ export default function EvolutionGraph(props) {
       </div>
 
       <Box className={styles.evolutionContainer}>
-        <img src={useBaseUrl('/img/pm0133_00_00_00_L.webp')} alt="Stage 1 Evo" />
-        <Box className={styles.firstEvolution}>
-          <Box className={styles.methodContainer}>
-            <Box className={styles.method}>
-              Method 1 
-              <img src={useBaseUrl('/img/Item_Water_Stone.webp')} width="40" />
-              Or
-              <img src={useBaseUrl('/img/Item_Water_Stone.webp')} width="40" />
-              Method 1A
-            </Box>
-            <Box className={styles.method}>
-              Method 2 
-              <img src={useBaseUrl('/img/Item_Thunder_Stone.webp')} width="40" />
-            </Box>
-            <Box className={styles.method}>
-              Method 3 
-              <img src={useBaseUrl('/img/Item_Fire_Stone.webp')} width="40" />
-            </Box>
-            <Box className={styles.method}>
-              Method 4
-              <img src={useBaseUrl('/img/Item_Sun_Stone.webp')} width="40" />
-            </Box>
-            <Box className={styles.method}>
-              Method 5
-              <img src={useBaseUrl('/img/Item_Moon_Stone.webp')} width="40" />
-            </Box>
-            <Box className={styles.method}>
-              Method 6
-              <img src={useBaseUrl('/img/Item_Leaf_Stone.webp')} width="40" />
-            </Box>
-            <Box className={styles.method}>
-              Method 7
-              <img src={useBaseUrl('/img/Item_Ice_Stone.webp')} width="40" />
-            </Box>
-            <Box className={styles.method}>
-              Method 8
-              <img src={useBaseUrl('/img/Item_Shiny_Stone.webp')} width="40" />
-            </Box>
-          </Box>
-          <Box className={styles.imageColumn}>
-            <Box className={styles.imageRow}>
-              <img src={useBaseUrl('/img/pm0134_00_00_00_L.webp')} alt="Stage 2 Evo" />
-            </Box>
-            <Box className={styles.imageRow}>
-              <img src={useBaseUrl('/img/pm0135_00_00_00_L.webp')} alt="Stage 3 Evo" />
-            </Box>
-            <Box className={styles.imageRow}>
-              <img src={useBaseUrl('/img/pm0136_00_00_00_L.webp')} alt="Stage 3 Evo" />
-            </Box>
-            <Box className={styles.imageRow}>
-              <img src={useBaseUrl('/img/pm0196_00_00_00_L.webp')} alt="Stage 2 Evo" />
-            </Box>
-            <Box className={styles.imageRow}>
-              <img src={useBaseUrl('/img/pm0197_00_00_00_L.webp')} alt="Stage 3 Evo" />
-            </Box>
-            <Box className={styles.imageRow}>
-              <img src={useBaseUrl('/img/pm0470_00_00_00_L.webp')} alt="Stage 3 Evo" />
-            </Box>
-            <Box className={styles.imageRow}>
-              <img src={useBaseUrl('/img/pm0471_00_00_00_L.webp')} alt="Stage 2 Evo" />
-            </Box>
-            <Box className={styles.imageRow}>
-              <img src={useBaseUrl('/img/pm0700_00_00_00_L.webp')} alt="Stage 3 Evo" />
-            </Box>
-          </Box>
-        </Box>
+        <img src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)} alt="Stage 1 Evo" />
+        {renderEvolutionTree(evolutionTree)}
+        {secondEvolvesInto.length > 0 && (
+          renderEvolutionTree(secondEvolvesInto[0])
+        )}
       </Box>
     </div>
   );

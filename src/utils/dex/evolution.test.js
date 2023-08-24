@@ -5,10 +5,22 @@ describe('getEvolutionMethodDetail', () => {
     const methodId = 1; // High Friendship
     const result = getEvolutionMethodDetail(methodId);
     const expected = {
-      method: 'On LvUp: high friendship',
+      method: 'Friendship',
       parameterType: 'None',
       requiresLevel: false,
     };
+    expect(result).toEqual(expected);
+  });
+
+  it('Should return the filled out method with an item', () => {
+    const methodId = 8 // Evolve with Item
+    const methodParameter = 849 // Ice Stone
+    const result = getEvolutionMethodDetail(methodId, methodParameter)
+    const expected = {
+      method: 'Use Ice Stone',
+      parameterType: 'Item',
+      requiresLevel: false,
+    }
     expect(result).toEqual(expected);
   });
 
