@@ -3,7 +3,7 @@
 
 require('dotenv').config();
 
-const BASE_URL = '/luminescent-team-dev';
+const BASE_URL = '/';
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -12,7 +12,7 @@ const isDexEnabled = process.env.DEX_ENABLED === 'true';
 const pageExclusions = !isDexEnabled ? ['**/dex.js'] : [];
 
 const isPokedexEnabled = process.env.POKEDEX_ENABLED === 'true';
-const POKEDEX_BASE_PATH = '/pokedex';
+const POKEDEX_BASE_PATH = 'pokedex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -27,7 +27,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'TeamLumi', // Usually your GitHub org/user name.
-  projectName: 'luminescent-team-dev', // Usually your repo name.
+  projectName: 'luminescent-team', // Usually your repo name.
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
