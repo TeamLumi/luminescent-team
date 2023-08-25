@@ -59,8 +59,6 @@ export default function EvolutionGraph(props) {
     }
   } 
 
-  console.log(evolutionTree);
-
   const renderItemImage = (evoMethod, methodId, methodParameter) => {
     const evoFunction = evolutionFunctions[methodId];
     let evoImage = "";
@@ -121,7 +119,6 @@ export default function EvolutionGraph(props) {
 
   const renderEvolutionTree = (tree) => {
     const { evolvesInto } = tree;
-    console.log(evolvesInto);
 
     // Collect data for methods and images from all evolutions
     const allMethods = [];
