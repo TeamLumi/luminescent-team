@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[0],{48725:e=>{e.exports="/luminescent-team-dev/pokedex/wartortle"}}]);

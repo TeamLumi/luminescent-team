@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[26256],{11818:e=>{e.exports="/luminescent-team-dev/pokedex/chingling"}}]);
