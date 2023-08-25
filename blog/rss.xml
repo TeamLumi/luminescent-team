@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Luminescent Platinum Blog</title>
-        <link>https://luminescent.team/luminescent-team-dev/blog</link>
+        <link>https://luminescent.team/blog</link>
         <description>Luminescent Platinum Blog</description>
         <lastBuildDate>Wed, 12 Oct 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[2.0 Beta Update]]></title>
-            <link>https://luminescent.team/luminescent-team-dev/blog/2022/10/12/update2-0-beta</link>
-            <guid>https://luminescent.team/luminescent-team-dev/blog/2022/10/12/update2-0-beta</guid>
+            <link>https://luminescent.team/blog/2022/10/12/update2-0-beta</link>
+            <guid>https://luminescent.team/blog/2022/10/12/update2-0-beta</guid>
             <pubDate>Wed, 12 Oct 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Hey Everyone! New build of 2.0. Here's what you need to know:]]></description>
             <content:encoded><![CDATA[<p>Hey Everyone! New build of 2.0. Here's what you need to know:</p><ul><li>If you fuck up the install on hardware you'll lose your save. Please back them up.</li><li>Pikatwo (the clone Pikachu) in the last release was bugged, please release it.</li><li>This update breaks our compatibility with our PkHax-Luminescent branch. No ETA on when it will work again.</li><li>After a successful update, please visit a Pokémon Center and heal to update your save. Any bug reports and other help requests that have yet to do this will be ignored.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="luminescent-update-20-beta">LUMINESCENT UPDATE 2.0 BETA<a href="#luminescent-update-20-beta" class="hash-link" aria-label="Direct link to LUMINESCENT UPDATE 2.0 BETA" title="Direct link to LUMINESCENT UPDATE 2.0 BETA">​</a></h2><p>Surprise: this beta includes all regional forms and attached evolutions of gens 1-4 pokemon! Think Sylveon, Alolan Marowak and Mr Rime, but not White Stripe Basculin or Hisuian Braviary. A list of their balance changes, a page of evolution methods, and a chart of their locations will be coming soon. When playing, keep in mind that the special incense items you receive will make no difference during your 2.0 playthrough; it will only matter when the full National Dex Update happens in 3.0. Make your choices with that in mind.</p><p>That said, this is not the final form of these pokemon we are implementing. </p><ul><li>Many have texturing issues that need further adjustment</li><li>You won't be able to see them at all on the evolution screen </li><li>Certain battle, idle or walking animations simply don't work (but also don't crash)</li><li>Many have "egg" as their party icon</li><li>They don't make sounds
@@ -24,8 +24,8 @@ Any bug reports to these effects will be closed without conversation. We figured
         </item>
         <item>
             <title><![CDATA[2.0 Alpha Update]]></title>
-            <link>https://luminescent.team/luminescent-team-dev/blog/2022/08/30/update2-0-alpha</link>
-            <guid>https://luminescent.team/luminescent-team-dev/blog/2022/08/30/update2-0-alpha</guid>
+            <link>https://luminescent.team/blog/2022/08/30/update2-0-alpha</link>
+            <guid>https://luminescent.team/blog/2022/08/30/update2-0-alpha</guid>
             <pubDate>Tue, 30 Aug 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Trainers, the time has come.]]></description>
             <content:encoded><![CDATA[<p>Trainers, the time has come.

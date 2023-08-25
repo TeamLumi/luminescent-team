@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[72844],{70307:e=>{e.exports="/luminescent-team-dev/pokedex/clefable"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[65786],{15506:e=>{e.exports="/luminescent-team-dev/pokedex/ambipom"}}]);

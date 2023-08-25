@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[80293],{2561:e=>{e.exports="/luminescent-team-dev/pokedex/dodrio"}}]);
