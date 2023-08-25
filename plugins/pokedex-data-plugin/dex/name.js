@@ -1,8 +1,7 @@
-import { PersonalTable, basePokemonNames, formPokemonNames } from '../../../__gamedata';
-import { FORM_MAP } from './functions';
+const { PersonalTable, basePokemonNames, formPokemonNames } = require('./data');
+const { FORM_MAP } = require('./functions');
 
 const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
-const POKEMON_NAME_LIST = Object.values(POKEMON_NAME_MAP);
 function createPokemonMap(pokemonNameMap, currentPokemon) {
   try {
     const { id } = currentPokemon;
@@ -63,22 +62,20 @@ function getPokemonMonsnoFromName(pokemonName) {
   return basePokemonNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === pokemonName);
 }
 
-function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0) {
-	const { monsno } = PersonalTable.Personal[pokemonId];
-	const formno = FORM_MAP[monsno].indexOf(pokemonId);
-	return [monsno, formno];
-}
-
 function getPokemonNames(to, from = 0) {
   if (typeof to !== 'number' || to < 0) return [];
-  return POKEMON_NAME_LIST.slice(from, to);
+  return Object.values(POKEMON_NAME_MAP).slice(from, to);
 }
 
 function getPokemonFormId(monsno = 0, id) {
   return FORM_MAP[monsno]?.findIndex((e) => e === id) ?? -1;
 }
 
-export {
+function normalizePokemonName(name) {
+  return name.toLowerCase().replace(/\s+/g, '').replaceAll("'", '');
+}
+
+module.exports = {
   getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
@@ -88,5 +85,5 @@ export {
   getPokemonFormId,
   createPokemonMap,
   POKEMON_NAME_MAP,
-  getPokemonMonsNoAndFormNoFromPokemonId,
+  normalizePokemonName,
 };

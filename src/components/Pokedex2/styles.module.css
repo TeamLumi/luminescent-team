@@ -1,0 +1,100 @@
+:root {
+    --color-vibrant-border: hsl(0 0% 0% / 0.2);
+    --color-vibrant-border1: hsl(0 0% 0% / 0.6);
+    --type-min-width: 80px;
+}
+
+.typeBg {
+    margin: 4px;
+    padding: 4px;
+    background: var(--type-color, #333);
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.25;
+    font-weight: 700;
+    border-color: var(--color-vibrant-border);
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    text-shadow: 0 1px 0 #000,0 0 1px rgba(0,0,0,.6),0 0 2px rgba(0,0,0,.7),0 0 3px rgba(0,0,0,.8),0 0 4px rgba(0,0,0,.9);
+    width: 30%;
+}
+
+.bTransparent {
+    border-color: transparent;
+    border-radius: 0.125rem;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: '0.25rem'
+}
+
+.col {
+    float: left;
+    padding-top: 7px;
+    height: 22px;
+    font-size: 0.85rem;
+}
+
+.evolutionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.firstEvolution {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-left: 20px;
+}
+
+.methodContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.method {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imageRow {
+  display: grid;
+  height: 160px;
+  align-items: center;
+}
+
+.method p {
+  margin: 10px 0;
+}
+
+.method img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,12 @@
+static/
+rom-hacking/
+reports/
+node_modules/
+docs/
+build/
+blog/
+.github/
+.docusaurus
+__gamedata/
+
+src/theme/
