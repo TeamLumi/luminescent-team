@@ -13,4 +13,12 @@ function getItemString(itemId = 0) {
   return itemNames.labelDataArray[itemId].wordDataArray[0].str;
 }
 
-module.exports = { getItemIdFromItemName, getItemString };
+function getItemImageUrl(itemName="") {
+  const splitItemName = itemName.replace("’", "").split(" ").join("_");
+  return `/img/Item_${splitItemName}.webp`;
+}
+
+function getTMImageUrl(moveType="") {
+  return `/img/tms/${moveType}.webp`
+}
+module.exports = { getItemIdFromItemName, getItemString, getItemImageUrl, getTMImageUrl };

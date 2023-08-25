@@ -3,7 +3,7 @@ import { getEvolutionMethodDetail, getEvolutionTree } from './evolution';
 describe('getEvolutionMethodDetail', () => {
   it('Should return a valid method for a valid id', () => {
     const methodId = 1; // High Friendship
-    const result = getEvolutionMethodDetail(methodId);
+    const [ result, evoMethod ] = getEvolutionMethodDetail(methodId);
     const expected = {
       method: 'Friendship',
       parameterType: 'None',
@@ -15,7 +15,7 @@ describe('getEvolutionMethodDetail', () => {
   it('Should return the filled out method with an item', () => {
     const methodId = 8 // Evolve with Item
     const methodParameter = 849 // Ice Stone
-    const result = getEvolutionMethodDetail(methodId, methodParameter)
+    const [ result, evoMethod ] = getEvolutionMethodDetail(methodId, methodParameter)
     const expected = {
       method: 'Use Ice Stone',
       parameterType: 'Item',

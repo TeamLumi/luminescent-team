@@ -13,18 +13,24 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
   if (!Number.isInteger(methodId) || methodId < 0 || methodId > 47) throw new Error(`Bad method: ${methodId}`);
   const evolutionDetails = { ...EVOLUTION_METHOD_DETAILS[methodId] };
   const evoFunction = evolutionFunctions[methodId];
+  let evoMethod = evolutionDetails.method;
   if (evoFunction === "Level") {
+    evoMethod = "Level"
     evolutionDetails.method = evolutionDetails.method.replace("REPLACE", level);
   } else if (evoFunction === "getItemString") {
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", getItemString(methodParameter));
+    evoMethod = getItemString(methodParameter)
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", evoMethod);
   } else if (evoFunction === "getMoveString") {
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", getMoveString(methodParameter));
+    evoMethod = getMoveString(methodParameter)
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", evoMethod);
   } else if (evoFunction === "getPokemonName") {
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", getPokemonName(methodParameter));
+    evoMethod = getPokemonName(methodParameter)
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", evoMethod);
   } else if (evoFunction === "getMoveProperties") {
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", getTypeName(methodParameter));
+    evoMethod = getTypeName(methodParameter)
+    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", evoMethod);
   }
-  return evolutionDetails;
+  return [evolutionDetails, evoMethod];
 }
 
 function getEvolutionTree(pokemonId = 0, fromRoot = true) {
