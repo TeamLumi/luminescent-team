@@ -52,12 +52,12 @@ export default function EvolutionGraph(props) {
 
   if (secondEvolvesInto.length > 1) {
     if (secondEvolvesInto[0].evolvesInto.length > 0) {
-      evolutionTree.evolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+      secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
     } else if (secondEvolvesInto[0].evolvesInto.length === 0 && secondEvolvesInto[1].evolvesInto.length > 0) {
-      evolutionTree.evolvesInto[0].evolvesInto.push(defaultEvo)
-      evolutionTree.evolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+      secondEvolvesInto[0].evolvesInto.push(defaultEvo)
+      secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
     }
-  } 
+  }
 
   const renderItemImage = (evoMethod, methodId, methodParameter) => {
     const evoFunction = evolutionFunctions[methodId];
@@ -70,7 +70,6 @@ export default function EvolutionGraph(props) {
       const moveType = getTypeName(getMoveProperties(methodParameter).type);
       evoImage = getTMImageUrl(moveType);
     } else if (evoFunction === "getPokemonName") {
-      console.log(methodParameter, getPokemonImageFilename(methodParameter, 0));
       evoImage = `img/${getPokemonImageFilename(methodParameter, 0)}`;
     } else if (evoFunction === "getMoveProperties") {
       const moveType = getTypeName(methodParameter);
@@ -92,19 +91,18 @@ export default function EvolutionGraph(props) {
         {methodDetail.method}
       </>
     )
-
   };
 
   const renderMethods = (methodIds, methodParameters, levels) => {
     const firstMethodId = methodIds[0];
     const firstMethodParameter = parseInt(methodParameters[0]);
-    const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, levels[0]);
-    if (firstMethodDetail === -1) {
+    if (firstMethodId === -1) {
       return (
         <Box className={styles.method}>
         </Box>
       )
     }
+    const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, levels[0]);
 
     const evoImage = renderItemImage(firstEvoMethod, firstMethodId, firstMethodParameter)
     return (
@@ -112,7 +110,7 @@ export default function EvolutionGraph(props) {
         {firstMethodDetail.method}
         <img src={useBaseUrl(evoImage)} width="40" alt="" />
         {methodIds.length > 1 && (
-          renderSecondMethod(methodIds[1], parseInt(methodParameters[1]), levels[1])
+          renderSecondMethod(methodIds[1], methodParameters[1], levels[1])
         )}
       </Box>
     );
@@ -181,7 +179,5 @@ export default function EvolutionGraph(props) {
       </div>
     )
   }
-
-
   return (fullEvolutionTree);
 }
