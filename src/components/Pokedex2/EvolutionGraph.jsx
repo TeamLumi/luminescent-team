@@ -70,7 +70,8 @@ export default function EvolutionGraph(props) {
       const moveType = getTypeName(getMoveProperties(methodParameter).type);
       evoImage = getTMImageUrl(moveType);
     } else if (evoFunction === "getPokemonName") {
-      evoImage = getPokemonImageFilename(methodParameter);
+      console.log(methodParameter, getPokemonImageFilename(methodParameter, 0));
+      evoImage = `img/${getPokemonImageFilename(methodParameter, 0)}`;
     } else if (evoFunction === "getMoveProperties") {
       const moveType = getTypeName(methodParameter);
       evoImage = getTMImageUrl(moveType);
@@ -105,7 +106,7 @@ export default function EvolutionGraph(props) {
       )
     }
 
-    const evoImage = renderItemImage(firstEvoMethod, firstMethodId)
+    const evoImage = renderItemImage(firstEvoMethod, firstMethodId, firstMethodParameter)
     return (
       <Box className={styles.method}>
         {firstMethodDetail.method}

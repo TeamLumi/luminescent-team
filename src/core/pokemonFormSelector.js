@@ -18,7 +18,7 @@ export const getPokemonFormIndexById = (monsno, id) => {
   return POKEMON_FORM_ID_MAP[monsno].findIndex((pokemonForm) => pokemonForm.pokemonId === id);
 };
 
-export const getPokemonImageFilename = (monsno, formIndex) => {
+export const getPokemonImageFilename = (monsno, formIndex = 0) => {
   const paddedMonsno = monsno.toString().padStart(4, 0);
   const paddedFormIndex = formIndex.toString().padStart(2, 0);
   return `pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
