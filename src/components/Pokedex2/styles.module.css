@@ -45,10 +45,26 @@
     font-size: 0.85rem;
 }
 
+.startPokemon {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
 .evolutionContainer {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scrollContent {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -56,15 +72,25 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  margin-left: 20px;
 }
 
-.methodContainer {
+.firstMethodContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-right: 20px;
+  width: 300px;
+  max-width: 100%;
+  margin-left: 25px;
+}
+
+.secondMethodContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  max-width: 100%;
 }
 
 .method {
@@ -81,11 +107,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 200px;
 }
 
 .imageRow {
   display: grid;
   height: 160px;
+  width: max-content;
   align-items: center;
 }
 
@@ -98,3 +126,98 @@
   height: auto;
   display: block;
 }
+
+@media (max-width: 1080px) {
+  .firstMethodContainer {
+    width: 250px;
+  }
+  .secondMethodContainer {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .firstMethodContainer {
+    width: 225px;
+    margin-left: 0px;
+  }
+  .secondMethodContainer {
+    width: 150px;
+  }
+}
+
+@media (max-width: 925px) {
+  .firstMethodContainer {
+    width: 200px;
+  }
+  .imageColumn {
+    width: 150px;
+  }
+}
+
+@media (max-width: 850px) {
+  .firstMethodContainer {
+    width: 175px;
+  }
+  .imageColumn {
+    width: 125px;
+  }
+}
+
+@media (max-width: 725px) {
+  .firstMethodContainer {
+    width: min-content;
+  }
+  .secondMethodContainer {
+    width: min-content;
+  }
+  .imageColumn {
+    width: 125px;
+    justify-content: center;
+  }
+}
+
+/**
+@media (max-width: 600px) {
+  .firstEvolution:only-child .evolutionContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .firstEvolution:only-child .scrollContent {
+    flex-direction: column;
+  }
+  .firstEvolution:only-child .firstEvolution {
+    flex-direction: column;
+  }
+  .firstEvolution:only-child .firstMethodContainer {
+    flex-direction: row;
+    width: 300px;
+  }
+  .firstEvolution:only-child .secondMethodContainer {
+    flex-direction: row;
+    width: 300px;
+  }
+  .firstEvolution:only-child .imageColumn {
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-around;
+  }
+
+  .evolutionContainer:nth-child(1) .scrollContent,
+  .evolutionContainer:nth-child(1) .firstEvolution {
+    flex-direction: row;
+  }
+  .evolutionContainer:nth-child(1) .firstMethodContainer,
+  .evolutionContainer:nth-child(1) .secondMethodContainer,
+  .evolutionContainer:nth-child(1) .imageColumn {
+    flex-direction: column;
+  }
+  .evolutionContainer:nth-child(1) .firstMethodContainer,
+  .evolutionContainer:nth-child(1) .secondMethodContainer {
+    width: min-content;
+  }
+  .evolutionContainer:nth-child(1) .imageColumn {
+    justify-content: space-between;
+  }
+}
+*/

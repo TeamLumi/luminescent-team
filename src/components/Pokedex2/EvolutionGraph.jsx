@@ -116,7 +116,7 @@ export default function EvolutionGraph(props) {
     );
   };
 
-  const renderEvolutionTree = (tree) => {
+  const renderEvolutionTree = (tree, methodIndex) => {
     const { evolvesInto } = tree;
 
     // Collect data for methods and images from all evolutions
@@ -150,12 +150,21 @@ export default function EvolutionGraph(props) {
     });
 
     // Render a single firstEvolution component with all methods and images
-    return (
-      <Box className={styles.firstEvolution}>
-        <Box className={styles.methodContainer}>{allMethods}</Box>
-        <Box className={styles.imageColumn}>{allImages}</Box>
-      </Box>
-    );
+    if (methodIndex === 1) {
+      return (
+        <Box className={styles.firstEvolution}>
+          <Box className={styles.firstMethodContainer}>{allMethods}</Box>
+          <Box className={styles.imageColumn}>{allImages}</Box>
+        </Box>
+      )
+    } else {
+      return (
+        <Box className={styles.firstEvolution}>
+          <Box className={styles.secondMethodContainer}>{allMethods}</Box>
+          <Box className={styles.imageColumn}>{allImages}</Box>
+        </Box>
+      )
+    }
   };
 
   if (secondEvolvesInto.length > 0) {
@@ -169,13 +178,17 @@ export default function EvolutionGraph(props) {
           </span>
         </div>
 
-        <Box className={styles.evolutionContainer}>
-          <img src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)} alt="Stage 1 Evo" />
-          {renderEvolutionTree(evolutionTree)}
-          {secondEvolvesInto.length > 0 && (
-            renderEvolutionTree(secondEvolvesInto[0])
-          )}
-        </Box>
+        <div className={styles.evolutionContainer}>
+          <div className={styles.scrollContent}>
+            <div className={styles.startPokemon}>
+              <img src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)} alt="Stage 1 Evo" />
+            </div>
+            {renderEvolutionTree(evolutionTree, 1)}
+            {secondEvolvesInto.length > 0 && (
+              renderEvolutionTree(secondEvolvesInto[0], 2)
+            )}
+          </div>
+        </div>
       </div>
     )
   }
