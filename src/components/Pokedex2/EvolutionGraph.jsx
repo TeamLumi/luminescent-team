@@ -157,9 +157,9 @@ export default function EvolutionGraph(props) {
           <Box className={styles.imageColumn}>{allImages}</Box>
         </Box>
       )
-    } else {
+    } else if (methodIndex === 2) {
       return (
-        <Box className={styles.firstEvolution}>
+        <Box className={styles.secondEvolution}>
           <Box className={styles.secondMethodContainer}>{allMethods}</Box>
           <Box className={styles.imageColumn}>{allImages}</Box>
         </Box>
@@ -184,7 +184,7 @@ export default function EvolutionGraph(props) {
               <img src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)} alt="Stage 1 Evo" />
             </div>
             {renderEvolutionTree(evolutionTree, 1)}
-            {secondEvolvesInto.length > 0 && (
+            {secondEvolvesInto[0].evolvesInto.length >= 1 && (
               renderEvolutionTree(secondEvolvesInto[0], 2)
             )}
           </div>

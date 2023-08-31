@@ -105,12 +105,12 @@ export const EVOLUTION_METHOD_DETAILS = {
     parameterType: 'None',
   },
   10: {
-    method: `Level REPLACE & Def > Atk`,
+    method: `Level REPLACE & Atk = Def`,
     requiresLevel: true,
     parameterType: 'None',
   },
   11: {
-    method: `Level REPLACE & Atk = Def`,
+    method: `Level REPLACE & Def > Atk`,
     requiresLevel: true,
     parameterType: 'None',
   },

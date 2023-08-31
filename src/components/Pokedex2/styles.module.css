@@ -74,6 +74,12 @@
   align-items: stretch;
 }
 
+.secondEvolution {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
 .firstMethodContainer {
   display: flex;
   flex-direction: column;
@@ -115,6 +121,7 @@
   height: 160px;
   width: max-content;
   align-items: center;
+  margin: 10px 0;
 }
 
 .method p {
@@ -177,47 +184,31 @@
   }
 }
 
-/**
 @media (max-width: 600px) {
-  .firstEvolution:only-child .evolutionContainer {
+  .evolutionContainer {
     width: 100%;
     justify-content: center;
   }
-  .firstEvolution:only-child .scrollContent {
+  .scrollContent {
     flex-direction: column;
   }
-  .firstEvolution:only-child .firstEvolution {
+  .scrollContent:has(.secondEvolution) .firstEvolution {
     flex-direction: column;
   }
-  .firstEvolution:only-child .firstMethodContainer {
+  .scrollContent:has(.secondEvolution) .secondEvolution {
+    flex-direction: column;
+  }
+  .scrollContent:has(.secondEvolution) .firstMethodContainer {
     flex-direction: row;
     width: 300px;
   }
-  .firstEvolution:only-child .secondMethodContainer {
+  .scrollContent:has(.secondEvolution) .secondMethodContainer {
     flex-direction: row;
     width: 300px;
   }
-  .firstEvolution:only-child .imageColumn {
+  .scrollContent:has(.secondEvolution) .imageColumn {
     flex-direction: row;
     width: 300px;
     justify-content: space-around;
   }
-
-  .evolutionContainer:nth-child(1) .scrollContent,
-  .evolutionContainer:nth-child(1) .firstEvolution {
-    flex-direction: row;
-  }
-  .evolutionContainer:nth-child(1) .firstMethodContainer,
-  .evolutionContainer:nth-child(1) .secondMethodContainer,
-  .evolutionContainer:nth-child(1) .imageColumn {
-    flex-direction: column;
-  }
-  .evolutionContainer:nth-child(1) .firstMethodContainer,
-  .evolutionContainer:nth-child(1) .secondMethodContainer {
-    width: min-content;
-  }
-  .evolutionContainer:nth-child(1) .imageColumn {
-    justify-content: space-between;
-  }
 }
-*/
