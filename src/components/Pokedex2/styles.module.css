@@ -59,7 +59,7 @@
   align-items: center;
   width: 100%;
   overflow-x: auto;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .scrollContent {
@@ -69,14 +69,15 @@
 }
 
 .scrollContent:first-child {
-  background-color: #2B2B2D;
-  border: 1px solid #606770;
+  background-color: var(--ifm-table-cell-color);
+  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
 .firstEvolution {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  min-height: 342px;
 }
 
 .secondEvolution {
@@ -93,7 +94,7 @@
   width: 300px;
   max-width: 100%;
   margin-left: 25px;
-  border: 1px solid #606770;
+  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
 .secondMethodContainer {
@@ -103,15 +104,15 @@
   align-items: center;
   width: 250px;
   max-width: 100%;
-  border: 1px solid #606770;
+  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
 .secondMethodContainer > * {
-  border-bottom: 1px solid #606770;
+  border-bottom: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
 .firstMethodContainer > * {
-  border-bottom: 1px solid #606770;
+  border-bottom: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
 .secondMethodContainer > :last-child {
@@ -136,14 +137,14 @@
 .imageColumn {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 200px;
-  border: 1px solid #606770;
+  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
 .imageColumn > * {
-  border-bottom: 1px solid #606770;
+  border-bottom: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
 .imageColumn > :last-child {
@@ -159,19 +160,19 @@
 }
 
 .imageRow:nth-child(odd) {
-  background-color: #2B2B2D; /* Background color for odd elements */
+  background-color: var(--ifm-table-cell-color);
 }
 
 .imageRow:nth-child(even) {
-  background-color: #1B1B1D; /* Background color for even elements */
+  background-color: var(--ifm-table-stripe-background);
 }
 
 .method:nth-child(odd) {
-  background-color: #2B2B2D; /* Background color for odd elements */
+  background-color: var(--ifm-table-cell-color);
 }
 
 .method:nth-child(even) {
-  background-color: #1B1B1D; /* Background color for even elements */
+  background-color: var(--ifm-table-stripe-background);
 }
 
 .method img {
@@ -209,21 +210,12 @@
 }
 
 @media (max-width: 850px) {
-  .firstMethodContainer {
-    width: 175px;
-  }
   .imageColumn {
     width: 125px;
   }
 }
 
 @media (max-width: 725px) {
-  .firstMethodContainer {
-    width: min-content;
-  }
-  .secondMethodContainer {
-    width: min-content;
-  }
   .imageColumn {
     width: 125px;
     justify-content: center;
@@ -237,9 +229,6 @@
   }
   .scrollContent {
     flex-direction: column;
-  }
-  .scrollContent:first-child {
-    background-color: #1B1B1D;
   }
   .scrollContent:has(.secondEvolution) .firstEvolution {
     flex-direction: column;
@@ -265,21 +254,18 @@
   }
   .scrollContent:has(.secondEvolution) .imageColumn > * {
     border-bottom: none;
-    border-right: 1px solid #606770;
-    background-color: #1B1B1D;
+    border-right: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
   }
   .scrollContent:has(.secondEvolution) .imageColumn > :last-child {
     border-right: none;
   }
   .scrollContent:has(.secondEvolution) .firstMethodContainer > * {
     border-bottom: none;
-    border-right: 1px solid #606770;
-    background-color: #2B2B2D;
+    border-right: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
   }
   .scrollContent:has(.secondEvolution) .secondMethodContainer > * {
     border-bottom: none;
-    border-right: 1px solid #606770;
-    background-color: #2B2B2D;
+    border-right: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
   }
   .scrollContent:has(.secondEvolution) .firstMethodContainer > :last-child {
     border-right: none;

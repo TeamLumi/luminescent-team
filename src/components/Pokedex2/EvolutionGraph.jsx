@@ -4,11 +4,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { getEvolutionMethodDetail, getEvolutionTree } from '../../utils/dex/evolution';
 import styles from './styles.module.css';
 import { getPokemonImageFilename } from '../../core/pokemonFormSelector';
-import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../utils/dex/name';
+import { getPokemonMonsNoAndFormNoFromPokemonId, getPokemonName } from '../../utils/dex/name';
 import { evolutionFunctions } from '../../utils/dex/evolutionConstants';
 import { getItemImageUrl, getTMImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
 import { getMoveProperties } from '../../utils/dex/moves';
 import { getTypeName } from '../../utils/dex/types';
+import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
 
 export default function EvolutionGraph(props) {
   const evolutionTree = getEvolutionTree(props.pokemonID);
@@ -140,7 +141,8 @@ export default function EvolutionGraph(props) {
               <img
                 key={monsno}
                 src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
-                alt={`Stage ${formNos[index]} Evo`}
+                alt={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
+                title={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
               />
             </Box>
           ) : ""
@@ -181,7 +183,11 @@ export default function EvolutionGraph(props) {
         <div className={styles.evolutionContainer}>
           <div className={styles.scrollContent}>
             <div className={styles.startPokemon}>
-              <img src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)} alt="Stage 1 Evo" />
+              <img
+                src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
+                alt={getPokemonName(getPokemonIdFromMonsNoAndForm(monsNo, formNo))}
+                title={getPokemonName(getPokemonIdFromMonsNoAndForm(monsNo, formNo))}
+              />
             </div>
             {renderEvolutionTree(evolutionTree, 1)}
             {secondEvolvesInto[0].evolvesInto.length >= 1 && (
