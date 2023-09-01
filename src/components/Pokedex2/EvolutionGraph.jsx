@@ -143,7 +143,7 @@ export default function EvolutionGraph(props) {
                 alt={`Stage ${formNos[index]} Evo`}
               />
             </Box>
-          ) : <div key={monsno}></div>
+          ) : ""
         ));
         allImages.push(imageComponents);
       }

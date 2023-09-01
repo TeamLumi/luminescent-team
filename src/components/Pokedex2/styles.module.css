@@ -68,6 +68,11 @@
   align-items: center;
 }
 
+.scrollContent:first-child {
+  background-color: #2B2B2D;
+  border: 1px solid #606770;
+}
+
 .firstEvolution {
   display: flex;
   flex-direction: row;
@@ -88,6 +93,7 @@
   width: 300px;
   max-width: 100%;
   margin-left: 25px;
+  border: 1px solid #606770;
 }
 
 .secondMethodContainer {
@@ -97,6 +103,23 @@
   align-items: center;
   width: 250px;
   max-width: 100%;
+  border: 1px solid #606770;
+}
+
+.secondMethodContainer > * {
+  border-bottom: 1px solid #606770;
+}
+
+.firstMethodContainer > * {
+  border-bottom: 1px solid #606770;
+}
+
+.secondMethodContainer > :last-child {
+  border-bottom: none;
+}
+
+.firstMethodContainer > :last-child {
+  border-bottom: none;
 }
 
 .method {
@@ -105,7 +128,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  width: 100%;
+  height: 170px;
 }
 
 .imageColumn {
@@ -114,18 +139,39 @@
   justify-content: space-between;
   align-items: center;
   width: 200px;
+  border: 1px solid #606770;
+}
+
+.imageColumn > * {
+  border-bottom: 1px solid #606770;
+}
+
+.imageColumn > :last-child {
+  border-bottom: none;
 }
 
 .imageRow {
   display: grid;
-  height: 160px;
-  width: max-content;
+  height: 170px;
+  width: 100%;
   align-items: center;
-  margin: 10px 0;
+  justify-content: center;
 }
 
-.method p {
-  margin: 10px 0;
+.imageRow:nth-child(odd) {
+  background-color: #2B2B2D; /* Background color for odd elements */
+}
+
+.imageRow:nth-child(even) {
+  background-color: #1B1B1D; /* Background color for even elements */
+}
+
+.method:nth-child(odd) {
+  background-color: #2B2B2D; /* Background color for odd elements */
+}
+
+.method:nth-child(even) {
+  background-color: #1B1B1D; /* Background color for even elements */
 }
 
 .method img {
@@ -192,6 +238,9 @@
   .scrollContent {
     flex-direction: column;
   }
+  .scrollContent:first-child {
+    background-color: #1B1B1D;
+  }
   .scrollContent:has(.secondEvolution) .firstEvolution {
     flex-direction: column;
   }
@@ -201,14 +250,41 @@
   .scrollContent:has(.secondEvolution) .firstMethodContainer {
     flex-direction: row;
     width: 300px;
+    border-bottom: none;
   }
   .scrollContent:has(.secondEvolution) .secondMethodContainer {
     flex-direction: row;
     width: 300px;
+    border-bottom: none;
   }
   .scrollContent:has(.secondEvolution) .imageColumn {
     flex-direction: row;
     width: 300px;
     justify-content: space-around;
+    border-bottom: none;
+  }
+  .scrollContent:has(.secondEvolution) .imageColumn > * {
+    border-bottom: none;
+    border-right: 1px solid #606770;
+    background-color: #1B1B1D;
+  }
+  .scrollContent:has(.secondEvolution) .imageColumn > :last-child {
+    border-right: none;
+  }
+  .scrollContent:has(.secondEvolution) .firstMethodContainer > * {
+    border-bottom: none;
+    border-right: 1px solid #606770;
+    background-color: #2B2B2D;
+  }
+  .scrollContent:has(.secondEvolution) .secondMethodContainer > * {
+    border-bottom: none;
+    border-right: 1px solid #606770;
+    background-color: #2B2B2D;
+  }
+  .scrollContent:has(.secondEvolution) .firstMethodContainer > :last-child {
+    border-right: none;
+  }
+  .scrollContent:has(.secondEvolution) .secondMethodContainer > :last-child {
+    border-right: none;
   }
 }
