@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { getEvolutionMethodDetail, getEvolutionTree } from '../../utils/dex/evolution';
 import styles from './styles.module.css';
@@ -59,6 +59,22 @@ export default function EvolutionGraph(props) {
       secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
     }
   }
+
+  const renderEvolutions = (methods, images, methodIndex) => {
+    const methodStyle = methodIndex === 1 ? (
+      styles.firstMethodContainer
+      ) : (styles.secondMethodContainer)
+    return methods.map((method, index) => (
+      <Grid container className={styles.evolutionDetails} key={index}>
+        <Grid item xs={6} sm={6} className={methodStyle}>
+          {method}
+        </Grid>
+        <Grid item xs={6} sm={6} className={styles.imageColumn}>
+          {images[index]}
+        </Grid>
+      </Grid>
+    ));
+  };
 
   const renderItemImage = (evoMethod, methodId, methodParameter) => {
     const evoFunction = evolutionFunctions[methodId];
@@ -154,49 +170,45 @@ export default function EvolutionGraph(props) {
     // Render a single firstEvolution component with all methods and images
     if (methodIndex === 1) {
       return (
-        <Box className={styles.firstEvolution}>
-          <Box className={styles.firstMethodContainer}>{allMethods}</Box>
-          <Box className={styles.imageColumn}>{allImages}</Box>
-        </Box>
+        <Grid container className={styles.firstEvolution}>
+          {renderEvolutions(allMethods, allImages, methodIndex)}
+        </Grid>
       )
     } else if (methodIndex === 2) {
       return (
-        <Box className={styles.secondEvolution}>
-          <Box className={styles.secondMethodContainer}>{allMethods}</Box>
-          <Box className={styles.imageColumn}>{allImages}</Box>
-        </Box>
+        <Grid container className={styles.secondEvolution}>
+          {renderEvolutions(allMethods, allImages, methodIndex)}
+        </Grid>
       )
     }
   };
 
   if (secondEvolvesInto.length > 0) {
     fullEvolutionTree = (
-      <div className="container">
-        <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-          <span className="col col-12">
-            <Typography variant="h6" sx={{ margin: 'auto' }}>
-              Evolutions
-            </Typography>
-          </span>
-        </div>
-
-        <div className={styles.evolutionContainer}>
-          <div className={styles.scrollContent}>
-            <div className={styles.startPokemon}>
+      <Grid container>
+        <Grid item xs={12}>
+          <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
+            Evolutions
+          </Typography>
+        </Grid>
+  
+        <Grid container className={styles.evolutionContainer}>
+          <Grid item xs={12} className={styles.scrollContent}>
+            <Grid item xs={12} sm={6} className={styles.startPokemon}>
               <img
                 src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
                 alt={getPokemonName(getPokemonIdFromMonsNoAndForm(monsNo, formNo))}
                 title={getPokemonName(getPokemonIdFromMonsNoAndForm(monsNo, formNo))}
               />
-            </div>
+            </Grid>
             {renderEvolutionTree(evolutionTree, 1)}
             {secondEvolvesInto[0].evolvesInto.length >= 1 && (
               renderEvolutionTree(secondEvolvesInto[0], 2)
-            )}
-          </div>
-        </div>
-      </div>
-    )
+            )}  
+          </Grid>
+        </Grid>
+      </Grid>
+    );
   }
   return (fullEvolutionTree);
 }

@@ -45,13 +45,6 @@
     font-size: 0.85rem;
 }
 
-.startPokemon {
-  display: flex;
-  width: 100px;
-  align-items: center;
-  justify-content: center;
-}
-
 .evolutionContainer {
   display: flex;
   flex-direction: row;
@@ -73,17 +66,26 @@
   border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
+.startPokemon {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 17px;
+}
+
 .firstEvolution {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  min-height: 342px;
+  min-height: 340px;
 }
 
 .secondEvolution {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  min-height: 340px;
 }
 
 .firstMethodContainer {
@@ -93,7 +95,6 @@
   align-items: center;
   width: 300px;
   max-width: 100%;
-  margin-left: 25px;
   border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
 }
 
@@ -159,11 +160,11 @@
   justify-content: center;
 }
 
-.imageRow:nth-child(odd) {
+.evolutionDetails:nth-child(odd) {
   background-color: var(--ifm-table-cell-color);
 }
 
-.imageRow:nth-child(even) {
+.evolutionDetails:nth-child(even) {
   background-color: var(--ifm-table-stripe-background);
 }
 
@@ -181,76 +182,46 @@
   display: block;
 }
 
-@media (max-width: 1080px) {
-  .firstMethodContainer {
-    width: 250px;
-  }
-  .secondMethodContainer {
-    width: 200px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .firstMethodContainer {
-    width: 225px;
-    margin-left: 0px;
-  }
-  .secondMethodContainer {
-    width: 150px;
-  }
-}
-
-@media (max-width: 925px) {
-  .firstMethodContainer {
-    width: 200px;
-  }
-  .imageColumn {
-    width: 150px;
-  }
-}
-
-@media (max-width: 850px) {
-  .imageColumn {
-    width: 125px;
-  }
-}
-
-@media (max-width: 725px) {
-  .imageColumn {
-    width: 125px;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .evolutionContainer {
     width: 100%;
     justify-content: center;
   }
   .scrollContent {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .scrollContent:has(.secondEvolution) .firstEvolution {
-    flex-direction: column;
+    flex-direction: row;
   }
   .scrollContent:has(.secondEvolution) .secondEvolution {
+    flex-direction: row;
+  }
+  .scrollContent:has(.secondEvolution) .evolutionDetails {
     flex-direction: column;
+    flex-wrap: nowrap;
+    width: 50%;
+  }
+  .evolutionDetails:only-child {
+    width: 100% !important;
   }
   .scrollContent:has(.secondEvolution) .firstMethodContainer {
     flex-direction: row;
-    width: 300px;
+    width: 100%;
     border-bottom: none;
+    max-width: 600px;
   }
   .scrollContent:has(.secondEvolution) .secondMethodContainer {
     flex-direction: row;
-    width: 300px;
+    width: 100%;
     border-bottom: none;
+    max-width: 300px;
   }
   .scrollContent:has(.secondEvolution) .imageColumn {
     flex-direction: row;
-    width: 300px;
+    width: 100%;
     justify-content: space-around;
     border-bottom: none;
+    max-width: 600px;
   }
   .scrollContent:has(.secondEvolution) .imageColumn > * {
     border-bottom: none;
