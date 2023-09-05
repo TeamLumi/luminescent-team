@@ -214,7 +214,7 @@ display: block;
   flex-direction: row;
   width: 100%;
   border-bottom: none;
-  max-width: 300px;
+  max-width: 600px;
 }
 .scrollContent:has(.secondEvolution) .imageColumn {
   flex-direction: row;
