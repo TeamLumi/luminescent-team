@@ -105,12 +105,12 @@ export const EVOLUTION_METHOD_DETAILS = {
     parameterType: 'None',
   },
   10: {
-    method: `Level REPLACE & Def > Atk`,
+    method: `Level REPLACE & Atk = Def`,
     requiresLevel: true,
     parameterType: 'None',
   },
   11: {
-    method: `Level REPLACE & Atk = Def`,
+    method: `Level REPLACE & Def > Atk`,
     requiresLevel: true,
     parameterType: 'None',
   },
@@ -200,12 +200,12 @@ export const EVOLUTION_METHOD_DETAILS = {
     parameterType: 'None',
   },
   29: {
-    method: `Friendship with REPLACE Move`,
+    method: `Friendship + REPLACE Move`,
     requiresLevel: false,
     parameterType: 'Typing',
   },
   30: {
-    method: `Level REPLACE with Dark-Type in Party`,
+    method: `Level REPLACE + Dark-Type in Party`,
     requiresLevel: true,
     parameterType: 'None',
   },
