@@ -78,7 +78,6 @@ export default function EvolutionGraph(props) {
 
   const renderItemImage = (evoMethod, methodId, methodParameter, methodDetail) => {
     const evoFunction = evolutionFunctions[methodId];
-    console.log(evoMethod);
     const evoImages = [];
     if (evoMethod.includes("Level")) {
       evoImages.push(getItemImageUrl("Rare Candy"));
@@ -143,7 +142,6 @@ export default function EvolutionGraph(props) {
     const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, levels[0]);
 
     const evoImages = renderItemImage(firstEvoMethod, firstMethodId, firstMethodParameter, firstMethodDetail)
-    console.log(evoImages);
     return (
       <Box className={styles.method}>
         {firstMethodDetail.method}
