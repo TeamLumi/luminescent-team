@@ -14,7 +14,6 @@ export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
                 <ImageWithFallback
                   src={`/img/${form.imageSrc}`}
                   fallbackSrc={`/img/${pokemonForms[0].imageSrc}`}
-                  width={30}
                   height={30}
                 />
                 <Typography marginLeft="8px">
