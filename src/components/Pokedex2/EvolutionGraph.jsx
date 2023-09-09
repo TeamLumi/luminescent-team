@@ -76,35 +76,56 @@ export default function EvolutionGraph(props) {
     ));
   };
 
-  const renderItemImage = (evoMethod, methodId, methodParameter) => {
+  const renderItemImage = (evoMethod, methodId, methodParameter, methodDetail) => {
     const evoFunction = evolutionFunctions[methodId];
-    let evoImage = "";
+    console.log(evoMethod);
+    const evoImages = [];
     if (evoMethod.includes("Level")) {
-      evoImage = getItemImageUrl("Rare Candy");
+      evoImages.push(getItemImageUrl("Rare Candy"));
     } else if (evoFunction === "getItemString") {
-      evoImage = getItemImageUrl(evoMethod);
+      evoImages.push(getItemImageUrl(evoMethod));
     } else if (evoFunction === "getMoveString") {
       const moveType = getTypeName(getMoveProperties(methodParameter).type);
-      evoImage = getTMImageUrl(moveType);
+      evoImages.push(getTMImageUrl(moveType));
     } else if (evoFunction === "getPokemonName") {
-      evoImage = `img/${getPokemonImageFilename(methodParameter, 0)}`;
+      evoImages.push(`img/${getPokemonImageFilename(methodParameter, 0)}`);
     } else if (evoFunction === "getMoveProperties") {
       const moveType = getTypeName(methodParameter);
-      evoImage = getTMImageUrl(moveType);
-    } else if (evoMethod.includes("Friendship")) {
-      evoImage = getItemImageUrl("Soothe Bell")
+      evoImages.push(getTMImageUrl(moveType));
     }
-    return evoImage;
+    if (methodDetail.method.includes("Friendship")) {
+      evoImages.push(getItemImageUrl("Soothe Bell"))
+    }
+    if (methodDetail.method.includes("Day")) {
+      evoImages.push("/img/Sun.webp")
+    } else if (methodDetail.method.includes("Night")) {
+      evoImages.push("/img/Moon.webp")
+    }
+    if (methodDetail.method.includes("Moss Rock")) {
+      evoImages.push("/img/Moss Rock.webp")
+    } else if (methodDetail.method.includes("Ice Rock")) {
+      evoImages.push("/img/Ice Rock.webp")
+    }
+    if (methodDetail.method.includes("Male")) {
+      evoImages.push("/img/male.webp")
+    } else if (methodDetail.method.includes("Female")) {
+      evoImages.push("/img/female.webp")
+    }
+    return evoImages;
   };
 
   const renderSecondMethod = (methodId, methodParameter, level) => {
     const [methodDetail, evoMethod] = getEvolutionMethodDetail(methodId, methodParameter, level);
-    const evoImage = renderItemImage(evoMethod, methodId, methodParameter);
+    const evoImages = renderItemImage(evoMethod, methodId, methodParameter, methodDetail);
 
     return (
       <>
         Or
-        <img src={useBaseUrl(evoImage)} width="40" alt="" />
+        <Box style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+          {evoImages.map((image, index) => (
+            <img key={index} src={useBaseUrl(image)} width="40" alt="" />
+          ))}
+        </Box>
         {methodDetail.method}
       </>
     )
@@ -121,11 +142,16 @@ export default function EvolutionGraph(props) {
     }
     const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, levels[0]);
 
-    const evoImage = renderItemImage(firstEvoMethod, firstMethodId, firstMethodParameter)
+    const evoImages = renderItemImage(firstEvoMethod, firstMethodId, firstMethodParameter, firstMethodDetail)
+    console.log(evoImages);
     return (
       <Box className={styles.method}>
         {firstMethodDetail.method}
-        <img src={useBaseUrl(evoImage)} width="40" alt="" />
+        <Box style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+          {evoImages.map((image, index) => (
+            <img key={index} src={useBaseUrl(image)} width="40" alt="" />
+          ))}
+        </Box>
         {methodIds.length > 1 && (
           renderSecondMethod(methodIds[1], methodParameters[1], levels[1])
         )}
