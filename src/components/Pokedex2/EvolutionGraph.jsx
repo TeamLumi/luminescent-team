@@ -121,7 +121,7 @@ export default function EvolutionGraph(props) {
     return (
       <>
         Or
-        <Box style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+        <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
           {evoImages.map((image, index) => (
             <img key={index} src={useBaseUrl(image)} width="40" alt="" />
           ))}
@@ -146,7 +146,7 @@ export default function EvolutionGraph(props) {
     return (
       <Box className={styles.method}>
         {firstMethodDetail.method}
-        <Box style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+        <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
           {evoImages.map((image, index) => (
             <img key={index} src={useBaseUrl(image)} width="40" alt="" />
           ))}

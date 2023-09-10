@@ -135,6 +135,13 @@
   height: 170px;
 }
 
+.evoImages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100px;
+}
+
 .imageColumn {
   display: flex;
   flex-direction: column;
