@@ -5,11 +5,20 @@ import { getEvolutionMethodDetail, getEvolutionTree } from '../../utils/dex/evol
 import styles from './styles.module.css';
 import { getPokemonImageFilename } from '../../core/pokemonFormSelector';
 import { getPokemonMonsNoAndFormNoFromPokemonId, getPokemonName } from '../../utils/dex/name';
-import { evolutionFunctions } from '../../utils/dex/evolutionConstants';
 import { getItemImageUrl, getTMImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
-import { getMoveProperties } from '../../utils/dex/moves';
+import { getMoveString, getMoveProperties } from '../../utils/dex/moves';
 import { getTypeName } from '../../utils/dex/types';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
+import { getItemString } from '../../utils/dex/item';
+
+const LEVEL = "Level"
+const FRIENDSHIP = "Friendship"
+const DAY = "Day"
+const NIGHT = "Night"
+const MOSS_ROCK = "Moss Rock"
+const ICE_ROCK = "Ice Rock"
+const FEMALE = "Female"
+const MALE = "Male"
 
 export default function EvolutionGraph(props) {
   const evolutionTree = getEvolutionTree(props.pokemonID);
@@ -77,38 +86,38 @@ export default function EvolutionGraph(props) {
     ));
   };
 
-  const renderItemImage = (evoMethod, methodId, methodParameter, methodDetail) => {
-    const evoFunction = evolutionFunctions[methodId];
+  const renderItemImage = (evoMethod, methodParameter, methodDetail) => {
+    const evoFunction = methodDetail.function.name;
     const evoImages = [];
-    if (evoMethod.includes("Level")) {
+    if (methodDetail.method.includes(LEVEL)) {
       evoImages.push(getItemImageUrl("Rare Candy"));
-    } else if (evoFunction === "getItemString") {
+    } else if (evoFunction === getItemString.name) {
       evoImages.push(getItemImageUrl(evoMethod));
-    } else if (evoFunction === "getMoveString") {
+    } else if (evoFunction === getMoveString.name) {
       const moveType = getTypeName(getMoveProperties(methodParameter).type);
       evoImages.push(getTMImageUrl(moveType));
-    } else if (evoFunction === "getPokemonName") {
+    } else if (evoFunction === getPokemonName.name) {
       evoImages.push(`img/${getPokemonImageFilename(methodParameter, 0)}`);
-    } else if (evoFunction === "getMoveProperties") {
+    } else if (evoFunction === getTypeName.name) {
       const moveType = getTypeName(methodParameter);
       evoImages.push(getTMImageUrl(moveType));
     }
-    if (methodDetail.method.includes("Friendship")) {
+    if (methodDetail.method.includes(FRIENDSHIP)) {
       evoImages.push(getItemImageUrl("Soothe Bell"))
     }
-    if (methodDetail.method.includes("Day")) {
+    if (methodDetail.method.includes(DAY)) {
       evoImages.push("/img/Sun.webp")
-    } else if (methodDetail.method.includes("Night")) {
+    } else if (methodDetail.method.includes(NIGHT)) {
       evoImages.push("/img/Moon.webp")
     }
-    if (methodDetail.method.includes("Moss Rock")) {
+    if (methodDetail.method.includes(MOSS_ROCK)) {
       evoImages.push("/img/Moss Rock.webp")
-    } else if (methodDetail.method.includes("Ice Rock")) {
+    } else if (methodDetail.method.includes(ICE_ROCK)) {
       evoImages.push("/img/Ice Rock.webp")
     }
-    if (methodDetail.method.includes("Male")) {
+    if (methodDetail.method.includes(MALE)) {
       evoImages.push("/img/male.webp")
-    } else if (methodDetail.method.includes("Female")) {
+    } else if (methodDetail.method.includes(FEMALE)) {
       evoImages.push("/img/female.webp")
     }
     return evoImages;
@@ -116,7 +125,7 @@ export default function EvolutionGraph(props) {
 
   const renderSecondMethod = (methodId, methodParameter, level) => {
     const [methodDetail, evoMethod] = getEvolutionMethodDetail(methodId, methodParameter, level);
-    const evoImages = renderItemImage(evoMethod, methodId, methodParameter, methodDetail);
+    const evoImages = renderItemImage(evoMethod, methodParameter, methodDetail);
 
     return (
       <>
@@ -142,7 +151,7 @@ export default function EvolutionGraph(props) {
     const firstMethodParameter = parseInt(methodParameters[0]);
     const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, levels[0]);
 
-    const evoImages = renderItemImage(firstEvoMethod, firstMethodId, firstMethodParameter, firstMethodDetail);
+    const evoImages = renderItemImage(firstEvoMethod, firstMethodParameter, firstMethodDetail);
     return (
       <Box className={styles.method}>
         {firstMethodDetail.method}
