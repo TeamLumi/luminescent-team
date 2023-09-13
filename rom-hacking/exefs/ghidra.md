@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Introduction
 
-Ghidra is a really useful tool for reverse engineering the code already written for the game. With it we are able to see the instructions called by the game to run and the offsets of those instructions. We use these offsets to tell Starlight where to inject our custom code.  
+Ghidra is a really useful tool for reverse engineering the code already written for the game. With it we are able to see the instructions called by the game to run and the offsets of those instructions. We use these offsets to tell ExLaunch where to inject our custom code.  
 IL2CPPDumper Allows us to automatically assign names to various points in the program such as functions and static data.
 [dnSpy](https://github.com/dnSpy/dnSpy/releases) is also a very useful tool here as its much more user friendly and allows us to easily find offsets. Just load the dummy DLLs produced by IL2CPPDumper.
 
