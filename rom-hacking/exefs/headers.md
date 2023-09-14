@@ -10,13 +10,13 @@ Headers allow us to define a few things. They allow us to use cleaner manually c
 
 ## il2cpp.h
 
-The `il2cpp.h` header includes all the types defined in the main program but they are not very pretty, they're all in the global namespace and have poor names. We do not include that file in the repo as we want to have clean types that are easier to deal with. When you want to use a specific type that is not available yet, you should create a new header in the `src\mod\externals` directory.
+The `il2cpp.h` header includes all the types defined in the main program but they are not very pretty, they're all in the global namespace and have poor names. We do not include that file in the repo as we want to have clean types that are easier to deal with. When you want to use a specific type that is not available yet, you should create a new header in the `src/mod/externals` directory.
 
 ## Complete Example
 
 See here an example header file for the PokemonParam Class. It includes function definitions, a super class, nested namespaces, the TypeInfo, etc.
 
-```cpp title="src\mod\externals\Pml\PokePara\PokemonParam.h"
+```cpp title="src/mod/externals/Pml/PokePara/PokemonParam.h"
 #pragma once
 
 #include "externals/il2cpp-api.h"

@@ -24,4 +24,4 @@ Make sure to always end your message with `\n`. A message is only sent by the lo
 
 ## Running the logging server
 
-Simply run the `scripts\logger_server.py` script in python. Make sure to start the server before running the game, since it only attempts to connect at launch and does not send logs otherwise.
+Simply run the `scripts/logger_server.py` script in python. Make sure to start the server before running the game, since it only attempts to connect at launch and does not send logs otherwise.

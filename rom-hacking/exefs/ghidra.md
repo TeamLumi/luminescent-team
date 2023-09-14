@@ -17,8 +17,8 @@ IL2CPPDumper Allows us to automatically assign names to various points in the pr
   - The Ghidra Switch Loader loads the program with a base address of `0x7100000000` but we can change this pretty easily and its simpler.
 - [IL2CPPDumper](https://github.com/Perfare/Il2CppDumper/releases)
 - A Game Dump with exefs and romfs. We need specifically two files.
-  - `main` from `exefs\main`
-  - `global-metadata.dat` from `romfs\Data\Managed\Metadata\global-metadata.dat`
+  - `main` from `exefs/main`
+  - `global-metadata.dat` from `romfs/Data/Managed/Metadata/global-metadata.dat`
 
 ## Importing to Ghidra
 

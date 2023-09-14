@@ -83,11 +83,11 @@ After this is set up, building is very easy!
 
 In the CMake menu in the bottom left, click the "Reload CMake Project" button:
 
-![An image showing the "Reload CMake Project" button in CLion.](../../static/img/exefs/CLion_CMake_Reload.png "Toolchain Settings")
+![An image showing the "Reload CMake Project" button in CLion.](../../static/img/exefs/CLion_CMake_Reload.png "Reload CMake Project")
 
 Once it's reloaded, you can select the target you'd like to build from the dropdown menu at the top and click the "Build" button.
 
-![An image showing the targets dropdown and the "Build" button in CLion.](../../static/img/exefs/CLion_Build.png "Toolchain Settings")
+![An image showing the targets dropdown and the "Build" button in CLion.](../../static/img/exefs/CLion_Build.png "Available Targets")
 
 ## Example Usage
 
@@ -95,7 +95,7 @@ Let's go through an example of disabling the disobeying mechanic.
 
 :::info
 
-This patch already exists in `src\mod\features\badge_check.cpp`. For demonstration purposes we'll add it as its own patch. Always make sure you're not duplicating existing hooks when creating patches!
+This patch already exists in `src/mod/features/badge_check.cpp` if you're looking at the Luminescent fork. For demonstration purposes we'll add it as its own patch. Always make sure you're not duplicating existing hooks when creating patches!
 
 :::
 
@@ -108,26 +108,26 @@ This patch already exists in `src\mod\features\badge_check.cpp`. For demonstrati
    3. After a bit of searching around we find a function in the `MainModule` called `Dpr.Battle.Logic.MainModule$$GetMaxFollowPokeLevel` which returns a `uint8_t`. This looks like the function that returns the max obeying level, so let's assume it is and test it.
    4. The function starts at the adress of `71020349e0`, which equates to an offset of `020349e0`.
 
-3. Add your new feature to the `src\mod\features\features.h` header file and call it from main.
+3. Add your new feature to the `src/mod/features/features.h` header file and call it from main.
 
     1. Let's add our new feature and call it `disobeying`. Usually the function names that we use are prefixed with `exl_` and suffixed with `_main`.
 
-    ```cpp title="src\mod\features\features.h"
+    ```cpp title="src/mod/features/features.h"
     // Removes the disobeying mechanic.
     void exl_disobeying_main();
     ```
 
-    2. Add a call to this function in `exl_feature_main()` in `src\mod\features\main.cpp` to enable our patch.
+    2. Add a call to this function in `exl_feature_main()` in `src/mod/features/main.cpp` to enable our patch.
 
-4. Create a `.cpp` file in the `src\mod\features` directory which states the offset to inject your code at, and the code to run.
+4. Create a `.cpp` file in the `src/mod/features` directory which states the offset to inject your code at, and the code to run.
 
-    1. Let's create a new file `src\mod\features\disobeying.cpp`.
+    1. Let's create a new file `src/mod/features/disobeying.cpp`.
     2. At the top of the file, I usually always add this include for feature files:
-    ```cpp title="src\mod\features\disobeying.cpp"
+    ```cpp title="src/mod/features/disobeying.cpp"
     #include "exlaunch.hpp"
     ```
     3. Define a hook to inject code into the wanted function. There are 3 types of hooks in ExLaunch that are detailed [here](hooks.md). For our purposes, we'll want a replace hook:
-    ```cpp title="src\mod\features\disobeying.cpp"
+    ```cpp title="src/mod/features/disobeying.cpp"
     HOOK_DEFINE_REPLACE(Dpr_Battle_Logic_MainModule_GetMaxFollowPokeLevel) {
       static uint8_t Callback(Dpr::Battle::Logic::MainModule::Object* __this) {
         // Setting the obedience threshold to always be Lv. 100.
@@ -143,7 +143,7 @@ This patch already exists in `src\mod\features\badge_check.cpp`. For demonstrati
     :::
 
     4. Now that the hook is defined, you can install it at the offset where the original function is that we found earlier (`020349e0`). Add the following definition of `exl_disobeying_main` to the bottom of the file:
-    ```cpp title="src\mod\features\disobeying.cpp"
+    ```cpp title="src/mod/features/disobeying.cpp"
     void exl_disobeying_main() {
       Dpr_Battle_Logic_MainModule_GetMaxFollowPokeLevel::InstallAtOffset(0x020349e0);
     }

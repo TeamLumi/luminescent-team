@@ -19,7 +19,7 @@ This guide assumes you're using Windows Subsystem for Linux. The setup is pretty
 - Python
 - The [Keystone-Engine](https://www.keystone-engine.org/) Python Module
 - CMake
-- [The ExLaunch Template](https://github.com/Martmists-GH/BDSP.git)
+- Either the [ExLaunch Template](https://github.com/Martmists-GH/BDSP_rombase) repo or the [Luminescent fork](https://github.com/TeamLumi/Luminescent_ExLaunch) of it
 
 ## Setting Up the Enviroment
 
