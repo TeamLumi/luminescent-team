@@ -64,14 +64,16 @@ export const PokemonAbility = ({ abilityName, isHiddenAbility, needsSpacing }) =
         {needsSpacing && ','}
       </Typography>
       <Modal open={open} onClose={handleClose}>
-        <Box style={{
+      <Box style={{
           position: 'absolute',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          backgroundColor: 'var(--ifm-color-content)',
-          color: 'var(--ifm-color-content-inverse)',
-          padding: '16px'
+          backgroundColor: 'var(--ifm-color-content-inverse)',
+          color: 'var(--ifm-color-content)',
+          padding: '16px',
+          borderRadius: '8px',
+          border: 'var(--ifm-table-border-width) solid var(--ifm-table-border-color)',
         }}
         >
           <Typography variant="h5" style={{ textAlign: 'center' }}>{abilityName}</Typography>
