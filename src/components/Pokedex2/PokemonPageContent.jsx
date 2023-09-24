@@ -65,7 +65,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       </Container>
 
       <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
-      <div className="container">
+      <div className="container" style={{marginBottom: '16px'}}>
         <EvolutionGraph pokemonID={pokemon.id}/>
       </div>
 
@@ -74,7 +74,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       </Container>
 
       <Container>
-        <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
+        <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row', marginBottom: '16px' } }}>
           <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginRight: '16px' }} />
           <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} />
         </Box>
