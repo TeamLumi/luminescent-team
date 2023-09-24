@@ -90,6 +90,9 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
           <PokemonMovesetList moveset={pokemon.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
+        <PokemonAccordion title="Moves learnt via Tutor" id="eggMoveset">
+          <PokemonMovesetList moveset={pokemon.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemon.id} />
+        </PokemonAccordion>
       </Container>
     </Container>
   );

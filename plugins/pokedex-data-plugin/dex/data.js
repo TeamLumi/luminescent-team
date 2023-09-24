@@ -27,6 +27,7 @@ const itemNames = require('../../../__gamedata/english_ss_itemname.json');
 //Custom files
 const moveEnum = require('../../../__gamedata/moveEnum.json');
 const smogonMoves = require('../../../__gamedata/smogonMoves.json');
+const tutorMoves = require('../../../__gamedata/tutorMoves.json');
 
 module.exports = {
   PersonalTable,
@@ -51,4 +52,5 @@ module.exports = {
   itemNames,
   moveEnum,
   smogonMoves,
+  tutorMoves
 };

@@ -8,6 +8,7 @@ const {
   PersonalTable,
   moveNames,
   moveInfo,
+  tutorMoves
 } = require('./data');
 const { getPokemonFormId } = require('./name');
 
@@ -149,6 +150,19 @@ function parseTmLearnsetSection(decimal) {
   return (decimal >>> 0).toString(2).split('').reverse().join('').padStart(32, 0);
 }
 
+function getTutorMoves(monsno = 0, formno = 0) {
+  if(monsno === 0) return [];
+  if(!Object.hasOwn(tutorMoves, monsno)) return [];
+  if(!Object.hasOwn(tutorMoves[monsno], formno)) return [];
+  const moveset = tutorMoves[monsno][formno];
+  const tutorSet = moveset.map(moveId => ({
+    moveLevel: 0,
+    move: getMoveProperties(moveId)
+  }));
+
+  return tutorSet;
+}
+
 module.exports = {
   generateMovesViaLearnset,
   getMoveId,
@@ -160,4 +174,5 @@ module.exports = {
   getPokemonLearnset,
   parseTmLearnsetSection,
   getLevelLearnset,
+  getTutorMoves
 };
