@@ -75,6 +75,12 @@ function normalizePokemonName(name) {
   return name.toLowerCase().replace(/\s+/g, '').replaceAll("'", '');
 }
 
+function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0) {
+	const { monsno } = PersonalTable.Personal[pokemonId];
+	const formno = FORM_MAP[monsno].indexOf(pokemonId);
+	return [monsno, formno];
+}
+
 module.exports = {
   getPokemonMonsnoFromName,
   getFormName,
@@ -86,4 +92,5 @@ module.exports = {
   createPokemonMap,
   POKEMON_NAME_MAP,
   normalizePokemonName,
+  getPokemonMonsNoAndFormNoFromPokemonId
 };
