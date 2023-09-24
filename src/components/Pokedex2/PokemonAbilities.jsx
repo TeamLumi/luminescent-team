@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box } from '@mui/system';
-import { Typography } from '@mui/material';
+import { Typography, Modal } from '@mui/material';
+import { getAbilityIdFromAbilityName, getAbilityInfo } from '../../utils/dex/ability';
 
 export const PokemonAbilities = ({ abilityName1, abilityName2, abilityNameHidden }) => {
   const allAbilitiesAreEqual = abilityName1 === abilityName2 && abilityName2 === abilityNameHidden;
@@ -43,11 +44,40 @@ export const PokemonAbilities = ({ abilityName1, abilityName2, abilityNameHidden
 };
 
 export const PokemonAbility = ({ abilityName, isHiddenAbility, needsSpacing }) => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
-    <Typography sx={{ textDecoration: 'underline', fontSize: '0.9rem', marginRight: needsSpacing && '8px' }}>
-      {abilityName}
-      {isHiddenAbility && ' (H)'}
-      {needsSpacing && ','}
-    </Typography>
+    <div style={{ display: 'inline' }}>
+      <Typography
+        sx={{ textDecoration: 'underline', fontSize: '0.9rem', marginRight: needsSpacing && '8px', cursor: 'pointer' }}
+        onClick={handleOpen}
+      >
+        {abilityName}
+        {isHiddenAbility && ' (H)'}
+        {needsSpacing && ','}
+      </Typography>
+      <Modal open={open} onClose={handleClose}>
+        <Box style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          backgroundColor: 'var(--ifm-color-content)',
+          color: 'var(--ifm-color-content-inverse)',
+          padding: '16px'
+        }}
+        >
+          <Typography variant="h5" style={{ textAlign: 'center' }}>{abilityName}</Typography>
+          <Typography variant="h6">{getAbilityInfo(getAbilityIdFromAbilityName(abilityName))}</Typography>
+        </Box>
+      </Modal>
+    </div>
   );
 };
