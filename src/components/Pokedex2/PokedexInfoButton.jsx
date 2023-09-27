@@ -14,7 +14,7 @@ export const PokemonInfoButton = () => {
 
     return (
         <Box display="flex" justifyContent="center" marginLeft="5px">
-          <Button variant="contained" onClick={handleOpen}>Features</Button>
+          <button onClick={handleOpen} style={{backgroundColor: 'var(--ifm-color-info)', borderRadius: '5px'}}>Features</button>
           <Modal open={open} onClose={handleClose}>
             <Box style={{
               position: 'absolute',
