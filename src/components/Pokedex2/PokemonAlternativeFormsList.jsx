@@ -10,7 +10,7 @@ export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
         <Box display="flex" flexWrap="wrap">
           {pokemonForms.map((form, i) => {
             return (
-              <Box key={`${form.name}-${i}`} display="flex" alignItems="center" margin="4px 16px 4px 4px">
+              <Box key={`${form.name}-${i}`} display="flex" alignItems="center" margin="4px 16px 16px 4px">
                 <ImageWithFallback
                   src={`/img/${form.imageSrc}`}
                   fallbackSrc={`/img/${pokemonForms[0].imageSrc}`}

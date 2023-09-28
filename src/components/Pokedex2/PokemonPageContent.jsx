@@ -12,6 +12,7 @@ import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
 import { PokemonEggGroups } from './PokemonEggGroups';
 import { ImageWithFallback } from '../common/ImageWithFallback';
+import { PokemonInfoButton } from './PokedexInfoButton';
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
   return (
@@ -19,6 +20,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       <Container>
         <Box display="flex" justifyContent="center" marginTop="16px">
           <PokemonSearchBox pokemonNames={pokemonNames} pokemonId={pokemon.id} />
+          <PokemonInfoButton />
         </Box>
       </Container>
       <div className="container">
@@ -65,7 +67,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       </Container>
 
       <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
-      <div className="container">
+      <div className="container" style={{marginBottom: '16px'}}>
         <EvolutionGraph pokemonID={pokemon.id}/>
       </div>
 
@@ -74,7 +76,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       </Container>
 
       <Container>
-        <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
+        <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row', marginBottom: '16px' } }}>
           <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginRight: '16px' }} />
           <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} />
         </Box>
@@ -93,6 +95,19 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
         <PokemonAccordion title="Moves learnt via Tutor" id="eggMoveset">
           <PokemonMovesetList moveset={pokemon.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
+      </Container>
+
+      <Container>
+        <Box style={{marginTop: '50px', marginBottom: '10px'}}>
+          <Typography variant="overline">
+            <b>Credits:</b><br/>
+          </Typography>
+          <Typography variant="caption">
+            Design based on the application by the <a href="https://github.com/Zarel/Pokemon-Showdown-Dex/graphs/contributors">Smogon Dex Team</a>, which can be found <a href="https://dex.pokemonshowdown.com/">here.</a><br/>
+            Specific credits for the full Pokédex application go to Denmark, Glup and A-A-ron from Team Luminescent. Smogon Dex Team credits are as follows:<br/> Zarel, Marty-D, scheibo, KrisXV, Karthik99999, AnnikaCodes, SadisticMystic, pyuk-bot, mia-pi-git, penpexgit, asgdf and jakobw.<br/>
+            This is the only section of the site where external inspiration was used.
+          </Typography>
+        </Box>
       </Container>
     </Container>
   );
