@@ -12,6 +12,7 @@ import { PokemonAbilities } from './PokemonAbilities';
 import { PokemonGenderRatio } from './PokemonGenderRatio';
 import { PokemonEggGroups } from './PokemonEggGroups';
 import { ImageWithFallback } from '../common/ImageWithFallback';
+import { PokemonItems } from './PokemonItems';
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
   return (
@@ -64,20 +65,23 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
         />
       </Container>
 
-      <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
+      <Box display="grid" gridTemplateColumns="repeat(9, 1fr)" gap={1}>
+        <Box gridColumn="span 5">
+          <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
+        </Box>
+        <Box gridColumn="span 4">
+          <PokemonItems pokemonId={pokemon.id}/>
+          <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginTop: '16px' }} />
+          <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} sx={{ marginTop: '16px' }} />
+        </Box>
+      </Box>
+
       <div className="container">
         <EvolutionGraph pokemonID={pokemon.id}/>
       </div>
 
       <Container>
         <PokemonAlternativeFormsList pokemonForms={pokemon.forms} />
-      </Container>
-
-      <Container>
-        <Box display="flex" sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
-          <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginRight: '16px' }} />
-          <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} />
-        </Box>
       </Container>
 
       <Container>

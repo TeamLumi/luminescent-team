@@ -6,6 +6,7 @@ const { getTypeName } = require('./types');
 const { getWeight, getHeight } = require('./details');
 const { getGrassKnotPower, getImage, getPokemonFormIndexById, getPokemonFormIds } = require('./functions');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./egggroup');
+const { getItemString } = require('./item')
 
 function getPokemon(pokemonId) {
   const p = PersonalTable.Personal[pokemonId];
@@ -53,6 +54,10 @@ function getPokemon(pokemonId) {
   const isValid = p.valid_flag === 1;
   const isBaseForm = p.form_index === 0;
 
+  const item1 = getItemString(p.item1)
+  const item2 = getItemString(p.item2)
+  const item3 = getItemString(p.item3)
+
   return {
     id,
     monsno,
@@ -76,6 +81,9 @@ function getPokemon(pokemonId) {
     forms,
     isValid,
     isBaseForm,
+    item1,
+    item2,
+    item3,
   };
 }
 
