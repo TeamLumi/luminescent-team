@@ -11,6 +11,7 @@ export const PokemonItems = ({ pokemonId }) => {
   const item3 = pokeInfo.item3
 
   const noItems = item1 === "None" && item2 === item1 && item3 === item1
+  const allItems = item1 !== "None" && item2 === item1 && item3 === item1
 
   return (
     <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>
@@ -19,15 +20,18 @@ export const PokemonItems = ({ pokemonId }) => {
           <Typography sx={{ fontWeight: 800, fontSize: '0.8rem' }}>Wild Held Items:</Typography>
         </Box>
       </>
-      {item1 !== "None" && (<ItemContainer item={item1} percentage={50} />)}
-      {item3 !== "None" && (<ItemContainer item={item3} percentage={45} />)}
-      {item2 !== "None" && (<ItemContainer item={item2} percentage={5} />)}
+      {(item1 !== "None" && !allItems) && (<ItemContainer item={item1} percentage={50} />)}
+      {(item3 !== "None" && !allItems) && (<ItemContainer item={item3} percentage={45} />)}
+      {(item2 !== "None" && !allItems) && (<ItemContainer item={item2} percentage={5} />)}
       {noItems && (
         <>
           <Box gridColumn="span 5">
             <Typography >This pokemon does not hold an item in the wild</Typography>
           </Box>
         </>
+      )}
+      {allItems && (
+        <ItemContainer item={item1} percentage={100} />
       )}
     </Box>
   );
