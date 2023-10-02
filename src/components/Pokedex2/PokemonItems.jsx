@@ -14,26 +14,28 @@ export const PokemonItems = ({ pokemonId }) => {
   const allItems = item1 !== "None" && item2 === item1 && item3 === item1
 
   return (
-    <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>
-      <>
-        <Box gridColumn="span 5">
-          <Typography sx={{ fontWeight: 800, fontSize: '0.8rem' }}>Wild Held Items:</Typography>
-        </Box>
-      </>
-      {(item1 !== "None" && !allItems) && (<ItemContainer item={item1} percentage={50} />)}
-      {(item3 !== "None" && !allItems) && (<ItemContainer item={item3} percentage={45} />)}
-      {(item2 !== "None" && !allItems) && (<ItemContainer item={item2} percentage={5} />)}
-      {noItems && (
+    <div style={{ marginTop: '30px' }}>
+      <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>
         <>
           <Box gridColumn="span 5">
-            <Typography >This Pokémon does not hold an item in the wild</Typography>
+            <Typography sx={{ fontWeight: 800, fontSize: '0.8rem' }}>Wild Held Items:</Typography>
           </Box>
         </>
-      )}
-      {allItems && (
-        <ItemContainer item={item1} percentage={100} />
-      )}
-    </Box>
+        {(item1 !== "None" && !allItems) && (<ItemContainer item={item1} percentage={50} />)}
+        {(item3 !== "None" && !allItems) && (<ItemContainer item={item3} percentage={45} />)}
+        {(item2 !== "None" && !allItems) && (<ItemContainer item={item2} percentage={5} />)}
+        {noItems && (
+          <>
+            <Box gridColumn="span 5">
+              <Typography >This Pokémon does not hold an item in the wild</Typography>
+            </Box>
+          </>
+        )}
+        {allItems && (
+          <ItemContainer item={item1} percentage={100} />
+        )}
+      </Box>
+    </div>
   );
 };
 
