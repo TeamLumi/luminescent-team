@@ -13,6 +13,7 @@ import { PokemonGenderRatio } from './PokemonGenderRatio';
 import { PokemonEggGroups } from './PokemonEggGroups';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
+import { PokemonInfoButton } from './PokedexInfoButton';
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
   return (
@@ -20,6 +21,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       <Container>
         <Box display="flex" justifyContent="center" marginTop="16px">
           <PokemonSearchBox pokemonNames={pokemonNames} pokemonId={pokemon.id} />
+          <PokemonInfoButton />
         </Box>
       </Container>
       <div className="container">
@@ -97,6 +99,19 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
         <PokemonAccordion title="Moves learnt via Tutor" id="eggMoveset">
           <PokemonMovesetList moveset={pokemon.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
+      </Container>
+
+      <Container>
+        <Box style={{marginTop: '50px', marginBottom: '10px'}}>
+          <Typography variant="overline">
+            <b>Credits:</b><br/>
+          </Typography>
+          <Typography variant="caption">
+            Design based on the application by the <a href="https://github.com/Zarel/Pokemon-Showdown-Dex/graphs/contributors">Smogon Dex Team</a>, which can be found <a href="https://dex.pokemonshowdown.com/">here.</a><br/>
+            Specific credits for the full Pokédex application go to Denmark, Glup and A-A-ron from Team Luminescent. Smogon Dex Team credits are as follows:<br/> Zarel, Marty-D, scheibo, KrisXV, Karthik99999, AnnikaCodes, SadisticMystic, pyuk-bot, mia-pi-git, penpexgit, asgdf and jakobw.<br/>
+            This is the only section of the site where external inspiration was used.
+          </Typography>
+        </Box>
       </Container>
     </Container>
   );
