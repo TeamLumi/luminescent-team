@@ -3,9 +3,15 @@ export const convertGenderRatioFromDecimal = (decimalValue) => {
     return { male: 100.0, female: 0.0 };
   }
   if (decimalValue < 254) {
-    return { 
-      male: 100-((100*(decimalValue-1))/253),
-      female: (100*(decimalValue-1))/253
+    const firstStep = decimalValue-1;
+    const secondStep = 100*firstStep;
+    const thirdStep = secondStep/253;
+    const female = parseFloat(thirdStep.toFixed(2));
+    const finalStep = 100-female;
+    const male = parseFloat(finalStep.toFixed(2));
+    return {
+      male: male,
+      female: female
     };
   }
   if (decimalValue === 254) {

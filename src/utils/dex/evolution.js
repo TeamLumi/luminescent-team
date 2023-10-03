@@ -11,7 +11,7 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
   const evolutionDetails = { ...EVOLUTION_METHOD_DETAILS[methodId] };
   const evoFunction = evolutionDetails.function;
   let evoMethod = evolutionDetails.method;
-  if (evolutionDetails.requiresLevel === true) {
+  if (evolutionDetails.requiresLevel) {
     evoMethod = "Level"
     evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, level);
   } else {

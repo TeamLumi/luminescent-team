@@ -2,7 +2,6 @@
   "name": "luminescent-team",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://teamlumi.github.io/luminescent-team-dev/",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
