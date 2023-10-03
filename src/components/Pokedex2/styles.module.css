@@ -189,6 +189,15 @@
   display: block;
 }
 
+@media (max-width: 800px) {
+  .pokeColumn {
+    grid-column: span 3 !important;
+  }
+  .secondPokeColumn {
+    grid-column: span 9 !important;
+  }
+}
+
 @media (max-width: 680px) {
   .evolutionContainer {
     width: 100%;
@@ -252,3 +261,4 @@
     border-right: none;
   }
 }
+

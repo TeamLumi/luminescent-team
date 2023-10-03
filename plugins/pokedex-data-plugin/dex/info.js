@@ -3,7 +3,7 @@ const { getTechMachineLearnset } = require('./moves');
 const { getPokemonName } = require('./name');
 const { getTypeName } = require('./types');
 const { getWeight, getHeight } = require('./details');
-
+const { getItemString } = require('./item');
 const { getGrassKnotPower, getImage, formatBaseStats, getPokemonFormIndexById } = require('./functions');
 
 const { PersonalTable } = require('./data');
@@ -36,6 +36,9 @@ function getPokemonInfo(monsno = 0, pokemonId = 0) {
     type2: getTypeName(p.type2),
     imageSrc: getImage(monsno, getPokemonFormIndexById(monsno, pokemonId)),
     genderDecimalValue: p.sex,
+    held_item1: p.item1,
+    held_item2: p.item2,
+    held_item3: p.item3,
   };
 }
 
