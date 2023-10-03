@@ -5,6 +5,7 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 ### Installation
 
 ```
+$ git clone
 $ fnm use
 $ npm install
 ```
@@ -12,6 +13,8 @@ $ npm install
 ### Plugin Setup
 
 Install the extension/plugin for your favorite IDE (VSCode, JetBrains, NVIM, ...).
+
+VSCode is the best!
 
 1. [EditorConfig](https://editorconfig.org/) - EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
 2. [Prettier](https://prettier.io/) - An opinionated code formatter

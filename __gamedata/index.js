@@ -27,7 +27,6 @@ import itemNames from './english_ss_itemname.json';
 //Custom files
 import moveEnum from './moveEnum.json';
 import smogonMoves from './smogonMoves.json';
-import EvolutionData from './evolution.json';
 
 export {
   PersonalTable,
@@ -52,5 +51,4 @@ export {
   itemNames,
   moveEnum,
   smogonMoves,
-  EvolutionData,
 };
