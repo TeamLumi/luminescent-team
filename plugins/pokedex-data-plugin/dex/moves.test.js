@@ -245,19 +245,34 @@ describe('Dex Utils Move Getters', () => {
   
     // Test case 4: Valid input, monsno and formno exist in tutorMoves
     it('returns an array of tutor moves for valid monsno and formno', () => {
-      const expectedResult = [{
+      const expectedResult = [
+          {
+            "move": {
+              "accuracy": 95,
+              "damageType": 2,
+              "desc": "The user attacks and captures opposing Pokémon using an electric net. This lowers their Speed stats.",
+              "maxPP": 24,
+              "moveId": 527,
+              "name": "Electroweb",
+              "power": 55,
+              "type": 12,
+            },
+            "moveLevel": 0,
+        },
+        {
           "move": {
-            "accuracy": 95,
-            "damageType": 2,
-            "desc": "The user attacks and captures opposing Pokémon using an electric net. This lowers their Speed stats.",
+            "accuracy": 101,
+            "damageType": 0,
+            "desc": "The user hardens its body’s surface like iron, sharply raising its Defense stat.",
             "maxPP": 24,
-            "moveId": 527,
-            "name": "Electroweb",
-            "power": 55,
-            "type": 12,
+            "moveId": 334,
+            "name": "Iron Defense",
+            "power": 0,
+            "type": 8,
           },
           "moveLevel": 0,
       }];
+      
       const result = getTutorMoves(11, 0);
       expect(result).toEqual(expectedResult);
     });
