@@ -2,10 +2,7 @@ import { getItemString } from './item';
 import { getMoveString } from './moves';
 import { getPokemonName } from './name';
 import { getTypeName } from './types';
-
-function doNothing(evoMethod, evolutionDetails) {
-  return [evolutionDetails, evoMethod];
-};
+import { doNothing } from './functions';
 
 export const REPLACE_STRING = "REPLACE";
 
