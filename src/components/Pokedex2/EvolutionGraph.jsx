@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { Box, Grid, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { getEvolutionMethodDetail, getEvolutionTree } from '../../utils/dex/evolution';
 import styles from './styles.module.css';
@@ -197,12 +198,14 @@ export default function EvolutionGraph(props) {
         const pokemonImages = monsNos.map((monsno, index) => (
           index === 0 ? (
             <Box className={styles.imageRow} key={monsno}>
-              <img
-                key={getPokemonIdFromMonsNoAndForm(monsno, formNos[index])}
-                src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
-                alt={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
-                title={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
-              />
+              <Link to={`/pokedex/${getPokemonIdFromMonsNoAndForm(monsno, formNos[index])}`}>
+                <img
+                  key={getPokemonIdFromMonsNoAndForm(monsno, formNos[index])}
+                  src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
+                  alt={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
+                  title={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
+                />
+              </Link>
             </Box>
           ) : ""
         ));
@@ -230,12 +233,14 @@ export default function EvolutionGraph(props) {
         <Grid container className={styles.evolutionContainer}>
           <Grid item xs={12} className={styles.scrollContent}>
             <Grid item xs={12} sm={6} className={styles.startPokemon}>
-              <img
-                key={pokemonID}
-                src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
-                alt={getPokemonName(pokemonID)}
-                title={getPokemonName(pokemonID)}
-              />
+              <Link to={`/pokedex/${pokemonID}`}>
+                <img
+                  key={pokemonID}
+                  src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
+                  alt={getPokemonName(pokemonID)}
+                  title={getPokemonName(pokemonID)}
+                />
+              </Link>
             </Grid>
             {renderEvolutionTree(evolutionTree, 1)}
             {secondEvolvesInto[0].evolvesInto.length >= 1 && (
