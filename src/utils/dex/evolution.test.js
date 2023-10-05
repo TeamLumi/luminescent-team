@@ -1,10 +1,17 @@
 import { getEvolutionMethodDetail, getEvolutionTree } from './evolution';
 
+import { getItemString } from './item';
+import { getMoveString } from './moves';
+import { getPokemonName } from './name';
+import { getTypeName } from './types';
+import { doNothing } from './functions';
+
 describe('getEvolutionMethodDetail', () => {
   it('Should return a valid method for a valid id', () => {
     const methodId = 1; // High Friendship
     const [ result, evoMethod ] = getEvolutionMethodDetail(methodId);
     const expected = {
+      "function": doNothing,
       method: 'Friendship',
       parameterType: 'None',
       requiresLevel: false,
@@ -17,6 +24,7 @@ describe('getEvolutionMethodDetail', () => {
     const methodParameter = 849 // Ice Stone
     const [ result, evoMethod ] = getEvolutionMethodDetail(methodId, methodParameter)
     const expected = {
+      function: getItemString,
       method: 'Use Ice Stone',
       parameterType: 'Item',
       requiresLevel: false,

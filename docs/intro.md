@@ -18,12 +18,13 @@ We hope you enjoy our romhack!
 
 ## Useful Links
 
-### [Pokédex](https://drive.google.com/drive/folders/1b3b3GDXKCP6KY1E0cMStnYg6y0gTPZYM)
+### [Pokédex](https://drive.google.com/drive/folders/16Kwc09xli5e9WdXBeE6Kcd5vQ6LdoW5b)
 
 - Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, locations, we've got everything here. If you need information on individual Pokémon, this is the page you want to peruse!
-- Includes locations and evolution methods for regional forms and evolutions.
+- Includes locations and evolution methods for regional forms and Luminescent exclusives.
+- Made by Hudie and the balance team.
 
-### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit?usp=sharing)
+### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit)
 
 - If you want to know what all Pokémon are on each route as you go, this document is for you. It lists all wild encounter locations in the game, and circumstances for Pokémon to spawn in.
 - You must make your own copy before it will work.
@@ -44,3 +45,11 @@ We hope you enjoy our romhack!
 ### [Randomization Guide](https://www.nexusmods.com/pokemonbdsp/articles/3)
 - This guide has all the information necessary to randomize Luminescent Platinum! Please follow it step by step to ensure proper implementation. Further questions can be asked in our discord, or as comments to the article.
 - Made by DJ.
+
+### [Luminescent Damage Calculator](https://denmark14.github.io/lumi-calc/?gen=8)
+- This page allows you to calculate all your moves ahead of time, using Luminescent's specific stat changes versus Luminescent's specific fights!
+- Made by (all of) Denmark.
+
+### [PKLumiHex](https://github.com/TalonSabre/PKLumiHex)
+- Luminescent's special PKHex branch. Please always back up your save before editing and read the github page to understand any current issues with the program.
+- Made by PrinceTalon.

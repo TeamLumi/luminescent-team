@@ -1,10 +1,7 @@
 import { EvolutionData } from '../../../__gamedata';
 import { EVOLUTION_METHOD_DETAILS, evolutionFunctions } from './evolutionConstants';
 import { getPokemonIdFromMonsNoAndForm } from './functions';
-import { getItemString } from './item';
-import { getMoveString, getMoveProperties } from './moves';
-import { getPokemonName } from './name';
-import { getTypeName } from './types';
+import { REPLACE_STRING } from './evolutionConstants';
 
 function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
   if (methodId === -1) {
@@ -12,23 +9,14 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
   }
   if (!Number.isInteger(methodId) || methodId < 0 || methodId > 47) throw new Error(`Bad method: ${methodId}`);
   const evolutionDetails = { ...EVOLUTION_METHOD_DETAILS[methodId] };
-  const evoFunction = evolutionFunctions[methodId];
+  const evoFunction = evolutionDetails.function;
   let evoMethod = evolutionDetails.method;
-  if (evoFunction === "Level") {
+  if (evolutionDetails.requiresLevel) {
     evoMethod = "Level"
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", level);
-  } else if (evoFunction === "getItemString") {
-    evoMethod = getItemString(methodParameter)
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", evoMethod);
-  } else if (evoFunction === "getMoveString") {
-    evoMethod = getMoveString(methodParameter)
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", evoMethod);
-  } else if (evoFunction === "getPokemonName") {
-    evoMethod = getPokemonName(methodParameter)
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", evoMethod);
-  } else if (evoFunction === "getMoveProperties") {
-    evoMethod = getTypeName(methodParameter)
-    evolutionDetails.method = evolutionDetails.method.replace("REPLACE", evoMethod);
+    evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, level);
+  } else {
+    evoMethod = evoFunction(methodParameter);
+    evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, evoFunction(methodParameter));
   }
   return [evolutionDetails, evoMethod];
 }

@@ -1,48 +1,64 @@
 :root {
-    --color-vibrant-border: hsl(0 0% 0% / 0.2);
-    --color-vibrant-border1: hsl(0 0% 0% / 0.6);
-    --type-min-width: 80px;
+  --color-vibrant-border: hsl(0 0% 0% / 0.2);
+  --color-vibrant-border1: hsl(0 0% 0% / 0.6);
+  --type-min-width: 80px;
 }
 
 .typeBg {
-    margin: 4px;
-    padding: 4px;
-    background: var(--type-color, #333);
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.25;
-    font-weight: 700;
-    border-color: var(--color-vibrant-border);
-    color: #fff;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0.25rem;
-    text-shadow: 0 1px 0 #000,0 0 1px rgba(0,0,0,.6),0 0 2px rgba(0,0,0,.7),0 0 3px rgba(0,0,0,.8),0 0 4px rgba(0,0,0,.9);
-    width: 30%;
+  margin: 4px;
+  padding: 4px;
+  background: var(--type-color, #333);
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.25;
+  font-weight: 700;
+  border-color: var(--color-vibrant-border);
+  color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  text-shadow: 0 1px 0 #000,0 0 1px rgba(0,0,0,.6),0 0 2px rgba(0,0,0,.7),0 0 3px rgba(0,0,0,.8),0 0 4px rgba(0,0,0,.9);
+  width: 30%;
 }
 
 .bTransparent {
-    border-color: transparent;
-    border-radius: 0.125rem;
-    border-style: solid;
-    border-width: 1px;
-    color: #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  border-color: transparent;
+  border-radius: 0.125rem;
+  border-style: solid;
+  border-width: 1px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--ifm-color-content-inverse);
+  color: var(--ifm-color-content);
+  padding: 16px;
+  border-radius: 8px;
+  border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+  overflow-y: auto;
+  width: 80%;
+  max-height: 80%;
+  max-width: 1200px;
 }
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: '0.25rem'
+  display: flex;
+  flex-wrap: wrap;
+  gap: '0.25rem'
 }
 
 .col {
-    float: left;
-    padding-top: 7px;
-    height: 22px;
-    font-size: 0.85rem;
+  float: left;
+  padding-top: 7px;
+  height: 22px;
+  font-size: 0.85rem;
 }
 
 .evolutionContainer {
@@ -85,7 +101,7 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  min-height: 340px;
+  min-height: 344px;
 }
 
 .firstMethodContainer {
@@ -135,6 +151,13 @@
   height: 170px;
 }
 
+.evoImages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100px;
+}
+
 .imageColumn {
   display: flex;
   flex-direction: column;
@@ -182,6 +205,15 @@
   display: block;
 }
 
+@media (max-width: 800px) {
+  .pokeColumn {
+    grid-column: span 3 !important;
+  }
+  .secondPokeColumn {
+    grid-column: span 9 !important;
+  }
+}
+
 @media (max-width: 680px) {
   .evolutionContainer {
     width: 100%;
@@ -214,7 +246,7 @@
     flex-direction: row;
     width: 100%;
     border-bottom: none;
-    max-width: 300px;
+    max-width: 600px;
   }
   .scrollContent:has(.secondEvolution) .imageColumn {
     flex-direction: row;

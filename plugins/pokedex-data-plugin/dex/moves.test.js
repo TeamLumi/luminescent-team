@@ -8,6 +8,7 @@ import {
   getMoveProperties,
   getPokemonLearnset,
   parseTmLearnsetSection,
+  getTutorMoves
 } from './moves';
 
 describe('Dex Utils Move Getters', () => {
@@ -221,6 +222,59 @@ describe('Dex Utils Move Getters', () => {
         power: 0,
         accuracy: 0,
       });
+    });
+  });
+  describe('getTutorMoves', () => {
+    // Test case 1: monsno === 0
+    it('returns an empty array when monsno is 0', () => {
+      const result = getTutorMoves(0);
+      expect(result).toEqual([]);
+    });
+  
+    // Test case 2: !Object.hasOwn(tutorMoves, monsno)
+    it('returns an empty array when monsno does not exist in tutorMoves', () => {
+      const result = getTutorMoves(9999); // Assuming 9999 doesn't exist in tutorMoves
+      expect(result).toEqual([]);
+    });
+  
+    // Test case 3: !Object.hasOwn(tutorMoves[monsno], formno)
+    it('returns an empty array when formno does not exist for monsno in tutorMoves', () => {
+      const result = getTutorMoves(1, 3); // Assuming formno 3 doesn't exist for monsno 1
+      expect(result).toEqual([]);
+    });
+  
+    // Test case 4: Valid input, monsno and formno exist in tutorMoves
+    it('returns an array of tutor moves for valid monsno and formno', () => {
+      const expectedResult = [
+          {
+            "move": {
+              "accuracy": 95,
+              "damageType": 2,
+              "desc": "The user attacks and captures opposing Pokémon using an electric net. This lowers their Speed stats.",
+              "maxPP": 24,
+              "moveId": 527,
+              "name": "Electroweb",
+              "power": 55,
+              "type": 12,
+            },
+            "moveLevel": 0,
+        },
+        {
+          "move": {
+            "accuracy": 101,
+            "damageType": 0,
+            "desc": "The user hardens its body’s surface like iron, sharply raising its Defense stat.",
+            "maxPP": 24,
+            "moveId": 334,
+            "name": "Iron Defense",
+            "power": 0,
+            "type": 8,
+          },
+          "moveLevel": 0,
+      }];
+      
+      const result = getTutorMoves(11, 0);
+      expect(result).toEqual(expectedResult);
     });
   });
 });

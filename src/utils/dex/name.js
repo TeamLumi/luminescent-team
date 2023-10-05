@@ -63,12 +63,6 @@ function getPokemonMonsnoFromName(pokemonName) {
   return basePokemonNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === pokemonName);
 }
 
-function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0) {
-	const { monsno } = PersonalTable.Personal[pokemonId];
-	const formno = FORM_MAP[monsno].indexOf(pokemonId);
-	return [monsno, formno];
-}
-
 function getPokemonNames(to, from = 0) {
   if (typeof to !== 'number' || to < 0) return [];
   return POKEMON_NAME_LIST.slice(from, to);
@@ -76,6 +70,12 @@ function getPokemonNames(to, from = 0) {
 
 function getPokemonFormId(monsno = 0, id) {
   return FORM_MAP[monsno]?.findIndex((e) => e === id) ?? -1;
+}
+
+function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0) {
+	const { monsno } = PersonalTable.Personal[pokemonId];
+	const formno = FORM_MAP[monsno].indexOf(pokemonId);
+	return [monsno, formno];
 }
 
 export {
@@ -88,5 +88,5 @@ export {
   getPokemonFormId,
   createPokemonMap,
   POKEMON_NAME_MAP,
-  getPokemonMonsNoAndFormNoFromPokemonId,
+  getPokemonMonsNoAndFormNoFromPokemonId
 };

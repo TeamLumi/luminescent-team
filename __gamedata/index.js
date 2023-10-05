@@ -52,5 +52,5 @@ export {
   itemNames,
   moveEnum,
   smogonMoves,
-  EvolutionData,
+  EvolutionData
 };

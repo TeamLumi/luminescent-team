@@ -5,6 +5,7 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 ### Installation
 
 ```
+$ git clone
 $ fnm use
 $ npm install
 ```
@@ -12,6 +13,8 @@ $ npm install
 ### Plugin Setup
 
 Install the extension/plugin for your favorite IDE (VSCode, JetBrains, NVIM, ...).
+
+VSCode is the best!
 
 1. [EditorConfig](https://editorconfig.org/) - EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
 2. [Prettier](https://prettier.io/) - An opinionated code formatter
@@ -63,3 +66,43 @@ More info under: https://web.dev/codelab-serve-images-webp/
 
 1. `brew install webp`
 2. ``$ `for file in IMAGES/*; do cwebp -q 85 "$file" -o "${file%.*}.webp"; done` `` - replace `IMAGES` with folder location, don't forget the backtick quotes for the inline script
+
+### License
+
+This project is distributed under the terms of the [AGPLv3](https://www.gnu.org/licenses/agpl-3.0.html).
+
+### Pokédex 
+
+The Pokédex section of the application takes inspiration from the [Pokémon Showdown Pokédex](https://dex.pokemonshowdown.com/), which can be found [here](https://github.com/Zarel/Pokemon-Showdown-Dex).
+
+
+### Credits
+
+Team Lumi:
+
+Mr. Hero\
+Denmark\
+Glup\
+A-A-ron\
+DJ\
+TTIN\
+Leoparodo\
+Ai0796\
+SaltContainer\
+Solarance
+
+As I am unaware of the specific member who designed the sections of the [Pokémon Showdown Pokédex](https://dex.pokemonshowdown.com/) that we took inspiration from, I will be accrediting every [public contributor](https://github.com/Zarel/Pokemon-Showdown-Dex/graphs/contributors) of the [hosted repository](https://github.com/Zarel/Pokemon-Showdown-Dex/tree/master), henceforth referred to as the Smogon Dex Team. If any of the below members desire their name removed, or have any questions, please contact Team Luminescent via [Discord](https://discord.com/invite/luminescent).
+
+Zarel\
+Marty-D\
+scheibo\
+KrisXV\
+Karthik99999\
+AnnikaCodes\
+SadisticMystic\
+pyuk-bot\
+mia-pi-git\
+penpexgit\
+asgdf\
+jakobw
+

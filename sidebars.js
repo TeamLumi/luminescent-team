@@ -52,6 +52,7 @@ const sidebars = {
   'evolutions',
   'npc',
   'items',
+  'pickup',
   'mods',
   'changelog',
   ],
