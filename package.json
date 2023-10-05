@@ -1,6 +1,7 @@
 {
   "name": "luminescent-team",
   "version": "0.0.0",
+  "homepage": "https://teamlumi.github.io/luminescent-team-dev/",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
