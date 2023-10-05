@@ -30,7 +30,8 @@ export const PokemonItems = ({ pokemonId }) => {
               sx={{
                 textDecoration: (!allItems && !noItems) ? 'underline' : "",
                 fontWeight: 800,
-                fontSize: '0.8rem'
+                fontSize: '0.8rem',
+                cursor: (!allItems && !noItems) ? 'pointer' : null,
               }}
               onClick={handleOpen}
             >
