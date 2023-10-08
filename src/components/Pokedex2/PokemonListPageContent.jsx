@@ -4,7 +4,6 @@ import { PokemonSearchInput } from './PokemonSearchInput';
 import { FixedSizeList } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { PokemonMoveType, TYPE_COLOR_MAP } from './PokemonMovesetList';
-import { PokemonAbilities } from './PokemonAbilities';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -19,7 +18,7 @@ export const PokemonListPageContent = ({ pokemonList }) => {
         </Typography>
         <PokemonSearchInput allPokemons={pokemonList} setPokemons={setPokemons} />
 
-        <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: 0 }}>
+        <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>
           <AutoSizer>
             {({ height, width }) => (
               <FixedSizeList itemCount={pokemons.length} itemSize={60} height={height} width={width}>
