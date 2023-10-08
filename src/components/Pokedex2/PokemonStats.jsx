@@ -26,12 +26,12 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
 
   return (
     <div className="container" style={{ marginTop: '25px' }}>
-      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={1}>
+      <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>
         <>
-          <Box gridColumn="span 7">
+          <Box gridColumn="span 5">
             <Typography variant="h6">Base Stats:</Typography>
           </Box>
-          <Box gridColumn="span 1">
+          {/* <Box gridColumn="span 1">
             <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
               min-
             </Typography>
@@ -51,7 +51,7 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
               max+
             </Typography>
           </Box>
-          <Box gridColumn="span 1" />
+          <Box gridColumn="span 1" /> */}
         </>
 
         {pokemonStatValues.map((stat) => {
@@ -70,7 +70,7 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
                   <PokemonStatBar width={width} color={color} />
                 </Box>
               </Box>
-              <Box gridColumn="span 2" />
+              {/* <Box gridColumn="span 2" />
               <Box gridColumn="span 1">
                 <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
                   {calcMinNegStat(stat.value, stat.isHpStat, level)}
@@ -91,7 +91,7 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
                   {calcMaxPosStat(stat.value, stat.isHpStat, level)}
                 </Typography>
               </Box>
-              <Box gridColumn="span 1" />
+              <Box gridColumn="span 1" /> */}
             </Fragment>
           );
         })}
@@ -103,8 +103,8 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
           <Box gridColumn="span 1">
             <Typography>{baseStatsTotal}</Typography>
           </Box>
-          <Box gridColumn="span 5" />
-          <Box gridColumn="span 4">
+          <Box gridColumn="span 3" />
+          {/* <Box gridColumn="span 4">
             <Box alignItems="center" justifyContent="center" sx={{ display: { xs: 'none', sm: 'flex' } }}>
               <Typography variant="body1" component="p" marginRight="12px">
                 at level
@@ -125,7 +125,7 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
                 label="Level"
               />
             </Box>
-          </Box>
+          </Box> */}
         </>
       </Box>
     </div>

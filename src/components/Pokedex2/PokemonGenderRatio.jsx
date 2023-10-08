@@ -6,7 +6,7 @@ export const PokemonGenderRatio = ({ genderDecimalValue }) => {
   const genderRatio = convertGenderRatioFromDecimal(genderDecimalValue);
 
   return (
-    <Box>
+    <Box sx={{ marginTop: "16px"}}>
       <Typography sx={{ fontWeight: 800, fontSize: '0.8rem' }}>Gender ratio:</Typography>
       <Container>
         <PokemonGenderText malePercentage={genderRatio.male} femalePercentage={genderRatio.female} />

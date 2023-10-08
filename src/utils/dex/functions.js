@@ -46,6 +46,10 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno) {
   return PersonalTable.Personal.find((e) => e.monsno === monsno && FORM_MAP[e.monsno][formno] === e.id)?.id;
 }
 
+function doNothing(evoMethod, evolutionDetails) {
+  return [evolutionDetails, evoMethod];
+};
+
 export {
   FORM_MAP,
   getPokemonIdFromFormMap,
@@ -55,4 +59,5 @@ export {
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
+  doNothing,
 };

@@ -1,12 +1,42 @@
 import * as React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { getEvolutionMethodDetail, getEvolutionTree } from '../../utils/dex/evolution';
+import styles from './styles.module.css';
+import { getPokemonImageFilename } from '../../core/pokemonFormSelector';
+import { getPokemonMonsNoAndFormNoFromPokemonId, getPokemonName } from '../../utils/dex/name';
+import { getItemImageUrl, getTMImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
+import { getMoveString, getMoveProperties } from '../../utils/dex/moves';
+import { getTypeName } from '../../utils/dex/types';
+import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
+import { getItemString } from '../../utils/dex/item';
 
-/**
- * WIP, styling and logic implementation is TBD
- */
-export default function EvolutionGraph() {
-  return (
+const LEVEL = "Level"
+const FRIENDSHIP = "Friendship"
+const DAY = "Day"
+const NIGHT = "Night"
+const MOSS_ROCK = "Moss Rock"
+const ICE_ROCK = "Ice Rock"
+const FEMALE = "Female"
+const MALE = "Male"
+
+export default function EvolutionGraph(props) {
+  const evolutionTree = getEvolutionTree(props.pokemonID);
+  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId);
+  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo)
+  const defaultEvo = {
+    pokemonId: -1,
+    evolutionDetails: {
+      formNos: [-1],
+      levels: [-1],
+      methodIds: [-1],
+      methodParameters: [-1],
+      monsNos: [-1],
+    },
+    evolvesInto: [],
+  };
+
+  let fullEvolutionTree = (
     <div className="container">
       <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
         <span className="col col-12">
@@ -16,13 +46,205 @@ export default function EvolutionGraph() {
         </span>
       </div>
 
-      <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center">
-        <img src={useBaseUrl('/img/pm0001_00_00_00_L.webp')} alt="Stage 1 Evo" />
-        <Typography variant="h6">→</Typography>
-        <img src={useBaseUrl('/img/pm0002_00_00_00_L.webp')} alt="Stage 2 Evo" />
-        <Typography variant="h6">→</Typography>
-        <img src={useBaseUrl('/img/pm0003_00_00_00_L.webp')} width={90} alt="Stage 3 Evo" />
-      </Box>
+      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+        <span className="col col-12">
+          <Typography variant="h6" sx={{ margin: 'auto' }}>
+            Does Not Evolve
+          </Typography>
+        </span>
+      </div>
     </div>
   );
+
+  const secondEvolvesInto = evolutionTree.evolvesInto;
+  if (secondEvolvesInto.length === 0) {
+    return fullEvolutionTree
+  }
+
+  if (secondEvolvesInto.length > 1) {
+    if (secondEvolvesInto[0].evolvesInto.length > 0) {
+      secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+    } else if (secondEvolvesInto[1].evolvesInto.length > 0) {
+      secondEvolvesInto[0].evolvesInto.push(defaultEvo)
+      secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+    }
+  }
+
+  const renderEvolutions = (methods, pokemonImages, methodIndex) => {
+    const methodStyle = methodIndex === 1 ? (
+      styles.firstMethodContainer
+      ) : (styles.secondMethodContainer)
+    return methods.map((method, index) => (
+      <Grid container className={styles.evolutionDetails} key={index}>
+        <Grid item xs={6} sm={6} className={methodStyle}>
+          {method}
+        </Grid>
+        <Grid item xs={6} sm={6} className={styles.imageColumn}>
+          {pokemonImages[index]}
+        </Grid>
+      </Grid>
+    ));
+  };
+
+  const renderItemImage = (evoMethod, methodParameter, methodDetail) => {
+    const evoFunction = methodDetail.function.name;
+    const evoImages = [];
+    if (methodDetail.method.includes(LEVEL)) {
+      evoImages.push(getItemImageUrl("Rare Candy"));
+    } else if (evoFunction === getItemString.name) {
+      evoImages.push(getItemImageUrl(evoMethod));
+    } else if (evoFunction === getMoveString.name) {
+      const moveType = getTypeName(getMoveProperties(methodParameter).type);
+      evoImages.push(getTMImageUrl(moveType));
+    } else if (evoFunction === getPokemonName.name) {
+      evoImages.push(`img/${getPokemonImageFilename(methodParameter, 0)}`);
+    } else if (evoFunction === getTypeName.name) {
+      const moveType = getTypeName(methodParameter);
+      evoImages.push(getTMImageUrl(moveType));
+    }
+    if (methodDetail.method.includes(FRIENDSHIP)) {
+      evoImages.push(getItemImageUrl("Soothe Bell"))
+    }
+    if (methodDetail.method.includes(DAY)) {
+      evoImages.push("/img/Sun.webp")
+    } else if (methodDetail.method.includes(NIGHT)) {
+      evoImages.push("/img/Moon.webp")
+    }
+    if (methodDetail.method.includes(MOSS_ROCK)) {
+      evoImages.push("/img/Moss Rock.webp")
+    } else if (methodDetail.method.includes(ICE_ROCK)) {
+      evoImages.push("/img/Ice Rock.webp")
+    }
+    if (methodDetail.method.includes(MALE)) {
+      evoImages.push("/img/male.webp")
+    } else if (methodDetail.method.includes(FEMALE)) {
+      evoImages.push("/img/female.webp")
+    }
+    return evoImages;
+  };
+
+  const renderSecondMethod = (methodId, methodParameter, level) => {
+    const [methodDetail, evoMethod] = getEvolutionMethodDetail(methodId, methodParameter, level);
+    const evoImages = renderItemImage(evoMethod, methodParameter, methodDetail);
+
+    return (
+      <>
+        Or
+        <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
+          {evoImages.map((image, index) => (
+            <img key={index} src={useBaseUrl(image)} width="40" alt="" />
+          ))}
+        </Box>
+        {methodDetail.method}
+      </>
+    )
+  };
+
+  const renderMethods = (methodIds, methodParameters, levels) => {
+    const firstMethodId = methodIds[0];
+    if (firstMethodId === -1) {
+      return (
+        <Box className={styles.method}>
+        </Box>
+      )
+    }
+    const firstMethodParameter = parseInt(methodParameters[0]);
+    const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, levels[0]);
+
+    const evoImages = renderItemImage(firstEvoMethod, firstMethodParameter, firstMethodDetail);
+    return (
+      <Box className={styles.method}>
+        {firstMethodDetail.method}
+        <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
+          {evoImages.map((image, index) => (
+            <img key={index} src={useBaseUrl(image)} width="40" alt="" />
+          ))}
+        </Box>
+        {methodIds.length > 1 && (
+          renderSecondMethod(methodIds[1], methodParameters[1], levels[1])
+        )}
+      </Box>
+    );
+  };
+
+  const renderEvolutionTree = (tree, methodIndex) => {
+    const evolutionStyle = methodIndex === 1 ? (
+      styles.firstEvolution
+      ) : (styles.secondEvolution)
+    const { evolvesInto } = tree;
+
+    // Collect data for methods and images from all evolutions
+    const allMethods = [];
+    const allImages = [];
+
+    evolvesInto.forEach((evolution) => {
+      const { 
+        methodIds,
+        methodParameters,
+        monsNos,
+        formNos,
+        levels
+      } = evolution.evolutionDetails;
+      const methods = renderMethods(methodIds, methodParameters, levels);
+      allMethods.push(methods);
+
+      if (methodIds[0] === -1) {
+        const pokemonImages = (
+          <Box className={styles.imageRow} key="Blank"></Box>
+        );
+        allImages.push(pokemonImages);
+      } else {
+        const pokemonImages = monsNos.map((monsno, index) => (
+          index === 0 ? (
+            <Box className={styles.imageRow} key={monsno}>
+              <img
+                key={getPokemonIdFromMonsNoAndForm(monsno, formNos[index])}
+                src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
+                alt={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
+                title={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
+              />
+            </Box>
+          ) : ""
+        ));
+        allImages.push(pokemonImages);
+      }
+    });
+
+    // Render a single firstEvolution component with all methods and images
+    return (
+      <Grid container className={evolutionStyle}>
+        {renderEvolutions(allMethods, allImages, methodIndex)}
+      </Grid>
+    );
+  };
+
+  if (secondEvolvesInto.length > 0) {
+    fullEvolutionTree = (
+      <Grid container>
+        <Grid item xs={12}>
+          <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
+            Evolutions
+          </Typography>
+        </Grid>
+
+        <Grid container className={styles.evolutionContainer}>
+          <Grid item xs={12} className={styles.scrollContent}>
+            <Grid item xs={12} sm={6} className={styles.startPokemon}>
+              <img
+                key={pokemonID}
+                src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
+                alt={getPokemonName(pokemonID)}
+                title={getPokemonName(pokemonID)}
+              />
+            </Grid>
+            {renderEvolutionTree(evolutionTree, 1)}
+            {secondEvolvesInto[0].evolvesInto.length >= 1 && (
+              renderEvolutionTree(secondEvolvesInto[0], 2)
+            )}  
+          </Grid>
+        </Grid>
+      </Grid>
+    );
+  }
+  return (fullEvolutionTree);
 }
