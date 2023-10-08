@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[44837],{19310:e=>{e.exports="/pokedex/nidorina"}}]);

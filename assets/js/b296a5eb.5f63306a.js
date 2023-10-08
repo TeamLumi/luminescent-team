@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[25945],{90214:e=>{e.exports="/pokedex/golbat"}}]);

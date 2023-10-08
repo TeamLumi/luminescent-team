@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[12397],{64228:e=>{e.exports="/pokedex/remoraid"}}]);

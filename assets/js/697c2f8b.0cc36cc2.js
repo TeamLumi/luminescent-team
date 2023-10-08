@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[78649],{3756:e=>{e.exports="/pokedex/swalot"}}]);

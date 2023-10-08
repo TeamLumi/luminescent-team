@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[88708],{68129:e=>{e.exports="/pokedex/infernape"}}]);

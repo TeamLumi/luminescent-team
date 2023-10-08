@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[56070],{49908:e=>{e.exports="/pokedex/porygon-z"}}]);
