@@ -1,16 +1,18 @@
 const { PersonalTable } = require('./data');
 const { getAbilityString } = require('./ability');
-const { getTechMachineLearnset, getLevelLearnset, getEggMoves } = require('./moves');
-const { getPokemonName } = require('./name');
+const { getTechMachineLearnset, getLevelLearnset, getEggMoves, getTutorMoves } = require('./moves');
+const { getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
 const { getTypeName } = require('./types');
 const { getWeight, getHeight } = require('./details');
 const { getGrassKnotPower, getImage, getPokemonFormIndexById, getPokemonFormIds } = require('./functions');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./egggroup');
+const { getItemString } = require('./item')
 
 function getPokemon(pokemonId) {
   const p = PersonalTable.Personal[pokemonId];
   const id = p.id;
   const monsno = p.monsno;
+  const [_, formno] = getPokemonMonsNoAndFormNoFromPokemonId(p.id);
   const name = getPokemonName(p.id);
   const baseStats = {
     hp: p.basic_hp,
@@ -39,6 +41,7 @@ function getPokemon(pokemonId) {
     level: getLevelLearnset(pokemonId),
     tm: getTechMachineLearnset(p.machine1, p.machine2, p.machine3, p.machine4),
     egg: getEggMoves(pokemonId),
+    tutor: getTutorMoves(monsno, formno)
   };
   const eggGroupNames = getEggGroupViaPokemonId(p.id).map((eggId) => getEggGroupNameById(eggId));
   const forms = getPokemonFormIds(p.monsno).map((formId) => {
@@ -50,6 +53,10 @@ function getPokemon(pokemonId) {
 
   const isValid = p.valid_flag === 1;
   const isBaseForm = p.form_index === 0;
+
+  const item1 = getItemString(p.item1)
+  const item2 = getItemString(p.item2)
+  const item3 = getItemString(p.item3)
 
   return {
     id,
@@ -74,6 +81,9 @@ function getPokemon(pokemonId) {
     forms,
     isValid,
     isBaseForm,
+    item1,
+    item2,
+    item3,
   };
 }
 

@@ -167,8 +167,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/TeamLumi/luminescent-team',
+                href: 'https://github.com/orgs/TeamLumi/repositories',
               },
+              {
+                label: 'Source Code',
+                href: 'https://github.com/TeamLumi/luminescent-team'
+              }
             ],
           },
         ],
