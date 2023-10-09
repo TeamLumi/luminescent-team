@@ -14,6 +14,7 @@ import { PokemonEggGroups } from './PokemonEggGroups';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
+import { getTechMachineLearnset } from '../../utils/dex/moves';
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
   return (
@@ -91,7 +92,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
           <PokemonMovesetList moveset={pokemon.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={pokemon.learnset.tm} movesetPrefix="tm" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={getTechMachineLearnset(pokemon.id)} movesetPrefix="tm" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
           <PokemonMovesetList moveset={pokemon.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemon.id} />

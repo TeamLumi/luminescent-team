@@ -137,7 +137,7 @@ function getTechMachineLearnset(pokemonId = 0) {
     const isLearnable = learnset[legalitySetValue - 1];
 
     if (isLearnable) {
-      canLearn.push({ level: 'tm', moveId: tm.wazaNo });
+      canLearn.push({ level: 'tm', move: getMoveProperties(tm.wazaNo) });
     }
   }
 
