@@ -1,0 +1,11 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+ul, li {
+    padding: 0;
+    padding-right: 5px;
+    list-style: none;
+  }
+  
