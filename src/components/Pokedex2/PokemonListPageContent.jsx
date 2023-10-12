@@ -6,6 +6,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 import { PokemonMoveType, TYPE_COLOR_MAP } from './PokemonMovesetList';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { PokemonInfoButton } from './PokedexInfoButton';
 
 export const PokemonListPageContent = ({ pokemonList }) => {
   const [pokemons, setPokemons] = useState(pokemonList);
@@ -16,7 +17,12 @@ export const PokemonListPageContent = ({ pokemonList }) => {
         <Typography variant="h2" component="h1">
           Pokemon
         </Typography>
-        <PokemonSearchInput allPokemons={pokemonList} setPokemons={setPokemons} />
+
+        <Box display="flex" marginTop="16px">
+          <PokemonSearchInput allPokemons={pokemonList} setPokemons={setPokemons} />
+          <PokemonInfoButton />
+        </Box>
+
 
         <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>
           <AutoSizer>
