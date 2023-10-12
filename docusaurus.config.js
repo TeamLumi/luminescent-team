@@ -116,8 +116,8 @@ const config = {
           },
           { to: '/rom-hacking', label: 'ROM Hacking', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
-          ...(isDexEnabled ? [{ to: '/dex', label: 'Pokedex', position: 'left' }] : []),
-          ...(isPokedexEnabled ? [{ to: POKEDEX_BASE_PATH, label: 'Pokedex', position: 'left' }] : []),
+          ...(isDexEnabled ? [{ to: '/dex', label: 'Pokédex', position: 'left' }] : []),
+          ...(isPokedexEnabled ? [{ to: POKEDEX_BASE_PATH, label: 'Pokédex', position: 'left' }] : []),
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',

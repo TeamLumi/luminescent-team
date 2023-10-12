@@ -5,8 +5,8 @@ import { PokemonListPageContent } from '../components/Pokedex2/PokemonListPageCo
 const PokedexListPage = ({ pokemonList }) => {
   return (
     <Layout
-      title="Pokedex"
-      description="Pokemon Luminescent Version, A ROM Hack for Pokemon Brilliant Diamond and Shining Pearl"
+      title="Pokédex"
+      description="Pokémon Luminescent Version, A ROM Hack for Pokémon Brilliant Diamond and Shining Pearl"
     >
       <PokemonListPageContent pokemonList={pokemonList} />
     </Layout>

@@ -15,7 +15,7 @@ export const PokemonListPageContent = ({ pokemonList }) => {
     <Container sx={{ flex: '1 1 auto', display: 'flex', flexDirection: 'column' }}>
       <Box display="flex" flexDirection="column" flex="1 1 auto">
         <Typography variant="h2" component="h1">
-          Pokemon
+          Pokémon
         </Typography>
 
         <Box display="flex" marginTop="16px">

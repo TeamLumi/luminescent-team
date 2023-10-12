@@ -31,7 +31,7 @@ export const PokemonSearchBox = ({ pokemonNames, pokemonId }) => {
           </li>
         );
       }}
-      renderInput={(params) => <TextField {...params} label="Search Pokemon" />}
+      renderInput={(params) => <TextField {...params} label="Search Pokémon" />}
     />
   );
 };

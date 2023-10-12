@@ -11,7 +11,7 @@ export default function PokemonPage({ pokemon, pokemonList }) {
   return (
     <Layout
       title={pokemon.name}
-      description="Pokemon Luminescent Version, A ROM Hack for Pokemon Brilliant Diamond and Shining Pearl"
+      description="Pokémon Luminescent Version, A ROM Hack for Pokémon Brilliant Diamond and Shining Pearl"
     >
       <PokemonPageContent pokemon={pokemon} pokemonNames={pokemonList} />
     </Layout>
