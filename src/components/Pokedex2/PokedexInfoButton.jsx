@@ -25,7 +25,10 @@ export const PokemonInfoButton = () => {
                 Please note: On Firefox, the evolution graph may display improperly for mobile devices or thin windows.
               </Typography>
               <Typography variant="h6">
-                This site documents all Pokémon available in Luminescent Platinum 2.0F, including their types, abilities, stats, evolution methods, forms, wild held items, and movesets. It currently does not include locations, but you may use our <a href="https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit">Pokémon Locations by Route documentation</a> or the Pokédex channel in our <a href="https://discord.gg/luminescent">Discord</a> to access that information in the meanwhile.
+                This site documents all Pokémon available in Luminescent Platinum 2.0F, including their types, abilities, stats, evolution methods, forms, 
+                wild held items, and movesets. It currently does not include locations, but you may use our 
+                <a href="https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit">Pokémon Locations by Route documentation</a> or the Pokédex channel in our 
+                <a href="https://discord.gg/luminescent">Discord</a> to access that information in the meanwhile.
                 <br/><br/>
                 Mobile users will need to swap from portrait to landscape mode if they wish to see full move descriptions in the appropriate drop downs.
                 <br/><br/>
