@@ -32,6 +32,21 @@
   text-overflow: ellipsis;
 }
 
+.infoButton {
+  background: var(--ifm-color-info);
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.25;
+  font-weight: 700;
+  height: 56px;
+  border-color: #4F92D6;
+  color: #fff;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0.25rem;
+  text-shadow: 0 1px 0 #000,0 0 1px rgba(0,0,0,.6),0 0 2px rgba(0,0,0,.7),0 0 3px rgba(0,0,0,.8),0 0 4px rgba(0,0,0,.9);
+}
+
 .modalBox {
   position: absolute;
   top: 50%;

@@ -4,9 +4,9 @@ import { PokemonSearchInput } from './PokemonSearchInput';
 import { FixedSizeList } from 'react-window';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { PokemonMoveType, TYPE_COLOR_MAP } from './PokemonMovesetList';
-import { PokemonAbilities } from './PokemonAbilities';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { PokemonInfoButton } from './PokedexInfoButton';
 
 export const PokemonListPageContent = ({ pokemonList }) => {
   const [pokemons, setPokemons] = useState(pokemonList);
@@ -15,11 +15,16 @@ export const PokemonListPageContent = ({ pokemonList }) => {
     <Container sx={{ flex: '1 1 auto', display: 'flex', flexDirection: 'column' }}>
       <Box display="flex" flexDirection="column" flex="1 1 auto">
         <Typography variant="h2" component="h1">
-          Pokemon
+          Pokémon
         </Typography>
-        <PokemonSearchInput allPokemons={pokemonList} setPokemons={setPokemons} />
 
-        <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: 0 }}>
+        <Box display="flex" marginTop="16px">
+          <PokemonSearchInput allPokemons={pokemonList} setPokemons={setPokemons} />
+          <PokemonInfoButton />
+        </Box>
+
+
+        <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>
           <AutoSizer>
             {({ height, width }) => (
               <FixedSizeList itemCount={pokemons.length} itemSize={60} height={height} width={width}>

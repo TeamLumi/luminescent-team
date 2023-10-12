@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { Box, Container, Typography } from '@mui/material';
 import { ImageWithFallback } from '../common/ImageWithFallback';
+import { getPokemonIdFromName } from '../../utils/dex/name';
 
 export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
   return pokemonForms.length > 1 ? (
@@ -16,10 +18,12 @@ export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
                   fallbackSrc={`/img/${pokemonForms[0].imageSrc}`}
                   height={30}
                 />
-                <Typography marginLeft="8px">
-                  {form.name}
-                  {i < pokemonForms.length - 1 && ','}
-                </Typography>
+                <Link to={`/pokedex/${getPokemonIdFromName(form.name)}`}>
+                  <Typography marginLeft="8px">
+                    {form.name}
+                    {i < pokemonForms.length - 1 && ','}
+                  </Typography>
+                </Link>
               </Box>
             );
           })}
