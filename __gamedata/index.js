@@ -7,6 +7,12 @@ import LearnsetTable from './WazaOboeTable.json';
 import MovesTable from './WazaTable.json';
 import ItemTable from './ItemTable.json';
 
+//All the Location files
+import displayNames from './english_dp_fld_areaname_display.json'
+import areaNames from './english_dp_fld_areaname.json'
+import mapInfo from './MapInfo.json'
+import areaCSV from './areas_updated.csv'
+
 //All the Pokemon english files
 import basePokemonNames from './english_ss_monsname.json';
 import formPokemonNames from './english_ss_zkn_form.json';
@@ -52,5 +58,9 @@ export {
   itemNames,
   moveEnum,
   smogonMoves,
-  EvolutionData
+  EvolutionData,
+  displayNames,
+  areaNames,
+  areaCSV,
+  mapInfo
 };
