@@ -11,7 +11,6 @@ import ItemTable from './ItemTable.json';
 import displayNames from './english_dp_fld_areaname_display.json'
 import areaNames from './english_dp_fld_areaname.json'
 import mapInfo from './MapInfo.json'
-import areaCSV from './areas_updated.csv'
 
 //All the Pokemon english files
 import basePokemonNames from './english_ss_monsname.json';
@@ -61,6 +60,5 @@ export {
   EvolutionData,
   displayNames,
   areaNames,
-  areaCSV,
   mapInfo
 };

@@ -1,10 +1,8 @@
-const { displayNames, areaNames, areaCSV, mapInfo } = require('../../../__gamedata');
+const { displayNames, areaNames,  mapInfo } = require('../../../__gamedata');
 const fs = require('fs');
 
 // This first section is using the areas_updated.csv for its data
-const areasList = fs.readFileSync(areaCSV, 'utf-8')
-  .split('\n')
-  .map(line => line.trim().split(','));
+const areasList = [];
 
 function createZoneIdMap() {
   /** This needs to be initialized first in order to use the getZoneID function */
@@ -20,7 +18,7 @@ function createZoneIdMap() {
 
 function getZoneIdFromCSV(zoneName, zoneMap) {
   if (zoneName in zoneMap) {
-    return parseInt(zoneMap.zoneName)
+    return parseInt(zoneMap[zoneName])
   } else {
     return null
   };
