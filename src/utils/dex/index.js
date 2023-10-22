@@ -32,6 +32,16 @@ import {
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
 } from './functions';
+import {
+  getAllGroundEncounters,
+  getAllIncenseEncounters,
+  getAllRodEncounters,
+  getAllSurfingEncounters,
+  getAreaEncounters,
+  getOddEncounters,
+  getTODEncounters,
+  getAllHoneyTreeEncounters
+} from './encounters'
 
 import { PersonalTable } from '../../../__gamedata';
 
@@ -107,4 +117,12 @@ export {
   getPokemonLearnset,
   getPokemonFormId,
   POKEMON_MOVE_LEVEL_TYPE,
+  getAllGroundEncounters,
+  getAllIncenseEncounters,
+  getAllRodEncounters,
+  getAllSurfingEncounters,
+  getAreaEncounters,
+  getOddEncounters,
+  getTODEncounters,
+  getAllHoneyTreeEncounters
 };

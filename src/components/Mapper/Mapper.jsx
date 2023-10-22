@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './style.css';
 import { coordinates } from './coordinates';
+import { getAreaEncounters } from '../../utils/dex';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -15,6 +16,7 @@ export default function Mapper() {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
+  const [encounterList, setEncounterList] = useState("");
 
   const myCanvas = useRef();
 
@@ -34,6 +36,8 @@ export default function Mapper() {
       setCoordinates({ x,y });
       const location = getSelectedLocation( x,y )
       setLocationName(location.name ? location.name : "")
+      setEncounterList(getAreaEncounters(location.name ? location.name : ""))
+      console.log(encounterList)
       console.log(`Clicked at (${x}, ${y})`);
     };
 
@@ -87,6 +91,14 @@ export default function Mapper() {
       </div>
       <div>
         Selected Route: {locationName}
+      </div>
+      <div>
+        Encounter List: 
+        {encounterList && encounterList.map((enc, index) => (
+          <div key={index}>
+            {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
+          </div>
+        ))}
       </div>
     </div>
   );
