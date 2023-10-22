@@ -1,0 +1,34 @@
+# (29) _RET
+
+## Synonyms
+
+- _CHG_LOCAL_SCR
+
+## Effect
+
+Returns from a script call.
+
+The exact place execution returns to is the line just after the last _CALL command that was executed. If no _CALL commands were executed, the script ends.
+
+## Syntax
+
+```c
+_RET()
+```
+
+## Example
+
+```c
+_CALL('ev_dummy')
+_SE_PLAY('S_BOO')
+
+ev_dummy:
+_SE_PLAY('S_PINPON')
+_RET()
+```
+
+The above script will jump to the ev_dummy script.
+
+Once there, the sound effect 'S_PINPON' plays. Then, execution returns to where the last call happened.
+
+After returning, the sound effect 'S_BOO' plays.

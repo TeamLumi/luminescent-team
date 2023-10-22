@@ -22,4 +22,4 @@ _END()
 _SE_PLAY('S_PINPON')
 ```
 
-The above script will set the work variable @LOCALWORK1 to 1, then end script execution. The command on line 3 will not be executed.
+The above script will set the work variable @LOCALWORK1 to 1, then end script execution. The 'S_PINPON' sound effect will not play.

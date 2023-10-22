@@ -11,10 +11,10 @@ The **result** work is set to 0 on every loop until the time has expired. It is 
 _TIME_WAIT(time, result)
 ```
 
-| Argument | Description | Types |
-| - | - | - |
-| **time** | The amount of time to wait, in frames (1/30ths of a second) | Work, Float |
-| **result** | The work to put the result into | Work |
+| Argument | Description | Types | Required |
+| - | - | - | - |
+| **time** | The amount of time to wait, in frames (1/30ths of a second) | Work, Float | Required |
+| **result** | The work to put the result into | Work | Required |
 
 ## Example
 
