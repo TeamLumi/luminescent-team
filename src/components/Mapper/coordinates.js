@@ -1,4 +1,4 @@
-const coordinates = [
+export const coordinates = [
     {
         "x": 330,
         "y": 495,
