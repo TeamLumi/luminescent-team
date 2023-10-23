@@ -46,6 +46,8 @@ import { getTrainersFromZoneName } from './trainers';
 
 import { PersonalTable } from '../../../__gamedata';
 
+import {getFieldItemsFromZoneID, getHiddenItemsFromZoneID} from './location';
+
 const POKEMON_MOVE_LEVEL_TYPE = {
   EGG: 'egg',
   TM: 'tm',
@@ -126,5 +128,7 @@ export {
   getOddEncounters,
   getTODEncounters,
   getAllHoneyTreeEncounters,
-  getTrainersFromZoneName
+  getTrainersFromZoneName,
+  getFieldItemsFromZoneID,
+  getHiddenItemsFromZoneID
 };
