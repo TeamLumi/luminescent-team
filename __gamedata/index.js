@@ -13,6 +13,8 @@ import areaNames from './english_dp_fld_areaname.json';
 import mapInfo from './MapInfo.json';
 import encounterLocations from './encounter_locations.json';
 import trainerLocations from './Mapper_Trainer_Output.json';
+import field_items from './item_list.json';
+import hidden_items from './hide_item_list.json';
 
 //All the Pokemon english files
 import basePokemonNames from './english_ss_monsname.json';
@@ -65,4 +67,6 @@ export {
   mapInfo,
   encounterLocations,
   trainerLocations,
+  field_items,
+  hidden_items
 };
