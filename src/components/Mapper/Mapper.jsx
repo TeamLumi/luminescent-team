@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './style.css';
 import { coordinates } from './coordinates';
-import { getAreaEncounters } from '../../utils/dex';
+import { getAreaEncounters, getTrainersFromZoneName } from '../../utils/dex';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -17,6 +17,7 @@ export default function Mapper() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
   const [encounterList, setEncounterList] = useState("");
+  const [trainerList, setTrainerList] = useState("");
 
   const myCanvas = useRef();
 
@@ -37,8 +38,7 @@ export default function Mapper() {
       const location = getSelectedLocation( x,y )
       setLocationName(location.name ? location.name : "")
       setEncounterList(getAreaEncounters(location.name ? location.name : ""))
-      console.log(encounterList)
-      console.log(`Clicked at (${x}, ${y})`);
+      setTrainerList(getTrainersFromZoneName(location.name ? location.name : ""))
     };
 
     myCanvas.current.addEventListener('click', handleClick);
@@ -100,6 +100,15 @@ export default function Mapper() {
           </div>
         ))}
       </div>
+      <div>
+        Trainers: 
+        {trainerList && trainerList.map((trainer, index) => (
+          <div key={index}>
+            {`${trainer.team_name}, ${trainer.trainerType}, ${trainer.route}`}
+          </div>
+        ))}
+      </div>
+      
     </div>
   );
 }

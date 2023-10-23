@@ -8,10 +8,11 @@ import MovesTable from './WazaTable.json';
 import ItemTable from './ItemTable.json';
 
 //All the Location files
-import displayNames from './english_dp_fld_areaname_display.json'
-import areaNames from './english_dp_fld_areaname.json'
-import mapInfo from './MapInfo.json'
-import encounterLocations from './encounter_locations.json'
+import displayNames from './english_dp_fld_areaname_display.json';
+import areaNames from './english_dp_fld_areaname.json';
+import mapInfo from './MapInfo.json';
+import encounterLocations from './encounter_locations.json';
+import trainerLocations from './Mapper_Trainer_Output.json';
 
 //All the Pokemon english files
 import basePokemonNames from './english_ss_monsname.json';
@@ -63,4 +64,5 @@ export {
   areaNames,
   mapInfo,
   encounterLocations,
+  trainerLocations,
 };
