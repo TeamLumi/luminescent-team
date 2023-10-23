@@ -77,7 +77,7 @@ function getDisplayNameFromZoneName(zoneName) {
 
   const displayName = displayNames.labelDataArray
     .find(e => e?.wordDataArray[0]?.str === zoneName)
-    .labelName;
+    ?.labelName;
 
   if (displayName) {
     return displayName;

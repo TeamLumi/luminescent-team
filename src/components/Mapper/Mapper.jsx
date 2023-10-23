@@ -39,11 +39,14 @@ export default function Mapper() {
       const y = event.clientY - rect.top;
       setCoordinates({ x,y });
       const location = getSelectedLocation( x,y )
-      setLocationName(location.name ? location.name : "")
-      setEncounterList(getAreaEncounters(location.name ? location.name : ""))
-      setTrainerList(getTrainersFromZoneName(location.name ? location.name : ""))
-      setFieldItems(getFieldItemsFromZoneID(getZoneIdFromZoneName(location.name)))
-      setHiddenItems(getHiddenItemsFromZoneID(getZoneIdFromZoneName(location.name)))
+      const location_name = location.name ? location.name : ""
+      setLocationName(location_name)
+      setEncounterList(getAreaEncounters(location_name))
+      setTrainerList(getTrainersFromZoneName(location_name))
+
+      const zoneId = getZoneIdFromZoneName(location_name)
+      setFieldItems(getFieldItemsFromZoneID(zoneId))
+      setHiddenItems(getHiddenItemsFromZoneID(zoneId))
     };
 
     myCanvas.current.addEventListener('click', handleClick);
@@ -124,9 +127,9 @@ export default function Mapper() {
       </div>
       <div>
         Hidden Items: 
-        {hiddenItemsList && hiddenItemsList.map((fieldItem, index) => (
+        {hiddenItemsList && hiddenItemsList.map((hiddenItem, index) => (
           <div key={index}>
-            {`${getItemString(fieldItem)}`}
+            {`${getItemString(hiddenItem)}`}
           </div>
         ))}
       </div>
