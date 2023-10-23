@@ -108,7 +108,6 @@ export default function Mapper() {
           </div>
         ))}
       </div>
-      
     </div>
   );
 }
