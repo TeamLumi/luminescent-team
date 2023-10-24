@@ -1,4 +1,4 @@
-import { getItemIdFromItemName, getItemString } from './item';
+const { getItemIdFromItemName, getItemString } = require ('./item');
 
 describe('Dex utils Item getter tests', () => {
   describe('getItemIdFromItemName', () => {

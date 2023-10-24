@@ -1,7 +1,7 @@
-import { PersonalTable } from '../../../__gamedata';
+const { PersonalTable } = require("../__gamedata");
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
-const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});
+const FORM_MAP = PersonalTable.reduce(createFormMap, {});
 
 function createFormMap(formMap, currentPokemon) {
   if (!Array.isArray(formMap[currentPokemon.monsno])) {
@@ -17,9 +17,9 @@ function getPokemonIdFromFormMap(monsNo = 0, formNo = 0) {
 }
 
 function getGender(sex) {
-  if (sex === 0) return 'M';
-  if (sex === 254) return 'F';
-  if (sex === 255) return 'N';
+  if (sex === 0) return "M";
+  if (sex === 254) return "F";
+  if (sex === 255) return "N";
   return null;
 }
 
@@ -43,14 +43,12 @@ function getGrassKnotPower(weightkg) {
 }
 
 function getPokemonIdFromMonsNoAndForm(monsno, formno) {
-  return PersonalTable.Personal.find((e) => e.monsno === monsno && FORM_MAP[e.monsno][formno] === e.id)?.id;
+  return PersonalTable.find(
+    (e) => e.monsno === monsno && FORM_MAP[e.monsno][formno] === e.id
+  )?.id;
 }
 
-function doNothing(evoMethod, evolutionDetails) {
-  return [evolutionDetails, evoMethod];
-};
-
-export {
+module.exports = {
   FORM_MAP,
   getPokemonIdFromFormMap,
   getGender,
@@ -59,5 +57,4 @@ export {
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
-  doNothing,
 };

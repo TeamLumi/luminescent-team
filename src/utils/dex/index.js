@@ -1,6 +1,13 @@
-import { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString, getAbilityInfo } from './ability';
-import { getItemIdFromItemName, getItemString } from './item';
-import {
+const {
+  makeSmogonAbilityObject,
+  getAbilityIdFromAbilityName,
+  getAbilityString,
+  getAbilityInfo,
+} = require("./ability");
+
+const { getItemIdFromItemName, getItemString } = require("./item");
+
+const {
   generateMovesViaLearnset,
   getMoveId,
   getMoveString,
@@ -10,20 +17,28 @@ import {
   getMoveProperties,
   getPokemonLearnset,
   getTMCompatibility,
-} from './moves';
-import {
+} = require("./moves");
+
+const {
   getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
   getPokemonName,
+  getPokemonMonsNoAndFormNoFromPokemonId,
   getPokemonIdFromName,
+  getPokemonIdFromDisplayName,
   getPokemonNames,
   getPokemonFormId,
-} from './name';
-import { getNatureId, getNatureName } from './nature';
-import { getTypeName, getTypes } from './types';
-import { getWeight, getHeight } from './details';
-import {
+  getPokemonDisplayName,
+} = require("./name");
+
+const { getNatureId, getNatureName } = require("./nature");
+
+const { getTypeName, getTypes } = require("./types");
+
+const { getWeight, getHeight } = require("./details");
+
+const {
   FORM_MAP,
   getPokemonIdFromFormMap,
   getGender,
@@ -31,20 +46,24 @@ import {
   getImage,
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
-} from './functions';
+} = require("./functions");
 
-import { PersonalTable } from '../../../__gamedata';
+const { PersonalTable } = require("../__gamedata");
 
 const POKEMON_MOVE_LEVEL_TYPE = {
-  EGG: 'egg',
-  TM: 'tm',
+  EGG: "egg",
+  TM: "tm",
 };
 
-function getPokemonInfo(monsno = 0) {
-  const p = PersonalTable.Personal[monsno];
+const { getEncounterLocations } = require("./location");
+
+function getPokemonInfo(monsId = 0) {
+  const p = PersonalTable[monsId];
+  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(monsId);
   return {
-    monsno: monsno,
-    name: getPokemonName(monsno),
+    formno: formNo,
+    monsno: monsNo,
+    name: getPokemonDisplayName(monsId),
     ability1: getAbilityString(p.tokusei1),
     ability2: getAbilityString(p.tokusei2),
     abilityH: getAbilityString(p.tokusei3),
@@ -58,18 +77,24 @@ function getPokemonInfo(monsno = 0) {
       spd: p.basic_spdef,
       spe: p.basic_agi,
     },
-    baseStatsTotal: p.basic_hp + p.basic_atk + p.basic_def + p.basic_spatk + p.basic_spdef + p.basic_agi,
-    weight: getWeight(monsno),
-    height: getHeight(monsno),
-    grassKnotPower: getGrassKnotPower(getWeight(monsno)),
+    baseStatsTotal:
+      p.basic_hp +
+      p.basic_atk +
+      p.basic_def +
+      p.basic_spatk +
+      p.basic_spdef +
+      p.basic_agi,
+    weight: getWeight(monsId),
+    height: getHeight(monsId),
+    grassKnotPower: getGrassKnotPower(getWeight(monsId)),
     type1: getTypeName(p.type1),
     type2: getTypeName(p.type2),
-    imageSrc: getImage(monsno),
+    imageSrc: getImage(monsNo, formNo),
     genderDecimalValue: p.sex,
   };
 }
 
-export {
+module.exports = {
   FORM_MAP,
   getPokemonIdFromFormMap,
   getGender,
@@ -94,11 +119,13 @@ export {
   getEggMoves,
   getTechMachineLearnset,
   getMoveProperties,
+  getEncounterLocations,
   getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
   getPokemonName,
   getPokemonIdFromName,
+  getPokemonIdFromDisplayName,
   getPokemonNames,
   getNatureId,
   getNatureName,

@@ -1,16 +1,16 @@
-const { itemNames } = require('../../../__gamedata');
+const { itemNames } = require("../__gamedata");
 
 function getItemIdFromItemName(itemName) {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
   if (itemName === "King's Rock")
-    return itemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === 'King’s Rock');
-  const index = itemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === itemName);
+    return itemNames.findIndex((e) => e.str === "King’s Rock");
+  const index = itemNames.findIndex((e) => e.str === itemName);
   if (index === -1) throw Error(`Bad item name: ${itemName}`);
   return index;
 }
 
 function getItemString(itemId = 0) {
-  return itemNames.labelDataArray[itemId].wordDataArray[0].str;
+  return itemNames[itemId].str;
 }
 
-export { getItemIdFromItemName, getItemString };
+module.exports = { getItemIdFromItemName, getItemString };

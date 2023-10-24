@@ -1,20 +1,24 @@
-import { PersonalTable, basePokemonNames, formPokemonNames } from '../../../__gamedata';
-import { FORM_MAP } from './functions';
+const {
+  PersonalTable,
+  basePokemonNames,
+  formPokemonNames,
+} = require("../__gamedata");
+const { FORM_MAP } = require("./functions");
 
-const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
+const POKEMON_NAME_MAP = PersonalTable.reduce(createPokemonMap, {});
 const POKEMON_NAME_LIST = Object.values(POKEMON_NAME_MAP);
 function createPokemonMap(pokemonNameMap, currentPokemon) {
   try {
     const { id } = currentPokemon;
 
-    const baseFormName = basePokemonNames.labelDataArray[id]?.wordDataArray[0]?.str;
-    if (typeof baseFormName === 'string' && baseFormName.length > 0) {
+    const baseFormName = basePokemonNames[id]?.str;
+    if (typeof baseFormName === "string" && baseFormName.length > 0) {
       pokemonNameMap[id] = baseFormName;
       return pokemonNameMap;
     }
 
-    const alternateFormName = formPokemonNames.labelDataArray[id]?.wordDataArray[0]?.str;
-    if (typeof alternateFormName === 'string' && alternateFormName.length > 0) {
+    const alternateFormName = formPokemonNames[id]?.str;
+    if (typeof alternateFormName === "string" && alternateFormName.length > 0) {
       pokemonNameMap[id] = alternateFormName;
       return pokemonNameMap;
     }
@@ -34,7 +38,7 @@ function getPokemonName(pokemonId = 0) {
   return POKEMON_NAME_MAP[pokemonId];
 }
 
-function getPokemonIdFromName(name = 'Egg') {
+function getPokemonIdFromName(name = "Egg") {
   const id = Object.values(POKEMON_NAME_MAP).findIndex((e) => e === name);
   return id === -1 ? 0 : id;
 }
@@ -42,17 +46,17 @@ function getPokemonIdFromName(name = 'Egg') {
 function getFormNameOfProblematicPokemon(id = 0) {
   switch (id) {
     case 1242:
-      return 'Ash-Greninja';
+      return "Ash-Greninja";
     case 1285:
-      return 'Meowstic-F';
+      return "Meowstic-F";
     case 1310:
-      return 'Rockruff Own-Tempo';
+      return "Rockruff Own-Tempo";
     case 1441:
-      return 'Indeedee-F';
+      return "Indeedee-F";
     case 1454:
-      return 'Basculegion-F';
+      return "Basculegion-F";
     case 1456:
-      return 'Oinkologne-F';
+      return "Oinkologne-F";
     default:
       throw Error(`Bad Pokemon ID in PokemonNameMap: ${id}`);
   }
@@ -60,11 +64,11 @@ function getFormNameOfProblematicPokemon(id = 0) {
 
 function getPokemonMonsnoFromName(pokemonName) {
   if (!pokemonName) return -1;
-  return basePokemonNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === pokemonName);
+  return basePokemonNames.findIndex((e) => e.str === pokemonName);
 }
 
 function getPokemonNames(to, from = 0) {
-  if (typeof to !== 'number' || to < 0) return [];
+  if (typeof to !== "number" || to < 0) return [];
   return POKEMON_NAME_LIST.slice(from, to);
 }
 
@@ -72,13 +76,7 @@ function getPokemonFormId(monsno = 0, id) {
   return FORM_MAP[monsno]?.findIndex((e) => e === id) ?? -1;
 }
 
-function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0) {
-	const { monsno } = PersonalTable.Personal[pokemonId];
-	const formno = FORM_MAP[monsno].indexOf(pokemonId);
-	return [monsno, formno];
-}
-
-export {
+module.exports = {
   getPokemonMonsnoFromName,
   getFormName,
   getFormNameOfProblematicPokemon,
@@ -88,5 +86,4 @@ export {
   getPokemonFormId,
   createPokemonMap,
   POKEMON_NAME_MAP,
-  getPokemonMonsNoAndFormNoFromPokemonId
 };
