@@ -3982,7 +3982,7 @@
         {
             "Caption": "コトブキ:トレーナースクール 1F",
             "MSLabel": "DP_fld_areaname_display_170",
-            "PokePlaceName": "DP_fld_arenames_002",
+            "PokePlaceName": "DP_fld_arenames_004",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -9274,7 +9274,7 @@
         {
             "Caption": "クロガネ:炭坑博物館 1F",
             "MSLabel": "DP_fld_areaname_display_171",
-            "PokePlaceName": "DP_fld_arenames_008",
+            "PokePlaceName": "DP_fld_arenames_007",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -11731,7 +11731,7 @@
         {
             "Caption": "ハクタイ:ギンガ団支部ビル 1F",
             "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_010",
+            "PokePlaceName": "DP_fld_arenames_318",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -11920,7 +11920,7 @@
         {
             "Caption": "ハクタイ:ギンガ団支部ビル 2F",
             "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_010",
+            "PokePlaceName": "DP_fld_arenames_318",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -12109,7 +12109,7 @@
         {
             "Caption": "ハクタイ:ギンガ団支部ビル 3F",
             "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_010",
+            "PokePlaceName": "DP_fld_arenames_318",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -12298,7 +12298,7 @@
         {
             "Caption": "ハクタイ:ギンガ団支部ビル 4F",
             "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_010",
+            "PokePlaceName": "DP_fld_arenames_318",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -69564,8 +69564,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー1F",
-            "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_077",
+            "MSLabel": "DP_fld_areaname_display_174",
+            "PokePlaceName": "DP_fld_arenames_321",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -69753,8 +69753,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー2F",
-            "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_077",
+            "MSLabel": "DP_fld_areaname_display_174",
+            "PokePlaceName": "DP_fld_arenames_321",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -69942,8 +69942,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー3F",
-            "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_077",
+            "MSLabel": "DP_fld_areaname_display_174",
+            "PokePlaceName": "DP_fld_arenames_321",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -70131,8 +70131,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー4F",
-            "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_077",
+            "MSLabel": "DP_fld_areaname_display_174",
+            "PokePlaceName": "DP_fld_arenames_321",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -70320,8 +70320,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー5F",
-            "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_077",
+            "MSLabel": "DP_fld_areaname_display_174",
+            "PokePlaceName": "DP_fld_arenames_321",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -71833,7 +71833,7 @@
         {
             "Caption": "212ばんどうろa:ポケモンやしき",
             "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_081",
+            "PokePlaceName": "DP_fld_arenames_082",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -72022,7 +72022,7 @@
         {
             "Caption": "212ばんどうろa:ポケモンやしき",
             "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_081",
+            "PokePlaceName": "DP_fld_arenames_082",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -72211,7 +72211,7 @@
         {
             "Caption": "212ばんどうろa:ポケモンやしき",
             "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_081",
+            "PokePlaceName": "DP_fld_arenames_082",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -93379,7 +93379,7 @@
         {
             "Caption": "ハクタイ:ギンガ団支部ビル　ロトムの部屋（プラチナ要素）",
             "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_010",
+            "PokePlaceName": "DP_fld_arenames_318",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,

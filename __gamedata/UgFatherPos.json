@@ -1,0 +1,248 @@
+{
+    "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": -6594047588963821541
+    },
+    "m_Name": "UgFatherPos",
+    "Pos": [
+        {
+            "ID": 1,
+            "ugfatherCategory": 1,
+            "ZoneID": 509,
+            "Locator": {
+                "x": 88,
+                "y": 49
+            }
+        },
+        {
+            "ID": 2,
+            "ugfatherCategory": 1,
+            "ZoneID": 510,
+            "Locator": {
+                "x": 169,
+                "y": 97
+            }
+        },
+        {
+            "ID": 3,
+            "ugfatherCategory": 1,
+            "ZoneID": 511,
+            "Locator": {
+                "x": 136,
+                "y": 37
+            }
+        },
+        {
+            "ID": 4,
+            "ugfatherCategory": 4,
+            "ZoneID": 512,
+            "Locator": {
+                "x": 79,
+                "y": 97
+            }
+        },
+        {
+            "ID": 5,
+            "ugfatherCategory": 1,
+            "ZoneID": 513,
+            "Locator": {
+                "x": 91,
+                "y": 94
+            }
+        },
+        {
+            "ID": 6,
+            "ugfatherCategory": 4,
+            "ZoneID": 514,
+            "Locator": {
+                "x": 52,
+                "y": 10
+            }
+        },
+        {
+            "ID": 7,
+            "ugfatherCategory": 1,
+            "ZoneID": 515,
+            "Locator": {
+                "x": 10,
+                "y": 43
+            }
+        },
+        {
+            "ID": 8,
+            "ugfatherCategory": 1,
+            "ZoneID": 516,
+            "Locator": {
+                "x": 55,
+                "y": 67
+            }
+        },
+        {
+            "ID": 9,
+            "ugfatherCategory": 3,
+            "ZoneID": 519,
+            "Locator": {
+                "x": 79,
+                "y": 115
+            }
+        },
+        {
+            "ID": 10,
+            "ugfatherCategory": 1,
+            "ZoneID": 519,
+            "Locator": {
+                "x": 133,
+                "y": 124
+            }
+        },
+        {
+            "ID": 11,
+            "ugfatherCategory": 4,
+            "ZoneID": 521,
+            "Locator": {
+                "x": 127,
+                "y": 31
+            }
+        },
+        {
+            "ID": 12,
+            "ugfatherCategory": 2,
+            "ZoneID": 523,
+            "Locator": {
+                "x": 46,
+                "y": 40
+            }
+        },
+        {
+            "ID": 13,
+            "ugfatherCategory": 1,
+            "ZoneID": 525,
+            "Locator": {
+                "x": 10,
+                "y": 40
+            }
+        },
+        {
+            "ID": 14,
+            "ugfatherCategory": 4,
+            "ZoneID": 525,
+            "Locator": {
+                "x": 112,
+                "y": 76
+            }
+        },
+        {
+            "ID": 15,
+            "ugfatherCategory": 3,
+            "ZoneID": 527,
+            "Locator": {
+                "x": 10,
+                "y": 46
+            }
+        },
+        {
+            "ID": 16,
+            "ugfatherCategory": 2,
+            "ZoneID": 528,
+            "Locator": {
+                "x": 10,
+                "y": 43
+            }
+        },
+        {
+            "ID": 17,
+            "ugfatherCategory": 2,
+            "ZoneID": 529,
+            "Locator": {
+                "x": 202,
+                "y": 31
+            }
+        },
+        {
+            "ID": 18,
+            "ugfatherCategory": 4,
+            "ZoneID": 530,
+            "Locator": {
+                "x": 37,
+                "y": 97
+            }
+        },
+        {
+            "ID": 19,
+            "ugfatherCategory": 4,
+            "ZoneID": 531,
+            "Locator": {
+                "x": 43,
+                "y": 25
+            }
+        },
+        {
+            "ID": 20,
+            "ugfatherCategory": 2,
+            "ZoneID": 532,
+            "Locator": {
+                "x": 25,
+                "y": 61
+            }
+        },
+        {
+            "ID": 21,
+            "ugfatherCategory": 2,
+            "ZoneID": 533,
+            "Locator": {
+                "x": 37,
+                "y": 10
+            }
+        },
+        {
+            "ID": 22,
+            "ugfatherCategory": 3,
+            "ZoneID": 534,
+            "Locator": {
+                "x": 157,
+                "y": 61
+            }
+        },
+        {
+            "ID": 23,
+            "ugfatherCategory": 2,
+            "ZoneID": 537,
+            "Locator": {
+                "x": 10,
+                "y": 58
+            }
+        },
+        {
+            "ID": 24,
+            "ugfatherCategory": 4,
+            "ZoneID": 539,
+            "Locator": {
+                "x": 10,
+                "y": 40
+            }
+        },
+        {
+            "ID": 25,
+            "ugfatherCategory": 1,
+            "ZoneID": 541,
+            "Locator": {
+                "x": 10,
+                "y": 10
+            }
+        },
+        {
+            "ID": 26,
+            "ugfatherCategory": 3,
+            "ZoneID": 541,
+            "Locator": {
+                "x": 64,
+                "y": 19
+            }
+        }
+    ]
+}
