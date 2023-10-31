@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[93417],{56559:e=>{e.exports="/pokedex/chandelure"}}]);
