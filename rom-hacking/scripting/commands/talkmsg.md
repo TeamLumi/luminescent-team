@@ -13,7 +13,7 @@ Sets PlayTextFeedSe to true if **textSe** is 1.
 ## Syntax
 
 ```c
-_TALKMSG(message, textSe)
+_TALKMSG(message, textSe?)
 ```
 
 | Argument | Description | Types | Required |
@@ -22,7 +22,7 @@ _TALKMSG(message, textSe)
 | **textSe** | If PlayTextFeedSe should be true | Work, Float | Optional |
 
 ```c
-_TALKMSG(messageFile, message, textSe)
+_TALKMSG(messageFile, message, textSe?)
 ```
 
 | Argument | Description | Types | Required |
