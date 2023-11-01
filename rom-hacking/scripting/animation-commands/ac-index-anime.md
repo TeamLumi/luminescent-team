@@ -2,7 +2,7 @@
 
 ## Effect
 
-Animates the actor based on the given animation.
+Animates the actor based on the given animation. The list of animations can be found at the bottom of this page.
 
 If the second argument is provided, the animation takes two seconds.
 
