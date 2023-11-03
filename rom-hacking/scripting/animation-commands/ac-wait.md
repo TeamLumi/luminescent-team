@@ -2,19 +2,19 @@
 
 ## Effect
 
-Waits a given amount of frames.
+Waits a given amount of time.
 
 Sets animation clip to 0 (Idle).
 
 ## Syntax
 
 ```c
-_AC_WAIT(frames)
+_AC_WAIT(time)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **frames** | The amount of frames | Float | Required |
+| **time** | The amount of time to wait, in frames (1/30ths of a second) | Float | Required |
 
 ## Example
 

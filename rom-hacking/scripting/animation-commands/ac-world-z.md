@@ -2,33 +2,33 @@
 
 ## Effect
 
-Moves the actor of the animation to a tile on the z-axis of the current map over a given amount of frames per tile.
+Moves the entity of the animation to a tile on the z-axis of the current map over a given amount of frames per tile.
 
 Starts the stepping sound effect.
 
 :::info
 
-This command only moves the actor. It does not turn the actor in the moving direction.
+This command only moves the entity. It does not turn the entity in the moving direction.
 
 :::
 
 ## Syntax
 
 ```c
-_AC_WORLD_X(y, frames)
+_AC_WORLD_Z(z, time)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **tiles** | The new z-position | Float | Required |
-| **frames** | The amount of frames per tile | Float | Required |
+| **z** | The new z-position | Float | Required |
+| **time** | The amount of time to move per tile, in frames (1/30ths of a second) | Float | Required |
 
 ## Example
 
 ```c
 anm_dummy:
-_AC_WORLD_Y(45, 8)
+_AC_WORLD_Z(45, 8)
 _ACMD_END()
 ```
 
-The above script will move the actor to tile 45 on the z-axis of the current map.
+The above script will move the entity to tile 45 on the z-axis of the current map.

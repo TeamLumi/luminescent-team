@@ -2,21 +2,21 @@
 
 ## Effect
 
-Turns the actor of the animation left over a given amount of frames.
+Turns the entity of the animation left over a given amount of frames.
 
-If the second argument is provided, the actor will invert the turn.
+The entity always makes the smallest turn possible. If the **invert** argument is provided, the entity will turn the longer way around.
 
 Starts the stepping sound effect.
 
 ## Syntax
 
 ```c
-_AC_DIR_L(frames, invert?)
+_AC_DIR_L(time, invert?)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **frames** | The amount of frames | Float | Required |
+| **time** | The amount of time to turn, in frames (1/30ths of a second) | Float | Required |
 | **invert** | Whether to invert the turn | Any | Optional |
 
 ## Example
@@ -27,4 +27,4 @@ _AC_DIR_L(8)
 _ACMD_END()
 ```
 
-The above script will turn the actor left over 8 frames.
+The above script will turn the entity left over 8 frames.

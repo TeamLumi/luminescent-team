@@ -4,8 +4,6 @@
 
 Waits for an animation from the command `_AC_INDEX_ANIME` to finish.
 
-Sets _moveEndTime to 999.
-
 ## Syntax
 
 ```c

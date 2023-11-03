@@ -26,4 +26,4 @@ _AC_DIR_D(8)
 _ACMD_END()
 ```
 
-The above script will end the animation after facing the actor down.
+The above script will end the animation after facing the entity down.

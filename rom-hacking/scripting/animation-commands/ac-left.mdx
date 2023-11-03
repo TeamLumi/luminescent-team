@@ -2,30 +2,32 @@
 
 ## Effect
 
-Moves the actor of the animation left over a given amount of frames per tile.
+Moves the entity of the animation left over a given amount of frames per tile.
 
-If the second argument is negative, 16 is used, or 8 if the player's DashFlag is set. (See EvEntityCommand$$GetWalkTime)
+If the **time** argument is negative, 16 is used, or 8 if the player's DashFlag is set.
 
-If the third argument is provided, the entity will move while in it's idle animation.
+If the **idle_animation** argument is provided, the entity will move while in it's idle animation.
 
 Starts the stepping sound effect.
 
 :::info
 
-This command only moves the actor. It does not turn the actor in the moving direction.
+This command only moves the entity. It does not turn the entity in the moving direction.
+
+More research is needed on the DashFlag part. 
 
 :::
 
 ## Syntax
 
 ```c
-_AC_LEFT(tiles, frames, idle_animation?)
+_AC_LEFT(tiles, time, idle_animation?)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
 | **tiles** | The amount of tiles | Float | Required |
-| **frames** | The amount of frames per tile | Float | Required |
+| **time** | The amount of time to move per tile, in frames (1/30ths of a second) | Float | Required |
 | **idle_animation** | Whether to use the idle animation | Any | Optional |
 
 ## Example
@@ -37,4 +39,4 @@ _AC_LEFT(3, 8)
 _ACMD_END()
 ```
 
-The above script will turn the actor left and then move the actor left 3 tiles over 8 frames per tile.
+The above script will turn the entity left and then move the actor left 3 tiles over 8 frames per tile.

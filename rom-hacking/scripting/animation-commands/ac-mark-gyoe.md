@@ -2,19 +2,15 @@
 
 ## Effect
 
-Displays an exclamation mark bubble \[!\] above the actors head.
+Displays an exclamation mark bubble \[!\] above the entity's head.
 
-Sets _moveEndTime to 1.5.
+The bubble lasts for 1.5 seconds.
 
 ## Syntax
 
 ```c
-_AC_MARK_GYOE(unknown?)
+_AC_MARK_GYOE()
 ```
-
-| Argument | Description | Types | Required |
-| - | - | - | - |
-| **unknown** | Always 1 when present | Float | Optional |
 
 ## Example
 
@@ -24,4 +20,4 @@ _AC_MARK_GYOE()
 _ACMD_END()
 ```
 
-The above script will display an exclamation mark \[!\] above the actors head.
+The above script will display an exclamation mark \[!\] above the entity's head.
