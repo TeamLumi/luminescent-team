@@ -10,8 +10,6 @@ Sets animation clip to 0 (Idle).
 
 Stops the stepping sound effect.
 
-Sets _forceDuration to -1.
-
 ## Syntax
 
 ```c
