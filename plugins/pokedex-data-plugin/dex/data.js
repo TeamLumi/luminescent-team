@@ -1,6 +1,5 @@
 //All the constant numbers
 const PersonalTable = require('../../../__gamedata/PersonalTable.json');
-const GrowTable = require('../../../__gamedata/GrowTable.json');
 const EvolveTable = require('../../../__gamedata/EvolveTable.json');
 const EggMovesTable = require('../../../__gamedata/TamagoWazaTable.json');
 const LearnsetTable = require('../../../__gamedata/WazaOboeTable.json');
@@ -31,7 +30,6 @@ const tutorMoves = require('../../../__gamedata/tutorMoves.json');
 
 module.exports = {
   PersonalTable,
-  GrowTable,
   EvolveTable,
   EggMovesTable,
   LearnsetTable,
