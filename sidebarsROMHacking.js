@@ -17,6 +17,18 @@ const sidebars = {
     'intro',
     {
       type: 'category',
+      label: 'Dictionary',
+      link: {
+        type: 'doc',
+        id: 'dictionary/index',
+      },
+      collapsed: true,
+      items: [
+        'dictionary/areas',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Scripting',
       link: {
         type: 'generated-index',
@@ -41,8 +53,27 @@ const sidebars = {
           ],
         },
         {
+          type: 'doc',
+          label: 'Scripting Introduction',
+          id: 'scripting/introduction'
+        },
+        {
+          type: 'doc',
+          label: 'PlaceData',
+          id: 'scripting/place-data'
+        },
+        {
+          type: 'doc',
+          label: 'StopData',
+          id: 'scripting/stop-data'
+        },
+        {
           type: 'category',
           label: 'Commands',
+          link: {
+            type: 'doc',
+            id: 'scripting/commands/index',
+          },
           collapsed: true,
           items: [
             'scripting/commands/end',
@@ -88,6 +119,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Animation commands',
+          link: {
+            type: 'doc',
+            id: 'scripting/animation-commands/index',
+          },
           collapsed: true,
           items: [
             'scripting/animation-commands/ac-up',
