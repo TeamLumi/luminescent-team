@@ -2,21 +2,21 @@
 
 ## Effect
 
-Calls an animation function for the given actor.
+Calls an animation function for the given entity.
 
-The actor name is taken from the field `ID` from a PlaceData file. For the player it is `HERO`.
+The entity name is taken from the field `ID` from a PlaceData file. For the player it is `HERO`.
 
 ## Syntax
 
 ```c
-_OBJ_ANIME(actor, function, unknown?)
+_OBJ_ANIME(entity, function, animation_clip)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **actor** | The actor id | Work, Float, String | Required |
+| **entity** | The entity id | Work, Float, String | Required |
 | **function** | The animation function | String | Required |
-| **unknown** | Unknown use | Float | Optional |
+| **animation_clip** | First frame of the next animation clip to be played | Float | Optional |
 
 ## Example
 
@@ -27,4 +27,4 @@ anm_dummy:
 _ACMD_END()
 ```
 
-The above script will call the animation function `anm_dummy` with the player as the actor.
+The above script will call the animation function `anm_dummy` with the player as the entity.

@@ -4,7 +4,7 @@
 
 Moves the entity of the animation right over a given amount of frames per tile.
 
-If the **time** argument is negative, 16 is used, or 8 if the player's DashFlag is set.
+If the **time** argument is negative, 16 is used.
 
 If the **idle_animation** argument is provided, the entity will move while in it's idle animation.
 
@@ -13,8 +13,6 @@ Starts the stepping sound effect.
 :::info
 
 This command only moves the entity. It does not turn the entity in the moving direction.
-
-More research is needed on the DashFlag part. 
 
 :::
 
@@ -27,7 +25,7 @@ _AC_RIGHT(tiles, time, idle_animation?)
 | Argument | Description | Types | Required |
 | - | - | - | - |
 | **tiles** | The amount of tiles | Float | Required |
-| **time** | The amount of time to move per tile, in frames (1/30ths of a second) | Float | Required |
+| **time** | The amount of time to move per tile, in frames | Float | Required |
 | **idle_animation** | Whether to use the idle animation | Any | Optional |
 
 ## Example

@@ -4,8 +4,6 @@
 
 Ends the current animation.
 
-Resets _moveOffset to (0, 0, 0).
-
 Sets animation clip to 0 (Idle).
 
 Stops the stepping sound effect.

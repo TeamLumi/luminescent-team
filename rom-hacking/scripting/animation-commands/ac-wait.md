@@ -9,12 +9,12 @@ Sets animation clip to 0 (Idle).
 ## Syntax
 
 ```c
-_AC_WAIT(time)
+_AC_WAIT(frames)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **time** | The amount of time to wait, in frames (1/30ths of a second) | Float | Required |
+| **frames** | The amount of frames to wait | Float | Required |
 
 ## Example
 
@@ -26,4 +26,4 @@ _AC_DIR_D(8)
 _ACMD_END()
 ```
 
-The above script will wait 8 frames between turning the actor up and down.
+The above script will wait 8 frames between turning the entity up and down.

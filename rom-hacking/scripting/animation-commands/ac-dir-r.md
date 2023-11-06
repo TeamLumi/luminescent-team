@@ -16,7 +16,7 @@ _AC_DIR_R(time, invert?)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **time** | The amount of time to turn, in frames (1/30ths of a second) | Float | Required |
+| **time** | The amount of time to turn, in frames | Float | Required |
 | **invert** | Whether to invert the turn | Any | Optional |
 
 ## Example

@@ -9,13 +9,8 @@ If this command is not used, the script will continue to run while the animation
 ## Syntax
 
 ```c
-_OBJ_ANIME_WAIT(unkown?, unknown?)
+_OBJ_ANIME_WAIT()
 ```
-
-| Argument | Description | Types | Required |
-| - | - | - | - |
-| **unknown** | Unknown use | String | Optional |
-| **unknown** | Unknown use | String | Optional |
 
 ## Example
 

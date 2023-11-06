@@ -13,7 +13,7 @@ _TIME_WAIT(time, result)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **time** | The amount of time to wait, in frames (1/30ths of a second) | Work, Float | Required |
+| **time** | The amount of time to wait, in frames | Work, Float | Required |
 | **result** | The work to put the result into | Work | Required |
 
 ## Example

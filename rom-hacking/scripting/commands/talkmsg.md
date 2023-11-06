@@ -8,28 +8,28 @@
 
 Opens a basic message box.
 
-Sets PlayTextFeedSe to true if **textSe** is 1.
+Sets PlayTextFeedSe to true if **text_sound_effect** is 1.
 
 ## Syntax
 
 ```c
-_TALKMSG(message, textSe?)
+_TALKMSG(message, text_sound_effect?)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
 | **message** | The label for the message that gets shown, in format "file%message" | String | Required |
-| **textSe** | If PlayTextFeedSe should be true | Work, Float | Optional |
+| **text_sound_effect** | If PlayTextFeedSe should be true | Work, Float | Optional |
 
 ```c
-_TALKMSG(messageFile, message, textSe?)
+_TALKMSG(messageFile, message, text_sound_effect?)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
 | **messageFile** | The file containing the label for the message that gets shown | String | Required |
 | **message** | The label for the message that gets shown | String | Required |
-| **textSe** | If PlayTextFeedSe should be true | Work, Float | Optional |
+| **text_sound_effect** | If PlayTextFeedSe should be true | Work, Float | Optional |
 
 ## Example
 
