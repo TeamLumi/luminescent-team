@@ -81,6 +81,8 @@ const sidebars = {
             'scripting/commands/talkmsg',
             'scripting/commands/obj-anime',
             'scripting/commands/obj-anime-wait',
+            'scripting/commands/obj-add',
+            'scripting/commands/obj-del',
           ],
         },
         {
