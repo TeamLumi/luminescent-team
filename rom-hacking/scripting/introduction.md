@@ -1,1 +1,108 @@
 # Scripting introduction
+
+Scripting in BDSP allows you to influence different parts of the game.
+
+Be it showing dialogues, moving NPCs and the player around and setting various flags to make the game work.
+
+## Functions
+
+Functions are written in `.ev` files. These can be edited by unpacking the file `romfs/Data/StreamingAssets/AssetAssistant/Dpr/ev_script` using [Aldo's BDSP Repacker](https://github.com/Ai0796/BDSP-Repacker).
+
+Each area has it's own script file. The name is the [Area](../dictionary/areas.md) name. For example `c01.ev` for Jubilife City.
+
+These script files contain two different types of function that serve different purposes.
+
+- [Script functions](commands/index.md)
+- [Animation functions](animation-commands/index.md)
+
+### Naming schemes
+
+Function naming should follow this scheme: `{type}_{area_name}_{function_name}`
+
+#### Type
+
+| Type | Description |
+| - | - |
+| ev | [Script functions](commands/index.md) called by [PlaceData](place-data.md) |
+| pos | [Script functions](commands/index.md) called by [StopData](stop-data.md) |
+| anm | [Animation functions](animation-commands/index.md) |
+
+#### Area name
+
+The area name in lowercase letters. `c01` for Jubilife City or `r201` for Route 201.
+
+See [Areas](../dictionary/areas.md) for a list of areas.
+
+#### Function name
+
+The actual name your function should have. Try to keep this as descriptive as possible, to make reading the code easier.
+
+Something like `cynthia_give_egg` or even just `rival` if this is the rival talking function of the area.
+
+#### Example function names
+
+Here are some example function names:
+
+```c
+ev_c01_rival
+anm_c01_rival
+pos_r207_galactic_blocker
+```
+
+### Comments
+
+To make a comment, simply add a semicolon `;` and type your comment.
+
+```c
+ev_c01_greet_player:; This function makes the professor greet the player
+```
+
+### How to make the game run your functions
+
+There are four main ways to make the game run your custom functions.
+
+1. Using an `ev_{area_name}_flag_change` function
+2. Referencing your function name in the `TalkLabel` of a [PlaceData](place-data.md)
+3. Referencing your function name in the `ContactLabel` of a [StopData](stop-data.md)
+4. Calling your function from another function that already in the script using a [_JUMP](commands/jump.md) or a [_CALL](commands/call.md) function
+
+## Flags
+
+Flags are a way to store varios data about your game state. Flags can either be set (1) using [_FLAG_SET](commands/flag-set.md) or reset (0) using [_FLAG_RESET](commands/flag-reset.md).
+
+### Example
+
+Here is an example of a legendary being fought, despawned and then made sure it is not encounterable again.
+
+Part of the [PlaceData](place-data.md) of the legendary:
+```c
+{
+    "ID": "C01_DARKRAI",
+    "zoneID": 0,
+    [...],
+    "TalkLabel": "ev_c01_darkrai",
+    "ContactLabel": "",
+    "Work": 3000,
+    [...]
+}
+```
+
+The function that handles the Darkrai event:
+
+```c
+ev_c01_darkrai:
+_SP_WILD_BTL_SET(491, 80); Fight Darkrai
+_OBJ_DEL('C01_DARKRAI'); Hide Darkrai in the area
+_FLAG_SET(#3000); Make sure Darkrai will be hidden when reloading the area
+_END()
+```
+
+## PlaceData quirks
+
+The `Work` value of a [PlaceData](place-data.md) is only checked when entering the [Area](../dictionary/areas.md).
+
+This means if you change the Flag state of a [PlaceData](place-data.md) in the [Area](../dictionary/areas.md) you are currently in, this will not be effective until you exit and re-enter that [Area](../dictionary/areas.md).
+
+For example to make an object disappear in the future, starting the moment you are in the [Area](../dictionary/areas.md), you need to both set the Flag using [_FLAG_SET](commands/flag-set.md) and [_OBJ_DEL](commands/obj-del.md).
+
+The same goes for [_FLAG_RESET](commands/flag-reset.md) and [_OBJ_ADD](commands/obj-add.md) if you want to make a [PlaceData](place-data.md) appear and make it stay even when the [Area](../dictionary/areas.md) is reloaded.
