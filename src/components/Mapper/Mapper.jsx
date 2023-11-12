@@ -15,7 +15,8 @@ import {
   getItemString,
   getRegularShopItems,
   getScriptItems,
-  getFixedShopsItems
+  getFixedShopsItems,
+  getHeartScaleShopItems
 } from '../../utils/dex/item';
 import { useColorMode } from '@docusaurus/theme-common';
 
@@ -39,6 +40,7 @@ export default function Mapper() {
   const [shopItemsList, setShopItems] = useState([]);
   const [scriptItemsList, setScriptItems] = useState([]);
   const [fixedShopList, setFixedShops] = useState([]);
+  const [heartScaleShopList, setHeartScaleShop] = useState([]);
   const myCanvas = useRef();
   const { colorMode, setColorMode } = useColorMode();
 
@@ -67,7 +69,8 @@ export default function Mapper() {
       setHiddenItems(getHiddenItemsFromZoneID(zoneId));
       setShopItems(getRegularShopItems(zoneId));
       setScriptItems(getScriptItems(zoneId));
-      setFixedShops(getFixedShops(zoneId))
+      setFixedShops(getFixedShops(zoneId));
+      setHeartScaleShop(getHeartScaleShopItems(zoneId));
     };
 
     myCanvas.current.addEventListener('click', handleClick);
@@ -198,6 +201,14 @@ export default function Mapper() {
                 ))}
               </div>
             ))}
+          </div>
+        ))}
+      </div>
+      <div>
+        Heart Scale Shop Items: 
+        {heartScaleShopList && heartScaleShopList.map((heartScaleItem, index) => (
+          <div key={index}>
+            {`${getItemString(heartScaleItem.ItemNo)} Price: ${heartScaleItem.Price} Heart Scale(s)`}
           </div>
         ))}
       </div>

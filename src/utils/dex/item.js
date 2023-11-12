@@ -24,14 +24,14 @@ function getBattleItemPrice(itemId = 0) {
 }
 
 function getRegularShopItems(zoneId) {
-  const excludedZones = [473, 456, 422]
+  const excludedZones = [473, 456, 422];
   const zoneCode = getZoneCodeFromCSV(zoneId + 1);
   if (
     zoneCode.startsWith("C") ||
     (zoneCode.startsWith("T") && !excludedZones.includes(zoneId))
     ) {
-    const shopItems = ShopTable.FS.filter(obj => obj.ZoneID === zoneId || obj.ZoneID === -1)
-    return shopItems
+    const shopItems = ShopTable.FS.filter(obj => obj.ZoneID === zoneId || obj.ZoneID === -1);
+    return shopItems;
   }
   return null;
 }
@@ -77,9 +77,16 @@ function getFixedShops(zoneId) {
 
 function getFixedShopsItems(shopId) {
   const shopItems = ShopTable.FixedShop.filter(obj => obj.ShopID === parseInt(shopId))
-  console.log(shopItems)
   const itemNos = shopItems.map(item => item.ItemNo);
   return itemNos;
+}
+
+function getHeartScaleShopItems(zoneId) {
+  if (zoneId !== 110) {
+    return null;
+  };
+  console.log(ShopTable.OtenkiShop)
+  return ShopTable.OtenkiShop
 }
 
 export {
@@ -90,5 +97,6 @@ export {
   getBattleItemPrice,
   getScriptItems,
   getFixedShops,
-  getFixedShopsItems
+  getFixedShopsItems,
+  getHeartScaleShopItems
 };
