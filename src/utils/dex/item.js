@@ -1,6 +1,6 @@
-import { getZoneCodeFromCSV } from './location';
+import { getZoneCodeFromCSV, getZoneIdFromZoneCode } from './location';
 
-const { itemNames, ShopTable, ItemTable } = require('../../../__gamedata');
+const { itemNames, ShopTable, ItemTable, ItemMap } = require('../../../__gamedata');
 
 function getItemIdFromItemName(itemName) {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
@@ -23,9 +23,9 @@ function getBattleItemPrice(itemId = 0) {
   return ItemTable.Item[itemId].bp_price;
 }
 
-function getRegularShopItems(zoneId, zoneMap) {
+function getRegularShopItems(zoneId) {
   const excludedZones = [473, 456, 422]
-  const zoneCode = getZoneCodeFromCSV(zoneId + 1, zoneMap);
+  const zoneCode = getZoneCodeFromCSV(zoneId + 1);
   if (
     zoneCode.startsWith("C") ||
     (zoneCode.startsWith("T") && !excludedZones.includes(zoneId))
@@ -36,10 +36,27 @@ function getRegularShopItems(zoneId, zoneMap) {
   return null;
 }
 
+function getScriptItems(zoneId) {
+  const zoneCode = getZoneCodeFromCSV(zoneId);
+  const lookup = zoneCode.slice(0, 3).toLowerCase();
+  const result = [];
+
+  Object.keys(ItemMap).forEach(key => {
+    if (key.startsWith(lookup)) {
+      const flattenedArray = ItemMap[key].flat(Infinity);
+      const uniqueArray = [...new Set(flattenedArray)];
+      result.push(...uniqueArray);
+    }
+  });
+
+  return result;
+}
+
 export {
   getItemIdFromItemName,
   getItemString,
   getRegularShopItems,
   getItemPrice,
-  getBattleItemPrice
+  getBattleItemPrice,
+  getScriptItems
 };

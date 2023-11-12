@@ -39,6 +39,7 @@ import itemNames from './english_ss_itemname.json';
 import moveEnum from './moveEnum.json';
 import smogonMoves from './smogonMoves.json';
 import EvolutionData from './evolution.json';
+import ItemMap from './item_map.json';
 
 export {
   PersonalTable,
@@ -72,5 +73,6 @@ export {
   trainerLocations,
   field_items,
   hidden_items,
-  areasList
+  areasList,
+  ItemMap
 };

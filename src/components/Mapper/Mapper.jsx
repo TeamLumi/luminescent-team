@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import './style.css';
 import { coordinates } from './coordinates';
 import { getAreaEncounters, getTrainersFromZoneName, getFieldItemsFromZoneID, getHiddenItemsFromZoneID, getAllGroundEncounters} from '../../utils/dex';
-import { createZoneIdMap, getZoneIdFromZoneName } from '../../utils/dex/location';
-import { getItemPrice, getItemString, getRegularShopItems } from '../../utils/dex/item';
+import { getZoneIdFromZoneName } from '../../utils/dex/location';
+import { getItemPrice, getItemString, getRegularShopItems, getScriptItems } from '../../utils/dex/item';
 import { useColorMode } from '@docusaurus/theme-common';
 
 function getSelectedLocation(x, y) {
@@ -24,6 +24,7 @@ export default function Mapper() {
   const [fieldItemsList, setFieldItems] = useState([]);
   const [hiddenItemsList, setHiddenItems] = useState([]);
   const [shopItemsList, setShopItems] = useState([]);
+  const [scriptItemsList, setScriptItems] = useState([]);
   const myCanvas = useRef();
   const { colorMode, setColorMode } = useColorMode();
 
@@ -43,14 +44,15 @@ export default function Mapper() {
       setCoordinates({ x,y });
       const location = getSelectedLocation( x,y )
       const location_name = location.name ? location.name : ""
-      setLocationName(location_name)
-      setEncounterList(getAreaEncounters(location_name))
-      setTrainerList(getTrainersFromZoneName(location_name))
+      setLocationName(location_name);
+      setEncounterList(getAreaEncounters(location_name));
+      setTrainerList(getTrainersFromZoneName(location_name));
 
-      const zoneId = getZoneIdFromZoneName(location_name)
-      setFieldItems(getFieldItemsFromZoneID(zoneId))
-      setHiddenItems(getHiddenItemsFromZoneID(zoneId))
-      setShopItems(getRegularShopItems(zoneId))
+      const zoneId = getZoneIdFromZoneName(location_name);
+      setFieldItems(getFieldItemsFromZoneID(zoneId));
+      setHiddenItems(getHiddenItemsFromZoneID(zoneId));
+      setShopItems(getRegularShopItems(zoneId));
+      setScriptItems(getScriptItems(zoneId));
     };
 
     myCanvas.current.addEventListener('click', handleClick);
@@ -133,6 +135,14 @@ export default function Mapper() {
         {hiddenItemsList && hiddenItemsList.map((hiddenItem, index) => (
           <div key={index}>
             {`${getItemString(hiddenItem)}`}
+          </div>
+        ))}
+      </div>
+      <div>
+        Scripted Items: 
+        {scriptItemsList && scriptItemsList.map((scriptItem, index) => (
+          <div key={index}>
+            {`${getItemString(scriptItem)}`}
           </div>
         ))}
       </div>
