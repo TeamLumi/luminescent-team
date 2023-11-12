@@ -129,6 +129,19 @@ const sidebars = {
         'audio/labels',
       ],
     },
+    {
+      type: 'category',
+      label: 'Documentation',
+      link: {
+        type: 'generated-index',
+        slug: 'category/documentation',
+        description: 'Guides for editing textures models and animations.',
+      },
+      collapsed: true,
+      items: [
+        'documentation/map-info-locations',
+      ],
+    },
   ]
 };
 
