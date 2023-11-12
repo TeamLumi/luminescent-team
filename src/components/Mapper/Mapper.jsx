@@ -1,9 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './style.css';
 import { coordinates } from './coordinates';
-import { getAreaEncounters, getTrainersFromZoneName, getFieldItemsFromZoneID, getHiddenItemsFromZoneID, getAllGroundEncounters} from '../../utils/dex';
+import {
+  getAreaEncounters,
+  getTrainersFromZoneName,
+  getFieldItemsFromZoneID,
+  getHiddenItemsFromZoneID,
+  getAllGroundEncounters
+} from '../../utils/dex';
 import { getZoneIdFromZoneName } from '../../utils/dex/location';
-import { getItemPrice, getItemString, getRegularShopItems, getScriptItems } from '../../utils/dex/item';
+import {
+  getFixedShops,
+  getItemPrice,
+  getItemString,
+  getRegularShopItems,
+  getScriptItems,
+  getFixedShopsItems
+} from '../../utils/dex/item';
 import { useColorMode } from '@docusaurus/theme-common';
 
 function getSelectedLocation(x, y) {
@@ -25,6 +38,7 @@ export default function Mapper() {
   const [hiddenItemsList, setHiddenItems] = useState([]);
   const [shopItemsList, setShopItems] = useState([]);
   const [scriptItemsList, setScriptItems] = useState([]);
+  const [fixedShopList, setFixedShops] = useState([]);
   const myCanvas = useRef();
   const { colorMode, setColorMode } = useColorMode();
 
@@ -53,6 +67,7 @@ export default function Mapper() {
       setHiddenItems(getHiddenItemsFromZoneID(zoneId));
       setShopItems(getRegularShopItems(zoneId));
       setScriptItems(getScriptItems(zoneId));
+      setFixedShops(getFixedShops(zoneId))
     };
 
     myCanvas.current.addEventListener('click', handleClick);
@@ -96,7 +111,7 @@ export default function Mapper() {
         >
           Your browser does not support the canvas element.
         </canvas>
-        <div className="infoCol" style={{ position: 'absolute', top: "20px", left: "900px" }}>
+        <div className="infoCol" style={{ position: 'absolute', top: "80px", left: "900px" }}>
           {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
           <div>
             Selected Location: {locationName}
@@ -160,6 +175,29 @@ export default function Mapper() {
             {shopItem.BadgeNum > 0 && (
               ` (${shopItem.BadgeNum}+ Badges)`
             )}
+          </div>
+        ))}
+      </div>
+      <div>
+        {fixedShopList && fixedShopList.map((section, index) => (
+          <div key={index}>
+            {`${section.sectionTitle} Items:`}
+            {section.items && section.items.map((shop, itemIndex) => (
+              <div key={itemIndex}>
+                {getFixedShopsItems(shop).map((itemNo, itemNoIndex) => (
+                  <div key={itemNoIndex}>
+                    {`${getItemString(itemNo)} `}
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Pok%C3%A9mon_Dollar_sign.svg/73px-Pok%C3%A9mon_Dollar_sign.svg.png"
+                      height="12px"
+                      style={{filter: colorMode === "dark" ? "invert(80%)" : "invert(0%)"}}
+                    />
+                    {` ${getItemPrice(itemNo)}`}
+
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         ))}
       </div>

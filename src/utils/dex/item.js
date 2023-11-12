@@ -1,6 +1,6 @@
-import { getZoneCodeFromCSV, getZoneIdFromZoneCode } from './location';
+import { getZoneCodeFromCSV, getZoneNameFromZoneCode } from './location';
 
-const { itemNames, ShopTable, ItemTable, ItemMap } = require('../../../__gamedata');
+const { itemNames, ShopTable, ItemTable, ItemMap, FixedShop } = require('../../../__gamedata');
 
 function getItemIdFromItemName(itemName) {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
@@ -52,11 +52,43 @@ function getScriptItems(zoneId) {
   return result;
 }
 
+function getFixedShops(zoneId) {
+  const zoneCode = getZoneCodeFromCSV(zoneId);
+  const lookup = zoneCode.slice(0, 3).toLowerCase();
+  const groupedData = {};
+
+  Object.keys(FixedShop).forEach(key => {
+    const prefix = key.slice(0, 3);
+    
+    if (!groupedData[prefix]) {
+      groupedData[prefix] = {};
+    }
+  
+    groupedData[prefix][key] = FixedShop[key];
+  });
+
+  const filteredData = groupedData[lookup] || {}
+  const sections = Object.entries(filteredData).map(([key, value]) => ({
+    sectionTitle: getZoneNameFromZoneCode(key),
+    items: value,
+  }));
+  return sections;
+}
+
+function getFixedShopsItems(shopId) {
+  const shopItems = ShopTable.FixedShop.filter(obj => obj.ShopID === parseInt(shopId))
+  console.log(shopItems)
+  const itemNos = shopItems.map(item => item.ItemNo);
+  return itemNos;
+}
+
 export {
   getItemIdFromItemName,
   getItemString,
   getRegularShopItems,
   getItemPrice,
   getBattleItemPrice,
-  getScriptItems
+  getScriptItems,
+  getFixedShops,
+  getFixedShopsItems
 };

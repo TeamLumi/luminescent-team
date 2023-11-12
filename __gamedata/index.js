@@ -40,6 +40,7 @@ import moveEnum from './moveEnum.json';
 import smogonMoves from './smogonMoves.json';
 import EvolutionData from './evolution.json';
 import ItemMap from './item_map.json';
+import FixedShop from './fixed_shop.json';
 
 export {
   PersonalTable,
@@ -74,5 +75,6 @@ export {
   field_items,
   hidden_items,
   areasList,
-  ItemMap
+  ItemMap,
+  FixedShop
 };
