@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './style.css';
 import { coordinates } from './coordinates';
-import { getAreaEncounters, getTrainersFromZoneName, getFieldItemsFromZoneID, getHiddenItemsFromZoneID} from '../../utils/dex';
-import { getZoneIdFromZoneName } from '../../utils/dex/location';
-import { getItemString } from '../../utils/dex/item';
+import { getAreaEncounters, getTrainersFromZoneName, getFieldItemsFromZoneID, getHiddenItemsFromZoneID, getAllGroundEncounters} from '../../utils/dex';
+import { createZoneIdMap, getZoneIdFromZoneName } from '../../utils/dex/location';
+import { getItemString, getRegularShopItems } from '../../utils/dex/item';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
-      return (coords.x <= x && x <= (coords.x + coords.w)) &&
-          (coords.y <= y && y <= (coords.y + coords.h))
+    return (coords.x <= x && x <= (coords.x + coords.w)) &&
+      (coords.y <= y && y <= (coords.y + coords.h))
   });
   if (location.length === 0) return "";
   return location[0];
@@ -18,10 +18,11 @@ export default function Mapper() {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
-  const [encounterList, setEncounterList] = useState("");
-  const [trainerList, setTrainerList] = useState("");
+  const [encounterList, setEncounterList] = useState([]);
+  const [trainerList, setTrainerList] = useState([]);
   const [fieldItemsList, setFieldItems] = useState([]);
   const [hiddenItemsList, setHiddenItems] = useState([]);
+  const [shopItemsList, setShopItems] = useState([]);
   const myCanvas = useRef();
 
   useEffect(() => {
@@ -47,6 +48,7 @@ export default function Mapper() {
       const zoneId = getZoneIdFromZoneName(location_name)
       setFieldItems(getFieldItemsFromZoneID(zoneId))
       setHiddenItems(getHiddenItemsFromZoneID(zoneId))
+      setShopItems(getRegularShopItems(zoneId))
     };
 
     myCanvas.current.addEventListener('click', handleClick);
@@ -91,18 +93,18 @@ export default function Mapper() {
         >
           Your browser does not support the canvas element.
         </canvas>
-      </div>
-      <div className="infoCol">
-        {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
+        <div className="infoCol" style={{ position: 'absolute', top: "20px", left: "900px" }}>
+          {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
+          <div>
+            Selected Location: {locationName}
+          </div>
+        </div>
       </div>
       <div>
       {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
       </div>
       <div>
-        Selected Route: {locationName}
-      </div>
-      <div>
-        Encounter List: 
+        Encounter List:
         {encounterList && encounterList.map((enc, index) => (
           <div key={index}>
             {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
@@ -130,6 +132,14 @@ export default function Mapper() {
         {hiddenItemsList && hiddenItemsList.map((hiddenItem, index) => (
           <div key={index}>
             {`${getItemString(hiddenItem)}`}
+          </div>
+        ))}
+      </div>
+      <div>
+        Shop Items:
+        {shopItemsList && shopItemsList.map((shopItem, index) => (
+          <div key={index}>
+            {`${getItemString(shopItem.ItemNo)}`}
           </div>
         ))}
       </div>

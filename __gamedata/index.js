@@ -6,6 +6,8 @@ import EggMovesTable from './TamagoWazaTable.json';
 import LearnsetTable from './WazaOboeTable.json';
 import MovesTable from './WazaTable.json';
 import ItemTable from './ItemTable.json';
+import ShopTable from './ShopTable.json';
+import areasList from './areas';
 
 //All the Location files
 import displayNames from './english_dp_fld_areaname_display.json';
@@ -45,6 +47,7 @@ export {
   EggMovesTable,
   LearnsetTable,
   MovesTable,
+  ShopTable,
   basePokemonNames,
   formPokemonNames,
   pokemonHeight,
@@ -68,5 +71,6 @@ export {
   encounterLocations,
   trainerLocations,
   field_items,
-  hidden_items
+  hidden_items,
+  areasList
 };

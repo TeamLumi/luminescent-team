@@ -1,37 +1,22 @@
 const { displayNames, areaNames,  mapInfo, field_items, hidden_items } = require('../../../__gamedata');
+const { areasList } = require('../../../__gamedata/areas');
 
 // This first section is using the areas_updated.csv for its data
-const areasList = [];
-
-function createZoneIdMap() {
-  /** This needs to be initialized first in order to use the getZoneID function */
-  const zoneMap = {};
-  areasList.forEach((place, index) => {
-    const zoneIndex = index - 1;
-    const zoneName = areasList[zoneIndex][areasList[zoneIndex].length - 1];
-    const zoneId = areasList[zoneIndex][0];
-    zoneMap[zoneName] = zoneId;
-  });
-  return zoneMap
+function parseCSVLine(zoneId) {
+  const lines = areasList.split('\n');
+  const lineToParse = lines[zoneId];
+  const dataEntries = lineToParse.split(",");
+  return dataEntries;
 };
 
-function getZoneIdFromCSV(zoneName, zoneMap) {
-  if (zoneName in zoneMap) {
-    return parseInt(zoneMap[zoneName])
-  } else {
-    return null
-  };
-};
-
-function getZoneNameFromCSV(zoneId) {
+function getZoneCodeFromCSV(zoneId) {
   if (!zoneId) {
     return null
   }
-  const zones = areasList[zoneId + 1]; //Adds 1 because this is the index of the csv rows which starts at -1 bc of the title
-  const zoneName = zones[3] != "" ? zones[3] : zones[4];
-  return zoneName
+  const zones = parseCSVLine(zoneId); //Adds 1 because this is the index of the csv rows which starts at -1 bc of the title
+  const zoneCode = zones[zones.length - 1];
+  return zoneCode
 };
-
 
 // This next section uses the in game files for the zone names
 function getZoneNameFromDisplayName(displayName) {
@@ -137,9 +122,7 @@ function getHiddenItemsFromZoneID(zoneID) {
 export {
   getZoneIdFromZoneName,
   getZoneNameFromZoneId,
-  createZoneIdMap,
-  getZoneIdFromCSV,
-  getZoneNameFromCSV,
+  getZoneCodeFromCSV,
   getFieldItemsFromZoneID,
   getHiddenItemsFromZoneID
 };
