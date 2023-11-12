@@ -1,4 +1,5 @@
-export const areasList = `0,コトブキシティ,Kotobuki City,Jubilife City,Jubilife City,fields/area001,C01
+export const areasList = `ZoneID,Japanese_Name,Machine_Translated,City,Actual,File_Path,Zone_Code
+0,コトブキシティ,Kotobuki City,Jubilife City,Jubilife City,fields/area001,C01
 1,コトブキ:フレンドリーショップ,Kotobuki : Friendly Shop,Jubilife City,Jubilife - Poké Mart,prefab_map/t02fs0101,C01FS0101
 2,コトブキ:ポケモンセンター 1F,Kotobuki : Pokémon Center 1F,Jubilife City,Jubilife - Center 1F,prefab_map/t02pc0101,C01PC0101
 3,コトブキ:ポケモンセンター 2F,Kotobuki : Pokémon Center 2F,Jubilife City,Jubilife - Center 2F,prefab_map/t02pc0102,C01PC0102

@@ -2,27 +2,35 @@ const { displayNames, areaNames,  mapInfo, field_items, hidden_items } = require
 const { areasList } = require('../../../__gamedata/areas');
 
 // This first section is using the areas_updated.csv for its data
-function parseCSVLine(zoneId) {
-  const lines = areasList.split('\n');
-  const lineToParse = lines[zoneId];
-  const dataEntries = lineToParse.split(",");
-  return dataEntries;
-};
+const AreaMap = {}
+const lines = areasList.split('\n');
+const headers = lines[0].split(",");
+lines.slice(1).forEach(line => {
+  const values = line.split(",");
+  const zoneId = parseInt(values[0]);
+  AreaMap[zoneId] = Object.fromEntries(headers.map((header, index) => [header, values[index]]));
+});
 
 function getZoneCodeFromCSV(zoneId) {
   if (!zoneId) {
-    return null
+    return null;
   }
-  const zones = parseCSVLine(zoneId); //Adds 1 because this is the index of the csv rows which starts at -1 bc of the title
-  const zoneCode = zones[zones.length - 1];
-  return zoneCode
+  return AreaMap[zoneId].Zone_Code;
 };
+
+function getZoneIdFromZoneCode(zoneCode) {
+  if (!zoneCode) {
+    return null;
+  }
+  const zoneId = Object.keys(AreaMap).find(key => AreaMap[key].Zone_Code === zoneCode);
+  return parseInt(zoneId);
+}
 
 // This next section uses the in game files for the zone names
 function getZoneNameFromDisplayName(displayName) {
   if(displayName === undefined) return null;
 
-  const zoneName = displayNames.labelDataArray
+  const zoneName = displayNames.labelDataAr
     .find(e => e.labelName === displayName)
     ?.wordDataArray[0].str;
 
@@ -123,6 +131,7 @@ export {
   getZoneIdFromZoneName,
   getZoneNameFromZoneId,
   getZoneCodeFromCSV,
+  getZoneIdFromZoneCode,
   getFieldItemsFromZoneID,
   getHiddenItemsFromZoneID
 };
