@@ -3,7 +3,8 @@ import './style.css';
 import { coordinates } from './coordinates';
 import { getAreaEncounters, getTrainersFromZoneName, getFieldItemsFromZoneID, getHiddenItemsFromZoneID, getAllGroundEncounters} from '../../utils/dex';
 import { createZoneIdMap, getZoneIdFromZoneName } from '../../utils/dex/location';
-import { getItemString, getRegularShopItems } from '../../utils/dex/item';
+import { getItemPrice, getItemString, getRegularShopItems } from '../../utils/dex/item';
+import { useColorMode } from '@docusaurus/theme-common';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -24,6 +25,7 @@ export default function Mapper() {
   const [hiddenItemsList, setHiddenItems] = useState([]);
   const [shopItemsList, setShopItems] = useState([]);
   const myCanvas = useRef();
+  const { colorMode, setColorMode } = useColorMode();
 
   useEffect(() => {
     const context = myCanvas.current.getContext('2d');
@@ -139,7 +141,16 @@ export default function Mapper() {
         Shop Items:
         {shopItemsList && shopItemsList.map((shopItem, index) => (
           <div key={index}>
-            {`${getItemString(shopItem.ItemNo)}`}
+            {`${getItemString(shopItem.ItemNo)} `}
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Pok%C3%A9mon_Dollar_sign.svg/73px-Pok%C3%A9mon_Dollar_sign.svg.png"
+              height="12px"
+              style={{filter: colorMode === "dark" ? "invert(80%)" : "invert(0%)"}}
+            />
+            {` ${getItemPrice(shopItem.ItemNo)}`}
+            {shopItem.BadgeNum > 0 && (
+              ` (${shopItem.BadgeNum}+ Badges)`
+            )}
           </div>
         ))}
       </div>
