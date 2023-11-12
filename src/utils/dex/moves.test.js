@@ -264,7 +264,6 @@ describe('Dex Utils Move Getters', () => {
 
     it('returns an array of TM moves when one or more TMs are learned', () => {
       const learnset = getTechMachineLearnset(3);
-      console.log(learnset);
       expect(learnset).toStrictEqual([
         {
           level: 'tm',

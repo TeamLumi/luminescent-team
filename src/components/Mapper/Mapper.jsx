@@ -58,7 +58,6 @@ export default function Mapper() {
 
     // Clean up the event listener when the component is unmounted
     return () => {
-      console.log(myCanvas.current)
       myCanvas.current.removeEventListener('click', handleClick);
       myCanvas.current.addEventListener('mousemove', handleMouseMove);
     };

@@ -26,7 +26,6 @@ function getBattleItemPrice(itemId = 0) {
 function getRegularShopItems(zoneId, zoneMap) {
   const excludedZones = [473, 456, 422]
   const zoneCode = getZoneCodeFromCSV(zoneId + 1, zoneMap);
-  console.log(zoneCode, zoneCode.startsWith("C"), zoneCode.startsWith("T"))
   if (
     zoneCode.startsWith("C") ||
     (zoneCode.startsWith("T") && !excludedZones.includes(zoneId))
