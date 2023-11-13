@@ -16,8 +16,10 @@ export const ROD_ENC =  [
   ENC_TYPES["ii_mons"],
   ENC_TYPES["sugoi_mons"]
 ];
-export const SURF_ENC = [ENC_TYPES["water_mons"], "Surfing Incense"];
+export const SURF_ENC = ENC_TYPES["water_mons"];
+export const SURF_INCENSE = "Surfing Incense";
 export const INCENSE = "Incense";
 export const TOD_ENC = ["Day", "Night"];
-export const ODD_ENC = [ENC_TYPES["tairyo"], ENC_TYPES["swayGrass"]];
+export const RADAR_ENC = ENC_TYPES["swayGrass"];
+export const SWARM_ENC = ENC_TYPES["tairyo"];
 export const HONEY = "Honey Tree";

@@ -38,7 +38,6 @@ import {
   getAllRodEncounters,
   getAllSurfingEncounters,
   getAreaEncounters,
-  getOddEncounters,
   getTODEncounters,
   getAllHoneyTreeEncounters
 } from './encounters'
@@ -125,7 +124,6 @@ export {
   getAllRodEncounters,
   getAllSurfingEncounters,
   getAreaEncounters,
-  getOddEncounters,
   getTODEncounters,
   getAllHoneyTreeEncounters,
   getTrainersFromZoneName,

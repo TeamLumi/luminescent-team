@@ -1,5 +1,16 @@
 import { encounterLocations } from '../../../__gamedata';
-import { SURF_ENC, ENC_TYPES, GRASS, ROD_ENC, TOD_ENC, ODD_ENC, HONEY, INCENSE } from './encountersConstants';
+import {
+  SURF_ENC,
+  ENC_TYPES,
+  GRASS,
+  ROD_ENC,
+  TOD_ENC,
+  RADAR_ENC,
+  SWARM_ENC,
+  HONEY,
+  INCENSE,
+  SURF_INCENSE
+} from './encountersConstants';
 
 function getAreaEncounters(zoneName) {
   if (zoneName in encounterLocations) {
@@ -8,7 +19,6 @@ function getAreaEncounters(zoneName) {
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
     }));
-
     return mappedEncounters;
   }
   console.warn(`${zoneName} is not in the Encounter List.`);
@@ -16,31 +26,43 @@ function getAreaEncounters(zoneName) {
 };
 
 function getAllGroundEncounters(areaEncounters) {
-  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === GRASS);
+  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === "Grass");
   if (filteredEncounters) {
     return filteredEncounters;
   }
+  return {}
 };
 
-function getAllRodEncounters(areaEncounters) {
-  const filteredEncounters = areaEncounters.filter(obj => ROD_ENC.includes(obj.encounterType));
+function getAllRodEncounters(areaEncounters, rod=1) {
+  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === ROD_ENC[rod - 1]);
   if (filteredEncounters) {
     return filteredEncounters;
   }
+  return {}
 };
 
 function getAllSurfingEncounters(areaEncounters) {
-  const filteredEncounters = areaEncounters.filter(obj => SURF_ENC.includes(obj.encounterType));
+  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === SURF_ENC);
   if (filteredEncounters) {
     return filteredEncounters;
   }
+  return {}
 };
+
+function getSurfingIncenseEncounter(areaEncounters) {
+  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === SURF_INCENSE);
+  if (filteredEncounters) {
+    return filteredEncounters;
+  }
+  return {}
+}
 
 function getAllIncenseEncounters(areaEncounters) {
   const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === INCENSE);
   if (filteredEncounters) {
     return filteredEncounters;
   }
+  return {}
 };
 
 function getTODEncounters(areaEncounters) {
@@ -48,13 +70,23 @@ function getTODEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
+  return {}
 };
 
-function getOddEncounters(areaEncounters) {
-  const filteredEncounters = areaEncounters.filter(obj => ODD_ENC.includes(obj.encounterType));
+function getRadarEncounter(areaEncounters) {
+  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === RADAR_ENC);
   if (filteredEncounters) {
     return filteredEncounters;
   }
+  return {}
+};
+
+function getSwarmEncounter(areaEncounters) {
+  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === SWARM_ENC);
+  if (filteredEncounters) {
+    return filteredEncounters;
+  }
+  return {}
 };
 
 function getAllHoneyTreeEncounters(areaEncounters) {
@@ -62,6 +94,7 @@ function getAllHoneyTreeEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
+  return {}
 };
 
 export {
@@ -69,8 +102,10 @@ export {
   getAllIncenseEncounters,
   getAllRodEncounters,
   getAllSurfingEncounters,
+  getSurfingIncenseEncounter,
   getAreaEncounters,
-  getOddEncounters,
+  getRadarEncounter,
+  getSwarmEncounter,
   getTODEncounters,
   getAllHoneyTreeEncounters
 }

@@ -85,7 +85,6 @@ function getHeartScaleShopItems(zoneId) {
   if (zoneId !== 110) {
     return null;
   };
-  console.log(ShopTable.OtenkiShop)
   return ShopTable.OtenkiShop
 }
 
