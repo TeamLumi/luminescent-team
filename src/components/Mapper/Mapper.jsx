@@ -47,6 +47,7 @@ function getSelectedLocation(x, y) {
 export default function Mapper() {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [hoveredZone, setHoveredZone] = useState(null);
   const [locationName, setLocationName] = useState("");
 
   const [swarm, setSwarm] = useState(false);
@@ -137,6 +138,39 @@ export default function Mapper() {
     return{GroundEnc: allGroundEnc, SurfEnc: allSurfEnc, RodEnc: rodEnc}
   }
 
+    const drawOverlay = (ctx) => {
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height); // Clear the canvas
+
+      // Draw the image after clearing the canvas
+      const image = new Image();
+      image.src = require('@site/static/img/sinnoh-updated.png').default;
+      image.onload = () => {
+        ctx.drawImage(image, 0, 0);
+
+        coordinates.forEach(coord => {
+          // Draw zone outlines
+          ctx.beginPath();
+          ctx.moveTo(coord.x, coord.y);
+          ctx.lineTo(coord.x + coord.w, coord.y);
+          ctx.lineTo(coord.x + coord.w, coord.y + coord.h);
+          ctx.lineTo(coord.x, coord.y + coord.h);
+          ctx.closePath();
+          if (hoveredZone === coord.name && hoveredZone !== locationName) {
+            ctx.fillStyle = 'rgba(255,219,0, 0.7)';
+            ctx.fill();
+          }
+          if (locationName === coord.name) {
+            ctx.fillStyle = 'rgba(72, 113, 247, 0.8)';
+            ctx.fill();
+          }
+
+          ctx.strokeStyle = 'rgba(0, 0, 0, 1)';
+          ctx.lineWidth = hoveredZone === coord.name ? 2.3 : 1;
+          ctx.stroke();
+        });
+      };
+    };
+
   useEffect(() => {
     const context = myCanvas.current.getContext('2d');
     const image = new Image();
@@ -164,38 +198,37 @@ export default function Mapper() {
       setScriptItems(getScriptItems(zoneId));
       setFixedShops(getFixedShops(zoneId));
       setHeartScaleShop(getHeartScaleShopItems(zoneId));
+
+      drawOverlay(context);
     };
 
     myCanvas.current.addEventListener('click', handleClick);
     myCanvas.current.addEventListener('mousemove', handleMouseMove);
-
+    myCanvas.current.addEventListener('mouseleave', handleMouseLeave);
+    
     // Clean up the event listener when the component is unmounted
     return () => {
       myCanvas.current.removeEventListener('click', handleClick);
-      myCanvas.current.addEventListener('mousemove', handleMouseMove);
+      myCanvas.current.removeEventListener('mousemove', handleMouseMove);
+      myCanvas.current.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, [swarm, radar, tod, incense, surfIncense, rod])
+  }, [swarm, radar, tod, incense, surfIncense, rod, hoveredZone, locationName])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
     setCursorPosition({ x, y });
+    const location = getSelectedLocation(x, y);
+    if (location) {
+      setHoveredZone(location.name);
+    }
   }
 
-  function drawOverlay(ctx) {
-    ctx.strokeStyle = 'rgba(0, 0, 0, 1)'; // Red with 50% opacity
-
-    coordinates.forEach(coord => {
-      ctx.beginPath();
-      ctx.moveTo(coord.x, coord.y);
-      ctx.lineTo(coord.x + coord.w, coord.y);
-      ctx.lineTo(coord.x + coord.w, coord.y + coord.h);
-      ctx.lineTo(coord.x, coord.y + coord.h);
-      ctx.closePath();
-      ctx.stroke();
-    });
-  }
+  const handleMouseLeave = () => {
+    // Clear the hovered zone when mouse leaves
+    setHoveredZone(null);
+  };
 
   return (
     <div className="content">
@@ -374,4 +407,3 @@ export default function Mapper() {
     </div>
   );
 }
-
