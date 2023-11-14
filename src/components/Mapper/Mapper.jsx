@@ -138,38 +138,30 @@ export default function Mapper() {
     return{GroundEnc: allGroundEnc, SurfEnc: allSurfEnc, RodEnc: rodEnc}
   }
 
-    const drawOverlay = (ctx) => {
-      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height); // Clear the canvas
+  const drawOverlay = (ctx) => {
 
-      // Draw the image after clearing the canvas
-      const image = new Image();
-      image.src = require('@site/static/img/sinnoh-updated.png').default;
-      image.onload = () => {
-        ctx.drawImage(image, 0, 0);
+    coordinates.forEach(coord => {
+      // Draw zone outlines
+      ctx.beginPath();
+      ctx.moveTo(coord.x, coord.y);
+      ctx.lineTo(coord.x + coord.w, coord.y);
+      ctx.lineTo(coord.x + coord.w, coord.y + coord.h);
+      ctx.lineTo(coord.x, coord.y + coord.h);
+      ctx.closePath();
+      if (hoveredZone === coord.name && hoveredZone !== locationName) {
+        ctx.fillStyle = 'rgba(255,219,0, 0.7)';
+        ctx.fill();
+      }
+      if (locationName === coord.name) {
+        ctx.fillStyle = 'rgba(72, 113, 247, 0.8)';
+        ctx.fill();
+      }
 
-        coordinates.forEach(coord => {
-          // Draw zone outlines
-          ctx.beginPath();
-          ctx.moveTo(coord.x, coord.y);
-          ctx.lineTo(coord.x + coord.w, coord.y);
-          ctx.lineTo(coord.x + coord.w, coord.y + coord.h);
-          ctx.lineTo(coord.x, coord.y + coord.h);
-          ctx.closePath();
-          if (hoveredZone === coord.name && hoveredZone !== locationName) {
-            ctx.fillStyle = 'rgba(255,219,0, 0.7)';
-            ctx.fill();
-          }
-          if (locationName === coord.name) {
-            ctx.fillStyle = 'rgba(72, 113, 247, 0.8)';
-            ctx.fill();
-          }
-
-          ctx.strokeStyle = 'rgba(0, 0, 0, 1)';
-          ctx.lineWidth = hoveredZone === coord.name ? 2.3 : 1;
-          ctx.stroke();
-        });
-      };
-    };
+      ctx.strokeStyle = 'rgba(0, 0, 0, 1)';
+      ctx.lineWidth = hoveredZone === coord.name ? 2.3 : 1;
+      ctx.stroke();
+    });
+  };
 
   useEffect(() => {
     const context = myCanvas.current.getContext('2d');
