@@ -6,7 +6,7 @@ const { FORM_MAP } = require('./dex/functions');
 const { normalizePokemonName } = require('./dex/name');
 
 /**
- * @param {{path: string, routeBasePath: string, pokemonComponent: string, pokemonRedirectComponent: string, listComponent: string, wrapperComponent: string}} options
+ * @param {{path: string, routeBasePath: string, pokemonComponent: string, pokemonRedirectComponent: string, listComponent: string, wrapperComponent: string, mapComponent: string}} options
  * @param {import('@docusaurus/types').LoadContext} context
  * @returns {import('@docusaurus/types').Plugin<any>}
  */
@@ -50,6 +50,15 @@ function pokedexDataPlugin(context, options) {
           pokemonList: pokemonListJson,
         },
       };
+
+      actions.addRoute({
+        path: options.routeBasePath + "mapper",
+        component: options.mapComponent,
+        exact: true,
+        modules: {
+          pokemonList: pokemonListJson,
+        }
+      });
 
       const pokemonRedirectRoutes = [];
       const pokemonRoutes = [];
@@ -107,6 +116,7 @@ const optionsSchema = Joi.object({
   pokemonRedirectComponent: Joi.string(),
   listComponent: Joi.string(),
   wrapperComponent: Joi.string(),
+  mapComponent: Joi.string(),
 });
 
 pokedexDataPlugin.validateOptions = ({ options, validate }) => {

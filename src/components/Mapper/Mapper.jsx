@@ -1,5 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Box, Checkbox, FormGroup, FormControlLabel } from '@mui/material';
+import { useColorMode } from '@docusaurus/theme-common';
+import { FixedSizeList } from 'react-window';
+import AutoSizer from 'react-virtualized-auto-sizer';
 
+import { PokemonSearchInput } from '../Pokedex2/PokemonSearchInput';
+import { PokemonListEntry } from './PokemonListContent';
 import { RodButtons, TODButtons } from './Buttons';
 import './style.css';
 
@@ -20,7 +26,6 @@ import {
   getFixedShopsItems,
   getHeartScaleShopItems
 } from '../../utils/dex/item';
-import { useColorMode } from '@docusaurus/theme-common';
 import {
   getAllGroundEncounters,
   getTODEncounters,
@@ -31,9 +36,6 @@ import {
   getSwarmEncounter,
   getAllIncenseEncounters
 } from '../../utils/dex/encounters';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import FormGroup from '@mui/material/FormGroup';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -44,10 +46,12 @@ function getSelectedLocation(x, y) {
   return location[0];
 }
 
-export default function Mapper() {
+export const Mapper = ({ pokemonList }) => {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
+  const [pokemons, setPokemons] = useState(pokemonList);
+  const [pokemon, setPokemon] = useState("");
 
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
@@ -208,6 +212,17 @@ export default function Mapper() {
           Your browser does not support the canvas element.
         </canvas>
         <div className="infoCol" style={{ position: 'absolute', top: "80px", left: "900px" }}>
+          <PokemonSearchInput allPokemons={pokemonList} setPokemons={setPokemons} />
+          <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>
+            <AutoSizer>
+              {({ height, width }) => (
+                <FixedSizeList itemCount={pokemons.length} itemSize={60} height={height} width={width}>
+                  {({ index, style }) => <PokemonListEntry pokemon={pokemons[index]} style={style} />}
+                </FixedSizeList>
+              )}
+            </AutoSizer>
+          </Box>
+
           {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
           <div>
             Selected Location: {locationName}

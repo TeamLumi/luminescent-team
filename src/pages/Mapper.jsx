@@ -1,11 +1,11 @@
 import React from 'react';
-import Mapper from '../components/Mapper/Mapper';
 import Layout from '@theme/Layout';
+import { Mapper } from '../components/Mapper/Mapper';
 
-function MapperPage() {
+const MapperPage = ({ pokemonList }) => {
   return (
     <Layout>
-      <Mapper/>
+      <Mapper pokemonList={pokemonList} />
     </Layout>
   )
 }
