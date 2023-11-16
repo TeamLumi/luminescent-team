@@ -219,72 +219,8 @@ export default function Mapper() {
           encounterList={encounterList}
         />
       </div>
-      <div className="buttonControl">
-        <div>
-          {TODButtons(encOptions.tod, handleOptionChange)}
-        </div>
-        <div>
-          {RodButtons(encOptions.rod, handleOptionChange)}
-        </div>
-        <FormGroup>
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={encOptions.swarm}
-                onChange={(event) => handleOptionChange('swarm', event.target.checked)}
-                inputProps={{ 'aria-label': 'controlled' }}
-              />
-            }
-            label="Swarm"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={encOptions.radar}
-                onChange={(event) => handleOptionChange('radar', event.target.checked)}
-                inputProps={{ 'aria-label': 'controlled' }}
-              />
-              }
-            label="Radar"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={encOptions.incense}
-                onChange={(event) => handleOptionChange('incense', event.target.checked)}
-                inputProps={{ 'aria-label': 'controlled' }}
-              />
-            }
-            label="Incense"
-          />
-        </FormGroup>
-      </div>
       <div>
-      {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
-      </div>
-      <div>
-        Grass Encounter List:
-        {encounterList.GroundEnc && encounterList.GroundEnc.map((enc, index) => (
-          <div key={index}>
-            {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
-          </div>
-        ))}
-      </div>
-      <div>
-        Surfing Encounter List:
-        {encounterList.SurfEnc && encounterList.SurfEnc.map((enc, index) => (
-          <div key={index}>
-            {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
-          </div>
-        ))}
-      </div>
-      <div>
-        Rod Encounter List:
-        {encounterList.RodEnc && encounterList.RodEnc.map((enc, index) => (
-          <div key={index}>
-            {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
-          </div>
-        ))}
+        {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
       </div>
       <div>
         Trainers: 
