@@ -1,11 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Box, Checkbox, FormGroup, FormControlLabel } from '@mui/material';
 import { useColorMode } from '@docusaurus/theme-common';
-import { FixedSizeList } from 'react-window';
-import AutoSizer from 'react-virtualized-auto-sizer';
 
-import { PokemonSearchInput } from '../Pokedex2/PokemonSearchInput';
-import { PokemonListEntry } from './PokemonListContent';
+import { PokemonSearchInput } from './PokemonSearchBar';
 import { RodButtons, TODButtons } from './Buttons';
 import './style.css';
 
@@ -46,12 +43,16 @@ function getSelectedLocation(x, y) {
   return location[0];
 }
 
+const canvasDimensions = {
+  width: 1244,
+  height: 720
+}
+
 export const Mapper = ({ pokemonList }) => {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
-  const [pokemons, setPokemons] = useState(pokemonList);
-  const [pokemon, setPokemon] = useState("");
+  const [debouncedText, setDebouncedText] = useState(''); // State for debounced text
 
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
@@ -83,6 +84,10 @@ export const Mapper = ({ pokemonList }) => {
 
   const handleChange = (callback) => (event) => {
     callback(event.target.checked);
+  };
+
+  const handleDebouncedTextChange = (text) => {
+    setDebouncedText(text);
   };
 
   const myCanvas = useRef();
@@ -206,28 +211,37 @@ export const Mapper = ({ pokemonList }) => {
       <div className="canvasCol">
         <canvas
           ref={myCanvas}
-          height="720px"
-          width="1244px"
+          height={`${canvasDimensions.height}px`}
+          width={`${canvasDimensions.width}px`}
         >
           Your browser does not support the canvas element.
         </canvas>
-        <div className="infoCol" style={{ position: 'absolute', top: "80px", left: "900px" }}>
-          <PokemonSearchInput allPokemons={pokemonList} setPokemons={setPokemons} />
-          <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>
-            <AutoSizer>
-              {({ height, width }) => (
-                <FixedSizeList itemCount={pokemons.length} itemSize={60} height={height} width={width}>
-                  {({ index, style }) => <PokemonListEntry pokemon={pokemons[index]} style={style} />}
-                </FixedSizeList>
-              )}
-            </AutoSizer>
-          </Box>
-
-          {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
-          <div>
+        <div
+          className="infoCol"
+          style={{
+            width: `${canvasDimensions.width-10}px`,
+            height: `${canvasDimensions.height}px`
+          }}
+        >
+          <div className="monSearchBar">
+            <PokemonSearchInput
+              allPokemons={pokemonList}
+              debouncedText={debouncedText}
+              setDebouncedText={handleDebouncedTextChange}
+            />
+          </div>
+          <div className="location">
             Selected Location: {locationName}
           </div>
+
         </div>
+      </div>
+      <div>
+        {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
+        <br />
+        {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
+        <br />
+        {`Current Pokemon: ${debouncedText}`}
       </div>
       <div className="buttonControl">
         <div>
@@ -278,9 +292,6 @@ export const Mapper = ({ pokemonList }) => {
             label="Surf Incense"
           />
         </FormGroup>
-      </div>
-      <div>
-      {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
       </div>
       <div>
         Grass Encounter List:
