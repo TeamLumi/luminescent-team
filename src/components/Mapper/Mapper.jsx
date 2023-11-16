@@ -58,7 +58,7 @@ export default function Mapper() {
     sel: { r: 72, g: 113, b: 247, a: 0.8 },
     enc: { r: 247, g: 235, b: 72, a: 0.7 },
   });
-  const locationList = []; // Stubbing this out for the locations when I add that in a diff branch
+  const [locationList, setLocationList] = useState([]);; // Stubbing this out for the locations when I add that in a diff branch
 
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
