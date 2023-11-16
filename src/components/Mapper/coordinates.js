@@ -686,3 +686,7 @@ export const coordinates = [
         "name": "Fullmoon Island"
     },
 ]
+
+export const getLocationNames = () => {
+    return coordinates.map(coord => coord.name);
+};

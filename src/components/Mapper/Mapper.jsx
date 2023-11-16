@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Box, Checkbox, FormGroup, FormControlLabel } from '@mui/material';
 import { useColorMode } from '@docusaurus/theme-common';
 
-import { PokemonSearchInput } from './PokemonSearchBar';
+import { SearchBar } from './SearchBar';
 import { RodButtons, TODButtons } from './Buttons';
 import './style.css';
 
@@ -216,25 +216,14 @@ export const Mapper = ({ pokemonList }) => {
         >
           Your browser does not support the canvas element.
         </canvas>
-        <div
-          className="infoCol"
-          style={{
-            width: `${canvasDimensions.width-10}px`,
-            height: `${canvasDimensions.height}px`
-          }}
-        >
-          <div className="monSearchBar">
-            <PokemonSearchInput
-              allPokemons={pokemonList}
-              debouncedText={debouncedText}
-              setDebouncedText={handleDebouncedTextChange}
-            />
-          </div>
-          <div className="location">
-            Selected Location: {locationName}
-          </div>
-
-        </div>
+        <SearchBar
+          canvasDimensions={canvasDimensions}
+          pokemonList={pokemonList}
+          debouncedText={debouncedText}
+          handleDebouncedTextChange={handleDebouncedTextChange}
+          locationName={locationName}
+          setLocationName={setLocationName}
+        />
       </div>
       <div>
         {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
