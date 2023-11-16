@@ -1,4 +1,4 @@
-import { encounterLocations } from '../../../__gamedata';
+import { encounterLocations, pokemonLocations } from '../../../__gamedata';
 import {
   SURF_ENC,
   ENC_TYPES,
@@ -97,6 +97,17 @@ function getAllHoneyTreeEncounters(areaEncounters) {
   return {}
 };
 
+function getRoutesFromPokemonId(pokemonId) {
+  const routeNames = [];
+  const routes = pokemonLocations[pokemonId] || [];
+
+  routes.forEach((route) => {
+    routeNames.push(route.routeName);
+  });
+
+  return routeNames;
+}
+
 export {
   getAllGroundEncounters,
   getAllIncenseEncounters,
@@ -107,5 +118,6 @@ export {
   getRadarEncounter,
   getSwarmEncounter,
   getTODEncounters,
-  getAllHoneyTreeEncounters
+  getAllHoneyTreeEncounters,
+  getRoutesFromPokemonId
 }

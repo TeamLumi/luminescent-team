@@ -14,6 +14,7 @@ import displayNames from './english_dp_fld_areaname_display.json';
 import areaNames from './english_dp_fld_areaname.json';
 import mapInfo from './MapInfo.json';
 import encounterLocations from './encounter_locations.json';
+import pokemonLocations from './pokemon_locations.json';
 import trainerLocations from './Mapper_Trainer_Output.json';
 import field_items from './item_list.json';
 import hidden_items from './hide_item_list.json';
@@ -71,6 +72,7 @@ export {
   areaNames,
   mapInfo,
   encounterLocations,
+  pokemonLocations,
   trainerLocations,
   field_items,
   hidden_items,

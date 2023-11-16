@@ -12,6 +12,7 @@ import {
   getTrainersFromZoneName,
   getFieldItemsFromZoneID,
   getHiddenItemsFromZoneID,
+  getPokemonIdFromName
 } from '../../utils/dex';
 import { getZoneIdFromZoneName } from '../../utils/dex/location';
 import {
@@ -31,7 +32,8 @@ import {
   getRadarEncounter,
   getSurfingIncenseEncounter,
   getSwarmEncounter,
-  getAllIncenseEncounters
+  getAllIncenseEncounters,
+  getRoutesFromPokemonId
 } from '../../utils/dex/encounters';
 
 function getSelectedLocation(x, y) {
@@ -54,6 +56,8 @@ export const Mapper = ({ pokemonList }) => {
   const [locationName, setLocationName] = useState("");
   const [pokemon, setPokemon] = useState(''); // State for debounced text
 
+  const [locationList, setLocationList] = useState([]);
+
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
   const [tod, setTOD] = useState("1");
@@ -73,6 +77,10 @@ export const Mapper = ({ pokemonList }) => {
   useEffect(() => {
     setEncounterList(setAllEncounters(locationName))
   }, [swarm, radar, tod, incense, surfIncense, rod])
+
+  useEffect(() => {
+    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemon)))
+  }, [pokemon])
 
   const handleTODChange = (event, nextView) => {
     setTOD(event.target.value);
@@ -229,8 +237,6 @@ export const Mapper = ({ pokemonList }) => {
         {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
         <br />
         {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
-        <br />
-        {`Current Pokemon: ${pokemon}`}
       </div>
       <div className="buttonControl">
         <div>
