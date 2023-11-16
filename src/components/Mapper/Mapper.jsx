@@ -52,7 +52,7 @@ export const Mapper = ({ pokemonList }) => {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
-  const [debouncedText, setDebouncedText] = useState(''); // State for debounced text
+  const [pokemon, setPokemon] = useState(''); // State for debounced text
 
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
@@ -86,8 +86,8 @@ export const Mapper = ({ pokemonList }) => {
     callback(event.target.checked);
   };
 
-  const handleDebouncedTextChange = (text) => {
-    setDebouncedText(text);
+  const handlePokemonChange = (text) => {
+    setPokemon(text);
   };
 
   const myCanvas = useRef();
@@ -183,7 +183,7 @@ export const Mapper = ({ pokemonList }) => {
       myCanvas.current.removeEventListener('click', handleClick);
       myCanvas.current.addEventListener('mousemove', handleMouseMove);
     };
-  }, [swarm, radar, tod, incense, surfIncense, rod])
+  }, [swarm, radar, tod, incense, surfIncense, rod, pokemon])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
@@ -219,8 +219,8 @@ export const Mapper = ({ pokemonList }) => {
         <SearchBar
           canvasDimensions={canvasDimensions}
           pokemonList={pokemonList}
-          debouncedText={debouncedText}
-          handleDebouncedTextChange={handleDebouncedTextChange}
+          debouncedText={pokemon}
+          handleDebouncedTextChange={handlePokemonChange}
           locationName={locationName}
           setLocationName={setLocationName}
         />
@@ -230,7 +230,7 @@ export const Mapper = ({ pokemonList }) => {
         <br />
         {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
         <br />
-        {`Current Pokemon: ${debouncedText}`}
+        {`Current Pokemon: ${pokemon}`}
       </div>
       <div className="buttonControl">
         <div>
