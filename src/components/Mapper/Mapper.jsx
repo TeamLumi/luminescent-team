@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import FormGroup from '@mui/material/FormGroup';
+import IconButton from '@mui/material/IconButton';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 import { RodButtons, TODButtons } from './Buttons';
+import SettingsModal from './SettingsModal';
 import './style.css';
 
 import { coordinates } from './coordinates';
@@ -31,9 +37,6 @@ import {
   getSwarmEncounter,
   getAllIncenseEncounters
 } from '../../utils/dex/encounters';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import FormGroup from '@mui/material/FormGroup';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -49,6 +52,13 @@ export default function Mapper() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoveredZone, setHoveredZone] = useState(null);
   const [locationName, setLocationName] = useState("");
+  const [showSettings, setShowSettings] = useState(false);
+  const [colors, setColors] = useState({
+    hov: { r: 247, g: 148, b: 72, a: 0.7 },
+    sel: { r: 72, g: 113, b: 247, a: 0.8 },
+    enc: { r: 247, g: 235, b: 72, a: 0.7 },
+  });
+  const locationList = []; // Stubbing this out for the locations when I add that in a diff branch
 
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
@@ -80,6 +90,13 @@ export default function Mapper() {
 
   const handleChange = (callback) => (event) => {
     callback(event.target.checked);
+  };
+  const handleShowSettings = () => {
+    setShowSettings(true);
+  };
+
+  const handleCloseSettings = () => {
+    setShowSettings(false);
   };
 
   const myCanvas = useRef();
@@ -148,12 +165,16 @@ export default function Mapper() {
       ctx.lineTo(coord.x + coord.w, coord.y + coord.h);
       ctx.lineTo(coord.x, coord.y + coord.h);
       ctx.closePath();
+      if (locationList.includes(coord.name)) { // locationList is the list of locations you can find mons
+        ctx.fillStyle = `rgba(${colors.enc.r}, ${colors.enc.g}, ${colors.enc.b}, ${colors.enc.a})`;
+        ctx.fill();
+      }
       if (hoveredZone === coord.name && hoveredZone !== locationName) {
-        ctx.fillStyle = 'rgba(255,219,0, 0.7)';
+        ctx.fillStyle = `rgba(${colors.hov.r}, ${colors.hov.g}, ${colors.hov.b}, ${colors.hov.a})`;
         ctx.fill();
       }
       if (locationName === coord.name) {
-        ctx.fillStyle = 'rgba(72, 113, 247, 0.8)';
+        ctx.fillStyle = `rgba(${colors.sel.r}, ${colors.sel.g}, ${colors.sel.b}, ${colors.sel.a})`;
         ctx.fill();
       }
 
@@ -240,6 +261,9 @@ export default function Mapper() {
         </div>
       </div>
       <div className="buttonControl">
+        <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
+          <SettingsIcon />
+        </IconButton>
         <div>
           {TODButtons(tod, handleTODChange)}
         </div>
@@ -396,6 +420,12 @@ export default function Mapper() {
           </div>
         ))}
       </div>
+      <SettingsModal
+        colors={colors}
+        setColors={setColors}
+        showModal={showSettings}
+        onHide={handleCloseSettings}
+      />
     </div>
   );
 }

@@ -9,3 +9,20 @@ ul, li {
     list-style: none;
   }
   
+.modalBox {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%);
+    background-color: var(--ifm-color-content-inverse);
+    color: var(--ifm-color-content);
+    padding: 16px;
+    border-radius: 8px;
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    overflow-y: auto;
+    width: 80%;
+    max-height: 80%;
+    max-width: 1200px;
+}
+  
