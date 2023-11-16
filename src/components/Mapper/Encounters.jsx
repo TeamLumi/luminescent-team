@@ -6,7 +6,7 @@ import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
 import { EncounterTable } from './EncounterTable';
 import "./style.css"
 
-const Encounters = ({encOptions, handleOptionChange, encounterList}) => {
+const Encounters = ({ encOptions, handleOptionChange, encounterList, pokemon }) => {
   const boolOptions = Object.keys(encOptions).filter((key) => typeof encOptions[key] === 'boolean');
 
   return (
@@ -38,13 +38,13 @@ const Encounters = ({encOptions, handleOptionChange, encounterList}) => {
       </Box>
       <Box className='encAccordions'>
         <PokemonAccordion title="Grass Encounters" id="groundEnc" bgColor={"success.main"} textColor={"#F5FBF5"}>
-          <EncounterTable encounterList={encounterList.GroundEnc} />
+          <EncounterTable encounterList={encounterList.GroundEnc} pokemon={pokemon} />
         </PokemonAccordion>
         <PokemonAccordion title="Surf Encounters" id="surfEnc" bgColor={"primary.dark"} textColor={"#F5FBF5"}>
-          <EncounterTable encounterList={encounterList.SurfEnc} />
+          <EncounterTable encounterList={encounterList.SurfEnc} pokemon={pokemon} />
         </PokemonAccordion>
         <PokemonAccordion title="Rod Encounters" id="rodEnc" bgColor={"info.light"} textColor={"#F5FBF5"}>
-          <EncounterTable encounterList={encounterList.RodEnc} />
+          <EncounterTable encounterList={encounterList.RodEnc} pokemon={pokemon} />
         </PokemonAccordion>
       </Box>
     </Box>

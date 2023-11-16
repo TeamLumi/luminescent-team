@@ -34,7 +34,7 @@ ul, li {
 }
 
 .encAccordions {
-    max-height: 365px;
+    max-height: 360px;
     overflow-y: auto;
     padding-left: 5px;
     padding-right: 5px;
@@ -43,4 +43,16 @@ ul, li {
 
 .encAccordions > * {
     margin-bottom: 5px;
+}
+
+.highlight-light-row {
+    background-color: #ffff9f !important;
+}
+
+.highlight-dark-row {
+    background-color: #ffec68 !important;
+}
+
+.highlight-dark-row > * {
+    color: #000000 !important;
 }

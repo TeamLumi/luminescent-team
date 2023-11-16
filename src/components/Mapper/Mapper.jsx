@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-
-import { RodButtons, TODButtons } from './Buttons';
-import './style.css';
+import { useColorMode } from '@docusaurus/theme-common';
 
 import { coordinates } from './coordinates';
+import Encounters from './Encounters';
+import './style.css';
+
 import {
   getAreaEncounters,
   getTrainersFromZoneName,
@@ -20,7 +21,6 @@ import {
   getFixedShopsItems,
   getHeartScaleShopItems
 } from '../../utils/dex/item';
-import { useColorMode } from '@docusaurus/theme-common';
 import {
   getAllGroundEncounters,
   getTODEncounters,
@@ -31,10 +31,6 @@ import {
   getSwarmEncounter,
   getAllIncenseEncounters
 } from '../../utils/dex/encounters';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import FormGroup from '@mui/material/FormGroup';
-import Encounters from './Encounters';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -75,10 +71,6 @@ export default function Mapper() {
       ...encOptions,
       [option]: value,
     });
-  };
-  
-  const handleChange = (callback) => (event) => {
-    callback(event.target.checked);
   };
 
   const myCanvas = useRef();
@@ -217,6 +209,7 @@ export default function Mapper() {
           encOptions={encOptions}
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
+          pokemon={null} // Stub out the pokemon to add it in when the mon selection is chosen
         />
       </div>
       <div>
