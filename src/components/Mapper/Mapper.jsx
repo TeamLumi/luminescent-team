@@ -34,6 +34,7 @@ import {
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
+import Encounters from './Encounters';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -48,13 +49,13 @@ export default function Mapper() {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
-
-  const [swarm, setSwarm] = useState(false);
-  const [radar, setRadar] = useState(false);
-  const [tod, setTOD] = useState("1");
-  const [incense, setIncense] = useState(false);
-  const [surfIncense, setSurfIncense] = useState(false);
-  const [rod, setRod] = useState("1") // This sets the rod to 0 aka the Old Rod. Good Rod is 1 and Super Rod is 2
+  const [encOptions, setEncOptions] = useState({
+    swarm: false,
+    radar: false,
+    tod: "1",
+    incense: false,
+    rod: "1",
+  });
 
   const [encounterList, setEncounterList] = useState({GroundEnc: [], SurfEnc: [], RodEnc: []});
   const [trainerList, setTrainerList] = useState([]);
@@ -67,16 +68,15 @@ export default function Mapper() {
 
   useEffect(() => {
     setEncounterList(setAllEncounters(locationName))
-  }, [swarm, radar, tod, incense, surfIncense, rod])
+  }, [encOptions])
 
-  const handleTODChange = (event, nextView) => {
-    setTOD(event.target.value);
+  const handleOptionChange = (option, value) => {
+    setEncOptions({
+      ...encOptions,
+      [option]: value,
+    });
   };
-
-  const handleRodChange = (event, nextView) => {
-    setRod(event.target.value);
-  };
-
+  
   const handleChange = (callback) => (event) => {
     callback(event.target.checked);
   };
@@ -99,22 +99,22 @@ export default function Mapper() {
 
     // This section is for the grass encounters only
     if (Object.keys(allGroundEnc).length !== 0) {
-      if (swarm) {
+      if (encOptions.swarm) {
         allGroundEnc[0] = swarmEnc[0]
       }
-      if (radar) {
+      if (encOptions.radar) {
         allGroundEnc[9] = allGroundEnc[1]
         allGroundEnc[9].encounterRate = "4%"
         allGroundEnc[1] = radarEnc[0]
       }
-      if (tod === "2") {
+      if (encOptions.tod === "2") {
         allGroundEnc[2] = todEnc[0]
         allGroundEnc[3] = todEnc[1]
-      } else if (tod === "3") {
+      } else if (encOptions.tod === "3") {
         allGroundEnc[2] = todEnc[2]
         allGroundEnc[3] = todEnc[3]
       }
-      if (incense) {
+      if (encOptions.incense) {
         allGroundEnc[10] = allGroundEnc[4]
         allGroundEnc[11] = allGroundEnc[5]
         allGroundEnc[10].encounterRate = "1%"
@@ -126,13 +126,13 @@ export default function Mapper() {
     
     // This section is for the surfing encounters only
     if(Object.keys(allSurfEnc).length !== 0) {
-      if (surfIncense) {
+      if (encOptions.incense) {
         allSurfEnc[1] = surfIncenseEnc[0]
       }
     }
 
     // This section is for the Rod Encounters only
-    const rodEnc = getAllRodEncounters(areaEncounters, rod)
+    const rodEnc = getAllRodEncounters(areaEncounters, encOptions.rod)
 
     return{GroundEnc: allGroundEnc, SurfEnc: allSurfEnc, RodEnc: rodEnc}
   }
@@ -174,7 +174,7 @@ export default function Mapper() {
       myCanvas.current.removeEventListener('click', handleClick);
       myCanvas.current.addEventListener('mousemove', handleMouseMove);
     };
-  }, [swarm, radar, tod, incense, surfIncense, rod])
+  }, [encOptions])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
@@ -213,20 +213,25 @@ export default function Mapper() {
             Selected Location: {locationName}
           </div>
         </div>
+        <Encounters
+          encOptions={encOptions}
+          handleOptionChange={handleOptionChange}
+          encounterList={encounterList}
+        />
       </div>
       <div className="buttonControl">
         <div>
-          {TODButtons(tod, handleTODChange)}
+          {TODButtons(encOptions.tod, handleOptionChange)}
         </div>
         <div>
-          {RodButtons(rod, handleRodChange)}
+          {RodButtons(encOptions.rod, handleOptionChange)}
         </div>
         <FormGroup>
           <FormControlLabel
             control={
               <Checkbox
-                checked={swarm}
-                onChange={handleChange(setSwarm)}
+                checked={encOptions.swarm}
+                onChange={(event) => handleOptionChange('swarm', event.target.checked)}
                 inputProps={{ 'aria-label': 'controlled' }}
               />
             }
@@ -235,8 +240,8 @@ export default function Mapper() {
           <FormControlLabel
             control={
               <Checkbox
-                checked={radar}
-                onChange={handleChange(setRadar)}
+                checked={encOptions.radar}
+                onChange={(event) => handleOptionChange('radar', event.target.checked)}
                 inputProps={{ 'aria-label': 'controlled' }}
               />
               }
@@ -245,22 +250,12 @@ export default function Mapper() {
           <FormControlLabel
             control={
               <Checkbox
-                checked={incense}
-                onChange={handleChange(setIncense)}
+                checked={encOptions.incense}
+                onChange={(event) => handleOptionChange('incense', event.target.checked)}
                 inputProps={{ 'aria-label': 'controlled' }}
               />
             }
             label="Incense"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={surfIncense}
-                onChange={handleChange(setSurfIncense)}
-                inputProps={{ 'aria-label': 'controlled' }}
-              />
-            }
-            label="Surf Incense"
           />
         </FormGroup>
       </div>

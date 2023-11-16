@@ -9,3 +9,38 @@ ul, li {
     list-style: none;
   }
   
+.canvasCol {
+    display: grid;
+    grid-template: 720px / auto auto auto;
+}
+
+.encounterBox {
+    width: 408px;
+    height: 500px;
+    border: 2px solid var(--ifm-table-border-color);
+}
+
+.checkBoxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+.toggleBoxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.encAccordions {
+    max-height: 365px;
+    overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.encAccordions > * {
+    margin-bottom: 5px;
+}

@@ -9,9 +9,9 @@ const todRadios = [
 ];
 
 const rodRadios = [
-  { name: 'Old Rod', value: '1', color: "standard"},
-  { name: 'Good Rod', value: '2', color: "primary" },
-  { name: 'Super Rod', value: '3', color: "secondary" },
+  { name: 'Old', value: '1', color: "standard"},
+  { name: 'Good', value: '2', color: "primary" },
+  { name: 'Super', value: '3', color: "secondary" },
 ];
 
 export function TODButtons(tod, handleTODChange) {
@@ -19,7 +19,7 @@ export function TODButtons(tod, handleTODChange) {
     <ToggleButtonGroup
       value={tod}
       exclusive
-      onChange={handleTODChange}
+      onChange={(event) => handleTODChange('tod', event.target.value)}
     >
       {todRadios.map((radio, idx) => (
         <ToggleButton
@@ -28,6 +28,7 @@ export function TODButtons(tod, handleTODChange) {
           value={radio.value}
           color={radio.color}
           variant="contained"
+          size='small'
         >
           {radio.name}
         </ToggleButton>
@@ -41,7 +42,7 @@ export function RodButtons(rod, handleRodChange) {
     <ToggleButtonGroup
       value={rod}
       exclusive
-      onChange={handleRodChange}
+      onChange={(event) => handleRodChange('rod', event.target.value)}
     >
       {rodRadios.map((radio, idx) => (
         <ToggleButton
@@ -50,6 +51,7 @@ export function RodButtons(rod, handleRodChange) {
           value={radio.value}
           color={radio.color}
           variant="contained"
+          size='small'
         >
           {radio.name}
         </ToggleButton>
