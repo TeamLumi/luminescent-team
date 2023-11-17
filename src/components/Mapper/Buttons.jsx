@@ -2,7 +2,7 @@ import React from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
-const todRadios = [
+const timeOfDayRadios = [
   { name: 'Morning', value: '1', color: "standard"},
   { name: 'Day', value: '2', color: "primary" },
   { name: 'Night', value: '3', color: "secondary" },
@@ -14,14 +14,14 @@ const rodRadios = [
   { name: 'Super Rod', value: '3', color: "secondary" },
 ];
 
-export function TODButtons(tod, handleTODChange) {
+export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
   return (
     <ToggleButtonGroup
-      value={tod}
+      value={timeOfDay}
       exclusive
-      onChange={handleTODChange}
+      onChange={handleTimeOfDayChange}
     >
-      {todRadios.map((radio, idx) => (
+      {timeOfDayRadios.map((radio, idx) => (
         <ToggleButton
           key={idx}
           id={`radio-${idx}`}

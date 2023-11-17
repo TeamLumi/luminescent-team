@@ -4,7 +4,7 @@ import {
   ENC_TYPES,
   GRASS,
   ROD_ENC,
-  TOD_ENC,
+  TimeOfDay_ENC,
   RADAR_ENC,
   SWARM_ENC,
   HONEY,
@@ -65,8 +65,8 @@ function getAllIncenseEncounters(areaEncounters) {
   return {}
 };
 
-function getTODEncounters(areaEncounters) {
-  const filteredEncounters = areaEncounters.filter(obj => TOD_ENC.includes(obj.encounterType));
+function getTimeOfDayEncounters(areaEncounters) {
+  const filteredEncounters = areaEncounters.filter(obj => TimeOfDay_ENC.includes(obj.encounterType));
   if (filteredEncounters) {
     return filteredEncounters;
   }
@@ -117,7 +117,7 @@ export {
   getAreaEncounters,
   getRadarEncounter,
   getSwarmEncounter,
-  getTODEncounters,
+  getTimeOfDayEncounters,
   getAllHoneyTreeEncounters,
   getRoutesFromPokemonId
 }

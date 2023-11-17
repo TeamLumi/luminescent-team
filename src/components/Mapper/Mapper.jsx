@@ -3,7 +3,7 @@ import { Box, Checkbox, FormGroup, FormControlLabel } from '@mui/material';
 import { useColorMode } from '@docusaurus/theme-common';
 
 import { SearchBar } from './SearchBar';
-import { RodButtons, TODButtons } from './Buttons';
+import { RodButtons, TimeOfDayButtons } from './Buttons';
 import './style.css';
 
 import { coordinates } from './coordinates';
@@ -26,7 +26,7 @@ import {
 } from '../../utils/dex/item';
 import {
   getAllGroundEncounters,
-  getTODEncounters,
+  getTimeOfDayEncounters,
   getAllRodEncounters,
   getAllSurfingEncounters,
   getRadarEncounter,
@@ -60,7 +60,7 @@ export const Mapper = ({ pokemonList }) => {
 
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
-  const [tod, setTOD] = useState("1");
+  const [timeOfDay, setTimeOfDay] = useState("1");
   const [incense, setIncense] = useState(false);
   const [surfIncense, setSurfIncense] = useState(false);
   const [rod, setRod] = useState("1") // This sets the rod to 0 aka the Old Rod. Good Rod is 1 and Super Rod is 2
@@ -76,14 +76,14 @@ export const Mapper = ({ pokemonList }) => {
 
   useEffect(() => {
     setEncounterList(setAllEncounters(locationName))
-  }, [swarm, radar, tod, incense, surfIncense, rod])
+  }, [swarm, radar, timeOfDay, incense, surfIncense, rod])
 
   useEffect(() => {
     setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemon)))
   }, [pokemon])
 
-  const handleTODChange = (event, nextView) => {
-    setTOD(event.target.value);
+  const handleTimeOfDayChange = (event, nextView) => {
+    setTimeOfDay(event.target.value);
   };
 
   const handleRodChange = (event, nextView) => {
@@ -109,7 +109,7 @@ export const Mapper = ({ pokemonList }) => {
     const allGroundEnc = getAllGroundEncounters(areaEncounters);
     const swarmEnc = getSwarmEncounter(areaEncounters);
     const radarEnc = getRadarEncounter(areaEncounters);
-    const todEnc = getTODEncounters(areaEncounters);
+    const timeOfDayEnc = getTimeOfDayEncounters(areaEncounters);
     const incenseEnc = getAllIncenseEncounters(areaEncounters);
     const allSurfEnc = getAllSurfingEncounters(areaEncounters);
     const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
@@ -124,12 +124,12 @@ export const Mapper = ({ pokemonList }) => {
         allGroundEnc[9].encounterRate = "4%"
         allGroundEnc[1] = radarEnc[0]
       }
-      if (tod === "2") {
-        allGroundEnc[2] = todEnc[0]
-        allGroundEnc[3] = todEnc[1]
-      } else if (tod === "3") {
-        allGroundEnc[2] = todEnc[2]
-        allGroundEnc[3] = todEnc[3]
+      if (timeOfDay === "2") {
+        allGroundEnc[2] = timeOfDayEnc[0]
+        allGroundEnc[3] = timeOfDayEnc[1]
+      } else if (timeOfDay === "3") {
+        allGroundEnc[2] = timeOfDayEnc[2]
+        allGroundEnc[3] = timeOfDayEnc[3]
       }
       if (incense) {
         allGroundEnc[10] = allGroundEnc[4]
@@ -191,7 +191,7 @@ export const Mapper = ({ pokemonList }) => {
       myCanvas.current.removeEventListener('click', handleClick);
       myCanvas.current.addEventListener('mousemove', handleMouseMove);
     };
-  }, [swarm, radar, tod, incense, surfIncense, rod, pokemon])
+  }, [swarm, radar, timeOfDay, incense, surfIncense, rod, pokemon])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
@@ -240,7 +240,7 @@ export const Mapper = ({ pokemonList }) => {
       </div>
       <div className="buttonControl">
         <div>
-          {TODButtons(tod, handleTODChange)}
+          {TimeOfDayButtons(timeOfDay, handleTimeOfDayChange)}
         </div>
         <div>
           {RodButtons(rod, handleRodChange)}
