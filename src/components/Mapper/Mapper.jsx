@@ -35,6 +35,7 @@ import {
   getAllIncenseEncounters,
   getRoutesFromPokemonId
 } from '../../utils/dex/encounters';
+import { Trainers } from './Trainers';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -81,6 +82,10 @@ export const Mapper = ({ pokemonList }) => {
   useEffect(() => {
     setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemon)))
   }, [pokemon])
+
+  useEffect(() => {
+    setTrainerList(getTrainersFromZoneName(locationName) || []) ;
+  }, [locationName])
 
   const handleTODChange = (event, nextView) => {
     setTOD(event.target.value);
@@ -312,14 +317,7 @@ export const Mapper = ({ pokemonList }) => {
           </div>
         ))}
       </div>
-      <div>
-        Trainers: 
-        {trainerList && trainerList.map((trainer, index) => (
-          <div key={index}>
-            {`${trainer.team_name}, ${trainer.trainerType}, ${trainer.route}`}
-          </div>
-        ))}
-      </div>
+      <Trainers trainerList={trainerList} pokemonList={pokemonList} />
       <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (

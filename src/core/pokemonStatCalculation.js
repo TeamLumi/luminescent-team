@@ -14,17 +14,64 @@ const EV = {
   MAX: 255,
 };
 
-export const calcStat = (baseStat, isHP, level, individualValue = 0, effortValue = 0, natureMult) => {
+export const STATS = {
+  HP: "hp",
+  ATTACK: "atk",
+  DEFENSE: "def",
+  SPECIAL_ATTACK: "spa",
+  SPECIAL_DEFENSE: "spd",
+  SPEED: "spe",
+}
+
+const natureModifiers = {
+  Hardy: { increased: null, decreased: null },
+  Lonely: { increased: STATS.ATTACK, decreased: STATS.DEFENSE },
+  Brave: { increased: STATS.ATTACK, decreased: STATS.SPEED },
+  Adamant: { increased: STATS.ATTACK, decreased: STATS.SPECIAL_ATTACK },
+  Naughty: { increased: STATS.ATTACK, decreased: STATS.SPECIAL_DEFENSE },
+  Bold: { increased: STATS.DEFENSE, decreased: STATS.ATTACK },
+  Docile: { increased: null, decreased: null },
+  Relaxed: { increased: STATS.DEFENSE, decreased: STATS.SPEED },
+  Impish: { increased: STATS.DEFENSE, decreased: STATS.SPECIAL_ATTACK },
+  Lax: { increased: STATS.DEFENSE, decreased: STATS.SPECIAL_DEFENSE },
+  Timid: { increased: STATS.SPEED, decreased: STATS.ATTACK },
+  Hasty: { increased: STATS.SPEED, decreased: STATS.DEFENSE },
+  Serious: { increased: null, decreased: null },
+  Jolly: { increased: STATS.SPEED, decreased: STATS.SPECIAL_ATTACK },
+  Naive: { increased: STATS.SPEED, decreased: STATS.SPECIAL_DEFENSE },
+  Modest: { increased: STATS.SPECIAL_ATTACK, decreased: STATS.ATTACK },
+  Mild: { increased: STATS.SPECIAL_ATTACK, decreased: STATS.DEFENSE },
+  Quiet: { increased: STATS.SPECIAL_ATTACK, decreased: STATS.SPEED },
+  Bashful: { increased: null, decreased: null },
+  Rash: { increased: STATS.SPECIAL_ATTACK, decreased: STATS.SPECIAL_DEFENSE },
+  Calm: { increased: STATS.SPECIAL_DEFENSE, decreased: STATS.ATTACK },
+  Gentle: { increased: STATS.SPECIAL_DEFENSE, decreased: STATS.DEFENSE },
+  Sassy: { increased: STATS.SPECIAL_DEFENSE, decreased: STATS.SPEED },
+  Careful: { increased: STATS.SPECIAL_DEFENSE, decreased: STATS.SPECIAL_ATTACK },
+  Quirky: { increased: null, decreased: null },
+};
+
+function calculateHpStat(baseStat, iv, ev, level) {
+  return Math.floor(((2 * baseStat + iv + Math.floor(ev / 4)) * level) / 100 + 10);
+}
+
+export const calcStat = (baseStat, currentStat, isHP, level, iv = 0, ev = 0, nature, pokemon) => {
   if (isHP) {
     if (baseStat === 1) return 1;
     return Math.floor(
-      (Math.floor(2 * baseStat + individualValue + Math.floor(effortValue / 4) + 100) * level) / 100 + 10,
+      calculateHpStat(baseStat, iv, ev, level)
     );
   }
-  let val = Math.floor((Math.floor(2 * baseStat + individualValue + Math.floor(effortValue / 4)) * level) / 100 + 5);
 
-  if (natureMult && !isHP) {
-    val *= natureMult;
+  let val = Math.floor((Math.floor(2 * baseStat + iv + Math.floor(ev / 4)) * level) / 100 + 5);
+
+  let natureMult = NATURE_MULTIPLIER.NORMAL
+  if (currentStat === natureModifiers[nature].increased) {
+    natureMult = NATURE_MULTIPLIER.HIGH
+    val *= natureMult
+  } else if(currentStat === natureModifiers[nature].decreased) {
+    natureMult = NATURE_MULTIPLIER.LOW
+    val *= natureMult
   }
 
   return Math.floor(val);

@@ -26,3 +26,14 @@ ul, li {
 .location {
     pointer-events: all;
 }
+
+.stats {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    width: 300px;
+    height: 196px;
+    display: grid;
+}
+
+.container {
+    display: grid;
+}
