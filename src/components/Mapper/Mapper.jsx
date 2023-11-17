@@ -54,7 +54,7 @@ export const Mapper = ({ pokemonList }) => {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
-  const [pokemon, setPokemon] = useState(''); // State for debounced text
+  const [pokemonName, setPokemonName] = useState(''); // State for debounced text
 
   const [locationList, setLocationList] = useState([]);
 
@@ -79,8 +79,8 @@ export const Mapper = ({ pokemonList }) => {
   }, [swarm, radar, timeOfDay, incense, surfIncense, rod])
 
   useEffect(() => {
-    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemon)))
-  }, [pokemon])
+    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemonName)))
+  }, [pokemonName])
 
   const handleTimeOfDayChange = (event, nextView) => {
     setTimeOfDay(event.target.value);
@@ -94,8 +94,8 @@ export const Mapper = ({ pokemonList }) => {
     callback(event.target.checked);
   };
 
-  const handlePokemonChange = (text) => {
-    setPokemon(text);
+  const handlePokemonChange = (pokemonName) => {
+    setPokemonName(pokemonName);
   };
 
   const myCanvas = useRef();
@@ -189,9 +189,9 @@ export const Mapper = ({ pokemonList }) => {
     // Clean up the event listener when the component is unmounted
     return () => {
       myCanvas.current.removeEventListener('click', handleClick);
-      myCanvas.current.addEventListener('mousemove', handleMouseMove);
+      myCanvas.current.removeEventListener('mousemove', handleMouseMove);
     };
-  }, [swarm, radar, timeOfDay, incense, surfIncense, rod, pokemon])
+  }, [swarm, radar, timeOfDay, incense, surfIncense, rod, pokemonName])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
@@ -227,7 +227,7 @@ export const Mapper = ({ pokemonList }) => {
         <SearchBar
           canvasDimensions={canvasDimensions}
           pokemonList={pokemonList}
-          debouncedText={pokemon}
+          debouncedText={pokemonName}
           handleDebouncedTextChange={handlePokemonChange}
           locationName={locationName}
           setLocationName={setLocationName}
