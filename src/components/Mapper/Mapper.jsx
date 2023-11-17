@@ -62,10 +62,10 @@ export default function Mapper() {
 
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
-  const [tod, setTOD] = useState("1");
+  const [timeOfDay, setTimeOfDay] = useState("1");
   const [incense, setIncense] = useState(false);
   const [surfIncense, setSurfIncense] = useState(false);
-  const [rod, setRod] = useState("1") // This sets the rod to 0 aka the Old Rod. Good Rod is 1 and Super Rod is 2
+  const [rod, setRod] = useState("1") // This sets the rod to 1 aka the Old Rod. Good Rod is 2 and Super Rod is 3
 
   const [encounterList, setEncounterList] = useState({GroundEnc: [], SurfEnc: [], RodEnc: []});
   const [trainerList, setTrainerList] = useState([]);
@@ -78,10 +78,10 @@ export default function Mapper() {
 
   useEffect(() => {
     setEncounterList(setAllEncounters(locationName))
-  }, [swarm, radar, tod, incense, surfIncense, rod])
+  }, [swarm, radar, timeOfDay, incense, surfIncense, rod])
 
   const handleTODChange = (event, nextView) => {
-    setTOD(event.target.value);
+    setTimeOfDay(event.target.value);
   };
 
   const handleRodChange = (event, nextView) => {
@@ -110,7 +110,7 @@ export default function Mapper() {
     const allGroundEnc = getAllGroundEncounters(areaEncounters);
     const swarmEnc = getSwarmEncounter(areaEncounters);
     const radarEnc = getRadarEncounter(areaEncounters);
-    const todEnc = getTODEncounters(areaEncounters);
+    const timeOfDayEnc = getTODEncounters(areaEncounters);
     const incenseEnc = getAllIncenseEncounters(areaEncounters);
     const allSurfEnc = getAllSurfingEncounters(areaEncounters);
     const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
@@ -125,12 +125,12 @@ export default function Mapper() {
         allGroundEnc[9].encounterRate = "4%"
         allGroundEnc[1] = radarEnc[0]
       }
-      if (tod === "2") {
-        allGroundEnc[2] = todEnc[0]
-        allGroundEnc[3] = todEnc[1]
-      } else if (tod === "3") {
-        allGroundEnc[2] = todEnc[2]
-        allGroundEnc[3] = todEnc[3]
+      if (timeOfDay === "2") {
+        allGroundEnc[2] = timeOfDayEnc[0]
+        allGroundEnc[3] = timeOfDayEnc[1]
+      } else if (timeOfDay === "3") {
+        allGroundEnc[2] = timeOfDayEnc[2]
+        allGroundEnc[3] = timeOfDayEnc[3]
       }
       if (incense) {
         allGroundEnc[10] = allGroundEnc[4]
@@ -225,7 +225,7 @@ export default function Mapper() {
       myCanvas.current.removeEventListener('mousemove', handleMouseMove);
       myCanvas.current.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, [swarm, radar, tod, incense, surfIncense, rod, hoveredZone, locationName])
+  }, [swarm, radar, timeOfDay, incense, surfIncense, rod, hoveredZone, locationName])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
@@ -265,7 +265,7 @@ export default function Mapper() {
           <SettingsIcon />
         </IconButton>
         <div>
-          {TODButtons(tod, handleTODChange)}
+          {TODButtons(timeOfDay, handleTODChange)}
         </div>
         <div>
           {RodButtons(rod, handleRodChange)}
