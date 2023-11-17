@@ -5,7 +5,7 @@ import FormGroup from '@mui/material/FormGroup';
 import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/Settings';
 
-import { RodButtons, TODButtons } from './Buttons';
+import { RodButtons, TimeOfDayButtons } from './Buttons';
 import SettingsModal from './SettingsModal';
 import './style.css';
 
@@ -29,7 +29,7 @@ import {
 import { useColorMode } from '@docusaurus/theme-common';
 import {
   getAllGroundEncounters,
-  getTODEncounters,
+  getTimeOfDayEncounters,
   getAllRodEncounters,
   getAllSurfingEncounters,
   getRadarEncounter,
@@ -80,7 +80,7 @@ export default function Mapper() {
     setEncounterList(setAllEncounters(locationName))
   }, [swarm, radar, timeOfDay, incense, surfIncense, rod])
 
-  const handleTODChange = (event, nextView) => {
+  const handleTimeOfDayChange = (event, nextView) => {
     setTimeOfDay(event.target.value);
   };
 
@@ -110,7 +110,7 @@ export default function Mapper() {
     const allGroundEnc = getAllGroundEncounters(areaEncounters);
     const swarmEnc = getSwarmEncounter(areaEncounters);
     const radarEnc = getRadarEncounter(areaEncounters);
-    const timeOfDayEnc = getTODEncounters(areaEncounters);
+    const timeOfDayEnc = getTimeOfDayEncounters(areaEncounters);
     const incenseEnc = getAllIncenseEncounters(areaEncounters);
     const allSurfEnc = getAllSurfingEncounters(areaEncounters);
     const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
@@ -265,7 +265,7 @@ export default function Mapper() {
           <SettingsIcon />
         </IconButton>
         <div>
-          {TODButtons(timeOfDay, handleTODChange)}
+          {TimeOfDayButtons(timeOfDay, handleTimeOfDayChange)}
         </div>
         <div>
           {RodButtons(rod, handleRodChange)}
