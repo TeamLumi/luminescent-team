@@ -29,8 +29,23 @@ ul, li {
 
 .stats {
     border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
-    width: 300px;
-    height: 196px;
+    width: 200px;
+    height: 175px;
+    display: grid;
+}
+
+.trainerMon {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    width: 350px;
+    height: 280px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.monDetails {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    width: 150px;
+    height: 100%;
     display: grid;
 }
 
