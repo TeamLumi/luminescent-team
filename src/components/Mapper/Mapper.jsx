@@ -94,7 +94,7 @@ export const Mapper = ({ pokemonList }) => {
     callback(event.target.checked);
   };
 
-  const handlePokemonChange = (pokemonName) => {
+  const handlePokemonNameChange = (pokemonName) => {
     setPokemonName(pokemonName);
   };
 
@@ -228,7 +228,7 @@ export const Mapper = ({ pokemonList }) => {
           canvasDimensions={canvasDimensions}
           pokemonList={pokemonList}
           debouncedText={pokemonName}
-          handleDebouncedTextChange={handlePokemonChange}
+          handleDebouncedTextChange={handlePokemonNameChange}
           locationName={locationName}
           setLocationName={setLocationName}
         />
