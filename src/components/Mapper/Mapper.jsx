@@ -45,6 +45,22 @@ function getSelectedLocation(x, y) {
   return location[0];
 }
 
+function useDebouncedValue(value, delay) {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+}
+
 const canvasDimensions = {
   width: 1244,
   height: 720
@@ -54,7 +70,8 @@ export const Mapper = ({ pokemonList }) => {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [locationName, setLocationName] = useState("");
-  const [pokemonName, setPokemonName] = useState(''); // State for debounced text
+  const [pokemonName, setPokemonName] = useState('');
+  const completedPokemonName = useDebouncedValue(pokemonName, 1500);
 
   const [locationList, setLocationList] = useState([]);
 
@@ -63,7 +80,7 @@ export const Mapper = ({ pokemonList }) => {
   const [timeOfDay, setTimeOfDay] = useState("1");
   const [incense, setIncense] = useState(false);
   const [surfIncense, setSurfIncense] = useState(false);
-  const [rod, setRod] = useState("1") // This sets the rod to 0 aka the Old Rod. Good Rod is 1 and Super Rod is 2
+  const [rod, setRod] = useState("1") // This sets the rod to 1 aka the Old Rod. Good Rod is 2 and Super Rod is 3
 
   const [encounterList, setEncounterList] = useState({GroundEnc: [], SurfEnc: [], RodEnc: []});
   const [trainerList, setTrainerList] = useState([]);
@@ -79,8 +96,8 @@ export const Mapper = ({ pokemonList }) => {
   }, [swarm, radar, timeOfDay, incense, surfIncense, rod])
 
   useEffect(() => {
-    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemonName)))
-  }, [pokemonName])
+    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
+  }, [completedPokemonName])
 
   const handleTimeOfDayChange = (event, nextView) => {
     setTimeOfDay(event.target.value);
