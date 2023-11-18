@@ -23,7 +23,7 @@ import {
 } from '../../utils/dex/item';
 import {
   getAllGroundEncounters,
-  getTODEncounters,
+  getTimeOfDayEncounters,
   getAllRodEncounters,
   getAllSurfingEncounters,
   getRadarEncounter,
@@ -48,7 +48,7 @@ export default function Mapper() {
   const [encOptions, setEncOptions] = useState({
     swarm: false,
     radar: false,
-    tod: "1",
+    timeOfDay: "1",
     incense: false,
     rod: "1",
   });
@@ -84,7 +84,7 @@ export default function Mapper() {
     const allGroundEnc = getAllGroundEncounters(areaEncounters);
     const swarmEnc = getSwarmEncounter(areaEncounters);
     const radarEnc = getRadarEncounter(areaEncounters);
-    const todEnc = getTODEncounters(areaEncounters);
+    const timeOfDayEnc = getTimeOfDayEncounters(areaEncounters);
     const incenseEnc = getAllIncenseEncounters(areaEncounters);
     const allSurfEnc = getAllSurfingEncounters(areaEncounters);
     const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
@@ -99,12 +99,12 @@ export default function Mapper() {
         allGroundEnc[9].encounterRate = "4%"
         allGroundEnc[1] = radarEnc[0]
       }
-      if (encOptions.tod === "2") {
-        allGroundEnc[2] = todEnc[0]
-        allGroundEnc[3] = todEnc[1]
-      } else if (encOptions.tod === "3") {
-        allGroundEnc[2] = todEnc[2]
-        allGroundEnc[3] = todEnc[3]
+      if (encOptions.timeOfDay === "2") {
+        allGroundEnc[2] = timeOfDayEnc[0]
+        allGroundEnc[3] = timeOfDayEnc[1]
+      } else if (encOptions.timeOfDay === "3") {
+        allGroundEnc[2] = timeOfDayEnc[2]
+        allGroundEnc[3] = timeOfDayEnc[3]
       }
       if (encOptions.incense) {
         allGroundEnc[10] = allGroundEnc[4]

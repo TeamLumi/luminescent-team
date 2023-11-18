@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, FormControlLabel, Checkbox, FormGroup } from "@mui/material"
 
-import { RodButtons, TODButtons } from './Buttons';
+import { RodButtons, TimeOfDayButtons } from './Buttons';
 import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
 import { EncounterTable } from './EncounterTable';
 import "./style.css"
@@ -18,7 +18,7 @@ const Encounters = ({ encOptions, handleOptionChange, encounterList, pokemon }) 
         Encounters
       </Typography>
       <Box className='toggleBoxes' >
-        {TODButtons(encOptions.tod, handleOptionChange)}
+        {TimeOfDayButtons(encOptions.timeOfDay, handleOptionChange)}
         {RodButtons(encOptions.rod, handleOptionChange)}
       </Box>
       <Box className='checkBoxes'>
