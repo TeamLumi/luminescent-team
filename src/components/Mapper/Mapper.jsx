@@ -106,7 +106,7 @@ export default function Mapper() {
         allGroundEnc[2] = timeOfDayEnc[2]
         allGroundEnc[3] = timeOfDayEnc[3]
       }
-      if (encOptions.incense) {
+      if (encOptions.incense && Object.keys(incenseEnc).length !== 0) {
         allGroundEnc[10] = allGroundEnc[4]
         allGroundEnc[11] = allGroundEnc[5]
         allGroundEnc[10].encounterRate = "1%"
