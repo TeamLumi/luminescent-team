@@ -116,7 +116,7 @@ export default function Mapper() {
     const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
 
     // This section is for the grass encounters only
-    if (Object.keys(allGroundEnc).length !== 0) {
+    if (allGroundEnc.length > 0) {
       if (swarm) {
         allGroundEnc[0] = swarmEnc[0]
       }
@@ -132,7 +132,7 @@ export default function Mapper() {
         allGroundEnc[2] = timeOfDayEnc[2]
         allGroundEnc[3] = timeOfDayEnc[3]
       }
-      if (incense) {
+      if (incense && incenseEnc.length > 0) {
         allGroundEnc[10] = allGroundEnc[4]
         allGroundEnc[11] = allGroundEnc[5]
         allGroundEnc[10].encounterRate = "1%"
@@ -143,7 +143,7 @@ export default function Mapper() {
     }
     
     // This section is for the surfing encounters only
-    if(Object.keys(allSurfEnc).length !== 0) {
+    if(allSurfEnc.length > 0) {
       if (surfIncense) {
         allSurfEnc[1] = surfIncenseEnc[0]
       }
