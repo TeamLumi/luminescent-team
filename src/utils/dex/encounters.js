@@ -4,7 +4,7 @@ import {
   ENC_TYPES,
   GRASS,
   ROD_ENC,
-  TOD_ENC,
+  TIME_OF_DAY_ENC,
   RADAR_ENC,
   SWARM_ENC,
   HONEY,
@@ -30,7 +30,7 @@ function getAllGroundEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getAllRodEncounters(areaEncounters, rod=1) {
@@ -38,7 +38,7 @@ function getAllRodEncounters(areaEncounters, rod=1) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getAllSurfingEncounters(areaEncounters) {
@@ -46,7 +46,7 @@ function getAllSurfingEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getSurfingIncenseEncounter(areaEncounters) {
@@ -54,7 +54,7 @@ function getSurfingIncenseEncounter(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 }
 
 function getAllIncenseEncounters(areaEncounters) {
@@ -62,15 +62,15 @@ function getAllIncenseEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
-function getTODEncounters(areaEncounters) {
-  const filteredEncounters = areaEncounters.filter(obj => TOD_ENC.includes(obj.encounterType));
+function getTimeOfDayEncounters(areaEncounters) {
+  const filteredEncounters = areaEncounters.filter(obj => TIME_OF_DAY_ENC.includes(obj.encounterType));
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getRadarEncounter(areaEncounters) {
@@ -78,7 +78,7 @@ function getRadarEncounter(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getSwarmEncounter(areaEncounters) {
@@ -86,7 +86,7 @@ function getSwarmEncounter(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getAllHoneyTreeEncounters(areaEncounters) {
@@ -94,7 +94,7 @@ function getAllHoneyTreeEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 export {
@@ -106,6 +106,6 @@ export {
   getAreaEncounters,
   getRadarEncounter,
   getSwarmEncounter,
-  getTODEncounters,
+  getTimeOfDayEncounters,
   getAllHoneyTreeEncounters
 }
