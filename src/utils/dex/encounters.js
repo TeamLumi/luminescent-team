@@ -118,5 +118,6 @@ export {
   getRadarEncounter,
   getSwarmEncounter,
   getTimeOfDayEncounters,
-  getAllHoneyTreeEncounters
+  getAllHoneyTreeEncounters,
+  getRoutesFromPokemonId
 }

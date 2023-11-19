@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Box, Checkbox, FormGroup, FormControlLabel, IconButton, SettingsIcon } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
+import SettingsIcon from '@mui/icons-material/Settings';
 import { useColorMode } from '@docusaurus/theme-common';
 
 import { coordinates } from './coordinates';
