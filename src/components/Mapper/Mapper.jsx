@@ -283,28 +283,28 @@ export const Mapper = ({ pokemonList }) => {
         >
           Your browser does not support the canvas element.
         </canvas>
-      </div>
-      <div>
-        {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
-        <SearchBar
-          canvasDimensions={canvasDimensions}
-          pokemonList={pokemonList}
-          debouncedText={pokemonName}
-          handleDebouncedTextChange={handlePokemonNameChange}
-          locationName={locationName}
-          setLocationName={setLocationName}
-        />
         <Encounters
           encOptions={encOptions}
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
-          pokemon={null} // Stub out the pokemon to add it in when the mon selection is chosen
+          pokemon={completedPokemonName}
         />
       </div>
+      <SearchBar
+        canvasDimensions={canvasDimensions}
+        pokemonList={pokemonList}
+        debouncedText={pokemonName}
+        handleDebouncedTextChange={handlePokemonNameChange}
+        locationName={locationName}
+        setLocationName={setLocationName}
+      />
       <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
         <SettingsIcon />
       </IconButton>
       <div>
+        <div>
+          {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
+        </div>
         Trainers: 
         {trainerList && trainerList.map((trainer, index) => (
           <div key={index}>
