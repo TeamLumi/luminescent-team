@@ -1,4 +1,4 @@
-import { encounterLocations } from '../../../__gamedata';
+import { encounterLocations, pokemonLocations } from '../../../__gamedata';
 import {
   SURF_ENC,
   ENC_TYPES,
@@ -30,7 +30,7 @@ function getAllGroundEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getAllRodEncounters(areaEncounters, rod=1) {
@@ -38,7 +38,7 @@ function getAllRodEncounters(areaEncounters, rod=1) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getAllSurfingEncounters(areaEncounters) {
@@ -46,7 +46,7 @@ function getAllSurfingEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getSurfingIncenseEncounter(areaEncounters) {
@@ -54,7 +54,7 @@ function getSurfingIncenseEncounter(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 }
 
 function getAllIncenseEncounters(areaEncounters) {
@@ -62,7 +62,7 @@ function getAllIncenseEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getTimeOfDayEncounters(areaEncounters) {
@@ -70,7 +70,7 @@ function getTimeOfDayEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getRadarEncounter(areaEncounters) {
@@ -78,7 +78,7 @@ function getRadarEncounter(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getSwarmEncounter(areaEncounters) {
@@ -86,7 +86,7 @@ function getSwarmEncounter(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
 
 function getAllHoneyTreeEncounters(areaEncounters) {
@@ -94,8 +94,19 @@ function getAllHoneyTreeEncounters(areaEncounters) {
   if (filteredEncounters) {
     return filteredEncounters;
   }
-  return {}
+  return []
 };
+
+function getRoutesFromPokemonId(pokemonId) {
+  const routeNames = [];
+  const routes = pokemonLocations[pokemonId] || [];
+
+  routes.forEach((route) => {
+    routeNames.push(route.routeName);
+  });
+
+  return routeNames;
+}
 
 export {
   getAllGroundEncounters,

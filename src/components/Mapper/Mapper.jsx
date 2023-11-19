@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Box, Checkbox, FormGroup, FormControlLabel, IconButton, SettingsIcon } from '@mui/material';
 import { useColorMode } from '@docusaurus/theme-common';
 
 import { coordinates } from './coordinates';
 import Encounters from './Encounters';
+import { SearchBar } from './SearchBar';
+import { RodButtons, TimeOfDayButtons } from './Buttons';
+import SettingsModal from './SettingsModal';
 import './style.css';
 
 import {
@@ -10,6 +14,7 @@ import {
   getTrainersFromZoneName,
   getFieldItemsFromZoneID,
   getHiddenItemsFromZoneID,
+  getPokemonIdFromName
 } from '../../utils/dex';
 import { getZoneIdFromZoneName } from '../../utils/dex/location';
 import {
@@ -29,7 +34,8 @@ import {
   getRadarEncounter,
   getSurfingIncenseEncounter,
   getSwarmEncounter,
-  getAllIncenseEncounters
+  getAllIncenseEncounters,
+  getRoutesFromPokemonId
 } from '../../utils/dex/encounters';
 
 function getSelectedLocation(x, y) {
@@ -41,9 +47,31 @@ function getSelectedLocation(x, y) {
   return location[0];
 }
 
-export default function Mapper() {
+function useDebouncedValue(value, delay) {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+}
+
+const canvasDimensions = {
+  width: 1244,
+  height: 720
+}
+
+export const Mapper = ({ pokemonList }) => {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [hoveredZone, setHoveredZone] = useState(null);
   const [locationName, setLocationName] = useState("");
   const [encOptions, setEncOptions] = useState({
     swarm: false,
@@ -51,6 +79,17 @@ export default function Mapper() {
     timeOfDay: "1",
     incense: false,
     rod: "1",
+  });
+
+  const [pokemonName, setPokemonName] = useState('');
+  const completedPokemonName = useDebouncedValue(pokemonName, 1500);
+
+  const [locationList, setLocationList] = useState([]);
+  const [showSettings, setShowSettings] = useState(false);
+  const [colors, setColors] = useState({
+    hov: { r: 247, g: 148, b: 72, a: 0.7 },
+    sel: { r: 72, g: 113, b: 247, a: 0.8 },
+    enc: { r: 247, g: 235, b: 72, a: 0.7 },
   });
 
   const [encounterList, setEncounterList] = useState({GroundEnc: [], SurfEnc: [], RodEnc: []});
@@ -66,11 +105,27 @@ export default function Mapper() {
     setEncounterList(setAllEncounters(locationName))
   }, [encOptions])
 
+  useEffect(() => {
+    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
+  }, [completedPokemonName])
+
   const handleOptionChange = (option, value) => {
     setEncOptions({
       ...encOptions,
       [option]: value,
     });
+  };
+
+  const handlePokemonNameChange = (pokemonName) => {
+    setPokemonName(pokemonName);
+  };
+
+  const handleShowSettings = () => {
+    setShowSettings(true);
+  };
+
+  const handleCloseSettings = () => {
+    setShowSettings(false);
   };
 
   const myCanvas = useRef();
@@ -90,7 +145,7 @@ export default function Mapper() {
     const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
 
     // This section is for the grass encounters only
-    if (Object.keys(allGroundEnc).length !== 0) {
+    if (allGroundEnc.length > 0) {
       if (encOptions.swarm) {
         allGroundEnc[0] = swarmEnc[0]
       }
@@ -106,7 +161,7 @@ export default function Mapper() {
         allGroundEnc[2] = timeOfDayEnc[2]
         allGroundEnc[3] = timeOfDayEnc[3]
       }
-      if (encOptions.incense && Object.keys(incenseEnc).length !== 0) {
+      if (encOptions.incense && incenseEnc.length > 0) {
         allGroundEnc[10] = allGroundEnc[4]
         allGroundEnc[11] = allGroundEnc[5]
         allGroundEnc[10].encounterRate = "1%"
@@ -115,9 +170,9 @@ export default function Mapper() {
         allGroundEnc[5] = incenseEnc[1]
       }
     }
-    
+
     // This section is for the surfing encounters only
-    if(Object.keys(allSurfEnc).length !== 0) {
+    if(allSurfEnc.length > 0) {
       if (encOptions.incense) {
         allSurfEnc[1] = surfIncenseEnc[0]
       }
@@ -128,6 +183,35 @@ export default function Mapper() {
 
     return{GroundEnc: allGroundEnc, SurfEnc: allSurfEnc, RodEnc: rodEnc}
   }
+
+  const drawOverlay = (ctx) => {
+
+    coordinates.forEach(coord => {
+      // Draw zone outlines
+      ctx.beginPath();
+      ctx.moveTo(coord.x, coord.y);
+      ctx.lineTo(coord.x + coord.w, coord.y);
+      ctx.lineTo(coord.x + coord.w, coord.y + coord.h);
+      ctx.lineTo(coord.x, coord.y + coord.h);
+      ctx.closePath();
+      if (locationList.includes(coord.name)) { // locationList is the list of locations you can find mons
+        ctx.fillStyle = `rgba(${colors.enc.r}, ${colors.enc.g}, ${colors.enc.b}, ${colors.enc.a})`;
+        ctx.fill();
+      }
+      if (hoveredZone === coord.name && hoveredZone !== locationName) {
+        ctx.fillStyle = `rgba(${colors.hov.r}, ${colors.hov.g}, ${colors.hov.b}, ${colors.hov.a})`;
+        ctx.fill();
+      }
+      if (locationName === coord.name) {
+        ctx.fillStyle = `rgba(${colors.sel.r}, ${colors.sel.g}, ${colors.sel.b}, ${colors.sel.a})`;
+        ctx.fill();
+      }
+
+      ctx.strokeStyle = 'rgba(0, 0, 0, 1)';
+      ctx.lineWidth = hoveredZone === coord.name ? 2.3 : 1;
+      ctx.stroke();
+    });
+  };
 
   useEffect(() => {
     const context = myCanvas.current.getContext('2d');
@@ -156,55 +240,59 @@ export default function Mapper() {
       setScriptItems(getScriptItems(zoneId));
       setFixedShops(getFixedShops(zoneId));
       setHeartScaleShop(getHeartScaleShopItems(zoneId));
+
+      drawOverlay(context);
     };
 
     myCanvas.current.addEventListener('click', handleClick);
     myCanvas.current.addEventListener('mousemove', handleMouseMove);
-
+    myCanvas.current.addEventListener('mouseleave', handleMouseLeave);
+    
     // Clean up the event listener when the component is unmounted
     return () => {
       myCanvas.current.removeEventListener('click', handleClick);
-      myCanvas.current.addEventListener('mousemove', handleMouseMove);
+      myCanvas.current.removeEventListener('mousemove', handleMouseMove);
+      myCanvas.current.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, [encOptions])
+  }, [encOptions, pokemonName])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
     setCursorPosition({ x, y });
+    const location = getSelectedLocation(x, y);
+    if (location) {
+      setHoveredZone(location.name);
+    }
   }
 
-  function drawOverlay(ctx) {
-    ctx.strokeStyle = 'rgba(0, 0, 0, 1)'; // Red with 50% opacity
-
-    coordinates.forEach(coord => {
-      ctx.beginPath();
-      ctx.moveTo(coord.x, coord.y);
-      ctx.lineTo(coord.x + coord.w, coord.y);
-      ctx.lineTo(coord.x + coord.w, coord.y + coord.h);
-      ctx.lineTo(coord.x, coord.y + coord.h);
-      ctx.closePath();
-      ctx.stroke();
-    });
-  }
+  const handleMouseLeave = () => {
+    // Clear the hovered zone when mouse leaves
+    setHoveredZone(null);
+  };
 
   return (
     <div className="content">
       <div className="canvasCol">
         <canvas
           ref={myCanvas}
-          height="720px"
-          width="1244px"
+          height={`${canvasDimensions.height}px`}
+          width={`${canvasDimensions.width}px`}
         >
           Your browser does not support the canvas element.
         </canvas>
-        <div className="infoCol" style={{ position: 'absolute', top: "80px", left: "900px" }}>
-          {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
-          <div>
-            Selected Location: {locationName}
-          </div>
-        </div>
+      </div>
+      <div>
+        {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
+        <SearchBar
+          canvasDimensions={canvasDimensions}
+          pokemonList={pokemonList}
+          debouncedText={pokemonName}
+          handleDebouncedTextChange={handlePokemonNameChange}
+          locationName={locationName}
+          setLocationName={setLocationName}
+        />
         <Encounters
           encOptions={encOptions}
           handleOptionChange={handleOptionChange}
@@ -212,9 +300,9 @@ export default function Mapper() {
           pokemon={null} // Stub out the pokemon to add it in when the mon selection is chosen
         />
       </div>
-      <div>
-        {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
-      </div>
+      <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
+        <SettingsIcon />
+      </IconButton>
       <div>
         Trainers: 
         {trainerList && trainerList.map((trainer, index) => (
@@ -295,7 +383,12 @@ export default function Mapper() {
           </div>
         ))}
       </div>
+      <SettingsModal
+        colors={colors}
+        setColors={setColors}
+        showModal={showSettings}
+        onHide={handleCloseSettings}
+      />
     </div>
   );
 }
-

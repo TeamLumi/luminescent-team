@@ -7,8 +7,8 @@ ul, li {
     padding: 0;
     padding-right: 5px;
     list-style: none;
-  }
-  
+}
+
 .canvasCol {
     display: grid;
     grid-template: 720px / auto auto auto;
@@ -55,4 +55,38 @@ ul, li {
 
 .highlight-dark-row > * {
     color: #000000 !important;
+}
+
+.infoCol {
+    position: absolute;
+    top: 70px;
+    justify-content: end;
+    display: grid;
+    grid-template-rows: 60px 25px;
+    pointer-events: none;
+}
+
+.monSearchBar {
+    pointer-events: all;
+    width: 300px;
+}
+
+.location {
+    pointer-events: all;
+}
+.modalBox {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%);
+    background-color: var(--ifm-color-content-inverse);
+    color: var(--ifm-color-content);
+    padding: 16px;
+    border-radius: 8px;
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    overflow-y: auto;
+    width: 80%;
+    max-height: 80%;
+    max-width: 1200px;
 }
