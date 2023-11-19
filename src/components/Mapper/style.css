@@ -7,8 +7,25 @@ ul, li {
     padding: 0;
     padding-right: 5px;
     list-style: none;
-  }
-  
+}
+
+.infoCol {
+    position: absolute;
+    top: 70px;
+    justify-content: end;
+    display: grid;
+    grid-template-rows: 60px 25px;
+    pointer-events: none;
+}
+
+.monSearchBar {
+    pointer-events: all;
+    width: 300px;
+}
+
+.location {
+    pointer-events: all;
+}
 .modalBox {
     position: absolute !important;
     top: 50% !important;

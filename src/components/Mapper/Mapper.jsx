@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import FormGroup from '@mui/material/FormGroup';
-import IconButton from '@mui/material/IconButton';
-import SettingsIcon from '@mui/icons-material/Settings';
+import { Box, Checkbox, FormGroup, FormControlLabel, IconButton, SettingsIcon } from '@mui/material';
+import { useColorMode } from '@docusaurus/theme-common';
 
+import { SearchBar } from './SearchBar';
 import { RodButtons, TimeOfDayButtons } from './Buttons';
 import SettingsModal from './SettingsModal';
 import './style.css';
@@ -15,6 +13,7 @@ import {
   getTrainersFromZoneName,
   getFieldItemsFromZoneID,
   getHiddenItemsFromZoneID,
+  getPokemonIdFromName
 } from '../../utils/dex';
 import { getZoneIdFromZoneName } from '../../utils/dex/location';
 import {
@@ -26,7 +25,6 @@ import {
   getFixedShopsItems,
   getHeartScaleShopItems
 } from '../../utils/dex/item';
-import { useColorMode } from '@docusaurus/theme-common';
 import {
   getAllGroundEncounters,
   getTimeOfDayEncounters,
@@ -35,7 +33,8 @@ import {
   getRadarEncounter,
   getSurfingIncenseEncounter,
   getSwarmEncounter,
-  getAllIncenseEncounters
+  getAllIncenseEncounters,
+  getRoutesFromPokemonId
 } from '../../utils/dex/encounters';
 
 function getSelectedLocation(x, y) {
@@ -47,18 +46,42 @@ function getSelectedLocation(x, y) {
   return location[0];
 }
 
-export default function Mapper() {
+function useDebouncedValue(value, delay) {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+}
+
+const canvasDimensions = {
+  width: 1244,
+  height: 720
+}
+
+export const Mapper = ({ pokemonList }) => {
   const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoveredZone, setHoveredZone] = useState(null);
   const [locationName, setLocationName] = useState("");
+  const [pokemonName, setPokemonName] = useState('');
+  const completedPokemonName = useDebouncedValue(pokemonName, 1500);
+
+  const [locationList, setLocationList] = useState([]);
   const [showSettings, setShowSettings] = useState(false);
   const [colors, setColors] = useState({
     hov: { r: 247, g: 148, b: 72, a: 0.7 },
     sel: { r: 72, g: 113, b: 247, a: 0.8 },
     enc: { r: 247, g: 235, b: 72, a: 0.7 },
   });
-  const [locationList, setLocationList] = useState([]);; // Stubbing this out for the locations when I add that in a diff branch
 
   const [swarm, setSwarm] = useState(false);
   const [radar, setRadar] = useState(false);
@@ -80,6 +103,10 @@ export default function Mapper() {
     setEncounterList(setAllEncounters(locationName))
   }, [swarm, radar, timeOfDay, incense, surfIncense, rod])
 
+  useEffect(() => {
+    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
+  }, [completedPokemonName])
+
   const handleTimeOfDayChange = (event, nextView) => {
     setTimeOfDay(event.target.value);
   };
@@ -91,6 +118,11 @@ export default function Mapper() {
   const handleChange = (callback) => (event) => {
     callback(event.target.checked);
   };
+
+  const handlePokemonNameChange = (pokemonName) => {
+    setPokemonName(pokemonName);
+  };
+
   const handleShowSettings = () => {
     setShowSettings(true);
   };
@@ -225,7 +257,7 @@ export default function Mapper() {
       myCanvas.current.removeEventListener('mousemove', handleMouseMove);
       myCanvas.current.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, [swarm, radar, timeOfDay, incense, surfIncense, rod, hoveredZone, locationName])
+  }, [swarm, radar, timeOfDay, incense, surfIncense, rod, pokemonName])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
@@ -248,17 +280,24 @@ export default function Mapper() {
       <div className="canvasCol">
         <canvas
           ref={myCanvas}
-          height="720px"
-          width="1244px"
+          height={`${canvasDimensions.height}px`}
+          width={`${canvasDimensions.width}px`}
         >
           Your browser does not support the canvas element.
         </canvas>
-        <div className="infoCol" style={{ position: 'absolute', top: "80px", left: "900px" }}>
-          {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
-          <div>
-            Selected Location: {locationName}
-          </div>
-        </div>
+        <SearchBar
+          canvasDimensions={canvasDimensions}
+          pokemonList={pokemonList}
+          debouncedText={pokemonName}
+          handleDebouncedTextChange={handlePokemonNameChange}
+          locationName={locationName}
+          setLocationName={setLocationName}
+        />
+      </div>
+      <div>
+        {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
+        <br />
+        {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
       </div>
       <div className="buttonControl">
         <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
@@ -312,9 +351,6 @@ export default function Mapper() {
             label="Surf Incense"
           />
         </FormGroup>
-      </div>
-      <div>
-      {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
       </div>
       <div>
         Grass Encounter List:
