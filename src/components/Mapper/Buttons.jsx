@@ -9,9 +9,9 @@ const timeOfDayRadios = [
 ];
 
 const rodRadios = [
-  { name: 'Old Rod', value: '1', color: "standard"},
-  { name: 'Good Rod', value: '2', color: "primary" },
-  { name: 'Super Rod', value: '3', color: "secondary" },
+  { name: 'Old', value: '1', color: "standard"},
+  { name: 'Good', value: '2', color: "primary" },
+  { name: 'Super', value: '3', color: "secondary" },
 ];
 
 export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
@@ -19,7 +19,7 @@ export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
     <ToggleButtonGroup
       value={timeOfDay}
       exclusive
-      onChange={handleTimeOfDayChange}
+      onChange={(event) => handleTimeOfDayChange('timeOfDay', event.target.value)}
     >
       {timeOfDayRadios.map((radio, idx) => (
         <ToggleButton
@@ -28,6 +28,7 @@ export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
           value={radio.value}
           color={radio.color}
           variant="contained"
+          size='small'
         >
           {radio.name}
         </ToggleButton>
@@ -41,7 +42,7 @@ export function RodButtons(rod, handleRodChange) {
     <ToggleButtonGroup
       value={rod}
       exclusive
-      onChange={handleRodChange}
+      onChange={(event) => handleRodChange('rod', event.target.value)}
     >
       {rodRadios.map((radio, idx) => (
         <ToggleButton
@@ -50,6 +51,7 @@ export function RodButtons(rod, handleRodChange) {
           value={radio.value}
           color={radio.color}
           variant="contained"
+          size='small'
         >
           {radio.name}
         </ToggleButton>

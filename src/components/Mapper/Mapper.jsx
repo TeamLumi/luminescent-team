@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Box, Checkbox, FormGroup, FormControlLabel, IconButton, SettingsIcon } from '@mui/material';
 import { useColorMode } from '@docusaurus/theme-common';
 
+import { coordinates } from './coordinates';
+import Encounters from './Encounters';
 import { SearchBar } from './SearchBar';
 import { RodButtons, TimeOfDayButtons } from './Buttons';
 import SettingsModal from './SettingsModal';
 import './style.css';
 
-import { coordinates } from './coordinates';
 import {
   getAreaEncounters,
   getTrainersFromZoneName,
@@ -72,6 +73,14 @@ export const Mapper = ({ pokemonList }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoveredZone, setHoveredZone] = useState(null);
   const [locationName, setLocationName] = useState("");
+  const [encOptions, setEncOptions] = useState({
+    swarm: false,
+    radar: false,
+    timeOfDay: "1",
+    incense: false,
+    rod: "1",
+  });
+
   const [pokemonName, setPokemonName] = useState('');
   const completedPokemonName = useDebouncedValue(pokemonName, 1500);
 
@@ -82,13 +91,6 @@ export const Mapper = ({ pokemonList }) => {
     sel: { r: 72, g: 113, b: 247, a: 0.8 },
     enc: { r: 247, g: 235, b: 72, a: 0.7 },
   });
-
-  const [swarm, setSwarm] = useState(false);
-  const [radar, setRadar] = useState(false);
-  const [timeOfDay, setTimeOfDay] = useState("1");
-  const [incense, setIncense] = useState(false);
-  const [surfIncense, setSurfIncense] = useState(false);
-  const [rod, setRod] = useState("1") // This sets the rod to 1 aka the Old Rod. Good Rod is 2 and Super Rod is 3
 
   const [encounterList, setEncounterList] = useState({GroundEnc: [], SurfEnc: [], RodEnc: []});
   const [trainerList, setTrainerList] = useState([]);
@@ -101,22 +103,17 @@ export const Mapper = ({ pokemonList }) => {
 
   useEffect(() => {
     setEncounterList(setAllEncounters(locationName))
-  }, [swarm, radar, timeOfDay, incense, surfIncense, rod])
+  }, [encOptions])
 
   useEffect(() => {
     setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
   }, [completedPokemonName])
 
-  const handleTimeOfDayChange = (event, nextView) => {
-    setTimeOfDay(event.target.value);
-  };
-
-  const handleRodChange = (event, nextView) => {
-    setRod(event.target.value);
-  };
-
-  const handleChange = (callback) => (event) => {
-    callback(event.target.checked);
+  const handleOptionChange = (option, value) => {
+    setEncOptions({
+      ...encOptions,
+      [option]: value,
+    });
   };
 
   const handlePokemonNameChange = (pokemonName) => {
@@ -149,22 +146,22 @@ export const Mapper = ({ pokemonList }) => {
 
     // This section is for the grass encounters only
     if (allGroundEnc.length > 0) {
-      if (swarm) {
+      if (encOptions.swarm) {
         allGroundEnc[0] = swarmEnc[0]
       }
-      if (radar) {
+      if (encOptions.radar) {
         allGroundEnc[9] = allGroundEnc[1]
         allGroundEnc[9].encounterRate = "4%"
         allGroundEnc[1] = radarEnc[0]
       }
-      if (timeOfDay === "2") {
+      if (encOptions.timeOfDay === "2") {
         allGroundEnc[2] = timeOfDayEnc[0]
         allGroundEnc[3] = timeOfDayEnc[1]
-      } else if (timeOfDay === "3") {
+      } else if (encOptions.timeOfDay === "3") {
         allGroundEnc[2] = timeOfDayEnc[2]
         allGroundEnc[3] = timeOfDayEnc[3]
       }
-      if (incense && incenseEnc.length > 0) {
+      if (encOptions.incense && incenseEnc.length > 0) {
         allGroundEnc[10] = allGroundEnc[4]
         allGroundEnc[11] = allGroundEnc[5]
         allGroundEnc[10].encounterRate = "1%"
@@ -173,16 +170,16 @@ export const Mapper = ({ pokemonList }) => {
         allGroundEnc[5] = incenseEnc[1]
       }
     }
-    
+
     // This section is for the surfing encounters only
     if(allSurfEnc.length > 0) {
-      if (surfIncense) {
+      if (encOptions.incense) {
         allSurfEnc[1] = surfIncenseEnc[0]
       }
     }
 
     // This section is for the Rod Encounters only
-    const rodEnc = getAllRodEncounters(areaEncounters, rod)
+    const rodEnc = getAllRodEncounters(areaEncounters, encOptions.rod)
 
     return{GroundEnc: allGroundEnc, SurfEnc: allSurfEnc, RodEnc: rodEnc}
   }
@@ -257,7 +254,7 @@ export const Mapper = ({ pokemonList }) => {
       myCanvas.current.removeEventListener('mousemove', handleMouseMove);
       myCanvas.current.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, [swarm, radar, timeOfDay, incense, surfIncense, rod, pokemonName])
+  }, [encOptions, pokemonName])
 
   function handleMouseMove(event) {
     const rect = myCanvas.current.getBoundingClientRect();
@@ -285,6 +282,9 @@ export const Mapper = ({ pokemonList }) => {
         >
           Your browser does not support the canvas element.
         </canvas>
+      </div>
+      <div>
+        {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
         <SearchBar
           canvasDimensions={canvasDimensions}
           pokemonList={pokemonList}
@@ -293,89 +293,16 @@ export const Mapper = ({ pokemonList }) => {
           locationName={locationName}
           setLocationName={setLocationName}
         />
+        <Encounters
+          encOptions={encOptions}
+          handleOptionChange={handleOptionChange}
+          encounterList={encounterList}
+          pokemon={null} // Stub out the pokemon to add it in when the mon selection is chosen
+        />
       </div>
-      <div>
-        {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
-        <br />
-        {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
-      </div>
-      <div className="buttonControl">
-        <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
-          <SettingsIcon />
-        </IconButton>
-        <div>
-          {TimeOfDayButtons(timeOfDay, handleTimeOfDayChange)}
-        </div>
-        <div>
-          {RodButtons(rod, handleRodChange)}
-        </div>
-        <FormGroup>
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={swarm}
-                onChange={handleChange(setSwarm)}
-                inputProps={{ 'aria-label': 'controlled' }}
-              />
-            }
-            label="Swarm"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={radar}
-                onChange={handleChange(setRadar)}
-                inputProps={{ 'aria-label': 'controlled' }}
-              />
-              }
-            label="Radar"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={incense}
-                onChange={handleChange(setIncense)}
-                inputProps={{ 'aria-label': 'controlled' }}
-              />
-            }
-            label="Incense"
-          />
-          <FormControlLabel
-            control={
-              <Checkbox
-                checked={surfIncense}
-                onChange={handleChange(setSurfIncense)}
-                inputProps={{ 'aria-label': 'controlled' }}
-              />
-            }
-            label="Surf Incense"
-          />
-        </FormGroup>
-      </div>
-      <div>
-        Grass Encounter List:
-        {encounterList.GroundEnc && encounterList.GroundEnc.map((enc, index) => (
-          <div key={index}>
-            {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
-          </div>
-        ))}
-      </div>
-      <div>
-        Surfing Encounter List:
-        {encounterList.SurfEnc && encounterList.SurfEnc.map((enc, index) => (
-          <div key={index}>
-            {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
-          </div>
-        ))}
-      </div>
-      <div>
-        Rod Encounter List:
-        {encounterList.RodEnc && encounterList.RodEnc.map((enc, index) => (
-          <div key={index}>
-            {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
-          </div>
-        ))}
-      </div>
+      <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
+        <SettingsIcon />
+      </IconButton>
       <div>
         Trainers: 
         {trainerList && trainerList.map((trainer, index) => (

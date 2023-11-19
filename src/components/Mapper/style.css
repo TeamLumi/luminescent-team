@@ -9,6 +9,54 @@ ul, li {
     list-style: none;
 }
 
+.canvasCol {
+    display: grid;
+    grid-template: 720px / auto auto auto;
+}
+
+.encounterBox {
+    width: 408px;
+    height: 500px;
+    border: 2px solid var(--ifm-table-border-color);
+}
+
+.checkBoxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+.toggleBoxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.encAccordions {
+    max-height: 360px;
+    overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.encAccordions > * {
+    margin-bottom: 5px;
+}
+
+.highlight-light-row {
+    background-color: #ffff9f !important;
+}
+
+.highlight-dark-row {
+    background-color: #ffec68 !important;
+}
+
+.highlight-dark-row > * {
+    color: #000000 !important;
+}
+
 .infoCol {
     position: absolute;
     top: 70px;
@@ -42,4 +90,3 @@ ul, li {
     max-height: 80%;
     max-width: 1200px;
 }
-  
