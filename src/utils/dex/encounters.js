@@ -19,7 +19,6 @@ function getAreaEncounters(zoneName) {
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
     }));
-    console.log(mappedEncounters);
     return mappedEncounters;
   }
   console.warn(`${zoneName} is not in the Encounter List.`);
