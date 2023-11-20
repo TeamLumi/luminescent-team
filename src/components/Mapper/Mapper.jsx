@@ -38,30 +38,32 @@ import {
   getAllIncenseEncounters,
   getRoutesFromPokemonId
 } from '../../utils/dex/encounters';
-
+  
 function getSelectedLocation(x, y) {
-  const location = coordinates.filter(coords => {
-    return (coords.x <= x && x <= (coords.x + coords.w)) &&
-      (coords.y <= y && y <= (coords.y + coords.h))
-  });
-  if (location.length === 0) return "";
-  return location[0];
-}
+  const isXWithinBounds = (coords, x) => {
+    const isWithinX = coords.x <= x && x <= coords.x + coords.w;
+    return isWithinX;
+  };
 
-function useDebouncedValue(value, delay) {
-  const [debouncedValue, setDebouncedValue] = useState(value);
+  const isYWithinBounds = (coords, y) => {
+    const isWithinY = coords.y <= y && y <= coords.y + coords.h;
+    return isWithinY;
+  };
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
+  let selectedLocation = null;
 
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [value, delay]);
+  for (let i = 0; i < coordinates.length; i++) {
+    const coords = coordinates[i];
+    const xWithinBounds = isXWithinBounds(coords, x);
+    const yWithinBounds = isYWithinBounds(coords, y);
 
-  return debouncedValue;
+    if (xWithinBounds && yWithinBounds) {
+      selectedLocation = coords;
+      break; // Stop loop once a location is found
+    }
+  }
+
+  return selectedLocation;
 }
 
 const canvasDimensions = {
@@ -70,8 +72,7 @@ const canvasDimensions = {
 }
 
 export const Mapper = ({ pokemonList }) => {
-  const [currentCoordinates, setCoordinates] = useState({ x: 0, y: 0 })
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [rect, setRect] = useState(null);
   const [hoveredZone, setHoveredZone] = useState(null);
   const [locationName, setLocationName] = useState("");
   const [encOptions, setEncOptions] = useState({
@@ -83,7 +84,6 @@ export const Mapper = ({ pokemonList }) => {
   });
 
   const [pokemonName, setPokemonName] = useState('');
-  const completedPokemonName = useDebouncedValue(pokemonName, 1500);
 
   const [locationList, setLocationList] = useState([]);
   const [showSettings, setShowSettings] = useState(false);
@@ -102,14 +102,63 @@ export const Mapper = ({ pokemonList }) => {
   const [fixedShopList, setFixedShops] = useState([]);
   const [heartScaleShopList, setHeartScaleShop] = useState([]);
 
+  const canvasRef = useRef(null);
+
+  //Component onMount
+  useEffect(() => {
+    console.log('Mounting...')
+    const context = canvasRef.current.getContext('2d');
+    const image = new Image();
+    image.src = require('@site/static/img/sinnoh-updated.png').default;
+    image.onload = () => {
+      context.drawImage(image, 0, 0);
+      drawOverlay(context);
+    };
+    console.log('Finish Mounting...', rect, canvasRef)
+
+  }, []) // Empty dependency array means this effect runs once after the initial render
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    console.log('Canvas effect has fired')
+    if (canvas) {
+      // Get the bounding rectangle of the canvas
+      const r = canvas.getBoundingClientRect();
+      setRect(r);
+      
+      // Log the bounding rectangle properties
+      console.log('Bounding Rect Top:', r.top);
+      console.log('Bounding Rect Left:', r.left);
+      console.log('Bounding Rect Width:', r.width);
+      console.log('Bounding Rect Height:', r.height);
+
+      canvas.addEventListener('click', handleClick);
+      canvas.addEventListener('mousemove', handleMouseMove);
+      canvas.addEventListener('mouseleave', handleMouseLeave);
+      
+      // Clean up the event listener when the component is unmounted
+      return () => {
+        canvas.removeEventListener('click', handleClick);
+        canvas.removeEventListener('mousemove', handleMouseMove);
+        canvas.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    }
+  
+    // ... rest of your code ...
+  
+  }, [canvasRef.current]); // Add canvasRef.current to the dependency array
+
   useEffect(() => {
     setEncounterList(setAllEncounters(locationName))
   }, [encOptions])
 
   useEffect(() => {
-    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
-  }, [completedPokemonName])
+    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemonName)))
+  }, [pokemonName])
 
+  useEffect(() => {
+    
+  }, [location])
   const handleOptionChange = (option, value) => {
     setEncOptions({
       ...encOptions,
@@ -129,7 +178,32 @@ export const Mapper = ({ pokemonList }) => {
     setShowSettings(false);
   };
 
-  const myCanvas = useRef();
+  const handleClick = (event) => {
+    if(rect === null) {
+      console.log('Bad Rect:', rect, canvasRef.current)
+      return setRect(canvasRef.current.getBoundingClientRect());
+    }
+
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+ 
+    const location = getSelectedLocation( x,y )
+    const location_name = location.name ? location.name : ""
+    setLocationName(location_name);
+    setEncounterList(setAllEncounters(location_name));
+    setTrainerList(getTrainersFromZoneName(location_name));
+
+    const zoneId = getZoneIdFromZoneName(location_name);
+    setFieldItems(getFieldItemsFromZoneID(zoneId));
+    setHiddenItems(getHiddenItemsFromZoneID(zoneId));
+    setShopItems(getRegularShopItems(zoneId));
+    setScriptItems(getScriptItems(zoneId));
+    setFixedShops(getFixedShops(zoneId));
+    setHeartScaleShop(getHeartScaleShopItems(zoneId));
+
+    drawOverlay(canvasRef.current.getContext('2d'));
+  };
+
   const { colorMode, setColorMode } = useColorMode();
 
   const setAllEncounters = (location_name) => {
@@ -214,57 +288,41 @@ export const Mapper = ({ pokemonList }) => {
     });
   };
 
-  useEffect(() => {
-    const context = myCanvas.current.getContext('2d');
-    const image = new Image();
-    image.src = require('@site/static/img/sinnoh-updated.png').default;
-    image.onload = () => {
-      context.drawImage(image, 0, 0);
-      drawOverlay(context);
-    };
+  let originalImageData = {};
+  let previousRectangle = null;
 
-    const handleClick = (event) => {
-      const rect = myCanvas.current.getBoundingClientRect();
-      const x = event.clientX - rect.left;
-      const y = event.clientY - rect.top;
-      setCoordinates({ x,y });
-      const location = getSelectedLocation( x,y )
-      const location_name = location.name ? location.name : ""
-      setLocationName(location_name);
-      setEncounterList(setAllEncounters(location_name));
-      setTrainerList(getTrainersFromZoneName(location_name));
-
-      const zoneId = getZoneIdFromZoneName(location_name);
-      setFieldItems(getFieldItemsFromZoneID(zoneId));
-      setHiddenItems(getHiddenItemsFromZoneID(zoneId));
-      setShopItems(getRegularShopItems(zoneId));
-      setScriptItems(getScriptItems(zoneId));
-      setFixedShops(getFixedShops(zoneId));
-      setHeartScaleShop(getHeartScaleShopItems(zoneId));
-
-      drawOverlay(context);
-    };
-
-    myCanvas.current.addEventListener('click', handleClick);
-    myCanvas.current.addEventListener('mousemove', handleMouseMove);
-    myCanvas.current.addEventListener('mouseleave', handleMouseLeave);
+  function drawRect(x, y, width, height, imageData) {
+    if(previousRectangle !== null) {
+      clearRect();
+    }
     
-    // Clean up the event listener when the component is unmounted
-    return () => {
-      myCanvas.current.removeEventListener('click', handleClick);
-      myCanvas.current.removeEventListener('mousemove', handleMouseMove);
-      myCanvas.current.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, [encOptions, pokemonName])
+    const ctx = canvasRef.current.getContext('2d');
+    previousRectangle = {x, y, width, height};
+    originalImageData = ctx.getImageData(x, y, width, height);
+    ctx.fillStyle = 'yellow';
+    ctx.fillRect(x, y, width, height);
+  }
+
+  function clearRect() {
+    console.log('Clearing...', previousRectangle)
+    const ctx = canvasRef.current.getContext('2d');
+    const {x, y, width, height} = previousRectangle;
+    ctx.clearRect(x, y, width, height);
+    ctx.putImageData(originalImageData, x, y);
+  }
 
   function handleMouseMove(event) {
-    const rect = myCanvas.current.getBoundingClientRect();
+    if(rect === null) {
+      console.log('hmm')
+      return setRect(canvasRef.current.getBoundingClientRect());
+    }
+
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
-    setCursorPosition({ x, y });
     const location = getSelectedLocation(x, y);
-    if (location) {
+    if (location && location.name !== hoveredZone?.name) {
       setHoveredZone(location.name);
+      drawRect(location.x, location.y, location.w, location.h); // Change the fill color
     }
   }
 
@@ -277,7 +335,7 @@ export const Mapper = ({ pokemonList }) => {
     <div className="content">
       <div className="canvasCol">
         <canvas
-          ref={myCanvas}
+          ref={canvasRef}
           height={`${canvasDimensions.height}px`}
           width={`${canvasDimensions.width}px`}
         >
@@ -287,7 +345,7 @@ export const Mapper = ({ pokemonList }) => {
           encOptions={encOptions}
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
-          pokemon={completedPokemonName}
+          pokemon={pokemonName}
         />
       </div>
       <SearchBar
@@ -302,9 +360,6 @@ export const Mapper = ({ pokemonList }) => {
         <SettingsIcon />
       </IconButton>
       <div>
-        <div>
-          {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
-        </div>
         Trainers: 
         {trainerList && trainerList.map((trainer, index) => (
           <div key={index}>

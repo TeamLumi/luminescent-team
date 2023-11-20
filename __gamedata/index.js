@@ -7,7 +7,7 @@ import LearnsetTable from './WazaOboeTable.json';
 import MovesTable from './WazaTable.json';
 import ItemTable from './ItemTable.json';
 import ShopTable from './ShopTable.json';
-import areasList from './areas';
+import {areasList} from './areas';
 
 //All the Location files
 import displayNames from './english_dp_fld_areaname_display.json';

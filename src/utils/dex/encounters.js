@@ -13,6 +13,11 @@ import {
 } from './encountersConstants';
 
 function getAreaEncounters(zoneName) {
+  if(typeof zoneName !== 'string' || zoneName.length === 0) {
+    console.error('Invalid Zone Name provided - getAreaEncounters')
+    return null;
+  }
+  
   if (zoneName in encounterLocations) {
     const areaEncounters = encounterLocations[zoneName]
     const mappedEncounters = areaEncounters.map(encounter => ({
