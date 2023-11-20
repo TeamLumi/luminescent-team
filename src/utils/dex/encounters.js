@@ -12,12 +12,14 @@ import {
   SURF_INCENSE
 } from './encountersConstants';
 
+const NO_ENCOUNTERS = null;
+const BAD_INPUT = null;
+
 function getAreaEncounters(zoneName) {
   if(typeof zoneName !== 'string' || zoneName.length === 0) {
-    console.error('Invalid Zone Name provided - getAreaEncounters')
-    return null;
+    return BAD_INPUT;
   }
-  
+
   if (zoneName in encounterLocations) {
     const areaEncounters = encounterLocations[zoneName]
     const mappedEncounters = areaEncounters.map(encounter => ({
@@ -26,8 +28,8 @@ function getAreaEncounters(zoneName) {
     }));
     return mappedEncounters;
   }
-  console.warn(`${zoneName} is not in the Encounter List.`);
-  return null;
+
+  return NO_ENCOUNTERS;
 };
 
 function getAllGroundEncounters(areaEncounters) {
