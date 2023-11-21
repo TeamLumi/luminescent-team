@@ -74,7 +74,7 @@ const canvasDimensions = {
 export const Mapper = ({ pokemonList }) => {
   const [rect, setRect] = useState(null);
   const [hoveredZone, setHoveredZone] = useState(null);
-  const [locationName, setLocationName] = useState("");
+  const locationName = useRef("");
   const [encOptions, setEncOptions] = useState({
     swarm: false,
     radar: false,
@@ -84,6 +84,17 @@ export const Mapper = ({ pokemonList }) => {
   });
 
   const [pokemonName, setPokemonName] = useState('');
+
+  let originalImageData = {
+    highlight: {},
+    select: {},
+    enc: {},
+  };
+  let previousRectangle = {
+    highlight: null,
+    select: null,
+    enc: null,
+  };
 
   const [locationList, setLocationList] = useState([]);
   const [showSettings, setShowSettings] = useState(false);
@@ -184,7 +195,13 @@ export const Mapper = ({ pokemonList }) => {
     const location = getSelectedLocation( x,y )
     if(location === null || location.length === 0) return;
     
-    setLocationName(location.name);
+    if(previousRectangle.select !== null) {
+      clearRect("select");
+    }
+    drawRect(location.x, location.y, location.w, location.h, "select"); // Change the fill color
+    previousRectangle.select = { x: location.x, y: location.y, w: location.w, h: location.h };
+
+    locationName.current = location.name;
     setEncounterList(setAllEncounters(location.name));
     setTrainerList(getTrainersFromZoneName(location.name));
 
@@ -195,16 +212,9 @@ export const Mapper = ({ pokemonList }) => {
     setScriptItems(getScriptItems(zoneId));
     setFixedShops(getFixedShops(zoneId));
     setHeartScaleShop(getHeartScaleShopItems(zoneId));
-
-    drawOverlay(canvasRef.current.getContext('2d'));
   };
 
   const { colorMode, setColorMode } = useColorMode();
-
-  function getHoverFillStyle() {
-    console.log('test')
-    return `rgba(${colors.hov.r}, ${colors.hov.g}, ${colors.hov.b}, ${colors.hov.a})`;
-  }
 
   function createEncounterObject(ground, surf, rod) {
     return {GroundEnc: ground, SurfEnc: surf, RodEnc: rod};
@@ -266,7 +276,6 @@ export const Mapper = ({ pokemonList }) => {
   }
 
   function drawOverlay(ctx) {
-
     coordinates.forEach(coord => {
       // Draw zone outlines
       ctx.beginPath();
@@ -281,7 +290,7 @@ export const Mapper = ({ pokemonList }) => {
         ctx.fill();
       }
 
-      if (locationName === coord.name) {
+      if (locationName.current === coord.name) {
         ctx.fillStyle = `rgba(${colors.sel.r}, ${colors.sel.g}, ${colors.sel.b}, ${colors.sel.a})`;
         ctx.fill();
       }
@@ -292,32 +301,47 @@ export const Mapper = ({ pokemonList }) => {
     });
   };
 
-  let originalImageData = {};
-  let previousRectangle = null;
+  function getHoverFillStyle() {
+    return `rgba(${colors.hov.r}, ${colors.hov.g}, ${colors.hov.b}, ${colors.hov.a})`;
+  }
 
-  function drawRect(x, y, width, height) {
+  function getSelFillStyle() {
+    return `rgba(${colors.sel.r}, ${colors.sel.g}, ${colors.sel.b}, ${colors.sel.a})`;
+  }
+
+  function getEncFillStyle() {
+    return `rgba(${colors.enc.r}, ${colors.enc.g}, ${colors.enc.b}, ${colors.enc.a})`;
+  }
+
+  function drawRect(x, y, width, height, mode="highlight") {
     //If there was no previous rectangle, don't clear it
-    if(previousRectangle !== null) {
-      clearRect();
+    if(previousRectangle[mode] !== null || mode !== "select") {
+      clearRect(mode);
     }
-    
+
+    const modeMap = {
+      highlight: getHoverFillStyle(),
+      select: getSelFillStyle(),
+      encounter: getEncFillStyle()
+    };
+
     const ctx = canvasRef.current.getContext('2d');
 
     //Store the important data
-    previousRectangle = {x, y, width, height};
-    originalImageData = ctx.getImageData(x, y, width, height);
+    previousRectangle[mode] = {x, y, width, height};
+    originalImageData[mode] = ctx.getImageData(x, y, width, height);
 
     //Draw the rectangle
-    ctx.fillStyle = getHoverFillStyle();
+    ctx.fillStyle = modeMap[mode];
     ctx.fillRect(x, y, width, height);
   }
 
-  function clearRect() {
+  function clearRect(mode="highlight") {
     //Clears the old location and restores the image data at that position.
     const ctx = canvasRef.current.getContext('2d');
-    const {x, y, width, height} = previousRectangle;
+    const {x, y, width, height} = previousRectangle[mode];
     ctx.clearRect(x, y, width, height);
-    ctx.putImageData(originalImageData, x, y);
+    ctx.putImageData(originalImageData[mode], x, y);
   }
 
   function handleMouseMove(event) {
@@ -332,9 +356,11 @@ export const Mapper = ({ pokemonList }) => {
     const mouseY = event.clientY - rect.top + scrollTop;
 
     const location = getSelectedLocation(mouseX, mouseY);
-    if (location && location.name !== hoveredZone?.name) {
+    if (location && location.name !== locationName.current) {
       setHoveredZone(location.name);
       drawRect(location.x, location.y, location.w, location.h); // Change the fill color
+    } else if ( location && location.name === locationName.current) {
+      drawRect(location.x, location.y, location.w, location.h, "select");
     }
   }
 
@@ -366,7 +392,6 @@ export const Mapper = ({ pokemonList }) => {
         debouncedText={pokemonName}
         handleDebouncedTextChange={handlePokemonNameChange}
         locationName={locationName}
-        setLocationName={setLocationName}
       />
       <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
         <SettingsIcon />
