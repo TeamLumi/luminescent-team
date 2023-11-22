@@ -114,7 +114,10 @@ export const Mapper = ({ pokemonList }) => {
   const [heartScaleShopList, setHeartScaleShop] = useState([]);
 
   const canvasRef = useRef(null);
-
+  const CLEAR_MODE = {
+    HIGHLIGHT: "highlight",
+    SELECT: "select",
+  }
   //Component onMount
   useEffect(() => {
     console.log('Mounting...')
@@ -189,17 +192,25 @@ export const Mapper = ({ pokemonList }) => {
       return setRect(canvasRef.current.getBoundingClientRect());
     }
 
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
+    let scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    const mouseX = event.clientX - rect.left + scrollLeft;
+    const mouseY = event.clientY - rect.top + scrollTop;
  
-    const location = getSelectedLocation( x,y )
+    const location = getSelectedLocation( mouseX,mouseY )
     if(location === null || location.length === 0) return;
     
-    if(previousRectangle.select !== null) {
-      clearRect("select");
+    if(clearRect.mode === CLEAR_MODE.SELECT) {
+      //Set original image data of hover to the original image data of SELECT, otherwise you will restore the highlighted image to the map, which is not desired.
+      if(originalImageData[CLEAR_MODE.HIGHLIGHT]) {
+        originalImageData[CLEAR_MODE.SELECT] = originalImageData[CLEAR_MODE.HIGHLIGHT];
+        originalImageData[CLEAR_MODE.HIGHLIGHT] = null;
+        previousRectangle[CLEAR_MODE.HIGHLIGHT] = null;
+      }
     }
-    drawRect(location.x, location.y, location.w, location.h, "select"); // Change the fill color
-    previousRectangle.select = { x: location.x, y: location.y, w: location.w, h: location.h };
+
+    drawRect(location.x, location.y, location.w, location.h, CLEAR_MODE.SELECT); // Change the fill color
 
     locationName.current = location.name;
     setEncounterList(setAllEncounters(location.name));
@@ -313,9 +324,9 @@ export const Mapper = ({ pokemonList }) => {
     return `rgba(${colors.enc.r}, ${colors.enc.g}, ${colors.enc.b}, ${colors.enc.a})`;
   }
 
-  function drawRect(x, y, width, height, mode="highlight") {
+  function drawRect(x, y, width, height, mode=CLEAR_MODE.HIGHLIGHT) {
     //If there was no previous rectangle, don't clear it
-    if(previousRectangle[mode] !== null || mode !== "select") {
+    if(previousRectangle[mode] !== null) {
       clearRect(mode);
     }
 
@@ -336,7 +347,7 @@ export const Mapper = ({ pokemonList }) => {
     ctx.fillRect(x, y, width, height);
   }
 
-  function clearRect(mode="highlight") {
+  function clearRect(mode=CLEAR_MODE.HIGHLIGHT) {
     //Clears the old location and restores the image data at that position.
     const ctx = canvasRef.current.getContext('2d');
     const {x, y, width, height} = previousRectangle[mode];
@@ -359,8 +370,7 @@ export const Mapper = ({ pokemonList }) => {
     if (location && location.name !== locationName.current) {
       setHoveredZone(location.name);
       drawRect(location.x, location.y, location.w, location.h); // Change the fill color
-    } else if ( location && location.name === locationName.current) {
-      drawRect(location.x, location.y, location.w, location.h, "select");
+      locationName.current = location.name;
     }
   }
 
