@@ -18,11 +18,12 @@ We hope you enjoy our romhack!
 
 ## Useful Links
 
-### [Pokédex](https://drive.google.com/drive/folders/16Kwc09xli5e9WdXBeE6Kcd5vQ6LdoW5b)
+### [Pokédex](https://luminescent.team/pokedex)
 
-- Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, locations, we've got everything here. If you need information on individual Pokémon, this is the page you want to peruse!
-- Includes locations and evolution methods for regional forms and Luminescent exclusives.
-- Made by Hudie and the balance team.
+- Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, evolution methods, held items, etc. If you need information on individual Pokémon, this is the page you want to peruse!
+- Includes evolution methods for regional forms and Luminescent exclusives.
+- Currently does not include locations.
+- Balances are credit to Hudie and the balance team.
 
 ### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit)
 
@@ -49,6 +50,7 @@ We hope you enjoy our romhack!
 ### [Luminescent Damage Calculator](https://denmark14.github.io/lumi-calc/?gen=8)
 - This page allows you to calculate all your moves ahead of time, using Luminescent's specific stat changes versus Luminescent's specific fights!
 - Made by (all of) Denmark.
+- (Currently bugged and down for maintenance. No ETA on when it will be fixed.)
 
 ### [PKLumiHex](https://github.com/TalonSabre/PKLumiHex)
 - Luminescent's special PKHex branch. Please always back up your save before editing and read the github page to understand any current issues with the program.
