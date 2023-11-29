@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="A ROM Hack for Pokémon Brilliant Diamond">
+      description="A ROM Hack for Pokémon Brilliant Diamond.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
