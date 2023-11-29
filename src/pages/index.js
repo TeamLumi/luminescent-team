@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Pokémon Luminescent Version, A ROM Hack for Pokémon Brilliant Diamond and Shining Pearl">
+      description="A ROM Hack for Pokémon Brilliant Diamond">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

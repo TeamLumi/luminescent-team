@@ -9,7 +9,7 @@ export default function PokedexPage() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Pokémon Luminescent Version, A ROM Hack for Pokémon Brilliant Diamond and Shining Pearl"
+      description="A ROM Hack for Pokémon Brilliant Diamond"
     >
       <PokedexFeatures />
     </Layout>
