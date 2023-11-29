@@ -23,6 +23,10 @@ export default function PokemonPage({ pokemon, pokemonList }) {
           property='og:image'
           content={metaImage}
         />
+        <meta
+          property="twitter:image"
+          content="https://discord.com/assets/652f40427e1f5186ad54836074898279.png"
+        />
       </Head>
       <PokemonPageContent pokemon={pokemon} pokemonNames={pokemonList} />
     </Layout>
