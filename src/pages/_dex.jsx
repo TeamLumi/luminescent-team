@@ -18,9 +18,7 @@ export default function PokemonPage({ pokemon, pokemonList }) {
       description="A ROM Hack for Pokémon Brilliant Diamond."
     >
       <Head>
-        <meta property='og:image' content={metaImage}/>
-        <meta property='twitter:image' content={metaImage}/>
-        <meta property='twitter:card' content={metaImage}/>
+        <meta property='og:image' itemProp="image primaryImageOfPage" content={metaImage}/>
       </Head>
       <PokemonPageContent pokemon={pokemon} pokemonNames={pokemonList} />
     </Layout>
