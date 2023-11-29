@@ -9,8 +9,9 @@ export default function PokemonPage({ pokemon, pokemonList }) {
   if (typeof pokemon === 'undefined' || typeof pokemonList === 'undefined') {
     return null;
   }
-
-  const metaImage = useBaseUrl(`/img/${pokemon.imageSrc}`) || useBaseUrl(`/img/${pokemon.forms[0].imageSrc}`)
+  const metaImage = 
+    `https://luminescent.team/img/${pokemon.imageSrc}` ||
+    `https://luminescent.team/img/${pokemon.forms[0].imageSrc}`;
 
   return (
     <Layout
@@ -19,7 +20,6 @@ export default function PokemonPage({ pokemon, pokemonList }) {
     >
       <Head>
         <meta
-          name="Pokémon Luminescent Version"
           property='og:image'
           content={metaImage}
         />
