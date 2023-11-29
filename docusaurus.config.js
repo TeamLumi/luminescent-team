@@ -186,7 +186,6 @@ const config = {
         defaultMode: 'dark',
         respectPrefersColorScheme: true,
       },
-      image: 'img/lumiLogo-small.webp',
     }),
 };
 
