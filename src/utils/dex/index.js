@@ -31,6 +31,7 @@ import {
   getImage,
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
+  getDexDescription,
 } from './functions';
 
 import { PersonalTable } from '../../../__gamedata';
@@ -107,4 +108,5 @@ export {
   getPokemonLearnset,
   getPokemonFormId,
   POKEMON_MOVE_LEVEL_TYPE,
+  getDexDescription,
 };

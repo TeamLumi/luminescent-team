@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import { PokemonPageContent } from '../components/Pokedex2/PokemonPageContent';
 import Head from '@docusaurus/Head';
+import { getDexDescription } from '../utils/dex';
 
 export default function PokemonPage({ pokemon, pokemonList }) {
   // required for webpack SSR
@@ -15,7 +16,7 @@ export default function PokemonPage({ pokemon, pokemonList }) {
   return (
     <Layout
       title={pokemon.name}
-      description="A ROM Hack for Pokémon Brilliant Diamond."
+      description={getDexDescription(pokemon.id)}
     >
       <Head>
         <meta property='og:image' itemProp="image primaryImageOfPage" content={metaImage}/>
