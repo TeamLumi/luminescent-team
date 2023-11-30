@@ -7,7 +7,11 @@ toc_max_heading_level: 2
 
 ### What is Luminescent Platinum?
 
-Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond (and eventually Shining Pearl), inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
+Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond, inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
+
+### Wait, not Shining Pearl?
+
+Not yet. Please be patient. Adding the necessary changes to make it also work on Shining Pearl would double our workload, and we're saving it until we're finished with 2.0 completely.
 
 ### What's so special about it?
 
