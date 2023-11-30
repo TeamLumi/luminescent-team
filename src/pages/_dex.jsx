@@ -19,6 +19,7 @@ export default function PokemonPage({ pokemon, pokemonList }) {
       description={getDexDescription(pokemon.id)}
     >
       <Head>
+        <meta name="twitter:card" content="summary" />
         <meta property='og:image' itemProp="image primaryImageOfPage" content={metaImage}/>
       </Head>
       <PokemonPageContent pokemon={pokemon} pokemonNames={pokemonList} />
