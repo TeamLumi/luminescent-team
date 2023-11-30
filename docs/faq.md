@@ -75,7 +75,7 @@ No way. Months of work for maybe 15 minutes of gameplay where a cutscene in Stra
 
 ### I want to make my own romhack! Where can I learn how?
 
-Definitely come check out our partnered server, [Pokemon Switch Modding](https://discord.gg/8Dkm8YNmYy). However, we will be launching our own section to help out with modding when more of our documentation is done, and we will ping the discord when that is ready.
+Definitely come check out our partnered server, [Pokemon Switch Modding](https://discord.gg/8Dkm8YNmYy). We also welcome you to our Team Luminescent discord server, with a specific channel for these types of questions.
 
 ### What is Affection? Will turning it off stop friendship evolutions?
 
