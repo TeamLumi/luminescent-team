@@ -81,6 +81,7 @@ function getMoveProperties(moveId = 0) {
     desc: getMoveDescription(moveId),
     type,
     damageType, //0 = Status, 1 = Physical, 2 = Special
+    basePP,
     maxPP,
     power,
     accuracy: hitPer,

@@ -272,6 +272,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The target is scared off, and a different Pokémon is dragged out. In the wild, this ends a battle against a single Pokémon.',
             type: 0,
             damageType: 0,
+            basePP: 20,
             maxPP: 32,
             power: 0,
             accuracy: 101
@@ -284,6 +285,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'A move that leaves the target badly poisoned. Its poison damage worsens every turn.',
             type: 3,
             damageType: 0,
+            basePP: 10,
             maxPP: 16,
             power: 0,
             accuracy: 90
@@ -296,6 +298,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user forcefully shoots seeds at the target two to five times in a row.',
             type: 11,
             damageType: 1,
+            basePP: 30,
             maxPP: 48,
             power: 25,
             accuracy: 100
@@ -308,6 +311,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'A unique attack that varies in type depending on the Pokémon using it.',
             type: 0,
             damageType: 2,
+            basePP: 15,
             maxPP: 24,
             power: 60,
             accuracy: 100
@@ -320,6 +324,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user intensifies the sun for five turns, powering up Fire-type moves. It lowers the power of Water-type moves.',
             type: 9,
             damageType: 0,
+            basePP: 5,
             maxPP: 8,
             power: 0,
             accuracy: 101
@@ -332,6 +337,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The target is attacked with a powerful beam. The user can’t move on the next turn.',
             type: 0,
             damageType: 2,
+            basePP: 5,
             maxPP: 8,
             power: 150,
             accuracy: 90
@@ -344,6 +350,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'A wondrous wall of light is put up to reduce damage from special attacks for five turns.',
             type: 13,
             damageType: 0,
+            basePP: 30,
             maxPP: 48,
             power: 0,
             accuracy: 101
@@ -356,6 +363,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'This move enables the user to protect itself from all attacks. Its chance of failing rises if it is used in succession.',
             type: 0,
             damageType: 0,
+            basePP: 10,
             maxPP: 16,
             power: 0,
             accuracy: 101
@@ -368,6 +376,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'A nutrient-draining attack. The user’s HP is restored by half the damage taken by the target.',
             type: 11,
             damageType: 2,
+            basePP: 10,
             maxPP: 16,
             power: 75,
             accuracy: 100
@@ -380,6 +389,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user creates a protective field that prevents status conditions for five turns.',
             type: 0,
             damageType: 0,
+            basePP: 25,
             maxPP: 40,
             power: 0,
             accuracy: 101
@@ -392,6 +402,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'In this two-turn attack, the user gathers light, then blasts a bundled beam on the next turn.',
             type: 11,
             damageType: 2,
+            basePP: 10,
             maxPP: 16,
             power: 120,
             accuracy: 100
@@ -404,6 +415,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user sets off an earthquake that strikes every Pokémon around it.',
             type: 4,
             damageType: 1,
+            basePP: 10,
             maxPP: 16,
             power: 100,
             accuracy: 100
@@ -416,6 +428,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'By moving rapidly, the user makes illusory copies of itself to raise its evasiveness.',
             type: 0,
             damageType: 0,
+            basePP: 15,
             maxPP: 24,
             power: 0,
             accuracy: 101
@@ -428,6 +441,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'Unsanitary sludge is hurled at the target. This may also poison the target.',
             type: 3,
             damageType: 2,
+            basePP: 10,
             maxPP: 16,
             power: 90,
             accuracy: 100
@@ -440,6 +454,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'This attack move doubles its power if the user is poisoned, burned, or paralyzed.',
             type: 0,
             damageType: 1,
+            basePP: 20,
             maxPP: 32,
             power: 70,
             accuracy: 100
@@ -452,6 +467,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user goes to sleep for two turns. This fully restores the user’s HP and heals any status conditions.',
             type: 13,
             damageType: 0,
+            basePP: 10,
             maxPP: 16,
             power: 0,
             accuracy: 101
@@ -464,6 +480,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'If it is the opposite gender of the user, the target becomes infatuated and less likely to attack.',
             type: 0,
             damageType: 0,
+            basePP: 15,
             maxPP: 24,
             power: 0,
             accuracy: 100
@@ -476,6 +493,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user draws power from nature and fires it at the target. This may also lower the target’s Sp. Def stat.',
             type: 11,
             damageType: 2,
+            basePP: 10,
             maxPP: 16,
             power: 90,
             accuracy: 100
@@ -488,6 +506,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'A restrained attack that prevents the target from fainting. The target is left with at least 1 HP.',
             type: 0,
             damageType: 1,
+            basePP: 40,
             maxPP: 64,
             power: 40,
             accuracy: 100
@@ -500,6 +519,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user endures any attack with at least 1 HP. Its chance of failing rises if it is used in succession.',
             type: 0,
             damageType: 0,
+            basePP: 10,
             maxPP: 16,
             power: 0,
             accuracy: 101
@@ -512,6 +532,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user charges at the target using every bit of its power. The user can’t move on the next turn.',
             type: 0,
             damageType: 1,
+            basePP: 5,
             maxPP: 8,
             power: 150,
             accuracy: 90
@@ -524,6 +545,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user flashes a light that lowers the target’s accuracy. It can also be used to illuminate caves.',
             type: 0,
             damageType: 0,
+            basePP: 20,
             maxPP: 32,
             power: 0,
             accuracy: 100
@@ -536,6 +558,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'A frenetic dance to uplift the fighting spirit. This sharply raises the user’s Attack stat.',
             type: 0,
             damageType: 0,
+            basePP: 20,
             maxPP: 32,
             power: 0,
             accuracy: 101
@@ -548,6 +571,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'While it is asleep, the user randomly uses one of the moves it knows.',
             type: 0,
             damageType: 0,
+            basePP: 10,
             maxPP: 16,
             power: 0,
             accuracy: 101
@@ -560,6 +584,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user snares the target with grass and trips it. The heavier the target, the greater the move’s power.',
             type: 11,
             damageType: 2,
+            basePP: 20,
             maxPP: 32,
             power: 1,
             accuracy: 100
@@ -572,6 +597,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user enrages and confuses the target. However, this also sharply raises the target’s Attack stat.',
             type: 0,
             damageType: 0,
+            basePP: 15,
             maxPP: 24,
             power: 0,
             accuracy: 85
@@ -584,6 +610,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user creates a substitute for itself using some of its HP. The substitute serves as the user’s decoy.',
             type: 0,
             damageType: 0,
+            basePP: 10,
             maxPP: 16,
             power: 0,
             accuracy: 101
@@ -596,6 +623,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The target is cut with a scythe or claw. It’s also one of the Pokétch’s hidden moves.',
             type: 11,
             damageType: 1,
+            basePP: 25,
             maxPP: 40,
             power: 60,
             accuracy: 100
@@ -608,6 +636,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The target is slugged with a punch thrown at maximum power. It’s also one of the Pokétch’s hidden moves.',
             type: 0,
             damageType: 1,
+            basePP: 15,
             maxPP: 24,
             power: 100,
             accuracy: 100
@@ -620,6 +649,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user attacks with a punch that may lower the target’s Defense stat. It’s also one of the Pokétch’s hidden moves.',
             type: 1,
             damageType: 1,
+            basePP: 15,
             maxPP: 24,
             power: 60,
             accuracy: 100
@@ -632,6 +662,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'A charging attack that may also leave the foe confused. It’s also one of the Pokétch’s hidden moves.',
             type: 5,
             damageType: 1,
+            basePP: 10,
             maxPP: 16,
             power: 80,
             accuracy: 95
@@ -644,6 +675,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user strikes everything around it by stomping down on the ground. This lowers the Speed stats of those hit.',
             type: 4,
             damageType: 1,
+            basePP: 20,
             maxPP: 32,
             power: 60,
             accuracy: 100
@@ -656,6 +688,7 @@ describe('Dex Utils Move Getters', () => {
             desc: 'The user is roused, and its Attack and Sp. Atk stats increase.',
             type: 0,
             damageType: 0,
+            basePP: 30,
             maxPP: 48,
             power: 0,
             accuracy: 101
@@ -691,14 +724,16 @@ describe('Dex Utils Move Getters', () => {
   });
 
   describe('getMoveProperties', () => {
+    console.log(getMoveProperties(1))
     test.each([
-      [1, 'Pound', 'The target is physically pounded with a long tail, a foreleg, or the like.', 0, 1, 56, 40, 100],
+      [1, 'Pound', 'The target is physically pounded with a long tail, a foreleg, or the like.', 0, 1, 35, 56, 40, 100],
       [
         100,
         'Teleport',
         'The user switches places with another party Pokémon. It may also be used to warp to the last Pokémon Center visited. If a wild Pokémon uses this move, it flees.',
         13,
         0,
+        20,
         32,
         0,
         101,
@@ -709,18 +744,20 @@ describe('Dex Utils Move Getters', () => {
         'The user traps the target in a violent swirling whirlpool for four to five turns.',
         10,
         2,
+        15,
         24,
         35,
         85,
       ],
     ])(
       'returns the expected properties for moveId $moveId',
-      (moveId, name, desc, type, damageType, maxPP, power, accuracy) => {
+      (moveId, name, desc, type, damageType, basePP, maxPP, power, accuracy) => {
         expect(getMoveProperties(moveId)).toEqual({
           name,
           desc,
           type,
           damageType,
+          basePP,
           maxPP,
           power,
           accuracy,
@@ -734,6 +771,7 @@ describe('Dex Utils Move Getters', () => {
         desc: '',
         type: 0,
         damageType: 0,
+        basePP: 0,
         maxPP: 0,
         power: 0,
         accuracy: 0,
