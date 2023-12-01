@@ -174,13 +174,14 @@ describe('Dex Utils Move Getters', () => {
 
   describe('getMoveProperties', () => {
     test.each([
-      [1, 'Pound', 'The target is physically pounded with a long tail, a foreleg, or the like.', 0, 1, 56, 40, 100],
+      [1, 'Pound', 'The target is physically pounded with a long tail, a foreleg, or the like.', 0, 1, 35, 56, 40, 100],
       [
         100,
         'Teleport',
         'The user switches places with another party Pokémon. It may also be used to warp to the last Pokémon Center visited. If a wild Pokémon uses this move, it flees.',
         13,
         0,
+        20,
         32,
         0,
         101,
@@ -191,19 +192,21 @@ describe('Dex Utils Move Getters', () => {
         'The user traps the target in a violent swirling whirlpool for four to five turns.',
         10,
         2,
+        15,
         24,
         35,
         85,
       ],
     ])(
       'returns the expected properties for moveId $moveId',
-      (moveId, name, desc, type, damageType, maxPP, power, accuracy) => {
+      (moveId, name, desc, type, damageType, basePP, maxPP, power, accuracy) => {
         expect(getMoveProperties(moveId)).toEqual({
           moveId,
           name,
           desc,
           type,
           damageType,
+          basePP,
           maxPP,
           power,
           accuracy,
@@ -218,6 +221,7 @@ describe('Dex Utils Move Getters', () => {
         desc: '',
         type: 0,
         damageType: 0,
+        basePP: 0,
         maxPP: 0,
         power: 0,
         accuracy: 0,
@@ -251,6 +255,7 @@ describe('Dex Utils Move Getters', () => {
               "accuracy": 95,
               "damageType": 2,
               "desc": "The user attacks and captures opposing Pokémon using an electric net. This lowers their Speed stats.",
+              "basePP": 15,
               "maxPP": 24,
               "moveId": 527,
               "name": "Electroweb",
@@ -264,6 +269,7 @@ describe('Dex Utils Move Getters', () => {
             "accuracy": 101,
             "damageType": 0,
             "desc": "The user hardens its body’s surface like iron, sharply raising its Defense stat.",
+            "basePP": 15,
             "maxPP": 24,
             "moveId": 334,
             "name": "Iron Defense",
