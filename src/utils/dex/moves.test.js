@@ -724,7 +724,6 @@ describe('Dex Utils Move Getters', () => {
   });
 
   describe('getMoveProperties', () => {
-    console.log(getMoveProperties(1))
     test.each([
       [1, 'Pound', 'The target is physically pounded with a long tail, a foreleg, or the like.', 0, 1, 35, 56, 40, 100],
       [
