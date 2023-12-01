@@ -29,7 +29,7 @@ export const TYPE_COLOR_MAP = {
   17: { name: 'Fairy', color: '#eb92e4', iconFilename: 'Fairy.webp' },
 };
 
-const responsiveFontSize = { fontSize: { xs: '0.5rem', sm: '0.6rem', md: '0.9rem', lg: '1rem' } };
+const responsiveFontSize = { fontSize: { xs: '0.6rem', sm: '0.75rem', md: '0.9rem', lg: '1rem' } };
 
 export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => {
   if (moveset.length === 0) {
@@ -46,10 +46,10 @@ export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => 
         display: 'grid',
         gridTemplateColumns: {
           xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
-          sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
-          md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
+          sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 0.2fr 1.8fr`,
+          md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 0.2fr 1.8fr`,
         },
-        alignItems: 'center',
+        alignItems: 'start',
         columnGap: '4px',
         rowGap: '8px',
         marginBottom: '8px',
@@ -94,9 +94,9 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
   return null;
 };
 
-const MovesetListItem = ({ moveLevel, move }) => {
+const MovesetListItem = ({ key, moveLevel, move }) => {
   return (
-    <>
+    <React.Fragment key={key}>
       <Box display="flex" alignItems="center" justifyContent="center">
         <MoveIcon moveIconType={moveLevel} moveTypeId={move.type} />
       </Box>
@@ -131,6 +131,11 @@ const MovesetListItem = ({ moveLevel, move }) => {
 
       <Box display="flex" flexDirection="column" alignItems="center">
         <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>PP</Typography>
+        <Typography sx={{ ...responsiveFontSize }}>{move.basePP}</Typography>
+      </Box>
+
+      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+        <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>Max</Typography>
         <Typography sx={{ ...responsiveFontSize }}>{move.maxPP}</Typography>
       </Box>
 
@@ -139,7 +144,7 @@ const MovesetListItem = ({ moveLevel, move }) => {
           {move.desc}
         </Typography>
       </Box>
-    </>
+    </React.Fragment>
   );
 };
 
