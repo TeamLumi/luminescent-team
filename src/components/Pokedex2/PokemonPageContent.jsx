@@ -15,8 +15,21 @@ import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
 import { getTechMachineLearnset } from '../../utils/dex/moves';
+import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../utils/dex/name';
+
+function padNumberWithZeros(number) {
+  const strNumber = String(number);
+  const zerosToAdd = 4 - strNumber.length;
+  
+  if (zerosToAdd > 0) {
+      return '0'.repeat(zerosToAdd) + strNumber;
+  } else {
+      return strNumber;
+  }
+}
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
+  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(pokemon.id)
   return (
     <Container>
       <Container>
@@ -27,8 +40,11 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       </Container>
       <div className="container">
         <div className="row">
-          <Typography variant="h2" component="h3" sx={{ paddingLeft: '16px' }}>
-            {pokemon.name}
+          <Typography variant="h6" display="flex" sx={{ paddingLeft: '16px', paddingBottom: '12px', alignItems: "end"}}>
+            {`#${padNumberWithZeros(monsNo)}: `}
+          </Typography>
+          <Typography variant="h2" display="flex" sx={{ paddingLeft: '8px', alignItems: "end"}}>
+            {` ${pokemon.name}`}
           </Typography>
         </div>
       </div>
