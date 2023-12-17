@@ -30343,6 +30343,456 @@
                     "strWidth": 106.609375
                 }
             ]
+        },
+        {
+            "labelIndex": 1011,
+            "arrayIndex": 1011,
+            "labelName": "MONSNAME_1011",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Dipplin",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 1012,
+            "arrayIndex": 1012,
+            "labelName": "MONSNAME_1012",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Poltchageist",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1013,
+            "arrayIndex": 1013,
+            "labelName": "MONSNAME_1013",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sinistcha",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1014,
+            "arrayIndex": 1014,
+            "labelName": "MONSNAME_1014",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Okidogi",
+                    "strWidth": 102.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1015,
+            "arrayIndex": 1015,
+            "labelName": "MONSNAME_1015",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Munkidori",
+                    "strWidth": 102.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1016,
+            "arrayIndex": 1016,
+            "labelName": "MONSNAME_1016",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Fezandipiti",
+                    "strWidth": 102.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1017,
+            "arrayIndex": 1017,
+            "labelName": "MONSNAME_1017",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ogerpon",
+                    "strWidth": 86.078125
+                }
+            ]
+        },
+        {
+            "labelIndex": 1018,
+            "arrayIndex": 1018,
+            "labelName": "MONSNAME_1018",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Archaludon",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 1019,
+            "arrayIndex": 1019,
+            "labelName": "MONSNAME_1019",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Hydrapple",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 1020,
+            "arrayIndex": 1020,
+            "labelName": "MONSNAME_1020",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Gouging Fire",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1021,
+            "arrayIndex": 1021,
+            "labelName": "MONSNAME_1021",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Raging Bolt",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1022,
+            "arrayIndex": 1022,
+            "labelName": "MONSNAME_1022",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Boulder",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1023,
+            "arrayIndex": 1023,
+            "labelName": "MONSNAME_1023",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Crown",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1024,
+            "arrayIndex": 1024,
+            "labelName": "MONSNAME_1024",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Terapagos",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 1025,
+            "arrayIndex": 1025,
+            "labelName": "MONSNAME_1025",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pecharunt",
+                    "strWidth": 106.609375
+                }
+            ]
         }
     ]
 }
