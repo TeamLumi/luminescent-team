@@ -1,4 +1,4 @@
-import { pokemonHeight, pokemonWeight } from '../../../__gamedata';
+import { pokemonHeight, pokemonWeight } from '../../../__3.0gamedata';
 
 const FEET_TO_CM = 30.48;
 const INCHES_TO_CM = 2.54;

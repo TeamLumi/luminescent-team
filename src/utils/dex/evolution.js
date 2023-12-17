@@ -1,4 +1,4 @@
-import { EvolutionData } from '../../../__gamedata';
+import { EvolutionData } from '../../../__3.0gamedata';
 import { EVOLUTION_METHOD_DETAILS, evolutionFunctions } from './evolutionConstants';
 import { getPokemonIdFromMonsNoAndForm } from './functions';
 import { REPLACE_STRING } from './evolutionConstants';

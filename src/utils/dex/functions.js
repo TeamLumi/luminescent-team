@@ -1,5 +1,5 @@
-import { PersonalTable } from '../../../__gamedata';
-import { pokemonPokedexInfo } from '../../../__gamedata';
+import { PersonalTable } from '../../../__3.0gamedata';
+import { pokemonPokedexInfo } from '../../../__3.0gamedata';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});

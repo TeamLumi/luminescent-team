@@ -1,4 +1,4 @@
-const { PersonalTable } = require('../../__gamedata');
+const { PersonalTable } = require('../../__3.0gamedata');
 
 describe('Pokedex Ability Util Test', () => {
   const allPokemons = PersonalTable.Personal.map((p) => [p.monsno, p.id, p.tokusei1, p.tokusei2, p.tokusei3]);

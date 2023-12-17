@@ -1,4 +1,4 @@
-import { PersonalTable, formPokemonNames, basePokemonNames } from '../../__gamedata';
+import { PersonalTable, formPokemonNames, basePokemonNames } from '../../__3.0gamedata';
 
 const UNKNOWN_POKEMON_FORM_NAME = 'Egg';
 
