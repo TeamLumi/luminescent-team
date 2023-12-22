@@ -65,9 +65,13 @@ export default function EvolutionGraph(props) {
   if (secondEvolvesInto.length > 1) {
     if (secondEvolvesInto[0].evolvesInto.length > 0) {
       secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
-    } else if (secondEvolvesInto[1].evolvesInto.length > 0) {
-      secondEvolvesInto[0].evolvesInto.push(defaultEvo)
-      secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
+    } else if (secondEvolvesInto[secondEvolvesInto.length - 1].evolvesInto.length > 0) {
+      for (const index in secondEvolvesInto ) {
+        if (parseInt(index) !== secondEvolvesInto.length - 1) {
+          secondEvolvesInto[0].evolvesInto.push(defaultEvo)
+        }
+      }
+      secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[secondEvolvesInto.length - 1].evolvesInto[0])
     }
   }
 
