@@ -1,63 +1,53 @@
-import { PersonalTable, basePokemonNames, formPokemonNames } from '../../../__3.0gamedata';
-import { FORM_MAP } from './functions';
+import { PersonalTable, basePokemonNames, formPokemonNames } from './data';
+import { PersonalTable3, basePokemonNames3, formPokemonNames3 } from './data3';
+import { FORM_MAP, FORM_MAP3 } from './functions';
 
 const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
+const POKEMON_NAME_MAP3 = PersonalTable3.Personal.reduce(createPokemonMap, {}, "3.0");
 const POKEMON_NAME_LIST = Object.values(POKEMON_NAME_MAP);
-function createPokemonMap(pokemonNameMap, currentPokemon) {
+const POKEMON_NAME_LIST3 = Object.values(POKEMON_NAME_MAP3);
+function createPokemonMap(pokemonNameMap, currentPokemon, mode = "2.0") {
+  const baseMonNames = mode === "2.0" ? basePokemonNames : basePokemonNames3;
+  const formMonNames = mode === "2.0" ? formPokemonNames : formPokemonNames3;
+
   try {
     const { id } = currentPokemon;
 
-    const baseFormName = basePokemonNames.labelDataArray[id]?.wordDataArray[0]?.str;
+    const baseFormName = baseMonNames.labelDataArray[id]?.wordDataArray[0]?.str;
     if (typeof baseFormName === 'string' && baseFormName.length > 0) {
       pokemonNameMap[id] = baseFormName;
       return pokemonNameMap;
     }
 
-    const alternateFormName = formPokemonNames.labelDataArray[id]?.wordDataArray[0]?.str;
+    const alternateFormName = formMonNames.labelDataArray[id]?.wordDataArray[0]?.str;
     if (typeof alternateFormName === 'string' && alternateFormName.length > 0) {
       pokemonNameMap[id] = alternateFormName;
       return pokemonNameMap;
     }
 
-    pokemonNameMap[id] = getFormNameOfProblematicPokemon(id);
+    pokemonNameMap[id] = getFormNameOfProblematicPokemon(id, mode);
     return pokemonNameMap;
   } catch (e) {
     throw Error(`${currentPokemon.id} - ${e}`);
   }
 }
 
-function getFormName(id = 0) {
-  return POKEMON_NAME_MAP[id];
+function getFormName(id = 0, mode = "2.0") {
+  return mode === "2.0" ? POKEMON_NAME_MAP[id] : POKEMON_NAME_MAP3[id];
 }
 
-function getPokemonName(pokemonId = 0) {
-  return POKEMON_NAME_MAP[pokemonId];
+function getPokemonName(pokemonId = 0, mode = "2.0") {
+  return mode === "2.0" ? POKEMON_NAME_MAP[pokemonId] : POKEMON_NAME_MAP3[pokemonId];
 }
 
-function getPokemonIdFromName(name = 'Egg') {
-  const id = Object.values(POKEMON_NAME_MAP).findIndex((e) => e === name);
+function getPokemonIdFromName(name = 'Egg', mode = "2.0") {
+  const pokemon_name_map = mode === "2.0" ? POKEMON_NAME_MAP : POKEMON_NAME_MAP3;
+  const id = Object.values(pokemon_name_map).findIndex((e) => e === name);
   return id === -1 ? 0 : id;
 }
 
 function getFormNameOfProblematicPokemon(id = 0, mode = "2.0") {
-  if (mode === "3.0") {
-    switch (id) {
-      case 1266:
-        return 'Ash-Greninja';
-      case 1309:
-        return 'Meowstic-F';
-      case 1335:
-        return 'Rockruff Own-Tempo';
-      case 1466:
-        return 'Indeedee-F';
-      case 1481:
-        return 'Basculegion-F';
-      case 1483:
-        return 'Oinkologne-F';
-      default:
-        throw Error(`Bad 3.0 Pokemon ID in PokemonNameMap: ${id}`);
-    }
-  } else {
+  if (mode === "2.0") {
     switch (id) {
       case 1242:
         return 'Ash-Greninja';
@@ -74,26 +64,49 @@ function getFormNameOfProblematicPokemon(id = 0, mode = "2.0") {
       default:
         throw Error(`Bad 2.0 Pokemon ID in PokemonNameMap: ${id}`);
     }
+  } else {
+    switch (id) {
+      case 1266:
+        return 'Ash-Greninja';
+      case 1309:
+        return 'Meowstic-F';
+      case 1335:
+        return 'Rockruff Own-Tempo';
+      case 1466:
+        return 'Indeedee-F';
+      case 1481:
+        return 'Basculegion-F';
+      case 1483:
+        return 'Oinkologne-F';
+      default:
+        throw Error(`Bad 3.0 Pokemon ID in PokemonNameMap: ${id}`);
+    }
   }
 }
 
-function getPokemonMonsnoFromName(pokemonName) {
+function getPokemonMonsnoFromName(pokemonName, mode = "2.0") {
   if (!pokemonName) return -1;
-  return basePokemonNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === pokemonName);
+  const baseMonNames = mode === "2.0" ? basePokemonNames : basePokemonNames3;
+  return baseMonNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === pokemonName);
 }
 
-function getPokemonNames(to, from = 0) {
+function getPokemonNames(to, from = 0, mode = "2.0") {
   if (typeof to !== 'number' || to < 0) return [];
-  return POKEMON_NAME_LIST.slice(from, to);
+  const pokemon_name_list = mode === "2.0" ? POKEMON_NAME_LIST : POKEMON_NAME_LIST3;
+  return Object.values(pokemon_name_list).slice(from, to);
 }
 
-function getPokemonFormId(monsno = 0, id) {
-  return FORM_MAP[monsno]?.findIndex((e) => e === id) ?? -1;
+function getPokemonFormId(monsno = 0, id, mode = "2.0") {
+  const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
+  return form_map[monsno]?.findIndex((e) => e === id) ?? -1;
 }
 
-function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0) {
-	const { monsno } = PersonalTable.Personal[pokemonId];
-	const formno = FORM_MAP[monsno].indexOf(pokemonId);
+function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0, mode = "2.0") {
+  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
+  const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
+
+	const { monsno } = personalTable.Personal[pokemonId];
+	const formno = form_map[monsno].indexOf(pokemonId);
 	return [monsno, formno];
 }
 
@@ -107,5 +120,6 @@ export {
   getPokemonFormId,
   createPokemonMap,
   POKEMON_NAME_MAP,
+  POKEMON_NAME_MAP3,
   getPokemonMonsNoAndFormNoFromPokemonId
 };

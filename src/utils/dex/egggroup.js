@@ -1,4 +1,5 @@
-import { PersonalTable } from '../../../__3.0gamedata';
+import { PersonalTable } from './data';
+import { PersonalTable3 } from './data3';
 
 const EGG_GROUPS = {
   0: 'None',
@@ -20,13 +21,15 @@ const EGG_GROUPS = {
 };
 
 const POKEMON_IDS_BY_EGG_GROUP = PersonalTable.Personal.reduce(createPokemonByEggGroupMap, []);
+const POKEMON_IDS_BY_EGG_GROUP3 = PersonalTable3.Personal.reduce(createPokemonByEggGroupMap, []);
 const HIGHEST_EGG_GROUP_ID = 15;
 
-function getEggGroupViaPokemonId(pokemonId = 0) {
+function getEggGroupViaPokemonId(pokemonId = 0, mode = "2.0") {
   if (!Number.isInteger(pokemonId) || pokemonId < 0 || pokemonId > PersonalTable.Personal.length)
     throw new Error(`Bad pokemonId: ${pokemonId}`);
 
-  const pokemonDetails = PersonalTable.Personal[pokemonId];
+  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3
+  const pokemonDetails = personalTable.Personal[pokemonId];
   const eggGroup1 = pokemonDetails.egg_group1;
   const eggGroup2 = pokemonDetails.egg_group2;
   return eggGroup1 === eggGroup2 ? [eggGroup1] : [eggGroup1, eggGroup2];
@@ -53,10 +56,11 @@ function createPokemonByEggGroupMap(pokemonMap, currentPokemon) {
   return pokemonMap;
 }
 
-function getPokemonIdsInEggGroup(eggGroupId = 0) {
+function getPokemonIdsInEggGroup(eggGroupId = 0, mode = "2.0") {
   if (!Number.isInteger(eggGroupId) || eggGroupId < 0 || eggGroupId > HIGHEST_EGG_GROUP_ID)
     throw new Error(`Bad eggGroupId: ${eggGroupId}`);
-  return Array.from(POKEMON_IDS_BY_EGG_GROUP[eggGroupId]); //Back to array for easier handling
+  const PokemonByEggGroups = mode === "2.0" ? POKEMON_IDS_BY_EGG_GROUP : POKEMON_IDS_BY_EGG_GROUP3
+  return Array.from(PokemonByEggGroups[eggGroupId]); //Back to array for easier handling
 }
 
 export { getPokemonIdsInEggGroup, getEggGroupNameById, getEggGroupViaPokemonId };
