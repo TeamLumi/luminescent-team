@@ -83,7 +83,7 @@ describe('Dex utils Name getters', () => {
       expect(getFormNameOfProblematicPokemon(1441)).toBe('Indeedee-F');
       expect(getFormNameOfProblematicPokemon(1454)).toBe('Basculegion-F');
       expect(getFormNameOfProblematicPokemon(1456)).toBe('Oinkologne-F');
-      expect(() => getFormNameOfProblematicPokemon(1000)).toThrow('Bad Pokemon ID in PokemonNameMap: 1000');
+      expect(() => getFormNameOfProblematicPokemon(1000)).toThrow('Bad 2.0 Pokemon ID in PokemonNameMap: 1000');
     });
   });
 

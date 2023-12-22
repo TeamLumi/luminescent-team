@@ -39,22 +39,41 @@ function getPokemonIdFromName(name = 'Egg') {
   return id === -1 ? 0 : id;
 }
 
-function getFormNameOfProblematicPokemon(id = 0) {
-  switch (id) {
-    case 1242:
-      return 'Ash-Greninja';
-    case 1285:
-      return 'Meowstic-F';
-    case 1310:
-      return 'Rockruff Own-Tempo';
-    case 1441:
-      return 'Indeedee-F';
-    case 1454:
-      return 'Basculegion-F';
-    case 1456:
-      return 'Oinkologne-F';
-    default:
-      throw Error(`Bad Pokemon ID in PokemonNameMap: ${id}`);
+function getFormNameOfProblematicPokemon(id = 0, mode = "2.0") {
+  if (mode === "3.0") {
+    switch (id) {
+      case 1266:
+        return 'Ash-Greninja';
+      case 1309:
+        return 'Meowstic-F';
+      case 1335:
+        return 'Rockruff Own-Tempo';
+      case 1466:
+        return 'Indeedee-F';
+      case 1481:
+        return 'Basculegion-F';
+      case 1483:
+        return 'Oinkologne-F';
+      default:
+        throw Error(`Bad 3.0 Pokemon ID in PokemonNameMap: ${id}`);
+    }
+  } else {
+    switch (id) {
+      case 1242:
+        return 'Ash-Greninja';
+      case 1285:
+        return 'Meowstic-F';
+      case 1310:
+        return 'Rockruff Own-Tempo';
+      case 1441:
+        return 'Indeedee-F';
+      case 1454:
+        return 'Basculegion-F';
+      case 1456:
+        return 'Oinkologne-F';
+      default:
+        throw Error(`Bad 2.0 Pokemon ID in PokemonNameMap: ${id}`);
+    }
   }
 }
 
