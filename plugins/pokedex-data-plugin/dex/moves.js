@@ -23,34 +23,34 @@ const {
 const { getPokemonFormId } = require('./name');
 
 const IS_MOVE_INDEX = false;
+const MAX_TM_COUNT = 104;
 
 function generateMovesViaLearnset(monsNo, level, mode = "2.0") {
   /**
    * In BDSP, a trainer's Pokemon, when provided no moves,
    * will use the four most recent moves in the learnset.
    */
-  const learnsetTable = mode === "2.0" ? LearnsetTable : LearnsetTable3;
-  if (!Number.isInteger(monsNo) || monsNo < 0 || !learnsetTable.WazaOboe[monsNo]) {
+  if (!Number.isInteger(monsNo) || monsNo < 0 || !LearnsetTable.WazaOboe[monsNo]) {
     throw new Error('Invalid Pokémon number');
   }
 
   if (!Number.isInteger(level) || level < 0) {
     throw new Error('Invalid level');
   }
+  const learnsetTable = mode === "2.0" ? LearnsetTable : LearnsetTable3;
 
-  const cutoffIndex = learnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
+  let cutoffIndex = learnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
     if (i % 2 === 1) return IS_MOVE_INDEX;
     return currentMoveOrLevel > level;
   });
-
+  if (cutoffIndex === -1) {
+    cutoffIndex = learnsetTable.WazaOboe[monsNo].ar.length;
+  }
   const moves = learnsetTable.WazaOboe[monsNo].ar.slice(0, cutoffIndex);
 
-  return [
-    getMoveString(moves.at(-7)),
-    getMoveString(moves.at(-5)),
-    getMoveString(moves.at(-3)),
-    getMoveString(moves.at(-1)),
-  ];
+  const moveset = [moves.at(-7) || 0, moves.at(-5) || 0, moves.at(-3) || 0, moves.at(-1) || 0];
+
+  return moveset.map(getMoveString);
 }
 
 function isMoveNameSmogonCompatible(moveString) {
@@ -124,24 +124,41 @@ function getMoveDescription(moveId = 0, mode = "2.0") {
   return description.trim();
 }
 
-function getTechMachineLearnset(m1, m2, m3, m4, mode = "2.0") {
+function getTMCompatibility(pokemonId = 0, mode = "2.0") {
+  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
+  const { machine1, machine2, machine3, machine4 } = personalTable.Personal[pokemonId];
+  let tmCompatibility = [];
+
+  for (let i = 0; i < 32; i++) {
+    tmCompatibility[i] = (machine1 & (1 << i)) != 0;
+  }
+  for (let i = 0; i < 32; i++) {
+    tmCompatibility[i + 32] = (machine2 & (1 << i)) != 0;
+  }
+  for (let i = 0; i < 32; i++) {
+    tmCompatibility[i + 64] = (machine3 & (1 << i)) != 0;
+  }
+  for (let i = 0; i < 32; i++) {
+    tmCompatibility[i + 96] = (machine4 & (1 << i)) != 0;
+  }
+
+  return tmCompatibility;
+}
+
+function getTechMachineLearnset(pokemonId = 0, mode = "2.0") {
+  const learnset = getTMCompatibility(pokemonId, mode);
   const itemTable = mode === "2.0" ? ItemTable : ItemTable3;
-  const learnset = [
-    parseTmLearnsetSection(m1),
-    parseTmLearnsetSection(m2),
-    parseTmLearnsetSection(m3),
-    parseTmLearnsetSection(m4),
-  ]
-    .join('')
-    .split('')
-    .flatMap((e) => parseInt(e));
 
   const canLearn = [];
-  for (let i = 0; i < learnset.length; i++) {
-    if (learnset[i] === 0) continue;
-
+  for (let i = 0; i <= MAX_TM_COUNT; i++) {
     const tm = itemTable.WazaMachine[i];
-    canLearn.push({ level: 'tm', move: getMoveProperties(tm.wazaNo, mode) });
+
+    const legalitySetValue = itemTable.Item[tm.itemNo].group_id;
+    const isLearnable = learnset[legalitySetValue - 1];
+
+    if (isLearnable) {
+      canLearn.push({ level: 'tm', move: getMoveProperties(tm.wazaNo, mode) });
+    }
   }
 
   return canLearn;
@@ -162,10 +179,6 @@ function getLevelLearnset(pokemonId = 0, mode = "2.0") {
   }
 
   return moveList;
-}
-
-function parseTmLearnsetSection(decimal) {
-  return (decimal >>> 0).toString(2).split('').reverse().join('').padStart(32, 0);
 }
 
 function getTutorMoves(monsno = 0, formno = 0, mode = "2.0") {
@@ -191,7 +204,6 @@ module.exports = {
   getTechMachineLearnset,
   getMoveProperties,
   getPokemonLearnset,
-  parseTmLearnsetSection,
   getLevelLearnset,
   getTutorMoves
 };
