@@ -207,5 +207,6 @@ export {
   getMoveProperties,
   getPokemonLearnset,
   getLevelLearnset,
-  getTutorMoves
+  getTutorMoves,
+  getTMCompatibility,
 };

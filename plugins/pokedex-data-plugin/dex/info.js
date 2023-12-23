@@ -20,7 +20,7 @@ function getPokemonInfo(monsno = 0, pokemonId = 0, mode = "2.0") {
     ability1: getAbilityString(p.tokusei1, mode),
     ability2: getAbilityString(p.tokusei2, mode),
     abilityH: getAbilityString(p.tokusei3, mode),
-    tmLearnset: getTechMachineLearnset(p.machine1, p.machine2, p.machine3, p.machine4, mode),
+    tmLearnset: getTechMachineLearnset(pokemonId, mode),
     prettyBaseStats: formatBaseStats(p),
     baseStats: {
       hp: p.basic_hp,

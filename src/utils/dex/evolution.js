@@ -28,10 +28,8 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
   }
 
   const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3;
-  console.log(evolutionData);
 
   const pokemon = evolutionData[pokemonId];
-  console.log(pokemon);
   if (!pokemon) {
     throw new Error(`Bad pokemon ID: ${pokemonId}`);
   }
