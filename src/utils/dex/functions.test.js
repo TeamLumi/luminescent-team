@@ -144,4 +144,19 @@ describe('Dex utils function tests', () => {
       expect(actualFormMap).toEqual(expectedFormMap);
     });
   });
+
+  describe('3.0 Functions Tests', () => {
+    const MODE = "3.0";
+    test('should return the correct Pokemon ID for a different monsno and formno', () => {
+      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1216);
+    });
+    it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
+      const result = getPokemonIdFromFormMap(3, 3, MODE); //Clone Venusaur
+      const result2 = getPokemonIdFromFormMap(3, 0, MODE); //Venusaur
+      const CLONE_VENUSAUR = 1028;
+      const VENUSAUR = 3;
+      expect(result).toBe(CLONE_VENUSAUR);
+      expect(result2).toBe(VENUSAUR);
+    });
+  })
 });

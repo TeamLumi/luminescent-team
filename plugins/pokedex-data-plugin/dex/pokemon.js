@@ -40,11 +40,11 @@ function getPokemon(pokemonId, mode = "2.0") {
 
   const learnset = {
     level: getLevelLearnset(pokemonId, mode),
-    tm: getTechMachineLearnset(p.machine1, p.machine2, p.machine3, p.machine4, mode),
+    tm: getTechMachineLearnset(pokemonId, mode),
     egg: getEggMoves(pokemonId, mode),
     tutor: getTutorMoves(monsno, formno, mode)
   };
-  const eggGroupNames = getEggGroupViaPokemonId(p.id, mode).map((eggId) => getEggGroupNameById(eggId));
+  const eggGroupNames = getEggGroupViaPokemonId(pokemonId, mode).map((eggId) => getEggGroupNameById(eggId));
   const forms = getPokemonFormIds(p.monsno, mode).map((formId) => {
     return {
       name: getPokemonName(formId, mode),

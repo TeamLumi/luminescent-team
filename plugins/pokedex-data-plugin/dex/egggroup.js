@@ -25,10 +25,10 @@ const POKEMON_IDS_BY_EGG_GROUP3 = PersonalTable3.Personal.reduce(createPokemonBy
 const HIGHEST_EGG_GROUP_ID = 15;
 
 function getEggGroupViaPokemonId(pokemonId = 0, mode = "2.0") {
-  if (!Number.isInteger(pokemonId) || pokemonId < 0 || pokemonId > PersonalTable.Personal.length)
+  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3
+  if (!Number.isInteger(pokemonId) || pokemonId < 0 || pokemonId > personalTable.Personal.length)
     throw new Error(`Bad pokemonId: ${pokemonId}`);
 
-  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3
   const pokemonDetails = personalTable.Personal[pokemonId];
   const eggGroup1 = pokemonDetails.egg_group1;
   const eggGroup2 = pokemonDetails.egg_group2;

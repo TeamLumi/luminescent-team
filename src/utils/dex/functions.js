@@ -52,7 +52,8 @@ function getGrassKnotPower(weightkg) {
 
 function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = "2.0") {
   const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
-  return personalTable.Personal.find((e) => e.monsno === monsno && FORM_MAP[e.monsno][formno] === e.id)?.id;
+  const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
+  return personalTable.Personal.find((e) => e.monsno === monsno && form_map[e.monsno][formno] === e.id)?.id;
 }
 
 function doNothing(evoMethod, evolutionDetails) {
