@@ -1,9 +1,17 @@
-import React, { useState, createContext, useContext } from "react";
+import React, { useState, createContext, useContext, useEffect } from "react";
 
 const GlobalContext = createContext(null);
 
 export const GlobalState = (props) => {
-  const [globalState, setGlobalState] = useState({ mode: "3.0" });
+  const [globalState, setGlobalState] = useState(() => {
+    const storedMode = sessionStorage.getItem("mode");
+    return { mode: storedMode || "3.0" };
+  });
+
+  useEffect(() => {
+    // Update sessionStorage when the mode changes
+    sessionStorage.setItem("mode", globalState.mode);
+  }, [globalState.mode]);
 
   const updateMode = (newMode) => {
     if (newMode === "2.0" || newMode === "3.0") {
