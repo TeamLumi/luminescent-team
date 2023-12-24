@@ -66,6 +66,7 @@ function getPokemon(pokemonId, mode = "2.0") {
   return {
     id,
     monsno,
+    formno,
     name,
     dexDescription,
     baseStats,
