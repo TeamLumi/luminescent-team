@@ -4,8 +4,9 @@ import Layout from '@theme/Layout';
 import { PokemonPageContent } from '../components/Pokedex2/PokemonPageContent';
 import Head from '@docusaurus/Head';
 import { getDexDescription } from '../utils/dex';
+import { GlobalState } from '../components/common/GlobalState';
 
-export default function PokemonPage({ pokemon, pokemonList }) {
+export default function PokemonPage({ pokemon, pokemonList, pokemon3, pokemonList3 }) {
   const { siteConfig } = useDocusaurusContext();
   // required for webpack SSR
   if (typeof pokemon === 'undefined' || typeof pokemonList === 'undefined') {
@@ -17,15 +18,17 @@ export default function PokemonPage({ pokemon, pokemonList }) {
 
   return (
     <Layout
-      description={getDexDescription(pokemon.id)}
+      description={pokemon.dexDescription}
     >
-      <Head>
-        <meta property="og:title" content={pokemon.name} data-rh="true" />
-        <meta name="og:site_name" content={siteConfig.title} />
-        <meta name="twitter:card" content="summary" />
-        <meta property='og:image' itemProp="image primaryImageOfPage" content={metaImage}/>
-      </Head>
-      <PokemonPageContent pokemon={pokemon} pokemonNames={pokemonList} />
+      <GlobalState>
+        <Head>
+          <meta property="og:title" content={pokemon.name} data-rh="true" />
+          <meta name="og:site_name" content={siteConfig.title} />
+          <meta name="twitter:card" content="summary" />
+          <meta property='og:image' itemProp="image primaryImageOfPage" content={metaImage}/>
+        </Head>
+        <PokemonPageContent pokemon={pokemon} pokemonNames={pokemonList} pokemon3={pokemon3} pokemonNames3={pokemonList3} />
+      </GlobalState>
     </Layout>
   );
 }
