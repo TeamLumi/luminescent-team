@@ -1,5 +1,5 @@
-const { PersonalTable } = require('./data');
-const { PersonalTable3 } = require('./data3');
+const { PersonalTable, pokemonPokedexInfo } = require('./data');
+const { PersonalTable3, pokemonPokedexInfo3 } = require('./data3');
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});
@@ -61,6 +61,17 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = "2.0") {
   return personalTable.Personal.find((e) => e.monsno === monsno && form_map[e.monsno][formno] === e.id)?.id;
 }
 
+function doNothing(evoMethod, evolutionDetails) {
+  return [evolutionDetails, evoMethod];
+};
+
+function getDexDescription(pokemonId, mode = "2.0") {
+  const PokedexInfo = mode === "2.0" ? pokemonPokedexInfo : pokemonPokedexInfo3;
+  const labelData = PokedexInfo.labelDataArray[pokemonId]
+  const combinedStr = labelData.wordDataArray.map(data => data.str).join(' ');
+  return combinedStr
+}
+
 module.exports = {
   FORM_MAP,
   FORM_MAP3,
@@ -73,4 +84,6 @@ module.exports = {
   createFormMap,
   getPokemonFormIndexById,
   getPokemonFormIds,
+  getDexDescription,
+  doNothing,
 };

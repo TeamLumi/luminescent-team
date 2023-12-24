@@ -5,6 +5,7 @@ const EggMovesTable3 = require('../../../__3.0gamedata/TamagoWazaTable.json');
 const LearnsetTable3 = require('../../../__3.0gamedata/WazaOboeTable.json');
 const MovesTable3 = require('../../../__3.0gamedata/WazaTable.json');
 const ItemTable3 = require('../../../__3.0gamedata/ItemTable.json');
+const EvolutionData3 = require('../../../__3.0gamedata/evolution.json');
 
 //All the Pokemon english files
 const basePokemonNames3 = require('../../../__3.0gamedata/english_ss_monsname.json');
@@ -34,6 +35,7 @@ module.exports = {
   EggMovesTable3,
   LearnsetTable3,
   MovesTable3,
+  EvolutionData3,
   basePokemonNames3,
   formPokemonNames3,
   pokemonHeight3,
