@@ -22,9 +22,9 @@ const FEMALE = "Female"
 const MALE = "Male"
 
 export default function EvolutionGraph(props) {
-  const evolutionTree = getEvolutionTree(props.pokemonID);
-  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId);
-  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo)
+  const pokedexPath = props.globalState.mode === "2.0" ? "pokedex" : "pokedex3.0";
+  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(props.evolutionTree.pokemonId, props.globalState.mode);
+  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, props.globalState.mode)
   const defaultEvo = {
     pokemonId: -1,
     evolutionDetails: {
@@ -57,7 +57,7 @@ export default function EvolutionGraph(props) {
     </div>
   );
 
-  const secondEvolvesInto = evolutionTree.evolvesInto;
+  const secondEvolvesInto = props.evolutionTree.evolvesInto;
   if (secondEvolvesInto.length === 0) {
     return fullEvolutionTree
   }
@@ -199,20 +199,24 @@ export default function EvolutionGraph(props) {
         );
         allImages.push(pokemonImages);
       } else {
-        const pokemonImages = monsNos.map((monsno, index) => (
-          index === 0 ? (
-            <Box className={styles.imageRow} key={monsno}>
-              <Link to={`/pokedex/${getPokemonIdFromMonsNoAndForm(monsno, formNos[index])}`}>
-                <img
-                  key={getPokemonIdFromMonsNoAndForm(monsno, formNos[index])}
-                  src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
-                  alt={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
-                  title={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
-                />
-              </Link>
-            </Box>
-          ) : ""
-        ));
+        const pokemonImages = monsNos.map((monsno, index) => {
+          const pokemonId = getPokemonIdFromMonsNoAndForm(monsno, formNos[index], props.globalState.mode);
+          const pokemonName = getPokemonName(pokemonId, props.globalState.mode);
+          const pokemonPath = formNos[index] === 0 ? monsno : `${monsno}_${formNos[index]}` ;
+          return (
+            index === 0 ? (
+              <Box className={styles.imageRow} key={monsno}>
+                <Link to={`/pokedex/${pokemonPath}`}>
+                  <img
+                    key={pokemonId}
+                    src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
+                    alt={pokemonName}
+                    title={pokemonName} />
+                </Link>
+              </Box>
+            ) : ""
+          );
+        });
         allImages.push(pokemonImages);
       }
     });
@@ -241,12 +245,12 @@ export default function EvolutionGraph(props) {
                 <img
                   key={pokemonID}
                   src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
-                  alt={getPokemonName(pokemonID)}
-                  title={getPokemonName(pokemonID)}
+                  alt={getPokemonName(pokemonID, props.globalState.mode)}
+                  title={getPokemonName(pokemonID, props.globalState.mode)}
                 />
               </Link>
             </Grid>
-            {renderEvolutionTree(evolutionTree, 1)}
+            {renderEvolutionTree(props.evolutionTree, 1)}
             {secondEvolvesInto[0].evolvesInto.length >= 1 && (
               renderEvolutionTree(secondEvolvesInto[0], 2)
             )}  

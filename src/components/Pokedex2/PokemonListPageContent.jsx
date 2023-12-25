@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Container, ListItem, ListItemButton, ListItemIcon, Typography } from '@mui/material';
 import { PokemonSearchInput } from './PokemonSearchInput';
 import { FixedSizeList } from 'react-window';
@@ -7,9 +7,18 @@ import { PokemonMoveType, TYPE_COLOR_MAP } from './PokemonMovesetList';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { PokemonInfoButton } from './PokedexInfoButton';
+import { useGlobalState } from '../common/GlobalState';
+import ModeSwitch from './ModeSwitch';
 
-export const PokemonListPageContent = ({ pokemonList }) => {
-  const [pokemons, setPokemons] = useState(pokemonList);
+export const PokemonListPageContent = ({ pokemonList, pokemonList3 }) => {
+  const [globalState, updateMode] = useGlobalState();
+  const allPokemons = globalState.mode === "2.0" ? pokemonList : pokemonList3;
+  const [pokemons, setPokemons] = useState(allPokemons);
+
+  useEffect(() => {
+    const updatedPokemons = globalState.mode === "2.0" ? pokemonList : pokemonList3;
+    setPokemons(updatedPokemons);
+  }, [globalState.mode]);
 
   return (
     <Container sx={{ flex: '1 1 auto', display: 'flex', flexDirection: 'column' }}>
@@ -19,10 +28,10 @@ export const PokemonListPageContent = ({ pokemonList }) => {
         </Typography>
 
         <Box display="flex" marginTop="16px">
-          <PokemonSearchInput allPokemons={pokemonList} setPokemons={setPokemons} />
+          <PokemonSearchInput allPokemons={allPokemons} setPokemons={setPokemons} />
           <PokemonInfoButton />
+          <ModeSwitch />
         </Box>
-
 
         <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>
           <AutoSizer>
@@ -39,10 +48,12 @@ export const PokemonListPageContent = ({ pokemonList }) => {
 };
 
 const PokemonListEntry = ({ pokemon, style }) => {
+  const [globalState, updateMode] = useGlobalState();
   const { path } = usePluginData('luminescent-pokedex-data-plugin');
+  const pokemonPath = pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`;
 
   return (
-    <a href={useBaseUrl(`${path}/${pokemon.id}`)} style={{ ...style, textDecoration: 'none' }}>
+    <a href={useBaseUrl(`${path}/${pokemonPath}`)} style={{ ...style, textDecoration: 'none' }}>
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>

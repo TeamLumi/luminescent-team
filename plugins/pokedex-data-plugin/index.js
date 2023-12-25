@@ -79,15 +79,16 @@ function pokedexDataPlugin(context, options) {
       await Promise.all([
         ...content.pokemons3.map(async (pokemon3) => {
           const pokemonName = normalizePokemonName(pokemon3.name);
-          const pokemonId = pokemon3.formno === 0 ? pokemon3.monsno : `${pokemon3.monsno}_${pokemon3.formno}`;
-          const pokemonSlug = pokemon3.isBaseForm ? pokemonName : pokemonId;
+          const pokemonId3 = pokemon3.formno === 0 ? pokemon3.monsno : `${pokemon3.monsno}_${pokemon3.formno}`;
+          const pokemonSlug = pokemon3.isBaseForm ? pokemonName : pokemonId3;
           const pokemonPath = `${pokedexPath}/${pokemonSlug}`;
-          const pokemonJson3 = await actions.createData(`3.0lumi${pokemon3.id}.json`, JSON.stringify(pokemon3));
+          const pokemonJson3 = await actions.createData(`3.0lumi${pokemonId3}.json`, JSON.stringify(pokemon3));
           let pokemonJson = pokemonJson3;
 
           const pokemon = content.pokemons.find((p) => p.monsno === pokemon3.monsno && p.formno === pokemon3.formno);
           if (pokemon) {
-            pokemonJson = await actions.createData(`lumi${pokemon.id}.json`, JSON.stringify(pokemon));
+            const pokemonId = pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`;
+            pokemonJson = await actions.createData(`lumi${pokemonId}.json`, JSON.stringify(pokemon));
           }
 
           if (pokemon3.isBaseForm) {
