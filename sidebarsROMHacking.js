@@ -71,8 +71,9 @@ const sidebars = {
           type: 'category',
           label: 'Commands',
           link: {
-            type: 'doc',
-            id: 'scripting/commands/index',
+            type: 'generated-index',
+            title: 'Commands',
+            description: 'This is a list of the most commonly used commands in BDSP. Commands are used in functions in the game.'
           },
           collapsed: true,
           items: [
@@ -120,8 +121,9 @@ const sidebars = {
           type: 'category',
           label: 'Animation commands',
           link: {
-            type: 'doc',
-            id: 'scripting/animation-commands/index',
+            type: 'generated-index',
+            title: 'Animation commands',
+            description: 'This is a list of the most commonly used animation commands in BDSP. Animation commands are used in functions in the game for showing cutscenes and more.'
           },
           collapsed: true,
           items: [

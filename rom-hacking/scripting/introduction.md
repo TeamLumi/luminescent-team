@@ -12,8 +12,8 @@ Each area has it's own script file. The name is the [Area](../dictionary/areas.m
 
 These script files contain two different types of function that serve different purposes.
 
-- [Script functions](commands/index.md)
-- [Animation functions](animation-commands/index.md)
+- Script functions
+- Animation functions
 
 ### Naming schemes
 
@@ -23,9 +23,9 @@ Function naming should follow this scheme: `{type}_{area_name}_{function_name}`
 
 | Type | Description |
 | - | - |
-| ev | [Script functions](commands/index.md) called by [PlaceData](place-data.md) |
-| pos | [Script functions](commands/index.md) called by [StopData](stop-data.md) |
-| anm | [Animation functions](animation-commands/index.md) |
+| ev | Script functions called by [PlaceData](place-data.md) |
+| pos | Script functions called by [StopData](stop-data.md) |
+| anm | Animation functions |
 
 #### Area name
 
@@ -64,11 +64,11 @@ There are four main ways to make the game run your custom functions.
 1. Using an `ev_{area_name}_flag_change` function
 2. Referencing your function name in the `TalkLabel` of a [PlaceData](place-data.md)
 3. Referencing your function name in the `ContactLabel` of a [StopData](stop-data.md)
-4. Calling your function from another function that already in the script using a [_JUMP](commands/jump.md) or a [_CALL](commands/call.md) function
+4. Calling your function from another function that's already in the script using a [_JUMP](commands/jump.md) or a [_CALL](commands/call.md) function
 
 ## Flags
 
-Flags are a way to store varios data about your game state. Flags can either be set (1) using [_FLAG_SET](commands/flag-set.md) or reset (0) using [_FLAG_RESET](commands/flag-reset.md).
+Flags are a way to store various data about your game state. Flags can either be set (1) using [_FLAG_SET](commands/flag-set.md) or reset (0) using [_FLAG_RESET](commands/flag-reset.md).
 
 ### Example
 
