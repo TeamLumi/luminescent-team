@@ -2,8 +2,13 @@ const { PersonalTable, basePokemonNames, formPokemonNames } = require('./data');
 const { PersonalTable3, basePokemonNames3, formPokemonNames3 } = require('./data3');
 const { FORM_MAP, FORM_MAP3 } = require('./functions');
 
-const POKEMON_NAME_MAP = PersonalTable.Personal.reduce(createPokemonMap, {});
-const POKEMON_NAME_MAP3 = PersonalTable3.Personal.reduce(createPokemonMap, {}, "3.0");
+const POKEMON_NAME_MAP = PersonalTable.Personal.reduce((pokemonNameMap, currentPokemon) => {
+  return createPokemonMap(pokemonNameMap, currentPokemon, "2.0");
+}, {});
+const POKEMON_NAME_MAP3 = PersonalTable3.Personal.reduce((pokemonNameMap, currentPokemon) => {
+  return createPokemonMap(pokemonNameMap, currentPokemon, "3.0");
+}, {});
+
 function createPokemonMap(pokemonNameMap, currentPokemon, mode = "2.0") {
   const baseMonNames = mode === "2.0" ? basePokemonNames : basePokemonNames3;
   const formMonNames = mode === "2.0" ? formPokemonNames : formPokemonNames3;

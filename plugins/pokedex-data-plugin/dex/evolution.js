@@ -21,7 +21,7 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
   return [evolutionDetails, evoMethod];
 }
 
-function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "3.0") {
+function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
   if (!Number.isInteger(pokemonId) || pokemonId < 0) {
     throw new Error(`Bad pokemon ID: ${pokemonId}`);
   }
@@ -30,7 +30,7 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "3.0") {
 
   const pokemon = evolutionData[pokemonId];
   if (!pokemon) {
-    throw new Error(`Bad pokemon ID: ${pokemonId}`);
+    throw new Error(`Bad pokemon ID: ${pokemonId}. Mode: ${mode}`);
   }
 
   const startPokemonId = fromRoot ? pokemon.path[0] : pokemonId;

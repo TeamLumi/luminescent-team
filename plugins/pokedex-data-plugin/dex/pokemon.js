@@ -40,15 +40,15 @@ function getPokemon(pokemonId, mode = "2.0") {
   const ability2 = getAbilityString(p.tokusei2, mode);
   const abilityH = getAbilityString(p.tokusei3, mode);
 
-  const evolutionTree = getEvolutionTree(pokemonId, mode);
+  const evolutionTree = getEvolutionTree(p.id, true, mode);
 
   const learnset = {
-    level: getLevelLearnset(pokemonId, mode),
-    tm: getTechMachineLearnset(pokemonId, mode),
-    egg: getEggMoves(pokemonId, mode),
+    level: getLevelLearnset(p.id, mode),
+    tm: getTechMachineLearnset(p.id, mode),
+    egg: getEggMoves(p.id, mode),
     tutor: getTutorMoves(monsno, formno, mode)
   };
-  const eggGroupNames = getEggGroupViaPokemonId(pokemonId, mode).map((eggId) => getEggGroupNameById(eggId));
+  const eggGroupNames = getEggGroupViaPokemonId(p.id, mode).map((eggId) => getEggGroupNameById(eggId));
   const forms = getPokemonFormIds(p.monsno, mode).map((formId) => {
     return {
       name: getPokemonName(formId, mode),
