@@ -46,8 +46,14 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-const ModeSwitch = () => {
+const ModeSwitch = ({ pokemonExists }) => {
   const [globalState, updateMode] = useGlobalState();
+
+  React.useEffect(() => {
+    if (pokemonExists && globalState.mode === "2.0") {
+      updateMode("3.0");
+    }
+  }, [pokemonExists, globalState.mode, updateMode]);
 
   const handleChange = () => {
     const newMode = globalState.mode === "2.0" ? "3.0" : "2.0";
@@ -59,6 +65,7 @@ const ModeSwitch = () => {
       <MaterialUISwitch
         checked={globalState.mode === "3.0"}
         onChange={handleChange}
+        disabled={pokemonExists}
       />
       <Typography>3.0</Typography>
     </Stack>

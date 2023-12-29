@@ -15,6 +15,7 @@ export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
         <Box display="flex" flexWrap="wrap">
           {pokemonForms.map((form, i) => {
             const [monsno, formno] = getPokemonMonsNoAndFormNoFromPokemonId(getPokemonIdFromName(form.name, globalState.mode), globalState.mode)
+            const pokemonPath = formno === 0 ? monsno : `${monsno}_${formno}`;
             return (
               <Box key={`${form.name}-${i}`} display="flex" alignItems="center" margin="4px 16px 16px 4px">
                 <ImageWithFallback
@@ -22,7 +23,7 @@ export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
                   fallbackSrc={`/img/${pokemonForms[0].imageSrc}`}
                   height={30}
                 />
-                <Link to={`/pokedex/${monsno}_${formno}`}>
+                <Link to={`/pokedex/${pokemonPath}`}>
                   <Typography marginLeft="8px">
                     {form.name}
                     {i < pokemonForms.length - 1 && ','}

@@ -42,7 +42,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
         <Box display="flex" justifyContent="center" marginTop="16px">
           <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
           <PokemonInfoButton />
-          <ModeSwitch />
+          <ModeSwitch pokemonExists={pokemon === pokemon3} />
         </Box>
       </Container>
       <div className="container">

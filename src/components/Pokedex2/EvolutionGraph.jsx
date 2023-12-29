@@ -22,9 +22,9 @@ const FEMALE = "Female"
 const MALE = "Male"
 
 export default function EvolutionGraph(props) {
-  const pokedexPath = props.globalState.mode === "2.0" ? "pokedex" : "pokedex3.0";
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(props.evolutionTree.pokemonId, props.globalState.mode);
-  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, props.globalState.mode)
+  const firstPokemonPath = formNo === 0 ? monsNo : `${monsNo}_${formNo}`;
+  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, props.globalState.mode);
   const defaultEvo = {
     pokemonId: -1,
     evolutionDetails: {
@@ -241,7 +241,7 @@ export default function EvolutionGraph(props) {
         <Grid container className={styles.evolutionContainer}>
           <Grid item xs={12} className={styles.scrollContent}>
             <Grid item xs={12} sm={6} className={styles.startPokemon}>
-              <Link to={`/pokedex/${pokemonID}`}>
+              <Link to={`/pokedex/${firstPokemonPath}`}>
                 <img
                   key={pokemonID}
                   src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
