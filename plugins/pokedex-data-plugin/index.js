@@ -76,8 +76,8 @@ function pokedexDataPlugin(context, options) {
 
       const pokemonRedirectRoutes = [];
       const pokemonRoutes = [];
-      await Promise.all([
-        ...content.pokemons3.map(async (pokemon3) => {
+      await Promise.all(
+        content.pokemons3.map(async (pokemon3) => {
           const pokemonName = normalizePokemonName(pokemon3.name);
           const pokemonId3 = pokemon3.formno === 0 ? pokemon3.monsno : `${pokemon3.monsno}_${pokemon3.formno}`;
           const pokemonSlug = pokemon3.isBaseForm ? pokemonName : pokemonId3;
@@ -118,7 +118,7 @@ function pokedexDataPlugin(context, options) {
             },
           });
         }),
-      ]);
+      );
 
       const subRoutes = [pokemonListRoute, ...pokemonRoutes, ...pokemonRedirectRoutes];
       actions.addRoute({
