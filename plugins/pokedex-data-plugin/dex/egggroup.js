@@ -20,8 +20,13 @@ const EGG_GROUPS = {
   15: 'No Eggs',
 };
 
-const POKEMON_IDS_BY_EGG_GROUP = PersonalTable.Personal.reduce(createPokemonByEggGroupMap, []);
-const POKEMON_IDS_BY_EGG_GROUP3 = PersonalTable3.Personal.reduce(createPokemonByEggGroupMap, []);
+const POKEMON_IDS_BY_EGG_GROUP = PersonalTable.Personal.reduce((pokemonMap, currentPokemon) => {
+  return createPokemonByEggGroupMap(pokemonMap, currentPokemon, "2.0");
+}, {});
+const POKEMON_IDS_BY_EGG_GROUP3 = PersonalTable3.Personal.reduce((pokemonMap, currentPokemon) => {
+  return createPokemonByEggGroupMap(pokemonMap, currentPokemon, "3.0");
+}, {});
+
 const HIGHEST_EGG_GROUP_ID = 15;
 
 function getEggGroupViaPokemonId(pokemonId = 0, mode = "2.0") {
