@@ -36,13 +36,29 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
   const allPokemonNames = globalState.mode === "2.0" ? pokemonNames : pokemonNames3;
   const pokemonId = getPokemonIdFromMonsNoAndForm(pokemonInfo.monsno, pokemonInfo.formno, globalState.mode)
 
+  if (pokemon === pokemon3 && globalState.mode === "2.0") {
+    return (
+      <Container>
+        <Container>
+          <Box display="flex" justifyContent="center" marginTop="16px">
+            <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={0} formNo={0} />
+            <PokemonInfoButton />
+            <ModeSwitch />
+          </Box>
+        </Container>
+  
+        <Typography variant='h6' display="flex" sx={{marginTop: "16px", justifyContent: "center"}} >{pokemon.name} Does Not Exist in this Mode.</Typography>
+      </Container>
+    )
+  }
+
   return (
     <Container>
       <Container>
         <Box display="flex" justifyContent="center" marginTop="16px">
           <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
           <PokemonInfoButton />
-          <ModeSwitch pokemonExists={pokemon === pokemon3} />
+          <ModeSwitch />
         </Box>
       </Container>
       <div className="container">
