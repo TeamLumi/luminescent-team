@@ -14,7 +14,6 @@ import { PokemonEggGroups } from './PokemonEggGroups';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
-import { getTechMachineLearnset } from '../../utils/dex/moves';
 import ModeSwitch from './ModeSwitch';
 import { useGlobalState } from '../common/GlobalState';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex';
@@ -113,7 +112,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
           <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
         </Box>
         <Box className={style.secondPokeColumn} gridColumn="span 4">
-          <PokemonItems pokemonId={pokemonId}/>
+          <PokemonItems item1={pokemonInfo.item1} item2={pokemonInfo.item2} item3={pokemonInfo.item3}/>
           <PokemonEggGroups eggGroupNames={pokemonInfo.eggGroupNames} sx={{ marginTop: '16px' }} />
           <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} sx={{ marginTop: '16px' }} />
         </Box>
@@ -132,7 +131,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
           <PokemonMovesetList moveset={pokemonInfo.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemonId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={getTechMachineLearnset(pokemonId, globalState.mode)} movesetPrefix="tm" pokemonDexId={pokemonId} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.tm} movesetPrefix="tm" pokemonDexId={pokemonId} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
           <PokemonMovesetList moveset={pokemonInfo.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemonId} />
