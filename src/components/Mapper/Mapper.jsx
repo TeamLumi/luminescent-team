@@ -195,6 +195,20 @@ export const Mapper = ({ pokemonList }) => {
     const location = getSelectedLocation( x,y )
     if(location === null || location.length === 0) return;
     
+    if (previousRectangle.highlight !== null) {
+      // Make sure to clear any lower hierarchy rects before setting higher ones
+      // If this is not done, the lower mode's highlight will be set as the previous state for the higher mode
+      // Here's how the bug would come up:
+      // 1. Hover over an area.
+      // 2. Select that area.
+      // 3. Hover over a different area.
+      // 4. Select that different area.
+      // 5. From this you'll see how the first area selected will have the hover color.
+      // This will also affect any future areas in the same way.
+      // We want the old selected area to not have the hover's color.
+      // See clearRect for hierarchy info.
+      clearRect("highlight");
+    }
     if(previousRectangle.select !== null) {
       clearRect("select");
     }
@@ -315,7 +329,7 @@ export const Mapper = ({ pokemonList }) => {
 
   function drawRect(x, y, width, height, mode="highlight") {
     //If there was no previous rectangle, don't clear it
-    if(previousRectangle[mode] !== null || mode !== "select") {
+    if(previousRectangle[mode] !== null) {
       clearRect(mode);
     }
 
@@ -341,6 +355,15 @@ export const Mapper = ({ pokemonList }) => {
     const ctx = canvasRef.current.getContext('2d');
     const {x, y, width, height} = previousRectangle[mode];
     ctx.clearRect(x, y, width, height);
+    if (mode === "select" && previousRectangle.highlight !== null) {
+      // This adds a hierarchy of which highlights override others
+      // In order to do this, it will first clear the lower mode's rect
+      // Then it will set that lower mode's rect to null
+      // This way it won't clear the higher mode's rect when the lower mode is called again
+      // The hierarchy will be 1: Select, 2: Highlight, 3: Encounter.
+      clearRect("highlight");
+      previousRectangle.highlight = null;
+    }
     ctx.putImageData(originalImageData[mode], x, y);
   }
 
@@ -367,6 +390,7 @@ export const Mapper = ({ pokemonList }) => {
   const handleMouseLeave = () => {
     // Clear the hovered zone when mouse leaves
     setHoveredZone(null);
+    clearRect("highlight");
   };
 
   return (
