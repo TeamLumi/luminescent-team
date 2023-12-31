@@ -214,12 +214,12 @@ export const Mapper = ({ pokemonList }) => {
       // This will also affect any future areas in the same way.
       // We want the old selected area to not have the hover's color.
       // See clearRect for hierarchy info.
-      clearRect("highlight");
+      clearRect(CLEAR_MODE.HIGHLIGHT);
     }
     if(previousRectangle.select !== null) {
-      clearRect("select");
+      clearRect(CLEAR_MODE.SELECT);
     }
-    drawRect(location.x, location.y, location.w, location.h, "select"); // Change the fill color
+    drawRect(location.x, location.y, location.w, location.h, CLEAR_MODE.SELECT); // Change the fill color
     previousRectangle.select = { x: location.x, y: location.y, w: location.w, h: location.h };
 
     locationName.current = location.name;
@@ -363,13 +363,13 @@ export const Mapper = ({ pokemonList }) => {
     const ctx = canvasRef.current.getContext('2d');
     const {x, y, width, height} = previousRectangle[mode];
     ctx.clearRect(x, y, width, height);
-    if (mode === "select" && previousRectangle.highlight !== null) {
+    if (mode === CLEAR_MODE.SELECT && previousRectangle.highlight !== null) {
       // This adds a hierarchy of which highlights override others
       // In order to do this, it will first clear the lower mode's rect
       // Then it will set that lower mode's rect to null
       // This way it won't clear the higher mode's rect when the lower mode is called again
       // The hierarchy will be 1: Select, 2: Highlight, 3: Encounter.
-      clearRect("highlight");
+      clearRect(CLEAR_MODE.HIGHLIGHT);
       previousRectangle.highlight = null;
     }
     ctx.putImageData(originalImageData[mode], x, y);
@@ -390,14 +390,16 @@ export const Mapper = ({ pokemonList }) => {
     if (location && location.name !== locationName.current) {
       setHoveredZone(location.name);
       drawRect(location.x, location.y, location.w, location.h); // Change the fill color
-      locationName.current = location.name;
+    } else if (location && location.name === locationName.current) {
+      // This prevents the selected location from being highlighted by the hover color
+      drawRect(location.x, location.y, location.w, location.h, CLEAR_MODE.SELECT);
     }
   }
 
   const handleMouseLeave = () => {
     // Clear the hovered zone when mouse leaves
     setHoveredZone(null);
-    clearRect("highlight");
+    clearRect(CLEAR_MODE.HIGHLIGHT);
   };
 
   return (
