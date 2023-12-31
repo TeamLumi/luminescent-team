@@ -74,6 +74,7 @@ const canvasDimensions = {
 export const Mapper = ({ pokemonList }) => {
   const [rect, setRect] = useState(null);
   const [hoveredZone, setHoveredZone] = useState(null);
+  const [selectedZone, setSelectedZone] = useState(null);
   const locationName = useRef("");
   const [encOptions, setEncOptions] = useState({
     swarm: false,
@@ -162,7 +163,7 @@ export const Mapper = ({ pokemonList }) => {
   }, [pokemonName])
 
   useEffect(() => {
-    
+
   }, [location])
   const handleOptionChange = (option, value) => {
     setEncOptions({
@@ -189,8 +190,11 @@ export const Mapper = ({ pokemonList }) => {
       return setRect(canvasRef.current.getBoundingClientRect());
     }
 
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
+    let scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    const x = event.clientX - rect.left + scrollLeft;
+    const y = event.clientY - rect.top + scrollTop;
  
     const location = getSelectedLocation( x,y )
     if(location === null || location.length === 0) return;
@@ -216,6 +220,7 @@ export const Mapper = ({ pokemonList }) => {
     previousRectangle.select = { x: location.x, y: location.y, w: location.w, h: location.h };
 
     locationName.current = location.name;
+    setSelectedZone(location.name);
     setEncounterList(setAllEncounters(location.name));
     setTrainerList(getTrainersFromZoneName(location.name));
 
@@ -415,7 +420,8 @@ export const Mapper = ({ pokemonList }) => {
         pokemonList={pokemonList}
         debouncedText={pokemonName}
         handleDebouncedTextChange={handlePokemonNameChange}
-        locationName={locationName}
+        locationName={selectedZone}
+        setLocationName={setSelectedZone}
       />
       <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
         <SettingsIcon />

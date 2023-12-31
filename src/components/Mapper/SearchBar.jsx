@@ -39,13 +39,20 @@ const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText }) =>
 };
 
 const LocationNameDropdown = ({ locationName, setLocationName }) => {
+  const [internalLocationName, setInternalLocationName] = useState(locationName);
   const locations = getLocationNames();
   useEffect(() => {
+    setInternalLocationName(locationName)
+  }, [locationName])
+  useEffect(() => {
     const timer = setTimeout(() => {
-      locationName.current = locationName;
+      setLocationName(locationName);
     }, 100);
     return () => clearTimeout(timer);
-  }, [locationName]);
+  }, [internalLocationName]);
+  const handleLocationChange = (e, value) => {
+    setInternalLocationName(value);
+  };
 
   const defaultOption = locations.length > 0 ? locations[0] : '';
   return (
@@ -55,15 +62,16 @@ const LocationNameDropdown = ({ locationName, setLocationName }) => {
         options={locations}
         getOptionLabel={(option) => option}
         defaultValue={defaultOption}
-        onChange={(e, value) => locationName.current = value}
+        value={internalLocationName}
+        onChange={handleLocationChange}
         renderInput={(params) => (
           <TextField
             {...params}
             type="search"
             label="Current Location"
             fullWidth
-            value={locationName}
-            onChange={(e) => locationName.current = e.target.value}
+            value={internalLocationName}
+            onChange={(e) => setInternalLocationName(e.target.value)}
           />
         )}
       />
@@ -77,6 +85,7 @@ export const SearchBar = ({
   debouncedText,
   handleDebouncedTextChange,
   locationName,
+  setLocationName,
 }) => {
   return (
     <div
@@ -91,7 +100,7 @@ export const SearchBar = ({
           debouncedText={debouncedText}
           setDebouncedText={handleDebouncedTextChange}
         />
-      <LocationNameDropdown locationName={locationName} />
+      <LocationNameDropdown locationName={locationName} setLocationName={setLocationName} />
     </div>
   )
 };
