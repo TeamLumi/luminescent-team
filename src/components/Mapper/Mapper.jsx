@@ -115,7 +115,10 @@ export const Mapper = ({ pokemonList }) => {
   const [heartScaleShopList, setHeartScaleShop] = useState([]);
 
   const canvasRef = useRef(null);
-
+  const CLEAR_MODE = {
+    HIGHLIGHT: "highlight",
+    SELECT: "select",
+  }
   //Component onMount
   useEffect(() => {
     console.log('Mounting...')
@@ -332,7 +335,7 @@ export const Mapper = ({ pokemonList }) => {
     return `rgba(${colors.enc.r}, ${colors.enc.g}, ${colors.enc.b}, ${colors.enc.a})`;
   }
 
-  function drawRect(x, y, width, height, mode="highlight") {
+  function drawRect(x, y, width, height, mode=CLEAR_MODE.HIGHLIGHT) {
     //If there was no previous rectangle, don't clear it
     if(previousRectangle[mode] !== null) {
       clearRect(mode);
@@ -355,7 +358,7 @@ export const Mapper = ({ pokemonList }) => {
     ctx.fillRect(x, y, width, height);
   }
 
-  function clearRect(mode="highlight") {
+  function clearRect(mode=CLEAR_MODE.HIGHLIGHT) {
     //Clears the old location and restores the image data at that position.
     const ctx = canvasRef.current.getContext('2d');
     const {x, y, width, height} = previousRectangle[mode];
@@ -387,8 +390,7 @@ export const Mapper = ({ pokemonList }) => {
     if (location && location.name !== locationName.current) {
       setHoveredZone(location.name);
       drawRect(location.x, location.y, location.w, location.h); // Change the fill color
-    } else if ( location && location.name === locationName.current) {
-      drawRect(location.x, location.y, location.w, location.h, "select");
+      locationName.current = location.name;
     }
   }
 
