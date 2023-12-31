@@ -442,7 +442,9 @@ export const Mapper = ({ pokemonList }) => {
   const handleMouseLeave = () => {
     // Clear the hovered zone when mouse leaves
     setHoveredZone(null);
-    clearRect(CLEAR_MODE.HIGHLIGHT);
+    if (previousRectangle.highlight !== null) {
+      clearRect(CLEAR_MODE.HIGHLIGHT);
+    }
   };
 
   return (
