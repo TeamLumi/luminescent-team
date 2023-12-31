@@ -147,7 +147,7 @@ export const Mapper = ({ pokemonList }) => {
     const locationCheck = { x: location.x, y: location.y, w: location.w, h: location.h}
 
     for (let key in previousRectangle) {
-      if (previousRectangle[key] === locationCheck) {
+      if (previousRectangle[key] === locationCheck && previousRectangle[key] !== null) {
         // This is to delete any highlights that are present in the current area
         // specifically enc highlights when that comes up.
         clearRect(key);
