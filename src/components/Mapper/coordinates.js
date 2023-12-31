@@ -690,3 +690,7 @@ export const coordinates = [
 export const getLocationNames = () => {
     return coordinates.map(coord => coord.name);
 };
+
+export function getLocationCoordsFromName(name) {
+    return coordinates.find(coord => coord.name === name);
+};

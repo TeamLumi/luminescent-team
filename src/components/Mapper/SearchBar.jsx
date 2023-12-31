@@ -52,6 +52,7 @@ const LocationNameDropdown = ({ locationName, setLocationName }) => {
   }, [internalLocationName]);
   const handleLocationChange = (e, value) => {
     setInternalLocationName(value);
+    setLocationName(value)
   };
 
   const defaultOption = locations.length > 0 ? locations[0] : '';

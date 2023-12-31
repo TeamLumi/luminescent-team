@@ -3,7 +3,7 @@ import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { useColorMode } from '@docusaurus/theme-common';
 
-import { coordinates } from './coordinates';
+import { coordinates, getLocationCoordsFromName } from './coordinates';
 import Encounters from './Encounters';
 import { SearchBar } from './SearchBar';
 import { RodButtons, TimeOfDayButtons } from './Buttons';
@@ -118,6 +118,7 @@ export const Mapper = ({ pokemonList }) => {
   const CLEAR_MODE = {
     HIGHLIGHT: "highlight",
     SELECT: "select",
+    ENCOUNTER: "enc",
   }
   //Component onMount
   useEffect(() => {
@@ -166,8 +167,32 @@ export const Mapper = ({ pokemonList }) => {
   }, [pokemonName])
 
   useEffect(() => {
+    // This does not work currently :(
+    // useEffects CANNOT update the `let` constants
+    // The canvas CANNOT update using the useState hook :(
+    // Both of these are in different lifecycles and can't interact with each other.
+    // Currently, this does highlight new areas based on area selector
+    // However, it doesn't clear the highlight afterwards
+    if (!selectedZone) {
+      return;
+    }
+    const location = getLocationCoordsFromName(selectedZone);
+    const locationCheck = { x: location.x, y: location.y, w: location.w, h: location.h}
 
-  }, [location])
+    for (let key in previousRectangle) {
+      if (previousRectangle[key] === locationCheck) {
+        // This is to delete any highlights that are present in the current area
+        // specifically enc highlights when that comes up.
+        clearRect(key);
+      }
+    }
+    if(previousRectangle.select !== null) {
+      clearRect(CLEAR_MODE.SELECT);
+    }
+    drawRect(location.x, location.y, location.w, location.h, CLEAR_MODE.SELECT);
+    previousRectangle.select = { x: location.x, y: location.y, w: location.w, h: location.h };
+  }, [selectedZone])
+
   const handleOptionChange = (option, value) => {
     setEncOptions({
       ...encOptions,
