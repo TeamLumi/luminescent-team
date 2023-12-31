@@ -97,6 +97,12 @@ export const Mapper = ({ pokemonList }) => {
     enc: null,
   };
 
+  let colorSettings = {
+    hov: { r: 247, g: 148, b: 72, a: 0.7 },
+    sel: { r: 72, g: 113, b: 247, a: 0.8 },
+    enc: { r: 247, g: 235, b: 72, a: 0.7 },
+  }
+
   const [locationList, setLocationList] = useState([]);
   const [showSettings, setShowSettings] = useState(false);
   const [colors, setColors] = useState({
@@ -172,6 +178,16 @@ export const Mapper = ({ pokemonList }) => {
     setHeartScaleShop(getHeartScaleShopItems(zoneId));
   };
 
+  const updateColorSettings = (event) => {
+    const newColorSettings = event.detail;
+    colorSettings = newColorSettings;
+    if (previousRectangle.select !== null) {
+      console.log(previousRectangle.select)
+      const location = previousRectangle.select;
+      drawRect(location.x, location.y, location.width, location.height, CLEAR_MODE.SELECT);
+    }
+  }
+
   useEffect(() => {
     const canvas = canvasRef.current;
     console.log('Canvas effect has fired')
@@ -185,11 +201,13 @@ export const Mapper = ({ pokemonList }) => {
       // This is how you would allow a useState from react to partially interact with the canvas
       // Partially because useState is async and this is direct dom manipulation.
       const eventListener = (locationNameEvent) => updateLocationDataFromDropdown(locationNameEvent);
+      const colorListener = (changeColorSettings) => updateColorSettings(changeColorSettings);
 
       canvas.addEventListener('click', handleClick);
       canvas.addEventListener('mousemove', handleMouseMove);
       canvas.addEventListener('mouseleave', handleMouseLeave);
       window.addEventListener('passLocationNameToParent', eventListener);
+      window.addEventListener('changeColorSettings', colorListener);
 
       // Clean up the event listener when the component is unmounted
       return () => {
@@ -197,6 +215,7 @@ export const Mapper = ({ pokemonList }) => {
         canvas.removeEventListener('mousemove', handleMouseMove);
         canvas.removeEventListener('mouseleave', handleMouseLeave);
         window.removeEventListener('passLocationNameToParent', eventListener);
+        window.removeEventListener('changeColorSettings', colorListener);
       };
     }
   }, [canvasRef.current]); // Add canvasRef.current to the dependency array
@@ -367,15 +386,15 @@ export const Mapper = ({ pokemonList }) => {
   };
 
   function getHoverFillStyle() {
-    return `rgba(${colors.hov.r}, ${colors.hov.g}, ${colors.hov.b}, ${colors.hov.a})`;
+    return `rgba(${colorSettings.hov.r}, ${colorSettings.hov.g}, ${colorSettings.hov.b}, ${colorSettings.hov.a})`;
   }
 
   function getSelFillStyle() {
-    return `rgba(${colors.sel.r}, ${colors.sel.g}, ${colors.sel.b}, ${colors.sel.a})`;
+    return `rgba(${colorSettings.sel.r}, ${colorSettings.sel.g}, ${colorSettings.sel.b}, ${colorSettings.sel.a})`;
   }
 
   function getEncFillStyle() {
-    return `rgba(${colors.enc.r}, ${colors.enc.g}, ${colors.enc.b}, ${colors.enc.a})`;
+    return `rgba(${colorSettings.enc.r}, ${colorSettings.enc.g}, ${colorSettings.enc.b}, ${colorSettings.enc.a})`;
   }
 
   function drawRect(x, y, width, height, mode=CLEAR_MODE.HIGHLIGHT) {

@@ -11,19 +11,23 @@ const SettingsModal = ({ colors, setColors, showModal, onHide }) => {
       ...newColors,
       [colorKey]: {
         ...newColors[colorKey],
-        [subKey]: value,
+        [subKey]: parseInt(value),
       },
     });
   };
 
   const handleClose = () => {
     setColors(newColors);
+    const colorSettingsEvent = new CustomEvent('changeColorSettings', { detail: newColors });
+    window.dispatchEvent(colorSettingsEvent);
     onHide();
   };
 
   const handleNoSaveClose = () => {
     setColors(colors);
     onHide();
+    const colorSettingsEvent = new CustomEvent('changeColorSettings', { detail: colors });
+    window.dispatchEvent(colorSettingsEvent);
   };
 
   const colorKeys = Object.keys(newColors);
