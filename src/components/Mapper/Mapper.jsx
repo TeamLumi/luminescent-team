@@ -184,7 +184,7 @@ export const Mapper = ({ pokemonList }) => {
       // This listener is created in the SearchBar.jsx and is listened to here
       // This is how you would allow a useState from react to partially interact with the canvas
       // Partially because useState is async and this is direct dom manipulation.
-      const eventListener = (event) => updateLocationDataFromDropdown(event);
+      const eventListener = (locationNameEvent) => updateLocationDataFromDropdown(locationNameEvent);
 
       canvas.addEventListener('click', handleClick);
       canvas.addEventListener('mousemove', handleMouseMove);
@@ -203,7 +203,7 @@ export const Mapper = ({ pokemonList }) => {
 
   useEffect(() => {
     if(locationName !== null) {
-      setEncounterList(setAllEncounters(locationName))
+      setEncounterList(setAllEncounters(locationName.current))
     }
   }, [encOptions])
 

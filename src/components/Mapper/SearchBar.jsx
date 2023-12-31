@@ -41,8 +41,8 @@ const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText }) =>
 const LocationNameDropdown = ({ locationName, setLocationName }) => {
   const locations = getLocationNames();
   const handleLocationChange = (e, value) => {
-    const event = new CustomEvent('passLocationNameToParent', { detail: value });
-    window.dispatchEvent(event);
+    const locationNameEvent = new CustomEvent('passLocationNameToParent', { detail: value });
+    window.dispatchEvent(locationNameEvent);
     setLocationName(value)
   };
 
