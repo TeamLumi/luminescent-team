@@ -134,49 +134,16 @@ export const Mapper = ({ pokemonList }) => {
 
   }, []) // Empty dependency array means this effect runs once after the initial render
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    console.log('Canvas effect has fired')
-    if (canvas) {
-      // Get the bounding rectangle of the canvas
-      const r = canvas.getBoundingClientRect();
-      setRect(r);
-
-      canvas.addEventListener('click', handleClick);
-      canvas.addEventListener('mousemove', handleMouseMove);
-      canvas.addEventListener('mouseleave', handleMouseLeave);
-      
-      // Clean up the event listener when the component is unmounted
-      return () => {
-        canvas.removeEventListener('click', handleClick);
-        canvas.removeEventListener('mousemove', handleMouseMove);
-        canvas.removeEventListener('mouseleave', handleMouseLeave);
-      };
-    }
-  
-  }, [canvasRef.current]); // Add canvasRef.current to the dependency array
-
-  useEffect(() => {
-    if(locationName !== null) {
-      setEncounterList(setAllEncounters(locationName))
-    }
-  }, [encOptions])
-
-  useEffect(() => {
-    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemonName)))
-  }, [pokemonName])
-
-  useEffect(() => {
-    // This does not work currently :(
-    // useEffects CANNOT update the `let` constants
-    // The canvas CANNOT update using the useState hook :(
-    // Both of these are in different lifecycles and can't interact with each other.
-    // Currently, this does highlight new areas based on area selector
-    // However, it doesn't clear the highlight afterwards
-    if (!selectedZone) {
+  const updateLocationDataFromDropdown = (event) => {
+    // This is using the custom event that was created by the SearchBar
+    // After adding a listener, this is used to directly interact with the canvas
+    // This CANNOT pull the state from a useState or other async func.
+    // You must add a customEvent alongside where a state is updated
+    const selectedName = event.detail;
+    if (!selectedName) {
       return;
     }
-    const location = getLocationCoordsFromName(selectedZone);
+    const location = getLocationCoordsFromName(selectedName);
     const locationCheck = { x: location.x, y: location.y, w: location.w, h: location.h}
 
     for (let key in previousRectangle) {
@@ -191,7 +158,58 @@ export const Mapper = ({ pokemonList }) => {
     }
     drawRect(location.x, location.y, location.w, location.h, CLEAR_MODE.SELECT);
     previousRectangle.select = { x: location.x, y: location.y, w: location.w, h: location.h };
-  }, [selectedZone])
+    locationName.current = location.name;
+
+    setEncounterList(setAllEncounters(location.name));
+    setTrainerList(getTrainersFromZoneName(location.name));
+
+    const zoneId = getZoneIdFromZoneName(location.name);
+    setFieldItems(getFieldItemsFromZoneID(zoneId));
+    setHiddenItems(getHiddenItemsFromZoneID(zoneId));
+    setShopItems(getRegularShopItems(zoneId));
+    setScriptItems(getScriptItems(zoneId));
+    setFixedShops(getFixedShops(zoneId));
+    setHeartScaleShop(getHeartScaleShopItems(zoneId));
+  };
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    console.log('Canvas effect has fired')
+    if (canvas) {
+      // Get the bounding rectangle of the canvas
+      const r = canvas.getBoundingClientRect();
+      setRect(r);
+
+      // The passLocationNameToParent event was required so that the child could update the DOM
+      // This listener is created in the SearchBar.jsx and is listened to here
+      // This is how you would allow a useState from react to partially interact with the canvas
+      // Partially because useState is async and this is direct dom manipulation.
+      const eventListener = (event) => updateLocationDataFromDropdown(event);
+
+      canvas.addEventListener('click', handleClick);
+      canvas.addEventListener('mousemove', handleMouseMove);
+      canvas.addEventListener('mouseleave', handleMouseLeave);
+      window.addEventListener('passLocationNameToParent', eventListener);
+
+      // Clean up the event listener when the component is unmounted
+      return () => {
+        canvas.removeEventListener('click', handleClick);
+        canvas.removeEventListener('mousemove', handleMouseMove);
+        canvas.removeEventListener('mouseleave', handleMouseLeave);
+        window.removeEventListener('passLocationNameToParent', eventListener);
+      };
+    }
+  }, [canvasRef.current]); // Add canvasRef.current to the dependency array
+
+  useEffect(() => {
+    if(locationName !== null) {
+      setEncounterList(setAllEncounters(locationName))
+    }
+  }, [encOptions])
+
+  useEffect(() => {
+    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(pokemonName)))
+  }, [pokemonName])
 
   const handleOptionChange = (option, value) => {
     setEncOptions({

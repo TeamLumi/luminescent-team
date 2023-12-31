@@ -39,19 +39,10 @@ const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText }) =>
 };
 
 const LocationNameDropdown = ({ locationName, setLocationName }) => {
-  const [internalLocationName, setInternalLocationName] = useState(locationName);
   const locations = getLocationNames();
-  useEffect(() => {
-    setInternalLocationName(locationName)
-  }, [locationName])
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLocationName(locationName);
-    }, 100);
-    return () => clearTimeout(timer);
-  }, [internalLocationName]);
   const handleLocationChange = (e, value) => {
-    setInternalLocationName(value);
+    const event = new CustomEvent('passLocationNameToParent', { detail: value });
+    window.dispatchEvent(event);
     setLocationName(value)
   };
 
@@ -63,7 +54,7 @@ const LocationNameDropdown = ({ locationName, setLocationName }) => {
         options={locations}
         getOptionLabel={(option) => option}
         defaultValue={defaultOption}
-        value={internalLocationName}
+        value={locationName}
         onChange={handleLocationChange}
         renderInput={(params) => (
           <TextField
@@ -71,8 +62,8 @@ const LocationNameDropdown = ({ locationName, setLocationName }) => {
             type="search"
             label="Current Location"
             fullWidth
-            value={internalLocationName}
-            onChange={(e) => setInternalLocationName(e.target.value)}
+            value={locationName}
+            onChange={(e) => setLocationName(e.target.value)}
           />
         )}
       />
