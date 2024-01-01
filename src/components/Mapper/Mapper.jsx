@@ -368,19 +368,8 @@ export const Mapper = ({ pokemonList }) => {
       ctx.lineTo(coord.x + coord.w, coord.y + coord.h);
       ctx.lineTo(coord.x, coord.y + coord.h);
       ctx.closePath();
-
-      if (locationList.includes(coord.name)) { // locationList is the list of locations you can find mons
-        ctx.fillStyle = `rgba(${colors.enc.r}, ${colors.enc.g}, ${colors.enc.b}, ${colors.enc.a})`;
-        ctx.fill();
-      }
-
-      if (locationName.current === coord.name) {
-        ctx.fillStyle = `rgba(${colors.sel.r}, ${colors.sel.g}, ${colors.sel.b}, ${colors.sel.a})`;
-        ctx.fill();
-      }
-
       ctx.strokeStyle = 'rgba(0, 0, 0, 1)';
-      ctx.lineWidth = hoveredZone === coord.name ? 2.3 : 1;
+      ctx.lineWidth = 1;
       ctx.stroke();
     });
   };
