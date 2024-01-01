@@ -457,7 +457,10 @@ export const Mapper = ({ pokemonList }) => {
 
   return (
     <div className="content">
-      <div className="canvasCol">
+      <div
+        className="canvasCol"
+        style={{gridTemplate: `${canvasDimensions.height}px / ${canvasDimensions.width}px auto`}}
+      >
         <canvas
           ref={canvasRef}
           height={`${canvasDimensions.height}px`}
