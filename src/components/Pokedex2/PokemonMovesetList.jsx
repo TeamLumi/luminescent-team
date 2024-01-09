@@ -143,7 +143,7 @@ const MovesetListItem = ({ moveLevel, move }) => {
   );
 };
 
-export const PokemonMoveType = ({ typeName, typeColor }) => {
+export const PokemonMoveType = ({ typeName, typeColor, fontSize = null }) => {
   return (
     <Box
       sx={{
@@ -169,7 +169,7 @@ export const PokemonMoveType = ({ typeName, typeColor }) => {
           fontSize: {
             xs: '0.5rem',
             sm: '0.6rem',
-            md: '1rem',
+            md: fontSize ? fontSize : '1rem',
           },
         }}
       >

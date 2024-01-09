@@ -5,8 +5,8 @@ import "./style.css";
 import { getPokemonName } from '../../utils/dex';
 
 function getStatBarValues(stat) {
-  let width = Math.floor((stat * 200) / 200);
-  if (width > 200) width = 200;
+  let width = Math.floor((stat * 140) / 200);
+  if (width > 140) width = 140;
   let color = Math.floor((stat * 180) / 255);
   if (color > 360) color = 360;
   return { width, color };
@@ -48,12 +48,13 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
   )
   return (
     <div className="container">
-      <Box display="grid" gridTemplateColumns="repeat(4, 1fr)" justifyItems={"center"}>
+      <Box display="grid" gridTemplateColumns="repeat(7, 1fr)" justifyItems={"center"}>
         <>
           <Box gridColumn="span 1"/>
           <Box gridColumn="span 1">
             <Typography variant='h6'>Total:</Typography>
           </Box>
+          <Box gridColumn="span 3" />
           <Box gridColumn="span 1">
             <Typography variant='h6'>IVs:</Typography>
           </Box>
@@ -81,6 +82,11 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
               </Box>
               <Box gridColumn="span 1">
                 <Typography className='statValue' sx={{ marginLeft: { xs: '10px', sm: '0' } }}>{statValue}</Typography>
+              </Box>
+              <Box gridColumn="span 3" width="100%">
+                <Box sx={{ marginLeft: { xs: '16px', sm: '0' } }}>
+                  <PokemonStatBar width={width} color={color} />
+                </Box>
               </Box>
               <Box gridColumn="span 1">
                 <Typography className='statValue' sx={{ marginLeft: { xs: '10px', sm: '0' } }}>{pokemonIVs[stat.key]}</Typography>

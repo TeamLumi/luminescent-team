@@ -317,7 +317,9 @@ export const Mapper = ({ pokemonList }) => {
           </div>
         ))}
       </div>
-      <Trainers trainerList={trainerList} pokemonList={pokemonList} />
+      {trainerList && (
+        <Trainers trainerList={trainerList} pokemonList={pokemonList} />
+      )}
       <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (
