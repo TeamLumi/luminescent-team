@@ -5,7 +5,7 @@ function getTrainersFromZoneName(zoneName) {
     return trainerLocations[zoneName];
   }
   console.warn(`${zoneName} is not in the Trainer List.`);
-  return null;
+  return [];
 };
 
 export {

@@ -29,30 +29,28 @@ ul, li {
 
 .stats {
     border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
-    width: 350px;
     height: 175px;
     display: grid;
 }
 
 .moveList {
-    width: 350px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 5px;
+    padding: 5px;
+    border-left: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    border-right: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    border-bottom: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    margin: -1px;
 }
 
 .trainerMon {
     border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
-    width: 515px;
-    height: 280px;
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
 .trainerBox {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 1064px;
     justify-items: center;
     padding: 10px;
     gap: 10px;
@@ -60,7 +58,6 @@ ul, li {
 
 .monDetails {
     border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
-    width: 165px;
     height: 100%;
     display: grid;
     justify-items: center;
@@ -68,4 +65,5 @@ ul, li {
 
 .container {
     display: grid;
+    margin: 5px 0px 0px 0px;
 }

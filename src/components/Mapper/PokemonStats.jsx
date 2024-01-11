@@ -12,6 +12,9 @@ function getStatBarValues(stat) {
   return { width, color };
 }
 
+const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };
+const responsiveHeaderSize = { fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } };
+
 export const PokemonStats = ({ baseStats, trainerPokemon }) => {
   const pokemonIVs = {
     [STATS.HP]: trainerPokemon.ivhp, 
@@ -37,33 +40,24 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
     { key: STATS.SPECIAL_DEFENSE, label: 'Sp.Def:', value: baseStats.spd, isHpStat: false },
     { key: STATS.SPEED, label: 'Speed:', value: baseStats.spe, isHpStat: false },
   ];
-  const hpStat = calcStat(
-    baseStats.hp,
-    pokemonStatValues[0].key,
-    pokemonStatValues[0].isHpStat,
-    trainerPokemon.level,
-    pokemonIVs[pokemonStatValues[0].key],
-    pokemonEVs[pokemonStatValues[0].key],
-    trainerPokemon.nature
-  )
+
   return (
-    <div className="container">
-      <Box display="grid" gridTemplateColumns="repeat(7, 1fr)" justifyItems={"center"}>
+    <Box className="container" sx={{ height: "170px", width: { xs: "250px", sm: "350px"}}}>
+      <Box display="grid" sx={{ gridTemplateColumns: { xs: 'repeat(4, 1fr)', sm: 'repeat(7, 1fr)'}}} justifyItems={"center"}>
         <>
           <Box gridColumn="span 1"/>
           <Box gridColumn="span 1">
-            <Typography variant='h6'>Total:</Typography>
+            <Typography sx={{ ...responsiveHeaderSize }}>Total:</Typography>
           </Box>
-          <Box gridColumn="span 3" />
+          <Box gridColumn="span 3" sx={{ display: { xs: 'none', sm: 'block' }}} />
           <Box gridColumn="span 1">
-            <Typography variant='h6'>IVs:</Typography>
+            <Typography sx={{ ...responsiveHeaderSize }}>IVs:</Typography>
           </Box>
           <Box gridColumn="span 1">
-            <Typography variant='h6'>EVs:</Typography>
+            <Typography sx={{ ...responsiveHeaderSize }}>EVs:</Typography>
           </Box>
         </>
         {pokemonStatValues.map((stat) => {
-          const { width, color } = getStatBarValues(stat.value);
           const statValue = calcStat(
             baseStats[stat.key],
             stat.key,
@@ -72,33 +66,57 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
             pokemonIVs[stat.key],
             pokemonEVs[stat.key],
             trainerPokemon.nature,
-            getPokemonName(trainerPokemon.id)
           )
+          const { width, color } = getStatBarValues(statValue);
 
           return (
             <Fragment key={stat.label}>
               <Box gridColumn="span 1">
-                <Typography className='statValue' >{`${stat.key.toUpperCase()}:`}</Typography>
+                <Typography sx={{ ...responsiveFontSize }} className='statValue' >{`${stat.key.toUpperCase()}:`}</Typography>
               </Box>
               <Box gridColumn="span 1">
-                <Typography className='statValue' sx={{ marginLeft: { xs: '10px', sm: '0' } }}>{statValue}</Typography>
+                <Typography
+                  className='statValue'
+                  sx={{
+                    marginLeft: { xs: '10px', sm: '0' },
+                    ...responsiveFontSize
+                  }}
+                >
+                  {statValue}
+                </Typography>
               </Box>
-              <Box gridColumn="span 3" width="100%">
+              <Box gridColumn="span 3" sx={{ display: { xs: 'none', sm: 'block' }}} width="100%">
                 <Box sx={{ marginLeft: { xs: '16px', sm: '0' } }}>
                   <PokemonStatBar width={width} color={color} />
                 </Box>
               </Box>
               <Box gridColumn="span 1">
-                <Typography className='statValue' sx={{ marginLeft: { xs: '10px', sm: '0' } }}>{pokemonIVs[stat.key]}</Typography>
+                <Typography
+                  className='statValue'
+                  sx={{
+                    marginLeft: { xs: '10px', sm: '0' },
+                    ...responsiveFontSize
+                  }}
+                >
+                  {pokemonIVs[stat.key]}
+                </Typography>
               </Box>
               <Box gridColumn="span 1">
-                <Typography className='statValue' sx={{ marginLeft: { xs: '10px', sm: '0' } }}>{pokemonEVs[stat.key]}</Typography>
+                <Typography
+                  className='statValue'
+                  sx={{
+                    marginLeft: { xs: '10px', sm: '0' },
+                    ...responsiveFontSize
+                  }}
+                >
+                  {pokemonEVs[stat.key]}
+                </Typography>
               </Box>
             </Fragment>
           );
         })}
       </Box>
-    </div>
+    </Box>
   );
 };
 

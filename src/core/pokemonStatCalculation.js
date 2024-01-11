@@ -55,7 +55,7 @@ function calculateHpStat(baseStat, iv, ev, level) {
   return Math.floor(((2 * baseStat + iv + Math.floor(ev / 4)) * level) / 100 + 10);
 }
 
-export const calcStat = (baseStat, currentStat, isHP, level, iv = 0, ev = 0, nature, pokemon) => {
+export const calcStat = (baseStat, currentStat, isHP, level, iv = 0, ev = 0, nature) => {
   if (isHP) {
     if (baseStat === 1) return 1;
     return Math.floor(

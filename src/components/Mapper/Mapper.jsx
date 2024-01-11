@@ -36,6 +36,7 @@ import {
   getRoutesFromPokemonId
 } from '../../utils/dex/encounters';
 import { Trainers } from './Trainers';
+import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
 
 function getSelectedLocation(x, y) {
   const location = coordinates.filter(coords => {
@@ -317,9 +318,9 @@ export const Mapper = ({ pokemonList }) => {
           </div>
         ))}
       </div>
-      {trainerList && (
+      <PokemonAccordion title={"Trainers"} id={"trainers"} >
         <Trainers trainerList={trainerList} pokemonList={pokemonList} />
-      )}
+      </PokemonAccordion>
       <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (
