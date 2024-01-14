@@ -318,7 +318,7 @@ export const Mapper = ({ pokemonList }) => {
           </div>
         ))}
       </div>
-      <PokemonAccordion title={"Trainers"} id={"trainers"} >
+      <PokemonAccordion title={"Trainers"} id={"trainers"} sx={{ width: "1100px" }}>
         <Trainers trainerList={trainerList} pokemonList={pokemonList} />
       </PokemonAccordion>
       <div>

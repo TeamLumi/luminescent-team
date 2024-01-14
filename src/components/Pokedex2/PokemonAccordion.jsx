@@ -2,9 +2,9 @@ import React from 'react';
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export const PokemonAccordion = ({ children, title, id }) => {
+export const PokemonAccordion = ({ children, title, id, sx }) => {
   return (
-    <Accordion>
+    <Accordion sx={sx}>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon sx={{ color: '#777' }} />}
         aria-controls={`panel-${id}-content`}

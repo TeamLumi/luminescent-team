@@ -63,7 +63,7 @@ ul, li {
     justify-items: center;
 }
 
-.container {
+.statsContainer {
     display: grid;
     margin: 5px 0px 0px 0px;
 }

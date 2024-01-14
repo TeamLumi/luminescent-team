@@ -42,7 +42,7 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
   ];
 
   return (
-    <Box className="container" sx={{ height: "170px", width: { xs: "250px", sm: "350px"}}}>
+    <Box className="statsContainer" sx={{ height: "170px", width: { xs: "250px", sm: "350px"}}}>
       <Box display="grid" sx={{ gridTemplateColumns: { xs: 'repeat(4, 1fr)', sm: 'repeat(7, 1fr)'}}} justifyItems={"center"}>
         <>
           <Box gridColumn="span 1"/>
