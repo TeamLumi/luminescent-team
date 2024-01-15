@@ -170,7 +170,7 @@ This is a flag and is what determines if the object is visible/invisible.
 
 With a flag of 4000 it will always be visible.
 
-For example, if your object has a Work of 2816 and that flag is "set" during a script with [_FLAG_SET](commands/flag-set.md), the next time you enter that area, the object will no longer be there.
+For example, if your object has a Work of 2816 and that flag is "set" during a script with [_FLAG_SET](commands/gamedata/041-flag-set.md), the next time you enter that area, the object will no longer be there.
 
 ### Dowsing
 

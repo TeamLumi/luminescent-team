@@ -64,11 +64,11 @@ There are four main ways to make the game run your custom functions.
 1. Using an `ev_{area_name}_flag_change` function
 2. Referencing your function name in the `TalkLabel` of a [PlaceData](place-data.md)
 3. Referencing your function name in the `ContactLabel` of a [StopData](stop-data.md)
-4. Calling your function from another function that's already in the script using a [_JUMP](commands/jump.md) or a [_CALL](commands/call.md) function
+4. Calling your function from another function that's already in the script using a [_JUMP](commands/logic/024-jump.md) or a [_CALL](commands/logic/028-call.md) function
 
 ## Flags
 
-Flags are a way to store various data about your game state. Flags can either be set (1) using [_FLAG_SET](commands/flag-set.md) or reset (0) using [_FLAG_RESET](commands/flag-reset.md).
+Flags are a way to store various data about your game state. Flags can either be set (1) using [_FLAG_SET](commands/gamedata/041-flag-set.md) or reset (0) using [_FLAG_RESET](commands/gamedata/043-flag-reset.md).
 
 ### Example
 
@@ -103,6 +103,6 @@ The `Work` value of a [PlaceData](place-data.md) is only checked when entering t
 
 This means if you change the Flag state of a [PlaceData](place-data.md) in the [Area](../dictionary/areas.md) you are currently in, this will not be effective until you exit and re-enter that [Area](../dictionary/areas.md).
 
-For example to make an object disappear in the future, starting the moment you are in the [Area](../dictionary/areas.md), you need to both set the Flag using [_FLAG_SET](commands/flag-set.md) and [_OBJ_DEL](commands/obj-del.md).
+For example to make an object disappear in the future, starting the moment you are in the [Area](../dictionary/areas.md), you need to both set the Flag using [_FLAG_SET](commands/gamedata/041-flag-set.md) and [_OBJ_DEL](commands/interface/147-obj-del.md).
 
-The same goes for [_FLAG_RESET](commands/flag-reset.md) and [_OBJ_ADD](commands/obj-add.md) if you want to make a [PlaceData](place-data.md) appear and make it stay even when the [Area](../dictionary/areas.md) is reloaded.
+The same goes for [_FLAG_RESET](commands/gamedata/043-flag-reset.md) and [_OBJ_ADD](commands/interface/146-obj-add.md) if you want to make a [PlaceData](place-data.md) appear and make it stay even when the [Area](../dictionary/areas.md) is reloaded.
