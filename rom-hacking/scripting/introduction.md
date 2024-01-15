@@ -17,7 +17,9 @@ These script files contain two different types of function that serve different 
 
 ### Naming schemes
 
-Function naming should follow this scheme: `{type}_{zone_name}_{function_name}`
+Function naming should follow this scheme: `{type}_{zone_name}_{function_name}`.
+
+This is not strictly necessary, but strongly recommended to keep things organized.
 
 #### Type
 
@@ -61,7 +63,7 @@ ev_c01_greet_player:; This function makes the professor greet the player
 
 There are four main ways to make the game run your custom functions.
 
-1. Using an `ev_{zone_name}_flag_change` function
+1. Calling your function from a map script (usually defined in the `sp_{zone_code}.ev` file)
 2. Referencing your function name in the `TalkLabel` of a [PlaceData](place-data.md)
 3. Referencing your function name in the `ContactLabel` of a [StopData](stop-data.md)
 4. Calling your function from another function that's already in the script using a [_JUMP](commands/logic/024-jump.md) or a [_CALL](commands/logic/028-call.md) function
@@ -92,8 +94,7 @@ The function that handles the Darkrai event:
 ```c
 ev_c01_darkrai:
 _SP_WILD_BTL_SET(491, 80); Fight Darkrai
-_OBJ_DEL('C01_DARKRAI'); Hide Darkrai in the zone
-_FLAG_SET(#3000); Make sure Darkrai will be hidden when reloading the zone
+_OBJ_DEL('C01_DARKRAI'); Hide Darkrai - this also sets the flag 3000 for us
 _END()
 ```
 

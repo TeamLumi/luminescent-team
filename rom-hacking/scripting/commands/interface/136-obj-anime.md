@@ -2,21 +2,25 @@
 
 ## Effect
 
-Calls an animation function for the given entity.
+Calls an animation label for the given entity.
 
 The entity name is taken from the field `ID` from a PlaceData file. For the player it is `HERO`.
+
+:::info
+If the given entity or label cannot be found, this command does nothing.
+:::
 
 ## Syntax
 
 ```c
-_OBJ_ANIME(entity, function, animation_clip)
+_OBJ_ANIME(entity, label, animation_clip)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
 | **entity** | The entity id | Work, Float, String | Required |
-| **function** | The animation function | String | Required |
-| **animation_clip** | First frame of the next animation clip to be played | Float | Optional |
+| **label** | The animation label | String | Required |
+| **animation_clip** | First frame of the next animation clip to be played | Work, Float | Optional |
 
 ## Example
 
@@ -27,4 +31,4 @@ anm_dummy:
 _ACMD_END()
 ```
 
-The above script will call the animation function `anm_dummy` with the player as the entity.
+The above script will call the animation label `anm_dummy` with the player as the entity.

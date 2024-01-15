@@ -4,6 +4,12 @@
 
 Closes all currently open textboxes.
 
+Also sets `SCWK_WIN_OPEN_FLAG` to 0.
+
+## Synonyms
+
+- _TALK_CLOSE_NO_CLEAR
+
 ## Syntax
 
 ```c

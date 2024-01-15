@@ -2,7 +2,11 @@
 
 ## Effect
 
-Shows a PlaceData. This does not carry over after the zone is reloaded.
+Temporarily unhides a PlaceData.
+
+:::info
+the visibility flag is NOT touched, unlike [_OBJ_DEL](147-obj-del.md) which does touch it.
+:::
 
 ## Syntax
 

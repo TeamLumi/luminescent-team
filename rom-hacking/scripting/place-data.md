@@ -86,11 +86,15 @@ This is what determines what your Placedata will look like.
 
 ### ColorIndex
 
-Unknown
+The color variation that is used by the placedata. -1 matches the player's (used for mom).
 
 ### Position
 
 The X/Y position that your object will be placed at in the zone that you determined.
+
+:::info
+For overworld maps, 0,0 is in the top left of the whole map.
+:::
 
 ### HeightLayer
 

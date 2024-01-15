@@ -12,7 +12,7 @@ _NUMBER_NAME(index, number)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **index** | The index of the buffer to write the value to | Float | Required |
+| **index** | The index of the buffer to write the value to | Work, Float | Required |
 | **number** | The number | Work, Float | Required |
 
 ## Example

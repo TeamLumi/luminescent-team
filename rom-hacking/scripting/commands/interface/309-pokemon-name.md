@@ -12,7 +12,7 @@ _POKEMON_NAME(index, pokemon)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **index** | The index of the buffer to write the value to | Float | Required |
+| **index** | The index of the buffer to write the value to | Work, Float | Required |
 | **pokemon** | The natdex number of the Pokémon | Work, Float | Required |
 
 ## Example

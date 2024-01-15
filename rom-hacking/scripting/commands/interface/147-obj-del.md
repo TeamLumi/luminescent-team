@@ -2,7 +2,11 @@
 
 ## Effect
 
-Hides a PlaceData. This does not carry over after the zone is reloaded.
+Permanently hides a PlaceData and sets its visibility flag.
+
+:::info
+The visibility flag is touched, unlike [_OBJ_ADD](146-obj-add.md) which doesn't touch it.
+:::
 
 ## Syntax
 

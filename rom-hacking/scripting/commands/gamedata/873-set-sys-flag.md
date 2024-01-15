@@ -2,7 +2,7 @@
 
 ## Effect
 
-Add an [Item](../../../dictionary/items.md) to the player's bag.
+Sets a System Flag to true.
 
 A list of all System Flags can be found [here](../../../dictionary/system-flags.md).
 

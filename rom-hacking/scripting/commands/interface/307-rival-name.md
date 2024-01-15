@@ -12,7 +12,7 @@ _RIVAL_NAME(index)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **index** | The index of the buffer to write the value to | Float | Required |
+| **index** | The index of the buffer to write the value to | Work, Float | Required |
 
 ## Example
 

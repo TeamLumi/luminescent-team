@@ -6,6 +6,12 @@ Returns which starter the player chose.
 
 ## Return Values
 
+### Vanilla
+
+Vanilla returns the Natdex number of the chosen starter.
+
+### Lumi
+
 | Value | Meaning |
 | - | - |
 | 0 | Turtwig |
