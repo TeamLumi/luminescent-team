@@ -19,12 +19,15 @@ const sidebars = {
       type: 'category',
       label: 'Dictionary',
       link: {
-        type: 'doc',
-        id: 'dictionary/index',
+        type: 'generated-index',
+        slug: 'category/dictionary',
+        description: 'A dictionary for various terms and knowledge.',
       },
       collapsed: true,
       items: [
+        'dictionary/glossary',
         'dictionary/areas',
+        'dictionary/items',
       ],
     },
     {

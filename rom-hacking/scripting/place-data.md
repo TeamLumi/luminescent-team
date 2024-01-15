@@ -1,10 +1,14 @@
 # PlaceData
 
+:::info
+This page is WIP and may not be complete in some parts.
+:::
+
 PlaceData in BDSP are object in the game that are placed down throughout the world. This can be anything from NPCs to hidden items to static legendary encounters and more.
 
 ## JSON Structure
 
-Here is an example from `Placedata_A01`, which is a woman in T01 - Twinleaf Town, which is the starter town.
+Here is an example from `Placedata_A01`, which is a woman in T01 - Twinleaf Town, the starter town.
 
 ```c
 {
