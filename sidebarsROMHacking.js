@@ -25,7 +25,6 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'dictionary/glossary',
         'dictionary/areas',
         'dictionary/items',
       ],

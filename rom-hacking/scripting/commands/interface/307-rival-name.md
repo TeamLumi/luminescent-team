@@ -2,7 +2,7 @@
 
 ## Effect
 
-Puts the rival name in the [Buffer](../../../dictionary/glossary.md#text-output-buffer) at the given index.
+Puts the rival name in the [Buffer](../../introduction.md#text-output-buffer) at the given index.
 
 ## Syntax
 

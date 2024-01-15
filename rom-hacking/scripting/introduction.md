@@ -106,3 +106,15 @@ This means if you change the Flag state of a [PlaceData](place-data.md) in the [
 For example to make an object disappear in the future, starting the moment you are in the [Area](../dictionary/areas.md), you need to both set the Flag using [_FLAG_SET](commands/gamedata/041-flag-set.md) and [_OBJ_DEL](commands/interface/147-obj-del.md).
 
 The same goes for [_FLAG_RESET](commands/gamedata/043-flag-reset.md) and [_OBJ_ADD](commands/interface/146-obj-add.md) if you want to make a [PlaceData](place-data.md) appear and make it stay even when the [Area](../dictionary/areas.md) is reloaded.
+
+## Text output buffer
+
+There are different functions for displaying textboxes.
+
+Textboxes get their content from JSON-Files. This is done in Scripting.
+
+These JSON-Files house all the text used in the game and can be referenced whenever to get the text to display it in a textbox.
+
+Some texts have placeholder values. These can be replaced with any text from the buffer.
+
+The easiest way is to use `_MACRO_*` commands. If you use these, ev-as converts these into text for you. Depending on which Tags you use, you may need to manually edit the Tag list in the JSON-File.
