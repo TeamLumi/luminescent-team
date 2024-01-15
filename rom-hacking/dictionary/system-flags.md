@@ -2,7 +2,7 @@
 
 This is a list of all system flags in the game.
 
-| Flag | Function |
+| Flag | Description |
 | - | - |
 | SYS_FLAG_ARRIVE_START |  |
 | SYS_FLAG_BAG_GET |  |

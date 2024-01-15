@@ -29,6 +29,7 @@ const sidebars = {
         'dictionary/items',
         'dictionary/chibi-animations',
         'dictionary/chibi-emotions',
+        'dictionary/system-flags',
       ],
     },
     {

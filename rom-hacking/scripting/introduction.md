@@ -8,7 +8,7 @@ Be it showing dialogues, moving NPCs and the player around and setting various f
 
 Functions are written in `.ev` files. These can be edited by unpacking the file `romfs/Data/StreamingAssets/AssetAssistant/Dpr/ev_script` using [Aldo's BDSP Repacker](https://github.com/Ai0796/BDSP-Repacker).
 
-Each zone has it's own script file. The name is the [Zone](../dictionary/zones.md) name. For example `c01.ev` for Jubilife City.
+Each zone has it's own script file. The name is the [Zone](../dictionary/zones.md) code. For example `c01.ev` for Jubilife City.
 
 These script files contain two different types of function that serve different purposes.
 
@@ -17,7 +17,7 @@ These script files contain two different types of function that serve different 
 
 ### Naming schemes
 
-Function naming should follow this scheme: `{type}_{zone_name}_{function_name}`.
+Function naming should follow this scheme: `{type}_{zone_code}_{function_name}`.
 
 This is not strictly necessary, but strongly recommended to keep things organized.
 
@@ -29,9 +29,9 @@ This is not strictly necessary, but strongly recommended to keep things organize
 | pos | Script functions called by [StopData](stop-data.md) |
 | anm | Animation functions |
 
-#### Zone name
+#### Zone code
 
-The zone name in lowercase letters. `c01` for Jubilife City or `r201` for Route 201.
+The zone code in lowercase letters. `c01` for Jubilife City or `r201` for Route 201.
 
 See [Zones](../dictionary/zones.md) for a list of zones.
 
