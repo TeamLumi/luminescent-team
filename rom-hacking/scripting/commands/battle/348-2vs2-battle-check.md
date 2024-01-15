@@ -4,13 +4,13 @@
 
 Returns if the player can participate in 2VS2 battles (player versus 2 trainers).
 
-The player needs at least 2 Pokémon in their party.
+The player needs at least 2 Pokémon in their party that can fight.
 
 ## Return Values
 
 | Value | Meaning |
 | - | - |
-| 0 | Cannot participate |
+| 0 | Can't participate |
 | 1 | Can participate |
 
 ## Syntax

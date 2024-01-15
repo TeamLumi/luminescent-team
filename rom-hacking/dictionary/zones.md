@@ -1,12 +1,12 @@
-# Areas
+# Zones
 
-This is a list of all the areas in the game.
+This is a list of all the zones in the game.
 
 Zone ID is referenced in [PlaceData](../scripting/place-data.md) and [StopData](../scripting/stop-data.md).
 
-Zone name is used in names to identify the area an object is tied to.
+Zone code is used in names to identify the area an object is tied to.
 
-| Zone ID | Location | Place | File path | Zone name |
+| Zone ID | Location | Place | File path | Zone code |
 | - | - | - | - | - |
 | 0 | Jubilife | Jubilife City | fields/area001 | C01 |
 | 1 | Jubilife | Poké Mart | prefab_map/t02fs0101 | C01FS0101 |

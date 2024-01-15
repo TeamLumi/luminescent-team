@@ -7,14 +7,14 @@ Initiates a trainer multi battle (player and npc versus 2 trainers).
 ## Syntax
 
 ```c
-_TRAINER_MULTI_BTL_SET(trainer1, trainer2, trainer3)
+_TRAINER_MULTI_BTL_SET(partner, trainer1, trainer2)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **trainer1** | The ID of the trainer to partner up with | Work, Float | Required |
-| **trainer2** | The ID of the trainer to battle against | Work, Float | Required |
-| **trainer3** | The ID of the trainer to battle against | Work, Float | Required |
+| **partner** | The ID of the trainer to partner up with | Work, Float, String | Required |
+| **trainer1** | The ID of the trainer to battle against | Work, Float, String | Required |
+| **trainer2** | The ID of the trainer to battle against | Work, Float, String | Required |
 
 ## Example
 

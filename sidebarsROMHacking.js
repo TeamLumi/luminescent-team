@@ -25,8 +25,10 @@ const sidebars = {
       },
       collapsed: true,
       items: [
-        'dictionary/areas',
+        'dictionary/zones',
         'dictionary/items',
+        'dictionary/chibi-animations',
+        'dictionary/chibi-emotions',
       ],
     },
     {

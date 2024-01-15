@@ -8,7 +8,7 @@ Be it showing dialogues, moving NPCs and the player around and setting various f
 
 Functions are written in `.ev` files. These can be edited by unpacking the file `romfs/Data/StreamingAssets/AssetAssistant/Dpr/ev_script` using [Aldo's BDSP Repacker](https://github.com/Ai0796/BDSP-Repacker).
 
-Each area has it's own script file. The name is the [Area](../dictionary/areas.md) name. For example `c01.ev` for Jubilife City.
+Each zone has it's own script file. The name is the [Zone](../dictionary/zones.md) name. For example `c01.ev` for Jubilife City.
 
 These script files contain two different types of function that serve different purposes.
 
@@ -17,7 +17,7 @@ These script files contain two different types of function that serve different 
 
 ### Naming schemes
 
-Function naming should follow this scheme: `{type}_{area_name}_{function_name}`
+Function naming should follow this scheme: `{type}_{zone_name}_{function_name}`
 
 #### Type
 
@@ -27,17 +27,17 @@ Function naming should follow this scheme: `{type}_{area_name}_{function_name}`
 | pos | Script functions called by [StopData](stop-data.md) |
 | anm | Animation functions |
 
-#### Area name
+#### Zone name
 
-The area name in lowercase letters. `c01` for Jubilife City or `r201` for Route 201.
+The zone name in lowercase letters. `c01` for Jubilife City or `r201` for Route 201.
 
-See [Areas](../dictionary/areas.md) for a list of areas.
+See [Zones](../dictionary/zones.md) for a list of zones.
 
 #### Function name
 
 The actual name your function should have. Try to keep this as descriptive as possible, to make reading the code easier.
 
-Something like `cynthia_give_egg` or even just `rival` if this is the rival talking function of the area.
+Something like `cynthia_give_egg` or even just `rival` if this is the rival talking function of the zone.
 
 #### Example function names
 
@@ -61,7 +61,7 @@ ev_c01_greet_player:; This function makes the professor greet the player
 
 There are four main ways to make the game run your custom functions.
 
-1. Using an `ev_{area_name}_flag_change` function
+1. Using an `ev_{zone_name}_flag_change` function
 2. Referencing your function name in the `TalkLabel` of a [PlaceData](place-data.md)
 3. Referencing your function name in the `ContactLabel` of a [StopData](stop-data.md)
 4. Calling your function from another function that's already in the script using a [_JUMP](commands/logic/024-jump.md) or a [_CALL](commands/logic/028-call.md) function
@@ -92,20 +92,20 @@ The function that handles the Darkrai event:
 ```c
 ev_c01_darkrai:
 _SP_WILD_BTL_SET(491, 80); Fight Darkrai
-_OBJ_DEL('C01_DARKRAI'); Hide Darkrai in the area
-_FLAG_SET(#3000); Make sure Darkrai will be hidden when reloading the area
+_OBJ_DEL('C01_DARKRAI'); Hide Darkrai in the zone
+_FLAG_SET(#3000); Make sure Darkrai will be hidden when reloading the zone
 _END()
 ```
 
 ## PlaceData quirks
 
-The `Work` value of a [PlaceData](place-data.md) is only checked when entering the [Area](../dictionary/areas.md).
+The `Work` value of a [PlaceData](place-data.md) is only checked when entering the [Zone](../dictionary/zones.md).
 
-This means if you change the Flag state of a [PlaceData](place-data.md) in the [Area](../dictionary/areas.md) you are currently in, this will not be effective until you exit and re-enter that [Area](../dictionary/areas.md).
+This means if you change the Flag state of a [PlaceData](place-data.md) in the [Zone](../dictionary/zones.md) you are currently in, this will not be effective until you exit and re-enter that [Zone](../dictionary/zones.md).
 
-For example to make an object disappear in the future, starting the moment you are in the [Area](../dictionary/areas.md), you need to both set the Flag using [_FLAG_SET](commands/gamedata/041-flag-set.md) and [_OBJ_DEL](commands/interface/147-obj-del.md).
+For example to make an object disappear in the future, starting the moment you are in the [Zone](../dictionary/zones.md), you need to both set the Flag using [_FLAG_SET](commands/gamedata/041-flag-set.md) and [_OBJ_DEL](commands/interface/147-obj-del.md).
 
-The same goes for [_FLAG_RESET](commands/gamedata/043-flag-reset.md) and [_OBJ_ADD](commands/interface/146-obj-add.md) if you want to make a [PlaceData](place-data.md) appear and make it stay even when the [Area](../dictionary/areas.md) is reloaded.
+The same goes for [_FLAG_RESET](commands/gamedata/043-flag-reset.md) and [_OBJ_ADD](commands/interface/146-obj-add.md) if you want to make a [PlaceData](place-data.md) appear and make it stay even when the [Zone](../dictionary/zones.md) is reloaded.
 
 ## Text output buffer
 

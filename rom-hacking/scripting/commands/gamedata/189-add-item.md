@@ -16,6 +16,10 @@ _ADD_ITEM(item, amount, result)
 | **amount** | the amount | Work, Float | Required |
 | **result** | The work to put the result into | Work | Required |
 
+:::info
+The `result` parameter is always 1 no matter what.
+:::
+
 ## Example
 
 ```c

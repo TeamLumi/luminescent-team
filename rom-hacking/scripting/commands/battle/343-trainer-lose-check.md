@@ -8,8 +8,8 @@ Returns the result of the last battle.
 
 | Value | Meaning |
 | - | - |
-| 0 | Lost |
-| 1 | Won |
+| 0 | Player lost |
+| 1 | Player won |
 
 ## Syntax
 

@@ -61,12 +61,12 @@ The unique identifier of the PlaceData. This can be referenced in Scripting for 
 The ID should follow this naming scheme.
 
 ```
-{AREA_NAME}_{PLACEDATA_NAME}
+{zone_name}_{placedata_name}
 ```
 
 ### zoneID
 
-The ID of the [Area](../dictionary/areas.md) the PlaceData should be spawned in. This is an number.
+The ID of the [Zone](../dictionary/zones.md) the PlaceData should be spawned in. This is an number.
 
 ### TrainerID
 
@@ -174,7 +174,7 @@ This is a flag and is what determines if the object is visible/invisible.
 
 With a flag of 4000 it will always be visible.
 
-For example, if your object has a Work of 2816 and that flag is "set" during a script with [_FLAG_SET](commands/gamedata/041-flag-set.md), the next time you enter that area, the object will no longer be there.
+For example, if your object has a Work of 2816 and that flag is "set" during a script with [_FLAG_SET](commands/gamedata/041-flag-set.md), the next time you enter that zone, the object will no longer be there.
 
 ### Dowsing
 

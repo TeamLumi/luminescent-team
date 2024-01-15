@@ -2,7 +2,7 @@
 
 ## Effect
 
-Shows a PlaceData. This does not carry over after the area is reloaded.
+Shows a PlaceData. This does not carry over after the zone is reloaded.
 
 ## Syntax
 
