@@ -75,8 +75,8 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
           <Box className={style.pokeColumn} gridColumn="span 1">
             <ImageWithFallback
               alt={pokemonInfo.name}
-              src={`/img/${pokemonInfo.imageSrc}`}
-              fallbackSrc={`/img/${pokemonInfo.forms[0].imageSrc}`}
+              src={`/img/pkm/${pokemonInfo.imageSrc}`}
+              fallbackSrc={`/img/pkm/${pokemonInfo.forms[0].imageSrc}`}
               style={{ objectFit: 'contain', margin: '16px' }}
               width="80px"
               height="80px"

@@ -174,7 +174,7 @@ describe('Dex utils function tests', () => {
   }
 
   test.skip.each([...getAllPokemonFormImageData(true)])('pokemon form image %s for %s exists', (filename, _, done) => {
-    const imgFilePath = path.join(__dirname, '../../../static/img/', filename);
+    const imgFilePath = path.join(__dirname, '../../../static/img/pkm/', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
       let fileExists = true;
       if (err) {
@@ -204,7 +204,7 @@ describe('Dex utils function tests', () => {
       expect(result2).toBe(VENUSAUR);
     });
     test.skip.each([...getAllPokemonFormImageData(true, MODE)])('pokemon form image %s for %s exists', (filename, _, done) => {
-      const imgFilePath = path.join(__dirname, '../../../static/img/', filename);
+      const imgFilePath = path.join(__dirname, '../../../static/img/pkm/', filename);
       fs.access(imgFilePath, fs.constants.F_OK, (err) => {
         let fileExists = true;
         if (err) {

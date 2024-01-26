@@ -57,7 +57,7 @@ const PokemonListEntry = ({ pokemon, style }) => {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <img src={useBaseUrl(`/img/${pokemon.imageSrc}`)} height={48} />
+            <img src={useBaseUrl(`/img/pkm/${pokemon.imageSrc}`)} height={48} />
           </ListItemIcon>
           <Typography>{pokemon.name}</Typography>
           <Box display="flex" flexDirection="row" marginX="8px">

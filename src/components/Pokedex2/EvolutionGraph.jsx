@@ -209,7 +209,7 @@ export default function EvolutionGraph(props) {
                 <Link to={`/pokedex/${pokemonPath}`}>
                   <img
                     key={pokemonId}
-                    src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
+                    src={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsno, formNos[index])}`)}
                     alt={pokemonName}
                     title={pokemonName} />
                 </Link>
@@ -244,7 +244,7 @@ export default function EvolutionGraph(props) {
               <Link to={`/pokedex/${firstPokemonPath}`}>
                 <img
                   key={pokemonID}
-                  src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
+                  src={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsNo, formNo)}`)}
                   alt={getPokemonName(pokemonID, props.globalState.mode)}
                   title={getPokemonName(pokemonID, props.globalState.mode)}
                 />

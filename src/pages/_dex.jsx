@@ -13,8 +13,8 @@ export default function PokemonPage({ pokemon, pokemonList, pokemon3, pokemonLis
     return null;
   }
   const metaImage = 
-    `https://luminescent.team/img/${pokemon.imageSrc}` ||
-    `https://luminescent.team/img/${pokemon.forms[0].imageSrc}`;
+    `https://luminescent.team/img/pkm/${pokemon.imageSrc}` ||
+    `https://luminescent.team/img/pkm/${pokemon.forms[0].imageSrc}`;
 
   return (
     <Layout
