@@ -36,21 +36,21 @@ describe('Dex utils Item getter tests', () => {
   describe('getItemImages', () => {
     test('should return the correct item image url for a given item string', () => {
       const itemName = 'Leftovers';
-      const expected = '/img/Item_Leftovers.webp';
+      const expected = '/img/items/Item_Leftovers.webp';
       const actual = getItemImageUrl(itemName);
       expect(actual).toBe(expected);
     });
 
     test('should return the correct item image url for an item name that is split with a space', () => {
       const itemName = 'Macho Brace';
-      const expected = '/img/Item_Macho_Brace.webp';
+      const expected = '/img/items/Item_Macho_Brace.webp';
       const actual = getItemImageUrl(itemName);
       expect(actual).toBe(expected);
     });
 
     test('should return the correct item image url for an item name that is split with an apostrophe', () => {
       const itemName = "King’s Rock";
-      const expected = '/img/Item_Kings_Rock.webp';
+      const expected = '/img/items/Item_Kings_Rock.webp';
       const actual = getItemImageUrl(itemName);
       expect(actual).toBe(expected);
     });
