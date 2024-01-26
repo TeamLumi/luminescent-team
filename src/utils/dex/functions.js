@@ -34,7 +34,7 @@ function getGender(sex) {
 function getImage(monsno = 0, formIndex = 0) {
   const paddedMonsno = monsno.toString().padStart(4, 0);
   const paddedFormIndex = formIndex.toString().padStart(2, 0);
-  return `/img/pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
+  return `/img/pkm/pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
 }
 
 function formatBaseStats(p) {

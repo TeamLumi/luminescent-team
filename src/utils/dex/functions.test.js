@@ -79,23 +79,23 @@ describe('Dex utils function tests', () => {
   });
   describe('getImage', () => {
     test('should return the correct image URL with default values', () => {
-      expect(getImage()).toEqual('/img/pm0000_00_00_00_L.webp');
+      expect(getImage()).toEqual('/img/pkm/pm0000_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and default formindex', () => {
-      expect(getImage(25)).toEqual('/img/pm0025_00_00_00_L.webp');
+      expect(getImage(25)).toEqual('/img/pkm/pm0025_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and formindex', () => {
-      expect(getImage(25, 3)).toEqual('/img/pm0025_03_00_00_L.webp');
+      expect(getImage(25, 3)).toEqual('/img/pkm/pm0025_03_00_00_L.webp');
     });
 
     test('should pad monsno with leading zeros', () => {
-      expect(getImage(123)).toEqual('/img/pm0123_00_00_00_L.webp');
+      expect(getImage(123)).toEqual('/img/pkm/pm0123_00_00_00_L.webp');
     });
 
     test('should pad formindex with leading zeros', () => {
-      expect(getImage(25, 9)).toEqual('/img/pm0025_09_00_00_L.webp');
+      expect(getImage(25, 9)).toEqual('/img/pkm/pm0025_09_00_00_L.webp');
     });
   });
 
