@@ -51,7 +51,7 @@ function getAllPokemonFormImageData(mode = "2.0") {
 }
 
 test.skip.each([...getAllPokemonFormImageData("2.0")])('2.0 pokemon form image %s for %s does not exist', (filename, formName, done) => {
-  const imgFilePath = path.join(__dirname, '../../static/img/', filename);
+  const imgFilePath = path.join(__dirname, '../../static/img/pkm/', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
     let fileExists = true;
     if (err) {
@@ -68,7 +68,7 @@ test.skip.each([...getAllPokemonFormImageData("2.0")])('2.0 pokemon form image %
 });
 
 test.skip.each([...getAllPokemonFormImageData("3.0")])('3.0 pokemon form image %s for %s does not exist', (filename, formName, done) => {
-  const imgFilePath = path.join(__dirname, '../../static/img/', filename);
+  const imgFilePath = path.join(__dirname, '../../static/img/pkm/', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
     let fileExists = true;
     if (err) {
