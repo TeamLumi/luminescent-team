@@ -20,7 +20,7 @@ describe('Dex utils Name getters', () => {
     test('creates a map with the alternate form name of a pokemon when available', () => {
       const pokemon = { id: 487 };
       const result = createPokemonMap({}, pokemon);
-      expect(result[pokemon.id]).toBe('Giratina');
+      expect(result[pokemon.id]).toBe('Giratina Altered Forme');
     });
 
     test('creates a map with the default form name of a problematic pokemon', () => {
