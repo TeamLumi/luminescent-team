@@ -2,7 +2,6 @@ import {
   LearnsetTable,
   EggMovesTable,
   MovesTable,
-  moveEnum,
   smogonMoves,
   ItemTable,
   PersonalTable,
@@ -14,7 +13,6 @@ import {
   LearnsetTable3,
   EggMovesTable3,
   MovesTable3,
-  moveEnum3,
   smogonMoves3,
   ItemTable3,
   PersonalTable3,
@@ -91,6 +89,19 @@ function getMoveId(moveName, mode) {
   return -1;
 }
 
+function findWazaNoByMachineNo(machineNo, mode) {
+  const Item_Table = mode === "2.0" ? ItemTable : ItemTable3;
+  const wazaMachineArray = Item_Table['WazaMachine'];
+
+  for (const wazaMachine of wazaMachineArray) {
+    if (wazaMachine['machineNo'] === machineNo) {
+      return wazaMachine['wazaNo'];
+    }
+  }
+
+  return null;
+}
+
 function getMoveProperties(moveId = 0, mode = "2.0") {
   const MoveTable = mode === "2.0" ? MovesTable : MovesTable3;
   const MoveNames = mode === "2.0" ? moveNames : moveNames3;
@@ -161,22 +172,108 @@ function getTMCompatibility(pokemonId = 0, mode = "2.0") {
 }
 
 function getTechMachineLearnset(pokemonId = 0, mode = "2.0") {
-  const learnset = getTMCompatibility(pokemonId, mode);
-  const itemTable = mode === "2.0" ? ItemTable : ItemTable3;
+  const learnset = mode === "2.0"
+    ? getTMCompatibility(pokemonId, mode)
+    : getTmCompatibility3(pokemonId, mode);
 
-  const canLearn = [];
-  for (let i = 0; i <= MAX_TM_COUNT; i++) {
-    const tm = itemTable.WazaMachine[i];
+  if (mode === "2.0") {
+    const itemTable = mode === "2.0" ? ItemTable : ItemTable3;
 
-    const legalitySetValue = itemTable.Item[tm.itemNo].group_id;
-    const isLearnable = learnset[legalitySetValue - 1];
+    const canLearn = [];
+    for (let i = 0; i <= MAX_TM_COUNT; i++) {
+      const tm = itemTable.WazaMachine[i];
 
-    if (isLearnable) {
-      canLearn.push({ level: 'tm', move: getMoveProperties(tm.wazaNo, mode) });
+      const legalitySetValue = itemTable.Item[tm.itemNo].group_id;
+      const isLearnable = learnset[legalitySetValue - 1];
+
+      if (isLearnable) {
+        canLearn.push({ level: 'tm', move: getMoveProperties(tm.wazaNo, mode) });
+      }
     }
+
+    return canLearn;
+  } else {
+    if (learnset === null) {
+      return [];
+    }
+
+    const canLearn = learnset.map(move => ({ level: 'tm', move: getMoveProperties(move, mode)}));
+    return canLearn;
+  }
+}
+
+function getTmCompatibility3(pokemonId = 0, mode) {
+  if (pokemonId === 0) {
+    return null;
+  }
+  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
+
+  const personalData = personalTable.Personal[pokemonId];
+  const machineNos = [personalData['machine1'], personalData['machine2'], personalData['machine3'], personalData['machine4']];
+  const tmBinaryList = convertListToBinaryArray(machineNos);
+  const tmCompatibility = createMoveIdLearnset(tmBinaryList, mode);
+
+  return tmCompatibility;
+}
+
+function convertListToBinaryArray(decimalList) {
+  if (decimalList.length !== 4) {
+    throw new Error("Input list must have exactly 4 elements");
   }
 
-  return canLearn;
+  const binaryArray = [];
+
+  for (const decimalNumber of decimalList) {
+    if (!Number.isInteger(decimalNumber) || decimalNumber < 0) {
+      throw new Error("All elements in the list must be non-negative integers");
+    }
+
+    binaryArray.push(...decimalToBinaryArray(decimalNumber));
+  }
+
+  // Pad the binary array to have a length of 128 by adding leading zeros
+  while (binaryArray.length < 128) {
+    binaryArray.unshift(0);
+  }
+
+  return binaryArray;
+}
+
+function createMoveIdLearnset(binaryArray, mode) {
+  const tmArray = [];
+
+  for (let machineNoIndex = 0; machineNoIndex < binaryArray.length; machineNoIndex++) {
+    const binaryInt = binaryArray[machineNoIndex];
+
+    if (binaryInt === 0) {
+      continue;
+    }
+
+    if (machineNoIndex > 103) {
+      break;
+    }
+
+    const machineNo = machineNoIndex + 1;
+    tmArray.push(findWazaNoByMachineNo(machineNo, mode));
+  }
+
+  return tmArray;
+}
+
+function decimalToBinaryArray(decimalNumber) {
+  if (!Number.isInteger(decimalNumber) || decimalNumber < 0) {
+    throw new Error("Input must be a non-negative integer");
+  }
+
+  const binaryString = (decimalNumber >>> 0).toString(2);  // Convert to binary and ensure positive
+  const binaryArray = Array.from(binaryString, Number);
+
+  // Pad the binary array to have a length of 32 by adding leading zeros
+  while (binaryArray.length < 32) {
+    binaryArray.unshift(0);
+  }
+
+  return binaryArray.reverse();
 }
 
 function getPokemonLearnset(pokemonId = 0, mode = "2.0") {
