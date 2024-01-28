@@ -60,22 +60,35 @@ function isMoveNameSmogonCompatible(moveString) {
   return smogonMoves.some((movesPerGeneration) => Object.keys(movesPerGeneration).includes(moveString));
 }
 
-function getMoveId(moveName) {
-  if (typeof moveName !== 'string' || !moveName) throw Error(`Bad move name: ${moveName}`);
-  const id = moveEnum.findIndex((e) => e === moveName.trim());
-  if (id === -1) throw Error(`Bad move name: ${moveName}`);
-  return id;
-}
+function getMoveString(moveId = 0, mode) {
+  const movesNamedata = mode === "2.0" ? moveNames : moveNames3;
+  const nameData = movesNamedata['labelDataArray'][moveId]['wordDataArray'];
+  const name = nameData.length ? nameData[0]['str'] : 'None';
 
-function getMoveString(id = 0) {
-  if (!Number.isInteger(id) || id < 0) throw Error(`Bad move string found: ID - ${id}`);
-
-  const str = moveEnum[id];
-  if (typeof str !== 'string' || !isMoveNameSmogonCompatible(str)) {
-    throw Error(`Incompatible move string found: ID - ${id}, String: ${str}`);
+  if (!isMoveNameSmogonCompatible(name)) {
+    throw new Error(`Incompatible move string found: ID - ${moveId}, String: ${name}`);
   }
 
-  return str;
+  return name;
+}
+
+function getMoveId(moveName, mode) {
+  const movesNamedata = mode === "2.0" ? moveNames : moveNames3;
+
+  if (!moveName) {
+    return -1;
+  }
+
+  for (let i = 0; i < movesNamedata['labelDataArray'].length; i++) {
+    const move = movesNamedata['labelDataArray'][i];
+    const moveStr = move['wordDataArray'][0]['str'];
+    const normalized_move_string = moveStr.normalize('NFKD').replace(/[^\w\s-]/g, '').trim().toLowerCase();
+    if (moveStr === moveName || normalized_move_string === moveName) {
+      return i;
+    }
+  }
+
+  return -1;
 }
 
 function getMoveProperties(moveId = 0, mode = "2.0") {
