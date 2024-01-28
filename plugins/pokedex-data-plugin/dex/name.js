@@ -1,5 +1,6 @@
 const { PersonalTable, basePokemonNames, formPokemonNames } = require('./data');
 const { PersonalTable3, basePokemonNames3, formPokemonNames3 } = require('./data3');
+const { START_OF_LINE_FORMS, END_OF_LINE_FORMS, REVERSE_ORDER_ARRAY } = require('./nameConstants')
 const { FORM_MAP, FORM_MAP3 } = require('./functions');
 
 const POKEMON_NAME_MAP = PersonalTable.Personal.reduce((pokemonNameMap, currentPokemon) => {
@@ -15,15 +16,40 @@ function createPokemonMap(pokemonNameMap, currentPokemon, mode = "2.0") {
 
   try {
     const { id } = currentPokemon;
-
-    const baseFormName = baseMonNames.labelDataArray[id]?.wordDataArray[0]?.str;
-    if (typeof baseFormName === 'string' && baseFormName.length > 0) {
-      pokemonNameMap[id] = baseFormName;
-      return pokemonNameMap;
+    if (id < baseMonNames.labelDataArray.length) {
+      const baseFormName = baseMonNames.labelDataArray[id]?.wordDataArray[0]?.str;
+      const baseFormAltName = formMonNames.labelDataArray[id]?.wordDataArray[0]?.str;
+      if (typeof baseFormName === 'string' && baseFormName.length > 0) {
+        if (
+          typeof baseFormAltName === 'string'
+          && baseFormAltName.length > 0
+          ) {
+          if (baseFormAltName.includes(baseFormName)) {
+            pokemonNameMap[id] = baseFormAltName;
+            return pokemonNameMap;
+          }
+          pokemonNameMap[id] = `${baseFormName} ${baseFormAltName}`;
+          return pokemonNameMap;
+        }
+        pokemonNameMap[id] = baseFormName;
+        return pokemonNameMap;
+      }
     }
 
-    const alternateFormName = formMonNames.labelDataArray[id]?.wordDataArray[0]?.str;
+    const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(id, mode);
+    const baseFormName = baseMonNames.labelDataArray[monsNo]?.wordDataArray[0]?.str;
+    const baseFormAltName = formMonNames.labelDataArray[monsNo]?.wordDataArray[0]?.str;
+    const pokemonName =
+      baseFormAltName.length > 0 && !baseFormName.includes(baseFormAltName)
+        ? `${baseFormName} ${baseFormAltName}`
+        : baseFormName;
+        
+        const alternateFormName = formMonNames.labelDataArray[id]?.wordDataArray[0]?.str;
     if (typeof alternateFormName === 'string' && alternateFormName.length > 0) {
+      if (!alternateFormName.includes(baseFormName)) {
+        pokemonNameMap[id] = `${baseFormName} ${alternateFormName}`
+        return pokemonNameMap
+      }
       pokemonNameMap[id] = alternateFormName;
       return pokemonNameMap;
     }
@@ -104,8 +130,46 @@ function getPokemonFormId(monsno = 0, id, mode = "2.0") {
   return form_map[monsno]?.findIndex((e) => e === id) ?? -1;
 }
 
-function normalizePokemonName(name) {
-  return name.toLowerCase().replace(/\s+/g, '').replaceAll("'", '');
+function normalizePokemonName(value, mode = "2.0") {
+  // Converts to lowercase, removes non-word characters,
+  // converts spaces to hyphens, and strips leading/trailing whitespace.
+  let initialValue = value;
+  value = value.replace(/[!]/g, 'emark')
+    .replace(/[?]/g, 'qmark')
+    .replace(/[♀]/g, '-f')
+    .replace(/[♂]/g, '-m')
+  value = value.normalize('NFKD').replace(/[^\w\s-]/g, '').trim().toLowerCase();
+
+  if (mode === "2.0" ) {
+    return value.replace(/[-\s]+/g, '-');
+  }
+
+  if (value.includes(' ') || value.includes('-')) {
+    // Split the string at the last space
+    for (const badValue in START_OF_LINE_FORMS) {
+      if (value.includes(badValue)) {
+        value = value.replace(badValue, START_OF_LINE_FORMS[badValue]);
+      }
+    }
+
+    const lastWord = value.split(' ').pop();
+    for (const badEndValue in END_OF_LINE_FORMS) {
+      if (lastWord === badEndValue) {
+        value = value.replace(` ${badEndValue}`, END_OF_LINE_FORMS[badEndValue]);
+      }
+    }
+
+    const parts = value.split(' ').reverse();
+
+    // Check if the first part is "Mega" or "Gigantamax"
+    if (REVERSE_ORDER_ARRAY.includes(parts[0]) || lastWord === 'genesect') {
+      // Rearrange string and join with hyphen
+      value = [parts[1], parts[0]].join('-');
+      return value;
+    }
+  }
+
+  return value.replace(/[-\s]+/g, '-');
 }
 
 function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0, mode = "2.0") {

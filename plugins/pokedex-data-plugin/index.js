@@ -78,10 +78,9 @@ function pokedexDataPlugin(context, options) {
       const pokemonRoutes = [];
       await Promise.all(
         content.pokemons3.map(async (pokemon3) => {
-          const pokemonName = normalizePokemonName(pokemon3.name);
+          const pokemonName = normalizePokemonName(pokemon3.name, "3.0");
           const pokemonId3 = pokemon3.formno === 0 ? pokemon3.monsno : `${pokemon3.monsno}_${pokemon3.formno}`;
-          const pokemonSlug = pokemon3.isBaseForm ? pokemonName : pokemonId3;
-          const pokemonPath = `${pokedexPath}/${pokemonSlug}`;
+          const pokemonPath = `${pokedexPath}/${pokemonName}`;
           const pokemonJson3 = await actions.createData(`3.0lumi${pokemonId3}.json`, JSON.stringify(pokemon3));
           let pokemonJson = pokemonJson3;
 
@@ -91,20 +90,18 @@ function pokedexDataPlugin(context, options) {
             pokemonJson = await actions.createData(`lumi${pokemonId}.json`, JSON.stringify(pokemon));
           }
 
-          if (pokemon3.isBaseForm) {
-            const redirectPathJson = await actions.createData(`lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
-            const redirectPathJson3 = await actions.createData(`3.0lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
-            const newPokemonPath = pokemon3.formno === 0 ? pokemon3.monsno : `${pokemon3.monsno}_${pokemon3.formno}`;
-            pokemonRedirectRoutes.push({
-              path: `${pokedexPath}/${newPokemonPath}`,
-              component: options.pokemonRedirectComponent,
-              exact: true,
-              modules: {
-                redirectPath: redirectPathJson,
-                redirectPath3: redirectPathJson3,
-              },
-            });
-          }
+          const redirectPathJson = await actions.createData(`lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
+          const redirectPathJson3 = await actions.createData(`3.0lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
+          const newPokemonPath = pokemon3.formno === 0 ? pokemon3.monsno : `${pokemon3.monsno}_${pokemon3.formno}`;
+          pokemonRedirectRoutes.push({
+            path: `${pokedexPath}/${newPokemonPath}`,
+            component: options.pokemonRedirectComponent,
+            exact: true,
+            modules: {
+              redirectPath: redirectPathJson,
+              redirectPath3: redirectPathJson3,
+            },
+          });
 
           pokemonRoutes.push({
             path: pokemonPath,
