@@ -1,20 +1,21 @@
 import React, { useState, createContext, useContext, useEffect } from "react";
 
-const GlobalContext = createContext(null);
+const GlobalContext = createContext();
 
-export const GlobalState = (props) => {
+export const GlobalState = ({ children }) => {
   const [globalState, setGlobalState] = useState(() => {
-    const storedMode = sessionStorage.getItem("mode");
-    return { mode: storedMode || "3.0" };
+    // Check if window is defined (client-side)
+    const storedMode = typeof window !== 'undefined' ? window.sessionStorage.getItem('mode') : null;
+    return { mode: storedMode || '3.0' };
   });
 
   useEffect(() => {
     // Update sessionStorage when the mode changes
-    sessionStorage.setItem("mode", globalState.mode);
+    sessionStorage.setItem('mode', globalState.mode);
   }, [globalState.mode]);
 
   const updateMode = (newMode) => {
-    if (newMode === "2.0" || newMode === "3.0") {
+    if (newMode === '2.0' || newMode === '3.0') {
       setGlobalState((oldState) => ({
         ...oldState,
         mode: newMode,
@@ -24,9 +25,15 @@ export const GlobalState = (props) => {
 
   return (
     <GlobalContext.Provider value={[globalState, updateMode]}>
-      {props.children}
+      {children}
     </GlobalContext.Provider>
   );
 };
 
-export const useGlobalState = () => useContext(GlobalContext);
+export const useGlobalState = () => {
+  const context = useContext(GlobalContext);
+  if (!context) {
+    throw new Error('useGlobalState must be used within a GlobalStateProvider');
+  }
+  return context;
+};
