@@ -197,6 +197,9 @@ function getTMCompatibility(pokemonId = 0, mode = "2.0") {
 }
 
 function getTechMachineLearnset(pokemonId = 0, mode = "2.0") {
+  if (pokemonId === 0) {
+    return [];
+  }
   const learnset = getTMCompatibility(pokemonId, mode)
 
   if (mode === "2.0") {
