@@ -62,7 +62,7 @@ function getMoveId(moveName, mode) {
   const movesNamedata = mode === "2.0" ? moveNames : moveNames3;
 
   if (!moveName) {
-    return -1;
+    throw new Error(`Bad move name: ${moveName}`);
   }
 
   for (let i = 0; i < movesNamedata['labelDataArray'].length; i++) {
@@ -74,16 +74,16 @@ function getMoveId(moveName, mode) {
     }
   }
 
-  return -1;
+  throw new Error(`Bad move name: ${moveName}`);
 }
 
 function findWazaNoByMachineNo(machineNo, mode) {
-  const Item_Table = mode === "2.0" ? ItemTable : ItemTable3;
-  const wazaMachineArray = Item_Table['WazaMachine'];
+  const item_table = mode === "2.0" ? ItemTable : ItemTable3;
+  const wazaMachineArray = item_table.WazaMachine;
 
-  for (const wazaMachine of wazaMachineArray) {
-    if (wazaMachine['machineNo'] === machineNo) {
-      return wazaMachine['wazaNo'];
+  for (let i = 0; i < wazaMachineArray.length; i++) {
+    if (wazaMachineArray[i]['machineNo'] === machineNo) {
+      return wazaMachineArray[i]['wazaNo'];
     }
   }
 
@@ -92,8 +92,18 @@ function findWazaNoByMachineNo(machineNo, mode) {
 
 function getMoveString(moveId = 0, mode) {
   const movesNamedata = mode === "2.0" ? moveNames : moveNames3;
+  if (!moveId) {
+    throw new Error(`Bad move string found: ID - ${moveId}`);
+  }
+  if (moveId > movesNamedata.labelDataArray.length) {
+    throw new Error(`Incompatible move string found: ID - ${moveId}, String: ${name}`);
+  }
   const nameData = movesNamedata['labelDataArray'][moveId]['wordDataArray'];
-  const name = nameData.length ? nameData[0]['str'] : 'None';
+  const name = nameData.length ? nameData[0]['str'] : null;
+
+  if (!name) {
+    throw new Error(`Bad move name: ${name}`);
+  }
 
   if (!isMoveNameSmogonCompatible(name)) {
     throw new Error(`Incompatible move string found: ID - ${moveId}, String: ${name}`);
@@ -151,30 +161,43 @@ function getMoveDescription(moveId = 0, mode = "2.0") {
 }
 
 function getTMCompatibility(pokemonId = 0, mode = "2.0") {
+  if (pokemonId === 0) {
+    return null;
+  }
   const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
-  const { machine1, machine2, machine3, machine4 } = personalTable.Personal[pokemonId];
-  let tmCompatibility = [];
 
-  for (let i = 0; i < 32; i++) {
-    tmCompatibility[i] = (machine1 & (1 << i)) != 0;
+  if (mode === "2.0") {
+    const { machine1, machine2, machine3, machine4 } = personalTable.Personal[pokemonId];
+    let tmCompatibility = [];
+  
+    for (let i = 0; i < 32; i++) {
+      tmCompatibility[i] = (machine1 & (1 << i)) != 0;
+    }
+    for (let i = 0; i < 32; i++) {
+      tmCompatibility[i + 32] = (machine2 & (1 << i)) != 0;
+    }
+    for (let i = 0; i < 32; i++) {
+      tmCompatibility[i + 64] = (machine3 & (1 << i)) != 0;
+    }
+    for (let i = 0; i < 32; i++) {
+      tmCompatibility[i + 96] = (machine4 & (1 << i)) != 0;
+    }
+  
+    return tmCompatibility;
+  } else {
+    const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
+  
+    const personalData = personalTable.Personal[pokemonId];
+    const machineNos = [personalData['machine1'], personalData['machine2'], personalData['machine3'], personalData['machine4']];
+    const tmBinaryList = convertListToBinaryArray(machineNos);
+    const tmCompatibility = createMoveIdLearnset(tmBinaryList, mode);
+  
+    return tmCompatibility;
   }
-  for (let i = 0; i < 32; i++) {
-    tmCompatibility[i + 32] = (machine2 & (1 << i)) != 0;
-  }
-  for (let i = 0; i < 32; i++) {
-    tmCompatibility[i + 64] = (machine3 & (1 << i)) != 0;
-  }
-  for (let i = 0; i < 32; i++) {
-    tmCompatibility[i + 96] = (machine4 & (1 << i)) != 0;
-  }
-
-  return tmCompatibility;
 }
 
 function getTechMachineLearnset(pokemonId = 0, mode = "2.0") {
-  const learnset = mode === "2.0"
-    ? getTMCompatibility(pokemonId, mode)
-    : getTmCompatibility3(pokemonId, mode);
+  const learnset = getTMCompatibility(pokemonId, mode)
 
   if (mode === "2.0") {
     const itemTable = mode === "2.0" ? ItemTable : ItemTable3;
@@ -202,20 +225,6 @@ function getTechMachineLearnset(pokemonId = 0, mode = "2.0") {
   }
 }
 
-function getTmCompatibility3(pokemonId = 0, mode) {
-  if (pokemonId === 0) {
-    return null;
-  }
-  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
-
-  const personalData = personalTable.Personal[pokemonId];
-  const machineNos = [personalData['machine1'], personalData['machine2'], personalData['machine3'], personalData['machine4']];
-  const tmBinaryList = convertListToBinaryArray(machineNos);
-  const tmCompatibility = createMoveIdLearnset(tmBinaryList, mode);
-
-  return tmCompatibility;
-}
-
 function convertListToBinaryArray(decimalList) {
   if (decimalList.length !== 4) {
     throw new Error("Input list must have exactly 4 elements");
@@ -223,14 +232,14 @@ function convertListToBinaryArray(decimalList) {
 
   const binaryArray = [];
 
-  for (const decimalNumber of decimalList) {
+  binaryArray.push(...decimalList.map((decimalNumber) => {
     if (!Number.isInteger(decimalNumber) || decimalNumber < 0) {
       throw new Error("All elements in the list must be non-negative integers");
     }
-
-    binaryArray.push(...decimalToBinaryArray(decimalNumber));
-  }
-
+  
+    return decimalToBinaryArray(decimalNumber);
+  }).flat());
+  
   // Pad the binary array to have a length of 128 by adding leading zeros
   while (binaryArray.length < 128) {
     binaryArray.unshift(0);
