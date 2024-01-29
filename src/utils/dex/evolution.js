@@ -15,7 +15,7 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
   if (evolutionDetails.requiresLevel) {
     evoMethod = "Level"
     evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, level);
-  } else {
+  } else if (methodParameter !== 0) {
     evoMethod = evoFunction(methodParameter);
     evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, evoFunction(methodParameter));
   }
