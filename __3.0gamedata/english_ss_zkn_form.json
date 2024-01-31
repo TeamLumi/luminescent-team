@@ -14829,7 +14829,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Blank Plate",
+                    "str": "Blank Plate Arceus",
                     "strWidth": 240.296875
                 }
             ]
@@ -23379,8 +23379,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Disguised Form",
-                    "strWidth": 250.0
+                    "str": "Disguised Form Mimikyu",
+                    "strWidth": 317.09375
                 }
             ]
         },
@@ -31329,8 +31329,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Pikachu Rock Star",
-                    "strWidth": 250.0
+                    "str": "Cosplay Rock Star Pikachu",
+                    "strWidth": 342.75
                 }
             ]
         },
@@ -31359,8 +31359,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Pikachu Belle",
-                    "strWidth": 250.0
+                    "str": "Cosplay Belle Pikachu",
+                    "strWidth": 284.890625
                 }
             ]
         },
@@ -31389,8 +31389,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Pikachu Pop Star",
-                    "strWidth": 250.0
+                    "str": "Cosplay Pop Star Pikachu",
+                    "strWidth": 329.890625
                 }
             ]
         },
@@ -31419,8 +31419,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Pikachu, Ph.D",
-                    "strWidth": 250.0
+                    "str": "Cosplay Ph.D Pikachu",
+                    "strWidth": 281.953125
                 }
             ]
         },
@@ -31449,8 +31449,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Pikachu Libre",
-                    "strWidth": 250.0
+                    "str": "Cosplay Libre Pikachu",
+                    "strWidth": 285.53125
                 }
             ]
         },
@@ -32645,12 +32645,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "GHOST",
-                    "strWidth": -1.0
+                    "str": "Glitch GHOST",
+                    "strWidth": 189.28125
                 }
             ]
         },
@@ -33365,12 +33365,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Fossilized",
-                    "strWidth": -1.0
+                    "str": "Glitch Kabutops",
+                    "strWidth": 210.109375
                 }
             ]
         },
@@ -33425,12 +33425,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Fossilized",
-                    "strWidth": -1.0
+                    "str": "Glitch Aerodactyl",
+                    "strWidth": 228.609375
                 }
             ]
         },
@@ -35709,8 +35709,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Meta Groudon",
-                    "strWidth": 115.734375
+                    "str": "Boss Meta Groudon",
+                    "strWidth": 257.875
                 }
             ]
         },
@@ -36519,7 +36519,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Fist Plate",
+                    "str": "Fist Plate Arceus",
                     "strWidth": 214.84375
                 }
             ]
@@ -36549,7 +36549,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Sky Plate",
+                    "str": "Sky Plate Arceus",
                     "strWidth": 214.15625
                 }
             ]
@@ -36579,7 +36579,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Toxic Plate",
+                    "str": "Toxic Plate Arceus",
                     "strWidth": 239.828125
                 }
             ]
@@ -36609,7 +36609,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Earth Plate",
+                    "str": "Earth Plate Arceus",
                     "strWidth": 235.9375
                 }
             ]
@@ -36639,7 +36639,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Stone Plate",
+                    "str": "Stone Plate Arceus",
                     "strWidth": 243.71875
                 }
             ]
@@ -36669,7 +36669,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Insect Plate",
+                    "str": "Insect Plate Arceus",
                     "strWidth": 244.96875
                 }
             ]
@@ -36699,7 +36699,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Spooky Plate",
+                    "str": "Spooky Plate Arceus",
                     "strWidth": 265.71875
                 }
             ]
@@ -36729,7 +36729,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Iron Plate",
+                    "str": "Iron Plate Arceus",
                     "strWidth": 220.296875
                 }
             ]
@@ -36759,7 +36759,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Flame Plate",
+                    "str": "Flame Plate Arceus",
                     "strWidth": 247.4375
                 }
             ]
@@ -36789,7 +36789,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Splash Plate",
+                    "str": "Splash Plate Arceus",
                     "strWidth": 252.390625
                 }
             ]
@@ -36819,7 +36819,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Meadow Plate",
+                    "str": "Meadow Plate Arceus",
                     "strWidth": 281.015625
                 }
             ]
@@ -36849,7 +36849,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Zap Plate",
+                    "str": "Zap Plate Arceus",
                     "strWidth": 220.234375
                 }
             ]
@@ -36879,7 +36879,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Mind Plate",
+                    "str": "Mind Plate Arceus",
                     "strWidth": 235.96875
                 }
             ]
@@ -36909,7 +36909,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Icicle Plate",
+                    "str": "Icicle Plate Arceus",
                     "strWidth": 237.171875
                 }
             ]
@@ -36939,7 +36939,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Draco Plate",
+                    "str": "Draco Plate Arceus",
                     "strWidth": 247.6875
                 }
             ]
@@ -36969,7 +36969,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Dread Plate",
+                    "str": "Dread Plate Arceus",
                     "strWidth": 249.828125
                 }
             ]
@@ -36999,7 +36999,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Arceus Pixie Plate",
+                    "str": "Pixie Plate Arceus",
                     "strWidth": 231.453125
                 }
             ]
@@ -38019,8 +38019,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "",
-                    "strWidth": -1.0
+                    "str": "Battle Bond Greninja",
+                    "strWidth": 271.46875
                 }
             ]
         },
@@ -38050,7 +38050,7 @@
                     "tagIndex": -1,
                     "tagValue": 0.0,
                     "str": "Ash-Greninja",
-                    "strWidth": 250.0
+                    "strWidth": 168.765625
                 }
             ]
         },
@@ -38889,7 +38889,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Eternal Flower",
+                    "str": "Eternal Flower Floette",
                     "strWidth": 250.0
                 }
             ]
@@ -39729,7 +39729,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Zygarde 10% Forme Power Construct",
+                    "str": "Zygarde 10% Power Construct Forme",
                     "strWidth": 434.609375
                 }
             ]
@@ -39759,7 +39759,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Zygarde 50% Forme Power Construct",
+                    "str": "Zygarde 50% Power Construct Forme",
                     "strWidth": 434.609375
                 }
             ]
@@ -40089,7 +40089,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Rockruff Own Tempo",
+                    "str": "Own Tempo Rockruff",
                     "strWidth": 275.65625
                 }
             ]
@@ -41229,8 +41229,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Busted Form",
-                    "strWidth": 250.0
+                    "str": "Busted Form Mimikyu",
+                    "strWidth": 279.421875
                 }
             ]
         },
@@ -41259,8 +41259,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Totem Mimikyu",
-                    "strWidth": 250.0
+                    "str": "Totem Disguised Form Mimikyu",
+                    "strWidth": 408.78125
                 }
             ]
         },
@@ -41289,8 +41289,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Totem Mimikyu",
-                    "strWidth": 250.0
+                    "str": "Totem Busted Form Mimikyu",
+                    "strWidth": 371.109375
                 }
             ]
         },
@@ -41889,8 +41889,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gigantamax Toxtricity",
-                    "strWidth": 250.0
+                    "str": "Gigantamax Amped Form Toxtricity",
+                    "strWidth": 462.921875
                 }
             ]
         },
@@ -41919,8 +41919,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gigantamax Toxtricity",
-                    "strWidth": 250.0
+                    "str": "Gigantamax Low Key Form Toxtricity",
+                    "strWidth": 479.578125
                 }
             ]
         },
@@ -44229,8 +44229,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Rapid Strike Style",
-                    "strWidth": 250.0
+                    "str": "Rapid Strike Style Urshifu",
+                    "strWidth": 329.296875
                 }
             ]
         },
@@ -44259,8 +44259,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gigantamax Urshifu",
-                    "strWidth": 250.0
+                    "str": "Gigantamax Single Strike Style Urshifu",
+                    "strWidth": 497.3125
                 }
             ]
         },
@@ -44289,8 +44289,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gigantamax Urshifu",
-                    "strWidth": 250.0
+                    "str": "Gigantamax Rapid Strike Style Urshifu",
+                    "strWidth": 493.796875
                 }
             ]
         },
@@ -44765,12 +44765,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
                     "str": "Segin Starmobile Revavroom",
-                    "strWidth": -1.0
+                    "strWidth": 370.8125
                 }
             ]
         },
@@ -44795,12 +44795,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
                     "str": "Schedar Starmobile Revavroom",
-                    "strWidth": -1.0
+                    "strWidth": 403.203125
                 }
             ]
         },
@@ -44825,12 +44825,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
                     "str": "Navi Starmobile Revavroom",
-                    "strWidth": -1.0
+                    "strWidth": 358.625
                 }
             ]
         },
@@ -44855,12 +44855,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
                     "str": "Ruchbah Starmobile Revavroom",
-                    "strWidth": -1.0
+                    "strWidth": 410.875
                 }
             ]
         },
@@ -44885,12 +44885,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
                     "str": "Caph Starmobile Revavroom",
-                    "strWidth": -1.0
+                    "strWidth": 368.390625
                 }
             ]
         },
@@ -45035,12 +45035,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Curly False Dragon Titan",
-                    "strWidth": -1.0
+                    "str": "Curly Form False Dragon Titan",
+                    "strWidth": 396.375
                 }
             ]
         },
@@ -45065,12 +45065,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Droopy False Dragon Titan",
-                    "strWidth": -1.0
+                    "str": "Droopy Form False Dragon Titan",
+                    "strWidth": 426.4375
                 }
             ]
         },
@@ -45095,12 +45095,12 @@
             "tagDataArray": [],
             "wordDataArray": [
                 {
-                    "patternID": 7,
+                    "patternID": 0,
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Stretchy False Dragon Titan",
-                    "strWidth": -1.0
+                    "str": "Stretchy Form False Dragon Titan",
+                    "strWidth": 433.8125
                 }
             ]
         },
@@ -45159,8 +45159,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Quaking Earth Titan",
-                    "strWidth": 153.453125
+                    "str": "Quaking Earth Titan Great Tusk",
+                    "strWidth": 409.546875
                 }
             ]
         },
@@ -45189,8 +45189,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Quaking Earth Titan",
-                    "strWidth": 153.453125
+                    "str": "Quaking Earth Titan Iron Treads",
+                    "strWidth": 413.84375
                 }
             ]
         },
