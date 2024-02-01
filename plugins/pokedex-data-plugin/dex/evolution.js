@@ -3,11 +3,13 @@ const { EvolutionData3 } = require('./data3');
 const { EVOLUTION_METHOD_DETAILS, REPLACE_STRING } = require('./evolutionConstants');
 const { getPokemonIdFromMonsNoAndForm } = require('./functions');
 
-function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
+function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", level) {
   if (methodId === -1) {
     return -1;
   }
-  if (!Number.isInteger(methodId) || methodId < 0 || methodId > 47) throw new Error(`Bad method: ${methodId}`);
+  if (!EVOLUTION_METHOD_DETAILS[methodId]){
+    throw Error(`This Method is currently not handled: ${methodId}`)
+  }
   const evolutionDetails = { ...EVOLUTION_METHOD_DETAILS[methodId] };
   const evoFunction = evolutionDetails.function;
   let evoMethod = evolutionDetails.method;
@@ -15,8 +17,8 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
     evoMethod = "Level"
     evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, level);
   } else {
-    evoMethod = evoFunction(methodParameter);
-    evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, evoFunction(methodParameter));
+    evoMethod = evoFunction(methodParameter, mode);
+    evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, evoMethod);
   }
   return [evolutionDetails, evoMethod];
 }

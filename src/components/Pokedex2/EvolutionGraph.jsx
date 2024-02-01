@@ -2,15 +2,16 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Grid, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { getEvolutionMethodDetail, getEvolutionTree } from '../../utils/dex/evolution';
+import { getEvolutionMethodDetail, getEvolutionTree } from '../../../plugins/pokedex-data-plugin/dex/evolution';
 import styles from './styles.module.css';
 import { getPokemonImageFilename } from '../../core/pokemonFormSelector';
 import { getPokemonMonsNoAndFormNoFromPokemonId, getPokemonName } from '../../utils/dex/name';
 import { getItemImageUrl, getTMImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
-import { getMoveString, getMoveProperties } from '../../utils/dex/moves';
+import { getMoveString, getMoveProperties } from '../../../plugins/pokedex-data-plugin/dex/moves';
 import { getTypeName } from '../../utils/dex/types';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
 import { getItemString } from '../../utils/dex/item';
+import { useGlobalState } from '../common/GlobalState';
 
 const LEVEL = "Level"
 const FRIENDSHIP = "Friendship"
@@ -129,7 +130,8 @@ export default function EvolutionGraph(props) {
   };
 
   const renderSecondMethod = (methodId, methodParameter, level) => {
-    const [methodDetail, evoMethod] = getEvolutionMethodDetail(methodId, methodParameter, level);
+    const [globalState, updateMode] = useGlobalState();
+    const [methodDetail, evoMethod] = getEvolutionMethodDetail(methodId, methodParameter, globalState.mode, level);
     const evoImages = renderItemImage(evoMethod, methodParameter, methodDetail);
 
     return (
@@ -154,7 +156,8 @@ export default function EvolutionGraph(props) {
       )
     }
     const firstMethodParameter = parseInt(methodParameters[0]);
-    const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, levels[0]);
+    const [globalState, updateMode] = useGlobalState();
+    const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, globalState.mode, levels[0]);
 
     const evoImages = renderItemImage(firstEvoMethod, firstMethodParameter, firstMethodDetail);
     return (

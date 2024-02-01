@@ -62,7 +62,7 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = "2.0") {
 }
 
 function doNothing(evoMethod, evolutionDetails) {
-  return [evolutionDetails, evoMethod];
+  return evoMethod;
 };
 
 function getDexDescription(pokemonId, mode = "2.0") {

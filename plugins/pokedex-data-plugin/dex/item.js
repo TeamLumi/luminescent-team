@@ -11,9 +11,18 @@ function getItemIdFromItemName(itemName, mode = "2.0") {
   return index;
 }
 
-function getItemString(itemId = 0, mode = "2.0") {
+function getItemString(itemId = 1, mode = "2.0") {
   const ItemNames = mode === "2.0" ? itemNames : itemNames3
-  return ItemNames.labelDataArray[itemId].wordDataArray[0].str;
+  if (itemId > ItemNames.labelDataArray.length) {
+    throw Error(`Bad Item Number: ${itemId}`)
+  }
+  const itemObject = ItemNames.labelDataArray[itemId]
+  try {
+    itemObject.wordDataArray[0].str;
+  } catch (error) {
+    throw Error(`This Item does not have name data: ${itemId} ${JSON.stringify(itemObject, undefined, 4)}`);
+  }
+  return itemObject.wordDataArray[0].str;
 }
 
 function getItemImageUrl(itemName="") {
