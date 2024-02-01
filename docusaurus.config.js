@@ -3,7 +3,7 @@
 
 require('dotenv').config();
 
-const BASE_URL = '/';
+const BASE_URL = '/luminescent-team-dev/';
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -87,6 +87,7 @@ const config = {
               pokemonRedirectComponent: '@site/src/components/common/RedirectComponent.jsx',
               listComponent: '@site/src/pages/_dexlist.jsx',
               wrapperComponent: '@site/src/components/Pokedex2/PokedexPageWrapper.jsx',
+              mapComponent: '@site/src/pages/Mapper.jsx',
             },
           ],
         ]
