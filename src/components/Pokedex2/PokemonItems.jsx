@@ -3,8 +3,10 @@ import { Box, Typography, Modal } from '@mui/material';
 import { getPokemon } from "../../../plugins/pokedex-data-plugin/dex/pokemon";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { getItemImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
+import { useGlobalState } from '../common/GlobalState';
 
-export const PokemonItems = ({ pokemonId }) => {
+export const PokemonItems = ({ item1, item2, item3 }) => {
+  const [globalState, updateMode] = useGlobalState();
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -12,11 +14,6 @@ export const PokemonItems = ({ pokemonId }) => {
   const handleClose = () => {
     setOpen(false);
   };
-
-  const pokeInfo = getPokemon(pokemonId)
-  const item1 = pokeInfo.item1
-  const item2 = pokeInfo.item2
-  const item3 = pokeInfo.item3
 
   const noItems = item1 === "None" && item2 === item1 && item3 === item1
   const allItems = item1 !== "None" && item2 === item1 && item3 === item1

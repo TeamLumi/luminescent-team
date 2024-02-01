@@ -389,13 +389,13 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
-    "damageType": 1,
-    "desc": "The user attacks and steals the target’s held item simultaneously. The user can’t steal anything if it already holds an item.",
-    "maxPP": 40,
-    "moveId": 168,
-    "name": "Thief",
-    "power": 60,
-    "type": 16,
+    "damageType": 2,
+    "desc": "Unsanitary sludge is hurled at the target. This may also poison the target.",
+    "maxPP": 16,
+    "moveId": 188,
+    "name": "Sludge Bomb",
+    "power": 90,
+    "type": 3,
   },
 }
 `;
@@ -405,13 +405,13 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
-    "damageType": 2,
-    "desc": "The user shoots boiling hot water at its target. This may also leave the target with a burn.",
-    "maxPP": 24,
-    "moveId": 503,
-    "name": "Scald",
-    "power": 80,
-    "type": 10,
+    "damageType": 1,
+    "desc": "This attack move doubles its power if the user is poisoned, burned, or paralyzed.",
+    "maxPP": 32,
+    "moveId": 263,
+    "name": "Facade",
+    "power": 70,
+    "type": 0,
   },
 }
 `;
@@ -422,12 +422,12 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "move": {
     "accuracy": 101,
     "damageType": 0,
-    "desc": "The user stimulates its brain by thinking bad thoughts. This sharply raises the user’s Sp. Atk stat.",
-    "maxPP": 32,
-    "moveId": 417,
-    "name": "Nasty Plot",
+    "desc": "The user goes to sleep for two turns. This fully restores the user’s HP and heals any status conditions.",
+    "maxPP": 16,
+    "moveId": 156,
+    "name": "Rest",
     "power": 0,
-    "type": 16,
+    "type": 13,
   },
 }
 `;
@@ -437,18 +437,66 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
-    "damageType": 1,
-    "desc": "The user attacks everything around it by causing a tremendous explosion. The user faints upon using this move.",
-    "maxPP": 8,
-    "moveId": 153,
-    "name": "Explosion",
-    "power": 250,
+    "damageType": 0,
+    "desc": "If it is the opposite gender of the user, the target becomes infatuated and less likely to attack.",
+    "maxPP": 24,
+    "moveId": 213,
+    "name": "Attract",
+    "power": 0,
     "type": 0,
   },
 }
 `;
 
 exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 15`] = `
+{
+  "level": "tm",
+  "move": {
+    "accuracy": 100,
+    "damageType": 2,
+    "desc": "The user draws power from nature and fires it at the target. This may also lower the target’s Sp. Def stat.",
+    "maxPP": 16,
+    "moveId": 412,
+    "name": "Energy Ball",
+    "power": 90,
+    "type": 11,
+  },
+}
+`;
+
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 16`] = `
+{
+  "level": "tm",
+  "move": {
+    "accuracy": 100,
+    "damageType": 1,
+    "desc": "A restrained attack that prevents the target from fainting. The target is left with at least 1 HP.",
+    "maxPP": 64,
+    "moveId": 206,
+    "name": "False Swipe",
+    "power": 40,
+    "type": 0,
+  },
+}
+`;
+
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 17`] = `
+{
+  "level": "tm",
+  "move": {
+    "accuracy": 101,
+    "damageType": 0,
+    "desc": "The user endures any attack with at least 1 HP. Its chance of failing rises if it is used in succession.",
+    "maxPP": 16,
+    "moveId": 203,
+    "name": "Endure",
+    "power": 0,
+    "type": 0,
+  },
+}
+`;
+
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 18`] = `
 {
   "level": "tm",
   "move": {
@@ -464,7 +512,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
 }
 `;
 
-exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 16`] = `
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 19`] = `
 {
   "level": "tm",
   "move": {
@@ -480,7 +528,23 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
 }
 `;
 
-exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 17`] = `
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 20`] = `
+{
+  "level": "tm",
+  "move": {
+    "accuracy": 101,
+    "damageType": 0,
+    "desc": "While it is asleep, the user randomly uses one of the moves it knows.",
+    "maxPP": 16,
+    "moveId": 214,
+    "name": "Sleep Talk",
+    "power": 0,
+    "type": 0,
+  },
+}
+`;
+
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 21`] = `
 {
   "level": "tm",
   "move": {
@@ -496,7 +560,39 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
 }
 `;
 
-exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 18`] = `
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 22`] = `
+{
+  "level": "tm",
+  "move": {
+    "accuracy": 85,
+    "damageType": 0,
+    "desc": "The user enrages and confuses the target. However, this also sharply raises the target’s Attack stat.",
+    "maxPP": 24,
+    "moveId": 207,
+    "name": "Swagger",
+    "power": 0,
+    "type": 0,
+  },
+}
+`;
+
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 23`] = `
+{
+  "level": "tm",
+  "move": {
+    "accuracy": 101,
+    "damageType": 0,
+    "desc": "The user creates a substitute for itself using some of its HP. The substitute serves as the user’s decoy.",
+    "maxPP": 16,
+    "moveId": 164,
+    "name": "Substitute",
+    "power": 0,
+    "type": 0,
+  },
+}
+`;
+
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 24`] = `
 {
   "level": "tm",
   "move": {
@@ -512,7 +608,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
 }
 `;
 
-exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 19`] = `
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 25`] = `
 {
   "level": "tm",
   "move": {
@@ -523,6 +619,38 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
     "moveId": 70,
     "name": "Strength",
     "power": 100,
+    "type": 0,
+  },
+}
+`;
+
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 26`] = `
+{
+  "level": "tm",
+  "move": {
+    "accuracy": 100,
+    "damageType": 1,
+    "desc": "The user attacks with a punch that may lower the target’s Defense stat. It’s also one of the Pokétch’s hidden moves.",
+    "maxPP": 24,
+    "moveId": 249,
+    "name": "Rock Smash",
+    "power": 60,
+    "type": 1,
+  },
+}
+`;
+
+exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM moves when one or more TMs are learned 27`] = `
+{
+  "level": "tm",
+  "move": {
+    "accuracy": 101,
+    "damageType": 0,
+    "desc": "The user is roused, and its Attack and Sp. Atk stats increase.",
+    "maxPP": 48,
+    "moveId": 526,
+    "name": "Work Up",
+    "power": 0,
     "type": 0,
   },
 }

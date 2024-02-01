@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box } from '@mui/system';
 import { Typography, Modal } from '@mui/material';
 import { getAbilityIdFromAbilityName, getAbilityInfo } from '../../utils/dex/ability';
+import { useGlobalState } from '../common/GlobalState';
 
 export const PokemonAbilities = ({ abilityName1, abilityName2, abilityNameHidden }) => {
   const allAbilitiesAreEqual = abilityName1 === abilityName2 && abilityName2 === abilityNameHidden;
@@ -44,6 +45,7 @@ export const PokemonAbilities = ({ abilityName1, abilityName2, abilityNameHidden
 };
 
 export const PokemonAbility = ({ abilityName, isHiddenAbility, needsSpacing }) => {
+  const [globalState, updateMode] = useGlobalState();
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -77,7 +79,7 @@ export const PokemonAbility = ({ abilityName, isHiddenAbility, needsSpacing }) =
         }}
         >
           <Typography variant="h5" style={{ textAlign: 'center' }}>{abilityName}</Typography>
-          <Typography variant="h6">{getAbilityInfo(getAbilityIdFromAbilityName(abilityName))}</Typography>
+          <Typography variant="h6">{getAbilityInfo(getAbilityIdFromAbilityName(abilityName, globalState.mode), globalState.mode)}</Typography>
         </Box>
       </Modal>
     </div>
