@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Box, Container, Typography } from '@mui/material';
 import { ImageWithFallback } from '../common/ImageWithFallback';
-import { getPokemonIdFromName } from '../../utils/dex/name';
+import { getPokemonIdFromName } from '../../../plugins/pokedex-data-plugin/dex/name';
 import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../../plugins/pokedex-data-plugin/dex/name';
 import { useGlobalState } from '../common/GlobalState';
 
