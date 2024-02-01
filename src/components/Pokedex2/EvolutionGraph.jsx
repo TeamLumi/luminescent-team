@@ -39,6 +39,30 @@ export default function EvolutionGraph(props) {
     evolvesInto: [],
   };
 
+  const DoesNotEvolve = () => {
+    return (
+      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+        <span className="col col-12">
+          <Typography variant="h6" sx={{ margin: 'auto' }}>
+            Does Not Evolve
+          </Typography>
+        </span>
+      </div>
+    )
+  }
+
+  const AlcremieEvo = () => {
+    return (
+      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+        <span className="col col-12">
+          <Typography variant="h6" sx={{ margin: 'auto' }}>
+            <a href='https://luminescent.team/docs/special-evolutions#alcremie'>Alcremie Evolutions</a>
+          </Typography>
+        </span>
+      </div>
+    )
+  }
+
   let fullEvolutionTree = (
     <div className="container">
       <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
@@ -49,18 +73,14 @@ export default function EvolutionGraph(props) {
         </span>
       </div>
 
-      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-        <span className="col col-12">
-          <Typography variant="h6" sx={{ margin: 'auto' }}>
-            Does Not Evolve
-          </Typography>
-        </span>
-      </div>
+      {monsNo !== 868 && monsNo !== 869
+        ? (<DoesNotEvolve />) : (<AlcremieEvo />)
+      }
     </div>
   );
 
   const secondEvolvesInto = props.evolutionTree.evolvesInto;
-  if (secondEvolvesInto.length === 0) {
+  if (secondEvolvesInto.length === 0 || monsNo === 868 || monsNo === 869) {
     return fullEvolutionTree
   }
 
