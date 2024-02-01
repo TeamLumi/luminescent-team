@@ -79,23 +79,23 @@ describe('Dex utils function tests', () => {
   });
   describe('getImage', () => {
     test('should return the correct image URL with default values', () => {
-      expect(getImage()).toEqual('/img/pm0000_00_00_00_L.webp');
+      expect(getImage()).toEqual('/img/pkm/pm0000_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and default formindex', () => {
-      expect(getImage(25)).toEqual('/img/pm0025_00_00_00_L.webp');
+      expect(getImage(25)).toEqual('/img/pkm/pm0025_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and formindex', () => {
-      expect(getImage(25, 3)).toEqual('/img/pm0025_03_00_00_L.webp');
+      expect(getImage(25, 3)).toEqual('/img/pkm/pm0025_03_00_00_L.webp');
     });
 
     test('should pad monsno with leading zeros', () => {
-      expect(getImage(123)).toEqual('/img/pm0123_00_00_00_L.webp');
+      expect(getImage(123)).toEqual('/img/pkm/pm0123_00_00_00_L.webp');
     });
 
     test('should pad formindex with leading zeros', () => {
-      expect(getImage(25, 9)).toEqual('/img/pm0025_09_00_00_L.webp');
+      expect(getImage(25, 9)).toEqual('/img/pkm/pm0025_09_00_00_L.webp');
     });
   });
 
@@ -144,4 +144,19 @@ describe('Dex utils function tests', () => {
       expect(actualFormMap).toEqual(expectedFormMap);
     });
   });
+
+  describe('3.0 Functions Tests', () => {
+    const MODE = "3.0";
+    test('should return the correct Pokemon ID for a different monsno and formno', () => {
+      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1216);
+    });
+    it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
+      const result = getPokemonIdFromFormMap(3, 3, MODE); //Clone Venusaur
+      const result2 = getPokemonIdFromFormMap(3, 0, MODE); //Venusaur
+      const CLONE_VENUSAUR = 1028;
+      const VENUSAUR = 3;
+      expect(result).toBe(CLONE_VENUSAUR);
+      expect(result2).toBe(VENUSAUR);
+    });
+  })
 });

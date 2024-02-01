@@ -61568,6 +61568,22 @@
     ],
     "legendpoke": [
         {
+            "monsNo": 94,
+            "formNo": 3,
+            "isFixedEncSeq": 0,
+            "encSeq": "",
+            "isFixedBGM": 0,
+            "bgmEvent": "",
+            "isFixedBtlBg": 0,
+            "btlBg": -1,
+            "isFixedSetupEffect": 0,
+            "setupEffect": 0,
+            "waza1": 506,
+            "waza2": 139,
+            "waza3": 212,
+            "waza4": 109
+        },
+        {
             "monsNo": 144,
             "formNo": -1,
             "isFixedEncSeq": 1,
@@ -61722,10 +61738,10 @@
             "btlBg": -1,
             "isFixedSetupEffect": 0,
             "setupEffect": 0,
-            "waza1": -1,
-            "waza2": -1,
-            "waza3": -1,
-            "waza4": -1
+            "waza1": 221,
+            "waza2": 105,
+            "waza3": 143,
+            "waza4": 241
         },
         {
             "monsNo": 251,
@@ -61738,10 +61754,10 @@
             "btlBg": -1,
             "isFixedSetupEffect": 0,
             "setupEffect": 0,
-            "waza1": -1,
-            "waza2": -1,
-            "waza3": -1,
-            "waza4": -1
+            "waza1": 417,
+            "waza2": 345,
+            "waza3": 791,
+            "waza4": 94
         },
         {
             "monsNo": 377,
@@ -62904,6 +62920,22 @@
             "bgmEvent": "BA017",
             "isFixedBtlBg": 0,
             "btlBg": -1,
+            "isFixedSetupEffect": 0,
+            "setupEffect": 0,
+            "waza1": -1,
+            "waza2": -1,
+            "waza3": -1,
+            "waza4": -1
+        },
+        {
+            "monsNo": 609,
+            "formNo": -1,
+            "isFixedEncSeq": 1,
+            "encSeq": "tokushu08",
+            "isFixedBGM": 1,
+            "bgmEvent": "D25",
+            "isFixedBtlBg": 1,
+            "btlBg": 25,
             "isFixedSetupEffect": 0,
             "setupEffect": 0,
             "waza1": -1,

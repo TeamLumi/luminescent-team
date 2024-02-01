@@ -123,13 +123,13 @@ export const EVOLUTION_METHOD_DETAILS = {
   },
   19: {
     method: `Hold ${REPLACE_STRING} & Day`,
-    requiresLevel: true,
+    requiresLevel: false,
     parameterType: 'Item',
     function: getItemString,
   },
   20: {
     method: `Hold ${REPLACE_STRING} & Night`,
-    requiresLevel: true,
+    requiresLevel: false,
     parameterType: 'Item',
     function: getItemString,
   },

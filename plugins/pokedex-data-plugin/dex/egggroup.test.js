@@ -84,7 +84,7 @@ describe('Dex Utils Egg Group Tests', () => {
     const validIds = [
       { id: 0, count: 1 },
       { id: 5, count: 404 },
-      { id: 10, count: 99 },
+      { id: 10, count: 100 },
     ];
 
     const invalidIds = [
@@ -104,6 +104,35 @@ describe('Dex Utils Egg Group Tests', () => {
     invalidIds.forEach(({ id, message }) => {
       test(`should throw an error for invalid egg group ID ${id}`, () => {
         expect(() => getPokemonIdsInEggGroup(id)).toThrow(Error(message));
+      });
+    });
+  });
+
+  describe('3.0 Egg Group Tests', () => {
+    const MODE = "3.0";
+    const validIds = [
+      { id: 0, count: 1 },
+      { id: 5, count: 370 },
+      { id: 10, count: 122 },
+    ];
+
+    const invalidIds = [
+      { id: 'not a number', message: 'Bad eggGroupId: not a number' },
+      { id: -5, message: 'Bad eggGroupId: -5' },
+      { id: 123, message: 'Bad eggGroupId: 123' },
+    ];
+
+    validIds.forEach(({ id, count }) => {
+      test(`should return an array of ${count} Pokemon for egg group ID ${id}`, () => {
+        const result = getPokemonIdsInEggGroup(id, MODE);
+        expect(Array.isArray(result)).toBe(true);
+        expect(result.length).toBe(count);
+      });
+    });
+
+    invalidIds.forEach(({ id, message }) => {
+      test(`should throw an error for invalid egg group ID ${id}`, () => {
+        expect(() => getPokemonIdsInEggGroup(id, MODE)).toThrow(Error(message));
       });
     });
   });

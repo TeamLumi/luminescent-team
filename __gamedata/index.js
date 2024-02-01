@@ -1,6 +1,5 @@
 //All the important numbers
 import PersonalTable from './PersonalTable.json';
-import GrowTable from './GrowTable.json';
 import EvolveTable from './EvolveTable.json';
 import EggMovesTable from './TamagoWazaTable.json';
 import LearnsetTable from './WazaOboeTable.json';
@@ -45,7 +44,6 @@ import FixedShop from './fixed_shop.json';
 
 export {
   PersonalTable,
-  GrowTable,
   EvolveTable,
   EggMovesTable,
   LearnsetTable,
