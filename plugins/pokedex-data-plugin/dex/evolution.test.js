@@ -38,7 +38,7 @@ function getAllEvoImageData(mode = "2.0") {
         for (let h = 0; h < evolvesInto[j].evolutionDetails.methodIds.length; h++) {
           const methodNo = evolvesInto[j].evolutionDetails.methodIds[h];
           const methodParameter = evolvesInto[j].evolutionDetails.methodParameters[h];
-          const [result, evoMethod] = getEvolutionMethodDetail(methodNo, methodParameter, mode);
+          const [result, evoMethod] = getEvolutionMethodDetail(methodNo, methodParameter, mode, null, pokemonId);
           if (result.parameterType !== "Item") {
             continue;
           }
