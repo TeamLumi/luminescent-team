@@ -93,6 +93,7 @@ export default function EvolutionGraph(props) {
   };
 
   const renderItemImage = (evoMethod, methodParameter, methodDetail) => {
+    const [globalState, updateMode] = useGlobalState();
     const evoFunction = methodDetail.function.name;
     const evoImages = [];
     if (methodDetail.method.includes(LEVEL)) {
@@ -100,7 +101,7 @@ export default function EvolutionGraph(props) {
     } else if (evoFunction === getItemString.name) {
       evoImages.push(getItemImageUrl(evoMethod));
     } else if (evoFunction === getMoveString.name) {
-      const moveType = getTypeName(getMoveProperties(methodParameter).type);
+      const moveType = getTypeName(getMoveProperties(methodParameter, globalState.mode).type);
       evoImages.push(getTMImageUrl(moveType));
     } else if (evoFunction === getPokemonName.name) {
       evoImages.push(`img/${getPokemonImageFilename(methodParameter, 0)}`);

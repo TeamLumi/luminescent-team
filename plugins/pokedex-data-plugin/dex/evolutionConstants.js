@@ -338,16 +338,16 @@ const EVOLUTION_METHOD_DETAILS = {
     function: getItemString,
   },
   55: {
-    method: `Do Nothing`,
+    method: `Knows ${REPLACE_STRING} and RNG`,
     requiresLevel: false,
-    parameterType: 'None',
-    function: doNothing,
+    parameterType: 'Move',
+    function: getMoveString,
   },
   56: {
-    method: `Do Nothing`,
+    method: `Knows ${REPLACE_STRING} and RNG`,
     requiresLevel: false,
-    parameterType: 'None',
-    function: doNothing,
+    parameterType: 'Move',
+    function: getMoveString,
   },
   57: {
     method: `Receive ${REPLACE_STRING} Damage & Male`,
