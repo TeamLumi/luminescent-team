@@ -9,6 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { PokemonInfoButton } from './PokedexInfoButton';
 import { useGlobalState } from '../common/GlobalState';
 import ModeSwitch from './ModeSwitch';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 export const PokemonListPageContent = ({ pokemonList, pokemonList3 }) => {
   const [globalState, updateMode] = useGlobalState();
@@ -57,7 +58,13 @@ const PokemonListEntry = ({ pokemon, style }) => {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <img src={useBaseUrl(`/img/pkm/${pokemon.imageSrc}`)} height={48} />
+            <ImageWithFallback
+              src={useBaseUrl(`/img/pkm/${pokemon.imageSrc}`)}
+              fallbackSrc={useBaseUrl(`/img/pkm/${pokemon.forms[0].imageSrc}`)}
+              height={48}
+              alt={pokemon.name}
+              title={pokemon.name}
+            />
           </ListItemIcon>
           <Typography>{pokemon.name}</Typography>
           <Box display="flex" flexDirection="row" marginX="8px">

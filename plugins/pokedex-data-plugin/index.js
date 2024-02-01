@@ -31,6 +31,7 @@ function pokedexDataPlugin(context, options) {
         ability2: p.ability2,
         abilityH: p.abilityH,
         baseStats: p.baseStats,
+        forms: p.forms,
       }));
       const pokemons3 = Object.values(FORM_MAP3)
         .flat()
@@ -49,6 +50,7 @@ function pokedexDataPlugin(context, options) {
         ability2: p3.ability2,
         abilityH: p3.abilityH,
         baseStats: p3.baseStats,
+        forms: p3.forms,
       }));
 
       return {
