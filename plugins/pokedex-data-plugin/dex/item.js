@@ -1,5 +1,6 @@
-const { itemNames } = require('./data');
-const { itemNames3 } = require('./data3');
+const { itemNames, ItemTable } = require('./data');
+const { itemNames3, ItemTable3 } = require('./data3');
+const { ITEM_POCKET_NAMES } = require('./itemConstants')
 
 function getItemIdFromItemName(itemName, mode = "2.0") {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
@@ -33,4 +34,30 @@ function getItemImageUrl(itemName="") {
 function getTMImageUrl(moveType="") {
   return `/img/tms/${moveType}.webp`
 }
-module.exports = { getItemIdFromItemName, getItemString, getItemImageUrl, getTMImageUrl };
+
+function getItemPocketId(itemId = 1, mode = "2.0") {
+  const itemTable = mode === "2.0" ? ItemTable : ItemTable3;
+  if (itemId > itemTable.Item.length) {
+    throw Error(`Bad Item Number: ${itemId}`)
+  }
+  const itemObject = itemTable.Item[itemId];
+  try {
+    itemObject.fld_pocket
+  } catch (error) {
+    throw Error(`This item does not have a Field Pocket Id: ${itemId}  ${JSON.stringify(itemObject, undefined, 4)}`);
+  }
+  return itemObject.fld_pocket;
+}
+
+function getItemPocketName(pocketId = 0) {
+  return ITEM_POCKET_NAMES[pocketId]
+}
+
+module.exports = {
+  getItemIdFromItemName,
+  getItemString,
+  getItemImageUrl,
+  getTMImageUrl,
+  getItemPocketId,
+  getItemPocketName,
+};
