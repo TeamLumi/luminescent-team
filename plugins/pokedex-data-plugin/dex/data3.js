@@ -23,6 +23,7 @@ const typeName3 = require('../../../__3.0gamedata/english_ss_typename.json');
 const moveNames3 = require('../../../__3.0gamedata/english_ss_wazaname.json');
 const moveInfo3 = require('../../../__3.0gamedata/english_ss_wazainfo.json');
 const itemNames3 = require('../../../__3.0gamedata/english_ss_itemname.json');
+const itemInfo3 = require('../../../__3.0gamedata/english_ss_iteminfo.json');
 
 //Custom files
 const moveEnum3 = require('../../../__3.0gamedata/moveEnum.json');
@@ -50,6 +51,7 @@ module.exports = {
   moveInfo3,
   ItemTable3,
   itemNames3,
+  itemInfo3,
   moveEnum3,
   smogonMoves3,
   tutorMoves3

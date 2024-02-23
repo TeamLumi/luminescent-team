@@ -1,5 +1,5 @@
-const { itemNames, ItemTable } = require('./data');
-const { itemNames3, ItemTable3 } = require('./data3');
+const { itemNames, ItemTable, itemInfo } = require('./data');
+const { itemNames3, ItemTable3, itemInfo3 } = require('./data3');
 const { ITEM_POCKET_NAMES } = require('./itemConstants')
 
 function getItemIdFromItemName(itemName, mode = "2.0") {
@@ -53,6 +53,17 @@ function getItemPocketName(pocketId = 0) {
   return ITEM_POCKET_NAMES[pocketId]
 }
 
+function getItemDescription(id, mode = "2.0") {
+  const itemInfo = mode === "2.0" ? itemInfo : itemInfo3
+  const wordData = itemInfo.labelDataArray[id]?.wordDataArray;
+  if (wordData === null || wordData === undefined || wordData.length === 0) return 'None';
+  const description = wordData.reduce((itemDescription, currentString) => {
+    return itemDescription + currentString.str + ' ';
+  }, '');
+
+  return description.trim();
+}
+
 module.exports = {
   getItemIdFromItemName,
   getItemString,
@@ -60,4 +71,5 @@ module.exports = {
   getTMImageUrl,
   getItemPocketId,
   getItemPocketName,
+  getItemDescription,
 };
