@@ -115,7 +115,11 @@ No. If you have other mods, your game may work, but we will offer no support if 
 
 ### What Switch Emulator should I use?
 
-We personally suggest Ryujinx. Yuzu has frequent graphical bugs and is notably unstable, but technically both of them should work. In preparation for 3.0 (where the full national dex will be available), we do recommend moving off of Yuzu — due to a maximum file read limit, it will not be able to run the mod once every single Pokémon has been added.
+Ryujinx is the only current option that we support.
+
+### What about Yuzu?
+
+Due to the shutdown of the Yuzu project and the surrounding circumstances, Team Luminescent will not be supporting the use of Yuzu going forward as it is no longer available nor should be distributed.
 
 ### Can I play this on my Switch?
 
@@ -125,6 +129,6 @@ If it's modded, yes.
 
 We're not a Switch hacking group. First [check to see if it's patched](https://ismyswitchpatched.com/); if it is, you're out of luck. Don't tell us about it. If it's not, proceed to [this homebrew installation guide](https://nh-server.github.io/switch-guide/).
 
-### Can you help me set up Ryujinx/Yuzu?
+### Can you help me set up Ryujinx?
 
-No. We can help you install Luminescent if you have read through everything and followed our instructions and it didn't work, but setting up the emulators is outside the scope of our assistance. Find their Discord servers and ask for help there.
+No. We can help you install Luminescent if you have read through everything and followed our instructions and it didn't work, but setting up the emulator is outside the scope of our assistance. Find their Discord server and ask for help there.
