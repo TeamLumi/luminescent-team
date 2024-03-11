@@ -179,7 +179,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       </Container>
 
       <Container>
-        <EvolutionGraph evolutionTree={pokemon.evolutionTree}/>
+        <EvolutionGraph pokemonID={pokemon.id}/>
       </Container>
 
       <Container>
