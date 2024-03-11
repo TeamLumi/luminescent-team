@@ -16,6 +16,46 @@ import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
 import { getTechMachineLearnset } from '../../utils/dex/moves';
 import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../utils/dex/name';
+import { PokemonLocations } from './PokemonLocations';
+
+const tempLocationData = [
+  {
+    name: "Jubilife City",
+    method: "Grass",
+    level: 15,
+    chance: "20%"
+  },
+  {
+    name: "Lumiose City",
+    method: "Sewers",
+    level: 55,
+    chance: "100%"
+  },
+  {
+    name: "Jubilife City",
+    method: "Grass",
+    level: 15,
+    chance: "20%"
+  },
+  {
+    name: "Lumiose City",
+    method: "Sewers",
+    level: 55,
+    chance: "100%"
+  },
+  {
+    name: "Jubilife City",
+    method: "Grass",
+    level: 15,
+    chance: "20%"
+  },
+  {
+    name: "Lumiose City",
+    method: "Sewers",
+    level: 55,
+    chance: "100%"
+  },
+];
 
 function padNumberWithZeros(number) {
   const strNumber = String(number);
@@ -84,20 +124,63 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
         />
       </Container>
 
-      <Box display="grid" gridTemplateColumns="repeat(9, 1fr)" gap={1}>
-        <Box className={style.secondPokeColumn} gridColumn="span 5">
-          <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
+      <Container>
+        <Box
+          display="grid"
+          gridTemplateColumns={{
+            sm: "1fr", 
+            md: "repeat(2, 1fr)",
+            lg: "repeat(3, 1fr)"
+          }}
+          justifyContent={{
+            sm: "center",
+            md: "unset",
+          }}
+          justifyItems={{
+            sm: "center",
+            md: "unset",
+          }}
+          gap={1}
+          marginTop="25px"
+          marginBottom="12px"
+        >
+          <Box gridColumn="span 1" width={{sm: "80%", md: "unset"}} className={style.secondPokeColumn}>
+            <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
+          </Box>
+          <Box display={{xs: "none", sm: "none", md: "none", lg: "unset"}}>
+            <PokemonLocations locations={tempLocationData} />
+          </Box>
+          <Box width={{sm: "80%", md: "unset"}} gridColumn="span 1">
+            <Box display="flex" justifyContent="center">
+              <Typography variant='h6'>Additional Info:</Typography>
+            </Box>
+            <Container
+              sx={{
+                border: "2px solid var(--ifm-table-border-color)",
+                borderRadius: "5px",
+                height: "244px", // TODO Set this to be smaller when in mobile
+                padding: "12px !important"
+              }}
+            >
+              <PokemonItems pokemonId={pokemon.id}/>
+              <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginTop: '16px' }} />
+              <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} sx={{ marginTop: '16px' }} />
+            </Container>
+          </Box>
+          <Box
+            display={{xs: "grid", lg: "none"}}
+            justifyItems="center"
+            gridColumn={{sm: "span 1", md: "span 2"}}
+            width={{sm: "80%", md: "unset"}}
+          >
+            <PokemonLocations locations={tempLocationData} />
+          </Box>
         </Box>
-        <Box className={style.secondPokeColumn} gridColumn="span 4">
-          <PokemonItems pokemonId={pokemon.id}/>
-          <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginTop: '16px' }} />
-          <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} sx={{ marginTop: '16px' }} />
-        </Box>
-      </Box>
+      </Container>
 
-      <div className="container">
-        <EvolutionGraph pokemonID={pokemon.id}/>
-      </div>
+      <Container>
+        <EvolutionGraph evolutionTree={pokemon.evolutionTree}/>
+      </Container>
 
       <Container>
         <PokemonAlternativeFormsList pokemonForms={pokemon.forms} />

@@ -22,7 +22,7 @@ export const PokemonItems = ({ pokemonId }) => {
   const allItems = item1 !== "None" && item2 === item1 && item3 === item1
 
   return (
-    <div style={{ marginTop: '30px' }}>
+    <div>
       <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>
         <>
           <Box gridColumn="span 5">
