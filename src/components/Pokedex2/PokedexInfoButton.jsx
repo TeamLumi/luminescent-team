@@ -21,9 +21,6 @@ export const PokemonInfoButton = () => {
               <Typography variant='h5' style={{display: 'flex', justifyContent: 'center'}}>
                 Features
               </Typography>
-              <Typography variant='h6' style={{color: 'red', textDecoration: 'underline'}}>
-                Please note: On Firefox, the evolution graph may display improperly for mobile devices or thin windows.
-              </Typography>
               <Typography variant="h6">
                 This site documents all Pokémon available in Luminescent Platinum 2.0F, including their types, abilities, stats, evolution methods, forms, 
                 wild held items, and movesets. It currently does not include locations, but you may use our <a href="https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit">Pokémon 
