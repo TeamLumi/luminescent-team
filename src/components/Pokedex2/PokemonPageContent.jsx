@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './styles.module.css';
 import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
@@ -70,6 +70,7 @@ function padNumberWithZeros(number) {
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(pokemon.id)
+  const [showMoreLocations, setShowMoreLocations] = useState(false);
   return (
     <Container>
       <Container>
@@ -130,7 +131,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
           gridTemplateColumns={{
             sm: "1fr", 
             md: "repeat(2, 1fr)",
-            lg: "repeat(3, 1fr)"
+            lg: showMoreLocations ? "repeat(2, 1fr)" : "repeat(3, 1fr)"
           }}
           justifyContent={{
             sm: "center",
@@ -147,8 +148,12 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
           <Box gridColumn="span 1" width={{sm: "80%", md: "unset"}} className={style.secondPokeColumn}>
             <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
           </Box>
-          <Box display={{xs: "none", sm: "none", md: "none", lg: "unset"}}>
-            <PokemonLocations locations={tempLocationData} />
+          <Box display={{xs: "none", sm: "none", md: "none", lg: showMoreLocations ? "none" : "unset"}}>
+            <PokemonLocations
+              locations={tempLocationData}
+              showMore={showMoreLocations}
+              setShowMoreLocations={setShowMoreLocations}
+            />
           </Box>
           <Box width={{sm: "80%", md: "unset"}} gridColumn="span 1">
             <Box display="flex" justifyContent="center">
@@ -168,12 +173,16 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
             </Container>
           </Box>
           <Box
-            display={{xs: "grid", lg: "none"}}
+            display={{xs: "grid", lg: showMoreLocations ? "grid" : "none"}}
             justifyItems="center"
-            gridColumn={{sm: "span 1", md: "span 2"}}
+            gridColumn={{sm: "span 1", md: "span 2", lg: showMoreLocations ? "span 2" : "unset"}}
             width={{sm: "80%", md: "unset"}}
           >
-            <PokemonLocations locations={tempLocationData} />
+            <PokemonLocations
+              locations={tempLocationData}
+              showMore={showMoreLocations}
+              setShowMoreLocations={setShowMoreLocations}
+            />
           </Box>
         </Box>
       </Container>
