@@ -17,45 +17,7 @@ import { PokemonInfoButton } from './PokedexInfoButton';
 import { getTechMachineLearnset } from '../../utils/dex/moves';
 import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../utils/dex/name';
 import { PokemonLocations } from './PokemonLocations';
-
-const tempLocationData = [
-  {
-    name: "Jubilife City",
-    method: "Grass",
-    level: 15,
-    chance: "20%"
-  },
-  {
-    name: "Lumiose City",
-    method: "Sewers",
-    level: 55,
-    chance: "100%"
-  },
-  {
-    name: "Jubilife City",
-    method: "Grass",
-    level: 15,
-    chance: "20%"
-  },
-  {
-    name: "Lumiose City",
-    method: "Sewers",
-    level: 55,
-    chance: "100%"
-  },
-  {
-    name: "Jubilife City",
-    method: "Grass",
-    level: 15,
-    chance: "20%"
-  },
-  {
-    name: "Lumiose City",
-    method: "Sewers",
-    level: 55,
-    chance: "100%"
-  },
-];
+import { getRoutesFromPokemonId } from '../../utils/dex/encounters';
 
 function padNumberWithZeros(number) {
   const strNumber = String(number);
@@ -70,6 +32,7 @@ function padNumberWithZeros(number) {
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(pokemon.id)
+  const pokemon_locations = getRoutesFromPokemonId(pokemon.id);
   const [showMoreLocations, setShowMoreLocations] = useState(false);
   return (
     <Container>
@@ -150,7 +113,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
           </Box>
           <Box display={{xs: "none", sm: "none", md: "none", lg: showMoreLocations ? "none" : "unset"}}>
             <PokemonLocations
-              locations={tempLocationData}
+              locations={pokemon_locations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
             />
@@ -179,7 +142,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
             width={{sm: "80%", md: "unset"}}
           >
             <PokemonLocations
-              locations={tempLocationData}
+              locations={pokemon_locations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
             />
