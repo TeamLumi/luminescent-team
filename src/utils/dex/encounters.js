@@ -1,7 +1,19 @@
-import { pokemonLocations } from '../../../__gamedata';
+import { pokemonLocations, staticLocations } from '../../../__gamedata';
 import {
   ENC_TYPES, GREAT_MARSH_MAP,
 } from './encountersConstants';
+import { getPokemonName } from './name';
+
+function getEncounterObject(encounter) {
+  return {
+    name: encounter.name,
+    method: encounter.method,
+    chance: parseFloat(encounter.chance),
+    minLevel: encounter.minLevel,
+    maxLevel: encounter.maxLevel,
+    link: encounter.link ?? null,
+  };
+}
 
 function containsAllTOD(todEncounters) {
   const desiredEncounterTypes = ["Morning", "Day", "Night"];
@@ -53,30 +65,12 @@ function combineEncounterTypes(encounterData) {
     const key = `${encounter.name}_${encounter.method}`;
     if (isTOD && !isBadArea) {
       if (!todEncounters[encounter.name]) {
-        todEncounters[encounter.name] = [{
-          name: encounter.name,
-          method: encounter.method,
-          chance: parseFloat(encounter.chance),
-          minLevel: encounter.minLevel,
-          maxLevel: encounter.maxLevel,
-        }]
+        todEncounters[encounter.name] = [getEncounterObject(encounter)]
       } else {
-        todEncounters[encounter.name].push({
-          name: encounter.name,
-          method: encounter.method,
-          chance: parseFloat(encounter.chance),
-          minLevel: encounter.minLevel,
-          maxLevel: encounter.maxLevel,
-        })
+        todEncounters[encounter.name].push(getEncounterObject(encounter))
       }
     } else if (!combinedEncounters[key] && !isBadArea) {
-      combinedEncounters[key] = {
-        name: encounter.name,
-        method: encounter.method,
-        chance: parseFloat(encounter.chance),
-        minLevel: encounter.minLevel,
-        maxLevel: encounter.maxLevel,
-      };
+      combinedEncounters[key] = getEncounterObject(encounter);
     } else if (!isBadArea) {
       combinedEncounters[key].chance += parseFloat(encounter.chance);
     }
@@ -115,7 +109,15 @@ function combineEncounterTypes(encounterData) {
 }
 
 function getRoutesFromPokemonId(pokemonId) {
-  const routes = pokemonLocations[pokemonId] || [];
+  const pokemonName = getPokemonName(pokemonId);
+  let routes = [];
+  if (pokemonLocations[pokemonId] && staticLocations[pokemonName]) {
+    routes = pokemonLocations[pokemonId].concat(staticLocations[pokemonName])
+  } else if (pokemonLocations[pokemonId]) {
+    routes = pokemonLocations[pokemonId]
+  } else {
+    routes = staticLocations[pokemonName]
+  }
 
   const locationRates = routes.map((route) => {
     let method = ENC_TYPES[route.encounterType] ?? route.encounterType;
@@ -131,6 +133,7 @@ function getRoutesFromPokemonId(pokemonId) {
         minLevel: route.minLevel,
         maxLevel: route.maxLevel,
         chance: chance,
+        link: route.link ?? null,
       }
     );
   });

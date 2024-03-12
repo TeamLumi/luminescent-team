@@ -32,3 +32,10 @@ export const GREAT_MARSH_MAP = {
   "Great Marsh - Area 5": "Great Marsh - Areas 5-6",
   "Great Marsh - Area 6": "Great Marsh - Areas 5-6",
 }
+
+export const LINK_KEYS = [
+  "Trade",
+  "Gifts",
+  "Legendaries",
+  "Static"
+]
