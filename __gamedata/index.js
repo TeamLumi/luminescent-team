@@ -8,6 +8,7 @@ import ItemTable from './ItemTable.json';
 
 //All the Location files
 import pokemonLocations from './pokemon_locations.json';
+import staticLocations from './static_pokemon_locations.json';
 
 //All the Pokemon english files
 import basePokemonNames from './english_ss_monsname.json';
@@ -44,6 +45,7 @@ export {
   pokemonDexType,
   pokemonPokedexInfo,
   pokemonLocations,
+  staticLocations,
   natureNames,
   abilityNames,
   abilityInfo,

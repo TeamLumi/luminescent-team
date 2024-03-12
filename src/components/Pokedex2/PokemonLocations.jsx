@@ -1,7 +1,9 @@
 import React from 'react';
 import { Typography, Box, Container, Button } from '@mui/material';
+import { LINK_KEYS } from '../../utils/dex/encountersConstants';
+import Link from '@docusaurus/Link';
 
-export const PokemonLocations = ({ locations, showMore, setShowMoreLocations }) => {
+export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, pokemonName }) => {
   if (locations === undefined) {
     return (
       <Container>
@@ -54,6 +56,7 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations }) 
           <LocationListItem 
             key={`${location.name}-${i}`}
             location={location}
+            pokemonName={pokemonName}
           />
         ))}
       </Container>
@@ -91,7 +94,7 @@ const LocationListHeader = () => (
   </>
 );
 
-const LocationListItem = ({ location }) => {
+const LocationListItem = ({ location, pokemonName }) => {
   return (
     <>
       <Box>
@@ -101,7 +104,15 @@ const LocationListItem = ({ location }) => {
       </Box>
       <Box>
         <Typography>
-          {location.method}
+          {location.link || LINK_KEYS.includes(location.method)
+            ? location.link
+              ? <Link to={location.link}>{location.method}</Link>
+              : <Link
+                  to={`/docs/special-events/${location.method.toLowerCase()}#${pokemonName}`}
+                >
+                  {location.method}
+                </Link>
+            : location.method}
         </Typography>
       </Box>
       <Box>

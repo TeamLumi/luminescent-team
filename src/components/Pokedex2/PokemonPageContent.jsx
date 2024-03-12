@@ -116,6 +116,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
               locations={pokemon_locations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
+              pokemonName={pokemon.name.toLowerCase()}
             />
           </Box>
           <Box width={{sm: "80%", md: "unset"}} gridColumn="span 1">
