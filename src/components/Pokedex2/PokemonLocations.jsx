@@ -12,9 +12,11 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations }) 
 
   if (locations.length === 0) {
     return (
-      <Container>
-        <Typography fontSize="0.9rem">You cannot find this pokemon in this mode.</Typography>
-      </Container>
+      <Box sx={{display: "flex", alignItems: "center", height: "100%"}}>
+        <Typography fontSize="0.9rem">
+          Data for this Pokemon could not be found. Try checking previous evolutions. If you have checked previous evolutions, please report this on the Discord.
+        </Typography>
+      </Box>
     );
   }
 
@@ -31,15 +33,20 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations }) 
         sx={{
           display: "grid",
           gridTemplateColumns: {
-            xs: "1fr 1fr .5fr .5fr"
+            xs: "1.5fr 1fr .75fr .5fr"
           },
           alignItems: "center",
           columnGap: "4px",
           rowGap: "8px",
-          border: "2px solid var(--ifm-table-border-color)",
           borderRadius: "5px",
           padding: "12px !important",
-          width: {md: "80%", lg: showMore ? "80%" : "unset"}
+          width: {md: "80%", lg: showMore ? "80%" : "unset"},
+          maxHeight: showMore || locations.length < 5 ? "unset" : "244px",
+          overflow: "hidden",
+          WebkitMaskImage: showMore || locations.length < 5 ? "unset" : "linear-gradient(to bottom, black 75%, transparent 100%)",
+          maskImage: showMore || locations.length < 5 ? "unset" : "linear-gradient(to bottom, black 75%, transparent 100%)",
+          borderImage: showMore || locations.length < 5 ? "unset" : "linear-gradient(to bottom, var(--ifm-table-border-color) 2px, transparent 2px) 0 0 100%",
+          border: "2px solid var(--ifm-table-border-color)", // Add this line      
         }}
       >
         <LocationListHeader />
@@ -50,9 +57,11 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations }) 
           />
         ))}
       </Container>
-      <Button onClick={() => setShowMoreLocations(!showMore)}>
-        {showMore ? "Show Less" : "Show More"}
-      </Button>
+      {locations.length >= 5 && (
+        <Button sx={{justifySelf: "center"}} onClick={() => setShowMoreLocations(!showMore)}>
+          {showMore ? "Show Less" : "Show More"}
+        </Button>
+      )}
     </>
   )
 };
@@ -75,7 +84,7 @@ const LocationListHeader = () => (
       </Typography>
     </Box>
     <Box>
-      <Typography fontSize="1.125rem">
+      <Typography display="flex" justifyContent="center" fontSize="1.125rem">
         Chance
       </Typography>
     </Box>
@@ -97,12 +106,15 @@ const LocationListItem = ({ location }) => {
       </Box>
       <Box>
         <Typography display="flex" justifyContent="center">
-          {location.level}
+          {location.minLevel !== location.maxLevel ?
+            `${location.minLevel} - ${location.maxLevel}` :
+            location.minLevel
+          }
         </Typography>
       </Box>
       <Box>
-        <Typography>
-          {location.chance}
+        <Typography display="flex" justifyContent="center">
+          {Math.ceil(location.chance)}%
         </Typography>
       </Box>
     </>
