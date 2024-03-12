@@ -3,14 +3,24 @@ import {
   ENC_TYPES, GREAT_MARSH_MAP,
 } from './encountersConstants';
 
+function containsAllTOD(todEncounters) {
+  const desiredEncounterTypes = ["morning", "day", "night"];
+
+  const hasAllEncounterTypes = desiredEncounterTypes.every(type =>
+    todEncounters.some(encounter => encounter.encounterRate === type)
+  );
+  return hasAllEncounterTypes;
+}
+
 function combineEncounterTypes(encounterData) {
   const combinedEncounters = {};
+  const todEncounters = {};
 
   encounterData.forEach((encounter) => {
     const isGreatMarsh = encounter.name.includes("Great Marsh");
     const isChateau = encounter.name.includes("Old Chateau");
-    const isTCave = encounter.name.includes("Turnback Cave")
-    const isTCaveEntrance = encounter.name.includes("Turnback Cave - Entrance")
+    const isTCave = encounter.name.includes("Turnback Cave");
+    const isTCaveEntrance = encounter.name.includes("Turnback Cave - Entrance");
     const isInside = /Mt\. Coronet(?! Summit|Snow Area)|Mine|Temple|Gate|Cave|Ravaged Path|Victory Road|Mountain|Lost Tower|Iron Island|Ruins|Tunnel|Chateau(?!.*\(Outside\)|\(Overworld\))/i.test(encounter.name);
 
     const isRadar = encounter.method.includes("Radar");
@@ -20,12 +30,13 @@ function combineEncounterTypes(encounterData) {
     const isSwarm = encounter.method.includes("Swarm");
 
     const isDayOrNight = isDay || isNight;
+    const isTOD = isDay || isNight || isMorning;
     const isMarshRadar = isGreatMarsh && isRadar;
     const isInsideRadar = isInside && isRadar;
     const isInsideSwarm = isInside && isSwarm;
     const isInsideDayOrNight = isInside && isDayOrNight;
-    const isNotTCaveEntrance = isTCave && !isTCaveEntrance
-    const isBadArea = isMarshRadar || isInsideRadar || isInsideDayOrNight  || isInsideSwarm || isNotTCaveEntrance
+    const isNotTCaveEntrance = isTCave && !isTCaveEntrance;
+    const isBadArea = isMarshRadar || isInsideRadar || isInsideDayOrNight  || isInsideSwarm || isNotTCaveEntrance;
 
     if (isGreatMarsh) {
       encounter.name = GREAT_MARSH_MAP[encounter.name];
@@ -38,9 +49,27 @@ function combineEncounterTypes(encounterData) {
     if (isInside && isMorning) {
       encounter.method = "Walking"
     }
-
+    
     const key = `${encounter.name}_${encounter.method}`;
-    if (!combinedEncounters[key] && !isBadArea) {
+    if (isTOD && !isBadArea) {
+      if (!todEncounters[encounter.name]) {
+        todEncounters[encounter.name] = [{
+          name: encounter.name,
+          method: encounter.method,
+          chance: parseFloat(encounter.chance),
+          minLevel: encounter.minLevel,
+          maxLevel: encounter.maxLevel,
+        }]
+      } else {
+        todEncounters[encounter.name].push({
+          name: encounter.name,
+          method: encounter.method,
+          chance: parseFloat(encounter.chance),
+          minLevel: encounter.minLevel,
+          maxLevel: encounter.maxLevel,
+        })
+      }
+    } else if (!combinedEncounters[key] && !isBadArea) {
       combinedEncounters[key] = {
         name: encounter.name,
         method: encounter.method,
@@ -52,6 +81,33 @@ function combineEncounterTypes(encounterData) {
       combinedEncounters[key].chance += parseFloat(encounter.chance);
     }
   });
+
+  for (const locationKey of Object.keys(todEncounters)) {
+    const combinedValues = Object.values(combinedEncounters);
+    const routeIndex = combinedValues.findLastIndex(
+      (enc) => enc.name === locationKey
+    );
+    if (containsAllTOD(todEncounters[locationKey])) {
+      if (!combinedEncounters[`${locationKey}_Walking`]) {
+        combinedEncounters[`${locationKey}_Walking`] = {...todEncounters[locationKey][0], method: "Walking"};
+      } else {
+        combinedEncounters[`${locationKey}_Walking`].chance += parseFloat(todEncounters[locationKey][0].chance);
+      }
+    } else if (routeIndex !== -1) {
+      todEncounters[locationKey].forEach((encounter) => {
+        const routeKey = `${encounter.name}_${encounter.method}`
+        if (!combinedEncounters[routeKey]) {
+          combinedEncounters[routeKey] = encounter
+        } else {
+          combinedEncounters[routeKey].chance += parseFloat(encounter.chance);
+        }
+      })
+    } else {
+      const currentEncounters = todEncounters[locationKey][0]
+      const routeKey = `${currentEncounters.name}_${currentEncounters.method}`
+      combinedEncounters[routeKey] = currentEncounters
+    }
+  }
 
   return Object.values(combinedEncounters);;
 }
