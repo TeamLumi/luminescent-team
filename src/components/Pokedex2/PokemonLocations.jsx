@@ -1,7 +1,7 @@
 import React from 'react';
-import { Typography, Box, Container } from '@mui/material';
+import { Typography, Box, Container, Button } from '@mui/material';
 
-export const PokemonLocations = ({ locations }) => {
+export const PokemonLocations = ({ locations, showMore, setShowMoreLocations }) => {
   if (locations === undefined) {
     return (
       <Container>
@@ -39,7 +39,7 @@ export const PokemonLocations = ({ locations }) => {
           border: "2px solid var(--ifm-table-border-color)",
           borderRadius: "5px",
           padding: "12px !important",
-          width: {md: "80%", lg: "unset"}
+          width: {md: "80%", lg: showMore ? "80%" : "unset"}
         }}
       >
         <LocationListHeader />
@@ -50,6 +50,9 @@ export const PokemonLocations = ({ locations }) => {
           />
         ))}
       </Container>
+      <Button onClick={() => setShowMoreLocations(!showMore)}>
+        {showMore ? "Show Less" : "Show More"}
+      </Button>
     </>
   )
 };
