@@ -3628,24 +3628,6 @@
       "zoneId": 356
     },
     {
-      "routeName": "Route 204 (North)",
-      "encounterType": "water_mons",
-      "encounterRate": "60%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "water_mons",
-      "encounterRate": "30%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
       "routeName": "Route 208",
       "encounterType": "water_mons",
       "encounterRate": "60%",
@@ -3862,33 +3844,6 @@
       "maxLevel": 40,
       "encounterTypeIndex": 4,
       "zoneId": 356
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "water_mons",
-      "encounterRate": "5%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 2,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "water_mons",
-      "encounterRate": "4%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 3,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "water_mons",
-      "encounterRate": "1%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 4,
-      "zoneId": 358
     },
     {
       "routeName": "Route 208",
@@ -7965,17 +7920,6 @@
       "zoneId": null
     }
   ],
-  "103": [
-    {
-      "routeName": "Route 215",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 30,
-      "maxLevel": 30,
-      "encounterTypeIndex": 1,
-      "zoneId": 394
-    }
-  ],
   "104": [
     {
       "routeName": "Route 203",
@@ -9199,33 +9143,6 @@
       "zoneId": 357
     },
     {
-      "routeName": "Route 204 (North)",
-      "encounterType": "ii_mons",
-      "encounterRate": "30%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "ii_mons",
-      "encounterRate": "4%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 3,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "ii_mons",
-      "encounterRate": "1%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 4,
-      "zoneId": 358
-    },
-    {
       "routeName": "Route 208",
       "encounterType": "boro_mons",
       "encounterRate": "30%",
@@ -9469,33 +9386,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 1,
       "zoneId": 357
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "30%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "4%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 3,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "1%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 4,
-      "zoneId": 358
     },
     {
       "routeName": "Route 208",
@@ -9905,8 +9795,8 @@
       "routeName": "Route 209",
       "encounterType": "Incense",
       "encounterRate": "10%",
-      "minLevel": 24,
-      "maxLevel": 24,
+      "minLevel": 26,
+      "maxLevel": 26,
       "encounterTypeIndex": 0,
       "zoneId": 367
     },
@@ -9914,8 +9804,8 @@
       "routeName": "Route 209",
       "encounterType": "Incense",
       "encounterRate": "10%",
-      "minLevel": 24,
-      "maxLevel": 24,
+      "minLevel": 26,
+      "maxLevel": 26,
       "encounterTypeIndex": 1,
       "zoneId": 367
     },
@@ -11372,69 +11262,6 @@
       "zoneId": 357
     },
     {
-      "routeName": "Route 204 (North)",
-      "encounterType": "boro_mons",
-      "encounterRate": "60%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "boro_mons",
-      "encounterRate": "30%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "boro_mons",
-      "encounterRate": "5%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 2,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "boro_mons",
-      "encounterRate": "4%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 3,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "boro_mons",
-      "encounterRate": "1%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 4,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "ii_mons",
-      "encounterRate": "60%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "ii_mons",
-      "encounterRate": "5%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 2,
-      "zoneId": 358
-    },
-    {
       "routeName": "Route 205 (South)",
       "encounterType": "boro_mons",
       "encounterRate": "60%",
@@ -11955,6 +11782,15 @@
       "maxLevel": 25,
       "encounterTypeIndex": 1,
       "zoneId": 456
+    },
+    {
+      "routeName": "Resort Area",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 1,
+      "maxLevel": 100,
+      "encounterTypeIndex": 2,
+      "zoneId": 473
     },
     {
       "routeName": "Resort Area",
@@ -12668,24 +12504,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 0,
       "zoneId": 357
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "60%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "5%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 2,
-      "zoneId": 358
     },
     {
       "routeName": "Route 205 (South)",
@@ -13413,17 +13231,6 @@
       "maxLevel": 26,
       "encounterTypeIndex": 0,
       "zoneId": 297
-    }
-  ],
-  "157": [
-    {
-      "routeName": "Turnback Cave - d17r0112",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 66,
-      "maxLevel": 66,
-      "encounterTypeIndex": 1,
-      "zoneId": 274
     }
   ],
   "161": [
@@ -32711,15 +32518,6 @@
       "maxLevel": 54,
       "encounterTypeIndex": 0,
       "zoneId": 407
-    },
-    {
-      "routeName": "Route 222",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 54,
-      "maxLevel": 54,
-      "encounterTypeIndex": 1,
-      "zoneId": 407
     }
   ],
   "406": [
@@ -33433,15 +33231,6 @@
       "zoneId": 400
     },
     {
-      "routeName": "Route 218",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": 1,
-      "zoneId": 400
-    },
-    {
       "routeName": "Route 222",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
@@ -33955,6 +33744,15 @@
       "zoneId": 385
     },
     {
+      "routeName": "Route 213",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 34,
+      "maxLevel": 34,
+      "encounterTypeIndex": 1,
+      "zoneId": 385
+    },
+    {
       "routeName": "Route 218",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
@@ -33973,6 +33771,15 @@
       "zoneId": 400
     },
     {
+      "routeName": "Route 218",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 39,
+      "maxLevel": 39,
+      "encounterTypeIndex": 1,
+      "zoneId": 400
+    },
+    {
       "routeName": "Route 222",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
@@ -33984,6 +33791,15 @@
     {
       "routeName": "Route 222",
       "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 54,
+      "maxLevel": 54,
+      "encounterTypeIndex": 1,
+      "zoneId": 407
+    },
+    {
+      "routeName": "Route 222",
+      "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 54,
       "maxLevel": 54,
@@ -35550,24 +35366,6 @@
   ],
   "862": [
     {
-      "routeName": "Route 220",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 0,
-      "zoneId": 485
-    },
-    {
-      "routeName": "Route 220",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 1,
-      "zoneId": 485
-    },
-    {
       "routeName": "Route 230",
       "encounterType": "Incense",
       "encounterRate": "10%",
@@ -35658,15 +35456,6 @@
       "encounterRate": "30%",
       "minLevel": 45,
       "maxLevel": 45,
-      "encounterTypeIndex": 2,
-      "zoneId": 298
-    },
-    {
-      "routeName": "Iron Island (Overworld)",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 45,
-      "maxLevel": 40,
       "encounterTypeIndex": 2,
       "zoneId": 298
     },
@@ -35814,15 +35603,6 @@
       "zoneId": 24
     },
     {
-      "routeName": "Resort Area",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 2,
-      "zoneId": 473
-    },
-    {
       "routeName": "Route 226",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
@@ -35873,15 +35653,6 @@
     }
   ],
   "1045": [
-    {
-      "routeName": "Mt. Coronet - 3F",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 51,
-      "maxLevel": 51,
-      "encounterTypeIndex": 1,
-      "zoneId": 205
-    },
     {
       "routeName": "Route 216",
       "encounterType": "Incense",
@@ -36189,15 +35960,6 @@
     }
   ],
   "1050": [
-    {
-      "routeName": "Ruin Maniac Cave - Small",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 1,
-      "zoneId": 294
-    },
     {
       "routeName": "Route 218",
       "encounterType": "Incense",
@@ -36743,29 +36505,11 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road - B1F",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 60,
-      "maxLevel": 40,
-      "encounterTypeIndex": 2,
-      "zoneId": 246
-    },
-    {
       "routeName": "Victory Road - 1F Back (Marley)",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
       "minLevel": 60,
       "maxLevel": 60,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
-      "routeName": "Victory Road - 1F Back (Marley)",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 60,
-      "maxLevel": 40,
       "encounterTypeIndex": 2,
       "zoneId": 247
     },
@@ -37048,8 +36792,8 @@
       "routeName": "Stark Mountain (Overworld)",
       "encounterType": "Incense",
       "encounterRate": "10%",
-      "minLevel": 68,
-      "maxLevel": 68,
+      "minLevel": 69,
+      "maxLevel": 69,
       "encounterTypeIndex": 0,
       "zoneId": 259
     },
@@ -37057,8 +36801,8 @@
       "routeName": "Stark Mountain (Overworld)",
       "encounterType": "Incense",
       "encounterRate": "10%",
-      "minLevel": 68,
-      "maxLevel": 68,
+      "minLevel": 69,
+      "maxLevel": 69,
       "encounterTypeIndex": 1,
       "zoneId": 259
     }
@@ -37539,15 +37283,6 @@
       "zoneId": 263
     },
     {
-      "routeName": "Sendoff Spring",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 55,
-      "maxLevel": 54,
-      "encounterTypeIndex": 2,
-      "zoneId": 263
-    },
-    {
       "routeName": "Route 227",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
@@ -37815,15 +37550,6 @@
       "zoneId": 201
     },
     {
-      "routeName": "Fuego Ironworks (Outside)",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 45,
-      "maxLevel": 40,
-      "encounterTypeIndex": 2,
-      "zoneId": 201
-    },
-    {
       "routeName": "Route 204 (South)",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
@@ -37991,15 +37717,6 @@
       "minLevel": 34,
       "maxLevel": 34,
       "encounterTypeIndex": 0,
-      "zoneId": 385
-    },
-    {
-      "routeName": "Route 213",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 34,
-      "maxLevel": 34,
-      "encounterTypeIndex": 1,
       "zoneId": 385
     },
     {
