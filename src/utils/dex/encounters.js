@@ -4,10 +4,10 @@ import {
 } from './encountersConstants';
 
 function containsAllTOD(todEncounters) {
-  const desiredEncounterTypes = ["morning", "day", "night"];
+  const desiredEncounterTypes = ["Morning", "Day", "Night"];
 
   const hasAllEncounterTypes = desiredEncounterTypes.every(type =>
-    todEncounters.some(encounter => encounter.encounterRate === type)
+    todEncounters.some(encounter => encounter.method === type)
   );
   return hasAllEncounterTypes;
 }
@@ -87,7 +87,9 @@ function combineEncounterTypes(encounterData) {
     const routeIndex = combinedValues.findLastIndex(
       (enc) => enc.name === locationKey
     );
+    console.log(todEncounters[locationKey], locationKey, containsAllTOD(todEncounters[locationKey]))
     if (containsAllTOD(todEncounters[locationKey])) {
+      console.log(locationKey);
       if (!combinedEncounters[`${locationKey}_Walking`]) {
         combinedEncounters[`${locationKey}_Walking`] = {...todEncounters[locationKey][0], method: "Walking"};
       } else {
