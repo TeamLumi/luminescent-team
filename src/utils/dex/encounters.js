@@ -116,7 +116,7 @@ function getRoutesFromPokemonId(pokemonId) {
   } else if (pokemonLocations[pokemonId]) {
     routes = pokemonLocations[pokemonId]
   } else {
-    routes = staticLocations[pokemonName]
+    routes = staticLocations[pokemonName] || []
   }
 
   const locationRates = routes.map((route) => {
