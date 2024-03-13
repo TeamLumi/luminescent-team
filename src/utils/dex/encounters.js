@@ -108,9 +108,14 @@ function addTODEncounters(todEncounters, combinedEncounters) {
         }
       });
     } else {
-      const currentEncounters = todEncounters[locationKey][0];
-      const routeKey = `${currentEncounters.name}_${currentEncounters.method}`;
-      combinedEncounters[routeKey] = currentEncounters;
+      todEncounters[locationKey].forEach((encounter) => {
+        const routeKey = `${encounter.name}_${encounter.method}`;
+        if (!combinedEncounters[routeKey]) {
+          combinedEncounters[routeKey] = encounter;
+        } else {
+          combinedEncounters[routeKey].chance += parseFloat(encounter.chance);
+        }
+      });
     }
   }
 }
