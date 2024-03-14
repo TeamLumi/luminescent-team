@@ -61,9 +61,11 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, po
         ))}
       </Container>
       {locations.length >= 5 && (
-        <Button sx={{justifySelf: "center"}} onClick={() => setShowMoreLocations(!showMore)}>
-          {showMore ? "Show Less" : "Show More"}
-        </Button>
+        <Box sx={{display: "flex", justifyContent: "center"}}>
+          <Button onClick={() => setShowMoreLocations(!showMore)}>
+            {showMore ? "Show Less" : "Show More"}
+          </Button>
+        </Box>
       )}
     </>
   )
