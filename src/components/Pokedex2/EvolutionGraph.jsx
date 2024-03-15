@@ -22,6 +22,7 @@ const MOSS_ROCK = "Moss Rock"
 const ICE_ROCK = "Ice Rock"
 const FEMALE = "Female"
 const MALE = "Male"
+const BEAUTY = "Beauty"
 
 export default function EvolutionGraph(props) {
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(props.evolutionTree.pokemonId, props.globalState.mode);
@@ -117,6 +118,9 @@ export default function EvolutionGraph(props) {
     const [globalState, updateMode] = useGlobalState();
     const evoFunction = methodDetail.function.name;
     const evoImages = [];
+    if (methodDetail.method.includes(FRIENDSHIP)) {
+      evoImages.push(getItemImageUrl("Soothe Bell"))
+    }
     if (methodDetail.method.includes(LEVEL)) {
       evoImages.push(getItemImageUrl("Rare Candy"));
     } else if (evoFunction === getItemString.name) {
@@ -129,9 +133,6 @@ export default function EvolutionGraph(props) {
     } else if (evoFunction === getTypeName.name) {
       const moveType = getTypeName(methodParameter);
       evoImages.push(getTMImageUrl(moveType));
-    }
-    if (methodDetail.method.includes(FRIENDSHIP)) {
-      evoImages.push(getItemImageUrl("Soothe Bell"))
     }
     if (methodDetail.method.includes(DAY)) {
       evoImages.push("/img/Sun.webp")
@@ -147,6 +148,9 @@ export default function EvolutionGraph(props) {
       evoImages.push("/img/male.webp")
     } else if (methodDetail.method.includes(FEMALE)) {
       evoImages.push("/img/female.webp")
+    }
+    if (methodDetail.method.includes(BEAUTY)) {
+      evoImages.push(getItemImageUrl("Blue Scarf"))
     }
     return evoImages;
   };
