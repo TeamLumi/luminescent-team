@@ -1,9 +1,12 @@
 import React from 'react';
-import { Typography, Box, Container, Button } from '@mui/material';
-import { LINK_KEYS } from '../../utils/dex/encountersConstants';
+import { Typography, Box, Container, Button, useMediaQuery, useTheme } from '@mui/material';
 import Link from '@docusaurus/Link';
 
-export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, pokemonName }) => {
+import { LINK_KEYS, LOCATION_ICONS } from '../../utils/dex/encountersConstants';
+import { ImageWithFallback } from '../common/ImageWithFallback';
+import { getPokemonName } from '../../utils/dex/name';
+
+export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, pokemonId }) => {
   if (locations === undefined) {
     return (
       <Container>
@@ -56,7 +59,8 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, po
           <LocationListItem 
             key={`${location.name}-${i}`}
             location={location}
-            pokemonName={pokemonName}
+            pokemonId={pokemonId}
+            showMore={showMore || locations.length < 5}
           />
         ))}
       </Container>
@@ -96,7 +100,12 @@ const LocationListHeader = () => (
   </>
 );
 
-const LocationListItem = ({ location, pokemonName }) => {
+const LocationListItem = ({ location, pokemonId, showMore }) => {
+  const theme = useTheme();
+  const showIcon = showMore && useMediaQuery(theme.breakpoints.up("sm"));
+  const locationMethod = location.method === "Legendaries" ? "Legends" : location.method
+  const pokemonName = getPokemonName(pokemonId);
+
   return (
     <>
       <Box>
@@ -104,17 +113,30 @@ const LocationListItem = ({ location, pokemonName }) => {
           {location.name}
         </Typography>
       </Box>
-      <Box>
+      <Box display="flex">
+        {showIcon &&
+          (LOCATION_ICONS[location.method].map((icon) => (
+            <ImageWithFallback
+              key={icon}
+              src={icon}
+              fallbackSrc={"/img/404error.webp"}
+              width={20}
+              height={20}
+              title={locationMethod}
+              alt={locationMethod}
+            />
+          )))
+        }
         <Typography>
           {location.link || LINK_KEYS.includes(location.method)
             ? location.link
-              ? <Link to={location.link}>{location.method}</Link>
+              ? <Link to={location.link}>{locationMethod}</Link>
               : <Link
                   to={`/docs/special-events/${location.method.toLowerCase()}#${pokemonName}`}
                 >
-                  {location.method}
+                  {locationMethod}
                 </Link>
-            : location.method}
+            : locationMethod}
         </Typography>
       </Box>
       <Box>
