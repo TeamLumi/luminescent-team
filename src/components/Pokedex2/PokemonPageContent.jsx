@@ -31,9 +31,10 @@ function padNumberWithZeros(number) {
 }
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
-  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(pokemon.id)
+  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(pokemon.id);
   const pokemon_locations = getRoutesFromPokemonId(pokemon.id);
   const [showMoreLocations, setShowMoreLocations] = useState(false);
+
   return (
     <Container>
       <Container>
@@ -116,7 +117,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
               locations={pokemon_locations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
-              pokemonName={pokemon.name.toLowerCase()}
+              pokemonId={pokemon.id}
             />
           </Box>
           <Box width={{sm: "80%", md: "unset"}} gridColumn="span 1">
@@ -146,6 +147,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
               locations={pokemon_locations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
+              pokemonId={pokemon.id}
             />
           </Box>
         </Box>
