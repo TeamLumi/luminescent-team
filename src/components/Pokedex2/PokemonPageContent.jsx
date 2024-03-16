@@ -128,7 +128,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
               sx={{
                 border: "2px solid var(--ifm-table-border-color)",
                 borderRadius: "5px",
-                height: "244px", // TODO Set this to be smaller when in mobile
+                height: {xs: "min-content", md: "244px"},
                 padding: "12px !important"
               }}
             >

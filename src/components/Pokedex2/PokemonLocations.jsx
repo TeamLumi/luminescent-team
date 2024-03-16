@@ -104,7 +104,7 @@ const LocationListItem = ({ location, pokemonId, showMore }) => {
   const theme = useTheme();
   const showIcon = showMore && useMediaQuery(theme.breakpoints.up("sm"));
   const locationMethod = location.method === "Legendaries" ? "Legends" : location.method
-  const pokemonName = getPokemonName(pokemonId);
+  const pokemonName = getPokemonName(pokemonId).toLowerCase().replace(" ", "-");
 
   return (
     <>
