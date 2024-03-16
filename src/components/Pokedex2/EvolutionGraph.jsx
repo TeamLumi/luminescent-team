@@ -123,7 +123,8 @@ export default function EvolutionGraph(props) {
     }
     if (methodDetail.method.includes(LEVEL)) {
       evoImages.push(getItemImageUrl("Rare Candy"));
-    } else if (evoFunction === getItemString.name) {
+    }
+    if (evoFunction === getItemString.name) {
       evoImages.push(getItemImageUrl(evoMethod));
     } else if (evoFunction === getMoveString.name) {
       const moveType = getTypeName(getMoveProperties(methodParameter, globalState.mode).type);
@@ -173,7 +174,7 @@ export default function EvolutionGraph(props) {
     )
   };
 
-  const renderMethods = (methodIds, methodParameters, levels) => {
+  const renderMethods = (methodIds, methodParameters, levels, pokemonId) => {
     const firstMethodId = methodIds[0];
     if (firstMethodId === -1) {
       return (
@@ -183,7 +184,16 @@ export default function EvolutionGraph(props) {
     }
     const firstMethodParameter = parseInt(methodParameters[0]);
     const [globalState, updateMode] = useGlobalState();
-    const [ firstMethodDetail, firstEvoMethod ] = getEvolutionMethodDetail(firstMethodId, firstMethodParameter, globalState.mode, levels[0]);
+    const [
+      firstMethodDetail,
+      firstEvoMethod
+    ] = getEvolutionMethodDetail(
+      firstMethodId,
+      firstMethodParameter,
+      globalState.mode,
+      levels[0],
+      pokemonId
+    );
 
     const evoImages = renderItemImage(firstEvoMethod, firstMethodParameter, firstMethodDetail);
     return (
@@ -205,21 +215,21 @@ export default function EvolutionGraph(props) {
     const evolutionStyle = methodIndex === 1 ? (
       styles.firstEvolution
       ) : (styles.secondEvolution)
-    const { evolvesInto } = tree;
+    const { pokemonId, evolvesInto } = tree;
 
     // Collect data for methods and images from all evolutions
     const allMethods = [];
     const allImages = [];
 
     evolvesInto.forEach((evolution) => {
-      const { 
+      const {
         methodIds,
         methodParameters,
         monsNos,
         formNos,
         levels
       } = evolution.evolutionDetails;
-      const methods = renderMethods(methodIds, methodParameters, levels);
+      const methods = renderMethods(methodIds, methodParameters, levels, pokemonId);
       allMethods.push(methods);
 
       if (methodIds[0] === -1) {

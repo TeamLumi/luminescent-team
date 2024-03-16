@@ -134,7 +134,7 @@ const EVOLUTION_METHOD_DETAILS = {
     function: getItemString,
   },
   21: {
-    method: `Knows ${REPLACE_STRING}`,
+    method: `Level up with ${REPLACE_STRING}`,
     requiresLevel: false,
     parameterType: 'Move',
     function: getMoveString,

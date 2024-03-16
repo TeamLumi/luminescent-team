@@ -2,8 +2,9 @@ const { EvolutionData } = require('./data');
 const { EvolutionData3 } = require('./data3');
 const { EVOLUTION_METHOD_DETAILS, REPLACE_STRING } = require('./evolutionConstants');
 const { getPokemonIdFromMonsNoAndForm } = require('./functions');
+const { getMoveLevelLearned, getMoveId } = require('./moves');
 
-function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", level, pokemon = null) {
+function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", level, pokemonId = 0) {
   if (methodId === -1) {
     return -1;
   }
@@ -20,10 +21,40 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", l
     try {
       evoMethod = evoFunction(methodParameter, mode);
     } catch (error){
-      throw Error(`This method parameter doesn't work ${error} ${pokemon} ${methodId}, ${methodParameter}, ${evoFunction.name}`)
+      throw Error(`This method parameter doesn't work ${error} ${methodId}, ${methodParameter}, ${evoFunction.name}`)
     }
 
-    evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, evoMethod);
+    if (evolutionDetails.parameterType === "Move") {
+      const levelLearned = getMoveLevelLearned(pokemonId, getMoveId(evoMethod), mode);
+      if (levelLearned === -1) {
+        evolutionDetails.method = 
+          evolutionDetails.method.replace(
+            REPLACE_STRING,
+            `${evoMethod} (Cannot Learn)`
+          );
+      }
+      if (levelLearned === 1) {
+        evolutionDetails.method = 
+          evolutionDetails.method.replace(
+            REPLACE_STRING,
+            `${evoMethod} (Relearn)`
+          );
+      } else if (levelLearned > 1) {
+        evolutionDetails.method = 
+          evolutionDetails.method.replace(
+            REPLACE_STRING,
+            `${evoMethod} (Lv. ${levelLearned})`
+          );
+      } else {
+        evolutionDetails.method = 
+          evolutionDetails.method.replace(
+            REPLACE_STRING,
+            `${evoMethod} (On Evo)`
+          );
+      }
+    } else {
+      evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, evoMethod);
+    }
   }
   return [evolutionDetails, evoMethod];
 }
