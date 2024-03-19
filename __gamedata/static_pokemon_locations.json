@@ -17,7 +17,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 434,
-      "link": "https://luminescent.team/docs/special-events/Gifts#sinnoh-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
     }
   ],
   "Chimchar": [
@@ -38,7 +38,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 434,
-      "link": "https://luminescent.team/docs/special-events/Gifts#sinnoh-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
     }
   ],
   "Piplup": [
@@ -59,7 +59,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 434,
-      "link": "https://luminescent.team/docs/special-events/Gifts#sinnoh-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
     }
   ],
   "Eevee": [
@@ -431,7 +431,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 0,
-      "link": "https://luminescent.team/docs/special-events/Gifts#kanto-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#kanto-starters"
     }
   ],
   "Charmander": [
@@ -443,7 +443,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 0,
-      "link": "https://luminescent.team/docs/special-events/Gifts#kanto-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#kanto-starters"
     }
   ],
   "Squirtle": [
@@ -455,7 +455,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 0,
-      "link": "https://luminescent.team/docs/special-events/Gifts#kanto-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#kanto-starters"
     }
   ],
   "Wobuffett": [
@@ -478,7 +478,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#hoenn-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#hoenn-starters"
     }
   ],
   "Torchic": [
@@ -490,7 +490,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#hoenn-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#hoenn-starters"
     }
   ],
   "Mudkip": [
@@ -502,7 +502,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#hoenn-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#hoenn-starters"
     }
   ],
   "Beldum": [
@@ -525,7 +525,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#fossils"
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
     }
   ],
   "Kabuto": [
@@ -537,7 +537,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#fossils"
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
     }
   ],
   "Lileep": [
@@ -549,7 +549,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#fossils"
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
     }
   ],
   "Anorith": [
@@ -561,7 +561,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#fossils"
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
     }
   ],
   "Shieldon": [
@@ -573,7 +573,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#fossils"
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
     }
   ],
   "Cranidos": [
@@ -585,7 +585,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#fossils"
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
     }
   ],
   "Aerodactyl": [
@@ -597,7 +597,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 38,
-      "link": "https://luminescent.team/docs/special-events/Gifts#fossils"
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
     }
   ],
   "Crystal Onix": [
@@ -620,7 +620,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 438,
-      "link": "https://luminescent.team/docs/special-events/Gifts#johto-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#johto-starters"
     }
   ],
   "Cyndaquil": [
@@ -632,7 +632,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 438,
-      "link": "https://luminescent.team/docs/special-events/Gifts#johto-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#johto-starters"
     }
   ],
   "Totodile": [
@@ -644,7 +644,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 438,
-      "link": "https://luminescent.team/docs/special-events/Gifts#johto-starters"
+      "link": "https://luminescent.team/docs/special-events/gifts#johto-starters"
     }
   ],
   "Porygon": [
@@ -879,7 +879,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 216,
-      "link": "https://luminescent.team/docs/special-events/Gifts#manaphy-egg"
+      "link": "https://luminescent.team/docs/special-events/gifts#manaphy-egg"
     }
   ],
   "Articuno": [
