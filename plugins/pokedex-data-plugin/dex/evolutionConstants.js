@@ -266,7 +266,7 @@ const EVOLUTION_METHOD_DETAILS = {
     function: getItemString,
   },
   43: {
-    method: "3 Crits in One Battle",
+    method: "3 critical hits in One Battle",
     requiresLevel: false,
     parameterType: 'None',
     function: doNothing,
@@ -278,7 +278,7 @@ const EVOLUTION_METHOD_DETAILS = {
     function: doNothing,
   },
   45: {
-    method: 'PokéSafe Blender',
+    method: 'See Alcremie Evolutions page',
     requiresLevel: false,
     parameterType: 'None',
     function: doNothing,
@@ -302,25 +302,25 @@ const EVOLUTION_METHOD_DETAILS = {
     function: getItemString,
   },
   49: {
-    method: `${REPLACE_STRING} in party or was last evolved`,
+    method: `${REPLACE_STRING} in party or was last Pokémon to evolve`,
     requiresLevel: false,
     parameterType: 'Pokemon',
     function: getPokemonName,
   },
   50: {
-    method: `Level ${REPLACE_STRING} and RNG`,
+    method: `Level ${REPLACE_STRING} + RNG`,
     requiresLevel: true,
     parameterType: 'None',
     function: doNothing,
   },
   51: {
-    method: `Level ${REPLACE_STRING} and RNG`,
+    method: `Level ${REPLACE_STRING} + RNG`,
     requiresLevel: true,
     parameterType: 'None',
     function: doNothing,
   },
   52: {
-    method: `Follow for ${REPLACE_STRING} steps`,
+    method: `Have as follower for ${REPLACE_STRING} steps`,
     requiresLevel: false,
     parameterType: 'None',
     function: doNothing,
@@ -338,13 +338,13 @@ const EVOLUTION_METHOD_DETAILS = {
     function: getItemString,
   },
   55: {
-    method: `Knows ${REPLACE_STRING} and RNG`,
+    method: `Knows ${REPLACE_STRING} + RNG`,
     requiresLevel: false,
     parameterType: 'Move',
     function: getMoveString,
   },
   56: {
-    method: `Knows ${REPLACE_STRING} and RNG`,
+    method: `Knows ${REPLACE_STRING} + RNG`,
     requiresLevel: false,
     parameterType: 'Move',
     function: getMoveString,
