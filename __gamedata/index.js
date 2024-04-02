@@ -6,6 +6,10 @@ import LearnsetTable from './WazaOboeTable.json';
 import MovesTable from './WazaTable.json';
 import ItemTable from './ItemTable.json';
 
+//All the Location files
+import pokemonLocations from './pokemon_locations.json';
+import staticLocations from './static_pokemon_locations.json';
+
 //All the Pokemon english files
 import basePokemonNames from './english_ss_monsname.json';
 import formPokemonNames from './english_ss_zkn_form.json';
@@ -40,6 +44,8 @@ export {
   pokemonWeight,
   pokemonDexType,
   pokemonPokedexInfo,
+  pokemonLocations,
+  staticLocations,
   natureNames,
   abilityNames,
   abilityInfo,
