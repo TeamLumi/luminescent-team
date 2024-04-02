@@ -61,6 +61,7 @@ function checkIsBadArea(encounter) {
   const isDay = encounter.method.includes("Day");
   const isNight = encounter.method.includes("Night");
   const isSwarm = encounter.method.includes("Swarm");
+  const isStatic = encounter.method.includes("Static");
 
   const isDayOrNight = isDay || isNight;
   const isTOD = isDay || isNight || isMorning;
@@ -75,7 +76,7 @@ function checkIsBadArea(encounter) {
     encounter.name = GREAT_MARSH_MAP[encounter.name];
     encounter.chance = parseInt(encounter.chance) / 2;
   }
-  if (isChateau) {
+  if (isChateau && !isStatic) {
     encounter.name = "Old Chateau";
     encounter.chance = parseFloat(encounter.chance) / 9;
   }

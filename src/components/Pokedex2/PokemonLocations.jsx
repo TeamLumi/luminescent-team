@@ -17,11 +17,31 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, po
 
   if (locations.length === 0) {
     return (
-      <Box sx={{display: "flex", alignItems: "center", height: "100%"}}>
-        <Typography fontSize="0.9rem">
-          Data for this Pokemon could not be found. Try checking previous evolutions. If you have checked previous evolutions, please report this on the Discord.
-        </Typography>
-      </Box>
+      <>
+        <Box
+          display="flex"
+          justifyContent={{sm: "center", md: "center"}}
+          width={{md: "80%", lg: "unset"}}
+        >
+          <Typography variant='h6'>Locations:</Typography>
+        </Box>
+
+        <Box sx={{
+          display: "flex",
+          alignItems: "center",
+          height: {xs: "min-content", md: "min-content", lg: "244px"},
+          padding: "12px !important",
+          borderRadius: "5px",
+          border: "2px solid var(--ifm-table-border-color)",
+          }}
+        >
+          <Typography fontSize="0.9rem">
+            {getPokemonName(pokemonId)} cannot be found in the wild. Try checking previous evolutions or alternative forms.
+            <br/> <br/>
+            If you have checked previous evolutions and believe this to be an error, please report it to the Discord.
+          </Typography>
+        </Box>
+      </>
     );
   }
 

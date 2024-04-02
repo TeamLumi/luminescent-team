@@ -22,10 +22,9 @@ export const PokemonInfoButton = () => {
                 Features
               </Typography>
               <Typography variant="h6">
-                This site documents all Pokémon available in Luminescent Platinum 2.0F, including their types, abilities, stats, evolution methods, forms, 
-                wild held items, and movesets. It currently does not include locations, but you may use our <a href="https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit">Pokémon 
-                Locations by Route documentation</a> or the Pokédex channel in our <a href="https://discord.gg/luminescent">Discord</a> to 
-                access that information in the meanwhile.
+                This site documents all Pokémon available in Luminescent Platinum 2.0F, including their locations, types, abilities, stats, evolutions with methods, forms, 
+                wild held items, and movesets. It currently does not include a per route Pokémon location chart, but you may use our <a href="https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit">Pokémon 
+                Locations by Route documentation</a> to access that information in the meanwhile.
                 <br/><br/>
                 Mobile users will need to swap from portrait to landscape mode if they wish to see full move descriptions in the appropriate drop downs.
                 <br/><br/>
@@ -38,7 +37,6 @@ export const PokemonInfoButton = () => {
                 </ul>
                 Planned Changes:
                 <ul>
-                  <li>Encounter locations to the Pokédex displayed here.</li>
                   <li>A comparison toggle to view vanilla BDSP stats against any changes we have made.</li>
                 </ul>
                 Please keep an eye on this features section to see what other features may become available.

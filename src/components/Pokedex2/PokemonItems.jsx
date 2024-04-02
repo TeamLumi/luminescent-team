@@ -45,7 +45,7 @@ export const PokemonItems = ({ pokemonId }) => {
         {noItems && (
           <>
             <Box gridColumn="span 5">
-              <Typography >This Pokémon does not hold an item in the wild</Typography>
+              <Typography >This Pokémon does not hold an item in the wild.</Typography>
             </Box>
           </>
         )}
