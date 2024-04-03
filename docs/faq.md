@@ -73,6 +73,10 @@ Currently no, but because we don't have the understanding to do all that yet. We
 
 Maybe. A wonderful map has been made, but getting it to work in all of its mind-bending glory is going to take longer, and we will not hold back any future updates in the hopes of getting it ready. It'll be around when it's around.
 
+### What is 3.0 / Re:Illuminated?
+
+That would be what was previously just called "Natdex". At launch, it will include all Pokémon up to Legends Arceus (full gen 8) with gen 9 coming later on. It will also include extra story, all fights redone to include the new 'mons, expanded legendary quests (3.1+) and many other quality of life features that we are unable to do with the backend used in 2.0F/Luminescent Platinum. Saves will **not be compatible** between 2.0 and 3.0 because of how we will be changing the backend engine adjustments.
+
 ### I want to make my own romhack! Where can I learn how?
 
 Definitely come check out our partnered server, [Pokemon Switch Modding](https://discord.gg/8Dkm8YNmYy). We also welcome you to our Team Luminescent discord server, with a specific channel for these types of questions.
