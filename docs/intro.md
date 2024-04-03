@@ -12,7 +12,7 @@ We hope you enjoy our romhack!
 
 :::info
 
-**WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, DISTORTION WORLD, OR OTHER GIMMICKS**. Please see our [FAQ](/faq.md) for more information.
+**WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, OR OTHER GIMMICKS**. Please see our [FAQ](/faq.md) for more information.
 
 :::
 
@@ -22,7 +22,6 @@ We hope you enjoy our romhack!
 
 - Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, evolution methods, held items, etc. If you need information on individual Pokémon, this is the page you want to peruse!
 - Includes evolution methods for regional forms and Luminescent exclusives.
-- Currently does not include locations.
 - Balances are credit to Hudie and the balance team.
 
 ### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit)
