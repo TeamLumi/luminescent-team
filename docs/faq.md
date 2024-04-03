@@ -71,7 +71,7 @@ Currently no, but because we don't have the understanding to do all that yet. We
 
 ### What about Distortion World?
 
-No way. Months of work for maybe 15 minutes of gameplay where a cutscene in Strange Space will suffice. Ain't happening.
+Maybe. A wonderful map has been made, but getting it to work in all of its mind-bending glory is going to take longer, and we will not hold back any future updates in the hopes of getting it ready. It'll be around when it's around.
 
 ### I want to make my own romhack! Where can I learn how?
 
