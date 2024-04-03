@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Typography, Box, Container, Button, useMediaQuery, useTheme } from '@mui/material';
 import Link from '@docusaurus/Link';
 
@@ -7,6 +7,35 @@ import { ImageWithFallback } from '../common/ImageWithFallback';
 import { getPokemonName } from '../../utils/dex/name';
 
 export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, pokemonId }) => {
+  const containerRef = useRef(null);
+  const [containerHeight, setContainerHeight] = useState(0);
+  const [showButton, setShowButton] = useState(locations.length >= 5 || containerHeight > 244 || showMore)
+  const theme = useTheme();
+  const largerThanSmall = useMediaQuery(theme.breakpoints.up("sm"));
+  const largeTheme = useMediaQuery(theme.breakpoints.up("lg"));
+  const showIcon = (showMore || locations.length < 5) && largerThanSmall;
+
+  useEffect(() => {
+    if (containerRef.current) {
+      const newContainerHeight = containerRef.current.getBoundingClientRect().height;
+      if (newContainerHeight > 244 && !showMore) {
+        setShowButton(true);
+        setContainerHeight(244);
+      } else if (newContainerHeight > 0 && showMore && !largeTheme) {
+        setShowButton(true);
+        setContainerHeight(newContainerHeight);
+      } else if (newContainerHeight > 0) {
+        if (largeTheme && !showMore) {
+          containerRef.current.style.height = "244px";
+        }
+        setContainerHeight(newContainerHeight);
+        if (showMore) {
+          setShowButton(true);
+        }
+      }
+    }
+  }, [showMore, largeTheme]);
+
   if (locations === undefined) {
     return (
       <Container>
@@ -55,6 +84,7 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, po
         <Typography variant='h6'>Locations:</Typography>
       </Box>
       <Container
+        ref={containerRef}
         sx={{
           display: "grid",
           gridTemplateColumns: {
@@ -66,25 +96,29 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, po
           borderRadius: "5px",
           padding: "12px !important",
           width: {md: "80%", lg: showMore ? "80%" : "unset"},
-          maxHeight: showMore || locations.length < 5 ? "unset" : "244px",
+          maxHeight: {
+            xs: showMore || locations.length < 5 ? "unset" : "244px",
+            lg: showMore ? "unset" : "245px",
+          },
+          gridAutoRows: "min-content",
           overflow: "hidden",
-          WebkitMaskImage: showMore || locations.length < 5 ? "unset" : "linear-gradient(to bottom, black 75%, transparent 100%)",
-          maskImage: showMore || locations.length < 5 ? "unset" : "linear-gradient(to bottom, black 75%, transparent 100%)",
-          borderImage: showMore || locations.length < 5 ? "unset" : "linear-gradient(to bottom, var(--ifm-table-border-color) 2px, transparent 2px) 0 0 100%",
-          border: "2px solid var(--ifm-table-border-color)", // Add this line      
+          WebkitMaskImage: showMore || !showButton ? "unset" : "linear-gradient(to bottom, black 75%, transparent 100%)",
+          maskImage: showMore || !showButton ? "unset" : "linear-gradient(to bottom, black 75%, transparent 100%)",
+          borderImage: showMore || !showButton ? "unset" : "linear-gradient(to bottom, var(--ifm-table-border-color) 2px, transparent 2px) 0 0 100%",
+          border: "2px solid var(--ifm-table-border-color)",
         }}
       >
         <LocationListHeader />
         {locations.map((location, i) => (
-          <LocationListItem 
+          <LocationListItem
             key={`${location.name}-${i}`}
             location={location}
             pokemonId={pokemonId}
-            showMore={showMore || locations.length < 5}
+            showIcon={showIcon}
           />
         ))}
       </Container>
-      {locations.length >= 5 && (
+      {showButton && (
         <Box sx={{display: "flex", justifyContent: "center"}}>
           <Button onClick={() => setShowMoreLocations(!showMore)}>
             {showMore ? "Show Less" : "Show More"}
@@ -120,9 +154,7 @@ const LocationListHeader = () => (
   </>
 );
 
-const LocationListItem = ({ location, pokemonId, showMore }) => {
-  const theme = useTheme();
-  const showIcon = showMore && useMediaQuery(theme.breakpoints.up("sm"));
+const LocationListItem = ({ location, pokemonId, showIcon }) => {
   const locationMethod = location.method === "Legendaries" ? "Legends" : location.method
   const pokemonName = getPokemonName(pokemonId).toLowerCase().replace(" ", "-");
 
