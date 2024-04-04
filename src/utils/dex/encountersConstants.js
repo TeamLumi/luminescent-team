@@ -65,4 +65,5 @@ export const LOCATION_ICONS = {
   "Daily Trophy Garden": ["/img/custom/trophy.webp"],
   "Daily Great Marsh": ["/img/custom/greatmarsh.webp", "/img/custom/randomchance.webp"],
   "Honey Tree": ["img/Item_Honey.webp"],
+  "Starter": ["/img/custom/mysterygift.webp"],
 }
