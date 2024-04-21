@@ -46,7 +46,7 @@ const SettingsModal = ({ colors, setColors, showModal, onHide }) => {
           newColors={newColors}
           handleChange={handleChange}
         />
-        <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'start' }}>
+        <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'center' }}>
           <Button variant="contained" color="secondary" onClick={handleClose}>
             Save Changes
           </Button>
