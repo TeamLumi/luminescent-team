@@ -109,7 +109,9 @@ function getRoutesFromPokemonId(pokemonId) {
   const routes = pokemonLocations[pokemonId] || [];
 
   routes.forEach((route) => {
-    routeNames.push(route.routeName);
+    if (!routeNames.includes(route.routeName)) {
+      routeNames.push(route.routeName);
+    }
   });
 
   return routeNames;

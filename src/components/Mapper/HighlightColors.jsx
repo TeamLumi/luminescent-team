@@ -29,7 +29,7 @@ export const ChangeHighlightColors = ({ colorKeys, newColors, handleChange }) =>
             {Object.keys(newColors[colorKey]).map((subKey) => (
               <div key={subKey} style={{ marginTop: '8px' }}>
                 <TextField
-                  label={subKey.toUpperCase()}
+                  label={subKey === 'a' ? `${subKey.toUpperCase()} (Coming Soon)` : subKey.toUpperCase()}
                   type="number"
                   variant="outlined"
                   size="small"
