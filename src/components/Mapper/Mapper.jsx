@@ -213,8 +213,16 @@ export const Mapper = ({ pokemonList }) => {
       }
       return null;
     });
-
-    clearRect(CLEAR_MODE.ENCOUNTER);
+    const prevLocations = previousRectangle.enc // There are multiple rectangles that are highlighted
+    console.log(prevLocations);
+    if (prevLocations) {
+      for (const locationIndex in prevLocations) {
+        console.log("Deleting Previous Enc:", locationIndex);
+        const {x, y, width, height} = prevLocations[locationIndex];
+        clearRect(CLEAR_MODE.ENCOUNTER, x, y, width, height);
+      }
+      previousRectangle.enc = null;
+    }
 
     for (const locationIndex in locationChecks) {
       const location = locationChecks[locationIndex];
@@ -473,39 +481,52 @@ export const Mapper = ({ pokemonList }) => {
     ctx.fillRect(x, y, width, height);
   }
 
-  function clearRect(mode=CLEAR_MODE.HIGHLIGHT) {
+  function clearRect(mode=CLEAR_MODE.HIGHLIGHT, x, y, width, height) { // coords defined for Encounters
     //Clears the old location and restores the image data at that position.
     const ctx = canvasRef.current.getContext('2d');
     if (mode !== CLEAR_MODE.ENCOUNTER) {
       const {x, y, width, height} = previousRectangle[mode];
       ctx.clearRect(x, y, width, height);
-      if (mode === CLEAR_MODE.SELECT && previousRectangle.highlight !== null) {
+      if (mode === CLEAR_MODE.SELECT) {
         // This adds a hierarchy of which highlights override others
         // In order to do this, it will first clear the lower mode's rect
         // Then it will set that lower mode's rect to null
         // This way it won't clear the higher mode's rect when the lower mode is called again
         // The hierarchy will be 1: Select, 2: Highlight, 3: Encounter.
-        clearRect(CLEAR_MODE.HIGHLIGHT);
-        previousRectangle.highlight = null;
+        
+        if (previousRectangle.highlight !== null) {
+          clearRect(CLEAR_MODE.HIGHLIGHT);
+          previousRectangle.highlight = null;
+        }
+        // if (previousRectangle.enc !== null) {
+        //   const foundRectangleIndex = previousRectangle.enc.findIndex((rect) =>
+        //     rect.x === x && rect.y === y && rect.width === width && rect.height === height
+        //   );
+
+        //   if (foundRectangleIndex >= 0) {
+        //     const { prevX, prevY, prevW, prevH } = previousRectangle.enc[foundRectangleIndex]
+        //     clearRect(CLEAR_MODE.ENCOUNTER, prevX, prevY, prevW, prevH)
+        //     previousRectangle.enc.splice(foundRectangleIndex, 1);
+        //     drawRect(prevX, prevY, prevW, prevH, CLEAR_MODE.SELECT);
+        //   }
+        // }
       }
       ctx.putImageData(originalImageData[mode], x, y);
     } else {
-      const locations = previousRectangle[mode] // There are multiple rectangles that are highlighted
-      if (locations) {
-        for (const locationIndex in locations) {
-          const {x, y, width, height} = locations[locationIndex];
-          const { name } = getSelectedLocation(x, y);
-          console.log(locationName.current, name);
-          if (name !== locationName.current) {
-            ctx.clearRect(x, y, width, height);
-            ctx.putImageData(originalImageData[mode][locationIndex], x, y);
-          } else {
-            ctx.clearRect(x, y, width, height);
-            ctx.putImageData(originalImageData[mode][locationIndex], x, y);
-            drawRect(x, y, width, height, CLEAR_MODE.SELECT);
-          }
-        }
-        previousRectangle.enc = null;
+      const { name } = getSelectedLocation(x, y);
+      const prevRectangleDataIndex = previousRectangle.enc.findIndex((rect) =>
+        rect.x === x && rect.y === y && rect.width === width && rect.height === height
+      );
+      console.log(prevRectangleDataIndex);
+      const ogImageData = originalImageData.enc[prevRectangleDataIndex];
+      console.log(ogImageData);
+      if (name !== locationName.current) {
+        ctx.clearRect(x, y, width, height);
+        ctx.putImageData(ogImageData, x, y);
+      } else {
+        ctx.clearRect(x, y, width, height);
+        ctx.putImageData(originalImageData.select, x, y);
+        drawRect(x, y, width, height, CLEAR_MODE.SELECT);
       }
     }
   }
