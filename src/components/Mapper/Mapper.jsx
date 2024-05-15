@@ -214,11 +214,20 @@ export const Mapper = ({ pokemonList }) => {
       return null;
     });
     const prevLocations = previousRectangle.enc // There are multiple rectangles that are highlighted
-    console.log(prevLocations);
+    const prevHighlight = previousRectangle.highlight;
     if (prevLocations) {
       for (const locationIndex in prevLocations) {
-        console.log("Deleting Previous Enc:", locationIndex);
         const {x, y, width, height} = prevLocations[locationIndex];
+        if (
+          prevHighlight.x === x &&
+          prevHighlight.y === y &&
+          prevHighlight.width === width &&
+          prevHighlight.height === height
+        ) {
+          clearRect(CLEAR_MODE.HIGHLIGHT);
+          setHoveredZone(null);
+          previousRectangle.highlight = null;
+        }
         clearRect(CLEAR_MODE.ENCOUNTER, x, y, width, height);
       }
       previousRectangle.enc = null;
@@ -266,18 +275,18 @@ export const Mapper = ({ pokemonList }) => {
       canvas.addEventListener('click', handleClick);
       canvas.addEventListener('mousemove', handleMouseMove);
       canvas.addEventListener('mouseleave', handleMouseLeave);
-      window.addEventListener('passLocationNameToParent', eventListener);
-      window.addEventListener('passPokemonNameLocation', pokemonLocationsListener);
-      window.addEventListener('changeColorSettings', colorListener);
+      canvas.addEventListener('passLocationNameToParent', eventListener);
+      canvas.addEventListener('passPokemonNameLocation', pokemonLocationsListener);
+      canvas.addEventListener('changeColorSettings', colorListener);
 
       // Clean up the event listener when the component is unmounted
       return () => {
         canvas.removeEventListener('click', handleClick);
         canvas.removeEventListener('mousemove', handleMouseMove);
         canvas.removeEventListener('mouseleave', handleMouseLeave);
-        window.removeEventListener('passLocationNameToParent', eventListener);
-        window.removeEventListener('passPokemonNameLocation', pokemonLocationsListener);
-        window.removeEventListener('changeColorSettings', colorListener);
+        canvas.removeEventListener('passLocationNameToParent', eventListener);
+        canvas.removeEventListener('passPokemonNameLocation', pokemonLocationsListener);
+        canvas.removeEventListener('changeColorSettings', colorListener);
       };
     }
   }, [canvasRef.current]); // Add canvasRef.current to the dependency array
@@ -513,13 +522,15 @@ export const Mapper = ({ pokemonList }) => {
       }
       ctx.putImageData(originalImageData[mode], x, y);
     } else {
-      const { name } = getSelectedLocation(x, y);
+      const location = getSelectedLocation(x, y);
+      if (!location) {
+        return;
+      }
+      const { name } = location;
       const prevRectangleDataIndex = previousRectangle.enc.findIndex((rect) =>
         rect.x === x && rect.y === y && rect.width === width && rect.height === height
       );
-      console.log(prevRectangleDataIndex);
       const ogImageData = originalImageData.enc[prevRectangleDataIndex];
-      console.log(ogImageData);
       if (name !== locationName.current) {
         ctx.clearRect(x, y, width, height);
         ctx.putImageData(ogImageData, x, y);
@@ -549,6 +560,14 @@ export const Mapper = ({ pokemonList }) => {
     } else if (location && location.name === locationName.current) {
       // This prevents the selected location from being highlighted by the hover color
       drawRect(location.x, location.y, location.w, location.h, CLEAR_MODE.SELECT);
+    } else {
+      setHoveredZone(null);
+      if (previousRectangle.highlight !== null) {
+        clearRect(CLEAR_MODE.HIGHLIGHT);
+      }
+      if (previousRectangle.enc !== null) {
+        clearRect(CLEAR_MODE.ENCOUNTER);
+      }
     }
   }
 
@@ -557,6 +576,9 @@ export const Mapper = ({ pokemonList }) => {
     setHoveredZone(null);
     if (previousRectangle.highlight !== null) {
       clearRect(CLEAR_MODE.HIGHLIGHT);
+    }
+    if (previousRectangle.enc !== null) {
+      clearRect(CLEAR_MODE.ENCOUNTER);
     }
   };
 
@@ -587,6 +609,7 @@ export const Mapper = ({ pokemonList }) => {
         handleDebouncedTextChange={handlePokemonNameChange}
         locationName={selectedZone}
         setLocationName={setSelectedZone}
+        canvasRef={canvasRef.current}
       />
       <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
         <SettingsIcon />

@@ -4,7 +4,7 @@ import Fuse from 'fuse.js';
 import './style.css';
 import { getLocationNames } from './coordinates';
 
-const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText }) => {
+const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText, canvasRef }) => {
   // It appears the original intent was to debounce a search text input, so we will manage that text with `searchText` and `debouncedText`.
   const [searchText, setSearchText] = useState('');
   const [selectedPokemon, setSelectedPokemon] = useState(allPokemons[0] || '');
@@ -27,7 +27,7 @@ const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText }) =>
   const handlePokemonNameChange = (event, value) => {
     // Dispatch event with the name of the selected Pokemon.
     const pokemonLocationsEvent = new CustomEvent('passPokemonNameLocation', { detail: value });
-    window.dispatchEvent(pokemonLocationsEvent);
+    canvasRef.dispatchEvent(pokemonLocationsEvent);
     // Assume `value` is the whole Pokemon object selected from options.
     setSelectedPokemon(value);
     // Set the searchText as the Pokemon's name, which will then be debounced.
@@ -62,11 +62,11 @@ const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText }) =>
   );
 };
 
-const LocationNameDropdown = ({ locationName, setLocationName }) => {
+const LocationNameDropdown = ({ locationName, setLocationName, canvasRef }) => {
   const locations = getLocationNames();
   const handleLocationChange = (e, value) => {
     const locationNameEvent = new CustomEvent('passLocationNameToParent', { detail: value });
-    window.dispatchEvent(locationNameEvent);
+    canvasRef.dispatchEvent(locationNameEvent);
     setLocationName(value)
   };
 
@@ -102,6 +102,7 @@ export const SearchBar = ({
   handleDebouncedTextChange,
   locationName,
   setLocationName,
+  canvasRef,
 }) => {
   return (
     <div
@@ -115,8 +116,13 @@ export const SearchBar = ({
         allPokemons={pokemonList}
         debouncedText={debouncedText}
         setDebouncedText={handleDebouncedTextChange}
+        canvasRef={canvasRef}
       />
-      <LocationNameDropdown locationName={locationName} setLocationName={setLocationName} />
+      <LocationNameDropdown
+        locationName={locationName}
+        setLocationName={setLocationName}
+        canvasRef={canvasRef}
+      />
     </div>
   )
 };
