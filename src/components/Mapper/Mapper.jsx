@@ -208,17 +208,25 @@ export const Mapper = ({ pokemonList }) => {
     const locationChecks = locations.map((locationName) => {
       const locationCoords = getLocationCoordsFromName(locationName);
       if (locationCoords) {
-        const locationCheck = { x: locationCoords.x, y: locationCoords.y, w: locationCoords.w, h: locationCoords.h};
+        const locationCheck = {
+          name: locationName,
+          x: locationCoords.x,
+          y: locationCoords.y,
+          w: locationCoords.w,
+          h: locationCoords.h
+        };
         return locationCheck
       }
       return null;
     });
     const prevLocations = previousRectangle.enc // There are multiple rectangles that are highlighted
     const prevHighlight = previousRectangle.highlight;
+    const prevSelected = previousRectangle.select;
     if (prevLocations) {
       for (const locationIndex in prevLocations) {
         const {x, y, width, height} = prevLocations[locationIndex];
         if (
+          prevHighlight &&
           prevHighlight.x === x &&
           prevHighlight.y === y &&
           prevHighlight.width === width &&
@@ -228,7 +236,15 @@ export const Mapper = ({ pokemonList }) => {
           setHoveredZone(null);
           previousRectangle.highlight = null;
         }
-        clearRect(CLEAR_MODE.ENCOUNTER, x, y, width, height);
+        if (
+          prevSelected &&
+          prevSelected.x !== x &&
+          prevSelected.y !== y &&
+          prevSelected.width !== width &&
+          prevSelected.height !== height
+        ) {
+          clearRect(CLEAR_MODE.ENCOUNTER, x, y, width, height);
+        }
       }
       previousRectangle.enc = null;
     }
@@ -348,6 +364,27 @@ export const Mapper = ({ pokemonList }) => {
       // We want the old selected area to not have the hover's color.
       // See clearRect for hierarchy info.
       clearRect(CLEAR_MODE.HIGHLIGHT);
+    }
+    if (previousRectangle.enc !== null) {
+      const selectedEnc = previousRectangle.enc.find(
+        (encLocation) => {
+          return (
+            location.x === encLocation.x &&
+            location.y === encLocation.y &&
+            location.w === encLocation.width &&
+            location.h === encLocation.height
+          );
+        }
+      )
+      if (selectedEnc) {
+        clearRect(
+          CLEAR_MODE.ENCOUNTER,
+          selectedEnc.x,
+          selectedEnc.y,
+          selectedEnc.width,
+          selectedEnc.height
+        );
+      }
     }
     if(previousRectangle.select !== null) {
       clearRect(CLEAR_MODE.SELECT);
@@ -524,7 +561,7 @@ export const Mapper = ({ pokemonList }) => {
     } else {
       const location = getSelectedLocation(x, y);
       if (!location) {
-        return;
+        throw new Error("Try again with your location bozo :P");
       }
       const { name } = location;
       const prevRectangleDataIndex = previousRectangle.enc.findIndex((rect) =>
@@ -561,12 +598,31 @@ export const Mapper = ({ pokemonList }) => {
       // This prevents the selected location from being highlighted by the hover color
       drawRect(location.x, location.y, location.w, location.h, CLEAR_MODE.SELECT);
     } else {
+      if (location && previousRectangle.enc !== null) {
+        const hoveredEnc = previousRectangle.enc.find(
+          (encLocation) => {
+            return (
+              location.x === encLocation.x &&
+              location.y === encLocation.y &&
+              location.w === encLocation.width &&
+              location.h === encLocation.height
+            );
+          }
+        )
+        if (hoveredEnc) {
+          clearRect(
+            CLEAR_MODE.ENCOUNTER,
+            hoveredEnc.x,
+            hoveredEnc.y,
+            hoveredEnc.width,
+            hoveredEnc.height
+          );
+        }
+      }
       setHoveredZone(null);
       if (previousRectangle.highlight !== null) {
         clearRect(CLEAR_MODE.HIGHLIGHT);
-      }
-      if (previousRectangle.enc !== null) {
-        clearRect(CLEAR_MODE.ENCOUNTER);
+        previousRectangle.highlight = null;
       }
     }
   }
