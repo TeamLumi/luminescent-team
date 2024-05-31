@@ -67,7 +67,7 @@ function getSelectedLocation(x, y) {
 }
 
 const canvasDimensions = {
-  width: 1244,
+  width: 1280,
   height: 720
 }
 
@@ -115,7 +115,7 @@ export const Mapper = ({ pokemonList }) => {
   };
 
   let colorSettings = {
-    hov: { r: 247, g: 148, b: 72, a: 0.7 },
+    hov: { r: 247, g: 100, b: 200, a: 0.7 },
     sel: { r: 72, g: 113, b: 247, a: 0.8 },
     enc: { r: 247, g: 0, b: 0, a: 0.7 },
   }
@@ -148,7 +148,7 @@ export const Mapper = ({ pokemonList }) => {
     console.log('Mounting...')
     const context = canvasRef.current.getContext('2d');
     const image = new Image();
-    image.src = require('@site/static/img/sinnoh-updated.png').default;
+    image.src = require('@site/static/img/small_mapper.png').default;
     image.onload = () => {
       context.drawImage(image, 0, 0);
       drawOverlay(context);
