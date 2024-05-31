@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, Typography, Grid } from '@mui/material';
+import { TextField, Typography, Grid, Button } from '@mui/material';
 import './style.css';
 
 const INPUT_MIN = "0";
@@ -8,9 +8,15 @@ const TRANSPARENCY_STEP = ".1";
 const COLOR_MAX = "255";
 const COLOR_STEP = "1";
 
-export const ChangeHighlightColors = ({ colorKeys, newColors, handleChange }) => {
+export const ChangeHighlightColors = ({
+  colorKeys,
+  newColors,
+  handleChange,
+  handleSubmit,
+  handleNoSaveClose
+}) => {
   return (
-    <form>
+    <form onSubmit={handleSubmit} noValidate>
       <Typography variant='h6' style={{ marginTop: '16px' }}>Change Highlight Colors</Typography>
       <Grid container spacing={3} sx={{marginTop: "0px"}}>
         {colorKeys.map((colorKey) => (
@@ -25,11 +31,13 @@ export const ChangeHighlightColors = ({ colorKeys, newColors, handleChange }) =>
                 marginLeft: '8px',
                 backgroundColor: `rgba(${newColors[colorKey].r},${newColors[colorKey].g},${newColors[colorKey].b},${newColors[colorKey].a})`,
                 border: '1px solid #fff',
-              }} />
+              }}
+            />
             {Object.keys(newColors[colorKey]).map((subKey) => (
               <div key={subKey} style={{ marginTop: '8px' }}>
                 <TextField
                   label={subKey === 'a' ? `${subKey.toUpperCase()} (Coming Soon)` : subKey.toUpperCase()}
+                  name={`${colorKey}-${subKey}`}
                   type="number"
                   variant="outlined"
                   size="small"
@@ -47,6 +55,14 @@ export const ChangeHighlightColors = ({ colorKeys, newColors, handleChange }) =>
           </Grid>
         ))}
       </Grid>
+      <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'center' }}>
+          <Button variant="contained" color="secondary" type="submit">
+            Save Changes
+          </Button>
+          <Button variant="outlined" color="error" onClick={handleNoSaveClose} style={{ marginLeft: '8px' }}>
+            Exit Without Saving Changes
+          </Button>
+        </div>
     </form>
   );
 }

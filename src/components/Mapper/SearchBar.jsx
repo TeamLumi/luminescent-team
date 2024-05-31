@@ -108,7 +108,7 @@ export const SearchBar = ({
     <div
       className="infoCol"
       style={{
-        width: `${canvasDimensions.width-10}px`,
+        width: `${canvasDimensions.width}px`,
         height: `${canvasDimensions.height}px`
       }}
     >

@@ -16,9 +16,23 @@ const SettingsModal = ({ colors, setColors, showModal, onHide }) => {
     });
   };
 
-  const handleClose = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const updatedColors = {};
+    for (let [key, value] of formData.entries()) {
+      const [colorKey, subKey] = key.split("-");
+      if (!updatedColors[colorKey]) {
+        updatedColors[colorKey] = {};
+      }
+      updatedColors[colorKey][subKey] = value;
+      console.log(`${key}: ${value}`);
+    }
+    updatedColors.hov.a = 0.7;
+    updatedColors.sel.a = 0.7;
+    updatedColors.enc.a = 0.7;
     setColors(newColors);
-    const colorSettingsEvent = new CustomEvent('changeColorSettings', { detail: newColors });
+    const colorSettingsEvent = new CustomEvent('changeColorSettings', { detail: updatedColors });
     window.dispatchEvent(colorSettingsEvent);
     onHide();
   };
@@ -26,8 +40,8 @@ const SettingsModal = ({ colors, setColors, showModal, onHide }) => {
   const handleNoSaveClose = () => {
     setColors(colors);
     onHide();
-    const colorSettingsEvent = new CustomEvent('changeColorSettings', { detail: colors });
-    window.dispatchEvent(colorSettingsEvent);
+    // const colorSettingsEvent = new CustomEvent('changeColorSettings', { detail: colors });
+    // window.dispatchEvent(colorSettingsEvent);
   };
 
   const colorKeys = Object.keys(newColors);
@@ -45,15 +59,9 @@ const SettingsModal = ({ colors, setColors, showModal, onHide }) => {
           colorKeys={colorKeys}
           newColors={newColors}
           handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          handleNoSaveClose={handleNoSaveClose}
         />
-        <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'center' }}>
-          <Button variant="contained" color="secondary" onClick={handleClose}>
-            Save Changes
-          </Button>
-          <Button variant="outlined" color="error" onClick={handleNoSaveClose} style={{ marginLeft: '8px' }}>
-            Exit Without Saving Changes
-          </Button>
-        </div>
       </Box>
     </Modal>
   );
