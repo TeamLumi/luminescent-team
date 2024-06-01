@@ -132,11 +132,6 @@
                 5
             ]
         },
-        "Dragon Cheer": {
-            "bp": 0,
-            "category": "Status",
-            "type": "Dragon"
-        },
         "Dragon Rage": {
             "bp": 1,
             "type": "Dragon"

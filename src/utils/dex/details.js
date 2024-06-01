@@ -1,13 +1,11 @@
-import { pokemonHeight, pokemonWeight } from './data';
-import { pokemonHeight3, pokemonWeight3 } from './data3';
+import { pokemonHeight, pokemonWeight } from '../../../__gamedata';
 
 const FEET_TO_CM = 30.48;
 const INCHES_TO_CM = 2.54;
 const POUNDS_TO_KG = 0.453592;
 
-function getHeight(pokemonId = 0, mode = "2.0") {
-  const PokemonHeight = mode === "2.0" ? pokemonHeight : pokemonHeight3
-  const heightString = PokemonHeight.labelDataArray[pokemonId]?.wordDataArray[0]?.str ?? null;
+function getHeight(pokemonId = 0) {
+  const heightString = pokemonHeight.labelDataArray[pokemonId]?.wordDataArray[0]?.str ?? null;
 
   if (heightString === null) return '0';
 
@@ -20,9 +18,8 @@ function getHeight(pokemonId = 0, mode = "2.0") {
   return ((feetInCentimeters + inchesInCentimeters) / 100).toFixed(2);
 }
 
-function getWeight(pokemonId = 0, mode = "2.0") {
-  const PokemonWeight = mode === "2.0" ? pokemonWeight : pokemonWeight3
-  const weightString = PokemonWeight.labelDataArray[pokemonId]?.wordDataArray[0]?.str || null;
+function getWeight(pokemonId = 0) {
+  const weightString = pokemonWeight.labelDataArray[pokemonId]?.wordDataArray[0]?.str || null;
 
   if (weightString === null) return '0';
 

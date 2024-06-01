@@ -1,9 +1,7 @@
-import { PersonalTable, pokemonPokedexInfo } from './data';
-import { PersonalTable3, pokemonPokedexInfo3 } from './data3';
+import { PersonalTable } from '../../../__gamedata';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});
-const FORM_MAP3 = PersonalTable3.Personal.reduce(createFormMap, {});
 
 function createFormMap(formMap, currentPokemon) {
   if (!Array.isArray(formMap[currentPokemon.monsno])) {
@@ -14,15 +12,9 @@ function createFormMap(formMap, currentPokemon) {
   return formMap;
 }
 
-function getPokemonIdFromFormMap(monsNo = 0, formNo = 0, mode = "2.0") {
-  const formMap = mode === "2.0" ? FORM_MAP : FORM_MAP3;
-  return formMap[monsNo]?.[formNo] ?? undefined;
+function getPokemonIdFromFormMap(monsNo = 0, formNo = 0) {
+  return FORM_MAP[monsNo]?.[formNo] ?? undefined;
 }
-
-const getPokemonFormIndexById = (monsno, id, mode = "2.0") => {
-  const formMap = mode === "2.0" ? FORM_MAP : FORM_MAP3
-  return formMap[monsno].findIndex((pokemonId) => pokemonId === id);
-};
 
 function getGender(sex) {
   if (sex === 0) return 'M';
@@ -34,7 +26,7 @@ function getGender(sex) {
 function getImage(monsno = 0, formIndex = 0) {
   const paddedMonsno = monsno.toString().padStart(4, 0);
   const paddedFormIndex = formIndex.toString().padStart(2, 0);
-  return `/img/pkm/pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
+  return `/img/pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
 }
 
 function formatBaseStats(p) {
@@ -50,27 +42,17 @@ function getGrassKnotPower(weightkg) {
   return 20;
 }
 
-function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = "2.0") {
-  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
-  const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
-  return personalTable.Personal.find((e) => e.monsno === monsno && form_map[e.monsno][formno] === e.id)?.id;
+function getPokemonIdFromMonsNoAndForm(monsno, formno) {
+  return PersonalTable.Personal.find((e) => e.monsno === monsno && FORM_MAP[e.monsno][formno] === e.id)?.id;
 }
 
 function doNothing(evoMethod, evolutionDetails) {
   return [evolutionDetails, evoMethod];
 };
 
-function getDexDescription(pokemonId, mode = "2.0") {
-  const PokedexInfo = mode === "2.0" ? pokemonPokedexInfo : pokemonPokedexInfo3;
-  const labelData = PokedexInfo.labelDataArray[pokemonId]
-  const combinedStr = labelData.wordDataArray.map(data => data.str).join(' ');
-  return combinedStr
-}
 export {
   FORM_MAP,
-  FORM_MAP3,
   getPokemonIdFromFormMap,
-  getPokemonFormIndexById,
   getGender,
   getGrassKnotPower,
   getImage,
@@ -78,5 +60,4 @@ export {
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
   doNothing,
-  getDexDescription,
 };

@@ -24257,7 +24257,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user swings itself around to attack with its huge hammer.",
+                    "str": "Using Happy Hour doubles the amount of prize money",
                     "strWidth": 710.0
                 },
                 {
@@ -24265,7 +24265,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This move can't be used twice in a row.",
+                    "str": "received after battle.",
                     "strWidth": 710.0
                 }
             ]

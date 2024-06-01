@@ -17,11 +17,11 @@ export default function EvolutionGraph() {
       </div>
 
       <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center">
-        <img src={useBaseUrl('/img/pkm/pm0001_00_00_00_L.webp')} alt="Stage 1 Evo" />
+        <img src={useBaseUrl('/img/pm0001_00_00_00_L.webp')} alt="Stage 1 Evo" />
         <Typography variant="h6">→</Typography>
-        <img src={useBaseUrl('/img/pkm/pm0002_00_00_00_L.webp')} alt="Stage 2 Evo" />
+        <img src={useBaseUrl('/img/pm0002_00_00_00_L.webp')} alt="Stage 2 Evo" />
         <Typography variant="h6">→</Typography>
-        <img src={useBaseUrl('/img/pkm/pm0003_00_00_00_L.webp')} width={90} alt="Stage 3 Evo" />
+        <img src={useBaseUrl('/img/pm0003_00_00_00_L.webp')} width={90} alt="Stage 3 Evo" />
       </Box>
     </div>
   );

@@ -1,4 +1,4 @@
-import { POKEMON_FORM_ID_MAP, POKEMON_FORM_ID_MAP3, getPokemonFormIndexById, getPokemonImageFilename } from './pokemonFormSelector';
+import { POKEMON_FORM_ID_MAP, getPokemonFormIndexById, getPokemonImageFilename } from './pokemonFormSelector';
 import fs from 'fs';
 import path from 'path';
 
@@ -32,17 +32,16 @@ test.each([
   expect(getPokemonImageFilename(monsno, formIndex)).toBe(filename);
 });
 
-function getAllPokemonFormImageData(mode = "2.0") {
+function getAllPokemonFormImageData() {
   const pokemonFormData = [];
-  const form_id_map = mode === "2.0" ? POKEMON_FORM_ID_MAP : POKEMON_FORM_ID_MAP3;
 
-  for (const entry of Object.entries(form_id_map)) {
+  for (const entry of Object.entries(POKEMON_FORM_ID_MAP)) {
     const monsno = entry[0];
     const pokemonForms = entry[1];
 
     for (let i = 0; i < pokemonForms.length; i++) {
       const pokemonForm = pokemonForms[i];
-      const filename = getPokemonImageFilename(monsno, getPokemonFormIndexById(monsno, pokemonForm.pokemonId, mode));
+      const filename = getPokemonImageFilename(monsno, getPokemonFormIndexById(monsno, pokemonForm.pokemonId));
       pokemonFormData.push([filename, pokemonForm.formName]);
     }
   }
@@ -50,36 +49,19 @@ function getAllPokemonFormImageData(mode = "2.0") {
   return pokemonFormData;
 }
 
-// test.skip.each([...getAllPokemonFormImageData("2.0")])('2.0 pokemon form image %s for %s does not exist', (filename, formName, done) => {
-//   const imgFilePath = path.join(__dirname, '../../static/img/pkm/', filename);
-//   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
-//     let fileExists = true;
-//     if (err) {
-//       fileExists = false;
-//     }
+test.skip.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, formName, done) => {
+  const imgFilePath = path.join(__dirname, '../../static/img/', filename);
+  fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+    let fileExists = true;
+    if (err) {
+      fileExists = false;
+    }
 
-//     try {
-//       expect(fileExists).toBe(true);
-//       done();
-//     } catch (err) {
-//       done(err);
-//     }
-//   });
-// });
-
-// test.skip.each([...getAllPokemonFormImageData("3.0")])('3.0 pokemon form image %s for %s does not exist', (filename, formName, done) => {
-//   const imgFilePath = path.join(__dirname, '../../static/img/pkm/', filename);
-//   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
-//     let fileExists = true;
-//     if (err) {
-//       fileExists = false;
-//     }
-
-//     try {
-//       expect(fileExists).toBe(true);
-//       done();
-//     } catch (err) {
-//       done(err);
-//     }
-//   });
-// });
+    try {
+      expect(fileExists).toBe(true);
+      done();
+    } catch (err) {
+      done(err);
+    }
+  });
+});

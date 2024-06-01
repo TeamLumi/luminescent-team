@@ -1,0 +1,8 @@
+{
+  "label": "ExeFS Editing",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Modifying the underlaying game code, or Executable File System (ExeFS)."
+  }
+}

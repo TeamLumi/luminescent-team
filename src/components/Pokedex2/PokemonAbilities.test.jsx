@@ -2,18 +2,15 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { PokemonAbilities } from './PokemonAbilities';
-import { GlobalState } from '../common/GlobalState';
 
 describe('Pokemon Abilities', () => {
   test('all three are the same', () => {
     const name = 'Blaze';
 
     render(
-      <GlobalState>
-        <div data-testid="abilities">
-          <PokemonAbilities abilityName1={name} abilityName2={name} abilityNameHidden={name} />
-        </div>
-      </GlobalState>
+      <div data-testid="abilities">
+        <PokemonAbilities abilityName1={name} abilityName2={name} abilityNameHidden={name} />
+      </div>,
     );
 
     expect(screen.queryByTestId('abilities')).toHaveTextContent(/^Blaze$/);
@@ -24,11 +21,9 @@ describe('Pokemon Abilities', () => {
     const name2 = 'Levitate';
 
     render(
-      <GlobalState>
-        <div data-testid="abilities">
-          <PokemonAbilities abilityName1={name1} abilityName2={name1} abilityNameHidden={name2} />
-        </div>
-      </GlobalState>
+      <div data-testid="abilities">
+        <PokemonAbilities abilityName1={name1} abilityName2={name1} abilityNameHidden={name2} />
+      </div>,
     );
 
     expect(screen.queryByTestId('abilities')).toHaveTextContent(/^Blaze,Levitate \(H\)$/);
@@ -39,11 +34,9 @@ describe('Pokemon Abilities', () => {
     const name2 = 'Shield Dust';
 
     render(
-      <GlobalState>
-        <div data-testid="abilities">
-          <PokemonAbilities abilityName1={name1} abilityName2={name2} abilityNameHidden={name1} />
-        </div>
-      </GlobalState>
+      <div data-testid="abilities">
+        <PokemonAbilities abilityName1={name1} abilityName2={name2} abilityNameHidden={name1} />
+      </div>,
     );
 
     expect(screen.queryByTestId('abilities')).toHaveTextContent(/^Blaze,Shield Dust$/);
@@ -54,11 +47,9 @@ describe('Pokemon Abilities', () => {
     const name2 = 'Shield Dust';
 
     render(
-      <GlobalState>
-        <div data-testid="abilities">
-          <PokemonAbilities abilityName1={name2} abilityName2={name1} abilityNameHidden={name2} />
-        </div>
-      </GlobalState>
+      <div data-testid="abilities">
+        <PokemonAbilities abilityName1={name2} abilityName2={name1} abilityNameHidden={name2} />
+      </div>,
     );
 
     expect(screen.queryByTestId('abilities')).toHaveTextContent(/^Shield Dust,Levitate$/);
@@ -70,11 +61,9 @@ describe('Pokemon Abilities', () => {
     const name3 = 'Shield Dust';
 
     render(
-      <GlobalState>
-        <div data-testid="abilities">
-          <PokemonAbilities abilityName1={name1} abilityName2={name2} abilityNameHidden={name3} />
-        </div>
-      </GlobalState>
+      <div data-testid="abilities">
+        <PokemonAbilities abilityName1={name1} abilityName2={name2} abilityNameHidden={name3} />
+      </div>,
     );
 
     expect(screen.queryByTestId('abilities')).toHaveTextContent(/^Blaze,Levitate,Shield Dust \(H\)$/);

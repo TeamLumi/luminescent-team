@@ -1,0 +1,8 @@
+{
+  "label": "Audio",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Editing music and sound files."
+  }
+}
