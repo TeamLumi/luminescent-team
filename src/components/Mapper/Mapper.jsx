@@ -6,6 +6,7 @@ import { useColorMode } from '@docusaurus/theme-common';
 import {
   coordinates,
   getLocationCoordsFromName,
+  getLocationCoordsFromZoneId,
   getSelectedLocation,
   isLocationExactlyEqual
 } from './coordinates';
@@ -69,7 +70,7 @@ export const Mapper = ({ pokemonList }) => {
   const [rect, setRect] = useState(null);
   const [hoveredZone, setHoveredZone] = useState(null);
   const [selectedZone, setSelectedZone] = useState(null);
-  const locationName = useRef("");
+  const locationId = useRef("");
   const [encOptions, setEncOptions] = useState({
     swarm: false,
     radar: false,
@@ -126,7 +127,7 @@ export const Mapper = ({ pokemonList }) => {
     console.log('Mounting...')
     const context = canvasRef.current.getContext('2d', {willReadFrequently: true});
     const image = new Image();
-    image.src = require('@site/static/img/small_mapper.png').default;
+    image.src = require('@site/static/img/new_small_mapper.png').default;
     image.onload = () => {
       context.drawImage(image, 0, 0);
       drawOverlay(context);
@@ -175,18 +176,17 @@ export const Mapper = ({ pokemonList }) => {
     }
     drawRect(location, CLEAR_MODE.SELECT);
     previousRectangle.select = { x: location.x, y: location.y, width: location.width, height: location.height };
-    locationName.current = location.name;
+    locationId.current = location.zoneId;
 
-    setEncounterList(setAllEncounters(location.name));
+    setEncounterList(setAllEncounters(location.zoneId));
     setTrainerList(getTrainersFromZoneName(location.name));
 
-    const zoneId = getZoneIdFromZoneName(location.name);
-    setFieldItems(getFieldItemsFromZoneID(zoneId));
-    setHiddenItems(getHiddenItemsFromZoneID(zoneId));
-    setShopItems(getRegularShopItems(zoneId));
-    setScriptItems(getScriptItems(zoneId));
-    setFixedShops(getFixedShops(zoneId));
-    setHeartScaleShop(getHeartScaleShopItems(zoneId));
+    setFieldItems(getFieldItemsFromZoneID(location.zoneId));
+    setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
+    setShopItems(getRegularShopItems(location.zoneId));
+    setScriptItems(getScriptItems(location.zoneId));
+    setFixedShops(getFixedShops(location.zoneId));
+    setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
   };
 
   const updatePokemonLocationsFromDropdown = (event) => {
@@ -199,8 +199,9 @@ export const Mapper = ({ pokemonList }) => {
       return;
     }
     const locations = getRoutesFromPokemonId(selectedName.id);
-    const locationChecks = locations.map((locationName) => {
+    const locationChecks = locations.map(([locationName, zoneId]) => {
       const locationCoords = getLocationCoordsFromName(locationName);
+      const zoneLocationCoords = getLocationCoordsFromZoneId(zoneId);
       if (locationCoords) {
         const locationCheck = {
           name: locationName,
@@ -208,6 +209,15 @@ export const Mapper = ({ pokemonList }) => {
           y: locationCoords.y,
           width: locationCoords.width,
           height: locationCoords.height
+        };
+        return locationCheck
+      } else if (zoneLocationCoords) {
+        const locationCheck = {
+          name: locationName,
+          x: zoneLocationCoords.x,
+          y: zoneLocationCoords.y,
+          width: zoneLocationCoords.width,
+          height: zoneLocationCoords.height
         };
         return locationCheck
       }
@@ -245,11 +255,11 @@ export const Mapper = ({ pokemonList }) => {
     for (const locationIndex in locationChecks) {
       const location = locationChecks[locationIndex];
       if (location) {
-        if (location.name !== locationName.current && location.name !== hoveredZone) {
+        if (location.zoneId !== locationId.current && location.name !== hoveredZone) {
           drawRect(location, CLEAR_MODE.ENCOUNTER);
         } else if (location.name === hoveredZone) {
           drawRect(location);
-        } else if (location.name === locationName.current) {
+        } else if (location.zoneId === locationId.current) {
           drawRect(location, CLEAR_MODE.SELECT);
         }
       }
@@ -258,7 +268,6 @@ export const Mapper = ({ pokemonList }) => {
 
   const updateColorSettings = (event) => {
     const newColorSettings = event.detail;
-    console.log(newColorSettings);
     colorSettings = newColorSettings;
     if (previousRectangle.select !== null) {
       const location = previousRectangle.select;
@@ -311,18 +320,17 @@ export const Mapper = ({ pokemonList }) => {
     drawRect(location, CLEAR_MODE.SELECT); // Change the fill color
     previousRectangle.select = { x: location.x, y: location.y, width: location.width, height: location.height };
 
-    locationName.current = location.name;
+    locationId.current = location.zoneId;
     setSelectedZone(location.name);
-    setEncounterList(setAllEncounters(location.name));
+    setEncounterList(setAllEncounters(location.zoneId));
     setTrainerList(getTrainersFromZoneName(location.name));
 
-    const zoneId = getZoneIdFromZoneName(location.name);
-    setFieldItems(getFieldItemsFromZoneID(zoneId));
-    setHiddenItems(getHiddenItemsFromZoneID(zoneId));
-    setShopItems(getRegularShopItems(zoneId));
-    setScriptItems(getScriptItems(zoneId));
-    setFixedShops(getFixedShops(zoneId));
-    setHeartScaleShop(getHeartScaleShopItems(zoneId));
+    setFieldItems(getFieldItemsFromZoneID(location.zoneId));
+    setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
+    setShopItems(getRegularShopItems(location.zoneId));
+    setScriptItems(getScriptItems(location.zoneId));
+    setFixedShops(getFixedShops(location.zoneId));
+    setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
   };
 
   function handleMouseMove(event) {
@@ -338,10 +346,10 @@ export const Mapper = ({ pokemonList }) => {
     const mouseY = event.clientY - rect.top + scrollTop;
 
     const location = getSelectedLocation(mouseX, mouseY);
-    if (location && location.name !== locationName.current) {
+    if (location && location.zoneId !== locationId.current) {
       setHoveredZone(location.name);
       drawRect(location); // Change the fill color
-    } else if (location && location.name === locationName.current) {
+    } else if (location && location.zoneId === locationId.current) {
       // This prevents the selected location from being highlighted by the hover color
       drawRect(location, CLEAR_MODE.SELECT);
     } else {
@@ -410,8 +418,8 @@ export const Mapper = ({ pokemonList }) => {
   }, [canvasRef.current]); // Add canvasRef.current to the dependency array
 
   useEffect(() => {
-    if(locationName !== null) {
-      setEncounterList(setAllEncounters(locationName.current))
+    if(locationId !== null) {
+      setEncounterList(setAllEncounters(locationId.current))
     }
   }, [encOptions])
 
@@ -438,8 +446,8 @@ export const Mapper = ({ pokemonList }) => {
     setShowSettings(false);
   };
 
-  const setAllEncounters = (location_name) => {
-    const areaEncounters = getAreaEncounters(location_name);
+  const setAllEncounters = (zoneId) => {
+    const areaEncounters = getAreaEncounters(zoneId);
 
     if (!areaEncounters) {
       return {GroundEnc: [], SurfEnc: [], RodEnc: []};
@@ -567,12 +575,12 @@ export const Mapper = ({ pokemonList }) => {
       if (!location) {
         throw new Error("Try again with your location bozo :P");
       }
-      const { name } = location;
+      const { zoneId } = location;
       const prevRectangleDataIndex = previousRectangle.enc.findIndex((rect) =>
         isLocationExactlyEqual(rect, encLocation)
       );
       const ogImageData = originalImageData.enc[prevRectangleDataIndex];
-      if (name !== locationName.current) {
+      if (zoneId !== locationId.current) {
         ctx.clearRect(x, y, width, height);
         ctx.putImageData(ogImageData, x, y);
       } else {
@@ -703,6 +711,7 @@ export const Mapper = ({ pokemonList }) => {
         setColors={setColors}
         showModal={showSettings}
         onHide={handleCloseSettings}
+        canvasRef={canvasRef.current}
       />
     </div>
   );

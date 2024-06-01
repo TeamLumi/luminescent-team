@@ -64,7 +64,15 @@ export const coordinates = [
         zoneId: 265,
     },
     {
-        "x": 560,
+        "x": 571,
+        "y": 348,
+        "width": 35,
+        "height": 35,
+        "name": "Mt. Coronet 6F",
+        zoneId: 211,        
+    },
+    {
+        "x": 536,
         "y": 348,
         "width": 35,
         "height": 35,
@@ -72,7 +80,7 @@ export const coordinates = [
         zoneId: 216,
     },
     {
-        "x": 560,
+        "x": 571,
         "y": 314,
         "width": 35,
         "height": 34,
@@ -120,7 +128,7 @@ export const coordinates = [
         zoneId: 24,
     },
     {
-        "x": 729,
+        "x": 740,
         "y": 430,
         "width": 35,
         "height": 34,
@@ -128,7 +136,7 @@ export const coordinates = [
         zoneId: 446,
     },
     {
-        "x": 764,
+        "x": 775,
         "y": 430,
         "width": 35,
         "height": 34,
@@ -136,7 +144,7 @@ export const coordinates = [
         zoneId: 225,
     },
     {
-        "x": 764,
+        "x": 775,
         "y": 464,
         "width": 35,
         "height": 34,
@@ -144,7 +152,7 @@ export const coordinates = [
         zoneId: 368,
     },
     {
-        "x": 682,
+        "x": 693,
         "y": 464,
         "width": 82,
         "height": 65,
@@ -290,7 +298,7 @@ export const coordinates = [
     {
         "x": 493,
         "y": 496,
-        "width": 67,
+        "width": 78,
         "height": 33,
         "name": "Route 207",
         zoneId: 364,
@@ -360,7 +368,7 @@ export const coordinates = [
         zoneId: 403,
     },
     {
-        "x": 593,
+        "x": 604,
         "y": 493,
         "width": 36,
         "height": 35,
@@ -368,7 +376,7 @@ export const coordinates = [
         zoneId: 365,
     },
     {
-        "x": 629,
+        "x": 640,
         "y": 483,
         "width": 53,
         "height": 53,
@@ -376,7 +384,7 @@ export const coordinates = [
         zoneId: 74,
     },
     {
-        "x": 629,
+        "x": 640,
         "y": 449,
         "width": 33,
         "height": 34,
@@ -386,13 +394,13 @@ export const coordinates = [
     {
         "x": 536,
         "y": 281,
-        "width": 59,
+        "width": 70,
         "height": 33,
         "name": "Route 211 (West)",
         zoneId: 377,
     },
     {
-        "x": 629,
+        "x": 640,
         "y": 536,
         "width": 33,
         "height": 63,
@@ -400,15 +408,15 @@ export const coordinates = [
         zoneId: 379,
     },
     {
-        "x": 629,
+        "x": 640,
         "y": 599,
-        "width": 173,
+        "width": 162,
         "height": 36,
         "name": "Route 212 (South)",
         zoneId: 383,
     },
     {
-        "x": 662,
+        "x": 673,
         "y": 536,
         "width": 34,
         "height": 36,
@@ -416,7 +424,7 @@ export const coordinates = [
         zoneId: 380,
     },
     {
-        "x": 560,
+        "x": 571,
         "y": 452,
         "width": 33,
         "height": 33,
@@ -424,15 +432,15 @@ export const coordinates = [
         zoneId: 205,
     },
     {
-        "x": 560,
+        "x": 571,
         "y": 485,
         "width": 33,
         "height": 32,
-        "name": "Mt. Coronet Route 2F",
+        "name": "Mt. Coronet 2F",
         zoneId: 204,
     },
     {
-        "x": 560,
+        "x": 571,
         "y": 517,
         "width": 33,
         "height": 33,
@@ -440,7 +448,7 @@ export const coordinates = [
         zoneId: 203,
     },
     {
-        "x": 595,
+        "x": 606,
         "y": 214,
         "width": 32,
         "height": 32,
@@ -448,7 +456,7 @@ export const coordinates = [
         zoneId: 213,
     },
     {
-        "x": 595,
+        "x": 606,
         "y": 246,
         "width": 32,
         "height": 35,
@@ -456,31 +464,23 @@ export const coordinates = [
         zoneId: 215,
     },
     {
-        "x": 595,
+        "x": 606,
         "y": 281,
         "width": 32,
-        "height": 32,
+        "height": 67,
         "name": "Mt. Coronet 211 Entrance",
         zoneId: 214,
     },
     {
-        "x": 595,
-        "y": 313,
+        "x": 606,
+        "y": 348,
         "width": 32,
         "height": 35,
         "name": "Mt. Coronet Tunnel To 211 Entrance",
         zoneId: 212,
     },
     {
-        "x": 595,
-        "y": 348,
-        "width": 32,
-        "height": 35,
-        "name": "Mt. Coronet 6F",
-        zoneId: 211,
-    },
-    {
-        "x": 560,
+        "x": 571,
         "y": 415,
         "width": 35,
         "height": 37,
@@ -488,31 +488,39 @@ export const coordinates = [
         zoneId: 208,
     },
     {
-        "x": 595,
+        "x": 606,
         "y": 415,
         "width": 32,
         "height": 37,
-        "name": "Mt. Coronet 5F",
-        zoneId: 210,
-    },
-    {
-        "x": 595,
-        "y": 179,
-        "width": 32,
-        "height": 35,
-        "name": "Regice Ruins",
-        zoneId: -1,
-    },
-    {
-        "x": 560,
-        "y": 383,
-        "width": 35,
-        "height": 32,
         "name": "Mt. Coronet Summit",
         zoneId: 207,
     },
     {
-        "x": 595,
+        "x": 606,
+        "y": 179,
+        "width": 32,
+        "height": 35,
+        "name": "Regice Ruins",
+        zoneId: 999,
+    },
+    {
+        "x": 571,
+        "y": 383,
+        "width": 35,
+        "height": 32,
+        "name": "Mt. Coronet 5F",
+        zoneId: 210,
+    },
+    {
+        "x": 536,
+        "y": 383,
+        "width": 35,
+        "height": 32,
+        "name": "Mt. Coronet 4F To Spear Pillar",
+        zoneId: 209,
+    },
+    {
+        "x": 606,
         "y": 383,
         "width": 32,
         "height": 32,
@@ -520,7 +528,7 @@ export const coordinates = [
         zoneId: 206,
     },
     {
-        "x": 627,
+        "x": 638,
         "y": 347,
         "width": 35,
         "height": 36,
@@ -528,7 +536,7 @@ export const coordinates = [
         zoneId: 378,
     },
     {
-        "x": 662,
+        "x": 673,
         "y": 347,
         "width": 35,
         "height": 36,
@@ -536,7 +544,7 @@ export const coordinates = [
         zoneId: 456,
     },
     {
-        "x": 697,
+        "x": 708,
         "y": 347,
         "width": 67,
         "height": 36,
@@ -544,7 +552,7 @@ export const coordinates = [
         zoneId: 375,
     },
     {
-        "x": 729,
+        "x": 740,
         "y": 383,
         "width": 35,
         "height": 47,
@@ -554,7 +562,7 @@ export const coordinates = [
     {
         "x": 528,
         "y": 214,
-        "width": 67,
+        "width": 78,
         "height": 32,
         "name": "Route 216",
         zoneId: 395,
@@ -581,7 +589,7 @@ export const coordinates = [
         "width": 55,
         "height": 54,
         "name": "Lake Acuity",
-        zoneId: 329,
+        zoneId: 330,
     },
     {
         "x": 604,
@@ -600,9 +608,9 @@ export const coordinates = [
         zoneId: 159,
     },
     {
-        "x": 764,
+        "x": 775,
         "y": 396,
-        "width": 101,
+        "width": 90,
         "height": 34,
         "name": "Route 215",
         zoneId: 394,
@@ -661,7 +669,7 @@ export const coordinates = [
         "width": 34,
         "height": 34,
         "name": "Distortion World",
-        zoneId: -1,
+        zoneId: 998,
     },
     {
         "x": 821,
@@ -845,7 +853,7 @@ export const coordinates = [
         "width": 34,
         "height": 35,
         "name": "Regirock Ruins",
-        zoneId: -1,
+        zoneId: 997,
     },
     {
         "x": 866,
@@ -893,7 +901,7 @@ export const coordinates = [
         "width": 34,
         "height": 32,
         "name": "Registeel Ruins",
-        zoneId: -1,
+        zoneId: 996,
     },
     {
         "x": 315,
@@ -935,6 +943,10 @@ export const getLocationNames = () => {
 
 export function getLocationCoordsFromName(name) {
     return coordinates.find(coord => coord.name === name);
+};
+
+export function getLocationCoordsFromZoneId(zoneId) {
+    return coordinates.find(coord => coord.zoneId === zoneId);
 };
 
 export function getSelectedLocation(x, y) {

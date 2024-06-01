@@ -15,13 +15,13 @@ import {
 const NO_ENCOUNTERS = null;
 const BAD_INPUT = null;
 
-function getAreaEncounters(zoneName) {
-  if(typeof zoneName !== 'string' || zoneName.length === 0) {
+function getAreaEncounters(zoneId) {
+  if(typeof zoneId !== 'number' || zoneId.length === 0) {
     return BAD_INPUT;
   }
 
-  if (zoneName in encounterLocations) {
-    const areaEncounters = encounterLocations[zoneName]
+  if (zoneId in encounterLocations) {
+    const areaEncounters = encounterLocations[zoneId]
     const mappedEncounters = areaEncounters.map(encounter => ({
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
@@ -29,6 +29,7 @@ function getAreaEncounters(zoneName) {
     return mappedEncounters;
   }
 
+  console.warn("No encounters were found for this area", zoneId)
   return NO_ENCOUNTERS;
 };
 
@@ -110,7 +111,7 @@ function getRoutesFromPokemonId(pokemonId) {
 
   routes.forEach((route) => {
     if (!routeNames.includes(route.routeName)) {
-      routeNames.push(route.routeName);
+      routeNames.push([route.routeName, route.zoneId]);
     }
   });
 
