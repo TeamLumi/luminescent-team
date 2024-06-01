@@ -1,4 +1,4 @@
-const { typeName } = require('./data');
+const { typeName } = require('../../../__gamedata');
 
 function getTypeName(typeId = 0) {
   // Trigger actions

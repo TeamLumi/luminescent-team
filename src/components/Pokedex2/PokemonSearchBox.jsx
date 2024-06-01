@@ -3,15 +3,13 @@ import { Autocomplete, TextField } from '@mui/material';
 import { useHistory } from '@docusaurus/router';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { useGlobalState } from '../common/GlobalState';
 
-export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
-  const [globalState, updateMode] = useGlobalState();  
+export const PokemonSearchBox = ({ pokemonNames, pokemonId }) => {
   const history = useHistory();
   const { path } = usePluginData('luminescent-pokedex-data-plugin');
   const pokedexPath = useBaseUrl(path);
-  const options = pokemonNames.map((pokemon) => ({ monsno: pokemon.monsno, formno: pokemon.formno, label: pokemon.name }));
-  const pokemonName = options.find((p) => p.monsno === monsNo && p.formno === formNo );
+  const options = pokemonNames.map((pokemon) => ({ id: pokemon.id, label: pokemon.name }));
+  const pokemonName = options.find((p) => p.id === pokemonId);
 
   return (
     <Autocomplete
@@ -21,7 +19,7 @@ export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
       options={options}
       value={pokemonName}
       onChange={(_, pokemon) => {
-        history.push(`${pokedexPath}/${pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`}`);
+        history.push(`${pokedexPath}/${pokemon.id}`);
       }}
       isOptionEqualToValue={(option, value) => {
         return option.id === value.id;

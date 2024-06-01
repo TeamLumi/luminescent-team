@@ -7,6 +7,7 @@ import {
   getTechMachineLearnset,
   getMoveProperties,
   getPokemonLearnset,
+  parseTmLearnsetSection,
   getTutorMoves
 } from './moves';
 
@@ -120,24 +121,34 @@ describe('Dex Utils Move Getters', () => {
       expect(getEggMoves(2)).toEqual([]);
     });
   });
+  describe('parseTmLearnsetSection', () => {
+    it('returns the correct binary string for a decimal number', () => {
+      expect(parseTmLearnsetSection(2150467360)).toBe('00000100111000011011010000000001');
+      expect(parseTmLearnsetSection(3149832)).toBe('00000000000001000000001000000011');
+      expect(parseTmLearnsetSection(2418017312)).toBe('00000100001000000000010000001001');
+    });
+
+    it('returns a 32-character string for any input', () => {
+      const binaryString = parseTmLearnsetSection(8);
+      expect(binaryString).toHaveLength(32);
+    });
+  });
   describe('getTechMachineLearnset', () => {
     it('returns an empty array when no TMs are learned', () => {
       expect(getTechMachineLearnset(0, 0, 0, 0)).toEqual([]);
     });
 
     it('returns an array of TM moves when one or more TMs are learned', () => {
-      const pokemonId = 1 // Bulbasaur
-      const learnset = getTechMachineLearnset(pokemonId);
+      const learnset = getTechMachineLearnset(2150467360, 3149832, 2418017312, 0);
 
-      expect(learnset).toHaveLength(27);
+      expect(learnset).toHaveLength(19);
       learnset.forEach((move) => {
         expect(move).toMatchSnapshot();
       });
     });
 
     it('ignores TMs that the Pokémon cannot learn', () => {
-      const pokemonId = 1 // Bulbasaur
-      const learnset = getTechMachineLearnset(pokemonId);
+      const learnset = getTechMachineLearnset(2150467360, 3149832, 2418017312, 0);
       expect(learnset).not.toContainEqual({ level: 'tm', moveId: 3 });
       expect(learnset).not.toContainEqual({ level: 'tm', moveId: 4 });
     });

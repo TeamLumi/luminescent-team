@@ -23,8 +23,8 @@ export const PokemonAlternativeFormsList = ({ pokemonDexId }) => {
             return (
               <Box key={`${form.formName}-${i}`} display="flex" alignItems="center" margin="4px 16px 4px 4px">
                 <ImageWithFallback
-                  src={`/img/pkm/${form.formFilename}`}
-                  fallbackSrc={`/img/pkm/${allPokemonForms[0].formFilename}`}
+                  src={`/img/${form.formFilename}`}
+                  fallbackSrc={`/img/${allPokemonForms[0].formFilename}`}
                   width={30}
                   height={30}
                 />

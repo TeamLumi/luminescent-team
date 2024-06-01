@@ -80,7 +80,7 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
   if (moveIconType === POKEMON_MOVE_LEVEL_TYPE.EGG) {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '18px', sm: '26px', md: '32px' }}>
-        <img src={useBaseUrl('/img/pkm/pm0000_00_00_00_L.webp')} alt="Egg Move" />
+        <img src={useBaseUrl('/img/pm0000_00_00_00_L.webp')} alt="Egg Move" />
       </Box>
     );
   }

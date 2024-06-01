@@ -1,0 +1,8 @@
+{
+  "label": "Scripting",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Editing in-game EvScripts. This is all done in romfs."
+  }
+}

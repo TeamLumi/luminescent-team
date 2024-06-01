@@ -7,20 +7,18 @@ const { getItemString } = require('./item');
 const { getGrassKnotPower, getImage, formatBaseStats, getPokemonFormIndexById } = require('./functions');
 
 const { PersonalTable } = require('./data');
-const { PersonalTable3 } = require('./data3');
 
-function getPokemonInfo(monsno = 0, pokemonId = 0, mode = "2.0") {
-  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3
-  const p = personalTable.Personal[pokemonId];
-  const weight = getWeight(pokemonId, mode);
+function getPokemonInfo(monsno = 0, pokemonId = 0) {
+  const p = PersonalTable.Personal[pokemonId];
+  const weight = getWeight(pokemonId);
 
   return {
     monsno: monsno,
-    name: getPokemonName(pokemonId, mode),
-    ability1: getAbilityString(p.tokusei1, mode),
-    ability2: getAbilityString(p.tokusei2, mode),
-    abilityH: getAbilityString(p.tokusei3, mode),
-    tmLearnset: getTechMachineLearnset(pokemonId, mode),
+    name: getPokemonName(pokemonId),
+    ability1: getAbilityString(p.tokusei1),
+    ability2: getAbilityString(p.tokusei2),
+    abilityH: getAbilityString(p.tokusei3),
+    tmLearnset: getTechMachineLearnset(p.machine1, p.machine2, p.machine3, p.machine4),
     prettyBaseStats: formatBaseStats(p),
     baseStats: {
       hp: p.basic_hp,
@@ -32,11 +30,11 @@ function getPokemonInfo(monsno = 0, pokemonId = 0, mode = "2.0") {
     },
     baseStatsTotal: p.basic_hp + p.basic_atk + p.basic_def + p.basic_spatk + p.basic_spdef + p.basic_agi,
     weight: weight,
-    height: getHeight(pokemonId, mode),
+    height: getHeight(pokemonId),
     grassKnotPower: getGrassKnotPower(weight),
     type1: getTypeName(p.type1),
     type2: getTypeName(p.type2),
-    imageSrc: getImage(monsno, getPokemonFormIndexById(monsno, pokemonId, mode)),
+    imageSrc: getImage(monsno, getPokemonFormIndexById(monsno, pokemonId)),
     genderDecimalValue: p.sex,
     held_item1: p.item1,
     held_item2: p.item2,
