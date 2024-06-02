@@ -36,9 +36,13 @@ export const EncounterTable = ({ encounterList, pokemon }) => {
                 className={enc.pokemonName === pokemon ? highlightColor : ""}
               >
                 <TableCell>{enc.pokemonName}</TableCell>
-                <TableCell>{enc.minLevel}</TableCell>
-                <TableCell>{enc.encounterType}</TableCell>
-                <TableCell>{enc.encounterRate}</TableCell>
+                <TableCell>
+                  {enc.minLevel !== enc.maxLevel
+                    ? `${enc.minLevel} - ${enc.maxLevel}`
+                    : enc.minLevel}
+                </TableCell>
+                <TableCell>{enc.encounterRate === "morning" ? "Morning" : enc.encounterType}</TableCell>
+                <TableCell>{enc.encounterRate === "morning" ? "10%" : enc.encounterRate}</TableCell>
               </TableRow>
             ))}
           </TableBody>

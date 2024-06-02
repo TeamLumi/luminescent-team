@@ -12,17 +12,25 @@ import {
   SURF_INCENSE
 } from './encountersConstants';
 
-function getAreaEncounters(zoneName) {
-  if (zoneName in encounterLocations) {
-    const areaEncounters = encounterLocations[zoneName]
+const NO_ENCOUNTERS = null;
+const BAD_INPUT = null;
+
+function getAreaEncounters(zoneId) {
+  if(typeof zoneId !== 'number' || zoneId.length === 0) {
+    return BAD_INPUT;
+  }
+
+  if (zoneId in encounterLocations) {
+    const areaEncounters = encounterLocations[zoneId]
     const mappedEncounters = areaEncounters.map(encounter => ({
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
     }));
     return mappedEncounters;
   }
-  console.warn(`${zoneName} is not in the Encounter List.`);
-  return null;
+
+  console.warn("No encounters were found for this area", zoneId)
+  return NO_ENCOUNTERS;
 };
 
 function getAllGroundEncounters(areaEncounters) {
@@ -102,7 +110,9 @@ function getRoutesFromPokemonId(pokemonId) {
   const routes = pokemonLocations[pokemonId] || [];
 
   routes.forEach((route) => {
-    routeNames.push(route.routeName);
+    if (!routeNames.includes(route.routeName)) {
+      routeNames.push([route.routeName, route.zoneId]);
+    }
   });
 
   return routeNames;

@@ -1,4 +1,4 @@
-import { getZoneCodeFromCSV, getZoneNameFromZoneCode } from './location';
+const { getZoneCodeFromCSV, getZoneNameFromZoneCode } = require('./location');
 
 const { itemNames, ShopTable, ItemTable, ItemMap, FixedShop } = require('../../../__gamedata');
 

@@ -11,12 +11,10 @@ ul, li {
 
 .canvasCol {
     display: grid;
-    grid-template: 720px / auto auto auto;
 }
 
 .encounterBox {
     width: 408px;
-    height: 500px;
     border: 2px solid var(--ifm-table-border-color);
 }
 
@@ -34,7 +32,7 @@ ul, li {
 }
 
 .encAccordions {
-    max-height: 360px;
+    max-height: 580px;
     overflow-y: auto;
     padding-left: 5px;
     padding-right: 5px;
@@ -57,9 +55,14 @@ ul, li {
     color: #000000 !important;
 }
 
+.mapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .infoCol {
     position: absolute;
-    top: 70px;
+    top: 122px;
     justify-content: end;
     display: grid;
     grid-template-rows: 60px 25px;
@@ -69,11 +72,16 @@ ul, li {
 .monSearchBar {
     pointer-events: all;
     width: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .location {
     pointer-events: all;
+    margin-top: 16px;
+    margin-right: 10px;
 }
+
 .modalBox {
     position: absolute !important;
     top: 50% !important;

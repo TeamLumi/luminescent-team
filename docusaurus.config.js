@@ -119,6 +119,7 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           ...(isDexEnabled ? [{ to: '/dex', label: 'Pokédex', position: 'left' }] : []),
           ...(isPokedexEnabled ? [{ to: POKEDEX_BASE_PATH, label: 'Pokédex', position: 'left' }] : []),
+          { to: '/mapper', label: "Mapper (Alpha)", position: "left" },
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',

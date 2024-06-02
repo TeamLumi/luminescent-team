@@ -4,33 +4,57 @@ import Fuse from 'fuse.js';
 import './style.css';
 import { getLocationNames } from './coordinates';
 
-const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText }) => {
-  const fuse = new Fuse(allPokemons, { keys: ['monsno', 'name'] });
+const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText, canvasRef }) => {
+  // It appears the original intent was to debounce a search text input, so we will manage that text with `searchText` and `debouncedText`.
+  const [searchText, setSearchText] = useState('');
+  const [selectedPokemon, setSelectedPokemon] = useState(allPokemons[0] || '');
 
+  // Fuse setup should be moved inside a useEffect to avoid initializing it on every render.
+  useEffect(() => {
+    const fuse = new Fuse(allPokemons, { keys: ['monsno', 'name'] });
+    // Ideally, use fuse to filter/search through `allPokemons` based on `debouncedText`.
+    // For now, this isn't directly used, but can be integrated for actual search functionality.
+  }, [allPokemons]);
+
+  // Debouncing effect for searchText.
   useEffect(() => {
     const timer = setTimeout(() => {
-      setDebouncedText(debouncedText);
-    }, 100);
+      setDebouncedText(searchText);
+    }, 300); // 300ms is a common choice for debouncing.
     return () => clearTimeout(timer);
-  }, [debouncedText]);
+  }, [searchText]);
 
-  const defaultOption = allPokemons.length > 0 ? allPokemons[0] : '';
+  const handlePokemonNameChange = (event, value) => {
+    // Dispatch event with the name of the selected Pokemon.
+    const pokemonLocationsEvent = new CustomEvent('passPokemonNameLocation', { detail: value });
+    canvasRef.dispatchEvent(pokemonLocationsEvent);
+    // Assume `value` is the whole Pokemon object selected from options.
+    setSelectedPokemon(value);
+    // Set the searchText as the Pokemon's name, which will then be debounced.
+    setSearchText(value.name);
+  };
+
+  const handleInputChange = (event) => {
+    // Update searchText directly from input.
+    setSearchText(event.target.value);
+  };
+
   return (
     <div className="monSearchBar">
       <Autocomplete
         id="pokemon-search-input"
         options={allPokemons}
         getOptionLabel={(option) => option.name}
-        defaultValue={defaultOption}
-        onChange={(e, value) => setDebouncedText(value.name)}
+        value={selectedPokemon}
+        onChange={handlePokemonNameChange}
         renderInput={(params) => (
           <TextField
             {...params}
             type="search"
             label="Search Pokémon Location"
             fullWidth
-            value={debouncedText}
-            onChange={(e) => setDebouncedText(e.target.value)}
+            onChange={handleInputChange}
+            value={searchText} // Use searchText to reflect input changes immediately
           />
         )}
       />
@@ -38,14 +62,13 @@ const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText }) =>
   );
 };
 
-const LocationNameDropdown = ({ locationName, setLocationName }) => {
+const LocationNameDropdown = ({ locationName, setLocationName, canvasRef }) => {
   const locations = getLocationNames();
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLocationName(locationName);
-    }, 100);
-    return () => clearTimeout(timer);
-  }, [locationName]);
+  const handleLocationChange = (e, value) => {
+    const locationNameEvent = new CustomEvent('passLocationNameToParent', { detail: value });
+    canvasRef.dispatchEvent(locationNameEvent);
+    setLocationName(value)
+  };
 
   const defaultOption = locations.length > 0 ? locations[0] : '';
   return (
@@ -55,7 +78,8 @@ const LocationNameDropdown = ({ locationName, setLocationName }) => {
         options={locations}
         getOptionLabel={(option) => option}
         defaultValue={defaultOption}
-        onChange={(e, value) => setLocationName(value)}
+        value={locationName}
+        onChange={handleLocationChange}
         renderInput={(params) => (
           <TextField
             {...params}
@@ -77,22 +101,28 @@ export const SearchBar = ({
   debouncedText,
   handleDebouncedTextChange,
   locationName,
-  setLocationName
+  setLocationName,
+  canvasRef,
 }) => {
   return (
     <div
       className="infoCol"
       style={{
-        width: `${canvasDimensions.width-10}px`,
+        width: `${canvasDimensions.width}px`,
         height: `${canvasDimensions.height}px`
       }}
     >
-        <PokemonSearchInput
-          allPokemons={pokemonList}
-          debouncedText={debouncedText}
-          setDebouncedText={handleDebouncedTextChange}
-        />
-      <LocationNameDropdown locationName={locationName} setLocationName={setLocationName} />
+      <PokemonSearchInput
+        allPokemons={pokemonList}
+        debouncedText={debouncedText}
+        setDebouncedText={handleDebouncedTextChange}
+        canvasRef={canvasRef}
+      />
+      <LocationNameDropdown
+        locationName={locationName}
+        setLocationName={setLocationName}
+        canvasRef={canvasRef}
+      />
     </div>
   )
 };
