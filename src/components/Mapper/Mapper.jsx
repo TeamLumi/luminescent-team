@@ -269,10 +269,39 @@ export const Mapper = ({ pokemonList }) => {
   const updateColorSettings = (event) => {
     const newColorSettings = event.detail;
     colorSettings = newColorSettings;
+    const prevLocations = previousRectangle.enc // There are multiple rectangles that are highlighted
+    const prevHighlight = previousRectangle.highlight;
+    const prevSelected = previousRectangle.select;
+    if (prevLocations) {
+      for (const locationIndex in prevLocations) {
+        if (
+          prevHighlight &&
+          isLocationExactlyEqual(
+            prevLocations[locationIndex],
+            prevHighlight
+          )
+        ) {
+          clearRect(CLEAR_MODE.HIGHLIGHT);
+          setHoveredZone(null);
+          previousRectangle.highlight = null;
+        }
+        if (
+          prevSelected &&
+          !isLocationExactlyEqual(
+            prevLocations[locationIndex],
+            prevSelected
+          )
+        ) {
+          clearRect(CLEAR_MODE.ENCOUNTER, prevLocations[locationIndex]);
+        }
+      }
+      previousRectangle.enc = null;
+    }
     if (previousRectangle.select !== null) {
       const location = previousRectangle.select;
       drawRect(location, CLEAR_MODE.SELECT);
     }
+    setPokemonName("Bulbasaur");
   }
 
   const handleClick = (event) => {
