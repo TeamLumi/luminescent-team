@@ -1693,6 +1693,26 @@
       "maxLevel": 16,
       "encounterTypeIndex": 3,
       "zoneId": 200
+    },
+    {
+      "routeName": "Eterna Forest",
+      "pokemonName": "Stantler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 16,
+      "maxLevel": 16,
+      "encounterTypeIndex": 0,
+      "zoneId": 200
+    },
+    {
+      "routeName": "Eterna Forest",
+      "pokemonName": "Stantler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 16,
+      "maxLevel": 16,
+      "encounterTypeIndex": 1,
+      "zoneId": 200
     }
   ],
   "201": [
@@ -3182,6 +3202,26 @@
       "minLevel": 53,
       "maxLevel": 53,
       "encounterTypeIndex": 3,
+      "zoneId": 206
+    },
+    {
+      "routeName": "Mt. Coronet - Snow Area",
+      "pokemonName": "Sneasler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 53,
+      "maxLevel": 53,
+      "encounterTypeIndex": 0,
+      "zoneId": 206
+    },
+    {
+      "routeName": "Mt. Coronet - Snow Area",
+      "pokemonName": "Sneasler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 53,
+      "maxLevel": 53,
+      "encounterTypeIndex": 1,
       "zoneId": 206
     }
   ],
@@ -8075,6 +8115,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 225
+    },
+    {
+      "routeName": "Solaceon Ruins - 2F",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 225
+    },
+    {
+      "routeName": "Solaceon Ruins - 2F",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 225
     }
   ],
   "227": [
@@ -8256,6 +8316,26 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": 3,
+      "zoneId": 227
+    },
+    {
+      "routeName": "Solaceon Ruins - F Room Dead End (NE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 227
+    },
+    {
+      "routeName": "Solaceon Ruins - F Room Dead End (NE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
       "zoneId": 227
     }
   ],
@@ -8439,6 +8519,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 228
+    },
+    {
+      "routeName": "Solaceon Ruins - 1F Dead End (NW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 228
+    },
+    {
+      "routeName": "Solaceon Ruins - 1F Dead End (NW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 228
     }
   ],
   "229": [
@@ -8620,6 +8720,26 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": 3,
+      "zoneId": 229
+    },
+    {
+      "routeName": "Solaceon Ruins - F Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 229
+    },
+    {
+      "routeName": "Solaceon Ruins - F Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
       "zoneId": 229
     }
   ],
@@ -8803,6 +8923,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 230
+    },
+    {
+      "routeName": "Solaceon Ruins - 1F Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 230
+    },
+    {
+      "routeName": "Solaceon Ruins - 1F Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 230
     }
   ],
   "231": [
@@ -8984,6 +9124,26 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": 3,
+      "zoneId": 231
+    },
+    {
+      "routeName": "Solaceon Ruins - R Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 231
+    },
+    {
+      "routeName": "Solaceon Ruins - R Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
       "zoneId": 231
     }
   ],
@@ -9167,6 +9327,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 232
+    },
+    {
+      "routeName": "Solaceon Ruins - F Room Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 232
+    },
+    {
+      "routeName": "Solaceon Ruins - F Room Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 232
     }
   ],
   "233": [
@@ -9348,6 +9528,26 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": 3,
+      "zoneId": 233
+    },
+    {
+      "routeName": "Solaceon Ruins - N Room Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 233
+    },
+    {
+      "routeName": "Solaceon Ruins - N Room Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
       "zoneId": 233
     }
   ],
@@ -9531,6 +9731,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 234
+    },
+    {
+      "routeName": "Solaceon Ruins - E Room Dead End (SW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 234
+    },
+    {
+      "routeName": "Solaceon Ruins - E Room Dead End (SW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 234
     }
   ],
   "235": [
@@ -9712,6 +9932,26 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": 3,
+      "zoneId": 235
+    },
+    {
+      "routeName": "Solaceon Ruins - R Room Dead End (NW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 235
+    },
+    {
+      "routeName": "Solaceon Ruins - R Room Dead End (NW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
       "zoneId": 235
     }
   ],
@@ -9895,6 +10135,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 236
+    },
+    {
+      "routeName": "Solaceon Ruins - R Room Dead End (SW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 236
+    },
+    {
+      "routeName": "Solaceon Ruins - R Room Dead End (SW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 236
     }
   ],
   "237": [
@@ -10076,6 +10336,26 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": 3,
+      "zoneId": 237
+    },
+    {
+      "routeName": "Solaceon Ruins - I Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 237
+    },
+    {
+      "routeName": "Solaceon Ruins - I Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
       "zoneId": 237
     }
   ],
@@ -10259,6 +10539,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 238
+    },
+    {
+      "routeName": "Solaceon Ruins - N Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 238
+    },
+    {
+      "routeName": "Solaceon Ruins - N Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 238
     }
   ],
   "239": [
@@ -10441,6 +10741,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 239
+    },
+    {
+      "routeName": "Solaceon Ruins - E Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 239
+    },
+    {
+      "routeName": "Solaceon Ruins - E Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 239
     }
   ],
   "24": [
@@ -10451,6 +10771,16 @@
       "encounterRate": "30%",
       "minLevel": 45,
       "maxLevel": 45,
+      "encounterTypeIndex": 2,
+      "zoneId": 24
+    },
+    {
+      "routeName": "Canalave City",
+      "pokemonName": "Overqwil",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 45,
+      "maxLevel": 40,
       "encounterTypeIndex": 2,
       "zoneId": 24
     },
@@ -10835,6 +11165,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 240
+    },
+    {
+      "routeName": "Solaceon Ruins - D Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 240
+    },
+    {
+      "routeName": "Solaceon Ruins - D Room",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 240
     }
   ],
   "241": [
@@ -11016,6 +11366,26 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": 3,
+      "zoneId": 241
+    },
+    {
+      "routeName": "Solaceon Ruins - I Room Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 241
+    },
+    {
+      "routeName": "Solaceon Ruins - I Room Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
       "zoneId": 241
     }
   ],
@@ -11199,6 +11569,26 @@
       "maxLevel": 25,
       "encounterTypeIndex": 3,
       "zoneId": 242
+    },
+    {
+      "routeName": "Solaceon Ruins - N Room Dead End (NW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 242
+    },
+    {
+      "routeName": "Solaceon Ruins - N Room Dead End (NW)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 242
     }
   ],
   "243": [
@@ -11380,6 +11770,26 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": 3,
+      "zoneId": 243
+    },
+    {
+      "routeName": "Solaceon Ruins - E Room Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 243
+    },
+    {
+      "routeName": "Solaceon Ruins - E Room Dead End (SE)",
+      "pokemonName": "Unown",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
       "zoneId": 243
     }
   ],
@@ -14878,6 +15288,26 @@
       "minLevel": 54,
       "maxLevel": 54,
       "encounterTypeIndex": 3,
+      "zoneId": 263
+    },
+    {
+      "routeName": "Sendoff Spring",
+      "pokemonName": "Cursola",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 54,
+      "maxLevel": 54,
+      "encounterTypeIndex": 0,
+      "zoneId": 263
+    },
+    {
+      "routeName": "Sendoff Spring",
+      "pokemonName": "Cursola",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 54,
+      "maxLevel": 54,
+      "encounterTypeIndex": 1,
       "zoneId": 263
     },
     {
@@ -19715,6 +20145,26 @@
       "maxLevel": 50,
       "encounterTypeIndex": 3,
       "zoneId": 287
+    },
+    {
+      "routeName": "Snowpoint Temple - B1F",
+      "pokemonName": "Weavile",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 287
+    },
+    {
+      "routeName": "Snowpoint Temple - B1F",
+      "pokemonName": "Golbat",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 1,
+      "zoneId": 287
     }
   ],
   "288": [
@@ -19896,6 +20346,26 @@
       "minLevel": 50,
       "maxLevel": 50,
       "encounterTypeIndex": 3,
+      "zoneId": 288
+    },
+    {
+      "routeName": "Snowpoint Temple - B2F",
+      "pokemonName": "Weavile",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 288
+    },
+    {
+      "routeName": "Snowpoint Temple - B2F",
+      "pokemonName": "Golbat",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 1,
       "zoneId": 288
     }
   ],
@@ -20079,6 +20549,26 @@
       "maxLevel": 50,
       "encounterTypeIndex": 3,
       "zoneId": 289
+    },
+    {
+      "routeName": "Snowpoint Temple - B3F",
+      "pokemonName": "Weavile",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 289
+    },
+    {
+      "routeName": "Snowpoint Temple - B3F",
+      "pokemonName": "Golbat",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 1,
+      "zoneId": 289
     }
   ],
   "290": [
@@ -20260,6 +20750,26 @@
       "minLevel": 50,
       "maxLevel": 50,
       "encounterTypeIndex": 3,
+      "zoneId": 290
+    },
+    {
+      "routeName": "Snowpoint Temple - B4F",
+      "pokemonName": "Weavile",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 290
+    },
+    {
+      "routeName": "Snowpoint Temple - B4F",
+      "pokemonName": "Golbat",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 1,
       "zoneId": 290
     }
   ],
@@ -20443,6 +20953,26 @@
       "maxLevel": 50,
       "encounterTypeIndex": 3,
       "zoneId": 291
+    },
+    {
+      "routeName": "Snowpoint Temple - B5F",
+      "pokemonName": "Weavile",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 291
+    },
+    {
+      "routeName": "Snowpoint Temple - B5F",
+      "pokemonName": "Golbat",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 1,
+      "zoneId": 291
     }
   ],
   "292": [
@@ -20625,6 +21155,26 @@
       "maxLevel": 22,
       "encounterTypeIndex": 3,
       "zoneId": 292
+    },
+    {
+      "routeName": "Wayward Cave - Main Area",
+      "pokemonName": "Gible",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 22,
+      "maxLevel": 22,
+      "encounterTypeIndex": 0,
+      "zoneId": 292
+    },
+    {
+      "routeName": "Wayward Cave - Main Area",
+      "pokemonName": "Gible",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 22,
+      "maxLevel": 22,
+      "encounterTypeIndex": 1,
+      "zoneId": 292
     }
   ],
   "293": [
@@ -20806,6 +21356,26 @@
       "minLevel": 22,
       "maxLevel": 22,
       "encounterTypeIndex": 3,
+      "zoneId": 293
+    },
+    {
+      "routeName": "Wayward Cave - Secret Area",
+      "pokemonName": "Gible",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 22,
+      "maxLevel": 22,
+      "encounterTypeIndex": 0,
+      "zoneId": 293
+    },
+    {
+      "routeName": "Wayward Cave - Secret Area",
+      "pokemonName": "Gible",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 22,
+      "maxLevel": 22,
+      "encounterTypeIndex": 1,
       "zoneId": 293
     }
   ],
@@ -21594,6 +22164,26 @@
       "minLevel": 26,
       "maxLevel": 26,
       "encounterTypeIndex": 3,
+      "zoneId": 297
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Cyndaquil",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 0,
+      "zoneId": 297
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Teddiursa",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 1,
       "zoneId": 297
     },
     {
@@ -23361,6 +23951,26 @@
       "maxLevel": 18,
       "encounterTypeIndex": 3,
       "zoneId": 306
+    },
+    {
+      "routeName": "Old Chateau - Lobby",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 306
+    },
+    {
+      "routeName": "Old Chateau - Lobby",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 306
     }
   ],
   "307": [
@@ -23542,6 +24152,26 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": 3,
+      "zoneId": 307
+    },
+    {
+      "routeName": "Old Chateau - Dining Room",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 307
+    },
+    {
+      "routeName": "Old Chateau - Dining Room",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
       "zoneId": 307
     }
   ],
@@ -23725,6 +24355,26 @@
       "maxLevel": 18,
       "encounterTypeIndex": 3,
       "zoneId": 308
+    },
+    {
+      "routeName": "Old Chateau - 2F Small Rooms",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 308
+    },
+    {
+      "routeName": "Old Chateau - 2F Small Rooms",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 308
     }
   ],
   "309": [
@@ -23906,6 +24556,26 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": 3,
+      "zoneId": 309
+    },
+    {
+      "routeName": "Old Chateau - 2F Hallway",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 309
+    },
+    {
+      "routeName": "Old Chateau - 2F Hallway",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
       "zoneId": 309
     }
   ],
@@ -24089,6 +24759,26 @@
       "maxLevel": 18,
       "encounterTypeIndex": 3,
       "zoneId": 310
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 1",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 310
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 1",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 310
     }
   ],
   "311": [
@@ -24270,6 +24960,26 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": 3,
+      "zoneId": 311
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 2",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 311
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 2",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
       "zoneId": 311
     }
   ],
@@ -24453,6 +25163,26 @@
       "maxLevel": 18,
       "encounterTypeIndex": 3,
       "zoneId": 312
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 3",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 312
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 3",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 312
     }
   ],
   "313": [
@@ -24635,6 +25365,26 @@
       "maxLevel": 18,
       "encounterTypeIndex": 3,
       "zoneId": 313
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 4",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 313
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 4",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 313
     }
   ],
   "314": [
@@ -24816,6 +25566,26 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": 3,
+      "zoneId": 314
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 5",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 314
+    },
+    {
+      "routeName": "Old Chateau - Hallway Room 5",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
       "zoneId": 314
     }
   ],
@@ -25826,6 +26596,26 @@
     },
     {
       "routeName": "Lake Valor (After)",
+      "pokemonName": "Sirfetch'd",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 54,
+      "maxLevel": 54,
+      "encounterTypeIndex": 0,
+      "zoneId": 327
+    },
+    {
+      "routeName": "Lake Valor (After)",
+      "pokemonName": "Sirfetch'd",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 54,
+      "maxLevel": 54,
+      "encounterTypeIndex": 1,
+      "zoneId": 327
+    },
+    {
+      "routeName": "Lake Valor (After)",
       "pokemonName": "Galarian Slowbro",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
@@ -26214,6 +27004,36 @@
       "minLevel": 51,
       "maxLevel": 51,
       "encounterTypeIndex": 3,
+      "zoneId": 330
+    },
+    {
+      "routeName": "Lake Acuity (After)",
+      "pokemonName": "Mr. Rime",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 51,
+      "maxLevel": 51,
+      "encounterTypeIndex": 0,
+      "zoneId": 330
+    },
+    {
+      "routeName": "Lake Acuity (After)",
+      "pokemonName": "Mr. Rime",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 51,
+      "maxLevel": 51,
+      "encounterTypeIndex": 1,
+      "zoneId": 330
+    },
+    {
+      "routeName": "Lake Acuity (After)",
+      "pokemonName": "Cursola",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 51,
+      "maxLevel": 51,
+      "encounterTypeIndex": 2,
       "zoneId": 330
     },
     {
@@ -26798,6 +27618,26 @@
       "minLevel": 49,
       "maxLevel": 49,
       "encounterTypeIndex": 3,
+      "zoneId": 351
+    },
+    {
+      "routeName": "Acuity Lakefront",
+      "pokemonName": "Sneasler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 49,
+      "maxLevel": 49,
+      "encounterTypeIndex": 0,
+      "zoneId": 351
+    },
+    {
+      "routeName": "Acuity Lakefront",
+      "pokemonName": "Sneasler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 49,
+      "maxLevel": 49,
+      "encounterTypeIndex": 1,
       "zoneId": 351
     }
   ],
@@ -27800,6 +28640,26 @@
     },
     {
       "routeName": "Route 204 (South)",
+      "pokemonName": "Pikachu",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 7,
+      "maxLevel": 7,
+      "encounterTypeIndex": 0,
+      "zoneId": 357
+    },
+    {
+      "routeName": "Route 204 (South)",
+      "pokemonName": "Pikachu",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 7,
+      "maxLevel": 7,
+      "encounterTypeIndex": 1,
+      "zoneId": 357
+    },
+    {
+      "routeName": "Route 204 (South)",
       "pokemonName": "Galarian Corsola",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
@@ -28390,6 +29250,26 @@
       "minLevel": 13,
       "maxLevel": 13,
       "encounterTypeIndex": 3,
+      "zoneId": 359
+    },
+    {
+      "routeName": "Route 205 (South)",
+      "pokemonName": "Mime Jr.",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 13,
+      "maxLevel": 13,
+      "encounterTypeIndex": 0,
+      "zoneId": 359
+    },
+    {
+      "routeName": "Route 205 (South)",
+      "pokemonName": "Mime Jr.",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 13,
+      "maxLevel": 13,
+      "encounterTypeIndex": 1,
       "zoneId": 359
     },
     {
@@ -30274,6 +31154,26 @@
     },
     {
       "routeName": "Route 209",
+      "pokemonName": "Scyther",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 0,
+      "zoneId": 367
+    },
+    {
+      "routeName": "Route 209",
+      "pokemonName": "Scyther",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 1,
+      "zoneId": 367
+    },
+    {
+      "routeName": "Route 209",
       "pokemonName": "Galarian Corsola",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
@@ -30713,6 +31613,26 @@
       "maxLevel": 30,
       "encounterTypeIndex": 3,
       "zoneId": 368
+    },
+    {
+      "routeName": "Lost Tower - 1F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 368
+    },
+    {
+      "routeName": "Lost Tower - 1F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 1,
+      "zoneId": 368
     }
   ],
   "369": [
@@ -30894,6 +31814,26 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 3,
+      "zoneId": 369
+    },
+    {
+      "routeName": "Lost Tower - 2F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 369
+    },
+    {
+      "routeName": "Lost Tower - 2F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 1,
       "zoneId": 369
     }
   ],
@@ -31077,6 +32017,26 @@
       "maxLevel": 30,
       "encounterTypeIndex": 3,
       "zoneId": 370
+    },
+    {
+      "routeName": "Lost Tower - 3F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 370
+    },
+    {
+      "routeName": "Lost Tower - 3F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 1,
+      "zoneId": 370
     }
   ],
   "371": [
@@ -31259,6 +32219,26 @@
       "maxLevel": 30,
       "encounterTypeIndex": 3,
       "zoneId": 371
+    },
+    {
+      "routeName": "Lost Tower - 4F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 371
+    },
+    {
+      "routeName": "Lost Tower - 4F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 1,
+      "zoneId": 371
     }
   ],
   "372": [
@@ -31440,6 +32420,26 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 3,
+      "zoneId": 372
+    },
+    {
+      "routeName": "Lost Tower - 5F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 372
+    },
+    {
+      "routeName": "Lost Tower - 5F",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 1,
       "zoneId": 372
     }
   ],
@@ -32357,6 +33357,26 @@
       "maxLevel": 18,
       "encounterTypeIndex": 3,
       "zoneId": 377
+    },
+    {
+      "routeName": "Route 211 (West)",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 377
+    },
+    {
+      "routeName": "Route 211 (West)",
+      "pokemonName": "Koffing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 377
     }
   ],
   "378": [
@@ -32538,6 +33558,26 @@
       "minLevel": 19,
       "maxLevel": 19,
       "encounterTypeIndex": 3,
+      "zoneId": 378
+    },
+    {
+      "routeName": "Route 211 (East)",
+      "pokemonName": "Cubone",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 19,
+      "maxLevel": 19,
+      "encounterTypeIndex": 0,
+      "zoneId": 378
+    },
+    {
+      "routeName": "Route 211 (East)",
+      "pokemonName": "Cubone",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 19,
+      "maxLevel": 19,
+      "encounterTypeIndex": 1,
       "zoneId": 378
     },
     {
@@ -32770,6 +33810,26 @@
       "minLevel": 26,
       "maxLevel": 26,
       "encounterTypeIndex": 3,
+      "zoneId": 379
+    },
+    {
+      "routeName": "Route 212 (North)",
+      "pokemonName": "Teddiursa",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 0,
+      "zoneId": 379
+    },
+    {
+      "routeName": "Route 212 (North)",
+      "pokemonName": "Teddiursa",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 1,
       "zoneId": 379
     },
     {
@@ -33212,6 +34272,26 @@
       "minLevel": 36,
       "maxLevel": 36,
       "encounterTypeIndex": 3,
+      "zoneId": 383
+    },
+    {
+      "routeName": "Route 212 (South)",
+      "pokemonName": "Scyther",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 36,
+      "maxLevel": 36,
+      "encounterTypeIndex": 0,
+      "zoneId": 383
+    },
+    {
+      "routeName": "Route 212 (South)",
+      "pokemonName": "Scyther",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 36,
+      "maxLevel": 36,
+      "encounterTypeIndex": 1,
       "zoneId": 383
     },
     {
@@ -34581,6 +35661,26 @@
       "zoneId": 394
     },
     {
+      "routeName": "Route 215",
+      "pokemonName": "Exeggcute",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 394
+    },
+    {
+      "routeName": "Route 215",
+      "pokemonName": "Exeggcute",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 1,
+      "zoneId": 394
+    },
+    {
       "routeName": "394",
       "pokemonName": "Aipom",
       "encounterType": "Honey Tree",
@@ -35922,6 +37022,26 @@
     },
     {
       "routeName": "Route 221",
+      "pokemonName": "Perrserker",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 40,
+      "maxLevel": 40,
+      "encounterTypeIndex": 0,
+      "zoneId": 404
+    },
+    {
+      "routeName": "Route 221",
+      "pokemonName": "Perrserker",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 40,
+      "maxLevel": 40,
+      "encounterTypeIndex": 1,
+      "zoneId": 404
+    },
+    {
+      "routeName": "Route 221",
       "pokemonName": "Galarian Corsola",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
@@ -36380,6 +37500,16 @@
       "minLevel": 54,
       "maxLevel": 54,
       "encounterTypeIndex": 1,
+      "zoneId": 407
+    },
+    {
+      "routeName": "Route 222",
+      "pokemonName": "Cursola",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 55,
+      "maxLevel": 55,
+      "encounterTypeIndex": 2,
       "zoneId": 407
     },
     {
@@ -37238,6 +38368,16 @@
     },
     {
       "routeName": "Route 225",
+      "pokemonName": "Cursola",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 2,
+      "zoneId": 412
+    },
+    {
+      "routeName": "Route 225",
       "pokemonName": "Poliwhirl",
       "encounterType": "water_mons",
       "encounterRate": "60%",
@@ -37616,6 +38756,26 @@
       "minLevel": 67,
       "maxLevel": 67,
       "encounterTypeIndex": 3,
+      "zoneId": 414
+    },
+    {
+      "routeName": "Route 227",
+      "pokemonName": "Perrserker",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 0,
+      "zoneId": 414
+    },
+    {
+      "routeName": "Route 227",
+      "pokemonName": "Perrserker",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 1,
       "zoneId": 414
     },
     {
@@ -38028,6 +39188,16 @@
       "minLevel": 67,
       "maxLevel": 67,
       "encounterTypeIndex": 1,
+      "zoneId": 416
+    },
+    {
+      "routeName": "Route 228",
+      "pokemonName": "Cursola",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 2,
       "zoneId": 416
     },
     {
@@ -39906,6 +41076,16 @@
     },
     {
       "routeName": "Route 226",
+      "pokemonName": "Overqwil",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 2,
+      "zoneId": 487
+    },
+    {
+      "routeName": "Route 226",
       "pokemonName": "Wingull",
       "encounterType": "water_mons",
       "encounterRate": "60%",
@@ -40284,6 +41464,26 @@
       "minLevel": 67,
       "maxLevel": 67,
       "encounterTypeIndex": 3,
+      "zoneId": 489
+    },
+    {
+      "routeName": "Route 230",
+      "pokemonName": "Obstagoon",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 0,
+      "zoneId": 489
+    },
+    {
+      "routeName": "Route 230",
+      "pokemonName": "Obstagoon",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 1,
       "zoneId": 489
     },
     {

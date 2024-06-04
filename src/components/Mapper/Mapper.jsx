@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/Settings';
-import { useColorMode } from '@docusaurus/theme-common';
 
 import {
   coordinates,
@@ -507,20 +506,28 @@ export const Mapper = ({ pokemonList }) => {
         allGroundEnc[2] = timeOfDayEnc[2]
         allGroundEnc[3] = timeOfDayEnc[3]
       }
-      if (encOptions.incense && incenseEnc.length > 0) {
-        allGroundEnc[10] = allGroundEnc[4]
-        allGroundEnc[11] = allGroundEnc[5]
-        allGroundEnc[10].encounterRate = "1%"
-        allGroundEnc[11].encounterRate = "1%"
-        allGroundEnc[4] = incenseEnc[0]
-        allGroundEnc[5] = incenseEnc[1]
+      if (encOptions.incense) {
+        if (incenseEnc.length > 0) {
+          allGroundEnc[10] = allGroundEnc[4]
+          allGroundEnc[11] = allGroundEnc[5]
+          allGroundEnc[10].encounterRate = "1%"
+          allGroundEnc[11].encounterRate = "1%"
+          allGroundEnc[4] = incenseEnc[0]
+          allGroundEnc[5] = incenseEnc[1]
+        } else {
+          console.error("This Route should have Incense Encounters but doesn't", zoneId)
+        }
       }
     }
 
     // This section is for the surfing encounters only
     if(allSurfEnc.length > 0) {
       if (encOptions.incense) {
-        allSurfEnc[1] = surfIncenseEnc[0]
+        if (surfIncenseEnc.length > 0) {
+          allSurfEnc[1] = surfIncenseEnc[0]
+        } else {
+          console.error("This Route doesn't have Surf Incense Encounters but should:", zoneId);
+        }
       }
     }
 
@@ -623,7 +630,7 @@ export const Mapper = ({ pokemonList }) => {
   return (
     <div className="mapper">
       <header style={{display: "flex", justifyContent: "center", marginTop: "1rem"}}>
-        <h2 style={{width: "fit-content"}}>Luminescent Platinum Mapper (Alpha 1.0.0)</h2>
+        <h2 style={{width: "fit-content"}}>Luminescent Platinum Mapper (Alpha 0.0.3)</h2>
       </header>
       <div
         className="canvasCol"
