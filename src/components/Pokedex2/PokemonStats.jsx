@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { Box, Typography, TextField } from '@mui/material';
+import { Box, Typography, TextField, Container } from '@mui/material';
 import { calcMaxPosStat, calcMaxStat, calcMinNegStat, calcMinStat } from '../../core/pokemonStatCalculation';
 
 const POKEMON_MIN_LEVEL = 1;
@@ -25,110 +25,118 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
   ];
 
   return (
-    <div className="container" style={{ marginTop: '25px' }}>
-      <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>
-        <>
-          <Box gridColumn="span 5">
-            <Typography variant="h6">Base Stats:</Typography>
-          </Box>
-          {/* <Box gridColumn="span 1">
-            <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
-              min-
-            </Typography>
-          </Box>
-          <Box gridColumn="span 1">
-            <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
-              min
-            </Typography>
-          </Box>
-          <Box gridColumn="span 1">
-            <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
-              max
-            </Typography>
-          </Box>
-          <Box gridColumn="span 1">
-            <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
-              max+
-            </Typography>
-          </Box>
-          <Box gridColumn="span 1" /> */}
-        </>
-
-        {pokemonStatValues.map((stat) => {
-          const { width, color } = getStatBarValues(stat.value);
-
-          return (
-            <Fragment key={stat.label}>
-              <Box gridColumn="span 1">
-                <Typography textAlign="right">{stat.label}</Typography>
-              </Box>
-              <Box gridColumn="span 1">
-                <Typography sx={{ marginLeft: { xs: '10px', sm: '0' } }}>{stat.value}</Typography>
-              </Box>
-              <Box gridColumn="span 3">
-                <Box sx={{ marginLeft: { xs: '16px', sm: '0' } }}>
-                  <PokemonStatBar width={width} color={color} />
-                </Box>
-              </Box>
-              {/* <Box gridColumn="span 2" />
-              <Box gridColumn="span 1">
-                <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
-                  {calcMinNegStat(stat.value, stat.isHpStat, level)}
-                </Typography>
-              </Box>
-              <Box gridColumn="span 1">
-                <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
-                  {calcMinStat(stat.value, stat.isHpStat, level)}
-                </Typography>
-              </Box>
-              <Box gridColumn="span 1">
-                <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
-                  {calcMaxStat(stat.value, stat.isHpStat, level)}
-                </Typography>
-              </Box>
-              <Box gridColumn="span 1">
-                <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
-                  {calcMaxPosStat(stat.value, stat.isHpStat, level)}
-                </Typography>
-              </Box>
-              <Box gridColumn="span 1" /> */}
-            </Fragment>
-          );
-        })}
-
-        <>
-          <Box gridColumn="span 1">
-            <Typography textAlign="right">Total:</Typography>
-          </Box>
-          <Box gridColumn="span 1">
-            <Typography>{baseStatsTotal}</Typography>
-          </Box>
-          <Box gridColumn="span 3" />
-          {/* <Box gridColumn="span 4">
-            <Box alignItems="center" justifyContent="center" sx={{ display: { xs: 'none', sm: 'flex' } }}>
-              <Typography variant="body1" component="p" marginRight="12px">
-                at level
-              </Typography>
-              <TextField
-                sx={{ marginTop: '10px', float: 'right' }}
-                type="number"
-                size="small"
-                inputProps={{ min: POKEMON_MIN_LEVEL, max: POKEMON_MAX_LEVEL }}
-                value={level}
-                onChange={(e) => {
-                  let value = parseInt(e.target.value);
-
-                  if (value > POKEMON_MAX_LEVEL) value = POKEMON_MAX_LEVEL;
-                  if (value < POKEMON_MIN_LEVEL) value = POKEMON_MIN_LEVEL;
-                  setLevel(value);
-                }}
-                label="Level"
-              />
-            </Box>
-          </Box> */}
-        </>
+    <>
+      <Box display="flex" justifyContent="center">
+        <Typography variant="h6">Base Stats:</Typography>
       </Box>
-    </div>
+      <Container
+        sx={{
+          border: "2px solid var(--ifm-table-border-color)",
+          borderRadius: "5px",
+          padding: "12px !important"
+        }}
+      >
+        <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>
+          <>
+            {/* <Box gridColumn="span 1">
+              <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                min-
+              </Typography>
+            </Box>
+            <Box gridColumn="span 1">
+              <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                min
+              </Typography>
+            </Box>
+            <Box gridColumn="span 1">
+              <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                max
+              </Typography>
+            </Box>
+            <Box gridColumn="span 1">
+              <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                max+
+              </Typography>
+            </Box>
+            <Box gridColumn="span 1" /> */}
+          </>
+
+          {pokemonStatValues.map((stat) => {
+            const { width, color } = getStatBarValues(stat.value);
+
+            return (
+              <Fragment key={stat.label}>
+                <Box gridColumn="span 1">
+                  <Typography textAlign="right">{stat.label}</Typography>
+                </Box>
+                <Box gridColumn="span 1">
+                  <Typography>{stat.value}</Typography>
+                </Box>
+                <Box gridColumn="span 3">
+                  <Box>
+                    <PokemonStatBar width={width} color={color} />
+                  </Box>
+                </Box>
+                {/* <Box gridColumn="span 2" />
+                <Box gridColumn="span 1">
+                  <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    {calcMinNegStat(stat.value, stat.isHpStat, level)}
+                  </Typography>
+                </Box>
+                <Box gridColumn="span 1">
+                  <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    {calcMinStat(stat.value, stat.isHpStat, level)}
+                  </Typography>
+                </Box>
+                <Box gridColumn="span 1">
+                  <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    {calcMaxStat(stat.value, stat.isHpStat, level)}
+                  </Typography>
+                </Box>
+                <Box gridColumn="span 1">
+                  <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    {calcMaxPosStat(stat.value, stat.isHpStat, level)}
+                  </Typography>
+                </Box>
+                <Box gridColumn="span 1" /> */}
+              </Fragment>
+            );
+          })}
+
+          <>
+            <Box gridColumn="span 1">
+              <Typography textAlign="right">Total:</Typography>
+            </Box>
+            <Box gridColumn="span 1">
+              <Typography>{baseStatsTotal}</Typography>
+            </Box>
+            <Box gridColumn="span 3" />
+            {/* <Box gridColumn="span 4">
+              <Box alignItems="center" justifyContent="center" sx={{ display: { xs: 'none', sm: 'flex' } }}>
+                <Typography variant="body1" component="p" marginRight="12px">
+                  at level
+                </Typography>
+                <TextField
+                  sx={{ marginTop: '10px', float: 'right' }}
+                  type="number"
+                  size="small"
+                  inputProps={{ min: POKEMON_MIN_LEVEL, max: POKEMON_MAX_LEVEL }}
+                  value={level}
+                  onChange={(e) => {
+                    let value = parseInt(e.target.value);
+
+                    if (value > POKEMON_MAX_LEVEL) value = POKEMON_MAX_LEVEL;
+                    if (value < POKEMON_MIN_LEVEL) value = POKEMON_MIN_LEVEL;
+                    setLevel(value);
+                  }}
+                  label="Level"
+                />
+              </Box>
+            </Box> */}
+          </>
+        </Box>
+      </Container>
+    </>
   );
 };
 

@@ -428,15 +428,15 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 426,フタバ:主人公の家 2F,Futaba : The Main Character's House 2F,Twinleaf Town,Twinleaf - Player's House 2F,prefab_map/t01r0202,T01R0202
 427,フタバ:民家1,Footaba : Private House 1,Twinleaf Town,Twinleaf - House 3 (North of Player's House),prefab_map/t01r0301,T01R0301
 428,フタバ:民家2,Fftaba : Private House 2,Twinleaf Town,Twinleaf - House 4 (West of Player's House),prefab_map/t01r0301,T01R0401
-429,マサゴタウン,Masago Town,Sandgem,Sandgem Town,fields/area001,T02
-430,マサゴ:フレンドリィショップ,Masago : Friendly Shop,Sandgem,Sandgem - Poké Mart,prefab_map/t02fs0101,T02FS0101
-431,マサゴ:ポケモンセンター 1F,Masago : Pokémon Center 1F,Sandgem,Sandgem - Center 1F,prefab_map/t02pc0101,T02PC0101
-432,マサゴ:ポケモンセンター 2F,Masago : Pokémon Center 2F,Sandgem,Sandgem - Center 2F,prefab_map/t02pc0102,T02PC0102
-433,マサゴ:ポケモンセンター B1F,Masago : Pokémon Center B1F,Sandgem,Sandgem - Center B1F,prefab_map/t02pc0103,T02PC0103
-434,マサゴ:ポケモン研究所,Masago : Pokémon Institute,Sandgem,Sandgem - Pokémon Research Lab,prefab_map/t02r0101,T02R0101
-435,マサゴ:サポートの家 1F,Masago: Support House 1F,Sandgem,Sandgem - Dawn/Lucas' House 1F,prefab_map/t02r0201,T02R0201
-436,マサゴ:サポートの家 2F,Masago: Support House 2F,Sandgem,Sandgem - Dawn/Lucas' House 2F,prefab_map/t02r0202,T02R0202
-437,マサゴ:民家1,Masago : Private House 1,Sandgem,Sandgem - House (SW),prefab_map/t01r0301,T02R0301
+429,マサゴタウン,Masago Town,Sandgem Town,Sandgem Town,fields/area001,T02
+430,マサゴ:フレンドリィショップ,Masago : Friendly Shop,Sandgem Town,Sandgem - Poké Mart,prefab_map/t02fs0101,T02FS0101
+431,マサゴ:ポケモンセンター 1F,Masago : Pokémon Center 1F,Sandgem Town,Sandgem - Center 1F,prefab_map/t02pc0101,T02PC0101
+432,マサゴ:ポケモンセンター 2F,Masago : Pokémon Center 2F,Sandgem Town,Sandgem - Center 2F,prefab_map/t02pc0102,T02PC0102
+433,マサゴ:ポケモンセンター B1F,Masago : Pokémon Center B1F,Sandgem Town,Sandgem - Center B1F,prefab_map/t02pc0103,T02PC0103
+434,マサゴ:ポケモン研究所,Masago : Pokémon Institute,Sandgem Town,Sandgem - Pokémon Research Lab,prefab_map/t02r0101,T02R0101
+435,マサゴ:サポートの家 1F,Masago: Support House 1F,Sandgem Town,Sandgem - Dawn/Lucas' House 1F,prefab_map/t02r0201,T02R0201
+436,マサゴ:サポートの家 2F,Masago: Support House 2F,Sandgem Town,Sandgem - Dawn/Lucas' House 2F,prefab_map/t02r0202,T02R0202
+437,マサゴ:民家1,Masago : Private House 1,Sandgem Town,Sandgem - House (SW),prefab_map/t01r0301,T02R0301
 438,ソノオタウン,Sonoh Town,Floaroma Town,Floaroma Town,fields/area003,T03
 439,ソノオ:フレンドリィショップ,Sonoh : Friendly Shop,Floaroma Town,Floaroma - Poké Mart,prefab_map/t02fs0101,T03FS0101
 440,ソノオ:ポケモンセンター 1F,Sonoh : Pokémon Center 1F,Floaroma Town,Floaroma - Center 1F,prefab_map/t02pc0101,T03PC0101
