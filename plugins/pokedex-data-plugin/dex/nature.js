@@ -8,7 +8,8 @@ function getNatureId(natureString) {
 }
 
 function getNatureName(natureId = 0) {
-  return natureNames.labelDataArray[natureId].wordDataArray[0].str;
+  const natureName = natureNames.labelDataArray[natureId]?.wordDataArray[0].str;
+  if (!natureName) throw Error(`Bad natureId: ${natureId}`);
+  return natureName;
 }
-
 module.exports = { getNatureId, getNatureName };
