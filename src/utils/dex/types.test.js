@@ -1,14 +1,6 @@
 import { getTypeName, getTypes } from './types';
 
 describe('Dex Utils Type Getters', () => {
-  const typeName = {
-    labelDataArray: [
-      { wordDataArray: [{ str: 'Normal' }] },
-      { wordDataArray: [{ str: 'Fighting' }] },
-      { wordDataArray: [{ str: 'Flying' }] },
-    ],
-  };
-
   describe('getTypeName', () => {
     it('should return the name of the type at the given index', () => {
       expect(getTypeName(0)).toBe('Normal');
