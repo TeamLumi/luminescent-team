@@ -14,7 +14,7 @@ const EV = {
   MAX: 255,
 };
 
-export const calcStat = (baseStat, isHP, level, individualValue = 0, effortValue = 0, natureMult) => {
+export const calcStat = (baseStat, isHP, level, natureMult, individualValue = 0, effortValue = 0) => {
   if (isHP) {
     if (baseStat === 1) return 1;
     return Math.floor(
@@ -31,17 +31,17 @@ export const calcStat = (baseStat, isHP, level, individualValue = 0, effortValue
 };
 
 export const calcMinNegStat = (stat, isHp, level) => {
-  return calcStat(stat, isHp, level, IV.MIN, EV.MIN, NATURE_MULTIPLIER.LOW);
+  return calcStat(stat, isHp, level, NATURE_MULTIPLIER.LOW, IV.MIN, EV.MIN);
 };
 
 export const calcMinStat = (stat, isHp, level) => {
-  return calcStat(stat, isHp, level, IV.MAX, EV.MIN, NATURE_MULTIPLIER.STANDARD);
+  return calcStat(stat, isHp, level, NATURE_MULTIPLIER.STANDARD, IV.MAX, EV.MIN);
 };
 
 export const calcMaxStat = (stat, isHp, level) => {
-  return calcStat(stat, isHp, level, IV.MAX, EV.MAX, NATURE_MULTIPLIER.STANDARD);
+  return calcStat(stat, isHp, level, NATURE_MULTIPLIER.STANDARD, IV.MAX, EV.MAX);
 };
 
 export const calcMaxPosStat = (stat, isHp, level) => {
-  return calcStat(stat, isHp, level, IV.MAX, EV.MAX, NATURE_MULTIPLIER.HIGH);
+  return calcStat(stat, isHp, level, NATURE_MULTIPLIER.HIGH, IV.MAX, EV.MAX);
 };

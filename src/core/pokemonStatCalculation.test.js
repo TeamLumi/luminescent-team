@@ -1,4 +1,4 @@
-import { calcMinNegStat, calcMinStat, calcMaxPosStat, calcMaxStat } from './pokemonStatCalculation';
+import { calcMinNegStat, calcMinStat, calcMaxPosStat, calcMaxStat, calcStat} from './pokemonStatCalculation';
 
 describe('calculate min neg stat', () => {
   test('with hp stat, level 100', () => {
@@ -21,7 +21,9 @@ describe('calculate min neg stat', () => {
     expect(stat).toBe(48);
   });
 });
-
+describe('calculate HP stat with default values for IV and EV at 0', () => {
+  expect(calcStat(45, true, 100, 1.1) ).toBe( 200 );
+});
 describe('calculate min stat', () => {
   test('with hp stat, level 100', () => {
     const stat = calcMinStat(45, true, 100);
