@@ -48,7 +48,10 @@ function getAllPokemonFormImageData() {
 
   return pokemonFormData;
 }
-
+test('get pokemon form index with no formIndex should take the default index at 0', () => {
+  const [monsno,image] = [0, 'pm0000_00_00_00_L.webp']
+  expect(getPokemonImageFilename(monsno)).toBe(image);
+});
 test.skip.each([...getAllPokemonFormImageData()])('pokemon form image %s for %s exists', (filename, formName, done) => {
   const imgFilePath = path.join(__dirname, '../../static/img/', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
