@@ -26,6 +26,14 @@ describe('Dex utils Nature getters', () => {
       const expected = 'Bold';
       const actual = getNatureName(natureId);
       expect(actual).toBe(expected);
+      
+    });
+    test('should throw an error if the input is not a valid nature ID', () => {
+      const natureId = -1;
+      expect(() => getNatureName(natureId)).toThrow(`Bad natureId: ${natureId}`);
+    });
+    test('should return the default nature ID if no ID is provided', () => {
+      expect(getNatureName()).toBe('Hardy');
     });
   });
 });
