@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './styles.module.css';
 import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
@@ -15,8 +15,26 @@ import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
 import { getTechMachineLearnset } from '../../utils/dex/moves';
+import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../utils/dex/name';
+import { PokemonLocations } from './PokemonLocations';
+import { getRoutesFromPokemonId } from '../../utils/dex/encounters';
+
+function padNumberWithZeros(number) {
+  const strNumber = String(number);
+  const zerosToAdd = 4 - strNumber.length;
+  
+  if (zerosToAdd > 0) {
+      return '0'.repeat(zerosToAdd) + strNumber;
+  } else {
+      return strNumber;
+  }
+}
 
 export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
+  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(pokemon.id);
+  const pokemon_locations = getRoutesFromPokemonId(pokemon.id);
+  const [showMoreLocations, setShowMoreLocations] = useState(false);
+
   return (
     <Container>
       <Container>
@@ -68,20 +86,73 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
         />
       </Container>
 
-      <Box display="grid" gridTemplateColumns="repeat(9, 1fr)" gap={1}>
-        <Box className={style.secondPokeColumn} gridColumn="span 5">
-          <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
+      <Container>
+        <Box
+          display="grid"
+          gridTemplateColumns={{
+            sm: "1fr", 
+            md: "repeat(2, 1fr)",
+            lg: showMoreLocations ? "repeat(2, 1fr)" : "repeat(3, 1fr)"
+          }}
+          justifyContent={{
+            sm: "center",
+            md: "unset",
+          }}
+          justifyItems={{
+            sm: "center",
+            md: "unset",
+          }}
+          gap={1}
+          marginTop="25px"
+          marginBottom="12px"
+        >
+          <Box gridColumn="span 1" width={{sm: "80%", md: "unset"}} className={style.secondPokeColumn}>
+            <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
+          </Box>
+          <Box display={{xs: "none", sm: "none", md: "none", lg: showMoreLocations ? "none" : "unset"}}>
+            <PokemonLocations
+              locations={pokemon_locations}
+              showMore={showMoreLocations}
+              setShowMoreLocations={setShowMoreLocations}
+              pokemonId={pokemon.id}
+            />
+          </Box>
+          <Box width={{sm: "80%", md: "unset"}} gridColumn="span 1">
+            <Box display="flex" justifyContent="center">
+              <Typography variant='h6'>Additional Info:</Typography>
+            </Box>
+            <Container
+              sx={{
+                border: "2px solid var(--ifm-table-border-color)",
+                borderRadius: "5px",
+                height: {xs: "min-content", md: "244px"},
+                padding: "12px !important"
+              }}
+            >
+              <PokemonItems pokemonId={pokemon.id}/>
+              <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginTop: '16px' }} />
+              <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} sx={{ marginTop: '16px' }} />
+            </Container>
+          </Box>
+          <Box
+            display={{xs: "grid", lg: showMoreLocations ? "grid" : "none"}}
+            justifyItems="center"
+            gridColumn={{sm: "span 1", md: "span 2", lg: showMoreLocations ? "span 2" : "unset"}}
+            width={{sm: "80%", md: "unset"}}
+          >
+            <PokemonLocations
+              locations={pokemon_locations}
+              showMore={showMoreLocations}
+              setShowMoreLocations={setShowMoreLocations}
+              pokemonId={pokemon.id}
+            />
+          </Box>
         </Box>
-        <Box className={style.secondPokeColumn} gridColumn="span 4">
-          <PokemonItems pokemonId={pokemon.id}/>
-          <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginTop: '16px' }} />
-          <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} sx={{ marginTop: '16px' }} />
-        </Box>
-      </Box>
+      </Container>
 
-      <div className="container">
+      <Container>
         <EvolutionGraph pokemonID={pokemon.id}/>
-      </div>
+      </Container>
 
       <Container>
         <PokemonAlternativeFormsList pokemonForms={pokemon.forms} />

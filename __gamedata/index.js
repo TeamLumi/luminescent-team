@@ -19,6 +19,10 @@ import trainerLocations from './Mapper_Trainer_Output.json';
 import field_items from './item_list.json';
 import hidden_items from './hide_item_list.json';
 
+//All the Location files
+import pokemonLocations from './pokemon_locations.json';
+import staticLocations from './static_pokemon_locations.json';
+
 //All the Pokemon english files
 import basePokemonNames from './english_ss_monsname.json';
 import formPokemonNames from './english_ss_zkn_form.json';
@@ -57,6 +61,8 @@ export {
   pokemonWeight,
   pokemonDexType,
   pokemonPokedexInfo,
+  pokemonLocations,
+  staticLocations,
   natureNames,
   abilityNames,
   abilityInfo,
