@@ -85,7 +85,7 @@ describe('Dex Utils Egg Group Tests', () => {
   describe('getPokemonInEggGroup', () => {
     const validIds = [
       { id: 0, count: 1 },
-      { id: 5, count: 404 },
+      { id: 5, count: 403 },
       { id: 10, count: 100 },
     ];
 

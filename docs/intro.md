@@ -46,11 +46,6 @@ We hope you enjoy our romhack!
 - This guide has all the information necessary to randomize Luminescent Platinum! Please follow it step by step to ensure proper implementation. Further questions can be asked in our discord, or as comments to the article.
 - Made by DJ.
 
-### [Luminescent Damage Calculator](https://denmark14.github.io/lumi-calc/?gen=8)
-- This page allows you to calculate all your moves ahead of time, using Luminescent's specific stat changes versus Luminescent's specific fights!
-- Made by (all of) Denmark.
-- (Currently bugged and down for maintenance. No ETA on when it will be fixed.)
-
 ### [PKLumiHex](https://github.com/TalonSabre/PKLumiHex)
 - Luminescent's special PKHex branch. Please always back up your save before editing and read the github page to understand any current issues with the program.
 - Made by PrinceTalon.
