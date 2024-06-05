@@ -199,45 +199,37 @@ export const Mapper = ({ pokemonList }) => {
     }
     const locations = getRoutesFromPokemonId(selectedName.id);
     const locationChecks = locations.map(([locationName, zoneId]) => {
-      const locationCoords = getLocationCoordsFromName(locationName);
       const zoneLocationCoords = getLocationCoordsFromZoneId(zoneId);
-      if (locationCoords) {
-        const locationCheck = {
-          name: locationName,
-          x: locationCoords.x,
-          y: locationCoords.y,
-          width: locationCoords.width,
-          height: locationCoords.height
-        };
-        return locationCheck
-      } else if (zoneLocationCoords) {
+      const locationCoords = getLocationCoordsFromName(locationName);
+      if (zoneLocationCoords) {
         const locationCheck = {
           name: locationName,
           x: zoneLocationCoords.x,
           y: zoneLocationCoords.y,
           width: zoneLocationCoords.width,
-          height: zoneLocationCoords.height
+          height: zoneLocationCoords.height,
+          zoneId: zoneLocationCoords.zoneId,
+          zone: "",
+        };
+        return locationCheck
+      } else if (locationCoords) {
+        const locationCheck = {
+          name: locationName,
+          x: locationCoords.x,
+          y: locationCoords.y,
+          width: locationCoords.width,
+          height: locationCoords.height,
+          zoneId: location.zoneId,
+          location: "",
         };
         return locationCheck
       }
       return null;
     });
     const prevLocations = previousRectangle.enc // There are multiple rectangles that are highlighted
-    const prevHighlight = previousRectangle.highlight;
     const prevSelected = previousRectangle.select;
     if (prevLocations) {
       for (const locationIndex in prevLocations) {
-        if (
-          prevHighlight &&
-          isLocationExactlyEqual(
-            prevLocations[locationIndex],
-            prevHighlight
-          )
-        ) {
-          clearRect(CLEAR_MODE.HIGHLIGHT);
-          setHoveredZone(null);
-          previousRectangle.highlight = null;
-        }
         if (
           prevSelected &&
           !isLocationExactlyEqual(
@@ -245,6 +237,8 @@ export const Mapper = ({ pokemonList }) => {
             prevSelected
           )
         ) {
+          clearRect(CLEAR_MODE.ENCOUNTER, prevLocations[locationIndex]);
+        } else {
           clearRect(CLEAR_MODE.ENCOUNTER, prevLocations[locationIndex]);
         }
       }
@@ -621,7 +615,6 @@ export const Mapper = ({ pokemonList }) => {
         ctx.putImageData(ogImageData, x, y);
       } else {
         ctx.clearRect(x, y, width, height);
-        ctx.putImageData(originalImageData.select, x, y);
         drawRect(encLocation, CLEAR_MODE.SELECT);
       }
     }
