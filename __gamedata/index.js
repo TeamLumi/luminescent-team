@@ -18,9 +18,6 @@ import pokemonLocations from './pokemon_locations.json';
 import trainerLocations from './Mapper_Trainer_Output.json';
 import field_items from './item_list.json';
 import hidden_items from './hide_item_list.json';
-
-//All the Location files
-import pokemonLocations from './pokemon_locations.json';
 import staticLocations from './static_pokemon_locations.json';
 
 //All the Pokemon english files
@@ -78,7 +75,6 @@ export {
   areaNames,
   mapInfo,
   encounterLocations,
-  pokemonLocations,
   trainerLocations,
   field_items,
   hidden_items,
