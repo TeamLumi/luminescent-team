@@ -41,7 +41,7 @@ import {
   getSurfingIncenseEncounter,
   getSwarmEncounter,
   getAllIncenseEncounters,
-  getRoutesFromPokemonId
+  getMapperRoutesFromPokemonId
 } from '../../utils/dex/encounters';
 
 const canvasDimensions = {
@@ -197,7 +197,7 @@ export const Mapper = ({ pokemonList }) => {
     if (!selectedName) {
       return;
     }
-    const locations = getRoutesFromPokemonId(selectedName.id);
+    const locations = getMapperRoutesFromPokemonId(selectedName.id);
     const locationChecks = locations.map(([locationName, zoneId]) => {
       const zoneLocationCoords = getLocationCoordsFromZoneId(zoneId);
       const locationCoords = getLocationCoordsFromName(locationName);
@@ -446,7 +446,7 @@ export const Mapper = ({ pokemonList }) => {
   }, [encOptions])
 
   useEffect(() => {
-    setLocationList(getRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
+    setLocationList(getMapperRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
   }, [completedPokemonName])
 
   const handleOptionChange = (option, value) => {

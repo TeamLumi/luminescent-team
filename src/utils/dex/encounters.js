@@ -173,7 +173,7 @@ function getAreaEncounters(zoneId) {
   }
 
   if (zoneId in encounterLocations) {
-    const areaEncounters = encounterLocations[zoneId]
+    const areaEncounters = encounterLocations[zoneId];
     const mappedEncounters = areaEncounters.map(encounter => ({
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
@@ -186,7 +186,7 @@ function getAreaEncounters(zoneId) {
 };
 
 function getAllGroundEncounters(areaEncounters) {
-  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === "Grass");
+  const filteredEncounters = areaEncounters.filter(obj => obj.encounterType === GRASS);
   if (filteredEncounters) {
     return filteredEncounters;
   }
