@@ -6,6 +6,8 @@ describe('Dex Utils Type Getters', () => {
       expect(getTypeName(0)).toBe('Normal');
       expect(getTypeName(1)).toBe('Fighting');
       expect(getTypeName(2)).toBe('Flying');
+      expect(getTypeName()).toBe('Normal');
+      expect(() => getTypeName(-1)).toThrow('Bad typeId: -1');
     });
   });
 

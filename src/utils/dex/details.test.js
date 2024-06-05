@@ -16,7 +16,12 @@ describe('Dex details getters', () => {
     expect(typeof height).toBe('string');
     expect(height).toBe(desiredResult);
   });
-
+  it('Should return the pokemon height NaN if no value is supplied', () => {
+    const height = getHeight();
+    const desiredResult = 'NaN';
+    expect(typeof height).toBe('string');
+    expect(height).toBe(desiredResult);
+  });
   it('Should return a valid weight in metric format', () => {
     const weight = getWeight(TEST_POKEMON);
     const desiredResult = '6.89';
@@ -27,6 +32,12 @@ describe('Dex details getters', () => {
   it('Should return a weight of 0 if an invalid pokemon ID is supplied', () => {
     const weight = getWeight(-1);
     const desiredResult = '0';
+    expect(typeof weight).toBe('string');
+    expect(weight).toBe(desiredResult);
+  });
+  it('Should return the pokemon weight NaN if no value is supplied', () => {
+    const weight = getWeight();
+    const desiredResult = 'NaN';
     expect(typeof weight).toBe('string');
     expect(weight).toBe(desiredResult);
   });
