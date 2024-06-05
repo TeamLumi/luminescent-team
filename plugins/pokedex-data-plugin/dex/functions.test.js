@@ -26,6 +26,10 @@ describe('Dex utils function tests', () => {
     const result = getPokemonIdFromFormMap(9999, 0);
     expect(result).toBeUndefined();
   });
+  it('Should return 0 when provided no monsno or pokemon ID', () => {
+    const result = getPokemonIdFromFormMap();
+    expect(result).toBe(0);
+  });
   describe('getGender()', () => {
     it('Should return M for a valid number', () => {
       const resultM = getGender(0);

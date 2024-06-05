@@ -24,6 +24,7 @@ describe('Dex Utils Egg Group Tests', () => {
         });
       }
     });
+    expect(getEggGroupViaPokemonId()).toEqual([0]);
   });
 
   describe('getEggGroupNameById', () => {
@@ -50,6 +51,7 @@ describe('Dex Utils Egg Group Tests', () => {
         });
       }
     });
+    expect(getEggGroupNameById()).toBe('None');
   });
 
   describe('getEggGroupNameById', () => {
@@ -106,5 +108,6 @@ describe('Dex Utils Egg Group Tests', () => {
         expect(() => getPokemonIdsInEggGroup(id)).toThrow(Error(message));
       });
     });
+    expect(getPokemonIdsInEggGroup()).toEqual([0]);
   });
 });
