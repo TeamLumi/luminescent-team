@@ -623,7 +623,7 @@ export const Mapper = ({ pokemonList }) => {
   return (
     <div className="mapper">
       <header style={{display: "flex", justifyContent: "center", marginTop: "1rem"}}>
-        <h2 style={{width: "fit-content"}}>Luminescent Platinum Mapper (Alpha 0.0.3)</h2>
+        <h2 style={{width: "fit-content"}}>Luminescent Platinum Mapper (Alpha 0.0.4)</h2>
       </header>
       <div
         className="canvasCol"
