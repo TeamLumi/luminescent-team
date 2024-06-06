@@ -9,7 +9,11 @@ describe('Ability dex utils', () => {
   it('Should throw an error when an invalid ability Id is supplied', () => {
     expect(() => makeSmogonAbilityObject(-1)).toThrow('Bad ability ID: -1');
   });
-
+  it('Should make an object with empty definition', () => {
+    const abilityObject = makeSmogonAbilityObject();
+    expect(abilityObject).toBeDefined();
+    expect(abilityObject).toMatchObject({});
+  });
   it('Should return a valid numerical ID when supplied with a valid ability name.', () => {
     const abilityId = getAbilityIdFromAbilityName('Stench');
     const desiredResult = 1;
