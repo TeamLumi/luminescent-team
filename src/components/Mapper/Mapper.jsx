@@ -78,6 +78,7 @@ export const Mapper = ({ pokemonList }) => {
     rod: "1",
   });
 
+  const [selectedPokemon, setSelectedPokemon] = useState(pokemonList[0] || '');
   const [pokemonName, setPokemonName] = useState('');
   const completedPokemonName = useDebouncedValue(pokemonName, 1500);
 
@@ -286,6 +287,8 @@ export const Mapper = ({ pokemonList }) => {
           )
         ) {
           clearRect(CLEAR_MODE.ENCOUNTER, prevLocations[locationIndex]);
+        } else {
+          clearRect(CLEAR_MODE.ENCOUNTER, prevLocations[locationIndex]);
         }
       }
       previousRectangle.enc = null;
@@ -295,6 +298,7 @@ export const Mapper = ({ pokemonList }) => {
       drawRect(location, CLEAR_MODE.SELECT);
     }
     setPokemonName("Bulbasaur");
+    setSelectedPokemon(pokemonList[0])
   }
 
   const handleClick = (event) => {
@@ -651,6 +655,8 @@ export const Mapper = ({ pokemonList }) => {
         locationName={selectedZone}
         setLocationName={setSelectedZone}
         canvasRef={canvasRef.current}
+        selectedPokemon={selectedPokemon}
+        setSelectedPokemon={setSelectedPokemon}
       />
       <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
         <SettingsIcon />

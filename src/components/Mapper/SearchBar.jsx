@@ -4,10 +4,16 @@ import Fuse from 'fuse.js';
 import './style.css';
 import { getLocationNames } from './coordinates';
 
-const PokemonSearchInput = ({ allPokemons, debouncedText, setDebouncedText, canvasRef }) => {
+const PokemonSearchInput = ({
+  allPokemons,
+  debouncedText,
+  setDebouncedText,
+  canvasRef,
+  selectedPokemon,
+  setSelectedPokemon,
+}) => {
   // It appears the original intent was to debounce a search text input, so we will manage that text with `searchText` and `debouncedText`.
   const [searchText, setSearchText] = useState('');
-  const [selectedPokemon, setSelectedPokemon] = useState(allPokemons[0] || '');
 
   // Fuse setup should be moved inside a useEffect to avoid initializing it on every render.
   useEffect(() => {
@@ -103,6 +109,8 @@ export const SearchBar = ({
   locationName,
   setLocationName,
   canvasRef,
+  selectedPokemon,
+  setSelectedPokemon,
 }) => {
   return (
     <div
@@ -117,6 +125,8 @@ export const SearchBar = ({
         debouncedText={debouncedText}
         setDebouncedText={handleDebouncedTextChange}
         canvasRef={canvasRef}
+        selectedPokemon={selectedPokemon}
+        setSelectedPokemon={setSelectedPokemon}
       />
       <LocationNameDropdown
         locationName={locationName}
