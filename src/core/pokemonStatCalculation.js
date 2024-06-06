@@ -21,11 +21,7 @@ export const calcStat = (baseStat, isHP, level, natureMult, individualValue = 0,
       (Math.floor(2 * baseStat + individualValue + Math.floor(effortValue / 4) + 100) * level) / 100 + 10,
     );
   }
-  let val = Math.floor((Math.floor(2 * baseStat + individualValue + Math.floor(effortValue / 4)) * level) / 100 + 5);
-
-  if (natureMult && !isHP) {
-    val *= natureMult;
-  }
+  let val = (Math.floor((Math.floor(2 * baseStat + individualValue + Math.floor(effortValue / 4)) * level) / 100 + 5)) *natureMult;
 
   return Math.floor(val);
 };
