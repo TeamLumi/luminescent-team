@@ -12,6 +12,7 @@ Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Dia
 ### Wait, it doesn't work for Shining Pearl?
 
 Not yet. Please be patient. Adding the necessary changes to make it also work on Shining Pearl would double our testing workload, and we're saving it until we're finished with 2.0 completely.
+
 ### What's so special about it?
 
 Check out the [features](./features) page for details of all our features and adjustments!
