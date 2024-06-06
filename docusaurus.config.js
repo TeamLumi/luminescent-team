@@ -87,7 +87,7 @@ const config = {
               pokemonRedirectComponent: '@site/src/components/common/RedirectComponent.jsx',
               listComponent: '@site/src/pages/_dexlist.jsx',
               wrapperComponent: '@site/src/components/Pokedex2/PokedexPageWrapper.jsx',
-              mapComponent: '@site/src/pages/Mapper.jsx',
+              mapComponent: '@site/src/pages/_mapper.jsx',
             },
           ],
         ]
