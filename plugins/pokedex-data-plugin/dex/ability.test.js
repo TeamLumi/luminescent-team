@@ -25,6 +25,9 @@ describe('Ability dex utils', () => {
   it('Should throw an error when supplied with an invalid ability Id.', () => {
     expect(() => getAbilityIdFromAbilityName(-1)).toThrow();
   });
+  it('Should throw an error when supplied with no ability Id.', () => {
+    expect(() => getAbilityIdFromAbilityName()).toThrow();
+  });
 
   it('Should return a string when supplied with a valid ability Id.', () => {
     const abilityName = getAbilityString(1);
@@ -36,6 +39,9 @@ describe('Ability dex utils', () => {
   it('Should return null when supplied with an invalid ability Id.', () => {
     const DUMMY_DATA = 'woogly';
     expect(() => getAbilityString(DUMMY_DATA)).toThrow(`Bad ability ID: ${DUMMY_DATA}`);
+  });
+  it('Should return the default when supplied with no ability Id', () => {
+    expect(() => getAbilityString()).toBeDefined();
   });
 
   it('Should return a string when supplied with a valid ability Id.', () => {

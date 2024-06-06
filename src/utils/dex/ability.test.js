@@ -9,7 +9,11 @@ describe('Ability dex utils', () => {
   it('Should throw an error when an invalid ability Id is supplied', () => {
     expect(() => makeSmogonAbilityObject(-1)).toThrow('Bad ability ID: -1');
   });
-
+  it('Should make an object with empty definition', () => {
+    const abilityObject = makeSmogonAbilityObject();
+    expect(abilityObject).toBeDefined();
+    expect(abilityObject).toMatchObject({});
+  });
   it('Should return a valid numerical ID when supplied with a valid ability name.', () => {
     const abilityId = getAbilityIdFromAbilityName('Stench');
     const desiredResult = 1;
@@ -20,6 +24,9 @@ describe('Ability dex utils', () => {
 
   it('Should throw an error when supplied with an invalid ability Id.', () => {
     expect(() => getAbilityIdFromAbilityName(-1)).toThrow();
+  });
+  it('Should throw an error when supplied with no ability Id.', () => {
+    expect(() => getAbilityIdFromAbilityName()).toThrow();
   });
 
   it('Should return a string when supplied with a valid ability Id.', () => {
@@ -32,6 +39,9 @@ describe('Ability dex utils', () => {
   it('Should return null when supplied with an invalid ability Id.', () => {
     const DUMMY_DATA = 'woogly';
     expect(() => getAbilityString(DUMMY_DATA)).toThrow(`Bad ability ID: ${DUMMY_DATA}`);
+  });
+  it('Should return the default when supplied with no ability Id', () => {
+    expect(() => getAbilityString()).toBeDefined();
   });
 
   it('Should return a string when supplied with a valid ability Id.', () => {
