@@ -45,8 +45,11 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       </Container>
       <div className="container">
         <div className="row">
-          <Typography variant="h2" component="h3" sx={{ paddingLeft: '16px' }}>
-            {pokemon.name}
+          <Typography variant="h6" display="flex" sx={{ paddingLeft: '16px', paddingBottom: '12px', alignItems: "end"}}>
+            {`#${padNumberWithZeros(monsNo)}: `}
+          </Typography>
+          <Typography variant="h2" display="flex" sx={{ paddingLeft: '8px', alignItems: "end"}}>
+            {` ${pokemon.name}`}
           </Typography>
         </div>
       </div>

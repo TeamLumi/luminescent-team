@@ -31,6 +31,7 @@ import {
   getImage,
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
+  getDexDescription,
 } from './functions';
 import {
   getAllGroundEncounters,
@@ -119,6 +120,7 @@ export {
   getPokemonLearnset,
   getPokemonFormId,
   POKEMON_MOVE_LEVEL_TYPE,
+  getDexDescription,
   getAllGroundEncounters,
   getAllIncenseEncounters,
   getAllRodEncounters,

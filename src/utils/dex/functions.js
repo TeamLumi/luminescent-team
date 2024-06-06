@@ -1,4 +1,5 @@
 import { PersonalTable } from '../../../__gamedata';
+import { pokemonPokedexInfo } from '../../../__gamedata';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});
@@ -48,8 +49,13 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno) {
 
 function doNothing(evoMethod, evolutionDetails) {
   return [evolutionDetails, evoMethod];
-};
+}
 
+function getDexDescription(pokemonId) {
+  const labelData = pokemonPokedexInfo.labelDataArray[pokemonId]
+  const combinedStr = labelData.wordDataArray.map(data => data.str).join(' ');
+  return combinedStr
+}
 export {
   FORM_MAP,
   getPokemonIdFromFormMap,
@@ -60,4 +66,5 @@ export {
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
   doNothing,
+  getDexDescription,
 };
