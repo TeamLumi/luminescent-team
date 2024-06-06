@@ -355,8 +355,8 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 353,範囲外など,"Out of range, etc.",,,,NOTHING
 354,201ばんどうろ,201 Bandoro,,Route 201,fields/area001,R201
 355,202ばんどうろ,202 Bandoro,,Route 202,fields/area001,R202
-356,203ばんどうろ,203 Bandoro,,Route 203,fields/area001,R204A
-357,204ばんどうろa（コトブキ側）,204 Bandoro a(Kotobuki side),,Route 204 (South),fields/area001,
+356,203ばんどうろ,203 Bandoro,,Route 203,fields/area001,R203
+357,204ばんどうろa（コトブキ側）,204 Bandoro a(Kotobuki side),,Route 204 (South),fields/area001,R204A
 358,204ばんどうろb（ソノオ側）,204 Bandoro b(Sonoh side),,Route 204 (North),fields/area003,R204B
 359,205ばんどうろa（ソノオ側）,205 Bandoro a(Sonoh side),,Route 205 (South),fields/area003,R205A
 360,205ばんどうろa:民家,205 Bandoro a: Private House,,Route 205 - House,prefab_map/c02r0501,R205AR0101
