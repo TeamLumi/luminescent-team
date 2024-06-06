@@ -893,7 +893,7 @@ export const coordinates = [
         "width": 55,
         "height": 55,
         "name": "Lake Valor",
-        zoneId: 326,
+        zoneId: 327,
     },
     {
         "x": 856,
