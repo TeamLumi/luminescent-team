@@ -4,7 +4,7 @@ slug: /
 
 # Luminescent Platinum
 
-Luminescent Platinum is a romhack for Pokemon Brilliant Diamond and Shining Pearl based on [Drayano's Renegade Platinum](https://pokehacking.com/fangames/renegade-platinum/). These documents are all about this mod; if you want to learn about ROM Hacking to make your own mod, check out the **ROM Hacking** tab and join the Discord.
+Luminescent Platinum is a romhack for Pokemon Brilliant Diamond based on [Drayano's Renegade Platinum](https://pokehacking.com/fangames/renegade-platinum/). These documents are all about this mod; if you want to learn about ROM Hacking to make your own mod, check out the **ROM Hacking** tab and join the Discord.
 
 Please see the sidebar for all of our various pages, including information on our unique features, the incense burner, regional Pokémon, special NPCs, unique Pokémon, item locations, and more! 
 
@@ -18,7 +18,7 @@ We hope you enjoy our romhack!
 
 ## Useful Links
 
-### [Pokédex](https://drive.google.com/drive/folders/16Kwc09xli5e9WdXBeE6Kcd5vQ6LdoW5b)
+### [Pokédex](https://luminescent.team/pokedex)
 
 - Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, evolution methods, held items, etc. If you need information on individual Pokémon, this is the page you want to peruse!
 - Includes evolution methods for regional forms and Luminescent exclusives.

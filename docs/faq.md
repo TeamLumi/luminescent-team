@@ -7,8 +7,11 @@ toc_max_heading_level: 3
 
 ### What is Luminescent Platinum?
 
-Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond (and eventually Shining Pearl), inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
+Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond, inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
 
+### Wait, it doesn't work for Shining Pearl?
+
+Not yet. Please be patient. Adding the necessary changes to make it also work on Shining Pearl would double our testing workload, and we're saving it until we're finished with 2.0 completely.
 ### What's so special about it?
 
 Check out the [features](./features) page for details of all our features and adjustments!
@@ -47,7 +50,7 @@ If it doesn't properly apply, you have likely done something wrong. Double check
 
 ### Will you be adding new Pokemon? What about regional forms?
 
-As of 2.0.1 beta, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
+As of 2.0.2f, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. It also includes the Chandelure and Tinkaton lines as picked by our screenshot contest winners. Other Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
 
 ### How do I encounter regional Pokémon?
 
@@ -75,7 +78,7 @@ That would be what was previously just called "Natdex". At launch, it will inclu
 
 ### I want to make my own romhack! Where can I learn how?
 
-Definitely come check out our partnered server, [Pokemon Switch Modding](https://discord.gg/8Dkm8YNmYy). However, we will be launching our own section to help out with modding when more of our documentation is done, and we will ping the discord when that is ready.
+Definitely come check out our partnered server, [Pokemon Switch Modding](https://discord.gg/8Dkm8YNmYy). We also welcome you to our Team Luminescent discord server, with a specific channel for these types of questions.
 
 ### What is Affection? Will turning it off stop friendship evolutions?
 
