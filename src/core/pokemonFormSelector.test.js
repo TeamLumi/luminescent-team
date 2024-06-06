@@ -31,7 +31,10 @@ test.each([
 ])('get pokemon image file name', (monsno, formIndex, filename) => {
   expect(getPokemonImageFilename(monsno, formIndex)).toBe(filename);
 });
-
+test('get pokemon image file name with default form index', () => {
+  const monsno = 3;
+  expect(getPokemonImageFilename(monsno)).toBe('pm0003_00_00_00_L.webp');
+});
 function getAllPokemonFormImageData() {
   const pokemonFormData = [];
 
