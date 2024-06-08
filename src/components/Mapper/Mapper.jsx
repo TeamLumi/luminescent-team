@@ -124,7 +124,6 @@ export const Mapper = ({ pokemonList }) => {
   }
   //Component onMount
   useEffect(() => {
-    console.log('Mounting...')
     const context = canvasRef.current.getContext('2d', {willReadFrequently: true});
     const image = new Image();
     image.src = require('@site/static/img/new_small_mapper.png').default;
@@ -132,7 +131,6 @@ export const Mapper = ({ pokemonList }) => {
       context.drawImage(image, 0, 0);
       drawOverlay(context);
     };
-    console.log('Finish Mounting...', rect, canvasRef)
 
   }, []) // Empty dependency array means this effect runs once after the initial render
 
@@ -303,7 +301,7 @@ export const Mapper = ({ pokemonList }) => {
 
   const handleClick = (event) => {
     if(rect === null) {
-      console.log('Bad Rect:', rect, canvasRef.current)
+      console.error('Bad Rect:', rect, canvasRef.current)
       return setRect(canvasRef.current.getBoundingClientRect());
     }
 
@@ -410,7 +408,6 @@ export const Mapper = ({ pokemonList }) => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    console.log('Canvas effect has fired')
     if (canvas) {
       // Get the bounding rectangle of the canvas
       const r = canvas.getBoundingClientRect();

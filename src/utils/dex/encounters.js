@@ -181,7 +181,6 @@ function getAreaEncounters(zoneId) {
     return mappedEncounters;
   }
 
-  console.warn("No encounters were found for this area", zoneId)
   return NO_ENCOUNTERS;
 };
 

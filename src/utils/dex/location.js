@@ -120,7 +120,6 @@ function getZoneIdFromZoneName(zoneName) {
 
 function getFieldItemsFromZoneID(zoneID) {
   if(typeof zoneID !== 'number' || zoneID < 0) {
-    console.warn('Invalid ZoneID supplied', zoneID);
     return [];
   }
 
@@ -129,7 +128,6 @@ function getFieldItemsFromZoneID(zoneID) {
 
 function getHiddenItemsFromZoneID(zoneID) {
   if(typeof zoneID !== 'number' || zoneID < 0) {
-    console.warn('Invalid ZoneID supplied');
     return [];
   }
 
