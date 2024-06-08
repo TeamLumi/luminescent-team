@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/Settings';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
 import {
   MapperCoordinates,
@@ -66,6 +67,10 @@ function useDebouncedValue(value, delay) {
 }
 
 export const Mapper = ({ pokemonList }) => {
+  const isBrowser = useIsBrowser();
+  if (!isBrowser) {
+    return null;
+  }
   const [rect, setRect] = useState(null);
   const [hoveredZone, setHoveredZone] = useState(null);
   const [selectedZone, setSelectedZone] = useState(null);
