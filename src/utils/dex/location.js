@@ -15,14 +15,14 @@ function getZoneCodeFromCSV(zoneId) {
   if (!zoneId) {
     return null;
   }
-  return AreaMap[zoneId].Zone_Code;
+  return AreaMap[zoneId]?.Zone_Code;
 };
 
 function getZoneIdFromZoneCode(zoneCode) {
   if (!zoneCode) {
     return null;
   }
-  const zoneId = Object.keys(AreaMap).find(key => AreaMap[key].Zone_Code === zoneCode);
+  const zoneId = Object.keys(AreaMap).find(key => AreaMap[key]?.Zone_Code === zoneCode);
   return parseInt(zoneId);
 }
 
@@ -30,7 +30,7 @@ function getZoneNameFromZoneCode(zoneCode) {
   if (!zoneCode) {
     return null;
   }
-  const zoneId = Object.keys(AreaMap).find(key => AreaMap[key].Zone_Code === zoneCode.toUpperCase());
+  const zoneId = Object.keys(AreaMap).find(key => AreaMap[key]?.Zone_Code === zoneCode.toUpperCase());
   const zoneName = AreaMap[zoneId].Actual
   return zoneName;
 }
@@ -68,8 +68,8 @@ function getZoneNameFromZoneId(zoneId) {
   const zoneNameObjectLabel = mapInfo['ZoneData'][mapInfoIndex]?.MSLabel ?? "";
 
   const zoneName = zoneNameObjectLabel !== "" 
-    ? getZoneNameFromDisplayName(mapInfo.ZoneData[mapInfoIndex].MSLabel)
-    : getZoneNameFromAreaName(mapInfo.ZoneData[mapInfoIndex].PokePlaceName);
+    ? getZoneNameFromDisplayName(mapInfo.ZoneData[mapInfoIndex]?.MSLabel)
+    : getZoneNameFromAreaName(mapInfo.ZoneData[mapInfoIndex]?.PokePlaceName);
 
   return zoneName;
 };

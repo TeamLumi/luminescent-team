@@ -3,7 +3,7 @@ import IconButton from '@mui/material/IconButton';
 import SettingsIcon from '@mui/icons-material/Settings';
 
 import {
-  coordinates,
+  MapperCoordinates,
   getLocationCoordsFromName,
   getLocationCoordsFromZoneId,
   getSelectedLocation,
@@ -137,7 +137,7 @@ export const Mapper = ({ pokemonList }) => {
   }, []) // Empty dependency array means this effect runs once after the initial render
 
   function drawOverlay(ctx) {
-    coordinates.forEach(coord => {
+    MapperCoordinates.forEach(coord => {
       // Draw zone outlines
       ctx.beginPath();
       ctx.moveTo(coord.x, coord.y);
