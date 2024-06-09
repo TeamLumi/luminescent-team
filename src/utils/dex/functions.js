@@ -49,7 +49,7 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno) {
 
 function doNothing(evoMethod, evolutionDetails) {
   return [evolutionDetails, evoMethod];
-};
+}
 
 function getDexDescription(pokemonId) {
   const labelData = pokemonPokedexInfo.labelDataArray[pokemonId]

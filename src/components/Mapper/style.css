@@ -1,0 +1,100 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+ul, li {
+    padding: 0;
+    padding-right: 5px;
+    list-style: none;
+}
+
+.canvasCol {
+    display: grid;
+}
+
+.encounterBox {
+    width: 408px;
+    border: 2px solid var(--ifm-table-border-color);
+}
+
+.checkBoxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+.toggleBoxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.encAccordions {
+    max-height: 580px;
+    overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.encAccordions > * {
+    margin-bottom: 5px;
+}
+
+.highlight-light-row {
+    background-color: #ffff9f !important;
+}
+
+.highlight-dark-row {
+    background-color: #ffec68 !important;
+}
+
+.highlight-dark-row > * {
+    color: #000000 !important;
+}
+
+.mapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoCol {
+    position: absolute;
+    top: 122px;
+    justify-content: end;
+    display: grid;
+    grid-template-rows: 60px 25px;
+    pointer-events: none;
+}
+
+.monSearchBar {
+    pointer-events: all;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.location {
+    pointer-events: all;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.modalBox {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%);
+    background-color: var(--ifm-color-content-inverse);
+    color: var(--ifm-color-content);
+    padding: 16px;
+    border-radius: 8px;
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    overflow-y: auto;
+    width: 80%;
+    max-height: 80%;
+    max-width: 1200px;
+}

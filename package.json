@@ -17,8 +17,8 @@
     "lint": "eslint . --ext .jsx,.js"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.0",
-    "@docusaurus/preset-classic": "^2.4.0",
+    "@docusaurus/core": "^2.4.1",
+    "@docusaurus/preset-classic": "^2.4.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mdx-js/react": "^1.6.22",
@@ -38,8 +38,8 @@
     "@babel/core": "^7.21.4",
     "@babel/eslint-parser": "^7.21.3",
     "@babel/preset-env": "^7.21.4",
-    "@docusaurus/eslint-plugin": "^2.4.0",
-    "@docusaurus/module-type-aliases": "^2.4.0",
+    "@docusaurus/eslint-plugin": "^2.4.1",
+    "@docusaurus/module-type-aliases": "^2.4.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@types/jest": "^29.5.1",

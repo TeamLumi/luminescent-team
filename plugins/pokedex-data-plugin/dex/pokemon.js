@@ -3,6 +3,7 @@ const { getAbilityString } = require('./ability');
 const { getTechMachineLearnset, getLevelLearnset, getEggMoves, getTutorMoves } = require('./moves');
 const { getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
 const { getTypeName } = require('./types');
+const { getWeight, getHeight } = require('./details');
 const { getGrassKnotPower, getImage, getPokemonFormIndexById, getPokemonFormIds } = require('./functions');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./egggroup');
 const { getItemString } = require('./item')
@@ -22,8 +23,8 @@ function getPokemon(pokemonId) {
     spe: p.basic_agi,
   };
   const baseStatsTotal = Object.values(baseStats).reduce((total, stat) => total + stat, 0);
-  const weight = p.weight / 10;
-  const height = p.height / 100;
+  const weight = getWeight(pokemonId);
+  const height = getHeight(pokemonId);
   const type1 = getTypeName(p.type1);
   const type2 = getTypeName(p.type2);
   const type1Id = p.type1;

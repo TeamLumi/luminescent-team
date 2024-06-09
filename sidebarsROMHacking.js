@@ -225,7 +225,7 @@ const sidebars = {
         'documentation/map-info-locations',
       ],
     },
-  ]
+  ],
 };
 
 module.exports = sidebars;

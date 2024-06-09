@@ -87,6 +87,7 @@ const config = {
               pokemonRedirectComponent: '@site/src/components/common/RedirectComponent.jsx',
               listComponent: '@site/src/pages/_dexlist.jsx',
               wrapperComponent: '@site/src/components/Pokedex2/PokedexPageWrapper.jsx',
+              mapComponent: '@site/src/pages/_mapper.jsx',
             },
           ],
         ]
@@ -118,6 +119,7 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           ...(isDexEnabled ? [{ to: '/dex', label: 'Pokédex', position: 'left' }] : []),
           ...(isPokedexEnabled ? [{ to: POKEDEX_BASE_PATH, label: 'Pokédex', position: 'left' }] : []),
+          { to: '/mapper', label: "Mapper (Beta)", position: "left" },
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',

@@ -33,8 +33,20 @@ import {
   getPokemonIdFromMonsNoAndForm,
   getDexDescription,
 } from './functions';
+import {
+  getAllGroundEncounters,
+  getAllIncenseEncounters,
+  getAllRodEncounters,
+  getAllSurfingEncounters,
+  getAreaEncounters,
+  getTimeOfDayEncounters,
+  getAllHoneyTreeEncounters
+} from './encounters'
+import { getTrainersFromZoneName } from './trainers';
 
 import { PersonalTable } from '../../../__gamedata';
+
+import {getFieldItemsFromZoneID, getHiddenItemsFromZoneID} from './location';
 
 const POKEMON_MOVE_LEVEL_TYPE = {
   EGG: 'egg',
@@ -109,4 +121,14 @@ export {
   getPokemonFormId,
   POKEMON_MOVE_LEVEL_TYPE,
   getDexDescription,
+  getAllGroundEncounters,
+  getAllIncenseEncounters,
+  getAllRodEncounters,
+  getAllSurfingEncounters,
+  getAreaEncounters,
+  getTimeOfDayEncounters,
+  getAllHoneyTreeEncounters,
+  getTrainersFromZoneName,
+  getFieldItemsFromZoneID,
+  getHiddenItemsFromZoneID
 };
