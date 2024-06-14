@@ -52,7 +52,7 @@ ul, li {
 .trainerBox {
     display: grid;
     justify-items: center;
-    padding: 10px;
+    margin: 10px;
     gap: 10px;
 }
 

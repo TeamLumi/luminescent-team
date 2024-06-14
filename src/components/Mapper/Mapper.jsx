@@ -239,7 +239,7 @@ export const Mapper = ({ pokemonList }) => {
           setLocationName={setLocationName}
         />
       </div>
-      <div>
+      {/* <div>
         {`Current Coords: ${cursorPosition.x}, ${cursorPosition.y}`}
         <br />
         {`Last Clicked Coords: ${currentCoordinates.x}, ${currentCoordinates.y}`}
@@ -317,11 +317,19 @@ export const Mapper = ({ pokemonList }) => {
             {`${enc.pokemonName}, ${enc.encounterType}, ${enc.encounterRate}`}
           </div>
         ))}
-      </div>
-      <PokemonAccordion title={"Trainers"} id={"trainers"} sx={{ width: "1100px" }}>
+      </div> */}
+      <PokemonAccordion
+        title={"Trainers"}
+        id={"trainers"}
+        sx={{
+          maxWidth: "1100px",
+          minWidth: "400px",
+          width: "fit-content"
+        }}
+      >
         <Trainers trainerList={trainerList} pokemonList={pokemonList} />
       </PokemonAccordion>
-      <div>
+      {/* <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (
           <div key={index}>
@@ -392,8 +400,7 @@ export const Mapper = ({ pokemonList }) => {
             {`${getItemString(heartScaleItem.ItemNo)} Price: ${heartScaleItem.Price} Heart Scale(s)`}
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
-
