@@ -24,11 +24,11 @@ We hope you enjoy our romhack!
 - Includes evolution methods for regional forms and Luminescent exclusives.
 - Balances are credit to Hudie and the balance team.
 
-### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit)
+### [Pokémon Locations By Route](https://luminescent.team/mapper) [Beta]
 
-- If you want to know what all Pokémon are on each route as you go, this document is for you. It lists all wild encounter locations in the game, and circumstances for Pokémon to spawn in.
-- You must make your own copy before it will work.
-- Made by Solarance.
+- If you want to know what all Pokémon are on each route as you go, this document is for you. Pick a Route and it will show you all Pokémon that spawn there normally; add a specification (such as radar or incense) and it will show you how that affects your chances!
+- Eventually intended to show trainers, event Pokémon, and items/shops.
+- Made by Aaron.
 
 ### [Trainer Documentation](https://docs.google.com/spreadsheets/d/17d7xfiqRDJQp5j6LZIAE8QVCQi7tCgjU_gu5_vE0l2I/edit?usp=sharing)
 
