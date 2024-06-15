@@ -44,8 +44,9 @@ import {
   getAllIncenseEncounters,
   getMapperRoutesFromPokemonId
 } from '../../utils/dex/encounters';
-import { Trainers } from './Trainers';
+import { TrainerDropdown, Trainers } from './Trainers';
 import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
+import { Box } from '@mui/material';
 
 const canvasDimensions = {
   width: 1280,
@@ -73,6 +74,7 @@ export const Mapper = ({ pokemonList }) => {
   if (!isBrowser) {
     return null;
   }
+  const [selectedTrainer, setSelectedTrainer] = useState(null);
   const [rect, setRect] = useState(null);
   const [hoveredZone, setHoveredZone] = useState(null);
   const [selectedZone, setSelectedZone] = useState(null);
@@ -667,17 +669,35 @@ export const Mapper = ({ pokemonList }) => {
         setSelectedPokemon={setSelectedPokemon}
         handleShowSettings={handleShowSettings}
       />
-      <PokemonAccordion
-        title={"Trainers"}
-        id={"trainers"}
+      <Box className='trainer-section'
         sx={{
+          display: "grid",
+          gridTemplateColumns: "1fr",
           maxWidth: "1100px",
           minWidth: { xs: "400px", sm: "530px" },
           width: "fit-content"
         }}
       >
-        <Trainers trainerList={trainerList} pokemonList={pokemonList} />
-      </PokemonAccordion>
+        <PokemonAccordion
+          title={"Trainers"}
+          id={"trainers"}
+          sx={{
+            maxWidth: "1100px",
+            minWidth: { xs: "400px", sm: "33.125rem", md: "52.125rem", lg: "69rem" },
+            minHeight: "5rem",
+            width: "100%",
+            marginTop: "auto",
+            marginBottom: "auto",            
+          }}
+          open={selectedTrainer !== null}
+        >
+          <Trainers
+            pokemonList={pokemonList}
+            selectedTrainer={selectedTrainer}
+          />
+        </PokemonAccordion>
+        <TrainerDropdown trainer={selectedTrainer} setTrainer={setSelectedTrainer} trainerList={trainerList} />
+      </Box>
       {/* <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (

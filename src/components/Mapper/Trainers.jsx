@@ -10,12 +10,29 @@ import './style.css';
 
 const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };
 
-const TrainerDropdown = ({ trainer, setTrainer, trainerList }) => {
+export const TrainerDropdown = ({ trainer, setTrainer, trainerList }) => {
   const defaultTrainer = {
     team_name: ""
   }
   return (
-    <div className="trainer-dropdown">
+    <Box
+      className="trainer-dropdown"
+      sx={{
+        marginLeft: {
+          xs: "10rem",
+          sm: "16rem",
+          md: "28rem",
+          lg: "35.875rem",
+        },
+        marginTop: "1rem",
+        width: {
+          xs: "12rem",
+          sm: "14rem",
+          md: "21rem",
+          lg: "30rem"
+        }
+      }}
+    >
       <Autocomplete
         id="trainer-input"
         options={[defaultTrainer, ...trainerList]}
@@ -31,17 +48,13 @@ const TrainerDropdown = ({ trainer, setTrainer, trainerList }) => {
           />
         )}
       />
-    </div>
+    </Box>
   );
 };
 
-export const Trainers = ({ trainerList, pokemonList }) => {
-  const [selectedTrainer, setSelectedTrainer] = useState(null);
-
+export const Trainers = ({ pokemonList, selectedTrainer }) => {
   return (
     <div>
-      <TrainerDropdown trainer={selectedTrainer} setTrainer={setSelectedTrainer} trainerList={trainerList} />
-
       {selectedTrainer && (
         <Box
           className="trainerBox"

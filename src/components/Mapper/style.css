@@ -123,6 +123,13 @@ ul, li {
     padding-right: 10px;
 }
 
+.trainer-dropdown {
+    position: absolute;
+    width: 30%;
+    margin-left: 35rem;
+    margin-top: 1rem;
+}
+
 .monDetails {
     border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
     height: 100%;
