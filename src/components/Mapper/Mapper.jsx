@@ -323,7 +323,7 @@ export const Mapper = ({ pokemonList }) => {
         id={"trainers"}
         sx={{
           maxWidth: "1100px",
-          minWidth: "400px",
+          minWidth: { xs: "400px", sm: "530px" },
           width: "fit-content"
         }}
       >

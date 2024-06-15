@@ -169,7 +169,8 @@ export const PokemonMoveType = ({ typeName, typeColor, fontSize = null }) => {
           fontSize: {
             xs: fontSize ? fontSize[0] : '0.5rem',
             sm: fontSize ? fontSize[1] : '0.6rem',
-            md: fontSize ? fontSize[1] : '1rem',
+            md: fontSize ? fontSize[0] : '1rem',
+            lg: fontSize ? fontSize[1] : '1rem',            
           },
         }}
       >

@@ -47,12 +47,14 @@ export const Trainers = ({ trainerList, pokemonList }) => {
             gridTemplateColumns: {
               xs: 'repeat(1, 1fr)',
               sm: 'repeat(1, 1fr)',
-              md: 'repeat(2, 1fr)'
+              md: 'repeat(2, 1fr)',
+              lg: 'repeat(2, 1fr)'
             },
             width: {
               xs: '400px',
               sm: '520px',
-              md: '1060px'
+              md: '800px',
+              lg: '1060px'
             }
           }}
         >
@@ -64,11 +66,14 @@ export const Trainers = ({ trainerList, pokemonList }) => {
                 className='trainerMon'
                 key={index}
                 sx={{
-                  width: { xs: "396px", sm: "515px" },
-                  height: { xs: "260px", sm: "280px" }
+                  width: { xs: "396px", sm: "515px", md: "396px", lg: "515px" },
+                  height: { xs: "260px", sm: "280px", md: "260px", lg: "280px" }
                 }}
               >
-                <Box className='monDetails' sx={{ width: { xs: "145px", sm: "165px" }}}>
+                <Box
+                  className='monDetails'
+                  sx={{ width: { xs: "145px", sm: "165px", md: "145px", lg: "165px" }}}
+                >
                   <ImageWithFallback
                     alt={pokemonInfo.name}
                     src={`/img/${pokemonInfo.imageSrc}`}
@@ -77,9 +82,14 @@ export const Trainers = ({ trainerList, pokemonList }) => {
                     width="64px"
                     height="64px"
                   />
-                  <Typography sx={{ ...responsiveFontSize }}>{`${getPokemonName(pokemon.id)} Lv. ${pokemon.level}`}</Typography>
+                  <Typography sx={{ ...responsiveFontSize }}>
+                    {`${getPokemonName(pokemon.id)} Lv. ${pokemon.level}`}
+                  </Typography>
                   <Box display={"flex"}>
-                    <Box sx={{ width: { xs: "65px", sm: "72px" }}} marginLeft="5px">
+                    <Box
+                      sx={{ width: { xs: "65px", sm: "72px", md: "65px", lg: "72px" }}}
+                      marginLeft="5px"
+                    >
                       <PokemonMoveType
                         typeName={TYPE_COLOR_MAP[pokemonInfo.type1].name}
                         typeColor={TYPE_COLOR_MAP[pokemonInfo.type1].color}
@@ -87,7 +97,10 @@ export const Trainers = ({ trainerList, pokemonList }) => {
                       />
                     </Box>
                     {pokemonInfo.type1 !== pokemonInfo.type2 && (
-                      <Box sx={{ width: { xs: "65px", sm: "72px" }}} marginLeft="5px">
+                      <Box
+                        sx={{ width: { xs: "65px", sm: "72px", md: "65px", lg: "72px" }}}
+                        marginLeft="5px"
+                      >
                         <PokemonMoveType
                           typeName={TYPE_COLOR_MAP[pokemonInfo.type2].name}
                           typeColor={TYPE_COLOR_MAP[pokemonInfo.type2].color}
@@ -96,23 +109,36 @@ export const Trainers = ({ trainerList, pokemonList }) => {
                       </Box>
                     )}
                   </Box>
-                  <Typography sx={{ ...responsiveFontSize }}>{`Nature: ${pokemon.nature}`}</Typography>
-                  <Typography sx={{ ...responsiveFontSize }}>{`Ability: ${pokemon.ability}`}</Typography>
-                  <Typography sx={{ ...responsiveFontSize }}>{`Item: ${pokemon.item}`}</Typography>
+                  <Typography sx={{ ...responsiveFontSize }}>
+                    {`Nature: ${pokemon.nature}`}
+                  </Typography>
+                  <Typography sx={{ ...responsiveFontSize }}>
+                    {`Ability: ${pokemon.ability}`}
+                  </Typography>
+                  <Typography sx={{ ...responsiveFontSize }}>
+                    {`Item: ${pokemon.item}`}
+                  </Typography>
                 </Box>
-                <Box className='stats' sx={{ width: { xs: "250px", sm: "350px" }}}>
+                <Box
+                  className='stats'
+                  sx={{ width: { xs: "250px", sm: "350px", md: "250px", lg: "350px" }}}
+                >
                   <PokemonStats baseStats={baseStats} trainerPokemon={pokemon}/>
                   <Box
                     className='moveList'
                     sx={{
-                      width: { xs: "250px", sm: "350px" },
-                      height: { xs: "84px", sm: "104px" }
+                      width: { xs: "250px", sm: "350px", md: "250px", lg: "350px" },
+                      height: { xs: "84px", sm: "104px", md: "84px", lg: "104px" }
                     }}
                   >
                     {pokemon.moves.map((move, index) => {
                       const moveInfo = getMoveProperties(move);
                       return (
-                        <Box key={`${move}-${index}`} sx={{ width: { xs: "110px", sm: "160px" }}} margin="5px 2px 2.5px">
+                        <Box
+                          key={`${move}-${index}`}
+                          sx={{ width: { xs: "110px", sm: "160px", md: "110px", lg: "160px" }}}
+                          margin="5px 2px 2.5px"
+                        >
                           <PokemonMoveType
                             typeName={moveInfo.name}
                             typeColor={TYPE_COLOR_MAP[moveInfo.type].color}

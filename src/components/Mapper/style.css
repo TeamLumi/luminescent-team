@@ -54,6 +54,7 @@ ul, li {
     justify-items: center;
     margin: 10px;
     gap: 10px;
+    padding-right: 10px;
 }
 
 .monDetails {

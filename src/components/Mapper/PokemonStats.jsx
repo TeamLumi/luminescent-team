@@ -42,14 +42,31 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
   ];
 
   return (
-    <Box className="statsContainer" sx={{ height: "170px", width: { xs: "250px", sm: "350px"}}}>
-      <Box display="grid" sx={{ gridTemplateColumns: { xs: 'repeat(4, 1fr)', sm: 'repeat(7, 1fr)'}}} justifyItems={"center"}>
+    <Box
+      className="statsContainer"
+      sx={{
+        height: "170px",
+        width: { xs: "250px", sm: "350px", md: "250px", lg: "350px"}
+      }}
+    >
+      <Box
+        display="grid"
+        sx={{
+          gridTemplateColumns: {
+            xs: 'repeat(4, 1fr)',
+            sm: 'repeat(7, 1fr)',
+            md: 'repeat(4, 1fr)',
+            lg: 'repeat(7, 1fr)' 
+          }
+        }}
+        justifyItems={"center"}
+      >
         <>
           <Box gridColumn="span 1"/>
           <Box gridColumn="span 1">
             <Typography sx={{ ...responsiveHeaderSize }}>Total:</Typography>
           </Box>
-          <Box gridColumn="span 3" sx={{ display: { xs: 'none', sm: 'block' }}} />
+          <Box gridColumn="span 3" sx={{ display: { xs: 'none', sm: 'block', md: 'none', lg: 'block' }}} />
           <Box gridColumn="span 1">
             <Typography sx={{ ...responsiveHeaderSize }}>IVs:</Typography>
           </Box>
@@ -72,7 +89,9 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
           return (
             <Fragment key={stat.label}>
               <Box gridColumn="span 1">
-                <Typography sx={{ ...responsiveFontSize }} className='statValue' >{`${stat.key.toUpperCase()}:`}</Typography>
+                <Typography sx={{ ...responsiveFontSize }} className='statValue'>
+                  {`${stat.key.toUpperCase()}:`}
+                </Typography>
               </Box>
               <Box gridColumn="span 1">
                 <Typography
@@ -85,7 +104,11 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
                   {statValue}
                 </Typography>
               </Box>
-              <Box gridColumn="span 3" sx={{ display: { xs: 'none', sm: 'block' }}} width="100%">
+              <Box
+                gridColumn="span 3"
+                sx={{ display: { xs: 'none', sm: 'block', md: 'none', lg: 'block' }}}
+                width="100%"
+              >
                 <Box sx={{ marginLeft: { xs: '16px', sm: '0' } }}>
                   <PokemonStatBar width={width} color={color} />
                 </Box>
