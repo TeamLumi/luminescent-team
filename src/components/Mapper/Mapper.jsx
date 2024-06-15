@@ -665,10 +665,8 @@ export const Mapper = ({ pokemonList }) => {
         canvasRef={canvasRef.current}
         selectedPokemon={selectedPokemon}
         setSelectedPokemon={setSelectedPokemon}
+        handleShowSettings={handleShowSettings}
       />
-      <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
-        <SettingsIcon />
-      </IconButton>
       <PokemonAccordion
         title={"Trainers"}
         id={"trainers"}
@@ -752,6 +750,13 @@ export const Mapper = ({ pokemonList }) => {
           </div>
         ))}
       </div> */}
+      <SettingsModal
+        colors={colors}
+        setColors={setColors}
+        showModal={showSettings}
+        onHide={handleCloseSettings}
+        canvasRef={canvasRef.current}
+      />
     </div>
   );
 }

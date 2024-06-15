@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import IconButton from '@mui/material/IconButton';
+import SettingsIcon from '@mui/icons-material/Settings';
 import { Autocomplete, TextField } from '@mui/material';
 import Fuse from 'fuse.js';
-import './style.css';
+
 import { getLocationNames } from './coordinates';
+import './style.css';
 
 const PokemonSearchInput = ({
   allPokemons,
@@ -101,6 +104,16 @@ const LocationNameDropdown = ({ locationName, setLocationName, canvasRef }) => {
   );
 };
 
+const SettingsButton = ({handleShowSettings}) => {
+  return (
+    <div className="settings">
+      <IconButton aria-label="settings" onClick={handleShowSettings}>
+        <SettingsIcon />
+      </IconButton>
+    </div>
+  );
+}
+
 export const SearchBar = ({
   canvasDimensions,
   pokemonList,
@@ -111,6 +124,7 @@ export const SearchBar = ({
   canvasRef,
   selectedPokemon,
   setSelectedPokemon,
+  handleShowSettings,
 }) => {
   return (
     <div
@@ -133,6 +147,7 @@ export const SearchBar = ({
         setLocationName={setLocationName}
         canvasRef={canvasRef}
       />
+      <SettingsButton handleShowSettings={handleShowSettings} />
     </div>
   )
 };

@@ -81,6 +81,16 @@ ul, li {
     margin-top: 16px;
     margin-right: 10px;
 }
+
+.settings {
+    display: grid;
+    align-content: end;
+    justify-content: end;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 16rem;
+    margin-top: 36rem;
+    pointer-events: all;
 }
 
 .stats {

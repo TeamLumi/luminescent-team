@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { PokemonStats } from './PokemonStats';
 import { Autocomplete, Box, MenuItem, Select, TextField, Typography } from '@mui/material';
-import './style.css';
+
+import { PokemonStats } from './PokemonStats';
 import { getMoveProperties, getPokemonName } from '../../utils/dex';
 import { PokemonMoveType, TYPE_COLOR_MAP } from '../Pokedex2/PokemonMovesetList';
 import { ImageWithFallback } from '../common/ImageWithFallback';
+
+import './style.css';
 
 const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };
 
