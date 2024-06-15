@@ -1,0 +1,1266 @@
+[
+  {
+      "x": 363,
+      "y": 519,
+      "width": 51,
+      "height": 51,
+      "name": "Jubilife City",
+      "zoneId": 0
+  },
+  {
+      "x": 372,
+      "y": 570,
+      "width": 32,
+      "height": 36,
+      "name": "Route 202",
+      "zoneId": 355
+  },
+  {
+      "x": 372,
+      "y": 606,
+      "width": 32,
+      "height": 32,
+      "name": "Sandgem Town",
+      "zoneId": 429
+  },
+  {
+      "x": 279,
+      "y": 606,
+      "width": 29,
+      "height": 32,
+      "name": "Verity Lakefront",
+      "zoneId": 346
+  },
+  {
+      "x": 192,
+      "y": 584,
+      "width": 35,
+      "height": 34,
+      "name": "Lake Verity Cavern",
+      "zoneId": 326
+  },
+  {
+      "x": 787,
+      "y": 513,
+      "width": 34,
+      "height": 35,
+      "name": "Lake Valor Cavern",
+      "zoneId": 328
+  },
+  {
+      "x": 483,
+      "y": 57,
+      "width": 33,
+      "height": 34,
+      "name": "Lake Acuity Cavern",
+      "zoneId": 331
+  },
+  {
+      "x": 929,
+      "y": 430,
+      "width": 34,
+      "height": 34,
+      "name": "Turnback Cave",
+      "zoneId": 265
+  },
+  {
+      "x": 571,
+      "y": 348,
+      "width": 35,
+      "height": 35,
+      "name": "Mt. Coronet 6F",
+      "zoneId": 211
+  },
+  {
+      "x": 536,
+      "y": 348,
+      "width": 35,
+      "height": 35,
+      "name": "Spear Pillar",
+      "zoneId": 216
+  },
+  {
+      "x": 571,
+      "y": 314,
+      "width": 35,
+      "height": 34,
+      "name": "Hall of Origin",
+      "zoneId": 218
+  },
+  {
+      "x": 308,
+      "y": 606,
+      "width": 64,
+      "height": 32,
+      "name": "Route 201",
+      "zoneId": 354
+  },
+  {
+      "x": 304,
+      "y": 638,
+      "width": 34,
+      "height": 34,
+      "name": "Twinleaf Town",
+      "zoneId": 422
+  },
+  {
+      "x": 227,
+      "y": 584,
+      "width": 52,
+      "height": 54,
+      "name": "Lake Verity",
+      "zoneId": 323
+  },
+  {
+      "x": 310,
+      "y": 528,
+      "width": 53,
+      "height": 33,
+      "name": "Route 218",
+      "zoneId": 400
+  },
+  {
+      "x": 278,
+      "y": 512,
+      "width": 32,
+      "height": 64,
+      "name": "Canalave City",
+      "zoneId": 24
+  },
+  {
+      "x": 740,
+      "y": 430,
+      "width": 35,
+      "height": 34,
+      "name": "Solaceon Town",
+      "zoneId": 446
+  },
+  {
+      "x": 775,
+      "y": 430,
+      "width": 35,
+      "height": 34,
+      "name": "Solaceon Ruins",
+      "zoneId": 225
+  },
+  {
+      "x": 775,
+      "y": 464,
+      "width": 35,
+      "height": 34,
+      "name": "Lost Tower",
+      "zoneId": 368
+  },
+  {
+      "x": 693,
+      "y": 464,
+      "width": 82,
+      "height": 65,
+      "name": "Route 209",
+      "zoneId": 367
+  },
+  {
+      "x": 405,
+      "y": 464,
+      "width": 34,
+      "height": 34,
+      "name": "Ravaged Path",
+      "zoneId": 252
+  },
+  {
+      "x": 372,
+      "y": 449,
+      "width": 33,
+      "height": 35,
+      "name": "Route 204 (North)",
+      "zoneId": 358
+  },
+  {
+      "x": 372,
+      "y": 484,
+      "width": 33,
+      "height": 35,
+      "name": "Route 204 (South)",
+      "zoneId": 357
+  },
+  {
+      "x": 372,
+      "y": 417,
+      "width": 33,
+      "height": 32,
+      "name": "Floaroma Town",
+      "zoneId": 438
+  },
+  {
+      "x": 372,
+      "y": 382,
+      "width": 33,
+      "height": 35,
+      "name": "Floaroma Meadow",
+      "zoneId": 253
+  },
+  {
+      "x": 372,
+      "y": 350,
+      "width": 33,
+      "height": 32,
+      "name": "Fuego Ironworks (Outside)",
+      "zoneId": 201
+  },
+  {
+      "x": 372,
+      "y": 350,
+      "width": 33,
+      "height": 32,
+      "name": "Fuego Ironworks (Inside)",
+      "zoneId": 202
+  },
+  {
+      "x": 405,
+      "y": 323,
+      "width": 46,
+      "height": 126,
+      "name": "Route 205 South",
+      "zoneId": 359
+  },
+  {
+      "x": 453,
+      "y": 282,
+      "width": 30,
+      "height": 65,
+      "name": "Route 205 North",
+      "zoneId": 361
+  },
+  {
+      "x": 451,
+      "y": 417,
+      "width": 31,
+      "height": 32,
+      "name": "Valley Windworks (Outside)",
+      "zoneId": 197
+  },
+  {
+      "x": 451,
+      "y": 417,
+      "width": 31,
+      "height": 32,
+      "name": "Valley Windworks (Inside)",
+      "zoneId": 198
+  },
+  {
+      "x": 402,
+      "y": 270,
+      "width": 51,
+      "height": 53,
+      "name": "Eterna Forest",
+      "zoneId": 200
+  },
+  {
+      "x": 402,
+      "y": 270,
+      "width": 51,
+      "height": 53,
+      "name": "Eterna Forest (Outside)",
+      "zoneId": 199
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (Lobby)",
+      "zoneId": 306
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (Dining Room)",
+      "zoneId": 307
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (2F Side Rooms)",
+      "zoneId": 308
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (2F Hallway)",
+      "zoneId": 309
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (Room 1 Hallway)",
+      "zoneId": 310
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (Room 2 Hallway)",
+      "zoneId": 311
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (Room 3 Hallway)",
+      "zoneId": 312
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (Room 4 Hallway)",
+      "zoneId": 313
+  },
+  {
+      "x": 410,
+      "y": 236,
+      "width": 34,
+      "height": 34,
+      "name": "Old Chateau (Room 5 Hallway)",
+      "zoneId": 314
+  },
+  {
+      "x": 483,
+      "y": 270,
+      "width": 53,
+      "height": 52,
+      "name": "Eterna City",
+      "zoneId": 54
+  },
+  {
+      "x": 483,
+      "y": 236,
+      "width": 33,
+      "height": 34,
+      "name": "T.G. Building (1F)",
+      "zoneId": 62
+  },
+  {
+      "x": 483,
+      "y": 236,
+      "width": 33,
+      "height": 34,
+      "name": "T.G. Building (2F)",
+      "zoneId": 63
+  },
+  {
+      "x": 483,
+      "y": 236,
+      "width": 33,
+      "height": 34,
+      "name": "T.G. Building (3F)",
+      "zoneId": 64
+  },
+  {
+      "x": 483,
+      "y": 236,
+      "width": 33,
+      "height": 34,
+      "name": "T.G. Building (4F)",
+      "zoneId": 65
+  },
+  {
+      "x": 493,
+      "y": 322,
+      "width": 33,
+      "height": 174,
+      "name": "Route 206",
+      "zoneId": 362
+  },
+  {
+      "x": 458,
+      "y": 358,
+      "width": 35,
+      "height": 34,
+      "name": "Wayward Cave",
+      "zoneId": 292
+  },
+  {
+      "x": 458,
+      "y": 358,
+      "width": 35,
+      "height": 34,
+      "name": "Wayward Cave (Secret Area)",
+      "zoneId": 293
+  },
+  {
+      "x": 493,
+      "y": 496,
+      "width": 78,
+      "height": 33,
+      "name": "Route 207",
+      "zoneId": 364
+  },
+  {
+      "x": 414,
+      "y": 528,
+      "width": 34,
+      "height": 34,
+      "name": "Route 203",
+      "zoneId": 356
+  },
+  {
+      "x": 448,
+      "y": 528,
+      "width": 35,
+      "height": 34,
+      "name": "Oreburgh Gate (1F)",
+      "zoneId": 255
+  },
+  {
+      "x": 448,
+      "y": 528,
+      "width": 35,
+      "height": 34,
+      "name": "Oreburgh Gate (B1F)",
+      "zoneId": 256
+  },
+  {
+      "x": 483,
+      "y": 529,
+      "width": 53,
+      "height": 51,
+      "name": "Oreburgh City",
+      "zoneId": 38
+  },
+  {
+      "x": 502,
+      "y": 580,
+      "width": 34,
+      "height": 36,
+      "name": "Oreburgh Mine (B1F)",
+      "zoneId": 195
+  },
+  {
+      "x": 502,
+      "y": 580,
+      "width": 34,
+      "height": 36,
+      "name": "Oreburgh Mine (B2F)",
+      "zoneId": 196
+  },
+  {
+      "x": 474,
+      "y": 671,
+      "width": 32,
+      "height": 32,
+      "name": "Renegade Park",
+      "zoneId": 250
+  },
+  {
+      "x": 440,
+      "y": 671,
+      "width": 34,
+      "height": 32,
+      "name": "Route 221",
+      "zoneId": 404
+  },
+  {
+      "x": 372,
+      "y": 671,
+      "width": 68,
+      "height": 32,
+      "name": "Route 220",
+      "zoneId": 485
+  },
+  {
+      "x": 372,
+      "y": 638,
+      "width": 32,
+      "height": 33,
+      "name": "Route 219",
+      "zoneId": 403
+  },
+  {
+      "x": 604,
+      "y": 493,
+      "width": 36,
+      "height": 35,
+      "name": "Route 208",
+      "zoneId": 365
+  },
+  {
+      "x": 640,
+      "y": 483,
+      "width": 53,
+      "height": 53,
+      "name": "Hearthome City",
+      "zoneId": 74
+  },
+  {
+      "x": 640,
+      "y": 449,
+      "width": 33,
+      "height": 34,
+      "name": "Amity Square",
+      "zoneId": 96
+  },
+  {
+      "x": 536,
+      "y": 281,
+      "width": 70,
+      "height": 33,
+      "name": "Route 211 (West)",
+      "zoneId": 377
+  },
+  {
+      "x": 640,
+      "y": 536,
+      "width": 33,
+      "height": 63,
+      "name": "Route 212 (North)",
+      "zoneId": 379
+  },
+  {
+      "x": 640,
+      "y": 599,
+      "width": 162,
+      "height": 36,
+      "name": "Route 212 (South)",
+      "zoneId": 383
+  },
+  {
+      "x": 673,
+      "y": 536,
+      "width": 34,
+      "height": 36,
+      "name": "Pokémon Mansion",
+      "zoneId": 380
+  },
+  {
+      "x": 571,
+      "y": 452,
+      "width": 33,
+      "height": 33,
+      "name": "Mt. Coronet 3F",
+      "zoneId": 205
+  },
+  {
+      "x": 571,
+      "y": 485,
+      "width": 33,
+      "height": 32,
+      "name": "Mt. Coronet 2F",
+      "zoneId": 204
+  },
+  {
+      "x": 571,
+      "y": 517,
+      "width": 33,
+      "height": 33,
+      "name": "Mt. Coronet Route 207",
+      "zoneId": 203
+  },
+  {
+      "x": 606,
+      "y": 214,
+      "width": 32,
+      "height": 32,
+      "name": "Mt. Coronet 216 Entrance",
+      "zoneId": 213
+  },
+  {
+      "x": 606,
+      "y": 246,
+      "width": 32,
+      "height": 35,
+      "name": "Mt. Coronet B1F",
+      "zoneId": 215
+  },
+  {
+      "x": 606,
+      "y": 281,
+      "width": 32,
+      "height": 67,
+      "name": "Mt. Coronet 211 Entrance",
+      "zoneId": 214
+  },
+  {
+      "x": 606,
+      "y": 348,
+      "width": 32,
+      "height": 35,
+      "name": "Mt. Coronet Tunnel To 211 Entrance",
+      "zoneId": 212
+  },
+  {
+      "x": 571,
+      "y": 415,
+      "width": 35,
+      "height": 37,
+      "name": "Mt. Coronet 4F",
+      "zoneId": 208
+  },
+  {
+      "x": 606,
+      "y": 415,
+      "width": 32,
+      "height": 37,
+      "name": "Mt. Coronet Summit",
+      "zoneId": 207
+  },
+  {
+      "x": 606,
+      "y": 179,
+      "width": 32,
+      "height": 35,
+      "name": "Regice Ruins",
+      "zoneId": 999
+  },
+  {
+      "x": 571,
+      "y": 383,
+      "width": 35,
+      "height": 32,
+      "name": "Mt. Coronet 5F",
+      "zoneId": 210
+  },
+  {
+      "x": 536,
+      "y": 383,
+      "width": 35,
+      "height": 32,
+      "name": "Mt. Coronet 4F To Spear Pillar",
+      "zoneId": 209
+  },
+  {
+      "x": 606,
+      "y": 383,
+      "width": 32,
+      "height": 32,
+      "name": "Mt. Coronet Snow Area",
+      "zoneId": 206
+  },
+  {
+      "x": 638,
+      "y": 347,
+      "width": 35,
+      "height": 36,
+      "name": "Route 211 (East)",
+      "zoneId": 378
+  },
+  {
+      "x": 673,
+      "y": 347,
+      "width": 35,
+      "height": 36,
+      "name": "Celestic Town",
+      "zoneId": 456
+  },
+  {
+      "x": 708,
+      "y": 347,
+      "width": 67,
+      "height": 36,
+      "name": "Route 210 (North)",
+      "zoneId": 375
+  },
+  {
+      "x": 740,
+      "y": 383,
+      "width": 35,
+      "height": 47,
+      "name": "Route 210 (South)",
+      "zoneId": 373
+  },
+  {
+      "x": 528,
+      "y": 214,
+      "width": 78,
+      "height": 32,
+      "name": "Route 216",
+      "zoneId": 395
+  },
+  {
+      "x": 528,
+      "y": 143,
+      "width": 31,
+      "height": 71,
+      "name": "Route 217",
+      "zoneId": 397
+  },
+  {
+      "x": 528,
+      "y": 111,
+      "width": 65,
+      "height": 32,
+      "name": "Acuity Lakefront",
+      "zoneId": 351
+  },
+  {
+      "x": 516,
+      "y": 57,
+      "width": 55,
+      "height": 54,
+      "name": "Lake Acuity",
+      "zoneId": 330
+  },
+  {
+      "x": 604,
+      "y": 66,
+      "width": 34,
+      "height": 34,
+      "name": "Snowpoint Temple (1F)",
+      "zoneId": 286
+  },
+  {
+      "x": 604,
+      "y": 66,
+      "width": 34,
+      "height": 34,
+      "name": "Snowpoint Temple (B1F)",
+      "zoneId": 287
+  },
+  {
+      "x": 604,
+      "y": 66,
+      "width": 34,
+      "height": 34,
+      "name": "Snowpoint Temple (B2F)",
+      "zoneId": 288
+  },
+  {
+      "x": 604,
+      "y": 66,
+      "width": 34,
+      "height": 34,
+      "name": "Snowpoint Temple (B3F)",
+      "zoneId": 289
+  },
+  {
+      "x": 604,
+      "y": 66,
+      "width": 34,
+      "height": 34,
+      "name": "Snowpoint Temple (B4F)",
+      "zoneId": 290
+  },
+  {
+      "x": 604,
+      "y": 66,
+      "width": 34,
+      "height": 34,
+      "name": "Snowpoint Temple (B5F)",
+      "zoneId": 291
+  },
+  {
+      "x": 593,
+      "y": 100,
+      "width": 55,
+      "height": 55,
+      "name": "Snowpoint City",
+      "zoneId": 159
+  },
+  {
+      "x": 775,
+      "y": 396,
+      "width": 90,
+      "height": 34,
+      "name": "Route 215",
+      "zoneId": 394
+  },
+  {
+      "x": 886,
+      "y": 351,
+      "width": 34,
+      "height": 35,
+      "name": "T.G. H.Q. (1F)",
+      "zoneId": 315
+  },
+  {
+      "x": 886,
+      "y": 351,
+      "width": 34,
+      "height": 35,
+      "name": "T.G. H.Q. (2F)",
+      "zoneId": 316
+  },
+  {
+      "x": 886,
+      "y": 351,
+      "width": 34,
+      "height": 35,
+      "name": "T.G. H.Q. (3F)",
+      "zoneId": 317
+  },
+  {
+      "x": 886,
+      "y": 351,
+      "width": 34,
+      "height": 35,
+      "name": "T.G. H.Q. (4F)",
+      "zoneId": 318
+  },
+  {
+      "x": 886,
+      "y": 351,
+      "width": 34,
+      "height": 35,
+      "name": "T.G. H.Q. (B1F)",
+      "zoneId": 319
+  },
+  {
+      "x": 886,
+      "y": 351,
+      "width": 34,
+      "height": 35,
+      "name": "T.G. H.Q. (B2F)",
+      "zoneId": 320
+  },
+  {
+      "x": 886,
+      "y": 351,
+      "width": 34,
+      "height": 35,
+      "name": "T.G. H.Q. Lake Trio",
+      "zoneId": 315
+  },
+  {
+      "x": 886,
+      "y": 351,
+      "width": 34,
+      "height": 35,
+      "name": "T.G. H.Q. Hall To Lake Trio",
+      "zoneId": 315
+  },
+  {
+      "x": 865,
+      "y": 386,
+      "width": 55,
+      "height": 54,
+      "name": "Veilstone City",
+      "zoneId": 123
+  },
+  {
+      "x": 876,
+      "y": 440,
+      "width": 34,
+      "height": 53,
+      "name": "Route 214",
+      "zoneId": 392
+  },
+  {
+      "x": 841,
+      "y": 450,
+      "width": 35,
+      "height": 34,
+      "name": "Maniac Tunnel",
+      "zoneId": 296
+  },
+  {
+      "x": 910,
+      "y": 498,
+      "width": 53,
+      "height": 35,
+      "name": "Spring Path",
+      "zoneId": 352
+  },
+  {
+      "x": 929,
+      "y": 464,
+      "width": 34,
+      "height": 34,
+      "name": "Sendoff Spring",
+      "zoneId": 263
+  },
+  {
+      "x": 929,
+      "y": 396,
+      "width": 34,
+      "height": 34,
+      "name": "Distortion World",
+      "zoneId": 998
+  },
+  {
+      "x": 821,
+      "y": 493,
+      "width": 55,
+      "height": 55,
+      "name": "Lake Valor",
+      "zoneId": 327
+  },
+  {
+      "x": 856,
+      "y": 600,
+      "width": 54,
+      "height": 33,
+      "name": "Route 213",
+      "zoneId": 385
+  },
+  {
+      "x": 876,
+      "y": 493,
+      "width": 34,
+      "height": 107,
+      "name": "Valor Lakefront",
+      "zoneId": 347
+  },
+  {
+      "x": 802,
+      "y": 556,
+      "width": 34,
+      "height": 33,
+      "name": "The Great Marsh (Area 1-2)",
+      "zoneId": 219
+  },
+  {
+      "x": 802,
+      "y": 556,
+      "width": 34,
+      "height": 33,
+      "name": "The Great Marsh (Area 3-4)",
+      "zoneId": 221
+  },
+  {
+      "x": 802,
+      "y": 556,
+      "width": 34,
+      "height": 33,
+      "name": "The Great Marsh (Area 5-6)",
+      "zoneId": 223
+  },
+  {
+      "x": 802,
+      "y": 589,
+      "width": 54,
+      "height": 56,
+      "name": "Pastoria City",
+      "zoneId": 110
+  },
+  {
+      "x": 910,
+      "y": 567,
+      "width": 67,
+      "height": 33,
+      "name": "Route 222",
+      "zoneId": 407
+  },
+  {
+      "x": 986,
+      "y": 499,
+      "width": 34,
+      "height": 57,
+      "name": "Route 223",
+      "zoneId": 486
+  },
+  {
+      "x": 977,
+      "y": 556,
+      "width": 54,
+      "height": 54,
+      "name": "Sunyshore City",
+      "zoneId": 142
+  },
+  {
+      "x": 986,
+      "y": 464,
+      "width": 34,
+      "height": 35,
+      "name": "Pokémon League (Pre-Victory Road)",
+      "zoneId": 169
+  },
+  {
+      "x": 1055,
+      "y": 364,
+      "width": 32,
+      "height": 65,
+      "name": "Route 224",
+      "zoneId": 411
+  },
+  {
+      "x": 986,
+      "y": 395,
+      "width": 69,
+      "height": 69,
+      "name": "Victory Road (1F)",
+      "zoneId": 244
+  },
+  {
+      "x": 986,
+      "y": 395,
+      "width": 69,
+      "height": 69,
+      "name": "Victory Road (2F)",
+      "zoneId": 245
+  },
+  {
+      "x": 986,
+      "y": 395,
+      "width": 69,
+      "height": 69,
+      "name": "Victory Road (B1F)",
+      "zoneId": 246
+  },
+  {
+      "x": 986,
+      "y": 395,
+      "width": 69,
+      "height": 69,
+      "name": "Victory Road (1F Back Marley)",
+      "zoneId": 247
+  },
+  {
+      "x": 986,
+      "y": 395,
+      "width": 69,
+      "height": 69,
+      "name": "Victory Road (1F Back Entrance)",
+      "zoneId": 248
+  },
+  {
+      "x": 986,
+      "y": 395,
+      "width": 69,
+      "height": 69,
+      "name": "Victory Road (1F Back 214 Exit)",
+      "zoneId": 249
+  },
+  {
+      "x": 986,
+      "y": 362,
+      "width": 34,
+      "height": 33,
+      "name": "Pokémon League (Outside)",
+      "zoneId": 171
+  },
+  {
+      "x": 1055,
+      "y": 234,
+      "width": 32,
+      "height": 130,
+      "name": "Seabreak Path",
+      "zoneId": 490
+  },
+  {
+      "x": 1055,
+      "y": 202,
+      "width": 32,
+      "height": 32,
+      "name": "Flower Paradise",
+      "zoneId": 285
+  },
+  {
+      "x": 775,
+      "y": 173,
+      "width": 51,
+      "height": 52,
+      "name": "Battle Tower",
+      "zoneId": 336
+  },
+  {
+      "x": 721,
+      "y": 228,
+      "width": 52,
+      "height": 51,
+      "name": "Fight Area",
+      "zoneId": 186
+  },
+  {
+      "x": 730,
+      "y": 130,
+      "width": 34,
+      "height": 98,
+      "name": "Route 225",
+      "zoneId": 412
+  },
+  {
+      "x": 764,
+      "y": 130,
+      "width": 34,
+      "height": 34,
+      "name": "Survival Area",
+      "zoneId": 465
+  },
+  {
+      "x": 764,
+      "y": 96,
+      "width": 34,
+      "height": 34,
+      "name": "Battle House",
+      "zoneId": 472
+  },
+  {
+      "x": 798,
+      "y": 130,
+      "width": 68,
+      "height": 34,
+      "name": "Route 226",
+      "zoneId": 487
+  },
+  {
+      "x": 831,
+      "y": 96,
+      "width": 35,
+      "height": 34,
+      "name": "Route 227",
+      "zoneId": 414
+  },
+  {
+      "x": 866,
+      "y": 130,
+      "width": 32,
+      "height": 107,
+      "name": "Route 228",
+      "zoneId": 416
+  },
+  {
+      "x": 831,
+      "y": 178,
+      "width": 34,
+      "height": 35,
+      "name": "Regirock Ruins",
+      "zoneId": 997
+  },
+  {
+      "x": 866,
+      "y": 237,
+      "width": 32,
+      "height": 33,
+      "name": "Route 229",
+      "zoneId": 420
+  },
+  {
+      "x": 773,
+      "y": 237,
+      "width": 93,
+      "height": 33,
+      "name": "Route 230",
+      "zoneId": 489
+  },
+  {
+      "x": 865,
+      "y": 270,
+      "width": 69,
+      "height": 35,
+      "name": "Resort Area",
+      "zoneId": 473
+  },
+  {
+      "x": 831,
+      "y": 62,
+      "width": 35,
+      "height": 34,
+      "name": "Stark Mountain (Outside)",
+      "zoneId": 259
+  },
+  {
+      "x": 831,
+      "y": 28,
+      "width": 35,
+      "height": 34,
+      "name": "Stark Mountain (Entrance)",
+      "zoneId": 260
+  },
+  {
+      "x": 831,
+      "y": 28,
+      "width": 35,
+      "height": 34,
+      "name": "Stark Mountain (Interior)",
+      "zoneId": 261
+  },
+  {
+      "x": 831,
+      "y": 28,
+      "width": 35,
+      "height": 34,
+      "name": "Stark Mountain (Heatran Room)",
+      "zoneId": 262
+  },
+  {
+      "x": 281,
+      "y": 314,
+      "width": 34,
+      "height": 32,
+      "name": "Registeel Ruins",
+      "zoneId": 996
+  },
+  {
+      "x": 315,
+      "y": 346,
+      "width": 32,
+      "height": 35,
+      "name": "Iron Island (Outside)",
+      "zoneId": 298
+  },
+  {
+      "x": 315,
+      "y": 314,
+      "width": 32,
+      "height": 32,
+      "name": "Iron Island (1F)",
+      "zoneId": 299
+  },
+  {
+      "x": 315,
+      "y": 314,
+      "width": 32,
+      "height": 32,
+      "name": "Iron Island (B1F Left)",
+      "zoneId": 300
+  },
+  {
+      "x": 315,
+      "y": 314,
+      "width": 32,
+      "height": 32,
+      "name": "Iron Island (B1F Right)",
+      "zoneId": 301
+  },
+  {
+      "x": 315,
+      "y": 314,
+      "width": 32,
+      "height": 32,
+      "name": "Iron Island (B2F Right)",
+      "zoneId": 302
+  },
+  {
+      "x": 315,
+      "y": 314,
+      "width": 32,
+      "height": 32,
+      "name": "Iron Island (B2F Left)",
+      "zoneId": 303
+  },
+  {
+      "x": 315,
+      "y": 314,
+      "width": 32,
+      "height": 32,
+      "name": "Iron Island (B3F)",
+      "zoneId": 304
+  },
+  {
+      "x": 246,
+      "y": 202,
+      "width": 33,
+      "height": 33,
+      "name": "Fullmoon Island",
+      "zoneId": 257
+  },
+  {
+      "x": 314,
+      "y": 202,
+      "width": 33,
+      "height": 33,
+      "name": "Newmoon Island",
+      "zoneId": 332
+  }
+]

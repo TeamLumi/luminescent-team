@@ -7,7 +7,7 @@ import LearnsetTable from './WazaOboeTable.json';
 import MovesTable from './WazaTable.json';
 import ItemTable from './ItemTable.json';
 import ShopTable from './ShopTable.json';
-import areasList from './areas';
+import {areasList} from './areas';
 
 //All the Location files
 import displayNames from './english_dp_fld_areaname_display.json';
@@ -18,6 +18,7 @@ import pokemonLocations from './pokemon_locations.json';
 import trainerLocations from './Mapper_Trainer_Output.json';
 import field_items from './item_list.json';
 import hidden_items from './hide_item_list.json';
+import staticLocations from './static_pokemon_locations.json';
 
 //All the Pokemon english files
 import basePokemonNames from './english_ss_monsname.json';
@@ -57,6 +58,8 @@ export {
   pokemonWeight,
   pokemonDexType,
   pokemonPokedexInfo,
+  pokemonLocations,
+  staticLocations,
   natureNames,
   abilityNames,
   abilityInfo,
@@ -72,7 +75,6 @@ export {
   areaNames,
   mapInfo,
   encounterLocations,
-  pokemonLocations,
   trainerLocations,
   field_items,
   hidden_items,

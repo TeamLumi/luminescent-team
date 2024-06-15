@@ -6553,6 +6553,126 @@
                     "strWidth": 320.078125
                 }
             ]
+        },
+        {
+            "labelIndex": 218,
+            "arrayIndex": 218,
+            "labelName": "DP_fld_arenames_318",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "T.G. Eterna Bldg",
+                    "strWidth": 149.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 219,
+            "arrayIndex": 219,
+            "labelName": "DP_fld_arenames_319",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Sinnoh Champion",
+                    "strWidth": 149.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 220,
+            "arrayIndex": 220,
+            "labelName": "DP_fld_arenames_320",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a grateful Bachelor",
+                    "strWidth": 149.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 221,
+            "arrayIndex": 221,
+            "labelName": "DP_fld_arenames_321",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Lost Tower",
+                    "strWidth": 149.8125
+                }
+            ]
         }
     ]
 }

@@ -2,32 +2,33 @@ import React from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
-const todRadios = [
+const timeOfDayRadios = [
   { name: 'Morning', value: '1', color: "standard"},
   { name: 'Day', value: '2', color: "primary" },
   { name: 'Night', value: '3', color: "secondary" },
 ];
 
 const rodRadios = [
-  { name: 'Old Rod', value: '1', color: "standard"},
-  { name: 'Good Rod', value: '2', color: "primary" },
-  { name: 'Super Rod', value: '3', color: "secondary" },
+  { name: 'Old', value: '1', color: "standard"},
+  { name: 'Good', value: '2', color: "primary" },
+  { name: 'Super', value: '3', color: "secondary" },
 ];
 
-export function TODButtons(tod, handleTODChange) {
+export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
   return (
     <ToggleButtonGroup
-      value={tod}
+      value={timeOfDay}
       exclusive
-      onChange={handleTODChange}
+      onChange={(event) => handleTimeOfDayChange('timeOfDay', event.target.value)}
     >
-      {todRadios.map((radio, idx) => (
+      {timeOfDayRadios.map((radio, idx) => (
         <ToggleButton
           key={idx}
           id={`radio-${idx}`}
           value={radio.value}
           color={radio.color}
           variant="contained"
+          size='small'
         >
           {radio.name}
         </ToggleButton>
@@ -41,7 +42,7 @@ export function RodButtons(rod, handleRodChange) {
     <ToggleButtonGroup
       value={rod}
       exclusive
-      onChange={handleRodChange}
+      onChange={(event) => handleRodChange('rod', event.target.value)}
     >
       {rodRadios.map((radio, idx) => (
         <ToggleButton
@@ -50,6 +51,7 @@ export function RodButtons(rod, handleRodChange) {
           value={radio.value}
           color={radio.color}
           variant="contained"
+          size='small'
         >
           {radio.name}
         </ToggleButton>

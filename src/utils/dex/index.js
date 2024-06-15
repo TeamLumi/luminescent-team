@@ -31,6 +31,7 @@ import {
   getImage,
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
+  getDexDescription,
 } from './functions';
 import {
   getAllGroundEncounters,
@@ -38,7 +39,7 @@ import {
   getAllRodEncounters,
   getAllSurfingEncounters,
   getAreaEncounters,
-  getTODEncounters,
+  getTimeOfDayEncounters,
   getAllHoneyTreeEncounters
 } from './encounters'
 import { getTrainersFromZoneName } from './trainers';
@@ -119,12 +120,13 @@ export {
   getPokemonLearnset,
   getPokemonFormId,
   POKEMON_MOVE_LEVEL_TYPE,
+  getDexDescription,
   getAllGroundEncounters,
   getAllIncenseEncounters,
   getAllRodEncounters,
   getAllSurfingEncounters,
   getAreaEncounters,
-  getTODEncounters,
+  getTimeOfDayEncounters,
   getAllHoneyTreeEncounters,
   getTrainersFromZoneName,
   getFieldItemsFromZoneID,

@@ -6,7 +6,7 @@ const PokedexListPage = ({ pokemonList }) => {
   return (
     <Layout
       title="Pokédex"
-      description="Pokémon Luminescent Version, A ROM Hack for Pokémon Brilliant Diamond and Shining Pearl"
+      description="A ROM Hack for Pokémon Brilliant Diamond."
     >
       <PokemonListPageContent pokemonList={pokemonList} />
     </Layout>

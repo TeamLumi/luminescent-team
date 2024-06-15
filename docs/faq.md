@@ -1,5 +1,5 @@
 ---
-toc_max_heading_level: 2
+toc_max_heading_level: 3
 ---
 # Frequently Asked Questions
 
@@ -7,7 +7,11 @@ toc_max_heading_level: 2
 
 ### What is Luminescent Platinum?
 
-Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond (and eventually Shining Pearl), inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
+Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond, inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
+
+### Wait, it doesn't work for Shining Pearl?
+
+Not yet. Please be patient. Adding the necessary changes to make it also work on Shining Pearl would double our testing workload, and we're saving it until we're finished with 2.0 completely.
 
 ### What's so special about it?
 
@@ -47,7 +51,7 @@ If it doesn't properly apply, you have likely done something wrong. Double check
 
 ### Will you be adding new Pokemon? What about regional forms?
 
-As of 2.0.1 beta, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
+As of 2.0.2f, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. It also includes the Chandelure and Tinkaton lines as picked by our screenshot contest winners. Other Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
 
 ### How do I encounter regional Pokémon?
 
@@ -67,11 +71,15 @@ Currently no, but because we don't have the understanding to do all that yet. We
 
 ### What about Distortion World?
 
-No way. Months of work for maybe 15 minutes of gameplay where a cutscene in Strange Space will suffice. Ain't happening.
+Maybe. A wonderful map has been made, but getting it to work in all of its mind-bending glory is going to take longer, and we will not hold back any future updates in the hopes of getting it ready. It'll be around when it's around.
+
+### What is 3.0 / Re:Illuminated?
+
+That would be what was previously just called "Natdex". At launch, it will include all Pokémon up to Legends Arceus (full gen 8) with gen 9 coming later on. It will also include extra story, all fights redone to include the new 'mons, expanded legendary quests (3.1+) and many other quality of life features that we are unable to do with the backend used in 2.0F/Luminescent Platinum. Saves will **not be compatible** between 2.0 and 3.0 because of how we will be changing the backend engine adjustments.
 
 ### I want to make my own romhack! Where can I learn how?
 
-Definitely come check out our partnered server, [Pokemon Switch Modding](https://discord.gg/8Dkm8YNmYy). However, we will be launching our own section to help out with modding when more of our documentation is done, and we will ping the discord when that is ready.
+Definitely come check out our partnered server, [Pokemon Switch Modding](https://discord.gg/8Dkm8YNmYy). We also welcome you to our Team Luminescent discord server, with a specific channel for these types of questions.
 
 ### What is Affection? Will turning it off stop friendship evolutions?
 
@@ -111,7 +119,11 @@ No. If you have other mods, your game may work, but we will offer no support if 
 
 ### What Switch Emulator should I use?
 
-We personally suggest Ryujinx. Yuzu has frequent graphical bugs and is notably unstable, but technically both of them should work. In preparation for 3.0 (where the full national dex will be available), we do recommend moving off of Yuzu — due to a maximum file read limit, it will not be able to run the mod once every single Pokémon has been added.
+Ryujinx is the only current option that we support.
+
+### What about Yuzu?
+
+Due to the shutdown of the Yuzu project and the surrounding circumstances, Team Luminescent will not be supporting the use of Yuzu going forward as it is no longer available nor should be distributed.
 
 ### Can I play this on my Switch?
 
@@ -121,6 +133,6 @@ If it's modded, yes.
 
 We're not a Switch hacking group. First [check to see if it's patched](https://ismyswitchpatched.com/); if it is, you're out of luck. Don't tell us about it. If it's not, proceed to [this homebrew installation guide](https://nh-server.github.io/switch-guide/).
 
-### Can you help me set up Ryujinx/Yuzu?
+### Can you help me set up Ryujinx?
 
-No. We can help you install Luminescent if you have read through everything and followed our instructions and it didn't work, but setting up the emulators is outside the scope of our assistance. Find their Discord servers and ask for help there.
+No. We can help you install Luminescent if you have read through everything and followed our instructions and it didn't work, but setting up the emulator is outside the scope of our assistance. Find their Discord server and ask for help there.

@@ -229,57 +229,58 @@ describe('getEvolutionTree', () => {
     expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected);
   });
   
-  it('works for a Pokemon with a 2 stage branching Evolution (across the same gen)', () => {
-    const firstPokemonId = 789; // Cosmog
-    const secondPokemonId = 790; // Cosmeom
-    const thirdPokemonId = 791; // Solgaleo
-    const fourthPokemonId = 792; // Lunala
-    const firstResult = getEvolutionTree(firstPokemonId);
-    const secondResult = getEvolutionTree(secondPokemonId);
-    const thirdResult = getEvolutionTree(thirdPokemonId);
-    const fourthResult = getEvolutionTree(fourthPokemonId);
-    const expected = {
-      pokemonId: 789,
-      evolutionDetails: null,
-      evolvesInto: [
-        {
-          evolutionDetails: {
-            formNos: [0],
-            levels: [43],
-            methodIds: [4],
-            methodParameters: [0],
-            monsNos: [790],
-          },
-          evolvesInto: [
-            {
-              evolutionDetails: {
-                formNos: [0],
-                levels: [53],
-                methodIds: [32],
-                methodParameters: [0],
-                monsNos: [791],
-              },
-              evolvesInto: [],
-              pokemonId: 791,
-            },
-            {
-              evolutionDetails: {
-                formNos: [0],
-                levels: [53],
-                methodIds: [33],
-                methodParameters: [0],
-                monsNos: [792],
-              },
-              evolvesInto: [],
-              pokemonId: 792,
-            },
-          ],
-          pokemonId: 790,
-        },
-      ],
-    };
-    expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
-  });
+  // Does not exist in 2.0 data
+  // it('works for a Pokemon with a 2 stage branching Evolution (across the same gen)', () => {
+  //   const firstPokemonId = 789; // Cosmog
+  //   const secondPokemonId = 790; // Cosmeom
+  //   const thirdPokemonId = 791; // Solgaleo
+  //   const fourthPokemonId = 792; // Lunala
+  //   const firstResult = getEvolutionTree(firstPokemonId);
+  //   const secondResult = getEvolutionTree(secondPokemonId);
+  //   const thirdResult = getEvolutionTree(thirdPokemonId);
+  //   const fourthResult = getEvolutionTree(fourthPokemonId);
+  //   const expected = {
+  //     pokemonId: 789,
+  //     evolutionDetails: null,
+  //     evolvesInto: [
+  //       {
+  //         evolutionDetails: {
+  //           formNos: [0],
+  //           levels: [43],
+  //           methodIds: [4],
+  //           methodParameters: [0],
+  //           monsNos: [790],
+  //         },
+  //         evolvesInto: [
+  //           {
+  //             evolutionDetails: {
+  //               formNos: [0],
+  //               levels: [53],
+  //               methodIds: [32],
+  //               methodParameters: [0],
+  //               monsNos: [791],
+  //             },
+  //             evolvesInto: [],
+  //             pokemonId: 791,
+  //           },
+  //           {
+  //             evolutionDetails: {
+  //               formNos: [0],
+  //               levels: [53],
+  //               methodIds: [33],
+  //               methodParameters: [0],
+  //               monsNos: [792],
+  //             },
+  //             evolvesInto: [],
+  //             pokemonId: 792,
+  //           },
+  //         ],
+  //         pokemonId: 790,
+  //       },
+  //     ],
+  //   };
+  //   expect(firstResult).toEqual(expected) && expect(secondResult).toEqual(expected) && expect(thirdResult).toEqual(expected) && expect(fourthResult).toEqual(expected);
+  // });
   
   it('works for a Pokemon with many branching Evolutions (across multiple gens)', () => {
     const firstPokemonId = 133; // Eevee
