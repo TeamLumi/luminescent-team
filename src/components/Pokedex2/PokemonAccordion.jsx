@@ -2,14 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export const PokemonAccordion = ({ children, title, id, sx, bgColor, textColor, open=false }) => {
+export const PokemonAccordion = ({ children, title, id, sx, bgColor, textColor, open=false, summarySx }) => {
   const [expanded, setExpanded] = useState(open);
 
   useEffect(() => {
     if (open) {
       setExpanded(true);
+    } else {
+      setExpanded(false);
     }
-  }, [open])
+  }, [open]);
 
   const handleChange = (event, isExpanded) => {
     setExpanded(isExpanded);
@@ -25,6 +27,7 @@ export const PokemonAccordion = ({ children, title, id, sx, bgColor, textColor, 
         expandIcon={<ExpandMoreIcon sx={{ color: '#777' }} />}
         aria-controls={`panel-${id}-content`}
         id={`panel-${id}-header`}
+        sx={{...summarySx}}
       >
         <Typography>{title}</Typography>
       </AccordionSummary>
