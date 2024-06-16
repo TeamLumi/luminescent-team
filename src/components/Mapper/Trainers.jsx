@@ -68,11 +68,13 @@ export const Trainers = ({ pokemonList, selectedTrainer }) => {
             width: {
               xs: '400px',
               sm: '520px',
-              md: '800px',
+              md: '802px',
               lg: '1060px'
             },
+            marginLeft: {sm: "unset"},
             maxHeight: { sm: "unset", md: "300px" },
             overflowY: "scroll",
+            overflowX: "hidden",
           }}
         >
           {selectedTrainer.team && selectedTrainer.team.map((pokemon, index) => {

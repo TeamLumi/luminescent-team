@@ -22,7 +22,7 @@ export const TrainersSection = ({ pokemonList, trainerList, selectedZone }) => {
         gridTemplateColumns: "1fr",
         maxWidth: "1108px",
         minWidth: { xs: "400px", sm: "530px" },
-        maxHeight: { sm: "unset", md: "400px" },
+        maxHeight: { sm: "unset", md: "404px" },
         width: "fit-content",
         border: "2px solid var(--ifm-table-border-color)",
       }}
