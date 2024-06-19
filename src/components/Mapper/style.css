@@ -14,8 +14,9 @@ ul, li {
 }
 
 .encounterBox {
-    width: 408px;
+    width: 416px;
     border: 2px solid var(--ifm-table-border-color);
+    height: 672px;
 }
 
 .checkBoxes {
@@ -32,7 +33,7 @@ ul, li {
 }
 
 .encAccordions {
-    max-height: 580px;
+    max-height: 532px;
     overflow-y: auto;
     padding-left: 5px;
     padding-right: 5px;
@@ -118,15 +119,12 @@ ul, li {
 .trainerBox {
     display: grid;
     justify-items: center;
-    margin: 10px;
     gap: 10px;
     padding-right: 10px;
+    padding-left: 5px;
 }
 
 .trainer-dropdown {
-    position: absolute;
-    width: 30%;
-    margin-left: 35rem;
     margin-top: 1rem;
 }
 

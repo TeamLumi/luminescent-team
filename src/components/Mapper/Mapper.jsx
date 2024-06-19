@@ -10,9 +10,9 @@ import {
   getSelectedLocation,
   isLocationExactlyEqual
 } from './coordinates';
-import Encounters from './Encounters';
 import { SearchBar } from './SearchBar';
 import { RodButtons, TimeOfDayButtons } from './Buttons';
+import { MapperTabPanel } from './MapperTabPanel';
 import SettingsModal from './SettingsModal';
 import './style.css';
 
@@ -44,7 +44,6 @@ import {
   getAllIncenseEncounters,
   getMapperRoutesFromPokemonId
 } from '../../utils/dex/encounters';
-import { TrainersSection } from './TrainersSection';
 
 const canvasDimensions = {
   width: 1280,
@@ -647,11 +646,14 @@ export const Mapper = ({ pokemonList }) => {
         >
           Your browser does not support the canvas element.
         </canvas>
-        <Encounters
+        <MapperTabPanel
           encOptions={encOptions}
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
-          pokemon={pokemonName}
+          pokemonName={pokemonName}
+          trainerList={trainerList}
+          pokemonList={pokemonList}
+          selectedZone={selectedZone}
         />
       </div>
       <SearchBar
@@ -666,11 +668,11 @@ export const Mapper = ({ pokemonList }) => {
         setSelectedPokemon={setSelectedPokemon}
         handleShowSettings={handleShowSettings}
       />
-      <TrainersSection
+      {/* <TrainersSection
         pokemonList={pokemonList}
         trainerList={trainerList}
         selectedZone={selectedZone}
-      />
+      /> */}
       {/* <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (

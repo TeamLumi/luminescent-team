@@ -143,7 +143,30 @@ const MovesetListItem = ({ moveLevel, move }) => {
   );
 };
 
-export const PokemonMoveType = ({ typeName, typeColor, fontSize = null }) => {
+export const PokemonMoveType = ({ typeName, typeColor, fontSize = null, smallest = false }) => {
+  let fontSizeStyling = {};
+  if (smallest && fontSize) {
+    fontSizeStyling = {
+      xs: fontSize[0],
+      sm: fontSize[0],
+      me: fontSize[0],
+      lg: fontSize[0],      
+    }
+  } else if (fontSize) {
+    fontSizeStyling = {
+      xs: fontSize[0],
+      sm: fontSize[1],
+      md: fontSize[0],
+      lg: fontSize[1],
+    }
+  } else {
+    fontSizeStyling = {
+      xs: '0.5rem',
+      sm: '0.6rem',
+      md: '1rem',
+      lg: '1rem',            
+    }
+  }
   return (
     <Box
       sx={{
@@ -166,12 +189,7 @@ export const PokemonMoveType = ({ typeName, typeColor, fontSize = null }) => {
           fontWeight: 700,
           textShadow:
             '0 1px 0 #000,0 0 1px rgba(0,0,0,.6),0 0 2px rgba(0,0,0,.7),0 0 3px rgba(0,0,0,.8),0 0 4px rgba(0,0,0,.9)',
-          fontSize: {
-            xs: fontSize ? fontSize[0] : '0.5rem',
-            sm: fontSize ? fontSize[1] : '0.6rem',
-            md: fontSize ? fontSize[0] : '1rem',
-            lg: fontSize ? fontSize[1] : '1rem',            
-          },
+          fontSize: fontSizeStyling,
         }}
       >
         {typeName}

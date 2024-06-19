@@ -3,6 +3,7 @@ import { Box, Typography, TextField } from '@mui/material';
 import { STATS, calcStat } from '../../core/pokemonStatCalculation';
 import "./style.css";
 import { getPokemonName } from '../../utils/dex';
+import { getSmallestResponsiveStyle } from './Trainers';
 
 function getStatBarValues(stat) {
   let width = Math.floor((stat * 140) / 200);
@@ -15,7 +16,7 @@ function getStatBarValues(stat) {
 const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };
 const responsiveHeaderSize = { fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem' } };
 
-export const PokemonStats = ({ baseStats, trainerPokemon }) => {
+export const PokemonStats = ({ baseStats, trainerPokemon, smallest = false }) => {
   const pokemonIVs = {
     [STATS.HP]: trainerPokemon.ivhp, 
     [STATS.ATTACK] : trainerPokemon.ivatk,
@@ -46,18 +47,23 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
       className="statsContainer"
       sx={{
         height: "170px",
-        width: { xs: "250px", sm: "350px", md: "250px", lg: "350px"}
+        ...getSmallestResponsiveStyle(smallest, "width", {
+          xs: "250px",
+          sm: "350px",
+          md: "250px",
+          lg: "350px"
+        })
       }}
     >
       <Box
         display="grid"
         sx={{
-          gridTemplateColumns: {
+          ...getSmallestResponsiveStyle(smallest, "gridTemplateColumns", {
             xs: 'repeat(4, 1fr)',
             sm: 'repeat(7, 1fr)',
             md: 'repeat(4, 1fr)',
             lg: 'repeat(7, 1fr)' 
-          }
+          })
         }}
         justifyItems={"center"}
       >
@@ -66,7 +72,17 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
           <Box gridColumn="span 1">
             <Typography sx={{ ...responsiveHeaderSize }}>Total:</Typography>
           </Box>
-          <Box gridColumn="span 3" sx={{ display: { xs: 'none', sm: 'block', md: 'none', lg: 'block' }}} />
+          <Box
+            gridColumn="span 3"
+            sx={{
+              ...getSmallestResponsiveStyle(smallest, "display", {
+                xs: 'none',
+                sm: 'block',
+                md: 'none',
+                lg: 'block'
+                })
+              }}
+            />
           <Box gridColumn="span 1">
             <Typography sx={{ ...responsiveHeaderSize }}>IVs:</Typography>
           </Box>
@@ -97,7 +113,7 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
                 <Typography
                   className='statValue'
                   sx={{
-                    marginLeft: { xs: '10px', sm: '0' },
+                    marginLeft: { xs: '10px', sm: smallest ? "10px" : '0' },
                     ...responsiveFontSize
                   }}
                 >
@@ -106,10 +122,17 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
               </Box>
               <Box
                 gridColumn="span 3"
-                sx={{ display: { xs: 'none', sm: 'block', md: 'none', lg: 'block' }}}
+                sx={{ 
+                  ...getSmallestResponsiveStyle(smallest, "display", {
+                    xs: 'none',
+                    sm: 'block',
+                    md: 'none',
+                    lg: 'block'
+                  })
+                }}
                 width="100%"
               >
-                <Box sx={{ marginLeft: { xs: '16px', sm: '0' } }}>
+                <Box sx={{ marginLeft: { xs: '16px', sm: smallest ? "16px" : '0' } }}>
                   <PokemonStatBar width={width} color={color} />
                 </Box>
               </Box>
@@ -117,7 +140,7 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
                 <Typography
                   className='statValue'
                   sx={{
-                    marginLeft: { xs: '10px', sm: '0' },
+                    marginLeft: { xs: '10px', sm: smallest ? "10px" : '0' },
                     ...responsiveFontSize
                   }}
                 >
@@ -128,7 +151,7 @@ export const PokemonStats = ({ baseStats, trainerPokemon }) => {
                 <Typography
                   className='statValue'
                   sx={{
-                    marginLeft: { xs: '10px', sm: '0' },
+                    marginLeft: { xs: '10px', sm: smallest ? "10px" : '0' },
                     ...responsiveFontSize
                   }}
                 >
