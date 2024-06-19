@@ -89,7 +89,7 @@ export const Trainers = ({ pokemonList, selectedTrainer, smallest = false }) => 
             },
             marginLeft: {sm: "unset"},
             margin: smallest ? "unset" : "10px",
-            maxHeight: { sm: "unset", md: smallest ? "528px" : "300px" },
+            maxHeight: smallest ? "528px" : "unset",
             overflowY: "scroll",
             overflowX: "hidden",
           }}

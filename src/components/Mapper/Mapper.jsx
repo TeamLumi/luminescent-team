@@ -44,6 +44,7 @@ import {
   getAllIncenseEncounters,
   getMapperRoutesFromPokemonId
 } from '../../utils/dex/encounters';
+import TrainersModal from './Trainers/TrainersModal';
 
 const canvasDimensions = {
   width: 1280,
@@ -86,6 +87,24 @@ export const Mapper = ({ pokemonList }) => {
   const [selectedPokemon, setSelectedPokemon] = useState(pokemonList[0] || '');
   const [pokemonName, setPokemonName] = useState('');
   const completedPokemonName = useDebouncedValue(pokemonName, 1500);
+
+  const selectedRef = useRef(selectedZone);
+  const [selectedTrainer, setSelectedTrainer] = useState(null);
+
+  useEffect(() => {
+    if (selectedRef.current !== selectedZone) {
+      setSelectedTrainer(null);
+      selectedRef.current = selectedZone;
+    }
+  }, [selectedZone]);
+
+  const [showTrainerModal, setShowTrainerModal] = useState(false);
+  const openTrainerModal = () => {
+    setShowTrainerModal(true);
+  };
+  const closeTrainerModal = () => {
+    setShowTrainerModal(false);
+  };
 
   let originalImageData = {
     highlight: {},
@@ -651,9 +670,11 @@ export const Mapper = ({ pokemonList }) => {
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
           pokemonName={pokemonName}
-          trainerList={trainerList}
           pokemonList={pokemonList}
-          selectedZone={selectedZone}
+          trainerList={trainerList}
+          selectedTrainer={selectedTrainer}
+          setSelectedTrainer={setSelectedTrainer}
+          openTrainerModal={openTrainerModal}
         />
       </div>
       <SearchBar
@@ -668,11 +689,12 @@ export const Mapper = ({ pokemonList }) => {
         setSelectedPokemon={setSelectedPokemon}
         handleShowSettings={handleShowSettings}
       />
-      {/* <TrainersSection
+      <TrainersModal
+        showModal={showTrainerModal}
+        onHide={closeTrainerModal}
         pokemonList={pokemonList}
-        trainerList={trainerList}
-        selectedZone={selectedZone}
-      /> */}
+        selectedTrainer={selectedTrainer}
+      />
       {/* <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (

@@ -11,18 +11,10 @@ export const MapperTabPanel = ({
   pokemonName,
   trainerList,
   pokemonList,
-  selectedZone
+  selectedTrainer,
+  setSelectedTrainer,
+  openTrainerModal,
 }) => {
-  const selectedRef = useRef(selectedZone);
-  const [selectedTrainer, setSelectedTrainer] = useState(null);
-
-  useEffect(() => {
-    if (selectedRef.current !== selectedZone) {
-      setSelectedTrainer(null);
-      selectedRef.current = selectedZone;
-    }
-  }, [selectedZone]);
-
   return (
     <PokemonTabPanel tabNames={["Encounters", "Trainers", "Items", "Shops"]}>
       <EncountersPanel
@@ -36,6 +28,7 @@ export const MapperTabPanel = ({
         setSelectedTrainer={setSelectedTrainer}
         trainerList={trainerList}
         pokemonList={pokemonList}
+        openTrainerModal={openTrainerModal}
       />
       <Box>
         Coming Soon.

@@ -3,8 +3,15 @@ import { Box, Button, Typography } from '@mui/material';
 import { TrainerDropdown, Trainers } from '../Trainers/Trainers';
 
 export const TrainersPanel = ({
-  selectedTrainer, setSelectedTrainer, trainerList, pokemonList
+  selectedTrainer,
+  setSelectedTrainer,
+  trainerList,
+  pokemonList,
+  openTrainerModal,
 }) => {
+  const handleOpen = () => {
+    openTrainerModal();
+  }
   return (
     <Box
       width="416px"
@@ -23,7 +30,13 @@ export const TrainersPanel = ({
             Trainers
           </Typography>
           {selectedTrainer && (
-            <Button variant="outlined" sx={{ margin: "0.5rem 1rem" }}>Detailed</Button>
+            <Button
+              variant="outlined"
+              sx={{ margin: "0.5rem 1rem" }}
+              onClick={handleOpen}
+            >
+              Detailed
+            </Button>
           )}
         </Box>
         <TrainerDropdown
