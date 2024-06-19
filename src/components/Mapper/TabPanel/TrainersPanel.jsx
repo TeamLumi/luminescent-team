@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import { TrainerDropdown, Trainers } from '../Trainers/Trainers';
 
-export const TrainersPanel = ({
+const TrainersPanel = ({
   selectedTrainer,
   setSelectedTrainer,
   trainerList,
@@ -54,3 +54,5 @@ export const TrainersPanel = ({
     </Box>
   );
 };
+
+export default TrainersPanel;

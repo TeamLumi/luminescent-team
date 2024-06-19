@@ -3,7 +3,7 @@ import { Box, Typography, FormControlLabel, Checkbox, FormGroup } from "@mui/mat
 
 import { RodButtons, TimeOfDayButtons } from '../Encounters/Buttons';
 import { PokemonAccordion } from '../../Pokedex2/PokemonAccordion';
-import { EncounterTable } from '../Encounters/EncounterTable';
+import EncounterTable from '../Encounters/EncounterTable';
 import ".././style.css"
 
 const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemon }) => {

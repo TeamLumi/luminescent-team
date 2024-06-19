@@ -13,7 +13,7 @@ import {
 
 import ".././style.css";
 
-export const EncounterTable = ({ encounterList, pokemon }) => {
+const EncounterTable = ({ encounterList, pokemon }) => {
   const { colorMode, setColorMode } = useColorMode();
   const highlightColor =
     colorMode === 'dark' ? 'highlight-dark-row' : 'highlight-light-row';
@@ -53,4 +53,6 @@ export const EncounterTable = ({ encounterList, pokemon }) => {
   return (
     <Typography sx={{display: "flex", justifyContent: "center"}}>Nothing to see here.</Typography>
   );
-}
+};
+
+export default EncounterTable;

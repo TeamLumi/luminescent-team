@@ -28,7 +28,7 @@ const PokemonTabs = ({ tabNames, selectedTab, handleTabChange  }) => {
   );
 };
 
-export const PokemonTabPanel = ({
+const PokemonTabPanel = ({
   tabNames,
   children
 }) => {
@@ -48,3 +48,5 @@ export const PokemonTabPanel = ({
     </Box>
   );
 };
+
+export default PokemonTabPanel;

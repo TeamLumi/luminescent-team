@@ -1,8 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
+
+import PokemonTabPanel from './PokemonTabs';
 import EncountersPanel from './EncountersPanel';
-import { Box, Tab, Tabs } from '@mui/material';
-import { PokemonTabPanel } from './PokemonTabs';
-import { TrainersPanel } from './TrainersPanel';
+import TrainersPanel from './TrainersPanel';
+import ItemsPanel from './ItemsPanel';
+import ShopsPanel from './ShopsPanel';
 
 export const MapperTabPanel = ({
   encOptions,
@@ -30,12 +32,8 @@ export const MapperTabPanel = ({
         pokemonList={pokemonList}
         openTrainerModal={openTrainerModal}
       />
-      <Box>
-        Coming Soon.
-      </Box>
-      <Box>
-        Coming Soon.
-      </Box>
+      <ItemsPanel />
+      <ShopsPanel />
     </PokemonTabPanel>
   );
 };
