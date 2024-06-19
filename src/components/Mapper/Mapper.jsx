@@ -11,8 +11,8 @@ import {
   isLocationExactlyEqual
 } from './coordinates';
 import { SearchBar } from './SearchBar';
-import { RodButtons, TimeOfDayButtons } from './Buttons';
-import { MapperTabPanel } from './MapperTabPanel';
+import { RodButtons, TimeOfDayButtons } from './Encounters/Buttons';
+import { MapperTabPanel } from './TabPanel/MapperTabPanel';
 import SettingsModal from './SettingsModal';
 import './style.css';
 

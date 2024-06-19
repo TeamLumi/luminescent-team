@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import { Box, Typography, TextField } from '@mui/material';
-import { STATS, calcStat } from '../../core/pokemonStatCalculation';
-import "./style.css";
-import { getPokemonName } from '../../utils/dex';
-import { getSmallestResponsiveStyle } from './Trainers';
+import { STATS, calcStat } from '../../../core/pokemonStatCalculation';
+import ".././style.css";
+import { getPokemonName } from '../../../utils/dex';
+import { getSmallestResponsiveStyle } from '../Trainers/Trainers';
 
 function getStatBarValues(stat) {
   let width = Math.floor((stat * 140) / 200);

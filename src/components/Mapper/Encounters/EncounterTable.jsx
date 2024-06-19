@@ -11,7 +11,7 @@ import {
   Typography
 } from '@mui/material';
 
-import "./style.css";
+import ".././style.css";
 
 export const EncounterTable = ({ encounterList, pokemon }) => {
   const { colorMode, setColorMode } = useColorMode();
