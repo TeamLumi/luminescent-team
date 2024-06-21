@@ -42,7 +42,7 @@ import {
   getTimeOfDayEncounters,
   getAllHoneyTreeEncounters
 } from './encounters'
-import { getTrainersFromZoneName } from './trainers';
+import { getTrainersFromZoneId } from './trainers';
 
 import { PersonalTable } from '../../../__gamedata';
 
@@ -128,7 +128,7 @@ export {
   getAreaEncounters,
   getTimeOfDayEncounters,
   getAllHoneyTreeEncounters,
-  getTrainersFromZoneName,
+  getTrainersFromZoneId,
   getFieldItemsFromZoneID,
   getHiddenItemsFromZoneID
 };

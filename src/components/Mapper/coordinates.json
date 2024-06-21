@@ -84,8 +84,8 @@
       "y": 314,
       "width": 35,
       "height": 34,
-      "name": "Hall of Origin",
-      "zoneId": 218
+      "name": "Distortion Room",
+      "zoneId": 624
   },
   {
       "x": 308,
@@ -1037,7 +1037,7 @@
       "width": 34,
       "height": 33,
       "name": "Pokémon League (Outside)",
-      "zoneId": 171
+      "zoneId": 167
   },
   {
       "x": 1055,

@@ -246,7 +246,7 @@ export const Trainers = ({ pokemonList, selectedTrainer, smallest = false }) => 
             const pokemonInfo = pokemonList.find(p => p.id === pokemon.id)
             const baseStats = pokemonInfo.baseStats;
             return (
-              <TrainerMon smallest={smallest} index={index}>
+              <TrainerMon key={index} smallest={smallest} index={index}>
                 <MonDetails smallest={smallest} pokemon={pokemon} pokemonInfo={pokemonInfo} />
                 <Box
                   className='stats'

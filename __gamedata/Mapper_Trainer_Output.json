@@ -1,5 +1,5 @@
 {
-  "Route 201": [
+  "354": [
     {
       "team": [
         {
@@ -9,8 +9,8 @@
           "item": null,
           "level": 7,
           "moves": [
+            64,
             33,
-            193,
             497,
             95
           ],
@@ -236,8 +236,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Piplup (Route 201 Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Piplup",
+      "team_name": "Pok\u00e9mon Trainer Barry Piplup (Route 201 Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Route 201",
       "zoneId": 354,
       "trainerType": "Single Battle"
@@ -271,8 +271,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Turtwig (Route 201 Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Turtwig",
+      "team_name": "Pok\u00e9mon Trainer Barry Turtwig (Route 201 Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Route 201",
       "zoneId": 354,
       "trainerType": "Single Battle"
@@ -306,14 +306,14 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Chimchar (Route 201 Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Chimchar",
+      "team_name": "Pok\u00e9mon Trainer Barry Chimchar (Route 201 Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Route 201",
       "zoneId": 354,
       "trainerType": "Single Battle"
     }
   ],
-  "Route 202": [
+  "355": [
     {
       "team": [
         {
@@ -525,7 +525,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Trainers\u2019 School": [
+  "21": [
     {
       "team": [
         {
@@ -644,7 +644,9 @@
       "route": "Jubilife City",
       "zoneId": 21,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "0": [
     {
       "team": [
         {
@@ -820,10 +822,10 @@
           "item": null,
           "level": 10,
           "moves": [
+            67,
             116,
             2,
-            490,
-            193
+            490
           ],
           "nature": "Bashful",
           "ivatk": 25,
@@ -881,10 +883,10 @@
           "item": null,
           "level": 10,
           "moves": [
+            67,
             116,
             2,
-            490,
-            193
+            490
           ],
           "nature": "Bashful",
           "ivatk": 25,
@@ -2136,7 +2138,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 203": [
+  "356": [
     {
       "team": [
         {
@@ -2674,10 +2676,10 @@
           "item": null,
           "level": 10,
           "moves": [
+            67,
             116,
             2,
-            490,
-            193
+            490
           ],
           "nature": "Docile",
           "ivatk": 25,
@@ -3745,7 +3747,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Oreburgh Gate": [
+  "255": [
     {
       "team": [
         {
@@ -3867,7 +3869,9 @@
       "route": "Oreburgh Gate - 1F",
       "zoneId": 255,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "256": [
     {
       "team": [
         {
@@ -3956,7 +3960,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Oreburgh City": [
+  "38": [
     {
       "team": [
         {
@@ -4066,11 +4070,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Rock Head",
@@ -4092,11 +4096,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Rock Head",
@@ -4118,11 +4122,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Storm Drain",
@@ -4143,11 +4147,11 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
+          "evhp": 252,
           "evatk": 0,
-          "evdef": 0,
+          "evdef": 132,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 120,
           "evspeed": 0
         },
         {
@@ -4170,11 +4174,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Clear Body",
@@ -4196,11 +4200,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
+          "evatk": 252,
+          "evdef": 4,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         }
       ],
       "team_name": "Pok\u00e9mon Trainer Steven (Oreburgh City)",
@@ -4406,7 +4410,7 @@
           "ivspeed": 25,
           "evhp": 4,
           "evatk": 252,
-          "evdef": 0,
+          "evdef": 252,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 0
@@ -4434,7 +4438,7 @@
           "evatk": 4,
           "evdef": 252,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         },
         {
@@ -4461,7 +4465,7 @@
           "evdef": 0,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         },
         {
           "ability": "Intimidate",
@@ -4482,7 +4486,7 @@
           "ivspatk": 25,
           "ivspdef": 25,
           "ivspeed": 25,
-          "evhp": 0,
+          "evhp": 252,
           "evatk": 0,
           "evdef": 252,
           "evspatk": 0,
@@ -4510,7 +4514,7 @@
           "ivspeed": 25,
           "evhp": 252,
           "evatk": 0,
-          "evdef": 0,
+          "evdef": 252,
           "evspatk": 0,
           "evspdef": 4,
           "evspeed": 0
@@ -4569,11 +4573,11 @@
           "ivspatk": 25,
           "ivspdef": 25,
           "ivspeed": 25,
-          "evhp": 0,
+          "evhp": 4,
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         },
         {
@@ -4596,11 +4600,11 @@
           "ivspdef": 25,
           "ivspeed": 25,
           "evhp": 0,
-          "evatk": 236,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 36,
-          "evspeed": 0
+          "evspdef": 252,
+          "evspeed": 4
         },
         {
           "ability": "Levitate",
@@ -4625,7 +4629,7 @@
           "evatk": 4,
           "evdef": 252,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         },
         {
@@ -4677,7 +4681,7 @@
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 236,
+          "evspdef": 244,
           "evspeed": 12
         },
         {
@@ -4761,11 +4765,11 @@
           "ivspdef": 25,
           "ivspeed": 25,
           "evhp": 0,
-          "evatk": 236,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 36,
-          "evspeed": 236
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Sturdy",
@@ -4788,10 +4792,10 @@
           "ivspeed": 25,
           "evhp": 0,
           "evatk": 0,
-          "evdef": 236,
+          "evdef": 252,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 12
+          "evspdef": 252,
+          "evspeed": 4
         },
         {
           "ability": "Rock Head",
@@ -4812,9 +4816,9 @@
           "ivspatk": 25,
           "ivspdef": 25,
           "ivspeed": 25,
-          "evhp": 12,
-          "evatk": 236,
-          "evdef": 0,
+          "evhp": 252,
+          "evatk": 252,
+          "evdef": 4,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 0
@@ -4840,10 +4844,10 @@
           "ivspeed": 25,
           "evhp": 0,
           "evatk": 0,
-          "evdef": 0,
+          "evdef": 4,
           "evspatk": 252,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         },
         {
           "ability": "Rock Head",
@@ -4926,9 +4930,9 @@
           "ivspdef": 25,
           "ivspeed": 25,
           "evhp": 0,
-          "evatk": 236,
-          "evdef": 0,
-          "evspatk": 24,
+          "evatk": 252,
+          "evdef": 252,
+          "evspatk": 4,
           "evspdef": 0,
           "evspeed": 0
         },
@@ -4951,11 +4955,11 @@
           "ivspatk": 25,
           "ivspdef": 25,
           "ivspeed": 25,
-          "evhp": 12,
-          "evatk": 236,
+          "evhp": 4,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         },
         {
@@ -4981,8 +4985,8 @@
           "evatk": 0,
           "evdef": 252,
           "evspatk": 0,
-          "evspdef": 4,
-          "evspeed": 0
+          "evspdef": 252,
+          "evspeed": 4
         },
         {
           "ability": "Sturdy",
@@ -5007,7 +5011,7 @@
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         },
         {
@@ -5029,11 +5033,11 @@
           "ivspatk": 25,
           "ivspdef": 25,
           "ivspeed": 25,
-          "evhp": 20,
+          "evhp": 4,
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         }
       ],
@@ -5284,9 +5288,9 @@
           "evhp": 248,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 8,
-          "evspeed": 252
+          "evspatk": 8,
+          "evspdef": 252,
+          "evspeed": 0
         },
         {
           "ability": "Rock Head",
@@ -5333,11 +5337,11 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
+          "evhp": 252,
           "evatk": 0,
-          "evdef": 0,
+          "evdef": 252,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 4,
           "evspeed": 0
         },
         {
@@ -5398,8 +5402,8 @@
           "evatk": 4,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
+          "evspdef": 252,
+          "evspeed": 0
         },
         {
           "ability": "Regenerator",
@@ -5424,8 +5428,8 @@
           "evatk": 4,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
+          "evspdef": 252,
+          "evspeed": 0
         },
         {
           "ability": "Levitate",
@@ -5704,7 +5708,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Oreburgh Mine": [
+  "196": [
     {
       "team": [
         {
@@ -5766,10 +5770,10 @@
           "item": null,
           "level": 12,
           "moves": [
+            67,
             116,
             2,
-            490,
-            193
+            490
           ],
           "nature": "Hardy",
           "ivatk": 25,
@@ -5827,7 +5831,7 @@
           "item": null,
           "level": 12,
           "moves": [
-            316,
+            33,
             189,
             29,
             205
@@ -5880,7 +5884,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 204": [
+  "358": [
     {
       "team": [
         {
@@ -6100,7 +6104,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Floaroma Town": [
+  "438": [
     {
       "team": [
         {
@@ -6189,7 +6193,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Valley Windworks": [
+  "197": [
     {
       "team": [
         {
@@ -6199,9 +6203,9 @@
           "item": null,
           "level": 14,
           "moves": [
+            28,
             44,
             189,
-            316,
             372
           ],
           "nature": "Hardy",
@@ -6276,7 +6280,9 @@
       "route": "Valley Windworks (Outside)",
       "zoneId": 197,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "198": [
     {
       "team": [
         {
@@ -6539,7 +6545,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Floaroma Meadow": [
+  "253": [
     {
       "team": [
         {
@@ -6663,7 +6669,7 @@
       "trainerType": "Double Battle"
     }
   ],
-  "Route 205": [
+  "359": [
     {
       "team": [
         {
@@ -6943,8 +6949,8 @@
           "item": null,
           "level": 16,
           "moves": [
+            2,
             490,
-            193,
             280,
             69
           ],
@@ -7229,7 +7235,9 @@
       "route": "Route 205 (South)",
       "zoneId": 359,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "361": [
     {
       "team": [
         {
@@ -7466,7 +7474,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Eterna Forest": [
+  "200": [
     {
       "team": [
         {
@@ -7746,7 +7754,7 @@
           "item": null,
           "level": 17,
           "moves": [
-            316,
+            45,
             60,
             244,
             109
@@ -8425,7 +8433,9 @@
       "route": "Eterna Forest",
       "zoneId": 200,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "199": [
     {
       "team": [
         {
@@ -8455,8 +8465,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Ace Trainer Fire Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Ace Trainer Fire Master Trainer Tristan",
+      "team_name": "Ace Trainer Fire Master Trainer Edmund (Eterna Forest (Overworld))",
+      "name": "Ace Trainer Fire Master Trainer Edmund",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8490,8 +8500,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Beauty Water Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Beauty Water Master Trainer Tristan",
+      "team_name": "Beauty Water Master Trainer Tessa (Eterna Forest (Overworld))",
+      "name": "Beauty Water Master Trainer Tessa",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8525,8 +8535,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Guitarist Electric Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Guitarist Electric Master Trainer Tristan",
+      "team_name": "Guitarist Electric Master Trainer Stephan (Eterna Forest (Overworld))",
+      "name": "Guitarist Electric Master Trainer Stephan",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8560,8 +8570,8 @@
           "evspeed": 108
         }
       ],
-      "team_name": "Lass Grass Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Lass Grass Master Trainer Tristan",
+      "team_name": "Lass Grass Master Trainer Sal (Eterna Forest (Overworld))",
+      "name": "Lass Grass Master Trainer Sal",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8595,8 +8605,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Ace Trainer Ice Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Ace Trainer Ice Master Trainer Tristan",
+      "team_name": "Ace Trainer Ice Master Trainer Rosalyne (Eterna Forest (Overworld))",
+      "name": "Ace Trainer Ice Master Trainer Rosalyne",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8630,8 +8640,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Black Belt Fighting Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Black Belt Fighting Master Trainer Tristan",
+      "team_name": "Black Belt Fighting Master Trainer Randy (Eterna Forest (Overworld))",
+      "name": "Black Belt Fighting Master Trainer Randy",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8665,8 +8675,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Ninja Boy Poison Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Ninja Boy Poison Master Trainer Tristan",
+      "team_name": "Ninja Boy Poison Master Trainer Donnie (Eterna Forest (Overworld))",
+      "name": "Ninja Boy Poison Master Trainer Donnie",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8700,8 +8710,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Ruin Maniac Ground Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Ruin Maniac Ground Master Trainer Tristan",
+      "team_name": "Ruin Maniac Ground Master Trainer Dexter (Eterna Forest (Overworld))",
+      "name": "Ruin Maniac Ground Master Trainer Dexter",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8735,8 +8745,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Bird Keeper Flying Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Bird Keeper Flying Master Trainer Tristan",
+      "team_name": "Bird Keeper Flying Master Trainer Thea (Eterna Forest (Overworld))",
+      "name": "Bird Keeper Flying Master Trainer Thea",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8770,8 +8780,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Psychic Psychic Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Psychic Psychic Master Trainer Tristan",
+      "team_name": "Psychic Psychic Master Trainer Fraiser (Eterna Forest (Overworld))",
+      "name": "Psychic Psychic Master Trainer Fraiser",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8805,8 +8815,8 @@
           "evspeed": 4
         }
       ],
-      "team_name": "Bug Catcher Bug Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Bug Catcher Bug Master Trainer Tristan",
+      "team_name": "Bug Catcher Bug Master Trainer Louie (Eterna Forest (Overworld))",
+      "name": "Bug Catcher Bug Master Trainer Louie",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8840,8 +8850,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Hiker Rock Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Hiker Rock Master Trainer Tristan",
+      "team_name": "Hiker Rock Master Trainer Jeffrey (Eterna Forest (Overworld))",
+      "name": "Hiker Rock Master Trainer Jeffrey",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8875,8 +8885,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Clown Ghost Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Clown Ghost Master Trainer Tristan",
+      "team_name": "Clown Ghost Master Trainer Ari (Eterna Forest (Overworld))",
+      "name": "Clown Ghost Master Trainer Ari",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8910,8 +8920,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Dragon Tamer Dragon Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Dragon Tamer Dragon Master Trainer Tristan",
+      "team_name": "Dragon Tamer Dragon Master Trainer Grayson (Eterna Forest (Overworld))",
+      "name": "Dragon Tamer Dragon Master Trainer Grayson",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8945,8 +8955,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Ace Trainer Dark Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Ace Trainer Dark Master Trainer Tristan",
+      "team_name": "Ace Trainer Dark Master Trainer Franklin (Eterna Forest (Overworld))",
+      "name": "Ace Trainer Dark Master Trainer Franklin",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -8980,8 +8990,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Worker Steel Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "Worker Steel Master Trainer Tristan",
+      "team_name": "Worker Steel Master Trainer Julian (Eterna Forest (Overworld))",
+      "name": "Worker Steel Master Trainer Julian",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -9015,8 +9025,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "School Kid Fairy Master Trainer Tristan (Eterna Forest (Overworld))",
-      "name": "School Kid Fairy Master Trainer Tristan",
+      "team_name": "School Kid Fairy Master Trainer Marilyn (Eterna Forest (Overworld))",
+      "name": "School Kid Fairy Master Trainer Marilyn",
       "route": "Eterna Forest (Overworld)",
       "zoneId": 199,
       "trainerType": "Single Battle"
@@ -9190,7 +9200,7 @@
       "team": [
         {
           "ability": "Intimidate",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 229,
           "item": "Black Glasses",
           "level": 77,
@@ -9211,8 +9221,8 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Technician",
@@ -9236,13 +9246,13 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Unburden",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 275,
           "item": "Miracle Seed",
           "level": 78,
@@ -9263,12 +9273,12 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Speed Boost",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 319,
           "item": "Life Orb",
           "level": 78,
@@ -9288,9 +9298,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Infiltrator",
@@ -9314,13 +9324,13 @@
           "evhp": 252,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 4
+          "evspatk": 252,
+          "evspdef": 4,
+          "evspeed": 0
         },
         {
           "ability": "Sand Stream",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 248,
           "item": "Assault Vest",
           "level": 80,
@@ -9341,8 +9351,8 @@
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspdef": 4,
+          "evspeed": 0
         }
       ],
       "team_name": "Ace Trainer Shade (Eterna Forest (Overworld))",
@@ -9376,8 +9386,8 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Merciless",
@@ -9402,12 +9412,12 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Flare Boost",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 435,
           "item": "Flame Orb",
           "level": 78,
@@ -9427,13 +9437,13 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 4,
-          "evspeed": 0
+          "evspatk": 4,
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Dry Skin",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 454,
           "item": "Black Belt",
           "level": 78,
@@ -9453,13 +9463,13 @@
           "evhp": 0,
           "evatk": 248,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 8
+          "evspatk": 0,
+          "evspdef": 8,
+          "evspeed": 252
         },
         {
           "ability": "Thick Fat",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 3,
           "item": "Black Sludge",
           "level": 78,
@@ -9479,13 +9489,13 @@
           "evhp": 252,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 4,
-          "evspeed": 252
+          "evspatk": 4,
+          "evspdef": 252,
+          "evspeed": 0
         },
         {
           "ability": "Inner Focus",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 169,
           "item": "Assault Vest",
           "level": 80,
@@ -9505,9 +9515,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         }
       ],
       "team_name": "Ace Trainer Slythe (Eterna Forest (Overworld))",
@@ -10012,7 +10022,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Eterna City": [
+  "54": [
     {
       "team": [
         {
@@ -10573,12 +10583,12 @@
           "ivspatk": 24,
           "ivspdef": 24,
           "ivspeed": 25,
-          "evhp": 236,
-          "evatk": 244,
+          "evhp": 248,
+          "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
+          "evspatk": 248,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 12
         },
         {
           "ability": "Technician",
@@ -10600,7 +10610,7 @@
           "ivspdef": 25,
           "ivspeed": 25,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 8,
           "evdef": 0,
           "evspatk": 248,
           "evspdef": 0,
@@ -11429,7 +11439,7 @@
           "evdef": 0,
           "evspatk": 252,
           "evspdef": 4,
-          "evspeed": 0
+          "evspeed": 252
         }
       ],
       "team_name": "Gym Leader Gardenia Rematch (Eterna - Gym Main Room) [Team 2]",
@@ -11589,12 +11599,12 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
+          "evhp": 4,
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 4
+          "evspeed": 252
         }
       ],
       "team_name": "Gym Leader Gardenia Rematch (Eterna - Gym Main Room) [Team 3]",
@@ -11767,7 +11777,9 @@
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "62": [
     {
       "team": [
         {
@@ -11941,7 +11953,9 @@
       "route": "T.G. Building 1F",
       "zoneId": 62,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "63": [
     {
       "team": [
         {
@@ -12037,7 +12051,9 @@
       "route": "T.G. Building 2F",
       "zoneId": 63,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "64": [
     {
       "team": [
         {
@@ -12047,9 +12063,9 @@
           "item": null,
           "level": 23,
           "moves": [
+            422,
             424,
             269,
-            316,
             251
           ],
           "nature": "Docile",
@@ -12211,7 +12227,9 @@
       "route": "T.G. Building 3F",
       "zoneId": 64,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "65": [
     {
       "team": [
         {
@@ -12326,7 +12344,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 211": [
+  "377": [
     {
       "team": [
         {
@@ -12587,7 +12605,9 @@
       "route": "Route 211 (West)",
       "zoneId": 377,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "378": [
     {
       "team": [
         {
@@ -12790,7 +12810,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Mount Coronet": [
+  "212": [
     {
       "team": [
         {
@@ -12973,7 +12993,9 @@
       "route": "Mt. Coronet - Tunnel to Route 211 Entrance",
       "zoneId": 212,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "205": [
     {
       "team": [
         {
@@ -13147,7 +13169,9 @@
       "route": "Mt. Coronet - 3F",
       "zoneId": 205,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "208": [
     {
       "team": [
         {
@@ -13295,7 +13319,9 @@
       "route": "Mt. Coronet - 4F (Waterfall)",
       "zoneId": 208,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "210": [
     {
       "team": [
         {
@@ -13469,7 +13495,9 @@
       "route": "Mt. Coronet - 5F",
       "zoneId": 210,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "211": [
     {
       "team": [
         {
@@ -13584,7 +13612,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 216": [
+  "395": [
     {
       "team": [
         {
@@ -14161,7 +14189,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 206": [
+  "362": [
     {
       "team": [
         {
@@ -14660,7 +14688,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 207": [
+  "364": [
     {
       "team": [
         {
@@ -15027,10 +15055,10 @@
           "item": null,
           "level": 26,
           "moves": [
+            33,
             67,
             183,
-            229,
-            193
+            229
           ],
           "nature": "Serious",
           "ivatk": 25,
@@ -15784,7 +15812,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Wayward Cave": [
+  "292": [
     {
       "team": [
         {
@@ -15881,7 +15909,7 @@
           "item": null,
           "level": 25,
           "moves": [
-            316,
+            29,
             468,
             154,
             163
@@ -16535,7 +16563,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 208": [
+  "365": [
     {
       "team": [
         {
@@ -16903,7 +16931,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Hearthome City": [
+  "74": [
     {
       "team": [
         {
@@ -17735,13 +17763,13 @@
           "ability": "Competitive",
           "gender": "FEMALE",
           "id": 394,
-          "item": "Sitrus Berry",
+          "item": "Chesto Berry",
           "level": 33,
           "moves": [
             503,
             196,
             447,
-            446
+            156
           ],
           "nature": "Modest",
           "ivatk": 0,
@@ -17750,12 +17778,12 @@
           "ivspatk": 25,
           "ivspdef": 25,
           "ivspeed": 25,
-          "evhp": 0,
+          "evhp": 252,
           "evatk": 0,
-          "evdef": 124,
+          "evdef": 0,
           "evspatk": 252,
-          "evspdef": 132,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 4
         },
         {
           "ability": "Serene Grace",
@@ -19328,7 +19356,7 @@
           "item": null,
           "level": 26,
           "moves": [
-            193,
+            310,
             425,
             261,
             371
@@ -19380,7 +19408,7 @@
           "item": null,
           "level": 26,
           "moves": [
-            193,
+            310,
             425,
             261,
             371
@@ -19441,7 +19469,7 @@
           "item": null,
           "level": 26,
           "moves": [
-            193,
+            310,
             425,
             261,
             371
@@ -20317,8 +20345,8 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 248,
-          "evspdef": 4,
-          "evspeed": 244
+          "evspdef": 0,
+          "evspeed": 248
         }
       ],
       "team_name": "Gym Leader Fantina (Hearthome - Gym Leader Room) [Team 4]",
@@ -20988,7 +21016,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 212": [
+  "379": [
     {
       "team": [
         {
@@ -21625,7 +21653,9 @@
       "route": "Route 212 (North)",
       "zoneId": 379,
       "trainerType": "Double Battle"
-    },
+    }
+  ],
+  "383": [
     {
       "team": [
         {
@@ -22515,7 +22545,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Pok\u00e9mon Mansion": [
+  "380": [
     {
       "team": [
         {
@@ -22675,8 +22705,8 @@
           "evspeed": 50
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Piplup (Pok\u00e9mon Mansion - Lobby Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Piplup",
+      "team_name": "Pok\u00e9mon Trainer Barry Piplup (Pok\u00e9mon Mansion - Lobby Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Pok\u00e9mon Mansion - Lobby",
       "zoneId": 380,
       "trainerType": "Multi Battle Partner"
@@ -22835,13 +22865,13 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 124,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 132
+          "evspatk": 252,
+          "evspdef": 132,
+          "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Turtwig (Pok\u00e9mon Mansion - Lobby Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Turtwig",
+      "team_name": "Pok\u00e9mon Trainer Barry Turtwig (Pok\u00e9mon Mansion - Lobby Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Pok\u00e9mon Mansion - Lobby",
       "zoneId": 380,
       "trainerType": "Multi Battle Partner"
@@ -22870,9 +22900,9 @@
           "evhp": 84,
           "evatk": 0,
           "evdef": 84,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 88
+          "evspatk": 252,
+          "evspdef": 88,
+          "evspeed": 0
         },
         {
           "ability": "Torrent",
@@ -22896,9 +22926,9 @@
           "evhp": 244,
           "evatk": 124,
           "evdef": 0,
-          "evspatk": 140,
+          "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 140
         },
         {
           "ability": "Queenly Majesty",
@@ -23005,8 +23035,8 @@
           "evspeed": 88
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Chimchar (Pok\u00e9mon Mansion - Lobby Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Chimchar",
+      "team_name": "Pok\u00e9mon Trainer Barry Chimchar (Pok\u00e9mon Mansion - Lobby Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Pok\u00e9mon Mansion - Lobby",
       "zoneId": 380,
       "trainerType": "Multi Battle Partner"
@@ -23061,9 +23091,9 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspatk": 252,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Dry Skin",
@@ -23121,10 +23151,10 @@
           "ivspeed": 25,
           "evhp": 0,
           "evatk": 0,
-          "evdef": 0,
+          "evdef": 252,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspdef": 252,
+          "evspeed": 4
         },
         {
           "ability": "Static",
@@ -23145,12 +23175,12 @@
           "ivspatk": 25,
           "ivspdef": 25,
           "ivspeed": 25,
-          "evhp": 0,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
+          "evspatk": 252,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         },
         {
           "ability": "Synchronize",
@@ -23174,9 +23204,9 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspatk": 252,
+          "evspdef": 4,
+          "evspeed": 252
         }
       ],
       "team_name": "Gentleman Mr. Backlot (Pok\u00e9mon Mansion - Lobby)",
@@ -23209,9 +23239,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Inner Focus",
@@ -23478,9 +23508,9 @@
           "ivspeed": 31,
           "evhp": 252,
           "evatk": 0,
-          "evdef": 0,
+          "evdef": 128,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 128,
           "evspeed": 0
         }
       ],
@@ -23561,7 +23591,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 209": [
+  "367": [
     {
       "team": [
         {
@@ -23571,10 +23601,10 @@
           "item": null,
           "level": 26,
           "moves": [
+            33,
             67,
             183,
-            229,
-            193
+            229
           ],
           "nature": "Serious",
           "ivatk": 25,
@@ -24373,7 +24403,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Lost Tower": [
+  "368": [
     {
       "team": [
         {
@@ -24409,7 +24439,7 @@
           "item": null,
           "level": 31,
           "moves": [
-            173,
+            156,
             401,
             414,
             330
@@ -24837,7 +24867,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Solaceon Town": [
+  "446": [
     {
       "team": [
         {
@@ -29294,7 +29324,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Solaceon Ruins": [
+  "225": [
     {
       "team": [
         {
@@ -29383,7 +29413,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 210": [
+  "373": [
     {
       "team": [
         {
@@ -30029,7 +30059,9 @@
       "route": "Route 210 - Caf\u00e9 Cabin",
       "zoneId": 374,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "375": [
     {
       "team": [
         {
@@ -31011,8 +31043,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -31037,9 +31069,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Cute Charm",
@@ -31090,8 +31122,8 @@
           "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Water Absorb",
@@ -31176,8 +31208,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -31202,9 +31234,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Cute Charm",
@@ -31255,8 +31287,8 @@
           "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Volt Absorb",
@@ -31280,8 +31312,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -31307,8 +31339,8 @@
           "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         }
       ],
       "team_name": "Pok\u00e9mon Trainer Dawn Turtwig (Route 210 (North) Trainers)",
@@ -31341,8 +31373,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -31367,9 +31399,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Cute Charm",
@@ -31420,8 +31452,8 @@
           "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Flash Fire",
@@ -31446,8 +31478,8 @@
           "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Torrent",
@@ -31470,9 +31502,9 @@
           "ivspeed": 31,
           "evhp": 252,
           "evatk": 0,
-          "evdef": 76,
-          "evspatk": 180,
-          "evspdef": 0,
+          "evdef": 72,
+          "evspatk": 0,
+          "evspdef": 180,
           "evspeed": 0
         }
       ],
@@ -31506,8 +31538,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -31532,9 +31564,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Intimidate",
@@ -31558,8 +31590,8 @@
           "evhp": 212,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 44,
+          "evspatk": 44,
+          "evspdef": 0,
           "evspeed": 0
         },
         {
@@ -31636,9 +31668,9 @@
           "evhp": 247,
           "evatk": 0,
           "evdef": 252,
-          "evspatk": 8,
+          "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 8
         }
       ],
       "team_name": "Pok\u00e9mon Trainer Lucas Piplup (Route 210 (North) Trainers)",
@@ -31671,8 +31703,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -31697,9 +31729,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Intimidate",
@@ -31723,8 +31755,8 @@
           "evhp": 212,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 44,
+          "evspatk": 44,
+          "evspdef": 0,
           "evspeed": 0
         },
         {
@@ -31775,8 +31807,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -31799,7 +31831,7 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 251,
+          "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
           "evspdef": 0,
@@ -31836,8 +31868,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -31862,9 +31894,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Intimidate",
@@ -31888,8 +31920,8 @@
           "evhp": 212,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 44,
+          "evspatk": 44,
+          "evspdef": 0,
           "evspeed": 0
         },
         {
@@ -31941,8 +31973,8 @@
           "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Torrent",
@@ -31966,8 +31998,8 @@
           "evhp": 251,
           "evatk": 0,
           "evdef": 76,
-          "evspatk": 180,
-          "evspdef": 0,
+          "evspatk": 0,
+          "evspdef": 180,
           "evspeed": 0
         }
       ],
@@ -31978,7 +32010,7 @@
       "trainerType": "Multi Battle Partner"
     }
   ],
-  "Route 215": [
+  "394": [
     {
       "team": [
         {
@@ -32407,7 +32439,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Veilstone City": [
+  "123": [
     {
       "team": [
         {
@@ -34126,8 +34158,8 @@
           "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -34178,8 +34210,8 @@
           "evhp": 252,
           "evatk": 0,
           "evdef": 76,
-          "evspatk": 180,
-          "evspdef": 0,
+          "evspatk": 0,
+          "evspdef": 180,
           "evspeed": 0
         }
       ],
@@ -34203,7 +34235,7 @@
             351,
             50
           ],
-          "nature": "Hardy",
+          "nature": "Docile",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -34213,8 +34245,8 @@
           "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -34229,7 +34261,7 @@
             157,
             420
           ],
-          "nature": "Bashful",
+          "nature": "Hardy",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -34300,8 +34332,8 @@
           "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -34316,7 +34348,7 @@
             157,
             420
           ],
-          "nature": "Bashful",
+          "nature": "Hardy",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -34350,10 +34382,10 @@
           "ivspdef": 25,
           "ivspeed": 25,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
+          "evspdef": 0,
           "evspeed": 252
         }
       ],
@@ -34387,8 +34419,8 @@
           "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -34439,8 +34471,8 @@
           "evhp": 252,
           "evatk": 0,
           "evdef": 76,
-          "evspatk": 180,
-          "evspdef": 0,
+          "evspatk": 0,
+          "evspdef": 180,
           "evspeed": 0
         }
       ],
@@ -34464,7 +34496,7 @@
             351,
             50
           ],
-          "nature": "Hardy",
+          "nature": "Quirky",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -34474,8 +34506,8 @@
           "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -34551,7 +34583,7 @@
             351,
             50
           ],
-          "nature": "Bashful",
+          "nature": "Quirky",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -34561,8 +34593,8 @@
           "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -34572,12 +34604,12 @@
           "item": null,
           "level": 35,
           "moves": [
+            419,
             36,
-            31,
-            89,
+            157,
             420
           ],
-          "nature": "Docile",
+          "nature": "Bashful",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -34611,10 +34643,10 @@
           "ivspdef": 25,
           "ivspeed": 25,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
+          "evspdef": 0,
           "evspeed": 252
         }
       ],
@@ -35075,7 +35107,9 @@
       "route": "Veilstone City",
       "zoneId": 125,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "315": [
     {
       "team": [
         {
@@ -35250,6 +35284,173 @@
       "zoneId": 315,
       "trainerType": "Single Battle"
     },
+    {
+      "team": [
+        {
+          "ability": "Levitate",
+          "gender": "FEMALE",
+          "id": 437,
+          "item": "Light Clay",
+          "level": 57,
+          "moves": [
+            115,
+            113,
+            334,
+            776
+          ],
+          "nature": "Calm",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 8,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 248
+        },
+        {
+          "ability": "Sniper",
+          "gender": "FEMALE",
+          "id": 224,
+          "item": "Choice Scarf",
+          "level": 57,
+          "moves": [
+            323,
+            412,
+            126,
+            58
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 248,
+          "evspdef": 252,
+          "evspeed": 8
+        },
+        {
+          "ability": "Magic Guard",
+          "gender": "FEMALE",
+          "id": 65,
+          "item": "Life Orb",
+          "level": 57,
+          "moves": [
+            94,
+            247,
+            411,
+            605
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 252,
+          "evspeed": 4
+        },
+        {
+          "ability": "Sheer Force",
+          "gender": "FEMALE",
+          "id": 112,
+          "item": "Eviolite",
+          "level": 57,
+          "moves": [
+            444,
+            529,
+            9,
+            8
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 244,
+          "evatk": 248,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 16
+        },
+        {
+          "ability": "Mega Launcher",
+          "gender": "FEMALE",
+          "id": 467,
+          "item": "Heavy-Duty Boots",
+          "level": 57,
+          "moves": [
+            126,
+            396,
+            399,
+            503
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 252,
+          "evspeed": 4
+        },
+        {
+          "ability": "Dry Skin",
+          "gender": "FEMALE",
+          "id": 454,
+          "item": "Focus Sash",
+          "level": 58,
+          "moves": [
+            14,
+            441,
+            409,
+            389
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Commander Saturn (Team Galactic HQ - Lake Trio Room)",
+      "name": "Commander Saturn",
+      "route": "Team Galactic HQ - Lake Trio Room",
+      "zoneId": 321,
+      "trainerType": "Single Battle"
+    }
+  ],
+  "316": [
     {
       "team": [
         {
@@ -35519,7 +35720,9 @@
       "route": "Team Galactic HQ - 2F",
       "zoneId": 316,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "317": [
     {
       "team": [
         {
@@ -35789,7 +35992,9 @@
       "route": "Team Galactic HQ - 3F",
       "zoneId": 317,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "318": [
     {
       "team": [
         {
@@ -35954,7 +36159,9 @@
       "route": "Team Galactic HQ - 4F",
       "zoneId": 318,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "320": [
     {
       "team": [
         {
@@ -36102,174 +36309,9 @@
       "route": "Team Galactic HQ - B2F",
       "zoneId": 320,
       "trainerType": "Single Battle"
-    },
-    {
-      "team": [
-        {
-          "ability": "Levitate",
-          "gender": "FEMALE",
-          "id": 437,
-          "item": "Light Clay",
-          "level": 57,
-          "moves": [
-            115,
-            113,
-            334,
-            776
-          ],
-          "nature": "Calm",
-          "ivatk": 0,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 8,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 248
-        },
-        {
-          "ability": "Sniper",
-          "gender": "FEMALE",
-          "id": 224,
-          "item": "Choice Scarf",
-          "level": 57,
-          "moves": [
-            323,
-            412,
-            126,
-            58
-          ],
-          "nature": "Timid",
-          "ivatk": 0,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 248,
-          "evspdef": 252,
-          "evspeed": 8
-        },
-        {
-          "ability": "Magic Guard",
-          "gender": "FEMALE",
-          "id": 65,
-          "item": "Life Orb",
-          "level": 57,
-          "moves": [
-            94,
-            247,
-            411,
-            605
-          ],
-          "nature": "Timid",
-          "ivatk": 0,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
-        },
-        {
-          "ability": "Sheer Force",
-          "gender": "FEMALE",
-          "id": 112,
-          "item": "Eviolite",
-          "level": 57,
-          "moves": [
-            444,
-            529,
-            9,
-            8
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 244,
-          "evatk": 248,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 16
-        },
-        {
-          "ability": "Mega Launcher",
-          "gender": "FEMALE",
-          "id": 467,
-          "item": "Heavy-Duty Boots",
-          "level": 57,
-          "moves": [
-            126,
-            396,
-            399,
-            503
-          ],
-          "nature": "Timid",
-          "ivatk": 0,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
-        },
-        {
-          "ability": "Dry Skin",
-          "gender": "FEMALE",
-          "id": 454,
-          "item": "Focus Sash",
-          "level": 58,
-          "moves": [
-            14,
-            441,
-            409,
-            389
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Commander Saturn (Team Galactic HQ - Lake Trio Room)",
-      "name": "Commander Saturn",
-      "route": "Team Galactic HQ - Lake Trio Room",
-      "zoneId": 321,
-      "trainerType": "Single Battle"
     }
   ],
-  "Route 214": [
+  "392": [
     {
       "team": [
         {
@@ -36898,7 +36940,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Valor Lakefront": [
+  "347": [
     {
       "team": [
         {
@@ -38195,7 +38237,7 @@
       "trainerType": "Double Battle"
     }
   ],
-  "Route 213": [
+  "385": [
     {
       "team": [
         {
@@ -38911,7 +38953,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Pastoria City": [
+  "110": [
     {
       "team": [
         {
@@ -39071,8 +39113,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Piplup (Pastoria City Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Piplup",
+      "team_name": "Pok\u00e9mon Trainer Barry Piplup (Pastoria City Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Pastoria City",
       "zoneId": 110,
       "trainerType": "Single Battle"
@@ -39236,8 +39278,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Turtwig (Pastoria City Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Turtwig",
+      "team_name": "Pok\u00e9mon Trainer Barry Turtwig (Pastoria City Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Pastoria City",
       "zoneId": 110,
       "trainerType": "Single Battle"
@@ -39401,8 +39443,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Chimchar (Pastoria City Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Chimchar",
+      "team_name": "Pok\u00e9mon Trainer Barry Chimchar (Pastoria City Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Pastoria City",
       "zoneId": 110,
       "trainerType": "Single Battle"
@@ -43230,7 +43272,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Celestic Town": [
+  "456": [
     {
       "team": [
         {
@@ -43484,7 +43526,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 219": [
+  "403": [
     {
       "team": [
         {
@@ -43634,7 +43676,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 220": [
+  "485": [
     {
       "team": [
         {
@@ -44115,7 +44157,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 221": [
+  "404": [
     {
       "team": [
         {
@@ -44559,7 +44601,9 @@
       "route": "Route 221",
       "zoneId": 404,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "250": [
     {
       "team": [
         {
@@ -44610,8 +44654,8 @@
           "evhp": 252,
           "evatk": 0,
           "evdef": 76,
-          "evspatk": 180,
-          "evspdef": 0,
+          "evspatk": 0,
+          "evspdef": 180,
           "evspeed": 0
         },
         {
@@ -44636,8 +44680,8 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -44689,8 +44733,8 @@
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Pressure",
@@ -44715,8 +44759,8 @@
           "evatk": 252,
           "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         }
       ],
       "team_name": "Castle Valet Darach (Ramanas Park)",
@@ -44726,7 +44770,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Distortion Room": [
+  "624": [
     {
       "team": [
         {
@@ -44750,9 +44794,9 @@
           "ivspeed": 0,
           "evhp": 0,
           "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
+          "evdef": 252,
+          "evspatk": 4,
+          "evspdef": 252,
           "evspeed": 0
         },
         {
@@ -44776,9 +44820,9 @@
           "ivspeed": 0,
           "evhp": 0,
           "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
+          "evdef": 252,
+          "evspatk": 4,
+          "evspdef": 252,
           "evspeed": 0
         }
       ],
@@ -45447,7 +45491,9 @@
       "route": "Ramanas Park",
       "zoneId": 624,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "216": [
     {
       "team": [
         {
@@ -45781,8 +45827,8 @@
           "evspeed": 248
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Piplup (Spear Pillar Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Piplup",
+      "team_name": "Pok\u00e9mon Trainer Barry Piplup (Spear Pillar Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Spear Pillar",
       "zoneId": 216,
       "trainerType": "Multi Battle Partner"
@@ -45946,8 +45992,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Turtwig (Spear Pillar Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Turtwig",
+      "team_name": "Pok\u00e9mon Trainer Barry Turtwig (Spear Pillar Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Spear Pillar",
       "zoneId": 216,
       "trainerType": "Multi Battle Partner"
@@ -46111,8 +46157,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Chimchar (Spear Pillar Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Chimchar",
+      "team_name": "Pok\u00e9mon Trainer Barry Chimchar (Spear Pillar Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Spear Pillar",
       "zoneId": 216,
       "trainerType": "Multi Battle Partner"
@@ -46448,7 +46494,7 @@
       "trainerType": "Multi Battle Enemy"
     }
   ],
-  "Genome Room": [
+  "505": [
     {
       "team": [
         {
@@ -46615,7 +46661,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 218": [
+  "400": [
     {
       "team": [
         {
@@ -46861,7 +46907,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Fuego Ironworks": [
+  "202": [
     {
       "team": [
         {
@@ -47124,7 +47170,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Canalave City": [
+  "24": [
     {
       "team": [
         {
@@ -50957,7 +51003,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Iron Island": [
+  "298": [
     {
       "team": [
         {
@@ -50983,8 +51029,8 @@
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Guts",
@@ -51007,7 +51053,7 @@
           "ivspeed": 31,
           "evhp": 252,
           "evatk": 252,
-          "evdef": 0,
+          "evdef": 4,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 0
@@ -51033,7 +51079,7 @@
           "ivspeed": 31,
           "evhp": 252,
           "evatk": 252,
-          "evdef": 0,
+          "evdef": 4,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 0
@@ -51059,10 +51105,10 @@
           "ivspeed": 31,
           "evhp": 0,
           "evatk": 252,
-          "evdef": 0,
+          "evdef": 4,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Truant",
@@ -51085,7 +51131,7 @@
           "ivspeed": 31,
           "evhp": 252,
           "evatk": 252,
-          "evdef": 0,
+          "evdef": 4,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 0
@@ -51109,12 +51155,12 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
+          "evhp": 4,
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         }
       ],
       "team_name": "Pok\u00e9mon Trainer Riley (Iron Island (Overworld))",
@@ -51122,7 +51168,9 @@
       "route": "Iron Island (Overworld)",
       "zoneId": 298,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "300": [
     {
       "team": [
         {
@@ -51209,7 +51257,9 @@
       "route": "Iron Island - B1F Left",
       "zoneId": 300,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "301": [
     {
       "team": [
         {
@@ -51296,7 +51346,9 @@
       "route": "Iron Island - B1F Right",
       "zoneId": 301,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "303": [
     {
       "team": [
         {
@@ -52036,7 +52088,9 @@
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
       "trainerType": "Double Battle"
-    },
+    }
+  ],
+  "302": [
     {
       "team": [
         {
@@ -52160,7 +52214,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Lake Valor": [
+  "326": [
     {
       "team": [
         {
@@ -52267,7 +52321,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Valor Cavern": [
+  "328": [
     {
       "team": [
         {
@@ -52434,7 +52488,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Lake Verity": [
+  "323": [
     {
       "team": [
         {
@@ -52897,7 +52951,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 217": [
+  "397": [
     {
       "team": [
         {
@@ -53552,7 +53606,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Snowpoint City": [
+  "159": [
     {
       "team": [
         {
@@ -55544,7 +55598,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 222": [
+  "407": [
     {
       "team": [
         {
@@ -56382,7 +56436,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Sunyshore City": [
+  "142": [
     {
       "team": [
         {
@@ -56570,11 +56624,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
+          "evatk": 252,
+          "evdef": 4,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         },
         {
           "ability": "Pressure",
@@ -56595,12 +56649,12 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
+          "evhp": 252,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 4
         },
         {
           "ability": "Pure Power",
@@ -56614,7 +56668,7 @@
             8,
             7
           ],
-          "nature": "Modest",
+          "nature": "Adamant",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -56622,11 +56676,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
+          "evatk": 252,
+          "evdef": 4,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         },
         {
           "ability": "Serene Grace",
@@ -56647,11 +56701,11 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
+          "evhp": 252,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
+          "evspatk": 4,
+          "evspdef": 252,
           "evspeed": 0
         },
         {
@@ -56676,9 +56730,9 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspatk": 252,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Static",
@@ -56702,9 +56756,9 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspatk": 252,
+          "evspdef": 4,
+          "evspeed": 252
         }
       ],
       "team_name": "Arcade Star Dahlia (Sunyshore City)",
@@ -58704,7 +58758,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 223": [
+  "486": [
     {
       "team": [
         {
@@ -59655,7 +59709,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Victory Road": [
+  "244": [
     {
       "team": [
         {
@@ -60385,7 +60439,9 @@
       "route": "Victory Road - 1F",
       "zoneId": 244,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "245": [
     {
       "team": [
         {
@@ -60924,7 +60980,9 @@
       "route": "Victory Road - 2F",
       "zoneId": 245,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "246": [
     {
       "team": [
         {
@@ -61411,7 +61469,9 @@
       "route": "Victory Road - B1F",
       "zoneId": 246,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "247": [
     {
       "team": [
         {
@@ -62796,7 +62856,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Pok\u00e9mon League": [
+  "167": [
     {
       "team": [
         {
@@ -64219,8 +64279,8 @@
           "evhp": 4,
           "evatk": 8,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 248,
+          "evspatk": 248,
+          "evspdef": 0,
           "evspeed": 248
         },
         {
@@ -71381,7 +71441,7 @@
       "team": [
         {
           "ability": "Guts",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 277,
           "item": "Flame Orb",
           "level": 77,
@@ -71401,9 +71461,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Serene Grace",
@@ -71428,12 +71488,12 @@
           "evatk": 0,
           "evdef": 252,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspdef": 4,
+          "evspeed": 0
         },
         {
           "ability": "Immunity",
-          "gender": "MALE",
+          "gender": "FEMALE",
           "id": 143,
           "item": "Aguav Berry",
           "level": 78,
@@ -71454,8 +71514,8 @@
           "evatk": 4,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
+          "evspdef": 252,
+          "evspeed": 0
         },
         {
           "ability": "Sap Sipper",
@@ -71480,8 +71540,8 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Parental Bond",
@@ -71505,9 +71565,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Adaptability",
@@ -71532,8 +71592,8 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
+          "evspdef": 4,
+          "evspeed": 252
         }
       ],
       "team_name": "Ace Trainer Gene (Pokemon League)",
@@ -71543,7 +71603,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Fight Area": [
+  "186": [
     {
       "team": [
         {
@@ -71625,8 +71685,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Piplup (Fight Area Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Piplup",
+      "team_name": "Pok\u00e9mon Trainer Barry Piplup (Fight Area Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Fight Area",
       "zoneId": 186,
       "trainerType": "Multi Battle Partner"
@@ -71712,8 +71772,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Turtwig (Fight Area Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Turtwig",
+      "team_name": "Pok\u00e9mon Trainer Barry Turtwig (Fight Area Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Fight Area",
       "zoneId": 186,
       "trainerType": "Multi Battle Partner"
@@ -71799,8 +71859,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric Chimchar (Fight Area Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric Chimchar",
+      "team_name": "Pok\u00e9mon Trainer Barry Chimchar (Fight Area Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Fight Area",
       "zoneId": 186,
       "trainerType": "Multi Battle Partner"
@@ -72138,8 +72198,8 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric End Game Piplup (Fight Area Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric End Game Piplup",
+      "team_name": "Pok\u00e9mon Trainer Barry End Game Piplup (Fight Area Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry End Game Piplup",
       "route": "Fight Area",
       "zoneId": 186,
       "trainerType": "Single Battle"
@@ -72303,8 +72363,8 @@
           "evspeed": 248
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric End Game Turtwig (Fight Area Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric End Game Turtwig",
+      "team_name": "Pok\u00e9mon Trainer Barry End Game Turtwig (Fight Area Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry End Game Turtwig",
       "route": "Fight Area",
       "zoneId": 186,
       "trainerType": "Single Battle"
@@ -72468,14 +72528,14 @@
           "evspeed": 252
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Cedric End Game Chimchar (Fight Area Trainers)",
-      "name": "Pok\u00e9mon Trainer Cedric End Game Chimchar",
+      "team_name": "Pok\u00e9mon Trainer Barry End Game Chimchar (Fight Area Trainers)",
+      "name": "Pok\u00e9mon Trainer Barry End Game Chimchar",
       "route": "Fight Area",
       "zoneId": 186,
       "trainerType": "Single Battle"
     }
   ],
-  "Route 224": [
+  "411": [
     {
       "team": [
         {
@@ -74371,7 +74431,7 @@
       "trainerType": "Multi Battle Partner"
     }
   ],
-  "Route 225": [
+  "412": [
     {
       "team": [
         {
@@ -75069,7 +75129,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 226": [
+  "487": [
     {
       "team": [
         {
@@ -75201,10 +75261,10 @@
           "item": null,
           "level": 74,
           "moves": [
+            33,
             67,
             183,
-            229,
-            193
+            229
           ],
           "nature": "Serious",
           "ivatk": 25,
@@ -75454,7 +75514,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 227": [
+  "414": [
     {
       "team": [
         {
@@ -75891,7 +75951,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 228": [
+  "416": [
     {
       "team": [
         {
@@ -76459,7 +76519,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 229": [
+  "420": [
     {
       "team": [
         {
@@ -76809,7 +76869,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Route 230": [
+  "489": [
     {
       "team": [
         {
@@ -77281,7 +77341,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "Stark Mountain": [
+  "259": [
     {
       "team": [
         {
@@ -77316,7 +77376,9 @@
       "route": "Stark Mountain (Overworld)",
       "zoneId": 259,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "260": [
     {
       "team": [
         {
@@ -77342,8 +77404,8 @@
           "evatk": 4,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
+          "evspdef": 252,
+          "evspeed": 0
         },
         {
           "ability": "Speed Boost",
@@ -77367,9 +77429,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 4,
+          "evspdef": 252,
+          "evspeed": 0
         },
         {
           "ability": "Sticky Hold",
@@ -77419,9 +77481,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Mega Launcher",
@@ -77445,9 +77507,9 @@
           "evhp": 252,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 4,
-          "evspeed": 0
+          "evspatk": 4,
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Fur Coat",
@@ -77471,9 +77533,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 248,
-          "evspdef": 0,
-          "evspeed": 8
+          "evspatk": 0,
+          "evspdef": 8,
+          "evspeed": 248
         }
       ],
       "team_name": "Commander Mars (Stark Mountain - Entrance)",
@@ -77506,8 +77568,8 @@
           "evhp": 252,
           "evatk": 0,
           "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 0
         },
         {
@@ -77530,11 +77592,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 4,
+          "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Guts",
@@ -77558,9 +77620,9 @@
           "evhp": 4,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
+          "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         },
         {
           "ability": "Grassy Surge",
@@ -77584,8 +77646,8 @@
           "evhp": 4,
           "evatk": 0,
           "evdef": 252,
-          "evspatk": 0,
-          "evspdef": 252,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 0
         },
         {
@@ -77610,9 +77672,9 @@
           "evhp": 0,
           "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Stench",
@@ -77637,8 +77699,8 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         }
       ],
       "team_name": "Commander Jupiter (Stark Mountain - Entrance)",
@@ -77646,7 +77708,9 @@
       "route": "Stark Mountain - Entrance",
       "zoneId": 260,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "261": [
     {
       "team": [
         {
@@ -79037,6 +79101,998 @@
       "name": "Veteran Harlan",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
+      "trainerType": "Single Battle"
+    }
+  ],
+  "429": [
+    {
+      "team": [
+        {
+          "ability": "Synchronize",
+          "gender": "FEMALE",
+          "id": 65,
+          "item": "Choice Specs",
+          "level": 90,
+          "moves": [
+            396,
+            605,
+            94,
+            247
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 248,
+          "evspdef": 8,
+          "evspeed": 252
+        },
+        {
+          "ability": "Thick Fat",
+          "gender": "FEMALE",
+          "id": 473,
+          "item": "Leftovers",
+          "level": 90,
+          "moves": [
+            420,
+            89,
+            34,
+            197
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Magic Guard",
+          "gender": "FEMALE",
+          "id": 36,
+          "item": "Aguav Berry",
+          "level": 90,
+          "moves": [
+            107,
+            247,
+            605,
+            226
+          ],
+          "nature": "Modest",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 4
+        },
+        {
+          "ability": "Adaptability",
+          "gender": "FEMALE",
+          "id": 428,
+          "item": "Wide Lens",
+          "level": 90,
+          "moves": [
+            218,
+            136,
+            340,
+            369
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 8,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 248
+        },
+        {
+          "ability": "Volt Absorb",
+          "gender": "FEMALE",
+          "id": 135,
+          "item": "Magnet",
+          "level": 90,
+          "moves": [
+            85,
+            326,
+            247,
+            521
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Iron Fist",
+          "gender": "FEMALE",
+          "id": 392,
+          "item": "Light Ball",
+          "level": 90,
+          "moves": [
+            7,
+            9,
+            183,
+            374
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        }
+      ],
+      "team_name": "Pok\u00e9mon Trainer Dawn Piplup (Sandgem Town Trainers)",
+      "name": "Pok\u00e9mon Trainer Dawn Piplup",
+      "route": "Sandgem Town",
+      "zoneId": 429,
+      "trainerType": "Single Battle"
+    },
+    {
+      "team": [
+        {
+          "ability": "Synchronize",
+          "gender": "FEMALE",
+          "id": 65,
+          "item": "Choice Specs",
+          "level": 90,
+          "moves": [
+            396,
+            605,
+            94,
+            247
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 248,
+          "evspdef": 8,
+          "evspeed": 252
+        },
+        {
+          "ability": "Thick Fat",
+          "gender": "FEMALE",
+          "id": 473,
+          "item": "Leftovers",
+          "level": 90,
+          "moves": [
+            420,
+            89,
+            34,
+            197
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Magic Guard",
+          "gender": "FEMALE",
+          "id": 36,
+          "item": "Aguav Berry",
+          "level": 90,
+          "moves": [
+            107,
+            247,
+            605,
+            226
+          ],
+          "nature": "Modest",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 4
+        },
+        {
+          "ability": "Adaptability",
+          "gender": "FEMALE",
+          "id": 428,
+          "item": "Wide Lens",
+          "level": 90,
+          "moves": [
+            218,
+            136,
+            340,
+            369
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 8,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 248
+        },
+        {
+          "ability": "Guts",
+          "gender": "FEMALE",
+          "id": 136,
+          "item": "Toxic Orb",
+          "level": 90,
+          "moves": [
+            583,
+            370,
+            172,
+            182
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 4
+        },
+        {
+          "ability": "Torrent",
+          "gender": "FEMALE",
+          "id": 395,
+          "item": "Custap Berry",
+          "level": 90,
+          "moves": [
+            56,
+            58,
+            430,
+            297
+          ],
+          "nature": "Modest",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 4
+        }
+      ],
+      "team_name": "Pok\u00e9mon Trainer Dawn Turtwig (Sandgem Town Trainers)",
+      "name": "Pok\u00e9mon Trainer Dawn Turtwig",
+      "route": "Sandgem Town",
+      "zoneId": 429,
+      "trainerType": "Single Battle"
+    },
+    {
+      "team": [
+        {
+          "ability": "Synchronize",
+          "gender": "FEMALE",
+          "id": 65,
+          "item": "Choice Specs",
+          "level": 90,
+          "moves": [
+            396,
+            605,
+            94,
+            247
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 248,
+          "evspdef": 8,
+          "evspeed": 252
+        },
+        {
+          "ability": "Thick Fat",
+          "gender": "FEMALE",
+          "id": 473,
+          "item": "Leftovers",
+          "level": 90,
+          "moves": [
+            420,
+            89,
+            34,
+            197
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Magic Guard",
+          "gender": "FEMALE",
+          "id": 36,
+          "item": "Aguav Berry",
+          "level": 90,
+          "moves": [
+            107,
+            247,
+            605,
+            226
+          ],
+          "nature": "Modest",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 4
+        },
+        {
+          "ability": "Adaptability",
+          "gender": "FEMALE",
+          "id": 428,
+          "item": "Wide Lens",
+          "level": 90,
+          "moves": [
+            218,
+            136,
+            340,
+            369
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 8,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 248
+        },
+        {
+          "ability": "Water Absorb",
+          "gender": "FEMALE",
+          "id": 134,
+          "item": "Leftovers",
+          "level": 90,
+          "moves": [
+            56,
+            58,
+            92,
+            273
+          ],
+          "nature": "Calm",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 4,
+          "evspdef": 252,
+          "evspeed": 0
+        },
+        {
+          "ability": "Shell Armor",
+          "gender": "FEMALE",
+          "id": 389,
+          "item": "White Herb",
+          "level": 90,
+          "moves": [
+            504,
+            89,
+            235,
+            402
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        }
+      ],
+      "team_name": "Pok\u00e9mon Trainer Dawn Chimchar (Sandgem Town Trainers)",
+      "name": "Pok\u00e9mon Trainer Dawn Chimchar",
+      "route": "Sandgem Town",
+      "zoneId": 429,
+      "trainerType": "Single Battle"
+    },
+    {
+      "team": [
+        {
+          "ability": "Synchronize",
+          "gender": "FEMALE",
+          "id": 65,
+          "item": "Choice Specs",
+          "level": 90,
+          "moves": [
+            396,
+            605,
+            94,
+            247
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 248,
+          "evspdef": 8,
+          "evspeed": 252
+        },
+        {
+          "ability": "Thick Fat",
+          "gender": "FEMALE",
+          "id": 473,
+          "item": "Choice Band",
+          "level": 90,
+          "moves": [
+            420,
+            89,
+            34,
+            197
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Intimidate",
+          "gender": "FEMALE",
+          "id": 210,
+          "item": "Expert Belt",
+          "level": 90,
+          "moves": [
+            583,
+            370,
+            371,
+            91
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 4
+        },
+        {
+          "ability": "Oblivious",
+          "gender": "FEMALE",
+          "id": 463,
+          "item": "Leftovers",
+          "level": 90,
+          "moves": [
+            776,
+            89,
+            263,
+            282
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 248,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 8
+        },
+        {
+          "ability": "Volt Absorb",
+          "gender": "FEMALE",
+          "id": 135,
+          "item": "Magnet",
+          "level": 90,
+          "moves": [
+            85,
+            326,
+            247,
+            521
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Iron Fist",
+          "gender": "FEMALE",
+          "id": 392,
+          "item": "Light Ball",
+          "level": 90,
+          "moves": [
+            7,
+            9,
+            183,
+            374
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Pok\u00e9mon Trainer Lucas Piplup (Sandgem Town Trainers)",
+      "name": "Pok\u00e9mon Trainer Lucas Piplup",
+      "route": "Sandgem Town",
+      "zoneId": 429,
+      "trainerType": "Single Battle"
+    },
+    {
+      "team": [
+        {
+          "ability": "Synchronize",
+          "gender": "FEMALE",
+          "id": 65,
+          "item": "Choice Specs",
+          "level": 90,
+          "moves": [
+            396,
+            605,
+            94,
+            247
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 248,
+          "evspdef": 8,
+          "evspeed": 252
+        },
+        {
+          "ability": "Thick Fat",
+          "gender": "FEMALE",
+          "id": 473,
+          "item": "Choice Band",
+          "level": 90,
+          "moves": [
+            420,
+            89,
+            34,
+            197
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Intimidate",
+          "gender": "FEMALE",
+          "id": 210,
+          "item": "Expert Belt",
+          "level": 90,
+          "moves": [
+            583,
+            370,
+            371,
+            91
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 4
+        },
+        {
+          "ability": "Oblivious",
+          "gender": "FEMALE",
+          "id": 463,
+          "item": "Leftovers",
+          "level": 90,
+          "moves": [
+            776,
+            89,
+            263,
+            282
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 248,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 8
+        },
+        {
+          "ability": "Guts",
+          "gender": "FEMALE",
+          "id": 136,
+          "item": "Toxic Orb",
+          "level": 90,
+          "moves": [
+            583,
+            370,
+            172,
+            182
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 4
+        },
+        {
+          "ability": "Torrent",
+          "gender": "FEMALE",
+          "id": 395,
+          "item": "Custap Berry",
+          "level": 90,
+          "moves": [
+            56,
+            58,
+            430,
+            297
+          ],
+          "nature": "Modest",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 4
+        }
+      ],
+      "team_name": "Pok\u00e9mon Trainer Lucas Turtwig (Sandgem Town Trainers)",
+      "name": "Pok\u00e9mon Trainer Lucas Turtwig",
+      "route": "Sandgem Town",
+      "zoneId": 429,
+      "trainerType": "Single Battle"
+    },
+    {
+      "team": [
+        {
+          "ability": "Synchronize",
+          "gender": "FEMALE",
+          "id": 65,
+          "item": "Choice Specs",
+          "level": 90,
+          "moves": [
+            396,
+            605,
+            94,
+            247
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 248,
+          "evspdef": 8,
+          "evspeed": 252
+        },
+        {
+          "ability": "Thick Fat",
+          "gender": "FEMALE",
+          "id": 473,
+          "item": "Choice Band",
+          "level": 90,
+          "moves": [
+            420,
+            89,
+            34,
+            197
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Intimidate",
+          "gender": "FEMALE",
+          "id": 210,
+          "item": "Expert Belt",
+          "level": 90,
+          "moves": [
+            583,
+            370,
+            371,
+            91
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 4
+        },
+        {
+          "ability": "Oblivious",
+          "gender": "FEMALE",
+          "id": 463,
+          "item": "Leftovers",
+          "level": 90,
+          "moves": [
+            776,
+            89,
+            263,
+            282
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 248,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 8
+        },
+        {
+          "ability": "Water Absorb",
+          "gender": "FEMALE",
+          "id": 134,
+          "item": "Leftovers",
+          "level": 90,
+          "moves": [
+            56,
+            58,
+            92,
+            273
+          ],
+          "nature": "Calm",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 4,
+          "evspdef": 252,
+          "evspeed": 0
+        },
+        {
+          "ability": "Shell Armor",
+          "gender": "FEMALE",
+          "id": 389,
+          "item": "White Herb",
+          "level": 90,
+          "moves": [
+            504,
+            89,
+            235,
+            402
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        }
+      ],
+      "team_name": "Pok\u00e9mon Trainer Lucas Chimchar (Sandgem Town Trainers)",
+      "name": "Pok\u00e9mon Trainer Lucas Chimchar",
+      "route": "Sandgem Town",
+      "zoneId": 429,
       "trainerType": "Single Battle"
     }
   ]
