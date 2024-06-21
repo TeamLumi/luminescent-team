@@ -644,7 +644,9 @@
       "route": "Jubilife City",
       "zoneId": 21,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "0": [
     {
       "team": [
         {
@@ -3867,7 +3869,9 @@
       "route": "Oreburgh Gate - 1F",
       "zoneId": 255,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "256": [
     {
       "team": [
         {
@@ -3956,7 +3960,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "41": [
+  "38": [
     {
       "team": [
         {
@@ -6100,7 +6104,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "440": [
+  "438": [
     {
       "team": [
         {
@@ -6276,7 +6280,9 @@
       "route": "Valley Windworks (Outside)",
       "zoneId": 197,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "198": [
     {
       "team": [
         {
@@ -7229,7 +7235,9 @@
       "route": "Route 205 (South)",
       "zoneId": 359,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "361": [
     {
       "team": [
         {
@@ -8425,7 +8433,9 @@
       "route": "Eterna Forest",
       "zoneId": 200,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "199": [
     {
       "team": [
         {
@@ -11767,7 +11777,9 @@
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "62": [
     {
       "team": [
         {
@@ -11941,7 +11953,9 @@
       "route": "T.G. Building 1F",
       "zoneId": 62,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "63": [
     {
       "team": [
         {
@@ -12037,7 +12051,9 @@
       "route": "T.G. Building 2F",
       "zoneId": 63,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "64": [
     {
       "team": [
         {
@@ -12211,7 +12227,9 @@
       "route": "T.G. Building 3F",
       "zoneId": 64,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "65": [
     {
       "team": [
         {
@@ -12587,7 +12605,9 @@
       "route": "Route 211 (West)",
       "zoneId": 377,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "378": [
     {
       "team": [
         {
@@ -12973,7 +12993,9 @@
       "route": "Mt. Coronet - Tunnel to Route 211 Entrance",
       "zoneId": 212,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "205": [
     {
       "team": [
         {
@@ -13147,7 +13169,9 @@
       "route": "Mt. Coronet - 3F",
       "zoneId": 205,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "208": [
     {
       "team": [
         {
@@ -13295,7 +13319,9 @@
       "route": "Mt. Coronet - 4F (Waterfall)",
       "zoneId": 208,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "210": [
     {
       "team": [
         {
@@ -13469,7 +13495,9 @@
       "route": "Mt. Coronet - 5F",
       "zoneId": 210,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "211": [
     {
       "team": [
         {
@@ -16903,7 +16931,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "98": [
+  "74": [
     {
       "team": [
         {
@@ -21625,7 +21653,9 @@
       "route": "Route 212 (North)",
       "zoneId": 379,
       "trainerType": "Double Battle"
-    },
+    }
+  ],
+  "383": [
     {
       "team": [
         {
@@ -24373,7 +24403,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "369": [
+  "368": [
     {
       "team": [
         {
@@ -29294,7 +29324,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "231": [
+  "225": [
     {
       "team": [
         {
@@ -30029,7 +30059,9 @@
       "route": "Route 210 - Caf\u00e9 Cabin",
       "zoneId": 374,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "375": [
     {
       "team": [
         {
@@ -32407,7 +32439,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "124": [
+  "123": [
     {
       "team": [
         {
@@ -35075,7 +35107,9 @@
       "route": "Veilstone City",
       "zoneId": 125,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "315": [
     {
       "team": [
         {
@@ -35250,6 +35284,173 @@
       "zoneId": 315,
       "trainerType": "Single Battle"
     },
+    {
+      "team": [
+        {
+          "ability": "Levitate",
+          "gender": "FEMALE",
+          "id": 437,
+          "item": "Light Clay",
+          "level": 57,
+          "moves": [
+            115,
+            113,
+            334,
+            776
+          ],
+          "nature": "Calm",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 8,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 248
+        },
+        {
+          "ability": "Sniper",
+          "gender": "FEMALE",
+          "id": 224,
+          "item": "Choice Scarf",
+          "level": 57,
+          "moves": [
+            323,
+            412,
+            126,
+            58
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 248,
+          "evspdef": 252,
+          "evspeed": 8
+        },
+        {
+          "ability": "Magic Guard",
+          "gender": "FEMALE",
+          "id": 65,
+          "item": "Life Orb",
+          "level": 57,
+          "moves": [
+            94,
+            247,
+            411,
+            605
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 252,
+          "evspeed": 4
+        },
+        {
+          "ability": "Sheer Force",
+          "gender": "FEMALE",
+          "id": 112,
+          "item": "Eviolite",
+          "level": 57,
+          "moves": [
+            444,
+            529,
+            9,
+            8
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 244,
+          "evatk": 248,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 16
+        },
+        {
+          "ability": "Mega Launcher",
+          "gender": "FEMALE",
+          "id": 467,
+          "item": "Heavy-Duty Boots",
+          "level": 57,
+          "moves": [
+            126,
+            396,
+            399,
+            503
+          ],
+          "nature": "Timid",
+          "ivatk": 0,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 252,
+          "evspeed": 4
+        },
+        {
+          "ability": "Dry Skin",
+          "gender": "FEMALE",
+          "id": 454,
+          "item": "Focus Sash",
+          "level": 58,
+          "moves": [
+            14,
+            441,
+            409,
+            389
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Commander Saturn (Team Galactic HQ - Lake Trio Room)",
+      "name": "Commander Saturn",
+      "route": "Team Galactic HQ - Lake Trio Room",
+      "zoneId": 321,
+      "trainerType": "Single Battle"
+    }
+  ],
+  "316": [
     {
       "team": [
         {
@@ -35519,7 +35720,9 @@
       "route": "Team Galactic HQ - 2F",
       "zoneId": 316,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "317": [
     {
       "team": [
         {
@@ -35789,7 +35992,9 @@
       "route": "Team Galactic HQ - 3F",
       "zoneId": 317,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "318": [
     {
       "team": [
         {
@@ -35954,7 +36159,9 @@
       "route": "Team Galactic HQ - 4F",
       "zoneId": 318,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "320": [
     {
       "team": [
         {
@@ -36101,171 +36308,6 @@
       "name": "Team Galactic Grunt 12",
       "route": "Team Galactic HQ - B2F",
       "zoneId": 320,
-      "trainerType": "Single Battle"
-    },
-    {
-      "team": [
-        {
-          "ability": "Levitate",
-          "gender": "FEMALE",
-          "id": 437,
-          "item": "Light Clay",
-          "level": 57,
-          "moves": [
-            115,
-            113,
-            334,
-            776
-          ],
-          "nature": "Calm",
-          "ivatk": 0,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 8,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 248
-        },
-        {
-          "ability": "Sniper",
-          "gender": "FEMALE",
-          "id": 224,
-          "item": "Choice Scarf",
-          "level": 57,
-          "moves": [
-            323,
-            412,
-            126,
-            58
-          ],
-          "nature": "Timid",
-          "ivatk": 0,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 248,
-          "evspdef": 252,
-          "evspeed": 8
-        },
-        {
-          "ability": "Magic Guard",
-          "gender": "FEMALE",
-          "id": 65,
-          "item": "Life Orb",
-          "level": 57,
-          "moves": [
-            94,
-            247,
-            411,
-            605
-          ],
-          "nature": "Timid",
-          "ivatk": 0,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
-        },
-        {
-          "ability": "Sheer Force",
-          "gender": "FEMALE",
-          "id": 112,
-          "item": "Eviolite",
-          "level": 57,
-          "moves": [
-            444,
-            529,
-            9,
-            8
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 244,
-          "evatk": 248,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 16
-        },
-        {
-          "ability": "Mega Launcher",
-          "gender": "FEMALE",
-          "id": 467,
-          "item": "Heavy-Duty Boots",
-          "level": 57,
-          "moves": [
-            126,
-            396,
-            399,
-            503
-          ],
-          "nature": "Timid",
-          "ivatk": 0,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 4
-        },
-        {
-          "ability": "Dry Skin",
-          "gender": "FEMALE",
-          "id": 454,
-          "item": "Focus Sash",
-          "level": 58,
-          "moves": [
-            14,
-            441,
-            409,
-            389
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Commander Saturn (Team Galactic HQ - Lake Trio Room)",
-      "name": "Commander Saturn",
-      "route": "Team Galactic HQ - Lake Trio Room",
-      "zoneId": 321,
       "trainerType": "Single Battle"
     }
   ],
@@ -44559,7 +44601,9 @@
       "route": "Route 221",
       "zoneId": 404,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "250": [
     {
       "team": [
         {
@@ -45447,7 +45491,9 @@
       "route": "Ramanas Park",
       "zoneId": 624,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "216": [
     {
       "team": [
         {
@@ -51122,7 +51168,9 @@
       "route": "Iron Island (Overworld)",
       "zoneId": 298,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "300": [
     {
       "team": [
         {
@@ -51209,7 +51257,9 @@
       "route": "Iron Island - B1F Left",
       "zoneId": 300,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "301": [
     {
       "team": [
         {
@@ -51296,7 +51346,9 @@
       "route": "Iron Island - B1F Right",
       "zoneId": 301,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "303": [
     {
       "team": [
         {
@@ -52036,7 +52088,9 @@
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
       "trainerType": "Double Battle"
-    },
+    }
+  ],
+  "302": [
     {
       "team": [
         {
@@ -52434,7 +52488,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "324": [
+  "323": [
     {
       "team": [
         {
@@ -60385,7 +60439,9 @@
       "route": "Victory Road - 1F",
       "zoneId": 244,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "245": [
     {
       "team": [
         {
@@ -60924,7 +60980,9 @@
       "route": "Victory Road - 2F",
       "zoneId": 245,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "246": [
     {
       "team": [
         {
@@ -61411,7 +61469,9 @@
       "route": "Victory Road - B1F",
       "zoneId": 246,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "247": [
     {
       "team": [
         {
@@ -62796,7 +62856,7 @@
       "trainerType": "Single Battle"
     }
   ],
-  "171": [
+  "167": [
     {
       "team": [
         {
@@ -77316,7 +77376,9 @@
       "route": "Stark Mountain (Overworld)",
       "zoneId": 259,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "260": [
     {
       "team": [
         {
@@ -77646,7 +77708,9 @@
       "route": "Stark Mountain - Entrance",
       "zoneId": 260,
       "trainerType": "Single Battle"
-    },
+    }
+  ],
+  "261": [
     {
       "team": [
         {
