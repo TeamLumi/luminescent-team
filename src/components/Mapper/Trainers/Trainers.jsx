@@ -23,7 +23,6 @@ export const getSmallestResponsiveStyle = (smallest, property, values) => {
   return responsiveStyles;
 };
 
-
 export const TrainerDropdown = ({ trainer, setTrainer, trainerList, smallest }) => {
   const defaultTrainer = {
     team_name: ""
@@ -68,6 +67,155 @@ export const TrainerDropdown = ({ trainer, setTrainer, trainerList, smallest }) 
   );
 };
 
+const TrainerMon = ({children, smallest, index}) => {
+  return (
+    <Box
+      className='trainerMon'
+      key={index}
+      sx={{
+        ...getSmallestResponsiveStyle(smallest, "width", {
+          xs: "396px",
+          sm: "515px",
+          md: "396px",
+          lg: "515px",
+        }),
+        ...getSmallestResponsiveStyle(smallest, "height", {
+          xs: "260px",
+          sm: "280px",
+          md: "260px",
+          lg: "280px",
+        })
+      }}
+    >
+      {children}
+    </Box>
+  );
+};
+
+const MonDetails = ({smallest, pokemon, pokemonInfo}) => {
+  return (
+    <Box
+      className='monDetails'
+      sx={{
+        ...getSmallestResponsiveStyle(smallest, "width", {
+          xs: "145px",
+          sm: "165px",
+          md: "145px",
+          lg: "165px"
+        })
+      }}
+    >
+      <ImageWithFallback
+        alt={pokemonInfo.name}
+        src={`/img/${pokemonInfo.imageSrc}`}
+        fallbackSrc={`/img/pm0000_00_00_00_L.webp`}
+        style={{ objectFit: 'contain', marginTop: '8px' }}
+        width="64px"
+        height="64px"
+      />
+      <Typography sx={{ ...responsiveFontSize }}>
+        {`${getPokemonName(pokemon.id)} Lv. ${pokemon.level}`}
+      </Typography>
+      <Box display={"flex"}>
+        <Box
+          sx={{
+            ...getSmallestResponsiveStyle(smallest, "width", {
+              xs: "65px",
+              sm: "72px",
+              md: "65px",
+              lg: "72px"
+            })
+          }}
+          marginLeft="5px"
+        >
+          <PokemonMoveType
+            typeName={TYPE_COLOR_MAP[pokemonInfo.type1].name}
+            typeColor={TYPE_COLOR_MAP[pokemonInfo.type1].color}
+            fontSize={[".7rem", ".875rem"]}
+            smallest={smallest}
+          />
+        </Box>
+        {pokemonInfo.type1 !== pokemonInfo.type2 && (
+          <Box
+            sx={{
+              ...getSmallestResponsiveStyle(smallest, "width", {
+                xs: "65px",
+                sm: "72px",
+                md: "65px",
+                lg: "72px"
+              })
+            }}
+            marginLeft="5px"
+          >
+            <PokemonMoveType
+              typeName={TYPE_COLOR_MAP[pokemonInfo.type2].name}
+              typeColor={TYPE_COLOR_MAP[pokemonInfo.type2].color}
+              fontSize={[".7rem", ".875rem"]}
+              smallest={smallest}
+            />
+          </Box>
+        )}
+      </Box>
+      <Typography sx={{ ...responsiveFontSize }}>
+        {`Nature: ${pokemon.nature ? pokemon.nature : "None?"}`}
+      </Typography>
+      <Typography sx={{ ...responsiveFontSize }}>
+        {`Ability: ${pokemon.ability ? pokemon.ability : "None?"}`}
+      </Typography>
+      <Typography sx={{ ...responsiveFontSize }}>
+        {`Item: ${pokemon.item ? pokemon.item : "None"}`}
+      </Typography>
+    </Box>
+  );
+};
+
+const MoveList = ({smallest, pokemon}) => {
+  return (
+    <Box
+      className='moveList'
+      sx={{
+        ...getSmallestResponsiveStyle(smallest, "width", {
+          xs: "250px",
+          sm: "350px",
+          md: "250px",
+          lg: "350px"
+        }),
+        ...getSmallestResponsiveStyle(smallest, "height", {
+          xs: "84px",
+          sm: "104px",
+          md: "84px",
+          lg: "104px"
+        })
+      }}
+    >
+      {pokemon.moves.map((move, index) => {
+        const moveInfo = getMoveProperties(move);
+        return (
+          <Box
+            key={`${move}-${index}`}
+            sx={{
+              ...getSmallestResponsiveStyle(smallest, "width", {
+                xs: "110px",
+                sm: "160px",
+                md: "110px",
+                lg: "160px"
+              })
+            }}
+            margin="5px 2px 2.5px"
+          >
+            <PokemonMoveType
+              typeName={moveInfo.name}
+              typeColor={TYPE_COLOR_MAP[moveInfo.type].color}
+              fontSize={[".7rem", ".875rem"]}
+              smallest={smallest}
+            />
+          </Box>
+        );
+      })}
+    </Box>
+  )
+}
+
 export const Trainers = ({ pokemonList, selectedTrainer, smallest = false }) => {
   return (
     <div>
@@ -98,96 +246,8 @@ export const Trainers = ({ pokemonList, selectedTrainer, smallest = false }) => 
             const pokemonInfo = pokemonList.find(p => p.id === pokemon.id)
             const baseStats = pokemonInfo.baseStats;
             return (
-              <Box
-                className='trainerMon'
-                key={index}
-                sx={{
-                  ...getSmallestResponsiveStyle(smallest, "width", {
-                    xs: "396px",
-                    sm: "515px",
-                    md: "396px",
-                    lg: "515px",
-                  }),
-                  ...getSmallestResponsiveStyle(smallest, "height", {
-                    xs: "260px",
-                    sm: "280px",
-                    md: "260px",
-                    lg: "280px",
-                  })
-                }}
-              >
-                <Box
-                  className='monDetails'
-                  sx={{
-                    ...getSmallestResponsiveStyle(smallest, "width", {
-                      xs: "145px",
-                      sm: "165px",
-                      md: "145px",
-                      lg: "165px"
-                    })
-                  }}
-                >
-                  <ImageWithFallback
-                    alt={pokemonInfo.name}
-                    src={`/img/${pokemonInfo.imageSrc}`}
-                    fallbackSrc={`/img/pm0000_00_00_00_L.webp`}
-                    style={{ objectFit: 'contain', marginTop: '8px' }}
-                    width="64px"
-                    height="64px"
-                  />
-                  <Typography sx={{ ...responsiveFontSize }}>
-                    {`${getPokemonName(pokemon.id)} Lv. ${pokemon.level}`}
-                  </Typography>
-                  <Box display={"flex"}>
-                    <Box
-                      sx={{
-                        ...getSmallestResponsiveStyle(smallest, "width", {
-                          xs: "65px",
-                          sm: "72px",
-                          md: "65px",
-                          lg: "72px"
-                        })
-                      }}
-                      marginLeft="5px"
-                    >
-                      <PokemonMoveType
-                        typeName={TYPE_COLOR_MAP[pokemonInfo.type1].name}
-                        typeColor={TYPE_COLOR_MAP[pokemonInfo.type1].color}
-                        fontSize={[".7rem", ".875rem"]}
-                        smallest={smallest}
-                      />
-                    </Box>
-                    {pokemonInfo.type1 !== pokemonInfo.type2 && (
-                      <Box
-                        sx={{
-                          ...getSmallestResponsiveStyle(smallest, "width", {
-                            xs: "65px",
-                            sm: "72px",
-                            md: "65px",
-                            lg: "72px"
-                          })
-                        }}
-                        marginLeft="5px"
-                      >
-                        <PokemonMoveType
-                          typeName={TYPE_COLOR_MAP[pokemonInfo.type2].name}
-                          typeColor={TYPE_COLOR_MAP[pokemonInfo.type2].color}
-                          fontSize={[".7rem", ".875rem"]}
-                          smallest={smallest}
-                        />
-                      </Box>
-                    )}
-                  </Box>
-                  <Typography sx={{ ...responsiveFontSize }}>
-                    {`Nature: ${pokemon.nature}`}
-                  </Typography>
-                  <Typography sx={{ ...responsiveFontSize }}>
-                    {`Ability: ${pokemon.ability}`}
-                  </Typography>
-                  <Typography sx={{ ...responsiveFontSize }}>
-                    {`Item: ${pokemon.item}`}
-                  </Typography>
-                </Box>
+              <TrainerMon smallest={smallest} index={index}>
+                <MonDetails smallest={smallest} pokemon={pokemon} pokemonInfo={pokemonInfo} />
                 <Box
                   className='stats'
                   sx={{
@@ -200,50 +260,9 @@ export const Trainers = ({ pokemonList, selectedTrainer, smallest = false }) => 
                   }}
                 >
                   <PokemonStats baseStats={baseStats} trainerPokemon={pokemon} smallest={smallest} />
-                  <Box
-                    className='moveList'
-                    sx={{
-                      ...getSmallestResponsiveStyle(smallest, "width", {
-                        xs: "250px",
-                        sm: "350px",
-                        md: "250px",
-                        lg: "350px"
-                      }),
-                      ...getSmallestResponsiveStyle(smallest, "height", {
-                        xs: "84px",
-                        sm: "104px",
-                        md: "84px",
-                        lg: "104px"
-                      })
-                    }}
-                  >
-                    {pokemon.moves.map((move, index) => {
-                      const moveInfo = getMoveProperties(move);
-                      return (
-                        <Box
-                          key={`${move}-${index}`}
-                          sx={{
-                            ...getSmallestResponsiveStyle(smallest, "width", {
-                              xs: "110px",
-                              sm: "160px",
-                              md: "110px",
-                              lg: "160px"
-                            })
-                          }}
-                          margin="5px 2px 2.5px"
-                        >
-                          <PokemonMoveType
-                            typeName={moveInfo.name}
-                            typeColor={TYPE_COLOR_MAP[moveInfo.type].color}
-                            fontSize={[".7rem", ".875rem"]}
-                            smallest={smallest}
-                          />
-                        </Box>
-                      );
-                    })}
-                  </Box>
+                  <MoveList smallest={smallest} pokemon={pokemon} />
                 </Box>
-              </Box>
+              </TrainerMon>
             )
           })}
         </Box>
