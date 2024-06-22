@@ -1,6 +1,7 @@
-import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, ButtonBase, Container, Modal, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { getMoveProperties } from '../../utils/dex';
 
 const DMG_TYPE_ICONS = {
   0: '/img/status_dmg_type.png',
@@ -143,7 +144,13 @@ const MovesetListItem = ({ moveLevel, move }) => {
   );
 };
 
-export const PokemonMoveType = ({ typeName, typeColor, fontSize = null, smallest = false }) => {
+export const PokemonMoveType = ({
+  typeName,
+  typeColor,
+  fontSize = null,
+  smallest = false,
+  ...props
+}) => {
   let fontSizeStyling = {};
   if (smallest && fontSize) {
     fontSizeStyling = {
@@ -176,6 +183,7 @@ export const PokemonMoveType = ({ typeName, typeColor, fontSize = null, smallest
         borderStyle: 'solid',
         borderRadius: '0.25rem',
       }}
+      {...props}
     >
       <Typography
         sx={{
@@ -195,5 +203,55 @@ export const PokemonMoveType = ({ typeName, typeColor, fontSize = null, smallest
         {typeName}
       </Typography>
     </Box>
+  );
+};
+
+export const PokemonMove = ({moveInfo, ...props}) => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <>
+      <ButtonBase sx={{width: "100%"}} onClick={handleOpen}>
+        <PokemonMoveType {...props} />
+      </ButtonBase>
+      <Modal open={open} onClose={handleClose}>
+        <Box
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'var(--ifm-color-content-inverse)',
+            color: 'var(--ifm-color-content)',
+            padding: '16px',
+            borderRadius: '8px',
+            border: 'var(--ifm-table-border-width) solid var(--ifm-table-border-color)',
+          }}
+        >
+          <Box
+            sx={{
+              display: 'grid',
+              gridTemplateColumns: {
+                xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
+                sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
+                md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
+              },
+              alignItems: 'center',
+              columnGap: '4px',
+              rowGap: '8px',
+              marginBottom: '8px',
+            }}
+          >
+            <MovesetListItem move={moveInfo} />
+          </Box>
+        </Box>
+      </Modal>
+    </>
   );
 };

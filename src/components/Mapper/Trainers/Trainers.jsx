@@ -3,10 +3,11 @@ import { Autocomplete, Box, MenuItem, Select, TextField, Typography } from '@mui
 
 import { PokemonStats } from '../Encounters/PokemonStats';
 import { getMoveProperties, getPokemonName } from '../../../utils/dex';
-import { PokemonMoveType, TYPE_COLOR_MAP } from '../../Pokedex2/PokemonMovesetList';
+import { PokemonMove, PokemonMoveType, TYPE_COLOR_MAP } from '../../Pokedex2/PokemonMovesetList';
 import { ImageWithFallback } from '../../common/ImageWithFallback';
 
 import '.././style.css';
+import { PokemonAbility } from '../../Pokedex2/PokemonAbilities';
 
 const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };
 export const getSmallestResponsiveStyle = (smallest, property, values) => {
@@ -159,9 +160,7 @@ const MonDetails = ({smallest, pokemon, pokemonInfo}) => {
       <Typography sx={{ ...responsiveFontSize }}>
         {`Nature: ${pokemon.nature ? pokemon.nature : "None?"}`}
       </Typography>
-      <Typography sx={{ ...responsiveFontSize }}>
-        {`Ability: ${pokemon.ability ? pokemon.ability : "None?"}`}
-      </Typography>
+      <PokemonAbility abilityName={pokemon.ability} sx={{ ...responsiveFontSize}} label />
       <Typography sx={{ ...responsiveFontSize }}>
         {`Item: ${pokemon.item ? pokemon.item : "None"}`}
       </Typography>
@@ -203,11 +202,13 @@ const MoveList = ({smallest, pokemon}) => {
             }}
             margin="5px 2px 2.5px"
           >
-            <PokemonMoveType
+            <PokemonMove
+              moveInfo={moveInfo}
               typeName={moveInfo.name}
               typeColor={TYPE_COLOR_MAP[moveInfo.type].color}
               fontSize={[".7rem", ".875rem"]}
               smallest={smallest}
+              width={"100%"}
             />
           </Box>
         );
