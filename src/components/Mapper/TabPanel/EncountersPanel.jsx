@@ -18,8 +18,8 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
         Encounters
       </Typography>
       <Box className='toggleBoxes' >
-        {TimeOfDayButtons(encOptions.timeOfDay, handleOptionChange)}
-        {RodButtons(encOptions.rod, handleOptionChange)}
+        <TimeOfDayButtons timeOfDay={encOptions.timeOfDay} handleTimeOfDayChange={handleOptionChange} />
+        <RodButtons rod={encOptions.rod} handleRodChange={handleOptionChange} />
       </Box>
       <Box className='checkBoxes'>
         {boolOptions.map((option) => (

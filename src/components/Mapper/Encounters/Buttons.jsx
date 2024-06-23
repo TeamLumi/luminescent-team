@@ -79,7 +79,7 @@ const ToggleButton = styled(MuiToggleButton)(({ colorMode = "dark", textColor, s
   }
 }));
 
-export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
+export const TimeOfDayButtons = ({timeOfDay, handleTimeOfDayChange}) => {
   const { colorMode, setColorMode } = useColorMode();
   return (
     <ToggleButtonGroup
@@ -107,7 +107,7 @@ export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
   );
 }
 
-export function RodButtons(rod, handleRodChange) {
+export const RodButtons = ({rod, handleRodChange}) => {
   const { colorMode, setColorMode } = useColorMode();
   return (
     <ToggleButtonGroup
