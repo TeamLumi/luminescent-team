@@ -1,7 +1,8 @@
-import React, { useRef, useState, useEffect } from "react";
-import { Dialog, DialogContent, DialogTitle } from "@mui/material"
+import React from "react";
+import { Dialog, DialogContent, DialogTitle, IconButton } from "@mui/material"
+import CloseIcon from '@mui/icons-material/Close';
 
-import { TrainerDropdown, Trainers } from "./Trainers";
+import { Trainers } from "./Trainers";
 
 const TrainersModal = ({
   showModal,
@@ -21,6 +22,18 @@ const TrainersModal = ({
       <DialogTitle>
         Trainer: {selectedTrainer?.team_name}
       </DialogTitle>
+      <IconButton
+        aria-label="close"
+        onClick={handleClose}
+        sx={{
+          position: 'absolute',
+          right: 12,
+          top: 12,
+        }}
+      >
+        <CloseIcon />
+      </IconButton>
+
       <DialogContent dividers sx={{maxWidth: "1108px"}}>
         <Trainers
           pokemonList={pokemonList}
