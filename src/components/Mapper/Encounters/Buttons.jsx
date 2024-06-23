@@ -1,20 +1,86 @@
 import React from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
+import MuiToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import { styled } from "@mui/material/styles";
+import { useColorMode } from '@docusaurus/theme-common';
 
 const timeOfDayRadios = [
-  { name: 'Morning', value: '1', color: "standard"},
-  { name: 'Day', value: '2', color: "primary" },
-  { name: 'Night', value: '3', color: "secondary" },
+  {
+    name: 'Morning',
+    value: '1',
+    textColor: "#000000",
+    selectedColor: "#FFC455",
+    hoverColor: "#FFA700",
+    defaultHover: "#6B4600",
+    lightDefaultHover: "#FFDB99",
+  },
+  {
+    name: 'Day',
+    value: '2',
+    textColor: "#000000",
+    selectedColor: "#87C5F8",
+    hoverColor: "#4CA9F5",
+    defaultHover: "#084E87",
+    lightDefaultHover: "#B2DAFB"
+  },
+  {
+    name:'Night',
+    value: '3',
+    textColor: "#000000",
+    selectedColor: "#A0A9D2",
+    hoverColor: "#8691C6",
+    defaultHover: "#2A445A",
+    lightDefaultHover: "#C4CAE3"
+  },
 ];
 
 const rodRadios = [
-  { name: 'Old', value: '1', color: "standard"},
-  { name: 'Good', value: '2', color: "primary" },
-  { name: 'Super', value: '3', color: "secondary" },
+  {
+    name: 'Old',
+    value: '1',
+    textColor: "#000000",
+    selectedColor: "#4dcb77",
+    hoverColor: "#34b25e",
+    defaultHover: "#288a49",
+    lightDefaultHover: "#A2E4B8",
+  },
+  {
+    name: 'Good',
+    value: '2',
+    textColor: "#000000",
+    selectedColor: "#3E8CCC",
+    hoverColor: "#327DBC",
+    defaultHover: "#255E8D",
+    lightDefaultHover: "#7AB0DC",
+  },
+  {
+    name: 'Super',
+    value: '3',
+    textColor: "#000000",
+    selectedColor: "#FFC455",
+    hoverColor: "#FFA700",
+    defaultHover: "#6B4600",
+    lightDefaultHover: "#FFDB99",
+  },
 ];
 
+const ToggleButton = styled(MuiToggleButton)(({ colorMode = "dark", textColor, selectedColor, hoverColor, defaultHover }) => ({
+  "&.Mui-selected": {
+    color: textColor,
+    backgroundColor: selectedColor
+  },
+  "&.Mui-selected:hover": {
+    color: textColor,
+    backgroundColor: hoverColor
+  },
+  "&:hover": {
+    color: colorMode === "dark" ? "white" : "black",
+    backgroundColor: defaultHover
+  }
+}));
+
 export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
+  const { colorMode, setColorMode } = useColorMode();
   return (
     <ToggleButtonGroup
       value={timeOfDay}
@@ -23,12 +89,16 @@ export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
     >
       {timeOfDayRadios.map((radio, idx) => (
         <ToggleButton
-          key={idx}
-          id={`radio-${idx}`}
+          key={radio.name}
+          id={`radio-${radio.name}`}
           value={radio.value}
-          color={radio.color}
           variant="contained"
           size='small'
+          colorMode={colorMode}
+          textColor={radio.textColor}
+          selectedColor={radio.selectedColor}
+          hoverColor={radio.hoverColor}
+          defaultHover={colorMode === "dark" ? radio.defaultHover : radio.lightDefaultHover}
         >
           {radio.name}
         </ToggleButton>
@@ -38,6 +108,7 @@ export function TimeOfDayButtons(timeOfDay, handleTimeOfDayChange) {
 }
 
 export function RodButtons(rod, handleRodChange) {
+  const { colorMode, setColorMode } = useColorMode();
   return (
     <ToggleButtonGroup
       value={rod}
@@ -49,9 +120,13 @@ export function RodButtons(rod, handleRodChange) {
           key={idx}
           id={`radio-${idx}`}
           value={radio.value}
-          color={radio.color}
           variant="contained"
           size='small'
+          colorMode={colorMode}
+          textColor={radio.textColor}
+          selectedColor={radio.selectedColor}
+          hoverColor={radio.hoverColor}
+          defaultHover={colorMode === "dark" ? radio.defaultHover : radio.lightDefaultHover}
         >
           {radio.name}
         </ToggleButton>
