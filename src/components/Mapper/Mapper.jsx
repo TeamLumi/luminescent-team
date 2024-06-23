@@ -470,7 +470,7 @@ export const Mapper = ({ pokemonList }) => {
     if(locationId !== null) {
       setEncounterList(setAllEncounters(locationId.current))
     }
-  }, [encOptions])
+  }, [encOptions, selectedZoneId])
 
   useEffect(() => {
     setLocationList(getMapperRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
@@ -501,7 +501,6 @@ export const Mapper = ({ pokemonList }) => {
 
   const setAllEncounters = (zoneId) => {
     const areaEncounters = getAreaEncounters(zoneId);
-
     if (!areaEncounters) {
       return {GroundEnc: [], SurfEnc: [], RodEnc: []};
     }
