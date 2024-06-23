@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button, Typography, Box } from '@mui/material';
-import './style.css';
+import '../style.css';
 import { ChangeHighlightColors } from './HighlightColors';
 
 const SettingsModal = ({ colors, setColors, showModal, onHide, canvasRef }) => {

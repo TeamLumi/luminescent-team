@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextField, Typography, Grid, Button } from '@mui/material';
-import './style.css';
+import '../style.css';
 
 const INPUT_MIN = "0";
 const TRANSPARENCY_MAX = "1";

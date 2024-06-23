@@ -1,12 +1,12 @@
 import React from 'react';
 import { Box, Typography, FormControlLabel, Checkbox, FormGroup } from "@mui/material"
 
-import { RodButtons, TimeOfDayButtons } from './Buttons';
-import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
-import { EncounterTable } from './EncounterTable';
-import "./style.css"
+import { RodButtons, TimeOfDayButtons } from '../Encounters/Buttons';
+import { PokemonAccordion } from '../../Pokedex2/PokemonAccordion';
+import EncounterTable from '../Encounters/EncounterTable';
+import ".././style.css"
 
-const Encounters = ({ encOptions, handleOptionChange, encounterList, pokemon }) => {
+const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemon }) => {
   const boolOptions = Object.keys(encOptions).filter((key) => typeof encOptions[key] === 'boolean');
 
   return (
@@ -51,4 +51,4 @@ const Encounters = ({ encOptions, handleOptionChange, encounterList, pokemon }) 
   )
 }
 
-export default Encounters;
+export default EncountersPanel;

@@ -10,15 +10,15 @@ import {
   getSelectedLocation,
   isLocationExactlyEqual
 } from './coordinates';
-import Encounters from './Encounters';
 import { SearchBar } from './SearchBar';
-import { RodButtons, TimeOfDayButtons } from './Buttons';
-import SettingsModal from './SettingsModal';
+import { RodButtons, TimeOfDayButtons } from './Encounters/Buttons';
+import { MapperTabPanel } from './TabPanel/MapperTabPanel';
+import SettingsModal from './Settings/SettingsModal';
 import './style.css';
 
 import {
   getAreaEncounters,
-  getTrainersFromZoneName,
+  getTrainersFromZoneId,
   getFieldItemsFromZoneID,
   getHiddenItemsFromZoneID,
   getPokemonIdFromName
@@ -44,6 +44,7 @@ import {
   getAllIncenseEncounters,
   getMapperRoutesFromPokemonId
 } from '../../utils/dex/encounters';
+import TrainersModal from './Trainers/TrainersModal';
 
 const canvasDimensions = {
   width: 1280,
@@ -74,6 +75,7 @@ export const Mapper = ({ pokemonList }) => {
   const [rect, setRect] = useState(null);
   const [hoveredZone, setHoveredZone] = useState(null);
   const [selectedZone, setSelectedZone] = useState(null);
+  const [selectedZoneId, setSelectedZoneId] = useState(null);
   const locationId = useRef("");
   const [encOptions, setEncOptions] = useState({
     swarm: false,
@@ -86,6 +88,24 @@ export const Mapper = ({ pokemonList }) => {
   const [selectedPokemon, setSelectedPokemon] = useState(pokemonList[0] || '');
   const [pokemonName, setPokemonName] = useState('');
   const completedPokemonName = useDebouncedValue(pokemonName, 1500);
+
+  const selectedRef = useRef(selectedZone);
+  const [selectedTrainer, setSelectedTrainer] = useState(null);
+
+  useEffect(() => {
+    if (selectedRef.current !== selectedZone) {
+      setSelectedTrainer(null);
+      selectedRef.current = selectedZone;
+    }
+  }, [selectedZone]);
+
+  const [showTrainerModal, setShowTrainerModal] = useState(false);
+  const openTrainerModal = () => {
+    setShowTrainerModal(true);
+  };
+  const closeTrainerModal = () => {
+    setShowTrainerModal(false);
+  };
 
   let originalImageData = {
     highlight: {},
@@ -182,7 +202,7 @@ export const Mapper = ({ pokemonList }) => {
     locationId.current = location.zoneId;
 
     setEncounterList(setAllEncounters(location.zoneId));
-    setTrainerList(getTrainersFromZoneName(location.name));
+    setTrainerList(getTrainersFromZoneId(location.zoneId));
 
     setFieldItems(getFieldItemsFromZoneID(location.zoneId));
     setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
@@ -351,8 +371,9 @@ export const Mapper = ({ pokemonList }) => {
 
     locationId.current = location.zoneId;
     setSelectedZone(location.name);
+    setSelectedZoneId(location.zoneId)
     setEncounterList(setAllEncounters(location.zoneId));
-    setTrainerList(getTrainersFromZoneName(location.name));
+    setTrainerList(getTrainersFromZoneId(location.zoneId));
 
     setFieldItems(getFieldItemsFromZoneID(location.zoneId));
     setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
@@ -454,6 +475,10 @@ export const Mapper = ({ pokemonList }) => {
   useEffect(() => {
     setLocationList(getMapperRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
   }, [completedPokemonName])
+
+  useEffect(() => {
+    setTrainerList(getTrainersFromZoneId(selectedZoneId) || []) ;
+  }, [selectedZoneId])
 
   const handleOptionChange = (option, value) => {
     setEncOptions({
@@ -642,11 +667,16 @@ export const Mapper = ({ pokemonList }) => {
         >
           Your browser does not support the canvas element.
         </canvas>
-        <Encounters
+        <MapperTabPanel
           encOptions={encOptions}
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
-          pokemon={pokemonName}
+          pokemonName={pokemonName}
+          pokemonList={pokemonList}
+          trainerList={trainerList}
+          selectedTrainer={selectedTrainer}
+          setSelectedTrainer={setSelectedTrainer}
+          openTrainerModal={openTrainerModal}
         />
       </div>
       <SearchBar
@@ -656,22 +686,19 @@ export const Mapper = ({ pokemonList }) => {
         handleDebouncedTextChange={handlePokemonNameChange}
         locationName={selectedZone}
         setLocationName={setSelectedZone}
+        setLocationZoneId={setSelectedZoneId}
         canvasRef={canvasRef.current}
         selectedPokemon={selectedPokemon}
         setSelectedPokemon={setSelectedPokemon}
+        handleShowSettings={handleShowSettings}
       />
-      <IconButton color="primary" aria-label="settings" onClick={handleShowSettings}>
-        <SettingsIcon />
-      </IconButton>
+      <TrainersModal
+        showModal={showTrainerModal}
+        onHide={closeTrainerModal}
+        pokemonList={pokemonList}
+        selectedTrainer={selectedTrainer}
+      />
       {/* <div>
-        Trainers: 
-        {trainerList && trainerList.map((trainer, index) => (
-          <div key={index}>
-            {`${trainer.team_name}, ${trainer.trainerType}, ${trainer.route}`}
-          </div>
-        ))}
-      </div>
-      <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (
           <div key={index}>
