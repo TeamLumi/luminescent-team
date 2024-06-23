@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { TrainerDropdown, Trainers } from '../Trainers/Trainers';
 
 const TrainersPanel = ({
@@ -9,6 +9,8 @@ const TrainersPanel = ({
   pokemonList,
   openTrainerModal,
 }) => {
+  const theme = useTheme();
+  const smallest = useMediaQuery(theme.breakpoints.down('sm'));
   const handleOpen = () => {
     openTrainerModal();
   }
@@ -29,7 +31,7 @@ const TrainersPanel = ({
           >
             Trainers
           </Typography>
-          {selectedTrainer && (
+          {selectedTrainer && !smallest && (
             <Button
               variant="outlined"
               sx={{ margin: "0.5rem 1rem" }}
