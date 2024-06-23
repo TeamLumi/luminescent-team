@@ -22,6 +22,7 @@ function pokedexDataPlugin(context, options) {
       const pokemonList = pokemons.map((p) => ({
         id: p.id,
         monsno: p.monsno,
+        formno: p.formno,
         name: p.name,
         imageSrc: p.imageSrc,
         type1: p.type1Id,
@@ -30,6 +31,7 @@ function pokedexDataPlugin(context, options) {
         ability2: p.ability2,
         abilityH: p.abilityH,
         baseStats: p.baseStats,
+        forms: p.forms,
       }));
 
       return {
@@ -66,22 +68,20 @@ function pokedexDataPlugin(context, options) {
       await Promise.all(
         content.pokemons.map(async (pokemon) => {
           const pokemonName = normalizePokemonName(pokemon.name);
-          const pokemonSlug = pokemon.isBaseForm ? pokemonName : pokemon.id;
-          const pokemonPath = `${pokedexPath}/${pokemonSlug}`;
-          const pokemonJson = await actions.createData(`lumi${pokemon.id}.json`, JSON.stringify(pokemon));
+          const pokemonId = pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`;
+          const pokemonPath = `${pokedexPath}/${pokemonName}`;
+          const pokemonJson = await actions.createData(`lumi${pokemonId}.json`, JSON.stringify(pokemon));
 
-          if (pokemon.isBaseForm) {
-            const redirectPathJson = await actions.createData(`lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
-            pokemonRedirectRoutes.push({
-              path: `${pokedexPath}/${pokemon.id}`,
-              component: options.pokemonRedirectComponent,
-              exact: true,
-              modules: {
-                redirectPath: redirectPathJson,
-              },
-            });
-          }
-
+          const redirectPathJson = await actions.createData(`lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
+          const newPokemonPath = pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`;
+          pokemonRedirectRoutes.push({
+            path: `${pokedexPath}/${newPokemonPath}`,
+            component: options.pokemonRedirectComponent,
+            exact: true,
+            modules: {
+              redirectPath: redirectPathJson,
+            },
+          });
           pokemonRoutes.push({
             path: pokemonPath,
             component: options.pokemonComponent,
