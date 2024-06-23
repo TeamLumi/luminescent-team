@@ -16,7 +16,7 @@ const TrainersModal = ({
     <Dialog
       open={showModal}
       onClose={handleClose}
-      maxWidth="1100px"
+      maxWidth="1108px"
     >
       <DialogTitle>
         Trainer: {selectedTrainer?.team_name}
