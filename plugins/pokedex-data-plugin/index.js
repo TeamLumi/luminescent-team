@@ -31,6 +31,7 @@ function pokedexDataPlugin(context, options) {
         ability2: p.ability2,
         abilityH: p.abilityH,
         baseStats: p.baseStats,
+        forms: p.forms,
       }));
 
       return {
