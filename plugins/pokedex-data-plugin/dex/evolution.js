@@ -64,7 +64,9 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
     throw new Error(`Bad pokemon ID: ${pokemonId}`);
   }
 
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3;
+  // const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3
+  // TODO Add 3.0 data back into this.
+  const evolutionData = EvolutionData;;
 
   const pokemon = evolutionData[pokemonId];
   if (!pokemon) {
@@ -84,7 +86,9 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
 }
 
 function checkEvolutionPath(evolutionPath, originalPokemonId, mode = "2.0") {
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3
+  // const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3;
+  // TODO Add 3.0 data back into this.
+  const evolutionData = EvolutionData;
   const originalPath = evolutionData[originalPokemonId].path;
 
   function comparePath(treeNode, expectedId) {
@@ -94,7 +98,9 @@ function checkEvolutionPath(evolutionPath, originalPokemonId, mode = "2.0") {
 }
 
 function getEvolutionDetails(pokemonId, mode = "2.0") {
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3
+  // const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3;
+  // TODO Add 3.0 data back into this.
+  const evolutionData = EvolutionData;
   const evolutionDetails = evolutionData[pokemonId].ar;
 
   if (!evolutionDetails) {
@@ -116,7 +122,8 @@ function getEvolutionDetails(pokemonId, mode = "2.0") {
       const formNo = evolutionInfo[j + 3];
       const level = evolutionInfo[j + 4];
 
-      const evolutionPokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo, mode);
+      // TODO Add mode back into this function
+      const evolutionPokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo);
       if (evolutionPokemonId === pokemonId) {
         methodIds.push(methodId);
         methodParameters.push(methodParameter);
