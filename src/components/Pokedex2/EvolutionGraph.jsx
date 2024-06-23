@@ -11,6 +11,7 @@ import { getMoveString, getMoveProperties } from '../../utils/dex/moves';
 import { getTypeName } from '../../utils/dex/types';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
 import { getItemString } from '../../utils/dex/item';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 const LEVEL = "Level"
 const FRIENDSHIP = "Friendship"
@@ -24,6 +25,7 @@ const MALE = "Male"
 export default function EvolutionGraph(props) {
   const evolutionTree = getEvolutionTree(props.pokemonID);
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId);
+  const firstPokemonPath = formNo === 0 ? monsNo : `${monsNo}_${formNo}`;
   const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo)
   const defaultEvo = {
     pokemonId: -1,
@@ -172,7 +174,7 @@ export default function EvolutionGraph(props) {
     const evolutionStyle = methodIndex === 1 ? (
       styles.firstEvolution
       ) : (styles.secondEvolution)
-    const { evolvesInto } = tree;
+    const { pokemonId, evolvesInto } = tree;
 
     // Collect data for methods and images from all evolutions
     const allMethods = [];
@@ -186,7 +188,7 @@ export default function EvolutionGraph(props) {
         formNos,
         levels
       } = evolution.evolutionDetails;
-      const methods = renderMethods(methodIds, methodParameters, levels);
+      const methods = renderMethods(methodIds, methodParameters, levels, pokemonId);
       allMethods.push(methods);
 
       if (methodIds[0] === -1) {
@@ -195,20 +197,26 @@ export default function EvolutionGraph(props) {
         );
         allImages.push(pokemonImages);
       } else {
-        const pokemonImages = monsNos.map((monsno, index) => (
-          index === 0 ? (
-            <Box className={styles.imageRow} key={monsno}>
-              <Link to={`/pokedex/${getPokemonIdFromMonsNoAndForm(monsno, formNos[index])}`}>
-                <img
-                  key={getPokemonIdFromMonsNoAndForm(monsno, formNos[index])}
-                  src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
-                  alt={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
-                  title={getPokemonName(getPokemonIdFromMonsNoAndForm(monsno, formNos[index]))}
-                />
-              </Link>
-            </Box>
-          ) : ""
-        ));
+        const pokemonImages = monsNos.map((monsno, index) => {
+          const pokemonId = getPokemonIdFromMonsNoAndForm(monsno, formNos[index]); // TODO Add globalState here
+          const pokemonName = getPokemonName(pokemonId); // TODO Add globalState here
+          const pokemonPath = formNos[index] === 0 ? monsno : `${monsno}_${formNos[index]}` ;
+          return (
+            index === 0 ? (
+              <Box className={styles.imageRow} key={monsno}>
+                <Link to={`/pokedex/${pokemonPath}`}>
+                  <ImageWithFallback
+                    key={pokemonId}
+                    src={useBaseUrl(`/img/${getPokemonImageFilename(monsno, formNos[index])}`)}
+                    fallbackSrc={useBaseUrl(`/img/${getPokemonImageFilename(monsno, 0)}`)}
+                    alt={pokemonName}
+                    title={pokemonName}
+                  />
+                </Link>
+              </Box>
+            ) : ""
+          );
+        });
         allImages.push(pokemonImages);
       }
     });
@@ -233,12 +241,13 @@ export default function EvolutionGraph(props) {
         <Grid container className={styles.evolutionContainer}>
           <Grid item xs={12} className={styles.scrollContent}>
             <Grid item xs={12} sm={6} className={styles.startPokemon}>
-              <Link to={`/pokedex/${pokemonID}`}>
-                <img
+              <Link to={`/pokedex/${firstPokemonPath}`}>
+                <ImageWithFallback
                   key={pokemonID}
                   src={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, formNo)}`)}
-                  alt={getPokemonName(pokemonID)}
-                  title={getPokemonName(pokemonID)}
+                  fallbackSrc={useBaseUrl(`/img/${getPokemonImageFilename(monsNo, 0)}`)}
+                  alt={getPokemonName(pokemonID)} // TODO Add globalState back here
+                  title={getPokemonName(pokemonID)} // TODO Add globalState back here
                 />
               </Link>
             </Grid>
