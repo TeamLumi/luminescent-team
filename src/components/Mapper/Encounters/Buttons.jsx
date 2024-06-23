@@ -41,7 +41,7 @@ const rodRadios = [
     textColor: "#000000",
     selectedColor: "#66bb6a",
     hoverColor: "#34b25e",
-    defaultHover: "#288a49",
+    defaultHover: "#1E6837",
     lightDefaultHover: "#A2E4B8",
   },
   {
