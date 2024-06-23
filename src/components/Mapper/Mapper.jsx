@@ -13,7 +13,7 @@ import {
 import { SearchBar } from './SearchBar';
 import { RodButtons, TimeOfDayButtons } from './Encounters/Buttons';
 import { MapperTabPanel } from './TabPanel/MapperTabPanel';
-import SettingsModal from './SettingsModal';
+import SettingsModal from './Settings/SettingsModal';
 import './style.css';
 
 import {
