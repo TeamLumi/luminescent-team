@@ -264,6 +264,7 @@ export const Mapper = ({ pokemonList }) => {
           clearRect(CLEAR_MODE.ENCOUNTER, prevLocations[locationIndex]);
         } else {
           clearRect(CLEAR_MODE.ENCOUNTER, prevLocations[locationIndex]);
+          drawRect(prevLocations[locationIndex], CLEAR_MODE.SELECT)
         }
       }
       previousRectangle.enc = null;
@@ -645,6 +646,7 @@ export const Mapper = ({ pokemonList }) => {
         ctx.putImageData(ogImageData, x, y);
       } else {
         ctx.clearRect(x, y, width, height);
+        ctx.putImageData(ogImageData, x, y);
         drawRect(encLocation, CLEAR_MODE.SELECT);
       }
     }
