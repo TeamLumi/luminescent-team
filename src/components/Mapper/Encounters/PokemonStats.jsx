@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Box, Typography, TextField } from '@mui/material';
 import { STATS, calcStat } from '../../../core/pokemonStatCalculation';
-import ".././style.css";
+import "../style.css";
 import { getPokemonName } from '../../../utils/dex';
 import { getSmallestResponsiveStyle } from '../Trainers/Trainers';
 
