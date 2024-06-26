@@ -1,4 +1,11 @@
 import { getItemIdFromItemName, getItemString } from './item';
+import { itemNames, ShopTable, ItemTable, ItemMap, FixedShop } from '../../../__gamedata';
+import { getZoneNameFromZoneCode } from './location';
+import { getItemImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
+import { ConstructionOutlined } from '@mui/icons-material';
+
+const fs = require('fs');
+const path = require('path');
 
 describe('Dex utils Item getter tests', () => {
   describe('getItemIdFromItemName', () => {
@@ -28,3 +35,45 @@ describe('Dex utils Item getter tests', () => {
     });
   });
 });
+
+function getFieldItemImageData(mode = "2.0") {
+  const itemImageData = {};
+  const flattenedItemMap = {};
+
+  Object.keys(ItemMap).forEach(key => {
+    const flattenedArray = ItemMap[key].flat(Infinity);
+    const uniqueArray = Array.from(new Set(flattenedArray));
+    const zoneName = getZoneNameFromZoneCode(key);
+    flattenedItemMap[zoneName] = uniqueArray;
+  });
+
+  Object.keys(flattenedItemMap).forEach(zoneName => {
+    const itemArray = flattenedItemMap[zoneName];
+    const itemUrls = itemArray.map((item) => (getItemImageUrl(getItemString(item))))
+    itemImageData[zoneName] = itemUrls
+  })
+
+  return itemImageData;
+}
+
+Object.entries(getFieldItemImageData("2.0")).forEach(([zoneName, itemImageArray]) => {
+  test.skip.each([...itemImageArray])(`2.0 Item Image %s does not exist in ${zoneName}`, (filename, done) => {
+    if (filename.includes("_TM") || filename.includes("_TR")) {
+      done()
+    }
+    const imgFilePath = path.join(__dirname, '../../../static', filename);
+    fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+      let fileExists = true;
+      if (err) {
+        fileExists = false;
+      }
+
+      try {
+        expect(fileExists).toBe(true);
+        done();
+      } catch (err) {
+        done(err);
+      }
+    });  
+  })
+})
