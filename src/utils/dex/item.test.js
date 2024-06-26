@@ -1,4 +1,4 @@
-import { getItemIdFromItemName, getItemString } from './item';
+import { getFixedShopsItems, getHeartScaleShopItems, getItemIdFromItemName, getItemString } from './item';
 import { itemNames, ShopTable, ItemTable, ItemMap, FixedShop } from '../../../__gamedata';
 import { getZoneNameFromZoneCode } from './location';
 import { getItemImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
@@ -76,4 +76,73 @@ Object.entries(getFieldItemImageData("2.0")).forEach(([zoneName, itemImageArray]
       }
     });  
   })
+})
+
+function getShopItemImageData(mode = "2.0") {
+  const itemImageData = {};
+
+  Object.keys(FixedShop).forEach(zoneCode => {
+    const zoneName = getZoneNameFromZoneCode(zoneCode);
+    const shopId = FixedShop[zoneCode];
+    const itemArray = getFixedShopsItems(shopId);
+    const itemUrls = itemArray.map((item) => (getItemImageUrl(getItemString(item))))
+    itemImageData[zoneName] = itemUrls
+  })
+
+  return itemImageData;
+}
+
+Object.entries(getShopItemImageData("2.0")).forEach(([zoneName, itemImageArray]) => {
+  test.skip.each([...itemImageArray])(`2.0 Item Image %s does not exist in ${zoneName}`, (filename, done) => {
+    if (filename.includes("_TM") || filename.includes("_TR")) {
+      done()
+    }
+    const imgFilePath = path.join(__dirname, '../../../static', filename);
+    fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+      let fileExists = true;
+      if (err) {
+        fileExists = false;
+      }
+
+      try {
+        expect(fileExists).toBe(true);
+        done();
+      } catch (err) {
+        done(err);
+      }
+    });  
+  })
+})
+
+function getHeartScaleItemImageData(mode = "2.0") {
+  const heartScaleItems = getHeartScaleShopItems(110);
+
+  const item_images = heartScaleItems.map((itemObject) => {
+    const itemId = itemObject.ItemNo;
+    const itemName = getItemString(itemId);
+    const itemUrl = getItemImageUrl(itemName);
+    return itemUrl
+  });
+
+  return item_images;
+}
+
+test.skip.each([...getHeartScaleItemImageData()])(`2.0 Item Image %s does not exist in Heart Scale Shop`, (filename, done) => {
+  if (filename.includes("_TM") || filename.includes("_TR")) {
+    done()
+  }
+  const imgFilePath = path.join(__dirname, '../../../static', filename);
+  fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+    let fileExists = true;
+    if (err) {
+      fileExists = false;
+    }
+
+    try {
+      expect(fileExists).toBe(true);
+      done();
+    } catch (err) {
+      done(err);
+    }
+  });  
 })
