@@ -65,6 +65,15 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
           <EncounterTable encounterList={encounterList.RodEnc} pokemon={pokemon} />
         </PokemonAccordion>
         <PokemonAccordion
+          disabled={encounterList.event.length === 0}
+          title="Event/Static Encounters"
+          id="event"
+          bgColor={"error.light"}
+          textColor={"#F5FBF5"}
+        >
+          <EncounterTable encounterList={encounterList.event} pokemon={pokemon} />
+        </PokemonAccordion>
+        <PokemonAccordion
           disabled={encounterList.honey.length === 0}
           title="Honey Tree Encounters"
           id="honeyTree"

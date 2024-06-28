@@ -1,4 +1,9 @@
-import { pokemonLocations, staticLocations, encounterLocations } from '../../../__gamedata';
+import {
+  pokemonLocations,
+  staticLocations,
+  encounterLocations,
+  staticAreaLocations
+} from '../../../__gamedata';
 import {
   ENC_TYPES,
   GREAT_MARSH_MAP,
@@ -10,7 +15,8 @@ import {
   SWARM_ENC,
   HONEY,
   INCENSE,
-  SURF_INCENSE
+  SURF_INCENSE,
+  EVENT_ENC_TYPES
 } from './encountersConstants';
 import { getPokemonName } from './name';
 
@@ -172,16 +178,31 @@ function getAreaEncounters(zoneId) {
     return BAD_INPUT;
   }
 
+  const mappedEncounters = [];
+
   if (zoneId in encounterLocations) {
     const areaEncounters = encounterLocations[zoneId];
-    const mappedEncounters = areaEncounters.map(encounter => ({
+    const newEncounters = areaEncounters.map(encounter => ({
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
     }));
-    return mappedEncounters;
+    mappedEncounters.push(...newEncounters);
   }
 
-  return NO_ENCOUNTERS;
+  if (zoneId in staticAreaLocations) {
+    const areaEncounters = staticAreaLocations[zoneId];
+    const newEncounters = areaEncounters.map(encounter => ({
+      ...encounter,
+      encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
+    }));
+    mappedEncounters.push(...newEncounters);
+  }
+
+  if (mappedEncounters.length === 0) {
+    return NO_ENCOUNTERS;
+  } else {
+    return mappedEncounters;
+  }
 };
 
 function getAllGroundEncounters(areaEncounters) {
@@ -256,6 +277,14 @@ function getAllHoneyTreeEncounters(areaEncounters) {
   return []
 };
 
+function getEventEncounters(areaEncounters) {
+  const filteredEncounters = areaEncounters.filter(obj => EVENT_ENC_TYPES.includes(obj.encounterType));
+  if (filteredEncounters) {
+    return filteredEncounters;
+  }
+  return []
+};
+
 function getMapperRoutesFromPokemonId(pokemonId) {
   const routeNames = [];
   const routes = pokemonLocations[pokemonId] || [];
@@ -265,6 +294,14 @@ function getMapperRoutesFromPokemonId(pokemonId) {
       routeNames.push([route.routeName, route.zoneId]);
     }
   });
+
+  const statics = staticLocations[getPokemonName(pokemonId)] || [];
+
+  statics.forEach((route) => {
+    if (!routeNames.includes(route.routeName)) {
+      routeNames.push([route.routeName, route.zoneId]);
+    }
+  })
 
   return routeNames;
 }
@@ -281,5 +318,6 @@ export {
   getTimeOfDayEncounters,
   getAllHoneyTreeEncounters,
   getRoutesFromPokemonId,
+  getEventEncounters,
   getMapperRoutesFromPokemonId
 }

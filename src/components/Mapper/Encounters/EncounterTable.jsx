@@ -8,10 +8,12 @@ import {
   TableHead,
   TableRow,
   Paper,
-  Typography
+  Typography,
+  Link
 } from '@mui/material';
 
 import "../style.css";
+import { LINK_KEYS } from '../../../utils/dex/encountersConstants';
 
 const EncounterTable = ({ encounterList, pokemon }) => {
   const { colorMode, setColorMode } = useColorMode();
@@ -30,21 +32,35 @@ const EncounterTable = ({ encounterList, pokemon }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {encounterList.map((enc, index) => (
-              <TableRow
-                key={index}
-                className={enc.pokemonName === pokemon ? highlightColor : ""}
-              >
-                <TableCell>{enc.pokemonName}</TableCell>
-                <TableCell>
-                  {enc.minLevel !== enc.maxLevel
-                    ? `${enc.minLevel} - ${enc.maxLevel}`
-                    : enc.minLevel}
-                </TableCell>
-                <TableCell>{enc.encounterRate === "morning" ? "Morning" : enc.encounterType}</TableCell>
-                <TableCell>{enc.encounterRate === "morning" ? "10%" : enc.encounterRate}</TableCell>
-              </TableRow>
-            ))}
+            {encounterList.map((enc, index) => {
+              const pokemonName = enc.pokemonName.toLowerCase().replace(" ", "-");
+              const encounterType = enc.encounterRate === "morning" ? "Morning" : enc.encounterType;
+              let encLink = null;
+              const specialLink = enc.link !== null;
+              const isLink = LINK_KEYS.includes(enc.encounterType);
+              if (specialLink) {
+                encLink = enc.link;
+              } else if (isLink) {
+                encLink = `/docs/special-events/${enc.encounterType.toLowerCase()}#${pokemonName}`;
+              }
+              return (
+                <TableRow
+                  key={index}
+                  className={enc.pokemonName === pokemon ? highlightColor : ""}
+                >
+                  <TableCell>{enc.pokemonName}</TableCell>
+                  <TableCell>
+                    {enc.minLevel !== enc.maxLevel
+                      ? `${enc.minLevel} - ${enc.maxLevel}`
+                      : enc.minLevel}
+                  </TableCell>
+                  <TableCell component={encLink ? "a" : TableCell} href={encLink ? encLink : undefined}>
+                    {encounterType}
+                  </TableCell>
+                  <TableCell>{enc.encounterRate === "morning" ? "10%" : enc.encounterRate}</TableCell>
+                </TableRow>
+              );
+            })}
           </TableBody>
         </Table>
       </TableContainer>

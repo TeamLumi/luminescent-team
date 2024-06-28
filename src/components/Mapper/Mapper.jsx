@@ -44,6 +44,7 @@ import {
   getAllIncenseEncounters,
   getMapperRoutesFromPokemonId,
   getAllHoneyTreeEncounters,
+  getEventEncounters,
 } from '../../utils/dex/encounters';
 import TrainersModal from './Trainers/TrainersModal';
 
@@ -133,7 +134,13 @@ export const Mapper = ({ pokemonList }) => {
     enc: { r: 247, g: 0, b: 0, a: 0.7 },
   });
 
-  const [encounterList, setEncounterList] = useState({GroundEnc: [], SurfEnc: [], RodEnc: [], honey: []});
+  const [encounterList, setEncounterList] = useState({
+    GroundEnc: [],
+    SurfEnc: [],
+    RodEnc: [],
+    honey: [],
+    event: [],
+  });
   const [trainerList, setTrainerList] = useState([]);
   const [fieldItemsList, setFieldItems] = useState([]);
   const [hiddenItemsList, setHiddenItems] = useState([]);
@@ -504,7 +511,13 @@ export const Mapper = ({ pokemonList }) => {
   const setAllEncounters = (zoneId) => {
     const areaEncounters = getAreaEncounters(zoneId);
     if (!areaEncounters) {
-      return {GroundEnc: [], SurfEnc: [], RodEnc: [], honey: []};
+      return {
+        GroundEnc: [],
+        SurfEnc: [],
+        RodEnc: [],
+        honey: [],
+        event: [],
+      };
     }
 
     const allGroundEnc = getAllGroundEncounters(areaEncounters);
@@ -515,6 +528,7 @@ export const Mapper = ({ pokemonList }) => {
     const allSurfEnc = getAllSurfingEncounters(areaEncounters);
     const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
     const honeyTreeEnc = getAllHoneyTreeEncounters(areaEncounters);
+    const eventEncounters = getEventEncounters(areaEncounters);
 
     // This section is for the grass encounters only
     if (allGroundEnc.length > 0) {
@@ -565,7 +579,8 @@ export const Mapper = ({ pokemonList }) => {
       GroundEnc: allGroundEnc,
       SurfEnc: allSurfEnc,
       RodEnc: rodEnc,
-      honey: honeyTreeEnc
+      honey: honeyTreeEnc,
+      event: eventEncounters,
     }
   }
 
