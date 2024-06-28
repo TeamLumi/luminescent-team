@@ -37,14 +37,41 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
         ))}
       </Box>
       <Box className='encAccordions'>
-        <PokemonAccordion title="Grass Encounters" id="groundEnc" bgColor={"success.main"} textColor={"#F5FBF5"}>
+        <PokemonAccordion
+          disabled={encounterList.GroundEnc.length === 0}
+          title="Grass Encounters"
+          id="groundEnc"
+          bgColor={"success.main"}
+          textColor={"#F5FBF5"}
+        >
           <EncounterTable encounterList={encounterList.GroundEnc} pokemon={pokemon} />
         </PokemonAccordion>
-        <PokemonAccordion title="Surf Encounters" id="surfEnc" bgColor={"primary.dark"} textColor={"#F5FBF5"}>
+        <PokemonAccordion
+          disabled={encounterList.SurfEnc.length === 0}
+          title="Surf Encounters"
+          id="surfEnc"
+          bgColor={"primary.dark"}
+          textColor={"#F5FBF5"}
+        >
           <EncounterTable encounterList={encounterList.SurfEnc} pokemon={pokemon} />
         </PokemonAccordion>
-        <PokemonAccordion title="Rod Encounters" id="rodEnc" bgColor={"info.light"} textColor={"#F5FBF5"}>
+        <PokemonAccordion
+          disabled={encounterList.RodEnc.length === 0}
+          title="Rod Encounters"
+          id="rodEnc"
+          bgColor={"info.light"}
+          textColor={"#F5FBF5"}
+        >
           <EncounterTable encounterList={encounterList.RodEnc} pokemon={pokemon} />
+        </PokemonAccordion>
+        <PokemonAccordion
+          disabled={encounterList.honey.length === 0}
+          title="Honey Tree Encounters"
+          id="honeyTree"
+          bgColor={"warning.main"}
+          textColor={"#000000"}
+        >
+          <EncounterTable encounterList={encounterList.honey} pokemon={pokemon} />
         </PokemonAccordion>
       </Box>
     </Box>
