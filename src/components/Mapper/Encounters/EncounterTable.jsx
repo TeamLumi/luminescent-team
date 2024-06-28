@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 
 import "../style.css";
-import { EVENT_ENC_TYPES } from '../../../utils/dex/encountersConstants';
+import { LINK_KEYS } from '../../../utils/dex/encountersConstants';
 
 const EncounterTable = ({ encounterList, pokemon }) => {
   const { colorMode, setColorMode } = useColorMode();
@@ -36,7 +36,7 @@ const EncounterTable = ({ encounterList, pokemon }) => {
               const encounterType = enc.encounterRate === "morning" ? "Morning" : enc.encounterType;
               let encLink = null;
               const specialLink = enc.link;
-              const isLink = EVENT_ENC_TYPES.includes(encounterType);
+              const isLink = LINK_KEYS.includes(encounterType);
               if (specialLink) {
                 encLink = enc.link;
               } else if (isLink) {
