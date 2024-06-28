@@ -9,11 +9,10 @@ import {
   TableRow,
   Paper,
   Typography,
-  Link
 } from '@mui/material';
 
 import "../style.css";
-import { LINK_KEYS } from '../../../utils/dex/encountersConstants';
+import { EVENT_ENC_TYPES } from '../../../utils/dex/encountersConstants';
 
 const EncounterTable = ({ encounterList, pokemon }) => {
   const { colorMode, setColorMode } = useColorMode();
@@ -36,12 +35,12 @@ const EncounterTable = ({ encounterList, pokemon }) => {
               const pokemonName = enc.pokemonName.toLowerCase().replace(" ", "-");
               const encounterType = enc.encounterRate === "morning" ? "Morning" : enc.encounterType;
               let encLink = null;
-              const specialLink = enc.link !== null;
-              const isLink = LINK_KEYS.includes(enc.encounterType);
+              const specialLink = enc.link;
+              const isLink = EVENT_ENC_TYPES.includes(encounterType);
               if (specialLink) {
                 encLink = enc.link;
               } else if (isLink) {
-                encLink = `/docs/special-events/${enc.encounterType.toLowerCase()}#${pokemonName}`;
+                encLink = `/docs/special-events/${encounterType.toLowerCase()}#${pokemonName}`;
               }
               return (
                 <TableRow
