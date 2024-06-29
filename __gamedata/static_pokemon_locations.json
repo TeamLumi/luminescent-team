@@ -16,7 +16,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 434,
+      "zoneId": 429,
       "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
     }
   ],
@@ -37,7 +37,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 434,
+      "zoneId": 429,
       "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
     }
   ],
@@ -58,7 +58,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 434,
+      "zoneId": 429,
       "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
     }
   ],
@@ -466,7 +466,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 8
+      "zoneId": 0
     }
   ],
   "Treecko": [
@@ -655,7 +655,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 62
+      "zoneId": 65
     }
   ],
   "Gabite": [
@@ -686,7 +686,7 @@
       "minLevel": 20,
       "maxLevel": 20,
       "encounterTypeIndex": 0,
-      "zoneId": 306
+      "zoneId": 308
     }
   ],
   "Rotom": [
@@ -697,7 +697,7 @@
       "minLevel": 20,
       "maxLevel": 20,
       "encounterTypeIndex": 0,
-      "zoneId": 306
+      "zoneId": 308
     }
   ],
   "Spiritomb": [
@@ -753,7 +753,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 251
+      "zoneId": 96
     }
   ],
   "Clone Venusaur": [
@@ -764,7 +764,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 255,
+      "zoneId": 256,
       "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
     }
   ],
@@ -776,7 +776,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 255,
+      "zoneId": 256,
       "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
     }
   ],
@@ -788,7 +788,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 255,
+      "zoneId": 256,
       "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
     }
   ],
@@ -800,7 +800,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 255,
+      "zoneId": 256,
       "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
     }
   ],
@@ -834,7 +834,7 @@
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 325
+      "zoneId": 326
     }
   ],
   "Dialga": [
@@ -906,24 +906,24 @@
   ],
   "Moltres": [
     {
-      "routeName": "Victory Road",
+      "routeName": "Victory Road 2F",
       "encounterType": "Legendaries",
       "encounterRate": "100%",
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 244
+      "zoneId": 245
     }
   ],
   "Mewtwo": [
     {
-      "routeName": "Oreburgh Gate",
+      "routeName": "Oreburgh Gate (B1F)",
       "encounterType": "Legendaries",
       "encounterRate": "100%",
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 255
+      "zoneId": 256
     }
   ],
   "Mew": [
@@ -950,13 +950,13 @@
   ],
   "Entei": [
     {
-      "routeName": "Route 211",
+      "routeName": "Route 211 (East)",
       "encounterType": "Legendaries",
       "encounterRate": "100%",
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 212
+      "zoneId": 378
     }
   ],
   "Suicune": [
@@ -1005,35 +1005,35 @@
   ],
   "Regirock": [
     {
-      "routeName": "Snowpoint Temple",
+      "routeName": "Snowpoint Temple (B4F)",
       "encounterType": "Legendaries",
       "encounterRate": "100%",
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 286
+      "zoneId": 290
     }
   ],
   "Regice": [
     {
-      "routeName": "Snowpoint Temple",
+      "routeName": "Snowpoint Temple (B3F)",
       "encounterType": "Legendaries",
       "encounterRate": "100%",
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 286
+      "zoneId": 289
     }
   ],
   "Registeel": [
     {
-      "routeName": "Snowpoint Temple",
+      "routeName": "Snowpoint Temple (B2F)",
       "encounterType": "Legendaries",
       "encounterRate": "100%",
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 286
+      "zoneId": 288
     }
   ],
   "Latias": [
@@ -1077,12 +1077,12 @@
       "minLevel": 90,
       "maxLevel": 90,
       "encounterTypeIndex": 0,
-      "zoneId": 259
+      "zoneId": 261
     }
   ],
   "Rayquaza": [
     {
-      "routeName": "Pokemon League",
+      "routeName": "Pokemon League (Outside)",
       "encounterType": "Legendaries",
       "encounterRate": "100%",
       "minLevel": 90,
@@ -1115,13 +1115,13 @@
   ],
   "Regigigas": [
     {
-      "routeName": "Snowpoint Temple",
+      "routeName": "Snowpoint Temple (B5F)",
       "encounterType": "Legendaries",
       "encounterRate": "100%",
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 286
+      "zoneId": 291
     }
   ],
   "Giratina": [
@@ -1132,7 +1132,7 @@
       "minLevel": 85,
       "maxLevel": 85,
       "encounterTypeIndex": 0,
-      "zoneId": 264
+      "zoneId": 265
     }
   ],
   "Cresselia": [
@@ -1211,7 +1211,7 @@
       "minLevel": "~",
       "maxLevel": "~",
       "encounterTypeIndex": 0,
-      "zoneId": 417,
+      "zoneId": 487,
       "link": "https://luminescent.team/docs/special-events/trade#magikarp"
     }
   ],
