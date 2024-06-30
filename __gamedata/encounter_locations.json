@@ -21985,368 +21985,6 @@
       "zoneId": 296
     }
   ],
-  "297": [
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Pichu",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 0,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Pikachu",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 1,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Eevee",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 2,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Porygon",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 3,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Togepi",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 4,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Igglybuff",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 5,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Happiny",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 6,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Eevee",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 7,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Happiny",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 8,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Eevee",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 9,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Happiny",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 10,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Eevee",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 11,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Cleffa",
-      "encounterType": "tairyo",
-      "encounterRate": "20%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 0,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Eevee",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 0,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Porygon",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 1,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Cleffa",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 0,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Cleffa",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 1,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Castform",
-      "encounterType": "swayGrass",
-      "encounterRate": "20%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 3,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Cyndaquil",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 0,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Teddiursa",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": 1,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Clefairy",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Jigglypuff",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Meowth",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Chansey",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Eevee",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Porygon",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Cleffa",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Igglybuff",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Marill",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Azurill",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Plusle",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Minun",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Castform",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Bonsly",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Mime Jr.",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    },
-    {
-      "routeName": "Trophy Garden",
-      "pokemonName": "Happiny",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 297
-    }
-  ],
   "298": [
     {
       "routeName": "Iron Island (Overworld)",
@@ -34091,6 +33729,368 @@
       "maxLevel": 25,
       "encounterTypeIndex": null,
       "zoneId": "379"
+    }
+  ],
+  "380": [
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Pichu",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 0,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Pikachu",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 1,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Eevee",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 2,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Porygon",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 3,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Togepi",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 4,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Igglybuff",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 5,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Happiny",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 6,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Eevee",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 7,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Happiny",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 8,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Eevee",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 9,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Happiny",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 10,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Eevee",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 11,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Cleffa",
+      "encounterType": "tairyo",
+      "encounterRate": "20%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 0,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Eevee",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 0,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Porygon",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 1,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Cleffa",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 0,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Cleffa",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 1,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Castform",
+      "encounterType": "swayGrass",
+      "encounterRate": "20%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 3,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Cyndaquil",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 0,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Trophy Garden",
+      "pokemonName": "Teddiursa",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": 1,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Clefairy",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Jigglypuff",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Meowth",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Chansey",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Eevee",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Porygon",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Cleffa",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Igglybuff",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Marill",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Azurill",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Plusle",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Minun",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Castform",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Bonsly",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Mime Jr.",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
+    },
+    {
+      "routeName": "Pok\u00e9mon Mansion - Lobby",
+      "pokemonName": "Happiny",
+      "encounterType": "Daily Trophy Garden",
+      "encounterRate": "5%",
+      "minLevel": 26,
+      "maxLevel": 26,
+      "encounterTypeIndex": null,
+      "zoneId": 380
     }
   ],
   "383": [

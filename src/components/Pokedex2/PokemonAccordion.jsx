@@ -2,7 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export const PokemonAccordion = ({ children, title, id, sx, bgColor, textColor, open=false, summarySx }) => {
+export const PokemonAccordion = ({
+  children,
+  title,
+  id,
+  sx,
+  bgColor,
+  textColor,
+  open=false,
+  summarySx,
+  ...props
+}) => {
   const [expanded, setExpanded] = useState(open);
 
   useEffect(() => {
@@ -22,6 +32,7 @@ export const PokemonAccordion = ({ children, title, id, sx, bgColor, textColor, 
       expanded={expanded}
       onChange={handleChange}
       sx={{bgcolor: bgColor, color: textColor, ...sx}}
+      {...props}
     >
       <AccordionSummary
         expandIcon={<ExpandMoreIcon sx={{ color: '#777' }} />}
