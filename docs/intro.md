@@ -27,14 +27,13 @@ We hope you enjoy our romhack!
 ### [Pokémon Locations By Route](https://luminescent.team/mapper) [Beta]
 
 - If you want to know what all Pokémon are on each route as you go, this document is for you. Pick a Route and it will show you all Pokémon that spawn there normally; add a specification (such as radar or incense) and it will show you how that affects your chances!
-- Eventually intended to show trainers, event Pokémon, and items/shops.
+- Eventually intended to show items/shops.
 - Made by Aaron.
 
-### [Trainer Documentation](https://docs.google.com/spreadsheets/d/17d7xfiqRDJQp5j6LZIAE8QVCQi7tCgjU_gu5_vE0l2I/edit?usp=sharing)
+### [Trainer Documentation](https://luminescent.team/mapper) [Beta]
 
-- Use this document to see all trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, our document will help you stay ahead!
-- You must make your own copy on gdocs before it will work.
-- Made by Solarance.
+- Use this special mapper site to see all trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, our document will help you stay ahead!
+- Made by Aaron.
 
 ### [Professor Oak Challenge Tracker](https://docs.google.com/spreadsheets/d/133FFeo8GooaxUnlbInP5TL-bEwhwB2bMoxhqLdfEl94/edit#gid=1663592077)
 
