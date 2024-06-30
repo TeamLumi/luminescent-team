@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import IconButton from '@mui/material/IconButton';
+import SettingsIcon from '@mui/icons-material/Settings';
 import { Autocomplete, TextField } from '@mui/material';
 import Fuse from 'fuse.js';
+
+import { getLocationCoordsFromName, getLocationNames } from './coordinates';
 import './style.css';
-import { getLocationNames } from './coordinates';
 
 const PokemonSearchInput = ({
   allPokemons,
@@ -68,12 +71,19 @@ const PokemonSearchInput = ({
   );
 };
 
-const LocationNameDropdown = ({ locationName, setLocationName, canvasRef }) => {
+const LocationNameDropdown = ({
+  locationName,
+  setLocationName,
+  setLocationZoneId,
+  canvasRef
+}) => {
   const locations = getLocationNames();
   const handleLocationChange = (e, value) => {
     const locationNameEvent = new CustomEvent('passLocationNameToParent', { detail: value });
     canvasRef.dispatchEvent(locationNameEvent);
-    setLocationName(value)
+    setLocationName(value);
+    const { zoneId } = getLocationCoordsFromName(value);
+    setLocationZoneId(zoneId);
   };
 
   const defaultOption = locations.length > 0 ? locations[0] : '';
@@ -101,6 +111,16 @@ const LocationNameDropdown = ({ locationName, setLocationName, canvasRef }) => {
   );
 };
 
+const SettingsButton = ({handleShowSettings}) => {
+  return (
+    <div className="settings">
+      <IconButton aria-label="settings" onClick={handleShowSettings}>
+        <SettingsIcon />
+      </IconButton>
+    </div>
+  );
+}
+
 export const SearchBar = ({
   canvasDimensions,
   pokemonList,
@@ -108,9 +128,11 @@ export const SearchBar = ({
   handleDebouncedTextChange,
   locationName,
   setLocationName,
+  setLocationZoneId,
   canvasRef,
   selectedPokemon,
   setSelectedPokemon,
+  handleShowSettings,
 }) => {
   return (
     <div
@@ -131,8 +153,10 @@ export const SearchBar = ({
       <LocationNameDropdown
         locationName={locationName}
         setLocationName={setLocationName}
+        setLocationZoneId={setLocationZoneId}
         canvasRef={canvasRef}
       />
+      <SettingsButton handleShowSettings={handleShowSettings} />
     </div>
   )
 };

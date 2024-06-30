@@ -14,8 +14,9 @@ ul, li {
 }
 
 .encounterBox {
-    width: 408px;
+    width: 416px;
     border: 2px solid var(--ifm-table-border-color);
+    height: 672px;
 }
 
 .checkBoxes {
@@ -32,7 +33,7 @@ ul, li {
 }
 
 .encAccordions {
-    max-height: 580px;
+    max-height: 532px;
     overflow-y: auto;
     padding-left: 5px;
     padding-right: 5px;
@@ -80,6 +81,63 @@ ul, li {
     pointer-events: all;
     margin-top: 16px;
     margin-right: 10px;
+}
+
+.settings {
+    display: grid;
+    align-content: end;
+    justify-content: end;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 16rem;
+    margin-top: 36rem;
+    pointer-events: all;
+}
+
+.stats {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    height: 175px;
+    display: grid;
+}
+
+.moveList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    border-left: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    border-right: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    border-bottom: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    margin: -1px;
+}
+
+.trainerMon {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.trainerBox {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.trainer-dropdown {
+    margin-top: 1rem;
+}
+
+.monDetails {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.statsContainer {
+    display: grid;
+    margin: 5px 0px 0px 0px;
 }
 
 .modalBox {

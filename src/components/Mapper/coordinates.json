@@ -68,24 +68,24 @@
       "y": 348,
       "width": 35,
       "height": 35,
-      "name": "Mt. Coronet 6F",
-      "zoneId": 211
+      "name": "Spear Pillar",
+      "zoneId": 216
   },
   {
       "x": 536,
       "y": 348,
       "width": 35,
       "height": 35,
-      "name": "Spear Pillar",
-      "zoneId": 216
+      "name": "Hall of Origin",
+      "zoneId": 218
   },
   {
       "x": 571,
       "y": 314,
       "width": 35,
       "height": 34,
-      "name": "Hall of Origin",
-      "zoneId": 218
+      "name": "Distortion Room",
+      "zoneId": 624
   },
   {
       "x": 308,
@@ -540,7 +540,7 @@
       "y": 536,
       "width": 34,
       "height": 36,
-      "name": "Pokémon Mansion",
+      "name": "Pokémon Mansion / Trophy Garden",
       "zoneId": 380
   },
   {
@@ -587,17 +587,25 @@
       "x": 606,
       "y": 281,
       "width": 32,
-      "height": 67,
+      "height": 33,
       "name": "Mt. Coronet 211 Entrance",
       "zoneId": 214
+  },
+  {
+      "x": 606,
+      "y": 314,
+      "width": 32,
+      "height": 34,
+      "name": "Mt. Coronet Tunnel To 211 Entrance",
+      "zoneId": 212
   },
   {
       "x": 606,
       "y": 348,
       "width": 32,
       "height": 35,
-      "name": "Mt. Coronet Tunnel To 211 Entrance",
-      "zoneId": 212
+      "name": "Mt. Coronet 6F",
+      "zoneId": 211
   },
   {
       "x": 571,
@@ -1037,7 +1045,7 @@
       "width": 34,
       "height": 33,
       "name": "Pokémon League (Outside)",
-      "zoneId": 171
+      "zoneId": 167
   },
   {
       "x": 1055,

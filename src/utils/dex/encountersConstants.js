@@ -37,12 +37,25 @@ const TRADE = "Trade";
 const GIFTS = "Gifts";
 const LEGENDARIES = "Legendaries";
 const STATIC = "Static";
+const TROPHY = "Daily Trophy Garden";
+const MARSH = "Daily Great Marsh";
+const STARTER = "Starter";
 
 export const LINK_KEYS = [
   TRADE,
   GIFTS,
   LEGENDARIES,
   STATIC
+]
+
+export const EVENT_ENC_TYPES = [
+  TRADE,
+  GIFTS,
+  LEGENDARIES,
+  STATIC,
+  TROPHY,
+  MARSH,
+  STARTER
 ]
 
 export const LOCATION_ICONS = {
@@ -62,8 +75,8 @@ export const LOCATION_ICONS = {
   [GIFTS]: ["/img/custom/mysterygift.webp"],
   [LEGENDARIES]: ["/img/custom/legendary.webp"],
   [STATIC]: ["/img/custom/static.webp"],
-  "Daily Trophy Garden": ["/img/custom/trophy.webp"],
-  "Daily Great Marsh": ["/img/custom/greatmarsh.webp", "/img/custom/randomchance.webp"],
+  [TROPHY]: ["/img/custom/trophy.webp"],
+  [MARSH]: ["/img/custom/greatmarsh.webp", "/img/custom/randomchance.webp"],
   "Honey Tree": ["img/Item_Honey.webp"],
-  "Starter": ["/img/custom/mysterygift.webp"],
+  [STARTER]: ["/img/custom/mysterygift.webp"],
 }
