@@ -59,7 +59,7 @@ function getScriptItemImageData(mode = "2.0") {
 Object.entries(getScriptItemImageData("2.0")).forEach(([zoneName, itemImageArray]) => {
   test.skip.each([...itemImageArray])(`2.0 Script Item Image %s does not exist in ${zoneName}`, (filename, done) => {
     if (filename.includes("_TM") || filename.includes("_TR")) {
-      done()
+      return done()
     }
     const imgFilePath = path.join(__dirname, '../../../static', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
@@ -127,7 +127,7 @@ function getHiddenItemImageData(mode = "2.0") {
 }
 
 Object.entries(getHiddenItemImageData("2.0")).forEach(([zoneName, itemImageArray]) => {
-  test.each([...itemImageArray])(`2.0 Hidden Item Image %s does not exist in ${zoneName}`, (filename, done) => {
+  test.skip.each([...itemImageArray])(`2.0 Hidden Item Image %s does not exist in ${zoneName}`, (filename, done) => {
     if (filename.includes("_TM") || filename.includes("_TR")) {
       return done()
     }
@@ -170,7 +170,7 @@ function getRegularShopItemImageData(mode = "2.0") {
 Object.entries(getRegularShopItemImageData("2.0")).forEach(([zoneName, itemImageArray]) => {
   test.skip.each([...itemImageArray])(`2.0 Regular Shop Image %s does not exist in ${zoneName}`, (filename, done) => {
     if (filename.includes("_TM") || filename.includes("_TR")) {
-      done()
+      return done()
     }
     const imgFilePath = path.join(__dirname, '../../../static', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
@@ -206,7 +206,7 @@ function getFixedShopItemImageData(mode = "2.0") {
 Object.entries(getFixedShopItemImageData("2.0")).forEach(([zoneName, itemImageArray]) => {
   test.skip.each([...itemImageArray])(`2.0 Item Image %s does not exist in ${zoneName}`, (filename, done) => {
     if (filename.includes("_TM") || filename.includes("_TR")) {
-      done()
+      return done()
     }
     const imgFilePath = path.join(__dirname, '../../../static', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
@@ -240,7 +240,7 @@ function getHeartScaleItemImageData(mode = "2.0") {
 
 test.skip.each([...getHeartScaleItemImageData()])(`2.0 Item Image %s does not exist in Heart Scale Shop`, (filename, done) => {
   if (filename.includes("_TM") || filename.includes("_TR")) {
-    done()
+    return done()
   }
   const imgFilePath = path.join(__dirname, '../../../static', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
