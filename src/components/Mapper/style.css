@@ -33,6 +33,24 @@
     margin-bottom: 5px;
 }
 
+.item-panel {
+    width: 416px;
+    border: 2px solid var(--ifm-table-border-color);
+}
+
+.itemAccordions {
+    max-height: 620px;
+    overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    border-top: 2px solid var(--ifm-table-border-color);
+}
+
+.itemAccordions > * {
+    margin-bottom: 5px;
+}
+
 .highlight-light-row {
     background-color: #ffff9f !important;
 }

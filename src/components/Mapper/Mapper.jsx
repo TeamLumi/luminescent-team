@@ -385,7 +385,7 @@ export const Mapper = ({ pokemonList }) => {
     setEncounterList(setAllEncounters(location.zoneId));
     setTrainerList(getTrainersFromZoneId(location.zoneId));
 
-    setItemsList(getAllItems(location.zoneId))
+    setItemsList(getAllItems(location.zoneId));
     setShopItems(getRegularShopItems(location.zoneId));
     setFixedShops(getFixedShops(location.zoneId));
     setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
@@ -486,6 +486,7 @@ export const Mapper = ({ pokemonList }) => {
 
   useEffect(() => {
     setTrainerList(getTrainersFromZoneId(selectedZoneId) || []) ;
+    setItemsList(getAllItems(selectedZoneId));
   }, [selectedZoneId])
 
   const handleOptionChange = (option, value) => {

@@ -13,7 +13,7 @@ const ItemsPanel = ({ itemsList, selectedItem = "" }) => { // Might add an Item 
       >
         Items
       </Typography>
-      <Box className='encAccordions'>
+      <Box className='itemAccordions'>
         <PokemonAccordion title="Field Items" id="fieldItems">
           <ItemTable itemList={itemsList.field} selectedItem={selectedItem} />
         </PokemonAccordion>

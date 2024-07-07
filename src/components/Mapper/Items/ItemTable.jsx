@@ -12,8 +12,17 @@ import {
 } from '@mui/material';
 
 import "../style.css";
-import { getItemImageUrl, getItemString } from '../../../../plugins/pokedex-data-plugin/dex/item';
+import {
+  getItemImageUrl,
+  getItemInfo,
+  getItemPocket,
+  getItemString,
+  getTMImageUrl,
+  getTMInfoFromItemNo
+} from '../../../../plugins/pokedex-data-plugin/dex/item';
 import { ImageWithFallback } from '../../common/ImageWithFallback';
+import { getTypeName } from '../../../../plugins/pokedex-data-plugin/dex/types';
+import { GROUP_NAMES } from '../../../../plugins/pokedex-data-plugin/dex/itemConstants';
 
 const ItemTable = ({ itemList, selectedItem }) => {
   const { colorMode, setColorMode } = useColorMode();
@@ -32,14 +41,22 @@ const ItemTable = ({ itemList, selectedItem }) => {
           <TableRow>
             <TableCell>Icon</TableCell>
             <TableCell>Name</TableCell>
-            <TableCell>Type</TableCell>
-            <TableCell>Description</TableCell>
+            <TableCell width={"50%"}>Description</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {itemList.map((item, index) => {
-            const itemName = getItemString(item);
-            const itemSource = getItemImageUrl(itemName);
+            let itemName = "";
+            let itemSource = "";
+            const itemDescription = getItemInfo(item);
+            const tmInfo = getTMInfoFromItemNo(item)
+            if (tmInfo) {
+              itemName = `TM${tmInfo.tmNo} ${tmInfo.name}`;
+              itemSource = getTMImageUrl(getTypeName(tmInfo.type));
+            } else {
+              itemName = getItemString(item);
+              itemSource = getItemImageUrl(itemName);
+            }
             return (
               <TableRow
                 key={index}
@@ -55,8 +72,7 @@ const ItemTable = ({ itemList, selectedItem }) => {
                   />
                 </TableCell>
                 <TableCell>{itemName}</TableCell>
-                <TableCell>{item.type}</TableCell>
-                <TableCell>{item.description}</TableCell>
+                <TableCell>{itemDescription}</TableCell>
               </TableRow>
             );
           })}
