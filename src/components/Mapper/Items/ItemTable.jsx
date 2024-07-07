@@ -39,7 +39,7 @@ const ItemTable = ({ itemList, selectedItem }) => {
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Icon</TableCell>
+            <TableCell width="74px">Icon</TableCell>
             <TableCell>Name</TableCell>
             <TableCell width={"50%"}>Description</TableCell>
           </TableRow>

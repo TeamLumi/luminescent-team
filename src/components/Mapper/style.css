@@ -36,6 +36,13 @@
 .item-panel {
     width: 416px;
     border: 2px solid var(--ifm-table-border-color);
+    height: 672px;
+}
+
+.trainer-panel {
+    width: 416px;
+    border: 2px solid var(--ifm-table-border-color);
+    height: 672px;
 }
 
 .itemAccordions {
