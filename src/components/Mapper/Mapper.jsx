@@ -53,6 +53,8 @@ const canvasDimensions = {
   height: 720
 }
 
+const versionNumber = "Beta 1.1.1";
+
 function useDebouncedValue(value, delay) {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
@@ -677,7 +679,7 @@ export const Mapper = ({ pokemonList }) => {
   return (
     <div className="mapper">
       <header style={{display: "flex", justifyContent: "center", marginTop: "1rem"}}>
-        <h2 style={{width: "fit-content"}}>Luminescent Platinum Mapper (Beta 1.1.0)</h2>
+        <h2 style={{width: "fit-content"}}>Luminescent Platinum Mapper ({versionNumber})</h2>
       </header>
       <div
         className="canvasCol"
