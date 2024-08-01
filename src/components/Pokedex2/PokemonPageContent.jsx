@@ -39,7 +39,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
     <Container>
       <Container>
         <Box display="flex" justifyContent="center" marginTop="16px">
-          <PokemonSearchBox pokemonNames={pokemonNames} pokemonId={pokemon.id} />
+          <PokemonSearchBox pokemonNames={pokemonNames} formNo={formNo} monsNo={monsNo} />
           <PokemonInfoButton />
         </Box>
       </Container>

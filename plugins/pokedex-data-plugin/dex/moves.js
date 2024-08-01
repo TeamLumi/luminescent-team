@@ -135,6 +135,20 @@ function getPokemonLearnset(pokemonId = 0) {
   return LearnsetTable.WazaOboe[pokemonId]?.ar ?? [];
 }
 
+function getMoveLevelLearned(pokemonId = 0, moveId = 0, mode = "2.0") {
+  // const learnsetTable = mode === "2.0" ? LearnsetTable : LearnsetTable3;
+  // TODO Add 3.0 mode
+  const learnsetTable = LearnsetTable;
+  if (!Number.isInteger(pokemonId) || pokemonId < 0) return [];
+  const moveIndex = learnsetTable.WazaOboe[pokemonId]?.ar.findIndex((move) => move === moveId);
+  if (moveIndex === -1) {
+    console.error(`This pokemon can't learn this move ${getPokemonName(pokemonId)}: ${getMoveString(moveId)}`)
+    return moveIndex;
+  }
+  const levelLearned = learnsetTable.WazaOboe[pokemonId]?.ar[moveIndex - 1]
+  return levelLearned;
+}
+
 function getLevelLearnset(pokemonId = 0) {
   const learnset = getPokemonLearnset(pokemonId);
 
@@ -172,6 +186,7 @@ module.exports = {
   getTechMachineLearnset,
   getMoveProperties,
   getPokemonLearnset,
+  getMoveLevelLearned,
   parseTmLearnsetSection,
   getLevelLearnset,
   getTutorMoves
