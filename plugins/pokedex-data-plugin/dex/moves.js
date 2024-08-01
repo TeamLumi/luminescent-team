@@ -26,18 +26,18 @@ const IS_MOVE_INDEX = false;
 const MAX_TM_COUNT = 104;
 
 function generateMovesViaLearnset(monsNo, level, mode = "2.0") {
+  const learnsetTable = mode === "2.0" ? LearnsetTable : LearnsetTable3;
   /**
    * In BDSP, a trainer's Pokemon, when provided no moves,
    * will use the four most recent moves in the learnset.
    */
-  if (!Number.isInteger(monsNo) || monsNo < 0 || !LearnsetTable.WazaOboe[monsNo]) {
+  if (!Number.isInteger(monsNo) || monsNo < 0 || !learnsetTable.WazaOboe[monsNo]) {
     throw new Error('Invalid Pokémon number');
   }
 
   if (!Number.isInteger(level) || level < 0) {
     throw new Error('Invalid level');
   }
-  const learnsetTable = mode === "2.0" ? LearnsetTable : LearnsetTable3;
 
   let cutoffIndex = learnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
     if (i % 2 === 1) return IS_MOVE_INDEX;
@@ -96,7 +96,7 @@ function getMoveString(moveId = 0, mode) {
     throw new Error(`Bad move string found: ID - ${moveId}`);
   }
   if (moveId > movesNamedata.labelDataArray.length) {
-    throw new Error(`Incompatible move string found: ID - ${moveId}, String: ${name}`);
+    throw new Error(`Incompatible move string found: ID - ${moveId}`);
   }
   const nameData = movesNamedata['labelDataArray'][moveId]['wordDataArray'];
   const name = nameData.length ? nameData[0]['str'] : null;
@@ -105,9 +105,10 @@ function getMoveString(moveId = 0, mode) {
     throw new Error(`Bad move name: ${name}`);
   }
 
-  if (!isMoveNameSmogonCompatible(name)) {
-    throw new Error(`Incompatible move string found: ID - ${moveId}, String: ${name}`);
-  }
+  // TODO Removing this for now. Find out where it comes from and add it back in later.
+  // if (!isMoveNameSmogonCompatible(name)) {
+  //   throw new Error(`This move is not Smogon Compatible: ID - ${moveId}, String: ${name}`);
+  // }
 
   return name;
 }

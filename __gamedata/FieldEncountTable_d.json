@@ -3222,7 +3222,7 @@
                     "monsNo": 65625
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 45,
                     "minlv": 45,
                     "monsNo": 65758
                 }
@@ -4150,7 +4150,7 @@
                 {
                     "maxlv": 51,
                     "minlv": 51,
-                    "monsNo": 65563
+                    "monsNo": 65564
                 },
                 {
                     "maxlv": 0,
@@ -16542,7 +16542,7 @@
                     "monsNo": 65612
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 60,
                     "minlv": 60,
                     "monsNo": 131152
                 }
@@ -16875,7 +16875,7 @@
                     "monsNo": 65612
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 60,
                     "minlv": 60,
                     "monsNo": 131152
                 }
@@ -18795,13 +18795,13 @@
             ],
             "gbaRuby": [
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
@@ -18812,13 +18812,13 @@
             ],
             "gbaSapp": [
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
@@ -18829,13 +18829,13 @@
             ],
             "gbaEme": [
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
@@ -18846,13 +18846,13 @@
             ],
             "gbaFire": [
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
@@ -18863,13 +18863,13 @@
             ],
             "gbaLeaf": [
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
-                    "maxlv": 68,
-                    "minlv": 68,
+                    "maxlv": 69,
+                    "minlv": 69,
                     "monsNo": 65641
                 },
                 {
@@ -19872,7 +19872,7 @@
                     "monsNo": 864
                 },
                 {
-                    "maxlv": 54,
+                    "maxlv": 55,
                     "minlv": 55,
                     "monsNo": 65735
                 }
@@ -23532,7 +23532,7 @@
                 {
                     "maxlv": 66,
                     "minlv": 66,
-                    "monsNo": 157
+                    "monsNo": 65693
                 },
                 {
                     "maxlv": 0,
@@ -38167,7 +38167,7 @@
                 {
                     "maxlv": 32,
                     "minlv": 32,
-                    "monsNo": 65587
+                    "monsNo": 65586
                 },
                 {
                     "maxlv": 0,
@@ -39519,7 +39519,7 @@
                     "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 45,
                     "minlv": 45,
                     "monsNo": 864
                 }
@@ -39852,7 +39852,7 @@
                     "monsNo": 65611
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 0,
                     "minlv": 0,
                     "monsNo": 0
                 }
@@ -40185,7 +40185,7 @@
                     "monsNo": 65611
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 0,
                     "minlv": 0,
                     "monsNo": 0
                 }
@@ -40518,7 +40518,7 @@
                     "monsNo": 65611
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 0,
                     "minlv": 0,
                     "monsNo": 0
                 }
@@ -40851,7 +40851,7 @@
                     "monsNo": 65611
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 0,
                     "minlv": 0,
                     "monsNo": 0
                 }
@@ -41185,7 +41185,7 @@
                 },
                 {
                     "maxlv": 0,
-                    "minlv": 40,
+                    "minlv": 0,
                     "monsNo": 0
                 }
             ],
@@ -41517,7 +41517,7 @@
                     "monsNo": 65611
                 },
                 {
-                    "maxlv": 40,
+                    "maxlv": 0,
                     "minlv": 0,
                     "monsNo": 0
                 }
@@ -44916,7 +44916,7 @@
                     "monsNo": 129
                 },
                 {
-                    "maxlv": 20,
+                    "maxlv": 25,
                     "minlv": 25,
                     "monsNo": 129
                 },
@@ -48180,113 +48180,113 @@
             "encRate_wat": 10,
             "water_mons": [
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 54
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 54
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 55
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 55
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 55
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 }
             ],
             "encRate_turi_boro": 100,
             "boro_mons": [
                 {
-                    "maxlv": 10,
-                    "minlv": 10,
-                    "monsNo": 129
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 10,
-                    "minlv": 10,
-                    "monsNo": 129
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 10,
-                    "minlv": 10,
-                    "monsNo": 129
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 10,
-                    "minlv": 10,
-                    "monsNo": 129
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 10,
-                    "minlv": 10,
-                    "monsNo": 129
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 }
             ],
             "encRate_turi_ii": 100,
             "ii_mons": [
                 {
-                    "maxlv": 25,
-                    "minlv": 25,
-                    "monsNo": 129
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 25,
-                    "minlv": 25,
-                    "monsNo": 118
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 25,
-                    "minlv": 25,
-                    "monsNo": 129
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 25,
-                    "minlv": 25,
-                    "monsNo": 118
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 25,
-                    "minlv": 25,
-                    "monsNo": 118
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 }
             ],
             "encRate_sugoi": 100,
             "sugoi_mons": [
                 {
-                    "maxlv": 50,
-                    "minlv": 50,
-                    "monsNo": 130
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 50,
-                    "minlv": 50,
-                    "monsNo": 119
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 50,
-                    "minlv": 50,
-                    "monsNo": 130
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 50,
-                    "minlv": 50,
-                    "monsNo": 119
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 50,
-                    "minlv": 50,
-                    "monsNo": 119
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 }
             ]
         },
@@ -50092,13 +50092,13 @@
             ],
             "gbaRuby": [
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
@@ -50109,13 +50109,13 @@
             ],
             "gbaSapp": [
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
@@ -50126,13 +50126,13 @@
             ],
             "gbaEme": [
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
@@ -50143,13 +50143,13 @@
             ],
             "gbaFire": [
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
@@ -50160,13 +50160,13 @@
             ],
             "gbaLeaf": [
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
-                    "maxlv": 24,
-                    "minlv": 24,
+                    "maxlv": 26,
+                    "minlv": 26,
                     "monsNo": 123
                 },
                 {
@@ -54049,7 +54049,7 @@
                 {
                     "maxlv": 34,
                     "minlv": 34,
-                    "monsNo": 65959
+                    "monsNo": 441
                 }
             ],
             "swayGrass": [
@@ -54829,7 +54829,7 @@
                 {
                     "maxlv": 30,
                     "minlv": 30,
-                    "monsNo": 103
+                    "monsNo": 102
                 },
                 {
                     "maxlv": 0,
@@ -55714,7 +55714,7 @@
                 {
                     "maxlv": 39,
                     "minlv": 39,
-                    "monsNo": 432
+                    "monsNo": 441
                 }
             ],
             "swayGrass": [
@@ -56713,7 +56713,7 @@
                 {
                     "maxlv": 54,
                     "minlv": 54,
-                    "monsNo": 404
+                    "monsNo": 441
                 }
             ],
             "swayGrass": [
@@ -59426,9 +59426,9 @@
                     "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 904
+                    "maxlv": 100,
+                    "minlv": 1,
+                    "monsNo": 129
                 }
             ],
             "gbaSapp": [
@@ -59443,9 +59443,9 @@
                     "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 904
+                    "maxlv": 100,
+                    "minlv": 1,
+                    "monsNo": 129
                 }
             ],
             "gbaEme": [
@@ -59460,9 +59460,9 @@
                     "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 904
+                    "maxlv": 100,
+                    "minlv": 1,
+                    "monsNo": 129
                 }
             ],
             "gbaFire": [
@@ -59477,9 +59477,9 @@
                     "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 904
+                    "maxlv": 100,
+                    "minlv": 1,
+                    "monsNo": 129
                 }
             ],
             "gbaLeaf": [
@@ -59494,9 +59494,9 @@
                     "monsNo": 0
                 },
                 {
-                    "maxlv": 40,
-                    "minlv": 40,
-                    "monsNo": 904
+                    "maxlv": 100,
+                    "minlv": 1,
+                    "monsNo": 129
                 }
             ],
             "encRate_wat": 10,
@@ -59749,14 +59749,14 @@
             ],
             "gbaRuby": [
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
                     "maxlv": 45,
@@ -59766,14 +59766,14 @@
             ],
             "gbaSapp": [
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
                     "maxlv": 45,
@@ -59783,14 +59783,14 @@
             ],
             "gbaEme": [
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
                     "maxlv": 45,
@@ -59800,14 +59800,14 @@
             ],
             "gbaFire": [
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
                     "maxlv": 45,
@@ -59817,14 +59817,14 @@
             ],
             "gbaLeaf": [
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
-                    "maxlv": 67,
-                    "minlv": 67,
-                    "monsNo": 862
+                    "maxlv": 0,
+                    "minlv": 0,
+                    "monsNo": 0
                 },
                 {
                     "maxlv": 45,

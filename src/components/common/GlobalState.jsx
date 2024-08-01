@@ -6,7 +6,7 @@ export const GlobalState = ({ children }) => {
   const [globalState, setGlobalState] = useState(() => {
     // Check if window is defined (client-side)
     const storedMode = typeof window !== 'undefined' ? window.sessionStorage.getItem('mode') : null;
-    return { mode: storedMode || '3.0' };
+    return { mode: storedMode || '2.0' };
   });
 
   useEffect(() => {

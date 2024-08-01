@@ -1,0 +1,158 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+ul, li {
+    padding: 0;
+    padding-right: 5px;
+    list-style: none;
+}
+
+.canvasCol {
+    display: grid;
+}
+
+.encounterBox {
+    width: 416px;
+    border: 2px solid var(--ifm-table-border-color);
+    height: 672px;
+}
+
+.checkBoxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+.toggleBoxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.encAccordions {
+    max-height: 532px;
+    overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.encAccordions > * {
+    margin-bottom: 5px;
+}
+
+.highlight-light-row {
+    background-color: #ffff9f !important;
+}
+
+.highlight-dark-row {
+    background-color: #ffec68 !important;
+}
+
+.highlight-dark-row > * {
+    color: #000000 !important;
+}
+
+.mapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoCol {
+    position: absolute;
+    top: 122px;
+    justify-content: end;
+    display: grid;
+    grid-template-rows: 60px 25px;
+    pointer-events: none;
+}
+
+.monSearchBar {
+    pointer-events: all;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.location {
+    pointer-events: all;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.settings {
+    display: grid;
+    align-content: end;
+    justify-content: end;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 16rem;
+    margin-top: 36rem;
+    pointer-events: all;
+}
+
+.stats {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    height: 175px;
+    display: grid;
+}
+
+.moveList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    border-left: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    border-right: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    border-bottom: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    margin: -1px;
+}
+
+.trainerMon {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.trainerBox {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.trainer-dropdown {
+    margin-top: 1rem;
+}
+
+.monDetails {
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+.statsContainer {
+    display: grid;
+    margin: 5px 0px 0px 0px;
+}
+
+.modalBox {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%);
+    background-color: var(--ifm-color-content-inverse);
+    color: var(--ifm-color-content);
+    padding: 16px;
+    border-radius: 8px;
+    border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+    overflow-y: auto;
+    width: 80%;
+    max-height: 80%;
+    max-width: 1200px;
+}

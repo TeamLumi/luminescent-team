@@ -61,6 +61,12 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = "2.0") {
   return personalTable.Personal.find((e) => e.monsno === monsno && form_map[e.monsno][formno] === e.id)?.id;
 }
 
+function isValidPokemon(pokemonId, mode = "2.0") {
+  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
+  const p = personalTable.Personal[pokemonId];
+  return p.valid_flag;
+}
+
 function doNothing(evoMethod, evolutionDetails) {
   return evoMethod;
 };
@@ -86,4 +92,5 @@ module.exports = {
   getPokemonFormIds,
   getDexDescription,
   doNothing,
+  isValidPokemon,
 };

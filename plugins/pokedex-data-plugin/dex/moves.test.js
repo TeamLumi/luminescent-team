@@ -96,9 +96,8 @@ describe('Dex Utils Move Getters', () => {
 
     it('throws an error for an incompatible move string', () => {
       const incompatibleMoveId = 50000;
-      const incompatibleMoveName = 'undefined';
       expect(() => getMoveString(incompatibleMoveId)).toThrow(
-        Error(`Incompatible move string found: ID - ${incompatibleMoveId}, String: ${incompatibleMoveName}`),
+        Error(`Incompatible move string found: ID - ${incompatibleMoveId}`),
       );
     });
   });

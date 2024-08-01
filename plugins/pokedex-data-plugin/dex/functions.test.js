@@ -11,6 +11,7 @@ import {
   getPokemonFormIndexById,
   FORM_MAP,
   FORM_MAP3,
+  isValidPokemon,
 } from './functions';
 import { getPokemon } from './pokemon';
 
@@ -151,8 +152,8 @@ describe('Dex utils function tests', () => {
     });
   });
 
-  function getAllPokemonFormImageData(onlyValidPokemons = false, MODE = "2.0") {
-    const form_map = MODE === "2.0" ? FORM_MAP : FORM_MAP3;
+  function getAllPokemonFormImageData(onlyValidPokemons = false, mode = "2.0") {
+    const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
     const pokemonFormData = [];
 
     for (const entry of Object.entries(form_map)) {
@@ -161,11 +162,12 @@ describe('Dex utils function tests', () => {
 
       for (let i = 0; i < pokemonForms.length; i++) {
         const pokemonForm = pokemonForms[i];
-        const pokemon = getPokemon(pokemonForm, MODE);
-        if (onlyValidPokemons && !pokemon.isValid) {
+        const validPokemon = isValidPokemon(pokemonForm, mode);
+        if (onlyValidPokemons && !validPokemon && pokemonForm !== 0) {
           continue;
         }
-        const filename = getImage(monsno, getPokemonFormIndexById(monsno, pokemonForm, MODE));
+        const pokemon = getPokemon(pokemonForm, mode);
+        const filename = getImage(monsno, getPokemonFormIndexById(monsno, pokemonForm, mode));
         pokemonFormData.push([filename, pokemon.name]);
       }
     }
@@ -173,7 +175,7 @@ describe('Dex utils function tests', () => {
     return pokemonFormData;
   }
 
-  test.skip.each([...getAllPokemonFormImageData(true)])('pokemon form image %s for %s exists', (filename, _, done) => {
+  test.skip.each([...getAllPokemonFormImageData(true, "2.0")])('pokemon form image %s for %s exists', (filename, _, done) => {
     const imgFilePath = path.join(__dirname, '../../../static/img/pkm/', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
       let fileExists = true;

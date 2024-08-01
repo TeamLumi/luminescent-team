@@ -3,7 +3,7 @@ const { getPokemonInfo } = require('./info');
 const fs = require('fs');
 const path = require('path');
 const { getPokemon } = require('./pokemon');
-const { FORM_MAP, FORM_MAP3 } = require('./functions');
+const { FORM_MAP, FORM_MAP3, isValidPokemon } = require('./functions');
 
 describe('Dex utils Item getter tests', () => {
   describe('getItemIdFromItemName', () => {
@@ -54,10 +54,46 @@ describe('Dex utils Item getter tests', () => {
       const actual = getItemImageUrl(itemName);
       expect(actual).toBe(expected);
     });
+
+    test('should have an image for all wild held items', () => {
+      const getFullPath = (itemUrl) => {
+        return `./static${itemUrl}`;
+      }
+      const nonItemList = [];
+
+      for (let pokemonId = 1; pokemonId < 1465; pokemonId++) {
+        const pokemonInfo = getPokemonInfo(0, pokemonId);
+        const held_item1 = getItemString(pokemonInfo.held_item1);
+        const held_item2 = getItemString(pokemonInfo.held_item2);
+        const held_item3 = getItemString(pokemonInfo.held_item3);
+
+        const itemImageUrl1 = getItemImageUrl(held_item1);
+        const itemImageUrl2 = getItemImageUrl(held_item2);
+        const itemImageUrl3 = getItemImageUrl(held_item3);
+
+        const itemImagePath1 = getFullPath(itemImageUrl1);
+        const itemImagePath2 = getFullPath(itemImageUrl2);
+        const itemImagePath3 = getFullPath(itemImageUrl3);
+
+        const itemImageList = [itemImagePath1, itemImagePath2, itemImagePath3]
+
+        itemImageList.forEach((itemImagePath) => {
+          if (!itemImagePath.includes("None")) {
+            fs.access(itemImagePath, fs.constants.F_OK, (err) => {
+              if (err && !nonItemList.includes(itemImagePath)) {
+                nonItemList.push(itemImagePath);
+              }
+            // Uncomment the line below to log any missing items.
+            // console.log(nonItemList)
+            });
+          }
+        });
+      }
+    });
   });
 });
 
-function getAllItemImageData(mode = "2.0") {
+function getAllItemImageData(onlyValidPokemons = false, mode = "2.0") {
   const pokemonImageData = [];
   const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
   const pokemons = Object.values(form_map)
@@ -65,6 +101,10 @@ function getAllItemImageData(mode = "2.0") {
   for (const pokemon of pokemons) {
     for (let i = 0; i < pokemon.length; i++) {
       const pokemonId = pokemon[i];
+      const validPokemon = isValidPokemon(pokemonId, mode);
+      if (onlyValidPokemons && !validPokemon) {
+        continue;
+      }
       const pokemonInfo = getPokemon(pokemonId, mode);
       const itemImageUrl1 = pokemonInfo.item1 !== "None" ? getItemImageUrl(pokemonInfo.item1) : null;
       const itemImageUrl2 = pokemonInfo.item2 !== "None" ? getItemImageUrl(pokemonInfo.item2) : null;
@@ -85,7 +125,7 @@ function getAllItemImageData(mode = "2.0") {
   return pokemonImageData;
 }
 
-test.skip.each([...getAllItemImageData("2.0")])('2.0 Item image %s for %s slot %s does not exist', (filename, formName, slot, done) => {
+test.skip.each([...getAllItemImageData(true, "2.0")])('2.0 Item image %s for %s slot %s does not exist', (filename, formName, slot, done) => {
   const imgFilePath = path.join(__dirname, '../../../static', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
     let fileExists = true;
@@ -102,7 +142,7 @@ test.skip.each([...getAllItemImageData("2.0")])('2.0 Item image %s for %s slot %
   });
 });
 
-test.skip.each([...getAllItemImageData("3.0")])('3.0 Item image %s for %s slot %s does not exist', (filename, formName, slot, done) => {
+test.skip.each([...getAllItemImageData(true, "3.0")])('3.0 Item image %s for %s slot %s does not exist', (filename, formName, slot, done) => {
   const imgFilePath = path.join(__dirname, '../../../static', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
     let fileExists = true;

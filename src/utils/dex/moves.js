@@ -30,14 +30,14 @@ function generateMovesViaLearnset(monsNo, level, mode = "2.0") {
    * In BDSP, a trainer's Pokemon, when provided no moves,
    * will use the four most recent moves in the learnset.
    */
-  if (!Number.isInteger(monsNo) || monsNo < 0 || !LearnsetTable.WazaOboe[monsNo]) {
+  const learnsetTable = mode === "2.0" ? LearnsetTable : LearnsetTable3;
+  if (!Number.isInteger(monsNo) || monsNo < 0 || !learnsetTable.WazaOboe[monsNo]) {
     throw new Error('Invalid Pokémon number');
   }
 
   if (!Number.isInteger(level) || level < 0) {
     throw new Error('Invalid level');
   }
-  const learnsetTable = mode === "2.0" ? LearnsetTable : LearnsetTable3;
 
   let cutoffIndex = learnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
     if (i % 2 === 1) return IS_MOVE_INDEX;

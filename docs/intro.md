@@ -12,7 +12,7 @@ We hope you enjoy our romhack!
 
 :::info
 
-**WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, DISTORTION WORLD, OR OTHER GIMMICKS**. Please see our [FAQ](/faq.md) for more information.
+**WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, OR OTHER GIMMICKS**. Please see our [FAQ](/faq.md) for more information.
 
 :::
 
@@ -22,20 +22,18 @@ We hope you enjoy our romhack!
 
 - Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, evolution methods, held items, etc. If you need information on individual Pokémon, this is the page you want to peruse!
 - Includes evolution methods for regional forms and Luminescent exclusives.
-- Currently does not include locations.
 - Balances are credit to Hudie and the balance team.
 
-### [Pokémon Locations By Route](https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit)
+### [Pokémon Locations By Route](https://luminescent.team/mapper) [Beta]
 
-- If you want to know what all Pokémon are on each route as you go, this document is for you. It lists all wild encounter locations in the game, and circumstances for Pokémon to spawn in.
-- You must make your own copy before it will work.
-- Made by Solarance.
+- If you want to know what all Pokémon are on each route as you go, this document is for you. Pick a Route and it will show you all Pokémon that spawn there normally; add a specification (such as radar or incense) and it will show you how that affects your chances!
+- Eventually intended to show items/shops.
+- Made by Aaron.
 
-### [Trainer Documentation](https://docs.google.com/spreadsheets/d/17d7xfiqRDJQp5j6LZIAE8QVCQi7tCgjU_gu5_vE0l2I/edit?usp=sharing)
+### [Trainer Documentation](https://luminescent.team/mapper) [Beta]
 
-- Use this document to see all trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, our document will help you stay ahead!
-- You must make your own copy on gdocs before it will work.
-- Made by Solarance.
+- Use this special mapper site to see all trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, our document will help you stay ahead!
+- Made by Aaron.
 
 ### [Professor Oak Challenge Tracker](https://docs.google.com/spreadsheets/d/133FFeo8GooaxUnlbInP5TL-bEwhwB2bMoxhqLdfEl94/edit#gid=1663592077)
 
@@ -46,11 +44,6 @@ We hope you enjoy our romhack!
 ### [Randomization Guide](https://www.nexusmods.com/pokemonbdsp/articles/3)
 - This guide has all the information necessary to randomize Luminescent Platinum! Please follow it step by step to ensure proper implementation. Further questions can be asked in our discord, or as comments to the article.
 - Made by DJ.
-
-### [Luminescent Damage Calculator](https://denmark14.github.io/lumi-calc/?gen=8)
-- This page allows you to calculate all your moves ahead of time, using Luminescent's specific stat changes versus Luminescent's specific fights!
-- Made by (all of) Denmark.
-- (Currently bugged and down for maintenance. No ETA on when it will be fixed.)
 
 ### [PKLumiHex](https://github.com/TalonSabre/PKLumiHex)
 - Luminescent's special PKHex branch. Please always back up your save before editing and read the github page to understand any current issues with the program.

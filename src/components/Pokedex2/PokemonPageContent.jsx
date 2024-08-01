@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './styles.module.css';
 import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
@@ -14,9 +14,12 @@ import { PokemonEggGroups } from './PokemonEggGroups';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
+import { getTechMachineLearnset } from '../../utils/dex/moves';
 import ModeSwitch from './ModeSwitch';
 import { useGlobalState } from '../common/GlobalState';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex';
+import { PokemonLocations } from './PokemonLocations';
+import { getRoutesFromPokemonId } from '../../utils/dex/encounters';
 
 function padNumberWithZeros(number) {
   const strNumber = String(number);
@@ -34,6 +37,8 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
   const pokemonInfo = globalState.mode === "2.0" ? pokemon : pokemon3;
   const allPokemonNames = globalState.mode === "2.0" ? pokemonNames : pokemonNames3;
   const pokemonId = getPokemonIdFromMonsNoAndForm(pokemonInfo.monsno, pokemonInfo.formno, globalState.mode)
+  const pokemon_locations = getRoutesFromPokemonId(pokemonId);
+  const [showMoreLocations, setShowMoreLocations] = useState(false);
 
   if (pokemon === pokemon3 && globalState.mode === "2.0") {
     return (
@@ -42,11 +47,12 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
           <Box display="flex" justifyContent="center" marginTop="16px">
             <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={1} formNo={0} />
             <PokemonInfoButton />
-            <ModeSwitch />
-          </Box>
+            {/* <ModeSwitch /> */}
+            {/* Uncomment when 3.0 dex is ready to be released */}
+        </Box>
         </Container>
   
-        <Typography variant='h6' display="flex" sx={{marginTop: "16px", justifyContent: "center"}} >{pokemon.name} Does Not Exist in this Mode.</Typography>
+        <Typography variant='h6' display="flex" sx={{marginTop: "16px", justifyContent: "center"}} >{pokemonInfo.name} Does Not Exist in this Mode.</Typography>
       </Container>
     )
   }
@@ -55,25 +61,26 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
     <Container>
       <Container>
         <Box display="flex" justifyContent="center" marginTop="16px">
-          <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
-          <PokemonInfoButton />
-          <ModeSwitch />
+        <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
+        <PokemonInfoButton />
+        {/* <ModeSwitch /> */}
+        {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
       </Container>
       <div className="container">
         <div className="row">
           <Typography variant="h6" display="flex" sx={{ paddingLeft: '16px', paddingBottom: '12px', alignItems: "end"}}>
-            {`#${padNumberWithZeros(pokemonInfo.monsno)}: `}
+          {`#${padNumberWithZeros(pokemonInfo.monsno)}: `}
           </Typography>
           <Typography variant="h2" display="flex" sx={{ paddingLeft: '8px', alignItems: "end"}}>
-            {` ${pokemonInfo.name}`}
+          {` ${pokemonInfo.name}`}
           </Typography>
         </div>
       </div>
       <div className="container">
         <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={1}>
           <Box className={style.pokeColumn} gridColumn="span 1">
-            <ImageWithFallback
+          <ImageWithFallback
               alt={pokemonInfo.name}
               src={`/img/pkm/${pokemonInfo.imageSrc}`}
               fallbackSrc={`/img/pkm/${pokemonInfo.forms[0].imageSrc}`}
@@ -83,7 +90,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
             />
           </Box>
           <Box className={style.pokeColumn} gridColumn="span 1">
-            <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
+          <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
           </Box>
           <Box className={style.pokeColumn} gridColumn="span 1">
             <Typography variant="h6" component="h6">
@@ -107,20 +114,73 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
         />
       </Container>
 
-      <Box display="grid" gridTemplateColumns="repeat(9, 1fr)" gap={1}>
-        <Box className={style.secondPokeColumn} gridColumn="span 5">
-          <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
+      <Container>
+        <Box
+          display="grid"
+          gridTemplateColumns={{
+            sm: "1fr", 
+            md: "repeat(2, 1fr)",
+            lg: showMoreLocations ? "repeat(2, 1fr)" : "repeat(3, 1fr)"
+          }}
+          justifyContent={{
+            sm: "center",
+            md: "unset",
+          }}
+          justifyItems={{
+            sm: "center",
+            md: "unset",
+          }}
+          gap={1}
+          marginTop="25px"
+          marginBottom="12px"
+        >
+          <Box gridColumn="span 1" width={{sm: "80%", md: "unset"}} className={style.secondPokeColumn}>
+            <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
+          </Box>
+          <Box display={{xs: "none", sm: "none", md: "none", lg: showMoreLocations ? "none" : "unset"}}>
+            <PokemonLocations
+              locations={pokemon_locations}
+              showMore={showMoreLocations}
+              setShowMoreLocations={setShowMoreLocations}
+              pokemonId={pokemonId}
+            />
+          </Box>
+          <Box width={{sm: "80%", md: "unset"}} gridColumn="span 1">
+            <Box display="flex" justifyContent="center">
+              <Typography variant='h6'>Additional Info:</Typography>
+            </Box>
+            <Container
+              sx={{
+                border: "2px solid var(--ifm-table-border-color)",
+                borderRadius: "5px",
+                height: {xs: "min-content", md: "244px"},
+                padding: "12px !important"
+              }}
+            >
+              <PokemonItems item1={pokemonInfo.item1} item2={pokemonInfo.item2} item3={pokemonInfo.item3}/>
+              <PokemonEggGroups eggGroupNames={pokemonInfo.eggGroupNames} sx={{ marginTop: '16px' }} />
+              <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} sx={{ marginTop: '16px' }} />
+            </Container>
+          </Box>
+          <Box
+            display={{xs: "grid", lg: showMoreLocations ? "grid" : "none"}}
+            justifyItems="center"
+            gridColumn={{sm: "span 1", md: "span 2", lg: showMoreLocations ? "span 2" : "unset"}}
+            width={{sm: "80%", md: "unset"}}
+          >
+            <PokemonLocations
+              locations={pokemon_locations}
+              showMore={showMoreLocations}
+              setShowMoreLocations={setShowMoreLocations}
+              pokemonId={pokemonId}
+            />
+          </Box>
         </Box>
-        <Box className={style.secondPokeColumn} gridColumn="span 4">
-          <PokemonItems item1={pokemonInfo.item1} item2={pokemonInfo.item2} item3={pokemonInfo.item3}/>
-          <PokemonEggGroups eggGroupNames={pokemonInfo.eggGroupNames} sx={{ marginTop: '16px' }} />
-          <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} sx={{ marginTop: '16px' }} />
-        </Box>
-      </Box>
+      </Container>
 
-      <div className="container">
+      <Container>
         <EvolutionGraph evolutionTree={pokemonInfo.evolutionTree} globalState={globalState} />
-      </div>
+      </Container>
 
       <Container>
         <PokemonAlternativeFormsList pokemonForms={pokemonInfo.forms} />

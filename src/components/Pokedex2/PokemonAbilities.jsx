@@ -44,7 +44,13 @@ export const PokemonAbilities = ({ abilityName1, abilityName2, abilityNameHidden
   );
 };
 
-export const PokemonAbility = ({ abilityName, isHiddenAbility, needsSpacing }) => {
+export const PokemonAbility = ({
+  abilityName,
+  isHiddenAbility=false,
+  needsSpacing=false,
+  sx,
+  label=false
+}) => {
   const [globalState, updateMode] = useGlobalState();
   const [open, setOpen] = useState(false);
 
@@ -56,9 +62,20 @@ export const PokemonAbility = ({ abilityName, isHiddenAbility, needsSpacing }) =
     setOpen(false);
   };
   return (
-    <div style={{ display: 'inline' }}>
+    <div style={{ display: 'flex' }}>
+      {label && (
+        <Typography>
+          Ability:&nbsp;
+        </Typography>
+      )}
       <Typography
-        sx={{ textDecoration: 'underline', fontSize: '0.9rem', marginRight: needsSpacing && '8px', cursor: 'pointer' }}
+        sx={{
+          textDecoration: 'underline',
+          fontSize: '0.9rem',
+          marginRight: needsSpacing && '8px',
+          cursor: 'pointer',
+          ...sx
+        }}
         onClick={handleOpen}
       >
         {abilityName}
@@ -66,17 +83,18 @@ export const PokemonAbility = ({ abilityName, isHiddenAbility, needsSpacing }) =
         {needsSpacing && ','}
       </Typography>
       <Modal open={open} onClose={handleClose}>
-      <Box style={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          backgroundColor: 'var(--ifm-color-content-inverse)',
-          color: 'var(--ifm-color-content)',
-          padding: '16px',
-          borderRadius: '8px',
-          border: 'var(--ifm-table-border-width) solid var(--ifm-table-border-color)',
-        }}
+        <Box
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'var(--ifm-color-content-inverse)',
+            color: 'var(--ifm-color-content)',
+            padding: '16px',
+            borderRadius: '8px',
+            border: 'var(--ifm-table-border-width) solid var(--ifm-table-border-color)',
+          }}
         >
           <Typography variant="h5" style={{ textAlign: 'center' }}>{abilityName}</Typography>
           <Typography variant="h6">{getAbilityInfo(getAbilityIdFromAbilityName(abilityName, globalState.mode), globalState.mode)}</Typography>

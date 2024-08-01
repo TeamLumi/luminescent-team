@@ -31,7 +31,8 @@ export const PokemonListPageContent = ({ pokemonList, pokemonList3 }) => {
         <Box display="flex" marginTop="16px">
           <PokemonSearchInput allPokemons={allPokemons} setPokemons={setPokemons} />
           <PokemonInfoButton />
-          <ModeSwitch />
+          {/* <ModeSwitch /> */}
+          {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
 
         <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>

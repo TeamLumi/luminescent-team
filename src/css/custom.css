@@ -76,3 +76,8 @@ div.evolutionTables > table td:nth-child(even) {
   justify-content: center;
   align-items: center;
 }
+
+.alcremie {
+  min-height: 128px !important;
+  min-width: 115px !important;
+}

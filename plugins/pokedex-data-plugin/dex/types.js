@@ -1,6 +1,6 @@
 const { typeName } = require('./data');
 
-function getTypeName(typeId = 0, mode) {
+function getTypeName(typeId = 0) {
   const type = typeName.labelDataArray[typeId]?.wordDataArray[0]?.str;
   if (!type) throw Error(`Bad typeId: ${typeId}`);
   return type;

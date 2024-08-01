@@ -1,7 +1,7 @@
 const { EvolutionData } = require('./data');
 const { EvolutionData3 } = require('./data3');
 const { EVOLUTION_METHOD_DETAILS, REPLACE_STRING } = require('./evolutionConstants');
-const { getPokemonIdFromMonsNoAndForm } = require('./functions');
+const { getPokemonIdFromMonsNoAndForm, isValidPokemon } = require('./functions');
 const { getMoveLevelLearned, getMoveId } = require('./moves');
 
 function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", level, pokemonId = 0) {
@@ -21,7 +21,7 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", l
     try {
       evoMethod = evoFunction(methodParameter, mode);
     } catch (error){
-      throw Error(`This method parameter doesn't work ${error} ${methodId}, ${methodParameter}, ${evoFunction.name}`)
+      throw Error(`This method parameter doesn't work for mode: ${mode}. ${error} ${methodId}, ${methodParameter}, ${evoFunction.name}`)
     }
 
     if (evolutionDetails.parameterType === "Move") {
@@ -62,6 +62,10 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", l
 function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
   if (!Number.isInteger(pokemonId) || pokemonId < 0) {
     throw new Error(`Bad pokemon ID: ${pokemonId}`);
+  }
+
+  if (!isValidPokemon(pokemonId, mode)) {
+    return [];
   }
 
   const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3;

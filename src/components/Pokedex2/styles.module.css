@@ -95,6 +95,7 @@
 .scrollContent:first-child {
   background-color: var(--ifm-table-cell-color);
   border: var(--ifm-table-border-width) solid var(--ifm-table-border-color);
+  border-radius: 5px;
 }
 
 .startPokemon {
@@ -224,9 +225,6 @@
   .pokeColumn {
     grid-column: span 3 !important;
   }
-  .secondPokeColumn {
-    grid-column: span 9 !important;
-  }
 }
 
 @media (max-width: 680px) {
@@ -292,4 +290,3 @@
     border-right: none;
   }
 }
-

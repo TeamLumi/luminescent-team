@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { FORM_MAP, FORM_MAP3 } = require('./functions');
+const { FORM_MAP, FORM_MAP3, isValidPokemon } = require('./functions');
 const { getItemImageUrl, getItemString } = require('./item');
 const { getEvolutionTree, getEvolutionMethodDetail } = require('./evolution');
 const { getPokemonName } = require('./name');
@@ -10,7 +10,7 @@ test("getEvolutionTree", () => {
   getEvolutionTree(25, false, "3.0")
 })
 
-function getAllEvoImageData(mode = "2.0") {
+function getAllEvoImageData(onlyValidPokemons = false, mode = "2.0") {
   const pokemonImageData = [];
   const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
   const pokemons = Object.values(form_map)
@@ -21,8 +21,8 @@ function getAllEvoImageData(mode = "2.0") {
       if (pokemonId === 0) {
         continue;
       }
-      const pokemonInfo = getPokemon(pokemonId, mode)
-      if (!pokemonInfo.isValid) {
+      const validPokemon = isValidPokemon(pokemonId, mode);
+      if (onlyValidPokemons && !validPokemon) {
         continue;
       }
       const evolutionInfo = getEvolutionTree(pokemonId, false, mode);
@@ -59,7 +59,7 @@ function getAllEvoImageData(mode = "2.0") {
   return pokemonImageData;
 }
 
-test.skip.each([...getAllEvoImageData("2.0")])('2.0 Item image %s for %s (%s) does not exist', (filename, formName, pokemonId, done) => {
+test.skip.each([...getAllEvoImageData(true, "2.0")])('2.0 Item image %s for %s (%s) does not exist', (filename, formName, pokemonId, done) => {
   const imgFilePath = path.join(__dirname, '../../../static', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
     let fileExists = true;
@@ -76,7 +76,7 @@ test.skip.each([...getAllEvoImageData("2.0")])('2.0 Item image %s for %s (%s) do
   });
 });
 
-test.skip.each([...getAllEvoImageData("3.0")])('3.0 Item image %s for %s (%s) does not exist', (filename, formName, pokemonId, done) => {
+test.skip.each([...getAllEvoImageData(true, "3.0")])('3.0 Item image %s for %s (%s) does not exist', (filename, formName, pokemonId, done) => {
   const imgFilePath = path.join(__dirname, '../../../static', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
     let fileExists = true;

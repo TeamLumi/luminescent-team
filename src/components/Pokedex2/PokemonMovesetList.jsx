@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, ButtonBase, Container, Modal, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const DMG_TYPE_ICONS = {
@@ -79,7 +79,7 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '18px', sm: '26px', md: '32px' }}>
         <img src={useBaseUrl('/img/pkm/pm0000_00_00_00_L.webp')} alt="Egg Move" />
-      </Box>
+        </Box>
     );
   }
 
@@ -143,7 +143,36 @@ const MovesetListItem = ({ moveLevel, move }) => {
   );
 };
 
-export const PokemonMoveType = ({ typeName, typeColor }) => {
+export const PokemonMoveType = ({
+  typeName,
+  typeColor,
+  fontSize = null,
+  smallest = false,
+  ...props
+}) => {
+  let fontSizeStyling = {};
+  if (smallest && fontSize) {
+    fontSizeStyling = {
+      xs: fontSize[0],
+      sm: fontSize[0],
+      me: fontSize[0],
+      lg: fontSize[0],      
+    }
+  } else if (fontSize) {
+    fontSizeStyling = {
+      xs: fontSize[0],
+      sm: fontSize[1],
+      md: fontSize[0],
+      lg: fontSize[1],
+    }
+  } else {
+    fontSizeStyling = {
+      xs: '0.5rem',
+      sm: '0.6rem',
+      md: '1rem',
+      lg: '1rem',            
+    }
+  }
   return (
     <Box
       sx={{
@@ -153,6 +182,7 @@ export const PokemonMoveType = ({ typeName, typeColor }) => {
         borderStyle: 'solid',
         borderRadius: '0.25rem',
       }}
+      {...props}
     >
       <Typography
         sx={{
@@ -166,15 +196,61 @@ export const PokemonMoveType = ({ typeName, typeColor }) => {
           fontWeight: 700,
           textShadow:
             '0 1px 0 #000,0 0 1px rgba(0,0,0,.6),0 0 2px rgba(0,0,0,.7),0 0 3px rgba(0,0,0,.8),0 0 4px rgba(0,0,0,.9)',
-          fontSize: {
-            xs: '0.5rem',
-            sm: '0.6rem',
-            md: '1rem',
-          },
+          fontSize: fontSizeStyling,
         }}
       >
         {typeName}
       </Typography>
     </Box>
+  );
+};
+
+export const PokemonMove = ({moveInfo, ...props}) => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <>
+      <ButtonBase sx={{width: "100%"}} onClick={handleOpen}>
+        <PokemonMoveType {...props} />
+      </ButtonBase>
+      <Modal open={open} onClose={handleClose}>
+        <Box
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            backgroundColor: 'var(--ifm-color-content-inverse)',
+            color: 'var(--ifm-color-content)',
+            padding: '16px',
+            borderRadius: '8px',
+            border: 'var(--ifm-table-border-width) solid var(--ifm-table-border-color)',
+          }}
+        >
+          <Box
+            sx={{
+              display: 'grid',
+              gridTemplateColumns: {
+                xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
+                sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
+                md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
+              },
+              alignItems: 'center',
+              columnGap: '4px',
+              rowGap: '8px',
+              marginBottom: '8px',
+            }}
+          >
+            <MovesetListItem move={moveInfo} />
+          </Box>
+        </Box>
+      </Modal>
+    </>
   );
 };

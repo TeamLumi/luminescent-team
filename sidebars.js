@@ -28,7 +28,6 @@ const sidebars = {
       items: [
         'installation/atmosphere',
         'installation/ryujinx',
-        'installation/yuzu',
       ],
     },
   'features',

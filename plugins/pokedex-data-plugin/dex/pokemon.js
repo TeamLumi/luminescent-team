@@ -3,6 +3,7 @@ const { PersonalTable3 } = require('./data3');
 const { getAbilityString } = require('./ability');
 const { getTechMachineLearnset, getLevelLearnset, getEggMoves, getTutorMoves } = require('./moves');
 const { getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
+const { getWeight, getHeight } = require('./details');
 const { getTypeName } = require('./types');
 const { getGrassKnotPower, getImage, getPokemonFormIndexById, getPokemonFormIds, getDexDescription } = require('./functions');
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./egggroup');
@@ -26,8 +27,8 @@ function getPokemon(pokemonId, mode = "2.0") {
     spe: p.basic_agi,
   };
   const baseStatsTotal = Object.values(baseStats).reduce((total, stat) => total + stat, 0);
-  const weight = p.weight / 10;
-  const height = p.height / 100;
+  const weight = getWeight(pokemonId);
+  const height = getHeight(pokemonId);
   const type1 = getTypeName(p.type1);
   const type2 = getTypeName(p.type2);
   const type1Id = p.type1;
@@ -40,15 +41,15 @@ function getPokemon(pokemonId, mode = "2.0") {
   const ability2 = getAbilityString(p.tokusei2, mode);
   const abilityH = getAbilityString(p.tokusei3, mode);
 
-  const evolutionTree = getEvolutionTree(p.id, true, mode);
+  const evolutionTree = getEvolutionTree(pokemonId, true, mode);
 
   const learnset = {
-    level: getLevelLearnset(p.id, mode),
-    tm: getTechMachineLearnset(p.id, mode),
-    egg: getEggMoves(p.id, mode),
+    level: getLevelLearnset(pokemonId, mode),
+    tm: getTechMachineLearnset(pokemonId, mode),
+    egg: getEggMoves(pokemonId, mode),
     tutor: getTutorMoves(monsno, formno, mode)
   };
-  const eggGroupNames = getEggGroupViaPokemonId(p.id, mode).map((eggId) => getEggGroupNameById(eggId));
+  const eggGroupNames = getEggGroupViaPokemonId(pokemonId, mode).map((eggId) => getEggGroupNameById(eggId));
   const forms = getPokemonFormIds(p.monsno, mode).map((formId) => {
     return {
       name: getPokemonName(formId, mode),
