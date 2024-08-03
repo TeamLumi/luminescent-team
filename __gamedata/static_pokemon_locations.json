@@ -458,7 +458,7 @@
       "link": "https://luminescent.team/docs/special-events/gifts#kanto-starters"
     }
   ],
-  "Wobuffett": [
+  "Wobbuffet": [
     {
       "routeName": "Jubilife City (TV Station)",
       "encounterType": "Gifts",
@@ -1699,7 +1699,7 @@
       "zoneId": 999
     }
   ],
-  "Tentracruel": [
+  "Tentacruel": [
     {
       "routeName": "Underground",
       "encounterType": "Walking",
@@ -1885,7 +1885,7 @@
       "zoneId": 999
     }
   ],
-  "Meditie": [
+  "Meditite": [
     {
       "routeName": "Underground",
       "encounterType": "Walking",
