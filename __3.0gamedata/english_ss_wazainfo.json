@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_ss_wazainfo",
     "hash": -1671069364,
@@ -4673,7 +4673,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user counters the target by mimicking the target's",
+                    "str": "The user counters the target by mimicking the target’s",
                     "strWidth": 710.0
                 },
                 {
@@ -5031,7 +5031,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The target is clamped and squeezed by the user's very",
+                    "str": "The target is clamped and squeezed by the user’s very",
                     "strWidth": 710.0
                 },
                 {
@@ -5199,7 +5199,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "vines, or the like. This may also lower the target's",
+                    "str": "vines, or the like. This may also lower the target’s",
                     "strWidth": 710.0
                 },
                 {
@@ -6669,7 +6669,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "can't flee from battle.",
+                    "str": "can’t flee from battle.",
                     "strWidth": 710.0
                 }
             ]
@@ -8991,7 +8991,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The power of this attack move is doubled if it's used on",
+                    "str": "The power of this attack move is doubled if it’s used on",
                     "strWidth": 710.0
                 },
                 {
@@ -8999,7 +8999,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "a target that's switching out of battle.",
+                    "str": "a target that’s switching out of battle.",
                     "strWidth": 710.0
                 }
             ]
@@ -10485,7 +10485,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This attack's power is doubled when used on a target",
+                    "str": "This attack’s power is doubled when used on a target",
                     "strWidth": 710.0
                 },
                 {
@@ -10493,7 +10493,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "with paralysis. This also cures the target's paralysis,",
+                    "str": "with paralysis. This also cures the target’s paralysis,",
                     "strWidth": 710.0
                 },
                 {
@@ -11605,7 +11605,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user's type is changed depending on its environment,",
+                    "str": "The user’s type is changed depending on its environment,",
                     "strWidth": 710.0
                 },
                 {
@@ -11613,7 +11613,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "such as at water's edge, in grass, or in a cave.",
+                    "str": "such as at water’s edge, in grass, or in a cave.",
                     "strWidth": 710.0
                 }
             ]
@@ -11917,7 +11917,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user attacks the target for five turns. The move's",
+                    "str": "The user attacks the target for five turns. The move’s",
                     "strWidth": 710.0
                 },
                 {
@@ -12587,7 +12587,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "wind. This may also raise all the user's stats.",
+                    "str": "wind. This may also raise all the user’s stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -14353,7 +14353,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The Berry determines the move's type and power.",
+                    "str": "The Berry determines the move’s type and power.",
                     "strWidth": 710.0
                 }
             ]
@@ -14963,7 +14963,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target has, the greater the move's power.",
+                    "str": "target has, the greater the move’s power.",
                     "strWidth": 710.0
                 }
             ]
@@ -15123,7 +15123,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target's intended move with greater power. This move",
+                    "str": "target’s intended move with greater power. This move",
                     "strWidth": 710.0
                 },
                 {
@@ -15131,7 +15131,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "fails if it isn't used first.",
+                    "str": "fails if it isn’t used first.",
                     "strWidth": 710.0
                 }
             ]
@@ -15307,7 +15307,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "the greater the move's power.",
+                    "str": "the greater the move’s power.",
                     "strWidth": 710.0
                 }
             ]
@@ -16891,7 +16891,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "may also lower the target's accuracy.",
+                    "str": "may also lower the target’s accuracy.",
                     "strWidth": 710.0
                 }
             ]
@@ -17013,7 +17013,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "its polished body. This may also lower the target's",
+                    "str": "its polished body. This may also lower the target’s",
                     "strWidth": 710.0
                 },
                 {
@@ -18523,7 +18523,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "wind. This may also raise all the user's stats at once.",
+                    "str": "wind. This may also raise all the user’s stats at once.",
                     "strWidth": 710.0
                 }
             ]
@@ -19859,7 +19859,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The target's stat changes don't affect this attack's",
+                    "str": "The target’s stat changes don’t affect this attack’s",
                     "strWidth": 710.0
                 },
                 {
@@ -20599,7 +20599,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target isn't holding an item.",
+                    "str": "target isn’t holding an item.",
                     "strWidth": 710.0
                 }
             ]
@@ -21247,7 +21247,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user drains the target's energy with its horns. The",
+                    "str": "The user drains the target’s energy with its horns. The",
                     "strWidth": 710.0
                 },
                 {
@@ -21255,7 +21255,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "user's HP is restored by half the damage taken by the",
+                    "str": "user’s HP is restored by half the damage taken by the",
                     "strWidth": 710.0
                 },
                 {
@@ -21301,7 +21301,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target's stat changes don't affect this attack's damage.",
+                    "str": "target’s stat changes don’t affect this attack’s damage.",
                     "strWidth": 710.0
                 }
             ]
@@ -21385,7 +21385,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move's power.",
+                    "str": "move’s power.",
                     "strWidth": 710.0
                 }
             ]
@@ -21561,7 +21561,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target. This may also lower the target's accuracy.",
+                    "str": "target. This may also lower the target’s accuracy.",
                     "strWidth": 710.0
                 }
             ]
@@ -21843,7 +21843,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user fires a beam of light at its target. The move's",
+                    "str": "The user fires a beam of light at its target. The move’s",
                     "strWidth": 710.0
                 },
                 {
@@ -22119,7 +22119,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "user's Sp. Atk stat.",
+                    "str": "user’s Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -22325,7 +22325,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "at its target. This lowers the user's Defense, Sp. Def,",
+                    "str": "at its target. This lowers the user’s Defense, Sp. Def,",
                     "strWidth": 710.0
                 },
                 {
@@ -22363,7 +22363,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user brings down a giant flame. This move's power is",
+                    "str": "The user brings down a giant flame. This move’s power is",
                     "strWidth": 710.0
                 },
                 {
@@ -22401,7 +22401,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user throws down a giant lightning bolt. This move's",
+                    "str": "The user throws down a giant lightning bolt. This move’s",
                     "strWidth": 710.0
                 },
                 {
@@ -22745,7 +22745,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Ghost type to the target's type.",
+                    "str": "Ghost type to the target’s type.",
                     "strWidth": 710.0
                 }
             ]
@@ -22851,7 +22851,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user attacks everything around it. The user's HP is",
+                    "str": "The user attacks everything around it. The user’s HP is",
                     "strWidth": 710.0
                 },
                 {
@@ -23371,7 +23371,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "during that turn, the target's move becomes Electric",
+                    "str": "during that turn, the target’s move becomes Electric",
                     "strWidth": 710.0
                 },
                 {
@@ -23753,7 +23753,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Pokémon. This may also sharply raise the user's Defense",
+                    "str": "Pokémon. This may also sharply raise the user’s Defense",
                     "strWidth": 710.0
                 },
                 {
@@ -24653,7 +24653,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user absorbs its target's HP. The user's HP is",
+                    "str": "The user absorbs its target’s HP. The user’s HP is",
                     "strWidth": 710.0
                 },
                 {
@@ -24737,7 +24737,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "ground. Those it hits can't flee from battle.",
+                    "str": "ground. Those it hits can’t flee from battle.",
                     "strWidth": 710.0
                 }
             ]
@@ -24989,7 +24989,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "and Detect. But the user's Defense stat falls.",
+                    "str": "and Detect. But the user’s Defense stat falls.",
                     "strWidth": 710.0
                 }
             ]
@@ -25663,7 +25663,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Deep-seated grudges summoned by the user's Z-Power trap",
+                    "str": "Deep-seated grudges summoned by the user’s Z-Power trap",
                     "strWidth": 710.0
                 },
                 {
@@ -25709,7 +25709,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Deep-seated grudges summoned by the user's Z-Power trap",
+                    "str": "Deep-seated grudges summoned by the user’s Z-Power trap",
                     "strWidth": 710.0
                 },
                 {
@@ -26851,7 +26851,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target's shadow to the ground to prevent the target from",
+                    "str": "target’s shadow to the ground to prevent the target from",
                     "strWidth": 710.0
                 },
                 {
@@ -26897,7 +26897,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target's stat changes don't affect this attack's damage.",
+                    "str": "target’s stat changes don’t affect this attack’s damage.",
                     "strWidth": 710.0
                 }
             ]
@@ -26981,7 +26981,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the user's Speed, however.",
+                    "str": "lowers the user’s Speed, however.",
                     "strWidth": 710.0
                 }
             ]
@@ -27011,7 +27011,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user restores the target's HP by up to half of its",
+                    "str": "The user restores the target’s HP by up to half of its",
                     "strWidth": 710.0
                 },
                 {
@@ -27141,7 +27141,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "fills a blade with the light's energy, attacking the",
+                    "str": "fills a blade with the light’s energy, attacking the",
                     "strWidth": 710.0
                 },
                 {
@@ -27583,7 +27583,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "also lowers the target's Defense stat.",
+                    "str": "also lowers the target’s Defense stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -27621,7 +27621,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "more the user's stats are raised, the greater the move's",
+                    "str": "more the user’s stats are raised, the greater the move’s",
                     "strWidth": 710.0
                 },
                 {
@@ -27773,7 +27773,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user heals the target's status condition. If the",
+                    "str": "The user heals the target’s status condition. If the",
                     "strWidth": 710.0
                 },
                 {
@@ -27781,7 +27781,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move succeeds, it also restores the user's own HP.",
+                    "str": "move succeeds, it also restores the user’s own HP.",
                     "strWidth": 710.0
                 }
             ]
@@ -27819,7 +27819,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "user's type determines the type of this move.",
+                    "str": "user’s type determines the type of this move.",
                     "strWidth": 710.0
                 }
             ]
@@ -27865,7 +27865,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "effect of the target's Ability.",
+                    "str": "effect of the target’s Ability.",
                     "strWidth": 710.0
                 }
             ]
@@ -27903,7 +27903,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "the target. This also lowers the target's Attack stat.",
+                    "str": "the target. This also lowers the target’s Attack stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -27933,7 +27933,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user instructs the target to use the target's last",
+                    "str": "The user instructs the target to use the target’s last",
                     "strWidth": 710.0
                 },
                 {
@@ -27987,7 +27987,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "it's heating up its beak results in a burn.",
+                    "str": "it’s heating up its beak results in a burn.",
                     "strWidth": 710.0
                 }
             ]
@@ -28025,7 +28025,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "huge noise to attack opposing Pokémon. The user's",
+                    "str": "huge noise to attack opposing Pokémon. The user’s",
                     "strWidth": 710.0
                 },
                 {
@@ -28307,7 +28307,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user, the Land Spirit Pokémon, obtains Alola's",
+                    "str": "The user, the Land Spirit Pokémon, obtains Alola’s",
                     "strWidth": 710.0
                 },
                 {
@@ -28323,7 +28323,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "full force. This reduces the target's HP greatly.",
+                    "str": "full force. This reduces the target’s HP greatly.",
                     "strWidth": 710.0
                 }
             ]
@@ -28613,7 +28613,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user unleashes a strong beam. The attack's recoil",
+                    "str": "The user unleashes a strong beam. The attack’s recoil",
                     "strWidth": 710.0
                 },
                 {
@@ -28621,7 +28621,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "harshly lowers the user's Sp. Atk stat.",
+                    "str": "harshly lowers the user’s Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -28743,7 +28743,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "contains a spirit. This may also lower the target's",
+                    "str": "contains a spirit. This may also lower the target’s",
                     "strWidth": 710.0
                 },
                 {
@@ -28873,7 +28873,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "prism. The user can't move on the next turn.",
+                    "str": "prism. The user can’t move on the next turn.",
                     "strWidth": 710.0
                 }
             ]
@@ -28903,7 +28903,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user hides in the target's shadow, steals the",
+                    "str": "The user hides in the target’s shadow, steals the",
                     "strWidth": 710.0
                 },
                 {
@@ -28911,7 +28911,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target's stat boosts, and then attacks.",
+                    "str": "target’s stat boosts, and then attacks.",
                     "strWidth": 710.0
                 }
             ]
@@ -29133,7 +29133,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "halves the target's HP.",
+                    "str": "halves the target’s HP.",
                     "strWidth": 710.0
                 }
             ]
@@ -29171,7 +29171,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target. The memory held determines the move's type.",
+                    "str": "target. The memory held determines the move’s type.",
                     "strWidth": 710.0
                 }
             ]
@@ -29385,7 +29385,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "the target's Ability.",
+                    "str": "the target’s Ability.",
                     "strWidth": 710.0
                 }
             ]
@@ -29431,7 +29431,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "of the target's Ability.",
+                    "str": "of the target’s Ability.",
                     "strWidth": 710.0
                 }
             ]
@@ -29477,7 +29477,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "of the target's Ability.",
+                    "str": "of the target’s Ability.",
                     "strWidth": 710.0
                 }
             ]
@@ -29607,7 +29607,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "user's stats.",
+                    "str": "user’s stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -30333,7 +30333,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user ignores the effects of opposing Pokémon's moves",
+                    "str": "The user ignores the effects of opposing Pokémon’s moves",
                     "strWidth": 710.0
                 },
                 {
@@ -30463,7 +30463,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This move raises all the user's stats but prevents the",
+                    "str": "This move raises all the user’s stats but prevents the",
                     "strWidth": 710.0
                 },
                 {
@@ -30509,7 +30509,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target's Speed stat. The target becomes weaker to",
+                    "str": "target’s Speed stat. The target becomes weaker to",
                     "strWidth": 710.0
                 },
                 {
@@ -30669,7 +30669,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "fleeing. This move also lowers the target's Defense and",
+                    "str": "fleeing. This move also lowers the target’s Defense and",
                     "strWidth": 710.0
                 },
                 {
@@ -30883,7 +30883,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target's Sp. Atk stat.",
+                    "str": "lowers the target’s Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -30967,7 +30967,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target's Speed stat.",
+                    "str": "lowers the target’s Speed stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -31005,7 +31005,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon's Attack stats.",
+                    "str": "raises ally Pokémon’s Attack stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31043,7 +31043,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target's Defense stat.",
+                    "str": "lowers the target’s Defense stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -31119,7 +31119,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon's Sp. Atk stats.",
+                    "str": "raises ally Pokémon’s Sp. Atk stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31195,7 +31195,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon's Speed stats.",
+                    "str": "raises ally Pokémon’s Speed stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31271,7 +31271,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target's Attack stat.",
+                    "str": "lowers the target’s Attack stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -31393,7 +31393,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon's Sp. Def stats.",
+                    "str": "raises ally Pokémon’s Sp. Def stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31431,7 +31431,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target's Sp. Def stat.",
+                    "str": "lowers the target’s Sp. Def stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -31515,7 +31515,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon's Defense stats.",
+                    "str": "raises ally Pokémon’s Defense stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31621,7 +31621,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user sharply raises the target's Attack and Sp. Atk",
+                    "str": "The user sharply raises the target’s Attack and Sp. Atk",
                     "strWidth": 710.0
                 },
                 {
@@ -31659,7 +31659,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user plays its drum, controlling the drum's roots to",
+                    "str": "The user plays its drum, controlling the drum’s roots to",
                     "strWidth": 710.0
                 },
                 {
@@ -31667,7 +31667,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "attack the target. This also lowers the target's Speed",
+                    "str": "attack the target. This also lowers the target’s Speed",
                     "strWidth": 710.0
                 },
                 {
@@ -31889,7 +31889,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "stored in its cheeks. This move's type changes depending",
+                    "str": "stored in its cheeks. This move’s type changes depending",
                     "strWidth": 710.0
                 },
                 {
@@ -31897,7 +31897,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "on the user's form.",
+                    "str": "on the user’s form.",
                     "strWidth": 710.0
                 }
             ]
@@ -32057,7 +32057,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "created from tart apples. This also lowers the target's",
+                    "str": "created from tart apples. This also lowers the target’s",
                     "strWidth": 710.0
                 },
                 {
@@ -32103,7 +32103,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "above. This also lowers the target's Defense stat.",
+                    "str": "above. This also lowers the target’s Defense stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -32141,7 +32141,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "could break the target's spirit. This also lowers the",
+                    "str": "could break the target’s spirit. This also lowers the",
                     "strWidth": 710.0
                 },
                 {
@@ -32149,7 +32149,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target's Sp. Atk stat.",
+                    "str": "target’s Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -32271,7 +32271,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "succession. Direct contact harshly lowers the attacker's",
+                    "str": "succession. Direct contact harshly lowers the attacker’s",
                     "strWidth": 710.0
                 },
                 {
@@ -32363,7 +32363,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "can't move on the next turn, because the force of this",
+                    "str": "can’t move on the next turn, because the force of this",
                     "strWidth": 710.0
                 },
                 {
@@ -32401,7 +32401,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This is Eternatus's most powerful attack in its original",
+                    "str": "This is Eternatus’s most powerful attack in its original",
                     "strWidth": 710.0
                 },
                 {
@@ -32409,7 +32409,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "form. The user can't move on the next turn.",
+                    "str": "form. The user can’t move on the next turn.",
                     "strWidth": 710.0
                 }
             ]
@@ -32485,7 +32485,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move's power goes up and damages all opposing Pokémon on",
+                    "str": "move’s power goes up and damages all opposing Pokémon on",
                     "strWidth": 710.0
                 },
                 {
@@ -32531,7 +32531,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "fails when the ground hasn't turned into a terrain.",
+                    "str": "fails when the ground hasn’t turned into a terrain.",
                     "strWidth": 710.0
                 }
             ]
@@ -32569,7 +32569,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "a row. This move boosts the user's Speed stat but lowers",
+                    "str": "a row. This move boosts the user’s Speed stat but lowers",
                     "strWidth": 710.0
                 },
                 {
@@ -32699,7 +32699,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "using this move. This move's power is increased on Misty",
+                    "str": "using this move. This move’s power is increased on Misty",
                     "strWidth": 710.0
                 },
                 {
@@ -32783,7 +32783,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "ground. This move's power doubles when the target is on",
+                    "str": "ground. This move’s power doubles when the target is on",
                     "strWidth": 710.0
                 },
                 {
@@ -32829,7 +32829,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This move's type and power changes depending on the",
+                    "str": "This move’s type and power changes depending on the",
                     "strWidth": 710.0
                 },
                 {
@@ -32837,7 +32837,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "terrain when it's used.",
+                    "str": "terrain when it’s used.",
                     "strWidth": 710.0
                 }
             ]
@@ -32875,7 +32875,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target's Sp. Atk stat.",
+                    "str": "lowers the target’s Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -32959,7 +32959,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target. If the user's stats were lowered during this",
+                    "str": "target. If the user’s stats were lowered during this",
                     "strWidth": 710.0
                 },
                 {
@@ -32997,7 +32997,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user attacks the target by controlling the target's",
+                    "str": "The user attacks the target by controlling the target’s",
                     "strWidth": 710.0
                 },
                 {
@@ -33005,7 +33005,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "item. The move fails if the target doesn't have an item.",
+                    "str": "item. The move fails if the target doesn’t have an item.",
                     "strWidth": 710.0
                 }
             ]
@@ -33447,7 +33447,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "opposing Pokémon. The lower the user's HP, the lower the",
+                    "str": "opposing Pokémon. The lower the user’s HP, the lower the",
                     "strWidth": 710.0
                 },
                 {
@@ -33455,7 +33455,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move's power.",
+                    "str": "move’s power.",
                     "strWidth": 710.0
                 }
             ]
@@ -33577,7 +33577,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target's Defense stat.",
+                    "str": "target’s Defense stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -33691,7 +33691,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "also removes 3 PP from the target's last move.",
+                    "str": "also removes 3 PP from the target’s last move.",
                     "strWidth": 710.0
                 }
             ]
@@ -33759,7 +33759,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Raises user's Defense and Special Defense.",
+                    "str": "Raises user’s Defense and Special Defense.",
                     "strWidth": 558.921875
                 }
             ]
@@ -33857,7 +33857,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Boosts user's stats in Incarnate Forme, or lowers opponent's",
+                    "str": "Boosts user’s stats in Incarnate Forme, or lowers opponent’s",
                     "strWidth": 773.71875
                 },
                 {
@@ -33895,7 +33895,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Raises user's Attack or Defense.",
+                    "str": "Raises user’s Attack or Defense.",
                     "strWidth": 413.0
                 }
             ]
@@ -34015,7 +34015,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Lowers user's Speed.",
+                    "str": "Lowers user’s Speed.",
                     "strWidth": 269.15625
                 }
             ]
@@ -34075,7 +34075,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Lowers user's Defense.",
+                    "str": "Lowers user’s Defense.",
                     "strWidth": 294.109375
                 }
             ]
@@ -34143,7 +34143,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": " Raises user's Speed.",
+                    "str": " Raises user’s Speed.",
                     "strWidth": 268.28125
                 }
             ]
@@ -34233,7 +34233,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Raises critical hit ratio and lowers target's Defense.",
+                    "str": "Raises critical hit ratio and lowers target’s Defense.",
                     "strWidth": 661.359375
                 }
             ]
@@ -34421,7 +34421,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Heals user's status conditions and recovers HP.",
+                    "str": "Heals user’s status conditions and recovers HP.",
                     "strWidth": 607.3125
                 }
             ]
@@ -34451,7 +34451,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Heals user's status conditions and raises its stats.",
+                    "str": "Heals user’s status conditions and raises its stats.",
                     "strWidth": 628.890625
                 }
             ]
@@ -34511,7 +34511,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Protects the user and lowers opponent's Speed on contact.",
+                    "str": "Protects the user and lowers opponent’s Speed on contact.",
                     "strWidth": 763.125
                 }
             ]
@@ -34655,7 +34655,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Tatsugiri's form if held in its mouth.",
+                    "str": "Tatsugiri’s form if held in its mouth.",
                     "strWidth": 457.46875
                 }
             ]
@@ -34715,7 +34715,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Harshly lowers the opponent's Defense and sharply raises",
+                    "str": "Harshly lowers the opponent’s Defense and sharply raises",
                     "strWidth": 744.625
                 },
                 {
@@ -35153,7 +35153,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Raises user's Special Attack.",
+                    "str": "Raises user’s Special Attack.",
                     "strWidth": 363.953125
                 }
             ]
@@ -35183,7 +35183,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Raises user's Speed.",
+                    "str": "Raises user’s Speed.",
                     "strWidth": 259.609375
                 }
             ]
@@ -35251,7 +35251,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Lowers user's Special Attack",
+                    "str": "Lowers user’s Special Attack",
                     "strWidth": 365.59375
                 },
                 {
@@ -35349,7 +35349,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Halves the opponent's HP.",
+                    "str": "Halves the opponent’s HP.",
                     "strWidth": 346.640625
                 }
             ]
@@ -35379,7 +35379,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Boosted even more if it's super-effective.",
+                    "str": "Boosted even more if it’s super-effective.",
                     "strWidth": 534.3125
                 }
             ]
@@ -35409,7 +35409,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Boosted even more if it's super-effective.",
+                    "str": "Boosted even more if it’s super-effective.",
                     "strWidth": 534.3125
                 }
             ]
@@ -35575,7 +35575,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Lowers opponent's Speed.",
+                    "str": "Lowers opponent’s Speed.",
                     "strWidth": 342.421875
                 }
             ]
@@ -35605,7 +35605,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Raises user's Speed.",
+                    "str": "Raises user’s Speed.",
                     "strWidth": 259.609375
                 }
             ]
@@ -35635,7 +35635,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Lowers opponent's Attack.",
+                    "str": "Lowers opponent’s Attack.",
                     "strWidth": 344.78125
                 }
             ]
@@ -35733,7 +35733,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "the move's power.",
+                    "str": "the move’s power.",
                     "strWidth": 236.796875
                 }
             ]
@@ -35763,7 +35763,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Lowers user's Defense and Special Defense.",
+                    "str": "Lowers user’s Defense and Special Defense.",
                     "strWidth": 568.46875
                 }
             ]
@@ -36209,7 +36209,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Lowers opponent's Speed each turn for 3 turns.",
+                    "str": "Lowers opponent’s Speed each turn for 3 turns.",
                     "strWidth": 596.390625
                 }
             ]
@@ -36247,7 +36247,7 @@
                     "eventID": 3,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move's type changes depending on the mask",
+                    "str": "move’s type changes depending on the mask",
                     "strWidth": 581.390625
                 },
                 {
@@ -36417,7 +36417,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "unison, doubling the move's power.",
+                    "str": "unison, doubling the move’s power.",
                     "strWidth": 460.5625
                 }
             ]
@@ -36639,7 +36639,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "left, the greater the move's power.",
+                    "str": "left, the greater the move’s power.",
                     "strWidth": 449.734375
                 }
             ]

@@ -81,7 +81,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     }
   ],
@@ -93,7 +93,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": 0,
-      "zoneId": 456
+      "zoneId": 446
     }
   ],
   "Cleffa": [
@@ -104,7 +104,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     }
   ],
@@ -116,7 +116,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     }
   ],
@@ -128,7 +128,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -138,7 +138,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Tyrogue": [
@@ -149,7 +149,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     }
   ],
@@ -161,7 +161,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -171,7 +171,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Magby": [
@@ -182,7 +182,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -192,7 +192,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Azurill": [
@@ -203,7 +203,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     }
   ],
@@ -215,7 +215,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     }
   ],
@@ -227,7 +227,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -237,7 +237,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Bonsly": [
@@ -248,7 +248,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     }
   ],
@@ -260,7 +260,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     }
   ],
@@ -272,7 +272,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -282,7 +282,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Mantyke": [
@@ -293,7 +293,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -303,7 +303,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Riolu": [
@@ -314,7 +314,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -324,7 +324,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 54,
+      "zoneId": 62,
       "link": "https://luminescent.team/docs/special-events/gifts#cynthia-egg"
     },
     {
@@ -334,7 +334,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 298,
+      "zoneId": 62,
       "link": "https://luminescent.team/docs/special-events/gifts#riolu-egg"
     }
   ],
@@ -346,7 +346,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -356,7 +356,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 54,
+      "zoneId": 62,
       "link": "https://luminescent.team/docs/special-events/gifts#cynthia-egg"
     },
     {
@@ -366,7 +366,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Happiny": [
@@ -377,7 +377,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -387,7 +387,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 54,
+      "zoneId": 62,
       "link": "https://luminescent.team/docs/special-events/gifts#cynthia-egg"
     }
   ],
@@ -399,7 +399,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 0,
+      "zoneId": 21,
       "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
     },
     {
@@ -409,7 +409,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 54,
+      "zoneId": 62,
       "link": "https://luminescent.team/docs/special-events/gifts#cynthia-egg"
     },
     {
@@ -419,7 +419,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Bulbasaur": [
@@ -608,7 +608,7 @@
       "minLevel": 50,
       "maxLevel": 50,
       "encounterTypeIndex": 0,
-      "zoneId": 252
+      "zoneId": 38
     }
   ],
   "Chikorita": [
@@ -675,7 +675,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Stitched Gengar": [
@@ -686,7 +686,7 @@
       "minLevel": 20,
       "maxLevel": 20,
       "encounterTypeIndex": 0,
-      "zoneId": 306
+      "zoneId": 311
     }
   ],
   "Rotom": [
@@ -697,7 +697,7 @@
       "minLevel": 20,
       "maxLevel": 20,
       "encounterTypeIndex": 0,
-      "zoneId": 306
+      "zoneId": 311
     }
   ],
   "Spiritomb": [
@@ -708,7 +708,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 367
+      "zoneId": 311
     }
   ],
   "Ditto": [
@@ -731,7 +731,7 @@
       "minLevel": 15,
       "maxLevel": 15,
       "encounterTypeIndex": 0,
-      "zoneId": 197
+      "zoneId": 446
     }
   ],
   "Litwick": [
@@ -742,7 +742,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 368
+      "zoneId": 446
     }
   ],
   "Tinkatuff": [
@@ -753,7 +753,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 251
+      "zoneId": 446
     }
   ],
   "Clone Venusaur": [
@@ -764,7 +764,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 255,
+      "zoneId": 446,
       "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
     }
   ],
@@ -776,7 +776,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 255,
+      "zoneId": 446,
       "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
     }
   ],
@@ -788,7 +788,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 255,
+      "zoneId": 446,
       "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
     }
   ],
@@ -800,7 +800,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 255,
+      "zoneId": 446,
       "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
     }
   ],
@@ -867,7 +867,7 @@
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 110
+      "zoneId": 216
     }
   ],
   "Manaphy": [
@@ -878,7 +878,7 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 380,
+      "zoneId": 216,
       "link": "https://luminescent.team/docs/special-events/gifts#manaphy-egg"
     }
   ],
@@ -890,7 +890,7 @@
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 207
+      "zoneId": 216
     }
   ],
   "Zapdos": [
@@ -901,7 +901,7 @@
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 197
+      "zoneId": 216
     }
   ],
   "Moltres": [
@@ -912,7 +912,7 @@
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 244
+      "zoneId": 216
     }
   ],
   "Mewtwo": [
@@ -923,7 +923,7 @@
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 255
+      "zoneId": 216
     }
   ],
   "Mew": [
@@ -934,7 +934,7 @@
       "minLevel": 50,
       "maxLevel": 50,
       "encounterTypeIndex": 0,
-      "zoneId": 354
+      "zoneId": 216
     }
   ],
   "Raikou": [
@@ -945,7 +945,7 @@
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 365
+      "zoneId": 216
     }
   ],
   "Entei": [
@@ -956,7 +956,7 @@
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 212
+      "zoneId": 216
     }
   ],
   "Suicune": [
@@ -967,7 +967,7 @@
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 385
+      "zoneId": 216
     }
   ],
   "Lugia": [
@@ -978,7 +978,7 @@
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 485
+      "zoneId": 216
     }
   ],
   "Ho-Oh": [
@@ -989,7 +989,7 @@
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 368
+      "zoneId": 216
     }
   ],
   "Celebi": [
@@ -1000,7 +1000,7 @@
       "minLevel": 50,
       "maxLevel": 50,
       "encounterTypeIndex": 0,
-      "zoneId": 200
+      "zoneId": 216
     }
   ],
   "Regirock": [
@@ -1011,7 +1011,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 286
+      "zoneId": 216
     }
   ],
   "Regice": [
@@ -1022,7 +1022,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 286
+      "zoneId": 216
     }
   ],
   "Registeel": [
@@ -1033,7 +1033,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 286
+      "zoneId": 216
     }
   ],
   "Latias": [
@@ -1044,7 +1044,7 @@
       "minLevel": 90,
       "maxLevel": 90,
       "encounterTypeIndex": 0,
-      "zoneId": 257
+      "zoneId": 216
     }
   ],
   "Latios": [
@@ -1055,7 +1055,7 @@
       "minLevel": 90,
       "maxLevel": 90,
       "encounterTypeIndex": 0,
-      "zoneId": 257
+      "zoneId": 216
     }
   ],
   "Kyogre": [
@@ -1066,7 +1066,7 @@
       "minLevel": 90,
       "maxLevel": 90,
       "encounterTypeIndex": 0,
-      "zoneId": 385
+      "zoneId": 216
     }
   ],
   "Groudon": [
@@ -1077,7 +1077,7 @@
       "minLevel": 90,
       "maxLevel": 90,
       "encounterTypeIndex": 0,
-      "zoneId": 259
+      "zoneId": 216
     }
   ],
   "Rayquaza": [
@@ -1088,7 +1088,7 @@
       "minLevel": 90,
       "maxLevel": 90,
       "encounterTypeIndex": 0,
-      "zoneId": 167
+      "zoneId": 216
     }
   ],
   "Jirachi": [
@@ -1099,7 +1099,7 @@
       "minLevel": 42,
       "maxLevel": 42,
       "encounterTypeIndex": 0,
-      "zoneId": 225
+      "zoneId": 216
     }
   ],
   "Deoxys": [
@@ -1110,7 +1110,7 @@
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 123
+      "zoneId": 216
     }
   ],
   "Regigigas": [
@@ -1121,7 +1121,7 @@
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 286
+      "zoneId": 216
     }
   ],
   "Giratina": [
@@ -1132,7 +1132,7 @@
       "minLevel": 85,
       "maxLevel": 85,
       "encounterTypeIndex": 0,
-      "zoneId": 264
+      "zoneId": 216
     }
   ],
   "Cresselia": [
@@ -1143,7 +1143,7 @@
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 257
+      "zoneId": 216
     }
   ],
   "Darkrai": [
@@ -1154,7 +1154,7 @@
       "minLevel": 80,
       "maxLevel": 80,
       "encounterTypeIndex": 0,
-      "zoneId": 332
+      "zoneId": 216
     }
   ],
   "Shaymin": [
@@ -1165,7 +1165,7 @@
       "minLevel": 75,
       "maxLevel": 75,
       "encounterTypeIndex": 0,
-      "zoneId": 285
+      "zoneId": 216
     }
   ],
   "Arceus": [
@@ -1176,7 +1176,7 @@
       "minLevel": 100,
       "maxLevel": 100,
       "encounterTypeIndex": 0,
-      "zoneId": 218
+      "zoneId": 216
     }
   ],
   "Spheal": [
@@ -1187,7 +1187,7 @@
       "minLevel": "~",
       "maxLevel": "~",
       "encounterTypeIndex": 0,
-      "zoneId": 38,
+      "zoneId": 216,
       "link": "https://luminescent.team/docs/special-events/trade#ponyta"
     }
   ],
@@ -1199,7 +1199,7 @@
       "minLevel": "~",
       "maxLevel": "~",
       "encounterTypeIndex": 0,
-      "zoneId": 54,
+      "zoneId": 216,
       "link": "https://luminescent.team/docs/special-events/trade#snorunt"
     }
   ],
@@ -1211,7 +1211,7 @@
       "minLevel": "~",
       "maxLevel": "~",
       "encounterTypeIndex": 0,
-      "zoneId": 417,
+      "zoneId": 216,
       "link": "https://luminescent.team/docs/special-events/trade#magikarp"
     }
   ],
@@ -1223,7 +1223,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Psyduck": [
@@ -1234,7 +1234,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Machop": [
@@ -1245,7 +1245,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Geodude": [
@@ -1256,7 +1256,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Murkrow": [
@@ -1267,7 +1267,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Bidoof": [
@@ -1278,7 +1278,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Kricketot": [
@@ -1289,7 +1289,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Shinx": [
@@ -1300,7 +1300,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Pachirisu": [
@@ -1311,7 +1311,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Buneary": [
@@ -1322,7 +1322,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Lickitung": [
@@ -1333,7 +1333,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Magnemite": [
@@ -1344,7 +1344,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Rhyhorn": [
@@ -1355,7 +1355,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Houndoom": [
@@ -1366,7 +1366,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Swablu": [
@@ -1377,7 +1377,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Absol": [
@@ -1388,7 +1388,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Golbat": [
@@ -1399,7 +1399,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Hoothoot": [
@@ -1410,7 +1410,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Bibarel": [
@@ -1421,7 +1421,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Stunky": [
@@ -1432,7 +1432,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Skuntank": [
@@ -1443,7 +1443,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Machoke": [
@@ -1454,7 +1454,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Graveler": [
@@ -1465,7 +1465,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Aipom": [
@@ -1476,7 +1476,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Wingull": [
@@ -1487,7 +1487,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Purugly": [
@@ -1498,7 +1498,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Pelipper": [
@@ -1509,7 +1509,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Luxio": [
@@ -1520,7 +1520,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Glameow": [
@@ -1531,7 +1531,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Wurmple": [
@@ -1542,7 +1542,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Silcoon": [
@@ -1553,7 +1553,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Roselia": [
@@ -1564,7 +1564,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Combee": [
@@ -1575,7 +1575,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Cherubi": [
@@ -1586,7 +1586,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Scyther": [
@@ -1597,7 +1597,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Pinsir": [
@@ -1608,7 +1608,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Buizel": [
@@ -1619,7 +1619,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Shellos": [
@@ -1630,7 +1630,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Gastrodon": [
@@ -1641,7 +1641,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Ralts": [
@@ -1652,7 +1652,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Barboach": [
@@ -1663,7 +1663,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Wooper": [
@@ -1674,7 +1674,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Quagsire": [
@@ -1685,7 +1685,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Tentacool": [
@@ -1696,7 +1696,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Tentracruel": [
@@ -1707,7 +1707,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Gible": [
@@ -1718,7 +1718,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Octillery": [
@@ -1729,7 +1729,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Whiscash": [
@@ -1740,7 +1740,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Onix": [
@@ -1751,7 +1751,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Skorupi": [
@@ -1762,7 +1762,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     },
     {
       "routeName": "Floaroma Town",
@@ -1771,7 +1771,7 @@
       "minLevel": "~",
       "maxLevel": "~",
       "encounterTypeIndex": 0,
-      "zoneId": 438,
+      "zoneId": 216,
       "link": "https://luminescent.team/docs/special-events/trade#cherubi"
     }
   ],
@@ -1783,7 +1783,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Teddiursa": [
@@ -1794,7 +1794,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Bronzor": [
@@ -1805,7 +1805,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Hippopotas": [
@@ -1816,7 +1816,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Ponyta": [
@@ -1827,7 +1827,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Croagunk": [
@@ -1838,7 +1838,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Swinub": [
@@ -1849,7 +1849,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Gastly": [
@@ -1860,7 +1860,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Misdreavus": [
@@ -1871,7 +1871,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Duskull": [
@@ -1882,7 +1882,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Meditie": [
@@ -1893,7 +1893,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Kadabra": [
@@ -1904,7 +1904,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Girafarig": [
@@ -1915,7 +1915,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Mr. Mime": [
@@ -1926,7 +1926,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Snorunt": [
@@ -1937,7 +1937,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Glalie": [
@@ -1948,7 +1948,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Sneasel": [
@@ -1959,7 +1959,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ],
   "Snover": [
@@ -1970,7 +1970,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 999
+      "zoneId": 216
     }
   ]
 }

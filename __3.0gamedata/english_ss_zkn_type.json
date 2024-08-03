@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_ss_zkn_type",
     "hash": 356541055,
@@ -27219,8 +27219,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Grass Cat Pokémon",
+                    "strWidth": 253.921875
                 }
             ]
         },
@@ -27249,8 +27249,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Grass Cat Pokémon",
+                    "strWidth": 253.921875
                 }
             ]
         },
@@ -27279,8 +27279,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Magician Pokémon",
+                    "strWidth": 245.859375
                 }
             ]
         },
@@ -27309,8 +27309,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Fire Croc Pokémon",
+                    "strWidth": 247.421875
                 }
             ]
         },
@@ -27339,8 +27339,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Fire Croc Pokémon",
+                    "strWidth": 247.421875
                 }
             ]
         },
@@ -27369,8 +27369,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Singer Pokémon",
+                    "strWidth": 208.796875
                 }
             ]
         },
@@ -27399,8 +27399,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Duckling Pokémon",
+                    "strWidth": 241.953125
                 }
             ]
         },
@@ -27429,8 +27429,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Practicing Pokémon",
+                    "strWidth": 254.515625
                 }
             ]
         },
@@ -27459,8 +27459,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Dancer Pokémon",
+                    "strWidth": 220.90625
                 }
             ]
         },
@@ -27489,8 +27489,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Hog Pokémon",
+                    "strWidth": 183.703125
                 }
             ]
         },
@@ -27519,8 +27519,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Blade Pokémon",
-                    "strWidth": 270.0
+                    "str": "Hog Pokémon",
+                    "strWidth": 183.703125
                 }
             ]
         },
@@ -27549,8 +27549,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "String Ball Pokémon",
+                    "strWidth": 259.71875
                 }
             ]
         },
@@ -27579,8 +27579,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Trap Pokémon",
+                    "strWidth": 187.671875
                 }
             ]
         },
@@ -27609,8 +27609,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Grasshopper Pokémon",
+                    "strWidth": 292.515625
                 }
             ]
         },
@@ -27639,8 +27639,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Grasshopper Pokémon",
+                    "strWidth": 292.515625
                 }
             ]
         },
@@ -27669,8 +27669,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Mouse Pokémon",
+                    "strWidth": 214.546875
                 }
             ]
         },
@@ -27699,8 +27699,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Mouse Pokémon",
+                    "strWidth": 214.546875
                 }
             ]
         },
@@ -27729,8 +27729,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Hands-On Pokémon",
+                    "strWidth": 261.203125
                 }
             ]
         },
@@ -27759,8 +27759,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Couple Pokémon",
+                    "strWidth": 222.328125
                 }
             ]
         },
@@ -27789,8 +27789,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Family Pokémon",
+                    "strWidth": 212.28125
                 }
             ]
         },
@@ -27819,8 +27819,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Puppy Pokémon",
+                    "strWidth": 209.078125
                 }
             ]
         },
@@ -27849,8 +27849,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Dog Pokémon",
+                    "strWidth": 183.796875
                 }
             ]
         },
@@ -27879,8 +27879,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Olive Pokémon",
+                    "strWidth": 198.171875
                 }
             ]
         },
@@ -27909,8 +27909,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Olive Pokémon",
+                    "strWidth": 198.171875
                 }
             ]
         },
@@ -27939,8 +27939,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Olive Pokémon",
+                    "strWidth": 198.171875
                 }
             ]
         },
@@ -27969,8 +27969,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Parrot Pokémon",
+                    "strWidth": 206.4375
                 }
             ]
         },
@@ -27999,8 +27999,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Rock Salt Pokémon",
+                    "strWidth": 249.140625
                 }
             ]
         },
@@ -28029,8 +28029,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Rock Salt Pokémon",
+                    "strWidth": 249.140625
                 }
             ]
         },
@@ -28059,8 +28059,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Rock Salt Pokémon",
+                    "strWidth": 249.140625
                 }
             ]
         },
@@ -28089,8 +28089,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Fire Child Pokémon",
+                    "strWidth": 254.90625
                 }
             ]
         },
@@ -28119,8 +28119,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Fire Warrior Pokémon",
+                    "strWidth": 284.078125
                 }
             ]
         },
@@ -28149,8 +28149,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Fire Blades Pokémon",
+                    "strWidth": 271.5625
                 }
             ]
         },
@@ -28179,8 +28179,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "EleTadpole Pokémon",
+                    "strWidth": 275.796875
                 }
             ]
         },
@@ -28209,8 +28209,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "EleFrog Pokémon",
+                    "strWidth": 227.09375
                 }
             ]
         },
@@ -28239,8 +28239,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Storm Petrel Pokémon",
+                    "strWidth": 287.75
                 }
             ]
         },
@@ -28269,8 +28269,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Frigatebird Pokémon",
+                    "strWidth": 271.0625
                 }
             ]
         },
@@ -28299,8 +28299,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Rascal Pokémon",
+                    "strWidth": 209.8125
                 }
             ]
         },
@@ -28329,8 +28329,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Boss Pokémon",
+                    "strWidth": 185.84375
                 }
             ]
         },
@@ -28359,8 +28359,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Toxic Mouse Pokémon",
+                    "strWidth": 293.53125
                 }
             ]
         },
@@ -28389,8 +28389,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Toxic Monkey Pokémon",
+                    "strWidth": 311.203125
                 }
             ]
         },
@@ -28419,8 +28419,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Tumbleweed Pokémon",
+                    "strWidth": 293.796875
                 }
             ]
         },
@@ -28449,8 +28449,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Tumbleweed Pokémon",
+                    "strWidth": 293.796875
                 }
             ]
         },
@@ -28479,8 +28479,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Woodear Pokémon",
+                    "strWidth": 249.5
                 }
             ]
         },
@@ -28509,8 +28509,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Woodear Pokémon",
+                    "strWidth": 249.5
                 }
             ]
         },
@@ -28539,8 +28539,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ambush Pokémon",
+                    "strWidth": 231.109375
                 }
             ]
         },
@@ -28569,8 +28569,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Spicy Pepper Pokémon",
+                    "strWidth": 298.03125
                 }
             ]
         },
@@ -28599,8 +28599,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Spicy Pepper Pokémon",
+                    "strWidth": 298.03125
                 }
             ]
         },
@@ -28629,8 +28629,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Rolling Pokémon",
+                    "strWidth": 218.0625
                 }
             ]
         },
@@ -28659,8 +28659,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Rolling Pokémon",
+                    "strWidth": 218.0625
                 }
             ]
         },
@@ -28689,8 +28689,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Frill Pokémon",
+                    "strWidth": 177.328125
                 }
             ]
         },
@@ -28719,8 +28719,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ostrich Pokémon",
+                    "strWidth": 221.09375
                 }
             ]
         },
@@ -28749,8 +28749,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Happiness Pokémon",
-                    "strWidth": 270.0
+                    "str": "Metalsmith Pokémon",
+                    "strWidth": 270.890625
                 }
             ]
         },
@@ -28779,8 +28779,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Happiness Pokémon",
-                    "strWidth": 270.0
+                    "str": "Hammer Pokémon",
+                    "strWidth": 236.71875
                 }
             ]
         },
@@ -28809,8 +28809,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Happiness Pokémon",
-                    "strWidth": 270.0
+                    "str": "Hammer Pokémon",
+                    "strWidth": 236.71875
                 }
             ]
         },
@@ -28839,8 +28839,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Garden Eel Pokémon",
+                    "strWidth": 273.71875
                 }
             ]
         },
@@ -28869,8 +28869,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Garden Eel Pokémon",
+                    "strWidth": 273.71875
                 }
             ]
         },
@@ -28899,8 +28899,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Item Drop Pokémon",
+                    "strWidth": 260.3125
                 }
             ]
         },
@@ -28929,8 +28929,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Dolphin Pokémon",
+                    "strWidth": 231.40625
                 }
             ]
         },
@@ -28959,8 +28959,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Hero Pokémon",
+                    "strWidth": 193.140625
                 }
             ]
         },
@@ -28989,8 +28989,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Single-Cyl Pokémon",
+                    "strWidth": 260.53125
                 }
             ]
         },
@@ -29019,8 +29019,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Multi-Cyl Pokémon",
+                    "strWidth": 248.953125
                 }
             ]
         },
@@ -29049,8 +29049,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Mount Pokémon",
+                    "strWidth": 212.6875
                 }
             ]
         },
@@ -29079,8 +29079,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Earthworm Pokémon",
+                    "strWidth": 264.109375
                 }
             ]
         },
@@ -29109,8 +29109,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ore Pokémon",
+                    "strWidth": 178.359375
                 }
             ]
         },
@@ -29139,8 +29139,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ore Pokémon",
+                    "strWidth": 178.359375
                 }
             ]
         },
@@ -29169,8 +29169,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ghost Dog Pokémon",
+                    "strWidth": 270.09375
                 }
             ]
         },
@@ -29199,8 +29199,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ghost Dog Pokémon",
+                    "strWidth": 270.09375
                 }
             ]
         },
@@ -29229,8 +29229,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Synchronize Pokémon",
+                    "strWidth": 282.28125
                 }
             ]
         },
@@ -29259,8 +29259,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Terra Whale Pokémon",
+                    "strWidth": 287.984375
                 }
             ]
         },
@@ -29289,8 +29289,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Terra Whale Pokémon",
+                    "strWidth": 287.984375
                 }
             ]
         },
@@ -29319,8 +29319,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Jettison Pokémon",
+                    "strWidth": 228.90625
                 }
             ]
         },
@@ -29349,8 +29349,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Big Catfish Pokémon",
+                    "strWidth": 268.1875
                 }
             ]
         },
@@ -29379,8 +29379,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Mimicry Pokémon",
+                    "strWidth": 230.25
                 }
             ]
         },
@@ -29409,8 +29409,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Rage Monkey Pokémon",
+                    "strWidth": 305.96875
                 }
             ]
         },
@@ -29439,8 +29439,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Spiny Fish Pokémon",
+                    "strWidth": 258.140625
                 }
             ]
         },
@@ -29469,8 +29469,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Long Neck Pokémon",
+                    "strWidth": 267.265625
                 }
             ]
         },
@@ -29499,8 +29499,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Land Snake Pokémon",
+                    "strWidth": 277.25
                 }
             ]
         },
@@ -29529,8 +29529,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Big Blade Pokémon",
+                    "strWidth": 251.765625
                 }
             ]
         },
@@ -29559,8 +29559,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29589,8 +29589,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29619,8 +29619,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29649,8 +29649,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29679,8 +29679,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29709,8 +29709,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29739,8 +29739,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29769,8 +29769,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29799,8 +29799,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29829,8 +29829,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29859,8 +29859,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29889,8 +29889,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -29919,8 +29919,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ice Fin Pokémon",
+                    "strWidth": 214.671875
                 }
             ]
         },
@@ -29949,8 +29949,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ice Fin Pokémon",
+                    "strWidth": 214.671875
                 }
             ]
         },
@@ -29979,8 +29979,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ice Dragon Pokémon",
+                    "strWidth": 271.3125
                 }
             ]
         },
@@ -30009,8 +30009,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Coin Chest Pokémon",
+                    "strWidth": 270.96875
                 }
             ]
         },
@@ -30039,8 +30039,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Coin Entity Pokémon",
+                    "strWidth": 271.109375
                 }
             ]
         },
@@ -30069,8 +30069,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ruinous Pokémon",
+                    "strWidth": 228.984375
                 }
             ]
         },
@@ -30099,8 +30099,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ruinous Pokémon",
+                    "strWidth": 228.984375
                 }
             ]
         },
@@ -30129,8 +30129,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ruinous Pokémon",
+                    "strWidth": 228.984375
                 }
             ]
         },
@@ -30159,8 +30159,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Ruinous Pokémon",
+                    "strWidth": 228.984375
                 }
             ]
         },
@@ -30189,8 +30189,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30219,8 +30219,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30249,8 +30249,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30279,8 +30279,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30309,8 +30309,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30339,8 +30339,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30369,8 +30369,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Candy Apple Pokémon",
+                    "strWidth": 298.171875
                 }
             ]
         },
@@ -30399,8 +30399,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Matcha Pokémon",
+                    "strWidth": 224.5
                 }
             ]
         },
@@ -30429,8 +30429,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Matcha Pokémon",
+                    "strWidth": 224.5
                 }
             ]
         },
@@ -30459,8 +30459,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Blade Pokémon",
-                    "strWidth": 270.0
+                    "str": "Retainer Pokémon",
+                    "strWidth": 236.09375
                 }
             ]
         },
@@ -30489,8 +30489,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Blade Pokémon",
-                    "strWidth": 270.0
+                    "str": "Retainer Pokémon",
+                    "strWidth": 236.09375
                 }
             ]
         },
@@ -30519,8 +30519,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Blade Pokémon",
-                    "strWidth": 270.0
+                    "str": "Retainer Pokémon",
+                    "strWidth": 236.09375
                 }
             ]
         },
@@ -30549,8 +30549,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Happiness Pokémon",
-                    "strWidth": 270.0
+                    "str": "Mask Pokémon",
+                    "strWidth": 195.953125
                 }
             ]
         },
@@ -30579,8 +30579,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Alloy Pokémon",
+                    "strWidth": 195.5625
                 }
             ]
         },
@@ -30609,8 +30609,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Apple Hydra Pokémon",
+                    "strWidth": 294.015625
                 }
             ]
         },
@@ -30639,8 +30639,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30669,8 +30669,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30699,8 +30699,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30729,8 +30729,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Paradox Pokémon",
+                    "strWidth": 233.78125
                 }
             ]
         },
@@ -30759,8 +30759,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Emperor Pokémon",
-                    "strWidth": 270.0
+                    "str": "Tera Pokémon",
+                    "strWidth": 186.390625
                 }
             ]
         },
@@ -30789,8 +30789,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gratitude Pokémon",
-                    "strWidth": 270.0
+                    "str": "Subjugation Pokémon",
+                    "strWidth": 281.40625
                 }
             ]
         }

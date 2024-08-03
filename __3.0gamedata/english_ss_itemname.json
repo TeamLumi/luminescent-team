@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_ss_itemname",
     "hash": -1081449551,
@@ -9879,8 +9879,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM01",
-                    "strWidth": 75.07813262939453
+                    "str": "TM001 Focus Punch",
+                    "strWidth": 211.78125
                 }
             ]
         },
@@ -9909,8 +9909,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM02",
-                    "strWidth": 79.078125
+                    "str": "TM002 Dragon Claw",
+                    "strWidth": 219.578125
                 }
             ]
         },
@@ -9939,8 +9939,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM03",
-                    "strWidth": 79.078125
+                    "str": "TM003 Water Pulse",
+                    "strWidth": 207.1875
                 }
             ]
         },
@@ -9969,8 +9969,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM04",
-                    "strWidth": 79.078125
+                    "str": "TM004 Calm Mind",
+                    "strWidth": 192.953125
                 }
             ]
         },
@@ -9999,8 +9999,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM05",
-                    "strWidth": 79.078125
+                    "str": "TM005 Roar",
+                    "strWidth": 111.515625
                 }
             ]
         },
@@ -10029,8 +10029,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM06",
-                    "strWidth": 79.078125
+                    "str": "TM006 Toxic",
+                    "strWidth": 122.09375
                 }
             ]
         },
@@ -10059,8 +10059,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM07",
-                    "strWidth": 79.078125
+                    "str": "TM007 Hail",
+                    "strWidth": 104.484375
                 }
             ]
         },
@@ -10089,8 +10089,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM08",
-                    "strWidth": 79.078125
+                    "str": "TM008 Bulk Up",
+                    "strWidth": 154.53125
                 }
             ]
         },
@@ -10119,8 +10119,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM09",
-                    "strWidth": 79.078125
+                    "str": "TM009 Bullet Seed",
+                    "strWidth": 199.59375
                 }
             ]
         },
@@ -10149,8 +10149,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM10",
-                    "strWidth": 75.078125
+                    "str": "TM010 Work Up",
+                    "strWidth": 169.3125
                 }
             ]
         },
@@ -10179,8 +10179,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM11",
-                    "strWidth": 71.07813262939453
+                    "str": "TM011 Sunny Day",
+                    "strWidth": 188.796875
                 }
             ]
         },
@@ -10209,8 +10209,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM12",
-                    "strWidth": 75.078125
+                    "str": "TM012 Taunt",
+                    "strWidth": 125.40625
                 }
             ]
         },
@@ -10239,8 +10239,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM13",
-                    "strWidth": 75.078125
+                    "str": "TM013 Ice Beam",
+                    "strWidth": 170.0625
                 }
             ]
         },
@@ -10269,8 +10269,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM14",
-                    "strWidth": 75.078125
+                    "str": "TM014 Blizzard",
+                    "strWidth": 152.78125
                 }
             ]
         },
@@ -10299,8 +10299,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM15",
-                    "strWidth": 75.078125
+                    "str": "TM015 Hyper Beam",
+                    "strWidth": 211.015625
                 }
             ]
         },
@@ -10329,8 +10329,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM16",
-                    "strWidth": 75.078125
+                    "str": "TM016 Light Screen",
+                    "strWidth": 211.421875
                 }
             ]
         },
@@ -10359,8 +10359,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM17",
-                    "strWidth": 75.078125
+                    "str": "TM017 Protect",
+                    "strWidth": 144.890625
                 }
             ]
         },
@@ -10389,8 +10389,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM18",
-                    "strWidth": 75.078125
+                    "str": "TM018 Rain Dance",
+                    "strWidth": 199.46875
                 }
             ]
         },
@@ -10419,8 +10419,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM19",
-                    "strWidth": 75.078125
+                    "str": "TM019 Giga Drain",
+                    "strWidth": 193.125
                 }
             ]
         },
@@ -10449,8 +10449,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM20",
-                    "strWidth": 79.078125
+                    "str": "TM020 Safeguard",
+                    "strWidth": 182.265625
                 }
             ]
         },
@@ -10479,8 +10479,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM21",
-                    "strWidth": 75.07813262939453
+                    "str": "TM021 Dazzling Gleam",
+                    "strWidth": 256.171875
                 }
             ]
         },
@@ -10509,8 +10509,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM22",
-                    "strWidth": 79.078125
+                    "str": "TM022 Solar Beam",
+                    "strWidth": 197.09375
                 }
             ]
         },
@@ -10539,8 +10539,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM23",
-                    "strWidth": 79.078125
+                    "str": "TM023 Iron Tail",
+                    "strWidth": 159.046875
                 }
             ]
         },
@@ -10569,8 +10569,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM24",
-                    "strWidth": 79.078125
+                    "str": "TM024 Thunderbolt",
+                    "strWidth": 210.78125
                 }
             ]
         },
@@ -10599,8 +10599,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM25",
-                    "strWidth": 79.078125
+                    "str": "TM025 Thunder",
+                    "strWidth": 158.546875
                 }
             ]
         },
@@ -10629,8 +10629,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM26",
-                    "strWidth": 79.078125
+                    "str": "TM026 Earthquake",
+                    "strWidth": 197.140625
                 }
             ]
         },
@@ -10659,8 +10659,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM27",
-                    "strWidth": 79.078125
+                    "str": "TM027 Low Sweep",
+                    "strWidth": 196.84375
                 }
             ]
         },
@@ -10689,8 +10689,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM28",
-                    "strWidth": 79.078125
+                    "str": "TM028 Dig",
+                    "strWidth": 97.6875
                 }
             ]
         },
@@ -10719,8 +10719,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM29",
-                    "strWidth": 79.078125
+                    "str": "TM029 Psychic",
+                    "strWidth": 145.046875
                 }
             ]
         },
@@ -10749,8 +10749,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM30",
-                    "strWidth": 79.078125
+                    "str": "TM030 Shadow Ball",
+                    "strWidth": 209.203125
                 }
             ]
         },
@@ -10779,8 +10779,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM31",
-                    "strWidth": 75.07813262939453
+                    "str": "TM031 Brick Break",
+                    "strWidth": 196.84375
                 }
             ]
         },
@@ -10809,8 +10809,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM32",
-                    "strWidth": 79.078125
+                    "str": "TM032 Double Team",
+                    "strWidth": 227.40625
                 }
             ]
         },
@@ -10839,8 +10839,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM33",
-                    "strWidth": 79.078125
+                    "str": "TM033 Reflect",
+                    "strWidth": 142.890625
                 }
             ]
         },
@@ -10869,8 +10869,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM34",
-                    "strWidth": 79.078125
+                    "str": "TM034 Shock Wave",
+                    "strWidth": 211.390625
                 }
             ]
         },
@@ -10899,8 +10899,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM35",
-                    "strWidth": 79.078125
+                    "str": "TM035 Flamethrower",
+                    "strWidth": 227.578125
                 }
             ]
         },
@@ -10929,8 +10929,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM36",
-                    "strWidth": 79.078125
+                    "str": "TM036 Sludge Bomb",
+                    "strWidth": 223.140625
                 }
             ]
         },
@@ -10959,8 +10959,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM37",
-                    "strWidth": 79.078125
+                    "str": "TM037 Sandstorm",
+                    "strWidth": 186.484375
                 }
             ]
         },
@@ -10989,8 +10989,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM38",
-                    "strWidth": 79.078125
+                    "str": "TM038 Fire Blast",
+                    "strWidth": 171.796875
                 }
             ]
         },
@@ -11019,8 +11019,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM39",
-                    "strWidth": 79.078125
+                    "str": "TM039 Rock Tomb",
+                    "strWidth": 198.25
                 }
             ]
         },
@@ -11049,8 +11049,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM40",
-                    "strWidth": 79.078125
+                    "str": "TM040 Aerial Ace",
+                    "strWidth": 186.9375
                 }
             ]
         },
@@ -11079,8 +11079,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM41",
-                    "strWidth": 75.07813262939453
+                    "str": "TM041 Torment",
+                    "strWidth": 160.03125
                 }
             ]
         },
@@ -11109,8 +11109,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM42",
-                    "strWidth": 79.078125
+                    "str": "TM042 Facade",
+                    "strWidth": 145.734375
                 }
             ]
         },
@@ -11139,8 +11139,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM43",
-                    "strWidth": 79.078125
+                    "str": "TM043 Volt Switch",
+                    "strWidth": 197.890625
                 }
             ]
         },
@@ -11169,8 +11169,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM44",
-                    "strWidth": 79.078125
+                    "str": "TM044 Rest",
+                    "strWidth": 106.9375
                 }
             ]
         },
@@ -11199,8 +11199,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM45",
-                    "strWidth": 79.078125
+                    "str": "TM045 Attract",
+                    "strWidth": 140.953125
                 }
             ]
         },
@@ -11229,8 +11229,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM46",
-                    "strWidth": 79.078125
+                    "str": "TM046 Thief",
+                    "strWidth": 117.828125
                 }
             ]
         },
@@ -11259,8 +11259,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM47",
-                    "strWidth": 79.078125
+                    "str": "TM047 Steel Wing",
+                    "strWidth": 193.6875
                 }
             ]
         },
@@ -11289,8 +11289,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM48",
-                    "strWidth": 79.078125
+                    "str": "TM048 Skill Swap",
+                    "strWidth": 181.703125
                 }
             ]
         },
@@ -11319,8 +11319,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM49",
-                    "strWidth": 79.078125
+                    "str": "TM049 Scald",
+                    "strWidth": 121.546875
                 }
             ]
         },
@@ -11349,8 +11349,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM50",
-                    "strWidth": 79.078125
+                    "str": "TM050 Overheat",
+                    "strWidth": 172.765625
                 }
             ]
         },
@@ -11379,8 +11379,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM51",
-                    "strWidth": 75.07813262939453
+                    "str": "TM051 Roost",
+                    "strWidth": 125.28125
                 }
             ]
         },
@@ -11409,8 +11409,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM52",
-                    "strWidth": 79.078125
+                    "str": "TM052 Focus Blast",
+                    "strWidth": 196.765625
                 }
             ]
         },
@@ -11439,8 +11439,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM53",
-                    "strWidth": 79.078125
+                    "str": "TM053 Energy Ball",
+                    "strWidth": 196.234375
                 }
             ]
         },
@@ -11469,8 +11469,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM54",
-                    "strWidth": 79.078125
+                    "str": "TM054 False Swipe",
+                    "strWidth": 203.265625
                 }
             ]
         },
@@ -11499,8 +11499,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM55",
-                    "strWidth": 79.078125
+                    "str": "TM055 Brine",
+                    "strWidth": 117.90625
                 }
             ]
         },
@@ -11529,8 +11529,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM56",
-                    "strWidth": 79.078125
+                    "str": "TM056 Fling",
+                    "strWidth": 115.09375
                 }
             ]
         },
@@ -11559,8 +11559,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM57",
-                    "strWidth": 79.078125
+                    "str": "TM057 Charge Beam",
+                    "strWidth": 224.6875
                 }
             ]
         },
@@ -11589,8 +11589,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM58",
-                    "strWidth": 79.078125
+                    "str": "TM058 Endure",
+                    "strWidth": 141.6875
                 }
             ]
         },
@@ -11619,8 +11619,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM59",
-                    "strWidth": 79.078125
+                    "str": "TM059 Dragon Pulse",
+                    "strWidth": 223.5625
                 }
             ]
         },
@@ -11649,8 +11649,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM60",
-                    "strWidth": 79.078125
+                    "str": "TM060 Drain Punch",
+                    "strWidth": 207.671875
                 }
             ]
         },
@@ -11679,8 +11679,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM61",
-                    "strWidth": 75.07813262939453
+                    "str": "TM061 Will-O-Wisp",
+                    "strWidth": 215.40625
                 }
             ]
         },
@@ -11709,8 +11709,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM62",
-                    "strWidth": 79.078125
+                    "str": "TM062 Bug Buzz",
+                    "strWidth": 168.484375
                 }
             ]
         },
@@ -11739,8 +11739,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM63",
-                    "strWidth": 79.078125
+                    "str": "TM063 Nasty Plot",
+                    "strWidth": 184.578125
                 }
             ]
         },
@@ -11769,8 +11769,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM64",
-                    "strWidth": 79.078125
+                    "str": "TM064 Explosion",
+                    "strWidth": 176.140625
                 }
             ]
         },
@@ -11799,8 +11799,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM65",
-                    "strWidth": 79.078125
+                    "str": "TM065 Shadow Claw",
+                    "strWidth": 224.171875
                 }
             ]
         },
@@ -11829,8 +11829,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM66",
-                    "strWidth": 79.078125
+                    "str": "TM066 Payback",
+                    "strWidth": 159.046875
                 }
             ]
         },
@@ -11859,8 +11859,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM67",
-                    "strWidth": 79.078125
+                    "str": "TM067 Recycle",
+                    "strWidth": 151.40625
                 }
             ]
         },
@@ -11889,8 +11889,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM68",
-                    "strWidth": 79.078125
+                    "str": "TM068 Giga Impact",
+                    "strWidth": 210.53125
                 }
             ]
         },
@@ -11919,8 +11919,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM69",
-                    "strWidth": 79.078125
+                    "str": "TM069 Rock Polish",
+                    "strWidth": 199.921875
                 }
             ]
         },
@@ -11949,8 +11949,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM70",
-                    "strWidth": 79.078125
+                    "str": "TM070 Flash",
+                    "strWidth": 118.109375
                 }
             ]
         },
@@ -11979,8 +11979,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM71",
-                    "strWidth": 75.07813262939453
+                    "str": "TM071 Stone Edge",
+                    "strWidth": 199.9375
                 }
             ]
         },
@@ -12009,8 +12009,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM72",
-                    "strWidth": 79.078125
+                    "str": "TM072 Avalanche",
+                    "strWidth": 185.4375
                 }
             ]
         },
@@ -12039,8 +12039,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM73",
-                    "strWidth": 79.078125
+                    "str": "TM073 Thunder Wave",
+                    "strWidth": 241.203125
                 }
             ]
         },
@@ -12069,8 +12069,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM74",
-                    "strWidth": 79.078125
+                    "str": "TM074 Gyro Ball",
+                    "strWidth": 173.140625
                 }
             ]
         },
@@ -12099,8 +12099,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM75",
-                    "strWidth": 79.078125
+                    "str": "TM075 Swords Dance",
+                    "strWidth": 234.234375
                 }
             ]
         },
@@ -12129,8 +12129,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM76",
-                    "strWidth": 79.078125
+                    "str": "TM076 Stealth Rock",
+                    "strWidth": 214.171875
                 }
             ]
         },
@@ -12159,8 +12159,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM77",
-                    "strWidth": 79.078125
+                    "str": "TM077 Psych Up",
+                    "strWidth": 170.75
                 }
             ]
         },
@@ -12189,8 +12189,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM78",
-                    "strWidth": 79.078125
+                    "str": "TM078 Snarl",
+                    "strWidth": 115.546875
                 }
             ]
         },
@@ -12219,8 +12219,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM79",
-                    "strWidth": 79.078125
+                    "str": "TM079 Dark Pulse",
+                    "strWidth": 189.453125
                 }
             ]
         },
@@ -12249,8 +12249,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM80",
-                    "strWidth": 79.078125
+                    "str": "TM080 Rock Slide",
+                    "strWidth": 188.09375
                 }
             ]
         },
@@ -12279,8 +12279,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM81",
-                    "strWidth": 75.07813262939453
+                    "str": "TM081 X-Scissor",
+                    "strWidth": 170.125
                 }
             ]
         },
@@ -12309,8 +12309,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM82",
-                    "strWidth": 79.078125
+                    "str": "TM082 Sleep Talk",
+                    "strWidth": 187.890625
                 }
             ]
         },
@@ -12339,8 +12339,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM83",
-                    "strWidth": 79.078125
+                    "str": "TM083 Bulldoze",
+                    "strWidth": 163.671875
                 }
             ]
         },
@@ -12369,8 +12369,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM84",
-                    "strWidth": 79.078125
+                    "str": "TM084 Poison Jab",
+                    "strWidth": 190.9375
                 }
             ]
         },
@@ -12399,8 +12399,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM85",
-                    "strWidth": 79.078125
+                    "str": "TM085 Dream Eater",
+                    "strWidth": 213.015625
                 }
             ]
         },
@@ -12429,8 +12429,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM86",
-                    "strWidth": 79.078125
+                    "str": "TM086 Grass Knot",
+                    "strWidth": 193.59375
                 }
             ]
         },
@@ -12459,8 +12459,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM87",
-                    "strWidth": 79.078125
+                    "str": "TM087 Swagger",
+                    "strWidth": 160.34375
                 }
             ]
         },
@@ -12489,8 +12489,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM88",
-                    "strWidth": 79.078125
+                    "str": "TM088 Pluck",
+                    "strWidth": 120.1875
                 }
             ]
         },
@@ -12519,8 +12519,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM89",
-                    "strWidth": 79.078125
+                    "str": "TM089 U-Turn",
+                    "strWidth": 142.265625
                 }
             ]
         },
@@ -12549,8 +12549,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM90",
-                    "strWidth": 79.078125
+                    "str": "TM090 Substitute",
+                    "strWidth": 180.875
                 }
             ]
         },
@@ -12579,8 +12579,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM91",
-                    "strWidth": 75.07813262939453
+                    "str": "TM091 Flash Cannon",
+                    "strWidth": 226.21875
                 }
             ]
         },
@@ -12609,8 +12609,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM92",
-                    "strWidth": 79.078125
+                    "str": "TM092 Trick Room",
+                    "strWidth": 198.265625
                 }
             ]
         },
@@ -12639,8 +12639,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM93",
-                    "strWidth": 79.078125
+                    "str": "TM093 Cut",
+                    "strWidth": 97.65625
                 }
             ]
         },
@@ -12669,8 +12669,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM94",
-                    "strWidth": 79.078125
+                    "str": "TM094 Fly",
+                    "strWidth": 90.09375
                 }
             ]
         },
@@ -12699,8 +12699,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM95",
-                    "strWidth": 79.078125
+                    "str": "TM095 Surf",
+                    "strWidth": 102.234375
                 }
             ]
         },
@@ -12729,8 +12729,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM96",
-                    "strWidth": 79.078125
+                    "str": "TM096 Strength",
+                    "strWidth": 160.296875
                 }
             ]
         },
@@ -12759,8 +12759,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM97",
-                    "strWidth": 79.078125
+                    "str": "TM097 Defog",
+                    "strWidth": 132.96875
                 }
             ]
         },
@@ -12789,8 +12789,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM98",
-                    "strWidth": 79.078125
+                    "str": "TM098 Rock Smash",
+                    "strWidth": 204.5625
                 }
             ]
         },
@@ -12819,8 +12819,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM99",
-                    "strWidth": 79.078125
+                    "str": "TM099 Waterfall",
+                    "strWidth": 172.015625
                 }
             ]
         },
@@ -12849,8 +12849,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM100",
-                    "strWidth": 93.0625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -18579,8 +18579,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM93",
-                    "strWidth": 79.078125
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -18609,8 +18609,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM94",
-                    "strWidth": 79.078125
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -18639,8 +18639,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM95",
-                    "strWidth": 79.078125
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -20739,8 +20739,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM96",
-                    "strWidth": 79.078125
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -20769,8 +20769,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM97",
-                    "strWidth": 79.078125
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -20799,8 +20799,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM98",
-                    "strWidth": 79.078125
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -20829,8 +20829,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM99",
-                    "strWidth": 79.078125
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -20859,8 +20859,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM100",
-                    "strWidth": 93.0625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -22149,8 +22149,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "HM07",
-                    "strWidth": 83.96875
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -36939,8 +36939,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM00",
-                    "strWidth": 79.078125
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -39039,8 +39039,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Silver Wing",
-                    "strWidth": 140.828125
+                    "str": "Magikarp Biscuit",
+                    "strWidth": 214.390625
                 }
             ]
         },
@@ -48699,8 +48699,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Vintage Poké Ball",
-                    "strWidth": 230.421875
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -48729,8 +48729,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -48789,7 +48789,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Uxie's Claw",
+                    "str": "Uxie’s Claw",
                     "strWidth": 151.546875
                 }
             ]
@@ -48819,7 +48819,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Azelf's Fang",
+                    "str": "Azelf’s Fang",
                     "strWidth": 158.90625
                 }
             ]
@@ -48849,7 +48849,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Mesprit's Plume",
+                    "str": "Mesprit’s Plume",
                     "strWidth": 205.375
                 }
             ]
@@ -49179,7 +49179,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "King's Leaf",
+                    "str": "King’s Leaf",
                     "strWidth": 143.4375
                 }
             ]
@@ -49389,8 +49389,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -50199,8 +50199,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -50439,8 +50439,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -50529,8 +50529,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -50589,8 +50589,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -50949,8 +50949,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -50979,8 +50979,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -51459,8 +51459,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -51489,8 +51489,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -51579,8 +51579,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -51609,8 +51609,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -53139,8 +53139,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -53199,8 +53199,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -53229,8 +53229,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -53259,8 +53259,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -53289,8 +53289,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -53469,8 +53469,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -53769,8 +53769,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 181.515625
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -54729,8 +54729,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -54759,8 +54759,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -54789,8 +54789,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -54819,8 +54819,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -54849,8 +54849,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -54969,7 +54969,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Koraidon's Poké Ball",
+                    "str": "Koraidon’s Poké Ball",
                     "strWidth": 268.859375
                 }
             ]
@@ -54999,7 +54999,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Miraidon's Poké Ball",
+                    "str": "Miraidon’s Poké Ball",
                     "strWidth": 266.25
                 }
             ]
@@ -55119,7 +55119,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Kofu's Wallet",
+                    "str": "Kofu’s Wallet",
                     "strWidth": 176.078125
                 }
             ]
@@ -55149,8 +55149,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55179,8 +55179,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55209,8 +55209,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55239,8 +55239,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55269,8 +55269,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55359,8 +55359,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55389,8 +55389,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55419,8 +55419,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55449,8 +55449,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55479,8 +55479,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55509,8 +55509,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55539,8 +55539,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55569,8 +55569,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55599,8 +55599,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55629,8 +55629,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55659,8 +55659,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55689,8 +55689,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55719,8 +55719,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55809,8 +55809,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -55839,8 +55839,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -56649,8 +56649,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58449,8 +58449,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58479,8 +58479,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58509,8 +58509,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58539,8 +58539,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58569,8 +58569,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58599,8 +58599,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58629,8 +58629,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58659,8 +58659,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -58689,8 +58689,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -63039,8 +63039,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -63069,8 +63069,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -63099,8 +63099,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -63759,8 +63759,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -63789,8 +63789,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64179,8 +64179,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64209,8 +64209,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64239,8 +64239,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64269,8 +64269,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64299,8 +64299,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64329,8 +64329,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64359,8 +64359,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64389,8 +64389,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64419,8 +64419,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64449,8 +64449,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64479,8 +64479,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64509,8 +64509,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64539,8 +64539,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64569,8 +64569,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64599,8 +64599,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64629,8 +64629,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64659,8 +64659,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64689,8 +64689,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -64839,8 +64839,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM100",
-                    "strWidth": 43.109375
+                    "str": "TM100 Rock Climb",
+                    "strWidth": 199.609375
                 }
             ]
         },
@@ -64869,8 +64869,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM101",
-                    "strWidth": 43.109375
+                    "str": "TM101 Wild Charge",
+                    "strWidth": 214.703125
                 }
             ]
         },
@@ -64899,8 +64899,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM102",
-                    "strWidth": 43.109375
+                    "str": "TM102 Hyper Voice",
+                    "strWidth": 214.40625
                 }
             ]
         },
@@ -64929,8 +64929,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM103",
-                    "strWidth": 43.109375
+                    "str": "TM103 Hurricane",
+                    "strWidth": 177.09375
                 }
             ]
         },
@@ -64959,8 +64959,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM104",
-                    "strWidth": 43.109375
+                    "str": "TM104 Hidden Power",
+                    "strWidth": 235.0625
                 }
             ]
         },
@@ -64989,8 +64989,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM105",
-                    "strWidth": 43.109375
+                    "str": "TM105 Whirlpool",
+                    "strWidth": 180.390625
                 }
             ]
         },
@@ -65019,8 +65019,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM106",
-                    "strWidth": 43.109375
+                    "str": "TM106 Electric Terrain",
+                    "strWidth": 246.15625
                 }
             ]
         },
@@ -65049,8 +65049,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM107",
-                    "strWidth": 43.109375
+                    "str": "TM107 Misty Terrain",
+                    "strWidth": 220.875
                 }
             ]
         },
@@ -65079,8 +65079,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM108",
-                    "strWidth": 43.109375
+                    "str": "TM108 Grassy Terrain",
+                    "strWidth": 237.03125
                 }
             ]
         },
@@ -65109,8 +65109,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM109",
-                    "strWidth": 43.109375
+                    "str": "TM109 Psychic Terrain",
+                    "strWidth": 244.609375
                 }
             ]
         },
@@ -65139,8 +65139,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM110",
-                    "strWidth": 43.109375
+                    "str": "TM110 Weather Ball",
+                    "strWidth": 219.78125
                 }
             ]
         },
@@ -65169,8 +65169,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM111",
-                    "strWidth": 43.109375
+                    "str": "TM111 Frustration",
+                    "strWidth": 190.078125
                 }
             ]
         },
@@ -65199,8 +65199,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM112",
-                    "strWidth": 43.109375
+                    "str": "TM112 Return",
+                    "strWidth": 136.234375
                 }
             ]
         },
@@ -65229,8 +65229,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM113",
-                    "strWidth": 43.109375
+                    "str": "TM113 Psychic Fangs",
+                    "strWidth": 228.453125
                 }
             ]
         },
@@ -65259,8 +65259,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM114",
-                    "strWidth": 43.109375
+                    "str": "TM114 Thunder Fang",
+                    "strWidth": 230.4375
                 }
             ]
         },
@@ -65289,8 +65289,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM115",
-                    "strWidth": 43.109375
+                    "str": "TM115 Fire Fang",
+                    "strWidth": 173.0625
                 }
             ]
         },
@@ -65319,8 +65319,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM116",
-                    "strWidth": 43.109375
+                    "str": "TM116 Ice Fang",
+                    "strWidth": 161.984375
                 }
             ]
         },
@@ -65349,8 +65349,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM117",
-                    "strWidth": 43.109375
+                    "str": "TM117 Crunch",
+                    "strWidth": 142.375
                 }
             ]
         },
@@ -65379,8 +65379,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM118",
-                    "strWidth": 43.109375
+                    "str": "TM118 Smart Strike",
+                    "strWidth": 207.171875
                 }
             ]
         },
@@ -65409,8 +65409,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM119",
-                    "strWidth": 43.109375
+                    "str": "TM119 Leaf Blade",
+                    "strWidth": 190.09375
                 }
             ]
         },
@@ -65439,8 +65439,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM120",
-                    "strWidth": 43.109375
+                    "str": "TM120 Air Slash",
+                    "strWidth": 163.46875
                 }
             ]
         },
@@ -65469,8 +65469,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM121",
-                    "strWidth": 43.109375
+                    "str": "TM121 Cross Poison",
+                    "strWidth": 215.84375
                 }
             ]
         },
@@ -65499,8 +65499,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM122",
-                    "strWidth": 43.109375
+                    "str": "TM122 Psycho Cut",
+                    "strWidth": 195.1875
                 }
             ]
         },
@@ -65529,8 +65529,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM123",
-                    "strWidth": 43.109375
+                    "str": "TM123 Aqua Cutter",
+                    "strWidth": 210.28125
                 }
             ]
         },
@@ -65559,8 +65559,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM124",
-                    "strWidth": 43.109375
+                    "str": "TM124 Flip Turn",
+                    "strWidth": 167.1875
                 }
             ]
         },
@@ -65589,8 +65589,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM125",
-                    "strWidth": 43.109375
+                    "str": "TM125 Close Combat",
+                    "strWidth": 235.84375
                 }
             ]
         },
@@ -65619,8 +65619,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM126",
-                    "strWidth": 43.109375
+                    "str": "TM126 Dragon Dance",
+                    "strWidth": 239.34375
                 }
             ]
         },
@@ -65649,8 +65649,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM127",
-                    "strWidth": 43.109375
+                    "str": "TM127 Charm",
+                    "strWidth": 135.28125
                 }
             ]
         },
@@ -65679,8 +65679,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM128",
-                    "strWidth": 43.109375
+                    "str": "TM128 Screech",
+                    "strWidth": 152.3125
                 }
             ]
         },
@@ -65709,8 +65709,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM129",
-                    "strWidth": 43.109375
+                    "str": "TM129 Fake Tears",
+                    "strWidth": 192.25
                 }
             ]
         },
@@ -65739,8 +65739,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM130",
-                    "strWidth": 43.109375
+                    "str": "TM130 Scary Face",
+                    "strWidth": 190.5625
                 }
             ]
         },
@@ -65769,8 +65769,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM131",
-                    "strWidth": 43.109375
+                    "str": "TM131 Hold Back",
+                    "strWidth": 186.0625
                 }
             ]
         },
@@ -65799,8 +65799,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM132",
-                    "strWidth": 43.109375
+                    "str": "TM132 Imprison",
+                    "strWidth": 161.65625
                 }
             ]
         },
@@ -65829,8 +65829,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM133",
-                    "strWidth": 43.109375
+                    "str": "TM133 Pollen Puff",
+                    "strWidth": 192.390625
                 }
             ]
         },
@@ -65859,8 +65859,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM134",
-                    "strWidth": 43.109375
+                    "str": "TM134 Rock Blast",
+                    "strWidth": 185.953125
                 }
             ]
         },
@@ -65889,8 +65889,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM135",
-                    "strWidth": 43.109375
+                    "str": "TM135 Heavy Slam",
+                    "strWidth": 203.4375
                 }
             ]
         },
@@ -65919,8 +65919,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM136",
-                    "strWidth": 43.109375
+                    "str": "TM136 Body Press",
+                    "strWidth": 191.515625
                 }
             ]
         },
@@ -65949,8 +65949,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM137",
-                    "strWidth": 43.109375
+                    "str": "TM137 Flame Charge",
+                    "strWidth": 231.3125
                 }
             ]
         },
@@ -65979,8 +65979,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM138",
-                    "strWidth": 43.109375
+                    "str": "TM138 Heat Crash",
+                    "strWidth": 196.078125
                 }
             ]
         },
@@ -66009,8 +66009,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM139",
-                    "strWidth": 43.109375
+                    "str": "TM139 Hex",
+                    "strWidth": 104.234375
                 }
             ]
         },
@@ -66039,8 +66039,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM140",
-                    "strWidth": 43.109375
+                    "str": "TM140 Trailblaze",
+                    "strWidth": 178.578125
                 }
             ]
         },
@@ -66069,8 +66069,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM141",
-                    "strWidth": 43.109375
+                    "str": "TM141 Play Rough",
+                    "strWidth": 196.3125
                 }
             ]
         },
@@ -66099,8 +66099,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM142",
-                    "strWidth": 43.109375
+                    "str": "TM142 Mystical Fire",
+                    "strWidth": 216.40625
                 }
             ]
         },
@@ -66129,8 +66129,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM143",
-                    "strWidth": 43.109375
+                    "str": "TM143 High Horsepower",
+                    "strWidth": 278.0
                 }
             ]
         },
@@ -66159,8 +66159,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM144",
-                    "strWidth": 43.109375
+                    "str": "TM144 Icicle Spear",
+                    "strWidth": 201.734375
                 }
             ]
         },
@@ -66189,8 +66189,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM145",
-                    "strWidth": 43.109375
+                    "str": "TM145 Power Gem",
+                    "strWidth": 201.34375
                 }
             ]
         },
@@ -66219,8 +66219,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM146",
-                    "strWidth": 43.109375
+                    "str": "TM146 Venoshock",
+                    "strWidth": 193.5
                 }
             ]
         },
@@ -66249,8 +66249,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM147",
-                    "strWidth": 43.109375
+                    "str": "TM147 Psyshock",
+                    "strWidth": 166.96875
                 }
             ]
         },
@@ -66279,8 +66279,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM148",
-                    "strWidth": 43.109375
+                    "str": "TM148 Infestation",
+                    "strWidth": 188.734375
                 }
             ]
         },
@@ -66309,8 +66309,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM149",
-                    "strWidth": 43.109375
+                    "str": "TM149 Lunge",
+                    "strWidth": 130.0625
                 }
             ]
         },
@@ -66339,8 +66339,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM150",
-                    "strWidth": 43.109375
+                    "str": "TM150 Struggle Bug",
+                    "strWidth": 216.390625
                 }
             ]
         },
@@ -68739,8 +68739,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -68769,8 +68769,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -68799,8 +68799,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -68829,8 +68829,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -68859,8 +68859,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -68889,8 +68889,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -68919,8 +68919,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -68949,8 +68949,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -68979,8 +68979,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69009,8 +69009,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69039,8 +69039,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69069,8 +69069,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69099,8 +69099,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69129,8 +69129,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69159,8 +69159,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69189,8 +69189,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69219,8 +69219,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69249,8 +69249,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69279,8 +69279,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69309,8 +69309,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69339,8 +69339,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69399,8 +69399,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -69879,8 +69879,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -70329,8 +70329,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -70389,7 +70389,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Leader's Crest",
+                    "str": "Leader’s Crest",
                     "strWidth": 185.59375
                 }
             ]
@@ -70419,8 +70419,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -70449,8 +70449,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -76749,7 +76749,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Briar's Book",
+                    "str": "Briar’s Book",
                     "strWidth": 154.984375
                 }
             ]
@@ -76779,8 +76779,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -76809,8 +76809,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         },
@@ -76839,8 +76839,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Placeholder Item",
-                    "strWidth": 218.5
+                    "str": "???",
+                    "strWidth": 43.40625
                 }
             ]
         }

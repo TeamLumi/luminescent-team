@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_dp_fld_areaname_display",
     "hash": -1736513557,
@@ -4391,6 +4391,66 @@
                     "tagValue": 0.0,
                     "str": "Cycle Shop",
                     "strWidth": 149.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 146,
+            "arrayIndex": 146,
+            "labelName": "DP_fld_areaname_display_400",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sinjoh Ruins",
+                    "strWidth": 155.28125
+                }
+            ]
+        },
+        {
+            "labelIndex": 147,
+            "arrayIndex": 147,
+            "labelName": "DP_fld_areaname_display_401",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Distortion World",
+                    "strWidth": 217.671875
                 }
             ]
         }

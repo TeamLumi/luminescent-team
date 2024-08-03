@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_ss_tokusei",
     "hash": -2015838827,
@@ -9221,6 +9221,126 @@
                     "tagValue": 0.0,
                     "str": "Supersweet Syrup",
                     "strWidth": 228.203125
+                }
+            ]
+        },
+        {
+            "labelIndex": 307,
+            "arrayIndex": 307,
+            "labelName": "TOKUSEI_307",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tera Shift",
+                    "strWidth": 125.171875
+                }
+            ]
+        },
+        {
+            "labelIndex": 308,
+            "arrayIndex": 308,
+            "labelName": "TOKUSEI_308",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Tera Shell",
+                    "strWidth": 129.28125
+                }
+            ]
+        },
+        {
+            "labelIndex": 309,
+            "arrayIndex": 309,
+            "labelName": "TOKUSEI_309",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Teraform Zero",
+                    "strWidth": 186.96875
+                }
+            ]
+        },
+        {
+            "labelIndex": 310,
+            "arrayIndex": 310,
+            "labelName": "TOKUSEI_310",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Poison Puppeteer",
+                    "strWidth": 227.9375
                 }
             ]
         }

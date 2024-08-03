@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_ss_monsname",
     "hash": -289658209,
@@ -25989,7 +25989,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Sirfetch'd",
+                    "str": "Sirfetch’d",
                     "strWidth": 120.0
                 }
             ]
