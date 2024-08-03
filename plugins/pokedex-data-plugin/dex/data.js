@@ -6,6 +6,19 @@ const EggMovesTable = require('../../../__gamedata/TamagoWazaTable.json');
 const LearnsetTable = require('../../../__gamedata/WazaOboeTable.json');
 const MovesTable = require('../../../__gamedata/WazaTable.json');
 const ItemTable = require('../../../__gamedata/ItemTable.json');
+const EvolutionData = require('../../../__gamedata/evolution.json');
+
+//All the Location files
+const displayNames =  require('../../../__gamedata/english_dp_fld_areaname_display.json');
+const areaNames =  require('../../../__gamedata/english_dp_fld_areaname.json');
+const mapInfo =  require('../../../__gamedata/MapInfo.json');
+const encounterLocations =  require('../../../__gamedata/encounter_locations.json');
+const pokemonLocations =  require('../../../__gamedata/pokemon_locations.json');
+const trainerLocations =  require('../../../__gamedata/Mapper_Trainer_Output.json');
+const field_items =  require('../../../__gamedata/item_list.json');
+const hidden_items =  require('../../../__gamedata/hide_item_list.json');
+const staticLocations =  require('../../../__gamedata/static_pokemon_locations.json');
+const staticAreaLocations =  require('../../../__gamedata/static_area_locations.json');
 
 //All the Pokemon english files
 const basePokemonNames = require('../../../__gamedata/english_ss_monsname.json');
@@ -36,6 +49,7 @@ module.exports = {
   EggMovesTable,
   LearnsetTable,
   MovesTable,
+  EvolutionData,
   basePokemonNames,
   formPokemonNames,
   pokemonHeight,
@@ -52,5 +66,15 @@ module.exports = {
   itemNames,
   moveEnum,
   smogonMoves,
-  tutorMoves
+  tutorMoves,
+  displayNames,
+  areaNames,
+  mapInfo,
+  encounterLocations,
+  pokemonLocations,
+  trainerLocations,
+  field_items,
+  hidden_items,
+  staticLocations,
+  staticAreaLocations,
 };

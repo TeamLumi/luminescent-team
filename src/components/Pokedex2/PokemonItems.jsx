@@ -3,8 +3,10 @@ import { Box, Typography, Modal } from '@mui/material';
 import { getPokemon } from "../../../plugins/pokedex-data-plugin/dex/pokemon";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { getItemImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
+import { useGlobalState } from '../common/GlobalState';
 
-export const PokemonItems = ({ pokemonId }) => {
+export const PokemonItems = ({ item1, item2, item3 }) => {
+  const [globalState, updateMode] = useGlobalState();
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -13,16 +15,11 @@ export const PokemonItems = ({ pokemonId }) => {
     setOpen(false);
   };
 
-  const pokeInfo = getPokemon(pokemonId)
-  const item1 = pokeInfo.item1
-  const item2 = pokeInfo.item2
-  const item3 = pokeInfo.item3
-
   const noItems = item1 === "None" && item2 === item1 && item3 === item1
   const allItems = item1 !== "None" && item2 === item1 && item3 === item1
 
   return (
-    <div>
+    <div style={{ marginTop: '30px' }}>
       <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>
         <>
           <Box gridColumn="span 5">
@@ -45,7 +42,7 @@ export const PokemonItems = ({ pokemonId }) => {
         {noItems && (
           <>
             <Box gridColumn="span 5">
-              <Typography >This Pokémon does not hold an item in the wild.</Typography>
+              <Typography >This Pokémon does not hold an item in the wild</Typography>
             </Box>
           </>
         )}

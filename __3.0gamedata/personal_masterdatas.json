@@ -1,0 +1,326 @@
+{
+    "m_Name": "personal_masterdatas",
+    "m_PreloadTable": [
+        {
+            "m_FileID": 0,
+            "m_PathID": 2369147947980244083
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 6284965375675926737
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -6032997291274880996
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 1670399578319621162
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 6246272244541889003
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 7772117092870586331
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 6872186880742583721
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 7187247207582851412
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -5431921521366313060
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -2725874188085732487
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -7074868485061166713
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 4393444091616262860
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 4766668531613346572
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 5139195221601552760
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -4134332114626696658
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -3993321130425893368
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -8825204264973564398
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 5202496447435965763
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -6594047588963821541
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 710467152368747309
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 252928009371549925
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 4858397593426751732
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -75716788877619323
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 1345203096983357567
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -5450764759673626280
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -1690115250536060524
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 7041256980112870865
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 9079298294973827611
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -2063102802383707239
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 6925071152922426992
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": -5200986451752621319
+        },
+        {
+            "m_FileID": 0,
+            "m_PathID": 5996829694540646758
+        }
+    ],
+    "m_Container": [
+        [
+            "assets/pml/data/addpersonaltable.asset",
+            {
+                "preloadIndex": 14,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": -4134332114626696658
+                }
+            }
+        ],
+        [
+            "assets/pml/data/evolvetable.asset",
+            {
+                "preloadIndex": 12,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 5139195221601552760
+                }
+            }
+        ],
+        [
+            "assets/pml/data/growtable.asset",
+            {
+                "preloadIndex": 30,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": -5200986451752621319
+                }
+            }
+        ],
+        [
+            "assets/pml/data/itemtable.asset",
+            {
+                "preloadIndex": 20,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 252928009371549925
+                }
+            }
+        ],
+        [
+            "assets/pml/data/pedestaltable.asset",
+            {
+                "preloadIndex": 6,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 6872186880742583721
+                }
+            }
+        ],
+        [
+            "assets/pml/data/personaltable.asset",
+            {
+                "preloadIndex": 28,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 6925071152922426992
+                }
+            }
+        ],
+        [
+            "assets/pml/data/sealtable.asset",
+            {
+                "preloadIndex": 10,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": -7074868485061166713
+                }
+            }
+        ],
+        [
+            "assets/pml/data/stonestatueeffect.asset",
+            {
+                "preloadIndex": 26,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 9079298294973827611
+                }
+            }
+        ],
+        [
+            "assets/pml/data/tamagowazatable.asset",
+            {
+                "preloadIndex": 2,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 1670399578319621162
+                }
+            }
+        ],
+        [
+            "assets/pml/data/tamatable.asset",
+            {
+                "preloadIndex": 0,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 2369147947980244083
+                }
+            }
+        ],
+        [
+            "assets/pml/data/ugfatherexpansion.asset",
+            {
+                "preloadIndex": 24,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": -5450764759673626280
+                }
+            }
+        ],
+        [
+            "assets/pml/data/ugfatherpos.asset",
+            {
+                "preloadIndex": 18,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 710467152368747309
+                }
+            }
+        ],
+        [
+            "assets/pml/data/ugfathershoptable.asset",
+            {
+                "preloadIndex": 4,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 7772117092870586331
+                }
+            }
+        ],
+        [
+            "assets/pml/data/ugitemtable.asset",
+            {
+                "preloadIndex": 8,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": -5431921521366313060
+                }
+            }
+        ],
+        [
+            "assets/pml/data/wazaoboetable.asset",
+            {
+                "preloadIndex": 22,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": 1345203096983357567
+                }
+            }
+        ],
+        [
+            "assets/pml/data/wazatable.asset",
+            {
+                "preloadIndex": 16,
+                "preloadSize": 2,
+                "asset": {
+                    "m_FileID": 0,
+                    "m_PathID": -8825204264973564398
+                }
+            }
+        ]
+    ],
+    "m_MainAsset": {
+        "preloadIndex": 0,
+        "preloadSize": 0,
+        "asset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+        }
+    },
+    "m_RuntimeCompatibility": 1,
+    "m_AssetBundleName": "personal_masterdatas",
+    "m_Dependencies": [],
+    "m_IsStreamedSceneAssetBundle": false,
+    "m_ExplicitDataLayout": 0,
+    "m_PathFlags": 7,
+    "m_SceneHashes": []
+}

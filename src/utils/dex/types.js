@@ -1,7 +1,6 @@
-const { typeName } = require('../../../__gamedata');
+const { typeName } = require('./data');
 
 function getTypeName(typeId = 0) {
-  // Trigger actions
   const type = typeName.labelDataArray[typeId]?.wordDataArray[0]?.str;
   if (!type) throw Error(`Bad typeId: ${typeId}`);
   return type;

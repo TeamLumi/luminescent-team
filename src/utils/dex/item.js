@@ -1,26 +1,31 @@
 const { getZoneCodeFromCSV, getZoneNameFromZoneCode } = require('./location');
 
-const { itemNames, ShopTable, ItemTable, ItemMap, FixedShop } = require('../../../__gamedata');
+const { itemNames, ShopTable, ItemTable, ItemMap, FixedShop } = require('./data');
+const { itemNames3, ShopTable3, ItemTable3 } = require('./data3');
 
-function getItemIdFromItemName(itemName) {
+function getItemIdFromItemName(itemName, mode = "2.0") {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
+  const ItemNames = mode === "2.0" ? itemNames : itemNames3
   if (itemName === "King's Rock")
-    return itemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === 'King’s Rock');
-  const index = itemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === itemName);
+    return ItemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === 'King’s Rock');
+  const index = ItemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === itemName);
   if (index === -1) throw Error(`Bad item name: ${itemName}`);
   return index;
 }
 
-function getItemString(itemId = 0) {
-  return itemNames.labelDataArray[itemId].wordDataArray[0].str;
+function getItemString(itemId = 0, mode = "2.0") {
+  const ItemNames = mode === "2.0" ? itemNames : itemNames3
+  return ItemNames.labelDataArray[itemId].wordDataArray[0].str;
 }
 
-function getItemPrice(itemId = 0) {
-  return ItemTable.Item[itemId].price;
+function getItemPrice(itemId = 0, mode = "2.0") {
+  const itemTable = mode === "2.0" ? ItemTable : ItemTable3;
+  return itemTable.Item[itemId].price;
 }
 
-function getBattleItemPrice(itemId = 0) {
-  return ItemTable.Item[itemId].bp_price;
+function getBattleItemPrice(itemId = 0, mode = "2.0") {
+  const itemTable = mode === "2.0" ? ItemTable : ItemTable3;
+  return itemTable.Item[itemId].bp_price;
 }
 
 function getRegularShopItems(zoneId) {
@@ -75,17 +80,19 @@ function getFixedShops(zoneId) {
   return sections;
 }
 
-function getFixedShopsItems(shopId) {
-  const shopItems = ShopTable.FixedShop.filter(obj => obj.ShopID === parseInt(shopId))
+function getFixedShopsItems(shopId, mode = "2.0") {
+  const shopTable = mode === "2.0" ? ShopTable : ShopTable3;
+  const shopItems = shopTable.FixedShop.filter(obj => obj.ShopID === parseInt(shopId))
   const itemNos = shopItems.map(item => item.ItemNo);
   return itemNos;
 }
 
-function getHeartScaleShopItems(zoneId) {
+function getHeartScaleShopItems(zoneId, mode = "2.0") {
   if (zoneId !== 110) {
     return null;
   };
-  return ShopTable.OtenkiShop
+  const shopTable = mode === "2.0" ? ShopTable : ShopTable3;
+  return shopTable.OtenkiShop
 }
 
 export {
