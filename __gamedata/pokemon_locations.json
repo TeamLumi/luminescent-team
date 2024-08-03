@@ -36486,7 +36486,7 @@
     },
     {
       "routeName": "Route 205 (South)",
-      "pokemonName": "Plant Cloak Burmy",
+      "pokemonName": "Burmy",
       "encounterType": "Honey Tree",
       "encounterRate": "20%",
       "minLevel": 12,
@@ -36496,7 +36496,7 @@
     },
     {
       "routeName": "Route 206",
-      "pokemonName": "Plant Cloak Burmy",
+      "pokemonName": "Burmy",
       "encounterType": "Honey Tree",
       "encounterRate": "20%",
       "minLevel": 21,
@@ -36508,7 +36508,7 @@
   "413": [
     {
       "routeName": "Fuego Ironworks (Outside)",
-      "pokemonName": "Plant Cloak Wormadam",
+      "pokemonName": "Wormadam",
       "encounterType": "Honey Tree",
       "encounterRate": "10%",
       "minLevel": 40,
@@ -36518,7 +36518,7 @@
     },
     {
       "routeName": "Route 210 (South)",
-      "pokemonName": "Plant Cloak Wormadam",
+      "pokemonName": "Wormadam",
       "encounterType": "Honey Tree",
       "encounterRate": "10%",
       "minLevel": 29,
@@ -36528,7 +36528,7 @@
     },
     {
       "routeName": "Route 218",
-      "pokemonName": "Plant Cloak Wormadam",
+      "pokemonName": "Wormadam",
       "encounterType": "Honey Tree",
       "encounterRate": "10%",
       "minLevel": 39,
@@ -36874,7 +36874,7 @@
   "421": [
     {
       "routeName": "Route 212 (South)",
-      "pokemonName": "Overcast Form Cherrim",
+      "pokemonName": "Cherrim",
       "encounterType": "Honey Tree",
       "encounterRate": "30%",
       "minLevel": 34,
@@ -36884,7 +36884,7 @@
     },
     {
       "routeName": "Route 221",
-      "pokemonName": "Overcast Form Cherrim",
+      "pokemonName": "Cherrim",
       "encounterType": "Honey Tree",
       "encounterRate": "30%",
       "minLevel": 39,
@@ -39760,7 +39760,7 @@
   "865": [
     {
       "routeName": "Lake Valor (After)",
-      "pokemonName": "Sirfetch\u2019d",
+      "pokemonName": "Sirfetch'd",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 54,
@@ -39770,7 +39770,7 @@
     },
     {
       "routeName": "Lake Valor (After)",
-      "pokemonName": "Sirfetch\u2019d",
+      "pokemonName": "Sirfetch'd",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 54,
@@ -39875,7 +39875,7 @@
       "zoneId": 487
     }
   ],
-  "1039": [
+  "1024": [
     {
       "routeName": "Route 201",
       "pokemonName": "Alolan Rattata",
@@ -39897,7 +39897,7 @@
       "zoneId": 354
     }
   ],
-  "1059": [
+  "1044": [
     {
       "routeName": "Route 222",
       "pokemonName": "Alolan Raichu",
@@ -39919,7 +39919,7 @@
       "zoneId": 407
     }
   ],
-  "1060": [
+  "1045": [
     {
       "routeName": "Route 216",
       "pokemonName": "Alolan Sandshrew",
@@ -39931,7 +39931,7 @@
       "zoneId": 395
     }
   ],
-  "1061": [
+  "1046": [
     {
       "routeName": "Mt. Coronet - 2F",
       "pokemonName": "Alolan Sandslash",
@@ -40053,7 +40053,7 @@
       "zoneId": 211
     }
   ],
-  "1062": [
+  "1047": [
     {
       "routeName": "Route 216",
       "pokemonName": "Alolan Vulpix",
@@ -40065,7 +40065,7 @@
       "zoneId": 395
     }
   ],
-  "1063": [
+  "1048": [
     {
       "routeName": "Mt. Coronet - Summit",
       "pokemonName": "Alolan Ninetales",
@@ -40117,669 +40117,669 @@
       "zoneId": 397
     }
   ],
+  "1049": [
+    {
+      "routeName": "Oreburgh Mine B1F",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 0,
+      "zoneId": 195
+    },
+    {
+      "routeName": "Oreburgh Mine B1F",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 1,
+      "zoneId": 195
+    },
+    {
+      "routeName": "Oreburgh Mine B2F",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 11,
+      "maxLevel": 11,
+      "encounterTypeIndex": 0,
+      "zoneId": 196
+    },
+    {
+      "routeName": "Oreburgh Mine B2F",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 11,
+      "maxLevel": 11,
+      "encounterTypeIndex": 1,
+      "zoneId": 196
+    },
+    {
+      "routeName": "Oreburgh Gate - 1F",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 9,
+      "maxLevel": 9,
+      "encounterTypeIndex": 0,
+      "zoneId": 255
+    },
+    {
+      "routeName": "Oreburgh Gate - 1F",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 9,
+      "maxLevel": 9,
+      "encounterTypeIndex": 1,
+      "zoneId": 255
+    },
+    {
+      "routeName": "Oreburgh Gate - B1F",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 0,
+      "zoneId": 256
+    },
+    {
+      "routeName": "Oreburgh Gate - B1F",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 1,
+      "zoneId": 256
+    },
+    {
+      "routeName": "Ruin Maniac Cave - Small",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 32,
+      "maxLevel": 32,
+      "encounterTypeIndex": 0,
+      "zoneId": 294
+    },
+    {
+      "routeName": "Ruin Maniac Cave - Small",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 32,
+      "maxLevel": 32,
+      "encounterTypeIndex": 1,
+      "zoneId": 294
+    },
+    {
+      "routeName": "Ruin Maniac Cave - Large",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 32,
+      "maxLevel": 32,
+      "encounterTypeIndex": 0,
+      "zoneId": 295
+    },
+    {
+      "routeName": "Ruin Maniac Cave - Large",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 32,
+      "maxLevel": 32,
+      "encounterTypeIndex": 1,
+      "zoneId": 295
+    },
+    {
+      "routeName": "Maniac Tunnel",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 32,
+      "maxLevel": 32,
+      "encounterTypeIndex": 0,
+      "zoneId": 296
+    },
+    {
+      "routeName": "Maniac Tunnel",
+      "pokemonName": "Alolan Diglett",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 32,
+      "maxLevel": 32,
+      "encounterTypeIndex": 1,
+      "zoneId": 296
+    }
+  ],
+  "1050": [
+    {
+      "routeName": "Route 218",
+      "pokemonName": "Alolan Dugtrio",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 39,
+      "maxLevel": 39,
+      "encounterTypeIndex": 0,
+      "zoneId": 400
+    },
+    {
+      "routeName": "Route 218",
+      "pokemonName": "Alolan Dugtrio",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 39,
+      "maxLevel": 39,
+      "encounterTypeIndex": 1,
+      "zoneId": 400
+    },
+    {
+      "routeName": "Route 228",
+      "pokemonName": "Alolan Dugtrio",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 0,
+      "zoneId": 416
+    },
+    {
+      "routeName": "Route 228",
+      "pokemonName": "Alolan Dugtrio",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 1,
+      "zoneId": 416
+    }
+  ],
+  "1051": [
+    {
+      "routeName": "Lake Verity (Before)",
+      "pokemonName": "Alolan Meowth",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 323
+    },
+    {
+      "routeName": "Lake Verity (Before)",
+      "pokemonName": "Alolan Meowth",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 1,
+      "zoneId": 323
+    },
+    {
+      "routeName": "Lake Verity (After)",
+      "pokemonName": "Alolan Meowth",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 324
+    },
+    {
+      "routeName": "Lake Verity (After)",
+      "pokemonName": "Alolan Meowth",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 1,
+      "zoneId": 324
+    }
+  ],
+  "1052": [
+    {
+      "routeName": "Route 207",
+      "pokemonName": "Galarian Meowth",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 0,
+      "zoneId": 364
+    },
+    {
+      "routeName": "Route 207",
+      "pokemonName": "Galarian Meowth",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 1,
+      "zoneId": 364
+    }
+  ],
+  "1054": [
+    {
+      "routeName": "Route 225",
+      "pokemonName": "Alolan Persian",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 0,
+      "zoneId": 412
+    },
+    {
+      "routeName": "Route 225",
+      "pokemonName": "Alolan Persian",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 1,
+      "zoneId": 412
+    }
+  ],
+  "1055": [
+    {
+      "routeName": "Route 202",
+      "pokemonName": "Hisuian Growlithe",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 6,
+      "maxLevel": 6,
+      "encounterTypeIndex": 0,
+      "zoneId": 355
+    },
+    {
+      "routeName": "Route 202",
+      "pokemonName": "Hisuian Growlithe",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 6,
+      "maxLevel": 6,
+      "encounterTypeIndex": 1,
+      "zoneId": 355
+    },
+    {
+      "routeName": "Route 205 (North)",
+      "pokemonName": "Hisuian Growlithe",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 17,
+      "maxLevel": 17,
+      "encounterTypeIndex": 0,
+      "zoneId": 361
+    },
+    {
+      "routeName": "Route 205 (North)",
+      "pokemonName": "Hisuian Growlithe",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 17,
+      "maxLevel": 17,
+      "encounterTypeIndex": 1,
+      "zoneId": 361
+    }
+  ],
+  "1059": [
+    {
+      "routeName": "Mt. Coronet - Route 207 Entrance",
+      "pokemonName": "Alolan Geodude",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 23,
+      "maxLevel": 23,
+      "encounterTypeIndex": 0,
+      "zoneId": 203
+    },
+    {
+      "routeName": "Mt. Coronet - Route 207 Entrance",
+      "pokemonName": "Alolan Geodude",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 23,
+      "maxLevel": 23,
+      "encounterTypeIndex": 1,
+      "zoneId": 203
+    },
+    {
+      "routeName": "Ravaged Path",
+      "pokemonName": "Alolan Geodude",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 8,
+      "maxLevel": 8,
+      "encounterTypeIndex": 0,
+      "zoneId": 252
+    },
+    {
+      "routeName": "Ravaged Path",
+      "pokemonName": "Alolan Geodude",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 8,
+      "maxLevel": 8,
+      "encounterTypeIndex": 1,
+      "zoneId": 252
+    },
+    {
+      "routeName": "Route 206",
+      "pokemonName": "Alolan Geodude",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 22,
+      "maxLevel": 22,
+      "encounterTypeIndex": 0,
+      "zoneId": 362
+    },
+    {
+      "routeName": "Route 206",
+      "pokemonName": "Alolan Geodude",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 22,
+      "maxLevel": 22,
+      "encounterTypeIndex": 1,
+      "zoneId": 362
+    }
+  ],
+  "1060": [
+    {
+      "routeName": "Iron Island - 1F",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 0,
+      "zoneId": 299
+    },
+    {
+      "routeName": "Iron Island - 1F",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 1,
+      "zoneId": 299
+    },
+    {
+      "routeName": "Iron Island - B1F Left",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 0,
+      "zoneId": 300
+    },
+    {
+      "routeName": "Iron Island - B1F Left",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 1,
+      "zoneId": 300
+    },
+    {
+      "routeName": "Iron Island - B1F Right",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 0,
+      "zoneId": 301
+    },
+    {
+      "routeName": "Iron Island - B1F Right",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 1,
+      "zoneId": 301
+    },
+    {
+      "routeName": "Iron Island - B2F Right",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 0,
+      "zoneId": 302
+    },
+    {
+      "routeName": "Iron Island - B2F Right",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 1,
+      "zoneId": 302
+    },
+    {
+      "routeName": "Iron Island - B2F Left (Riley's Room)",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 0,
+      "zoneId": 303
+    },
+    {
+      "routeName": "Iron Island - B2F Left (Riley's Room)",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 1,
+      "zoneId": 303
+    },
+    {
+      "routeName": "Iron Island - B3F",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 0,
+      "zoneId": 304
+    },
+    {
+      "routeName": "Iron Island - B3F",
+      "pokemonName": "Alolan Graveler",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 45,
+      "maxLevel": 45,
+      "encounterTypeIndex": 1,
+      "zoneId": 304
+    }
+  ],
+  "1061": [
+    {
+      "routeName": "Victory Road - 1F",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 244
+    },
+    {
+      "routeName": "Victory Road - 1F",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 244
+    },
+    {
+      "routeName": "Victory Road - 2F",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 245
+    },
+    {
+      "routeName": "Victory Road - 2F",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 245
+    },
+    {
+      "routeName": "Victory Road - B1F",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 246
+    },
+    {
+      "routeName": "Victory Road - B1F",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 246
+    },
+    {
+      "routeName": "Victory Road - 1F Back (Marley)",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "routeName": "Victory Road - 1F Back (Marley)",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "routeName": "Victory Road - 1F Back (Entrance)",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 248
+    },
+    {
+      "routeName": "Victory Road - 1F Back (Entrance)",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 248
+    },
+    {
+      "routeName": "Victory Road - 1F Back (214 Exit)",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 249
+    },
+    {
+      "routeName": "Victory Road - 1F Back (214 Exit)",
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 249
+    }
+  ],
+  "1062": [
+    {
+      "routeName": "Route 204 (North)",
+      "pokemonName": "Galarian Ponyta",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 12,
+      "maxLevel": 12,
+      "encounterTypeIndex": 0,
+      "zoneId": 358
+    },
+    {
+      "routeName": "Route 204 (North)",
+      "pokemonName": "Galarian Ponyta",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 12,
+      "maxLevel": 12,
+      "encounterTypeIndex": 1,
+      "zoneId": 358
+    }
+  ],
+  "1063": [
+    {
+      "routeName": "Route 226",
+      "pokemonName": "Galarian Rapidash",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 0,
+      "zoneId": 487
+    },
+    {
+      "routeName": "Route 226",
+      "pokemonName": "Galarian Rapidash",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 1,
+      "zoneId": 487
+    }
+  ],
   "1064": [
-    {
-      "routeName": "Oreburgh Mine B1F",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 0,
-      "zoneId": 195
-    },
-    {
-      "routeName": "Oreburgh Mine B1F",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 1,
-      "zoneId": 195
-    },
-    {
-      "routeName": "Oreburgh Mine B2F",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 11,
-      "maxLevel": 11,
-      "encounterTypeIndex": 0,
-      "zoneId": 196
-    },
-    {
-      "routeName": "Oreburgh Mine B2F",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 11,
-      "maxLevel": 11,
-      "encounterTypeIndex": 1,
-      "zoneId": 196
-    },
-    {
-      "routeName": "Oreburgh Gate - 1F",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 9,
-      "maxLevel": 9,
-      "encounterTypeIndex": 0,
-      "zoneId": 255
-    },
-    {
-      "routeName": "Oreburgh Gate - 1F",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 9,
-      "maxLevel": 9,
-      "encounterTypeIndex": 1,
-      "zoneId": 255
-    },
-    {
-      "routeName": "Oreburgh Gate - B1F",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 0,
-      "zoneId": 256
-    },
-    {
-      "routeName": "Oreburgh Gate - B1F",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 1,
-      "zoneId": 256
-    },
-    {
-      "routeName": "Ruin Maniac Cave - Small",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 0,
-      "zoneId": 294
-    },
-    {
-      "routeName": "Ruin Maniac Cave - Small",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 1,
-      "zoneId": 294
-    },
-    {
-      "routeName": "Ruin Maniac Cave - Large",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 0,
-      "zoneId": 295
-    },
-    {
-      "routeName": "Ruin Maniac Cave - Large",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 1,
-      "zoneId": 295
-    },
-    {
-      "routeName": "Maniac Tunnel",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 0,
-      "zoneId": 296
-    },
-    {
-      "routeName": "Maniac Tunnel",
-      "pokemonName": "Alolan Diglett",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 1,
-      "zoneId": 296
-    }
-  ],
-  "1065": [
-    {
-      "routeName": "Route 218",
-      "pokemonName": "Alolan Dugtrio",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": 0,
-      "zoneId": 400
-    },
-    {
-      "routeName": "Route 218",
-      "pokemonName": "Alolan Dugtrio",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": 1,
-      "zoneId": 400
-    },
-    {
-      "routeName": "Route 228",
-      "pokemonName": "Alolan Dugtrio",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 0,
-      "zoneId": 416
-    },
-    {
-      "routeName": "Route 228",
-      "pokemonName": "Alolan Dugtrio",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 1,
-      "zoneId": 416
-    }
-  ],
-  "1066": [
-    {
-      "routeName": "Lake Verity (Before)",
-      "pokemonName": "Alolan Meowth",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 5,
-      "maxLevel": 5,
-      "encounterTypeIndex": 0,
-      "zoneId": 323
-    },
-    {
-      "routeName": "Lake Verity (Before)",
-      "pokemonName": "Alolan Meowth",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 5,
-      "maxLevel": 5,
-      "encounterTypeIndex": 1,
-      "zoneId": 323
-    },
-    {
-      "routeName": "Lake Verity (After)",
-      "pokemonName": "Alolan Meowth",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 5,
-      "maxLevel": 5,
-      "encounterTypeIndex": 0,
-      "zoneId": 324
-    },
-    {
-      "routeName": "Lake Verity (After)",
-      "pokemonName": "Alolan Meowth",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 5,
-      "maxLevel": 5,
-      "encounterTypeIndex": 1,
-      "zoneId": 324
-    }
-  ],
-  "1067": [
-    {
-      "routeName": "Route 207",
-      "pokemonName": "Galarian Meowth",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 0,
-      "zoneId": 364
-    },
-    {
-      "routeName": "Route 207",
-      "pokemonName": "Galarian Meowth",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 1,
-      "zoneId": 364
-    }
-  ],
-  "1069": [
-    {
-      "routeName": "Route 225",
-      "pokemonName": "Alolan Persian",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 0,
-      "zoneId": 412
-    },
-    {
-      "routeName": "Route 225",
-      "pokemonName": "Alolan Persian",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 1,
-      "zoneId": 412
-    }
-  ],
-  "1070": [
-    {
-      "routeName": "Route 202",
-      "pokemonName": "Hisuian Growlithe",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 6,
-      "maxLevel": 6,
-      "encounterTypeIndex": 0,
-      "zoneId": 355
-    },
-    {
-      "routeName": "Route 202",
-      "pokemonName": "Hisuian Growlithe",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 6,
-      "maxLevel": 6,
-      "encounterTypeIndex": 1,
-      "zoneId": 355
-    },
-    {
-      "routeName": "Route 205 (North)",
-      "pokemonName": "Hisuian Growlithe",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 17,
-      "maxLevel": 17,
-      "encounterTypeIndex": 0,
-      "zoneId": 361
-    },
-    {
-      "routeName": "Route 205 (North)",
-      "pokemonName": "Hisuian Growlithe",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 17,
-      "maxLevel": 17,
-      "encounterTypeIndex": 1,
-      "zoneId": 361
-    }
-  ],
-  "1075": [
-    {
-      "routeName": "Mt. Coronet - Route 207 Entrance",
-      "pokemonName": "Alolan Geodude",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 23,
-      "maxLevel": 23,
-      "encounterTypeIndex": 0,
-      "zoneId": 203
-    },
-    {
-      "routeName": "Mt. Coronet - Route 207 Entrance",
-      "pokemonName": "Alolan Geodude",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 23,
-      "maxLevel": 23,
-      "encounterTypeIndex": 1,
-      "zoneId": 203
-    },
-    {
-      "routeName": "Ravaged Path",
-      "pokemonName": "Alolan Geodude",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 8,
-      "maxLevel": 8,
-      "encounterTypeIndex": 0,
-      "zoneId": 252
-    },
-    {
-      "routeName": "Ravaged Path",
-      "pokemonName": "Alolan Geodude",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 8,
-      "maxLevel": 8,
-      "encounterTypeIndex": 1,
-      "zoneId": 252
-    },
-    {
-      "routeName": "Route 206",
-      "pokemonName": "Alolan Geodude",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 22,
-      "maxLevel": 22,
-      "encounterTypeIndex": 0,
-      "zoneId": 362
-    },
-    {
-      "routeName": "Route 206",
-      "pokemonName": "Alolan Geodude",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 22,
-      "maxLevel": 22,
-      "encounterTypeIndex": 1,
-      "zoneId": 362
-    }
-  ],
-  "1076": [
-    {
-      "routeName": "Iron Island - 1F",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 0,
-      "zoneId": 299
-    },
-    {
-      "routeName": "Iron Island - 1F",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 1,
-      "zoneId": 299
-    },
-    {
-      "routeName": "Iron Island - B1F Left",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 0,
-      "zoneId": 300
-    },
-    {
-      "routeName": "Iron Island - B1F Left",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 1,
-      "zoneId": 300
-    },
-    {
-      "routeName": "Iron Island - B1F Right",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 0,
-      "zoneId": 301
-    },
-    {
-      "routeName": "Iron Island - B1F Right",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 1,
-      "zoneId": 301
-    },
-    {
-      "routeName": "Iron Island - B2F Right",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 0,
-      "zoneId": 302
-    },
-    {
-      "routeName": "Iron Island - B2F Right",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 1,
-      "zoneId": 302
-    },
-    {
-      "routeName": "Iron Island - B2F Left (Riley's Room)",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 0,
-      "zoneId": 303
-    },
-    {
-      "routeName": "Iron Island - B2F Left (Riley's Room)",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 1,
-      "zoneId": 303
-    },
-    {
-      "routeName": "Iron Island - B3F",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 0,
-      "zoneId": 304
-    },
-    {
-      "routeName": "Iron Island - B3F",
-      "pokemonName": "Alolan Graveler",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 45,
-      "maxLevel": 45,
-      "encounterTypeIndex": 1,
-      "zoneId": 304
-    }
-  ],
-  "1077": [
-    {
-      "routeName": "Victory Road - 1F",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 244
-    },
-    {
-      "routeName": "Victory Road - 1F",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 244
-    },
-    {
-      "routeName": "Victory Road - 2F",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 245
-    },
-    {
-      "routeName": "Victory Road - 2F",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 245
-    },
-    {
-      "routeName": "Victory Road - B1F",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 246
-    },
-    {
-      "routeName": "Victory Road - B1F",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 246
-    },
-    {
-      "routeName": "Victory Road - 1F Back (Marley)",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "routeName": "Victory Road - 1F Back (Marley)",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "routeName": "Victory Road - 1F Back (Entrance)",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 248
-    },
-    {
-      "routeName": "Victory Road - 1F Back (Entrance)",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 248
-    },
-    {
-      "routeName": "Victory Road - 1F Back (214 Exit)",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 249
-    },
-    {
-      "routeName": "Victory Road - 1F Back (214 Exit)",
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 249
-    }
-  ],
-  "1078": [
-    {
-      "routeName": "Route 204 (North)",
-      "pokemonName": "Galarian Ponyta",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "routeName": "Route 204 (North)",
-      "pokemonName": "Galarian Ponyta",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    }
-  ],
-  "1079": [
-    {
-      "routeName": "Route 226",
-      "pokemonName": "Galarian Rapidash",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 0,
-      "zoneId": 487
-    },
-    {
-      "routeName": "Route 226",
-      "pokemonName": "Galarian Rapidash",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 1,
-      "zoneId": 487
-    }
-  ],
-  "1080": [
     {
       "routeName": "Mt. Coronet - Route 207 Entrance",
       "pokemonName": "Galarian Slowpoke",
@@ -40881,7 +40881,7 @@
       "zoneId": 400
     }
   ],
-  "1082": [
+  "1066": [
     {
       "routeName": "Victory Road - B1F",
       "pokemonName": "Galarian Slowbro",
@@ -40953,343 +40953,343 @@
       "zoneId": 485
     }
   ],
+  "1067": [
+    {
+      "routeName": "Route 208",
+      "pokemonName": "Galarian Farfetch'd",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 24,
+      "maxLevel": 24,
+      "encounterTypeIndex": 0,
+      "zoneId": 365
+    },
+    {
+      "routeName": "Route 208",
+      "pokemonName": "Galarian Farfetch'd",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 24,
+      "maxLevel": 24,
+      "encounterTypeIndex": 1,
+      "zoneId": 365
+    },
+    {
+      "routeName": "Route 214",
+      "pokemonName": "Galarian Farfetch'd",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 32,
+      "maxLevel": 32,
+      "encounterTypeIndex": 0,
+      "zoneId": 392
+    },
+    {
+      "routeName": "Route 214",
+      "pokemonName": "Galarian Farfetch'd",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 32,
+      "maxLevel": 32,
+      "encounterTypeIndex": 1,
+      "zoneId": 392
+    }
+  ],
+  "1069": [
+    {
+      "routeName": "Mt. Coronet - Tunnel to Route 211 Entrance",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 19,
+      "maxLevel": 19,
+      "encounterTypeIndex": 0,
+      "zoneId": 212
+    },
+    {
+      "routeName": "Mt. Coronet - Tunnel to Route 211 Entrance",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 19,
+      "maxLevel": 19,
+      "encounterTypeIndex": 1,
+      "zoneId": 212
+    },
+    {
+      "routeName": "Mt. Coronet - Route 216 Entrance",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 19,
+      "maxLevel": 19,
+      "encounterTypeIndex": 0,
+      "zoneId": 213
+    },
+    {
+      "routeName": "Mt. Coronet - Route 216 Entrance",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 19,
+      "maxLevel": 19,
+      "encounterTypeIndex": 1,
+      "zoneId": 213
+    },
+    {
+      "routeName": "Mt. Coronet - Route 211 Entrance",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 214
+    },
+    {
+      "routeName": "Mt. Coronet - Route 211 Entrance",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 214
+    },
+    {
+      "routeName": "Mt. Coronet - B1F",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 20,
+      "maxLevel": 20,
+      "encounterTypeIndex": 0,
+      "zoneId": 215
+    },
+    {
+      "routeName": "Mt. Coronet - B1F",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 20,
+      "maxLevel": 20,
+      "encounterTypeIndex": 1,
+      "zoneId": 215
+    },
+    {
+      "routeName": "Route 210 (South)",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 373
+    },
+    {
+      "routeName": "Route 210 (South)",
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 1,
+      "zoneId": 373
+    }
+  ],
+  "1070": [
+    {
+      "routeName": "Fuego Ironworks (Outside)",
+      "pokemonName": "Alolan Muk",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 40,
+      "maxLevel": 40,
+      "encounterTypeIndex": 0,
+      "zoneId": 201
+    },
+    {
+      "routeName": "Fuego Ironworks (Outside)",
+      "pokemonName": "Alolan Muk",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 40,
+      "maxLevel": 40,
+      "encounterTypeIndex": 1,
+      "zoneId": 201
+    }
+  ],
+  "1076": [
+    {
+      "routeName": "Valley Windworks (Outside)",
+      "pokemonName": "Hisuian Voltorb",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 13,
+      "maxLevel": 13,
+      "encounterTypeIndex": 0,
+      "zoneId": 197
+    },
+    {
+      "routeName": "Valley Windworks (Outside)",
+      "pokemonName": "Hisuian Voltorb",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 13,
+      "maxLevel": 13,
+      "encounterTypeIndex": 1,
+      "zoneId": 197
+    }
+  ],
+  "1077": [
+    {
+      "routeName": "Route 224",
+      "pokemonName": "Hisuian Electrode",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 411
+    },
+    {
+      "routeName": "Route 224",
+      "pokemonName": "Hisuian Electrode",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 411
+    }
+  ],
+  "1078": [
+    {
+      "routeName": "Valor Lakefront",
+      "pokemonName": "Alolan Exeggutor",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 33,
+      "maxLevel": 33,
+      "encounterTypeIndex": 0,
+      "zoneId": 347
+    },
+    {
+      "routeName": "Valor Lakefront",
+      "pokemonName": "Alolan Exeggutor",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 33,
+      "maxLevel": 33,
+      "encounterTypeIndex": 1,
+      "zoneId": 347
+    },
+    {
+      "routeName": "Route 229",
+      "pokemonName": "Alolan Exeggutor",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 0,
+      "zoneId": 420
+    },
+    {
+      "routeName": "Route 229",
+      "pokemonName": "Alolan Exeggutor",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 67,
+      "maxLevel": 67,
+      "encounterTypeIndex": 1,
+      "zoneId": 420
+    }
+  ],
+  "1079": [
+    {
+      "routeName": "Stark Mountain (Overworld)",
+      "pokemonName": "Alolan Marowak",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 69,
+      "maxLevel": 69,
+      "encounterTypeIndex": 0,
+      "zoneId": 259
+    },
+    {
+      "routeName": "Stark Mountain (Overworld)",
+      "pokemonName": "Alolan Marowak",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 69,
+      "maxLevel": 69,
+      "encounterTypeIndex": 1,
+      "zoneId": 259
+    }
+  ],
+  "1081": [
+    {
+      "routeName": "Stark Mountain - Entrance",
+      "pokemonName": "Galarian Weezing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 69,
+      "maxLevel": 69,
+      "encounterTypeIndex": 0,
+      "zoneId": 260
+    },
+    {
+      "routeName": "Stark Mountain - Entrance",
+      "pokemonName": "Galarian Weezing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 69,
+      "maxLevel": 69,
+      "encounterTypeIndex": 1,
+      "zoneId": 260
+    },
+    {
+      "routeName": "Stark Mountain - Interior",
+      "pokemonName": "Galarian Weezing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 69,
+      "maxLevel": 69,
+      "encounterTypeIndex": 0,
+      "zoneId": 261
+    },
+    {
+      "routeName": "Stark Mountain - Interior",
+      "pokemonName": "Galarian Weezing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 69,
+      "maxLevel": 69,
+      "encounterTypeIndex": 1,
+      "zoneId": 261
+    },
+    {
+      "routeName": "Route 210 (North)",
+      "pokemonName": "Galarian Weezing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 38,
+      "maxLevel": 38,
+      "encounterTypeIndex": 0,
+      "zoneId": 375
+    },
+    {
+      "routeName": "Route 210 (North)",
+      "pokemonName": "Galarian Weezing",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 38,
+      "maxLevel": 38,
+      "encounterTypeIndex": 1,
+      "zoneId": 375
+    }
+  ],
   "1083": [
-    {
-      "routeName": "Route 208",
-      "pokemonName": "Galarian Farfetch'd",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 24,
-      "maxLevel": 24,
-      "encounterTypeIndex": 0,
-      "zoneId": 365
-    },
-    {
-      "routeName": "Route 208",
-      "pokemonName": "Galarian Farfetch'd",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 24,
-      "maxLevel": 24,
-      "encounterTypeIndex": 1,
-      "zoneId": 365
-    },
-    {
-      "routeName": "Route 214",
-      "pokemonName": "Galarian Farfetch'd",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 0,
-      "zoneId": 392
-    },
-    {
-      "routeName": "Route 214",
-      "pokemonName": "Galarian Farfetch'd",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 1,
-      "zoneId": 392
-    }
-  ],
-  "1085": [
-    {
-      "routeName": "Mt. Coronet - Tunnel to Route 211 Entrance",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 0,
-      "zoneId": 212
-    },
-    {
-      "routeName": "Mt. Coronet - Tunnel to Route 211 Entrance",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 1,
-      "zoneId": 212
-    },
-    {
-      "routeName": "Mt. Coronet - Route 216 Entrance",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 0,
-      "zoneId": 213
-    },
-    {
-      "routeName": "Mt. Coronet - Route 216 Entrance",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 1,
-      "zoneId": 213
-    },
-    {
-      "routeName": "Mt. Coronet - Route 211 Entrance",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
-      "encounterTypeIndex": 0,
-      "zoneId": 214
-    },
-    {
-      "routeName": "Mt. Coronet - Route 211 Entrance",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
-      "encounterTypeIndex": 1,
-      "zoneId": 214
-    },
-    {
-      "routeName": "Mt. Coronet - B1F",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 20,
-      "maxLevel": 20,
-      "encounterTypeIndex": 0,
-      "zoneId": 215
-    },
-    {
-      "routeName": "Mt. Coronet - B1F",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 20,
-      "maxLevel": 20,
-      "encounterTypeIndex": 1,
-      "zoneId": 215
-    },
-    {
-      "routeName": "Route 210 (South)",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 30,
-      "maxLevel": 30,
-      "encounterTypeIndex": 0,
-      "zoneId": 373
-    },
-    {
-      "routeName": "Route 210 (South)",
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 30,
-      "maxLevel": 30,
-      "encounterTypeIndex": 1,
-      "zoneId": 373
-    }
-  ],
-  "1086": [
-    {
-      "routeName": "Fuego Ironworks (Outside)",
-      "pokemonName": "Alolan Muk",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 0,
-      "zoneId": 201
-    },
-    {
-      "routeName": "Fuego Ironworks (Outside)",
-      "pokemonName": "Alolan Muk",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 1,
-      "zoneId": 201
-    }
-  ],
-  "1093": [
-    {
-      "routeName": "Valley Windworks (Outside)",
-      "pokemonName": "Hisuian Voltorb",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 13,
-      "maxLevel": 13,
-      "encounterTypeIndex": 0,
-      "zoneId": 197
-    },
-    {
-      "routeName": "Valley Windworks (Outside)",
-      "pokemonName": "Hisuian Voltorb",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 13,
-      "maxLevel": 13,
-      "encounterTypeIndex": 1,
-      "zoneId": 197
-    }
-  ],
-  "1094": [
-    {
-      "routeName": "Route 224",
-      "pokemonName": "Hisuian Electrode",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 411
-    },
-    {
-      "routeName": "Route 224",
-      "pokemonName": "Hisuian Electrode",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 411
-    }
-  ],
-  "1096": [
-    {
-      "routeName": "Valor Lakefront",
-      "pokemonName": "Alolan Exeggutor",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 33,
-      "maxLevel": 33,
-      "encounterTypeIndex": 0,
-      "zoneId": 347
-    },
-    {
-      "routeName": "Valor Lakefront",
-      "pokemonName": "Alolan Exeggutor",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 33,
-      "maxLevel": 33,
-      "encounterTypeIndex": 1,
-      "zoneId": 347
-    },
-    {
-      "routeName": "Route 229",
-      "pokemonName": "Alolan Exeggutor",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 0,
-      "zoneId": 420
-    },
-    {
-      "routeName": "Route 229",
-      "pokemonName": "Alolan Exeggutor",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 1,
-      "zoneId": 420
-    }
-  ],
-  "1097": [
-    {
-      "routeName": "Stark Mountain (Overworld)",
-      "pokemonName": "Alolan Marowak",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 69,
-      "maxLevel": 69,
-      "encounterTypeIndex": 0,
-      "zoneId": 259
-    },
-    {
-      "routeName": "Stark Mountain (Overworld)",
-      "pokemonName": "Alolan Marowak",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 69,
-      "maxLevel": 69,
-      "encounterTypeIndex": 1,
-      "zoneId": 259
-    }
-  ],
-  "1099": [
-    {
-      "routeName": "Stark Mountain - Entrance",
-      "pokemonName": "Galarian Weezing",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 69,
-      "maxLevel": 69,
-      "encounterTypeIndex": 0,
-      "zoneId": 260
-    },
-    {
-      "routeName": "Stark Mountain - Entrance",
-      "pokemonName": "Galarian Weezing",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 69,
-      "maxLevel": 69,
-      "encounterTypeIndex": 1,
-      "zoneId": 260
-    },
-    {
-      "routeName": "Stark Mountain - Interior",
-      "pokemonName": "Galarian Weezing",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 69,
-      "maxLevel": 69,
-      "encounterTypeIndex": 0,
-      "zoneId": 261
-    },
-    {
-      "routeName": "Stark Mountain - Interior",
-      "pokemonName": "Galarian Weezing",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 69,
-      "maxLevel": 69,
-      "encounterTypeIndex": 1,
-      "zoneId": 261
-    },
-    {
-      "routeName": "Route 210 (North)",
-      "pokemonName": "Galarian Weezing",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 38,
-      "maxLevel": 38,
-      "encounterTypeIndex": 0,
-      "zoneId": 375
-    },
-    {
-      "routeName": "Route 210 (North)",
-      "pokemonName": "Galarian Weezing",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 38,
-      "maxLevel": 38,
-      "encounterTypeIndex": 1,
-      "zoneId": 375
-    }
-  ],
-  "1101": [
     {
       "routeName": "Route 217",
       "pokemonName": "Galarian Mr. Mime",
@@ -41301,7 +41301,7 @@
       "zoneId": 397
     }
   ],
-  "1123": [
+  "1102": [
     {
       "routeName": "Turnback Cave - Entrance",
       "pokemonName": "Hisuian Typhlosion",
@@ -41723,7 +41723,7 @@
       "zoneId": 284
     }
   ],
-  "1127": [
+  "1106": [
     {
       "routeName": "Pokemon League",
       "pokemonName": "Galarian Slowking",
@@ -41775,7 +41775,7 @@
       "zoneId": 489
     }
   ],
-  "1156": [
+  "1135": [
     {
       "routeName": "Eterna City",
       "pokemonName": "Hisuian Qwilfish",
@@ -41907,7 +41907,7 @@
       "zoneId": 422
     }
   ],
-  "1159": [
+  "1138": [
     {
       "routeName": "Great Marsh - Area 1",
       "pokemonName": "Hisuian Sneasel",
@@ -42029,7 +42029,7 @@
       "zoneId": 224
     }
   ],
-  "1160": [
+  "1139": [
     {
       "routeName": "Valley Windworks (Outside)",
       "pokemonName": "Galarian Corsola",
@@ -42111,7 +42111,7 @@
       "zoneId": 456
     }
   ],
-  "1167": [
+  "1145": [
     {
       "routeName": "Route 203",
       "pokemonName": "Galarian Zigzagoon",
@@ -42133,7 +42133,7 @@
       "zoneId": 356
     }
   ],
-  "1168": [
+  "1146": [
     {
       "routeName": "Route 213",
       "pokemonName": "Galarian Linoone",
@@ -42155,10 +42155,10 @@
       "zoneId": 385
     }
   ],
-  "1202": [
+  "1177": [
     {
       "routeName": "Pastoria City",
-      "pokemonName": "East Sea Shellos",
+      "pokemonName": "Shellos East Sea",
       "encounterType": "water_mons",
       "encounterRate": "30%",
       "minLevel": 40,
@@ -42168,7 +42168,7 @@
     },
     {
       "routeName": "Route 212 (South)",
-      "pokemonName": "East Sea Shellos",
+      "pokemonName": "Shellos East Sea",
       "encounterType": "water_mons",
       "encounterRate": "60%",
       "minLevel": 40,
@@ -42177,10 +42177,10 @@
       "zoneId": 383
     }
   ],
-  "1203": [
+  "1178": [
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 34,
@@ -42190,7 +42190,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 34,
@@ -42200,7 +42200,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 34,
@@ -42210,7 +42210,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "tairyo",
       "encounterRate": "20%",
       "minLevel": 34,
@@ -42220,7 +42220,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 34,
@@ -42230,7 +42230,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 34,
@@ -42240,7 +42240,7 @@
     },
     {
       "routeName": "Route 224",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -42250,7 +42250,7 @@
     },
     {
       "routeName": "Route 224",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "water_mons",
       "encounterRate": "5%",
       "minLevel": 60,
@@ -42260,7 +42260,7 @@
     },
     {
       "routeName": "Route 224",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "water_mons",
       "encounterRate": "4%",
       "minLevel": 60,
@@ -42270,7 +42270,7 @@
     },
     {
       "routeName": "Route 224",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "water_mons",
       "encounterRate": "1%",
       "minLevel": 60,
@@ -42280,7 +42280,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 67,
@@ -42290,7 +42290,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 67,
@@ -42300,7 +42300,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "tairyo",
       "encounterRate": "20%",
       "minLevel": 67,
@@ -42310,7 +42310,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 67,
@@ -42320,7 +42320,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 67,

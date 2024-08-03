@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": -2967038129978094201
+        "m_PathID": 3652094840918934080
     },
     "m_Name": "english_ss_wazainfo",
     "hash": -1671069364,
@@ -4673,7 +4673,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user counters the target by mimicking the target’s",
+                    "str": "The user counters the target by mimicking the target's",
                     "strWidth": 710.0
                 },
                 {
@@ -5031,7 +5031,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The target is clamped and squeezed by the user’s very",
+                    "str": "The target is clamped and squeezed by the user's very",
                     "strWidth": 710.0
                 },
                 {
@@ -5199,7 +5199,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "vines, or the like. This may also lower the target’s",
+                    "str": "vines, or the like. This may also lower the target's",
                     "strWidth": 710.0
                 },
                 {
@@ -6669,7 +6669,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "can’t flee from battle.",
+                    "str": "can't flee from battle.",
                     "strWidth": 710.0
                 }
             ]
@@ -8991,7 +8991,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The power of this attack move is doubled if it’s used on",
+                    "str": "The power of this attack move is doubled if it's used on",
                     "strWidth": 710.0
                 },
                 {
@@ -8999,7 +8999,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "a target that’s switching out of battle.",
+                    "str": "a target that's switching out of battle.",
                     "strWidth": 710.0
                 }
             ]
@@ -10485,7 +10485,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This attack’s power is doubled when used on a target",
+                    "str": "This attack's power is doubled when used on a target",
                     "strWidth": 710.0
                 },
                 {
@@ -10493,7 +10493,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "with paralysis. This also cures the target’s paralysis,",
+                    "str": "with paralysis. This also cures the target's paralysis,",
                     "strWidth": 710.0
                 },
                 {
@@ -11605,7 +11605,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user’s type is changed depending on its environment,",
+                    "str": "The user's type is changed depending on its environment,",
                     "strWidth": 710.0
                 },
                 {
@@ -11613,7 +11613,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "such as at water’s edge, in grass, or in a cave.",
+                    "str": "such as at water's edge, in grass, or in a cave.",
                     "strWidth": 710.0
                 }
             ]
@@ -11917,7 +11917,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user attacks the target for five turns. The move’s",
+                    "str": "The user attacks the target for five turns. The move's",
                     "strWidth": 710.0
                 },
                 {
@@ -12587,7 +12587,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "wind. This may also raise all the user’s stats.",
+                    "str": "wind. This may also raise all the user's stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -14353,7 +14353,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The Berry determines the move’s type and power.",
+                    "str": "The Berry determines the move's type and power.",
                     "strWidth": 710.0
                 }
             ]
@@ -14963,7 +14963,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target has, the greater the move’s power.",
+                    "str": "target has, the greater the move's power.",
                     "strWidth": 710.0
                 }
             ]
@@ -15123,7 +15123,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target’s intended move with greater power. This move",
+                    "str": "target's intended move with greater power. This move",
                     "strWidth": 710.0
                 },
                 {
@@ -15131,7 +15131,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "fails if it isn’t used first.",
+                    "str": "fails if it isn't used first.",
                     "strWidth": 710.0
                 }
             ]
@@ -15307,7 +15307,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "the greater the move’s power.",
+                    "str": "the greater the move's power.",
                     "strWidth": 710.0
                 }
             ]
@@ -16891,7 +16891,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "may also lower the target’s accuracy.",
+                    "str": "may also lower the target's accuracy.",
                     "strWidth": 710.0
                 }
             ]
@@ -17013,7 +17013,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "its polished body. This may also lower the target’s",
+                    "str": "its polished body. This may also lower the target's",
                     "strWidth": 710.0
                 },
                 {
@@ -18523,7 +18523,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "wind. This may also raise all the user’s stats at once.",
+                    "str": "wind. This may also raise all the user's stats at once.",
                     "strWidth": 710.0
                 }
             ]
@@ -19859,7 +19859,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The target’s stat changes don’t affect this attack’s",
+                    "str": "The target's stat changes don't affect this attack's",
                     "strWidth": 710.0
                 },
                 {
@@ -20599,7 +20599,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target isn’t holding an item.",
+                    "str": "target isn't holding an item.",
                     "strWidth": 710.0
                 }
             ]
@@ -21247,7 +21247,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user drains the target’s energy with its horns. The",
+                    "str": "The user drains the target's energy with its horns. The",
                     "strWidth": 710.0
                 },
                 {
@@ -21255,7 +21255,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "user’s HP is restored by half the damage taken by the",
+                    "str": "user's HP is restored by half the damage taken by the",
                     "strWidth": 710.0
                 },
                 {
@@ -21301,7 +21301,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target’s stat changes don’t affect this attack’s damage.",
+                    "str": "target's stat changes don't affect this attack's damage.",
                     "strWidth": 710.0
                 }
             ]
@@ -21385,7 +21385,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move’s power.",
+                    "str": "move's power.",
                     "strWidth": 710.0
                 }
             ]
@@ -21561,7 +21561,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target. This may also lower the target’s accuracy.",
+                    "str": "target. This may also lower the target's accuracy.",
                     "strWidth": 710.0
                 }
             ]
@@ -21843,7 +21843,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user fires a beam of light at its target. The move’s",
+                    "str": "The user fires a beam of light at its target. The move's",
                     "strWidth": 710.0
                 },
                 {
@@ -22119,7 +22119,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "user’s Sp. Atk stat.",
+                    "str": "user's Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -22325,7 +22325,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "at its target. This lowers the user’s Defense, Sp. Def,",
+                    "str": "at its target. This lowers the user's Defense, Sp. Def,",
                     "strWidth": 710.0
                 },
                 {
@@ -22363,7 +22363,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user brings down a giant flame. This move’s power is",
+                    "str": "The user brings down a giant flame. This move's power is",
                     "strWidth": 710.0
                 },
                 {
@@ -22401,7 +22401,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user throws down a giant lightning bolt. This move’s",
+                    "str": "The user throws down a giant lightning bolt. This move's",
                     "strWidth": 710.0
                 },
                 {
@@ -22745,7 +22745,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Ghost type to the target’s type.",
+                    "str": "Ghost type to the target's type.",
                     "strWidth": 710.0
                 }
             ]
@@ -22851,7 +22851,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user attacks everything around it. The user’s HP is",
+                    "str": "The user attacks everything around it. The user's HP is",
                     "strWidth": 710.0
                 },
                 {
@@ -23371,7 +23371,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "during that turn, the target’s move becomes Electric",
+                    "str": "during that turn, the target's move becomes Electric",
                     "strWidth": 710.0
                 },
                 {
@@ -23753,7 +23753,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Pokémon. This may also sharply raise the user’s Defense",
+                    "str": "Pokémon. This may also sharply raise the user's Defense",
                     "strWidth": 710.0
                 },
                 {
@@ -24257,7 +24257,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Using Happy Hour doubles the amount of prize money",
+                    "str": "The user swings itself around to attack with its huge hammer.",
                     "strWidth": 710.0
                 },
                 {
@@ -24265,7 +24265,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "received after battle.",
+                    "str": "This move can't be used twice in a row.",
                     "strWidth": 710.0
                 }
             ]
@@ -24653,7 +24653,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user absorbs its target’s HP. The user’s HP is",
+                    "str": "The user absorbs its target's HP. The user's HP is",
                     "strWidth": 710.0
                 },
                 {
@@ -24737,7 +24737,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "ground. Those it hits can’t flee from battle.",
+                    "str": "ground. Those it hits can't flee from battle.",
                     "strWidth": 710.0
                 }
             ]
@@ -24989,7 +24989,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "and Detect. But the user’s Defense stat falls.",
+                    "str": "and Detect. But the user's Defense stat falls.",
                     "strWidth": 710.0
                 }
             ]
@@ -25663,7 +25663,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Deep-seated grudges summoned by the user’s Z-Power trap",
+                    "str": "Deep-seated grudges summoned by the user's Z-Power trap",
                     "strWidth": 710.0
                 },
                 {
@@ -25709,7 +25709,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Deep-seated grudges summoned by the user’s Z-Power trap",
+                    "str": "Deep-seated grudges summoned by the user's Z-Power trap",
                     "strWidth": 710.0
                 },
                 {
@@ -26851,7 +26851,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target’s shadow to the ground to prevent the target from",
+                    "str": "target's shadow to the ground to prevent the target from",
                     "strWidth": 710.0
                 },
                 {
@@ -26897,7 +26897,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target’s stat changes don’t affect this attack’s damage.",
+                    "str": "target's stat changes don't affect this attack's damage.",
                     "strWidth": 710.0
                 }
             ]
@@ -26981,7 +26981,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the user’s Speed, however.",
+                    "str": "lowers the user's Speed, however.",
                     "strWidth": 710.0
                 }
             ]
@@ -27011,7 +27011,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user restores the target’s HP by up to half of its",
+                    "str": "The user restores the target's HP by up to half of its",
                     "strWidth": 710.0
                 },
                 {
@@ -27141,7 +27141,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "fills a blade with the light’s energy, attacking the",
+                    "str": "fills a blade with the light's energy, attacking the",
                     "strWidth": 710.0
                 },
                 {
@@ -27583,7 +27583,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "also lowers the target’s Defense stat.",
+                    "str": "also lowers the target's Defense stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -27621,7 +27621,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "more the user’s stats are raised, the greater the move’s",
+                    "str": "more the user's stats are raised, the greater the move's",
                     "strWidth": 710.0
                 },
                 {
@@ -27773,7 +27773,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user heals the target’s status condition. If the",
+                    "str": "The user heals the target's status condition. If the",
                     "strWidth": 710.0
                 },
                 {
@@ -27781,7 +27781,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move succeeds, it also restores the user’s own HP.",
+                    "str": "move succeeds, it also restores the user's own HP.",
                     "strWidth": 710.0
                 }
             ]
@@ -27819,7 +27819,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "user’s type determines the type of this move.",
+                    "str": "user's type determines the type of this move.",
                     "strWidth": 710.0
                 }
             ]
@@ -27865,7 +27865,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "effect of the target’s Ability.",
+                    "str": "effect of the target's Ability.",
                     "strWidth": 710.0
                 }
             ]
@@ -27903,7 +27903,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "the target. This also lowers the target’s Attack stat.",
+                    "str": "the target. This also lowers the target's Attack stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -27933,7 +27933,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user instructs the target to use the target’s last",
+                    "str": "The user instructs the target to use the target's last",
                     "strWidth": 710.0
                 },
                 {
@@ -27987,7 +27987,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "it’s heating up its beak results in a burn.",
+                    "str": "it's heating up its beak results in a burn.",
                     "strWidth": 710.0
                 }
             ]
@@ -28025,7 +28025,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "huge noise to attack opposing Pokémon. The user’s",
+                    "str": "huge noise to attack opposing Pokémon. The user's",
                     "strWidth": 710.0
                 },
                 {
@@ -28307,7 +28307,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user, the Land Spirit Pokémon, obtains Alola’s",
+                    "str": "The user, the Land Spirit Pokémon, obtains Alola's",
                     "strWidth": 710.0
                 },
                 {
@@ -28323,7 +28323,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "full force. This reduces the target’s HP greatly.",
+                    "str": "full force. This reduces the target's HP greatly.",
                     "strWidth": 710.0
                 }
             ]
@@ -28613,7 +28613,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user unleashes a strong beam. The attack’s recoil",
+                    "str": "The user unleashes a strong beam. The attack's recoil",
                     "strWidth": 710.0
                 },
                 {
@@ -28621,7 +28621,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "harshly lowers the user’s Sp. Atk stat.",
+                    "str": "harshly lowers the user's Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -28743,7 +28743,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "contains a spirit. This may also lower the target’s",
+                    "str": "contains a spirit. This may also lower the target's",
                     "strWidth": 710.0
                 },
                 {
@@ -28873,7 +28873,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "prism. The user can’t move on the next turn.",
+                    "str": "prism. The user can't move on the next turn.",
                     "strWidth": 710.0
                 }
             ]
@@ -28903,7 +28903,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user hides in the target’s shadow, steals the",
+                    "str": "The user hides in the target's shadow, steals the",
                     "strWidth": 710.0
                 },
                 {
@@ -28911,7 +28911,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target’s stat boosts, and then attacks.",
+                    "str": "target's stat boosts, and then attacks.",
                     "strWidth": 710.0
                 }
             ]
@@ -29133,7 +29133,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "halves the target’s HP.",
+                    "str": "halves the target's HP.",
                     "strWidth": 710.0
                 }
             ]
@@ -29171,7 +29171,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target. The memory held determines the move’s type.",
+                    "str": "target. The memory held determines the move's type.",
                     "strWidth": 710.0
                 }
             ]
@@ -29385,7 +29385,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "the target’s Ability.",
+                    "str": "the target's Ability.",
                     "strWidth": 710.0
                 }
             ]
@@ -29431,7 +29431,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "of the target’s Ability.",
+                    "str": "of the target's Ability.",
                     "strWidth": 710.0
                 }
             ]
@@ -29477,7 +29477,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "of the target’s Ability.",
+                    "str": "of the target's Ability.",
                     "strWidth": 710.0
                 }
             ]
@@ -29607,7 +29607,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "user’s stats.",
+                    "str": "user's stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -30333,7 +30333,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user ignores the effects of opposing Pokémon’s moves",
+                    "str": "The user ignores the effects of opposing Pokémon's moves",
                     "strWidth": 710.0
                 },
                 {
@@ -30463,7 +30463,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This move raises all the user’s stats but prevents the",
+                    "str": "This move raises all the user's stats but prevents the",
                     "strWidth": 710.0
                 },
                 {
@@ -30509,7 +30509,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target’s Speed stat. The target becomes weaker to",
+                    "str": "target's Speed stat. The target becomes weaker to",
                     "strWidth": 710.0
                 },
                 {
@@ -30669,7 +30669,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "fleeing. This move also lowers the target’s Defense and",
+                    "str": "fleeing. This move also lowers the target's Defense and",
                     "strWidth": 710.0
                 },
                 {
@@ -30883,7 +30883,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target’s Sp. Atk stat.",
+                    "str": "lowers the target's Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -30967,7 +30967,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target’s Speed stat.",
+                    "str": "lowers the target's Speed stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -31005,7 +31005,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon’s Attack stats.",
+                    "str": "raises ally Pokémon's Attack stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31043,7 +31043,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target’s Defense stat.",
+                    "str": "lowers the target's Defense stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -31119,7 +31119,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon’s Sp. Atk stats.",
+                    "str": "raises ally Pokémon's Sp. Atk stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31195,7 +31195,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon’s Speed stats.",
+                    "str": "raises ally Pokémon's Speed stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31271,7 +31271,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target’s Attack stat.",
+                    "str": "lowers the target's Attack stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -31393,7 +31393,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon’s Sp. Def stats.",
+                    "str": "raises ally Pokémon's Sp. Def stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31431,7 +31431,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target’s Sp. Def stat.",
+                    "str": "lowers the target's Sp. Def stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -31515,7 +31515,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "raises ally Pokémon’s Defense stats.",
+                    "str": "raises ally Pokémon's Defense stats.",
                     "strWidth": 710.0
                 }
             ]
@@ -31621,7 +31621,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user sharply raises the target’s Attack and Sp. Atk",
+                    "str": "The user sharply raises the target's Attack and Sp. Atk",
                     "strWidth": 710.0
                 },
                 {
@@ -31659,7 +31659,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user plays its drum, controlling the drum’s roots to",
+                    "str": "The user plays its drum, controlling the drum's roots to",
                     "strWidth": 710.0
                 },
                 {
@@ -31667,7 +31667,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "attack the target. This also lowers the target’s Speed",
+                    "str": "attack the target. This also lowers the target's Speed",
                     "strWidth": 710.0
                 },
                 {
@@ -31889,7 +31889,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "stored in its cheeks. This move’s type changes depending",
+                    "str": "stored in its cheeks. This move's type changes depending",
                     "strWidth": 710.0
                 },
                 {
@@ -31897,7 +31897,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "on the user’s form.",
+                    "str": "on the user's form.",
                     "strWidth": 710.0
                 }
             ]
@@ -32057,7 +32057,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "created from tart apples. This also lowers the target’s",
+                    "str": "created from tart apples. This also lowers the target's",
                     "strWidth": 710.0
                 },
                 {
@@ -32103,7 +32103,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "above. This also lowers the target’s Defense stat.",
+                    "str": "above. This also lowers the target's Defense stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -32141,7 +32141,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "could break the target’s spirit. This also lowers the",
+                    "str": "could break the target's spirit. This also lowers the",
                     "strWidth": 710.0
                 },
                 {
@@ -32149,7 +32149,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target’s Sp. Atk stat.",
+                    "str": "target's Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -32271,7 +32271,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "succession. Direct contact harshly lowers the attacker’s",
+                    "str": "succession. Direct contact harshly lowers the attacker's",
                     "strWidth": 710.0
                 },
                 {
@@ -32363,7 +32363,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "can’t move on the next turn, because the force of this",
+                    "str": "can't move on the next turn, because the force of this",
                     "strWidth": 710.0
                 },
                 {
@@ -32401,7 +32401,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This is Eternatus’s most powerful attack in its original",
+                    "str": "This is Eternatus's most powerful attack in its original",
                     "strWidth": 710.0
                 },
                 {
@@ -32409,7 +32409,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "form. The user can’t move on the next turn.",
+                    "str": "form. The user can't move on the next turn.",
                     "strWidth": 710.0
                 }
             ]
@@ -32485,7 +32485,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move’s power goes up and damages all opposing Pokémon on",
+                    "str": "move's power goes up and damages all opposing Pokémon on",
                     "strWidth": 710.0
                 },
                 {
@@ -32531,7 +32531,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "fails when the ground hasn’t turned into a terrain.",
+                    "str": "fails when the ground hasn't turned into a terrain.",
                     "strWidth": 710.0
                 }
             ]
@@ -32569,7 +32569,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "a row. This move boosts the user’s Speed stat but lowers",
+                    "str": "a row. This move boosts the user's Speed stat but lowers",
                     "strWidth": 710.0
                 },
                 {
@@ -32699,7 +32699,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "using this move. This move’s power is increased on Misty",
+                    "str": "using this move. This move's power is increased on Misty",
                     "strWidth": 710.0
                 },
                 {
@@ -32783,7 +32783,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "ground. This move’s power doubles when the target is on",
+                    "str": "ground. This move's power doubles when the target is on",
                     "strWidth": 710.0
                 },
                 {
@@ -32829,7 +32829,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "This move’s type and power changes depending on the",
+                    "str": "This move's type and power changes depending on the",
                     "strWidth": 710.0
                 },
                 {
@@ -32837,7 +32837,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "terrain when it’s used.",
+                    "str": "terrain when it's used.",
                     "strWidth": 710.0
                 }
             ]
@@ -32875,7 +32875,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "lowers the target’s Sp. Atk stat.",
+                    "str": "lowers the target's Sp. Atk stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -32959,7 +32959,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target. If the user’s stats were lowered during this",
+                    "str": "target. If the user's stats were lowered during this",
                     "strWidth": 710.0
                 },
                 {
@@ -32997,7 +32997,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "The user attacks the target by controlling the target’s",
+                    "str": "The user attacks the target by controlling the target's",
                     "strWidth": 710.0
                 },
                 {
@@ -33005,7 +33005,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "item. The move fails if the target doesn’t have an item.",
+                    "str": "item. The move fails if the target doesn't have an item.",
                     "strWidth": 710.0
                 }
             ]
@@ -33447,7 +33447,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "opposing Pokémon. The lower the user’s HP, the lower the",
+                    "str": "opposing Pokémon. The lower the user's HP, the lower the",
                     "strWidth": 710.0
                 },
                 {
@@ -33455,7 +33455,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "move’s power.",
+                    "str": "move's power.",
                     "strWidth": 710.0
                 }
             ]
@@ -33577,7 +33577,7 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "target’s Defense stat.",
+                    "str": "target's Defense stat.",
                     "strWidth": 710.0
                 }
             ]
@@ -33691,3302 +33691,8 @@
                     "eventID": 1,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "also removes 3 PP from the target’s last move.",
+                    "str": "also removes 3 PP from the target's last move.",
                     "strWidth": 710.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 827,
-            "arrayIndex": 827,
-            "labelName": "WAZAINFO_827",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "High critical hit ratio",
-                    "strWidth": 266.3125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": " May poison, paralyze or make the opponent drowsy.",
-                    "strWidth": 689.671875
-                }
-            ]
-        },
-        {
-            "labelIndex": 828,
-            "arrayIndex": 828,
-            "labelName": "WAZAINFO_828",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises user’s Defense and Special Defense.",
-                    "strWidth": 558.921875
-                }
-            ]
-        },
-        {
-            "labelIndex": 829,
-            "arrayIndex": 829,
-            "labelName": "WAZAINFO_829",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Switches offensive and defensive stats.",
-                    "strWidth": 500.25
-                }
-            ]
-        },
-        {
-            "labelIndex": 830,
-            "arrayIndex": 830,
-            "labelName": "WAZAINFO_830",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "High critical hit ratio",
-                    "strWidth": 266.3125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": " Damages target with splinters each turn.",
-                    "strWidth": 527.859375
-                }
-            ]
-        },
-        {
-            "labelIndex": 831,
-            "arrayIndex": 831,
-            "labelName": "WAZAINFO_831",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Boosts user’s stats in Incarnate Forme, or lowers opponent’s",
-                    "strWidth": 773.71875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "stats in Therian Forme.",
-                    "strWidth": 294.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 832,
-            "arrayIndex": 832,
-            "labelName": "WAZAINFO_832",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises user’s Attack or Defense.",
-                    "strWidth": 413.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 833,
-            "arrayIndex": 833,
-            "labelName": "WAZAINFO_833",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "User keeps repeating the same move over and over.",
-                    "strWidth": 673.734375
-                }
-            ]
-        },
-        {
-            "labelIndex": 834,
-            "arrayIndex": 834,
-            "labelName": "WAZAINFO_834",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "User receives recoil damage.",
-                    "strWidth": 372.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 835,
-            "arrayIndex": 835,
-            "labelName": "WAZAINFO_835",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "User receives recoil damage.",
-                    "strWidth": 372.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 836,
-            "arrayIndex": 836,
-            "labelName": "WAZAINFO_836",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Lowers user’s Speed.",
-                    "strWidth": 269.15625
-                }
-            ]
-        },
-        {
-            "labelIndex": 837,
-            "arrayIndex": 837,
-            "labelName": "WAZAINFO_837",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises Attack and Defense.",
-                    "strWidth": 352.765625
-                }
-            ]
-        },
-        {
-            "labelIndex": 838,
-            "arrayIndex": 838,
-            "labelName": "WAZAINFO_838",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Lowers user’s Defense.",
-                    "strWidth": 294.109375
-                }
-            ]
-        },
-        {
-            "labelIndex": 839,
-            "arrayIndex": 839,
-            "labelName": "WAZAINFO_839",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Inflicts double damage if the target has a status condition.",
-                    "strWidth": 754.1875
-                }
-            ]
-        },
-        {
-            "labelIndex": 840,
-            "arrayIndex": 840,
-            "labelName": "WAZAINFO_840",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "High critical hit ratio",
-                    "strWidth": 266.3125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": " Raises user’s Speed.",
-                    "strWidth": 268.28125
-                }
-            ]
-        },
-        {
-            "labelIndex": 841,
-            "arrayIndex": 841,
-            "labelName": "WAZAINFO_841",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Inflicts double damage if the target has a status condition.",
-                    "strWidth": 754.1875
-                }
-            ]
-        },
-        {
-            "labelIndex": 842,
-            "arrayIndex": 842,
-            "labelName": "WAZAINFO_842",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises Defense and Evasion.",
-                    "strWidth": 365.5625
-                }
-            ]
-        },
-        {
-            "labelIndex": 843,
-            "arrayIndex": 843,
-            "labelName": "WAZAINFO_843",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises critical hit ratio and lowers target’s Defense.",
-                    "strWidth": 661.359375
-                }
-            ]
-        },
-        {
-            "labelIndex": 844,
-            "arrayIndex": 844,
-            "labelName": "WAZAINFO_844",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Inflicts double damage if the target has a status condition.",
-                    "strWidth": 754.1875
-                }
-            ]
-        },
-        {
-            "labelIndex": 845,
-            "arrayIndex": 845,
-            "labelName": "WAZAINFO_845",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "High critical hit ratio",
-                    "strWidth": 266.3125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": " Damages target with splinters each turn.",
-                    "strWidth": 527.859375
-                }
-            ]
-        },
-        {
-            "labelIndex": 846,
-            "arrayIndex": 846,
-            "labelName": "WAZAINFO_846",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "May cause frostbite.",
-                    "strWidth": 262.234375
-                }
-            ]
-        },
-        {
-            "labelIndex": 847,
-            "arrayIndex": 847,
-            "labelName": "WAZAINFO_847",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "May paralyze target.",
-                    "strWidth": 266.765625
-                }
-            ]
-        },
-        {
-            "labelIndex": 848,
-            "arrayIndex": 848,
-            "labelName": "WAZAINFO_848",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "May burn target.",
-                    "strWidth": 216.171875
-                }
-            ]
-        },
-        {
-            "labelIndex": 849,
-            "arrayIndex": 849,
-            "labelName": "WAZAINFO_849",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Heals user’s status conditions and recovers HP.",
-                    "strWidth": 607.3125
-                }
-            ]
-        },
-        {
-            "labelIndex": 850,
-            "arrayIndex": 850,
-            "labelName": "WAZAINFO_850",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Heals user’s status conditions and raises its stats.",
-                    "strWidth": 628.890625
-                }
-            ]
-        },
-        {
-            "labelIndex": 851,
-            "arrayIndex": 851,
-            "labelName": "WAZAINFO_851",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Changes type when the user has Terastallized.",
-                    "strWidth": 595.953125
-                }
-            ]
-        },
-        {
-            "labelIndex": 852,
-            "arrayIndex": 852,
-            "labelName": "WAZAINFO_852",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Protects the user and lowers opponent’s Speed on contact.",
-                    "strWidth": 763.125
-                }
-            ]
-        },
-        {
-            "labelIndex": 853,
-            "arrayIndex": 853,
-            "labelName": "WAZAINFO_853",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "May confuse opponent",
-                    "strWidth": 298.5
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": " If it misses, the user loses HP.",
-                    "strWidth": 390.640625
-                }
-            ]
-        },
-        {
-            "labelIndex": 854,
-            "arrayIndex": 854,
-            "labelName": "WAZAINFO_854",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Damages increases the more party Pokémon have been",
-                    "strWidth": 715.9375
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "defeated.",
-                    "strWidth": 125.484375
-                }
-            ]
-        },
-        {
-            "labelIndex": 855,
-            "arrayIndex": 855,
-            "labelName": "WAZAINFO_855",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Harshly lowers target’s Special Defense.",
-                    "strWidth": 518.28125
-                }
-            ]
-        },
-        {
-            "labelIndex": 856,
-            "arrayIndex": 856,
-            "labelName": "WAZAINFO_856",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user elegantly strikes, boosting a stat based on the",
-                    "strWidth": 714.71875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Tatsugiri’s form if held in its mouth.",
-                    "strWidth": 457.46875
-                }
-            ]
-        },
-        {
-            "labelIndex": 857,
-            "arrayIndex": 857,
-            "labelName": "WAZAINFO_857",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Always goes first.",
-                    "strWidth": 223.578125
-                }
-            ]
-        },
-        {
-            "labelIndex": 858,
-            "arrayIndex": 858,
-            "labelName": "WAZAINFO_858",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Harshly lowers the opponent’s Defense and sharply raises",
-                    "strWidth": 744.625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "their Attack.",
-                    "strWidth": 159.71875
-                }
-            ]
-        },
-        {
-            "labelIndex": 859,
-            "arrayIndex": 859,
-            "labelName": "WAZAINFO_859",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Harshly lowers user’s Speed.",
-                    "strWidth": 366.859375
-                }
-            ]
-        },
-        {
-            "labelIndex": 860,
-            "arrayIndex": 860,
-            "labelName": "WAZAINFO_860",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Hits 1-10 times in a row.",
-                    "strWidth": 266.625
-                }
-            ]
-        },
-        {
-            "labelIndex": 861,
-            "arrayIndex": 861,
-            "labelName": "WAZAINFO_861",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Removes effects of Terrain.",
-                    "strWidth": 353.75
-                }
-            ]
-        },
-        {
-            "labelIndex": 862,
-            "arrayIndex": 862,
-            "labelName": "WAZAINFO_862",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Attacks from opposing Pokémon during the next turn cannot",
-                    "strWidth": 781.859375
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "miss and will inflict double damage.",
-                    "strWidth": 461.875
-                }
-            ]
-        },
-        {
-            "labelIndex": 863,
-            "arrayIndex": 863,
-            "labelName": "WAZAINFO_863",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Revives a fainted party Pokémon to half HP.",
-                    "strWidth": 572.515625
-                }
-            ]
-        },
-        {
-            "labelIndex": 864,
-            "arrayIndex": 864,
-            "labelName": "WAZAINFO_864",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Deals damage each turn; Steel and Water types are more",
-                    "strWidth": 742.359375
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "affected.",
-                    "strWidth": 115.953125
-                }
-            ]
-        },
-        {
-            "labelIndex": 865,
-            "arrayIndex": 865,
-            "labelName": "WAZAINFO_865",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Hits 3 times in a row.",
-                    "strWidth": 255.421875
-                }
-            ]
-        },
-        {
-            "labelIndex": 866,
-            "arrayIndex": 866,
-            "labelName": "WAZAINFO_866",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Removes entry hazards and trap move effects, and poisons",
-                    "strWidth": 759.765625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "opposing Pokémon.",
-                    "strWidth": 255.953125
-                }
-            ]
-        },
-        {
-            "labelIndex": 867,
-            "arrayIndex": 867,
-            "labelName": "WAZAINFO_867",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Changes the abilities of the user and its teammates to",
-                    "strWidth": 696.046875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "that of the target.",
-                    "strWidth": 230.609375
-                }
-            ]
-        },
-        {
-            "labelIndex": 868,
-            "arrayIndex": 868,
-            "labelName": "WAZAINFO_868",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Lowers HP but sharply boosts Attack, Special Attack, and",
-                    "strWidth": 743.40625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Speed.",
-                    "strWidth": 89.828125
-                }
-            ]
-        },
-        {
-            "labelIndex": 869,
-            "arrayIndex": 869,
-            "labelName": "WAZAINFO_869",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Always hits.",
-                    "strWidth": 150.234375
-                }
-            ]
-        },
-        {
-            "labelIndex": 870,
-            "arrayIndex": 870,
-            "labelName": "WAZAINFO_870",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Never misses; always results in a critical hit.",
-                    "strWidth": 559.1875
-                }
-            ]
-        },
-        {
-            "labelIndex": 871,
-            "arrayIndex": 871,
-            "labelName": "WAZAINFO_871",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises user’s Special Attack.",
-                    "strWidth": 363.953125
-                }
-            ]
-        },
-        {
-            "labelIndex": 872,
-            "arrayIndex": 872,
-            "labelName": "WAZAINFO_872",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises user’s Speed.",
-                    "strWidth": 259.609375
-                }
-            ]
-        },
-        {
-            "labelIndex": 873,
-            "arrayIndex": 873,
-            "labelName": "WAZAINFO_873",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Type depends on the user’s form",
-                    "strWidth": 425.453125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": " Breaks through Reflect and Light Screen barriers.",
-                    "strWidth": 639.796875
-                }
-            ]
-        },
-        {
-            "labelIndex": 874,
-            "arrayIndex": 874,
-            "labelName": "WAZAINFO_874",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Lowers user’s Special Attack",
-                    "strWidth": 365.59375
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": " Money is earned after the battle.",
-                    "strWidth": 436.59375
-                }
-            ]
-        },
-        {
-            "labelIndex": 875,
-            "arrayIndex": 875,
-            "labelName": "WAZAINFO_875",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Power increases on Electric Terrain.",
-                    "strWidth": 456.96875
-                }
-            ]
-        },
-        {
-            "labelIndex": 876,
-            "arrayIndex": 876,
-            "labelName": "WAZAINFO_876",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Power increases in harsh sunlight.",
-                    "strWidth": 429.21875
-                }
-            ]
-        },
-        {
-            "labelIndex": 877,
-            "arrayIndex": 877,
-            "labelName": "WAZAINFO_877",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Halves the opponent’s HP.",
-                    "strWidth": 346.640625
-                }
-            ]
-        },
-        {
-            "labelIndex": 878,
-            "arrayIndex": 878,
-            "labelName": "WAZAINFO_878",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Boosted even more if it’s super-effective.",
-                    "strWidth": 534.3125
-                }
-            ]
-        },
-        {
-            "labelIndex": 879,
-            "arrayIndex": 879,
-            "labelName": "WAZAINFO_879",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Boosted even more if it’s super-effective.",
-                    "strWidth": 534.3125
-                }
-            ]
-        },
-        {
-            "labelIndex": 880,
-            "arrayIndex": 880,
-            "labelName": "WAZAINFO_880",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Creates a substitute, then swaps places with a party Pokémon",
-                    "strWidth": 795.0
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "in waiting.",
-                    "strWidth": 131.90625
-                }
-            ]
-        },
-        {
-            "labelIndex": 881,
-            "arrayIndex": 881,
-            "labelName": "WAZAINFO_881",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Switches out and summons a snowstorm lasting 5 turns.",
-                    "strWidth": 691.78125
-                }
-            ]
-        },
-        {
-            "labelIndex": 882,
-            "arrayIndex": 882,
-            "labelName": "WAZAINFO_882",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Removes the effects of entry hazards and Substitute, and",
-                    "strWidth": 737.421875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "boosts user’s Attack and Speed.",
-                    "strWidth": 414.5
-                }
-            ]
-        },
-        {
-            "labelIndex": 883,
-            "arrayIndex": 883,
-            "labelName": "WAZAINFO_883",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises Defense of Ice types for 5 turns.",
-                    "strWidth": 488.359375
-                }
-            ]
-        },
-        {
-            "labelIndex": 884,
-            "arrayIndex": 884,
-            "labelName": "WAZAINFO_884",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Lowers opponent’s Speed.",
-                    "strWidth": 342.421875
-                }
-            ]
-        },
-        {
-            "labelIndex": 885,
-            "arrayIndex": 885,
-            "labelName": "WAZAINFO_885",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Raises user’s Speed.",
-                    "strWidth": 259.609375
-                }
-            ]
-        },
-        {
-            "labelIndex": 886,
-            "arrayIndex": 886,
-            "labelName": "WAZAINFO_886",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Lowers opponent’s Attack.",
-                    "strWidth": 344.78125
-                }
-            ]
-        },
-        {
-            "labelIndex": 887,
-            "arrayIndex": 887,
-            "labelName": "WAZAINFO_887",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Can strike through Protect/Detect.",
-                    "strWidth": 444.3125
-                }
-            ]
-        },
-        {
-            "labelIndex": 888,
-            "arrayIndex": 888,
-            "labelName": "WAZAINFO_888",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Hits twice in one turn.",
-                    "strWidth": 283.921875
-                }
-            ]
-        },
-        {
-            "labelIndex": 889,
-            "arrayIndex": 889,
-            "labelName": "WAZAINFO_889",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The more times the user has been hit by attacks, the greater",
-                    "strWidth": 777.921875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "the move’s power.",
-                    "strWidth": 236.796875
-                }
-            ]
-        },
-        {
-            "labelIndex": 890,
-            "arrayIndex": 890,
-            "labelName": "WAZAINFO_890",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Lowers user’s Defense and Special Defense.",
-                    "strWidth": 568.46875
-                }
-            ]
-        },
-        {
-            "labelIndex": 891,
-            "arrayIndex": 891,
-            "labelName": "WAZAINFO_891",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "User recovers half the HP inflicted on opponent.",
-                    "strWidth": 627.671875
-                }
-            ]
-        },
-        {
-            "labelIndex": 892,
-            "arrayIndex": 892,
-            "labelName": "WAZAINFO_892",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "After using this move, the user will no longer be Electric",
-                    "strWidth": 722.640625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "type.",
-                    "strWidth": 65.546875
-                }
-            ]
-        },
-        {
-            "labelIndex": 893,
-            "arrayIndex": 893,
-            "labelName": "WAZAINFO_893",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Cannot be used twice in a row.",
-                    "strWidth": 399.90625
-                }
-            ]
-        },
-        {
-            "labelIndex": 894,
-            "arrayIndex": 894,
-            "labelName": "WAZAINFO_894",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Deals more damage to the opponent that last inflicted",
-                    "strWidth": 706.28125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "damage on it.",
-                    "strWidth": 178.390625
-                }
-            ]
-        },
-        {
-            "labelIndex": 895,
-            "arrayIndex": 895,
-            "labelName": "WAZAINFO_895",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "High critical hit ratio.",
-                    "strWidth": 274.21875
-                }
-            ]
-        },
-        {
-            "labelIndex": 896,
-            "arrayIndex": 896,
-            "labelName": "WAZAINFO_896",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "This move inflicts damage and has a 30% chance of burning",
-                    "strWidth": 724.28125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "the target.",
-                    "strWidth": 135.375
-                }
-            ]
-        },
-        {
-            "labelIndex": 897,
-            "arrayIndex": 897,
-            "labelName": "WAZAINFO_897",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Wicked Torque inflicts damage and has a 10% chance of putting",
-                    "strWidth": 788.421875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "the target to sleep.",
-                    "strWidth": 248.40625
-                }
-            ]
-        },
-        {
-            "labelIndex": 898,
-            "arrayIndex": 898,
-            "labelName": "WAZAINFO_898",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Noxious Torque inflicts damage and has a 30% chance of",
-                    "strWidth": 694.296875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "poisoning the target.",
-                    "strWidth": 269.6875
-                }
-            ]
-        },
-        {
-            "labelIndex": 899,
-            "arrayIndex": 899,
-            "labelName": "WAZAINFO_899",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Combat Torque inflicts damage and has a 30% chance of paralyzing",
-                    "strWidth": 832.640625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "the target.",
-                    "strWidth": 135.375
-                }
-            ]
-        },
-        {
-            "labelIndex": 900,
-            "arrayIndex": 900,
-            "labelName": "WAZAINFO_900",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Magical Torque inflicts damage and has a 30% chance of confusing",
-                    "strWidth": 822.890625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "the target.",
-                    "strWidth": 135.375
-                }
-            ]
-        },
-        {
-            "labelIndex": 901,
-            "arrayIndex": 901,
-            "labelName": "WAZAINFO_901",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Cannot be used twice in a row.",
-                    "strWidth": 399.90625
-                }
-            ]
-        },
-        {
-            "labelIndex": 902,
-            "arrayIndex": 902,
-            "labelName": "WAZAINFO_902",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Deals damage, restored HP, may burn opponent.",
-                    "strWidth": 635.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 903,
-            "arrayIndex": 903,
-            "labelName": "WAZAINFO_903",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Lowers opponent’s Speed each turn for 3 turns.",
-                    "strWidth": 596.390625
-                }
-            ]
-        },
-        {
-            "labelIndex": 904,
-            "arrayIndex": 904,
-            "labelName": "WAZAINFO_904",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user strikes with an ivy-wrapped cudgel. This",
-                    "strWidth": 633.40625
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 3,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "move’s type changes depending on the mask",
-                    "strWidth": 581.390625
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "worn by the user, and it has a heightened chance",
-                    "strWidth": 634.609375
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "of landing a critical hit.",
-                    "strWidth": 299.265625
-                }
-            ]
-        },
-        {
-            "labelIndex": 905,
-            "arrayIndex": 905,
-            "labelName": "WAZAINFO_905",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user gathers electricity on the first turn,",
-                    "strWidth": 565.921875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "boosting its Sp. Atk stat, then fires a high-voltage",
-                    "strWidth": 642.03125
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "shot on the next turn. The shot will be fired",
-                    "strWidth": 560.953125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "immediately in rain.",
-                    "strWidth": 253.953125
-                }
-            ]
-        },
-        {
-            "labelIndex": 906,
-            "arrayIndex": 906,
-            "labelName": "WAZAINFO_906",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "With the power of its crystals, the user bombards",
-                    "strWidth": 634.1875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "and eliminates the target. When used by",
-                    "strWidth": 524.71875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Terapagos in its Stellar Form, this move damages",
-                    "strWidth": 633.953125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "all opposing Pokémon.",
-                    "strWidth": 295.484375
-                }
-            ]
-        },
-        {
-            "labelIndex": 907,
-            "arrayIndex": 907,
-            "labelName": "WAZAINFO_907",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user shoots a beam of light to inflict damage.",
-                    "strWidth": 643.265625
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Sometimes all the user’s heads shoot beams in",
-                    "strWidth": 598.40625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "unison, doubling the move’s power.",
-                    "strWidth": 460.5625
-                }
-            ]
-        },
-        {
-            "labelIndex": 908,
-            "arrayIndex": 908,
-            "labelName": "WAZAINFO_908",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 3,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user’s intensely hot fur protects it from",
-                    "strWidth": 557.1875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "attacks and also burns any attacker that makes",
-                    "strWidth": 602.765625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "direct contact with it.",
-                    "strWidth": 275.171875
-                }
-            ]
-        },
-        {
-            "labelIndex": 909,
-            "arrayIndex": 909,
-            "labelName": "WAZAINFO_909",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "This move enables the user to attack first with a",
-                    "strWidth": 617.0625
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "jolt of electricity. This move fails if the target is",
-                    "strWidth": 611.171875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "not readying an attack.",
-                    "strWidth": 298.984375
-                }
-            ]
-        },
-        {
-            "labelIndex": 910,
-            "arrayIndex": 910,
-            "labelName": "WAZAINFO_910",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user wields the light that has accumulated",
-                    "strWidth": 597.671875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "atop its head to cleave the target. This move hits",
-                    "strWidth": 634.546875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "even if the target protects itself.",
-                    "strWidth": 417.3125
-                }
-            ]
-        },
-        {
-            "labelIndex": 911,
-            "arrayIndex": 911,
-            "labelName": "WAZAINFO_911",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user attacks by launching particle blades at",
-                    "strWidth": 615.828125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "the target twice in a row. This attack never misses.",
-                    "strWidth": 648.53125
-                }
-            ]
-        },
-        {
-            "labelIndex": 912,
-            "arrayIndex": 912,
-            "labelName": "WAZAINFO_912",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The target is crushed with an arm, a claw, or the",
-                    "strWidth": 621.046875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "like to inflict damage. The more HP the target has",
-                    "strWidth": 648.078125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "left, the greater the move’s power.",
-                    "strWidth": 449.734375
-                }
-            ]
-        },
-        {
-            "labelIndex": 913,
-            "arrayIndex": 913,
-            "labelName": "WAZAINFO_913",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user raises its allies’ morale with a draconic",
-                    "strWidth": 613.6875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "cry so that their future attacks have a heightened",
-                    "strWidth": 635.40625
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "chance of landing critical hits. This rouses Dragon",
-                    "strWidth": 641.03125
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "types more.",
-                    "strWidth": 151.234375
-                }
-            ]
-        },
-        {
-            "labelIndex": 914,
-            "arrayIndex": 914,
-            "labelName": "WAZAINFO_914",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user attacks the target using its angelic voice.",
-                    "strWidth": 645.21875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "This also confuses the target if its stats have been",
-                    "strWidth": 642.109375
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "boosted during the turn.",
-                    "strWidth": 314.640625
-                }
-            ]
-        },
-        {
-            "labelIndex": 915,
-            "arrayIndex": 915,
-            "labelName": "WAZAINFO_915",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Spurred by desperation, the user attacks the",
-                    "strWidth": 573.53125
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "target. This move’s power is doubled if the user’s",
-                    "strWidth": 635.875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "previous move failed.",
-                    "strWidth": 277.6875
-                }
-            ]
-        },
-        {
-            "labelIndex": 916,
-            "arrayIndex": 916,
-            "labelName": "WAZAINFO_916",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user electrifies its body and drops onto the",
-                    "strWidth": 614.390625
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "target to inflict damage. If this move misses, the",
-                    "strWidth": 620.875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "user takes damage instead.",
-                    "strWidth": 350.328125
-                }
-            ]
-        },
-        {
-            "labelIndex": 917,
-            "arrayIndex": 917,
-            "labelName": "WAZAINFO_917",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user attacks the target with unpleasant sound",
-                    "strWidth": 641.90625
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 3,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "waves. For two turns, the target is prevented",
-                    "strWidth": 576.1875
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "from recovering HP through moves, Abilities, or",
-                    "strWidth": 616.640625
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "held items.",
-                    "strWidth": 141.046875
-                }
-            ]
-        },
-        {
-            "labelIndex": 918,
-            "arrayIndex": 918,
-            "labelName": "WAZAINFO_918",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user reacts to the target’s movement and",
-                    "strWidth": 587.265625
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 3,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "strikes with the heel of its palm, making the",
-                    "strWidth": 562.203125
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "target flinch. This move fails if the target is not",
-                    "strWidth": 605.21875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "readying a priority move.",
-                    "strWidth": 324.453125
-                }
-            ]
-        },
-        {
-            "labelIndex": 919,
-            "arrayIndex": 919,
-            "labelName": "WAZAINFO_919",
-            "styleInfo": {
-                "styleIndex": 0,
-                "colorIndex": -1,
-                "fontSize": 54,
-                "maxWidth": 1080,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 7,
-                    "eventID": 1,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "The user pours toxins into the target by wrapping",
-                    "strWidth": 637.75
-                },
-                {
-                    "patternID": 7,
-                    "eventID": 4,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "them in a toxic, corrosive chain. This may also",
-                    "strWidth": 592.875
-                },
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "leave the target badly poisoned.",
-                    "strWidth": 421.984375
                 }
             ]
         }

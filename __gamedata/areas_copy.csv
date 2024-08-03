@@ -211,7 +211,7 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 209,てんがんざん:てんがんざんー5,Tenganzan : Tenganzan5,,Mt. Coronet 5F,prefab_map/d05r0107,D05R0107
 210,てんがんざん:てんがんざんー6,Tenganzan : Tenganzan6,,Mt. Coronet 6F,prefab_map/d05r0108,D05R0108
 211,てんがんざん:てんがんざんー7,Tenganzan : Tenganzan7,,Mt. Coronet 7F,prefab_map/d05r0109,D05R0109
-212,てんがんざん:てんがんざんー8,Tenganzan : TenganZan8,,Mt. Coronet Summit,prefab_map/d05r0110,D05R0110
+212,てんがんざん:てんがんざんー8,Tenganzan : TenganZan8,,Mt. Coronet Tunnel to Route 211 Entrance,prefab_map/d05r0110,D05R0110
 213,てんがんざん:てんがんざんー9,Tenganzan : Tenganzan9,,Mt. Coronet B1F,prefab_map/d05r0111,D05R0111
 214,てんがんざん:てんがんざんー10,Tenganzan : TenganZan10,,Mt. Coronet Route 211 Entrance,prefab_map/d05r0112,D05R0112
 215,てんがんざん:てんがんざんー11,Tenganzan : Tenganzan11,,Mt. Coronet Route 216 Entrance,prefab_map/d05r0113,D05R0113
@@ -246,9 +246,9 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 244,チャンピオンロード:チャンピオンロードー1,Champion Road : Champion Road 1,,Victory Road 1F,prefab_map/d09r0101,D09R0101
 245,チャンピオンロード:チャンピオンロードー2,Champion Road : Champion Road 2,,Victory Road 2F,prefab_map/d09r0102,D09R0102
 246,チャンピオンロード:チャンピオンロードー3,Champion Road : Champion Road 3,,Victory Road B1F,prefab_map/d09r0103,D09R0103
-247,チャンピオンロード:チャンピオンロードー4,Champion Road : Champion Road 4,,Victory Road Nat Dex Area,prefab_map/d09r0104,D09R0104
-248,チャンピオンロード:チャンピオンロードー5,Champion Road : Champion Road 5,,Victory Road Nat Dex Area B1F,prefab_map/d09r0105,D09R0105
-249,チャンピオンロード:チャンピオンロードー6,Champion Road : Champion Road 6,,Victory Road Nat Dex Area,prefab_map/d09r0106,D09R0106
+247,チャンピオンロード:チャンピオンロードー4,Champion Road : Champion Road 4,,Victory Road 1F Back 1,prefab_map/d09r0104,D09R0104
+248,チャンピオンロード:チャンピオンロードー5,Champion Road : Champion Road 5,,Victory Road 1F Back 2,prefab_map/d09r0105,D09R0105
+249,チャンピオンロード:チャンピオンロードー6,Champion Road : Champion Road 6,,Victory Road 1F Back 3,prefab_map/d09r0106,D09R0106
 250,パルパーク,Palpark,,,prefab_map/d10r0101,D10R0101
 251,ふれあいひろば,Fureai Hiroba,,Amity Square (Hearthome),prefab_map/d11r0101,D11R0101
 252,あれたぬけみち,Aye noke 6,,Ravaged Path,prefab_map/d12r0101,D12R0101
@@ -379,9 +379,9 @@ ZoneID,Japanese Name,Machine Translated,City,Actual,File Path,Zone Name
 377,211ばんどうろa（ハクタイ側）,211 Bandoro a(Hakutai side),,Route 211 West,fields/area003,R211A
 378,211ばんどうろb（カンナギ側）,211 Bandoro b(Kanagi side),,Route 211 East,fields/area005,R211B
 379,212ばんどうろa（ノモセ側）,212 Bandoro a(Nomose side),,Route 212 North,fields/area007,R212A
-380,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Route 212 North,prefab_map/r212ar0101,R212AR0101
-381,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Route 212 North,prefab_map/r212ar0102,R212AR0102
-382,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Route 212 South,prefab_map/r212ar0103,R212AR0103
+380,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Pokémon Mansion - Lobby,prefab_map/r212ar0101,R212AR0101
+381,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Pokémon Mansion - Rooms (Left),prefab_map/r212ar0102,R212AR0102
+382,212ばんどうろa:ポケモンやしき,212 Bandoro a: Pokémon Yaski,,Pokémon Mansion - Backlot Room,prefab_map/r212ar0103,R212AR0103
 383,212ばんどうろb（ヨスガ側）,212 Bandoro b(Yosuga side),,Route 212 South,fields/area007,R212B
 384,212ばんどうろb:民家,212 Bandoro b: Private House,,Route 212 South,prefab_map/c04r0801,R212BR0101
 385,213ばんどうろ,213 Bandoro,,Route 213,fields/area013,R213

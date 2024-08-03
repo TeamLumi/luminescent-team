@@ -22,7 +22,7 @@
     },
     {
       "routeName": "Pastoria City",
-      "pokemonName": "East Sea Shellos",
+      "pokemonName": "Shellos East Sea",
       "encounterType": "water_mons",
       "encounterRate": "30%",
       "minLevel": 40,
@@ -2148,7 +2148,7 @@
     },
     {
       "routeName": "201",
-      "pokemonName": "Plant Cloak Wormadam",
+      "pokemonName": "Wormadam",
       "encounterType": "Honey Tree",
       "encounterRate": "10%",
       "minLevel": 40,
@@ -26234,7 +26234,7 @@
     },
     {
       "routeName": "Lake Valor (After)",
-      "pokemonName": "Sirfetch\u2019d",
+      "pokemonName": "Sirfetch'd",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 54,
@@ -26244,7 +26244,7 @@
     },
     {
       "routeName": "Lake Valor (After)",
-      "pokemonName": "Sirfetch\u2019d",
+      "pokemonName": "Sirfetch'd",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 54,
@@ -29142,7 +29142,7 @@
     },
     {
       "routeName": "359",
-      "pokemonName": "Plant Cloak Burmy",
+      "pokemonName": "Burmy",
       "encounterType": "Honey Tree",
       "encounterRate": "20%",
       "minLevel": 12,
@@ -29856,7 +29856,7 @@
     },
     {
       "routeName": "362",
-      "pokemonName": "Plant Cloak Burmy",
+      "pokemonName": "Burmy",
       "encounterType": "Honey Tree",
       "encounterRate": "20%",
       "minLevel": 21,
@@ -32294,7 +32294,7 @@
     },
     {
       "routeName": "373",
-      "pokemonName": "Plant Cloak Wormadam",
+      "pokemonName": "Wormadam",
       "encounterType": "Honey Tree",
       "encounterRate": "10%",
       "minLevel": 29,
@@ -34306,7 +34306,7 @@
     },
     {
       "routeName": "Route 212 (South)",
-      "pokemonName": "East Sea Shellos",
+      "pokemonName": "Shellos East Sea",
       "encounterType": "water_mons",
       "encounterRate": "60%",
       "minLevel": 40,
@@ -34546,7 +34546,7 @@
     },
     {
       "routeName": "383",
-      "pokemonName": "Overcast Form Cherrim",
+      "pokemonName": "Cherrim",
       "encounterType": "Honey Tree",
       "encounterRate": "30%",
       "minLevel": 34,
@@ -34578,7 +34578,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 34,
@@ -34598,7 +34598,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 34,
@@ -34618,7 +34618,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 34,
@@ -34678,7 +34678,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "tairyo",
       "encounterRate": "20%",
       "minLevel": 34,
@@ -34688,7 +34688,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 34,
@@ -34708,7 +34708,7 @@
     },
     {
       "routeName": "Route 213",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 34,
@@ -36568,7 +36568,7 @@
     },
     {
       "routeName": "400",
-      "pokemonName": "Plant Cloak Wormadam",
+      "pokemonName": "Wormadam",
       "encounterType": "Honey Tree",
       "encounterRate": "10%",
       "minLevel": 39,
@@ -37292,7 +37292,7 @@
     },
     {
       "routeName": "404",
-      "pokemonName": "Overcast Form Cherrim",
+      "pokemonName": "Cherrim",
       "encounterType": "Honey Tree",
       "encounterRate": "30%",
       "minLevel": 39,
@@ -37806,7 +37806,7 @@
     },
     {
       "routeName": "Route 224",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -37986,7 +37986,7 @@
     },
     {
       "routeName": "Route 224",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "water_mons",
       "encounterRate": "5%",
       "minLevel": 60,
@@ -37996,7 +37996,7 @@
     },
     {
       "routeName": "Route 224",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "water_mons",
       "encounterRate": "4%",
       "minLevel": 60,
@@ -38006,7 +38006,7 @@
     },
     {
       "routeName": "Route 224",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "water_mons",
       "encounterRate": "1%",
       "minLevel": 60,
@@ -41308,7 +41308,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 67,
@@ -41348,7 +41348,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 67,
@@ -41408,7 +41408,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "tairyo",
       "encounterRate": "20%",
       "minLevel": 67,
@@ -41418,7 +41418,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 67,
@@ -41438,7 +41438,7 @@
     },
     {
       "routeName": "Route 230",
-      "pokemonName": "East Sea Gastrodon",
+      "pokemonName": "Gastrodon East Sea",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 67,
