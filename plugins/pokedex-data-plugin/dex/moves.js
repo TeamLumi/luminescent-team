@@ -186,8 +186,6 @@ function getTMCompatibility(pokemonId = 0, mode = "2.0") {
   
     return tmCompatibility;
   } else {
-    const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
-  
     const personalData = personalTable.Personal[pokemonId];
     const machineNos = [personalData['machine1'], personalData['machine2'], personalData['machine3'], personalData['machine4']];
     const tmBinaryList = convertListToBinaryArray(machineNos);

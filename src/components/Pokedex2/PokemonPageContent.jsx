@@ -19,7 +19,7 @@ import ModeSwitch from './ModeSwitch';
 import { useGlobalState } from '../common/GlobalState';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex';
 import { PokemonLocations } from './PokemonLocations';
-import { getRoutesFromPokemonId } from '../../utils/dex/encounters';
+import { getRoutesFromPokemonId } from '../../../plugins/pokedex-data-plugin/dex/encounters';
 
 function padNumberWithZeros(number) {
   const strNumber = String(number);
@@ -37,7 +37,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
   const pokemonInfo = globalState.mode === "2.0" ? pokemon : pokemon3;
   const allPokemonNames = globalState.mode === "2.0" ? pokemonNames : pokemonNames3;
   const pokemonId = getPokemonIdFromMonsNoAndForm(pokemonInfo.monsno, pokemonInfo.formno, globalState.mode)
-  const pokemon_locations = getRoutesFromPokemonId(pokemonId);
+  const pokemon_locations = getRoutesFromPokemonId(pokemonId, globalState.mode);
   const [showMoreLocations, setShowMoreLocations] = useState(false);
 
   if (pokemon === pokemon3 && globalState.mode === "2.0") {
@@ -63,7 +63,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
         <Box display="flex" justifyContent="center" marginTop="16px">
         <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
         <PokemonInfoButton />
-        {/* <ModeSwitch /> */}
+        <ModeSwitch />
         {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
       </Container>
