@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_dp_trainers_type",
     "hash": 269326450,
@@ -3161,6 +3161,36 @@
                     "tagValue": 0.0,
                     "str": "Arcade Star",
                     "strWidth": 162.109375
+                }
+            ]
+        },
+        {
+            "labelIndex": 105,
+            "arrayIndex": 105,
+            "labelName": "DP_Trainers_Type_TR_CHAMPION_STEVEN",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Trainer",
+                    "strWidth": 219.234375
                 }
             ]
         }

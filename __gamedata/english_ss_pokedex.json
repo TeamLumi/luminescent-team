@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_ss_pokedex",
     "hash": -795173797,
@@ -92,7 +92,7 @@
             "styleInfo": {
                 "styleIndex": 34,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 168,
                 "controlID": 0
             },
@@ -122,7 +122,7 @@
             "styleInfo": {
                 "styleIndex": 34,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 168,
                 "controlID": 0
             },
@@ -152,7 +152,7 @@
             "styleInfo": {
                 "styleIndex": 37,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 294,
                 "controlID": 0
             },
@@ -182,7 +182,7 @@
             "styleInfo": {
                 "styleIndex": 157,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 588,
                 "controlID": 0
             },
@@ -212,7 +212,7 @@
             "styleInfo": {
                 "styleIndex": 152,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 336,
                 "controlID": 0
             },
@@ -242,7 +242,7 @@
             "styleInfo": {
                 "styleIndex": 34,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 168,
                 "controlID": 0
             },
@@ -3488,7 +3488,7 @@
             "styleInfo": {
                 "styleIndex": 157,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 588,
                 "controlID": 0
             },
@@ -3518,7 +3518,7 @@
             "styleInfo": {
                 "styleIndex": 157,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 588,
                 "controlID": 0
             },
@@ -3548,7 +3548,7 @@
             "styleInfo": {
                 "styleIndex": 152,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 336,
                 "controlID": 0
             },
@@ -3578,7 +3578,7 @@
             "styleInfo": {
                 "styleIndex": 152,
                 "colorIndex": -1,
-                "fontSize": 42,
+                "fontSize": 30,
                 "maxWidth": 336,
                 "controlID": 0
             },
@@ -3598,6 +3598,257 @@
                     "tagValue": 0.0,
                     "str": "83.8 lbs.",
                     "strWidth": 114.984375
+                }
+            ]
+        },
+        {
+            "labelIndex": 95,
+            "arrayIndex": 103,
+            "labelName": "SS_pokedex_199",
+            "styleInfo": {
+                "styleIndex": 152,
+                "colorIndex": -1,
+                "fontSize": 30,
+                "maxWidth": 336,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Egg Group",
+                    "strWidth": 151.375
+                }
+            ]
+        },
+        {
+            "labelIndex": 96,
+            "arrayIndex": 104,
+            "labelName": "SS_pokedex_200",
+            "styleInfo": {
+                "styleIndex": 152,
+                "colorIndex": -1,
+                "fontSize": 30,
+                "maxWidth": 336,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ability 1",
+                    "strWidth": 93.46875
+                }
+            ]
+        },
+        {
+            "labelIndex": 97,
+            "arrayIndex": 105,
+            "labelName": "SS_pokedex_201",
+            "styleInfo": {
+                "styleIndex": 152,
+                "colorIndex": -1,
+                "fontSize": 30,
+                "maxWidth": 336,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ability 2",
+                    "strWidth": 93.46875
+                }
+            ]
+        },
+        {
+            "labelIndex": 98,
+            "arrayIndex": 106,
+            "labelName": "SS_pokedex_202",
+            "styleInfo": {
+                "styleIndex": 152,
+                "colorIndex": -1,
+                "fontSize": 30,
+                "maxWidth": 336,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Hidden Ability",
+                    "strWidth": 193.46749877929688
+                }
+            ]
+        },
+        {
+            "labelIndex": 99,
+            "arrayIndex": 107,
+            "labelName": "SS_pokedex_203",
+            "styleInfo": {
+                "styleIndex": 152,
+                "colorIndex": -1,
+                "fontSize": 30,
+                "maxWidth": 336,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Item 50%",
+                    "strWidth": 74.46875
+                }
+            ]
+        },
+        {
+            "labelIndex": 100,
+            "arrayIndex": 108,
+            "labelName": "SS_pokedex_204",
+            "styleInfo": {
+                "styleIndex": 152,
+                "colorIndex": -1,
+                "fontSize": 30,
+                "maxWidth": 336,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Item 45%",
+                    "strWidth": 74.46875
+                }
+            ]
+        },
+        {
+            "labelIndex": 101,
+            "arrayIndex": 109,
+            "labelName": "SS_pokedex_205",
+            "styleInfo": {
+                "styleIndex": 152,
+                "colorIndex": -1,
+                "fontSize": 30,
+                "maxWidth": 336,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Item 5%",
+                    "strWidth": 74.46875
+                }
+            ]
+        },
+        {
+            "labelIndex": 102,
+            "arrayIndex": 110,
+            "labelName": "SS_pokedex_206",
+            "styleInfo": {
+                "styleIndex": 152,
+                "colorIndex": -1,
+                "fontSize": 30,
+                "maxWidth": 336,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [
+                {
+                    "tagIndex": 0,
+                    "groupID": 2,
+                    "tagID": 1,
+                    "tagPatternID": 1,
+                    "forceArticle": 0,
+                    "tagParameter": 0,
+                    "tagWordArray": [],
+                    "forceGrmID": 0
+                }
+            ],
+            "wordDataArray": [
+                {
+                    "patternID": 5,
+                    "eventID": 7,
+                    "tagIndex": 0,
+                    "tagValue": 0.0,
+                    "str": "",
+                    "strWidth": -1.0
                 }
             ]
         }
