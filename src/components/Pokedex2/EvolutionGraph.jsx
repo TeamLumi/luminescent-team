@@ -107,19 +107,19 @@ export default function EvolutionGraph(props) {
       evoImages.push(getItemImageUrl("Soothe Bell"))
     }
     if (methodDetail.method.includes(DAY)) {
-      evoImages.push("/img/Sun.webp")
+      evoImages.push("/img/custom/sun.webp")
     } else if (methodDetail.method.includes(NIGHT)) {
-      evoImages.push("/img/Moon.webp")
+      evoImages.push("/img/custom/moon.webp")
     }
     if (methodDetail.method.includes(MOSS_ROCK)) {
-      evoImages.push("/img/Moss Rock.webp")
+      evoImages.push("/img/custom/mossyrock.webp")
     } else if (methodDetail.method.includes(ICE_ROCK)) {
-      evoImages.push("/img/Ice Rock.webp")
+      evoImages.push("/img/custom/icyrock.webp")
     }
     if (methodDetail.method.includes(MALE)) {
-      evoImages.push("/img/male.webp")
+      evoImages.push("/img/custom/male.webp")
     } else if (methodDetail.method.includes(FEMALE)) {
-      evoImages.push("/img/female.webp")
+      evoImages.push("/img/custom/female.webp")
     }
     return evoImages;
   };
