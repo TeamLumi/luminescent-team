@@ -121,6 +121,7 @@ export default function EvolutionGraph(props) {
     } else if (methodDetail.method.includes(FEMALE)) {
       evoImages.push("/img/custom/female.webp")
     }
+    console.debug(evoImages, evoMethod, methodParameter, methodDetail);
     return evoImages;
   };
 
