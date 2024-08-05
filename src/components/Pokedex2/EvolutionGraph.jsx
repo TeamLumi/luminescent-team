@@ -13,16 +13,7 @@ import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
 import { getItemString } from '../../utils/dex/item';
 import { useGlobalState } from '../common/GlobalState';
 import { ImageWithFallback } from '../common/ImageWithFallback';
-
-const LEVEL = "Level"
-const FRIENDSHIP = "Friendship"
-const DAY = "Day"
-const NIGHT = "Night"
-const MOSS_ROCK = "Moss Rock"
-const ICE_ROCK = "Ice Rock"
-const FEMALE = "Female"
-const MALE = "Male"
-const BEAUTY = "Beauty"
+import * as EvoConstants from "../../../plugins/pokedex-data-plugin/dex/evolutionConstants";
 
 export default function EvolutionGraph(props) {
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(props.evolutionTree.pokemonId, props.globalState.mode);
@@ -118,11 +109,20 @@ export default function EvolutionGraph(props) {
     const [globalState, updateMode] = useGlobalState();
     const evoFunction = methodDetail.function.name;
     const evoImages = [];
-    if (methodDetail.method.includes(FRIENDSHIP)) {
+    if (methodDetail.method.includes(EvoConstants.FRIENDSHIP)) {
       evoImages.push(getItemImageUrl("Soothe Bell"))
     }
-    if (methodDetail.method.includes(LEVEL)) {
+    if (methodDetail.method.includes(EvoConstants.LEVEL)) {
       evoImages.push(getItemImageUrl("Rare Candy"));
+    }
+    if (methodDetail.method.includes(EvoConstants.CRITICAL_HITS)) {
+      evoImages.push("/img/custom/criticalhits.webp")
+    }
+    if (methodDetail.method.includes(EvoConstants.RECEIVE_DAMAGE)) {
+      evoImages.push("/img/custom/receivedamage.webp")
+    }
+    if (methodDetail.method.includes(EvoConstants.FOLLOWER)) {
+      evoImages.push("/img/custom/followersteps.webp")
     }
     if (evoFunction === getItemString.name) {
       evoImages.push(getItemImageUrl(evoMethod));
@@ -130,27 +130,32 @@ export default function EvolutionGraph(props) {
       const moveType = getTypeName(getMoveProperties(methodParameter, globalState.mode).type);
       evoImages.push(getTMImageUrl(moveType));
     } else if (evoFunction === getPokemonName.name) {
-      evoImages.push(`img/${getPokemonImageFilename(methodParameter, 0)}`);
+      evoImages.push(`img/pkm/${getPokemonImageFilename(methodParameter, 0)}`);
     } else if (evoFunction === getTypeName.name) {
       const moveType = getTypeName(methodParameter);
       evoImages.push(getTMImageUrl(moveType));
     }
-    if (methodDetail.method.includes(DAY)) {
-      evoImages.push("/img/Sun.webp")
-    } else if (methodDetail.method.includes(NIGHT)) {
-      evoImages.push("/img/Moon.webp")
+    if (methodDetail.method.includes(EvoConstants.RNG)) {
+      evoImages.push("/img/custom/randomchance.webp")
     }
-    if (methodDetail.method.includes(MOSS_ROCK)) {
-      evoImages.push("/img/Moss Rock.webp")
-    } else if (methodDetail.method.includes(ICE_ROCK)) {
-      evoImages.push("/img/Ice Rock.webp")
+    if (methodDetail.method.includes(EvoConstants.DAY)) {
+      evoImages.push("/img/custom/sun.webp")
+    } else if (methodDetail.method.includes(EvoConstants.NIGHT)) {
+      evoImages.push("/img/custom/moon.webp")
+    } else if (methodDetail.method.includes(EvoConstants.DUSK)) {
+      evoImages.push("/img/custom/dusk.webp")
     }
-    if (methodDetail.method.includes(MALE)) {
-      evoImages.push("/img/male.webp")
-    } else if (methodDetail.method.includes(FEMALE)) {
-      evoImages.push("/img/female.webp")
+    if (methodDetail.method.includes(EvoConstants.MOSS_ROCK)) {
+      evoImages.push("/img/custom/mossyrock.webp")
+    } else if (methodDetail.method.includes(EvoConstants.ICE_ROCK)) {
+      evoImages.push("/img/custom/icyrock.webp")
     }
-    if (methodDetail.method.includes(BEAUTY)) {
+    if (methodDetail.method.includes(EvoConstants.MALE)) {
+      evoImages.push("/img/custom/male.webp")
+    } else if (methodDetail.method.includes(EvoConstants.FEMALE)) {
+      evoImages.push("/img/custom/female.webp")
+    }
+    if (methodDetail.method.includes(EvoConstants.BEAUTY)) {
       evoImages.push(getItemImageUrl("Blue Scarf"))
     }
     return evoImages;

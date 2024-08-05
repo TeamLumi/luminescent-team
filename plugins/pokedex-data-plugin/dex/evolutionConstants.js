@@ -6,6 +6,21 @@ const { doNothing } = require('./functions');
 
 const REPLACE_STRING = "REPLACE";
 
+export const LEVEL = "Level"
+export const FRIENDSHIP = "Friendship"
+export const DAY = "Day"
+export const NIGHT = "Night"
+export const DUSK = "Dusk";
+export const MOSS_ROCK = "Moss Rock"
+export const ICE_ROCK = "Ice Rock"
+export const FEMALE = "Female"
+export const MALE = "Male"
+export const BEAUTY = "Beauty"
+export const CRITICAL_HITS = "critical hits";
+export const RECEIVE_DAMAGE = "Receive";
+export const FOLLOWER = "Follower";
+export const RNG = "RNG";
+
 const EVOLUTION_METHOD_DETAILS = {
   0: {
     method: '',
@@ -266,13 +281,13 @@ const EVOLUTION_METHOD_DETAILS = {
     function: getItemString,
   },
   43: {
-    method: "3 critical hits in One Battle",
+    method: `${REPLACE_STRING} critical hits in One Battle`,
     requiresLevel: false,
     parameterType: 'None',
     function: doNothing,
   },
   44: {
-    method: `Receive ${REPLACE_STRING} Damage`,
+    method: `Receive at least ${REPLACE_STRING} Damage`,
     requiresLevel: false,
     parameterType: 'None',
     function: doNothing,
@@ -350,13 +365,13 @@ const EVOLUTION_METHOD_DETAILS = {
     function: getMoveString,
   },
   57: {
-    method: `Receive ${REPLACE_STRING} Damage & Male`,
+    method: `Receive at least ${REPLACE_STRING} Damage & Male`,
     requiresLevel: false,
     parameterType: 'None',
     function: doNothing,
   },
   58: {
-    method: `Receive ${REPLACE_STRING} Damage & Female`,
+    method: `Receive at least ${REPLACE_STRING} Damage & Female`,
     requiresLevel: false,
     parameterType: 'None',
     function: doNothing,
