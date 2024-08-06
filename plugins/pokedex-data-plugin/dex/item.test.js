@@ -3,7 +3,8 @@ const { getPokemonInfo } = require('./info');
 const fs = require('fs');
 const path = require('path');
 const { getPokemon } = require('./pokemon');
-const { FORM_MAP, FORM_MAP3, isValidPokemon } = require('./functions');
+const { FORM_MAP, isValidPokemon } = require('./functions');
+const { GAMEDATA2 } = require('../../../__gamedata');
 
 describe('Dex utils Item getter tests', () => {
   describe('getItemIdFromItemName', () => {
@@ -93,10 +94,10 @@ describe('Dex utils Item getter tests', () => {
   });
 });
 
-function getAllItemImageData(onlyValidPokemons = false, mode = "2.0") {
+function getAllItemImageData(onlyValidPokemons = false, mode = GAMEDATA2) {
   const pokemonImageData = [];
-  const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
-  const pokemons = Object.values(form_map)
+  const ModeFormMap = FORM_MAP[mode];
+  const pokemons = Object.values(ModeFormMap)
 
   for (const pokemon of pokemons) {
     for (let i = 0; i < pokemon.length; i++) {

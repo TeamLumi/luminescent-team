@@ -1,5 +1,4 @@
-const { PersonalTable } = require('./data');
-const { PersonalTable3 } = require('./data3');
+const { GAMEDATA2, PersonalTable } = require('../../../__gamedata');
 const { getAbilityString } = require('./ability');
 const { getTechMachineLearnset, getLevelLearnset, getEggMoves, getTutorMoves } = require('./moves');
 const { getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
@@ -10,9 +9,9 @@ const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./egggroup');
 const { getItemString } = require('./item');
 const { getEvolutionTree } = require('./evolution');
 
-function getPokemon(pokemonId, mode = "2.0") {
-  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3
-  const p = personalTable.Personal[pokemonId];
+function getPokemon(pokemonId, mode = GAMEDATA2) {
+  const ModePersonalTable = PersonalTable[mode];
+  const p = ModePersonalTable.Personal[pokemonId];
   const id = p.id;
   const monsno = p.monsno;
   const [_, formno] = getPokemonMonsNoAndFormNoFromPokemonId(p.id, mode);

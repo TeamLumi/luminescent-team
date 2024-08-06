@@ -10,10 +10,10 @@ import {
   createFormMap,
   getPokemonFormIndexById,
   FORM_MAP,
-  FORM_MAP3,
   isValidPokemon,
 } from './functions';
 import { getPokemon } from './pokemon';
+import { GAMEDATA2, GAMEDATA3 } from '../../../__gamedata';
 
 describe('Dex utils function tests', () => {
   it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
@@ -152,11 +152,11 @@ describe('Dex utils function tests', () => {
     });
   });
 
-  function getAllPokemonFormImageData(onlyValidPokemons = false, mode = "2.0") {
-    const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
+  function getAllPokemonFormImageData(onlyValidPokemons = false, mode = GAMEDATA2) {
+    const ModeFormMap = FORM_MAP[mode];
     const pokemonFormData = [];
 
-    for (const entry of Object.entries(form_map)) {
+    for (const entry of Object.entries(ModeFormMap)) {
       const monsno = entry[0];
       const pokemonForms = entry[1];
 
@@ -175,7 +175,7 @@ describe('Dex utils function tests', () => {
     return pokemonFormData;
   }
 
-  test.skip.each([...getAllPokemonFormImageData(true, "2.0")])('pokemon form image %s for %s exists', (filename, _, done) => {
+  test.skip.each([...getAllPokemonFormImageData(true, GAMEDATA2)])('pokemon form image %s for %s exists', (filename, _, done) => {
     const imgFilePath = path.join(__dirname, '../../../static/img/pkm/', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
       let fileExists = true;
@@ -193,9 +193,9 @@ describe('Dex utils function tests', () => {
   });
 
   describe('3.0 Functions Tests', () => {
-    const MODE = "3.0";
+    const MODE = GAMEDATA3;
     test('should return the correct Pokemon ID for a different monsno and formno', () => {
-      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1216);
+      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1218);
     });
     it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
       const result = getPokemonIdFromFormMap(3, 3, MODE); //Clone Venusaur

@@ -1,19 +1,20 @@
 const fs = require('fs');
 const path = require('path');
-const { FORM_MAP, FORM_MAP3, isValidPokemon } = require('./functions');
+const { FORM_MAP, isValidPokemon } = require('./functions');
 const { getItemImageUrl, getItemString } = require('./item');
 const { getEvolutionTree, getEvolutionMethodDetail } = require('./evolution');
 const { getPokemonName } = require('./name');
 const { getPokemon } = require('./pokemon');
+const { GAMEDATA2 } = require('../../../__gamedata');
 
 test("getEvolutionTree", () => {
   getEvolutionTree(25, false, "3.0")
 })
 
-function getAllEvoImageData(onlyValidPokemons = false, mode = "2.0") {
+function getAllEvoImageData(onlyValidPokemons = false, mode = GAMEDATA2) {
   const pokemonImageData = [];
-  const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
-  const pokemons = Object.values(form_map)
+  const ModeFormMap = FORM_MAP[mode];
+  const pokemons = Object.values(ModeFormMap)
 
   for (const pokemon of pokemons) {
     for (let i = 0; i < pokemon.length; i++) {
@@ -59,7 +60,7 @@ function getAllEvoImageData(onlyValidPokemons = false, mode = "2.0") {
   return pokemonImageData;
 }
 
-test.skip.each([...getAllEvoImageData(true, "2.0")])('2.0 Item image %s for %s (%s) does not exist', (filename, formName, pokemonId, done) => {
+test.skip.each([...getAllEvoImageData(true, GAMEDATA2)])('2.0 Item image %s for %s (%s) does not exist', (filename, formName, pokemonId, done) => {
   const imgFilePath = path.join(__dirname, '../../../static', filename);
   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
     let fileExists = true;

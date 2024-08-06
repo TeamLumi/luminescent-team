@@ -6,12 +6,11 @@ const { getWeight, getHeight } = require('./details');
 const { getItemString } = require('./item');
 const { getGrassKnotPower, getImage, formatBaseStats, getPokemonFormIndexById } = require('./functions');
 
-const { PersonalTable } = require('./data');
-const { PersonalTable3 } = require('./data3');
+const { GAMEDATA2, PersonalTable } = require('../../../__gamedata');
 
-function getPokemonInfo(monsno = 0, pokemonId = 0, mode = "2.0") {
-  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3
-  const p = personalTable.Personal[pokemonId];
+function getPokemonInfo(monsno = 0, pokemonId = 0, mode = GAMEDATA2) {
+  const ModePersonalTable = PersonalTable[mode];
+  const p = ModePersonalTable.Personal[pokemonId];
   const weight = getWeight(pokemonId, mode);
 
   return {

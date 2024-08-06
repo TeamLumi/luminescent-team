@@ -1,10 +1,9 @@
-const { EvolutionData } = require('./data');
-const { EvolutionData3 } = require('./data3');
+const { EvolutionData, GAMEDATA2 } = require('../../../__gamedata');
 const { EVOLUTION_METHOD_DETAILS, REPLACE_STRING } = require('./evolutionConstants');
 const { getPokemonIdFromMonsNoAndForm, isValidPokemon } = require('./functions');
 const { getMoveLevelLearned, getMoveId } = require('./moves');
 
-function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", level, pokemonId = 0) {
+function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = GAMEDATA2, level, pokemonId = 0) {
   if (methodId === -1) {
     return -1;
   }
@@ -25,7 +24,7 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", l
     }
 
     if (evolutionDetails.parameterType === "Move") {
-      const levelLearned = getMoveLevelLearned(pokemonId, getMoveId(evoMethod), mode);
+      const levelLearned = getMoveLevelLearned(pokemonId, getMoveId(evoMethod, mode), mode);
       if (levelLearned === -1) {
         evolutionDetails.method = 
           evolutionDetails.method.replace(
@@ -59,7 +58,7 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = "2.0", l
   return [evolutionDetails, evoMethod];
 }
 
-function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
+function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = GAMEDATA2) {
   if (!Number.isInteger(pokemonId) || pokemonId < 0) {
     throw new Error(`Bad pokemon ID: ${pokemonId}`);
   }
@@ -68,16 +67,16 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
     return [];
   }
 
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3;
+  const ModeEvolutionData = EvolutionData[mode];
 
-  const pokemon = evolutionData[pokemonId];
+  const pokemon = ModeEvolutionData[pokemonId];
   if (!pokemon) {
     throw new Error(`Bad pokemon ID: ${pokemonId}. Mode: ${mode}`);
   }
 
   const startPokemonId = fromRoot ? pokemon.path[0] : pokemonId;
 
-  const evolution = evolutionData[startPokemonId];
+  const evolution = ModeEvolutionData[startPokemonId];
 
   const evolutionTree = {
     pokemonId: startPokemonId,
@@ -87,9 +86,9 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
   return evolutionTree;
 }
 
-function checkEvolutionPath(evolutionPath, originalPokemonId, mode = "2.0") {
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3
-  const originalPath = evolutionData[originalPokemonId].path;
+function checkEvolutionPath(evolutionPath, originalPokemonId, mode = GAMEDATA2) {
+  const ModeEvolutionData = EvolutionData[mode];
+  const originalPath = ModeEvolutionData[originalPokemonId].path;
 
   function comparePath(treeNode, expectedId) {
   }
@@ -97,9 +96,9 @@ function checkEvolutionPath(evolutionPath, originalPokemonId, mode = "2.0") {
   comparePath(evolutionPath, originalPath[0]);
 }
 
-function getEvolutionDetails(pokemonId, mode = "2.0") {
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3
-  const evolutionDetails = evolutionData[pokemonId].ar;
+function getEvolutionDetails(pokemonId, mode = GAMEDATA2) {
+  const ModeEvolutionData = EvolutionData[mode];
+  const evolutionDetails = ModeEvolutionData[pokemonId].ar;
 
   if (!evolutionDetails) {
     return null;

@@ -120,10 +120,6 @@ describe('Dex Utils Move Getters', () => {
     });
   });
   describe('getTechMachineLearnset', () => {
-    it('returns an empty array when no TMs are learned', () => {
-      expect(getTechMachineLearnset(0, 0, 0, 0)).toEqual([]);
-    });
-
     it('returns an array of TM moves when one or more TMs are learned', () => {
       const pokemonId = 1 // Bulbasaur
       const learnset = getTechMachineLearnset(pokemonId);

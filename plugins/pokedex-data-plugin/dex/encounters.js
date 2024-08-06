@@ -1,15 +1,11 @@
 const {
-  pokemonLocations,
-  staticLocations,
-  encounterLocations,
-  staticAreaLocations
-} = require('./data');
-const {
-  pokemonLocations3,
-  staticLocations3,
-  encounterLocations3,
-  staticAreaLocations3
-} = require('./data3');
+  PokemonLocations,
+  StaticLocations,
+  EncounterLocations,
+  StaticAreaLocations,
+  GAMEDATA2,
+} = require('../../../__gamedata');
+
 const {
   ENC_TYPES,
   GREAT_MARSH_MAP,
@@ -144,17 +140,17 @@ function addTODEncounters(todEncounters, combinedEncounters) {
   }
 }
 
-function getRoutesFromPokemonId(pokemonId, mode = "2.0") {
+function getRoutesFromPokemonId(pokemonId, mode = GAMEDATA2) {
   const pokemonName = getPokemonName(pokemonId, mode);
-  const PokemonLocations = mode === "2.0" ? pokemonLocations : pokemonLocations3;
-  const StaticLocations = mode === "2.0" ? staticLocations : staticLocations3;
+  const ModePokemonLocations = PokemonLocations[mode];
+  const ModeStaticLocations = StaticLocations[mode];
   let routes = [];
-  if (PokemonLocations[pokemonId] && StaticLocations[pokemonName]) {
-    routes = PokemonLocations[pokemonId].concat(StaticLocations[pokemonName])
-  } else if (PokemonLocations[pokemonId]) {
-    routes = PokemonLocations[pokemonId]
+  if (ModePokemonLocations[pokemonId] && ModeStaticLocations[pokemonName]) {
+    routes = ModePokemonLocations[pokemonId].concat(ModeStaticLocations[pokemonName])
+  } else if (ModePokemonLocations[pokemonId]) {
+    routes = ModePokemonLocations[pokemonId]
   } else {
-    routes = StaticLocations[pokemonName] || []
+    routes = ModeStaticLocations[pokemonName] || []
   }
 
   const locationRates = routes.map((route) => {
@@ -182,18 +178,18 @@ function getRoutesFromPokemonId(pokemonId, mode = "2.0") {
 const NO_ENCOUNTERS = null;
 const BAD_INPUT = null;
 
-function getAreaEncounters(zoneId, mode = "2.0") {
+function getAreaEncounters(zoneId, mode = GAMEDATA2) {
   if(typeof zoneId !== 'number' || zoneId.length === 0) {
     return BAD_INPUT;
   }
 
-  const EncounterLocations = mode === "2.0" ? encounterLocations : encounterLocations3;
-  const StaticAreaLocations = mode === "2.0" ? staticAreaLocations : staticAreaLocations3;
+  const ModeEncounterLocations = EncounterLocations[mode];
+  const ModeStaticAreaLocations = StaticAreaLocations[mode];
   
   const mappedEncounters = [];
 
-  if (zoneId in EncounterLocations) {
-    const areaEncounters = EncounterLocations[zoneId];
+  if (zoneId in ModeEncounterLocations) {
+    const areaEncounters = ModeEncounterLocations[zoneId];
     const newEncounters = areaEncounters.map(encounter => ({
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
@@ -201,8 +197,8 @@ function getAreaEncounters(zoneId, mode = "2.0") {
     mappedEncounters.push(...newEncounters);
   }
 
-  if (zoneId in StaticAreaLocations) {
-    const areaEncounters = StaticAreaLocations[zoneId];
+  if (zoneId in ModeStaticAreaLocations) {
+    const areaEncounters = ModeStaticAreaLocations[zoneId];
     const newEncounters = areaEncounters.map(encounter => ({
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
@@ -297,11 +293,11 @@ function getEventEncounters(areaEncounters) {
   return []
 };
 
-function getMapperRoutesFromPokemonId(pokemonId, mode = "2.0") {
+function getMapperRoutesFromPokemonId(pokemonId, mode = GAMEDATA2) {
   const routeNames = [];
-  const PokemonLocations = mode === "2.0" ? pokemonLocations : pokemonLocations3;
-  const StaticLocations = mode === "2.0" ? staticLocations : staticLocations3;
-  const routes = PokemonLocations[pokemonId] || [];
+  const ModePokemonLocations = PokemonLocations[mode];
+  const ModeStaticLocations = StaticLocations[mode];
+  const routes = ModePokemonLocations[pokemonId] || [];
 
   routes.forEach((route) => {
     if (!routeNames.includes(route.routeName)) {
@@ -309,7 +305,7 @@ function getMapperRoutesFromPokemonId(pokemonId, mode = "2.0") {
     }
   });
 
-  const statics = StaticLocations[getPokemonName(pokemonId)] || [];
+  const statics = ModeStaticLocations[getPokemonName(pokemonId)] || [];
 
   statics.forEach((route) => {
     if (!routeNames.includes(route.routeName)) {

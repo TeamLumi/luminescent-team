@@ -1,22 +1,21 @@
-const { itemNames } = require('./data');
-const { itemNames3 } = require('./data3');
+const { GAMEDATA2, ItemNames } = require('../../../__gamedata');
 
-function getItemIdFromItemName(itemName, mode = "2.0") {
+function getItemIdFromItemName(itemName, mode = GAMEDATA2) {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
-  const ItemNames = mode === "2.0" ? itemNames : itemNames3
+  const ModeItemNames = ItemNames[mode];
   if (itemName === "King's Rock")
-    return ItemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === 'King’s Rock');
-  const index = ItemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === itemName);
+    return ModeItemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === 'King’s Rock');
+  const index = ModeItemNames.labelDataArray.findIndex((e) => e.wordDataArray[0]?.str === itemName);
   if (index === -1) throw Error(`Bad item name: ${itemName}`);
   return index;
 }
 
-function getItemString(itemId = 1, mode = "2.0") {
-  const ItemNames = mode === "2.0" ? itemNames : itemNames3
-  if (itemId > ItemNames.labelDataArray.length) {
+function getItemString(itemId = 1, mode = GAMEDATA2) {
+  const ModeItemNames = ItemNames[mode];
+  if (itemId > ModeItemNames.labelDataArray.length) {
     throw Error(`Bad Item Number: ${itemId}`)
   }
-  const itemObject = ItemNames.labelDataArray[itemId]
+  const itemObject = ModeItemNames.labelDataArray[itemId]
   try {
     itemObject.wordDataArray[0].str;
   } catch (error) {
