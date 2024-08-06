@@ -60,8 +60,8 @@ const PokemonListEntry = ({ pokemon, style }) => {
         <ListItemButton>
           <ListItemIcon>
             <ImageWithFallback
-              src={useBaseUrl(`/img/pkm/${pokemon.imageSrc}`)}
-              fallbackSrc={useBaseUrl(`/img/pkm/${pokemon.forms[0].imageSrc}`)}
+              src={useBaseUrl(pokemon.imageSrc)}
+              fallbackSrc={useBaseUrl(pokemon.forms[0].imageSrc)}
               height={48}
               alt={pokemon.name}
               title={pokemon.name}
