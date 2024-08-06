@@ -1,42 +1,83 @@
-import { EvolutionData } from './data';
-import { EvolutionData3 } from './data3';
 import { EVOLUTION_METHOD_DETAILS, evolutionFunctions } from './evolutionConstants';
-import { getPokemonIdFromMonsNoAndForm } from './functions';
+import { getPokemonIdFromMonsNoAndForm, isValidPokemon } from './functions';
 import { REPLACE_STRING } from './evolutionConstants';
+import { EvolutionData, GAMEDATA2 } from '../../../__gamedata';
+import { getMoveId, getMoveLevelLearned } from './moves';
 
-function getEvolutionMethodDetail(methodId, methodParameter = 0, level) {
+function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = GAMEDATA2, level, pokemonId = 0) {
   if (methodId === -1) {
     return -1;
   }
-  if (!Number.isInteger(methodId) || methodId < 0 || methodId > 47) throw new Error(`Bad method: ${methodId}`);
+  if (!EVOLUTION_METHOD_DETAILS[methodId]){
+    throw Error(`This Method is currently not handled: ${methodId}`)
+  }
   const evolutionDetails = { ...EVOLUTION_METHOD_DETAILS[methodId] };
   const evoFunction = evolutionDetails.function;
   let evoMethod = evolutionDetails.method;
   if (evolutionDetails.requiresLevel) {
     evoMethod = "Level"
     evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, level);
-  } else if (methodParameter !== 0) {
-    evoMethod = evoFunction(methodParameter);
-    evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, evoFunction(methodParameter));
+  } else {
+    try {
+      evoMethod = evoFunction(methodParameter, mode);
+    } catch (error){
+      throw Error(`This method parameter doesn't work for mode: ${mode}. ${error} ${methodId}, ${methodParameter}, ${evoFunction.name}`)
+    }
+
+    if (evolutionDetails.parameterType === "Move") {
+      const levelLearned = getMoveLevelLearned(pokemonId, getMoveId(evoMethod, mode), mode);
+      if (levelLearned === -1) {
+        evolutionDetails.method = 
+          evolutionDetails.method.replace(
+            REPLACE_STRING,
+            `${evoMethod} (Cannot Learn)`
+          );
+      }
+      if (levelLearned === 1) {
+        evolutionDetails.method = 
+          evolutionDetails.method.replace(
+            REPLACE_STRING,
+            `${evoMethod} (Relearn)`
+          );
+      } else if (levelLearned > 1) {
+        evolutionDetails.method = 
+          evolutionDetails.method.replace(
+            REPLACE_STRING,
+            `${evoMethod} (Lv. ${levelLearned})`
+          );
+      } else {
+        evolutionDetails.method = 
+          evolutionDetails.method.replace(
+            REPLACE_STRING,
+            `${evoMethod} (On Evo)`
+          );
+      }
+    } else {
+      evolutionDetails.method = evolutionDetails.method.replace(REPLACE_STRING, evoMethod);
+    }
   }
   return [evolutionDetails, evoMethod];
 }
 
-function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
+function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = GAMEDATA2) {
   if (!Number.isInteger(pokemonId) || pokemonId < 0) {
     throw new Error(`Bad pokemon ID: ${pokemonId}`);
   }
 
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3;
+  if (!isValidPokemon(pokemonId, mode)) {
+    return [];
+  }
 
-  const pokemon = evolutionData[pokemonId];
+  const ModeEvolutionData = EvolutionData[mode];
+
+  const pokemon = ModeEvolutionData[pokemonId];
   if (!pokemon) {
     throw new Error(`Bad pokemon ID: ${pokemonId}`);
   }
 
   const startPokemonId = fromRoot ? pokemon.path[0] : pokemonId;
 
-  const evolution = evolutionData[startPokemonId];
+  const evolution = ModeEvolutionData[startPokemonId];
 
   const evolutionTree = {
     pokemonId: startPokemonId,
@@ -46,9 +87,9 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = "2.0") {
   return evolutionTree;
 }
 
-function checkEvolutionPath(evolutionPath, originalPokemonId, mode = "2.0") {
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3
-  const originalPath = evolutionData[originalPokemonId].path;
+function checkEvolutionPath(evolutionPath, originalPokemonId, mode = GAMEDATA2) {
+  const ModeEvolutionData = EvolutionData[mode];
+  const originalPath = ModeEvolutionData[originalPokemonId].path;
 
   function comparePath(treeNode, expectedId) {
   }
@@ -56,9 +97,9 @@ function checkEvolutionPath(evolutionPath, originalPokemonId, mode = "2.0") {
   comparePath(evolutionPath, originalPath[0]);
 }
 
-function getEvolutionDetails(pokemonId, mode = "2.0") {
-  const evolutionData = mode === "2.0" ? EvolutionData : EvolutionData3
-  const evolutionDetails = evolutionData[pokemonId].ar;
+function getEvolutionDetails(pokemonId, mode = GAMEDATA2) {
+  const ModeEvolutionData = EvolutionData[mode];
+  const evolutionDetails = ModeEvolutionData[pokemonId].ar;
 
   if (!evolutionDetails) {
     return null;

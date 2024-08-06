@@ -35,7 +35,7 @@ describe('getEvolutionMethodDetail', () => {
   it('should throw an error for an invalid methodId', () => {
     expect(() => {
       getEvolutionMethodDetail('invalid');
-    }).toThrow('Bad method: invalid');
+    }).toThrow('This Method is currently not handled: invalid');
   });
 });
 
@@ -917,10 +917,10 @@ describe('getEvolutionTree', () => {
   describe("3.0 Evolution Data Tests", () => {
     const MODE = "3.0";
     it('works for a Pokemon with alternate form Evolutions (different evo for each form)', () => {
-      const pokemonId = 1196; // Burmy Trash Cloak
+      const pokemonId = 1198; // Burmy Trash Cloak
       const result = getEvolutionTree(pokemonId, true, MODE);
       const expected = {
-        pokemonId: 1196,
+        pokemonId: 1198,
         evolutionDetails: null,
         evolvesInto: [
           {
@@ -932,7 +932,7 @@ describe('getEvolutionTree', () => {
               monsNos: [413],
             },
             evolvesInto: [],
-            pokemonId: 1198,
+            pokemonId: 1200,
           },
           {
             evolutionDetails: {
@@ -968,7 +968,7 @@ describe('getEvolutionTree', () => {
             },
             evolvesInto: [
               {
-                pokemonId: 1122,
+                pokemonId: 1123,
                 evolutionDetails: {
                   formNos: [1],
                   levels: [36],

@@ -1,5 +1,4 @@
-import { PersonalTable } from './data';
-import { PersonalTable3 } from './data3';
+import { PersonalTable, GAMEDATA2, GAMEDATA3 } from '../../../__gamedata';
 
 const EGG_GROUPS = {
   0: 'None',
@@ -20,16 +19,20 @@ const EGG_GROUPS = {
   15: 'No Eggs',
 };
 
-const POKEMON_IDS_BY_EGG_GROUP = PersonalTable.Personal.reduce(createPokemonByEggGroupMap, []);
-const POKEMON_IDS_BY_EGG_GROUP3 = PersonalTable3.Personal.reduce(createPokemonByEggGroupMap, []);
+const POKEMON_IDS_BY_EGG_GROUP = PersonalTable[GAMEDATA2].Personal.reduce((pokemonMap, currentPokemon) => {
+  return createPokemonByEggGroupMap(pokemonMap, currentPokemon);
+}, {});
+const POKEMON_IDS_BY_EGG_GROUP3 = PersonalTable[GAMEDATA3].Personal.reduce((pokemonMap, currentPokemon) => {
+  return createPokemonByEggGroupMap(pokemonMap, currentPokemon);
+}, {});
 const HIGHEST_EGG_GROUP_ID = 15;
 
-function getEggGroupViaPokemonId(pokemonId = 0, mode = "2.0") {
-  if (!Number.isInteger(pokemonId) || pokemonId < 0 || pokemonId > PersonalTable.Personal.length)
+function getEggGroupViaPokemonId(pokemonId = 0, mode = GAMEDATA2) {
+  const ModePersonalTable = PersonalTable[mode];
+  if (!Number.isInteger(pokemonId) || pokemonId < 0 || pokemonId > ModePersonalTable.Personal.length)
     throw new Error(`Bad pokemonId: ${pokemonId}`);
 
-  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3
-  const pokemonDetails = personalTable.Personal[pokemonId];
+  const pokemonDetails = ModePersonalTable.Personal[pokemonId];
   const eggGroup1 = pokemonDetails.egg_group1;
   const eggGroup2 = pokemonDetails.egg_group2;
   return eggGroup1 === eggGroup2 ? [eggGroup1] : [eggGroup1, eggGroup2];
@@ -56,10 +59,10 @@ function createPokemonByEggGroupMap(pokemonMap, currentPokemon) {
   return pokemonMap;
 }
 
-function getPokemonIdsInEggGroup(eggGroupId = 0, mode = "2.0") {
+function getPokemonIdsInEggGroup(eggGroupId = 0, mode = GAMEDATA2) {
   if (!Number.isInteger(eggGroupId) || eggGroupId < 0 || eggGroupId > HIGHEST_EGG_GROUP_ID)
     throw new Error(`Bad eggGroupId: ${eggGroupId}`);
-  const PokemonByEggGroups = mode === "2.0" ? POKEMON_IDS_BY_EGG_GROUP : POKEMON_IDS_BY_EGG_GROUP3
+  const PokemonByEggGroups = mode === GAMEDATA2 ? POKEMON_IDS_BY_EGG_GROUP : POKEMON_IDS_BY_EGG_GROUP3
   return Array.from(PokemonByEggGroups[eggGroupId]); //Back to array for easier handling
 }
 

@@ -1,45 +1,66 @@
-const { displayNames, areaNames,  mapInfo, field_items, hidden_items } = require('../../../__gamedata');
-const { areasList } = require('../../../__gamedata/gamedata2.0/areas');
-
+const {
+  DisplayNames,
+  AreaNames,
+  MapInfo,
+  FieldItems,
+  HiddenItems,
+  GAMEDATA2,
+  GAMEDATA3
+} = require('../../../__gamedata');
+import { areasList3 } from '../../../__gamedata/gamedata3.0/areas';
+import { areasList2 } from '../../../__gamedata/gamedata2.0/areas';
 // This first section is using the areas_updated.csv for its data
-const AreaMap = {}
-const lines = areasList.split('\n');
+const AreaMap = {
+  [GAMEDATA2]: {},
+  [GAMEDATA3]: {},
+};
+
+const lines = areasList2.split('\n');
 const headers = lines[0].split(",");
 lines.slice(1).forEach(line => {
   const values = line.split(",");
   const zoneId = parseInt(values[0]);
-  AreaMap[zoneId] = Object.fromEntries(headers.map((header, index) => [header, values[index]]));
+  AreaMap[GAMEDATA2][zoneId] = Object.fromEntries(headers.map((header, index) => [header, values[index]]));
 });
 
-function getZoneCodeFromCSV(zoneId) {
+const lines3 = areasList3.split('\n');
+const headers3 = lines[0].split(",");
+lines3.slice(1).forEach(line => {
+  const values = line.split(",");
+  const zoneId = parseInt(values[0]);
+  AreaMap[GAMEDATA3][zoneId] = Object.fromEntries(headers3.map((header, index) => [header, values[index]]));
+});
+
+function getZoneCodeFromCSV(zoneId, mode = GAMEDATA2) {
   if (!zoneId) {
     return null;
   }
-  return AreaMap[zoneId]?.Zone_Code;
+  return AreaMap[mode][zoneId]?.Zone_Code;
 };
 
-function getZoneIdFromZoneCode(zoneCode) {
+function getZoneIdFromZoneCode(zoneCode, mode = GAMEDATA2) {
   if (!zoneCode) {
     return null;
   }
-  const zoneId = Object.keys(AreaMap).find(key => AreaMap[key]?.Zone_Code === zoneCode);
+  const zoneId = Object.keys(AreaMap[mode]).find(key => AreaMap[mode][key]?.Zone_Code === zoneCode);
   return parseInt(zoneId);
 }
 
-function getZoneNameFromZoneCode(zoneCode) {
+function getZoneNameFromZoneCode(zoneCode, mode = GAMEDATA2) {
   if (!zoneCode) {
     return null;
   }
-  const zoneId = Object.keys(AreaMap).find(key => AreaMap[key]?.Zone_Code === zoneCode.toUpperCase());
-  const zoneName = AreaMap[zoneId].Actual
+  const zoneId = Object.keys(AreaMap[mode]).find(key => AreaMap[mode][key]?.Zone_Code === zoneCode.toUpperCase());
+  const zoneName = AreaMap[mode][zoneId].Actual
   return zoneName;
 }
 
 // This next section uses the in game files for the zone names
-function getZoneNameFromDisplayName(displayName) {
+function getZoneNameFromDisplayName(displayName, mode = GAMEDATA2) {
   if(displayName === undefined) return null;
+  const ModeDisplayNames = DisplayNames[mode];
 
-  const zoneName = displayNames.labelDataAr
+  const zoneName = ModeDisplayNames.labelDataArray
     .find(e => e.labelName === displayName)
     ?.wordDataArray[0].str;
 
@@ -50,9 +71,10 @@ function getZoneNameFromDisplayName(displayName) {
   }
 };
 
-function getZoneNameFromAreaName(areaName) {
+function getZoneNameFromAreaName(areaName, mode = GAMEDATA2) {
   if(areaName === undefined) return null;
-  const zoneName = areaNames.labelDataArray
+  const ModeAreaNames = AreaNames[mode];
+  const zoneName = ModeAreaNames.labelDataArray
     .find(e => e?.wordDataArray[0]?.str === areaName)
     ?.wordDataArray[0].str;
 
@@ -63,21 +85,23 @@ function getZoneNameFromAreaName(areaName) {
   }
 };
 
-function getZoneNameFromZoneId(zoneId) {
-  const mapInfoIndex = mapInfo['ZoneData'].findIndex((e) => e.ZoneId === zoneId);
-  const zoneNameObjectLabel = mapInfo['ZoneData'][mapInfoIndex]?.MSLabel ?? "";
+function getZoneNameFromZoneId(zoneId, mode = GAMEDATA2) {
+  const ModeMapInfo = MapInfo[mode];
+  const mapInfoIndex = ModeMapInfo.ZoneData.findIndex((e) => e.ZoneId === zoneId);
+  const zoneNameObjectLabel = ModeMapInfo.ZoneData[mapInfoIndex]?.MSLabel ?? "";
 
   const zoneName = zoneNameObjectLabel !== "" 
-    ? getZoneNameFromDisplayName(mapInfo.ZoneData[mapInfoIndex]?.MSLabel)
-    : getZoneNameFromAreaName(mapInfo.ZoneData[mapInfoIndex]?.PokePlaceName);
+    ? getZoneNameFromDisplayName(ModeMapInfo.ZoneData[mapInfoIndex]?.MSLabel)
+    : getZoneNameFromAreaName(ModeMapInfo.ZoneData[mapInfoIndex]?.PokePlaceName);
 
   return zoneName;
 };
 
-function getDisplayNameFromZoneName(zoneName) {
+function getDisplayNameFromZoneName(zoneName, mode = GAMEDATA2) {
   if(zoneName === undefined) return null;
+  const ModeDisplayNames = DisplayNames[mode];
 
-  const displayName = displayNames.labelDataArray
+  const displayName = ModeDisplayNames.labelDataArray
     .find(e => e?.wordDataArray[0]?.str === zoneName)
     ?.labelName;
 
@@ -88,10 +112,11 @@ function getDisplayNameFromZoneName(zoneName) {
   }
 };
 
-function getAreaNameFromZoneName(zoneName) {
+function getAreaNameFromZoneName(zoneName, mode = GAMEDATA2) {
   if(zoneName === undefined) return null;
+  const ModeAreaNames = AreaNames[mode];
 
-  const areaName = areaNames.labelDataArray
+  const areaName = ModeAreaNames.labelDataArray
     .find(e => e?.wordDataArray[0]?.str === zoneName)
     ?.labelName;
     
@@ -102,15 +127,16 @@ function getAreaNameFromZoneName(zoneName) {
   }
 };
 
-function getZoneIdFromZoneName(zoneName) {
-  const displayName = getDisplayNameFromZoneName(zoneName);
-  const areaName = getAreaNameFromZoneName(zoneName);
-  
-  const mapInfoIndex = displayName 
-    ? mapInfo.ZoneData.findIndex((e) => e.MSLabel === displayName)
-    : mapInfo.ZoneData.findIndex((e) => e.PokePlaceName === areaName);
+function getZoneIdFromZoneName(zoneName, mode = GAMEDATA2) {
+  const displayName = getDisplayNameFromZoneName(zoneName, mode = GAMEDATA2);
+  const areaName = getAreaNameFromZoneName(zoneName, mode = GAMEDATA2);
+  const ModeMapInfo = MapInfo[mode];
 
-  const zoneId = mapInfo.ZoneData[mapInfoIndex]?.ZoneID ?? -1;
+  const mapInfoIndex = displayName 
+    ? ModeMapInfo.ZoneData.findIndex((e) => e.MSLabel === displayName)
+    : ModeMapInfo.ZoneData.findIndex((e) => e.PokePlaceName === areaName);
+
+  const zoneId = ModeMapInfo.ZoneData[mapInfoIndex]?.ZoneID ?? -1;
   if (zoneId !== -1) {
     return zoneId;
   } else {
@@ -118,20 +144,22 @@ function getZoneIdFromZoneName(zoneName) {
   }
 }
 
-function getFieldItemsFromZoneID(zoneID) {
+function getFieldItemsFromZoneID(zoneID, mode = GAMEDATA2) {
   if(typeof zoneID !== 'number' || zoneID < 0) {
     return [];
   }
+  const ModeFieldItems = FieldItems[mode];
 
-  return field_items[zoneID] ?? [];
+  return ModeFieldItems[zoneID] ?? [];
 }
 
-function getHiddenItemsFromZoneID(zoneID) {
+function getHiddenItemsFromZoneID(zoneID, mode = GAMEDATA2) {
   if(typeof zoneID !== 'number' || zoneID < 0) {
     return [];
   }
+  const ModeHiddenItems = HiddenItems[mode];
 
-  return hidden_items[zoneID] ?? [];
+  return ModeHiddenItems[zoneID] ?? [];
 }
 
 export {

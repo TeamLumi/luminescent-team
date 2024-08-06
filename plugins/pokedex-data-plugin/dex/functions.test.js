@@ -86,23 +86,23 @@ describe('Dex utils function tests', () => {
   });
   describe('getImage', () => {
     test('should return the correct image URL with default values', () => {
-      expect(getImage()).toEqual('pm0000_00_00_00_L.webp');
+      expect(getImage()).toEqual('/img/pkm/pm0000_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and default formindex', () => {
-      expect(getImage(25)).toEqual('pm0025_00_00_00_L.webp');
+      expect(getImage(25)).toEqual('/img/pkm/pm0025_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and formindex', () => {
-      expect(getImage(25, 3)).toEqual('pm0025_03_00_00_L.webp');
+      expect(getImage(25, 3)).toEqual('/img/pkm/pm0025_03_00_00_L.webp');
     });
 
     test('should pad monsno with leading zeros', () => {
-      expect(getImage(123)).toEqual('pm0123_00_00_00_L.webp');
+      expect(getImage(123)).toEqual('/img/pkm/pm0123_00_00_00_L.webp');
     });
 
     test('should pad formindex with leading zeros', () => {
-      expect(getImage(25, 9)).toEqual('pm0025_09_00_00_L.webp');
+      expect(getImage(25, 9)).toEqual('/img/pkm/pm0025_09_00_00_L.webp');
     });
   });
 
@@ -176,7 +176,7 @@ describe('Dex utils function tests', () => {
   }
 
   test.skip.each([...getAllPokemonFormImageData(true, GAMEDATA2)])('pokemon form image %s for %s exists', (filename, _, done) => {
-    const imgFilePath = path.join(__dirname, '../../../static/img/pkm/', filename);
+    const imgFilePath = path.join(__dirname, '../../../static', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
       let fileExists = true;
       if (err) {

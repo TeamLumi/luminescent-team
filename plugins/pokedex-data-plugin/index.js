@@ -2,8 +2,9 @@
 const { Joi } = require('@docusaurus/utils-validation');
 
 const { getPokemon } = require('./dex/pokemon');
-const { FORM_MAP, FORM_MAP3 } = require('./dex/functions');
+const { FORM_MAP } = require('./dex/functions');
 const { normalizePokemonName } = require('./dex/name');
+const { GAMEDATA2, GAMEDATA3 } = require('../../__gamedata');
 
 /**
  * @param {{path: string, routeBasePath: string, pokemonComponent: string, pokemonRedirectComponent: string, listComponent: string, wrapperComponent: string, mapComponent: string}} options
@@ -14,10 +15,10 @@ function pokedexDataPlugin(context, options) {
   return {
     name: 'luminescent-pokedex-data-plugin',
     async loadContent() {
-      const pokemons = Object.values(FORM_MAP)
+      const pokemons = Object.values(FORM_MAP[GAMEDATA2])
         .flat()
         .slice(1) // remove Egg
-        .map((id) => getPokemon(id))
+        .map((id) => getPokemon(id, GAMEDATA2))
         .filter((p) => p.isValid);
       const pokemonList = pokemons.map((p) => ({
         id: p.id,
@@ -33,10 +34,10 @@ function pokedexDataPlugin(context, options) {
         baseStats: p.baseStats,
         forms: p.forms,
       }));
-      const pokemons3 = Object.values(FORM_MAP3)
+      const pokemons3 = Object.values(FORM_MAP[GAMEDATA3])
         .flat()
         .slice(1) // remove Egg
-        .map((id) => getPokemon(id, "3.0"))
+        .map((id) => getPokemon(id, GAMEDATA3))
         .filter((p3) => p3.isValid);
       const pokemonList3 = pokemons3.map((p3) => ({
         id: p3.id,
@@ -89,7 +90,7 @@ function pokedexDataPlugin(context, options) {
       const pokemonRoutes = [];
       await Promise.all(
         content.pokemons3.map(async (pokemon3) => {
-          const pokemonName = normalizePokemonName(pokemon3.name, "3.0");
+          const pokemonName = normalizePokemonName(pokemon3.name, GAMEDATA3);
           const pokemonId3 = pokemon3.formno === 0 ? pokemon3.monsno : `${pokemon3.monsno}_${pokemon3.formno}`;
           const pokemonPath = `${pokedexPath}/${pokemonName}`;
           const pokemonJson3 = await actions.createData(`3.0lumi${pokemonId3}.json`, JSON.stringify(pokemon3));

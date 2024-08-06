@@ -1,6 +1,7 @@
 import { POKEMON_FORM_ID_MAP, POKEMON_FORM_ID_MAP3, getPokemonFormIndexById, getPokemonImageFilename } from './pokemonFormSelector';
 import fs from 'fs';
 import path from 'path';
+import { GAMEDATA2 } from '../../__gamedata';
 
 test('pokemon Venusaur should have 4 different forms', () => {
   const venusaurMonsno = 3;
@@ -32,9 +33,9 @@ test.each([
   expect(getPokemonImageFilename(monsno, formIndex)).toBe(filename);
 });
 
-function getAllPokemonFormImageData(mode = "2.0") {
+function getAllPokemonFormImageData(mode = GAMEDATA2) {
   const pokemonFormData = [];
-  const form_id_map = mode === "2.0" ? POKEMON_FORM_ID_MAP : POKEMON_FORM_ID_MAP3;
+  const form_id_map = mode === GAMEDATA2 ? POKEMON_FORM_ID_MAP : POKEMON_FORM_ID_MAP3;
 
   for (const entry of Object.entries(form_id_map)) {
     const monsno = entry[0];
@@ -50,7 +51,7 @@ function getAllPokemonFormImageData(mode = "2.0") {
   return pokemonFormData;
 }
 
-// test.skip.each([...getAllPokemonFormImageData("2.0")])('2.0 pokemon form image %s for %s does not exist', (filename, formName, done) => {
+// test.skip.each([...getAllPokemonFormImageData(GAMEDATA2)])('2.0 pokemon form image %s for %s does not exist', (filename, formName, done) => {
 //   const imgFilePath = path.join(__dirname, '../../static/img/pkm/', filename);
 //   fs.access(imgFilePath, fs.constants.F_OK, (err) => {
 //     let fileExists = true;

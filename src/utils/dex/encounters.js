@@ -1,8 +1,9 @@
 import {
-  pokemonLocations,
-  staticLocations,
-  encounterLocations,
-  staticAreaLocations
+  PokemonLocations,
+  StaticLocations,
+  EncounterLocations,
+  StaticAreaLocations,
+  GAMEDATA2
 } from '../../../__gamedata';
 import {
   ENC_TYPES,
@@ -138,15 +139,17 @@ function addTODEncounters(todEncounters, combinedEncounters) {
   }
 }
 
-function getRoutesFromPokemonId(pokemonId) {
-  const pokemonName = getPokemonName(pokemonId);
+function getRoutesFromPokemonId(pokemonId, mode = GAMEDATA2) {
+  const pokemonName = getPokemonName(pokemonId, mode);
+  const ModePokemonLocations = PokemonLocations[mode];
+  const ModeStaticLocations = StaticLocations[mode];
   let routes = [];
-  if (pokemonLocations[pokemonId] && staticLocations[pokemonName]) {
-    routes = pokemonLocations[pokemonId].concat(staticLocations[pokemonName])
-  } else if (pokemonLocations[pokemonId]) {
-    routes = pokemonLocations[pokemonId]
+  if (ModePokemonLocations[pokemonId] && ModeStaticLocations[pokemonName]) {
+    routes = ModePokemonLocations[pokemonId].concat(ModeStaticLocations[pokemonName])
+  } else if (ModePokemonLocations[pokemonId]) {
+    routes = ModePokemonLocations[pokemonId]
   } else {
-    routes = staticLocations[pokemonName] || []
+    routes = ModeStaticLocations[pokemonName] || []
   }
 
   const locationRates = routes.map((route) => {
@@ -174,15 +177,18 @@ function getRoutesFromPokemonId(pokemonId) {
 const NO_ENCOUNTERS = null;
 const BAD_INPUT = null;
 
-function getAreaEncounters(zoneId) {
+function getAreaEncounters(zoneId, mode = GAMEDATA2) {
   if(typeof zoneId !== 'number' || zoneId.length === 0) {
     return BAD_INPUT;
   }
 
+  const ModeEncounterLocations = EncounterLocations[mode];
+  const ModeStaticAreaLocations = StaticAreaLocations[mode];
+  
   const mappedEncounters = [];
 
-  if (zoneId in encounterLocations) {
-    const areaEncounters = encounterLocations[zoneId];
+  if (zoneId in ModeEncounterLocations) {
+    const areaEncounters = ModeEncounterLocations[zoneId];
     const newEncounters = areaEncounters.map(encounter => ({
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
@@ -190,8 +196,8 @@ function getAreaEncounters(zoneId) {
     mappedEncounters.push(...newEncounters);
   }
 
-  if (zoneId in staticAreaLocations) {
-    const areaEncounters = staticAreaLocations[zoneId];
+  if (zoneId in ModeStaticAreaLocations) {
+    const areaEncounters = ModeStaticAreaLocations[zoneId];
     const newEncounters = areaEncounters.map(encounter => ({
       ...encounter,
       encounterType: ENC_TYPES[encounter.encounterType] || encounter.encounterType,
@@ -286,9 +292,11 @@ function getEventEncounters(areaEncounters) {
   return []
 };
 
-function getMapperRoutesFromPokemonId(pokemonId) {
+function getMapperRoutesFromPokemonId(pokemonId, mode = GAMEDATA2) {
   const routeNames = [];
-  const routes = pokemonLocations[pokemonId] || [];
+  const ModePokemonLocations = PokemonLocations[mode];
+  const ModeStaticLocations = StaticLocations[mode];
+  const routes = ModePokemonLocations[pokemonId] || [];
 
   routes.forEach((route) => {
     if (!routeNames.includes(route.routeName)) {
@@ -296,7 +304,7 @@ function getMapperRoutesFromPokemonId(pokemonId) {
     }
   });
 
-  const statics = staticLocations[getPokemonName(pokemonId)] || [];
+  const statics = ModeStaticLocations[getPokemonName(pokemonId)] || [];
 
   statics.forEach((route) => {
     if (!routeNames.includes(route.routeName)) {

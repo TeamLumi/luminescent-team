@@ -1,4 +1,4 @@
-export const areasList3 = `ZoneID,Japanese_Name,Machine_Translated,City,Actual,File_Path,Zone_Code
+const areasList = `ZoneID,Japanese_Name,Machine_Translated,City,Actual,File_Path,Zone_Code
 0,コトブキシティ,Kotobuki City,Jubilife City,Jubilife City,fields/area001,C01
 1,コトブキ:フレンドリーショップ,Kotobuki : Friendly Shop,Jubilife City,Jubilife - Poké Mart,prefab_map/t02fs0101,C01FS0101
 2,コトブキ:ポケモンセンター 1F,Kotobuki : Pokémon Center 1F,Jubilife City,Jubilife - Center 1F,prefab_map/t02pc0101,C01PC0101
@@ -657,3 +657,7 @@ export const areasList3 = `ZoneID,Japanese_Name,Machine_Translated,City,Actual,F
 655,パルパーク:虹の部屋消灯,Pal Park : Rainbow Room Turned Off,,Ramanas Park - d10r0501b,prefab_map/d10r0501b,D10R0501B
 656,パルパーク:嵐の部屋消灯,PalPark : Storm Room Turned Off,,Ramanas Park - d10r0502b,prefab_map/d10r0502b,D10R0502B
 657,パルパーク:遺伝子の部屋消灯,Palpark : Gene room turned off,,Ramanas Park - Mewtwo B,prefab_map/d10r0601b,D10R0601B`
+
+module.export = {
+  areasList
+};

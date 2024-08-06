@@ -1,9 +1,10 @@
-import { PersonalTable, pokemonPokedexInfo } from './data';
-import { PersonalTable3, pokemonPokedexInfo3 } from './data3';
+import { PersonalTable, PokedexInfo, GAMEDATA2, GAMEDATA3 } from '../../../__gamedata';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
-const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});
-const FORM_MAP3 = PersonalTable3.Personal.reduce(createFormMap, {});
+const FORM_MAP = {
+  [GAMEDATA2]: PersonalTable[GAMEDATA2].Personal.reduce(createFormMap, {}),
+  [GAMEDATA3]: PersonalTable[GAMEDATA3].Personal.reduce(createFormMap, {})
+};
 
 function createFormMap(formMap, currentPokemon) {
   if (!Array.isArray(formMap[currentPokemon.monsno])) {
@@ -14,14 +15,19 @@ function createFormMap(formMap, currentPokemon) {
   return formMap;
 }
 
-function getPokemonIdFromFormMap(monsNo = 0, formNo = 0, mode = "2.0") {
-  const formMap = mode === "2.0" ? FORM_MAP : FORM_MAP3;
-  return formMap[monsNo]?.[formNo] ?? undefined;
+function getPokemonIdFromFormMap(monsNo = 0, formNo = 0, mode = GAMEDATA2) {
+  const ModeFormMap = FORM_MAP[mode]
+  return ModeFormMap[monsNo]?.[formNo] ?? undefined;
 }
 
-const getPokemonFormIndexById = (monsno, id, mode = "2.0") => {
-  const formMap = mode === "2.0" ? FORM_MAP : FORM_MAP3
-  return formMap[monsno].findIndex((pokemonId) => pokemonId === id);
+const getPokemonFormIndexById = (monsno, id, mode = GAMEDATA2) => {
+  const ModeFormMap = FORM_MAP[mode]
+  return ModeFormMap[monsno].findIndex((pokemonId) => pokemonId === id);
+};
+
+const getPokemonFormIds = (monsno, mode = GAMEDATA2) => {
+  const ModeFormMap = FORM_MAP[mode]
+  return ModeFormMap[monsno];
 };
 
 function getGender(sex) {
@@ -50,25 +56,31 @@ function getGrassKnotPower(weightkg) {
   return 20;
 }
 
-function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = "2.0") {
-  const personalTable = mode === "2.0" ? PersonalTable : PersonalTable3;
-  const form_map = mode === "2.0" ? FORM_MAP : FORM_MAP3;
-  return personalTable.Personal.find((e) => e.monsno === monsno && form_map[e.monsno][formno] === e.id)?.id;
+function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = GAMEDATA2) {
+  const ModePersonalTable = PersonalTable[mode];
+  const ModeFormMap = FORM_MAP[mode];
+  return ModePersonalTable.Personal.find((e) => e.monsno === monsno && ModeFormMap[e.monsno][formno] === e.id)?.id;
+}
+
+function isValidPokemon(pokemonId, mode = GAMEDATA2) {
+  const ModePersonalTable = PersonalTable[mode];
+  const p = ModePersonalTable.Personal[pokemonId];
+  return p.valid_flag;
 }
 
 function doNothing(evoMethod, evolutionDetails) {
   return [evolutionDetails, evoMethod];
 };
 
-function getDexDescription(pokemonId, mode = "2.0") {
-  const PokedexInfo = mode === "2.0" ? pokemonPokedexInfo : pokemonPokedexInfo3;
-  const labelData = PokedexInfo.labelDataArray[pokemonId]
+function getDexDescription(pokemonId, mode = GAMEDATA2) {
+  const ModePokedexInfo = PokedexInfo[mode];
+  const labelData = ModePokedexInfo.labelDataArray[pokemonId]
   const combinedStr = labelData.wordDataArray.map(data => data.str).join(' ');
   return combinedStr
 }
+
 export {
   FORM_MAP,
-  FORM_MAP3,
   getPokemonIdFromFormMap,
   getPokemonFormIndexById,
   getGender,
@@ -77,6 +89,7 @@ export {
   formatBaseStats,
   getPokemonIdFromMonsNoAndForm,
   createFormMap,
+  isValidPokemon,
   doNothing,
   getDexDescription,
 };

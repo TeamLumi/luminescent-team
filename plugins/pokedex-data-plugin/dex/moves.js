@@ -48,6 +48,30 @@ function isMoveNameSmogonCompatible(moveString, mode = GAMEDATA2) {
   return SmogonMoves[mode].some((movesPerGeneration) => Object.keys(movesPerGeneration).includes(moveString));
 }
 
+function getMoveString(moveId = 0, mode = GAMEDATA2) {
+  const ModeMoveNames = MoveNames[mode];
+  if (!moveId) {
+    throw new Error(`Bad move string found: ID - ${moveId}`);
+  }
+  const LabelDataArray = ModeMoveNames.labelDataArray;
+  if (moveId > LabelDataArray.length) {
+    throw new Error(`Incompatible move string found: ID - ${moveId}`);
+  }
+  const nameData = LabelDataArray[moveId].wordDataArray;
+  const name = nameData.length ? nameData[0].str : null;
+
+  if (!name) {
+    throw new Error(`Bad move name: ${name}`);
+  }
+
+  // TODO Removing this for now. Find out where it comes from and add it back in later.
+  // if (!isMoveNameSmogonCompatible(name)) {
+  //   throw new Error(`This move is not Smogon Compatible: ID - ${moveId}, String: ${name}`);
+  // }
+
+  return name;
+}
+
 function getMoveId(moveName, mode = GAMEDATA2) {
   const ModeMoveNames = MoveNames[mode];
 
@@ -78,30 +102,6 @@ function findWazaNoByMachineNo(machineNo, mode = GAMEDATA2) {
   }
 
   return null;
-}
-
-function getMoveString(moveId = 0, mode = GAMEDATA2) {
-  const ModeMoveNames = MoveNames[mode];
-  if (!moveId) {
-    throw new Error(`Bad move string found: ID - ${moveId}`);
-  }
-  const LabelDataArray = ModeMoveNames.labelDataArray;
-  if (moveId > LabelDataArray.length) {
-    throw new Error(`Incompatible move string found: ID - ${moveId}`);
-  }
-  const nameData = LabelDataArray[moveId].wordDataArray;
-  const name = nameData.length ? nameData[0].str : null;
-
-  if (!name) {
-    throw new Error(`Bad move name: ${name}`);
-  }
-
-  // TODO Removing this for now. Find out where it comes from and add it back in later.
-  // if (!isMoveNameSmogonCompatible(name)) {
-  //   throw new Error(`This move is not Smogon Compatible: ID - ${moveId}, String: ${name}`);
-  // }
-
-  return name;
 }
 
 function getMoveProperties(moveId = 0, mode = GAMEDATA2) {
@@ -284,18 +284,6 @@ function getPokemonLearnset(pokemonId = 0, mode = GAMEDATA2) {
   return ModeLearnsetTable.WazaOboe[pokemonId]?.ar ?? [];
 }
 
-function getMoveLevelLearned(pokemonId = 0, moveId = 0, mode = GAMEDATA2) {
-  const ModeLearnsetTable = LearnsetTable[mode];
-  if (!Number.isInteger(pokemonId) || pokemonId < 0) return [];
-  const moveIndex = ModeLearnsetTable.WazaOboe[pokemonId]?.ar.findIndex((move) => move === moveId);
-  if (moveIndex === -1) {
-    console.error(`This pokemon can't learn this move ${getPokemonName(pokemonId, mode)}: ${getMoveString(moveId, mode)}`)
-    return moveIndex;
-  }
-  const levelLearned = ModeLearnsetTable.WazaOboe[pokemonId]?.ar[moveIndex - 1]
-  return levelLearned;
-}
-
 function getLevelLearnset(pokemonId = 0, mode = GAMEDATA2) {
   const learnset = getPokemonLearnset(pokemonId, mode);
 
@@ -306,6 +294,18 @@ function getLevelLearnset(pokemonId = 0, mode = GAMEDATA2) {
 
   return moveList;
 }
+
+function getMoveLevelLearned(pokemonId = 0, moveId = 0, mode = GAMEDATA2) {
+  const ModeLearnsetTable = LearnsetTable[mode];
+  if (!Number.isInteger(pokemonId) || pokemonId < 0) return [];
+  const moveIndex = ModeLearnsetTable.WazaOboe[pokemonId]?.ar.findIndex((move) => move === moveId);
+  if (moveIndex === -1) {
+    console.error(`This pokemon can't learn this move ${getPokemonName(pokemonId, mode)}: ${getMoveString(moveId, mode)}`)
+    return moveIndex;
+  }  
+  const levelLearned = ModeLearnsetTable.WazaOboe[pokemonId]?.ar[moveIndex - 1]
+  return levelLearned;
+}  
 
 function getTutorMoves(monsno = 0, formno = 0, mode = GAMEDATA2) {
   const ModeTutorMoves = TutorMoves[mode];

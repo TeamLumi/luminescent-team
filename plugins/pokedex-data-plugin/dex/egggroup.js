@@ -20,10 +20,10 @@ const EGG_GROUPS = {
 };
 
 const POKEMON_IDS_BY_EGG_GROUP = PersonalTable[GAMEDATA2].Personal.reduce((pokemonMap, currentPokemon) => {
-  return createPokemonByEggGroupMap(pokemonMap, currentPokemon, GAMEDATA2);
+  return createPokemonByEggGroupMap(pokemonMap, currentPokemon);
 }, {});
 const POKEMON_IDS_BY_EGG_GROUP3 = PersonalTable[GAMEDATA3].Personal.reduce((pokemonMap, currentPokemon) => {
-  return createPokemonByEggGroupMap(pokemonMap, currentPokemon, GAMEDATA3);
+  return createPokemonByEggGroupMap(pokemonMap, currentPokemon);
 }, {});
 
 const HIGHEST_EGG_GROUP_ID = 15;

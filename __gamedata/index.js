@@ -8,7 +8,6 @@ const LearnsetTable2 = require('./gamedata2.0/WazaOboeTable.json');
 const MovesTable2 = require('./gamedata2.0/WazaTable.json');
 const ItemTable2 = require('./gamedata2.0/ItemTable.json');
 const ShopTable2 = require('./gamedata2.0/ShopTable.json');
-const areasList2 = require('./gamedata2.0/areas');
 const EvolutionData2 = require('./gamedata2.0/evolution.json');
 
 //All the Location files
@@ -56,7 +55,6 @@ const LearnsetTable3 = require('./gamedata3.0/WazaOboeTable.json');
 const MovesTable3 = require('./gamedata3.0/WazaTable.json');
 const ItemTable3 = require('./gamedata3.0/ItemTable.json');
 const ShopTable3 = require('./gamedata3.0/ShopTable.json');
-const areasList3 = require('./gamedata3.0/areas');
 const EvolutionData3 = require('./gamedata3.0/evolution.json');
 
 //All the Location files
@@ -239,10 +237,6 @@ const ShopTable = {
   [GAMEDATA2]: ShopTable2,
   [GAMEDATA3]: ShopTable3,
 };
-const AreasList = {
-  [GAMEDATA2]: areasList2,
-  [GAMEDATA3]: areasList3,
-};
 const ItemMap = {
   [GAMEDATA2]: ItemMap2,
   [GAMEDATA3]: ItemMap3,
@@ -290,7 +284,6 @@ module.exports = {
   StaticLocations,
   StaticAreaLocations,
   ShopTable,
-  AreasList,
   ItemMap,
   FixedShop,
 };

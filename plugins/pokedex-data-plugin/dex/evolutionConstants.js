@@ -6,20 +6,20 @@ const { doNothing } = require('./functions');
 
 const REPLACE_STRING = "REPLACE";
 
-export const LEVEL = "Level"
-export const FRIENDSHIP = "Friendship"
-export const DAY = "Day"
-export const NIGHT = "Night"
-export const DUSK = "Dusk";
-export const MOSS_ROCK = "Moss Rock"
-export const ICE_ROCK = "Ice Rock"
-export const FEMALE = "Female"
-export const MALE = "Male"
-export const BEAUTY = "Beauty"
-export const CRITICAL_HITS = "critical hits";
-export const RECEIVE_DAMAGE = "Receive";
-export const FOLLOWER = "Follower";
-export const RNG = "RNG";
+const LEVEL = "Level"
+const FRIENDSHIP = "Friendship"
+const DAY = "Day"
+const NIGHT = "Night"
+const DUSK = "Dusk";
+const MOSS_ROCK = "Moss Rock"
+const ICE_ROCK = "Ice Rock"
+const FEMALE = "Female"
+const MALE = "Male"
+const BEAUTY = "Beauty"
+const CRITICAL_HITS = "critical hits";
+const RECEIVE_DAMAGE = "Receive";
+const FOLLOWER = "Follower";
+const RNG = "RNG";
 
 const EVOLUTION_METHOD_DETAILS = {
   0: {
@@ -384,4 +384,21 @@ const EVOLUTION_METHOD_DETAILS = {
   },
 };
 
-module.exports = { REPLACE_STRING, EVOLUTION_METHOD_DETAILS }
+module.exports = {
+  REPLACE_STRING,
+  EVOLUTION_METHOD_DETAILS,
+  LEVEL,
+  FRIENDSHIP,
+  DAY,
+  NIGHT,
+  DUSK,
+  MOSS_ROCK,
+  ICE_ROCK,
+  FEMALE,
+  MALE,
+  BEAUTY,
+  CRITICAL_HITS,
+  RECEIVE_DAMAGE,
+  FOLLOWER,
+  RNG,
+}

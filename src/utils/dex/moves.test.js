@@ -109,7 +109,19 @@ describe('Dex Utils Move Getters', () => {
 
     it('returns an array of egg moves for a valid dexId', () => {
       const eggMoves = getEggMoves(1);
-      expect(eggMoves).toContainEqual({ level: 'egg', moveId: 130 });
+      expect(eggMoves).toContainEqual({
+        level: "egg",
+        move: {
+          accuracy: 100,
+          damageType: 1,
+          desc: "The user tucks in its head to raise its Defense stat on the first turn, then rams the target on the next turn.",
+          maxPP: 16,
+          moveId: 130,
+          name: "Skull Bash",
+          power: 130,
+          type: 0,
+        },
+      });
     });
 
     it('returns an empty array for a dexId with no egg moves', () => {

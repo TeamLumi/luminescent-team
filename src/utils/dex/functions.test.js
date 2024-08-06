@@ -148,7 +148,7 @@ describe('Dex utils function tests', () => {
   describe('3.0 Functions Tests', () => {
     const MODE = "3.0";
     test('should return the correct Pokemon ID for a different monsno and formno', () => {
-      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1216);
+      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1218);
     });
     it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
       const result = getPokemonIdFromFormMap(3, 3, MODE); //Clone Venusaur

@@ -42,13 +42,8 @@ function createPokemonMap(pokemonNameMap, currentPokemon, mode = GAMEDATA2) {
 
     const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(id, mode);
     const baseFormName = ModeBasePokemonNames.labelDataArray[monsNo]?.wordDataArray[0]?.str;
-    const baseFormAltName = ModeFormPokemonNames.labelDataArray[monsNo]?.wordDataArray[0]?.str;
-    const pokemonName =
-      baseFormAltName.length > 0 && !baseFormName.includes(baseFormAltName)
-        ? `${baseFormName} ${baseFormAltName}`
-        : baseFormName;
-        
-        const alternateFormName = ModeFormPokemonNames.labelDataArray[id]?.wordDataArray[0]?.str;
+    const alternateFormName = ModeFormPokemonNames.labelDataArray[id]?.wordDataArray[0]?.str;
+
     if (typeof alternateFormName === 'string' && alternateFormName.length > 0) {
       if (!alternateFormName.includes(baseFormName)) {
         pokemonNameMap[id] = `${baseFormName} ${alternateFormName}`
