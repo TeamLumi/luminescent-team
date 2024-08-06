@@ -1,5 +1,5 @@
 const { displayNames, areaNames,  mapInfo, field_items, hidden_items } = require('../../../__gamedata');
-const { areasList } = require('../../../__gamedata/areas');
+const { areasList } = require('../../../__gamedata/gamedata2.0/areas');
 
 // This first section is using the areas_updated.csv for its data
 const AreaMap = {}
