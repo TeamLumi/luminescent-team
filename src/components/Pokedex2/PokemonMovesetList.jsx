@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Box, ButtonBase, Container, Modal, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { getMoveProperties } from '../../utils/dex';
 
 const DMG_TYPE_ICONS = {
   0: '/img/status_dmg_type.png',
@@ -79,8 +78,8 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
   if (moveIconType === 'egg') {
     return (
       <Box display="flex" alignItems="center" justifyContent="center" width={{ xs: '18px', sm: '26px', md: '32px' }}>
-        <img src={useBaseUrl('/img/pm0000_00_00_00_L.webp')} alt="Egg Move" />
-      </Box>
+        <img src={useBaseUrl('/img/pkm/pm0000_00_00_00_L.webp')} alt="Egg Move" />
+        </Box>
     );
   }
 

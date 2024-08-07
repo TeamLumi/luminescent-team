@@ -13,19 +13,19 @@ export default function FormSection(props) {
         </div>
         <div className='row dexEvolutionContainer'>
             <div className='col col-3' style={{textAlign: 'center'}}>
-                <img src={useBaseUrl('/img/pm0001_00_00_00_L.webp')} alt="Stage 1 Evo"/>
+                <img src={useBaseUrl('/img/pkm/pm0001_00_00_00_L.webp')} alt="Stage 1 Evo"/>
             </div>
             <div className='col col-1' style={{textAlign: 'center'}}>
                 <Typography variant='h6' sx={{verticalAlign: 'middle'}}>→</Typography>
             </div>
             <div className='col col-3' style={{textAlign: 'center'}}>
-                <img src={useBaseUrl('/img/pm0002_00_00_00_L.webp')} alt="Stage 2 Evo"/>
+                <img src={useBaseUrl('/img/pkm/pm0002_00_00_00_L.webp')} alt="Stage 2 Evo"/>
             </div>
             <div className='col col-1' style={{textAlign: 'center'}}>
                 <Typography variant='h6'>→</Typography>
             </div>
             <div className='col col-3' style={{textAlign: 'center'}}>
-                <img src={useBaseUrl('/img/pm0003_00_00_00_L.webp')} alt="Stage 3 Evo"/>
+                <img src={useBaseUrl('/img/pkm/pm0003_00_00_00_L.webp')} alt="Stage 3 Evo"/>
             </div>
         </div>
         </div>

@@ -77,6 +77,6 @@ export const LOCATION_ICONS = {
   [STATIC]: ["/img/custom/static.webp"],
   [TROPHY]: ["/img/custom/trophy.webp"],
   [MARSH]: ["/img/custom/greatmarsh.webp", "/img/custom/randomchance.webp"],
-  "Honey Tree": ["img/Item_Honey.webp"],
+  "Honey Tree": ["img/items/Item_Honey.webp"],
   [STARTER]: ["/img/custom/mysterygift.webp"],
 }

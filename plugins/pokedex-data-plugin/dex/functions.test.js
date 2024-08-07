@@ -10,8 +10,10 @@ import {
   createFormMap,
   getPokemonFormIndexById,
   FORM_MAP,
+  isValidPokemon,
 } from './functions';
 import { getPokemon } from './pokemon';
+import { GAMEDATA2, GAMEDATA3 } from '../../../__gamedata';
 
 describe('Dex utils function tests', () => {
   it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
@@ -84,23 +86,23 @@ describe('Dex utils function tests', () => {
   });
   describe('getImage', () => {
     test('should return the correct image URL with default values', () => {
-      expect(getImage()).toEqual('pm0000_00_00_00_L.webp');
+      expect(getImage()).toEqual('/img/pkm/pm0000_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and default formindex', () => {
-      expect(getImage(25)).toEqual('pm0025_00_00_00_L.webp');
+      expect(getImage(25)).toEqual('/img/pkm/pm0025_00_00_00_L.webp');
     });
 
     test('should return the correct image URL with specified monsno and formindex', () => {
-      expect(getImage(25, 3)).toEqual('pm0025_03_00_00_L.webp');
+      expect(getImage(25, 3)).toEqual('/img/pkm/pm0025_03_00_00_L.webp');
     });
 
     test('should pad monsno with leading zeros', () => {
-      expect(getImage(123)).toEqual('pm0123_00_00_00_L.webp');
+      expect(getImage(123)).toEqual('/img/pkm/pm0123_00_00_00_L.webp');
     });
 
     test('should pad formindex with leading zeros', () => {
-      expect(getImage(25, 9)).toEqual('pm0025_09_00_00_L.webp');
+      expect(getImage(25, 9)).toEqual('/img/pkm/pm0025_09_00_00_L.webp');
     });
   });
 
@@ -150,20 +152,22 @@ describe('Dex utils function tests', () => {
     });
   });
 
-  function getAllPokemonFormImageData(onlyValidPokemons = false) {
+  function getAllPokemonFormImageData(onlyValidPokemons = false, mode = GAMEDATA2) {
+    const ModeFormMap = FORM_MAP[mode];
     const pokemonFormData = [];
 
-    for (const entry of Object.entries(FORM_MAP)) {
+    for (const entry of Object.entries(ModeFormMap)) {
       const monsno = entry[0];
       const pokemonForms = entry[1];
 
       for (let i = 0; i < pokemonForms.length; i++) {
         const pokemonForm = pokemonForms[i];
-        const pokemon = getPokemon(pokemonForm);
-        if (onlyValidPokemons && !pokemon.isValid) {
+        const validPokemon = isValidPokemon(pokemonForm, mode);
+        if (onlyValidPokemons && !validPokemon && pokemonForm !== 0) {
           continue;
         }
-        const filename = getImage(monsno, getPokemonFormIndexById(monsno, pokemonForm));
+        const pokemon = getPokemon(pokemonForm, mode);
+        const filename = getImage(monsno, getPokemonFormIndexById(monsno, pokemonForm, mode));
         pokemonFormData.push([filename, pokemon.name]);
       }
     }
@@ -171,8 +175,8 @@ describe('Dex utils function tests', () => {
     return pokemonFormData;
   }
 
-  test.skip.each([...getAllPokemonFormImageData(true)])('pokemon form image %s for %s exists', (filename, _, done) => {
-    const imgFilePath = path.join(__dirname, '../../../static/img/', filename);
+  test.skip.each([...getAllPokemonFormImageData(true, GAMEDATA2)])('pokemon form image %s for %s exists', (filename, _, done) => {
+    const imgFilePath = path.join(__dirname, '../../../static', filename);
     fs.access(imgFilePath, fs.constants.F_OK, (err) => {
       let fileExists = true;
       if (err) {
@@ -187,4 +191,35 @@ describe('Dex utils function tests', () => {
       }
     });
   });
+
+  describe('3.0 Functions Tests', () => {
+    const MODE = GAMEDATA3;
+    test('should return the correct Pokemon ID for a different monsno and formno', () => {
+      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1218);
+    });
+    it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
+      const result = getPokemonIdFromFormMap(3, 3, MODE); //Clone Venusaur
+      const result2 = getPokemonIdFromFormMap(3, 0, MODE); //Venusaur
+      const CLONE_VENUSAUR = 1028;
+      const VENUSAUR = 3;
+      expect(result).toBe(CLONE_VENUSAUR);
+      expect(result2).toBe(VENUSAUR);
+    });
+    test.skip.each([...getAllPokemonFormImageData(true, MODE)])('pokemon form image %s for %s exists', (filename, _, done) => {
+      const imgFilePath = path.join(__dirname, '../../../static/img/pkm/', filename);
+      fs.access(imgFilePath, fs.constants.F_OK, (err) => {
+        let fileExists = true;
+        if (err) {
+          fileExists = false;
+        }
+
+        try {
+          expect(fileExists).toBe(true);
+          done();
+        } catch (err) {
+          done(err);
+        }
+      });
+    });
+  })
 });
