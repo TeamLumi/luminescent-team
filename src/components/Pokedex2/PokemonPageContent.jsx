@@ -47,7 +47,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
           <Box display="flex" justifyContent="center" marginTop="16px">
             <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={1} formNo={0} />
             <PokemonInfoButton />
-            {/* <ModeSwitch /> */}
+            <ModeSwitch />
             {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
         </Container>
@@ -63,7 +63,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
         <Box display="flex" justifyContent="center" marginTop="16px">
         <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
         <PokemonInfoButton />
-        {/* <ModeSwitch /> */}
+        <ModeSwitch />
         {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
       </Container>

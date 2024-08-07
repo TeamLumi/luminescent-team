@@ -31,7 +31,7 @@ export const PokemonListPageContent = ({ pokemonList, pokemonList3 }) => {
         <Box display="flex" marginTop="16px">
           <PokemonSearchInput allPokemons={allPokemons} setPokemons={setPokemons} />
           <PokemonInfoButton />
-          {/* <ModeSwitch /> */}
+          <ModeSwitch />
           {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
 
