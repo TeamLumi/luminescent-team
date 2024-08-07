@@ -20,6 +20,10 @@ const CRITICAL_HITS = "critical hits";
 const RECEIVE_DAMAGE = "Receive";
 const FOLLOWER = "Follower";
 const RNG = "RNG";
+const ITEM_STRING_FUNCTION = "getItemString";
+const MOVE_STRING_FUNCTION = "getMoveString";
+const POKEMON_NAME_FUNCTION = "getPokemonName";
+const TYPE_NAME_FUNCTION = "getTypeName";
 
 const EVOLUTION_METHOD_DETAILS = {
   0: {
@@ -401,4 +405,8 @@ module.exports = {
   RECEIVE_DAMAGE,
   FOLLOWER,
   RNG,
+  ITEM_STRING_FUNCTION,
+  MOVE_STRING_FUNCTION,
+  POKEMON_NAME_FUNCTION,
+  TYPE_NAME_FUNCTION,
 }

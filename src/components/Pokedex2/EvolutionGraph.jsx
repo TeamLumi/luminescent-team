@@ -124,14 +124,14 @@ export default function EvolutionGraph(props) {
     if (methodDetail.method.includes(EvoConstants.FOLLOWER)) {
       evoImages.push("/img/custom/followersteps.webp")
     }
-    if (evoFunction === getItemString.name) {
+    if (evoFunction === EvoConstants.ITEM_STRING_FUNCTION) {
       evoImages.push(getItemImageUrl(evoMethod));
-    } else if (evoFunction === getMoveString.name) {
+    } else if (evoFunction === EvoConstants.MOVE_STRING_FUNCTION) {
       const moveType = getTypeName(getMoveProperties(methodParameter, globalState.mode).type);
       evoImages.push(getTMImageUrl(moveType));
-    } else if (evoFunction === getPokemonName.name) {
+    } else if (evoFunction === EvoConstants.POKEMON_NAME_FUNCTION) {
       evoImages.push(`img/pkm/${getPokemonImageFilename(methodParameter, 0)}`);
-    } else if (evoFunction === getTypeName.name) {
+    } else if (evoFunction === EvoConstants.TYPE_NAME_FUNCTION) {
       const moveType = getTypeName(methodParameter);
       evoImages.push(getTMImageUrl(moveType));
     }
@@ -171,7 +171,7 @@ export default function EvolutionGraph(props) {
         Or
         <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
           {evoImages.map((image, index) => (
-            <img key={index} src={useBaseUrl(image)} width="40" alt={image} title={image} />
+            <img key={index} src={image} width="40" alt={image} title={image} />
           ))}
         </Box>
         {methodDetail.method}
