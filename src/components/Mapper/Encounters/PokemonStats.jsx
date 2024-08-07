@@ -91,13 +91,15 @@ export const PokemonStats = ({ baseStats, trainerPokemon, smallest = false }) =>
           </Box>
         </>
         {pokemonStatValues.map((stat) => {
+          const statIV = pokemonIVs[stat.key];
+          const statEV = pokemonEVs[stat.key]
           const statValue = calcStat(
             baseStats[stat.key],
             stat.key,
             stat.isHpStat,
             trainerPokemon.level,
-            pokemonIVs[stat.key],
-            pokemonEVs[stat.key],
+            statIV,
+            statEV,
             trainerPokemon.nature,
           )
           const { width, color } = getStatBarValues(statValue);

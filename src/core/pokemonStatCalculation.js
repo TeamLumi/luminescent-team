@@ -52,15 +52,17 @@ const natureModifiers = {
 };
 
 function calculateHpStat(baseStat, iv, ev, level) {
-  return Math.floor(((2 * baseStat + iv + Math.floor(ev / 4)) * level) / 100 + 10);
+  const firstLayer = (2 * baseStat) + iv + Math.floor(ev / 4);
+  const secondLayer = firstLayer * level;
+  const thirdLayer = secondLayer / 100;
+  const lastLayer = Math.floor(thirdLayer) + level + 10;
+  return lastLayer;
 }
 
 export const calcStat = (baseStat, currentStat, isHP, level, iv = 0, ev = 0, nature) => {
   if (isHP) {
     if (baseStat === 1) return 1;
-    return Math.floor(
-      calculateHpStat(baseStat, iv, ev, level)
-    );
+    return calculateHpStat(baseStat, iv, ev, level);
   }
 
   let val = Math.floor((Math.floor(2 * baseStat + iv + Math.floor(ev / 4)) * level) / 100 + 5);
