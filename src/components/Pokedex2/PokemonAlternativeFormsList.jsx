@@ -5,6 +5,7 @@ import { ImageWithFallback } from '../common/ImageWithFallback';
 import { getPokemonIdFromName } from '../../../plugins/pokedex-data-plugin/dex/name';
 import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../../plugins/pokedex-data-plugin/dex/name';
 import { useGlobalState } from '../common/GlobalState';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
   const [globalState, updateMode] = useGlobalState();
@@ -23,7 +24,7 @@ export const PokemonAlternativeFormsList = ({ pokemonForms }) => {
                   fallbackSrc={pokemonForms[0].imageSrc}
                   height={30}
                 />
-                <Link to={`/pokedex/${pokemonPath}`}>
+                <Link to={useBaseUrl(`/pokedex/${pokemonPath}`)}>
                   <Typography marginLeft="8px">
                     {form.name}
                     {i < pokemonForms.length - 1 && ','}

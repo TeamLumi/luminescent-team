@@ -250,7 +250,7 @@ export default function EvolutionGraph(props) {
           return (
             index === 0 ? (
               <Box className={styles.imageRow} key={monsno}>
-                <Link to={`/pokedex/${pokemonPath}`}>
+                <Link to={useBaseUrl(`/pokedex/${pokemonPath}`)}>
                   <ImageWithFallback 
                     key={pokemonId}
                     src={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsno, formNos[index])}`)}
@@ -287,7 +287,7 @@ export default function EvolutionGraph(props) {
         <Grid container className={styles.evolutionContainer}>
           <Grid item xs={12} className={styles.scrollContent}>
             <Grid item xs={12} sm={6} className={styles.startPokemon}>
-              <Link to={`/pokedex/${firstPokemonPath}`}>
+              <Link to={useBaseUrl(`/pokedex/${firstPokemonPath}`)}>
                 <ImageWithFallback
                   key={pokemonID}
                   src={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsNo, formNo)}`)}

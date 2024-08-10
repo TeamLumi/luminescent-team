@@ -26,8 +26,8 @@ function getPokemon(pokemonId, mode = GAMEDATA2) {
     spe: p.basic_agi,
   };
   const baseStatsTotal = Object.values(baseStats).reduce((total, stat) => total + stat, 0);
-  const weight = getWeight(pokemonId);
-  const height = getHeight(pokemonId);
+  const weight = getWeight(pokemonId, mode);
+  const height = getHeight(pokemonId, mode);
   const type1 = getTypeName(p.type1);
   const type2 = getTypeName(p.type2);
   const type1Id = p.type1;
