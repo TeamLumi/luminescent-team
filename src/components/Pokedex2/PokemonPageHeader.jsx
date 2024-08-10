@@ -17,6 +17,8 @@ const PokemonPageHeader = ({ pokemon, pokemon3 }) => {
       <meta name="og:site_name" content={siteConfig.title} />
       <meta name="twitter:card" content="summary" />
       <meta property='og:image' itemProp="image primaryImageOfPage" content={metaImage} />
+      <meta property='description' content={pokemonInfo.dexDescription} />
+      <meta property='og:description' content={pokemonInfo.dexDescription} />
     </Head>
   );
 };
