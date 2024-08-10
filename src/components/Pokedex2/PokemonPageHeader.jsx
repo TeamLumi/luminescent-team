@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Head from '@docusaurus/Head';
-import { useGlobalState } from '../components/common/GlobalState';
+import { useGlobalState } from '../common/GlobalState';
 
 const PokemonPageHeader = ({ pokemon, pokemon3 }) => {
   const [globalState] = useGlobalState();
