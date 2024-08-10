@@ -1,7 +1,7 @@
 import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { useGlobalState } from "../common/GlobalState";
-import { Helmet } from "react-helmet";
+import Head from '@docusaurus/Head';
 
 const PokemonPageHeader = ({ pokemon, pokemon3 }) => {
   const [globalState, updateMode] = useGlobalState();
@@ -12,7 +12,7 @@ const PokemonPageHeader = ({ pokemon, pokemon3 }) => {
     `https://luminescent.team${pokemonInfo.forms[0].imageSrc}`;
 
   return (
-    <Helmet>
+    <Head>
       <meta property="description" content={pokemonInfo.dexDescription} />
       <meta property="og:title" content={pokemonInfo.name} data-rh="true" />
       <meta property="og:description" content={pokemonInfo.dexDescription} />
@@ -22,7 +22,7 @@ const PokemonPageHeader = ({ pokemon, pokemon3 }) => {
       <meta name="twitter:card" content="summary" />
       <meta property="twitter:description" content={pokemonInfo.dexDescription} />
       <meta property="twitter:image" itemProp="image primaryImageOfPage" content={metaImage} />
-    </Helmet>
+    </Head>
   );
 };
 
