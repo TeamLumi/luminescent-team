@@ -12,9 +12,7 @@ export default function PokemonPage({ pokemon, pokemonList, pokemon3, pokemonLis
   }
 
   return (
-    <Layout
-      description={pokemon.dexDescription}
-    >
+    <Layout>
       <GlobalState>
         <PokemonPageHeader pokemon={pokemon} pokemon3={pokemon3}/>
         <PokemonPageContent pokemon={pokemon} pokemonNames={pokemonList} pokemon3={pokemon3} pokemonNames3={pokemonList3} />
