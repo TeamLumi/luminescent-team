@@ -61,6 +61,7 @@ function getPokemon(pokemonId) {
   return {
     id,
     monsno,
+    formno,
     name,
     baseStats,
     baseStatsTotal,

@@ -7,6 +7,7 @@ import { PokemonMoveType, TYPE_COLOR_MAP } from './PokemonMovesetList';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { PokemonInfoButton } from './PokedexInfoButton';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 export const PokemonListPageContent = ({ pokemonList }) => {
   const [pokemons, setPokemons] = useState(pokemonList);
@@ -40,13 +41,20 @@ export const PokemonListPageContent = ({ pokemonList }) => {
 
 const PokemonListEntry = ({ pokemon, style }) => {
   const { path } = usePluginData('luminescent-pokedex-data-plugin');
+  const pokemonPath = pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`;
 
   return (
-    <a href={useBaseUrl(`${path}/${pokemon.id}`)} style={{ ...style, textDecoration: 'none' }}>
+    <a href={useBaseUrl(`${path}/${pokemonPath}`)} style={{ ...style, textDecoration: 'none' }}>
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <img src={useBaseUrl(`/img/${pokemon.imageSrc}`)} height={48} />
+            <ImageWithFallback
+              src={useBaseUrl(`/img/${pokemon.imageSrc}`)}
+              fallbackSrc={useBaseUrl(`/img/${pokemon.forms[0].imageSrc}`)}
+              height={48}
+              alt={pokemon.name}
+              title={pokemon.name}
+            />
           </ListItemIcon>
           <Typography>{pokemon.name}</Typography>
           <Box display="flex" flexDirection="row" marginX="8px">
