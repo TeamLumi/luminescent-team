@@ -1,0 +1,1976 @@
+{
+  "Turtwig": [
+    {
+      "routeName": "Route 201",
+      "encounterType": "Starter",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 354
+    },
+    {
+      "routeName": "Sandgem Town",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 429,
+      "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
+    }
+  ],
+  "Chimchar": [
+    {
+      "routeName": "Route 201",
+      "encounterType": "Starter",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 354
+    },
+    {
+      "routeName": "Sandgem Town",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 429,
+      "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
+    }
+  ],
+  "Piplup": [
+    {
+      "routeName": "Route 201",
+      "encounterType": "Starter",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 354
+    },
+    {
+      "routeName": "Sandgem Town",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 429,
+      "link": "https://luminescent.team/docs/special-events/gifts#sinnoh-starters"
+    }
+  ],
+  "Eevee": [
+    {
+      "routeName": "Twinleaf Town",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 422
+    }
+  ],
+  "Pichu": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    }
+  ],
+  "Spiky-eared Pichu": [
+    {
+      "routeName": "Celestic Town",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 40,
+      "maxLevel": 40,
+      "encounterTypeIndex": 0,
+      "zoneId": 456
+    }
+  ],
+  "Cleffa": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    }
+  ],
+  "Igglybuff": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    }
+  ],
+  "Smoochum": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Tyrogue": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    }
+  ],
+  "Elekid": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Magby": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Azurill": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    }
+  ],
+  "Wynaut": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    }
+  ],
+  "Chingling": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Bonsly": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    }
+  ],
+  "Mime Jr.": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    }
+  ],
+  "Munchlax": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Mantyke": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Riolu": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Eterna City (Cynthia)",
+      "encounterType": "Gifts",
+      "encounterRate": "25%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 54,
+      "link": "https://luminescent.team/docs/special-events/gifts#cynthia-egg"
+    },
+    {
+      "routeName": "Iron Island (Riley)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 298,
+      "link": "https://luminescent.team/docs/special-events/gifts#riolu-egg"
+    }
+  ],
+  "Budew": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Eterna City (Cynthia)",
+      "encounterType": "Gifts",
+      "encounterRate": "25%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 54,
+      "link": "https://luminescent.team/docs/special-events/gifts#cynthia-egg"
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Happiny": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Eterna City (Cynthia)",
+      "encounterType": "Gifts",
+      "encounterRate": "25%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 54,
+      "link": "https://luminescent.team/docs/special-events/gifts#cynthia-egg"
+    }
+  ],
+  "Togepi": [
+    {
+      "routeName": "Jubilife City (Trainer School)",
+      "encounterType": "Gifts",
+      "encounterRate": "5%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#trainer-school-egg"
+    },
+    {
+      "routeName": "Eterna City (Cynthia)",
+      "encounterType": "Gifts",
+      "encounterRate": "25%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 54,
+      "link": "https://luminescent.team/docs/special-events/gifts#cynthia-egg"
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Bulbasaur": [
+    {
+      "routeName": "Jubilife City",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#kanto-starters"
+    }
+  ],
+  "Charmander": [
+    {
+      "routeName": "Jubilife City",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#kanto-starters"
+    }
+  ],
+  "Squirtle": [
+    {
+      "routeName": "Jubilife City",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0,
+      "link": "https://luminescent.team/docs/special-events/gifts#kanto-starters"
+    }
+  ],
+  "Wobbuffet": [
+    {
+      "routeName": "Jubilife City (TV Station)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 0
+    }
+  ],
+  "Treecko": [
+    {
+      "routeName": "Oreburgh City",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#hoenn-starters"
+    }
+  ],
+  "Torchic": [
+    {
+      "routeName": "Oreburgh City",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#hoenn-starters"
+    }
+  ],
+  "Mudkip": [
+    {
+      "routeName": "Oreburgh City",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#hoenn-starters"
+    }
+  ],
+  "Beldum": [
+    {
+      "routeName": "Oreburgh City (Steven's House)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38
+    }
+  ],
+  "Omanyte": [
+    {
+      "routeName": "Oreburgh City (Museum)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
+    }
+  ],
+  "Kabuto": [
+    {
+      "routeName": "Oreburgh City (Museum)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
+    }
+  ],
+  "Lileep": [
+    {
+      "routeName": "Oreburgh City (Museum)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
+    }
+  ],
+  "Anorith": [
+    {
+      "routeName": "Oreburgh City (Museum)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
+    }
+  ],
+  "Shieldon": [
+    {
+      "routeName": "Oreburgh City (Museum)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
+    }
+  ],
+  "Cranidos": [
+    {
+      "routeName": "Oreburgh City (Museum)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
+    }
+  ],
+  "Aerodactyl": [
+    {
+      "routeName": "Oreburgh City (Museum)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/gifts#fossils"
+    }
+  ],
+  "Crystal Onix": [
+    {
+      "routeName": "Ravaged Path",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 252
+    }
+  ],
+  "Chikorita": [
+    {
+      "routeName": "Floaroma Town",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 438,
+      "link": "https://luminescent.team/docs/special-events/gifts#johto-starters"
+    }
+  ],
+  "Cyndaquil": [
+    {
+      "routeName": "Floaroma Town",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 438,
+      "link": "https://luminescent.team/docs/special-events/gifts#johto-starters"
+    }
+  ],
+  "Totodile": [
+    {
+      "routeName": "Floaroma Town",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 438,
+      "link": "https://luminescent.team/docs/special-events/gifts#johto-starters"
+    }
+  ],
+  "Porygon": [
+    {
+      "routeName": "Eterna City (Galactic Building)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 65
+    }
+  ],
+  "Gabite": [
+    {
+      "routeName": "Wayward Cave",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 293
+    },
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Stitched Gengar": [
+    {
+      "routeName": "Old Chateau",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 20,
+      "maxLevel": 20,
+      "encounterTypeIndex": 0,
+      "zoneId": 308
+    }
+  ],
+  "Rotom": [
+    {
+      "routeName": "Old Chateau",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 20,
+      "maxLevel": 20,
+      "encounterTypeIndex": 0,
+      "zoneId": 308
+    }
+  ],
+  "Spiritomb": [
+    {
+      "routeName": "Route 209",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 367
+    }
+  ],
+  "Ditto": [
+    {
+      "routeName": "Solaceon Town",
+      "encounterType": "Trade",
+      "encounterRate": "100%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 446,
+      "link": "https://luminescent.team/docs/special-events/trade#starter"
+    }
+  ],
+  "Drifloon": [
+    {
+      "routeName": "Valley Windworks",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 15,
+      "maxLevel": 15,
+      "encounterTypeIndex": 0,
+      "zoneId": 197
+    }
+  ],
+  "Litwick": [
+    {
+      "routeName": "Lost Tower",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 368
+    }
+  ],
+  "Tinkatuff": [
+    {
+      "routeName": "Amity Square",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 96
+    }
+  ],
+  "Clone Venusaur": [
+    {
+      "routeName": "Oreburgh Gate (B1F)",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 75,
+      "maxLevel": 75,
+      "encounterTypeIndex": 0,
+      "zoneId": 256,
+      "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
+    }
+  ],
+  "Clone Charizard": [
+    {
+      "routeName": "Oreburgh Gate (B1F)",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 75,
+      "maxLevel": 75,
+      "encounterTypeIndex": 0,
+      "zoneId": 256,
+      "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
+    }
+  ],
+  "Clone Blastoise": [
+    {
+      "routeName": "Oreburgh Gate (B1F)",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 75,
+      "maxLevel": 75,
+      "encounterTypeIndex": 0,
+      "zoneId": 256,
+      "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
+    }
+  ],
+  "Clone Pikachu": [
+    {
+      "routeName": "Oreburgh Gate (B1F)",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 75,
+      "maxLevel": 75,
+      "encounterTypeIndex": 0,
+      "zoneId": 256,
+      "link": "https://luminescent.team/docs/special-events/static#clone-pokémon"
+    }
+  ],
+  "Azelf": [
+    {
+      "routeName": "Lake Valor Cavern",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 328
+    }
+  ],
+  "Uxie": [
+    {
+      "routeName": "Lake Acuity Cavern",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 331
+    }
+  ],
+  "Mesprit": [
+    {
+      "routeName": "Lake Verity Cavern",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 326
+    }
+  ],
+  "Dialga": [
+    {
+      "routeName": "Spear Pillar",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 216
+    }
+  ],
+  "Palkia": [
+    {
+      "routeName": "Spear Pillar",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 216
+    }
+  ],
+  "Lapras": [
+    {
+      "routeName": "Pastoria City",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 110
+    }
+  ],
+  "Manaphy": [
+    {
+      "routeName": "Pokemon Mansion",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 380,
+      "link": "https://luminescent.team/docs/special-events/gifts#manaphy-egg"
+    }
+  ],
+  "Articuno": [
+    {
+      "routeName": "Mt. Coronet (Summit)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 207
+    }
+  ],
+  "Zapdos": [
+    {
+      "routeName": "Valley Windworks",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 197
+    }
+  ],
+  "Moltres": [
+    {
+      "routeName": "Victory Road 2F",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 245
+    }
+  ],
+  "Mewtwo": [
+    {
+      "routeName": "Oreburgh Gate (B1F)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 256
+    }
+  ],
+  "Mew": [
+    {
+      "routeName": "Route 201",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 354
+    }
+  ],
+  "Raikou": [
+    {
+      "routeName": "Route 208",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 365
+    }
+  ],
+  "Entei": [
+    {
+      "routeName": "Route 211 (East)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 378
+    }
+  ],
+  "Suicune": [
+    {
+      "routeName": "Route 213",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 385
+    }
+  ],
+  "Lugia": [
+    {
+      "routeName": "Route 220",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 485
+    }
+  ],
+  "Ho-Oh": [
+    {
+      "routeName": "Lost Tower",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 368
+    }
+  ],
+  "Celebi": [
+    {
+      "routeName": "Eterna Forest",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 200
+    }
+  ],
+  "Regirock": [
+    {
+      "routeName": "Snowpoint Temple (B4F)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 75,
+      "maxLevel": 75,
+      "encounterTypeIndex": 0,
+      "zoneId": 290
+    }
+  ],
+  "Regice": [
+    {
+      "routeName": "Snowpoint Temple (B3F)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 75,
+      "maxLevel": 75,
+      "encounterTypeIndex": 0,
+      "zoneId": 289
+    }
+  ],
+  "Registeel": [
+    {
+      "routeName": "Snowpoint Temple (B2F)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 75,
+      "maxLevel": 75,
+      "encounterTypeIndex": 0,
+      "zoneId": 288
+    }
+  ],
+  "Latias": [
+    {
+      "routeName": "Fullmoon Island",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 90,
+      "maxLevel": 90,
+      "encounterTypeIndex": 0,
+      "zoneId": 257
+    }
+  ],
+  "Latios": [
+    {
+      "routeName": "Fullmoon Island",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 90,
+      "maxLevel": 90,
+      "encounterTypeIndex": 0,
+      "zoneId": 257
+    }
+  ],
+  "Kyogre": [
+    {
+      "routeName": "Route 213",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 90,
+      "maxLevel": 90,
+      "encounterTypeIndex": 0,
+      "zoneId": 385
+    }
+  ],
+  "Groudon": [
+    {
+      "routeName": "Stark Mountain (Interior)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 90,
+      "maxLevel": 90,
+      "encounterTypeIndex": 0,
+      "zoneId": 261
+    }
+  ],
+  "Rayquaza": [
+    {
+      "routeName": "Pokemon League (Outside)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 90,
+      "maxLevel": 90,
+      "encounterTypeIndex": 0,
+      "zoneId": 167
+    }
+  ],
+  "Jirachi": [
+    {
+      "routeName": "Solaceon Ruins",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 42,
+      "maxLevel": 42,
+      "encounterTypeIndex": 0,
+      "zoneId": 225
+    }
+  ],
+  "Deoxys": [
+    {
+      "routeName": "Veilstone City",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 123
+    }
+  ],
+  "Regigigas": [
+    {
+      "routeName": "Snowpoint Temple (B5F)",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 291
+    }
+  ],
+  "Giratina": [
+    {
+      "routeName": "Turnback Cave",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 85,
+      "maxLevel": 85,
+      "encounterTypeIndex": 0,
+      "zoneId": 265
+    }
+  ],
+  "Cresselia": [
+    {
+      "routeName": "Fullmoon Island",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 257
+    }
+  ],
+  "Darkrai": [
+    {
+      "routeName": "Newmoon Island",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 80,
+      "maxLevel": 80,
+      "encounterTypeIndex": 0,
+      "zoneId": 332
+    }
+  ],
+  "Shaymin": [
+    {
+      "routeName": "Flower Paradise",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 75,
+      "maxLevel": 75,
+      "encounterTypeIndex": 0,
+      "zoneId": 285
+    }
+  ],
+  "Arceus": [
+    {
+      "routeName": "Hall of Origin",
+      "encounterType": "Legendaries",
+      "encounterRate": "100%",
+      "minLevel": 100,
+      "maxLevel": 100,
+      "encounterTypeIndex": 0,
+      "zoneId": 218
+    }
+  ],
+  "Spheal": [
+    {
+      "routeName": "Oreburgh City",
+      "encounterType": "Trade",
+      "encounterRate": "100%",
+      "minLevel": "~",
+      "maxLevel": "~",
+      "encounterTypeIndex": 0,
+      "zoneId": 38,
+      "link": "https://luminescent.team/docs/special-events/trade#ponyta"
+    }
+  ],
+  "Chatot": [
+    {
+      "routeName": "Eterna City",
+      "encounterType": "Trade",
+      "encounterRate": "100%",
+      "minLevel": "~",
+      "maxLevel": "~",
+      "encounterTypeIndex": 0,
+      "zoneId": 54,
+      "link": "https://luminescent.team/docs/special-events/trade#snorunt"
+    }
+  ],
+  "Magikarp": [
+    {
+      "routeName": "Route 226",
+      "encounterType": "Trade",
+      "encounterRate": "100%",
+      "minLevel": "~",
+      "maxLevel": "~",
+      "encounterTypeIndex": 0,
+      "zoneId": 487,
+      "link": "https://luminescent.team/docs/special-events/trade#magikarp"
+    }
+  ],
+  "Zubat": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Psyduck": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Machop": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Geodude": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Murkrow": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Bidoof": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Kricketot": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Shinx": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Pachirisu": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Buneary": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Lickitung": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Magnemite": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Rhyhorn": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Houndoom": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Swablu": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Absol": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Golbat": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Hoothoot": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Bibarel": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Stunky": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Skuntank": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Machoke": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Graveler": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Aipom": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Wingull": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Purugly": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Pelipper": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Luxio": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Glameow": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Wurmple": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Silcoon": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Roselia": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Combee": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Cherubi": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Scyther": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Pinsir": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Buizel": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Shellos": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Gastrodon": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Ralts": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Barboach": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Wooper": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Quagsire": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Tentacool": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Tentacruel": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Gible": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Octillery": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Whiscash": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Onix": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Skorupi": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    },
+    {
+      "routeName": "Floaroma Town",
+      "encounterType": "Trade",
+      "encounterRate": "100%",
+      "minLevel": "~",
+      "maxLevel": "~",
+      "encounterTypeIndex": 0,
+      "zoneId": 438,
+      "link": "https://luminescent.team/docs/special-events/trade#cherubi"
+    }
+  ],
+  "Gligar": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Teddiursa": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Bronzor": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Hippopotas": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Ponyta": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Croagunk": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Swinub": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Gastly": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Misdreavus": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Duskull": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Meditite": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Kadabra": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Girafarig": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Mr. Mime": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Snorunt": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Glalie": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Sneasel": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ],
+  "Snover": [
+    {
+      "routeName": "Underground",
+      "encounterType": "Walking",
+      "encounterRate": "~",
+      "minLevel": 30,
+      "maxLevel": 30,
+      "encounterTypeIndex": 0,
+      "zoneId": 999
+    }
+  ]
+}
