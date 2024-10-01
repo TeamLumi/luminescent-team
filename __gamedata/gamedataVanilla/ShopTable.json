@@ -1,0 +1,2021 @@
+{
+    "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 8537499867073074283
+    },
+    "m_Name": "ShopTable",
+    "FS": [
+        {
+            "ItemNo": 4,
+            "BadgeNum": 0,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 12,
+            "BadgeNum": 0,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 3,
+            "BadgeNum": 3,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 2,
+            "BadgeNum": 5,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 14,
+            "BadgeNum": 0,
+            "ZoneID": 1
+        },
+        {
+            "ItemNo": 14,
+            "BadgeNum": 0,
+            "ZoneID": 39
+        },
+        {
+            "ItemNo": 6,
+            "BadgeNum": 0,
+            "ZoneID": 39
+        },
+        {
+            "ItemNo": 14,
+            "BadgeNum": 0,
+            "ZoneID": 439
+        },
+        {
+            "ItemNo": 6,
+            "BadgeNum": 0,
+            "ZoneID": 439
+        },
+        {
+            "ItemNo": 14,
+            "BadgeNum": 0,
+            "ZoneID": 55
+        },
+        {
+            "ItemNo": 6,
+            "BadgeNum": 0,
+            "ZoneID": 55
+        },
+        {
+            "ItemNo": 8,
+            "BadgeNum": 0,
+            "ZoneID": 55
+        },
+        {
+            "ItemNo": 14,
+            "BadgeNum": 0,
+            "ZoneID": 75
+        },
+        {
+            "ItemNo": 6,
+            "BadgeNum": 0,
+            "ZoneID": 75
+        },
+        {
+            "ItemNo": 8,
+            "BadgeNum": 0,
+            "ZoneID": 75
+        },
+        {
+            "ItemNo": 6,
+            "BadgeNum": 0,
+            "ZoneID": 447
+        },
+        {
+            "ItemNo": 8,
+            "BadgeNum": 0,
+            "ZoneID": 447
+        },
+        {
+            "ItemNo": 13,
+            "BadgeNum": 0,
+            "ZoneID": 447
+        },
+        {
+            "ItemNo": 8,
+            "BadgeNum": 0,
+            "ZoneID": 111
+        },
+        {
+            "ItemNo": 13,
+            "BadgeNum": 0,
+            "ZoneID": 111
+        },
+        {
+            "ItemNo": 15,
+            "BadgeNum": 0,
+            "ZoneID": 111
+        },
+        {
+            "ItemNo": 13,
+            "BadgeNum": 0,
+            "ZoneID": 160
+        },
+        {
+            "ItemNo": 15,
+            "BadgeNum": 0,
+            "ZoneID": 160
+        },
+        {
+            "ItemNo": 10,
+            "BadgeNum": 0,
+            "ZoneID": 160
+        },
+        {
+            "ItemNo": 15,
+            "BadgeNum": 0,
+            "ZoneID": 25
+        },
+        {
+            "ItemNo": 10,
+            "BadgeNum": 0,
+            "ZoneID": 25
+        },
+        {
+            "ItemNo": 9,
+            "BadgeNum": 0,
+            "ZoneID": 25
+        },
+        {
+            "ItemNo": 11,
+            "BadgeNum": 0,
+            "ZoneID": 143
+        },
+        {
+            "ItemNo": 14,
+            "BadgeNum": 0,
+            "ZoneID": 171
+        },
+        {
+            "ItemNo": 6,
+            "BadgeNum": 0,
+            "ZoneID": 171
+        },
+        {
+            "ItemNo": 8,
+            "BadgeNum": 0,
+            "ZoneID": 171
+        },
+        {
+            "ItemNo": 13,
+            "BadgeNum": 0,
+            "ZoneID": 171
+        },
+        {
+            "ItemNo": 15,
+            "BadgeNum": 0,
+            "ZoneID": 171
+        },
+        {
+            "ItemNo": 10,
+            "BadgeNum": 0,
+            "ZoneID": 171
+        },
+        {
+            "ItemNo": 9,
+            "BadgeNum": 0,
+            "ZoneID": 171
+        },
+        {
+            "ItemNo": 11,
+            "BadgeNum": 0,
+            "ZoneID": 171
+        },
+        {
+            "ItemNo": 14,
+            "BadgeNum": 0,
+            "ZoneID": 405
+        },
+        {
+            "ItemNo": 6,
+            "BadgeNum": 0,
+            "ZoneID": 405
+        },
+        {
+            "ItemNo": 8,
+            "BadgeNum": 0,
+            "ZoneID": 405
+        },
+        {
+            "ItemNo": 13,
+            "BadgeNum": 0,
+            "ZoneID": 405
+        },
+        {
+            "ItemNo": 15,
+            "BadgeNum": 0,
+            "ZoneID": 405
+        },
+        {
+            "ItemNo": 10,
+            "BadgeNum": 0,
+            "ZoneID": 405
+        },
+        {
+            "ItemNo": 9,
+            "BadgeNum": 0,
+            "ZoneID": 405
+        },
+        {
+            "ItemNo": 11,
+            "BadgeNum": 0,
+            "ZoneID": 405
+        },
+        {
+            "ItemNo": 17,
+            "BadgeNum": 0,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 26,
+            "BadgeNum": 1,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 25,
+            "BadgeNum": 5,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 24,
+            "BadgeNum": 7,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 23,
+            "BadgeNum": 8,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 28,
+            "BadgeNum": 3,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 18,
+            "BadgeNum": 0,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 22,
+            "BadgeNum": 0,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 21,
+            "BadgeNum": 1,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 19,
+            "BadgeNum": 1,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 20,
+            "BadgeNum": 1,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 27,
+            "BadgeNum": 5,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 78,
+            "BadgeNum": 1,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 79,
+            "BadgeNum": 0,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 76,
+            "BadgeNum": 3,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 77,
+            "BadgeNum": 7,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 38,
+            "BadgeNum": 0,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 39,
+            "BadgeNum": 7,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 40,
+            "BadgeNum": 7,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 41,
+            "BadgeNum": 0,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 51,
+            "BadgeNum": 6,
+            "ZoneID": -1
+        },
+        {
+            "ItemNo": 53,
+            "BadgeNum": 6,
+            "ZoneID": -1
+        }
+    ],
+    "FixedShop": [
+        {
+            "ItemNo": 94,
+            "ShopID": 0
+        },
+        {
+            "ItemNo": 80,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 81,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 82,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 83,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 84,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 85,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 107,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 108,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 109,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 110,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 849,
+            "ShopID": 1
+        },
+        {
+            "ItemNo": 34,
+            "ShopID": 2
+        },
+        {
+            "ItemNo": 35,
+            "ShopID": 2
+        },
+        {
+            "ItemNo": 37,
+            "ShopID": 2
+        },
+        {
+            "ItemNo": 17,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 26,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 25,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 24,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 28,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 18,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 22,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 19,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 20,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 21,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 27,
+            "ShopID": 3
+        },
+        {
+            "ItemNo": 4,
+            "ShopID": 4
+        },
+        {
+            "ItemNo": 3,
+            "ShopID": 4
+        },
+        {
+            "ItemNo": 2,
+            "ShopID": 4
+        },
+        {
+            "ItemNo": 78,
+            "ShopID": 4
+        },
+        {
+            "ItemNo": 63,
+            "ShopID": 4
+        },
+        {
+            "ItemNo": 79,
+            "ShopID": 4
+        },
+        {
+            "ItemNo": 76,
+            "ShopID": 4
+        },
+        {
+            "ItemNo": 77,
+            "ShopID": 4
+        },
+        {
+            "ItemNo": 59,
+            "ShopID": 5
+        },
+        {
+            "ItemNo": 57,
+            "ShopID": 5
+        },
+        {
+            "ItemNo": 58,
+            "ShopID": 5
+        },
+        {
+            "ItemNo": 55,
+            "ShopID": 5
+        },
+        {
+            "ItemNo": 56,
+            "ShopID": 5
+        },
+        {
+            "ItemNo": 60,
+            "ShopID": 5
+        },
+        {
+            "ItemNo": 61,
+            "ShopID": 5
+        },
+        {
+            "ItemNo": 62,
+            "ShopID": 5
+        },
+        {
+            "ItemNo": 46,
+            "ShopID": 6
+        },
+        {
+            "ItemNo": 47,
+            "ShopID": 6
+        },
+        {
+            "ItemNo": 49,
+            "ShopID": 6
+        },
+        {
+            "ItemNo": 52,
+            "ShopID": 6
+        },
+        {
+            "ItemNo": 48,
+            "ShopID": 6
+        },
+        {
+            "ItemNo": 45,
+            "ShopID": 6
+        },
+        {
+            "ItemNo": 82,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 849,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 85,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 81,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 80,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 83,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 84,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 109,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 108,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 229,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 238,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 110,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 107,
+            "ShopID": 7
+        },
+        {
+            "ItemNo": 6,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 7,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 8,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 9,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 10,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 11,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 13,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 14,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 15,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 16,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 492,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 493,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 494,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 495,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 496,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 497,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 498,
+            "ShopID": 8
+        },
+        {
+            "ItemNo": 4,
+            "ShopID": 9
+        },
+        {
+            "ItemNo": 4,
+            "ShopID": 10
+        },
+        {
+            "ItemNo": 30,
+            "ShopID": 11
+        },
+        {
+            "ItemNo": 31,
+            "ShopID": 11
+        },
+        {
+            "ItemNo": 32,
+            "ShopID": 11
+        },
+        {
+            "ItemNo": 33,
+            "ShopID": 12
+        },
+        {
+            "ItemNo": 80,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 81,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 82,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 83,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 84,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 85,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 107,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 108,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 109,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 110,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 849,
+            "ShopID": 13
+        },
+        {
+            "ItemNo": 235,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 324,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 322,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 323,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 537,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 321,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 326,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 327,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 325,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 252,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 233,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 229,
+            "ShopID": 14
+        },
+        {
+            "ItemNo": 201,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 202,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 203,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 204,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 205,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 206,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 207,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 208,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 209,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 210,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 211,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 212,
+            "ShopID": 15
+        },
+        {
+            "ItemNo": 169,
+            "ShopID": 16
+        },
+        {
+            "ItemNo": 170,
+            "ShopID": 16
+        },
+        {
+            "ItemNo": 171,
+            "ShopID": 16
+        },
+        {
+            "ItemNo": 172,
+            "ShopID": 16
+        },
+        {
+            "ItemNo": 173,
+            "ShopID": 16
+        },
+        {
+            "ItemNo": 174,
+            "ShopID": 16
+        },
+        {
+            "ItemNo": 275,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 265,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 276,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 277,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 269,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 268,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 267,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 270,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 272,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 273,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 234,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 219,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 271,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 214,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 221,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 233,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 226,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 227,
+            "ShopID": 17
+        },
+        {
+            "ItemNo": 391,
+            "ShopID": 17
+        }
+    ],
+    "FlowerShop": [
+        {
+            "SealNo": 21,
+            "ItemNo": 149,
+            "Price": 3
+        },
+        {
+            "SealNo": 46,
+            "ItemNo": 150,
+            "Price": 3
+        },
+        {
+            "SealNo": 1,
+            "ItemNo": 151,
+            "Price": 3
+        },
+        {
+            "SealNo": 32,
+            "ItemNo": 152,
+            "Price": 3
+        },
+        {
+            "SealNo": 28,
+            "ItemNo": 153,
+            "Price": 3
+        },
+        {
+            "SealNo": 18,
+            "ItemNo": 154,
+            "Price": 3
+        },
+        {
+            "SealNo": 42,
+            "ItemNo": 155,
+            "Price": 3
+        },
+        {
+            "SealNo": 34,
+            "ItemNo": 156,
+            "Price": 3
+        },
+        {
+            "SealNo": 11,
+            "ItemNo": 157,
+            "Price": 3
+        },
+        {
+            "SealNo": 14,
+            "ItemNo": 158,
+            "Price": 3
+        },
+        {
+            "SealNo": 59,
+            "ItemNo": 164,
+            "Price": 10
+        },
+        {
+            "SealNo": 53,
+            "ItemNo": 165,
+            "Price": 10
+        },
+        {
+            "SealNo": 70,
+            "ItemNo": 166,
+            "Price": 10
+        },
+        {
+            "SealNo": 66,
+            "ItemNo": 167,
+            "Price": 10
+        },
+        {
+            "SealNo": 58,
+            "ItemNo": 175,
+            "Price": 10
+        },
+        {
+            "SealNo": 50,
+            "ItemNo": 176,
+            "Price": 10
+        },
+        {
+            "SealNo": 64,
+            "ItemNo": 177,
+            "Price": 10
+        },
+        {
+            "SealNo": 71,
+            "ItemNo": 178,
+            "Price": 10
+        }
+    ],
+    "RibonShop": [
+        {
+            "Price": 10000
+        },
+        {
+            "Price": 10000
+        },
+        {
+            "Price": 999999
+        }
+    ],
+    "SealShop": [
+        {
+            "SealNo": 1,
+            "Price": 50,
+            "Week": 1
+        },
+        {
+            "SealNo": 8,
+            "Price": 50,
+            "Week": 1
+        },
+        {
+            "SealNo": 29,
+            "Price": 50,
+            "Week": 1
+        },
+        {
+            "SealNo": 43,
+            "Price": 50,
+            "Week": 1
+        },
+        {
+            "SealNo": 15,
+            "Price": 100,
+            "Week": 1
+        },
+        {
+            "SealNo": 22,
+            "Price": 100,
+            "Week": 1
+        },
+        {
+            "SealNo": 36,
+            "Price": 100,
+            "Week": 1
+        },
+        {
+            "SealNo": 2,
+            "Price": 50,
+            "Week": 2
+        },
+        {
+            "SealNo": 9,
+            "Price": 50,
+            "Week": 2
+        },
+        {
+            "SealNo": 30,
+            "Price": 50,
+            "Week": 2
+        },
+        {
+            "SealNo": 37,
+            "Price": 50,
+            "Week": 2
+        },
+        {
+            "SealNo": 44,
+            "Price": 50,
+            "Week": 2
+        },
+        {
+            "SealNo": 16,
+            "Price": 100,
+            "Week": 2
+        },
+        {
+            "SealNo": 23,
+            "Price": 100,
+            "Week": 2
+        },
+        {
+            "SealNo": 3,
+            "Price": 50,
+            "Week": 3
+        },
+        {
+            "SealNo": 10,
+            "Price": 50,
+            "Week": 3
+        },
+        {
+            "SealNo": 31,
+            "Price": 50,
+            "Week": 3
+        },
+        {
+            "SealNo": 38,
+            "Price": 50,
+            "Week": 3
+        },
+        {
+            "SealNo": 45,
+            "Price": 50,
+            "Week": 3
+        },
+        {
+            "SealNo": 17,
+            "Price": 100,
+            "Week": 3
+        },
+        {
+            "SealNo": 24,
+            "Price": 100,
+            "Week": 3
+        },
+        {
+            "SealNo": 4,
+            "Price": 50,
+            "Week": 4
+        },
+        {
+            "SealNo": 25,
+            "Price": 50,
+            "Week": 4
+        },
+        {
+            "SealNo": 32,
+            "Price": 50,
+            "Week": 4
+        },
+        {
+            "SealNo": 39,
+            "Price": 50,
+            "Week": 4
+        },
+        {
+            "SealNo": 46,
+            "Price": 50,
+            "Week": 4
+        },
+        {
+            "SealNo": 11,
+            "Price": 100,
+            "Week": 4
+        },
+        {
+            "SealNo": 18,
+            "Price": 100,
+            "Week": 4
+        },
+        {
+            "SealNo": 26,
+            "Price": 50,
+            "Week": 5
+        },
+        {
+            "SealNo": 33,
+            "Price": 50,
+            "Week": 5
+        },
+        {
+            "SealNo": 40,
+            "Price": 50,
+            "Week": 5
+        },
+        {
+            "SealNo": 47,
+            "Price": 50,
+            "Week": 5
+        },
+        {
+            "SealNo": 5,
+            "Price": 100,
+            "Week": 5
+        },
+        {
+            "SealNo": 12,
+            "Price": 100,
+            "Week": 5
+        },
+        {
+            "SealNo": 19,
+            "Price": 100,
+            "Week": 5
+        },
+        {
+            "SealNo": 27,
+            "Price": 50,
+            "Week": 6
+        },
+        {
+            "SealNo": 34,
+            "Price": 50,
+            "Week": 6
+        },
+        {
+            "SealNo": 41,
+            "Price": 50,
+            "Week": 6
+        },
+        {
+            "SealNo": 48,
+            "Price": 50,
+            "Week": 6
+        },
+        {
+            "SealNo": 6,
+            "Price": 100,
+            "Week": 6
+        },
+        {
+            "SealNo": 13,
+            "Price": 100,
+            "Week": 6
+        },
+        {
+            "SealNo": 20,
+            "Price": 100,
+            "Week": 6
+        },
+        {
+            "SealNo": 7,
+            "Price": 50,
+            "Week": 0
+        },
+        {
+            "SealNo": 49,
+            "Price": 50,
+            "Week": 0
+        },
+        {
+            "SealNo": 28,
+            "Price": 50,
+            "Week": 0
+        },
+        {
+            "SealNo": 42,
+            "Price": 50,
+            "Week": 0
+        },
+        {
+            "SealNo": 14,
+            "Price": 100,
+            "Week": 0
+        },
+        {
+            "SealNo": 21,
+            "Price": 100,
+            "Week": 0
+        },
+        {
+            "SealNo": 35,
+            "Price": 100,
+            "Week": 0
+        }
+    ],
+    "BPShop": [
+        {
+            "ItemNo": 1606,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 645,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 795,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 50,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 51,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 46,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 49,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 47,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 52,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 48,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 45,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 231,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 289,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 290,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 291,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 292,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 293,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 294,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 169,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 170,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 171,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 172,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 173,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 174,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 270,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 272,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 273,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 214,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 219,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 271,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 213,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 220,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 297,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 287,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 266,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 230,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 275,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 232,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 269,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 256,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 326,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 327,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 321,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 325,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 252,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 324,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1231,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1232,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1233,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1234,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1235,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1236,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1237,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1238,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1239,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1240,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1241,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1242,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1243,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1244,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1245,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1246,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1247,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1248,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1249,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1250,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 1251,
+            "NPCID": 0
+        },
+        {
+            "ItemNo": 331,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 333,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 335,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 353,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 357,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 358,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 363,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 367,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 372,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 380,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 386,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 388,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 398,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 400,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 408,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 420,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 421,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 422,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 423,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 424,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 425,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 426,
+            "NPCID": 1
+        },
+        {
+            "ItemNo": 427,
+            "NPCID": 1
+        }
+    ],
+    "OtenkiShop": [
+        {
+            "ItemNo": 645,
+            "RequestItem": 93,
+            "Price": 3
+        },
+        {
+            "ItemNo": 1606,
+            "RequestItem": 93,
+            "Price": 5
+        },
+        {
+            "ItemNo": 795,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 796,
+            "RequestItem": 93,
+            "Price": 5
+        },
+        {
+            "ItemNo": 1231,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1232,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1233,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1234,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1235,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1236,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1237,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1238,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1239,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1240,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1241,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1242,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1243,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1244,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1245,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1246,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1247,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1248,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1249,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 1250,
+            "RequestItem": 93,
+            "Price": 1
+        },
+        {
+            "ItemNo": 216,
+            "RequestItem": 93,
+            "Price": 1
+        }
+    ],
+    "BoutiqueShop": [
+        {
+            "DressNo": 2,
+            "OpenDress": 1000,
+            "DressGet": 1247,
+            "Price": 8500
+        },
+        {
+            "DressNo": 3,
+            "OpenDress": 1000,
+            "DressGet": 1248,
+            "Price": 100
+        },
+        {
+            "DressNo": 103,
+            "OpenDress": 1000,
+            "DressGet": 1248,
+            "Price": 100
+        },
+        {
+            "DressNo": 4,
+            "OpenDress": 1000,
+            "DressGet": 1249,
+            "Price": 21000
+        },
+        {
+            "DressNo": 5,
+            "OpenDress": 257,
+            "DressGet": 1250,
+            "Price": 98000
+        },
+        {
+            "DressNo": 6,
+            "OpenDress": 257,
+            "DressGet": 1251,
+            "Price": 98000
+        },
+        {
+            "DressNo": 7,
+            "OpenDress": 257,
+            "DressGet": 1252,
+            "Price": 45000
+        },
+        {
+            "DressNo": 9,
+            "OpenDress": 257,
+            "DressGet": 1254,
+            "Price": 50000
+        },
+        {
+            "DressNo": 10,
+            "OpenDress": 257,
+            "DressGet": 1255,
+            "Price": 34000
+        },
+        {
+            "DressNo": 11,
+            "OpenDress": 257,
+            "DressGet": 1256,
+            "Price": 86000
+        },
+        {
+            "DressNo": 12,
+            "OpenDress": 257,
+            "DressGet": 1257,
+            "Price": 120000
+        },
+        {
+            "DressNo": 102,
+            "OpenDress": 1000,
+            "DressGet": 1247,
+            "Price": 8500
+        },
+        {
+            "DressNo": 104,
+            "OpenDress": 1000,
+            "DressGet": 1249,
+            "Price": 21000
+        },
+        {
+            "DressNo": 105,
+            "OpenDress": 257,
+            "DressGet": 1250,
+            "Price": 98000
+        },
+        {
+            "DressNo": 106,
+            "OpenDress": 257,
+            "DressGet": 1251,
+            "Price": 98000
+        },
+        {
+            "DressNo": 107,
+            "OpenDress": 257,
+            "DressGet": 1252,
+            "Price": 45000
+        },
+        {
+            "DressNo": 109,
+            "OpenDress": 257,
+            "DressGet": 1254,
+            "Price": 50000
+        },
+        {
+            "DressNo": 110,
+            "OpenDress": 257,
+            "DressGet": 1255,
+            "Price": 34000
+        },
+        {
+            "DressNo": 111,
+            "OpenDress": 257,
+            "DressGet": 1256,
+            "Price": 86000
+        },
+        {
+            "DressNo": 112,
+            "OpenDress": 257,
+            "DressGet": 1257,
+            "Price": 120000
+        }
+    ],
+    "PalParkShop": [
+        {
+            "ItemNo": 492,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 3,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 493,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 3,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 494,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 3,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 495,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 11,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 496,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 15,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 497,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 3,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 498,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 7,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 499,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 15,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 576,
+            "ItemNo2": 4,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 7,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 16,
+            "ItemNo2": 12,
+            "Price": 10,
+            "ShopID": 200,
+            "ParkNameID": 7,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 851,
+            "ItemNo2": 2,
+            "Price": 3,
+            "ShopID": 200,
+            "ParkNameID": 7,
+            "ParkNameNazo": 1
+        },
+        {
+            "ItemNo": 796,
+            "ItemNo2": 1809,
+            "Price": 3,
+            "ShopID": 201,
+            "ParkNameID": 15,
+            "ParkNameNazo": 2
+        },
+        {
+            "ItemNo": 795,
+            "ItemNo2": 1809,
+            "Price": 1,
+            "ShopID": 201,
+            "ParkNameID": 15,
+            "ParkNameNazo": 2
+        }
+    ],
+    "TobariDepartment4FShop": [
+        {
+            "UgItemID": 370,
+            "price": 1000,
+            "ShopID": 0
+        },
+        {
+            "UgItemID": 374,
+            "price": 1000,
+            "ShopID": 0
+        },
+        {
+            "UgItemID": 377,
+            "price": 1000,
+            "ShopID": 0
+        },
+        {
+            "UgItemID": 381,
+            "price": 1000,
+            "ShopID": 0
+        },
+        {
+            "UgItemID": 372,
+            "price": 1000,
+            "ShopID": 1
+        },
+        {
+            "UgItemID": 375,
+            "price": 1000,
+            "ShopID": 1
+        }
+    ]
+}

@@ -1,3 +1,51 @@
+/******************** Vanilla Gamedata **********************/
+//All the constant numbers
+const PersonalTableVanilla = require('./gamedataVanilla/PersonalTable.json');
+const GrowTableVanilla = require('./gamedataVanilla/GrowTable.json');
+const EvolveTableVanilla = require('./gamedataVanilla/EvolveTable.json');
+const EggMovesTableVanilla = require('./gamedataVanilla/TamagoWazaTable.json');
+const LearnsetTableVanilla = require('./gamedataVanilla/WazaOboeTable.json');
+const MovesTableVanilla = require('./gamedataVanilla/WazaTable.json');
+const ItemTableVanilla = require('./gamedataVanilla/ItemTable.json');
+const ShopTableVanilla = require('./gamedataVanilla/ShopTable.json');
+const EvolutionDataVanilla = require('./gamedataVanilla/evolution.json');
+
+//All the Location files
+const displayNamesVanilla =  require('./gamedataVanilla/english_dp_fld_areaname_display.json');
+const areaNamesVanilla =  require('./gamedataVanilla/english_dp_fld_areaname.json');
+const mapInfoVanilla =  require('./gamedataVanilla/MapInfo.json');
+const encounterLocationsVanilla =  require('./gamedataVanilla/encounter_locations.json');
+const pokemonLocationsVanilla =  require('./gamedataVanilla/pokemon_locations.json');
+const trainerLocationsVanilla =  require('./gamedataVanilla/Mapper_Trainer_Output.json');
+const field_itemsVanilla =  require('./gamedataVanilla/item_list.json');
+const hidden_itemsVanilla =  require('./gamedataVanilla/hide_item_list.json');
+const staticLocationsVanilla =  require('./gamedataVanilla/static_pokemon_locations.json');
+const staticAreaLocationsVanilla =  require('./gamedataVanilla/static_area_locations.json');
+
+//All the Pokemon english files
+const basePokemonNamesVanilla = require('./gamedataVanilla/english_ss_monsname.json');
+const formPokemonNamesVanilla = require('./gamedataVanilla/english_ss_zkn_form.json');
+const pokemonHeightVanilla = require('./gamedataVanilla/english_ss_zkn_height.json');
+const pokemonWeightVanilla = require('./gamedataVanilla/english_ss_zkn_weight.json');
+const pokemonDexTypeVanilla = require('./gamedataVanilla/english_ss_zkn_type.json');
+const PokedexInfoVanilla = require('./gamedataVanilla/english_dp_pokedex_diamond.json');
+
+//All the other english files
+const natureNamesVanilla = require('./gamedataVanilla/english_ss_seikaku.json');
+const abilityNamesVanilla = require('./gamedataVanilla/english_ss_tokusei.json');
+const abilityInfoVanilla = require('./gamedataVanilla/english_ss_tokuseiinfo.json');
+const typeNameVanilla = require('./gamedataVanilla/english_ss_typename.json');
+const moveNamesVanilla = require('./gamedataVanilla/english_ss_wazaname.json');
+const moveInfoVanilla = require('./gamedataVanilla/english_ss_wazainfo.json');
+const itemNamesVanilla = require('./gamedataVanilla/english_ss_itemname.json');
+
+//Custom files
+const moveEnumVanilla = require('./gamedataVanilla/moveEnum.json');
+const smogonMovesVanilla = require('./gamedataVanilla/smogonMoves.json');
+const tutorMovesVanilla = require('./gamedataVanilla/tutorMoves.json');
+const ItemMapVanilla = require('./gamedataVanilla/item_map.json');
+const FixedShopVanilla = require('./gamedataVanilla/fixed_shop.json');
+
 /******************** 2.0 Gamedata **********************/
 //All the constant numbers
 const PersonalTable2 = require('./gamedata2.0/PersonalTable.json');
@@ -94,154 +142,192 @@ const ItemMap3 = require('./gamedata3.0/item_map.json');
 const FixedShop3 = require('./gamedata3.0/fixed_shop.json');
 
 /******************** Gamedata Exports **********************/
+const GAMEDATAV = "vanilla";
 const GAMEDATA2 = "2.0";
 const GAMEDATA3 = "3.0";
 
 const PersonalTable = {
+  [GAMEDATAV]: PersonalTableVanilla,
   [GAMEDATA2]: PersonalTable2,
   [GAMEDATA3]: PersonalTable3,
 };
 const GrowTable = {
+  [GAMEDATAV]: GrowTableVanilla,
   [GAMEDATA2]: GrowTable2,
   [GAMEDATA3]: GrowTable3,
 };
 const EvolveTable = {
+  [GAMEDATAV]: EvolveTableVanilla,
   [GAMEDATA2]: EvolveTable2,
   [GAMEDATA3]: EvolveTable3,
 };
 const EggMovesTable = {
+  [GAMEDATAV]: EggMovesTableVanilla,
   [GAMEDATA2]: EggMovesTable2,
   [GAMEDATA3]: EggMovesTable3,
 };
 const LearnsetTable = {
+  [GAMEDATAV]: LearnsetTableVanilla,
   [GAMEDATA2]: LearnsetTable2,
   [GAMEDATA3]: LearnsetTable3,
 };
 const MovesTable = {
+  [GAMEDATAV]: MovesTableVanilla,
   [GAMEDATA2]: MovesTable2,
   [GAMEDATA3]: MovesTable3,
 };
 const EvolutionData = {
+  [GAMEDATAV]: EvolutionDataVanilla,
   [GAMEDATA2]: EvolutionData2,
   [GAMEDATA3]: EvolutionData3,
 };
 const BasePokemonNames = {
+  [GAMEDATAV]: basePokemonNamesVanilla,
   [GAMEDATA2]: basePokemonNames2,
   [GAMEDATA3]: basePokemonNames3,
 };
 const FormPokemonNames = {
+  [GAMEDATAV]: formPokemonNamesVanilla,
   [GAMEDATA2]: formPokemonNames2,
   [GAMEDATA3]: formPokemonNames3,
 };
 const PokemonHeight = {
+  [GAMEDATAV]: pokemonHeightVanilla,
   [GAMEDATA2]: pokemonHeight2,
   [GAMEDATA3]: pokemonHeight3,
 };
 const PokemonWeight = {
+  [GAMEDATAV]: pokemonWeightVanilla,
   [GAMEDATA2]: pokemonWeight2,
   [GAMEDATA3]: pokemonWeight3,
 };
 const PokemonDexType = {
+  [GAMEDATAV]: pokemonDexTypeVanilla,
   [GAMEDATA2]: pokemonDexType2,
   [GAMEDATA3]: pokemonDexType3,
 };
 const PokedexInfo = {
+  [GAMEDATAV]: PokedexInfoVanilla,
   [GAMEDATA2]: PokedexInfo2,
   [GAMEDATA3]: PokedexInfo3,
 };
 const NatureNames = {
+  [GAMEDATAV]: natureNamesVanilla,
   [GAMEDATA2]: natureNames2,
   [GAMEDATA3]: natureNames3,
 };
 const AbilityNames = {
+  [GAMEDATAV]: abilityNamesVanilla,
   [GAMEDATA2]: abilityNames2,
   [GAMEDATA3]: abilityNames3,
 };
 const AbilityInfo = {
+  [GAMEDATAV]: abilityInfoVanilla,
   [GAMEDATA2]: abilityInfo2,
   [GAMEDATA3]: abilityInfo3,
 };
 const TypeName = {
+  [GAMEDATAV]: typeNameVanilla,
   [GAMEDATA2]: typeName2,
   [GAMEDATA3]: typeName3,
 };
 const MoveNames = {
+  [GAMEDATAV]: moveNamesVanilla,
   [GAMEDATA2]: moveNames2,
   [GAMEDATA3]: moveNames3,
 };
 const MoveInfo = {
+  [GAMEDATAV]: moveInfoVanilla,
   [GAMEDATA2]: moveInfo2,
   [GAMEDATA3]: moveInfo3,
 };
 const ItemTable = {
+  [GAMEDATAV]: ItemTableVanilla,
   [GAMEDATA2]: ItemTable2,
   [GAMEDATA3]: ItemTable3,
 };
 const ItemNames = {
+  [GAMEDATAV]: itemNamesVanilla,
   [GAMEDATA2]: itemNames2,
   [GAMEDATA3]: itemNames3,
 };
 const MoveEnum = {
+  [GAMEDATAV]: moveEnumVanilla,
   [GAMEDATA2]: moveEnum2,
   [GAMEDATA3]: moveEnum3,
 };
 const SmogonMoves = {
+  [GAMEDATAV]: smogonMovesVanilla,
   [GAMEDATA2]: smogonMoves2,
   [GAMEDATA3]: smogonMoves3,
 };
 const TutorMoves = {
+  [GAMEDATAV]: tutorMovesVanilla,
   [GAMEDATA2]: tutorMoves2,
   [GAMEDATA3]: tutorMoves3,
 };
 const DisplayNames = {
+  [GAMEDATAV]: displayNamesVanilla,
   [GAMEDATA2]: displayNames2,
   [GAMEDATA3]: displayNames3,
 };
 const AreaNames = {
+  [GAMEDATAV]: areaNamesVanilla,
   [GAMEDATA2]: areaNames2,
   [GAMEDATA3]: areaNames3,
 };
 const MapInfo = {
+  [GAMEDATAV]: mapInfoVanilla,
   [GAMEDATA2]: mapInfo2,
   [GAMEDATA3]: mapInfo3,
 };
 const EncounterLocations = {
+  [GAMEDATAV]: encounterLocationsVanilla,
   [GAMEDATA2]: encounterLocations2,
   [GAMEDATA3]: encounterLocations3,
 };
 const PokemonLocations = {
+  [GAMEDATAV]: pokemonLocationsVanilla,
   [GAMEDATA2]: pokemonLocations2,
   [GAMEDATA3]: pokemonLocations3,
 };
 const TrainerLocations = {
+  [GAMEDATAV]: trainerLocationsVanilla,
   [GAMEDATA2]: trainerLocations2,
   [GAMEDATA3]: trainerLocations3,
 };
 const FieldItems = {
+  [GAMEDATAV]: field_itemsVanilla,
   [GAMEDATA2]: field_items2,
   [GAMEDATA3]: field_items3,
 };
 const HiddenItems = {
+  [GAMEDATAV]: hidden_itemsVanilla,
   [GAMEDATA2]: hidden_items2,
   [GAMEDATA3]: hidden_items3,
 };
 const StaticLocations = {
+  [GAMEDATAV]: staticLocationsVanilla,
   [GAMEDATA2]: staticLocations2,
   [GAMEDATA3]: staticLocations3,
 };
 const StaticAreaLocations = {
+  [GAMEDATAV]: staticAreaLocationsVanilla,
   [GAMEDATA2]: staticAreaLocations2,
   [GAMEDATA3]: staticAreaLocations3,
 };
 const ShopTable = {
+  [GAMEDATAV]: ShopTableVanilla,
   [GAMEDATA2]: ShopTable2,
   [GAMEDATA3]: ShopTable3,
 };
 const ItemMap = {
+  [GAMEDATAV]: ItemMapVanilla,
   [GAMEDATA2]: ItemMap2,
   [GAMEDATA3]: ItemMap3,
 };
 const FixedShop = {
+  [GAMEDATAV]: FixedShopVanilla,
   [GAMEDATA2]: FixedShop2,
   [GAMEDATA3]: FixedShop3,
 }
