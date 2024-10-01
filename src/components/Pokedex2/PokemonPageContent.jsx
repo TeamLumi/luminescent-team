@@ -65,11 +65,23 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
   return (
     <Container>
       <Container>
-        <Box display="flex" justifyContent="center" marginTop="16px">
-        <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
-        <PokemonInfoButton />
-        {/* <ModeSwitch /> */}
-        {/* Uncomment when 3.0 dex is ready to be released */}
+        <Box
+          sx={{
+            display: { xs: "grid", sm: "flex" },
+            gridTemplate: {
+              xs: `"a b"
+                   "c c"`,
+              sm: "unset"
+            },
+            gap: { xs: ".5rem", sm: "unset" },
+            justifyContent: "center",
+            marginTop: "16px",
+          }}
+        >
+          <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
+          <PokemonInfoButton />
+          <ModeSwitch />
+          {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
       </Container>
       <div className="container">

@@ -6,6 +6,7 @@ import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useGlobalState } from '../common/GlobalState';
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -49,19 +50,29 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 const ModeSwitch = () => {
   const [globalState, updateMode] = useGlobalState();
 
-  const handleChange = () => {
-    const newMode = globalState.mode === "2.0" ? "3.0" : "2.0";
-    updateMode(newMode);
+  const handleChange = (event) => {
+    updateMode(event.target.value);
   };
   return(
-    <Stack direction="row" spacing={1} alignItems="center" marginLeft={2}>
-      <Typography>2.0</Typography>
-      <MaterialUISwitch
-        checked={globalState.mode === "3.0"}
+    <FormControl
+      sx={{
+        marginLeft: {xs: "unset", sm: ".25rem"},
+        gridArea: "c"
+      }}
+    >
+      <InputLabel id='version-selector-label'>Version</InputLabel>
+      <Select
+        labelId='version-selector-label'
+        id='version-selector'
+        value={globalState.mode}
+        label="Version"
         onChange={handleChange}
-      />
-      <Typography>3.0</Typography>
-    </Stack>
+      >
+        <MenuItem value="vanilla">Vanilla BDSP</MenuItem>
+        <MenuItem value="2.0">Luminescent 2.1F</MenuItem>
+        <MenuItem value="3.0">Re:Illuminated</MenuItem>
+      </Select>
+    </FormControl>
   )  
 }
 
