@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './styles.module.css';
 import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
@@ -34,7 +34,12 @@ function padNumberWithZeros(number) {
 
 export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNames3 }) => {
   const [globalState, updateMode] = useGlobalState();
-  const pokemonInfo = globalState.mode === "2.0" ? pokemon : pokemon3;
+  const [pokemonInfo, setPokemonInfo] = useState(globalState.mode === "2.0" ? pokemon : pokemon3);
+
+  useEffect(() => {
+    setPokemonInfo(globalState.mode === "2.0" ? pokemon : pokemon3)
+  }, [globalState.mode]);
+
   const allPokemonNames = globalState.mode === "2.0" ? pokemonNames : pokemonNames3;
   const pokemonId = getPokemonIdFromMonsNoAndForm(pokemonInfo.monsno, pokemonInfo.formno, globalState.mode)
   const pokemon_locations = getRoutesFromPokemonId(pokemonId, globalState.mode);
