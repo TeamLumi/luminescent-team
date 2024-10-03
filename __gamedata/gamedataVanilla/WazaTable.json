@@ -12,7 +12,7 @@
     "Waza": [
         {
             "wazaNo": 0,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 0,
@@ -82,7 +82,7 @@
         },
         {
             "wazaNo": 2,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -117,7 +117,7 @@
         },
         {
             "wazaNo": 3,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -152,7 +152,7 @@
         },
         {
             "wazaNo": 4,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -467,7 +467,7 @@
         },
         {
             "wazaNo": 13,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 2,
@@ -538,12 +538,12 @@
         {
             "wazaNo": 15,
             "isValid": 1,
-            "type": 11,
+            "type": 0,
             "category": 0,
             "damageType": 1,
-            "power": 60,
-            "hitPer": 100,
-            "basePP": 25,
+            "power": 50,
+            "hitPer": 95,
+            "basePP": 30,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -552,7 +552,7 @@
             "sickCont": 0,
             "sickTurnMin": 0,
             "sickTurnMax": 0,
-            "criticalRank": 1,
+            "criticalRank": 0,
             "shrinkPer": 0,
             "aiSeqNo": 0,
             "damageRecoverRatio": 0,
@@ -681,8 +681,8 @@
             "type": 2,
             "category": 0,
             "damageType": 1,
-            "power": 100,
-            "hitPer": 100,
+            "power": 90,
+            "hitPer": 95,
             "basePP": 15,
             "priority": 0,
             "hitCountMax": 0,
@@ -922,7 +922,7 @@
         },
         {
             "wazaNo": 26,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -957,7 +957,7 @@
         },
         {
             "wazaNo": 27,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -1447,7 +1447,7 @@
         },
         {
             "wazaNo": 41,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 4,
             "damageType": 1,
@@ -1727,7 +1727,7 @@
         },
         {
             "wazaNo": 49,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 2,
@@ -2151,9 +2151,9 @@
             "type": 10,
             "category": 6,
             "damageType": 2,
-            "power": 75,
+            "power": 65,
             "hitPer": 100,
-            "basePP": 15,
+            "basePP": 20,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -2186,9 +2186,9 @@
             "type": 14,
             "category": 6,
             "damageType": 2,
-            "power": 75,
+            "power": 65,
             "hitPer": 100,
-            "basePP": 15,
+            "basePP": 20,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -2466,7 +2466,7 @@
             "type": 0,
             "category": 0,
             "damageType": 1,
-            "power": 100,
+            "power": 80,
             "hitPer": 100,
             "basePP": 15,
             "priority": 0,
@@ -2483,13 +2483,13 @@
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
             "target": 0,
-            "rankEffType1": 1,
+            "rankEffType1": 0,
             "rankEffType2": 0,
             "rankEffType3": 0,
-            "rankEffValue1": 1,
+            "rankEffValue1": 0,
             "rankEffValue2": 0,
             "rankEffValue3": 0,
-            "rankEffPer1": 10,
+            "rankEffPer1": 0,
             "rankEffPer2": 0,
             "rankEffPer3": 0,
             "flags": 131145,
@@ -2882,7 +2882,7 @@
         },
         {
             "wazaNo": 82,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 2,
@@ -3372,7 +3372,7 @@
         },
         {
             "wazaNo": 96,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 2,
             "damageType": 0,
@@ -3477,7 +3477,7 @@
         },
         {
             "wazaNo": 99,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -3932,7 +3932,7 @@
         },
         {
             "wazaNo": 112,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 2,
             "damageType": 0,
@@ -4107,7 +4107,7 @@
         },
         {
             "wazaNo": 117,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -4177,7 +4177,7 @@
         },
         {
             "wazaNo": 119,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 13,
             "damageType": 0,
@@ -4247,7 +4247,7 @@
         },
         {
             "wazaNo": 121,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -4356,9 +4356,9 @@
             "type": 3,
             "category": 4,
             "damageType": 2,
-            "power": 75,
+            "power": 65,
             "hitPer": 100,
-            "basePP": 15,
+            "basePP": 20,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -4387,7 +4387,7 @@
         },
         {
             "wazaNo": 125,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 0,
             "damageType": 1,
@@ -4492,7 +4492,7 @@
         },
         {
             "wazaNo": 128,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 4,
             "damageType": 1,
@@ -4597,7 +4597,7 @@
         },
         {
             "wazaNo": 131,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -4632,7 +4632,7 @@
         },
         {
             "wazaNo": 132,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 6,
             "damageType": 1,
@@ -4912,7 +4912,7 @@
         },
         {
             "wazaNo": 140,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -5087,7 +5087,7 @@
         },
         {
             "wazaNo": 145,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 6,
             "damageType": 2,
@@ -5122,7 +5122,7 @@
         },
         {
             "wazaNo": 146,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 4,
             "damageType": 1,
@@ -5227,7 +5227,7 @@
         },
         {
             "wazaNo": 149,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -5542,7 +5542,7 @@
         },
         {
             "wazaNo": 158,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -5577,7 +5577,7 @@
         },
         {
             "wazaNo": 159,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 2,
             "damageType": 0,
@@ -5927,7 +5927,7 @@
         },
         {
             "wazaNo": 169,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 13,
             "damageType": 0,
@@ -5997,7 +5997,7 @@
         },
         {
             "wazaNo": 171,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 1,
             "damageType": 0,
@@ -6036,9 +6036,9 @@
             "type": 9,
             "category": 4,
             "damageType": 1,
-            "power": 75,
+            "power": 60,
             "hitPer": 100,
-            "basePP": 15,
+            "basePP": 25,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -6487,7 +6487,7 @@
         },
         {
             "wazaNo": 185,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -6767,7 +6767,7 @@
         },
         {
             "wazaNo": 193,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 1,
             "damageType": 0,
@@ -6787,7 +6787,7 @@
             "aiSeqNo": 113,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
-            "target": 3,
+            "target": 0,
             "rankEffType1": 0,
             "rankEffType2": 0,
             "rankEffType3": 0,
@@ -6797,7 +6797,7 @@
             "rankEffPer1": 0,
             "rankEffPer2": 0,
             "rankEffPer3": 0,
-            "flags": 8280,
+            "flags": 139352,
             "contestWazaNo": 0
         },
         {
@@ -7572,11 +7572,11 @@
         },
         {
             "wazaNo": 216,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
-            "power": 70,
+            "power": 1,
             "hitPer": 100,
             "basePP": 20,
             "priority": 0,
@@ -7589,7 +7589,7 @@
             "sickTurnMax": 0,
             "criticalRank": 0,
             "shrinkPer": 0,
-            "aiSeqNo": 169,
+            "aiSeqNo": 121,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
             "target": 0,
@@ -7603,7 +7603,7 @@
             "rankEffPer2": 0,
             "rankEffPer3": 0,
             "flags": 131145,
-            "contestWazaNo": 38
+            "contestWazaNo": 0
         },
         {
             "wazaNo": 217,
@@ -7642,7 +7642,7 @@
         },
         {
             "wazaNo": 218,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -7782,11 +7782,11 @@
         },
         {
             "wazaNo": 222,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 0,
             "damageType": 1,
-            "power": 70,
+            "power": 1,
             "hitPer": 100,
             "basePP": 30,
             "priority": 0,
@@ -7992,7 +7992,7 @@
         },
         {
             "wazaNo": 228,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -8731,7 +8731,7 @@
             "type": 1,
             "category": 6,
             "damageType": 1,
-            "power": 60,
+            "power": 40,
             "hitPer": 100,
             "basePP": 15,
             "priority": 0,
@@ -9287,7 +9287,7 @@
         },
         {
             "wazaNo": 265,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -9602,7 +9602,7 @@
         },
         {
             "wazaNo": 274,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -10057,7 +10057,7 @@
         },
         {
             "wazaNo": 287,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -10127,7 +10127,7 @@
         },
         {
             "wazaNo": 289,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 13,
             "damageType": 0,
@@ -10162,7 +10162,7 @@
         },
         {
             "wazaNo": 290,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -10267,7 +10267,7 @@
         },
         {
             "wazaNo": 293,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -10481,8 +10481,8 @@
             "type": 9,
             "category": 4,
             "damageType": 1,
-            "power": 90,
-            "hitPer": 100,
+            "power": 85,
+            "hitPer": 90,
             "basePP": 10,
             "priority": 0,
             "hitCountMax": 0,
@@ -10512,7 +10512,7 @@
         },
         {
             "wazaNo": 300,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 10,
             "damageType": 0,
@@ -10547,7 +10547,7 @@
         },
         {
             "wazaNo": 301,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 0,
             "damageType": 1,
@@ -10582,11 +10582,11 @@
         },
         {
             "wazaNo": 302,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 0,
             "damageType": 1,
-            "power": 90,
+            "power": 60,
             "hitPer": 100,
             "basePP": 15,
             "priority": 0,
@@ -10691,7 +10691,7 @@
             "type": 3,
             "category": 4,
             "damageType": 1,
-            "power": 65,
+            "power": 50,
             "hitPer": 100,
             "basePP": 15,
             "priority": 0,
@@ -11072,7 +11072,7 @@
         },
         {
             "wazaNo": 316,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 1,
             "damageType": 0,
@@ -11092,7 +11092,7 @@
             "aiSeqNo": 113,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
-            "target": 3,
+            "target": 0,
             "rankEffType1": 0,
             "rankEffType2": 0,
             "rankEffType3": 0,
@@ -11102,7 +11102,7 @@
             "rankEffPer1": 0,
             "rankEffPer2": 0,
             "rankEffPer3": 0,
-            "flags": 41048,
+            "flags": 172120,
             "contestWazaNo": 0
         },
         {
@@ -11142,7 +11142,7 @@
         },
         {
             "wazaNo": 318,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 7,
             "damageType": 2,
@@ -11212,7 +11212,7 @@
         },
         {
             "wazaNo": 320,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 1,
             "damageType": 0,
@@ -11352,7 +11352,7 @@
         },
         {
             "wazaNo": 324,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 4,
             "damageType": 2,
@@ -11391,9 +11391,9 @@
             "type": 7,
             "category": 0,
             "damageType": 1,
-            "power": 80,
+            "power": 60,
             "hitPer": 101,
-            "basePP": 15,
+            "basePP": 20,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -11457,7 +11457,7 @@
         },
         {
             "wazaNo": 327,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -11986,9 +11986,9 @@
             "type": 3,
             "category": 4,
             "damageType": 1,
-            "power": 90,
+            "power": 50,
             "hitPer": 100,
-            "basePP": 15,
+            "basePP": 25,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -12122,7 +12122,7 @@
         },
         {
             "wazaNo": 346,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 10,
             "damageType": 0,
@@ -12507,7 +12507,7 @@
         },
         {
             "wazaNo": 357,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 1,
             "damageType": 0,
@@ -12527,7 +12527,7 @@
             "aiSeqNo": 216,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
-            "target": 3,
+            "target": 0,
             "rankEffType1": 0,
             "rankEffType2": 0,
             "rankEffType3": 0,
@@ -12537,12 +12537,12 @@
             "rankEffPer1": 0,
             "rankEffPer2": 0,
             "rankEffPer3": 0,
-            "flags": 8280,
+            "flags": 139352,
             "contestWazaNo": 0
         },
         {
             "wazaNo": 358,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -12717,7 +12717,7 @@
         },
         {
             "wazaNo": 363,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -13067,7 +13067,7 @@
         },
         {
             "wazaNo": 373,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 1,
             "damageType": 0,
@@ -13172,7 +13172,7 @@
         },
         {
             "wazaNo": 376,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 2,
@@ -13207,7 +13207,7 @@
         },
         {
             "wazaNo": 377,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 1,
             "damageType": 0,
@@ -13242,7 +13242,7 @@
         },
         {
             "wazaNo": 378,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 2,
@@ -13347,7 +13347,7 @@
         },
         {
             "wazaNo": 381,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 11,
             "damageType": 0,
@@ -13382,11 +13382,11 @@
         },
         {
             "wazaNo": 382,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
-            "category": 13,
+            "category": 0,
             "damageType": 0,
-            "power": 0,
+            "power": 1,
             "hitPer": 101,
             "basePP": 20,
             "priority": 0,
@@ -13399,7 +13399,7 @@
             "sickTurnMax": 0,
             "criticalRank": 0,
             "shrinkPer": 0,
-            "aiSeqNo": 82,
+            "aiSeqNo": 241,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
             "target": 3,
@@ -13522,7 +13522,7 @@
         },
         {
             "wazaNo": 386,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -14751,7 +14751,7 @@
             "type": 7,
             "category": 0,
             "damageType": 1,
-            "power": 80,
+            "power": 70,
             "hitPer": 100,
             "basePP": 15,
             "priority": 0,
@@ -14922,7 +14922,7 @@
         },
         {
             "wazaNo": 426,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 6,
             "damageType": 2,
@@ -15027,7 +15027,7 @@
         },
         {
             "wazaNo": 429,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 6,
             "damageType": 2,
@@ -15098,12 +15098,12 @@
         {
             "wazaNo": 431,
             "isValid": 1,
-            "type": 5,
+            "type": 0,
             "category": 4,
             "damageType": 1,
-            "power": 80,
-            "hitPer": 95,
-            "basePP": 10,
+            "power": 90,
+            "hitPer": 85,
+            "basePP": 20,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -15416,9 +15416,9 @@
             "type": 3,
             "category": 4,
             "damageType": 1,
-            "power": 90,
+            "power": 70,
             "hitPer": 100,
-            "basePP": 15,
+            "basePP": 20,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -15517,7 +15517,7 @@
         },
         {
             "wazaNo": 443,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -15587,7 +15587,7 @@
         },
         {
             "wazaNo": 445,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 2,
             "damageType": 0,
@@ -15696,9 +15696,9 @@
             "type": 2,
             "category": 4,
             "damageType": 2,
-            "power": 90,
+            "power": 65,
             "hitPer": 100,
-            "basePP": 15,
+            "basePP": 20,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -15972,7 +15972,7 @@
         },
         {
             "wazaNo": 456,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 3,
             "damageType": 0,
@@ -16322,7 +16322,7 @@
         },
         {
             "wazaNo": 466,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 7,
             "damageType": 2,
@@ -16707,7 +16707,7 @@
         },
         {
             "wazaNo": 477,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 1,
             "damageType": 0,
@@ -16847,7 +16847,7 @@
         },
         {
             "wazaNo": 481,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 2,
@@ -16987,7 +16987,7 @@
         },
         {
             "wazaNo": 485,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -17442,7 +17442,7 @@
         },
         {
             "wazaNo": 498,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -17757,7 +17757,7 @@
         },
         {
             "wazaNo": 507,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 0,
             "damageType": 1,
@@ -17792,7 +17792,7 @@
         },
         {
             "wazaNo": 508,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 2,
             "damageType": 0,
@@ -18072,7 +18072,7 @@
         },
         {
             "wazaNo": 516,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -18142,7 +18142,7 @@
         },
         {
             "wazaNo": 518,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 2,
@@ -18177,7 +18177,7 @@
         },
         {
             "wazaNo": 519,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 2,
@@ -18212,7 +18212,7 @@
         },
         {
             "wazaNo": 520,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 0,
             "damageType": 2,
@@ -18457,7 +18457,7 @@
         },
         {
             "wazaNo": 527,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 6,
             "damageType": 2,
@@ -18496,7 +18496,7 @@
             "type": 12,
             "category": 0,
             "damageType": 1,
-            "power": 100,
+            "power": 90,
             "hitPer": 100,
             "basePP": 15,
             "priority": 0,
@@ -18597,7 +18597,7 @@
         },
         {
             "wazaNo": 531,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 1,
@@ -18632,7 +18632,7 @@
         },
         {
             "wazaNo": 532,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 8,
             "damageType": 1,
@@ -18667,7 +18667,7 @@
         },
         {
             "wazaNo": 533,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -18737,7 +18737,7 @@
         },
         {
             "wazaNo": 535,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 1,
@@ -18807,7 +18807,7 @@
         },
         {
             "wazaNo": 537,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 0,
             "damageType": 1,
@@ -18877,7 +18877,7 @@
         },
         {
             "wazaNo": 539,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 6,
             "damageType": 2,
@@ -18947,7 +18947,7 @@
         },
         {
             "wazaNo": 541,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -19017,7 +19017,7 @@
         },
         {
             "wazaNo": 543,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -19052,7 +19052,7 @@
         },
         {
             "wazaNo": 544,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -19087,7 +19087,7 @@
         },
         {
             "wazaNo": 545,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 4,
             "damageType": 2,
@@ -19122,7 +19122,7 @@
         },
         {
             "wazaNo": 546,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 2,
@@ -19157,7 +19157,7 @@
         },
         {
             "wazaNo": 547,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 4,
             "damageType": 2,
@@ -19192,7 +19192,7 @@
         },
         {
             "wazaNo": 548,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 2,
@@ -19227,7 +19227,7 @@
         },
         {
             "wazaNo": 549,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 6,
             "damageType": 2,
@@ -19262,7 +19262,7 @@
         },
         {
             "wazaNo": 550,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 4,
             "damageType": 1,
@@ -19297,7 +19297,7 @@
         },
         {
             "wazaNo": 551,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 4,
             "damageType": 2,
@@ -19332,7 +19332,7 @@
         },
         {
             "wazaNo": 552,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 7,
             "damageType": 2,
@@ -19367,7 +19367,7 @@
         },
         {
             "wazaNo": 553,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 4,
             "damageType": 1,
@@ -19402,7 +19402,7 @@
         },
         {
             "wazaNo": 554,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 4,
             "damageType": 2,
@@ -19507,7 +19507,7 @@
         },
         {
             "wazaNo": 557,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 7,
             "damageType": 1,
@@ -19542,7 +19542,7 @@
         },
         {
             "wazaNo": 558,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 2,
@@ -19577,7 +19577,7 @@
         },
         {
             "wazaNo": 559,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 1,
@@ -19612,7 +19612,7 @@
         },
         {
             "wazaNo": 560,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -19647,7 +19647,7 @@
         },
         {
             "wazaNo": 561,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 11,
             "damageType": 0,
@@ -19717,7 +19717,7 @@
         },
         {
             "wazaNo": 563,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 2,
             "damageType": 0,
@@ -19857,7 +19857,7 @@
         },
         {
             "wazaNo": 567,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 13,
             "damageType": 0,
@@ -19927,7 +19927,7 @@
         },
         {
             "wazaNo": 569,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 10,
             "damageType": 0,
@@ -19962,7 +19962,7 @@
         },
         {
             "wazaNo": 570,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 8,
             "damageType": 2,
@@ -19997,7 +19997,7 @@
         },
         {
             "wazaNo": 571,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 13,
             "damageType": 0,
@@ -20172,7 +20172,7 @@
         },
         {
             "wazaNo": 576,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 13,
             "damageType": 0,
@@ -20242,7 +20242,7 @@
         },
         {
             "wazaNo": 578,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 11,
             "damageType": 0,
@@ -20382,7 +20382,7 @@
         },
         {
             "wazaNo": 582,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 13,
             "damageType": 0,
@@ -20557,7 +20557,7 @@
         },
         {
             "wazaNo": 587,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 10,
             "damageType": 0,
@@ -20592,7 +20592,7 @@
         },
         {
             "wazaNo": 588,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 13,
             "damageType": 0,
@@ -20697,7 +20697,7 @@
         },
         {
             "wazaNo": 591,
-            "isValid": 1,
+            "isValid": 0,
             "type": 5,
             "category": 7,
             "damageType": 1,
@@ -20732,7 +20732,7 @@
         },
         {
             "wazaNo": 592,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 4,
             "damageType": 2,
@@ -20767,7 +20767,7 @@
         },
         {
             "wazaNo": 593,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -20802,7 +20802,7 @@
         },
         {
             "wazaNo": 594,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 2,
@@ -21012,7 +21012,7 @@
         },
         {
             "wazaNo": 600,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 13,
             "damageType": 0,
@@ -21047,7 +21047,7 @@
         },
         {
             "wazaNo": 601,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 2,
             "damageType": 0,
@@ -21117,13 +21117,13 @@
         },
         {
             "wazaNo": 603,
-            "isValid": 1,
-            "type": 8,
-            "category": 0,
-            "damageType": 1,
-            "power": 160,
-            "hitPer": 100,
-            "basePP": 5,
+            "isValid": 0,
+            "type": 0,
+            "category": 13,
+            "damageType": 0,
+            "power": 0,
+            "hitPer": 101,
+            "basePP": 30,
             "priority": 0,
             "hitCountMax": 0,
             "hitCountMin": 0,
@@ -21134,10 +21134,10 @@
             "sickTurnMax": 0,
             "criticalRank": 0,
             "shrinkPer": 0,
-            "aiSeqNo": 80,
+            "aiSeqNo": 367,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
-            "target": 0,
+            "target": 12,
             "rankEffType1": 0,
             "rankEffType2": 0,
             "rankEffType3": 0,
@@ -21147,8 +21147,8 @@
             "rankEffPer1": 0,
             "rankEffPer2": 0,
             "rankEffPer3": 0,
-            "flags": 131144,
-            "contestWazaNo": 47
+            "flags": 131072,
+            "contestWazaNo": 0
         },
         {
             "wazaNo": 604,
@@ -21222,7 +21222,7 @@
         },
         {
             "wazaNo": 606,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -21257,7 +21257,7 @@
         },
         {
             "wazaNo": 607,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -21362,7 +21362,7 @@
         },
         {
             "wazaNo": 610,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -21467,7 +21467,7 @@
         },
         {
             "wazaNo": 613,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 8,
             "damageType": 2,
@@ -21502,7 +21502,7 @@
         },
         {
             "wazaNo": 614,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 0,
             "damageType": 1,
@@ -21537,7 +21537,7 @@
         },
         {
             "wazaNo": 615,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 0,
             "damageType": 1,
@@ -21572,7 +21572,7 @@
         },
         {
             "wazaNo": 616,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 0,
             "damageType": 1,
@@ -21607,7 +21607,7 @@
         },
         {
             "wazaNo": 617,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 0,
             "damageType": 2,
@@ -21747,7 +21747,7 @@
         },
         {
             "wazaNo": 621,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 7,
             "damageType": 1,
@@ -21782,7 +21782,7 @@
         },
         {
             "wazaNo": 622,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -21817,7 +21817,7 @@
         },
         {
             "wazaNo": 623,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 2,
@@ -21852,7 +21852,7 @@
         },
         {
             "wazaNo": 624,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -21887,7 +21887,7 @@
         },
         {
             "wazaNo": 625,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 2,
@@ -21922,7 +21922,7 @@
         },
         {
             "wazaNo": 626,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 0,
             "damageType": 1,
@@ -21957,7 +21957,7 @@
         },
         {
             "wazaNo": 627,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 0,
             "damageType": 2,
@@ -21992,7 +21992,7 @@
         },
         {
             "wazaNo": 628,
-            "isValid": 1,
+            "isValid": 0,
             "type": 3,
             "category": 0,
             "damageType": 1,
@@ -22027,7 +22027,7 @@
         },
         {
             "wazaNo": 629,
-            "isValid": 1,
+            "isValid": 0,
             "type": 3,
             "category": 0,
             "damageType": 2,
@@ -22062,7 +22062,7 @@
         },
         {
             "wazaNo": 630,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 0,
             "damageType": 1,
@@ -22097,7 +22097,7 @@
         },
         {
             "wazaNo": 631,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 0,
             "damageType": 2,
@@ -22132,7 +22132,7 @@
         },
         {
             "wazaNo": 632,
-            "isValid": 1,
+            "isValid": 0,
             "type": 5,
             "category": 0,
             "damageType": 1,
@@ -22167,7 +22167,7 @@
         },
         {
             "wazaNo": 633,
-            "isValid": 1,
+            "isValid": 0,
             "type": 5,
             "category": 0,
             "damageType": 2,
@@ -22202,7 +22202,7 @@
         },
         {
             "wazaNo": 634,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 0,
             "damageType": 1,
@@ -22237,7 +22237,7 @@
         },
         {
             "wazaNo": 635,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 0,
             "damageType": 2,
@@ -22272,7 +22272,7 @@
         },
         {
             "wazaNo": 636,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 1,
@@ -22307,7 +22307,7 @@
         },
         {
             "wazaNo": 637,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 2,
@@ -22342,7 +22342,7 @@
         },
         {
             "wazaNo": 638,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -22377,7 +22377,7 @@
         },
         {
             "wazaNo": 639,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 2,
@@ -22412,7 +22412,7 @@
         },
         {
             "wazaNo": 640,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 1,
@@ -22447,7 +22447,7 @@
         },
         {
             "wazaNo": 641,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 2,
@@ -22482,7 +22482,7 @@
         },
         {
             "wazaNo": 642,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 1,
@@ -22517,7 +22517,7 @@
         },
         {
             "wazaNo": 643,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 2,
@@ -22552,7 +22552,7 @@
         },
         {
             "wazaNo": 644,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 0,
             "damageType": 1,
@@ -22587,7 +22587,7 @@
         },
         {
             "wazaNo": 645,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 0,
             "damageType": 2,
@@ -22622,7 +22622,7 @@
         },
         {
             "wazaNo": 646,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 1,
@@ -22657,7 +22657,7 @@
         },
         {
             "wazaNo": 647,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 2,
@@ -22692,7 +22692,7 @@
         },
         {
             "wazaNo": 648,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 1,
@@ -22727,7 +22727,7 @@
         },
         {
             "wazaNo": 649,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -22762,7 +22762,7 @@
         },
         {
             "wazaNo": 650,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 0,
             "damageType": 1,
@@ -22797,7 +22797,7 @@
         },
         {
             "wazaNo": 651,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 0,
             "damageType": 2,
@@ -22832,7 +22832,7 @@
         },
         {
             "wazaNo": 652,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 1,
@@ -22867,7 +22867,7 @@
         },
         {
             "wazaNo": 653,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 2,
@@ -22902,7 +22902,7 @@
         },
         {
             "wazaNo": 654,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -22937,7 +22937,7 @@
         },
         {
             "wazaNo": 655,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 2,
@@ -22972,7 +22972,7 @@
         },
         {
             "wazaNo": 656,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 0,
             "damageType": 1,
@@ -23007,7 +23007,7 @@
         },
         {
             "wazaNo": 657,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 0,
             "damageType": 2,
@@ -23042,7 +23042,7 @@
         },
         {
             "wazaNo": 658,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 1,
@@ -23077,7 +23077,7 @@
         },
         {
             "wazaNo": 659,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 3,
             "damageType": 0,
@@ -23112,7 +23112,7 @@
         },
         {
             "wazaNo": 660,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 0,
             "damageType": 1,
@@ -23147,7 +23147,7 @@
         },
         {
             "wazaNo": 661,
-            "isValid": 1,
+            "isValid": 0,
             "type": 3,
             "category": 13,
             "damageType": 0,
@@ -23182,7 +23182,7 @@
         },
         {
             "wazaNo": 662,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 1,
@@ -23217,7 +23217,7 @@
         },
         {
             "wazaNo": 663,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -23252,7 +23252,7 @@
         },
         {
             "wazaNo": 664,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 2,
@@ -23287,7 +23287,7 @@
         },
         {
             "wazaNo": 665,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 7,
             "damageType": 1,
@@ -23322,7 +23322,7 @@
         },
         {
             "wazaNo": 666,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 3,
             "damageType": 0,
@@ -23427,7 +23427,7 @@
         },
         {
             "wazaNo": 669,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 0,
             "damageType": 1,
@@ -23497,7 +23497,7 @@
         },
         {
             "wazaNo": 671,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -23602,7 +23602,7 @@
         },
         {
             "wazaNo": 674,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 2,
             "damageType": 0,
@@ -23672,7 +23672,7 @@
         },
         {
             "wazaNo": 676,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 0,
             "damageType": 2,
@@ -23707,7 +23707,7 @@
         },
         {
             "wazaNo": 677,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -23742,7 +23742,7 @@
         },
         {
             "wazaNo": 678,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 10,
             "damageType": 0,
@@ -23812,7 +23812,7 @@
         },
         {
             "wazaNo": 680,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 6,
             "damageType": 1,
@@ -23847,7 +23847,7 @@
         },
         {
             "wazaNo": 681,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -23917,7 +23917,7 @@
         },
         {
             "wazaNo": 683,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 13,
             "damageType": 0,
@@ -23987,7 +23987,7 @@
         },
         {
             "wazaNo": 685,
-            "isValid": 1,
+            "isValid": 0,
             "type": 3,
             "category": 13,
             "damageType": 0,
@@ -24022,7 +24022,7 @@
         },
         {
             "wazaNo": 686,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 2,
@@ -24057,7 +24057,7 @@
         },
         {
             "wazaNo": 687,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 2,
@@ -24092,7 +24092,7 @@
         },
         {
             "wazaNo": 688,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 6,
             "damageType": 1,
@@ -24127,7 +24127,7 @@
         },
         {
             "wazaNo": 689,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 13,
             "damageType": 0,
@@ -24162,7 +24162,7 @@
         },
         {
             "wazaNo": 690,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 0,
             "damageType": 1,
@@ -24197,7 +24197,7 @@
         },
         {
             "wazaNo": 691,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 7,
             "damageType": 2,
@@ -24267,7 +24267,7 @@
         },
         {
             "wazaNo": 693,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -24337,7 +24337,7 @@
         },
         {
             "wazaNo": 695,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 1,
@@ -24372,7 +24372,7 @@
         },
         {
             "wazaNo": 696,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -24407,7 +24407,7 @@
         },
         {
             "wazaNo": 697,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 2,
@@ -24442,7 +24442,7 @@
         },
         {
             "wazaNo": 698,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 0,
             "damageType": 2,
@@ -24477,7 +24477,7 @@
         },
         {
             "wazaNo": 699,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 1,
@@ -24512,7 +24512,7 @@
         },
         {
             "wazaNo": 700,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 4,
             "damageType": 2,
@@ -24547,7 +24547,7 @@
         },
         {
             "wazaNo": 701,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -24582,7 +24582,7 @@
         },
         {
             "wazaNo": 702,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 2,
             "damageType": 0,
@@ -24617,7 +24617,7 @@
         },
         {
             "wazaNo": 703,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -24652,7 +24652,7 @@
         },
         {
             "wazaNo": 704,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 2,
@@ -24687,7 +24687,7 @@
         },
         {
             "wazaNo": 705,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 7,
             "damageType": 2,
@@ -24722,7 +24722,7 @@
         },
         {
             "wazaNo": 706,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 1,
@@ -24792,7 +24792,7 @@
         },
         {
             "wazaNo": 708,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 6,
             "damageType": 1,
@@ -24827,7 +24827,7 @@
         },
         {
             "wazaNo": 709,
-            "isValid": 1,
+            "isValid": 0,
             "type": 5,
             "category": 0,
             "damageType": 1,
@@ -24897,7 +24897,7 @@
         },
         {
             "wazaNo": 711,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -24932,7 +24932,7 @@
         },
         {
             "wazaNo": 712,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 1,
@@ -24967,7 +24967,7 @@
         },
         {
             "wazaNo": 713,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -25002,7 +25002,7 @@
         },
         {
             "wazaNo": 714,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 2,
@@ -25072,7 +25072,7 @@
         },
         {
             "wazaNo": 716,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 1,
@@ -25107,7 +25107,7 @@
         },
         {
             "wazaNo": 717,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 0,
             "damageType": 2,
@@ -25142,7 +25142,7 @@
         },
         {
             "wazaNo": 718,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -25177,7 +25177,7 @@
         },
         {
             "wazaNo": 719,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 2,
@@ -25212,7 +25212,7 @@
         },
         {
             "wazaNo": 720,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 2,
@@ -25247,7 +25247,7 @@
         },
         {
             "wazaNo": 721,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 1,
@@ -25282,7 +25282,7 @@
         },
         {
             "wazaNo": 722,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -25317,7 +25317,7 @@
         },
         {
             "wazaNo": 723,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -25352,7 +25352,7 @@
         },
         {
             "wazaNo": 724,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -25387,7 +25387,7 @@
         },
         {
             "wazaNo": 725,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 2,
@@ -25422,7 +25422,7 @@
         },
         {
             "wazaNo": 726,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 0,
             "damageType": 1,
@@ -25457,7 +25457,7 @@
         },
         {
             "wazaNo": 727,
-            "isValid": 1,
+            "isValid": 0,
             "type": 5,
             "category": 0,
             "damageType": 1,
@@ -25492,7 +25492,7 @@
         },
         {
             "wazaNo": 728,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 7,
             "damageType": 2,
@@ -25527,7 +25527,7 @@
         },
         {
             "wazaNo": 729,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 7,
             "damageType": 1,
@@ -25562,7 +25562,7 @@
         },
         {
             "wazaNo": 730,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 4,
             "damageType": 2,
@@ -25597,7 +25597,7 @@
         },
         {
             "wazaNo": 731,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 0,
             "damageType": 1,
@@ -25632,7 +25632,7 @@
         },
         {
             "wazaNo": 732,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 2,
@@ -25667,7 +25667,7 @@
         },
         {
             "wazaNo": 733,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 8,
             "damageType": 2,
@@ -25685,7 +25685,7 @@
             "criticalRank": 0,
             "shrinkPer": 0,
             "aiSeqNo": 0,
-            "damageRecoverRatio": 50,
+            "damageRecoverRatio": 100,
             "hpRecoverRatio": 0,
             "target": 0,
             "rankEffType1": 0,
@@ -25702,7 +25702,7 @@
         },
         {
             "wazaNo": 734,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 4,
             "damageType": 2,
@@ -25737,7 +25737,7 @@
         },
         {
             "wazaNo": 735,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 4,
             "damageType": 1,
@@ -25772,9 +25772,9 @@
         },
         {
             "wazaNo": 736,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
-            "category": 4,
+            "category": 0,
             "damageType": 2,
             "power": 80,
             "hitPer": 95,
@@ -25789,7 +25789,7 @@
             "sickTurnMax": 0,
             "criticalRank": 0,
             "shrinkPer": 0,
-            "aiSeqNo": 35,
+            "aiSeqNo": 0,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
             "target": 0,
@@ -25807,9 +25807,9 @@
         },
         {
             "wazaNo": 737,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
-            "category": 4,
+            "category": 0,
             "damageType": 2,
             "power": 80,
             "hitPer": 95,
@@ -25824,7 +25824,7 @@
             "sickTurnMax": 0,
             "criticalRank": 0,
             "shrinkPer": 0,
-            "aiSeqNo": 65,
+            "aiSeqNo": 0,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
             "target": 0,
@@ -25842,7 +25842,7 @@
         },
         {
             "wazaNo": 738,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 4,
             "damageType": 1,
@@ -25877,9 +25877,9 @@
         },
         {
             "wazaNo": 739,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
-            "category": 4,
+            "category": 0,
             "damageType": 2,
             "power": 100,
             "hitPer": 90,
@@ -25894,7 +25894,7 @@
             "sickTurnMax": 0,
             "criticalRank": 0,
             "shrinkPer": 0,
-            "aiSeqNo": 25,
+            "aiSeqNo": 0,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
             "target": 0,
@@ -25912,9 +25912,9 @@
         },
         {
             "wazaNo": 740,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
-            "category": 4,
+            "category": 0,
             "damageType": 2,
             "power": 120,
             "hitPer": 85,
@@ -25929,7 +25929,7 @@
             "sickTurnMax": 0,
             "criticalRank": 0,
             "shrinkPer": 0,
-            "aiSeqNo": 102,
+            "aiSeqNo": 0,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
             "target": 0,
@@ -25947,11 +25947,11 @@
         },
         {
             "wazaNo": 741,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
-            "power": 70,
+            "power": 1,
             "hitPer": 101,
             "basePP": 20,
             "priority": 0,
@@ -25964,7 +25964,7 @@
             "sickTurnMax": 0,
             "criticalRank": 0,
             "shrinkPer": 0,
-            "aiSeqNo": 169,
+            "aiSeqNo": 0,
             "damageRecoverRatio": 0,
             "hpRecoverRatio": 0,
             "target": 0,
@@ -25982,7 +25982,7 @@
         },
         {
             "wazaNo": 742,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -26017,7 +26017,7 @@
         },
         {
             "wazaNo": 743,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -26052,7 +26052,7 @@
         },
         {
             "wazaNo": 744,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 2,
@@ -26087,7 +26087,7 @@
         },
         {
             "wazaNo": 745,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 2,
@@ -26122,7 +26122,7 @@
         },
         {
             "wazaNo": 746,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -26157,7 +26157,7 @@
         },
         {
             "wazaNo": 747,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 2,
             "damageType": 0,
@@ -26192,7 +26192,7 @@
         },
         {
             "wazaNo": 748,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 2,
             "damageType": 0,
@@ -26227,7 +26227,7 @@
         },
         {
             "wazaNo": 749,
-            "isValid": 1,
+            "isValid": 0,
             "type": 5,
             "category": 5,
             "damageType": 0,
@@ -26262,7 +26262,7 @@
         },
         {
             "wazaNo": 750,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 13,
             "damageType": 0,
@@ -26297,7 +26297,7 @@
         },
         {
             "wazaNo": 751,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 1,
@@ -26332,7 +26332,7 @@
         },
         {
             "wazaNo": 752,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -26367,7 +26367,7 @@
         },
         {
             "wazaNo": 753,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 13,
             "damageType": 0,
@@ -26402,7 +26402,7 @@
         },
         {
             "wazaNo": 754,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 1,
@@ -26437,7 +26437,7 @@
         },
         {
             "wazaNo": 755,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 1,
@@ -26472,7 +26472,7 @@
         },
         {
             "wazaNo": 756,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 13,
             "damageType": 0,
@@ -26507,7 +26507,7 @@
         },
         {
             "wazaNo": 757,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 0,
             "damageType": 1,
@@ -26542,7 +26542,7 @@
         },
         {
             "wazaNo": 758,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 0,
             "damageType": 1,
@@ -26577,7 +26577,7 @@
         },
         {
             "wazaNo": 759,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 1,
@@ -26612,7 +26612,7 @@
         },
         {
             "wazaNo": 760,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 1,
@@ -26647,7 +26647,7 @@
         },
         {
             "wazaNo": 761,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -26682,7 +26682,7 @@
         },
         {
             "wazaNo": 762,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 1,
@@ -26717,7 +26717,7 @@
         },
         {
             "wazaNo": 763,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 0,
             "damageType": 1,
@@ -26752,7 +26752,7 @@
         },
         {
             "wazaNo": 764,
-            "isValid": 1,
+            "isValid": 0,
             "type": 3,
             "category": 0,
             "damageType": 1,
@@ -26787,7 +26787,7 @@
         },
         {
             "wazaNo": 765,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 1,
@@ -26822,7 +26822,7 @@
         },
         {
             "wazaNo": 766,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 0,
             "damageType": 1,
@@ -26857,7 +26857,7 @@
         },
         {
             "wazaNo": 767,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 0,
             "damageType": 1,
@@ -26892,7 +26892,7 @@
         },
         {
             "wazaNo": 768,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 1,
@@ -26927,7 +26927,7 @@
         },
         {
             "wazaNo": 769,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 1,
@@ -26962,7 +26962,7 @@
         },
         {
             "wazaNo": 770,
-            "isValid": 1,
+            "isValid": 0,
             "type": 5,
             "category": 0,
             "damageType": 1,
@@ -26997,7 +26997,7 @@
         },
         {
             "wazaNo": 771,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 0,
             "damageType": 1,
@@ -27032,7 +27032,7 @@
         },
         {
             "wazaNo": 772,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -27067,7 +27067,7 @@
         },
         {
             "wazaNo": 773,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 0,
             "damageType": 1,
@@ -27102,7 +27102,7 @@
         },
         {
             "wazaNo": 774,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -27137,7 +27137,7 @@
         },
         {
             "wazaNo": 775,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 2,
             "damageType": 0,
@@ -27207,7 +27207,7 @@
         },
         {
             "wazaNo": 777,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 2,
             "damageType": 0,
@@ -27242,7 +27242,7 @@
         },
         {
             "wazaNo": 778,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 6,
             "damageType": 1,
@@ -27277,7 +27277,7 @@
         },
         {
             "wazaNo": 779,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 4,
             "damageType": 1,
@@ -27312,7 +27312,7 @@
         },
         {
             "wazaNo": 780,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 4,
             "damageType": 1,
@@ -27347,7 +27347,7 @@
         },
         {
             "wazaNo": 781,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -27382,7 +27382,7 @@
         },
         {
             "wazaNo": 782,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -27417,7 +27417,7 @@
         },
         {
             "wazaNo": 783,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 7,
             "damageType": 1,
@@ -27452,7 +27452,7 @@
         },
         {
             "wazaNo": 784,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 6,
             "damageType": 1,
@@ -27487,7 +27487,7 @@
         },
         {
             "wazaNo": 785,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 0,
             "damageType": 1,
@@ -27522,7 +27522,7 @@
         },
         {
             "wazaNo": 786,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 2,
@@ -27557,7 +27557,7 @@
         },
         {
             "wazaNo": 787,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 6,
             "damageType": 2,
@@ -27592,7 +27592,7 @@
         },
         {
             "wazaNo": 788,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 6,
             "damageType": 1,
@@ -27627,7 +27627,7 @@
         },
         {
             "wazaNo": 789,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 6,
             "damageType": 1,
@@ -27662,7 +27662,7 @@
         },
         {
             "wazaNo": 790,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 4,
             "damageType": 2,
@@ -27732,7 +27732,7 @@
         },
         {
             "wazaNo": 792,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 13,
             "damageType": 0,
@@ -27767,7 +27767,7 @@
         },
         {
             "wazaNo": 793,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -27802,7 +27802,7 @@
         },
         {
             "wazaNo": 794,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 0,
             "damageType": 1,
@@ -27837,7 +27837,7 @@
         },
         {
             "wazaNo": 795,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 2,
@@ -27872,7 +27872,7 @@
         },
         {
             "wazaNo": 796,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 2,
@@ -27907,7 +27907,7 @@
         },
         {
             "wazaNo": 797,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,
@@ -27942,7 +27942,7 @@
         },
         {
             "wazaNo": 798,
-            "isValid": 1,
+            "isValid": 0,
             "type": 8,
             "category": 0,
             "damageType": 1,
@@ -27977,7 +27977,7 @@
         },
         {
             "wazaNo": 799,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 1,
@@ -28012,7 +28012,7 @@
         },
         {
             "wazaNo": 800,
-            "isValid": 1,
+            "isValid": 0,
             "type": 5,
             "category": 0,
             "damageType": 2,
@@ -28047,7 +28047,7 @@
         },
         {
             "wazaNo": 801,
-            "isValid": 1,
+            "isValid": 0,
             "type": 3,
             "category": 4,
             "damageType": 2,
@@ -28082,7 +28082,7 @@
         },
         {
             "wazaNo": 802,
-            "isValid": 1,
+            "isValid": 0,
             "type": 17,
             "category": 0,
             "damageType": 2,
@@ -28117,7 +28117,7 @@
         },
         {
             "wazaNo": 803,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 0,
             "damageType": 1,
@@ -28152,7 +28152,7 @@
         },
         {
             "wazaNo": 804,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 0,
             "damageType": 2,
@@ -28187,7 +28187,7 @@
         },
         {
             "wazaNo": 805,
-            "isValid": 1,
+            "isValid": 0,
             "type": 0,
             "category": 0,
             "damageType": 2,
@@ -28222,7 +28222,7 @@
         },
         {
             "wazaNo": 806,
-            "isValid": 1,
+            "isValid": 0,
             "type": 6,
             "category": 6,
             "damageType": 1,
@@ -28257,7 +28257,7 @@
         },
         {
             "wazaNo": 807,
-            "isValid": 1,
+            "isValid": 0,
             "type": 9,
             "category": 4,
             "damageType": 2,
@@ -28292,7 +28292,7 @@
         },
         {
             "wazaNo": 808,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -28327,7 +28327,7 @@
         },
         {
             "wazaNo": 809,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 1,
@@ -28362,7 +28362,7 @@
         },
         {
             "wazaNo": 810,
-            "isValid": 1,
+            "isValid": 0,
             "type": 3,
             "category": 13,
             "damageType": 0,
@@ -28397,7 +28397,7 @@
         },
         {
             "wazaNo": 811,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 2,
             "damageType": 0,
@@ -28432,7 +28432,7 @@
         },
         {
             "wazaNo": 812,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 1,
@@ -28467,7 +28467,7 @@
         },
         {
             "wazaNo": 813,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 0,
             "damageType": 1,
@@ -28502,7 +28502,7 @@
         },
         {
             "wazaNo": 814,
-            "isValid": 1,
+            "isValid": 0,
             "type": 2,
             "category": 0,
             "damageType": 1,
@@ -28537,7 +28537,7 @@
         },
         {
             "wazaNo": 815,
-            "isValid": 1,
+            "isValid": 0,
             "type": 4,
             "category": 4,
             "damageType": 2,
@@ -28572,7 +28572,7 @@
         },
         {
             "wazaNo": 816,
-            "isValid": 1,
+            "isValid": 0,
             "type": 11,
             "category": 13,
             "damageType": 0,
@@ -28607,7 +28607,7 @@
         },
         {
             "wazaNo": 817,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 1,
@@ -28642,7 +28642,7 @@
         },
         {
             "wazaNo": 818,
-            "isValid": 1,
+            "isValid": 0,
             "type": 10,
             "category": 0,
             "damageType": 1,
@@ -28677,7 +28677,7 @@
         },
         {
             "wazaNo": 819,
-            "isValid": 1,
+            "isValid": 0,
             "type": 12,
             "category": 4,
             "damageType": 2,
@@ -28712,7 +28712,7 @@
         },
         {
             "wazaNo": 820,
-            "isValid": 1,
+            "isValid": 0,
             "type": 15,
             "category": 0,
             "damageType": 2,
@@ -28747,7 +28747,7 @@
         },
         {
             "wazaNo": 821,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 4,
             "damageType": 2,
@@ -28782,7 +28782,7 @@
         },
         {
             "wazaNo": 822,
-            "isValid": 1,
+            "isValid": 0,
             "type": 16,
             "category": 0,
             "damageType": 2,
@@ -28817,7 +28817,7 @@
         },
         {
             "wazaNo": 823,
-            "isValid": 1,
+            "isValid": 0,
             "type": 1,
             "category": 6,
             "damageType": 1,
@@ -28852,7 +28852,7 @@
         },
         {
             "wazaNo": 824,
-            "isValid": 1,
+            "isValid": 0,
             "type": 14,
             "category": 0,
             "damageType": 1,
@@ -28887,7 +28887,7 @@
         },
         {
             "wazaNo": 825,
-            "isValid": 1,
+            "isValid": 0,
             "type": 7,
             "category": 0,
             "damageType": 2,
@@ -28922,7 +28922,7 @@
         },
         {
             "wazaNo": 826,
-            "isValid": 1,
+            "isValid": 0,
             "type": 13,
             "category": 0,
             "damageType": 2,

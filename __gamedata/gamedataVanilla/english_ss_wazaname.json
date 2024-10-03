@@ -18129,8 +18129,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Gigaton Hammer",
-                    "strWidth": 174.265625
+                    "str": "Happy Hour",
+                    "strWidth": 159.265625
                 }
             ]
         },
@@ -24821,36 +24821,6 @@
                     "tagValue": 0.0,
                     "str": "Eerie Spell",
                     "strWidth": 137.953125
-                }
-            ]
-        },
-        {
-            "labelIndex": 827,
-            "arrayIndex": 827,
-            "labelName": "WAZANAME_CANCEL",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Cancel",
-                    "strWidth": 88.828125
                 }
             ]
         }

@@ -30,7 +30,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                68,
+                0,
                 7
             ],
             "ZoneID": 0,
@@ -408,7 +408,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 2,
@@ -597,7 +597,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 3,
@@ -786,7 +786,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 4,
@@ -3981,8 +3981,8 @@
         },
         {
             "Caption": "コトブキ:トレーナースクール 1F",
-            "MSLabel": "DP_fld_areaname_display_170",
-            "PokePlaceName": "DP_fld_arenames_004",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_002",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -4188,7 +4188,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                13,
                 7
             ],
             "ZoneID": 22,
@@ -4377,7 +4377,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                13,
                 7
             ],
             "ZoneID": 23,
@@ -4566,7 +4566,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                76,
+                69,
                 7
             ],
             "ZoneID": 24,
@@ -5133,7 +5133,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 27,
@@ -5322,7 +5322,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 28,
@@ -5511,7 +5511,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 29,
@@ -5700,7 +5700,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                14,
                 7
             ],
             "ZoneID": 30,
@@ -5889,7 +5889,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                14,
                 7
             ],
             "ZoneID": 31,
@@ -6078,7 +6078,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                14,
                 7
             ],
             "ZoneID": 32,
@@ -6267,7 +6267,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 33,
@@ -6456,7 +6456,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 34,
@@ -6645,7 +6645,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 35,
@@ -6834,7 +6834,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 36,
@@ -7023,7 +7023,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 37,
@@ -7212,7 +7212,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                69,
+                0,
                 7
             ],
             "ZoneID": 38,
@@ -7401,7 +7401,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 39,
@@ -7779,7 +7779,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 41,
@@ -7968,7 +7968,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 42,
@@ -8157,7 +8157,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 43,
@@ -8346,7 +8346,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 44,
@@ -8535,7 +8535,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 45,
@@ -8724,7 +8724,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 46,
@@ -8913,7 +8913,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 47,
@@ -9102,7 +9102,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 48,
@@ -9273,8 +9273,8 @@
         },
         {
             "Caption": "クロガネ:炭坑博物館 1F",
-            "MSLabel": "DP_fld_areaname_display_171",
-            "PokePlaceName": "DP_fld_arenames_007",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_008",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -9291,7 +9291,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 49,
@@ -9480,7 +9480,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 50,
@@ -9669,7 +9669,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 51,
@@ -9858,7 +9858,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 52,
@@ -10047,7 +10047,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 53,
@@ -10236,7 +10236,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                68,
+                0,
                 7
             ],
             "ZoneID": 54,
@@ -10841,10 +10841,10 @@
             "ReflectionCamera": 0,
             "FixedTime": 1,
             "AssetBundleName": "prefab_map/c04gym0102",
-            "RoomPanCamera": 0,
+            "RoomPanCamera": 1,
             "Locators": [
                 {
-                    "x": 15.0,
+                    "x": 16.0,
                     "y": 29.0,
                     "z": 2.0,
                     "w": 0.0
@@ -10992,7 +10992,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 58,
@@ -11181,7 +11181,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 59,
@@ -11370,7 +11370,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                14,
                 7
             ],
             "ZoneID": 60,
@@ -11541,7 +11541,7 @@
         },
         {
             "Caption": "ハクタイ:自転車屋",
-            "MSLabel": "DP_fld_areaname_display_173",
+            "MSLabel": "",
             "PokePlaceName": "DP_fld_arenames_010",
             "FlyingPlaceName": "",
             "MapType": 3,
@@ -11730,8 +11730,8 @@
         },
         {
             "Caption": "ハクタイ:ギンガ団支部ビル 1F",
-            "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_318",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_010",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -11919,8 +11919,8 @@
         },
         {
             "Caption": "ハクタイ:ギンガ団支部ビル 2F",
-            "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_318",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_010",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -12108,8 +12108,8 @@
         },
         {
             "Caption": "ハクタイ:ギンガ団支部ビル 3F",
-            "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_318",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_010",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -12297,8 +12297,8 @@
         },
         {
             "Caption": "ハクタイ:ギンガ団支部ビル 4F",
-            "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_318",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_010",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -13260,7 +13260,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 70,
@@ -13449,7 +13449,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 71,
@@ -13638,7 +13638,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 72,
@@ -13827,7 +13827,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                13,
                 7
             ],
             "ZoneID": 73,
@@ -14016,7 +14016,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                54,
+                68,
                 7
             ],
             "ZoneID": 74,
@@ -14205,7 +14205,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 75,
@@ -16851,7 +16851,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 89,
@@ -17040,7 +17040,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 90,
@@ -17229,7 +17229,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 91,
@@ -17418,7 +17418,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 92,
@@ -17607,7 +17607,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 93,
@@ -17796,7 +17796,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 94,
@@ -17985,7 +17985,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 95,
@@ -18174,7 +18174,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 96,
@@ -18363,7 +18363,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 97,
@@ -18552,7 +18552,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 98,
@@ -18741,7 +18741,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 99,
@@ -18930,7 +18930,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 100,
@@ -19119,7 +19119,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 101,
@@ -19308,7 +19308,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 102,
@@ -19497,7 +19497,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 103,
@@ -19686,7 +19686,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 104,
@@ -19875,7 +19875,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 105,
@@ -20064,7 +20064,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 106,
@@ -20253,7 +20253,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 107,
@@ -20442,7 +20442,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 108,
@@ -20631,7 +20631,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                25,
+                64,
                 7
             ],
             "ZoneID": 109,
@@ -20820,7 +20820,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                17,
+                70,
                 7
             ],
             "ZoneID": 110,
@@ -21009,7 +21009,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 111,
@@ -21228,7 +21228,7 @@
                 "GYM"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 2,
+            "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -7360915806091487247
@@ -21387,7 +21387,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 113,
@@ -21576,7 +21576,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 114,
@@ -21765,7 +21765,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 115,
@@ -21954,7 +21954,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 116,
@@ -22143,7 +22143,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 117,
@@ -22332,7 +22332,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 118,
@@ -22521,7 +22521,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 119,
@@ -22710,7 +22710,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 120,
@@ -22899,7 +22899,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 121,
@@ -23088,7 +23088,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 122,
@@ -23277,7 +23277,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                54,
+                64,
                 7
             ],
             "ZoneID": 123,
@@ -23655,7 +23655,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 125,
@@ -23844,7 +23844,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 126,
@@ -24033,7 +24033,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 127,
@@ -24222,7 +24222,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 128,
@@ -24411,7 +24411,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 129,
@@ -24600,7 +24600,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 130,
@@ -24789,7 +24789,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 131,
@@ -24978,7 +24978,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 132,
@@ -25167,7 +25167,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 133,
@@ -25356,7 +25356,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 134,
@@ -25545,7 +25545,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 135,
@@ -25734,7 +25734,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 136,
@@ -25923,7 +25923,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 137,
@@ -26112,7 +26112,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 138,
@@ -26301,7 +26301,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 139,
@@ -26490,7 +26490,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 140,
@@ -26679,7 +26679,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 141,
@@ -26868,7 +26868,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                69,
+                64,
                 7
             ],
             "ZoneID": 142,
@@ -27057,7 +27057,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 143,
@@ -27813,7 +27813,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 147,
@@ -28002,7 +28002,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 148,
@@ -28191,7 +28191,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 149,
@@ -28380,7 +28380,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 150,
@@ -28569,7 +28569,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 151,
@@ -28758,7 +28758,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 152,
@@ -28947,7 +28947,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 153,
@@ -29136,7 +29136,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 154,
@@ -29325,7 +29325,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 155,
@@ -29514,7 +29514,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 156,
@@ -29703,7 +29703,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 157,
@@ -29892,7 +29892,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 158,
@@ -30270,7 +30270,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                15,
                 7
             ],
             "ZoneID": 160,
@@ -30452,8 +30452,8 @@
                 "y": 0.0
             },
             "Bicycle": 0,
-            "Escape": 1,
-            "Fly": 1,
+            "Escape": 0,
+            "Fly": 0,
             "BattleSearcher": 0,
             "TureAruki": 0,
             "KuruKuru": 0,
@@ -30489,7 +30489,7 @@
                 "GYM"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 7,
+            "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -4091437482027184648
@@ -30648,7 +30648,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                15,
                 7
             ],
             "ZoneID": 162,
@@ -30837,7 +30837,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                15,
                 7
             ],
             "ZoneID": 163,
@@ -31026,7 +31026,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                15,
                 7
             ],
             "ZoneID": 164,
@@ -31215,7 +31215,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                15,
                 7
             ],
             "ZoneID": 165,
@@ -31404,7 +31404,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                15,
                 7
             ],
             "ZoneID": 166,
@@ -31623,7 +31623,7 @@
                 "C10_Night"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 8034931580133898456
@@ -34428,7 +34428,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                39,
+                64,
                 7
             ],
             "ZoneID": 182,
@@ -34617,7 +34617,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                39,
+                64,
                 7
             ],
             "ZoneID": 183,
@@ -34806,7 +34806,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 184,
@@ -34995,7 +34995,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                64,
                 7
             ],
             "ZoneID": 185,
@@ -35184,7 +35184,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                70,
+                0,
                 7
             ],
             "ZoneID": 186,
@@ -35373,7 +35373,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 187,
@@ -35562,7 +35562,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 188,
@@ -35751,7 +35751,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 189,
@@ -35940,7 +35940,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 190,
@@ -36129,7 +36129,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 191,
@@ -36318,7 +36318,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 192,
@@ -36507,7 +36507,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 193,
@@ -36696,7 +36696,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 194,
@@ -37452,7 +37452,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 198,
@@ -37637,7 +37637,7 @@
             "Escape": 0,
             "Fly": 1,
             "BattleSearcher": 0,
-            "TureAruki": 0,
+            "TureAruki": 1,
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
@@ -38397,7 +38397,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 203,
@@ -38586,7 +38586,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 204,
@@ -38775,7 +38775,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 205,
@@ -39342,7 +39342,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 208,
@@ -39531,7 +39531,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 209,
@@ -39720,7 +39720,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 210,
@@ -39909,7 +39909,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 211,
@@ -40098,7 +40098,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 212,
@@ -40287,7 +40287,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 213,
@@ -40476,7 +40476,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 214,
@@ -40665,7 +40665,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 215,
@@ -40695,7 +40695,7 @@
                 "D14"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 72199643842126532
@@ -40848,7 +40848,7 @@
             },
             "Bicycle": 0,
             "Escape": 0,
-            "Fly": 1,
+            "Fly": 0,
             "BattleSearcher": 0,
             "TureAruki": 0,
             "KuruKuru": 0,
@@ -41037,7 +41037,7 @@
             },
             "Bicycle": 0,
             "Escape": 0,
-            "Fly": 1,
+            "Fly": 0,
             "BattleSearcher": 0,
             "TureAruki": 0,
             "KuruKuru": 0,
@@ -42555,7 +42555,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 225,
@@ -42744,7 +42744,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 226,
@@ -42933,7 +42933,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 227,
@@ -43122,7 +43122,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 228,
@@ -43311,7 +43311,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 229,
@@ -43500,7 +43500,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 230,
@@ -43689,7 +43689,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 231,
@@ -43878,7 +43878,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 232,
@@ -44067,7 +44067,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 233,
@@ -44256,7 +44256,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 234,
@@ -44445,7 +44445,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 235,
@@ -44634,7 +44634,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 236,
@@ -44823,7 +44823,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 237,
@@ -45012,7 +45012,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 238,
@@ -45201,7 +45201,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 239,
@@ -45390,7 +45390,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 240,
@@ -45579,7 +45579,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 241,
@@ -45768,7 +45768,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 242,
@@ -45957,7 +45957,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 243,
@@ -46146,7 +46146,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 244,
@@ -46335,7 +46335,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 245,
@@ -46524,7 +46524,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 246,
@@ -46713,7 +46713,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 247,
@@ -46743,7 +46743,7 @@
                 "D09"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 72199643842126532
@@ -46902,7 +46902,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 248,
@@ -47091,7 +47091,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 249,
@@ -47658,7 +47658,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 252,
@@ -47847,7 +47847,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                2,
+                0,
                 7
             ],
             "ZoneID": 253,
@@ -48036,7 +48036,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 254,
@@ -48225,7 +48225,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 255,
@@ -48414,7 +48414,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 256,
@@ -48977,7 +48977,7 @@
             "Escape": 0,
             "Fly": 1,
             "BattleSearcher": 1,
-            "TureAruki": 0,
+            "TureAruki": 1,
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
@@ -49170,7 +49170,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 7
             ],
             "ZoneID": 260,
@@ -49359,7 +49359,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 7
             ],
             "ZoneID": 261,
@@ -49541,14 +49541,14 @@
                 "y": 0.0
             },
             "Bicycle": 1,
-            "Escape": 1,
+            "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
             "TureAruki": 0,
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 7
             ],
             "ZoneID": 262,
@@ -49737,7 +49737,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                3,
+                65,
                 7
             ],
             "ZoneID": 263,
@@ -49767,7 +49767,7 @@
                 "L04"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 8034931580133898456
@@ -49926,7 +49926,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 264,
@@ -49956,7 +49956,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -50115,7 +50115,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 265,
@@ -50145,7 +50145,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -50304,7 +50304,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 266,
@@ -50334,7 +50334,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -50493,7 +50493,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 267,
@@ -50523,7 +50523,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -50682,7 +50682,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 268,
@@ -50712,7 +50712,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -50871,7 +50871,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 269,
@@ -50901,7 +50901,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -51060,7 +51060,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 270,
@@ -51090,7 +51090,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -51249,7 +51249,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 271,
@@ -51279,7 +51279,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -51438,7 +51438,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 272,
@@ -51468,7 +51468,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -51627,7 +51627,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 273,
@@ -51657,7 +51657,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -51816,7 +51816,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 274,
@@ -51846,7 +51846,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -52005,7 +52005,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 275,
@@ -52035,7 +52035,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -52194,7 +52194,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 276,
@@ -52224,7 +52224,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -52383,7 +52383,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 277,
@@ -52413,7 +52413,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -52572,7 +52572,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 278,
@@ -52602,7 +52602,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -52761,7 +52761,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 279,
@@ -52791,7 +52791,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -52950,7 +52950,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 280,
@@ -52980,7 +52980,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -53139,7 +53139,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 281,
@@ -53169,7 +53169,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -53328,7 +53328,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 282,
@@ -53358,7 +53358,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -53517,7 +53517,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 283,
@@ -53547,7 +53547,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -53706,7 +53706,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 284,
@@ -53736,7 +53736,7 @@
                 "D17"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 400221685334886624
@@ -55218,7 +55218,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 7
             ],
             "ZoneID": 292,
@@ -55248,7 +55248,7 @@
                 "D21"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 16,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 72199643842126532
@@ -55407,7 +55407,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 7
             ],
             "ZoneID": 293,
@@ -55596,7 +55596,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 7
             ],
             "ZoneID": 294,
@@ -55785,7 +55785,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 7
             ],
             "ZoneID": 295,
@@ -55974,7 +55974,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 7
             ],
             "ZoneID": 296,
@@ -56348,7 +56348,7 @@
             "Escape": 0,
             "Fly": 1,
             "BattleSearcher": 0,
-            "TureAruki": 0,
+            "TureAruki": 1,
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
@@ -56382,7 +56382,7 @@
                 "D24_Outside_Night"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 8034931580133898456
@@ -56541,7 +56541,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 299,
@@ -56730,7 +56730,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 300,
@@ -56919,7 +56919,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 301,
@@ -57108,7 +57108,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 302,
@@ -57297,7 +57297,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 303,
@@ -57486,7 +57486,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                4,
                 5
             ],
             "ZoneID": 304,
@@ -57675,7 +57675,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 305,
@@ -61644,7 +61644,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                3,
+                65,
                 7
             ],
             "ZoneID": 326,
@@ -61833,7 +61833,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                3,
+                65,
                 7
             ],
             "ZoneID": 327,
@@ -63210,13 +63210,13 @@
                 },
                 {
                     "x": 24.0,
-                    "y": 11.0,
+                    "y": 12.0,
                     "z": 0.0,
                     "w": 1.0
                 },
                 {
                     "x": 25.0,
-                    "y": 11.0,
+                    "y": 12.0,
                     "z": 0.0,
                     "w": 1.0
                 },
@@ -64101,7 +64101,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                40,
+                0,
                 7
             ],
             "ZoneID": 339,
@@ -64479,7 +64479,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                40,
+                0,
                 7
             ],
             "ZoneID": 341,
@@ -64668,7 +64668,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                40,
+                0,
                 7
             ],
             "ZoneID": 342,
@@ -64857,7 +64857,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                43,
+                0,
                 7
             ],
             "ZoneID": 343,
@@ -65046,7 +65046,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                43,
+                0,
                 7
             ],
             "ZoneID": 344,
@@ -65235,7 +65235,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                20,
+                0,
                 7
             ],
             "ZoneID": 345,
@@ -66558,7 +66558,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                3,
+                65,
                 7
             ],
             "ZoneID": 352,
@@ -66747,7 +66747,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                20,
+                0,
                 7
             ],
             "ZoneID": 353,
@@ -68070,7 +68070,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 360,
@@ -68478,7 +68478,7 @@
                 "R206_Night"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 8034931580133898456
@@ -68637,7 +68637,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 363,
@@ -69045,7 +69045,7 @@
                 "R208_Night"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 8034931580133898456
@@ -69204,7 +69204,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 366,
@@ -69564,8 +69564,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー1F",
-            "MSLabel": "DP_fld_areaname_display_174",
-            "PokePlaceName": "DP_fld_arenames_321",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_077",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -69753,8 +69753,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー2F",
-            "MSLabel": "DP_fld_areaname_display_174",
-            "PokePlaceName": "DP_fld_arenames_321",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_077",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -69942,8 +69942,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー3F",
-            "MSLabel": "DP_fld_areaname_display_174",
-            "PokePlaceName": "DP_fld_arenames_321",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_077",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -70131,8 +70131,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー4F",
-            "MSLabel": "DP_fld_areaname_display_174",
-            "PokePlaceName": "DP_fld_arenames_321",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_077",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -70320,8 +70320,8 @@
         },
         {
             "Caption": "209ばんどうろ:ロストタワー5F",
-            "MSLabel": "DP_fld_areaname_display_174",
-            "PokePlaceName": "DP_fld_arenames_321",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_077",
             "FlyingPlaceName": "",
             "MapType": 2,
             "IsField": 0,
@@ -70935,7 +70935,7 @@
                 "R210_Night"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 14,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 8034931580133898456
@@ -71094,7 +71094,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 376,
@@ -71833,7 +71833,7 @@
         {
             "Caption": "212ばんどうろa:ポケモンやしき",
             "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_082",
+            "PokePlaceName": "DP_fld_arenames_081",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -71850,7 +71850,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                74,
+                64,
                 7
             ],
             "ZoneID": 380,
@@ -72022,7 +72022,7 @@
         {
             "Caption": "212ばんどうろa:ポケモンやしき",
             "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_082",
+            "PokePlaceName": "DP_fld_arenames_081",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -72039,7 +72039,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                74,
+                64,
                 7
             ],
             "ZoneID": 381,
@@ -72211,7 +72211,7 @@
         {
             "Caption": "212ばんどうろa:ポケモンやしき",
             "MSLabel": "",
-            "PokePlaceName": "DP_fld_arenames_082",
+            "PokePlaceName": "DP_fld_arenames_081",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -72228,7 +72228,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                74,
+                64,
                 7
             ],
             "ZoneID": 382,
@@ -72417,7 +72417,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                17,
+                64,
                 7
             ],
             "ZoneID": 383,
@@ -72606,7 +72606,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 384,
@@ -72984,7 +72984,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 8
             ],
             "ZoneID": 386,
@@ -73173,7 +73173,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                64,
                 7
             ],
             "ZoneID": 387,
@@ -73551,7 +73551,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                73,
+                64,
                 7
             ],
             "ZoneID": 389,
@@ -73740,7 +73740,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                73,
+                64,
                 7
             ],
             "ZoneID": 390,
@@ -73929,7 +73929,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                73,
+                64,
                 7
             ],
             "ZoneID": 391,
@@ -74307,7 +74307,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 393,
@@ -74874,7 +74874,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                15,
                 7
             ],
             "ZoneID": 396,
@@ -75093,7 +75093,7 @@
                 "R217_Night"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 6,
+            "Weather": 7,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -7831942029979500660
@@ -75252,7 +75252,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                15,
                 7
             ],
             "ZoneID": 398,
@@ -75441,7 +75441,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                15,
                 7
             ],
             "ZoneID": 399,
@@ -75819,7 +75819,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 8
             ],
             "ZoneID": 401,
@@ -76008,7 +76008,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 8
             ],
             "ZoneID": 402,
@@ -76575,7 +76575,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 8
             ],
             "ZoneID": 405,
@@ -76764,7 +76764,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 8
             ],
             "ZoneID": 406,
@@ -77520,7 +77520,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                64,
                 7
             ],
             "ZoneID": 410,
@@ -77898,7 +77898,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                0,
                 7
             ],
             "ZoneID": 412,
@@ -78087,7 +78087,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 413,
@@ -78276,7 +78276,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                0,
                 7
             ],
             "ZoneID": 414,
@@ -78465,7 +78465,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 415,
@@ -78654,7 +78654,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                0,
                 7
             ],
             "ZoneID": 416,
@@ -78843,7 +78843,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 417,
@@ -79032,7 +79032,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 418,
@@ -79221,7 +79221,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 419,
@@ -79410,7 +79410,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                0,
                 8
             ],
             "ZoneID": 420,
@@ -79599,7 +79599,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                43,
+                0,
                 7
             ],
             "ZoneID": 421,
@@ -79818,7 +79818,7 @@
                 "T01_Night"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 5,
+            "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 8034931580133898456
@@ -79977,7 +79977,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 423,
@@ -80166,7 +80166,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 424,
@@ -80355,7 +80355,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 425,
@@ -80544,7 +80544,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 426,
@@ -80733,7 +80733,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 427,
@@ -80922,7 +80922,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 428,
@@ -81300,7 +81300,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 430,
@@ -81489,7 +81489,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 431,
@@ -81678,7 +81678,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 432,
@@ -81867,7 +81867,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 433,
@@ -82056,7 +82056,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 434,
@@ -82245,7 +82245,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 435,
@@ -82434,7 +82434,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 436,
@@ -82623,7 +82623,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 437,
@@ -82812,7 +82812,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                2,
+                0,
                 7
             ],
             "ZoneID": 438,
@@ -83001,7 +83001,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 439,
@@ -83190,7 +83190,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 440,
@@ -83379,7 +83379,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 441,
@@ -83568,7 +83568,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 442,
@@ -83757,7 +83757,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 443,
@@ -83946,7 +83946,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 444,
@@ -84135,7 +84135,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 445,
@@ -84513,7 +84513,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 447,
@@ -84702,7 +84702,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 448,
@@ -84891,7 +84891,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 449,
@@ -85080,7 +85080,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 450,
@@ -85269,7 +85269,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                67,
+                0,
                 7
             ],
             "ZoneID": 451,
@@ -85458,7 +85458,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 452,
@@ -85647,7 +85647,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 453,
@@ -85836,7 +85836,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 454,
@@ -86025,7 +86025,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 455,
@@ -86403,7 +86403,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 457,
@@ -86592,7 +86592,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 458,
@@ -86781,7 +86781,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 459,
@@ -86970,7 +86970,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 460,
@@ -87159,7 +87159,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 461,
@@ -87348,7 +87348,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 462,
@@ -87537,7 +87537,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 463,
@@ -87726,7 +87726,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                53,
+                0,
                 7
             ],
             "ZoneID": 464,
@@ -88104,7 +88104,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 466,
@@ -88293,7 +88293,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 467,
@@ -88482,7 +88482,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 468,
@@ -88671,7 +88671,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 469,
@@ -88860,7 +88860,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 470,
@@ -89049,7 +89049,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 471,
@@ -89238,7 +89238,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 472,
@@ -89427,7 +89427,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                70,
+                0,
                 7
             ],
             "ZoneID": 473,
@@ -89616,7 +89616,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 474,
@@ -89805,7 +89805,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 475,
@@ -89994,7 +89994,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 476,
@@ -90183,7 +90183,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                75,
+                0,
                 7
             ],
             "ZoneID": 477,
@@ -90372,7 +90372,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 478,
@@ -90561,7 +90561,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 479,
@@ -90750,7 +90750,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 480,
@@ -90939,7 +90939,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 481,
@@ -91128,7 +91128,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 7
             ],
             "ZoneID": 482,
@@ -91506,7 +91506,7 @@
             "KuruKuru": 1,
             "Fall": 0,
             "BattleBg": [
-                43,
+                0,
                 7
             ],
             "ZoneID": 484,
@@ -92073,7 +92073,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                0,
                 8
             ],
             "ZoneID": 487,
@@ -92262,7 +92262,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                71,
+                0,
                 8
             ],
             "ZoneID": 488,
@@ -92451,7 +92451,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                0,
                 8
             ],
             "ZoneID": 489,
@@ -92640,7 +92640,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                2,
+                0,
                 7
             ],
             "ZoneID": 490,
@@ -92829,7 +92829,7 @@
             "KuruKuru": 1,
             "Fall": 0,
             "BattleBg": [
-                43,
+                0,
                 7
             ],
             "ZoneID": 491,
@@ -93018,7 +93018,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                43,
+                0,
                 7
             ],
             "ZoneID": 492,
@@ -93207,7 +93207,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                43,
+                0,
                 7
             ],
             "ZoneID": 493,
@@ -93378,8 +93378,8 @@
         },
         {
             "Caption": "ハクタイ:ギンガ団支部ビル　ロトムの部屋（プラチナ要素）",
-            "MSLabel": "DP_fld_areaname_display_172",
-            "PokePlaceName": "DP_fld_arenames_318",
+            "MSLabel": "",
+            "PokePlaceName": "DP_fld_arenames_010",
             "FlyingPlaceName": "",
             "MapType": 3,
             "IsField": 0,
@@ -93396,7 +93396,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                14,
+                0,
                 7
             ],
             "ZoneID": 494,
@@ -95468,8 +95468,8 @@
                 "y": 0.0
             },
             "Bicycle": 0,
-            "Escape": 1,
-            "Fly": 1,
+            "Escape": 0,
+            "Fly": 0,
             "BattleSearcher": 0,
             "TureAruki": 0,
             "KuruKuru": 0,
@@ -96034,7 +96034,7 @@
                 "x": 112.0,
                 "y": 416.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -96223,7 +96223,7 @@
                 "x": 190.0,
                 "y": 416.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -96412,7 +96412,7 @@
                 "x": 232.0,
                 "y": 332.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -96601,7 +96601,7 @@
                 "x": 328.0,
                 "y": 368.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -96790,7 +96790,7 @@
                 "x": 328.0,
                 "y": 494.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -96979,7 +96979,7 @@
                 "x": 469.0,
                 "y": 524.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -97168,7 +97168,7 @@
                 "x": 565.0,
                 "y": 422.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -97357,7 +97357,7 @@
                 "x": 613.0,
                 "y": 551.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -97546,7 +97546,7 @@
                 "x": 691.0,
                 "y": 491.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -97735,7 +97735,7 @@
                 "x": 790.0,
                 "y": 491.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -97924,7 +97924,7 @@
                 "x": 115.0,
                 "y": 593.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -98113,7 +98113,7 @@
                 "x": 109.0,
                 "y": 665.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -98302,7 +98302,7 @@
                 "x": 229.0,
                 "y": 608.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -98491,7 +98491,7 @@
                 "x": 247.0,
                 "y": 566.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -98680,7 +98680,7 @@
                 "x": 313.0,
                 "y": 632.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -98869,7 +98869,7 @@
                 "x": 379.0,
                 "y": 632.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -99058,7 +99058,7 @@
                 "x": 283.0,
                 "y": 737.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -99247,7 +99247,7 @@
                 "x": 451.0,
                 "y": 455.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -99436,7 +99436,7 @@
                 "x": 121.0,
                 "y": 281.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -99625,7 +99625,7 @@
                 "x": 121.0,
                 "y": 209.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -99814,7 +99814,7 @@
                 "x": 283.0,
                 "y": 263.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -100003,7 +100003,7 @@
                 "x": 295.0,
                 "y": 194.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -100192,7 +100192,7 @@
                 "x": 490.0,
                 "y": 230.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -100381,7 +100381,7 @@
                 "x": 454.0,
                 "y": 686.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -100570,7 +100570,7 @@
                 "x": 502.0,
                 "y": 737.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -100759,7 +100759,7 @@
                 "x": 544.0,
                 "y": 668.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -100948,7 +100948,7 @@
                 "x": 736.0,
                 "y": 707.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -101137,7 +101137,7 @@
                 "x": 793.0,
                 "y": 620.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -101326,7 +101326,7 @@
                 "x": 595.0,
                 "y": 224.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -101515,7 +101515,7 @@
                 "x": 589.0,
                 "y": 293.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -101704,7 +101704,7 @@
                 "x": 655.0,
                 "y": 293.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -101893,7 +101893,7 @@
                 "x": 640.0,
                 "y": 386.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -102082,7 +102082,7 @@
                 "x": 733.0,
                 "y": 302.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -102271,7 +102271,7 @@
                 "x": 772.0,
                 "y": 224.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -102460,7 +102460,7 @@
                 "x": 772.0,
                 "y": 353.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -102649,7 +102649,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -102838,7 +102838,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -103027,7 +103027,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -103216,7 +103216,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -103405,7 +103405,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -103594,7 +103594,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -103783,7 +103783,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -103972,7 +103972,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -104161,7 +104161,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -104350,7 +104350,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -104539,7 +104539,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -104728,7 +104728,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -104917,7 +104917,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -105106,7 +105106,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -105295,7 +105295,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -105484,7 +105484,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -105673,7 +105673,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -105862,7 +105862,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -106051,7 +106051,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -106240,7 +106240,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -106429,7 +106429,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -106618,7 +106618,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -106807,7 +106807,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -106996,7 +106996,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -107185,7 +107185,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -107374,7 +107374,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -107563,7 +107563,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -107752,7 +107752,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -107941,7 +107941,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -108130,7 +108130,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -108319,7 +108319,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -108508,7 +108508,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -108697,7 +108697,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -108886,7 +108886,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -109075,7 +109075,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -109264,7 +109264,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -109453,7 +109453,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -109642,7 +109642,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -109831,7 +109831,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -110020,7 +110020,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -110209,7 +110209,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -110398,7 +110398,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -110587,7 +110587,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -110776,7 +110776,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -110965,7 +110965,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -111154,7 +111154,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -111343,7 +111343,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -111532,7 +111532,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -111721,7 +111721,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -111910,7 +111910,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -112099,7 +112099,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -112288,7 +112288,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -112477,7 +112477,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -112666,7 +112666,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -112855,7 +112855,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -113044,7 +113044,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -113233,7 +113233,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -113422,7 +113422,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -113611,7 +113611,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -113800,7 +113800,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -113989,7 +113989,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -114178,7 +114178,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -114367,7 +114367,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -114556,7 +114556,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -114745,7 +114745,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -114934,7 +114934,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -115123,7 +115123,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -115312,7 +115312,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -115501,7 +115501,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -115690,7 +115690,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -115879,7 +115879,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -116068,7 +116068,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -116257,7 +116257,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -116446,7 +116446,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -116635,7 +116635,7 @@
                 "x": 0.0,
                 "y": 0.0
             },
-            "Bicycle": 1,
+            "Bicycle": 0,
             "Escape": 0,
             "Fly": 0,
             "BattleSearcher": 0,
@@ -116815,7 +116815,7 @@
         {
             "Caption": "はじまりのま（パール）",
             "MSLabel": "DP_fld_areaname_display_029",
-            "PokePlaceName": "DP_fld_arenames_031",
+            "PokePlaceName": "DP_fld_arenames_030",
             "FlyingPlaceName": "",
             "MapType": 1,
             "IsField": 0,
@@ -116826,13 +116826,13 @@
             },
             "Bicycle": 0,
             "Escape": 0,
-            "Fly": 1,
+            "Fly": 0,
             "BattleSearcher": 0,
             "TureAruki": 0,
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                66,
+                105,
                 7
             ],
             "ZoneID": 618,
@@ -116843,11 +116843,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 8819998993546216627
+                "m_PathID": 8215049664012555835
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -6630549184168068500
+                "m_PathID": 5045193278375431741
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -116861,11 +116861,11 @@
                 "D05R0116_D05R0117",
                 "D05R0116_D05R0117"
             ],
-            "EnvironmentalSound": "Env_Silence",
+            "EnvironmentalSound": "s_env033",
             "Weather": 13,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": -6014463225284099309
+                "m_PathID": 5108899609611771697
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -116879,9 +116879,9 @@
                     "w": 0.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
+                    "x": 31.0,
+                    "y": 52.0,
+                    "z": 2.0,
                     "w": 0.0
                 },
                 {
@@ -117021,7 +117021,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                42,
+                0,
                 7
             ],
             "ZoneID": 619,
@@ -117210,7 +117210,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 620,
@@ -117399,7 +117399,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 621,
@@ -117588,7 +117588,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 622,
@@ -117777,7 +117777,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 623,
@@ -117966,7 +117966,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                42,
+                4,
                 7
             ],
             "ZoneID": 624,
@@ -118533,7 +118533,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 627,
@@ -118722,7 +118722,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 628,
@@ -118911,7 +118911,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 629,
@@ -119100,7 +119100,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 630,
@@ -119289,7 +119289,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 631,
@@ -119478,7 +119478,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 632,
@@ -119667,7 +119667,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 633,
@@ -119856,7 +119856,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 634,
@@ -120045,7 +120045,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 635,
@@ -120234,7 +120234,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 636,
@@ -120423,7 +120423,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 637,
@@ -120612,7 +120612,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 638,
@@ -120801,7 +120801,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 639,
@@ -120990,7 +120990,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 640,
@@ -121179,7 +121179,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 641,
@@ -121368,7 +121368,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 642,
@@ -121557,7 +121557,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 643,
@@ -121746,7 +121746,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 644,
@@ -121935,7 +121935,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 645,
@@ -122124,7 +122124,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 646,
@@ -122313,7 +122313,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                47,
+                0,
                 7
             ],
             "ZoneID": 647,
@@ -122502,7 +122502,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                41,
+                4,
                 7
             ],
             "ZoneID": 648,
@@ -122691,7 +122691,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                41,
+                4,
                 7
             ],
             "ZoneID": 649,
@@ -122880,7 +122880,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                41,
+                4,
                 7
             ],
             "ZoneID": 650,
@@ -123069,7 +123069,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                41,
+                4,
                 7
             ],
             "ZoneID": 651,
@@ -123258,7 +123258,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                42,
+                4,
                 7
             ],
             "ZoneID": 652,
@@ -123447,7 +123447,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                42,
+                4,
                 7
             ],
             "ZoneID": 653,
@@ -123636,7 +123636,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                42,
+                4,
                 7
             ],
             "ZoneID": 654,
@@ -123825,7 +123825,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                42,
+                4,
                 7
             ],
             "ZoneID": 655,
@@ -124014,7 +124014,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                42,
+                4,
                 7
             ],
             "ZoneID": 656,
@@ -124203,7 +124203,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                42,
+                4,
                 7
             ],
             "ZoneID": 657,
@@ -125345,12 +125345,12 @@
         },
         {
             "ariaID": 57,
-            "pitch": 30.0,
+            "pitch": 45.0,
             "fov": 20.0,
-            "targetRange": 22.0,
-            "panDistance": 28.0,
+            "targetRange": 30.0,
+            "panDistance": 25.0,
             "panPitch": 30.0,
-            "panFov": 28.0,
+            "panFov": 20.0,
             "panpos_useflag": 1,
             "panMinposY": 0.0,
             "panMaxposY": 4.5,
@@ -125358,7 +125358,7 @@
             "panMaxposZ": 37.650001525878906,
             "defocusStart": 0.0,
             "defocusEnd": 10.5,
-            "distance": 28.0
+            "distance": 30.0
         },
         {
             "ariaID": 58,
@@ -128082,9 +128082,9 @@
         },
         {
             "ariaID": 218,
-            "pitch": 45.0,
-            "fov": 20.0,
-            "targetRange": 30.0,
+            "pitch": 25.0,
+            "fov": 65.0,
+            "targetRange": 5.5,
             "panDistance": 25.0,
             "panPitch": 35.0,
             "panFov": 20.0,
@@ -128094,7 +128094,7 @@
             "panMinposZ": 0.0,
             "panMaxposZ": 0.0,
             "defocusStart": 0.0,
-            "defocusEnd": 14.612500190734863,
+            "defocusEnd": 400.0,
             "distance": 30.0
         },
         {
@@ -132965,13 +132965,13 @@
             "fov": 20.0,
             "targetRange": 30.0,
             "panDistance": 25.0,
-            "panPitch": 20.0,
+            "panPitch": 25.0,
             "panFov": 25.0,
             "panpos_useflag": 1,
             "panMinposY": 0.0,
-            "panMaxposY": 4.0,
+            "panMaxposY": 7.0,
             "panMinposZ": 12.5,
-            "panMaxposZ": 20.0,
+            "panMaxposZ": 40.0,
             "defocusStart": 0.0,
             "defocusEnd": 8.75,
             "distance": 30.0
@@ -134882,9 +134882,9 @@
         },
         {
             "ariaID": 634,
-            "pitch": 45.0,
-            "fov": 20.0,
-            "targetRange": 30.0,
+            "pitch": 25.0,
+            "fov": 65.0,
+            "targetRange": 5.5,
             "panDistance": 25.0,
             "panPitch": 35.0,
             "panFov": 20.0,
@@ -134894,7 +134894,7 @@
             "panMinposZ": 0.0,
             "panMaxposZ": 0.0,
             "defocusStart": 0.0,
-            "defocusEnd": 14.612500190734863,
+            "defocusEnd": 400.0,
             "distance": 30.0
         },
         {

@@ -12939,7 +12939,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Rainbow Wing",
+                    "str": "Rule Book",
                     "strWidth": 132.0625
                 }
             ]
@@ -13719,8 +13719,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Tea",
-                    "strWidth": 78.90625
+                    "str": "S.S. Ticket",
+                    "strWidth": 134.90625
                 }
             ]
         },
@@ -33969,7 +33969,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM101",
+                    "str": "TR01",
                     "strWidth": 66.71875762939453
                 }
             ]
@@ -33999,7 +33999,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM102",
+                    "str": "TR02",
                     "strWidth": 70.71875
                 }
             ]
@@ -34029,7 +34029,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM103",
+                    "str": "TR03",
                     "strWidth": 70.71875
                 }
             ]
@@ -34059,7 +34059,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM104",
+                    "str": "TR04",
                     "strWidth": 70.71875
                 }
             ]
@@ -51369,7 +51369,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Exp. Share",
+                    "str": "Kanto Slate",
                     "strWidth": 150.34375
                 }
             ]
@@ -51701,426 +51701,6 @@
                     "tagValue": 0.0,
                     "str": "DS Sounds",
                     "strWidth": 138.796875
-                }
-            ]
-        },
-        {
-            "labelIndex": 1623,
-            "arrayIndex": 1823,
-            "labelName": "ITEMNAME_1623",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "GS Ball",
-                    "strWidth": 138.796875
-                }
-            ]
-        },
-        {
-            "labelIndex": 1624,
-            "arrayIndex": 1824,
-            "labelName": "ITEMINFO_1624",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                2,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Odd Invitation",
-                    "strWidth": 420.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 1625,
-            "arrayIndex": 1825,
-            "labelName": "ITEMNAME_1625",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                2,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Everlasting Candy",
-                    "strWidth": 420.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 1626,
-            "arrayIndex": 1826,
-            "labelName": "ITEMNAME_1626",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                2,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Wind Badge",
-                    "strWidth": 420.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 1627,
-            "arrayIndex": 1827,
-            "labelName": "ITEMNAME_1627",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                2,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Fang Badge",
-                    "strWidth": 420.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 1628,
-            "arrayIndex": 1828,
-            "labelName": "ITEMNAME_1628",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                2,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Acid Badge",
-                    "strWidth": 420.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 1629,
-            "arrayIndex": 1829,
-            "labelName": "ITEMNAME_1629",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                2,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Shadow Badge",
-                    "strWidth": 420.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 1630,
-            "arrayIndex": 1830,
-            "labelName": "ITEMNAME_1630",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                2,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "General Badge",
-                    "strWidth": 420.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 1631,
-            "arrayIndex": 1831,
-            "labelName": "ITEMNAME_1631",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                2,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Moon Badge",
-                    "strWidth": 420.0
-                }
-            ]
-        },
-        {
-            "labelIndex": 1632,
-            "arrayIndex": 1832,
-            "labelName": "ITEMNAME_1632",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Silver Wing",
-                    "strWidth": 140.828125
-                }
-            ]
-        },
-        {
-            "labelIndex": 1633,
-            "arrayIndex": 1833,
-            "labelName": "ITEMNAME_1633",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Incense Burner",
-                    "strWidth": 140.828125
-                }
-            ]
-        },
-        {
-            "labelIndex": 1634,
-            "arrayIndex": 1834,
-            "labelName": "ITEMNAME_1634",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Mewtwo Armor",
-                    "strWidth": 140.828125
-                }
-            ]
-        },
-        {
-            "labelIndex": 1635,
-            "arrayIndex": 1835,
-            "labelName": "ITEMNAME_1635",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Infinite Repel",
-                    "strWidth": 140.828125
-                }
-            ]
-        },
-        {
-            "labelIndex": 1636,
-            "arrayIndex": 1836,
-            "labelName": "ITEMNAME_1636",
-            "styleInfo": {
-                "styleIndex": 121,
-                "colorIndex": -1,
-                "fontSize": 42,
-                "maxWidth": 420,
-                "controlID": 0
-            },
-            "attributeValueArray": [
-                -1,
-                0,
-                0,
-                -1,
-                0
-            ],
-            "tagDataArray": [],
-            "wordDataArray": [
-                {
-                    "patternID": 0,
-                    "eventID": 7,
-                    "tagIndex": -1,
-                    "tagValue": 0.0,
-                    "str": "Old Mewtwo Armor",
-                    "strWidth": 140.828125
                 }
             ]
         }
