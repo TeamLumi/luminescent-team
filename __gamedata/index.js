@@ -335,6 +335,7 @@ const FixedShop = {
 module.exports = {
   GAMEDATA2,
   GAMEDATA3,
+  GAMEDATAV,
   PersonalTable,
   GrowTable,
   EvolveTable,

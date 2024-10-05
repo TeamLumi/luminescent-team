@@ -6,13 +6,18 @@ const POUNDS_TO_KG = 0.453592;
 
 function getHeight(pokemonId = 0, mode = GAMEDATA2) {
   const ModePokemonHeight = PokemonHeight[mode];
-  const heightString = ModePokemonHeight.labelDataArray[pokemonId]?.wordDataArray[0]?.str ?? null;
+  if (pokemonId === 0) return 0;
+  
+  const heightString = ModePokemonHeight?.labelDataArray[pokemonId]?.wordDataArray[0]?.str || '0';
+  let feetString = '0';
+  let inchesString = heightString;
 
-  if (heightString === null) return '0';
+  if (heightString.includes("'")) {
+    [feetString, inchesString] = heightString.split("'");
+  }
 
-  const [feetString, inchesString] = heightString.split("'");
-  const inches = parseFloat(inchesString.substring(0, inchesString.length - 1));
-  const feet = parseInt(feetString);
+  const inches = parseFloat(inchesString.slice(0, -1)) || 0;
+  const feet = parseInt(feetString) || 0;
 
   const feetInCentimeters = feet * FEET_TO_CM;
   const inchesInCentimeters = inches * INCHES_TO_CM;

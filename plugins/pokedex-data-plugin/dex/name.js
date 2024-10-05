@@ -1,7 +1,17 @@
-const { PersonalTable, BasePokemonNames, FormPokemonNames, GAMEDATA2, GAMEDATA3 } = require('../../../__gamedata');
+const {
+  PersonalTable,
+  BasePokemonNames,
+  FormPokemonNames,
+  GAMEDATA2,
+  GAMEDATA3,
+  GAMEDATAV,
+} = require('../../../__gamedata');
 const { START_OF_LINE_FORMS, END_OF_LINE_FORMS, REVERSE_ORDER_ARRAY } = require('./nameConstants')
 const { FORM_MAP } = require('./functions');
 
+const POKEMON_NAME_MAPV = PersonalTable[GAMEDATAV].Personal.reduce((pokemonNameMap, currentPokemon) => {
+  return createPokemonMap(pokemonNameMap, currentPokemon, GAMEDATAV);
+}, {});
 const POKEMON_NAME_MAP2 = PersonalTable[GAMEDATA2].Personal.reduce((pokemonNameMap, currentPokemon) => {
   return createPokemonMap(pokemonNameMap, currentPokemon, GAMEDATA2);
 }, {});
@@ -10,6 +20,7 @@ const POKEMON_NAME_MAP3 = PersonalTable[GAMEDATA3].Personal.reduce((pokemonNameM
 }, {});
 
 const POKEMON_NAME_MAP = {
+  [GAMEDATAV]: POKEMON_NAME_MAPV,
   [GAMEDATA2]: POKEMON_NAME_MAP2,
   [GAMEDATA3]: POKEMON_NAME_MAP3,
 }
@@ -112,6 +123,8 @@ function getFormNameOfProblematicPokemon(id = 0, mode = GAMEDATA2) {
       default:
         throw Error(`Bad 3.0 Pokemon ID in PokemonNameMap: ${id}`);
     }
+  } else if (mode === GAMEDATAV) {
+    return;
   } else {
     throw Error(`Bad Mode passed to getFormNameOfProblematicPokemon: ${mode}`)
   }

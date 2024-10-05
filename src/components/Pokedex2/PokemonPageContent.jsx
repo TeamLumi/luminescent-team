@@ -20,6 +20,7 @@ import { useGlobalState } from '../common/GlobalState';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex';
 import { PokemonLocations } from './PokemonLocations';
 import { getRoutesFromPokemonId } from '../../../plugins/pokedex-data-plugin/dex/encounters';
+import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 
 function padNumberWithZeros(number) {
   const strNumber = String(number);
@@ -32,29 +33,52 @@ function padNumberWithZeros(number) {
   }
 }
 
-export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNames3 }) => {
+export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNames3, pokemonV, pokemonNamesV }) => {
+  const POKEMON_MODE_MAP = {
+    [GAMEDATAV]: pokemonV,
+    [GAMEDATA2]: pokemon,
+    [GAMEDATA3]: pokemon3,
+  };
+  const POKEMON_LIST_MODE_MAP = {
+    [GAMEDATAV]: pokemonNamesV,
+    [GAMEDATA2]: pokemonNames,
+    [GAMEDATA3]: pokemonNames3,
+  };
+
   const [globalState, updateMode] = useGlobalState();
-  const [pokemonInfo, setPokemonInfo] = useState(globalState.mode === "2.0" ? pokemon : pokemon3);
+  const [pokemonInfo, setPokemonInfo] = useState(POKEMON_MODE_MAP[globalState.mode] ?? pokemon);
+  const [allPokemonNames, setAllPokemonNames] = useState(POKEMON_LIST_MODE_MAP[globalState.mode] ?? pokemonNames);
+  const [pokemonLocations, setPokemonLocations] = useState(getRoutesFromPokemonId(pokemonInfo.id, globalState.mode));
 
   useEffect(() => {
-    setPokemonInfo(globalState.mode === "2.0" ? pokemon : pokemon3)
+    setPokemonInfo(POKEMON_MODE_MAP[globalState.mode]);
+    setAllPokemonNames(POKEMON_LIST_MODE_MAP[globalState.mode]);
+    setPokemonLocations(getRoutesFromPokemonId(POKEMON_MODE_MAP[globalState.mode].id, globalState.mode))
   }, [globalState.mode]);
 
-  const allPokemonNames = globalState.mode === "2.0" ? pokemonNames : pokemonNames3;
-  const pokemonId = getPokemonIdFromMonsNoAndForm(pokemonInfo.monsno, pokemonInfo.formno, globalState.mode)
-  const pokemon_locations = getRoutesFromPokemonId(pokemonId, globalState.mode);
   const [showMoreLocations, setShowMoreLocations] = useState(false);
 
-  if (pokemon === pokemon3 && globalState.mode === "2.0") {
+  if (pokemonInfo === pokemon3 && globalState.mode !== GAMEDATA3) {
     return (
       <Container>
         <Container>
-          <Box display="flex" justifyContent="center" marginTop="16px">
+          <Box
+            sx={{
+              display: { xs: "grid", sm: "flex" },
+              gridTemplate: {
+                xs: `"a b"
+                    "c c"`,
+                sm: "unset"
+              },
+              gap: { xs: ".5rem", sm: "unset" },
+              justifyContent: "center",
+              marginTop: "16px",
+            }}
+          >
             <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={1} formNo={0} />
             <PokemonInfoButton />
-            {/* <ModeSwitch /> */}
-            {/* Uncomment when 3.0 dex is ready to be released */}
-        </Box>
+            <ModeSwitch />
+          </Box>
         </Container>
   
         <Typography variant='h6' display="flex" sx={{marginTop: "16px", justifyContent: "center"}} >{pokemonInfo.name} Does Not Exist in this Mode.</Typography>
@@ -81,7 +105,6 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
           <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
           <PokemonInfoButton />
           <ModeSwitch />
-          {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
       </Container>
       <div className="container">
@@ -156,10 +179,10 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
           </Box>
           <Box display={{xs: "none", sm: "none", md: "none", lg: showMoreLocations ? "none" : "unset"}}>
             <PokemonLocations
-              locations={pokemon_locations}
+              locations={pokemonLocations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
-              pokemonId={pokemonId}
+              pokemonId={pokemon.id}
             />
           </Box>
           <Box width={{sm: "80%", md: "unset"}} gridColumn="span 1">
@@ -186,10 +209,10 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
             width={{sm: "80%", md: "unset"}}
           >
             <PokemonLocations
-              locations={pokemon_locations}
+              locations={pokemonLocations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
-              pokemonId={pokemonId}
+              pokemonId={pokemon.id}
             />
           </Box>
         </Box>
@@ -205,16 +228,16 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
 
       <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
-          <PokemonMovesetList moveset={pokemonInfo.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemonId} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={pokemonInfo.learnset.tm} movesetPrefix="tm" pokemonDexId={pokemonId} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.tm} movesetPrefix="tm" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
-          <PokemonMovesetList moveset={pokemonInfo.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemonId} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Tutor" id="eggMoveset">
-          <PokemonMovesetList moveset={pokemonInfo.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemonId} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
       </Container>
 
