@@ -1,7 +1,8 @@
-import { PersonalTable, PokedexInfo, GAMEDATA2, GAMEDATA3 } from '../../../__gamedata';
+import { PersonalTable, PokedexInfo, GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = {
+  [GAMEDATAV]: PersonalTable[GAMEDATAV].Personal.reduce(createFormMap, {}),
   [GAMEDATA2]: PersonalTable[GAMEDATA2].Personal.reduce(createFormMap, {}),
   [GAMEDATA3]: PersonalTable[GAMEDATA3].Personal.reduce(createFormMap, {})
 };

@@ -4,6 +4,7 @@ const {
   EncounterLocations,
   StaticAreaLocations,
   GAMEDATA2,
+  GAMEDATAV,
 } = require('../../../__gamedata');
 
 const {
@@ -145,11 +146,11 @@ function getRoutesFromPokemonId(pokemonId, mode = GAMEDATA2) {
   const ModePokemonLocations = PokemonLocations[mode];
   const ModeStaticLocations = StaticLocations[mode];
   let routes = [];
-  if (ModePokemonLocations[pokemonId] && ModeStaticLocations[pokemonName]) {
+  if (ModePokemonLocations[pokemonId] && ModeStaticLocations[pokemonName] && mode !== GAMEDATAV) { // TODO Fix the game mode here to allow for statics to be allowed
     routes = ModePokemonLocations[pokemonId].concat(ModeStaticLocations[pokemonName])
   } else if (ModePokemonLocations[pokemonId]) {
     routes = ModePokemonLocations[pokemonId]
-  } else {
+  } else if (mode !== GAMEDATAV) { // TODO Fix the game mode here to allow for statics to be allowed
     routes = ModeStaticLocations[pokemonName] || []
   }
 

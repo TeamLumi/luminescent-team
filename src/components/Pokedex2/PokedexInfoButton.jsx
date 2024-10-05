@@ -14,7 +14,14 @@ export const PokemonInfoButton = () => {
     };
 
     return (
-        <Box display="flex" justifyContent="center" marginLeft="5px">
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginLeft: { xs: "unset", sm: ".25rem" },
+            gridArea: "b"
+          }}
+        >
           <button onClick={handleOpen} className={styles.infoButton}>Features</button>
           <Modal open={open} onClose={handleClose}>
             <Box className={styles.modalBox} >

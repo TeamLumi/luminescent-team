@@ -10,14 +10,21 @@ import { PokemonInfoButton } from './PokedexInfoButton';
 import { useGlobalState } from '../common/GlobalState';
 import ModeSwitch from './ModeSwitch';
 import { ImageWithFallback } from '../common/ImageWithFallback';
+import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 
-export const PokemonListPageContent = ({ pokemonList, pokemonList3 }) => {
+export const PokemonListPageContent = ({ pokemonList, pokemonList3, pokemonListV }) => {
+  const POKEMON_LIST_MODE_MAP = {
+    [GAMEDATAV]: pokemonListV,
+    [GAMEDATA2]: pokemonList,
+    [GAMEDATA3]: pokemonList3,
+  };
+
   const [globalState, updateMode] = useGlobalState();
-  const allPokemons = globalState.mode === "2.0" ? pokemonList : pokemonList3;
+  const allPokemons = POKEMON_LIST_MODE_MAP[globalState.mode];
   const [pokemons, setPokemons] = useState(allPokemons);
 
   useEffect(() => {
-    const updatedPokemons = globalState.mode === "2.0" ? pokemonList : pokemonList3;
+    const updatedPokemons = POKEMON_LIST_MODE_MAP[globalState.mode];
     setPokemons(updatedPokemons);
   }, [globalState.mode]);
 
@@ -28,11 +35,22 @@ export const PokemonListPageContent = ({ pokemonList, pokemonList3 }) => {
           Pokémon
         </Typography>
 
-        <Box display="flex" marginTop="16px">
+        <Box
+          sx={{
+            display: { xs: "grid", sm: "flex" },
+            gridTemplate: {
+              xs: `"a b"
+                   "c c"`,
+              sm: "unset"
+            },
+            gap: { xs: ".5rem", sm: "unset" },
+            justifyContent: "center",
+            marginTop: "16px",
+          }}
+        >
           <PokemonSearchInput allPokemons={allPokemons} setPokemons={setPokemons} />
           <PokemonInfoButton />
           <ModeSwitch />
-          {/* Uncomment when 3.0 dex is ready to be released */}
         </Box>
 
         <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>

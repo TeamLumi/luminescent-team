@@ -2,11 +2,17 @@ import React from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { useGlobalState } from "../common/GlobalState";
 import Head from '@docusaurus/Head';
+import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 
-const PokemonPageHeader = ({ pokemon, pokemon3 }) => {
-  const [globalState, updateMode] = useGlobalState();
+const PokemonPageHeader = ({ pokemon, pokemon3, pokemonV }) => {
+  const POKEMON_MODE_MAP = {
+    [GAMEDATAV]: pokemonV,
+    [GAMEDATA2]: pokemon,
+    [GAMEDATA3]: pokemon3,
+  };
+  const [globalState] = useGlobalState();
   const { siteConfig } = useDocusaurusContext();
-  const pokemonInfo = globalState.mode === "2.0" ? pokemon : pokemon3;
+  const pokemonInfo = POKEMON_MODE_MAP[globalState.mode] ?? pokemon;
   const metaImage = 
     `https://luminescent.team${pokemonInfo.imageSrc}` ||
     `https://luminescent.team${pokemonInfo.forms[0].imageSrc}`;

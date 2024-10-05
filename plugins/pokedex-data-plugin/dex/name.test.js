@@ -115,6 +115,7 @@ describe('Dex utils Name getters', () => {
     test('getPokemonNames() returns an array of all pokemon names when maxMonsno is greater than the number of pokemon', () => {
       const names = getPokemonNames(10000);
       expect(names).toHaveLength(1466);
+      // const megaNames = names.filter((names) => names.includes("mega"));
       expect(names[0]).toBe('Egg');
       expect(names[808]).toBe('Meltan');
     });

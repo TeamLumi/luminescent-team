@@ -15,7 +15,7 @@ export const GlobalState = ({ children }) => {
   }, [globalState.mode]);
 
   const updateMode = (newMode) => {
-    if (newMode === '2.0' || newMode === '3.0') {
+    if (newMode === '2.0' || newMode === '3.0' || newMode === 'vanilla') {
       setGlobalState((oldState) => ({
         ...oldState,
         mode: newMode,

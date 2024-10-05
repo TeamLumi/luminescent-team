@@ -1,7 +1,8 @@
-const { PersonalTable, PokedexInfo, GAMEDATA2, GAMEDATA3 } = require('../../../__gamedata');
+const { PersonalTable, PokedexInfo, GAMEDATA2, GAMEDATA3, GAMEDATAV } = require('../../../__gamedata');
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = {
+  [GAMEDATAV]: PersonalTable[GAMEDATAV].Personal.reduce(createFormMap, {}),
   [GAMEDATA2]: PersonalTable[GAMEDATA2].Personal.reduce(createFormMap, {}),
   [GAMEDATA3]: PersonalTable[GAMEDATA3].Personal.reduce(createFormMap, {})
 };
