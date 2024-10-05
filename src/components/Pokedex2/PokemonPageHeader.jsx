@@ -1,5 +1,6 @@
-import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React from "react";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { useGlobalState } from "../common/GlobalState";
 import Head from '@docusaurus/Head';
 import { useGlobalState } from '../common/GlobalState';
 import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
@@ -19,12 +20,15 @@ const PokemonPageHeader = ({ pokemon, pokemon3, pokemonV }) => {
 
   return (
     <Head>
+      <meta property="description" content={pokemonInfo.dexDescription} />
       <meta property="og:title" content={pokemonInfo.name} data-rh="true" />
+      <meta property="og:description" content={pokemonInfo.dexDescription} />
+      <meta property="og:image" itemProp="image primaryImageOfPage" content={metaImage} />
       <meta name="og:site_name" content={siteConfig.title} />
+      <meta property="twitter:title" content={pokemonInfo.name} data-rh="true" />
       <meta name="twitter:card" content="summary" />
-      <meta property='og:image' itemProp="image primaryImageOfPage" content={metaImage} />
-      <meta property='description' content={pokemonInfo.dexDescription} />
-      <meta property='og:description' content={pokemonInfo.dexDescription} />
+      <meta property="twitter:description" content={pokemonInfo.dexDescription} />
+      <meta property="twitter:image" itemProp="image primaryImageOfPage" content={metaImage} />
     </Head>
   );
 };

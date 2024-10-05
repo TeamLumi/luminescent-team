@@ -171,7 +171,7 @@ export default function EvolutionGraph(props) {
         Or
         <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
           {evoImages.map((image, index) => (
-            <img key={index} src={image} width="40" alt={image} title={image} />
+            <img key={index} src={useBaseUrl(image)} width="40" alt={image} title={image} />
           ))}
         </Box>
         {methodDetail.method}
