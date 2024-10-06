@@ -15,10 +15,10 @@ import { useGlobalState } from '../common/GlobalState';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 import * as EvoConstants from "../../../plugins/pokedex-data-plugin/dex/evolutionConstants";
 
-export default function EvolutionGraph(props) {
-  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(props.evolutionTree.pokemonId, props.globalState.mode);
+export default function EvolutionGraph({ evolutionTree, globalState }) {
+  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId, globalState.mode);
   const firstPokemonPath = formNo === 0 ? monsNo : `${monsNo}_${formNo}`;
-  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, props.globalState.mode);
+  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, globalState.mode);
   const defaultEvo = {
     pokemonId: -1,
     evolutionDetails: {
@@ -71,7 +71,7 @@ export default function EvolutionGraph(props) {
     </div>
   );
 
-  const secondEvolvesInto = props.evolutionTree.evolvesInto;
+  const secondEvolvesInto = evolutionTree.evolvesInto;
   if (secondEvolvesInto.length === 0 || monsNo === 868 || monsNo === 869) {
     return fullEvolutionTree
   }
@@ -244,8 +244,8 @@ export default function EvolutionGraph(props) {
         allImages.push(pokemonImages);
       } else {
         const pokemonImages = monsNos.map((monsno, index) => {
-          const pokemonId = getPokemonIdFromMonsNoAndForm(monsno, formNos[index], props.globalState.mode);
-          const pokemonName = getPokemonName(pokemonId, props.globalState.mode);
+          const pokemonId = getPokemonIdFromMonsNoAndForm(monsno, formNos[index], globalState.mode);
+          const pokemonName = getPokemonName(pokemonId, globalState.mode);
           const pokemonPath = formNos[index] === 0 ? monsno : `${monsno}_${formNos[index]}` ;
           return (
             index === 0 ? (
@@ -292,12 +292,12 @@ export default function EvolutionGraph(props) {
                   key={pokemonID}
                   src={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsNo, formNo)}`)}
                   fallbackSrc={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsNo, 0)}`)}
-                  alt={getPokemonName(pokemonID, props.globalState.mode)}
-                  title={getPokemonName(pokemonID, props.globalState.mode)}
+                  alt={getPokemonName(pokemonID, globalState.mode)}
+                  title={getPokemonName(pokemonID, globalState.mode)}
                 />
               </Link>
             </Grid>
-            {renderEvolutionTree(props.evolutionTree, 1)}
+            {renderEvolutionTree(evolutionTree, 1)}
             {secondEvolvesInto[0].evolvesInto.length >= 1 && (
               renderEvolutionTree(secondEvolvesInto[0], 2)
             )}  

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Autocomplete, TextField } from '@mui/material';
 import { useHistory } from '@docusaurus/router';
 import { usePluginData } from '@docusaurus/useGlobalData';
@@ -10,8 +10,16 @@ export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
   const history = useHistory();
   const { path } = usePluginData('luminescent-pokedex-data-plugin');
   const pokedexPath = useBaseUrl(path);
-  const options = pokemonNames.map((pokemon) => ({ monsno: pokemon.monsno, formno: pokemon.formno, label: pokemon.name }));
-  const pokemonName = options.find((p) => p.monsno === monsNo && p.formno === formNo );
+  const [options, setOptions] = useState(pokemonNames.map((pokemon) => ({ monsno: pokemon.monsno, formno: pokemon.formno, label: pokemon.name })));
+  const [pokemonName, setPokemonName] = useState(options[0]);
+
+  useEffect(() => {
+    setOptions(pokemonNames.map((pokemon) => ({ monsno: pokemon.monsno, formno: pokemon.formno, label: pokemon.name })));
+  }, [pokemonNames]);
+
+  useEffect(() => {
+    setPokemonName(options.find((p) => p.monsno === monsNo && p.formno === formNo ));
+  }, [options]);
 
   return (
     <Autocomplete

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import style from './styles.module.css';
 import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
@@ -58,7 +58,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
 
   const [showMoreLocations, setShowMoreLocations] = useState(false);
 
-  if (pokemonInfo === pokemon3 && globalState.mode !== GAMEDATA3) {
+  if (pokemon === pokemon3 && globalState.mode === GAMEDATA2) {
     return (
       <Container>
         <Container>
@@ -75,12 +75,38 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
               marginTop: "16px",
             }}
           >
-            <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={1} formNo={0} />
+            <PokemonSearchBox pokemonNames={pokemonNames} monsNo={1} formNo={0} />
             <PokemonInfoButton />
             <ModeSwitch />
           </Box>
         </Container>
   
+        <Typography variant='h6' display="flex" sx={{marginTop: "16px", justifyContent: "center"}} >{pokemonInfo.name} Does Not Exist in this Mode.</Typography>
+      </Container>
+    )
+  } else if (pokemonV === pokemon3 && globalState.mode === GAMEDATAV) {
+    return (
+      <Container>
+        <Container>
+          <Box
+            sx={{
+              display: { xs: "grid", sm: "flex" },
+              gridTemplate: {
+                xs: `"a b"
+                    "c c"`,
+                sm: "unset"
+              },
+              gap: { xs: ".5rem", sm: "unset" },
+              justifyContent: "center",
+              marginTop: "16px",
+            }}
+          >
+            <PokemonSearchBox pokemonNames={pokemonNamesV} monsNo={1} formNo={0} />
+            <PokemonInfoButton />
+            <ModeSwitch />
+          </Box>
+        </Container>
+
         <Typography variant='h6' display="flex" sx={{marginTop: "16px", justifyContent: "center"}} >{pokemonInfo.name} Does Not Exist in this Mode.</Typography>
       </Container>
     )
