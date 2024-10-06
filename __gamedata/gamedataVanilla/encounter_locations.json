@@ -1429,68 +1429,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 197
-    },
-    {
-      "routeName": "197",
-      "pokemonName": "Aipom",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "197"
-    },
-    {
-      "routeName": "197",
-      "pokemonName": "Slakoth",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "197"
-    },
-    {
-      "routeName": "197",
-      "pokemonName": "Caterpie",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "197"
-    },
-    {
-      "routeName": "197",
-      "pokemonName": "Weedle",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "197"
-    },
-    {
-      "routeName": "197",
-      "pokemonName": "Munchlax",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "197"
-    }
-  ],
-  "199": [
-    {
-      "routeName": "199",
-      "pokemonName": "Beedrill",
-      "encounterType": "Honey Tree",
-      "encounterRate": "100%",
-      "minLevel": 15,
-      "maxLevel": 15,
-      "encounterTypeIndex": null,
-      "zoneId": "199"
     }
   ],
   "200": [
@@ -2175,86 +2113,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 201
-    },
-    {
-      "routeName": "201",
-      "pokemonName": "Combee",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": null,
-      "zoneId": "201"
-    },
-    {
-      "routeName": "201",
-      "pokemonName": "Forretress",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": null,
-      "zoneId": "201"
-    },
-    {
-      "routeName": "201",
-      "pokemonName": "Wormadam",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": null,
-      "zoneId": "201"
-    },
-    {
-      "routeName": "201",
-      "pokemonName": "Mothim",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": null,
-      "zoneId": "201"
-    },
-    {
-      "routeName": "201",
-      "pokemonName": "Beautifly",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": null,
-      "zoneId": "201"
-    },
-    {
-      "routeName": "201",
-      "pokemonName": "Dustox",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": null,
-      "zoneId": "201"
-    },
-    {
-      "routeName": "201",
-      "pokemonName": "Heracross",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": null,
-      "zoneId": "201"
-    },
-    {
-      "routeName": "201",
-      "pokemonName": "Vespiquen",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": null,
-      "zoneId": "201"
     }
   ],
   "203": [
@@ -14035,58 +13893,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 252
-    }
-  ],
-  "253": [
-    {
-      "routeName": "253",
-      "pokemonName": "Cherubi",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "253"
-    },
-    {
-      "routeName": "253",
-      "pokemonName": "Shroomish",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "253"
-    },
-    {
-      "routeName": "253",
-      "pokemonName": "Exeggcute",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "253"
-    },
-    {
-      "routeName": "253",
-      "pokemonName": "Seedot",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "253"
-    },
-    {
-      "routeName": "253",
-      "pokemonName": "Tangela",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "253"
     }
   ],
   "255": [
@@ -31079,56 +30885,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 359
-    },
-    {
-      "routeName": "359",
-      "pokemonName": "Combee",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "359"
-    },
-    {
-      "routeName": "359",
-      "pokemonName": "Heracross",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "359"
-    },
-    {
-      "routeName": "359",
-      "pokemonName": "Burmy",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "359"
-    },
-    {
-      "routeName": "359",
-      "pokemonName": "Pineco",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "359"
-    },
-    {
-      "routeName": "359",
-      "pokemonName": "Wurmple",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 12,
-      "maxLevel": 12,
-      "encounterTypeIndex": null,
-      "zoneId": "359"
     }
   ],
   "361": [
@@ -31551,56 +31307,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 361
-    },
-    {
-      "routeName": "361",
-      "pokemonName": "Starly",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 16,
-      "maxLevel": 16,
-      "encounterTypeIndex": null,
-      "zoneId": "361"
-    },
-    {
-      "routeName": "361",
-      "pokemonName": "Pidgey",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 16,
-      "maxLevel": 16,
-      "encounterTypeIndex": null,
-      "zoneId": "361"
-    },
-    {
-      "routeName": "361",
-      "pokemonName": "Hoothoot",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 16,
-      "maxLevel": 16,
-      "encounterTypeIndex": null,
-      "zoneId": "361"
-    },
-    {
-      "routeName": "361",
-      "pokemonName": "Taillow",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 16,
-      "maxLevel": 16,
-      "encounterTypeIndex": null,
-      "zoneId": "361"
-    },
-    {
-      "routeName": "361",
-      "pokemonName": "Farfetch\u2019d",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 16,
-      "maxLevel": 16,
-      "encounterTypeIndex": null,
-      "zoneId": "361"
     }
   ],
   "362": [
@@ -31823,66 +31529,6 @@
       "maxLevel": 15,
       "encounterTypeIndex": 1,
       "zoneId": 362
-    },
-    {
-      "routeName": "362",
-      "pokemonName": "Combee",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "362"
-    },
-    {
-      "routeName": "362",
-      "pokemonName": "Heracross",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "362"
-    },
-    {
-      "routeName": "362",
-      "pokemonName": "Burmy",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "362"
-    },
-    {
-      "routeName": "362",
-      "pokemonName": "Pineco",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "362"
-    },
-    {
-      "routeName": "362",
-      "pokemonName": "Silcoon",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "362"
-    },
-    {
-      "routeName": "362",
-      "pokemonName": "Cascoon",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "362"
     }
   ],
   "364": [
@@ -32105,56 +31751,6 @@
       "maxLevel": 7,
       "encounterTypeIndex": 1,
       "zoneId": 364
-    },
-    {
-      "routeName": "364",
-      "pokemonName": "Aipom",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "364"
-    },
-    {
-      "routeName": "364",
-      "pokemonName": "Slakoth",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "364"
-    },
-    {
-      "routeName": "364",
-      "pokemonName": "Munchlax",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "364"
-    },
-    {
-      "routeName": "364",
-      "pokemonName": "Metapod",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "364"
-    },
-    {
-      "routeName": "364",
-      "pokemonName": "Kakuna",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 21,
-      "maxLevel": 21,
-      "encounterTypeIndex": null,
-      "zoneId": "364"
     }
   ],
   "365": [
@@ -32597,56 +32193,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 365
-    },
-    {
-      "routeName": "365",
-      "pokemonName": "Cherubi",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "365"
-    },
-    {
-      "routeName": "365",
-      "pokemonName": "Shroomish",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "365"
-    },
-    {
-      "routeName": "365",
-      "pokemonName": "Exeggcute",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "365"
-    },
-    {
-      "routeName": "365",
-      "pokemonName": "Seedot",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "365"
-    },
-    {
-      "routeName": "365",
-      "pokemonName": "Tangela",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "365"
     }
   ],
   "367": [
@@ -33069,56 +32615,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 367
-    },
-    {
-      "routeName": "367",
-      "pokemonName": "Farfetch\u2019d",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 27,
-      "maxLevel": 27,
-      "encounterTypeIndex": null,
-      "zoneId": "367"
-    },
-    {
-      "routeName": "367",
-      "pokemonName": "Staravia",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 27,
-      "maxLevel": 27,
-      "encounterTypeIndex": null,
-      "zoneId": "367"
-    },
-    {
-      "routeName": "367",
-      "pokemonName": "Pidgeotto",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 27,
-      "maxLevel": 27,
-      "encounterTypeIndex": null,
-      "zoneId": "367"
-    },
-    {
-      "routeName": "367",
-      "pokemonName": "Noctowl",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 27,
-      "maxLevel": 27,
-      "encounterTypeIndex": null,
-      "zoneId": "367"
-    },
-    {
-      "routeName": "367",
-      "pokemonName": "Swellow",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 27,
-      "maxLevel": 27,
-      "encounterTypeIndex": null,
-      "zoneId": "367"
     }
   ],
   "368": [
@@ -34371,76 +33867,6 @@
       "maxLevel": 20,
       "encounterTypeIndex": 1,
       "zoneId": 373
-    },
-    {
-      "routeName": "373",
-      "pokemonName": "Combee",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 29,
-      "maxLevel": 29,
-      "encounterTypeIndex": null,
-      "zoneId": "373"
-    },
-    {
-      "routeName": "373",
-      "pokemonName": "Wormadam",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 29,
-      "maxLevel": 29,
-      "encounterTypeIndex": null,
-      "zoneId": "373"
-    },
-    {
-      "routeName": "373",
-      "pokemonName": "Mothim",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 29,
-      "maxLevel": 29,
-      "encounterTypeIndex": null,
-      "zoneId": "373"
-    },
-    {
-      "routeName": "373",
-      "pokemonName": "Heracross",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 29,
-      "maxLevel": 29,
-      "encounterTypeIndex": null,
-      "zoneId": "373"
-    },
-    {
-      "routeName": "373",
-      "pokemonName": "Pineco",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 29,
-      "maxLevel": 29,
-      "encounterTypeIndex": null,
-      "zoneId": "373"
-    },
-    {
-      "routeName": "373",
-      "pokemonName": "Silcoon",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 29,
-      "maxLevel": 29,
-      "encounterTypeIndex": null,
-      "zoneId": "373"
-    },
-    {
-      "routeName": "373",
-      "pokemonName": "Cascoon",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 29,
-      "maxLevel": 29,
-      "encounterTypeIndex": null,
-      "zoneId": "373"
     }
   ],
   "375": [
@@ -34883,56 +34309,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 375
-    },
-    {
-      "routeName": "375",
-      "pokemonName": "Farfetch\u2019d",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 37,
-      "maxLevel": 37,
-      "encounterTypeIndex": null,
-      "zoneId": "375"
-    },
-    {
-      "routeName": "375",
-      "pokemonName": "Staravia",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 37,
-      "maxLevel": 37,
-      "encounterTypeIndex": null,
-      "zoneId": "375"
-    },
-    {
-      "routeName": "375",
-      "pokemonName": "Pidgeotto",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 37,
-      "maxLevel": 37,
-      "encounterTypeIndex": null,
-      "zoneId": "375"
-    },
-    {
-      "routeName": "375",
-      "pokemonName": "Noctowl",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 37,
-      "maxLevel": 37,
-      "encounterTypeIndex": null,
-      "zoneId": "375"
-    },
-    {
-      "routeName": "375",
-      "pokemonName": "Swellow",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 37,
-      "maxLevel": 37,
-      "encounterTypeIndex": null,
-      "zoneId": "375"
     }
   ],
   "377": [
@@ -35377,56 +34753,6 @@
       "maxLevel": 27,
       "encounterTypeIndex": 1,
       "zoneId": 378
-    },
-    {
-      "routeName": "378",
-      "pokemonName": "Aipom",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 18,
-      "maxLevel": 18,
-      "encounterTypeIndex": null,
-      "zoneId": "378"
-    },
-    {
-      "routeName": "378",
-      "pokemonName": "Slakoth",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 18,
-      "maxLevel": 18,
-      "encounterTypeIndex": null,
-      "zoneId": "378"
-    },
-    {
-      "routeName": "378",
-      "pokemonName": "Munchlax",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
-      "encounterTypeIndex": null,
-      "zoneId": "378"
-    },
-    {
-      "routeName": "378",
-      "pokemonName": "Metapod",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 18,
-      "maxLevel": 18,
-      "encounterTypeIndex": null,
-      "zoneId": "378"
-    },
-    {
-      "routeName": "378",
-      "pokemonName": "Kakuna",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 18,
-      "maxLevel": 18,
-      "encounterTypeIndex": null,
-      "zoneId": "378"
     }
   ],
   "379": [
@@ -35829,56 +35155,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 379
-    },
-    {
-      "routeName": "379",
-      "pokemonName": "Cherubi",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": null,
-      "zoneId": "379"
-    },
-    {
-      "routeName": "379",
-      "pokemonName": "Shroomish",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": null,
-      "zoneId": "379"
-    },
-    {
-      "routeName": "379",
-      "pokemonName": "Exeggcute",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": null,
-      "zoneId": "379"
-    },
-    {
-      "routeName": "379",
-      "pokemonName": "Tangela",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": null,
-      "zoneId": "379"
-    },
-    {
-      "routeName": "379",
-      "pokemonName": "Nuzleaf",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": null,
-      "zoneId": "379"
     }
   ],
   "380": [
@@ -36080,166 +35356,6 @@
       "minLevel": 16,
       "maxLevel": 16,
       "encounterTypeIndex": 1,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Clefairy",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Jigglypuff",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Meowth",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Chansey",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Eevee",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Porygon",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Cleffa",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Igglybuff",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Marill",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Azurill",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Plusle",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Minun",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Castform",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Bonsly",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Mime Jr.",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
-      "zoneId": 380
-    },
-    {
-      "routeName": "Pok\u00e9mon Mansion - Lobby",
-      "pokemonName": "Happiny",
-      "encounterType": "Daily Trophy Garden",
-      "encounterRate": "5%",
-      "minLevel": 26,
-      "maxLevel": 26,
-      "encounterTypeIndex": null,
       "zoneId": 380
     }
   ],
@@ -36683,56 +35799,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 383
-    },
-    {
-      "routeName": "383",
-      "pokemonName": "Shroomish",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 34,
-      "maxLevel": 34,
-      "encounterTypeIndex": null,
-      "zoneId": "383"
-    },
-    {
-      "routeName": "383",
-      "pokemonName": "Exeggcute",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 34,
-      "maxLevel": 34,
-      "encounterTypeIndex": null,
-      "zoneId": "383"
-    },
-    {
-      "routeName": "383",
-      "pokemonName": "Tangela",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 34,
-      "maxLevel": 34,
-      "encounterTypeIndex": null,
-      "zoneId": "383"
-    },
-    {
-      "routeName": "383",
-      "pokemonName": "Nuzleaf",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 34,
-      "maxLevel": 34,
-      "encounterTypeIndex": null,
-      "zoneId": "383"
-    },
-    {
-      "routeName": "383",
-      "pokemonName": "Cherrim",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 34,
-      "maxLevel": 34,
-      "encounterTypeIndex": null,
-      "zoneId": "383"
     }
   ],
   "385": [
@@ -37135,56 +36201,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 385
-    },
-    {
-      "routeName": "385",
-      "pokemonName": "Farfetch\u2019d",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 33,
-      "maxLevel": 33,
-      "encounterTypeIndex": null,
-      "zoneId": "385"
-    },
-    {
-      "routeName": "385",
-      "pokemonName": "Staravia",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 33,
-      "maxLevel": 33,
-      "encounterTypeIndex": null,
-      "zoneId": "385"
-    },
-    {
-      "routeName": "385",
-      "pokemonName": "Pidgeotto",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 33,
-      "maxLevel": 33,
-      "encounterTypeIndex": null,
-      "zoneId": "385"
-    },
-    {
-      "routeName": "385",
-      "pokemonName": "Noctowl",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 33,
-      "maxLevel": 33,
-      "encounterTypeIndex": null,
-      "zoneId": "385"
-    },
-    {
-      "routeName": "385",
-      "pokemonName": "Swellow",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 33,
-      "maxLevel": 33,
-      "encounterTypeIndex": null,
-      "zoneId": "385"
     }
   ],
   "392": [
@@ -37627,56 +36643,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 392
-    },
-    {
-      "routeName": "392",
-      "pokemonName": "Aipom",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 30,
-      "maxLevel": 30,
-      "encounterTypeIndex": null,
-      "zoneId": "392"
-    },
-    {
-      "routeName": "392",
-      "pokemonName": "Munchlax",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 30,
-      "maxLevel": 30,
-      "encounterTypeIndex": null,
-      "zoneId": "392"
-    },
-    {
-      "routeName": "392",
-      "pokemonName": "Beedrill",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 30,
-      "maxLevel": 30,
-      "encounterTypeIndex": null,
-      "zoneId": "392"
-    },
-    {
-      "routeName": "392",
-      "pokemonName": "Vigoroth",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 30,
-      "maxLevel": 30,
-      "encounterTypeIndex": null,
-      "zoneId": "392"
-    },
-    {
-      "routeName": "392",
-      "pokemonName": "Butterfree",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 30,
-      "maxLevel": 30,
-      "encounterTypeIndex": null,
-      "zoneId": "392"
     }
   ],
   "394": [
@@ -37899,56 +36865,6 @@
       "maxLevel": 22,
       "encounterTypeIndex": 1,
       "zoneId": 394
-    },
-    {
-      "routeName": "394",
-      "pokemonName": "Aipom",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "394"
-    },
-    {
-      "routeName": "394",
-      "pokemonName": "Munchlax",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "394"
-    },
-    {
-      "routeName": "394",
-      "pokemonName": "Metapod",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "394"
-    },
-    {
-      "routeName": "394",
-      "pokemonName": "Kakuna",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "394"
-    },
-    {
-      "routeName": "394",
-      "pokemonName": "Vigoroth",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 28,
-      "maxLevel": 28,
-      "encounterTypeIndex": null,
-      "zoneId": "394"
     }
   ],
   "395": [
@@ -38795,86 +37711,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 400
-    },
-    {
-      "routeName": "400",
-      "pokemonName": "Combee",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "400"
-    },
-    {
-      "routeName": "400",
-      "pokemonName": "Forretress",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "400"
-    },
-    {
-      "routeName": "400",
-      "pokemonName": "Wormadam",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "400"
-    },
-    {
-      "routeName": "400",
-      "pokemonName": "Mothim",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "400"
-    },
-    {
-      "routeName": "400",
-      "pokemonName": "Beautifly",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "400"
-    },
-    {
-      "routeName": "400",
-      "pokemonName": "Dustox",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "400"
-    },
-    {
-      "routeName": "400",
-      "pokemonName": "Heracross",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "400"
-    },
-    {
-      "routeName": "400",
-      "pokemonName": "Vespiquen",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "400"
     }
   ],
   "403": [
@@ -39479,56 +38315,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 404
-    },
-    {
-      "routeName": "404",
-      "pokemonName": "Shroomish",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "404"
-    },
-    {
-      "routeName": "404",
-      "pokemonName": "Exeggcute",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "404"
-    },
-    {
-      "routeName": "404",
-      "pokemonName": "Tangela",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "404"
-    },
-    {
-      "routeName": "404",
-      "pokemonName": "Nuzleaf",
-      "encounterType": "Honey Tree",
-      "encounterRate": "20%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "404"
-    },
-    {
-      "routeName": "404",
-      "pokemonName": "Cherrim",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 39,
-      "maxLevel": 39,
-      "encounterTypeIndex": null,
-      "zoneId": "404"
     }
   ],
   "407": [
@@ -39931,46 +38717,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 407
-    },
-    {
-      "routeName": "407",
-      "pokemonName": "Heracross",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 54,
-      "maxLevel": 54,
-      "encounterTypeIndex": null,
-      "zoneId": "407"
-    },
-    {
-      "routeName": "407",
-      "pokemonName": "Tangela",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 54,
-      "maxLevel": 54,
-      "encounterTypeIndex": null,
-      "zoneId": "407"
-    },
-    {
-      "routeName": "407",
-      "pokemonName": "Farfetch\u2019d",
-      "encounterType": "Honey Tree",
-      "encounterRate": "30%",
-      "minLevel": 54,
-      "maxLevel": 54,
-      "encounterTypeIndex": null,
-      "zoneId": "407"
-    },
-    {
-      "routeName": "407",
-      "pokemonName": "Snorlax",
-      "encounterType": "Honey Tree",
-      "encounterRate": "10%",
-      "minLevel": 54,
-      "maxLevel": 54,
-      "encounterTypeIndex": null,
-      "zoneId": "407"
     }
   ],
   "411": [
