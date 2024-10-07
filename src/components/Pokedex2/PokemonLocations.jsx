@@ -4,9 +4,11 @@ import Link from '@docusaurus/Link';
 
 import { LINK_KEYS, LOCATION_ICONS } from '../../utils/dex/encountersConstants';
 import { ImageWithFallback } from '../common/ImageWithFallback';
+import { useGlobalState } from '../common/GlobalState';
 import { getPokemonName } from '../../utils/dex/name';
 
 export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, pokemonId }) => {
+  const [globalState, updateMode] = useGlobalState();
   const containerRef = useRef(null);
   const [containerHeight, setContainerHeight] = useState(0);
   const [showButton, setShowButton] = useState(locations.length >= 5 || containerHeight > 244 || showMore)
@@ -65,7 +67,7 @@ export const PokemonLocations = ({ locations, showMore, setShowMoreLocations, po
           }}
         >
           <Typography fontSize="0.9rem">
-            {getPokemonName(pokemonId)} cannot be found in the wild. Try checking previous evolutions or alternative forms.
+            {getPokemonName(pokemonId, globalState.mode)} cannot be found in the wild. Try checking previous evolutions or alternative forms.
             <br/> <br/>
             If you have checked previous evolutions and believe this to be an error, please report it to the Discord.
           </Typography>

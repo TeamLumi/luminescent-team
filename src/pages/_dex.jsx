@@ -1,31 +1,29 @@
 import React from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import { PokemonPageContent } from '../components/Pokedex2/PokemonPageContent';
-import Head from '@docusaurus/Head';
-import { getDexDescription } from '../utils/dex';
 
-export default function PokemonPage({ pokemon, pokemonList }) {
-  const { siteConfig } = useDocusaurusContext();
+import { GlobalState } from '../components/common/GlobalState';
+import { PokemonPageContent } from '../components/Pokedex2/PokemonPageContent';
+import PokemonPageHeader from '../components/Pokedex2/PokemonPageHeader';
+
+export default function PokemonPage({ pokemon, pokemonList, pokemon3, pokemonList3, pokemonV, pokemonListV }) {
   // required for webpack SSR
   if (typeof pokemon === 'undefined' || typeof pokemonList === 'undefined') {
     return null;
   }
-  const metaImage = 
-    `https://luminescent.team/img/${pokemon.imageSrc}` ||
-    `https://luminescent.team/img/${pokemon.forms[0].imageSrc}`;
 
   return (
-    <Layout
-      description={getDexDescription(pokemon.id)}
-    >
-      <Head>
-        <meta property="og:title" content={pokemon.name} data-rh="true" />
-        <meta name="og:site_name" content={siteConfig.title} />
-        <meta name="twitter:card" content="summary" />
-        <meta property='og:image' itemProp="image primaryImageOfPage" content={metaImage}/>
-      </Head>
-      <PokemonPageContent pokemon={pokemon} pokemonNames={pokemonList} />
+    <Layout>
+      <GlobalState>
+        <PokemonPageHeader pokemon={pokemon} pokemon3={pokemon3} pokemonV={pokemonV} />
+        <PokemonPageContent
+          pokemon={pokemon}
+          pokemonNames={pokemonList}
+          pokemon3={pokemon3}
+          pokemonNames3={pokemonList3}
+          pokemonV={pokemonV}
+          pokemonNamesV={pokemonListV}
+        />
+      </GlobalState>
     </Layout>
   );
-}
+};

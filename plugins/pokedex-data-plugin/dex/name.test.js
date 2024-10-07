@@ -20,7 +20,7 @@ describe('Dex utils Name getters', () => {
     test('creates a map with the alternate form name of a pokemon when available', () => {
       const pokemon = { id: 487 };
       const result = createPokemonMap({}, pokemon);
-      expect(result[pokemon.id]).toBe('Giratina');
+      expect(result[pokemon.id]).toBe('Giratina Altered Forme');
     });
 
     test('creates a map with the default form name of a problematic pokemon', () => {
@@ -83,7 +83,7 @@ describe('Dex utils Name getters', () => {
       expect(getFormNameOfProblematicPokemon(1441)).toBe('Indeedee-F');
       expect(getFormNameOfProblematicPokemon(1454)).toBe('Basculegion-F');
       expect(getFormNameOfProblematicPokemon(1456)).toBe('Oinkologne-F');
-      expect(() => getFormNameOfProblematicPokemon(1000)).toThrow('Bad Pokemon ID in PokemonNameMap: 1000');
+      expect(() => getFormNameOfProblematicPokemon(1000)).toThrow('Bad 2.0 Pokemon ID in PokemonNameMap: 1000');
     });
   });
 
@@ -115,6 +115,7 @@ describe('Dex utils Name getters', () => {
     test('getPokemonNames() returns an array of all pokemon names when maxMonsno is greater than the number of pokemon', () => {
       const names = getPokemonNames(10000);
       expect(names).toHaveLength(1466);
+      // const megaNames = names.filter((names) => names.includes("mega"));
       expect(names[0]).toBe('Egg');
       expect(names[808]).toBe('Meltan');
     });
@@ -145,6 +146,30 @@ describe('Dex utils Name getters', () => {
     it('should return -1 for an invalid monsno', () => {
       expect(getPokemonFormId(-1, -1)).toBe(-1);
       expect(getPokemonFormId(1000, 0)).toBe(-1);
+    });
+  });
+
+  describe('3.0 Name Tests', () => {
+    const MODE = "3.0";
+    test('getFormNameOfProblematicPokemon returns correct form name for specified ID', () => {
+      expect(getFormNameOfProblematicPokemon(1266, MODE)).toBe('Ash-Greninja');
+      expect(getFormNameOfProblematicPokemon(1309, MODE)).toBe('Meowstic-F');
+      expect(getFormNameOfProblematicPokemon(1335, MODE)).toBe('Rockruff Own-Tempo');
+      expect(getFormNameOfProblematicPokemon(1466, MODE)).toBe('Indeedee-F');
+      expect(getFormNameOfProblematicPokemon(1481, MODE)).toBe('Basculegion-F');
+      expect(getFormNameOfProblematicPokemon(1483, MODE)).toBe('Oinkologne-F');
+      expect(() => getFormNameOfProblematicPokemon(1000, MODE)).toThrow('Bad 3.0 Pokemon ID in PokemonNameMap: 1000');
+    });
+    test('getPokemonNames() returns an array of all pokemon names when maxMonsno is greater than the number of pokemon', () => {
+      const names = getPokemonNames(10000, 0, MODE);
+      expect(names).toHaveLength(1533);
+      expect(names[0]).toBe('Egg');
+      expect(names[808]).toBe('Meltan');
+    });
+    it('should return the correct index for a valid form ID', () => {
+      expect(getPokemonFormId(25, 1042, MODE)).toBe(1);
+      expect(getPokemonFormId(133, 133, MODE)).toBe(0);
+      expect(getPokemonFormId(800, 1382, MODE)).toBe(2);
     });
   });
 });

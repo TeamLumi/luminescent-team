@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button, Modal } from '@mui/material';
 import styles from './styles.module.css'
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export const PokemonInfoButton = () => {
     const [open, setOpen] = useState(false);
@@ -14,7 +15,14 @@ export const PokemonInfoButton = () => {
     };
 
     return (
-        <Box display="flex" justifyContent="center" marginLeft="5px">
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginLeft: { xs: "unset", sm: ".25rem" },
+            gridArea: "b"
+          }}
+        >
           <button onClick={handleOpen} className={styles.infoButton}>Features</button>
           <Modal open={open} onClose={handleClose}>
             <Box className={styles.modalBox} >
@@ -23,8 +31,7 @@ export const PokemonInfoButton = () => {
               </Typography>
               <Typography variant="h6">
                 This site documents all Pokémon available in Luminescent Platinum 2.0F, including their locations, types, abilities, stats, evolutions with methods, forms, 
-                wild held items, and movesets. It currently does not include a per route Pokémon location chart, but you may use our <a href="https://docs.google.com/spreadsheets/d/1a-NSfEgtt8kAr1cXwKkmY2SylYMs2tUG5tMSIhK0-OY/edit">Pokémon 
-                Locations by Route documentation</a> to access that information in the meanwhile.
+                wild held items, and movesets. Feel free to take a look at the <a href={useBaseUrl("/mapper")}>Mapper</a> if you are looking for pokemon on a specific route.
                 <br/><br/>
                 Mobile users will need to swap from portrait to landscape mode if they wish to see full move descriptions in the appropriate drop downs.
                 <br/><br/>
@@ -34,10 +41,8 @@ export const PokemonInfoButton = () => {
                   <li>
                     Clicking on item rates will also show you what they change to when a Pokémon with Frisk, Super Luck or Compound Eyes are at the front of the party.
                   </li>
-                </ul>
-                Planned Changes:
-                <ul>
                   <li>A comparison toggle to view vanilla BDSP stats against any changes we have made.</li>
+                  <li>The Search bar now scrolls with the page instead of staying at the top of the page.</li>
                 </ul>
                 Please keep an eye on this features section to see what other features may become available.
               </Typography>

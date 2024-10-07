@@ -12,7 +12,7 @@ describe('Dex details getters', () => {
 
   it('Should return a height of 0 if an invalid pokemon ID is supplied', () => {
     const height = getHeight(-1);
-    const desiredResult = '0';
+    const desiredResult = '0.00';
     expect(typeof height).toBe('string');
     expect(height).toBe(desiredResult);
   });

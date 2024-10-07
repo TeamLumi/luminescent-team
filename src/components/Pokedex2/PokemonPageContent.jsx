@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import style from './styles.module.css';
 import { Box, Typography, Container } from '@mui/material';
 import Type from './type';
@@ -15,9 +15,12 @@ import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
 import { getTechMachineLearnset } from '../../utils/dex/moves';
-import { getPokemonMonsNoAndFormNoFromPokemonId } from '../../utils/dex/name';
+import ModeSwitch from './ModeSwitch';
+import { useGlobalState } from '../common/GlobalState';
+import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex';
 import { PokemonLocations } from './PokemonLocations';
-import { getRoutesFromPokemonId } from '../../utils/dex/encounters';
+import { getRoutesFromPokemonId } from '../../../plugins/pokedex-data-plugin/dex/encounters';
+import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 
 function padNumberWithZeros(number) {
   const strNumber = String(number);
@@ -30,51 +33,144 @@ function padNumberWithZeros(number) {
   }
 }
 
-export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
-  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(pokemon.id);
-  const pokemon_locations = getRoutesFromPokemonId(pokemon.id);
+export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNames3, pokemonV, pokemonNamesV }) => {
+  const POKEMON_MODE_MAP = {
+    [GAMEDATAV]: pokemonV,
+    [GAMEDATA2]: pokemon,
+    [GAMEDATA3]: pokemon3,
+  };
+  const POKEMON_LIST_MODE_MAP = {
+    [GAMEDATAV]: pokemonNamesV,
+    [GAMEDATA2]: pokemonNames,
+    [GAMEDATA3]: pokemonNames3,
+  };
+
+  const [globalState, updateMode] = useGlobalState();
+  const [pokemonInfo, setPokemonInfo] = useState(POKEMON_MODE_MAP[globalState.mode] ?? pokemon);
+  const [allPokemonNames, setAllPokemonNames] = useState(POKEMON_LIST_MODE_MAP[globalState.mode] ?? pokemonNames);
+  const [pokemonLocations, setPokemonLocations] = useState(getRoutesFromPokemonId(pokemonInfo.id, globalState.mode));
+
+  useEffect(() => {
+    setPokemonInfo(POKEMON_MODE_MAP[globalState.mode]);
+    setAllPokemonNames(POKEMON_LIST_MODE_MAP[globalState.mode]);
+    setPokemonLocations(getRoutesFromPokemonId(POKEMON_MODE_MAP[globalState.mode].id, globalState.mode))
+  }, [globalState.mode]);
+
   const [showMoreLocations, setShowMoreLocations] = useState(false);
+
+  if (pokemon === pokemon3 && globalState.mode === GAMEDATA2) {
+    return (
+      <Container>
+        <Container>
+          <Box
+            sx={{
+              display: { xs: "grid", sm: "flex" },
+              gridTemplate: {
+                xs: `"a b"
+                    "c c"`,
+                sm: "unset"
+              },
+              gap: { xs: ".5rem", sm: "unset" },
+              justifyContent: "center",
+              marginTop: "16px",
+            }}
+          >
+            <PokemonSearchBox pokemonNames={pokemonNames} monsNo={1} formNo={0} />
+            <PokemonInfoButton />
+            <ModeSwitch />
+          </Box>
+        </Container>
+  
+        <Typography variant='h6' display="flex" sx={{marginTop: "16px", justifyContent: "center"}} >{pokemonInfo.name} Does Not Exist in this Mode.</Typography>
+      </Container>
+    )
+  } else if (pokemonV === pokemon3 && globalState.mode === GAMEDATAV) {
+    return (
+      <Container>
+        <Container>
+          <Box
+            sx={{
+              display: { xs: "grid", sm: "flex" },
+              gridTemplate: {
+                xs: `"a b"
+                    "c c"`,
+                sm: "unset"
+              },
+              gap: { xs: ".5rem", sm: "unset" },
+              justifyContent: "center",
+              marginTop: "16px",
+            }}
+          >
+            <PokemonSearchBox pokemonNames={pokemonNamesV} monsNo={1} formNo={0} />
+            <PokemonInfoButton />
+            <ModeSwitch />
+          </Box>
+        </Container>
+
+        <Typography variant='h6' display="flex" sx={{marginTop: "16px", justifyContent: "center"}} >{pokemonInfo.name} Does Not Exist in this Mode.</Typography>
+      </Container>
+    )
+  }
 
   return (
     <Container>
-      <Container>
-        <Box display="flex" justifyContent="center" marginTop="16px">
-          <PokemonSearchBox pokemonNames={pokemonNames} pokemonId={pokemon.id} />
+      <Container
+        sx={{
+          position: "sticky",
+          top: "75px",
+          zIndex: 999,
+        }}
+      >
+        <Box
+          sx={{
+            display: { xs: "grid", sm: "flex" },
+            gridTemplate: {
+              xs: `"a b"
+                   "c c"`,
+              sm: "unset"
+            },
+            gap: { xs: ".5rem", sm: "unset" },
+            justifyContent: "center",
+            marginTop: "16px",
+          }}
+        >
+          <PokemonSearchBox pokemonNames={allPokemonNames} monsNo={pokemonInfo.monsno} formNo={pokemonInfo.formno} />
           <PokemonInfoButton />
+          <ModeSwitch />
         </Box>
       </Container>
       <div className="container">
         <div className="row">
           <Typography variant="h6" display="flex" sx={{ paddingLeft: '16px', paddingBottom: '12px', alignItems: "end"}}>
-            {`#${padNumberWithZeros(monsNo)}: `}
+          {`#${padNumberWithZeros(pokemonInfo.monsno)}: `}
           </Typography>
           <Typography variant="h2" display="flex" sx={{ paddingLeft: '8px', alignItems: "end"}}>
-            {` ${pokemon.name}`}
+          {` ${pokemonInfo.name}`}
           </Typography>
         </div>
       </div>
       <div className="container">
         <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={1}>
           <Box className={style.pokeColumn} gridColumn="span 1">
-            <ImageWithFallback
-              alt={pokemon.name}
-              src={`/img/${pokemon.imageSrc}`}
-              fallbackSrc={`/img/${pokemon.forms[0].imageSrc}`}
+          <ImageWithFallback
+              alt={pokemonInfo.name}
+              src={pokemonInfo.imageSrc}
+              fallbackSrc={pokemonInfo.forms[0].imageSrc}
               style={{ objectFit: 'contain', margin: '16px' }}
               width="80px"
               height="80px"
             />
           </Box>
           <Box className={style.pokeColumn} gridColumn="span 1">
-            <Type type1={pokemon.type1} type2={pokemon.type2} />
+          <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
           </Box>
           <Box className={style.pokeColumn} gridColumn="span 1">
             <Typography variant="h6" component="h6">
               <p className={style.flex}>Size:</p>
-              {pokemon.height}m, {pokemon.weight}kg
+              {pokemonInfo.height}m, {pokemonInfo.weight}kg
               <br />
               <span style={{ fontSize: '0.8rem' }}>
-                <i>Grass Knot: {pokemon.grassKnotPower}</i>
+                <i>Grass Knot: {pokemonInfo.grassKnotPower}</i>
               </span>
             </Typography>
           </Box>
@@ -83,9 +179,10 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
 
       <Container>
         <PokemonAbilities
-          abilityName1={pokemon.ability1}
-          abilityName2={pokemon.ability2}
-          abilityNameHidden={pokemon.abilityH}
+          abilityName1={pokemonInfo.ability1}
+          abilityName2={pokemonInfo.ability2}
+          abilityNameHidden={pokemonInfo.abilityH}
+          globalState={globalState}
         />
       </Container>
 
@@ -110,11 +207,11 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
           marginBottom="12px"
         >
           <Box gridColumn="span 1" width={{sm: "80%", md: "unset"}} className={style.secondPokeColumn}>
-            <PokemonStats baseStats={pokemon.baseStats} baseStatsTotal={pokemon.baseStatsTotal} />
+            <PokemonStats baseStats={pokemonInfo.baseStats} baseStatsTotal={pokemonInfo.baseStatsTotal} />
           </Box>
           <Box display={{xs: "none", sm: "none", md: "none", lg: showMoreLocations ? "none" : "unset"}}>
             <PokemonLocations
-              locations={pokemon_locations}
+              locations={pokemonLocations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
               pokemonId={pokemon.id}
@@ -132,9 +229,9 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
                 padding: "12px !important"
               }}
             >
-              <PokemonItems pokemonId={pokemon.id}/>
-              <PokemonEggGroups eggGroupNames={pokemon.eggGroupNames} sx={{ marginTop: '16px' }} />
-              <PokemonGenderRatio genderDecimalValue={pokemon.genderDecimalValue} sx={{ marginTop: '16px' }} />
+              <PokemonItems item1={pokemonInfo.item1} item2={pokemonInfo.item2} item3={pokemonInfo.item3}/>
+              <PokemonEggGroups eggGroupNames={pokemonInfo.eggGroupNames} sx={{ marginTop: '16px' }} />
+              <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} sx={{ marginTop: '16px' }} />
             </Container>
           </Box>
           <Box
@@ -144,7 +241,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
             width={{sm: "80%", md: "unset"}}
           >
             <PokemonLocations
-              locations={pokemon_locations}
+              locations={pokemonLocations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
               pokemonId={pokemon.id}
@@ -154,25 +251,25 @@ export const PokemonPageContent = ({ pokemon, pokemonNames }) => {
       </Container>
 
       <Container>
-        <EvolutionGraph pokemonID={pokemon.id}/>
+        <EvolutionGraph evolutionTree={pokemonInfo.evolutionTree} globalState={globalState} />
       </Container>
 
       <Container>
-        <PokemonAlternativeFormsList pokemonForms={pokemon.forms} />
+        <PokemonAlternativeFormsList pokemonForms={pokemonInfo.forms} />
       </Container>
 
       <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
-          <PokemonMovesetList moveset={pokemon.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={getTechMachineLearnset(pokemon.id)} movesetPrefix="tm" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.tm} movesetPrefix="tm" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
-          <PokemonMovesetList moveset={pokemon.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Tutor" id="eggMoveset">
-          <PokemonMovesetList moveset={pokemon.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemon.id} />
         </PokemonAccordion>
       </Container>
 

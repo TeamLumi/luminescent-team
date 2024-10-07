@@ -108,8 +108,8 @@ const MonDetails = ({smallest, pokemon, pokemonInfo}) => {
     >
       <ImageWithFallback
         alt={pokemonInfo.name}
-        src={`/img/${pokemonInfo.imageSrc}`}
-        fallbackSrc={`/img/pm0000_00_00_00_L.webp`}
+        src={pokemonInfo.imageSrc}
+        fallbackSrc={`/img/pkm/pm0000_00_00_00_L.webp`}
         style={{ objectFit: 'contain', marginTop: '8px' }}
         width="64px"
         height="64px"

@@ -1,11 +1,14 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import { Mapper } from '../components/Mapper/Mapper';
+import { GlobalState } from '../components/common/GlobalState';
 
 const MapperPage = ({ pokemonList }) => {
   return (
     <Layout>
-      <Mapper pokemonList={pokemonList} />
+      <GlobalState>
+        <Mapper pokemonList={pokemonList} />
+      </GlobalState>
     </Layout>
   )
 }

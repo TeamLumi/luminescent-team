@@ -2,24 +2,26 @@ const {
   LearnsetTable,
   EggMovesTable,
   MovesTable,
-  moveEnum,
-  smogonMoves,
+  SmogonMoves,
   ItemTable,
   PersonalTable,
-  moveNames,
-  moveInfo,
-  tutorMoves
-} = require('./data');
-const { getPokemonFormId } = require('./name');
+  MoveNames,
+  MoveInfo,
+  TutorMoves,
+  GAMEDATA2
+} = require('../../../__gamedata');
+const { getPokemonFormId, getPokemonName } = require('./name');
 
 const IS_MOVE_INDEX = false;
+const MAX_TM_COUNT = 104;
 
-function generateMovesViaLearnset(monsNo, level) {
+function generateMovesViaLearnset(monsNo, level, mode = GAMEDATA2) {
+  const ModeLearnsetTable = LearnsetTable[mode];
   /**
    * In BDSP, a trainer's Pokemon, when provided no moves,
    * will use the four most recent moves in the learnset.
    */
-  if (!Number.isInteger(monsNo) || monsNo < 0 || !LearnsetTable.WazaOboe[monsNo]) {
+  if (!Number.isInteger(monsNo) || monsNo < 0 || !ModeLearnsetTable.WazaOboe[monsNo]) {
     throw new Error('Invalid Pokémon number');
   }
 
@@ -27,46 +29,85 @@ function generateMovesViaLearnset(monsNo, level) {
     throw new Error('Invalid level');
   }
 
-  const cutoffIndex = LearnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
+  let cutoffIndex = ModeLearnsetTable.WazaOboe[monsNo].ar.findIndex((currentMoveOrLevel, i) => {
     if (i % 2 === 1) return IS_MOVE_INDEX;
     return currentMoveOrLevel > level;
   });
+  if (cutoffIndex === -1) {
+    cutoffIndex = ModeLearnsetTable.WazaOboe[monsNo].ar.length;
+  }
+  const moves = ModeLearnsetTable.WazaOboe[monsNo].ar.slice(0, cutoffIndex);
 
-  const moves = LearnsetTable.WazaOboe[monsNo].ar.slice(0, cutoffIndex);
+  const moveset = [moves.at(-7) || 0, moves.at(-5) || 0, moves.at(-3) || 0, moves.at(-1) || 0];
 
-  return [
-    getMoveString(moves.at(-7)),
-    getMoveString(moves.at(-5)),
-    getMoveString(moves.at(-3)),
-    getMoveString(moves.at(-1)),
-  ];
+  return moveset.map((move) => getMoveString(move, mode));
 }
 
-function isMoveNameSmogonCompatible(moveString) {
+function isMoveNameSmogonCompatible(moveString, mode = GAMEDATA2) {
   if (typeof moveString !== 'string' || !moveString) throw Error(`Bad move string: ${moveString}`);
-  return smogonMoves.some((movesPerGeneration) => Object.keys(movesPerGeneration).includes(moveString));
+  return SmogonMoves[mode].some((movesPerGeneration) => Object.keys(movesPerGeneration).includes(moveString));
 }
 
-function getMoveId(moveName) {
-  if (typeof moveName !== 'string' || !moveName) throw Error(`Bad move name: ${moveName}`);
-  const id = moveEnum.findIndex((e) => e === moveName.trim());
-  if (id === -1) throw Error(`Bad move name: ${moveName}`);
-  return id;
-}
+function getMoveString(moveId = 0, mode = GAMEDATA2) {
+  const ModeMoveNames = MoveNames[mode];
+  if (!moveId) {
+    throw new Error(`Bad move string found: ID - ${moveId}`);
+  }
+  const LabelDataArray = ModeMoveNames.labelDataArray;
+  if (moveId > LabelDataArray.length) {
+    throw new Error(`Incompatible move string found: ID - ${moveId}`);
+  }
+  const nameData = LabelDataArray[moveId].wordDataArray;
+  const name = nameData.length ? nameData[0].str : null;
 
-function getMoveString(id = 0) {
-  if (!Number.isInteger(id) || id < 0) throw Error(`Bad move string found: ID - ${id}`);
-
-  const str = moveEnum[id];
-  if (typeof str !== 'string' || !isMoveNameSmogonCompatible(str)) {
-    throw Error(`Incompatible move string found: ID - ${id}, String: ${str}`);
+  if (!name) {
+    throw new Error(`Bad move name: ${name}`);
   }
 
-  return str;
+  // TODO Removing this for now. Find out where it comes from and add it back in later.
+  // if (!isMoveNameSmogonCompatible(name)) {
+  //   throw new Error(`This move is not Smogon Compatible: ID - ${moveId}, String: ${name}`);
+  // }
+
+  return name;
 }
 
-function getMoveProperties(moveId = 0) {
-  const move = MovesTable.Waza[moveId];
+function getMoveId(moveName, mode = GAMEDATA2) {
+  const ModeMoveNames = MoveNames[mode];
+
+  if (!moveName) {
+    throw new Error(`Bad move name: ${moveName}`);
+  }
+
+  for (let i = 0; i < ModeMoveNames.labelDataArray.length; i++) {
+    const move = ModeMoveNames.labelDataArray[i];
+    const moveStr = move.wordDataArray[0].str;
+    const normalized_move_string = moveStr.normalize('NFKD').replace(/[^\w\s-]/g, '').trim().toLowerCase();
+    if (moveStr === moveName || normalized_move_string === moveName) {
+      return i;
+    }
+  }
+
+  throw new Error(`Bad move name: ${moveName}`);
+}
+
+function findWazaNoByMachineNo(machineNo, mode = GAMEDATA2) {
+  const ModeItemTable = ItemTable[mode];
+  const wazaMachineArray = ModeItemTable.WazaMachine;
+
+  for (let i = 0; i < wazaMachineArray.length; i++) {
+    if (wazaMachineArray[i]['machineNo'] === machineNo) {
+      return wazaMachineArray[i]['wazaNo'];
+    }
+  }
+
+  return null;
+}
+
+function getMoveProperties(moveId = 0, mode = GAMEDATA2) {
+  const ModeMovesTable = MovesTable[mode];
+  const ModeMoveNames = MoveNames[mode];
+  const move = ModeMovesTable.Waza[moveId];
   const type = move.type;
   const damageType = move.damageType;
   const power = move.power;
@@ -79,8 +120,8 @@ function getMoveProperties(moveId = 0) {
 
   return {
     moveId: moveId,
-    name: moveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
-    desc: getMoveDescription(moveId),
+    name: ModeMoveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
+    desc: getMoveDescription(moveId, mode),
     type,
     damageType, //0 = Status, 1 = Physical, 2 = Special
     maxPP,
@@ -89,75 +130,192 @@ function getMoveProperties(moveId = 0) {
   };
 }
 
-function getEggMoves(dexId = 0) {
-  if (!Number.isInteger(dexId) || PersonalTable.Personal[dexId] === undefined) return [];
-  const { monsno } = PersonalTable.Personal[dexId];
-  const formNo = getPokemonFormId(monsno, dexId);
-  const eggMoves = EggMovesTable.Data.find((e) => e.no === monsno && e.formNo === formNo)?.wazaNo ?? [];
+function getEggMoves(dexId = 0, mode = GAMEDATA2) {
+  const ModePersonalTable = PersonalTable[mode];
+  const ModeEggMovesTable = EggMovesTable[mode];
+  if (!Number.isInteger(dexId) || ModePersonalTable.Personal[dexId] === undefined) return [];
+  const { monsno } = ModePersonalTable.Personal[dexId];
+  const formNo = getPokemonFormId(monsno, dexId, mode);
+  const eggMoves = ModeEggMovesTable.Data.find((e) => e.no === monsno && e.formNo === formNo)?.wazaNo ?? [];
   return eggMoves.map((moveId) => ({
     level: 'egg',
-    move: getMoveProperties(moveId),
+    move: getMoveProperties(moveId, mode),
   }));
 }
 
-function getMoveDescription(moveId = 0) {
-  const wordData = moveInfo.labelDataArray[moveId].wordDataArray;
+function getMoveDescription(moveId = 0, mode = GAMEDATA2) {
+  const ModeMoveInfo = MoveInfo[mode];
+  const wordData = ModeMoveInfo.labelDataArray[moveId].wordDataArray;
   const description = wordData.reduce((moveDescription, currentString) => {
     return moveDescription + currentString.str + ' ';
   }, '');
   return description.trim();
 }
 
-function getTechMachineLearnset(m1, m2, m3, m4) {
-  const learnset = [
-    parseTmLearnsetSection(m1),
-    parseTmLearnsetSection(m2),
-    parseTmLearnsetSection(m3),
-    parseTmLearnsetSection(m4),
-  ]
-    .join('')
-    .split('')
-    .flatMap((e) => parseInt(e));
+function getTMCompatibility(pokemonId = 0, mode = GAMEDATA2) {
+  if (pokemonId === 0) {
+    return null;
+  }
+  const ModePersonalTable = PersonalTable[mode];
 
-  const canLearn = [];
-  for (let i = 0; i < learnset.length; i++) {
-    if (learnset[i] === 0) continue;
+  if (mode === GAMEDATA2) {
+    const { machine1, machine2, machine3, machine4 } = ModePersonalTable.Personal[pokemonId];
+    let tmCompatibility = [];
+  
+    for (let i = 0; i < 32; i++) {
+      tmCompatibility[i] = (machine1 & (1 << i)) != 0;
+    }
+    for (let i = 0; i < 32; i++) {
+      tmCompatibility[i + 32] = (machine2 & (1 << i)) != 0;
+    }
+    for (let i = 0; i < 32; i++) {
+      tmCompatibility[i + 64] = (machine3 & (1 << i)) != 0;
+    }
+    for (let i = 0; i < 32; i++) {
+      tmCompatibility[i + 96] = (machine4 & (1 << i)) != 0;
+    }
+  
+    return tmCompatibility;
+  } else {
+    const personalData = ModePersonalTable.Personal[pokemonId];
+    const machineNos = [personalData['machine1'], personalData['machine2'], personalData['machine3'], personalData['machine4']];
+    const tmBinaryList = convertListToBinaryArray(machineNos);
+    const tmCompatibility = createMoveIdLearnset(tmBinaryList, mode);
+  
+    return tmCompatibility;
+  }
+}
 
-    const tm = ItemTable.WazaMachine[i];
-    canLearn.push({ level: 'tm', move: getMoveProperties(tm.wazaNo) });
+function getTechMachineLearnset(pokemonId = 0, mode = GAMEDATA2) {
+  if (pokemonId === 0) {
+    return [];
+  }
+  const learnset = getTMCompatibility(pokemonId, mode)
+
+  if (mode === GAMEDATA2) {
+    const ModeItemTable = ItemTable[mode];
+
+    const canLearn = [];
+    for (let i = 0; i <= MAX_TM_COUNT; i++) {
+      const tm = ModeItemTable.WazaMachine[i];
+
+      const legalitySetValue = ModeItemTable.Item[tm.itemNo].group_id;
+      const isLearnable = learnset[legalitySetValue - 1];
+
+      if (isLearnable) {
+        canLearn.push({ level: 'tm', move: getMoveProperties(tm.wazaNo, mode) });
+      }
+    }
+
+    return canLearn;
+  } else {
+    if (learnset === null) {
+      return [];
+    }
+
+    const canLearn = learnset.map(move => ({ level: 'tm', move: getMoveProperties(move, mode)}));
+    return canLearn;
+  }
+}
+
+function convertListToBinaryArray(decimalList) {
+  if (decimalList.length !== 4) {
+    throw new Error("Input list must have exactly 4 elements");
   }
 
-  return canLearn;
+  const binaryArray = [];
+
+  binaryArray.push(...decimalList.map((decimalNumber) => {
+    if (!Number.isInteger(decimalNumber) || decimalNumber < 0) {
+      throw new Error("All elements in the list must be non-negative integers");
+    }
+  
+    return decimalToBinaryArray(decimalNumber);
+  }).flat());
+  
+  // Pad the binary array to have a length of 128 by adding leading zeros
+  while (binaryArray.length < 128) {
+    binaryArray.unshift(0);
+  }
+
+  return binaryArray;
 }
 
-function getPokemonLearnset(pokemonId = 0) {
+function createMoveIdLearnset(binaryArray, mode = GAMEDATA2) {
+  const tmArray = [];
+
+  for (let machineNoIndex = 0; machineNoIndex < binaryArray.length; machineNoIndex++) {
+    const binaryInt = binaryArray[machineNoIndex];
+
+    if (binaryInt === 0) {
+      continue;
+    }
+
+    if (machineNoIndex > 103) {
+      break;
+    }
+
+    const machineNo = machineNoIndex + 1;
+    tmArray.push(findWazaNoByMachineNo(machineNo, mode));
+  }
+
+  return tmArray;
+}
+
+function decimalToBinaryArray(decimalNumber) {
+  if (!Number.isInteger(decimalNumber) || decimalNumber < 0) {
+    throw new Error("Input must be a non-negative integer");
+  }
+
+  const binaryString = (decimalNumber >>> 0).toString(2);  // Convert to binary and ensure positive
+  const binaryArray = Array.from(binaryString, Number);
+
+  // Pad the binary array to have a length of 32 by adding leading zeros
+  while (binaryArray.length < 32) {
+    binaryArray.unshift(0);
+  }
+
+  return binaryArray.reverse();
+}
+
+function getPokemonLearnset(pokemonId = 0, mode = GAMEDATA2) {
+  const ModeLearnsetTable = LearnsetTable[mode];
   if (!Number.isInteger(pokemonId) || pokemonId < 0) return [];
-  return LearnsetTable.WazaOboe[pokemonId]?.ar ?? [];
+  return ModeLearnsetTable.WazaOboe[pokemonId]?.ar ?? [];
 }
 
-function getLevelLearnset(pokemonId = 0) {
-  const learnset = getPokemonLearnset(pokemonId);
+function getLevelLearnset(pokemonId = 0, mode = GAMEDATA2) {
+  const learnset = getPokemonLearnset(pokemonId, mode);
 
   const moveList = [];
   for (let i = 0; i < learnset.length; i += 2) {
-    moveList.push({ level: learnset[i], move: getMoveProperties(learnset[i + 1]) });
+    moveList.push({ level: learnset[i], move: getMoveProperties(learnset[i + 1], mode) });
   }
 
   return moveList;
 }
 
-function parseTmLearnsetSection(decimal) {
-  return (decimal >>> 0).toString(2).split('').reverse().join('').padStart(32, 0);
-}
+function getMoveLevelLearned(pokemonId = 0, moveId = 0, mode = GAMEDATA2) {
+  const ModeLearnsetTable = LearnsetTable[mode];
+  if (!Number.isInteger(pokemonId) || pokemonId < 0) return [];
+  const moveIndex = ModeLearnsetTable.WazaOboe[pokemonId]?.ar.findIndex((move) => move === moveId);
+  if (moveIndex === -1) {
+    console.error(`This pokemon can't learn this move ${getPokemonName(pokemonId, mode)}: ${getMoveString(moveId, mode)}`)
+    return moveIndex;
+  }  
+  const levelLearned = ModeLearnsetTable.WazaOboe[pokemonId]?.ar[moveIndex - 1]
+  return levelLearned;
+}  
 
-function getTutorMoves(monsno = 0, formno = 0) {
+function getTutorMoves(monsno = 0, formno = 0, mode = GAMEDATA2) {
+  const ModeTutorMoves = TutorMoves[mode];
   if(monsno === 0) return [];
-  if(!Object.hasOwn(tutorMoves, monsno)) return [];
-  if(!Object.hasOwn(tutorMoves[monsno], formno)) return [];
-  const moveset = tutorMoves[monsno][formno];
+  if(!Object.hasOwn(ModeTutorMoves, monsno)) return [];
+  if(!Object.hasOwn(ModeTutorMoves[monsno], formno)) return [];
+  const moveset = ModeTutorMoves[monsno][formno];
   const tutorSet = moveset.map(moveId => ({
     moveLevel: 0,
-    move: getMoveProperties(moveId)
+    move: getMoveProperties(moveId, mode)
   }));
 
   return tutorSet;
@@ -172,7 +330,7 @@ module.exports = {
   getTechMachineLearnset,
   getMoveProperties,
   getPokemonLearnset,
-  parseTmLearnsetSection,
+  getMoveLevelLearned,
   getLevelLearnset,
   getTutorMoves
 };

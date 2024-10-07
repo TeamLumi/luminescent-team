@@ -1,7 +1,11 @@
-const { PersonalTable } = require('./data');
+const { PersonalTable, PokedexInfo, GAMEDATA2, GAMEDATA3, GAMEDATAV } = require('../../../__gamedata');
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
-const FORM_MAP = PersonalTable.Personal.reduce(createFormMap, {});
+const FORM_MAP = {
+  [GAMEDATAV]: PersonalTable[GAMEDATAV].Personal.reduce(createFormMap, {}),
+  [GAMEDATA2]: PersonalTable[GAMEDATA2].Personal.reduce(createFormMap, {}),
+  [GAMEDATA3]: PersonalTable[GAMEDATA3].Personal.reduce(createFormMap, {})
+};
 
 function createFormMap(formMap, currentPokemon) {
   if (!Array.isArray(formMap[currentPokemon.monsno])) {
@@ -12,16 +16,19 @@ function createFormMap(formMap, currentPokemon) {
   return formMap;
 }
 
-function getPokemonIdFromFormMap(monsNo = 0, formNo = 0) {
-  return FORM_MAP[monsNo]?.[formNo] ?? undefined;
+function getPokemonIdFromFormMap(monsNo = 0, formNo = 0, mode = GAMEDATA2) {
+  const ModeFormMap = FORM_MAP[mode]
+  return ModeFormMap[monsNo]?.[formNo] ?? undefined;
 }
 
-const getPokemonFormIndexById = (monsno, id) => {
-  return FORM_MAP[monsno].findIndex((pokemonId) => pokemonId === id);
+const getPokemonFormIndexById = (monsno, id, mode = GAMEDATA2) => {
+  const ModeFormMap = FORM_MAP[mode]
+  return ModeFormMap[monsno].findIndex((pokemonId) => pokemonId === id);
 };
 
-const getPokemonFormIds = (monsno) => {
-  return FORM_MAP[monsno];
+const getPokemonFormIds = (monsno, mode = GAMEDATA2) => {
+  const ModeFormMap = FORM_MAP[mode]
+  return ModeFormMap[monsno];
 };
 
 function getGender(sex) {
@@ -34,7 +41,7 @@ function getGender(sex) {
 function getImage(monsno = 0, formIndex = 0) {
   const paddedMonsno = monsno.toString().padStart(4, 0);
   const paddedFormIndex = formIndex.toString().padStart(2, 0);
-  return `pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
+  return `/img/pkm/pm${paddedMonsno}_${paddedFormIndex}_00_00_L.webp`;
 }
 
 function formatBaseStats(p) {
@@ -50,8 +57,27 @@ function getGrassKnotPower(weightkg) {
   return 20;
 }
 
-function getPokemonIdFromMonsNoAndForm(monsno, formno) {
-  return PersonalTable.Personal.find((e) => e.monsno === monsno && FORM_MAP[e.monsno][formno] === e.id)?.id;
+function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = GAMEDATA2) {
+  const ModePersonalTable = PersonalTable[mode];
+  const ModeFormMap = FORM_MAP[mode];
+  return ModePersonalTable.Personal.find((e) => e.monsno === monsno && ModeFormMap[e.monsno][formno] === e.id)?.id;
+}
+
+function isValidPokemon(pokemonId, mode = GAMEDATA2) {
+  const ModePersonalTable = PersonalTable[mode];
+  const p = ModePersonalTable.Personal[pokemonId];
+  return p.valid_flag;
+}
+
+function doNothing(evoMethod, evolutionDetails) {
+  return evoMethod;
+};
+
+function getDexDescription(pokemonId, mode = GAMEDATA2) {
+  const ModePokedexInfo = PokedexInfo[mode];
+  const labelData = ModePokedexInfo.labelDataArray[pokemonId]
+  const combinedStr = labelData.wordDataArray.map(data => data.str).join(' ');
+  return combinedStr
 }
 
 module.exports = {
@@ -65,4 +91,7 @@ module.exports = {
   createFormMap,
   getPokemonFormIndexById,
   getPokemonFormIds,
+  getDexDescription,
+  doNothing,
+  isValidPokemon,
 };
