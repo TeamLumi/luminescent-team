@@ -17,6 +17,7 @@ import * as EvoConstants from "../../../plugins/pokedex-data-plugin/dex/evolutio
 
 export default function EvolutionGraph({ evolutionTree }) {
   const [globalState, updateMode] = useGlobalState();
+  const [secondEvolvesInto, setSecondEvolvesInto] = React.useState(evolutionTree.evolvesInto);
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId, globalState.mode);
   const firstPokemonPath = formNo === 0 ? monsNo : `${monsNo}_${formNo}`;
   const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, globalState.mode);
@@ -67,27 +68,38 @@ export default function EvolutionGraph({ evolutionTree }) {
       </div>
 
       {monsNo !== 868 && monsNo !== 869
-        ? (<DoesNotEvolve />) : (<AlcremieEvo />)
+        ? (<DoesNotEvolve />)
+        : (<AlcremieEvo />)
       }
     </div>
   );
 
-  const secondEvolvesInto = evolutionTree.evolvesInto;
+  React.useEffect(() => {
+    const newSecondEvolvesInto = evolutionTree.evolvesInto;
+    if (newSecondEvolvesInto.length > 1) {
+      if (
+        newSecondEvolvesInto[0].evolvesInto.length > 0
+        && newSecondEvolvesInto[0].evolvesInto.length < 2
+      ) {
+        newSecondEvolvesInto[0].evolvesInto.push(newSecondEvolvesInto[1].evolvesInto[0])
+      } else if (
+        newSecondEvolvesInto[newSecondEvolvesInto.length - 1].evolvesInto.length > 0
+        && newSecondEvolvesInto[0].evolvesInto.length < 2
+      ) {
+        for (const index in newSecondEvolvesInto ) {
+          if (parseInt(index) !== newSecondEvolvesInto.length - 1) {
+            newSecondEvolvesInto[0].evolvesInto.push(defaultEvo)
+          }
+        }
+        console.log("Adding a new one!")
+        newSecondEvolvesInto[0].evolvesInto.push(newSecondEvolvesInto[newSecondEvolvesInto.length - 1].evolvesInto[0])
+      }
+    }
+    setSecondEvolvesInto(newSecondEvolvesInto);
+  }, [evolutionTree]);
+
   if (secondEvolvesInto.length === 0 || monsNo === 868 || monsNo === 869) {
     return fullEvolutionTree
-  }
-
-  if (secondEvolvesInto.length > 1) {
-    if (secondEvolvesInto[0].evolvesInto.length > 0) {
-      secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[1].evolvesInto[0])
-    } else if (secondEvolvesInto[secondEvolvesInto.length - 1].evolvesInto.length > 0) {
-      for (const index in secondEvolvesInto ) {
-        if (parseInt(index) !== secondEvolvesInto.length - 1) {
-          secondEvolvesInto[0].evolvesInto.push(defaultEvo)
-        }
-      }
-      secondEvolvesInto[0].evolvesInto.push(secondEvolvesInto[secondEvolvesInto.length - 1].evolvesInto[0])
-    }
   }
 
   const renderEvolutions = (methods, pokemonImages, methodIndex) => {
