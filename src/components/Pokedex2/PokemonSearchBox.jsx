@@ -25,7 +25,11 @@ export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
     <Autocomplete
       disablePortal
       id="pokemonIdSelector"
-      sx={{ width: {xs: "250px", sm: "300px"}, gridArea: "a" }}
+      sx={{
+        width: {xs: "250px", sm: "300px"},
+        gridArea: "a",
+        backgroundColor: "var(--mui-palette-common-background)"
+      }}
       options={options}
       value={pokemonName}
       onChange={(_, pokemon) => {

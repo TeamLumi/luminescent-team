@@ -13,7 +13,9 @@ const ModeSwitch = () => {
     <FormControl
       sx={{
         marginLeft: {xs: "unset", sm: ".25rem"},
-        gridArea: "c"
+        gridArea: "c",
+        minWidth: "fit-content",
+        backgroundColor: "var(--mui-palette-common-background)"
       }}
     >
       <InputLabel id='version-selector-label'>Version</InputLabel>

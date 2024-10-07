@@ -114,7 +114,13 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
 
   return (
     <Container>
-      <Container>
+      <Container
+        sx={{
+          position: "sticky",
+          top: "75px",
+          zIndex: 999,
+        }}
+      >
         <Box
           sx={{
             display: { xs: "grid", sm: "flex" },
