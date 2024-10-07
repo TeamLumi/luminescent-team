@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[305758],{718490:e=>{e.exports="/pokedex/quilava"}}]);

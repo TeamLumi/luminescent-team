@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[222915],{947943:e=>{e.exports="/pokedex/totodile"}}]);

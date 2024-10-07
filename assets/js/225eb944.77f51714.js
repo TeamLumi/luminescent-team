@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[909779],{886353:e=>{e.exports="/pokedex/chesnaught"}}]);

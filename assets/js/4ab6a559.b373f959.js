@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[936666],{669047:e=>{e.exports="/pokedex/heart-trim-furfrou"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[152913],{816647:e=>{e.exports="/pokedex/ruby-swirl-berry-alcremie"}}]);

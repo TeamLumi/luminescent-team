@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[346985],{400620:e=>{e.exports="/pokedex/chingling"}}]);

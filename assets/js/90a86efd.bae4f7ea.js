@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[246651],{435327:e=>{e.exports="/pokedex/petilil"}}]);

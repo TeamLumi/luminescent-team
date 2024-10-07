@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[674066],{525483:e=>{e.exports="/pokedex/absol"}}]);

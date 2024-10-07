@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[410724],{245020:e=>{e.exports="/pokedex/carracosta"}}]);

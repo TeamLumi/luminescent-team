@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[220140],{179453:e=>{e.exports="/pokedex/gligar"}}]);

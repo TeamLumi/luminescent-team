@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[58530],{99684:e=>{e.exports="/pokedex/bidoof"}}]);

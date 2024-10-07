@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[535598],{669737:e=>{e.exports="/pokedex/ninjask"}}]);

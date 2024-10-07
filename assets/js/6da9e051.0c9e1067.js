@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[669760],{733625:e=>{e.exports="/pokedex/pansear"}}]);

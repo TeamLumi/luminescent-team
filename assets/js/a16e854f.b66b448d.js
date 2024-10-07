@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[3571],{27021:e=>{e.exports="/pokedex/mimejr."}}]);

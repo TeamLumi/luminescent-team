@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[228578],{171667:e=>{e.exports="/pokedex/ultimate-mode-miraidon"}}]);

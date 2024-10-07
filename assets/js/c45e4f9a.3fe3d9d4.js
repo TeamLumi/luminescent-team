@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[209755],{783807:e=>{e.exports="/pokedex/normal-forme-deoxys"}}]);

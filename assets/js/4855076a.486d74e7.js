@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[70651],{798793:e=>{e.exports="/pokedex/serperior"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[895114],{768838:e=>{e.exports="/pokedex/scovillain"}}]);

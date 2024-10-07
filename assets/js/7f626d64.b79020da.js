@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[62790],{89751:e=>{e.exports="/pokedex/lampent"}}]);

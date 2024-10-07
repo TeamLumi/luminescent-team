@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[782643],{693349:e=>{e.exports="/pokedex/wugtrio"}}]);

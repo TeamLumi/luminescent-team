@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[641843],{492741:e=>{e.exports="/pokedex/palkia"}}]);

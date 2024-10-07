@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[196289],{279280:e=>{e.exports="/pokedex/stantler"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[76025],{89601:e=>{e.exports="/pokedex/relicanth"}}]);

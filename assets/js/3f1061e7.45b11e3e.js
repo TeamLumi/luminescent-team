@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[396289],{627767:e=>{e.exports="/pokedex/chien-pao"}}]);

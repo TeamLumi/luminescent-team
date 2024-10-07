@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[21432],{688288:e=>{e.exports="/pokedex/regice"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[238948],{165955:e=>{e.exports="/pokedex/totem-araquanid"}}]);

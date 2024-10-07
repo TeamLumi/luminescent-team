@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[29380],{46214:e=>{e.exports="/pokedex/-ice"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[294594],{341835:e=>{e.exports="/pokedex/rayquaza"}}]);

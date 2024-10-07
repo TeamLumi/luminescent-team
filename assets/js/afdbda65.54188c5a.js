@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[901384],{13750:e=>{e.exports="/pokedex/numel"}}]);

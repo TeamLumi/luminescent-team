@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[660641],{409718:e=>{e.exports="/pokedex/titanic-fezandipiti"}}]);

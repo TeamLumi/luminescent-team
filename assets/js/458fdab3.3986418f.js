@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[218811],{763243:e=>{e.exports="/pokedex/partner-eevee"}}]);

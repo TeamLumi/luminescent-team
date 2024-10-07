@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[177313],{50786:e=>{e.exports="/pokedex/camerupt"}}]);

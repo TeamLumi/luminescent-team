@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[112459],{13108:e=>{e.exports="/pokedex/hariyama"}}]);

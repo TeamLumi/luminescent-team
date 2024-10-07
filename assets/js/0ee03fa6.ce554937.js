@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[414060],{750061:e=>{e.exports="/pokedex/larvesta"}}]);

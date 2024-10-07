@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[371359],{208417:e=>{e.exports="/pokedex/hatterene"}}]);

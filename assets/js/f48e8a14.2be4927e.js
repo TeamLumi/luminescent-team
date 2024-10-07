@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[188142],{893676:e=>{e.exports="/pokedex/duraludon"}}]);

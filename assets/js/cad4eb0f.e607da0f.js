@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[429924],{283115:e=>{e.exports="/pokedex/blue-flower-flabebe"}}]);

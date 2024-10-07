@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[1698],{97692:e=>{e.exports="/pokedex/magmortar"}}]);

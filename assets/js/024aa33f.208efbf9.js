@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[50256],{709081:e=>{e.exports="/pokedex/binacle"}}]);

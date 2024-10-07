@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[122045],{597232:e=>{e.exports="/pokedex/slurpuff"}}]);

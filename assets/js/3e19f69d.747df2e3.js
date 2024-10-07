@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[579176],{877767:e=>{e.exports="/pokedex/cranidos"}}]);

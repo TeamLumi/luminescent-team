@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[359380],{279082:e=>{e.exports="/pokedex/kyogre"}}]);

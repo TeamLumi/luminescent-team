@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[375796],{177599:e=>{e.exports="/pokedex/grimer"}}]);

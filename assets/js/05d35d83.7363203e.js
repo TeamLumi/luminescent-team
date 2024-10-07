@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[81181],{304508:e=>{e.exports="/pokedex/huntail"}}]);

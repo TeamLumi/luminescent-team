@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[896253],{44162:e=>{e.exports="/pokedex/totem-disguised-form-mimikyu"}}]);

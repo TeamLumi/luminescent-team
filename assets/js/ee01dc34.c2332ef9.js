@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[88443],{24611:e=>{e.exports="/pokedex/abra"}}]);

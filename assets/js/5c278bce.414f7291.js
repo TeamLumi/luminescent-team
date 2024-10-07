@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[61383],{535902:e=>{e.exports="/pokedex/sealeo"}}]);

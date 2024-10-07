@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[586153],{802237:e=>{e.exports="/pokedex/boss-meta-groudon"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[383824],{878609:e=>{e.exports="/pokedex/armarouge"}}]);

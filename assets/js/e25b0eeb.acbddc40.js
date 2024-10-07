@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[764706],{289468:e=>{e.exports="/pokedex/tyranitar"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[630350],{953164:e=>{e.exports="/pokedex/graveler"}}]);

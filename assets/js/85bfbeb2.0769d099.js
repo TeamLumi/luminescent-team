@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[302467],{178562:e=>{e.exports="/pokedex/totem-alola-raticate"}}]);

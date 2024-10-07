@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[30994],{40648:e=>{e.exports="/pokedex/breloom"}}]);

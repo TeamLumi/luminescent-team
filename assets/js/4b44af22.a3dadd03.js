@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[285127],{718933:e=>{e.exports="/pokedex/feebas"}}]);

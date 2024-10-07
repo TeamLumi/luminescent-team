@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[93171],{300392:e=>{e.exports="/pokedex/glalie"}}]);

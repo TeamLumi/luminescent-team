@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[10063],{117045:e=>{e.exports="/pokedex/unfezant"}}]);

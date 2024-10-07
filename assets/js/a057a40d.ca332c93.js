@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[636665],{740980:e=>{e.exports="/pokedex/gmax-pikachu"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[755439],{508050:e=>{e.exports="/pokedex/reshiram"}}]);

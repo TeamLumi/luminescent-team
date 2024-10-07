@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[329634],{290083:e=>{e.exports="/pokedex/female-basculegion"}}]);

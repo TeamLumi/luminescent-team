@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[567981],{267811:e=>{e.exports="/pokedex/silvally-flying"}}]);

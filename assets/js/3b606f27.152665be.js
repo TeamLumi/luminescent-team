@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[10996],{34828:e=>{e.exports="/pokedex/smoochum"}}]);

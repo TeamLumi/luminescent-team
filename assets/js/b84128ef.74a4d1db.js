@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[918494],{540032:e=>{e.exports="/pokedex/archeops"}}]);

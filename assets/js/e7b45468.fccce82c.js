@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[198161],{618279:e=>{e.exports="/pokedex/spewpa"}}]);

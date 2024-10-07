@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[290494],{633626:e=>{e.exports="/pokedex/combat-breed-tauros"}}]);

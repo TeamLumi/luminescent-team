@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[203218],{655203:e=>{e.exports="/pokedex/carnivine"}}]);

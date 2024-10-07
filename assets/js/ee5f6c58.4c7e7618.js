@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[80625],{868361:e=>{e.exports="/pokedex/lemon-cream-love-alcremie"}}]);

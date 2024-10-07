@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[499179],{621872:e=>{e.exports="/pokedex/cosplay-libre-pikachu"}}]);

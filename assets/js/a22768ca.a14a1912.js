@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[721398],{469745:e=>{e.exports="/pokedex/cufant"}}]);

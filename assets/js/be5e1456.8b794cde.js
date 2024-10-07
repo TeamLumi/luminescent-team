@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[843971],{230134:e=>{e.exports="/pokedex/munna"}}]);

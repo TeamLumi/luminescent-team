@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[69906],{21799:e=>{e.exports="/pokedex/mantine"}}]);

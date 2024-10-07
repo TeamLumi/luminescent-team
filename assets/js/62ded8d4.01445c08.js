@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[57709],{384063:e=>{e.exports="/pokedex/totem-ribombee"}}]);

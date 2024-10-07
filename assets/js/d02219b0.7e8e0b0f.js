@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[36285],{68671:e=>{e.exports="/pokedex/staryu"}}]);

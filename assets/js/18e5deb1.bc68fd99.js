@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[45106],{3728:e=>{e.exports="/pokedex/croconaw"}}]);

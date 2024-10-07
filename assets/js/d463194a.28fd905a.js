@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[532131],{529932:e=>{e.exports="/pokedex/totem-lurantis"}}]);

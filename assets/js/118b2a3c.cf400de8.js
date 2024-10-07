@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[40898],{992819:e=>{e.exports="/pokedex/aquatic-mode-miraidon"}}]);
