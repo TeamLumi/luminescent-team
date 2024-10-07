@@ -6,7 +6,7 @@
     "m_Enabled": 1,
     "m_Script": {
         "m_FileID": 0,
-        "m_PathID": 3652094840918934080
+        "m_PathID": -2967038129978094201
     },
     "m_Name": "english_ss_tokuseiinfo",
     "hash": 1046409683,
@@ -9755,6 +9755,1656 @@
                     "tagValue": 0.0,
                     "str": "Unnerve Ability and Spectrier’s Grim Neigh Ability.",
                     "strWidth": 662.046875
+                }
+            ]
+        },
+        {
+            "labelIndex": 268,
+            "arrayIndex": 268,
+            "labelName": "TOKUSEIINFO_268",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Contact with the Pokémon changes the attacker's Ability",
+                    "strWidth": 733.078125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "to Lingering Aroma.",
+                    "strWidth": 256.75
+                }
+            ]
+        },
+        {
+            "labelIndex": 269,
+            "arrayIndex": 269,
+            "labelName": "TOKUSEIINFO_269",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Turns the ground into Grassy Terrain when the Pokémon",
+                    "strWidth": 727.03125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "is hit by an attack.",
+                    "strWidth": 236.90625
+                }
+            ]
+        },
+        {
+            "labelIndex": 270,
+            "arrayIndex": 270,
+            "labelName": "TOKUSEIINFO_270",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Boosts the Attack stat when the Pokémon is hit by a Fire-type",
+                    "strWidth": 798.59375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "move. The Pokémon also cannot be burned.",
+                    "strWidth": 570.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 271,
+            "arrayIndex": 271,
+            "labelName": "TOKUSEIINFO_271",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "When HP falls below half, it gets angry, lowering Defense",
+                    "strWidth": 747.390625
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "and Sp. Def but boosting Attack, Sp. Atk, and Speed.",
+                    "strWidth": 695.546875
+                }
+            ]
+        },
+        {
+            "labelIndex": 272,
+            "arrayIndex": 272,
+            "labelName": "TOKUSEIINFO_272",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon's pure salt protects it from status conditions",
+                    "strWidth": 751.03125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "and halves the damage taken from Ghost-type moves.",
+                    "strWidth": 700.234375
+                }
+            ]
+        },
+        {
+            "labelIndex": 273,
+            "arrayIndex": 273,
+            "labelName": "TOKUSEIINFO_273",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon takes no damage when hit by Fire-type moves.",
+                    "strWidth": 788.890625
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Instead, its Defense stat is sharply boosted.",
+                    "strWidth": 562.75
+                }
+            ]
+        },
+        {
+            "labelIndex": 274,
+            "arrayIndex": 274,
+            "labelName": "TOKUSEIINFO_274",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Boosts Attack with Tailwind or when hit by wind moves,",
+                    "strWidth": 717.328125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "and gains immunity to wind-based damage.",
+                    "strWidth": 560.59375
+                }
+            ]
+        },
+        {
+            "labelIndex": 275,
+            "arrayIndex": 275,
+            "labelName": "TOKUSEIINFO_275",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Boosts Attack when intimidated",
+                    "strWidth": 408.984375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": " Prevents forced switches by moves and items.",
+                    "strWidth": 596.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 276,
+            "arrayIndex": 276,
+            "labelName": "TOKUSEIINFO_276",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Powers up Rock-type moves.",
+                    "strWidth": 370.96875
+                }
+            ]
+        },
+        {
+            "labelIndex": 277,
+            "arrayIndex": 277,
+            "labelName": "TOKUSEIINFO_277",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Charges up when hit by wind moves, enhancing the next",
+                    "strWidth": 726.65625
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Electric-type move's power.",
+                    "strWidth": 358.859375
+                }
+            ]
+        },
+        {
+            "labelIndex": 278,
+            "arrayIndex": 278,
+            "labelName": "TOKUSEIINFO_278",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon transforms into its Hero Form when it switches",
+                    "strWidth": 779.9375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "out.",
+                    "strWidth": 50.6875
+                }
+            ]
+        },
+        {
+            "labelIndex": 279,
+            "arrayIndex": 279,
+            "labelName": "TOKUSEIINFO_279",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Upon entering battle, it takes shelter inside an ally Dondozo's",
+                    "strWidth": 804.328125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "mouth, issuing commands from there.",
+                    "strWidth": 480.828125
+                }
+            ]
+        },
+        {
+            "labelIndex": 280,
+            "arrayIndex": 280,
+            "labelName": "TOKUSEIINFO_280",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "When taking damage, it charges up to boost the power",
+                    "strWidth": 715.328125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "of the next Electric-type move.",
+                    "strWidth": 400.75
+                }
+            ]
+        },
+        {
+            "labelIndex": 281,
+            "arrayIndex": 281,
+            "labelName": "TOKUSEIINFO_281",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Boosts the Pokémon's most proficient stat in harsh sunlight",
+                    "strWidth": 759.15625
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "or if the Pokémon is holding Booster Energy.",
+                    "strWidth": 576.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 282,
+            "arrayIndex": 282,
+            "labelName": "TOKUSEIINFO_282",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Boosts the Pokémon's most proficient stat on Electric Terrain",
+                    "strWidth": 786.90625
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "or if the Pokémon is holding Booster Energy.",
+                    "strWidth": 576.78125
+                }
+            ]
+        },
+        {
+            "labelIndex": 283,
+            "arrayIndex": 283,
+            "labelName": "TOKUSEIINFO_283",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "A body of pure, solid gold gives the Pokémon full immunity",
+                    "strWidth": 770.625
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "to other Pokémon's status moves.",
+                    "strWidth": 433.5
+                }
+            ]
+        },
+        {
+            "labelIndex": 284,
+            "arrayIndex": 284,
+            "labelName": "TOKUSEIINFO_284",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The power of the Pokémon's ruinous vessel lowers the",
+                    "strWidth": 699.25
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sp. Atk stats of all Pokémon except itself.",
+                    "strWidth": 540.421875
+                }
+            ]
+        },
+        {
+            "labelIndex": 285,
+            "arrayIndex": 285,
+            "labelName": "TOKUSEIINFO_285",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The power of the Pokémon's ruinous sword lowers the",
+                    "strWidth": 697.84375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Defense stats of all Pokémon except itself.",
+                    "strWidth": 553.03125
+                }
+            ]
+        },
+        {
+            "labelIndex": 286,
+            "arrayIndex": 286,
+            "labelName": "TOKUSEIINFO_286",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The power of the Pokémon's ruinous wooden tablets lowers",
+                    "strWidth": 771.6875
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "the Attack stats of all Pokémon except itself.",
+                    "strWidth": 580.703125
+                }
+            ]
+        },
+        {
+            "labelIndex": 287,
+            "arrayIndex": 287,
+            "labelName": "TOKUSEIINFO_287",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The power of the Pokémon's ruinous beads lowers the",
+                    "strWidth": 699.734375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sp. Def stats of all Pokémon except itself.",
+                    "strWidth": 543.28125
+                }
+            ]
+        },
+        {
+            "labelIndex": 288,
+            "arrayIndex": 288,
+            "labelName": "TOKUSEIINFO_288",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Upon entering battle, it intensifies sunlight, which in turn",
+                    "strWidth": 734.21875
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "boosts its Attack.",
+                    "strWidth": 223.34375
+                }
+            ]
+        },
+        {
+            "labelIndex": 289,
+            "arrayIndex": 289,
+            "labelName": "TOKUSEIINFO_289",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Upon entering battle, it creates Electric Terrain and its",
+                    "strWidth": 705.609375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "internal engine enhances Sp. Atk on Electric Terrain.",
+                    "strWidth": 676.484375
+                }
+            ]
+        },
+        {
+            "labelIndex": 290,
+            "arrayIndex": 290,
+            "labelName": "TOKUSEIINFO_290",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "If an opponent's stat is boosted, the Pokémon seizes the",
+                    "strWidth": 732.953125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "opportunity to boost the same stat for itself.",
+                    "strWidth": 573.90625
+                }
+            ]
+        },
+        {
+            "labelIndex": 291,
+            "arrayIndex": 291,
+            "labelName": "TOKUSEIINFO_291",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "When the Pokémon eats a Berry, it will regurgitate that",
+                    "strWidth": 712.8125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Berry at the end of the next turn and eat it one more time.",
+                    "strWidth": 756.484375
+                }
+            ]
+        },
+        {
+            "labelIndex": 292,
+            "arrayIndex": 292,
+            "labelName": "TOKUSEIINFO_292",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Powers up slicing moves.",
+                    "strWidth": 318.8125
+                }
+            ]
+        },
+        {
+            "labelIndex": 293,
+            "arrayIndex": 293,
+            "labelName": "TOKUSEIINFO_293",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Upon entering battle, its Attack and Sp. Atk stats receive",
+                    "strWidth": 740.015625
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "a slight boost for each defeated ally in its party.",
+                    "strWidth": 622.265625
+                }
+            ]
+        },
+        {
+            "labelIndex": 294,
+            "arrayIndex": 294,
+            "labelName": "TOKUSEIINFO_294",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "When the Pokémon enters a battle, it copies an ally's stat",
+                    "strWidth": 747.3125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "changes.",
+                    "strWidth": 111.984375
+                }
+            ]
+        },
+        {
+            "labelIndex": 295,
+            "arrayIndex": 295,
+            "labelName": "TOKUSEIINFO_295",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Scatters poison spikes at the feet of the opposing team",
+                    "strWidth": 715.859375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "when the Pokémon takes damage from physical moves.",
+                    "strWidth": 711.296875
+                }
+            ]
+        },
+        {
+            "labelIndex": 296,
+            "arrayIndex": 296,
+            "labelName": "TOKUSEIINFO_296",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The mysterious tail over its head prevents opponents from",
+                    "strWidth": 751.9375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "using priority moves on the Pokémon and its allies.",
+                    "strWidth": 655.828125
+                }
+            ]
+        },
+        {
+            "labelIndex": 297,
+            "arrayIndex": 297,
+            "labelName": "TOKUSEIINFO_297",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "If hit by a Ground-type move, the Pokémon has its HP",
+                    "strWidth": 702.328125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "restored instead of taking damage.",
+                    "strWidth": 452.34375
+                }
+            ]
+        },
+        {
+            "labelIndex": 298,
+            "arrayIndex": 298,
+            "labelName": "TOKUSEIINFO_298",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon acts slower when using status moves, but",
+                    "strWidth": 710.96875
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "its Ability won't hinder those moves when targeting.",
+                    "strWidth": 670.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 299,
+            "arrayIndex": 299,
+            "labelName": "TOKUSEIINFO_299",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "When the Pokémon enters a battle, it showers its ally with",
+                    "strWidth": 749.3125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "hospitality, restoring a small amount of the ally's HP.",
+                    "strWidth": 682.75
+                }
+            ]
+        },
+        {
+            "labelIndex": 300,
+            "arrayIndex": 300,
+            "labelName": "TOKUSEIINFO_300",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ignores evasiveness changes, maintains accuracy, and hits",
+                    "strWidth": 743.53125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ghost types with Normal/Fighting moves.",
+                    "strWidth": 531.71875
+                }
+            ]
+        },
+        {
+            "labelIndex": 301,
+            "arrayIndex": 301,
+            "labelName": "TOKUSEIINFO_301",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon's heart fills with memories, causing the Teal",
+                    "strWidth": 747.578125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mask to shine and the Pokémon's Speed stat to be boosted.",
+                    "strWidth": 780.921875
+                }
+            ]
+        },
+        {
+            "labelIndex": 302,
+            "arrayIndex": 302,
+            "labelName": "TOKUSEIINFO_302",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon's heart fills with memories, causing the Hearthflame",
+                    "strWidth": 851.5
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mask to shine and the Pokémon's Attack stat to be boosted.",
+                    "strWidth": 783.28125
+                }
+            ]
+        },
+        {
+            "labelIndex": 303,
+            "arrayIndex": 303,
+            "labelName": "TOKUSEIINFO_303",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon's heart fills with memories, causing the Wellspring",
+                    "strWidth": 829.375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mask to shine and the Pokémon's Sp. Def stat to be boosted.",
+                    "strWidth": 796.125
+                }
+            ]
+        },
+        {
+            "labelIndex": 304,
+            "arrayIndex": 304,
+            "labelName": "TOKUSEIINFO_304",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon's heart fills with memories, causing the Cornerstone",
+                    "strWidth": 849.9375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mask to shine and the Pokémon's Defense stat to be boosted.",
+                    "strWidth": 805.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 305,
+            "arrayIndex": 305,
+            "labelName": "TOKUSEIINFO_305",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The power of the Pokémon's toxic chain may badly poison",
+                    "strWidth": 756.828125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "any target the Pokémon hits with a move.",
+                    "strWidth": 535.34375
+                }
+            ]
+        },
+        {
+            "labelIndex": 306,
+            "arrayIndex": 306,
+            "labelName": "TOKUSEIINFO_306",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Upon entering battle for the first time, it reduces the evasiveness",
+                    "strWidth": 841.234375
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "of opposing Pokémon.",
+                    "strWidth": 291.546875
+                }
+            ]
+        },
+        {
+            "labelIndex": 307,
+            "arrayIndex": 307,
+            "labelName": "TOKUSEIINFO_307",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "When the Pokémon enters a battle, it absorbs the",
+                    "strWidth": 644.546875
+                },
+                {
+                    "patternID": 7,
+                    "eventID": 4,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "energy around itself and transforms into its",
+                    "strWidth": 553.625
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Terastal Form.",
+                    "strWidth": 184.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 308,
+            "arrayIndex": 308,
+            "labelName": "TOKUSEIINFO_308",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "The Pokémon’s shell contains the powers of each",
+                    "strWidth": 635.421875
+                },
+                {
+                    "patternID": 7,
+                    "eventID": 4,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "type. All damage-dealing moves that hit the",
+                    "strWidth": 570.15625
+                },
+                {
+                    "patternID": 7,
+                    "eventID": 4,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon when its HP is full will not be very",
+                    "strWidth": 565.21875
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "effective.",
+                    "strWidth": 121.03125
+                }
+            ]
+        },
+        {
+            "labelIndex": 309,
+            "arrayIndex": 309,
+            "labelName": "TOKUSEIINFO_309",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "When Terapagos changes into its Stellar Form, it",
+                    "strWidth": 629.71875
+                },
+                {
+                    "patternID": 7,
+                    "eventID": 4,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "uses its hidden powers to eliminate all effects of",
+                    "strWidth": 624.328125
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "weather and terrain, reducing them to zero.",
+                    "strWidth": 562.203125
+                }
+            ]
+        },
+        {
+            "labelIndex": 310,
+            "arrayIndex": 310,
+            "labelName": "TOKUSEIINFO_310",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 7,
+                    "eventID": 1,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon poisoned by Pecharunt’s moves will also",
+                    "strWidth": 647.296875
+                },
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "become confused.",
+                    "strWidth": 236.390625
                 }
             ]
         }

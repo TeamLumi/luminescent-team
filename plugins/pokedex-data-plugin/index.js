@@ -4,7 +4,7 @@ const { Joi } = require('@docusaurus/utils-validation');
 const { getPokemon } = require('./dex/pokemon');
 const { FORM_MAP } = require('./dex/functions');
 const { normalizePokemonName } = require('./dex/name');
-const { GAMEDATA2, GAMEDATA3 } = require('../../__gamedata');
+const { GAMEDATA2, GAMEDATA3, GAMEDATAV } = require('../../__gamedata');
 
 /**
  * @param {{path: string, routeBasePath: string, pokemonComponent: string, pokemonRedirectComponent: string, listComponent: string, wrapperComponent: string, mapComponent: string}} options
@@ -15,6 +15,26 @@ function pokedexDataPlugin(context, options) {
   return {
     name: 'luminescent-pokedex-data-plugin',
     async loadContent() {
+      const pokemonsV = Object.values(FORM_MAP[GAMEDATAV])
+        .flat()
+        .slice(1) // remove Egg
+        .map((id) => getPokemon(id, GAMEDATAV))
+        .filter((p) => p.isValid);
+      const pokemonListV = pokemonsV.map((p) => ({
+        id: p.id,
+        monsno: p.monsno,
+        formno: p.formno,
+        name: p.name,
+        imageSrc: p.imageSrc,
+        type1: p.type1Id,
+        type2: p.type2Id,
+        ability1: p.ability1,
+        ability2: p.ability2,
+        abilityH: p.abilityH,
+        baseStats: p.baseStats,
+        forms: p.forms,
+      }));
+
       const pokemons = Object.values(FORM_MAP[GAMEDATA2])
         .flat()
         .slice(1) // remove Egg
@@ -34,6 +54,7 @@ function pokedexDataPlugin(context, options) {
         baseStats: p.baseStats,
         forms: p.forms,
       }));
+
       const pokemons3 = Object.values(FORM_MAP[GAMEDATA3])
         .flat()
         .slice(1) // remove Egg
@@ -59,6 +80,8 @@ function pokedexDataPlugin(context, options) {
         pokemonList,
         pokemons3,
         pokemonList3,
+        pokemonsV,
+        pokemonListV,
       };
     },
 
@@ -66,6 +89,7 @@ function pokedexDataPlugin(context, options) {
       const pokedexPath = options.routeBasePath + options.path;
       const pokemonListJson = await actions.createData('pokemonList.json', JSON.stringify(content.pokemonList));
       const pokemonListJson3 = await actions.createData('3.0pokemonList.json', JSON.stringify(content.pokemonList3));
+      const pokemonListJsonV = await actions.createData('vanillaBDSPPokemonList.json', JSON.stringify(content.pokemonListV));
 
       const pokemonListRoute = {
         path: pokedexPath,
@@ -74,6 +98,7 @@ function pokedexDataPlugin(context, options) {
         modules: {
           pokemonList: pokemonListJson,
           pokemonList3: pokemonListJson3,
+          pokemonListV: pokemonListJsonV,
         },
       };
 
@@ -83,6 +108,7 @@ function pokedexDataPlugin(context, options) {
         exact: true,
         modules: {
           pokemonList: pokemonListJson,
+          pokemonListV: pokemonListJsonV,
         }
       });
 
@@ -95,6 +121,7 @@ function pokedexDataPlugin(context, options) {
           const pokemonPath = `${pokedexPath}/${pokemonName}`;
           const pokemonJson3 = await actions.createData(`3.0lumi${pokemonId3}.json`, JSON.stringify(pokemon3));
           let pokemonJson = pokemonJson3;
+          let pokemonJsonV = pokemonJson3;
 
           const pokemon = content.pokemons.find((p) => p.monsno === pokemon3.monsno && p.formno === pokemon3.formno);
           if (pokemon) {
@@ -102,8 +129,16 @@ function pokedexDataPlugin(context, options) {
             pokemonJson = await actions.createData(`lumi${pokemonId}.json`, JSON.stringify(pokemon));
           }
 
+          const pokemonVanilla = content.pokemonsV.find((pV) => pV.monsno === pokemon3.monsno && pV.formno === pokemon3.formno);
+          if (pokemonVanilla) {
+            const pokemonIdV = pokemonVanilla.formno === 0 ? pokemonVanilla.monsno : `${pokemonVanilla.monsno}_${pokemonVanilla.formno}`;
+            pokemonJsonV = await actions.createData(`VanillaBDSP${pokemonIdV}.json`, JSON.stringify(pokemonVanilla));
+          }
+
           const redirectPathJson = await actions.createData(`lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
           const redirectPathJson3 = await actions.createData(`3.0lumi${pokemonName}.json`, JSON.stringify(pokemonPath));
+          const redirectPathJsonV = await actions.createData(`VanillaBDSP${pokemonName}.json`, JSON.stringify(pokemonPath));
+
           const newPokemonPath = pokemon3.formno === 0 ? pokemon3.monsno : `${pokemon3.monsno}_${pokemon3.formno}`;
           pokemonRedirectRoutes.push({
             path: `${pokedexPath}/${newPokemonPath}`,
@@ -112,6 +147,7 @@ function pokedexDataPlugin(context, options) {
             modules: {
               redirectPath: redirectPathJson,
               redirectPath3: redirectPathJson3,
+              redirectPathV: redirectPathJsonV,
             },
           });
 
@@ -124,6 +160,8 @@ function pokedexDataPlugin(context, options) {
               pokemonList: pokemonListJson,
               pokemon3: pokemonJson3,
               pokemonList3: pokemonListJson3,
+              pokemonV: pokemonJsonV,
+              pokemonListV: pokemonListJsonV,
             },
           });
         }),
