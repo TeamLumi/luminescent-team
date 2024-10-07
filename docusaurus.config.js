@@ -3,7 +3,7 @@
 
 require('dotenv').config();
 
-const BASE_URL = '/luminescent-team-dev/';
+const BASE_URL = '/';
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -119,7 +119,7 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           ...(isDexEnabled ? [{ to: '/dex', label: 'Pokédex', position: 'left' }] : []),
           ...(isPokedexEnabled ? [{ to: POKEDEX_BASE_PATH, label: 'Pokédex', position: 'left' }] : []),
-          { to: '/mapper', label: "Mapper (Alpha)", position: "left" },
+          { to: '/mapper', label: "Mapper (Beta)", position: "left" },
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',
