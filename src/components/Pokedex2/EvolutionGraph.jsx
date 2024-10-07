@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import { Box, Grid, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 import { getEvolutionMethodDetail, getEvolutionTree } from '../../../plugins/pokedex-data-plugin/dex/evolution';
 import styles from './styles.module.css';
 import { getPokemonImageFilename } from '../../core/pokemonFormSelector';
@@ -15,7 +15,8 @@ import { useGlobalState } from '../common/GlobalState';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 import * as EvoConstants from "../../../plugins/pokedex-data-plugin/dex/evolutionConstants";
 
-export default function EvolutionGraph({ evolutionTree, globalState }) {
+export default function EvolutionGraph({ evolutionTree }) {
+  const [globalState, updateMode] = useGlobalState();
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId, globalState.mode);
   const firstPokemonPath = formNo === 0 ? monsNo : `${monsNo}_${formNo}`;
   const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, globalState.mode);
@@ -106,7 +107,6 @@ export default function EvolutionGraph({ evolutionTree, globalState }) {
   };
 
   const renderItemImage = (evoMethod, methodParameter, methodDetail) => {
-    const [globalState, updateMode] = useGlobalState();
     const evoFunction = methodDetail.function.name;
     const evoImages = [];
     if (methodDetail.method.includes(EvoConstants.FRIENDSHIP)) {
@@ -162,7 +162,6 @@ export default function EvolutionGraph({ evolutionTree, globalState }) {
   };
 
   const renderSecondMethod = (methodId, methodParameter, level) => {
-    const [globalState, updateMode] = useGlobalState();
     const [methodDetail, evoMethod] = getEvolutionMethodDetail(methodId, methodParameter, globalState.mode, level);
     const evoImages = renderItemImage(evoMethod, methodParameter, methodDetail);
 
@@ -171,7 +170,7 @@ export default function EvolutionGraph({ evolutionTree, globalState }) {
         Or
         <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
           {evoImages.map((image, index) => (
-            <img key={index} src={useBaseUrl(image)} width="40" alt={image} title={image} />
+            <img key={index} src={image} width="40" alt={image} title={image} />
           ))}
         </Box>
         {methodDetail.method}
@@ -188,7 +187,6 @@ export default function EvolutionGraph({ evolutionTree, globalState }) {
       )
     }
     const firstMethodParameter = parseInt(methodParameters[0]);
-    const [globalState, updateMode] = useGlobalState();
     const [
       firstMethodDetail,
       firstEvoMethod
@@ -206,7 +204,7 @@ export default function EvolutionGraph({ evolutionTree, globalState }) {
         {firstMethodDetail.method}
         <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
           {evoImages.map((image, index) => (
-            <img key={index} src={useBaseUrl(image)} width="40" alt={image} title={image} />
+            <img key={index} src={image} width="40" alt={image} title={image} />
           ))}
         </Box>
         {methodIds.length > 1 && (
@@ -250,11 +248,11 @@ export default function EvolutionGraph({ evolutionTree, globalState }) {
           return (
             index === 0 ? (
               <Box className={styles.imageRow} key={monsno}>
-                <Link to={useBaseUrl(`/pokedex/${pokemonPath}`)}>
+                <Link to={`/pokedex/${pokemonPath}`}>
                   <ImageWithFallback 
                     key={pokemonId}
-                    src={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsno, formNos[index])}`)}
-                    fallbackSrc={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsno, 0)}`)}
+                    src={`/img/pkm/${getPokemonImageFilename(monsno, formNos[index])}`}
+                    fallbackSrc={`/img/pkm/${getPokemonImageFilename(monsno, 0)}`}
                     alt={pokemonName}
                     title={pokemonName}
                   />
@@ -287,11 +285,11 @@ export default function EvolutionGraph({ evolutionTree, globalState }) {
         <Grid container className={styles.evolutionContainer}>
           <Grid item xs={12} className={styles.scrollContent}>
             <Grid item xs={12} sm={6} className={styles.startPokemon}>
-              <Link to={useBaseUrl(`/pokedex/${firstPokemonPath}`)}>
+              <Link to={`/pokedex/${firstPokemonPath}`}>
                 <ImageWithFallback
                   key={pokemonID}
-                  src={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsNo, formNo)}`)}
-                  fallbackSrc={useBaseUrl(`/img/pkm/${getPokemonImageFilename(monsNo, 0)}`)}
+                  src={`/img/pkm/${getPokemonImageFilename(monsNo, formNo)}`}
+                  fallbackSrc={`/img/pkm/${getPokemonImageFilename(monsNo, 0)}`}
                   alt={getPokemonName(pokemonID, globalState.mode)}
                   title={getPokemonName(pokemonID, globalState.mode)}
                 />
@@ -300,7 +298,7 @@ export default function EvolutionGraph({ evolutionTree, globalState }) {
             {renderEvolutionTree(evolutionTree, 1)}
             {secondEvolvesInto[0].evolvesInto.length >= 1 && (
               renderEvolutionTree(secondEvolvesInto[0], 2)
-            )}  
+            )}
           </Grid>
         </Grid>
       </Grid>
