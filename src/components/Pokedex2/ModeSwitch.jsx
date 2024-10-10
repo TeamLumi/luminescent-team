@@ -2,8 +2,10 @@ import * as React from 'react';
 import { useGlobalState } from '../common/GlobalState';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
+import { useColorMode } from '@docusaurus/theme-common';
 
 const ModeSwitch = () => {
+  const { colorMode, setColorMode } = useColorMode();
   const [globalState, updateMode] = useGlobalState();
 
   const handleChange = (event) => {
@@ -15,7 +17,7 @@ const ModeSwitch = () => {
         marginLeft: {xs: "unset", sm: ".25rem"},
         gridArea: "c",
         minWidth: "fit-content",
-        backgroundColor: "var(--mui-palette-common-background)"
+        backgroundColor: colorMode === "dark" ? "var(--ifm-background-color)" : "white",
       }}
     >
       <InputLabel id='version-selector-label'>Version</InputLabel>

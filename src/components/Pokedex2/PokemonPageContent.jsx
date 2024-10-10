@@ -118,7 +118,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
         sx={{
           position: "sticky",
           top: "75px",
-          zIndex: 999,
+          zIndex: 2,
         }}
       >
         <Box
