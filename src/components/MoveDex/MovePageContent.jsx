@@ -34,22 +34,26 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
           gridTemplateColumns={"1fr 11fr"}
         >
           <Typography sx={{ margin: "1rem 0" }}>Vanilla BDSP</Typography>
-          <Box
-            sx={{
-              display: 'grid',
-              gridTemplateColumns: {
-                xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
-                sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
-                md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
-              },
-              alignItems: 'center',
-              columnGap: '4px',
-              rowGap: '8px',
-              marginBottom: '8px',
-            }}
-          >
-            <MovesetListItem move={moveV} />
-          </Box>
+          {moveV ? (
+            <Box
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: {
+                  xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
+                  sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
+                  md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
+                },
+                alignItems: 'center',
+                columnGap: '4px',
+                rowGap: '8px',
+                marginBottom: '8px',
+              }}
+            >
+              <MovesetListItem move={moveV} />
+            </Box>
+          ) : (
+            <Typography variant='h6'>{`This move doesn't exist in Vanilla`}</Typography>
+          ) }
         </Box>
 
         <Box
@@ -61,22 +65,26 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
           gridTemplateColumns={"1fr 11fr"}
         >
           <Typography sx={{ margin: "1rem 0" }}>Luminescent 2.1F</Typography>
-          <Box
-            sx={{
-              display: 'grid',
-              gridTemplateColumns: {
-                xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
-                sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
-                md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
-              },
-              alignItems: 'center',
-              columnGap: '4px',
-              rowGap: '8px',
-              marginBottom: '8px',
-            }}
-          >
-            <MovesetListItem move={moveV} />
-          </Box>
+          {move2 ? (
+            <Box
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: {
+                  xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
+                  sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
+                  md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
+                },
+                alignItems: 'center',
+                columnGap: '4px',
+                rowGap: '8px',
+                marginBottom: '8px',
+              }}
+            >
+              <MovesetListItem move={move2} />
+            </Box>
+          ) : (
+            <Typography variant='h6'>{`This move doesn't exist in 2.1F`}</Typography>
+          )}
         </Box>
 
         <Box

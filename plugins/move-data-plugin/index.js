@@ -60,8 +60,8 @@ function moveDexDataPlugin(context, options) {
           const movePath = `${moveDexPath}/${moveName}`;
 
           const moveJson3 = await actions.createData(`3.0lumi${moveName}.json`, JSON.stringify(move3));
-          let moveJson2 = moveJson3;
-          let moveJsonV = moveJson3;
+          let moveJson2 = null;
+          let moveJsonV = null;
 
           const move2 = content.moves2.find((m2) => m2.name === move3.name);
           if (move2) {
