@@ -34,7 +34,7 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
           gridTemplateColumns={"1fr 11fr"}
         >
           <Typography sx={{ margin: "1rem 0" }}>Vanilla BDSP</Typography>
-          {moveV ? (
+          {moveV?.name ? (
             <Box
               sx={{
                 display: 'grid',
@@ -52,8 +52,14 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
               <MovesetListItem move={moveV} />
             </Box>
           ) : (
-            <Typography variant='h6'>{`This move doesn't exist in Vanilla`}</Typography>
-          ) }
+            <Typography
+              variant='h6'
+              alignContent={"center"}
+              textAlign={"center"}
+            >
+              {`This move doesn't exist in Vanilla`}
+            </Typography>
+          )}
         </Box>
 
         <Box
@@ -65,7 +71,7 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
           gridTemplateColumns={"1fr 11fr"}
         >
           <Typography sx={{ margin: "1rem 0" }}>Luminescent 2.1F</Typography>
-          {move2 ? (
+          {move2?.name ? (
             <Box
               sx={{
                 display: 'grid',
@@ -83,7 +89,13 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
               <MovesetListItem move={move2} />
             </Box>
           ) : (
-            <Typography variant='h6'>{`This move doesn't exist in 2.1F`}</Typography>
+            <Typography
+              variant='h6'
+              alignContent={"center"}
+              textAlign={"center"}
+            >
+              {`This move doesn't exist in 2.1F`}
+            </Typography>
           )}
         </Box>
 
