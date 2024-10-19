@@ -3,10 +3,10 @@ import { Autocomplete, TextField } from '@mui/material';
 import { useHistory } from '@docusaurus/router';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { useGlobalState } from '../common/GlobalState';
+import { useColorMode } from '@docusaurus/theme-common';
 
 export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
-  const [globalState, updateMode] = useGlobalState();  
+  const { colorMode, setColorMode } = useColorMode();
   const history = useHistory();
   const { path } = usePluginData('luminescent-pokedex-data-plugin');
   const pokedexPath = useBaseUrl(path);
@@ -25,7 +25,11 @@ export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
     <Autocomplete
       disablePortal
       id="pokemonIdSelector"
-      sx={{ width: {xs: "250px", sm: "300px"}, gridArea: "a" }}
+      sx={{
+        width: {xs: "250px", sm: "300px"},
+        gridArea: "a",
+        backgroundColor: colorMode === "dark" ? "var(--ifm-background-color)" : "white",
+      }}
       options={options}
       value={pokemonName}
       onChange={(_, pokemon) => {

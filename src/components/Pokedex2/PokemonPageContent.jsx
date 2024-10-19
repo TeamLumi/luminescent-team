@@ -114,7 +114,13 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
 
   return (
     <Container>
-      <Container>
+      <Container
+        sx={{
+          position: "sticky",
+          top: "75px",
+          zIndex: 2,
+        }}
+      >
         <Box
           sx={{
             display: { xs: "grid", sm: "flex" },
@@ -146,7 +152,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
       <div className="container">
         <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={1}>
           <Box className={style.pokeColumn} gridColumn="span 1">
-          <ImageWithFallback
+            <ImageWithFallback
               alt={pokemonInfo.name}
               src={pokemonInfo.imageSrc}
               fallbackSrc={pokemonInfo.forms[0].imageSrc}
@@ -245,7 +251,7 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
       </Container>
 
       <Container>
-        <EvolutionGraph evolutionTree={pokemonInfo.evolutionTree} globalState={globalState} />
+        <EvolutionGraph evolutionTree={pokemonInfo.evolutionTree} />
       </Container>
 
       <Container>
