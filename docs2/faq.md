@@ -15,7 +15,7 @@ Not yet. Please be patient. Adding the necessary changes to make it also work on
 
 ### What's so special about it?
 
-Check out the [features] (./features) page for details of all our features and adjustments!
+Check out the [features](./features) page for details of all our features and adjustments!
 
 ### Where do I download the mod?
 
@@ -23,7 +23,7 @@ The latest update is always available on our [NexusMods page](https://www.nexusm
 
 ### How do I install it?
 
-Check our [installation] (./category/installation) page.
+Check our [installation](./category/installation) page.
 
 ### Does PkHax work with this romhack?
 
@@ -39,7 +39,7 @@ When it's done. Don't ask us because we don't know either.
 
 ### Are you gonna add [X]?
 
-Maybe. Check the [features] (./features) page before asking, then check the [discord](https://discord.gg/luminescent). We reserve the right to reject any suggestions we don't feel would fit in the romhack. Arguing when/if we reject your suggestion (not explaining your side) will only lead to a warning.
+Maybe. Check the [features](./features) page before asking, then check the [discord](https://discord.gg/luminescent). We reserve the right to reject any suggestions we don't feel would fit in the romhack. Arguing when/if we reject your suggestion (not explaining your side) will only lead to a warning.
 
 ### Is there any way I can help with development?
 
@@ -47,15 +47,15 @@ Come apply in the [discord](https://discord.gg/luminescent). If we think you fit
 
 ### The mod doesn't work, what do I do?
 
-If it doesn't properly apply, you have likely done something wrong. Double check your [installation] (./category/installation) just to be sure, then visit the [discord](https://discord.gg/luminescent) if you need further help.
+If it doesn't properly apply, you have likely done something wrong. Double check your [installation](./category/installation) just to be sure, then visit the [discord](https://discord.gg/luminescent) if you need further help.
 
 ### Will you be adding new Pokemon? What about regional forms?
 
-As of 2.0.2f, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. It also includes the Chandelure and Tinkaton lines as picked by our screenshot contest winners. Other Generation 5+ Pokémon will not be added until 3.0. See [this page] (incense-regional.mdx) for more info.
+As of 2.0.2f, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. It also includes the Chandelure and Tinkaton lines as picked by our screenshot contest winners. Other Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
 
 ### How do I encounter regional Pokémon?
 
-See [Incense Burner & Regional Pokémon] (incense-regional.mdx) for further information.
+See [Incense Burner & Regional Pokémon](incense-regional.mdx) for further information.
 
 ### Megas?
 
@@ -95,7 +95,7 @@ Level caps (an option you can turn on from any Pokémon Center PC) prevent you f
 
 ## Install FAQ
 
-These are just some basic [installation] (./category/installation) questions that we frequently get asked:
+These are just some basic [installation](./category/installation) questions that we frequently get asked:
 
 ### What version of the game do I need?
 
@@ -115,7 +115,7 @@ We are not looking for translators at this time, as we are still constantly addi
 
 ### Do other mods work with Luminescent Platinum?
 
-No. If you have other mods, your game may work, but we will offer no support if anything breaks. See [this page] (./mods) for more info about what mods are packaged in.
+No. If you have other mods, your game may work, but we will offer no support if anything breaks. See [this page](./mods) for more info about what mods are packaged in.
 
 ### What Switch Emulator should I use?
 
