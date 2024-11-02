@@ -2,9 +2,9 @@
 slug: /
 ---
 
-# PLACEHOLDER FOR RE:LUMI
+# Re:Illuminated Platinum
 
-# Luminescent Platinum
+# PLACEHOLDER FOR RE:LUMI
 
 Luminescent Platinum is a romhack for Pokemon Brilliant Diamond based on [Drayano's Renegade Platinum](https://pokehacking.com/fangames/renegade-platinum/). These documents are all about this mod; if you want to learn about ROM Hacking to make your own mod, check out the **ROM Hacking** tab and join the Discord.
 
