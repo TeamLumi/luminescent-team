@@ -14,7 +14,7 @@ We hope you enjoy our romhack!
 
 :::info
 
-**WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, OR OTHER GIMMICKS**. Please see our [FAQ](/faq.md) for more information.
+**WE ARE NOT DOING MEGAS, DE-CHIBIFICATION, OR OTHER GIMMICKS**. Please see our [FAQ] (/faq.md) for more information.
 
 :::
 
