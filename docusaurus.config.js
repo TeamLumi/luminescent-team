@@ -75,6 +75,16 @@ const config = {
         sidebarPath: require.resolve('./sidebarsROMHacking.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs2',
+        path: 'docs2',
+        routeBasePath: 'docs2',
+        // Add sidebar path if needed.
+        // sidebarPath: require.resolve('./docs2Sidebars.js'),
+      },
+    ],
     // enable plugin
     ...(isPokedexEnabled
       ? [
