@@ -4,7 +4,7 @@
 
 Checks the result of the previous comparison command, then jumps to a script if the result matches the given comparison operator.
 
-The position of the jump is not saved. Execution does not return to this command once a _RET is executed.
+The position of a jump is not saved. Execution does not return to this command once a _RET is executed.
 
 ## Syntax
 

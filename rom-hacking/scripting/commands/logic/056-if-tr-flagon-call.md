@@ -2,13 +2,13 @@
 
 ## Effect
 
-Checks the trainer flag of the given trainer and calls a script if the trainer is defeated.
+Checks the trainer flag of the given trainer and calls a script if the trainer is defeated and not currently looking for a rematch due to the Vs. Seeker.
 
-The position of the call is saved. Execution returns to this command once a _RET is executed.
+The position of a call is saved. Execution returns to this command once a _RET is executed.
 
-:::info
+:::caution
 
-Needs investigation on how the VS. Seeker affects this result.
+Unlike the jump version of this command, whether the trainer is looking for a rematch due to the Vs. Seeker or not matters.
 
 :::
 
@@ -34,4 +34,4 @@ The above script will set the work variable @LOCALWORK1 to 3.
 
 Then, the trainer id contained in @LOCALWORK1 (in this case 3) is the one that is checked. This corresponds to MINI_01 in the TrainerID enum.
 
-The call to ev_dummy will only occur if MINI_01 has been defeated.
+The call to ev_dummy will only occur if MINI_01 has been defeated and is not looking for a rematch.

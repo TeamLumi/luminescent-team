@@ -4,13 +4,7 @@
 
 Checks the trainer flag of the given trainer.
 
-The comparison is "equal" if the trainer is defeated, and "less" if they are undefeated.
-
-:::info
-
-Needs investigation on how the VS. Seeker affects this result.
-
-:::
+The comparison is "equal" if the trainer is defeated and they are not currently looking for a rematch due to the Vs. Seeker. Otherwise, the comparison is "less".
 
 ## Syntax
 
@@ -34,4 +28,4 @@ The above script will set the work variable @LOCALWORK1 to 3.
 
 Then, the trainer id contained in @LOCALWORK1 (in this case 3) is the one that is checked. This corresponds to MINI_01 in the TrainerID enum.
 
-Next, the result of the comparison is checked. Since the condition is "FLGON" which corresponds to "equal", the jump will only occur if MINI_01 has been defeated.
+Next, the result of the comparison is checked. Since the condition is "FLGON" which corresponds to "equal", the jump will only occur if MINI_01 has been defeated and they are not looking for a rematch.

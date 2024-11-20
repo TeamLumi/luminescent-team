@@ -4,7 +4,7 @@
 
 Compares the value of the work of the last prepared "switch" statement to the given value. Jumps to a script if they are equal.
 
-The position of the jump is not saved. Execution does not return to this command once a _RET is executed.
+The position of a jump is not saved. Execution does not return to this command once a _RET is executed.
 
 ## Syntax
 

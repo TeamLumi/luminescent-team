@@ -4,7 +4,7 @@
 
 Compares the values of @SCWK_REG0 and @EV_WIN_B_CANCEL. Jumps to a script if they are equal.
 
-The position of the jump is not saved. Execution does not return to this command once a _RET is executed.
+The position of a jump is not saved. Execution does not return to this command once a _RET is executed.
 
 :::caution
 

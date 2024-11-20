@@ -2,7 +2,7 @@
 
 ## Effect
 
-Increments a work by a given value.
+Increments a work variable by a given value.
 
 ## Syntax
 
@@ -12,7 +12,7 @@ _ADD_WK(work, value)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **work** | The work that gets incremented | Work | Required |
+| **work** | The work to increment | Work | Required |
 | **value** | The value to add | Work, Float | Required |
 
 ## Example

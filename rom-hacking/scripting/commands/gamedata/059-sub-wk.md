@@ -2,7 +2,7 @@
 
 ## Effect
 
-Decrements a work by a given value.
+Decrements a work variable by a given value.
 
 ## Syntax
 
@@ -12,7 +12,7 @@ _SUB_WK(work, value)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **work** | The work that gets decremented | Work | Required |
+| **work** | The work to decrement | Work | Required |
 | **value** | The value to subtract | Work, Float | Required |
 
 ## Example
