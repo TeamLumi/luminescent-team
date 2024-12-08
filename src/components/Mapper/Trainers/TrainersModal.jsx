@@ -31,7 +31,7 @@ const TrainersModal = ({
 
   function transformToText(pokemon) {
     var genderSymbol = "";
-    console.log(pokemon.gender);
+    
     switch (pokemon.gender) {
       case "FEMALE":
         genderSymbol = "(F)";
