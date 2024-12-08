@@ -30,7 +30,19 @@ const TrainersModal = ({
   };
 
   function transformToText(pokemon) {
-    const genderSymbol = pokemon.gender === "FEMALE" ? "(F)" : "(M)";
+    var genderSymbol = "";
+    console.log(pokemon.gender);
+    switch (pokemon.gender) {
+      case "FEMALE":
+        genderSymbol = "(F)";
+        break;
+      case "MALE":
+        genderSymbol = "(M)";
+        break;
+      default:
+        break;
+    }
+
     const moves = pokemon.moves.map(id => "- " + getMoveProperties(id).name).join("\n");
 
     return `${getPokemonName(pokemon.id)} ${genderSymbol} @ ${pokemon.item}
