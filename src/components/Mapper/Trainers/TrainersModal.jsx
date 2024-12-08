@@ -1,7 +1,8 @@
 import React from "react";
 import { Dialog, DialogContent, DialogTitle, IconButton, Snackbar } from "@mui/material"
-import Button from '@mui/material/Button';  
+import { ContentPasteGo } from "@mui/icons-material";
 import CloseIcon from '@mui/icons-material/Close';
+import Tooltip from '@mui/material/Tooltip';
 import { getMoveProperties, getPokemonName } from '../../../utils/dex';
 import { Trainers } from "./Trainers";
 
@@ -31,7 +32,7 @@ const TrainersModal = ({
   function transformToText(pokemon) {
     const genderSymbol = pokemon.gender === "FEMALE" ? "(F)" : "(M)";
     const moves = pokemon.moves.map(id => "- " + getMoveProperties(id).name).join("\n");
-    
+
     return `${getPokemonName(pokemon.id)} ${genderSymbol} @ ${pokemon.item}
 Level: ${pokemon.level}
 ${pokemon.nature} Nature
@@ -61,14 +62,19 @@ ${moves}`;
       >
         <CloseIcon />
       </IconButton>
-      <Button
-              variant="outlined"
-              sx={{ margin: "0.5rem 1rem" }}
-              onClick={handleExport}
-            >
-              Export to Showdown
-      </Button>
-      <DialogContent dividers sx={{maxWidth: "1108px"}}>
+      <Tooltip title="Export to Showdown">
+        <IconButton
+          aria-label="Export to Showdown"
+          onClick={handleExport}
+          sx={{
+            position: 'absolute',
+            right: 60,
+            top: 12,
+          }}>
+          <ContentPasteGo />
+        </IconButton>
+      </Tooltip>
+      <DialogContent dividers sx={{ maxWidth: "1108px" }}>
         <Trainers
           pokemonList={pokemonList}
           selectedTrainer={selectedTrainer}
