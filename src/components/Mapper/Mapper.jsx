@@ -702,7 +702,6 @@ export const Mapper = ({ pokemonList }) => {
           selectedTrainer={selectedTrainer}
           setSelectedTrainer={setSelectedTrainer}
           openTrainerModal={openTrainerModal}
-          routeId={selectedZoneId}
         />
       </div>
       <SearchBar
