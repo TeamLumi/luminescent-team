@@ -7,11 +7,13 @@ import { PokemonAccordion } from '../../Pokedex2/PokemonAccordion';
 import EncounterTable from '../Encounters/EncounterTable';
 import ".././style.css"
 
-const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemon }) => {
+const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemon, routeId }) => {
   const { colorMode, setColorMode } = useColorMode();
   const modeChangeTextColor = colorMode === "dark" ? "#F5FBF5" : "#000000";
   const boolOptions = Object.keys(encOptions).filter((key) => typeof encOptions[key] === 'boolean');
 
+  const caveIds = [264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 292, 293, 294, 295, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 255, 256, 195, 196, 244, 245, 246, 247, 248, 249, 225, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 299, 300, 301, 302, 303, 304];
+  console.log(routeId);
   return (
     <Box className='encounterBox'>
       <Typography
@@ -41,10 +43,19 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
       </Box>
       <Box className='encAccordions'>
         <PokemonAccordion
-          disabled={encounterList.GroundEnc.length === 0}
+          disabled={encounterList.GroundEnc.length === 0 || caveIds.includes(routeId)}
           title="Grass Encounters"
           id="groundEnc"
           bgColor={"success.main"}
+          textColor={encounterList.GroundEnc.length !== 0 ? "#F5FBF5" : modeChangeTextColor}
+        >
+          <EncounterTable encounterList={encounterList.GroundEnc} pokemon={pokemon} />
+        </PokemonAccordion>
+        <PokemonAccordion
+          disabled={encounterList.GroundEnc.length === 0 && !(caveIds.includes(routeId))}
+          title="Cave Encounters"
+          id="caveEnc"
+          bgColor={"#522c0b"}
           textColor={encounterList.GroundEnc.length !== 0 ? "#F5FBF5" : modeChangeTextColor}
         >
           <EncounterTable encounterList={encounterList.GroundEnc} pokemon={pokemon} />
