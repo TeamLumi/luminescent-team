@@ -16,6 +16,7 @@ export const MapperTabPanel = ({
   selectedTrainer,
   setSelectedTrainer,
   openTrainerModal,
+  routeId
 }) => {
   return (
     <PokemonTabPanel tabNames={["Encounters", "Trainers", "Items", "Shops"]}>
@@ -24,6 +25,7 @@ export const MapperTabPanel = ({
         handleOptionChange={handleOptionChange}
         encounterList={encounterList}
         pokemon={pokemonName}
+        routeId={routeId}
       />
       <TrainersPanel
         selectedTrainer={selectedTrainer}
