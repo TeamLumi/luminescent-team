@@ -52,7 +52,7 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
           <EncounterTable encounterList={encounterList.GroundEnc} pokemon={pokemon} />
         </PokemonAccordion>
         <PokemonAccordion
-          disabled={encounterList.GroundEnc.length === 0 && !(caveIds.includes(routeId))}
+          disabled={encounterList.GroundEnc.length === 0 || !(caveIds.includes(routeId))}
           title="Cave Encounters"
           id="caveEnc"
           bgColor={"#522c0b"}
