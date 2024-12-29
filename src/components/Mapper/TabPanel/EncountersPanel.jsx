@@ -27,8 +27,16 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
     return  caveIds.includes(routeId)
             ? "#8B4513"
             : groundEncountersIds.includes(routeId)
-            ? "#1B3A9F"
+            ? "#90979B"
             : "success.main"
+  };
+
+  const getGroundTextColor = () => {
+    if (encounterList.GroundEnc.lenth === 0) {
+      return modeChangeTextColor;
+    } else if (groundEncountersIds.includes(routeId)) {
+      return "#000000"
+    }
   };
 
   return (
@@ -64,7 +72,7 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
           title= {getGroundTitle()}
           id="groundEnc"
           bgColor={getGroundBgColor()}
-          textColor={encounterList.GroundEnc.length !== 0 ? "#F5FBF5" : modeChangeTextColor}
+          textColor={getGroundTextColor()}
         >
           <EncounterTable encounterList={encounterList.GroundEnc} pokemon={pokemon} />
         </PokemonAccordion>
