@@ -42,7 +42,7 @@ function getEvolutionMethodDetail(methodId, methodParameter = 0, mode = GAMEDATA
         evolutionDetails.method = 
           evolutionDetails.method.replace(
             REPLACE_STRING,
-            `${evoMethod} (Lv. ${levelLearned})`
+            `${evoMethod} (Learns at Lv. ${levelLearned})`
           );
       } else {
         evolutionDetails.method = 

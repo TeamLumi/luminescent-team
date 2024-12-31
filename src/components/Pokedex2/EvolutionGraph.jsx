@@ -142,7 +142,7 @@ export default function EvolutionGraph({ evolutionTree }) {
       const moveType = getTypeName(getMoveProperties(methodParameter, globalState.mode).type);
       evoImages.push(getTMImageUrl(moveType));
     } else if (evoFunction === EvoConstants.POKEMON_NAME_FUNCTION) {
-      evoImages.push(`img/pkm/${getPokemonImageFilename(methodParameter, 0)}`);
+      evoImages.push(`/img/pkm/${getPokemonImageFilename(methodParameter, 0)}`);
     } else if (evoFunction === EvoConstants.TYPE_NAME_FUNCTION) {
       const moveType = getTypeName(methodParameter);
       evoImages.push(getTMImageUrl(moveType));
