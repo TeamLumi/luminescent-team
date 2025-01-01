@@ -4,6 +4,7 @@ import { getPokemon } from "../../../plugins/pokedex-data-plugin/dex/pokemon";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { getItemImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
 import { useGlobalState } from '../common/GlobalState';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 export const PokemonItems = ({ item1, item2, item3 }) => {
   const [globalState, updateMode] = useGlobalState();
@@ -88,12 +89,13 @@ const ItemContainer = ({item, percentage, span='span 2'}) => {
         <Typography >{percentage}%: {item}</Typography>
       </Box>
       <Box gridColumn={span}>
-        <img
+        <ImageWithFallback
           key={item}
-          src={useBaseUrl(`${getItemImageUrl(item)}`)}
+          src={item}
+          fallbackSrc={`/img/pkm/pm0000_00_00_00_L.webp`}
+          width="40"
           alt={item}
           title={item}
-          width="30px"
         />
       </Box>
       <Box gridColumn="span 1" />
