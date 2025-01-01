@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Button, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { TrainerDropdown, Trainers } from '../Trainers/Trainers';
+import "../style.css";
 
 const TrainersPanel = ({
   selectedTrainer,
@@ -15,10 +16,7 @@ const TrainersPanel = ({
     openTrainerModal();
   }
   return (
-    <Box
-      width="416px"
-      border="2px solid var(--ifm-table-border-color)"
-    >
+    <Box className='trainer-panel'>
       <Box paddingBottom=".875rem" borderBottom="2px solid var(--ifm-table-border-color)">
         <Box display="grid" gridTemplateColumns={selectedTrainer ? "3fr 2fr" : "5fr"}>
           <Typography

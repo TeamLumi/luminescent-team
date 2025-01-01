@@ -6,7 +6,7 @@ import { getMoveProperties, getPokemonName } from '../../../utils/dex';
 import { PokemonMove, PokemonMoveType, TYPE_COLOR_MAP } from '../../Pokedex2/PokemonMovesetList';
 import { ImageWithFallback } from '../../common/ImageWithFallback';
 
-import '.././style.css';
+import '../style.css';
 import { PokemonAbility } from '../../Pokedex2/PokemonAbilities';
 
 const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };

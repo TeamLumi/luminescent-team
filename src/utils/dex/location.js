@@ -33,6 +33,7 @@ lines3.slice(1).forEach(line => {
 
 function getZoneCodeFromCSV(zoneId, mode = GAMEDATA2) {
   if (!zoneId) {
+    console.warn("Invalid Zone Id", zoneId);
     return null;
   }
   return AreaMap[mode][zoneId]?.Zone_Code;
@@ -51,7 +52,18 @@ function getZoneNameFromZoneCode(zoneCode, mode = GAMEDATA2) {
     return null;
   }
   const zoneId = Object.keys(AreaMap[mode]).find(key => AreaMap[mode][key]?.Zone_Code === zoneCode.toUpperCase());
-  const zoneName = AreaMap[mode][zoneId].Actual
+  if (!zoneId) {
+    console.warn("This zoneCode doesn't have a zoneId", zoneCode);
+  }
+  const zoneName = AreaMap[mode][zoneId]?.Actual
+  return zoneName;
+}
+
+function getZoneNameFromZoneIdCSV(zoneId) {
+  if (!zoneId) {
+    return null;
+  }
+  const zoneName = AreaMap[zoneId]?.Actual
   return zoneName;
 }
 
@@ -146,6 +158,7 @@ function getZoneIdFromZoneName(zoneName, mode = GAMEDATA2) {
 
 function getFieldItemsFromZoneID(zoneID, mode = GAMEDATA2) {
   if(typeof zoneID !== 'number' || zoneID < 0) {
+    console.warn("Invalid zoneID", zoneID);
     return [];
   }
   const ModeFieldItems = FieldItems[mode];
@@ -165,6 +178,7 @@ function getHiddenItemsFromZoneID(zoneID, mode = GAMEDATA2) {
 export {
   getZoneIdFromZoneName,
   getZoneNameFromZoneId,
+  getZoneNameFromZoneIdCSV,
   getZoneCodeFromCSV,
   getZoneIdFromZoneCode,
   getZoneNameFromZoneCode,

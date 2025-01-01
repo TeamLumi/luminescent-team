@@ -66,7 +66,7 @@ export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => 
   );
 };
 
-const MoveIcon = ({ moveIconType, moveTypeId }) => {
+export const MoveIcon = ({ moveIconType, moveTypeId }) => {
   if (typeof moveIconType === 'number') {
     return (
       <Typography sx={{ textAlign: 'center', fontSize: { xs: '0.7rem', sm: '0.8rem', md: '1rem' } }}>
@@ -94,7 +94,7 @@ const MoveIcon = ({ moveIconType, moveTypeId }) => {
   return null;
 };
 
-const MovesetListItem = ({ moveLevel, move }) => {
+export const MovesetListItem = ({ moveLevel, move }) => {
   return (
     <>
       <Box display="flex" alignItems="center" justifyContent="center">

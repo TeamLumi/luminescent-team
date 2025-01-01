@@ -1,4 +1,5 @@
-const { GAMEDATA2, ItemNames } = require('../../../__gamedata');
+const { GAMEDATA2, ItemNames, ItemTable, ItemInfo } = require('../../../__gamedata');
+const { getMoveProperties } = require('./moves');
 
 function getItemIdFromItemName(itemName, mode = GAMEDATA2) {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
@@ -32,4 +33,44 @@ function getItemImageUrl(itemName="") {
 function getTMImageUrl(moveType="") {
   return `/img/tms/${moveType}.webp`
 }
-module.exports = { getItemIdFromItemName, getItemString, getItemImageUrl, getTMImageUrl };
+
+function getItemPocket(itemNo, mode = GAMEDATA2) {
+  if (!itemNo) throw Error(`Bad item name: ${itemNo}`);
+  const ModeItemTable = ItemTable[mode];
+  console.log(ModeItemTable.Item[itemNo]);
+  return ModeItemTable.Item[itemNo].fld_pocket;
+}
+
+function getTMInfoFromItemNo(itemNo, mode = GAMEDATA2) {
+  const ModeItemTable = ItemTable[mode];
+  const wazaMachine = ModeItemTable.WazaMachine.find(machine => machine.itemNo === itemNo);
+  return wazaMachine ? {...getMoveProperties(wazaMachine.wazaNo, mode), tmNo: wazaMachine.machineNo} : null;
+}
+
+function getTMInfoFromTMNo(TMNo=0, mode = GAMEDATA2) {
+  const ModeItemTable = ItemTable[mode];
+  const { wazaNo } = ModeItemTable.WazaMachine[TMNo-1];
+  return getMoveProperties(wazaNo, mode);
+}
+
+function getItemInfo(itemId = 0, mode = GAMEDATA2) {
+  const ModeItemInfo = ItemInfo[mode];
+  const wordData = ModeItemInfo.labelDataArray[itemId].wordDataArray;
+  if (wordData === null || wordData === undefined || wordData.length === 0) return 'None';
+  const description = wordData.reduce((itemDescription, currentString) => {
+    return itemDescription + currentString.str + ' ';
+  }, '');
+
+  return description.trim();
+}
+
+module.exports = {
+  getItemIdFromItemName,
+  getItemString,
+  getItemImageUrl,
+  getTMImageUrl,
+  getTMInfoFromTMNo,
+  getTMInfoFromItemNo,
+  getItemPocket,
+  getItemInfo,
+};

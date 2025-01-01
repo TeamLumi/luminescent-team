@@ -144,12 +144,14 @@ export const Mapper = ({ pokemonList }) => {
     event: [],
   });
   const [trainerList, setTrainerList] = useState([]);
-  const [fieldItemsList, setFieldItems] = useState([]);
-  const [hiddenItemsList, setHiddenItems] = useState([]);
+  const [itemsList, setItemsList] = useState({ field: [], hidden: [], scripted: [] })
   const [shopItemsList, setShopItems] = useState([]);
-  const [scriptItemsList, setScriptItems] = useState([]);
   const [fixedShopList, setFixedShops] = useState([]);
   const [heartScaleShopList, setHeartScaleShop] = useState([]);
+
+  useEffect(() => {
+    console.log(itemsList);
+  }, [itemsList]);
 
   const canvasRef = useRef(null);
   const CLEAR_MODE = {
@@ -214,10 +216,7 @@ export const Mapper = ({ pokemonList }) => {
     setEncounterList(setAllEncounters(location.zoneId));
     setTrainerList(getTrainersFromZoneId(location.zoneId));
 
-    setFieldItems(getFieldItemsFromZoneID(location.zoneId));
-    setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
-    setShopItems(getRegularShopItems(location.zoneId));
-    setScriptItems(getScriptItems(location.zoneId));
+    setItemsList(getAllItems(location.zoneId));
     setFixedShops(getFixedShops(location.zoneId));
     setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
   };
@@ -386,10 +385,8 @@ export const Mapper = ({ pokemonList }) => {
     setEncounterList(setAllEncounters(location.zoneId));
     setTrainerList(getTrainersFromZoneId(location.zoneId));
 
-    setFieldItems(getFieldItemsFromZoneID(location.zoneId));
-    setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
+    setItemsList(getAllItems(location.zoneId));
     setShopItems(getRegularShopItems(location.zoneId));
-    setScriptItems(getScriptItems(location.zoneId));
     setFixedShops(getFixedShops(location.zoneId));
     setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
   };
@@ -489,6 +486,7 @@ export const Mapper = ({ pokemonList }) => {
 
   useEffect(() => {
     setTrainerList(getTrainersFromZoneId(selectedZoneId) || []) ;
+    setItemsList(getAllItems(selectedZoneId));
   }, [selectedZoneId])
 
   const handleOptionChange = (option, value) => {
@@ -509,6 +507,18 @@ export const Mapper = ({ pokemonList }) => {
   const handleCloseSettings = () => {
     setShowSettings(false);
   };
+
+  const getAllItems = (zoneId) => {
+    const fieldItems = getFieldItemsFromZoneID(zoneId);
+    const hiddenItems = getHiddenItemsFromZoneID(zoneId);
+    const scriptItems = getScriptItems(zoneId);
+    return {
+      field: fieldItems,
+      hidden: hiddenItems,
+      scripted: scriptItems,
+    }
+  };
+
 
   const setAllEncounters = (zoneId) => {
     const areaEncounters = getAreaEncounters(zoneId);
@@ -702,6 +712,7 @@ export const Mapper = ({ pokemonList }) => {
           selectedTrainer={selectedTrainer}
           setSelectedTrainer={setSelectedTrainer}
           openTrainerModal={openTrainerModal}
+          itemsList={itemsList}
           routeId={selectedZoneId}
         />
       </div>
