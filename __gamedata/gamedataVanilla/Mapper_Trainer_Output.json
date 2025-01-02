@@ -33,7 +33,8 @@
       "name": "Youngster Tristan",
       "route": "Route 201",
       "zoneId": 354,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 1
     },
     {
       "team": [
@@ -68,7 +69,8 @@
       "name": "Youngster Logan",
       "route": "Route 201",
       "zoneId": 354,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 2
     },
     {
       "team": [
@@ -129,7 +131,8 @@
       "name": "Lass Natalie",
       "route": "Route 201",
       "zoneId": 354,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 3
     }
   ],
   "0": [
@@ -166,7 +169,8 @@
       "name": "School Kid Harrison",
       "route": "Jubilife City",
       "zoneId": 21,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 264
     },
     {
       "team": [
@@ -201,7 +205,8 @@
       "name": "School Kid Christine",
       "route": "Jubilife City",
       "zoneId": 21,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 267
     },
     {
       "team": [
@@ -236,7 +241,8 @@
       "name": "Interviewers Roxy",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 280
     },
     {
       "team": [
@@ -271,7 +277,8 @@
       "name": "Interviewers Roxy",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 280
     },
     {
       "team": [
@@ -306,7 +313,8 @@
       "name": "Interviewers Oli",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 281
     },
     {
       "team": [
@@ -341,7 +349,8 @@
       "name": "Interviewers Oli",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 281
     },
     {
       "team": [
@@ -376,7 +385,8 @@
       "name": "Cameraman Tevin",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 282
     },
     {
       "team": [
@@ -411,7 +421,8 @@
       "name": "Cameraman Tevin",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 282
     },
     {
       "team": [
@@ -446,7 +457,8 @@
       "name": "Reporter Kinsey",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 283
     },
     {
       "team": [
@@ -481,7 +493,8 @@
       "name": "Reporter Kinsey",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 283
     },
     {
       "team": [
@@ -542,7 +555,8 @@
       "name": "Idol Grace",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 284
     },
     {
       "team": [
@@ -603,7 +617,8 @@
       "name": "Idol Grace",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 284
     },
     {
       "team": [
@@ -638,7 +653,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Jubilife City",
       "zoneId": 0,
-      "trainerType": "Multi Battle Enemy"
+      "trainerType": "Multi Battle Enemy",
+      "trainer_id": 317
     },
     {
       "team": [
@@ -673,7 +689,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Jubilife City",
       "zoneId": 0,
-      "trainerType": "Multi Battle Enemy"
+      "trainerType": "Multi Battle Enemy",
+      "trainer_id": 318
     },
     {
       "team": [
@@ -734,7 +751,8 @@
       "name": "Guitarist Arturo",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 332
     },
     {
       "team": [
@@ -795,7 +813,8 @@
       "name": "Guitarist Arturo",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 332
     },
     {
       "team": [
@@ -830,7 +849,8 @@
       "name": "Clown Lee",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 349
     },
     {
       "team": [
@@ -865,7 +885,8 @@
       "name": "Clown Lee",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 349
     },
     {
       "team": [
@@ -926,7 +947,8 @@
       "name": "Pok\u00e9 Kid Ariel",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 350
     },
     {
       "team": [
@@ -987,7 +1009,8 @@
       "name": "Pok\u00e9 Kid Ariel",
       "route": "Jubilife City",
       "zoneId": 8,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 350
     },
     {
       "team": [
@@ -1022,7 +1045,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Piplup",
       "route": "Jubilife City",
       "zoneId": 0,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 487
     },
     {
       "team": [
@@ -1057,7 +1081,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Turtwig",
       "route": "Jubilife City",
       "zoneId": 0,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 488
     },
     {
       "team": [
@@ -1092,7 +1117,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Chimchar",
       "route": "Jubilife City",
       "zoneId": 0,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 489
     },
     {
       "team": [
@@ -1127,7 +1153,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Piplup",
       "route": "Jubilife City",
       "zoneId": 0,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 490
     },
     {
       "team": [
@@ -1162,7 +1189,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Turtwig",
       "route": "Jubilife City",
       "zoneId": 0,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 491
     },
     {
       "team": [
@@ -1197,7 +1225,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Chimchar",
       "route": "Jubilife City",
       "zoneId": 0,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 492
     }
   ],
   "356": [
@@ -1260,7 +1289,8 @@
       "name": "Youngster Michael",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 4
     },
     {
       "team": [
@@ -1321,7 +1351,8 @@
       "name": "Youngster Tyler",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 5
     },
     {
       "team": [
@@ -1356,7 +1387,8 @@
       "name": "Lass Samantha",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 6
     },
     {
       "team": [
@@ -1391,7 +1423,8 @@
       "name": "Lass Sarah",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 7
     },
     {
       "team": [
@@ -1452,7 +1485,8 @@
       "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 176
     },
     {
       "team": [
@@ -1513,7 +1547,8 @@
       "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 177
     },
     {
       "team": [
@@ -1574,7 +1609,8 @@
       "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 178
     },
     {
       "team": [
@@ -1635,7 +1671,8 @@
       "name": "Lass Madeline",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 246
     },
     {
       "team": [
@@ -1722,7 +1759,8 @@
       "name": "Lass Kaitlin",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 247
     },
     {
       "team": [
@@ -1757,7 +1795,8 @@
       "name": "Youngster Dallas",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 270
     },
     {
       "team": [
@@ -1792,7 +1831,8 @@
       "name": "Youngster Sebastian",
       "route": "Route 203",
       "zoneId": 356,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 271
     }
   ],
   "255": [
@@ -1829,7 +1869,8 @@
       "name": "Camper Curtis",
       "route": "Oreburgh Gate - 1F",
       "zoneId": 255,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 189
     },
     {
       "team": [
@@ -1890,7 +1931,8 @@
       "name": "Picnicker Diana",
       "route": "Oreburgh Gate - 1F",
       "zoneId": 255,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 253
     }
   ],
   "256": [
@@ -1979,7 +2021,8 @@
       "name": "Veteran Grant",
       "route": "Oreburgh Gate - B1F",
       "zoneId": 256,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 172
     }
   ],
   "196": [
@@ -2042,7 +2085,8 @@
       "name": "Worker Colin",
       "route": "Oreburgh Mine B2F",
       "zoneId": 196,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 148
     },
     {
       "team": [
@@ -2077,7 +2121,8 @@
       "name": "Worker Mason",
       "route": "Oreburgh Mine B2F",
       "zoneId": 196,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 149
     }
   ],
   "38": [
@@ -2114,7 +2159,8 @@
       "name": "Youngster Jonathon",
       "route": "Oreburgh - Gym",
       "zoneId": 40,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 173
     },
     {
       "team": [
@@ -2175,7 +2221,8 @@
       "name": "Youngster Darius",
       "route": "Oreburgh - Gym",
       "zoneId": 40,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 174
     },
     {
       "team": [
@@ -2262,7 +2309,8 @@
       "name": "Gym Leader Roark",
       "route": "Oreburgh - Gym",
       "zoneId": 40,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 175
     },
     {
       "team": [
@@ -2349,7 +2397,8 @@
       "name": "Commander Mars",
       "route": "Oreburgh - Gym",
       "zoneId": 40,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 310
     }
   ],
   "358": [
@@ -2412,7 +2461,8 @@
       "name": "Bug Catcher Brandon",
       "route": "Route 204 (North)",
       "zoneId": 358,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 8
     },
     {
       "team": [
@@ -2473,7 +2523,8 @@
       "name": "Aroma Lady Teighler",
       "route": "Route 204 (North)",
       "zoneId": 358,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 9
     },
     {
       "team": [
@@ -2508,7 +2559,8 @@
       "name": "Twins Liv",
       "route": "Route 204 (North)",
       "zoneId": 358,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 10
     },
     {
       "team": [
@@ -2543,7 +2595,8 @@
       "name": "Twins Liz",
       "route": "Route 204 (North)",
       "zoneId": 358,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 11
     }
   ],
   "197": [
@@ -2580,7 +2633,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Valley Windworks (Outside)",
       "zoneId": 197,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 669
     }
   ],
   "198": [
@@ -2643,7 +2697,8 @@
       "name": "Commander Mars",
       "route": "Valley Windworks (Inside)",
       "zoneId": 198,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 220
     },
     {
       "team": [
@@ -2678,7 +2733,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Valley Windworks (Inside)",
       "zoneId": 198,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 223
     },
     {
       "team": [
@@ -2739,7 +2795,8 @@
       "name": "Team Galactic Grunt 3",
       "route": "Valley Windworks (Inside)",
       "zoneId": 198,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 224
     }
   ],
   "253": [
@@ -2802,7 +2859,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 221
     },
     {
       "team": [
@@ -2837,7 +2895,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 222
     }
   ],
   "359": [
@@ -2874,7 +2933,8 @@
       "name": "Camper Jacob",
       "route": "Route 205 (South)",
       "zoneId": 359,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 12
     },
     {
       "team": [
@@ -2935,7 +2995,8 @@
       "name": "Picnicker Siena",
       "route": "Route 205 (South)",
       "zoneId": 359,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 13
     },
     {
       "team": [
@@ -3048,7 +3109,8 @@
       "name": "Hiker Daniel",
       "route": "Route 205 (South)",
       "zoneId": 359,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 14
     },
     {
       "team": [
@@ -3083,7 +3145,8 @@
       "name": "Hiker Nicholas",
       "route": "Route 205 (South)",
       "zoneId": 359,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 15
     },
     {
       "team": [
@@ -3118,7 +3181,8 @@
       "name": "Battle Girl Kelsey",
       "route": "Route 205 (South)",
       "zoneId": 359,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 16
     },
     {
       "team": [
@@ -3153,7 +3217,8 @@
       "name": "Aroma Lady Elizabeth",
       "route": "Route 205 (South)",
       "zoneId": 359,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 17
     },
     {
       "team": [
@@ -3188,7 +3253,8 @@
       "name": "Camper Zackary",
       "route": "Route 205 (South)",
       "zoneId": 359,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 287
     },
     {
       "team": [
@@ -3223,7 +3289,8 @@
       "name": "Picnicker Karina",
       "route": "Route 205 (South)",
       "zoneId": 359,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 345
     }
   ],
   "361": [
@@ -3390,7 +3457,8 @@
       "name": "Fisher Andrew",
       "route": "Route 205 (North)",
       "zoneId": 361,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 18
     },
     {
       "team": [
@@ -3425,7 +3493,8 @@
       "name": "Fisher Joseph",
       "route": "Route 205 (North)",
       "zoneId": 361,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 19
     },
     {
       "team": [
@@ -3512,7 +3581,8 @@
       "name": "Fisher Zachary",
       "route": "Route 205 (North)",
       "zoneId": 361,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 20
     }
   ],
   "200": [
@@ -3601,7 +3671,8 @@
       "name": "Bug Catcher Jack",
       "route": "Eterna Forest",
       "zoneId": 200,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 150
     },
     {
       "team": [
@@ -3688,7 +3759,8 @@
       "name": "Bug Catcher Phillip",
       "route": "Eterna Forest",
       "zoneId": 200,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 151
     },
     {
       "team": [
@@ -3749,7 +3821,8 @@
       "name": "Bug Catcher Donald",
       "route": "Eterna Forest",
       "zoneId": 200,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 152
     },
     {
       "team": [
@@ -3784,7 +3857,8 @@
       "name": "Lass Briana",
       "route": "Eterna Forest",
       "zoneId": 200,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 153
     },
     {
       "team": [
@@ -3819,7 +3893,8 @@
       "name": "Psychic Elijah",
       "route": "Eterna Forest",
       "zoneId": 200,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 154
     },
     {
       "team": [
@@ -3854,7 +3929,8 @@
       "name": "Psychic Lindsey",
       "route": "Eterna Forest",
       "zoneId": 200,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 155
     },
     {
       "team": [
@@ -3889,7 +3965,8 @@
       "name": "Psychic Kody",
       "route": "Eterna Forest",
       "zoneId": 200,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 301
     },
     {
       "team": [
@@ -3924,7 +4001,8 @@
       "name": "Psychic Rachael",
       "route": "Eterna Forest",
       "zoneId": 200,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 304
     }
   ],
   "377": [
@@ -3961,7 +4039,8 @@
       "name": "Bird Keeper Alexandra",
       "route": "Route 211 (West)",
       "zoneId": 377,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 64
     },
     {
       "team": [
@@ -4048,7 +4127,8 @@
       "name": "Ninja Boy Zach",
       "route": "Route 211 (West)",
       "zoneId": 377,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 65
     },
     {
       "team": [
@@ -4109,7 +4189,8 @@
       "name": "Hiker Louis",
       "route": "Route 211 (West)",
       "zoneId": 377,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 250
     }
   ],
   "378": [
@@ -4198,7 +4279,8 @@
       "name": "Black Belt Sean",
       "route": "Route 211 (East)",
       "zoneId": 378,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 66
     },
     {
       "team": [
@@ -4259,7 +4341,8 @@
       "name": "Ninja Boy Nick",
       "route": "Route 211 (East)",
       "zoneId": 378,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 67
     },
     {
       "team": [
@@ -4294,7 +4377,8 @@
       "name": "Bird Keeper Katherine",
       "route": "Route 211 (East)",
       "zoneId": 378,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 68
     },
     {
       "team": [
@@ -4381,7 +4465,8 @@
       "name": "Black Belt Gregory",
       "route": "Route 211 (East)",
       "zoneId": 378,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 97
     },
     {
       "team": [
@@ -4416,7 +4501,8 @@
       "name": "Ruin Maniac Harry",
       "route": "Route 211 (East)",
       "zoneId": 378,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 333
     }
   ],
   "212": [
@@ -4505,7 +4591,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Mt. Coronet - Tunnel to Route 211 Entrance",
       "zoneId": 212,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 391
     },
     {
       "team": [
@@ -4540,7 +4627,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Mt. Coronet - Tunnel to Route 211 Entrance",
       "zoneId": 212,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 392
     },
     {
       "team": [
@@ -4627,7 +4715,8 @@
       "name": "Team Galactic Grunt 3",
       "route": "Mt. Coronet - Tunnel to Route 211 Entrance",
       "zoneId": 212,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 397
     }
   ],
   "205": [
@@ -4664,7 +4753,8 @@
       "name": "Team Galactic Grunt 4",
       "route": "Mt. Coronet - 3F",
       "zoneId": 205,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 388
     },
     {
       "team": [
@@ -4699,7 +4789,8 @@
       "name": "Team Galactic Grunt 5",
       "route": "Mt. Coronet - 3F",
       "zoneId": 205,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 396
     }
   ],
   "208": [
@@ -4788,7 +4879,8 @@
       "name": "Team Galactic Grunt 6",
       "route": "Mt. Coronet - 4F (Waterfall)",
       "zoneId": 208,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 389
     },
     {
       "team": [
@@ -4849,7 +4941,8 @@
       "name": "Team Galactic Grunt 7",
       "route": "Mt. Coronet - 4F (Waterfall)",
       "zoneId": 208,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 390
     }
   ],
   "210": [
@@ -4912,7 +5005,8 @@
       "name": "Team Galactic Grunt 8",
       "route": "Mt. Coronet - 5F",
       "zoneId": 210,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 393
     },
     {
       "team": [
@@ -4973,7 +5067,8 @@
       "name": "Team Galactic Grunt 9",
       "route": "Mt. Coronet - 5F",
       "zoneId": 210,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 398
     }
   ],
   "211": [
@@ -5062,7 +5157,8 @@
       "name": "Team Galactic Grunt 10",
       "route": "Mt. Coronet - 6F",
       "zoneId": 211,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 399
     }
   ],
   "395": [
@@ -5125,7 +5221,8 @@
       "name": "Ace Trainer Blake",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 101
     },
     {
       "team": [
@@ -5212,7 +5309,8 @@
       "name": "Ace Trainer Garrett",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 102
     },
     {
       "team": [
@@ -5247,7 +5345,8 @@
       "name": "Ace Trainer Laura",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 103
     },
     {
       "team": [
@@ -5334,7 +5433,8 @@
       "name": "Ace Trainer Maria",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 104
     },
     {
       "team": [
@@ -5421,7 +5521,8 @@
       "name": "Skier Bradley",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 105
     },
     {
       "team": [
@@ -5456,7 +5557,8 @@
       "name": "Skier Edward",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 106
     },
     {
       "team": [
@@ -5517,7 +5619,8 @@
       "name": "Skier Kaitlyn",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 107
     },
     {
       "team": [
@@ -5552,7 +5655,8 @@
       "name": "Skier Andrea",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 108
     },
     {
       "team": [
@@ -5587,7 +5691,8 @@
       "name": "Black Belt Philip",
       "route": "Route 216",
       "zoneId": 395,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 182
     }
   ],
   "54": [
@@ -5676,7 +5781,8 @@
       "name": "Aroma Lady Jenna",
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 183
     },
     {
       "team": [
@@ -5711,7 +5817,8 @@
       "name": "Aroma Lady Angela",
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 184
     },
     {
       "team": [
@@ -5798,7 +5905,8 @@
       "name": "Gym Leader Gardenia",
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 240
     },
     {
       "team": [
@@ -5859,7 +5967,8 @@
       "name": "Lass Caroline",
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 248
     },
     {
       "team": [
@@ -5894,7 +6003,8 @@
       "name": "Beauty Lindsay",
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 269
     },
     {
       "team": [
@@ -5981,7 +6091,8 @@
       "name": "Commander Jupiter",
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 312
     }
   ],
   "62": [
@@ -6044,7 +6155,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "T.G. Building 1F",
       "zoneId": 62,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 315
     },
     {
       "team": [
@@ -6105,7 +6217,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "T.G. Building 1F",
       "zoneId": 62,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 324
     }
   ],
   "63": [
@@ -6168,7 +6281,8 @@
       "name": "Team Galactic Grunt 3",
       "route": "T.G. Building 2F",
       "zoneId": 63,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 316
     },
     {
       "team": [
@@ -6203,7 +6317,8 @@
       "name": "Team Galactic Grunt 4",
       "route": "T.G. Building 2F",
       "zoneId": 63,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 325
     }
   ],
   "64": [
@@ -6292,7 +6407,8 @@
       "name": "Team Galactic Grunt 5",
       "route": "T.G. Building 3F",
       "zoneId": 64,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 326
     },
     {
       "team": [
@@ -6327,7 +6443,8 @@
       "name": "Scientist Travon",
       "route": "T.G. Building 3F",
       "zoneId": 64,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 657
     }
   ],
   "65": [
@@ -6390,7 +6507,8 @@
       "name": "Commander Jupiter",
       "route": "T.G. Building 4F",
       "zoneId": 65,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 311
     }
   ],
   "362": [
@@ -6427,7 +6545,8 @@
       "name": "Cyclist Axel",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 21
     },
     {
       "team": [
@@ -6462,7 +6581,8 @@
       "name": "Cyclist James",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 22
     },
     {
       "team": [
@@ -6523,7 +6643,8 @@
       "name": "Cyclist John",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 23
     },
     {
       "team": [
@@ -6558,7 +6679,8 @@
       "name": "Cyclist Ryan",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 24
     },
     {
       "team": [
@@ -6593,7 +6715,8 @@
       "name": "Cyclist Megan",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 25
     },
     {
       "team": [
@@ -6654,7 +6777,8 @@
       "name": "Cyclist Nicole",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 26
     },
     {
       "team": [
@@ -6689,7 +6813,8 @@
       "name": "Cyclist Kayla",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 27
     },
     {
       "team": [
@@ -6750,7 +6875,8 @@
       "name": "Cyclist Rachel",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 28
     },
     {
       "team": [
@@ -6811,7 +6937,8 @@
       "name": "Hiker Theodore",
       "route": "Route 206",
       "zoneId": 362,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 340
     }
   ],
   "364": [
@@ -6900,7 +7027,8 @@
       "name": "Youngster Austin",
       "route": "Route 207",
       "zoneId": 364,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 29
     },
     {
       "team": [
@@ -6935,7 +7063,8 @@
       "name": "Camper Anthony",
       "route": "Route 207",
       "zoneId": 364,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 30
     },
     {
       "team": [
@@ -6970,7 +7099,8 @@
       "name": "Picnicker Lauren",
       "route": "Route 207",
       "zoneId": 364,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 31
     },
     {
       "team": [
@@ -7083,7 +7213,8 @@
       "name": "Hiker Kevyn",
       "route": "Route 207",
       "zoneId": 364,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 32
     },
     {
       "team": [
@@ -7144,7 +7275,8 @@
       "name": "Hiker Justin",
       "route": "Route 207",
       "zoneId": 364,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 33
     },
     {
       "team": [
@@ -7205,7 +7337,8 @@
       "name": "Battle Girl Helen",
       "route": "Route 207",
       "zoneId": 364,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 34
     }
   ],
   "292": [
@@ -7268,7 +7401,8 @@
       "name": "Camper Diego",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 289
     },
     {
       "team": [
@@ -7329,7 +7463,8 @@
       "name": "Camper Parker",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 290
     },
     {
       "team": [
@@ -7416,7 +7551,8 @@
       "name": "Collector Terry",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 293
     },
     {
       "team": [
@@ -7477,7 +7613,8 @@
       "name": "Ruin Maniac Gerald",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 334
     },
     {
       "team": [
@@ -7512,7 +7649,8 @@
       "name": "Lass Cassidy",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 339
     },
     {
       "team": [
@@ -7573,7 +7711,8 @@
       "name": "Hiker Reginald",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 343
     },
     {
       "team": [
@@ -7608,7 +7747,8 @@
       "name": "Hiker Lorenzo",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 344
     },
     {
       "team": [
@@ -7669,7 +7809,8 @@
       "name": "Picnicker Tori",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 347
     },
     {
       "team": [
@@ -7704,7 +7845,8 @@
       "name": "Picnicker Ana",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 348
     },
     {
       "team": [
@@ -7791,7 +7933,8 @@
       "name": "Youngster Wayne",
       "route": "Wayward Cave - Main Area",
       "zoneId": 292,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 372
     }
   ],
   "365": [
@@ -7854,7 +7997,8 @@
       "name": "Hiker Robert",
       "route": "Route 208",
       "zoneId": 365,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 35
     },
     {
       "team": [
@@ -7889,7 +8033,8 @@
       "name": "Hiker Jonathan",
       "route": "Route 208",
       "zoneId": 365,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 37
     },
     {
       "team": [
@@ -7924,7 +8069,8 @@
       "name": "Black Belt Kyle",
       "route": "Route 208",
       "zoneId": 365,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 38
     },
     {
       "team": [
@@ -7985,7 +8131,8 @@
       "name": "Fisher Cody",
       "route": "Route 208",
       "zoneId": 365,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 39
     },
     {
       "team": [
@@ -8046,7 +8193,8 @@
       "name": "Aroma Lady Hannah",
       "route": "Route 208",
       "zoneId": 365,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 40
     },
     {
       "team": [
@@ -8107,7 +8255,8 @@
       "name": "Artist William",
       "route": "Route 208",
       "zoneId": 365,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 41
     }
   ],
   "74": [
@@ -8222,7 +8371,8 @@
       "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Hearthome City",
       "zoneId": 74,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 351
     },
     {
       "team": [
@@ -8335,7 +8485,8 @@
       "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Hearthome City",
       "zoneId": 74,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 352
     },
     {
       "team": [
@@ -8448,7 +8599,8 @@
       "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Hearthome City",
       "zoneId": 74,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 353
     },
     {
       "team": [
@@ -8535,7 +8687,8 @@
       "name": "Camper Drew",
       "route": "Hearthome - Gym Lobby",
       "zoneId": 76,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 190
     },
     {
       "team": [
@@ -8596,7 +8749,8 @@
       "name": "Youngster Donny",
       "route": "Hearthome - Gym Trainer Room 1",
       "zoneId": 77,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 272
     },
     {
       "team": [
@@ -8631,7 +8785,8 @@
       "name": "Lass Molly",
       "route": "Hearthome - Gym Trainer Room 2",
       "zoneId": 78,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 249
     },
     {
       "team": [
@@ -8692,7 +8847,8 @@
       "name": "Picnicker Cheyenne",
       "route": "Hearthome - Gym Trainer Room 4",
       "zoneId": 82,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 254
     },
     {
       "team": [
@@ -8727,7 +8883,8 @@
       "name": "School Kid Chance",
       "route": "Hearthome - Gym Trainer Room 5",
       "zoneId": 84,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 262
     },
     {
       "team": [
@@ -8788,7 +8945,8 @@
       "name": "School Kid Mackenzie",
       "route": "Hearthome - Gym Trainer Room 6",
       "zoneId": 85,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 265
     },
     {
       "team": [
@@ -8875,7 +9033,8 @@
       "name": "Ace Trainer Allen",
       "route": "Hearthome - Gym Trainer Room 7",
       "zoneId": 86,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 204
     },
     {
       "team": [
@@ -8936,7 +9095,8 @@
       "name": "Ace Trainer Catherine",
       "route": "Hearthome - Gym Trainer Room 8",
       "zoneId": 87,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 208
     },
     {
       "team": [
@@ -9023,7 +9183,8 @@
       "name": "Gym Leader Fantina",
       "route": "Hearthome - Gym Leader Room",
       "zoneId": 88,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 243
     },
     {
       "team": [
@@ -9188,7 +9349,8 @@
       "name": "Gym Leader Fantina",
       "route": "Hearthome - Gym Leader Room",
       "zoneId": 88,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 680
     }
   ],
   "379": [
@@ -9225,7 +9387,8 @@
       "name": "Rich Boy Jason",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 69
     },
     {
       "team": [
@@ -9260,7 +9423,8 @@
       "name": "Lady Melissa",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 70
     },
     {
       "team": [
@@ -9295,7 +9459,8 @@
       "name": "Gentleman Jeremy",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 71
     },
     {
       "team": [
@@ -9330,7 +9495,8 @@
       "name": "Madame Reina",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 72
     },
     {
       "team": [
@@ -9391,7 +9557,8 @@
       "name": "Police Officer Bobby",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 73
     },
     {
       "team": [
@@ -9452,7 +9619,8 @@
       "name": "Police Officer Alex",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 74
     },
     {
       "team": [
@@ -9513,7 +9681,8 @@
       "name": "Police Officer Dylan",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 75
     },
     {
       "team": [
@@ -9574,7 +9743,8 @@
       "name": "Police Officer Caleb",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 83
     }
   ],
   "383": [
@@ -9611,7 +9781,8 @@
       "name": "Fisher Juan",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 76
     },
     {
       "team": [
@@ -9672,7 +9843,8 @@
       "name": "Fisher Cameron",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 77
     },
     {
       "team": [
@@ -9785,7 +9957,8 @@
       "name": "Fisher Travis",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 78
     },
     {
       "team": [
@@ -9846,7 +10019,8 @@
       "name": "Pok\u00e9mon Ranger Taylor",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 79
     },
     {
       "team": [
@@ -9907,7 +10081,8 @@
       "name": "Pok\u00e9mon Ranger Jeffrey",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 80
     },
     {
       "team": [
@@ -9968,7 +10143,8 @@
       "name": "Pok\u00e9mon Ranger Allison",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 81
     },
     {
       "team": [
@@ -10003,7 +10179,8 @@
       "name": "Scientist Stefano",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 82
     },
     {
       "team": [
@@ -10064,7 +10241,8 @@
       "name": "Parasol Lady Alexa",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 251
     },
     {
       "team": [
@@ -10099,7 +10277,8 @@
       "name": "Parasol Lady Sabrina",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 252
     },
     {
       "team": [
@@ -10160,7 +10339,8 @@
       "name": "Police Officer Danny",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 256
     },
     {
       "team": [
@@ -10247,7 +10427,8 @@
       "name": "Collector Dominique",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 291
     },
     {
       "team": [
@@ -10308,7 +10489,8 @@
       "name": "Scientist Shaun",
       "route": "Route 212 (South)",
       "zoneId": 383,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 365
     }
   ],
   "367": [
@@ -10397,7 +10579,8 @@
       "name": "Pok\u00e9mon Breeder Albert",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 42
     },
     {
       "team": [
@@ -10484,7 +10667,8 @@
       "name": "Pok\u00e9mon Breeder Jennifer",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 43
     },
     {
       "team": [
@@ -10623,7 +10807,8 @@
       "name": "Cowgirl Shelley",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 44
     },
     {
       "team": [
@@ -10762,7 +10947,8 @@
       "name": "Cowgirl Shelley",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 44
     },
     {
       "team": [
@@ -10901,7 +11087,8 @@
       "name": "Cowgirl Shelley",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 44
     },
     {
       "team": [
@@ -10936,7 +11123,8 @@
       "name": "Jogger Richard",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 45
     },
     {
       "team": [
@@ -10971,7 +11159,8 @@
       "name": "Pok\u00e9 Kid Danielle",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 46
     },
     {
       "team": [
@@ -11006,7 +11195,8 @@
       "name": "Young Couple Ty",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 47
     },
     {
       "team": [
@@ -11041,7 +11231,8 @@
       "name": "Young Couple Sue",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 48
     },
     {
       "team": [
@@ -11076,7 +11267,8 @@
       "name": "Twins Emma",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 218
     },
     {
       "team": [
@@ -11111,7 +11303,8 @@
       "name": "Twins Lil",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 219
     },
     {
       "team": [
@@ -11146,7 +11339,8 @@
       "name": "Jogger Raul",
       "route": "Route 209",
       "zoneId": 367,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 233
     },
     {
       "team": [
@@ -11233,7 +11427,8 @@
       "name": "Youngster Oliver",
       "route": "Lost Tower - 2F",
       "zoneId": 369,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 405
     },
     {
       "team": [
@@ -11268,7 +11463,8 @@
       "name": "Roughneck Kirby",
       "route": "Lost Tower - 3F",
       "zoneId": 370,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 402
     },
     {
       "team": [
@@ -11355,7 +11551,8 @@
       "name": "Pok\u00e9 Fan Leonard",
       "route": "Lost Tower - 3F",
       "zoneId": 370,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 403
     },
     {
       "team": [
@@ -11390,7 +11587,8 @@
       "name": "Pok\u00e9 Fan Rebekah",
       "route": "Lost Tower - 4F",
       "zoneId": 371,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 404
     },
     {
       "team": [
@@ -11425,7 +11623,8 @@
       "name": "Ranchers Beth",
       "route": "Lost Tower - 4F",
       "zoneId": 371,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 406
     },
     {
       "team": [
@@ -11460,7 +11659,8 @@
       "name": "Ranchers Bob",
       "route": "Lost Tower - 4F",
       "zoneId": 371,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 407
     },
     {
       "team": [
@@ -11495,7 +11695,8 @@
       "name": "Young Couple Mike",
       "route": "Lost Tower - 4F",
       "zoneId": 371,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 408
     },
     {
       "team": [
@@ -11530,7 +11731,8 @@
       "name": "Young Couple Nat",
       "route": "Lost Tower - 4F",
       "zoneId": 371,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 409
     }
   ],
   "225": [
@@ -11619,7 +11821,8 @@
       "name": "Ruin Maniac Karl",
       "route": "Solaceon Ruins - R Room",
       "zoneId": 231,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 428
     }
   ],
   "373": [
@@ -11708,7 +11911,8 @@
       "name": "Pok\u00e9mon Breeder Kahlil",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 49
     },
     {
       "team": [
@@ -11795,7 +11999,8 @@
       "name": "Pok\u00e9mon Breeder Amber",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 50
     },
     {
       "team": [
@@ -11830,7 +12035,8 @@
       "name": "Twins Teri",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 51
     },
     {
       "team": [
@@ -11865,7 +12071,8 @@
       "name": "Twins Tia",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 52
     },
     {
       "team": [
@@ -11900,7 +12107,8 @@
       "name": "Ranchers Ava",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 214
     },
     {
       "team": [
@@ -11935,7 +12143,8 @@
       "name": "Ranchers Matt",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 215
     },
     {
       "team": [
@@ -12022,7 +12231,8 @@
       "name": "Rancher Marco",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 216
     },
     {
       "team": [
@@ -12057,7 +12267,8 @@
       "name": "Jogger Wyatt",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 231
     },
     {
       "team": [
@@ -12144,7 +12355,8 @@
       "name": "Ninja Boy Fabian",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 366
     },
     {
       "team": [
@@ -12205,7 +12417,8 @@
       "name": "Ninja Boy Brennan",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 367
     },
     {
       "team": [
@@ -12240,7 +12453,8 @@
       "name": "Ninja Boy Bruce",
       "route": "Route 210 (South)",
       "zoneId": 373,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 368
     },
     {
       "team": [
@@ -12327,7 +12541,8 @@
       "name": "Collector Fernando",
       "route": "Route 210 - Caf\u00e9 Cabin",
       "zoneId": 374,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 199
     },
     {
       "team": [
@@ -12414,7 +12629,8 @@
       "name": "Collector Edwin",
       "route": "Route 210 - Caf\u00e9 Cabin",
       "zoneId": 374,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 200
     },
     {
       "team": [
@@ -12449,7 +12665,8 @@
       "name": "Waitress Kati",
       "route": "Route 210 - Caf\u00e9 Cabin",
       "zoneId": 374,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 278
     }
   ],
   "375": [
@@ -12538,7 +12755,8 @@
       "name": "Ace Trainer Ernest",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 53
     },
     {
       "team": [
@@ -12599,7 +12817,8 @@
       "name": "Ace Trainer Alyssa",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 54
     },
     {
       "team": [
@@ -12686,7 +12905,8 @@
       "name": "Veteran Brian",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 55
     },
     {
       "team": [
@@ -12721,7 +12941,8 @@
       "name": "Black Belt Adam",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 56
     },
     {
       "team": [
@@ -12834,7 +13055,8 @@
       "name": "Ninja Boy Joel",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 57
     },
     {
       "team": [
@@ -12895,7 +13117,8 @@
       "name": "Ninja Boy Nathan",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 58
     },
     {
       "team": [
@@ -12930,7 +13153,8 @@
       "name": "Ninja Boy Davey",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 59
     },
     {
       "team": [
@@ -12965,7 +13189,8 @@
       "name": "Dragon Tamer Patrick",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 60
     },
     {
       "team": [
@@ -13026,7 +13251,8 @@
       "name": "Bird Keeper Brianna",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 61
     },
     {
       "team": [
@@ -13061,7 +13287,8 @@
       "name": "Double Team Zac",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 62
     },
     {
       "team": [
@@ -13096,7 +13323,8 @@
       "name": "Double Team Jen",
       "route": "Route 210 (North)",
       "zoneId": 375,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 63
     }
   ],
   "394": [
@@ -13133,7 +13361,8 @@
       "name": "Black Belt Derek",
       "route": "Route 215",
       "zoneId": 394,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 98
     },
     {
       "team": [
@@ -13220,7 +13449,8 @@
       "name": "Black Belt Nathaniel",
       "route": "Route 215",
       "zoneId": 394,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 99
     },
     {
       "team": [
@@ -13255,7 +13485,8 @@
       "name": "Jogger Scott",
       "route": "Route 215",
       "zoneId": 394,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 100
     },
     {
       "team": [
@@ -13316,7 +13547,8 @@
       "name": "Ace Trainer Dennis",
       "route": "Route 215",
       "zoneId": 394,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 202
     },
     {
       "team": [
@@ -13377,7 +13609,8 @@
       "name": "Ace Trainer Maya",
       "route": "Route 215",
       "zoneId": 394,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 211
     },
     {
       "team": [
@@ -13438,7 +13671,8 @@
       "name": "Ruin Maniac Calvin",
       "route": "Route 215",
       "zoneId": 394,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 229
     },
     {
       "team": [
@@ -13525,7 +13759,8 @@
       "name": "Jogger Craig",
       "route": "Route 215",
       "zoneId": 394,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 232
     }
   ],
   "123": [
@@ -13614,7 +13849,8 @@
       "name": "Black Belt Colby",
       "route": "Veilstone - Gym",
       "zoneId": 124,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 234
     },
     {
       "team": [
@@ -13701,7 +13937,8 @@
       "name": "Black Belt Darren",
       "route": "Veilstone - Gym",
       "zoneId": 124,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 235
     },
     {
       "team": [
@@ -13736,7 +13973,8 @@
       "name": "Black Belt Rafael",
       "route": "Veilstone - Gym",
       "zoneId": 124,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 236
     },
     {
       "team": [
@@ -13797,7 +14035,8 @@
       "name": "Black Belt Jeffery",
       "route": "Veilstone - Gym",
       "zoneId": 124,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 237
     },
     {
       "team": [
@@ -13884,7 +14123,8 @@
       "name": "Gym Leader Maylene",
       "route": "Veilstone - Gym",
       "zoneId": 124,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 242
     },
     {
       "team": [
@@ -14049,7 +14289,8 @@
       "name": "Gym Leader Maylene",
       "route": "Veilstone - Gym",
       "zoneId": 124,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 679
     },
     {
       "team": [
@@ -14136,7 +14377,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Piplup",
       "route": "Veilstone City",
       "zoneId": 123,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 495
     },
     {
       "team": [
@@ -14223,7 +14465,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Turtwig",
       "route": "Veilstone City",
       "zoneId": 123,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 496
     },
     {
       "team": [
@@ -14310,7 +14553,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Chimchar",
       "route": "Veilstone City",
       "zoneId": 123,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 497
     },
     {
       "team": [
@@ -14397,7 +14641,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Piplup",
       "route": "Veilstone City",
       "zoneId": 123,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 498
     },
     {
       "team": [
@@ -14484,7 +14729,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Turtwig",
       "route": "Veilstone City",
       "zoneId": 123,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 499
     },
     {
       "team": [
@@ -14571,7 +14817,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Chimchar",
       "route": "Veilstone City",
       "zoneId": 123,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 500
     },
     {
       "team": [
@@ -14632,7 +14879,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Veilstone City",
       "zoneId": 123,
-      "trainerType": "Multi Battle Enemy"
+      "trainerType": "Multi Battle Enemy",
+      "trainer_id": 674
     },
     {
       "team": [
@@ -14693,7 +14941,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Veilstone City",
       "zoneId": 123,
-      "trainerType": "Multi Battle Enemy"
+      "trainerType": "Multi Battle Enemy",
+      "trainer_id": 675
     }
   ],
   "315": [
@@ -14730,7 +14979,8 @@
       "name": "Team Galactic Grunt 3",
       "route": "Team Galactic HQ - 1F",
       "zoneId": 315,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 330
     },
     {
       "team": [
@@ -14791,7 +15041,8 @@
       "name": "Scientist Fredrick",
       "route": "Team Galactic HQ - 1F",
       "zoneId": 315,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 656
     },
     {
       "team": [
@@ -14878,7 +15129,8 @@
       "name": "Commander Saturn",
       "route": "Team Galactic HQ - Lake Trio Room",
       "zoneId": 321,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 314
     }
   ],
   "316": [
@@ -14941,7 +15193,8 @@
       "name": "Team Galactic Grunt 4",
       "route": "Team Galactic HQ - 2F",
       "zoneId": 316,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 331
     },
     {
       "team": [
@@ -15028,7 +15281,8 @@
       "name": "Team Galactic Grunt 5",
       "route": "Team Galactic HQ - 2F",
       "zoneId": 316,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 384
     },
     {
       "team": [
@@ -15089,7 +15343,8 @@
       "name": "Team Galactic Grunt 6",
       "route": "Team Galactic HQ - 2F",
       "zoneId": 316,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 386
     },
     {
       "team": [
@@ -15124,7 +15379,8 @@
       "name": "Scientist Darrius",
       "route": "Team Galactic HQ - 2F",
       "zoneId": 316,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 655
     }
   ],
   "317": [
@@ -15161,7 +15417,8 @@
       "name": "Team Galactic Grunt 7",
       "route": "Team Galactic HQ - 3F",
       "zoneId": 317,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 383
     },
     {
       "team": [
@@ -15222,7 +15479,8 @@
       "name": "Team Galactic Grunt 8",
       "route": "Team Galactic HQ - 3F",
       "zoneId": 317,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 385
     },
     {
       "team": [
@@ -15283,7 +15541,8 @@
       "name": "Team Galactic Grunt 9",
       "route": "Team Galactic HQ - 3F",
       "zoneId": 317,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 387
     },
     {
       "team": [
@@ -15370,7 +15629,8 @@
       "name": "Team Galactic Grunt 10",
       "route": "Team Galactic HQ - 3F",
       "zoneId": 317,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 395
     }
   ],
   "318": [
@@ -15459,7 +15719,8 @@
       "name": "Team Galactic Boss Cyrus",
       "route": "Team Galactic HQ - 4F",
       "zoneId": 318,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 308
     }
   ],
   "320": [
@@ -15496,7 +15757,8 @@
       "name": "Team Galactic Grunt 11",
       "route": "Team Galactic HQ - B2F",
       "zoneId": 320,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 381
     },
     {
       "team": [
@@ -15557,7 +15819,8 @@
       "name": "Team Galactic Grunt 12",
       "route": "Team Galactic HQ - B2F",
       "zoneId": 320,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 382
     }
   ],
   "392": [
@@ -15646,7 +15909,8 @@
       "name": "Ruin Maniac Bryan",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 92
     },
     {
       "team": [
@@ -15681,7 +15945,8 @@
       "name": "Ruin Maniac Hunter",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 93
     },
     {
       "team": [
@@ -15742,7 +16007,8 @@
       "name": "Psychic Mitchell",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 94
     },
     {
       "team": [
@@ -15829,7 +16095,8 @@
       "name": "Psychic Abigail",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 95
     },
     {
       "team": [
@@ -15916,7 +16183,8 @@
       "name": "PI Carlos",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 96
     },
     {
       "team": [
@@ -16003,7 +16271,8 @@
       "name": "Collector Douglas",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 196
     },
     {
       "team": [
@@ -16090,7 +16359,8 @@
       "name": "Collector Brady",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 197
     },
     {
       "team": [
@@ -16177,7 +16447,8 @@
       "name": "Collector Jamal",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 292
     },
     {
       "team": [
@@ -16212,7 +16483,8 @@
       "name": "Beauty Devon",
       "route": "Route 214",
       "zoneId": 392,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 369
     }
   ],
   "347": [
@@ -16249,7 +16521,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Valor Lakefront",
       "zoneId": 347,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 673
     },
     {
       "team": [
@@ -16284,7 +16557,8 @@
       "name": "Aroma Lady Alison",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 410
     },
     {
       "team": [
@@ -16319,7 +16593,8 @@
       "name": "Aroma Lady Alison",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 410
     },
     {
       "team": [
@@ -16354,7 +16629,8 @@
       "name": "Artist Ismael",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 411
     },
     {
       "team": [
@@ -16389,7 +16665,8 @@
       "name": "Artist Ismael",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 411
     },
     {
       "team": [
@@ -16450,7 +16727,8 @@
       "name": "Pok\u00e9mon Breeder Kaylee",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 412
     },
     {
       "team": [
@@ -16511,7 +16789,8 @@
       "name": "Pok\u00e9mon Breeder Kaylee",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 412
     },
     {
       "team": [
@@ -16572,7 +16851,8 @@
       "name": "Cameraman Darryl",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 413
     },
     {
       "team": [
@@ -16633,7 +16913,8 @@
       "name": "Cameraman Darryl",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 413
     },
     {
       "team": [
@@ -16720,7 +17001,8 @@
       "name": "Collector Eugene",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 414
     },
     {
       "team": [
@@ -16807,7 +17089,8 @@
       "name": "Collector Eugene",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 414
     },
     {
       "team": [
@@ -16868,7 +17151,8 @@
       "name": "Pok\u00e9 Fan Meredith",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 415
     },
     {
       "team": [
@@ -16929,7 +17213,8 @@
       "name": "Pok\u00e9 Fan Meredith",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 415
     },
     {
       "team": [
@@ -16990,7 +17275,8 @@
       "name": "PI Kendrick",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 416
     },
     {
       "team": [
@@ -17051,7 +17337,8 @@
       "name": "PI Kendrick",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 416
     },
     {
       "team": [
@@ -17112,7 +17399,8 @@
       "name": "Gentleman Leonardo",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 417
     },
     {
       "team": [
@@ -17173,7 +17461,8 @@
       "name": "Gentleman Leonardo",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 417
     },
     {
       "team": [
@@ -17234,7 +17523,8 @@
       "name": "Madame Rebecca",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 418
     },
     {
       "team": [
@@ -17295,7 +17585,8 @@
       "name": "Madame Rebecca",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 418
     },
     {
       "team": [
@@ -17356,7 +17647,8 @@
       "name": "Lass Blythe",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 419
     },
     {
       "team": [
@@ -17417,7 +17709,8 @@
       "name": "Lass Blythe",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 419
     },
     {
       "team": [
@@ -17452,7 +17745,8 @@
       "name": "Rich Boy Roman",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 420
     },
     {
       "team": [
@@ -17487,7 +17781,8 @@
       "name": "Rich Boy Roman",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 420
     },
     {
       "team": [
@@ -17548,7 +17843,8 @@
       "name": "Lady Kylie",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 421
     },
     {
       "team": [
@@ -17609,7 +17905,8 @@
       "name": "Lady Kylie",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 421
     },
     {
       "team": [
@@ -17644,7 +17941,8 @@
       "name": "Reporter Valerie",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 422
     },
     {
       "team": [
@@ -17679,7 +17977,8 @@
       "name": "Reporter Valerie",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 422
     },
     {
       "team": [
@@ -17714,7 +18013,8 @@
       "name": "School Kid Esteban",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 423
     },
     {
       "team": [
@@ -17749,7 +18049,8 @@
       "name": "School Kid Esteban",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 423
     },
     {
       "team": [
@@ -17784,7 +18085,8 @@
       "name": "Scientist Emilio",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 424
     },
     {
       "team": [
@@ -17819,7 +18121,8 @@
       "name": "Scientist Emilio",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 424
     },
     {
       "team": [
@@ -17854,7 +18157,8 @@
       "name": "Beauty Gabriella",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 425
     },
     {
       "team": [
@@ -17889,7 +18193,8 @@
       "name": "Beauty Gabriella",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 425
     },
     {
       "team": [
@@ -17924,7 +18229,8 @@
       "name": "Beauty Harley",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 426
     },
     {
       "team": [
@@ -17959,7 +18265,8 @@
       "name": "Beauty Harley",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 426
     },
     {
       "team": [
@@ -18020,7 +18327,8 @@
       "name": "Veteran Emanuel",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 427
     },
     {
       "team": [
@@ -18081,7 +18389,8 @@
       "name": "Veteran Emanuel",
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 427
     }
   ],
   "385": [
@@ -18170,7 +18479,8 @@
       "name": "Swimmer Shelton",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 84
     },
     {
       "team": [
@@ -18231,7 +18541,8 @@
       "name": "Swimmer Evan",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 85
     },
     {
       "team": [
@@ -18292,7 +18603,8 @@
       "name": "Swimmer Haley",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 86
     },
     {
       "team": [
@@ -18353,7 +18665,8 @@
       "name": "Swimmer Mary",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 87
     },
     {
       "team": [
@@ -18440,7 +18753,8 @@
       "name": "Tuber Jared",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 88
     },
     {
       "team": [
@@ -18475,7 +18789,8 @@
       "name": "Tuber Chelsea",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 89
     },
     {
       "team": [
@@ -18536,7 +18851,8 @@
       "name": "Sailor Paul",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 90
     },
     {
       "team": [
@@ -18623,7 +18939,8 @@
       "name": "Fisher Kenneth",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 91
     },
     {
       "team": [
@@ -18658,7 +18975,8 @@
       "name": "Beauty Cyndy",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 268
     },
     {
       "team": [
@@ -18823,7 +19141,8 @@
       "name": "GAME FREAK\u2019s Morimoto",
       "route": "Route 213",
       "zoneId": 385,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 706
     }
   ],
   "110": [
@@ -18938,7 +19257,8 @@
       "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Pastoria City",
       "zoneId": 110,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 354
     },
     {
       "team": [
@@ -19051,7 +19371,8 @@
       "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Pastoria City",
       "zoneId": 110,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 355
     },
     {
       "team": [
@@ -19164,7 +19485,8 @@
       "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Pastoria City",
       "zoneId": 110,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 356
     },
     {
       "team": [
@@ -19251,7 +19573,8 @@
       "name": "Fisher Erick",
       "route": "Pastoria - Gym",
       "zoneId": 112,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 217
     },
     {
       "team": [
@@ -19338,7 +19661,8 @@
       "name": "Gym Leader Wake",
       "route": "Pastoria - Gym",
       "zoneId": 112,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 241
     },
     {
       "team": [
@@ -19399,7 +19723,8 @@
       "name": "Sailor Damian",
       "route": "Pastoria - Gym",
       "zoneId": 112,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 261
     },
     {
       "team": [
@@ -19434,7 +19759,8 @@
       "name": "Fisher Walter",
       "route": "Pastoria - Gym",
       "zoneId": 112,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 307
     },
     {
       "team": [
@@ -19521,7 +19847,8 @@
       "name": "Commander Saturn",
       "route": "Pastoria - Gym",
       "zoneId": 112,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 314
     },
     {
       "team": [
@@ -19608,7 +19935,8 @@
       "name": "Sailor Samson",
       "route": "Pastoria - Gym",
       "zoneId": 112,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 364
     },
     {
       "team": [
@@ -19643,7 +19971,8 @@
       "name": "Tuber Jacky",
       "route": "Pastoria - Gym",
       "zoneId": 112,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 373
     },
     {
       "team": [
@@ -19704,7 +20033,8 @@
       "name": "Tuber Caitlyn",
       "route": "Pastoria - Gym",
       "zoneId": 112,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 374
     }
   ],
   "456": [
@@ -19767,7 +20097,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Celestic Town",
       "zoneId": 456,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 319
     }
   ],
   "403": [
@@ -19830,7 +20161,8 @@
       "name": "Tuber Trenton",
       "route": "Route 219",
       "zoneId": 403,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 273
     },
     {
       "team": [
@@ -19891,7 +20223,8 @@
       "name": "Tuber Mariel",
       "route": "Route 219",
       "zoneId": 403,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 275
     }
   ],
   "485": [
@@ -19980,7 +20313,8 @@
       "name": "Swimmer Adrian",
       "route": "Route 220",
       "zoneId": 485,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 120
     },
     {
       "team": [
@@ -20015,7 +20349,8 @@
       "name": "Swimmer Erik",
       "route": "Route 220",
       "zoneId": 485,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 121
     },
     {
       "team": [
@@ -20076,7 +20411,8 @@
       "name": "Swimmer Vincent",
       "route": "Route 220",
       "zoneId": 485,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 122
     },
     {
       "team": [
@@ -20189,7 +20525,8 @@
       "name": "Swimmer Jessica",
       "route": "Route 220",
       "zoneId": 485,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 123
     },
     {
       "team": [
@@ -20250,7 +20587,8 @@
       "name": "Swimmer Erica",
       "route": "Route 220",
       "zoneId": 485,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 124
     },
     {
       "team": [
@@ -20337,7 +20675,8 @@
       "name": "Swimmer Katelyn",
       "route": "Route 220",
       "zoneId": 485,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 125
     },
     {
       "team": [
@@ -20372,7 +20711,8 @@
       "name": "Swimmer Claire",
       "route": "Route 220",
       "zoneId": 485,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 371
     }
   ],
   "404": [
@@ -20435,7 +20775,8 @@
       "name": "Swimmer Dillon",
       "route": "Route 221",
       "zoneId": 404,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 126
     },
     {
       "team": [
@@ -20470,7 +20811,8 @@
       "name": "Swimmer Vanessa",
       "route": "Route 221",
       "zoneId": 404,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 127
     },
     {
       "team": [
@@ -20557,7 +20899,8 @@
       "name": "Fisher Cory",
       "route": "Route 221",
       "zoneId": 404,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 128
     },
     {
       "team": [
@@ -20618,7 +20961,8 @@
       "name": "Ace Trainer Jake",
       "route": "Route 221",
       "zoneId": 404,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 129
     },
     {
       "team": [
@@ -20705,7 +21049,8 @@
       "name": "Ace Trainer Shannon",
       "route": "Route 221",
       "zoneId": 404,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 130
     },
     {
       "team": [
@@ -20792,7 +21137,8 @@
       "name": "Collector Ivan",
       "route": "Route 221",
       "zoneId": 404,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 198
     }
   ],
   "400": [
@@ -20855,7 +21201,8 @@
       "name": "Fisher Miguel",
       "route": "Route 218",
       "zoneId": 400,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 118
     },
     {
       "team": [
@@ -20994,7 +21341,8 @@
       "name": "Fisher Luc",
       "route": "Route 218",
       "zoneId": 400,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 119
     },
     {
       "team": [
@@ -21029,7 +21377,8 @@
       "name": "Guitarist Tony",
       "route": "Route 218",
       "zoneId": 400,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 225
     },
     {
       "team": [
@@ -21090,7 +21439,8 @@
       "name": "Sailor Skyler",
       "route": "Route 218",
       "zoneId": 400,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 260
     }
   ],
   "202": [
@@ -21153,7 +21503,8 @@
       "name": "Worker Dillan",
       "route": "Fuego Ironworks (Inside)",
       "zoneId": 202,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 670
     },
     {
       "team": [
@@ -21188,7 +21539,8 @@
       "name": "Worker Holden",
       "route": "Fuego Ironworks (Inside)",
       "zoneId": 202,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 671
     },
     {
       "team": [
@@ -21223,7 +21575,8 @@
       "name": "Worker Conrad",
       "route": "Fuego Ironworks (Inside)",
       "zoneId": 202,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 672
     }
   ],
   "24": [
@@ -21364,7 +21717,8 @@
       "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Canalave City",
       "zoneId": 24,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 357
     },
     {
       "team": [
@@ -21503,7 +21857,8 @@
       "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Canalave City",
       "zoneId": 24,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 358
     },
     {
       "team": [
@@ -21642,7 +21997,8 @@
       "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Canalave City",
       "zoneId": 24,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 359
     },
     {
       "team": [
@@ -21703,7 +22059,8 @@
       "name": "Black Belt David",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 164
     },
     {
       "team": [
@@ -21790,7 +22147,8 @@
       "name": "Gym Leader Byron",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 179
     },
     {
       "team": [
@@ -21877,7 +22235,8 @@
       "name": "Worker Jackson",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 180
     },
     {
       "team": [
@@ -21912,7 +22271,8 @@
       "name": "Worker Gary",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 181
     },
     {
       "team": [
@@ -21973,7 +22333,8 @@
       "name": "Ace Trainer Cesar",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 203
     },
     {
       "team": [
@@ -22008,7 +22369,8 @@
       "name": "Ace Trainer Breanna",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 207
     },
     {
       "team": [
@@ -22043,7 +22405,8 @@
       "name": "Black Belt Ricky",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 239
     },
     {
       "team": [
@@ -22104,7 +22467,8 @@
       "name": "Worker Gerardo",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 279
     },
     {
       "team": [
@@ -22269,7 +22633,8 @@
       "name": "Gym Leader Byron",
       "route": "Canalave - Gym",
       "zoneId": 26,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 682
     }
   ],
   "300": [
@@ -22332,7 +22697,8 @@
       "name": "Camper Lawrence",
       "route": "Iron Island - B1F Left",
       "zoneId": 300,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 288
     }
   ],
   "301": [
@@ -22395,7 +22761,8 @@
       "name": "Picnicker Summer",
       "route": "Iron Island - B1F Right",
       "zoneId": 301,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 346
     }
   ],
   "303": [
@@ -22432,7 +22799,8 @@
       "name": "Battle Girl Tylor",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 285
     },
     {
       "team": [
@@ -22519,7 +22887,8 @@
       "name": "Ace Trainer Jonah",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 295
     },
     {
       "team": [
@@ -22580,7 +22949,8 @@
       "name": "Ace Trainer Brenda",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 298
     },
     {
       "team": [
@@ -22615,7 +22985,8 @@
       "name": "Black Belt Kendal",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 336
     },
     {
       "team": [
@@ -22702,7 +23073,8 @@
       "name": "Hiker Damon",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 341
     },
     {
       "team": [
@@ -22763,7 +23135,8 @@
       "name": "Hiker Maurice",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 342
     },
     {
       "team": [
@@ -22824,7 +23197,8 @@
       "name": "Worker Brendon",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 379
     },
     {
       "team": [
@@ -22911,7 +23285,8 @@
       "name": "Worker Quentin",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 380
     },
     {
       "team": [
@@ -22998,7 +23373,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 661
     },
     {
       "team": [
@@ -23085,7 +23461,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Iron Island - B2F Left (Riley's Room)",
       "zoneId": 303,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 662
     }
   ],
   "302": [
@@ -23148,7 +23525,8 @@
       "name": "Worker Willy",
       "route": "Iron Island - B2F Right",
       "zoneId": 302,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 377
     },
     {
       "team": [
@@ -23183,7 +23561,8 @@
       "name": "Worker Braden",
       "route": "Iron Island - B2F Right",
       "zoneId": 302,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 378
     }
   ],
   "326": [
@@ -23246,7 +23625,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Lake Valor (Before)",
       "zoneId": 326,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 320
     },
     {
       "team": [
@@ -23333,7 +23713,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Lake Valor (Before)",
       "zoneId": 326,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 321
     },
     {
       "team": [
@@ -23394,7 +23775,8 @@
       "name": "Team Galactic Grunt 3",
       "route": "Lake Valor (Before)",
       "zoneId": 326,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 327
     }
   ],
   "328": [
@@ -23483,7 +23865,8 @@
       "name": "Commander Saturn",
       "route": "Valor Cavern",
       "zoneId": 328,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 313
     }
   ],
   "323": [
@@ -23572,7 +23955,8 @@
       "name": "Commander Mars",
       "route": "Lake Verity (After)",
       "zoneId": 324,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 310
     },
     {
       "team": [
@@ -23659,7 +24043,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Lake Verity (After)",
       "zoneId": 324,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 322
     },
     {
       "team": [
@@ -23720,7 +24105,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Lake Verity (After)",
       "zoneId": 324,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 323
     },
     {
       "team": [
@@ -23807,7 +24193,8 @@
       "name": "Team Galactic Grunt 3",
       "route": "Lake Verity (After)",
       "zoneId": 324,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 328
     },
     {
       "team": [
@@ -23868,7 +24255,8 @@
       "name": "Team Galactic Grunt 4",
       "route": "Lake Verity (After)",
       "zoneId": 324,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 329
     }
   ],
   "397": [
@@ -23957,7 +24345,8 @@
       "name": "Ace Trainer Dalton",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 109
     },
     {
       "team": [
@@ -24018,7 +24407,8 @@
       "name": "Ace Trainer Olivia",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 110
     },
     {
       "team": [
@@ -24131,7 +24521,8 @@
       "name": "Skier Shawn",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 111
     },
     {
       "team": [
@@ -24192,7 +24583,8 @@
       "name": "Skier Bjorn",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 112
     },
     {
       "team": [
@@ -24253,7 +24645,8 @@
       "name": "Skier Lexie",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 113
     },
     {
       "team": [
@@ -24288,7 +24681,8 @@
       "name": "Skier Madison",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 114
     },
     {
       "team": [
@@ -24401,7 +24795,8 @@
       "name": "Ninja Boy Antonio",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 115
     },
     {
       "team": [
@@ -24462,7 +24857,8 @@
       "name": "Ninja Boy Ethan",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 116
     },
     {
       "team": [
@@ -24549,7 +24945,8 @@
       "name": "Black Belt Luke",
       "route": "Route 217",
       "zoneId": 397,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 117
     }
   ],
   "159": [
@@ -24612,7 +25009,8 @@
       "name": "Ace Trainer Sergio",
       "route": "Snowpoint - Gym",
       "zoneId": 161,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 192
     },
     {
       "team": [
@@ -24647,7 +25045,8 @@
       "name": "Ace Trainer Isaiah",
       "route": "Snowpoint - Gym",
       "zoneId": 161,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 193
     },
     {
       "team": [
@@ -24734,7 +25133,8 @@
       "name": "Ace Trainer Savannah",
       "route": "Snowpoint - Gym",
       "zoneId": 161,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 194
     },
     {
       "team": [
@@ -24795,7 +25195,8 @@
       "name": "Ace Trainer Alicia",
       "route": "Snowpoint - Gym",
       "zoneId": 161,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 195
     },
     {
       "team": [
@@ -24908,7 +25309,8 @@
       "name": "Gym Leader Candice",
       "route": "Snowpoint - Gym",
       "zoneId": 161,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 244
     },
     {
       "team": [
@@ -24943,7 +25345,8 @@
       "name": "Ace Trainer Anton",
       "route": "Snowpoint - Gym",
       "zoneId": 161,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 653
     },
     {
       "team": [
@@ -24978,7 +25381,8 @@
       "name": "Ace Trainer Brenna",
       "route": "Snowpoint - Gym",
       "zoneId": 161,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 654
     },
     {
       "team": [
@@ -25143,7 +25547,8 @@
       "name": "Gym Leader Candice",
       "route": "Snowpoint - Gym",
       "zoneId": 161,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 681
     }
   ],
   "216": [
@@ -25258,7 +25663,8 @@
       "name": "Team Galactic Boss Cyrus",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 309
     },
     {
       "team": [
@@ -25345,7 +25751,8 @@
       "name": "Commander Jupiter",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Multi Battle Enemy"
+      "trainerType": "Multi Battle Enemy",
+      "trainer_id": 312
     },
     {
       "team": [
@@ -25406,7 +25813,8 @@
       "name": "Team Galactic Grunt 1",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 394
     },
     {
       "team": [
@@ -25467,7 +25875,8 @@
       "name": "Team Galactic Grunt 2",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Double Battle"
+      "trainerType": "Double Battle",
+      "trainer_id": 400
     },
     {
       "team": [
@@ -25554,7 +25963,8 @@
       "name": "Commander Mars",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Multi Battle Enemy"
+      "trainerType": "Multi Battle Enemy",
+      "trainer_id": 401
     },
     {
       "team": [
@@ -25719,7 +26129,8 @@
       "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 481
     },
     {
       "team": [
@@ -25884,7 +26295,8 @@
       "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 493
     },
     {
       "team": [
@@ -26049,7 +26461,8 @@
       "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Multi Battle Partner"
+      "trainerType": "Multi Battle Partner",
+      "trainer_id": 494
     }
   ],
   "407": [
@@ -26138,7 +26551,8 @@
       "name": "Fisher Brett",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 131
     },
     {
       "team": [
@@ -26199,7 +26613,8 @@
       "name": "Fisher Alec",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 132
     },
     {
       "team": [
@@ -26312,7 +26727,8 @@
       "name": "Fisher George",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 133
     },
     {
       "team": [
@@ -26399,7 +26815,8 @@
       "name": "Fisher Cole",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 134
     },
     {
       "team": [
@@ -26486,7 +26903,8 @@
       "name": "Sailor Luther",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 135
     },
     {
       "team": [
@@ -26547,7 +26965,8 @@
       "name": "Police Officer Thomas",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 257
     },
     {
       "team": [
@@ -26582,7 +27001,8 @@
       "name": "Rich Boy Trey",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 258
     },
     {
       "team": [
@@ -26617,7 +27037,8 @@
       "name": "Sailor Marc",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 259
     },
     {
       "team": [
@@ -26652,7 +27073,8 @@
       "name": "Tuber Conner",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 274
     },
     {
       "team": [
@@ -26687,7 +27109,8 @@
       "name": "Tuber Holly",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 276
     },
     {
       "team": [
@@ -26722,7 +27145,8 @@
       "name": "Beauty Nicola",
       "route": "Route 222",
       "zoneId": 407,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 370
     },
     {
       "team": [
@@ -26783,7 +27207,8 @@
       "name": "Pok\u00e9 Kid Janet",
       "route": "Route 222 - House 1 (Left)",
       "zoneId": 408,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 658
     }
   ],
   "142": [
@@ -26820,7 +27245,8 @@
       "name": "School Kid Tiera",
       "route": "Sunyshore - Gym Room 1",
       "zoneId": 144,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 266
     },
     {
       "team": [
@@ -26855,7 +27281,8 @@
       "name": "Guitarist Jerry",
       "route": "Sunyshore - Gym Room 2",
       "zoneId": 145,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 226
     },
     {
       "team": [
@@ -26968,7 +27395,8 @@
       "name": "Pok\u00e9 Kid Meghan",
       "route": "Sunyshore - Gym Room 2",
       "zoneId": 145,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 255
     },
     {
       "team": [
@@ -27003,7 +27431,8 @@
       "name": "School Kid Forrest",
       "route": "Sunyshore - Gym Room 2",
       "zoneId": 145,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 263
     },
     {
       "team": [
@@ -27064,7 +27493,8 @@
       "name": "Ace Trainer Zachery",
       "route": "Sunyshore - Gym Room 3",
       "zoneId": 146,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 205
     },
     {
       "team": [
@@ -27125,7 +27555,8 @@
       "name": "Ace Trainer Destiny",
       "route": "Sunyshore - Gym Room 3",
       "zoneId": 146,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 209
     },
     {
       "team": [
@@ -27186,7 +27617,8 @@
       "name": "Guitarist Preston",
       "route": "Sunyshore - Gym Room 3",
       "zoneId": 146,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 227
     },
     {
       "team": [
@@ -27221,7 +27653,8 @@
       "name": "Guitarist Lonnie",
       "route": "Sunyshore - Gym Room 3",
       "zoneId": 146,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 228
     },
     {
       "team": [
@@ -27334,7 +27767,8 @@
       "name": "Gym Leader Volkner",
       "route": "Sunyshore - Gym Room 3",
       "zoneId": 146,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 245
     },
     {
       "team": [
@@ -27499,7 +27933,8 @@
       "name": "Gym Leader Volkner",
       "route": "Sunyshore - Gym Room 3",
       "zoneId": 146,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 683
     }
   ],
   "486": [
@@ -27562,7 +27997,8 @@
       "name": "Swimmer Wesley",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 136
     },
     {
       "team": [
@@ -27597,7 +28033,8 @@
       "name": "Swimmer Ricardo",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 137
     },
     {
       "team": [
@@ -27658,7 +28095,8 @@
       "name": "Swimmer Francisco",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 138
     },
     {
       "team": [
@@ -27745,7 +28183,8 @@
       "name": "Swimmer Colton",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 139
     },
     {
       "team": [
@@ -27780,7 +28219,8 @@
       "name": "Swimmer Troy",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 140
     },
     {
       "team": [
@@ -27867,7 +28307,8 @@
       "name": "Swimmer Oscar",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 141
     },
     {
       "team": [
@@ -27902,7 +28343,8 @@
       "name": "Swimmer Miranda",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 142
     },
     {
       "team": [
@@ -27963,7 +28405,8 @@
       "name": "Swimmer Aubree",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 143
     },
     {
       "team": [
@@ -28050,7 +28493,8 @@
       "name": "Swimmer Paige",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 144
     },
     {
       "team": [
@@ -28111,7 +28555,8 @@
       "name": "Swimmer Crystal",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 145
     },
     {
       "team": [
@@ -28172,7 +28617,8 @@
       "name": "Swimmer Cassandra",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 146
     },
     {
       "team": [
@@ -28207,7 +28653,8 @@
       "name": "Swimmer Gabrielle",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 147
     },
     {
       "team": [
@@ -28294,7 +28741,8 @@
       "name": "Sailor Zachariah",
       "route": "Route 223",
       "zoneId": 486,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 363
     }
   ],
   "244": [
@@ -28357,7 +28805,8 @@
       "name": "Ace Trainer Mariah",
       "route": "Victory Road - 1F",
       "zoneId": 244,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 158
     },
     {
       "team": [
@@ -28444,7 +28893,8 @@
       "name": "Veteran Edgar",
       "route": "Victory Road - 1F",
       "zoneId": 244,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 160
     },
     {
       "team": [
@@ -28531,7 +28981,8 @@
       "name": "Dragon Tamer Clinton",
       "route": "Victory Road - 1F",
       "zoneId": 244,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 163
     },
     {
       "team": [
@@ -28592,7 +29043,8 @@
       "name": "Bird Keeper Hana",
       "route": "Victory Road - 1F",
       "zoneId": 244,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 165
     },
     {
       "team": [
@@ -28679,7 +29131,8 @@
       "name": "Psychic Bryce",
       "route": "Victory Road - 1F",
       "zoneId": 244,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 166
     },
     {
       "team": [
@@ -28714,7 +29167,8 @@
       "name": "Black Belt Miles",
       "route": "Victory Road - 1F",
       "zoneId": 244,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 335
     }
   ],
   "245": [
@@ -28803,7 +29257,8 @@
       "name": "Ace Trainer Omar",
       "route": "Victory Road - 2F",
       "zoneId": 245,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 156
     },
     {
       "team": [
@@ -28864,7 +29319,8 @@
       "name": "Ace Trainer Sydney",
       "route": "Victory Road - 2F",
       "zoneId": 245,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 159
     },
     {
       "team": [
@@ -28925,7 +29381,8 @@
       "name": "Veteran Clayton",
       "route": "Victory Road - 2F",
       "zoneId": 245,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 161
     },
     {
       "team": [
@@ -28960,7 +29417,8 @@
       "name": "Double Team Al",
       "route": "Victory Road - 2F",
       "zoneId": 245,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 170
     },
     {
       "team": [
@@ -28995,7 +29453,8 @@
       "name": "Double Team Kay",
       "route": "Victory Road - 2F",
       "zoneId": 245,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 171
     }
   ],
   "246": [
@@ -29032,7 +29491,8 @@
       "name": "Ace Trainer Henry",
       "route": "Victory Road - B1F",
       "zoneId": 246,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 157
     },
     {
       "team": [
@@ -29067,7 +29527,8 @@
       "name": "Dragon Tamer Andre",
       "route": "Victory Road - B1F",
       "zoneId": 246,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 162
     },
     {
       "team": [
@@ -29128,7 +29589,8 @@
       "name": "Psychic Valencia",
       "route": "Victory Road - B1F",
       "zoneId": 246,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 167
     },
     {
       "team": [
@@ -29163,7 +29625,8 @@
       "name": "Double Team Jo",
       "route": "Victory Road - B1F",
       "zoneId": 246,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 168
     },
     {
       "team": [
@@ -29198,7 +29661,8 @@
       "name": "Double Team Pat",
       "route": "Victory Road - B1F",
       "zoneId": 246,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 169
     }
   ],
   "247": [
@@ -29261,7 +29725,8 @@
       "name": "Bird Keeper Autumn",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 286
     },
     {
       "team": [
@@ -29322,7 +29787,8 @@
       "name": "Dragon Tamer Joe",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 294
     },
     {
       "team": [
@@ -29409,7 +29875,8 @@
       "name": "Ace Trainer Micah",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 296
     },
     {
       "team": [
@@ -29470,7 +29937,8 @@
       "name": "Ace Trainer Arthur",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 297
     },
     {
       "team": [
@@ -29557,7 +30025,8 @@
       "name": "Ace Trainer Brandi",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 299
     },
     {
       "team": [
@@ -29644,7 +30113,8 @@
       "name": "Ace Trainer Clarice",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 300
     },
     {
       "team": [
@@ -29679,7 +30149,8 @@
       "name": "Psychic Landon",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 302
     },
     {
       "team": [
@@ -29714,7 +30185,8 @@
       "name": "Psychic Deandre",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 303
     },
     {
       "team": [
@@ -29775,7 +30247,8 @@
       "name": "Psychic Desiree",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 305
     },
     {
       "team": [
@@ -29836,7 +30309,8 @@
       "name": "Psychic Kendra",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 306
     },
     {
       "team": [
@@ -29897,7 +30371,8 @@
       "name": "Black Belt Eddie",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 337
     },
     {
       "team": [
@@ -29958,7 +30433,8 @@
       "name": "Black Belt Willie",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 338
     },
     {
       "team": [
@@ -30045,7 +30521,8 @@
       "name": "Veteran Terrell",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 375
     },
     {
       "team": [
@@ -30132,7 +30609,8 @@
       "name": "Veteran Brenden",
       "route": "Victory Road - 1F Back (Marley)",
       "zoneId": 247,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 376
     }
   ],
   "167": [
@@ -30273,7 +30751,8 @@
       "name": "Elite Four Aaron",
       "route": "Pokemon League",
       "zoneId": 173,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 185
     },
     {
       "team": [
@@ -30412,7 +30891,8 @@
       "name": "Elite Four Bertha",
       "route": "Pokemon League",
       "zoneId": 175,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 186
     },
     {
       "team": [
@@ -30551,7 +31031,8 @@
       "name": "Elite Four Flint",
       "route": "Pokemon League",
       "zoneId": 177,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 187
     },
     {
       "team": [
@@ -30690,7 +31171,8 @@
       "name": "Elite Four Lucian",
       "route": "Pokemon League",
       "zoneId": 179,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 188
     },
     {
       "team": [
@@ -30855,7 +31337,8 @@
       "name": "Champion Cynthia",
       "route": "Pokemon League",
       "zoneId": 181,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 191
     },
     {
       "team": [
@@ -31020,7 +31503,8 @@
       "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Pokemon League",
       "zoneId": 171,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 360
     },
     {
       "team": [
@@ -31185,7 +31669,8 @@
       "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Pokemon League",
       "zoneId": 171,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 361
     },
     {
       "team": [
@@ -31350,7 +31835,8 @@
       "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Pokemon League",
       "zoneId": 171,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 362
     },
     {
       "team": [
@@ -31489,7 +31975,8 @@
       "name": "Elite Four Aaron",
       "route": "Pokemon League",
       "zoneId": 173,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 696
     },
     {
       "team": [
@@ -31628,7 +32115,8 @@
       "name": "Elite Four Bertha",
       "route": "Pokemon League",
       "zoneId": 175,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 697
     },
     {
       "team": [
@@ -31767,7 +32255,8 @@
       "name": "Elite Four Flint",
       "route": "Pokemon League",
       "zoneId": 177,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 698
     },
     {
       "team": [
@@ -31906,7 +32395,8 @@
       "name": "Elite Four Lucian",
       "route": "Pokemon League",
       "zoneId": 179,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 699
     },
     {
       "team": [
@@ -32071,7 +32561,8 @@
       "name": "Champion Cynthia",
       "route": "Pokemon League",
       "zoneId": 181,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 700
     },
     {
       "team": [
@@ -32236,7 +32727,8 @@
       "name": "Elite Four Aaron",
       "route": "Pokemon League",
       "zoneId": 173,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 701
     },
     {
       "team": [
@@ -32401,7 +32893,8 @@
       "name": "Elite Four Bertha",
       "route": "Pokemon League",
       "zoneId": 175,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 702
     },
     {
       "team": [
@@ -32566,7 +33059,8 @@
       "name": "Elite Four Flint",
       "route": "Pokemon League",
       "zoneId": 177,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 703
     },
     {
       "team": [
@@ -32731,7 +33225,8 @@
       "name": "Elite Four Lucian",
       "route": "Pokemon League",
       "zoneId": 179,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 704
     },
     {
       "team": [
@@ -32896,7 +33391,8 @@
       "name": "Champion Cynthia",
       "route": "Pokemon League",
       "zoneId": 181,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 705
     }
   ],
   "186": [
@@ -33063,7 +33559,8 @@
       "name": "Pok\u00e9mon Trainer Barry Piplup",
       "route": "Fight Area",
       "zoneId": 186,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 663
     },
     {
       "team": [
@@ -33228,7 +33725,8 @@
       "name": "Pok\u00e9mon Trainer Barry Turtwig",
       "route": "Fight Area",
       "zoneId": 186,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 664
     },
     {
       "team": [
@@ -33393,7 +33891,8 @@
       "name": "Pok\u00e9mon Trainer Barry Chimchar",
       "route": "Fight Area",
       "zoneId": 186,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 665
     },
     {
       "team": [
@@ -33558,7 +34057,8 @@
       "name": "Pok\u00e9mon Trainer Barry End Game Piplup",
       "route": "Fight Area",
       "zoneId": 186,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 666
     },
     {
       "team": [
@@ -33723,7 +34223,8 @@
       "name": "Pok\u00e9mon Trainer Barry End Game Turtwig",
       "route": "Fight Area",
       "zoneId": 186,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 667
     },
     {
       "team": [
@@ -33888,7 +34389,8 @@
       "name": "Pok\u00e9mon Trainer Barry End Game Chimchar",
       "route": "Fight Area",
       "zoneId": 186,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 668
     }
   ],
   "411": [
@@ -33951,7 +34453,8 @@
       "name": "Dragon Tamer Hayden",
       "route": "Route 224",
       "zoneId": 411,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 201
     },
     {
       "team": [
@@ -34012,7 +34515,8 @@
       "name": "Ace Trainer Ruben",
       "route": "Route 224",
       "zoneId": 411,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 206
     },
     {
       "team": [
@@ -34047,7 +34551,8 @@
       "name": "Ace Trainer Jamie",
       "route": "Route 224",
       "zoneId": 411,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 210
     },
     {
       "team": [
@@ -34108,7 +34613,8 @@
       "name": "Psychic Maxwell",
       "route": "Route 224",
       "zoneId": 411,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 212
     },
     {
       "team": [
@@ -34169,7 +34675,8 @@
       "name": "Psychic Brittney",
       "route": "Route 224",
       "zoneId": 411,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 213
     },
     {
       "team": [
@@ -34204,7 +34711,8 @@
       "name": "Ruin Maniac Larry",
       "route": "Route 224",
       "zoneId": 411,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 230
     },
     {
       "team": [
@@ -34265,7 +34773,8 @@
       "name": "Black Belt Carl",
       "route": "Route 224",
       "zoneId": 411,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 238
     },
     {
       "team": [
@@ -34352,7 +34861,8 @@
       "name": "Veteran Armando",
       "route": "Route 224",
       "zoneId": 411,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 277
     }
   ],
   "412": [
@@ -34415,7 +34925,8 @@
       "name": "Bird Keeper Audrey",
       "route": "Route 225",
       "zoneId": 412,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 429
     },
     {
       "team": [
@@ -34476,7 +34987,8 @@
       "name": "Dragon Tamer Geoffrey",
       "route": "Route 225",
       "zoneId": 412,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 432
     },
     {
       "team": [
@@ -34537,7 +35049,8 @@
       "name": "Ace Trainer Rodolfo",
       "route": "Route 225",
       "zoneId": 412,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 438
     },
     {
       "team": [
@@ -34598,7 +35111,8 @@
       "name": "Ace Trainer Quinn",
       "route": "Route 225",
       "zoneId": 412,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 442
     },
     {
       "team": [
@@ -34659,7 +35173,8 @@
       "name": "Ace Trainer Deanna",
       "route": "Route 225",
       "zoneId": 412,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 448
     },
     {
       "team": [
@@ -34720,7 +35235,8 @@
       "name": "Psychic Daisy",
       "route": "Route 225",
       "zoneId": 412,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 460
     },
     {
       "team": [
@@ -34755,7 +35271,8 @@
       "name": "Pok\u00e9mon Ranger Dwayne",
       "route": "Route 225",
       "zoneId": 412,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 468
     },
     {
       "team": [
@@ -34816,7 +35333,8 @@
       "name": "Pok\u00e9mon Ranger Ashlee",
       "route": "Route 225",
       "zoneId": 412,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 469
     }
   ],
   "487": [
@@ -34879,7 +35397,8 @@
       "name": "Bird Keeper Geneva",
       "route": "Route 226",
       "zoneId": 487,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 430
     },
     {
       "team": [
@@ -34940,7 +35459,8 @@
       "name": "Dragon Tamer Stanley",
       "route": "Route 226",
       "zoneId": 487,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 435
     },
     {
       "team": [
@@ -34975,7 +35495,8 @@
       "name": "Ace Trainer Graham",
       "route": "Route 226",
       "zoneId": 487,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 443
     },
     {
       "team": [
@@ -35062,7 +35583,8 @@
       "name": "Swimmer Wade",
       "route": "Route 226",
       "zoneId": 487,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 475
     },
     {
       "team": [
@@ -35149,7 +35671,8 @@
       "name": "Swimmer Lydia",
       "route": "Route 226",
       "zoneId": 487,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 479
     }
   ],
   "414": [
@@ -35186,7 +35709,8 @@
       "name": "Ace Trainer Saul",
       "route": "Route 227",
       "zoneId": 414,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 439
     },
     {
       "team": [
@@ -35273,7 +35797,8 @@
       "name": "Ace Trainer Mikayla",
       "route": "Route 227",
       "zoneId": 414,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 451
     },
     {
       "team": [
@@ -35334,7 +35859,8 @@
       "name": "Black Belt Griffin",
       "route": "Route 227",
       "zoneId": 414,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 463
     },
     {
       "team": [
@@ -35395,7 +35921,8 @@
       "name": "Pok\u00e9mon Ranger Felicia",
       "route": "Route 227",
       "zoneId": 414,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 470
     }
   ],
   "416": [
@@ -35432,7 +35959,8 @@
       "name": "Dragon Tamer Keegan",
       "route": "Route 228",
       "zoneId": 416,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 434
     },
     {
       "team": [
@@ -35493,7 +36021,8 @@
       "name": "Ace Trainer Jose",
       "route": "Route 228",
       "zoneId": 416,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 440
     },
     {
       "team": [
@@ -35580,7 +36109,8 @@
       "name": "Ace Trainer Ariana",
       "route": "Route 228",
       "zoneId": 416,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 449
     },
     {
       "team": [
@@ -35641,7 +36171,8 @@
       "name": "Ace Trainer Meagan",
       "route": "Route 228",
       "zoneId": 416,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 452
     },
     {
       "team": [
@@ -35702,7 +36233,8 @@
       "name": "Psychic Corbin",
       "route": "Route 228",
       "zoneId": 416,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 458
     },
     {
       "team": [
@@ -35789,7 +36321,8 @@
       "name": "Black Belt Davon",
       "route": "Route 228",
       "zoneId": 416,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 462
     },
     {
       "team": [
@@ -35850,7 +36383,8 @@
       "name": "Pok\u00e9mon Ranger Kyler",
       "route": "Route 228",
       "zoneId": 416,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 466
     },
     {
       "team": [
@@ -35911,7 +36445,8 @@
       "name": "Pok\u00e9mon Ranger Krista",
       "route": "Route 228",
       "zoneId": 416,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 471
     }
   ],
   "420": [
@@ -35974,7 +36509,8 @@
       "name": "Ace Trainer Felix",
       "route": "Route 229",
       "zoneId": 420,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 441
     },
     {
       "team": [
@@ -36035,7 +36571,8 @@
       "name": "Ace Trainer Dana",
       "route": "Route 229",
       "zoneId": 420,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 450
     },
     {
       "team": [
@@ -36070,7 +36607,8 @@
       "name": "Ace Trainer Sandra",
       "route": "Route 229",
       "zoneId": 420,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 453
     },
     {
       "team": [
@@ -36131,7 +36669,8 @@
       "name": "Pok\u00e9mon Ranger Deshawn",
       "route": "Route 229",
       "zoneId": 420,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 467
     }
   ],
   "489": [
@@ -36194,7 +36733,8 @@
       "name": "Swimmer Glenn",
       "route": "Route 230",
       "zoneId": 489,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 472
     },
     {
       "team": [
@@ -36229,7 +36769,8 @@
       "name": "Swimmer Kurt",
       "route": "Route 230",
       "zoneId": 489,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 473
     },
     {
       "team": [
@@ -36290,7 +36831,8 @@
       "name": "Swimmer Sam",
       "route": "Route 230",
       "zoneId": 489,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 474
     },
     {
       "team": [
@@ -36351,7 +36893,8 @@
       "name": "Swimmer Joanna",
       "route": "Route 230",
       "zoneId": 489,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 476
     },
     {
       "team": [
@@ -36412,7 +36955,8 @@
       "name": "Swimmer Sophia",
       "route": "Route 230",
       "zoneId": 489,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 477
     },
     {
       "team": [
@@ -36473,7 +37017,8 @@
       "name": "Swimmer Mallory",
       "route": "Route 230",
       "zoneId": 489,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 478
     }
   ],
   "259": [
@@ -36510,7 +37055,8 @@
       "name": "Dragon Tamer Darien",
       "route": "Stark Mountain (Overworld)",
       "zoneId": 259,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 433
     }
   ],
   "261": [
@@ -36599,7 +37145,8 @@
       "name": "Bird Keeper Krystal",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 431
     },
     {
       "team": [
@@ -36686,7 +37233,8 @@
       "name": "Dragon Tamer Drake",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 436
     },
     {
       "team": [
@@ -36747,7 +37295,8 @@
       "name": "Dragon Tamer Kenny",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 437
     },
     {
       "team": [
@@ -36808,7 +37357,8 @@
       "name": "Ace Trainer Keenan",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 444
     },
     {
       "team": [
@@ -36869,7 +37419,8 @@
       "name": "Ace Trainer Stefan",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 445
     },
     {
       "team": [
@@ -36930,7 +37481,8 @@
       "name": "Ace Trainer Skyler",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 446
     },
     {
       "team": [
@@ -36965,7 +37517,8 @@
       "name": "Ace Trainer Abel",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 447
     },
     {
       "team": [
@@ -37026,7 +37579,8 @@
       "name": "Ace Trainer Kassandra",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 454
     },
     {
       "team": [
@@ -37061,7 +37615,8 @@
       "name": "Ace Trainer Jasmin",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 455
     },
     {
       "team": [
@@ -37148,7 +37703,8 @@
       "name": "Ace Trainer Natasha",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 456
     },
     {
       "team": [
@@ -37209,7 +37765,8 @@
       "name": "Ace Trainer Monique",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 457
     },
     {
       "team": [
@@ -37270,7 +37827,8 @@
       "name": "Psychic Sterling",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 459
     },
     {
       "team": [
@@ -37331,7 +37889,8 @@
       "name": "Psychic Chelsey",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 461
     },
     {
       "team": [
@@ -37418,7 +37977,8 @@
       "name": "Black Belt Ray",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 464
     },
     {
       "team": [
@@ -37453,7 +38013,8 @@
       "name": "Black Belt Jarrett",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 465
     },
     {
       "team": [
@@ -37540,7 +38101,8 @@
       "name": "Veteran Harlan",
       "route": "Stark Mountain - Interior",
       "zoneId": 261,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 480
     }
   ],
   "429": [
@@ -37707,7 +38269,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Piplup",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 684
     },
     {
       "team": [
@@ -37872,7 +38435,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Turtwig",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 685
     },
     {
       "team": [
@@ -38037,7 +38601,8 @@
       "name": "Pok\u00e9mon Trainer Lucas Chimchar",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 686
     },
     {
       "team": [
@@ -38202,7 +38767,8 @@
       "name": "Pok\u00e9mon Trainer Lucas End Game Piplup",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 687
     },
     {
       "team": [
@@ -38367,7 +38933,8 @@
       "name": "Pok\u00e9mon Trainer Lucas End Game Turtwig",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 688
     },
     {
       "team": [
@@ -38532,7 +39099,8 @@
       "name": "Pok\u00e9mon Trainer Lucas End Game Chimchar",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 689
     },
     {
       "team": [
@@ -38697,7 +39265,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Piplup",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 690
     },
     {
       "team": [
@@ -38862,7 +39431,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Turtwig",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 691
     },
     {
       "team": [
@@ -39027,7 +39597,8 @@
       "name": "Pok\u00e9mon Trainer Dawn Chimchar",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 692
     },
     {
       "team": [
@@ -39192,7 +39763,8 @@
       "name": "Pok\u00e9mon Trainer Dawn End Game Piplup",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 693
     },
     {
       "team": [
@@ -39357,7 +39929,8 @@
       "name": "Pok\u00e9mon Trainer Dawn End Game Turtwig",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 694
     },
     {
       "team": [
@@ -39522,7 +40095,8 @@
       "name": "Pok\u00e9mon Trainer Dawn End Game Chimchar",
       "route": "Sandgem Town",
       "zoneId": 429,
-      "trainerType": "Single Battle"
+      "trainerType": "Single Battle",
+      "trainer_id": 695
     }
   ]
 }
