@@ -61,7 +61,7 @@ ${moves}`;
       maxWidth="1108px"
     >
       <DialogTitle>
-        Trainer: {selectedTrainer?.team_name}
+        Trainer: {selectedTrainer?.team_name} ({selectedTrainer?.trainer_id})
       </DialogTitle>
       <IconButton
         aria-label="close"
