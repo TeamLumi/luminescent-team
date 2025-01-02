@@ -5,6 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Tooltip from '@mui/material/Tooltip';
 import { getMoveProperties, getPokemonName } from '../../../utils/dex';
 import { Trainers } from "./Trainers";
+import { GAMEDATA3 } from "../../../../__gamedata";
 
 const TrainersModal = ({
   showModal,
@@ -22,7 +23,6 @@ const TrainersModal = ({
     navigator.clipboard.writeText(exportText).then(() => {
       setShowSnackbar(true);
     });
-
   };
 
   const handleCloseSnackbar = () => {
@@ -43,9 +43,9 @@ const TrainersModal = ({
         break;
     }
 
-    const moves = pokemon.moves.map(id => "- " + getMoveProperties(id).name).join("\n");
+    const moves = pokemon.moves.map(id => "- " + getMoveProperties(id, GAMEDATA3).name).join("\n");
 
-    return `${getPokemonName(pokemon.id)} ${genderSymbol} @ ${pokemon.item}
+    return `${getPokemonName(pokemon.id, GAMEDATA3)} ${genderSymbol} @ ${pokemon.item}
 Level: ${pokemon.level}
 ${pokemon.nature} Nature
 Ability: ${pokemon.ability}

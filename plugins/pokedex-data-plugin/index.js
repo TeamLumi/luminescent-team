@@ -109,6 +109,7 @@ function pokedexDataPlugin(context, options) {
         modules: {
           pokemonList: pokemonListJson,
           pokemonListV: pokemonListJsonV,
+          pokemonList3: pokemonListJson3,
         }
       });
 
