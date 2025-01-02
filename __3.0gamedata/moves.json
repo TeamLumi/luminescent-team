@@ -639,6 +639,12 @@
             "category": "Status",
             "type": "Psychic"
         },
+        "King’s Shield": {
+            "bp": 0,
+            "category": "Status",
+            "type": "Steel",
+            "priority": 2
+        },
         "Lovely Kiss": {
             "bp": 0,
             "category": "Status",
