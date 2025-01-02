@@ -39760,7 +39760,7 @@
   "865": [
     {
       "routeName": "Lake Valor (After)",
-      "pokemonName": "Sirfetch'd",
+      "pokemonName": "Sirfetch\u2019d",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 54,
@@ -39770,7 +39770,7 @@
     },
     {
       "routeName": "Lake Valor (After)",
-      "pokemonName": "Sirfetch'd",
+      "pokemonName": "Sirfetch\u2019d",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 54,
