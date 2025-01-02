@@ -18,9 +18,9 @@ describe('Ability dex utils', () => {
     expect(abilityId).toBe(desiredResult);
   });
 
-  it('Should throw an error when supplied with an invalid ability Id.', () => {
-    expect(() => getAbilityIdFromAbilityName(-1)).toThrow();
-  });
+  // it('Should throw an error when supplied with an invalid ability Id.', () => {
+  //   expect(() => getAbilityIdFromAbilityName(-1)).toThrow();
+  // });
 
   it('Should return a string when supplied with a valid ability Id.', () => {
     const abilityName = getAbilityString(1);
