@@ -53,7 +53,7 @@ const canvasDimensions = {
   height: 720
 }
 
-const versionNumber = "Beta 1.1.1";
+const versionNumber = "Beta 1.1.2";
 
 function useDebouncedValue(value, delay) {
   const [debouncedValue, setDebouncedValue] = useState(value);
