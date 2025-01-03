@@ -6814,7 +6814,7 @@
       "name": "Team Galactic Grunt 3",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 222
     },
     {
@@ -6876,7 +6876,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 222
     }
   ],
@@ -12368,10 +12368,10 @@
           "item": null,
           "level": 24,
           "moves": [
-            442,
+            428,
             393,
             232,
-            93
+            442
           ],
           "nature": "Quirky",
           "ivatk": 25,
@@ -22774,8 +22774,8 @@
           "evspeed": 4
         }
       ],
-      "team_name": "Gentleman Mr. Backlot (Pok\u00e9mon Mansion - Lobby)",
-      "name": "Gentleman Mr. Backlot",
+      "team_name": "None Mr. Backlot (Pok\u00e9mon Mansion - Lobby)",
+      "name": "None Mr. Backlot",
       "route": "Pok\u00e9mon Mansion - Lobby",
       "zoneId": 380,
       "trainerType": "Multi Battle Enemy",
@@ -31160,8 +31160,8 @@
           "item": null,
           "level": 41,
           "moves": [
-            109,
             185,
+            109,
             261,
             326
           ],
@@ -46448,7 +46448,7 @@
       "name": "Team Galactic Grunt 1",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 394
     },
     {
@@ -46536,7 +46536,7 @@
       "name": "Team Galactic Grunt 2",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 394
     },
     {
@@ -46624,7 +46624,7 @@
       "name": "Team Galactic Grunt 3",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 400
     },
     {
@@ -46712,7 +46712,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 400
     },
     {
@@ -54644,7 +54644,7 @@
       "name": "Ace Trainer Aran",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 735
     },
     {
@@ -54732,7 +54732,7 @@
       "name": "Ace Trainer Aran",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 735
     },
     {
@@ -54820,7 +54820,7 @@
       "name": "Ace Trainer Nephenee",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 736
     },
     {
@@ -54908,7 +54908,7 @@
       "name": "Ace Trainer Nephenee",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 736
     },
     {
@@ -63150,9 +63150,9 @@
           "item": null,
           "level": 64,
           "moves": [
-            286,
             83,
             219,
+            585,
             517
           ],
           "nature": "Quirky",
@@ -77272,10 +77272,10 @@
           "item": null,
           "level": 76,
           "moves": [
-            63,
+            253,
+            224,
             407,
-            483,
-            586
+            483
           ],
           "nature": "Hardy",
           "ivatk": 25,
@@ -77448,10 +77448,10 @@
           "item": null,
           "level": 76,
           "moves": [
-            201,
             286,
             433,
-            153
+            153,
+            797
           ],
           "nature": "Bashful",
           "ivatk": 25,
@@ -78024,9 +78024,9 @@
           "item": null,
           "level": 74,
           "moves": [
+            97,
             435,
-            528,
-            528,
+            344,
             113
           ],
           "nature": "Serious",
@@ -79254,10 +79254,10 @@
           "item": null,
           "level": 78,
           "moves": [
-            63,
+            253,
+            224,
             407,
-            483,
-            586
+            483
           ],
           "nature": "Quirky",
           "ivatk": 25,
@@ -80072,10 +80072,10 @@
           "item": null,
           "level": 78,
           "moves": [
-            201,
             286,
             433,
-            153
+            153,
+            797
           ],
           "nature": "Docile",
           "ivatk": 25,
