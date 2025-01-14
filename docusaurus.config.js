@@ -85,6 +85,17 @@ const config = {
         // sidebarPath: require.resolve('./docs2Sidebars.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/category/installation',
+            from: '/install',
+          },
+        ]
+      },
+    ],
     // enable plugin
     ...(isPokedexEnabled
       ? [
