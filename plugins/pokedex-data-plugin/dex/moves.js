@@ -10,7 +10,8 @@ const {
   TutorMoves,
   GAMEDATA2
 } = require('../../../__gamedata');
-const { getPokemonFormId, getPokemonName } = require('./name');
+const { FORM_MAP, isValidPokemon } = require('./functions');
+const { getPokemonFormId, getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
 
 const IS_MOVE_INDEX = false;
 const MAX_TM_COUNT = 104;
@@ -321,6 +322,56 @@ function getTutorMoves(monsno = 0, formno = 0, mode = GAMEDATA2) {
   return tutorSet;
 }
 
+function searchForMovesOnPokemon(moveId = 0, mode = GAMEDATA2) {
+  // This is a wild function.
+  // I may want to make a json specifically for loading this in the movedex
+  // Just depends on the load times for it
+  // This maps over every pokemon in a mode,
+  // then maps over their entire learnset to see if it can learn a move
+  return Object.values(FORM_MAP[mode])
+    .flat()
+    .slice(1)
+    .map((id) => {
+      // This is a map and not a filter because
+      // we want to return which method(s) a pokemon can learn a move
+      const isValid = isValidPokemon(id, mode);
+      if (!isValid) {
+        return null; // Skip invalid Pokémon
+      }
+      let monsNo = 0, formNo = 0;
+      try {
+        [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(id, mode);
+      } catch (error) {
+        console.log("This pokemonID didn't work", id, mode);
+      }
+      const learnsets = {
+        level: getLevelLearnset(id, mode),
+        tm: getTechMachineLearnset(id, mode),
+        egg: getEggMoves(id, mode),
+        tutor: getTutorMoves(monsNo, formNo, mode)
+      };
+
+      // Find which learnsets contain the move
+      const setsContainingMove = Object.entries(learnsets)
+        .filter(([key, moves]) => 
+          Array.isArray(moves) && 
+          moves.some(move => move.move?.moveId === moveId) // Check moveId
+        )
+        .map(([key]) => key); // Only keep the keys (e.g., "level", "tm")
+
+      if (setsContainingMove.length > 0) {
+        return {
+          id,
+          mode,
+          learnsets: setsContainingMove // Include only the relevant learnset names
+        };
+      }
+
+      return null; // Skip if no learnsets contain the move
+    })
+    .filter(Boolean); // Remove null values}
+}
+
 module.exports = {
   generateMovesViaLearnset,
   getMoveId,
@@ -332,5 +383,6 @@ module.exports = {
   getPokemonLearnset,
   getMoveLevelLearned,
   getLevelLearnset,
-  getTutorMoves
+  getTutorMoves,
+  searchForMovesOnPokemon,
 };
