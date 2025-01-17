@@ -1,9 +1,14 @@
 import { Box, Button, Container, Typography } from '@mui/material';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MoveSearchBox } from './MoveSearchBox';
 import { MovesetListItem } from '../Pokedex2/PokemonMovesetList';
 import { searchForMovesOnPokemon } from '../../../plugins/pokedex-data-plugin/dex/moves';
 import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
+import { ImageWithFallback } from '../common/ImageWithFallback';
+import { getImage } from '../../utils/dex';
+import { getPokemonIdFromMonsNoAndForm } from '../../../plugins/pokedex-data-plugin/dex/functions';
+import { getPokemonName } from '../../../plugins/pokedex-data-plugin/dex/name';
+import Link from '@docusaurus/Link';
 
 const MoveContainer = ({ gameMode, move }) => {
   return (
@@ -55,19 +60,42 @@ const PokemonContainer = () => {
 
 const MovePageContent = ({ move2, move3, moveV, movesList }) => {
   const [moveName, setMoveName] = useState(move3.name);
-  const [movesets, setMovesets] = useState({[GAMEDATAV]: [], [GAMEDATA2]: [], [GAMEDATA3]: []});
 
-  const handleClick = () => {
-    const validMovesV = searchForMovesOnPokemon(moveV.moveId, GAMEDATAV);
-    const validMoves2 = searchForMovesOnPokemon(move2.moveId, GAMEDATA2);  
-    const validMoves3 = searchForMovesOnPokemon(move3.moveId, GAMEDATA3);
+  const combineLearnsetsByMode = (data) => {
+    const combinedData = {};
 
-    setMovesets({
-      [GAMEDATAV]: validMovesV,
-      [GAMEDATA2]: validMoves2,
-      [GAMEDATA3]: validMoves3
+    // Iterate through each mode
+    Object.entries(data).forEach(([mode, entries]) => {
+      entries.forEach(({ id, learnsets }) => {
+        // Ensure the ID exists in the combinedData
+        if (!combinedData[id]) {
+          combinedData[id] = { id };
+        }
+
+        // Add the mode and its learnsets
+        if (!combinedData[id][mode]) {
+          combinedData[id][mode] = [];
+        }
+        combinedData[id][mode].push(...learnsets);
+
+        // Deduplicate the learnsets for this mode
+        combinedData[id][mode] = [...new Set(combinedData[id][mode])];
+      });
     });
+
+    // Convert combinedData back to an array
+    return Object.values(combinedData);
   };
+
+  const validMovesV = searchForMovesOnPokemon(moveV.moveId, GAMEDATAV);
+  const validMoves2 = searchForMovesOnPokemon(move2.moveId, GAMEDATA2);  
+  const validMoves3 = searchForMovesOnPokemon(move3.moveId, GAMEDATA3);
+
+  const movesetLists = combineLearnsetsByMode({
+    [GAMEDATAV]: validMovesV,
+    [GAMEDATA2]: validMoves2,
+    [GAMEDATA3]: validMoves3
+  });
 
   return (
     <Container>
@@ -92,7 +120,91 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
         <MoveContainer gameMode={"Vanilla BDSP"} move={moveV} />
         <MoveContainer gameMode={"Luminescent 2.1.1F"} move={move2} />
         <MoveContainer gameMode={"Re: Illuminated"} move={move3} />
-        <Button onClick={handleClick}>Fetch Moves</Button>
+      </Container>
+      <Container>
+        <Box display="grid" gridTemplateColumns="1fr 1fr 1fr 1fr">
+          {movesetLists.map((moveset) => {
+            const [monsNo, formNo] = moveset.id.split("-");
+            const pokemonId = getPokemonIdFromMonsNoAndForm(parseInt(monsNo), parseInt(formNo), GAMEDATA3);
+            const pokemonPath = parseInt(formNo) === 0 ? monsNo : `${monsNo}_${formNo}`;
+
+            return (
+              <Box
+                key={moveset.id}
+                display="grid"
+                gridTemplateColumns=".5fr 1.5fr"
+                rowGap="16px"
+                height="min-content"
+                alignSelf="center"
+              >
+                <Box alignContent="center">
+                  <Link to={`/pokedex/${pokemonPath}`}>
+                    <Typography>{getPokemonName(pokemonId, GAMEDATA3)}</Typography>
+                  </Link>
+                  <ImageWithFallback
+                    alt={moveset.id}
+                    src={getImage(monsNo, formNo)}
+                    fallbackSrc={getImage(monsNo, 0)}
+                    style={{ objectFit: 'contain', marginTop: '8px' }}
+                    width="64px"
+                    height="64px"            
+                  />
+                </Box>
+                <Box
+                  sx={{
+                    display: "grid",
+                    gridTemplateColumns: ".75fr .75fr",
+                    padding: "8px"
+                  }}
+                >
+                  <Box gridColumn="span 2">
+                    {"How to Learn it:"}
+                  </Box>
+                  {moveset?.[GAMEDATAV] && (
+                    <>
+                      <Box>
+                        {GAMEDATAV}
+                      </Box>
+                      <Box>
+                        {moveset?.[GAMEDATAV]?.map(
+                          (moveType) => (<li key={`${GAMEDATAV}-${moveType}`}>{`${moveType}`}</li>))
+                          || ""
+                        }
+                      </Box>
+                    </>
+                  )}
+                  {moveset?.[GAMEDATA2] && (
+                    <>
+                      <Box>
+                        {GAMEDATA2}
+                      </Box>
+                      <Box>
+                        {moveset?.[GAMEDATA2]?.map(
+                          (moveType) => (<li key={`${GAMEDATA2}-${moveType}`}>{`${moveType}`}</li>))
+                          || ""
+                        }
+                      </Box>
+                    </>
+                  )}
+                  {moveset?.[GAMEDATA3] && (
+                    <>
+                      <Box>
+                        {GAMEDATA3}
+                      </Box>
+                      <Box>
+                        {moveset?.[GAMEDATA3]?.map(
+                          (moveType) => (<li key={`${GAMEDATA3}-${moveType}`}>{`${moveType}`}</li>))
+                          || ""
+                        }
+                      </Box>
+                    </>
+                  )}                  
+                </Box>
+              </Box>
+            )
+          })}
+
+        </Box>
       </Container>
     </Container>
   );

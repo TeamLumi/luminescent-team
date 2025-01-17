@@ -361,7 +361,7 @@ function searchForMovesOnPokemon(moveId = 0, mode = GAMEDATA2) {
 
       if (setsContainingMove.length > 0) {
         return {
-          id,
+          id:`${monsNo}-${formNo}`,
           mode,
           learnsets: setsContainingMove // Include only the relevant learnset names
         };
