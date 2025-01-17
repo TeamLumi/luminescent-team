@@ -6690,7 +6690,7 @@
       "name": "Team Galactic Grunt 1",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 221
     },
     {
@@ -6752,7 +6752,7 @@
       "name": "Team Galactic Grunt 2",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 221
     },
     {
@@ -21916,7 +21916,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 964
     },
     {
@@ -21978,7 +21978,7 @@
       "name": "Team Galactic Grunt 5",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 964
     },
     {
@@ -22040,7 +22040,7 @@
       "name": "Team Galactic Grunt 6",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 965
     },
     {
@@ -22102,7 +22102,7 @@
       "name": "Team Galactic Grunt 7",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 965
     }
   ],
@@ -54644,7 +54644,7 @@
       "name": "Ace Trainer Aran",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 735
     },
     {
@@ -54732,7 +54732,7 @@
       "name": "Ace Trainer Aran",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 735
     },
     {
@@ -54820,7 +54820,7 @@
       "name": "Ace Trainer Nephenee",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 736
     },
     {
@@ -54908,7 +54908,7 @@
       "name": "Ace Trainer Nephenee",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 736
     },
     {
