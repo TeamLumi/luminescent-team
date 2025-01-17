@@ -3878,7 +3878,7 @@
           "item": null,
           "level": 10,
           "moves": [
-            574,
+            336,
             497,
             310,
             253
@@ -5818,7 +5818,7 @@
           "item": null,
           "level": 12,
           "moves": [
-            574,
+            336,
             497,
             310,
             253
@@ -6814,7 +6814,7 @@
       "name": "Team Galactic Grunt 3",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 222
     },
     {
@@ -6876,7 +6876,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 222
     }
   ],
@@ -21916,7 +21916,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 964
     },
     {
@@ -21978,7 +21978,7 @@
       "name": "Team Galactic Grunt 5",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 964
     },
     {
@@ -22774,8 +22774,8 @@
           "evspeed": 4
         }
       ],
-      "team_name": "None Mr. Backlot (Pok\u00e9mon Mansion - Lobby)",
-      "name": "None Mr. Backlot",
+      "team_name": "Mr. Backlot (Pok\u00e9mon Mansion - Lobby)",
+      "name": "Mr. Backlot",
       "route": "Pok\u00e9mon Mansion - Lobby",
       "zoneId": 380,
       "trainerType": "Multi Battle Enemy",
@@ -23200,8 +23200,8 @@
           "item": null,
           "level": 36,
           "moves": [
-            55,
             128,
+            117,
             352,
             330
           ],
@@ -24207,9 +24207,9 @@
           "level": 26,
           "moves": [
             60,
-            278,
             113,
-            115
+            115,
+            278
           ],
           "nature": "Bashful",
           "ivatk": 25,
@@ -46624,7 +46624,7 @@
       "name": "Team Galactic Grunt 3",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 400
     },
     {
@@ -46712,7 +46712,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 400
     },
     {
@@ -54644,7 +54644,7 @@
       "name": "Ace Trainer Aran",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 735
     },
     {
@@ -54732,7 +54732,7 @@
       "name": "Ace Trainer Aran",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 735
     },
     {
@@ -54820,7 +54820,7 @@
       "name": "Ace Trainer Nephenee",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 736
     },
     {
@@ -54908,7 +54908,7 @@
       "name": "Ace Trainer Nephenee",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 736
     },
     {
