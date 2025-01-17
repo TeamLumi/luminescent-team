@@ -537,17 +537,46 @@
       "trainer_id": 692
     }
   ],
-  "21": [
+  "0": [
     {
       "team": [
         {
-          "ability": "Synchronize",
+          "ability": "Static",
           "gender": "NEUTRAL",
-          "id": 63,
+          "id": 172,
           "item": null,
-          "level": 8,
+          "level": 28,
           "moves": [
-            100
+            86,
+            609,
+            417,
+            574
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Static",
+          "gender": "FEMALE",
+          "id": 25,
+          "item": null,
+          "level": 29,
+          "moves": [
+            104,
+            21,
+            85,
+            97
           ],
           "nature": "Serious",
           "ivatk": 25,
@@ -564,78 +593,16 @@
           "evspeed": 0
         },
         {
-          "ability": "Damp",
-          "gender": "NEUTRAL",
-          "id": 54,
-          "item": null,
-          "level": 8,
-          "moves": [
-            39,
-            10,
-            145,
-            55
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "School Kid Harrison (Jubilife City)",
-      "name": "School Kid Harrison",
-      "route": "Jubilife City",
-      "zoneId": 21,
-      "trainerType": "Single Battle",
-      "trainer_id": 264
-    },
-    {
-      "team": [
-        {
-          "ability": "Synchronize",
-          "gender": "FEMALE",
-          "id": 280,
-          "item": null,
-          "level": 8,
-          "moves": [
-            45,
-            100,
-            93,
-            574
-          ],
-          "nature": "Docile",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Illuminate",
+          "ability": "Static",
           "gender": "MALE",
-          "id": 120,
+          "id": 26,
           "item": null,
-          "level": 8,
+          "level": 30,
           "moves": [
-            106,
-            33,
-            55,
-            229
+            486,
+            351,
+            252,
+            364
           ],
           "nature": "Bashful",
           "ivatk": 25,
@@ -652,15 +619,75 @@
           "evspeed": 0
         }
       ],
-      "team_name": "School Kid Christine (Jubilife City)",
-      "name": "School Kid Christine",
+      "team_name": "Pok\u00e9 Kid Danielle (Jubilife City)",
+      "name": "Pok\u00e9 Kid Danielle",
       "route": "Jubilife City",
-      "zoneId": 21,
+      "zoneId": 8,
       "trainerType": "Single Battle",
-      "trainer_id": 267
-    }
-  ],
-  "0": [
+      "trainer_id": 46
+    },
+    {
+      "team": [
+        {
+          "ability": "Swarm",
+          "gender": "NEUTRAL",
+          "id": 402,
+          "item": null,
+          "level": 44,
+          "moves": [
+            269,
+            215,
+            405,
+            564
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Scrappy",
+          "gender": "NEUTRAL",
+          "id": 295,
+          "item": null,
+          "level": 44,
+          "moves": [
+            156,
+            214,
+            242,
+            359
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Guitarist Tony (Jubilife City)",
+      "name": "Guitarist Tony",
+      "route": "Jubilife City",
+      "zoneId": 8,
+      "trainerType": "Single Battle",
+      "trainer_id": 225
+    },
     {
       "team": [
         {
@@ -1366,68 +1393,6 @@
     {
       "team": [
         {
-          "ability": "Shed Skin",
-          "gender": "FEMALE",
-          "id": 401,
-          "item": null,
-          "level": 10,
-          "moves": [
-            45,
-            450,
-            81,
-            522
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Soundproof",
-          "gender": "MALE",
-          "id": 100,
-          "item": null,
-          "level": 10,
-          "moves": [
-            268,
-            103,
-            598,
-            84
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Guitarist Arturo (Jubilife City)",
-      "name": "Guitarist Arturo",
-      "route": "Jubilife City",
-      "zoneId": 8,
-      "trainerType": "Single Battle",
-      "trainer_id": 332
-    },
-    {
-      "team": [
-        {
           "ability": "Run Away",
           "gender": "FEMALE",
           "id": 190,
@@ -1542,94 +1507,6 @@
       "zoneId": 8,
       "trainerType": "Single Battle",
       "trainer_id": 349
-    },
-    {
-      "team": [
-        {
-          "ability": "Static",
-          "gender": "MALE",
-          "id": 172,
-          "item": null,
-          "level": 10,
-          "moves": [
-            574,
-            589,
-            204,
-            186
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Static",
-          "gender": "NEUTRAL",
-          "id": 172,
-          "item": null,
-          "level": 10,
-          "moves": [
-            574,
-            589,
-            204,
-            186
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Static",
-          "gender": "FEMALE",
-          "id": 172,
-          "item": null,
-          "level": 10,
-          "moves": [
-            574,
-            589,
-            204,
-            186
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Pok\u00e9 Kid Ariel (Jubilife City)",
-      "name": "Pok\u00e9 Kid Ariel",
-      "route": "Jubilife City",
-      "zoneId": 8,
-      "trainerType": "Single Battle",
-      "trainer_id": 350
     },
     {
       "team": [
@@ -2175,6 +2052,184 @@
       "zoneId": 2,
       "trainerType": "Single Battle",
       "trainer_id": 506
+    }
+  ],
+  "21": [
+    {
+      "team": [
+        {
+          "ability": "Levitate",
+          "gender": "NEUTRAL",
+          "id": 355,
+          "item": null,
+          "level": 26,
+          "moves": [
+            310,
+            425,
+            261,
+            371
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 196,
+          "evatk": 0,
+          "evdef": 196,
+          "evspatk": 0,
+          "evspdef": 116,
+          "evspeed": 0
+        },
+        {
+          "ability": "Insomnia",
+          "gender": "FEMALE",
+          "id": 353,
+          "item": null,
+          "level": 26,
+          "moves": [
+            220,
+            185,
+            506,
+            174
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 4,
+          "evatk": 236,
+          "evdef": 156,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Levitate",
+          "gender": "NEUTRAL",
+          "id": 355,
+          "item": null,
+          "level": 26,
+          "moves": [
+            310,
+            425,
+            261,
+            371
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 196,
+          "evatk": 0,
+          "evdef": 196,
+          "evspatk": 0,
+          "evspdef": 116,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "School Kid Chance (Jubilife City)",
+      "name": "School Kid Chance",
+      "route": "Jubilife City",
+      "zoneId": 21,
+      "trainerType": "Single Battle",
+      "trainer_id": 262
+    },
+    {
+      "team": [
+        {
+          "ability": "Insomnia",
+          "gender": "NEUTRAL",
+          "id": 353,
+          "item": null,
+          "level": 26,
+          "moves": [
+            220,
+            185,
+            506,
+            174
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 4,
+          "evatk": 236,
+          "evdef": 156,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Levitate",
+          "gender": "FEMALE",
+          "id": 355,
+          "item": null,
+          "level": 26,
+          "moves": [
+            310,
+            425,
+            261,
+            371
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 196,
+          "evatk": 0,
+          "evdef": 196,
+          "evspatk": 0,
+          "evspdef": 116,
+          "evspeed": 0
+        },
+        {
+          "ability": "Insomnia",
+          "gender": "MALE",
+          "id": 353,
+          "item": null,
+          "level": 26,
+          "moves": [
+            220,
+            185,
+            506,
+            174
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 4,
+          "evatk": 236,
+          "evdef": 156,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "School Kid Mackenzie (Jubilife City)",
+      "name": "School Kid Mackenzie",
+      "route": "Jubilife City",
+      "zoneId": 21,
+      "trainerType": "Single Battle",
+      "trainer_id": 265
     }
   ],
   "356": [
@@ -6278,70 +6333,44 @@
     {
       "team": [
         {
-          "ability": "Run Away",
+          "ability": "Inner Focus",
           "gender": "MALE",
-          "id": 261,
+          "id": 41,
           "item": null,
-          "level": 14,
+          "level": 15,
           "moves": [
-            28,
             44,
-            189,
-            372
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Liquid Ooze",
-          "gender": "MALE",
-          "id": 316,
-          "item": null,
-          "level": 14,
-          "moves": [
-            281,
-            123,
-            139,
-            133
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Intimidate",
-          "gender": "FEMALE",
-          "id": 228,
-          "item": null,
-          "level": 14,
-          "moves": [
-            185,
-            44,
-            46,
-            123
+            17,
+            305,
+            109
           ],
           "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Swarm",
+          "gender": "MALE",
+          "id": 167,
+          "item": null,
+          "level": 15,
+          "moves": [
+            450,
+            184,
+            305,
+            101
+          ],
+          "nature": "Bashful",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -6361,7 +6390,7 @@
       "route": "Valley Windworks (Outside)",
       "zoneId": 197,
       "trainerType": "Single Battle",
-      "trainer_id": 669
+      "trainer_id": 221
     }
   ],
   "198": [
@@ -6692,68 +6721,6 @@
       "zoneId": 253,
       "trainerType": "Double Battle",
       "trainer_id": 221
-    },
-    {
-      "team": [
-        {
-          "ability": "Anticipation",
-          "gender": "FEMALE",
-          "id": 453,
-          "item": null,
-          "level": 15,
-          "moves": [
-            252,
-            189,
-            40,
-            259
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Iron Fist",
-          "gender": "NEUTRAL",
-          "id": 165,
-          "item": null,
-          "level": 15,
-          "moves": [
-            115,
-            219,
-            183,
-            332
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Team Galactic Grunt 2 (Floaroma Meadow Trainers)",
-      "name": "Team Galactic Grunt 2",
-      "route": "Floaroma Meadow",
-      "zoneId": 253,
-      "trainerType": "Double Battle",
-      "trainer_id": 222
     }
   ],
   "359": [
@@ -10226,156 +10193,16 @@
     {
       "team": [
         {
-          "ability": "Chlorophyll",
+          "ability": "Run Away",
           "gender": "NEUTRAL",
-          "id": 70,
+          "id": 161,
           "item": null,
-          "level": 23,
+          "level": 7,
           "moves": [
-            75,
-            230,
-            380,
-            141
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 4,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Overgrow",
-          "gender": "MALE",
-          "id": 2,
-          "item": null,
-          "level": 23,
-          "moves": [
-            345,
-            124,
-            402,
-            36
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 4,
-          "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 0
-        },
-        {
-          "ability": "Chlorophyll",
-          "gender": "MALE",
-          "id": 44,
-          "item": null,
-          "level": 23,
-          "moves": [
-            78,
-            72,
-            124,
-            236
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 4,
-          "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Aroma Lady Jenna (Eterna - Gym Main Room)",
-      "name": "Aroma Lady Jenna",
-      "route": "Eterna - Gym Main Room",
-      "zoneId": 57,
-      "trainerType": "Single Battle",
-      "trainer_id": 183
-    },
-    {
-      "team": [
-        {
-          "ability": "Natural Cure",
-          "gender": "NEUTRAL",
-          "id": 315,
-          "item": null,
-          "level": 23,
-          "moves": [
-            73,
-            345,
-            124,
-            320
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 248,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 236,
-          "evspeed": 24
-        },
-        {
-          "ability": "Serene Grace",
-          "gender": "NEUTRAL",
-          "id": 153,
-          "item": null,
-          "level": 23,
-          "moves": [
-            345,
-            113,
-            115,
-            577
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 252,
-          "evspatk": 4,
-          "evspdef": 252,
-          "evspeed": 0
-        },
-        {
-          "ability": "Chlorophyll",
-          "gender": "MALE",
-          "id": 188,
-          "item": null,
-          "level": 23,
-          "moves": [
-            77,
-            73,
-            178,
-            388
+            10,
+            111,
+            98,
+            154
           ],
           "nature": "Docile",
           "ivatk": 25,
@@ -10387,31 +10214,82 @@
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 4,
-          "evspeed": 252
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Simple",
+          "gender": "NEUTRAL",
+          "id": 399,
+          "item": null,
+          "level": 7,
+          "moves": [
+            45,
+            33,
+            111
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
         }
       ],
-      "team_name": "Aroma Lady Angela (Eterna - Gym Main Room)",
-      "name": "Aroma Lady Angela",
+      "team_name": "Lass Natalie (Eterna - Gym Main Room)",
+      "name": "Lass Natalie",
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
       "trainerType": "Single Battle",
-      "trainer_id": 184
+      "trainer_id": 3
     },
     {
       "team": [
         {
-          "ability": "Swift Swim",
-          "gender": "FEMALE",
-          "id": 270,
+          "ability": "Chlorophyll",
+          "gender": "MALE",
+          "id": 420,
           "item": null,
-          "level": 22,
+          "level": 13,
           "moves": [
-            72,
-            175,
-            61,
-            202
+            670,
+            74,
+            73,
+            270
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Chlorophyll",
+          "gender": "NEUTRAL",
+          "id": 187,
+          "item": null,
+          "level": 13,
+          "moves": [
+            331,
+            584,
+            314,
+            72
           ],
           "nature": "Hardy",
           "ivatk": 25,
@@ -10422,22 +10300,58 @@
           "ivspeed": 25,
           "evhp": 0,
           "evatk": 0,
-          "evdef": 116,
-          "evspatk": 196,
+          "evdef": 0,
+          "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 196
+          "evspeed": 0
         },
         {
-          "ability": "Sand Veil",
+          "ability": "Technician",
           "gender": "FEMALE",
-          "id": 331,
+          "id": 285,
           "item": null,
-          "level": 22,
+          "level": 13,
           "moves": [
-            302,
-            372,
-            185,
-            275
+            33,
+            72,
+            73,
+            331
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Aroma Lady Teighler (Eterna - Gym Main Room)",
+      "name": "Aroma Lady Teighler",
+      "route": "Eterna - Gym Main Room",
+      "zoneId": 57,
+      "trainerType": "Single Battle",
+      "trainer_id": 9
+    },
+    {
+      "team": [
+        {
+          "ability": "Cute Charm",
+          "gender": "NEUTRAL",
+          "id": 301,
+          "item": null,
+          "level": 37,
+          "moves": [
+            343,
+            383,
+            371,
+            428
           ],
           "nature": "Serious",
           "ivatk": 25,
@@ -10447,139 +10361,25 @@
           "ivspdef": 25,
           "ivspeed": 25,
           "evhp": 0,
-          "evatk": 236,
-          "evdef": 116,
+          "evatk": 0,
+          "evdef": 0,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 156
+          "evspeed": 0
         },
         {
-          "ability": "Chlorophyll",
+          "ability": "Limber",
           "gender": "NEUTRAL",
-          "id": 102,
+          "id": 53,
           "item": null,
-          "level": 22,
+          "level": 37,
           "moves": [
-            73,
-            78,
-            77,
-            79
+            269,
+            408,
+            372,
+            95
           ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 36,
-          "evatk": 0,
-          "evdef": 200,
-          "evspatk": 40,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Technician",
-          "gender": "FEMALE",
-          "id": 285,
-          "item": null,
-          "level": 22,
-          "moves": [
-            78,
-            147,
-            77,
-            402
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 36,
-          "evatk": 36,
-          "evdef": 196,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Lass Caroline (Eterna - Gym Main Room)",
-      "name": "Lass Caroline",
-      "route": "Eterna - Gym Main Room",
-      "zoneId": 57,
-      "trainerType": "Single Battle",
-      "trainer_id": 248
-    },
-    {
-      "team": [
-        {
-          "ability": "Chlorophyll",
-          "gender": "FEMALE",
-          "id": 470,
-          "item": "Heat Rock",
-          "level": 25,
-          "moves": [
-            241,
-            331,
-            174,
-            73
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Overcoat",
-          "gender": "FEMALE",
-          "id": 413,
-          "item": "Occa Berry",
-          "level": 26,
-          "moves": [
-            237,
-            483,
-            412,
-            182
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 20,
-          "ivspdef": 25,
-          "ivspeed": 20,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unburden",
-          "gender": "FEMALE",
-          "id": 253,
-          "item": "Light Ball",
-          "level": 26,
-          "moves": [
-            374,
-            202,
-            225,
-            98
-          ],
-          "nature": "Hardy",
+          "nature": "Docile",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -10594,12 +10394,12 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Beauty Lindsay (Eterna - Gym Main Room)",
-      "name": "Beauty Lindsay",
+      "team_name": "Beauty Cyndy (Eterna - Gym Main Room)",
+      "name": "Beauty Cyndy",
       "route": "Eterna - Gym Main Room",
       "zoneId": 57,
       "trainerType": "Single Battle",
-      "trainer_id": 269
+      "trainer_id": 268
     },
     {
       "team": [
@@ -37364,18 +37164,44 @@
     {
       "team": [
         {
-          "ability": "Anticipation",
+          "ability": "Inner Focus",
           "gender": "MALE",
-          "id": 454,
+          "id": 41,
           "item": null,
-          "level": 41,
+          "level": 15,
           "moves": [
-            409,
-            417,
-            92,
-            389
+            44,
+            17,
+            305,
+            109
           ],
-          "nature": "Hardy",
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Swarm",
+          "gender": "MALE",
+          "id": 167,
+          "item": null,
+          "level": 15,
+          "moves": [
+            450,
+            184,
+            305,
+            101
+          ],
+          "nature": "Bashful",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -37395,7 +37221,1330 @@
       "route": "Valor Lakefront",
       "zoneId": 347,
       "trainerType": "Single Battle",
-      "trainer_id": 673
+      "trainer_id": 221
+    },
+    {
+      "team": [
+        {
+          "ability": "Run Away",
+          "gender": "NEUTRAL",
+          "id": 161,
+          "item": null,
+          "level": 7,
+          "moves": [
+            10,
+            111,
+            98,
+            154
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Simple",
+          "gender": "NEUTRAL",
+          "id": 399,
+          "item": null,
+          "level": 7,
+          "moves": [
+            45,
+            33,
+            111
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Lass Natalie (Valor Lakefront - Restaurant)",
+      "name": "Lass Natalie",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 3
+    },
+    {
+      "team": [
+        {
+          "ability": "Chlorophyll",
+          "gender": "MALE",
+          "id": 420,
+          "item": null,
+          "level": 13,
+          "moves": [
+            670,
+            74,
+            73,
+            270
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Chlorophyll",
+          "gender": "NEUTRAL",
+          "id": 187,
+          "item": null,
+          "level": 13,
+          "moves": [
+            331,
+            584,
+            314,
+            72
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Technician",
+          "gender": "FEMALE",
+          "id": 285,
+          "item": null,
+          "level": 13,
+          "moves": [
+            33,
+            72,
+            73,
+            331
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Aroma Lady Teighler (Valor Lakefront - Restaurant)",
+      "name": "Aroma Lady Teighler",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 9
+    },
+    {
+      "team": [
+        {
+          "ability": "Own Tempo",
+          "gender": "NEUTRAL",
+          "id": 235,
+          "item": null,
+          "level": 26,
+          "moves": [
+            166,
+            166,
+            166,
+            166
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Own Tempo",
+          "gender": "NEUTRAL",
+          "id": 235,
+          "item": null,
+          "level": 26,
+          "moves": [
+            166,
+            166,
+            166,
+            166
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Own Tempo",
+          "gender": "FEMALE",
+          "id": 235,
+          "item": null,
+          "level": 26,
+          "moves": [
+            166,
+            166,
+            166,
+            166
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Artist William (Valor Lakefront - Restaurant)",
+      "name": "Artist William",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 41
+    },
+    {
+      "team": [
+        {
+          "ability": "Thick Fat",
+          "gender": "FEMALE",
+          "id": 298,
+          "item": null,
+          "level": 26,
+          "moves": [
+            47,
+            270,
+            21,
+            340
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Super Luck",
+          "gender": "FEMALE",
+          "id": 175,
+          "item": null,
+          "level": 26,
+          "moves": [
+            273,
+            219,
+            246,
+            135
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Cute Charm",
+          "gender": "MALE",
+          "id": 173,
+          "item": null,
+          "level": 26,
+          "moves": [
+            47,
+            383,
+            345,
+            577
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Cute Charm",
+          "gender": "MALE",
+          "id": 174,
+          "item": null,
+          "level": 26,
+          "moves": [
+            186,
+            383,
+            577,
+            50
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Hydration",
+          "gender": "MALE",
+          "id": 238,
+          "item": null,
+          "level": 26,
+          "moves": [
+            343,
+            212,
+            326,
+            313
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Natural Cure",
+          "gender": "MALE",
+          "id": 406,
+          "item": null,
+          "level": 26,
+          "moves": [
+            78,
+            79,
+            388,
+            326
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Pok\u00e9mon Breeder Jennifer (Valor Lakefront - Restaurant)",
+      "name": "Pok\u00e9mon Breeder Jennifer",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 43
+    },
+    {
+      "team": [
+        {
+          "ability": "Chlorophyll",
+          "gender": "MALE",
+          "id": 465,
+          "item": null,
+          "level": 43,
+          "moves": [
+            202,
+            246,
+            21,
+            321
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Flame Body",
+          "gender": "NEUTRAL",
+          "id": 78,
+          "item": null,
+          "level": 43,
+          "moves": [
+            394,
+            31,
+            38,
+            340
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Intimidate",
+          "gender": "NEUTRAL",
+          "id": 160,
+          "item": null,
+          "level": 43,
+          "moves": [
+            97,
+            163,
+            400,
+            103
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Veteran Brian (Valor Lakefront - Restaurant)",
+      "name": "Veteran Brian",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 55
+    },
+    {
+      "team": [
+        {
+          "ability": "Torrent",
+          "gender": "NEUTRAL",
+          "id": 394,
+          "item": null,
+          "level": 30,
+          "moves": [
+            196,
+            207,
+            503,
+            31
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Thick Fat",
+          "gender": "NEUTRAL",
+          "id": 184,
+          "item": null,
+          "level": 30,
+          "moves": [
+            34,
+            270,
+            401,
+            583
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Rich Boy Jason (Valor Lakefront - Restaurant)",
+      "name": "Rich Boy Jason",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 69
+    },
+    {
+      "team": [
+        {
+          "ability": "Flower Gift",
+          "gender": "MALE",
+          "id": 421,
+          "item": null,
+          "level": 30,
+          "moves": [
+            241,
+            80,
+            202,
+            36
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Chlorophyll",
+          "gender": "FEMALE",
+          "id": 189,
+          "item": null,
+          "level": 30,
+          "moves": [
+            178,
+            388,
+            202,
+            403
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Lady Melissa (Valor Lakefront - Restaurant)",
+      "name": "Lady Melissa",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 70
+    },
+    {
+      "team": [
+        {
+          "ability": "Soundproof",
+          "gender": "FEMALE",
+          "id": 441,
+          "item": null,
+          "level": 31,
+          "moves": [
+            253,
+            102,
+            496,
+            448
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Gentleman Jeremy (Valor Lakefront - Restaurant)",
+      "name": "Gentleman Jeremy",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 71
+    },
+    {
+      "team": [
+        {
+          "ability": "Cute Charm",
+          "gender": "MALE",
+          "id": 301,
+          "item": null,
+          "level": 31,
+          "moves": [
+            154,
+            3,
+            343,
+            383
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Madame Reina (Valor Lakefront - Restaurant)",
+      "name": "Madame Reina",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 72
+    },
+    {
+      "team": [
+        {
+          "ability": "Stench",
+          "gender": "FEMALE",
+          "id": 89,
+          "item": null,
+          "level": 38,
+          "moves": [
+            371,
+            482,
+            103,
+            188
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Levitate",
+          "gender": "MALE",
+          "id": 110,
+          "item": null,
+          "level": 38,
+          "moves": [
+            194,
+            458,
+            92,
+            399
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Scientist Stefano (Valor Lakefront - Restaurant)",
+      "name": "Scientist Stefano",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 82
+    },
+    {
+      "team": [
+        {
+          "ability": "Sand Veil",
+          "gender": "FEMALE",
+          "id": 51,
+          "item": null,
+          "level": 36,
+          "moves": [
+            161,
+            157,
+            201,
+            414
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "PI Carlos (Valor Lakefront - Restaurant)",
+      "name": "PI Carlos",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 96
+    },
+    {
+      "team": [
+        {
+          "ability": "Volt Absorb",
+          "gender": "MALE",
+          "id": 135,
+          "item": null,
+          "level": 33,
+          "moves": [
+            422,
+            435,
+            326,
+            97
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Water Absorb",
+          "gender": "MALE",
+          "id": 134,
+          "item": null,
+          "level": 33,
+          "moves": [
+            392,
+            503,
+            326,
+            151
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Flash Fire",
+          "gender": "MALE",
+          "id": 136,
+          "item": null,
+          "level": 33,
+          "moves": [
+            172,
+            436,
+            583,
+            184
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Collector Douglas (Valor Lakefront - Restaurant)",
+      "name": "Collector Douglas",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 196
+    },
+    {
+      "team": [
+        {
+          "ability": "Levitate",
+          "gender": "NEUTRAL",
+          "id": 355,
+          "item": null,
+          "level": 26,
+          "moves": [
+            310,
+            425,
+            261,
+            371
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 196,
+          "evatk": 0,
+          "evdef": 196,
+          "evspatk": 0,
+          "evspdef": 116,
+          "evspeed": 0
+        },
+        {
+          "ability": "Insomnia",
+          "gender": "FEMALE",
+          "id": 353,
+          "item": null,
+          "level": 26,
+          "moves": [
+            220,
+            185,
+            506,
+            174
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 4,
+          "evatk": 236,
+          "evdef": 156,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Levitate",
+          "gender": "NEUTRAL",
+          "id": 355,
+          "item": null,
+          "level": 26,
+          "moves": [
+            310,
+            425,
+            261,
+            371
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 196,
+          "evatk": 0,
+          "evdef": 196,
+          "evspatk": 0,
+          "evspdef": 116,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "School Kid Chance (Valor Lakefront - Restaurant)",
+      "name": "School Kid Chance",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 262
+    },
+    {
+      "team": [
+        {
+          "ability": "Cute Charm",
+          "gender": "NEUTRAL",
+          "id": 301,
+          "item": null,
+          "level": 37,
+          "moves": [
+            343,
+            383,
+            371,
+            428
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Limber",
+          "gender": "NEUTRAL",
+          "id": 53,
+          "item": null,
+          "level": 37,
+          "moves": [
+            269,
+            408,
+            372,
+            95
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Beauty Cyndy (Valor Lakefront - Restaurant)",
+      "name": "Beauty Cyndy",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 268
+    },
+    {
+      "team": [
+        {
+          "ability": "Cute Charm",
+          "gender": "NEUTRAL",
+          "id": 301,
+          "item": null,
+          "level": 37,
+          "moves": [
+            343,
+            383,
+            371,
+            428
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Limber",
+          "gender": "NEUTRAL",
+          "id": 53,
+          "item": null,
+          "level": 37,
+          "moves": [
+            269,
+            408,
+            372,
+            95
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Beauty Cyndy (Valor Lakefront - Restaurant)",
+      "name": "Beauty Cyndy",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 268
+    },
+    {
+      "team": [
+        {
+          "ability": "Technician",
+          "gender": "FEMALE",
+          "id": 439,
+          "item": null,
+          "level": 10,
+          "moves": [
+            93,
+            383,
+            96,
+            3
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Guts",
+          "gender": "FEMALE",
+          "id": 66,
+          "item": null,
+          "level": 10,
+          "moves": [
+            67,
+            116,
+            2,
+            490
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Cameraman Tevin (Valor Lakefront - Restaurant)",
+      "name": "Cameraman Tevin",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 282
+    },
+    {
+      "team": [
+        {
+          "ability": "Aftermath",
+          "gender": "FEMALE",
+          "id": 425,
+          "item": null,
+          "level": 10,
+          "moves": [
+            132,
+            107,
+            16,
+            116
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Guts",
+          "gender": "NEUTRAL",
+          "id": 403,
+          "item": null,
+          "level": 10,
+          "moves": [
+            336,
+            84,
+            98,
+            209
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Reporter Kinsey (Valor Lakefront - Restaurant)",
+      "name": "Reporter Kinsey",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 283
+    },
+    {
+      "team": [
+        {
+          "ability": "Cute Charm",
+          "gender": "NEUTRAL",
+          "id": 35,
+          "item": "Sitrus Berry",
+          "level": 30,
+          "moves": [
+            107,
+            118,
+            322,
+            585
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Water Veil",
+          "gender": "FEMALE",
+          "id": 320,
+          "item": "Sitrus Berry",
+          "level": 30,
+          "moves": [
+            54,
+            362,
+            291,
+            156
+          ],
+          "nature": "Hardy",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Sturdy",
+          "gender": "FEMALE",
+          "id": 438,
+          "item": "Sitrus Berry",
+          "level": 30,
+          "moves": [
+            715,
+            205,
+            157,
+            335
+          ],
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Cute Charm",
+          "gender": "MALE",
+          "id": 300,
+          "item": "Sitrus Berry",
+          "level": 30,
+          "moves": [
+            185,
+            428,
+            389,
+            204
+          ],
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Pok\u00e9 Fan Rebekah (Valor Lakefront - Restaurant)",
+      "name": "Pok\u00e9 Fan Rebekah",
+      "route": "Valor Lakefront - Restaurant",
+      "zoneId": 348,
+      "trainerType": "Double Battle",
+      "trainer_id": 404
     },
     {
       "team": [
@@ -37431,42 +38580,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 410
-    },
-    {
-      "team": [
-        {
-          "ability": "Serene Grace",
-          "gender": "MALE",
-          "id": 154,
-          "item": null,
-          "level": 37,
-          "moves": [
-            267,
-            230,
-            80,
-            34
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Aroma Lady Alison (Valor Lakefront - Restaurant)",
-      "name": "Aroma Lady Alison",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 410
     },
     {
@@ -37508,42 +38621,6 @@
     {
       "team": [
         {
-          "ability": "Own Tempo",
-          "gender": "MALE",
-          "id": 235,
-          "item": null,
-          "level": 37,
-          "moves": [
-            166,
-            166,
-            166,
-            166
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Artist Ismael (Valor Lakefront - Restaurant)",
-      "name": "Artist Ismael",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 411
-    },
-    {
-      "team": [
-        {
           "ability": "Thick Fat",
           "gender": "FEMALE",
           "id": 184,
@@ -37575,42 +38652,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 412
-    },
-    {
-      "team": [
-        {
-          "ability": "Thick Fat",
-          "gender": "FEMALE",
-          "id": 184,
-          "item": null,
-          "level": 37,
-          "moves": [
-            401,
-            583,
-            392,
-            8
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Pok\u00e9mon Breeder Kaylee (Valor Lakefront - Restaurant)",
-      "name": "Pok\u00e9mon Breeder Kaylee",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 412
     },
     {
@@ -37652,42 +38693,6 @@
     {
       "team": [
         {
-          "ability": "Magnet Pull",
-          "gender": "NEUTRAL",
-          "id": 82,
-          "item": null,
-          "level": 37,
-          "moves": [
-            435,
-            161,
-            430,
-            103
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Cameraman Darryl (Valor Lakefront - Restaurant)",
-      "name": "Cameraman Darryl",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 413
-    },
-    {
-      "team": [
-        {
           "ability": "Marvel Scale",
           "gender": "NEUTRAL",
           "id": 350,
@@ -37719,42 +38724,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 414
-    },
-    {
-      "team": [
-        {
-          "ability": "Marvel Scale",
-          "gender": "NEUTRAL",
-          "id": 350,
-          "item": null,
-          "level": 37,
-          "moves": [
-            105,
-            95,
-            213,
-            585
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Collector Eugene (Valor Lakefront - Restaurant)",
-      "name": "Collector Eugene",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 414
     },
     {
@@ -37796,42 +38765,6 @@
     {
       "team": [
         {
-          "ability": "Volt Absorb",
-          "gender": "FEMALE",
-          "id": 417,
-          "item": "Sitrus Berry",
-          "level": 37,
-          "moves": [
-            186,
-            86,
-            85,
-            313
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Pok\u00e9 Fan Meredith (Valor Lakefront - Restaurant)",
-      "name": "Pok\u00e9 Fan Meredith",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 415
-    },
-    {
-      "team": [
-        {
           "ability": "Reckless",
           "gender": "NEUTRAL",
           "id": 112,
@@ -37863,42 +38796,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 416
-    },
-    {
-      "team": [
-        {
-          "ability": "Reckless",
-          "gender": "NEUTRAL",
-          "id": 112,
-          "item": null,
-          "level": 37,
-          "moves": [
-            242,
-            157,
-            398,
-            359
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "PI Kendrick (Valor Lakefront - Restaurant)",
-      "name": "PI Kendrick",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 416
     },
     {
@@ -37940,42 +38837,6 @@
     {
       "team": [
         {
-          "ability": "Soundproof",
-          "gender": "NEUTRAL",
-          "id": 441,
-          "item": null,
-          "level": 37,
-          "moves": [
-            448,
-            355,
-            97,
-            497
-          ],
-          "nature": "Docile",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Gentleman Leonardo (Valor Lakefront - Restaurant)",
-      "name": "Gentleman Leonardo",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 417
-    },
-    {
-      "team": [
-        {
           "ability": "Limber",
           "gender": "FEMALE",
           "id": 53,
@@ -38007,42 +38868,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 418
-    },
-    {
-      "team": [
-        {
-          "ability": "Limber",
-          "gender": "FEMALE",
-          "id": 53,
-          "item": null,
-          "level": 37,
-          "moves": [
-            269,
-            408,
-            372,
-            95
-          ],
-          "nature": "Docile",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Madame Rebecca (Valor Lakefront - Restaurant)",
-      "name": "Madame Rebecca",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 418
     },
     {
@@ -38084,42 +38909,6 @@
     {
       "team": [
         {
-          "ability": "Scrappy",
-          "gender": "FEMALE",
-          "id": 428,
-          "item": null,
-          "level": 37,
-          "moves": [
-            29,
-            204,
-            146,
-            175
-          ],
-          "nature": "Docile",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Lass Blythe (Valor Lakefront - Restaurant)",
-      "name": "Lass Blythe",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 419
-    },
-    {
-      "team": [
-        {
           "ability": "Intimidate",
           "gender": "NEUTRAL",
           "id": 59,
@@ -38151,42 +38940,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 420
-    },
-    {
-      "team": [
-        {
-          "ability": "Intimidate",
-          "gender": "NEUTRAL",
-          "id": 59,
-          "item": null,
-          "level": 37,
-          "moves": [
-            270,
-            97,
-            424,
-            179
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Rich Boy Roman (Valor Lakefront - Restaurant)",
-      "name": "Rich Boy Roman",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 420
     },
     {
@@ -38228,42 +38981,6 @@
     {
       "team": [
         {
-          "ability": "Chlorophyll",
-          "gender": "FEMALE",
-          "id": 45,
-          "item": null,
-          "level": 37,
-          "moves": [
-            78,
-            72,
-            348,
-            202
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Lady Kylie (Valor Lakefront - Restaurant)",
-      "name": "Lady Kylie",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 421
-    },
-    {
-      "team": [
-        {
           "ability": "Scrappy",
           "gender": "FEMALE",
           "id": 294,
@@ -38295,42 +39012,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 422
-    },
-    {
-      "team": [
-        {
-          "ability": "Scrappy",
-          "gender": "FEMALE",
-          "id": 294,
-          "item": null,
-          "level": 37,
-          "moves": [
-            326,
-            313,
-            304,
-            46
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Reporter Valerie (Valor Lakefront - Restaurant)",
-      "name": "Reporter Valerie",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 422
     },
     {
@@ -38372,42 +39053,6 @@
     {
       "team": [
         {
-          "ability": "Unaware",
-          "gender": "NEUTRAL",
-          "id": 195,
-          "item": null,
-          "level": 37,
-          "moves": [
-            401,
-            281,
-            34,
-            89
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "School Kid Esteban (Valor Lakefront - Restaurant)",
-      "name": "School Kid Esteban",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 423
-    },
-    {
-      "team": [
-        {
           "ability": "Synchronize",
           "gender": "NEUTRAL",
           "id": 65,
@@ -38439,42 +39084,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 424
-    },
-    {
-      "team": [
-        {
-          "ability": "Synchronize",
-          "gender": "NEUTRAL",
-          "id": 65,
-          "item": null,
-          "level": 37,
-          "moves": [
-            473,
-            427,
-            105,
-            94
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Scientist Emilio (Valor Lakefront - Restaurant)",
-      "name": "Scientist Emilio",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 424
     },
     {
@@ -38516,42 +39125,6 @@
     {
       "team": [
         {
-          "ability": "Swift Swim",
-          "gender": "FEMALE",
-          "id": 457,
-          "item": null,
-          "level": 37,
-          "moves": [
-            60,
-            175,
-            219,
-            401
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Beauty Gabriella (Valor Lakefront - Restaurant)",
-      "name": "Beauty Gabriella",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 425
-    },
-    {
-      "team": [
-        {
           "ability": "Damp",
           "gender": "MALE",
           "id": 55,
@@ -38588,42 +39161,6 @@
     {
       "team": [
         {
-          "ability": "Damp",
-          "gender": "MALE",
-          "id": 55,
-          "item": null,
-          "level": 37,
-          "moves": [
-            487,
-            401,
-            408,
-            94
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Beauty Harley (Valor Lakefront - Restaurant)",
-      "name": "Beauty Harley",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
-      "trainer_id": 426
-    },
-    {
-      "team": [
-        {
           "ability": "Blaze",
           "gender": "FEMALE",
           "id": 257,
@@ -38655,42 +39192,6 @@
       "route": "Valor Lakefront - Restaurant",
       "zoneId": 348,
       "trainerType": "Single Battle",
-      "trainer_id": 427
-    },
-    {
-      "team": [
-        {
-          "ability": "Blaze",
-          "gender": "FEMALE",
-          "id": 257,
-          "item": null,
-          "level": 37,
-          "moves": [
-            116,
-            327,
-            53,
-            299
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Veteran Emanuel (Valor Lakefront - Restaurant)",
-      "name": "Veteran Emanuel",
-      "route": "Valor Lakefront - Restaurant",
-      "zoneId": 348,
-      "trainerType": "Double Battle",
       "trainer_id": 427
     }
   ],
@@ -39424,159 +39925,81 @@
     {
       "team": [
         {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 398,
-          "item": "Muscle Band",
-          "level": 41,
+          "ability": "Keen Eye",
+          "gender": "NEUTRAL",
+          "id": 396,
+          "item": null,
+          "level": 10,
           "moves": [
-            38,
-            370,
-            332,
-            355
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Guts",
-          "gender": "FEMALE",
-          "id": 214,
-          "item": "Coba Berry",
-          "level": 41,
-          "moves": [
-            224,
-            280,
-            331,
-            400
+            17,
+            98,
+            45,
+            0
           ],
           "nature": "Docile",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 36,
+          "evatk": 236,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 4
-        },
-        {
-          "ability": "Immunity",
-          "gender": "NEUTRAL",
-          "id": 143,
-          "item": "Leftovers",
-          "level": 41,
-          "moves": [
-            34,
-            242,
-            156,
-            214
-          ],
-          "nature": "Calm",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 188,
-          "evatk": 0,
-          "evdef": 128,
-          "evspatk": 0,
-          "evspdef": 192,
+          "evspatk": 36,
+          "evspdef": 0,
           "evspeed": 0
         },
         {
-          "ability": "Thick Fat",
-          "gender": "NEUTRAL",
-          "id": 184,
-          "item": "Life Orb",
-          "level": 41,
+          "ability": "Pickup",
+          "gender": "FEMALE",
+          "id": 446,
+          "item": null,
+          "level": 10,
           "moves": [
-            401,
-            583,
-            34,
-            453
+            118,
+            33,
+            133,
+            317
           ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 59,
-          "item": "Expert Belt",
-          "level": 41,
-          "moves": [
-            257,
-            422,
-            200,
-            242
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
+          "nature": "Docile",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
           "evhp": 0,
-          "evatk": 252,
-          "evdef": 4,
+          "evatk": 236,
+          "evdef": 36,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
+          "evspdef": 236,
+          "evspeed": 0
         },
         {
           "ability": "Overgrow",
-          "gender": "MALE",
-          "id": 389,
-          "item": "Sitrus Berry",
-          "level": 42,
+          "gender": "FEMALE",
+          "id": 387,
+          "item": "Oran Berry",
+          "level": 11,
           "moves": [
-            402,
-            89,
-            242,
-            442
+            75,
+            174,
+            33,
+            0
           ],
-          "nature": "Bashful",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 248,
-          "evatk": 0,
-          "evdef": 252,
+          "nature": "Quirky",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 76,
+          "evatk": 52,
+          "evdef": 244,
           "evspatk": 0,
-          "evspdef": 8,
+          "evspdef": 0,
           "evspeed": 0
         }
       ],
@@ -39585,339 +40008,7 @@
       "route": "Pastoria City",
       "zoneId": 110,
       "trainerType": "Single Battle",
-      "trainer_id": 354
-    },
-    {
-      "team": [
-        {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 398,
-          "item": "Muscle Band",
-          "level": 41,
-          "moves": [
-            38,
-            370,
-            332,
-            355
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Guts",
-          "gender": "FEMALE",
-          "id": 214,
-          "item": "Coba Berry",
-          "level": 41,
-          "moves": [
-            224,
-            280,
-            331,
-            400
-          ],
-          "nature": "Docile",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 4
-        },
-        {
-          "ability": "Immunity",
-          "gender": "NEUTRAL",
-          "id": 143,
-          "item": "Leftovers",
-          "level": 41,
-          "moves": [
-            34,
-            242,
-            156,
-            214
-          ],
-          "nature": "Calm",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 188,
-          "evatk": 0,
-          "evdef": 128,
-          "evspatk": 0,
-          "evspdef": 192,
-          "evspeed": 0
-        },
-        {
-          "ability": "Thick Fat",
-          "gender": "NEUTRAL",
-          "id": 184,
-          "item": "Life Orb",
-          "level": 41,
-          "moves": [
-            401,
-            583,
-            34,
-            453
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 59,
-          "item": "Expert Belt",
-          "level": 41,
-          "moves": [
-            257,
-            422,
-            200,
-            242
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Blaze",
-          "gender": "NEUTRAL",
-          "id": 392,
-          "item": "Sitrus Berry",
-          "level": 42,
-          "moves": [
-            53,
-            370,
-            252,
-            9
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 4,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 252
-        }
-      ],
-      "team_name": "Pok\u00e9mon Trainer Barry Turtwig (Pastoria City Trainers)",
-      "name": "Pok\u00e9mon Trainer Barry Turtwig",
-      "route": "Pastoria City",
-      "zoneId": 110,
-      "trainerType": "Single Battle",
-      "trainer_id": 355
-    },
-    {
-      "team": [
-        {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 398,
-          "item": "Muscle Band",
-          "level": 41,
-          "moves": [
-            38,
-            370,
-            332,
-            355
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Guts",
-          "gender": "FEMALE",
-          "id": 214,
-          "item": "Coba Berry",
-          "level": 41,
-          "moves": [
-            224,
-            280,
-            331,
-            400
-          ],
-          "nature": "Docile",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 4
-        },
-        {
-          "ability": "Immunity",
-          "gender": "NEUTRAL",
-          "id": 143,
-          "item": "Leftovers",
-          "level": 41,
-          "moves": [
-            34,
-            242,
-            156,
-            214
-          ],
-          "nature": "Calm",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 188,
-          "evatk": 0,
-          "evdef": 128,
-          "evspatk": 0,
-          "evspdef": 192,
-          "evspeed": 0
-        },
-        {
-          "ability": "Thick Fat",
-          "gender": "NEUTRAL",
-          "id": 184,
-          "item": "Life Orb",
-          "level": 41,
-          "moves": [
-            401,
-            583,
-            34,
-            453
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 59,
-          "item": "Expert Belt",
-          "level": 41,
-          "moves": [
-            257,
-            422,
-            200,
-            242
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Torrent",
-          "gender": "FEMALE",
-          "id": 395,
-          "item": "Sitrus Berry",
-          "level": 42,
-          "moves": [
-            503,
-            430,
-            97,
-            207
-          ],
-          "nature": "Modest",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 76,
-          "evspatk": 0,
-          "evspdef": 180,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Pok\u00e9mon Trainer Barry Chimchar (Pastoria City Trainers)",
-      "name": "Pok\u00e9mon Trainer Barry Chimchar",
-      "route": "Pastoria City",
-      "zoneId": 110,
-      "trainerType": "Single Battle",
-      "trainer_id": 356
+      "trainer_id": 176
     },
     {
       "team": [
@@ -43772,70 +43863,44 @@
     {
       "team": [
         {
-          "ability": "Intimidate",
-          "gender": "NEUTRAL",
-          "id": 229,
-          "item": null,
-          "level": 43,
-          "moves": [
-            389,
-            399,
-            488,
-            373
-          ],
-          "nature": "Hardy",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
           "ability": "Inner Focus",
-          "gender": "FEMALE",
-          "id": 42,
+          "gender": "MALE",
+          "id": 41,
           "item": null,
-          "level": 43,
+          "level": 15,
           "moves": [
-            95,
-            403,
-            114,
-            428
-          ],
-          "nature": "Docile",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Adaptability",
-          "gender": "FEMALE",
-          "id": 15,
-          "item": null,
-          "level": 43,
-          "moves": [
-            529,
-            97,
-            283,
-            200
+            44,
+            17,
+            305,
+            109
           ],
           "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Swarm",
+          "gender": "MALE",
+          "id": 167,
+          "item": null,
+          "level": 15,
+          "moves": [
+            450,
+            184,
+            305,
+            101
+          ],
+          "nature": "Bashful",
           "ivatk": 25,
           "ivdef": 25,
           "ivhp": 25,
@@ -43855,7 +43920,7 @@
       "route": "Celestic Town",
       "zoneId": 456,
       "trainerType": "Single Battle",
-      "trainer_id": 319
+      "trainer_id": 221
     },
     {
       "team": [
@@ -51916,6 +51981,68 @@
     {
       "team": [
         {
+          "ability": "Inner Focus",
+          "gender": "MALE",
+          "id": 41,
+          "item": null,
+          "level": 15,
+          "moves": [
+            44,
+            17,
+            305,
+            109
+          ],
+          "nature": "Serious",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Swarm",
+          "gender": "MALE",
+          "id": 167,
+          "item": null,
+          "level": 15,
+          "moves": [
+            450,
+            184,
+            305,
+            101
+          ],
+          "nature": "Bashful",
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Team Galactic Grunt 1 (Iron Island - B2F Left (Riley's Room) Trainers)",
+      "name": "Team Galactic Grunt 1",
+      "route": "Iron Island - B2F Left (Riley's Room)",
+      "zoneId": 303,
+      "trainerType": "Double Battle",
+      "trainer_id": 221
+    },
+    {
+      "team": [
+        {
           "ability": "Intimidate",
           "gender": "NEUTRAL",
           "id": 237,
@@ -52486,182 +52613,6 @@
       "zoneId": 303,
       "trainerType": "Single Battle",
       "trainer_id": 380
-    },
-    {
-      "team": [
-        {
-          "ability": "Thick Fat",
-          "gender": "NEUTRAL",
-          "id": 432,
-          "item": null,
-          "level": 46,
-          "moves": [
-            514,
-            207,
-            583,
-            213
-          ],
-          "nature": "Docile",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Anticipation",
-          "gender": "MALE",
-          "id": 454,
-          "item": null,
-          "level": 46,
-          "moves": [
-            417,
-            92,
-            389,
-            238
-          ],
-          "nature": "Bashful",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Stench",
-          "gender": "MALE",
-          "id": 435,
-          "item": null,
-          "level": 46,
-          "moves": [
-            262,
-            242,
-            562,
-            188
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Team Galactic Grunt 1 (Iron Island - B2F Left (Riley's Room) Trainers)",
-      "name": "Team Galactic Grunt 1",
-      "route": "Iron Island - B2F Left (Riley's Room)",
-      "zoneId": 303,
-      "trainerType": "Double Battle",
-      "trainer_id": 661
-    },
-    {
-      "team": [
-        {
-          "ability": "Inner Focus",
-          "gender": "FEMALE",
-          "id": 42,
-          "item": null,
-          "level": 46,
-          "moves": [
-            95,
-            403,
-            114,
-            428
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 229,
-          "item": null,
-          "level": 46,
-          "moves": [
-            488,
-            373,
-            492,
-            417
-          ],
-          "nature": "Quirky",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Stench",
-          "gender": "NEUTRAL",
-          "id": 89,
-          "item": null,
-          "level": 46,
-          "moves": [
-            103,
-            188,
-            151,
-            441
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Team Galactic Grunt 2 (Iron Island - B2F Left (Riley's Room) Trainers)",
-      "name": "Team Galactic Grunt 2",
-      "route": "Iron Island - B2F Left (Riley's Room)",
-      "zoneId": 303,
-      "trainerType": "Double Battle",
-      "trainer_id": 662
     }
   ],
   "302": [
