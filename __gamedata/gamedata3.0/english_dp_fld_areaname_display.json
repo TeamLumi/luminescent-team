@@ -4453,6 +4453,126 @@
                     "strWidth": 217.671875
                 }
             ]
+        },
+        {
+            "labelIndex": 148,
+            "arrayIndex": 148,
+            "labelName": "DP_fld_areaname_display_402",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Battle Hall",
+                    "strWidth": 138.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 149,
+            "arrayIndex": 149,
+            "labelName": "DP_fld_areaname_display_403",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Battle Factory",
+                    "strWidth": 181.765625
+                }
+            ]
+        },
+        {
+            "labelIndex": 150,
+            "arrayIndex": 150,
+            "labelName": "DP_fld_areaname_display_404",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Battle Castle",
+                    "strWidth": 165.984375
+                }
+            ]
+        },
+        {
+            "labelIndex": 151,
+            "arrayIndex": 151,
+            "labelName": "DP_fld_areaname_display_405",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Battle Arcade",
+                    "strWidth": 177.40625
+                }
+            ]
         }
     ]
 }
