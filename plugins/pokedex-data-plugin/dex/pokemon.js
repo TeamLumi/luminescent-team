@@ -53,6 +53,7 @@ function getPokemon(pokemonId, mode = GAMEDATA2) {
     return {
       name: getPokemonName(formId, mode),
       imageSrc: getImage(p.monsno, getPokemonFormIndexById(p.monsno, formId, mode)),
+      isValid: ModePersonalTable.Personal[formId].valid_flag
     };
   });
 
