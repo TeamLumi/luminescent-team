@@ -1,4 +1,4 @@
-const statusEffects = { // Maps to the sickID in WazaTable
+const STATUS_EFFECTS = { // Maps to the sickID in WazaTable
   0 : "None",
   1 : "Paralysis",
   2 : "Sleep",
@@ -47,6 +47,95 @@ const statusEffects = { // Maps to the sickID in WazaTable
   65535 : "Special",
 };
 
-module.exports = {
-  statusEffects,
+const MOVE_CATEGORIES = [
+  "Deal Damage",
+  "Status Affliction",
+  "Stat Change",
+  "Heal",
+  "Damage + Status",
+  "Status + Stat±",
+  "Damage + Stat± (target)",
+  "Damage + Stat± (self)",
+  "Damage + Heal",
+  "One Hit KO",
+  "Field Effect",
+  "Field Effect (target)",
+  "Switch Out (target)",
+  "Special"
+];
+
+const MOVE_TARGETING = [
+  "Ally or Foe",
+  "Self or Ally",
+  "Ally Only",
+  "Foe Only",
+  "Allies and Foes",
+  "All Foes",
+  "Self and Allies",
+  "Self Only",
+  "Everyone",
+  "Self (random)",
+  "Everyone (field)",
+  "All Foes (field)",
+  "Self and Allies (field)",
+  "Self (autotarget)"
+];
+
+const STATS_TO_CHANGE = [
+  "None",
+  "Attack",
+  "Defense",
+  "Special Attack",
+  "Special Defense",
+  "Speed",
+  "Accuracy",
+  "Evasiveness",
+  "All Stats"
+];
+
+const FLAG_STRINGS = [
+  "Makes Contact",
+  "Two Turn Move",
+  "Requires Recharge",
+  "Protect Effective",
+  "Magic Coat Effective",
+  "Snatch Effective",
+  "Mirror Move Effective",
+  "Punch Move",
+  "Sound Move",
+  "Gravity Effective",
+  "Thaws Frozen Targets",
+  "Unlimited Range",
+  "Heal Block Effective",
+  "Ignores Substitute",
+  "Fails in Sky Battle",
+  "EFFECT_TO_FRIEND",
+  "Dance Move",
+  "Metronome Valid"
+];
+
+const SICK_CONT_STRINGS = [
+  "None",
+  "Permanent",
+  "Turn Limit",
+  "Attract",
+  "Prevents Switch Out"
+];
+
+const CRITICAL_HIT_RATIO = {
+  0: "1/24",
+  1: "1/8",
+  2: "1/2",
+  3: "1/1",
+  4: "1/1"
 }
+
+module.exports = {
+  STATUS_EFFECTS,
+  MOVE_CATEGORIES,
+  MOVE_TARGETING,
+  STATS_TO_CHANGE,
+  FLAG_STRINGS,
+  SICK_CONT_STRINGS,
+  CRITICAL_HIT_RATIO,
+};

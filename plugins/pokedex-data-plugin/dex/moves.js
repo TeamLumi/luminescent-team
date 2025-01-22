@@ -8,9 +8,12 @@ const {
   MoveNames,
   MoveInfo,
   TutorMoves,
-  GAMEDATA2
+  GAMEDATA2,
+  GAMEDATAV,
+  GAMEDATA3
 } = require('../../../__gamedata');
 const { FORM_MAP, isValidPokemon } = require('./functions');
+const { STATUS_EFFECTS, SICK_CONT_STRINGS, CRITICAL_HIT_RATIO, MOVE_TARGETING, STATS_TO_CHANGE } = require('./moveConstants');
 const { getPokemonFormId, getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
 
 const IS_MOVE_INDEX = false;
@@ -106,9 +109,16 @@ function findWazaNoByMachineNo(machineNo, mode = GAMEDATA2) {
 }
 
 function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false) {
+  if (![GAMEDATA2, GAMEDATA3, GAMEDATAV].includes(mode)) {
+    throw Error(`Incorrect mode provided: ${mode}`);
+  }
   const ModeMovesTable = MovesTable[mode];
   const ModeMoveNames = MoveNames[mode];
-  const move = ModeMovesTable.Waza[moveId];
+  const move = ModeMovesTable?.Waza?.[moveId];
+  if (!move) {
+    return null;
+  }
+
   const type = move.type;
   const damageType = move.damageType;
   const power = move.power;
@@ -119,7 +129,7 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
   const MAX_PP_MULTIPLIER = 1.6;
   const maxPP = BASE_PP * MAX_PP_MULTIPLIER;
 
-  const moveObject = {
+  let moveObject = {
     moveId: moveId,
     name: ModeMoveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
     desc: getMoveDescription(moveId, mode),
@@ -131,7 +141,42 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
   };
 
   if (extendedDetails) {
-    // Do nothing yet
+    const moveFlags = move.flags;
+    const flagArray = new Array(32);
+    for (let i = 0; i < 32; i++) {
+      flagArray[i] = (moveFlags & (1 << i)) !== 0;
+    }
+
+    const statusEffects = {
+      status: STATUS_EFFECTS[move.sickID],
+      rate: move.sickPer,
+      sickCont: SICK_CONT_STRINGS[move.sickCont],
+      minDuration: move.sickTurnMin,
+      maxDuration: move.sickTurnMax,
+    }
+
+    const critRatio = CRITICAL_HIT_RATIO[move.criticalRank];
+
+    const statChanges = [
+      {statType: STATS_TO_CHANGE[move.rankEffType1], stages: move.rankEffValue1, rate: move.rankEffPer1},
+      {statType: STATS_TO_CHANGE[move.rankEffType2], stages: move.rankEffValue2, rate: move.rankEffPer2},
+      {statType: STATS_TO_CHANGE[move.rankEffType3], stages: move.rankEffValue3, rate: move.rankEffPer3},
+    ];
+
+    moveObject = {
+      ...moveObject,
+      statusEffects,
+      critRatio,
+      statChanges,
+      moveFlags: flagArray,
+      priority: move.priority,
+      minHitCount: move.hitCountMin,
+      maxHitCount: move.hitCountMax,
+      flinchChance: move.shrinkPer,
+      healDamage: move.damageRecoverRatio,
+      hpRecover: move.hpRecoverRatio,
+      target: MOVE_TARGETING[move.target],
+    }
   }
 
   return moveObject;
