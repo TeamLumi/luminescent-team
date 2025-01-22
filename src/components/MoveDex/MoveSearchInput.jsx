@@ -29,7 +29,7 @@ const MoveSearchInput = ({ movesList, setMoves, searchKey }) => {
 
   useEffect(() => {
     setMoves(fuzzySearch(text));
-  }, [text]);
+  }, [text, searchKey]);
 
   return (
     <TextField
