@@ -344,6 +344,10 @@ function searchForMovesOnPokemon(moveId = 0, mode = GAMEDATA2) {
       } catch (error) {
         console.log("This pokemonID didn't work", id, mode);
       }
+      if (monsNo === 414 && formNo > 0) {
+        // Just hardcode out the Mothim forms that exist in Vanilla BDSP
+        return null
+      }
       const learnsets = {
         level: getLevelLearnset(id, mode),
         tm: getTechMachineLearnset(id, mode),
