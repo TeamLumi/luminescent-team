@@ -1,14 +1,18 @@
-import { Box, Button, Container, Typography } from '@mui/material';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+import Link from '@docusaurus/Link';
+import { Box, Container, FormGroup, Typography, Checkbox, FormControlLabel } from '@mui/material';
+
 import { MoveSearchBox } from './MoveSearchBox';
 import { MovesetListItem } from '../Pokedex2/PokemonMovesetList';
-import { searchForMovesOnPokemon } from '../../../plugins/pokedex-data-plugin/dex/moves';
-import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
+import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
 import { ImageWithFallback } from '../common/ImageWithFallback';
+
+import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 import { getImage } from '../../utils/dex';
+import { getMoveProperties, searchForMovesOnPokemon } from '../../../plugins/pokedex-data-plugin/dex/moves';
 import { getPokemonIdFromMonsNoAndForm } from '../../../plugins/pokedex-data-plugin/dex/functions';
 import { getPokemonName } from '../../../plugins/pokedex-data-plugin/dex/name';
-import Link from '@docusaurus/Link';
+import { FLAG_STRINGS } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
 
 const MoveContainer = ({ gameMode, move }) => {
   return (
@@ -51,10 +55,145 @@ const MoveContainer = ({ gameMode, move }) => {
   );
 };
 
-const PokemonContainer = () => {
+const ExtendedMoveContainer = ({ gameMode, move }) => {
+  const extendedMoveDetails = getMoveProperties(parseInt(move.moveId), gameMode, true);
+  return (
+    <PokemonAccordion
+      disabled={!move?.name}
+      title="Extended Details"
+      id={`${move.name}-${gameMode}`}
+    >
+      {move?.name && (
+        <Box>
+          <FormGroup>
+            {extendedMoveDetails.moveFlags.map((flag, index) => {
+              if (index > 17) {
+                return null;
+              }
+              const flagName = FLAG_STRINGS[index];
+              return (
+                <FormControlLabel
+                  key={`move-flag-${index}`}
+                  disabled
+                  control={<Checkbox checked={flag} />}
+                  label={flagName}
+                  labelPlacement='start'
+                />
+              )
+            })}
+          </FormGroup>
+        </Box>
+      )}
+    </PokemonAccordion>
+  );
+}
+
+const MoveLearnBox = ({ mode, moveset }) => {
   return (
     <>
+      {moveset?.[mode] && (
+        <>
+          <Typography>
+            {mode}
+          </Typography>
+          <Typography>
+            {moveset?.[mode]?.map(
+              (moveType) => (<li key={`${mode}-${moveType}`}>{`${moveType}`}</li>))
+              || ""
+            }
+          </Typography>
+        </>
+      )}
     </>
+  )
+};
+
+const PokemonMovesetContainer = ({ moveset }) => {
+  const [monsNo, formNo] = moveset.id.split("-");
+  const pokemonId = getPokemonIdFromMonsNoAndForm(parseInt(monsNo), parseInt(formNo), GAMEDATA3);
+  const pokemonPath = parseInt(formNo) === 0 ? monsNo : `${monsNo}_${formNo}`;
+
+  return (
+    <Box
+      key={moveset.id}
+      display="grid"
+      gridTemplateColumns=".5fr 1.5fr"
+      rowGap="16px"
+      height="min-content"
+      alignSelf="center"
+      border="2px solid var(--ifm-table-border-color)"
+      borderRadius="5px"
+      margin={{ xs: "8px 0px", sm: "8px" }}
+      padding="8px"
+      sx={{
+        // If you don't split them up like this, then they will
+        // have overlapping values and overwrite each other
+
+        // sm: 2 columns
+        "@media (min-width: 600px)": {
+          "&:nth-of-type(2n)": {
+            margin: "8px 0px 8px 8px", // Rightmost in 2-column rows
+          },
+          "&:nth-of-type(2n-1)": {
+            margin: "8px 8px 8px 0px", // Leftmost in 2-column rows
+          },
+        },
+
+        // md: 3 columns
+        "@media (min-width: 900px)": {
+          "&:nth-of-type(3n)": {
+            margin: "8px 0px 8px 8px", // Rightmost in 3-column rows
+          },
+          "&:nth-of-type(3n-2)": {
+            margin: "8px 8px 8px 0px", // Leftmost in 3-column rows
+          },
+          "&:nth-of-type(3n-1)": {
+            margin: "8px", // Middle element in 3-column rows
+          },
+        },
+
+        // lg: 4 columns
+        "@media (min-width: 1200px)": {
+          "&:nth-of-type(4n)": {
+            margin: "8px 0px 8px 8px", // Rightmost in 4-column rows
+          },
+          "&:nth-of-type(4n-3)": {
+            margin: "8px 8px 8px 0px", // Leftmost in 4-column rows
+          },
+          "&:nth-of-type(4n-2), &:nth-of-type(4n-1)": {
+            margin: "8px", // Middle elements in 4-column rows
+          },
+        },
+      }}
+    >
+      <Box alignContent="center">
+        <Link to={`/pokedex/${pokemonPath}`}>
+          <Typography>{getPokemonName(pokemonId, GAMEDATA3)}</Typography>
+        </Link>
+        <ImageWithFallback
+          alt={moveset.id}
+          src={getImage(monsNo, formNo)}
+          fallbackSrc={getImage(monsNo, 0)}
+          style={{ objectFit: 'contain', marginTop: '8px' }}
+          width="64px"
+          height="64px"            
+        />
+      </Box>
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: ".75fr .75fr",
+          padding: "8px"
+        }}
+      >
+        <Box gridColumn="span 2">
+          {"How to Learn it:"}
+        </Box>
+        <MoveLearnBox mode={GAMEDATAV} moveset={moveset} />
+        <MoveLearnBox mode={GAMEDATA2} moveset={moveset} />
+        <MoveLearnBox mode={GAMEDATA3} moveset={moveset} />
+      </Box>
+    </Box>
   );
 };
 
@@ -118,8 +257,11 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
       </Container>
       <Container>
         <MoveContainer gameMode={"Vanilla BDSP"} move={moveV} />
+        <ExtendedMoveContainer gameMode={GAMEDATAV} move={moveV} />
         <MoveContainer gameMode={"Luminescent 2.1.1F"} move={move2} />
+        <ExtendedMoveContainer gameMode={GAMEDATA2} move={move2} />
         <MoveContainer gameMode={"Re: Illuminated"} move={move3} />
+        <ExtendedMoveContainer gameMode={GAMEDATA3} move={move3} />
       </Container>
       <Container>
         <Box
@@ -131,131 +273,9 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
             lg: "1fr 1fr 1fr 1fr",
           }}
         >
-          {movesetLists.map((moveset) => {
-            const [monsNo, formNo] = moveset.id.split("-");
-            const pokemonId = getPokemonIdFromMonsNoAndForm(parseInt(monsNo), parseInt(formNo), GAMEDATA3);
-            const pokemonPath = parseInt(formNo) === 0 ? monsNo : `${monsNo}_${formNo}`;
-
-            return (
-              <Box
-                key={moveset.id}
-                display="grid"
-                gridTemplateColumns=".5fr 1.5fr"
-                rowGap="16px"
-                height="min-content"
-                alignSelf="center"
-                border="2px solid var(--ifm-table-border-color)"
-                borderRadius="5px"
-                margin={{ xs: "8px 0px", sm: "8px" }}
-                padding="8px"
-                sx={{
-                  // If you don't split them up like this, then they will
-                  // have overlapping values and overwrite each other
-
-                  // sm: 2 columns
-                  "@media (min-width: 600px)": {
-                    "&:nth-of-type(2n)": {
-                      margin: "8px 0px 8px 8px", // Rightmost in 2-column rows
-                    },
-                    "&:nth-of-type(2n-1)": {
-                      margin: "8px 8px 8px 0px", // Leftmost in 2-column rows
-                    },
-                  },
-
-                  // md: 3 columns
-                  "@media (min-width: 900px)": {
-                    "&:nth-of-type(3n)": {
-                      margin: "8px 0px 8px 8px", // Rightmost in 3-column rows
-                    },
-                    "&:nth-of-type(3n-2)": {
-                      margin: "8px 8px 8px 0px", // Leftmost in 3-column rows
-                    },
-                    "&:nth-of-type(3n-1)": {
-                      margin: "8px", // Middle element in 3-column rows
-                    },
-                  },
-
-                  // lg: 4 columns
-                  "@media (min-width: 1200px)": {
-                    "&:nth-of-type(4n)": {
-                      margin: "8px 0px 8px 8px", // Rightmost in 4-column rows
-                    },
-                    "&:nth-of-type(4n-3)": {
-                      margin: "8px 8px 8px 0px", // Leftmost in 4-column rows
-                    },
-                    "&:nth-of-type(4n-2), &:nth-of-type(4n-1)": {
-                      margin: "8px", // Middle elements in 4-column rows
-                    },
-                  },
-                }}
-              >
-                <Box alignContent="center">
-                  <Link to={`/pokedex/${pokemonPath}`}>
-                    <Typography>{getPokemonName(pokemonId, GAMEDATA3)}</Typography>
-                  </Link>
-                  <ImageWithFallback
-                    alt={moveset.id}
-                    src={getImage(monsNo, formNo)}
-                    fallbackSrc={getImage(monsNo, 0)}
-                    style={{ objectFit: 'contain', marginTop: '8px' }}
-                    width="64px"
-                    height="64px"            
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    display: "grid",
-                    gridTemplateColumns: ".75fr .75fr",
-                    padding: "8px"
-                  }}
-                >
-                  <Box gridColumn="span 2">
-                    {"How to Learn it:"}
-                  </Box>
-                  {moveset?.[GAMEDATAV] && (
-                    <>
-                      <Box>
-                        {GAMEDATAV}
-                      </Box>
-                      <Box>
-                        {moveset?.[GAMEDATAV]?.map(
-                          (moveType) => (<li key={`${GAMEDATAV}-${moveType}`}>{`${moveType}`}</li>))
-                          || ""
-                        }
-                      </Box>
-                    </>
-                  )}
-                  {moveset?.[GAMEDATA2] && (
-                    <>
-                      <Box>
-                        {GAMEDATA2}
-                      </Box>
-                      <Box>
-                        {moveset?.[GAMEDATA2]?.map(
-                          (moveType) => (<li key={`${GAMEDATA2}-${moveType}`}>{`${moveType}`}</li>))
-                          || ""
-                        }
-                      </Box>
-                    </>
-                  )}
-                  {moveset?.[GAMEDATA3] && (
-                    <>
-                      <Box>
-                        {GAMEDATA3}
-                      </Box>
-                      <Box>
-                        {moveset?.[GAMEDATA3]?.map(
-                          (moveType) => (<li key={`${GAMEDATA3}-${moveType}`}>{`${moveType}`}</li>))
-                          || ""
-                        }
-                      </Box>
-                    </>
-                  )}                  
-                </Box>
-              </Box>
-            )
-          })}
-
+          {movesetLists.map((moveset) => (
+            <PokemonMovesetContainer moveset={moveset} />
+          ))}
         </Box>
       </Container>
     </Container>
