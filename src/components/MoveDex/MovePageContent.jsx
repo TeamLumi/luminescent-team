@@ -154,36 +154,36 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
 
                   // sm: 2 columns
                   "@media (min-width: 600px)": {
-                    "&:nth-child(2n)": {
+                    "&:nth-of-type(2n)": {
                       margin: "8px 0px 8px 8px", // Rightmost in 2-column rows
                     },
-                    "&:nth-child(2n-1)": {
+                    "&:nth-of-type(2n-1)": {
                       margin: "8px 8px 8px 0px", // Leftmost in 2-column rows
                     },
                   },
 
                   // md: 3 columns
                   "@media (min-width: 900px)": {
-                    "&:nth-child(3n)": {
+                    "&:nth-of-type(3n)": {
                       margin: "8px 0px 8px 8px", // Rightmost in 3-column rows
                     },
-                    "&:nth-child(3n-2)": {
+                    "&:nth-of-type(3n-2)": {
                       margin: "8px 8px 8px 0px", // Leftmost in 3-column rows
                     },
-                    "&:nth-child(3n-1)": {
+                    "&:nth-of-type(3n-1)": {
                       margin: "8px", // Middle element in 3-column rows
                     },
                   },
 
                   // lg: 4 columns
                   "@media (min-width: 1200px)": {
-                    "&:nth-child(4n)": {
+                    "&:nth-of-type(4n)": {
                       margin: "8px 0px 8px 8px", // Rightmost in 4-column rows
                     },
-                    "&:nth-child(4n-3)": {
+                    "&:nth-of-type(4n-3)": {
                       margin: "8px 8px 8px 0px", // Leftmost in 4-column rows
                     },
-                    "&:nth-child(4n-2), &:nth-child(4n-1)": {
+                    "&:nth-of-type(4n-2), &:nth-of-type(4n-1)": {
                       margin: "8px", // Middle elements in 4-column rows
                     },
                   },
