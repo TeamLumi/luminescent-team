@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Container, ListItem, ListItemButton, ListItemIcon, Typography } from '@mui/material';
+import { Box, Container, ListItem, ListItemButton, ListItemIcon, MenuItem, Select, Typography } from '@mui/material';
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { FixedSizeList } from 'react-window';
 import { MoveIcon, PokemonMove, PokemonMoveType, TYPE_COLOR_MAP } from '../Pokedex2/PokemonMovesetList';
@@ -10,6 +10,11 @@ import { normalizePokemonName } from '../../utils/dex/name';
 
 const MoveListPageContent = ({ movesList }) => {
   const [moves, setMoves] = useState(movesList);
+  const [searchKey, setSearchKey] = useState("name");
+
+  const handleChange = (event) => {
+    setSearchKey(event.target.value);
+  };
 
   return (
     <Container sx={{ flex: '1 1 auto', display: 'flex', flexDirection: 'column' }}>
@@ -31,7 +36,16 @@ const MoveListPageContent = ({ movesList }) => {
             marginTop: "16px",
           }}
         >
-          <MoveSearchInput movesList={movesList} setMoves={setMoves} />
+          <MoveSearchInput movesList={movesList} setMoves={setMoves} searchKey={searchKey} />
+          <Select
+            labelId='search-key-label'
+            id="search-key-select"
+            value={searchKey}
+            onChange={handleChange}
+          >
+            <MenuItem value={"name"}>Move Name</MenuItem>
+            <MenuItem value={"type"}>Move Type</MenuItem>
+          </Select>
         </Box>
 
         <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>

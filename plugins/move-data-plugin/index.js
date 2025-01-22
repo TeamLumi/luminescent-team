@@ -4,6 +4,7 @@ const { Joi } = require('@docusaurus/utils-validation');
 const { GAMEDATA2, GAMEDATA3, GAMEDATAV, MovesTable } = require('../../__gamedata');
 const { getMoveProperties } = require('../pokedex-data-plugin/dex/moves');
 const { normalizePokemonName } = require('../pokedex-data-plugin/dex/name');
+const { getTypeName } = require('../pokedex-data-plugin/dex/types');
 
 /**
  * @param {{path: string, routeBasePath: string, moveComponent: string, moveListComponent: string, wrapperComponent: string}} options
@@ -30,6 +31,7 @@ function moveDexDataPlugin(context, options) {
         id: m.moveId,
         name: m.name,
         type: m.type,
+        typeName: getTypeName(m.type),
       }));
 
       return {
