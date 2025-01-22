@@ -105,7 +105,7 @@ function findWazaNoByMachineNo(machineNo, mode = GAMEDATA2) {
   return null;
 }
 
-function getMoveProperties(moveId = 0, mode = GAMEDATA2) {
+function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false) {
   const ModeMovesTable = MovesTable[mode];
   const ModeMoveNames = MoveNames[mode];
   const move = ModeMovesTable.Waza[moveId];
@@ -119,7 +119,7 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2) {
   const MAX_PP_MULTIPLIER = 1.6;
   const maxPP = BASE_PP * MAX_PP_MULTIPLIER;
 
-  return {
+  const moveObject = {
     moveId: moveId,
     name: ModeMoveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
     desc: getMoveDescription(moveId, mode),
@@ -129,6 +129,12 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2) {
     power,
     accuracy: hitPer,
   };
+
+  if (extendedDetails) {
+    // Do nothing yet
+  }
+
+  return moveObject;
 }
 
 function getEggMoves(dexId = 0, mode = GAMEDATA2) {

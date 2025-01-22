@@ -2,9 +2,8 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { TextField } from '@mui/material';
 import Fuse from 'fuse.js';
 
-const MoveSearchInput = ({ movesList, setMoves, searchKey }) => {
+const MoveSearchInput = ({ movesList, setMoves, searchTable }) => {
   const fuse = new Fuse(movesList, { keys: ['name'] });
-  const moveFuse = new Fuse(movesList, { keys: ['typeName']});
   const [text, setText] = useState('');
   const [debouncedText, setDebouncedText] = useState(text);
 
@@ -13,13 +12,20 @@ const MoveSearchInput = ({ movesList, setMoves, searchKey }) => {
       return movesList;
     }
 
-    if (searchKey === "type") {
-      const result = moveFuse.search(query);
-      return result.map((r) => r.item);
-    } else if (searchKey === "name") {
-      const result = fuse.search(query);
-      return result.map((r) => r.item);
-    }
+    const queryList = [];
+
+    Object.keys(searchTable).forEach((searchKey) => {
+      const searchValue = searchTable[searchKey].trim();
+
+      if (searchValue !== "") {
+        queryList.push({ [searchKey]: searchValue })
+      }
+    });
+
+    const result = fuse.search({
+      $and: queryList
+    });
+    return result.map((r) => r.item);
   });
 
   useEffect(() => {
@@ -29,7 +35,7 @@ const MoveSearchInput = ({ movesList, setMoves, searchKey }) => {
 
   useEffect(() => {
     setMoves(fuzzySearch(text));
-  }, [text, searchKey]);
+  }, [text, searchTable]);
 
   return (
     <TextField
