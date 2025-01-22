@@ -122,7 +122,15 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
         <MoveContainer gameMode={"Re: Illuminated"} move={move3} />
       </Container>
       <Container>
-        <Box display="grid" gridTemplateColumns="1fr 1fr 1fr 1fr">
+        <Box
+          display="grid"
+          gridTemplateColumns={{
+            mx: "1fr",
+            sm: "1fr 1fr",
+            md: "1fr 1fr 1fr",
+            lg: "1fr 1fr 1fr 1fr",
+          }}
+        >
           {movesetLists.map((moveset) => {
             const [monsNo, formNo] = moveset.id.split("-");
             const pokemonId = getPokemonIdFromMonsNoAndForm(parseInt(monsNo), parseInt(formNo), GAMEDATA3);
@@ -136,6 +144,50 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
                 rowGap="16px"
                 height="min-content"
                 alignSelf="center"
+                border="2px solid var(--ifm-table-border-color)"
+                borderRadius="5px"
+                margin={{ xs: "8px 0px", sm: "8px" }}
+                padding="8px"
+                sx={{
+                  // If you don't split them up like this, then they will
+                  // have overlapping values and overwrite each other
+
+                  // sm: 2 columns
+                  "@media (min-width: 600px)": {
+                    "&:nth-child(2n)": {
+                      margin: "8px 0px 8px 8px", // Rightmost in 2-column rows
+                    },
+                    "&:nth-child(2n-1)": {
+                      margin: "8px 8px 8px 0px", // Leftmost in 2-column rows
+                    },
+                  },
+
+                  // md: 3 columns
+                  "@media (min-width: 900px)": {
+                    "&:nth-child(3n)": {
+                      margin: "8px 0px 8px 8px", // Rightmost in 3-column rows
+                    },
+                    "&:nth-child(3n-2)": {
+                      margin: "8px 8px 8px 0px", // Leftmost in 3-column rows
+                    },
+                    "&:nth-child(3n-1)": {
+                      margin: "8px", // Middle element in 3-column rows
+                    },
+                  },
+
+                  // lg: 4 columns
+                  "@media (min-width: 1200px)": {
+                    "&:nth-child(4n)": {
+                      margin: "8px 0px 8px 8px", // Rightmost in 4-column rows
+                    },
+                    "&:nth-child(4n-3)": {
+                      margin: "8px 8px 8px 0px", // Leftmost in 4-column rows
+                    },
+                    "&:nth-child(4n-2), &:nth-child(4n-1)": {
+                      margin: "8px", // Middle elements in 4-column rows
+                    },
+                  },
+                }}
               >
                 <Box alignContent="center">
                   <Link to={`/pokedex/${pokemonPath}`}>
