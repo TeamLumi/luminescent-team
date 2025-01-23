@@ -13,7 +13,7 @@ const {
   GAMEDATA3
 } = require('../../../__gamedata');
 const { FORM_MAP, isValidPokemon } = require('./functions');
-const { STATUS_EFFECTS, SICK_CONT_STRINGS, CRITICAL_HIT_RATIO, MOVE_TARGETING, STATS_TO_CHANGE } = require('./moveConstants');
+const { STATUS_EFFECTS, SICK_CONT_STRINGS, CRITICAL_HIT_RATIO, MOVE_TARGETING, STATS_TO_CHANGE, MOVE_CATEGORIES } = require('./moveConstants');
 const { getPokemonFormId, getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
 
 const IS_MOVE_INDEX = false;
@@ -129,7 +129,42 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
   const MAX_PP_MULTIPLIER = 1.6;
   const maxPP = BASE_PP * MAX_PP_MULTIPLIER;
 
-  let moveObject = {
+  let flagArray = null;
+  let statusEffects = null;
+  let critRatio = null;
+  let statChanges = null;
+
+  if (extendedDetails) {
+    const moveFlags = move.flags;
+    flagArray = new Array(32);
+    for (let i = 0; i < 32; i++) {
+      flagArray[i] = (moveFlags & (1 << i)) !== 0;
+    }
+
+    let effectRate = move.sickPer;
+
+    if (move.sickID !== 0 && effectRate === 0) {
+      effectRate = "—"
+    }
+
+    statusEffects = {
+      status: STATUS_EFFECTS[move.sickID],
+      rate: effectRate,
+      sickCont: SICK_CONT_STRINGS[move.sickCont],
+      minDuration: move.sickTurnMin,
+      maxDuration: move.sickTurnMax,
+    }
+
+    critRatio = CRITICAL_HIT_RATIO[move.criticalRank];
+
+    statChanges = [
+      {statType: STATS_TO_CHANGE[move.rankEffType1], stages: move.rankEffValue1, rate: move.rankEffPer1},
+      {statType: STATS_TO_CHANGE[move.rankEffType2], stages: move.rankEffValue2, rate: move.rankEffPer2},
+      {statType: STATS_TO_CHANGE[move.rankEffType3], stages: move.rankEffValue3, rate: move.rankEffPer3},
+    ];
+  }
+
+  const moveObject = {
     moveId: moveId,
     name: ModeMoveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
     desc: getMoveDescription(moveId, mode),
@@ -138,36 +173,11 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
     maxPP,
     power,
     accuracy: hitPer,
-  };
-
-  if (extendedDetails) {
-    const moveFlags = move.flags;
-    const flagArray = new Array(32);
-    for (let i = 0; i < 32; i++) {
-      flagArray[i] = (moveFlags & (1 << i)) !== 0;
-    }
-
-    const statusEffects = {
-      status: STATUS_EFFECTS[move.sickID],
-      rate: move.sickPer,
-      sickCont: SICK_CONT_STRINGS[move.sickCont],
-      minDuration: move.sickTurnMin,
-      maxDuration: move.sickTurnMax,
-    }
-
-    const critRatio = CRITICAL_HIT_RATIO[move.criticalRank];
-
-    const statChanges = [
-      {statType: STATS_TO_CHANGE[move.rankEffType1], stages: move.rankEffValue1, rate: move.rankEffPer1},
-      {statType: STATS_TO_CHANGE[move.rankEffType2], stages: move.rankEffValue2, rate: move.rankEffPer2},
-      {statType: STATS_TO_CHANGE[move.rankEffType3], stages: move.rankEffValue3, rate: move.rankEffPer3},
-    ];
-
-    moveObject = {
-      ...moveObject,
+    ...(extendedDetails && {
       statusEffects,
       critRatio,
       statChanges,
+      moveCat: MOVE_CATEGORIES[move.category],
       moveFlags: flagArray,
       priority: move.priority,
       minHitCount: move.hitCountMin,
@@ -176,7 +186,11 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
       healDamage: move.damageRecoverRatio,
       hpRecover: move.hpRecoverRatio,
       target: MOVE_TARGETING[move.target],
-    }
+    })
+  };
+
+  if (extendedDetails) {
+    console.log(moveObject);
   }
 
   return moveObject;

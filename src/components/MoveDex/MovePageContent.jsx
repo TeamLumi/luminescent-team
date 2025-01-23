@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from '@docusaurus/Link';
-import { Box, Container, FormGroup, Typography, Checkbox, FormControlLabel } from '@mui/material';
+import { Box, Container, FormGroup, Typography, Checkbox, FormControlLabel, Card, CardHeader, CardContent } from '@mui/material';
 
 import { MoveSearchBox } from './MoveSearchBox';
 import { MovesetListItem } from '../Pokedex2/PokemonMovesetList';
@@ -65,23 +65,88 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
     >
       {move?.name && (
         <Box>
-          <FormGroup>
-            {extendedMoveDetails.moveFlags.map((flag, index) => {
-              if (index > 17) {
-                return null;
-              }
-              const flagName = FLAG_STRINGS[index];
-              return (
-                <FormControlLabel
-                  key={`move-flag-${index}`}
-                  disabled
-                  control={<Checkbox checked={flag} />}
-                  label={flagName}
-                  labelPlacement='start'
-                />
-              )
-            })}
-          </FormGroup>
+          <Card>
+            <CardHeader title="Status Affliction" />
+            <CardContent>
+              <Typography>{`Status: ${extendedMoveDetails.statusEffects.status}`}</Typography>
+              <Typography>{`Affliction Rate: ${extendedMoveDetails.statusEffects.rate}`}</Typography>
+              <Typography>{`Status Type: ${extendedMoveDetails.statusEffects.sickCont}`}</Typography>
+              <Typography>
+                {`Duration: ${extendedMoveDetails.statusEffects.minDuration}-${extendedMoveDetails.statusEffects.maxDuration} turns`}
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader title="Stat Changes" />
+            {extendedMoveDetails.statChanges.some(stat => stat.statType !== "None") ? (
+              <CardContent sx={{
+                display:"grid",
+                gridTemplateColumns:"1fr 1fr 1fr 1fr",
+                justifyItems:"center"
+              }}>
+                <Typography></Typography>
+                <Typography>Stat Type</Typography>
+                <Typography>Stages</Typography>
+                <Typography>% Chance</Typography>
+
+                <Typography>Stat 1</Typography>
+                <Typography>{extendedMoveDetails.statChanges[0].statType}</Typography>
+                <Typography>{extendedMoveDetails.statChanges[0].stages}</Typography>
+                <Typography>{extendedMoveDetails.statChanges[0].rate}</Typography>
+
+                {extendedMoveDetails.statChanges[1].statType !== "None" && (
+                  <>
+                    <Typography>Stat 2</Typography>
+                    <Typography>{extendedMoveDetails.statChanges[1].statType}</Typography>
+                    <Typography>{extendedMoveDetails.statChanges[1].stages}</Typography>
+                    <Typography>{extendedMoveDetails.statChanges[1].rate}</Typography>
+                  </>
+                )}
+
+                {extendedMoveDetails.statChanges[2].statType !== "None" && (
+                  <>
+                    <Typography>Stat 3</Typography>
+                    <Typography>{extendedMoveDetails.statChanges[2].statType}</Typography>
+                    <Typography>{extendedMoveDetails.statChanges[2].stages}</Typography>
+                    <Typography>{extendedMoveDetails.statChanges[2].rate}</Typography>
+                  </>
+                )}
+              </CardContent>
+            ) : <CardContent>{"This move doesn't change stats"}</CardContent>}
+          </Card>
+          <Card>
+            <CardHeader title="Misc" />
+            <CardContent>
+              <Typography>{`Move Category: ${extendedMoveDetails.moveCat}`}</Typography>
+              <Typography>{`Priority: ${extendedMoveDetails.priority}`}</Typography>
+              <Typography>{`Hit Count: ${extendedMoveDetails.minHitCount}-${extendedMoveDetails.maxHitCount} hits`}</Typography>
+              <Typography>{`Base Crit Ratio: ${extendedMoveDetails.critRatio}`}</Typography>
+              <Typography>{`Flinch Chance: ${extendedMoveDetails.flinchChance}%`}</Typography>
+              <Typography>{`Damage Healed: ${extendedMoveDetails.healDamage}%`}</Typography>
+              <Typography>{`HP Recovery: ${extendedMoveDetails.hpRecover}%`}</Typography>
+              <Typography>{`Targeting: ${extendedMoveDetails.target}`}</Typography>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader title="Flags" />
+            <CardContent>
+              <FormGroup>
+                {extendedMoveDetails.moveFlags.map((flag, index) => {
+                  if (index > 17) {
+                    return null;
+                  }
+                  const flagName = FLAG_STRINGS[index];
+                  return (
+                    <FormControlLabel
+                      key={`move-flag-${index}`}
+                      control={<Checkbox checked={flag} />}
+                      label={flagName}
+                    />
+                  )
+                })}
+              </FormGroup>
+            </CardContent>
+          </Card>
         </Box>
       )}
     </PokemonAccordion>
@@ -273,8 +338,8 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
             lg: "1fr 1fr 1fr 1fr",
           }}
         >
-          {movesetLists.map((moveset) => (
-            <PokemonMovesetContainer moveset={moveset} />
+          {movesetLists.map((moveset, index) => (
+            <PokemonMovesetContainer key={`moveset-container-${moveset.id}-${index}`} moveset={moveset} />
           ))}
         </Box>
       </Container>
