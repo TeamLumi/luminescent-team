@@ -56,7 +56,6 @@ const MoveContainer = ({ gameMode, move }) => {
 };
 
 const ExtendedMoveContainer = ({ gameMode, move }) => {
-  const extendedMoveDetails = getMoveProperties(parseInt(move.moveId), gameMode, true);
   return (
     <PokemonAccordion
       disabled={!move?.name}
@@ -68,17 +67,17 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
           <Card>
             <CardHeader title="Status Affliction" />
             <CardContent>
-              <Typography>{`Status: ${extendedMoveDetails.statusEffects.status}`}</Typography>
-              <Typography>{`Affliction Rate: ${extendedMoveDetails.statusEffects.rate}`}</Typography>
-              <Typography>{`Status Type: ${extendedMoveDetails.statusEffects.sickCont}`}</Typography>
+              <Typography>{`Status: ${move.statusEffects.status}`}</Typography>
+              <Typography>{`Affliction Rate: ${move.statusEffects.rate}`}</Typography>
+              <Typography>{`Status Type: ${move.statusEffects.sickCont}`}</Typography>
               <Typography>
-                {`Duration: ${extendedMoveDetails.statusEffects.minDuration}-${extendedMoveDetails.statusEffects.maxDuration} turns`}
+                {`Duration: ${move.statusEffects.minDuration}-${move.statusEffects.maxDuration} turns`}
               </Typography>
             </CardContent>
           </Card>
           <Card>
             <CardHeader title="Stat Changes" />
-            {extendedMoveDetails.statChanges.some(stat => stat.statType !== "None") ? (
+            {move.statChanges.some(stat => stat.statType !== "None") ? (
               <CardContent sx={{
                 display:"grid",
                 gridTemplateColumns:"1fr 1fr 1fr 1fr",
@@ -90,25 +89,25 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
                 <Typography>% Chance</Typography>
 
                 <Typography>Stat 1</Typography>
-                <Typography>{extendedMoveDetails.statChanges[0].statType}</Typography>
-                <Typography>{extendedMoveDetails.statChanges[0].stages}</Typography>
-                <Typography>{extendedMoveDetails.statChanges[0].rate}</Typography>
+                <Typography>{move.statChanges[0].statType}</Typography>
+                <Typography>{move.statChanges[0].stages}</Typography>
+                <Typography>{move.statChanges[0].rate}</Typography>
 
-                {extendedMoveDetails.statChanges[1].statType !== "None" && (
+                {move.statChanges[1].statType !== "None" && (
                   <>
                     <Typography>Stat 2</Typography>
-                    <Typography>{extendedMoveDetails.statChanges[1].statType}</Typography>
-                    <Typography>{extendedMoveDetails.statChanges[1].stages}</Typography>
-                    <Typography>{extendedMoveDetails.statChanges[1].rate}</Typography>
+                    <Typography>{move.statChanges[1].statType}</Typography>
+                    <Typography>{move.statChanges[1].stages}</Typography>
+                    <Typography>{move.statChanges[1].rate}</Typography>
                   </>
                 )}
 
-                {extendedMoveDetails.statChanges[2].statType !== "None" && (
+                {move.statChanges[2].statType !== "None" && (
                   <>
                     <Typography>Stat 3</Typography>
-                    <Typography>{extendedMoveDetails.statChanges[2].statType}</Typography>
-                    <Typography>{extendedMoveDetails.statChanges[2].stages}</Typography>
-                    <Typography>{extendedMoveDetails.statChanges[2].rate}</Typography>
+                    <Typography>{move.statChanges[2].statType}</Typography>
+                    <Typography>{move.statChanges[2].stages}</Typography>
+                    <Typography>{move.statChanges[2].rate}</Typography>
                   </>
                 )}
               </CardContent>
@@ -117,21 +116,21 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
           <Card>
             <CardHeader title="Misc" />
             <CardContent>
-              <Typography>{`Move Category: ${extendedMoveDetails.moveCat}`}</Typography>
-              <Typography>{`Priority: ${extendedMoveDetails.priority}`}</Typography>
-              <Typography>{`Hit Count: ${extendedMoveDetails.minHitCount}-${extendedMoveDetails.maxHitCount} hits`}</Typography>
-              <Typography>{`Base Crit Ratio: ${extendedMoveDetails.critRatio}`}</Typography>
-              <Typography>{`Flinch Chance: ${extendedMoveDetails.flinchChance}%`}</Typography>
-              <Typography>{`Damage Healed: ${extendedMoveDetails.healDamage}%`}</Typography>
-              <Typography>{`HP Recovery: ${extendedMoveDetails.hpRecover}%`}</Typography>
-              <Typography>{`Targeting: ${extendedMoveDetails.target}`}</Typography>
+              <Typography>{`Move Class: ${move.moveClass}`}</Typography>
+              <Typography>{`Priority: ${move.priority}`}</Typography>
+              <Typography>{`Hit Count: ${move.minHitCount}-${move.maxHitCount} hits`}</Typography>
+              <Typography>{`Base Crit Ratio: ${move.critRatio}`}</Typography>
+              <Typography>{`Flinch Chance: ${move.flinchChance}%`}</Typography>
+              <Typography>{`Damage Healed: ${move.healDamage}%`}</Typography>
+              <Typography>{`HP Recovery: ${move.hpRecover}%`}</Typography>
+              <Typography>{`Targeting: ${move.target}`}</Typography>
             </CardContent>
           </Card>
           <Card>
             <CardHeader title="Flags" />
             <CardContent>
               <FormGroup>
-                {extendedMoveDetails.moveFlags.map((flag, index) => {
+                {move.moveFlags.map((flag, index) => {
                   if (index > 17) {
                     return null;
                   }

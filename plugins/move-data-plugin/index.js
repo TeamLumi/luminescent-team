@@ -17,17 +17,18 @@ function moveDexDataPlugin(context, options) {
     name: 'luminescent-movedex-data-plugin',
     async loadContent() {
       const movesV = MovesTable[GAMEDATAV].Waza.slice(1).map(
-        (move) => getMoveProperties(move.wazaNo, GAMEDATAV)
+        (move) => getMoveProperties(move.wazaNo, GAMEDATAV, true)
       );
 
       const moves2 = MovesTable[GAMEDATA2].Waza.slice(1).map(
-        (move) => getMoveProperties(move.wazaNo, GAMEDATA2)
+        (move) => getMoveProperties(move.wazaNo, GAMEDATA2, true)
       );
 
       const moves3 = MovesTable[GAMEDATA3].Waza.slice(1).map(
-        (move) => getMoveProperties(move.wazaNo, GAMEDATA3)
+        (move) => getMoveProperties(move.wazaNo, GAMEDATA3, true)
       );
       const movesList3 = moves3.map((m) => ({
+        ...m,
         id: m.moveId,
         name: m.name,
         type: m.type,

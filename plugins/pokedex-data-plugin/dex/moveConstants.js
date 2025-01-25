@@ -93,26 +93,26 @@ const STATS_TO_CHANGE = [
   "All Stats"
 ];
 
-const FLAG_STRINGS = [
-  "Makes Contact",
-  "Two Turn Move",
-  "Requires Recharge",
-  "Protect Effective",
-  "Magic Coat Effective",
-  "Snatch Effective",
-  "Mirror Move Effective",
-  "Punch Move",
-  "Sound Move",
-  "Gravity Effective",
-  "Thaws Frozen Targets",
-  "Unlimited Range",
-  "Heal Block Effective",
-  "Ignores Substitute",
-  "Fails in Sky Battle",
-  "EFFECT_TO_FRIEND",
-  "Dance Move",
-  "Metronome Valid"
-];
+const FLAG_STRINGS = {
+  0: "Makes Contact",
+  1: "Two Turn Move",
+  2: "Requires Recharge",
+  3: "Protect Effective",
+  4: "Magic Coat Effective",
+  5: "Snatch Effective",
+  6: "Mirror Move Effective",
+  7: "Punch Move",
+  8: "Sound Move",
+  9: "Gravity Effective",
+  10: "Thaws Frozen Targets",
+  11: "Unlimited Range",
+  12: "Heal Block Effective",
+  13: "Ignores Substitute",
+  14: "Fails in Sky Battle",
+  15: "EFFECT_TO_FRIEND",
+  16: "Dance Move",
+  17: "Metronome Valid"
+};
 
 const SICK_CONT_STRINGS = [
   "None",
@@ -126,9 +126,47 @@ const CRITICAL_HIT_RATIO = {
   0: "1/24",
   1: "1/8",
   2: "1/2",
-  3: "1/1",
-  4: "1/1"
-}
+  3: "1/1", // Anything above 2 is 100% chance
+  4: "1/1",
+  5: "1/1",
+  6: "1/1",
+};
+
+const DAMAGE_RECOVER_RATIO = {
+  RECOIL50: "-50",
+  RECOIL33: "-33",
+  RECOIL25: "-25",
+  HEAL0: "0",
+  HEAL50: "50",
+  HEAL75: "75",
+  HEAL100: "100"
+};
+
+const FLINCH_RATIOS = {
+  FLINCH0: "0",
+  FLINCH1: "1",
+  FLINCH10: "10",
+  FLINCH20: "20",
+  FLINCH30: "30",
+  FLINCH100: "100",
+};
+
+const HP_RECOVER_RATIO = {
+  HURT33: "-33",
+  HURT25: "-25",
+  HEAL50: "50",
+  HEAL25: "25",
+};
+
+const STATUS_MOVE = 0;
+const PHYSICAL_MOVE = 1;
+const SPECIAL_MOVE = 2;
+
+const DAMAGE_TYPES = [
+  "Status",
+  "Physical",
+  "Special"
+];
 
 module.exports = {
   STATUS_EFFECTS,
@@ -138,4 +176,11 @@ module.exports = {
   FLAG_STRINGS,
   SICK_CONT_STRINGS,
   CRITICAL_HIT_RATIO,
+  DAMAGE_TYPES,
+  STATUS_MOVE,
+  PHYSICAL_MOVE,
+  SPECIAL_MOVE,
+  DAMAGE_RECOVER_RATIO,
+  FLINCH_RATIOS,
+  HP_RECOVER_RATIO
 };

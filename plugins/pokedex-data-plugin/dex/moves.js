@@ -116,7 +116,7 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
   const ModeMoveNames = MoveNames[mode];
   const move = ModeMovesTable?.Waza?.[moveId];
   if (!move) {
-    return null;
+    throw Error("There's a problem, move doesn't exist", moveId, mode);
   }
 
   const type = move.type;
@@ -164,7 +164,7 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
     ];
   }
 
-  const moveObject = {
+  return {
     moveId: moveId,
     name: ModeMoveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
     desc: getMoveDescription(moveId, mode),
@@ -175,10 +175,9 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
     accuracy: hitPer,
     ...(extendedDetails && {
       statusEffects,
-      critRatio,
       statChanges,
-      moveCat: MOVE_CATEGORIES[move.category],
-      moveFlags: flagArray,
+      critRatio,
+      moveClass: MOVE_CATEGORIES[move.category],
       priority: move.priority,
       minHitCount: move.hitCountMin,
       maxHitCount: move.hitCountMax,
@@ -186,14 +185,9 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
       healDamage: move.damageRecoverRatio,
       hpRecover: move.hpRecoverRatio,
       target: MOVE_TARGETING[move.target],
+      moveFlags: flagArray,
     })
   };
-
-  if (extendedDetails) {
-    console.log(moveObject);
-  }
-
-  return moveObject;
 }
 
 function getEggMoves(dexId = 0, mode = GAMEDATA2) {

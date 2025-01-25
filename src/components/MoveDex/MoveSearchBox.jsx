@@ -34,7 +34,6 @@ export const MoveSearchBox = ({ movesList, moveName }) => {
       options={options}
       value={selectedMoveName}
       onChange={(_, move) => {
-        console.log(move);
         history.push(`${moveDexPath}/${normalizePokemonName(move.value)}`);
       }}
       isOptionEqualToValue={(option, value) => {
