@@ -31,6 +31,21 @@ function getPowerAccuracyFilter(searchTable, finalResults) {
       console.warn("Invalid range format for accuracy filter:", searchTable.accuracy.value);
     }
   }
+  if (searchTable.statChanges?.rate.value) {
+    finalResults = finalResults.filter((move) => {
+      return move.statChanges.some((sc) => sc.rate === parseInt(searchTable.statChanges.rate.value))
+    });
+  }
+  if (searchTable.statChanges?.stages.value) {
+    finalResults = finalResults.filter((move) => {
+      return move.statChanges.some((sc) => sc.stages === parseInt(searchTable.statChanges.stages.value))
+    });
+  }
+  if (searchTable.statChanges?.statType.value) {
+    finalResults = finalResults.filter((move) => {
+      return move.statChanges.some((sc) => sc.statType === searchTable.statChanges.statType.value)
+    });
+  }
   return finalResults;
 }
 
@@ -63,7 +78,7 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
 
   const buildQueryList = (obj, queryList, parentKey = "") => {
     Object.keys(obj).forEach((key) => {
-      if (key === "power" || key === "accuracy") {
+      if (key === "power" || key === "accuracy" || key === "statChanges") {
         return;
       }
 

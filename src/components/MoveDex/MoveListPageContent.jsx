@@ -15,6 +15,7 @@ import {
   MenuItem,
   Typography,
   IconButton,
+  Divider,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -23,7 +24,8 @@ import { DMG_TYPE_ICONS, MoveIcon, PokemonMove, PokemonMoveType, TYPE_COLOR_MAP 
 import MoveSearchInput from './MoveSearchInput';
 
 import { normalizePokemonName } from '../../utils/dex/name';
-import { DAMAGE_RECOVER_RATIO, FLINCH_RATIOS, HP_RECOVER_RATIO, MOVE_CATEGORIES, MOVE_TARGETING, PHYSICAL_MOVE, SPECIAL_MOVE, STATUS_EFFECTS, STATUS_MOVE } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
+import { DAMAGE_RECOVER_RATIO, FLINCH_RATIOS, HP_RECOVER_RATIO, MOVE_CATEGORIES, MOVE_TARGETING, PHYSICAL_MOVE, SPECIAL_MOVE, STAT_EFFECT_CHANCE, STATS_TO_CHANGE, STATUS_EFFECTS, STATUS_MOVE } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
+import { DoubleArrow } from '@mui/icons-material';
 
 export const defaultSearchTable = {
   name: { label: "", value: "" },
@@ -32,16 +34,16 @@ export const defaultSearchTable = {
   power: { label: null, value: null },
   accuracy: { label: null, value: null },
   statusEffects: {
-    status: { value: null, label: null },
-    minDuration: { value: null, label: null },
-    maxDuration: { value: null, label: null },
-    rate: { value: null, label: null },
-    sickCont: { value: null, label: null },
+    status: { label: null, value: null },
+    minDuration: { label: null, value: null },
+    maxDuration: { label: null, value: null },
+    rate: { label: null, value: null },
+    sickCont: { label: null, value: null },
   },
   statChanges: {
-    rate: { value: null, label: null },
-    stages: { value: null, label: null },
-    statType: { value: null, label: null },
+    rate: { label: null, value: null },
+    stages: { label: null, value: null },
+    statType: { label: null, value: null },
   },
   critRatio: { label: null, value: null },
   moveClass: { label: null, value: null },
@@ -87,16 +89,16 @@ const MoveListPageContent = ({ movesList }) => {
     setSearchTable({
       ...defaultSearchTable,
       statChanges: { // For some reason, React isn't able to see this deep into an object to tell it to default back to a state
-        rate: { value: null, label: null },
-        stages: { value: null, label: null },
-        statType: { value: null, label: null },
+        rate: { label: null, value: null },
+        stages: { label: null, value: null },
+        statType: { label: null, value: null },
       },
       statusEffects: {
-        status: { value: null, label: null },
-        minDuration: { value: null, label: null },
-        maxDuration: { value: null, label: null },
-        rate: { value: null, label: null },
-        sickCont: { value: null, label: null },
+        status: { label: null, value: null },
+        minDuration: { label: null, value: null },
+        maxDuration: { label: null, value: null },
+        rate: { label: null, value: null },
+        sickCont: { label: null, value: null },
       }
     });
   }
@@ -210,20 +212,25 @@ const MoveFilterDrawer = ({
       anchor="right"
       sx={{ maxWidth: "50%"}}
     >
-      <Box role="presentation" sx={{minWidth: "350px"}}>
+      <Box role="presentation" height="100%" sx={{minWidth: "350px"}}>
         <Box
           display="flex"
           sx={{padding: "1rem", justifyContent: "space-between", alignItems: "center"}}
         >
           <Typography variant="h5">Filter Menu</Typography>
-          <Button onClick={clearAllFilters}>Clear Filters</Button>
+          <Button color='error' onClick={clearAllFilters}>Clear Filters</Button>
           <IconButton onClick={() => setFilterDrawerOpen(false)}><CloseIcon /></IconButton>
         </Box>
         <Box display="flex" flexWrap="wrap" maxWidth="350px">
           <DisplayValues data={searchTable} />
         </Box>
         <PokemonAccordion title={"Move Type"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             {Object.entries(TYPE_COLOR_MAP).map(([typeId, typeObject]) => {
               return (
                 <Button
@@ -281,7 +288,12 @@ const MoveFilterDrawer = ({
           </Button>
         </PokemonAccordion>
         <PokemonAccordion title={"Power"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             <Button
               variant="outlined"
               onClick={() => handleChange("power", {value: "0-25", label: "0-25 Power"})}
@@ -327,7 +339,12 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Accuracy"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             <Button
               variant="outlined"
               onClick={() => handleChange("accuracy", {value: "0-60", label: "<= 60% Accuracy"})}
@@ -385,11 +402,17 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Status Effect"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             {Object.entries(STATUS_EFFECTS).map(([effectId, effect]) => {
               return (
                 <Button
                   key={`status-effect-filter-${effectId}`}
+                  variant='outlined'
                   onClick={() => handleChange(
                     "statusEffects.status",
                     {value: effect, label: effect}
@@ -402,7 +425,103 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Stat Change"}>
-          <Typography>Coming Soon.</Typography>
+          <Typography display="flex" justifyContent="center">Stat Type</Typography>
+          <Divider variant="middle" sx={{
+            marginTop:".5rem",
+            marginBottom:"1rem",
+          }}/>
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+            marginBottom="1rem"
+          >
+            {STATS_TO_CHANGE.map((stat) => {
+              return (
+                <Button
+                  key={`stat-type-${stat}`}
+                  variant='outlined'
+                  onClick={() => handleChange("statChanges.statType", {value: stat, label: `Change ${stat}`})}
+                >
+                  {`Change ${stat}`}
+                </Button>
+              )
+            })}
+          </Box>
+
+          <Typography display="flex" justifyContent="center">Stages</Typography>
+          <Divider variant="middle" sx={{
+            marginTop:".5rem",
+            marginBottom:"1rem",
+          }}/>
+          <Box
+            display="grid"
+            maxWidth="350px"
+            gridTemplateColumns={"1fr 1fr 1fr"}
+            marginBottom="1rem"
+          >
+            <Button
+              variant='outlined'
+              onClick={() => handleChange("statChanges.stages", {value: "-2", label: "-2 Stat"})}
+            >
+              {"-2 Stat"}
+            </Button>
+            <Button
+              variant='outlined'
+              onClick={() => handleChange("statChanges.stages", {value: "-1", label: "-1 Stat"})}
+            >
+              {"-1 Stat"}
+            </Button>
+            <Button
+              variant='outlined'
+              onClick={() => handleChange("statChanges.stages", {value: "0", label: "No Stat Change"})}
+            >
+              {"+0 Stat"}
+            </Button>
+            <Button
+              variant='outlined'
+              onClick={() => handleChange("statChanges.stages", {value: "1", label: "+1 Stat"})}
+            >
+              {"+1 Stat"}
+            </Button>
+            <Button
+              variant='outlined'
+              onClick={() => handleChange("statChanges.stages", {value: "2", label: "+2 Stat"})}
+            >
+              {"+2 Stat"}
+            </Button>
+            <Button
+              variant='outlined'
+              onClick={() => handleChange("statChanges.stages", {value: "3", label: "+3 Stat"})}
+            >
+              {"+3 Stat"}
+            </Button>
+          </Box>
+
+          <Typography display="flex" justifyContent="center">Chance of Stat Change</Typography>
+          <Divider variant="middle" sx={{
+            marginTop:".5rem",
+            marginBottom:"1rem",
+          }}/>
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
+            {STAT_EFFECT_CHANCE.map((statPercent) => {
+              return (
+                <Button
+                  key={`stat-change-chance-${statPercent}`}
+                  variant='outlined'
+                  onClick={() => handleChange("statChanges.rate", {value: statPercent, label: `${statPercent}% Stat Change`})}
+                >
+                  {`${statPercent}% Chance`}
+                </Button>
+              )
+            })}
+          </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Priority"}>
           <Box display="grid" gridTemplateColumns="1fr 1fr 1fr">
@@ -495,28 +614,39 @@ const MoveFilterDrawer = ({
           </Button>
         </PokemonAccordion>
         <PokemonAccordion title={"Crit Ratio"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
-            <Button onClick={() => {handleChange("critRatio", {value: "1/24", label: "4.2% Crit"})}}>
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
+            <Button variant='outlined' onClick={() => {handleChange("critRatio", {value: "1/24", label: "4.2% Crit"})}}>
               {"4.2% Chance"}
             </Button>
-            <Button onClick={() => {handleChange("critRatio", {value: "1/8", label: "12.5% Crit"})}}>
+            <Button variant='outlined' onClick={() => {handleChange("critRatio", {value: "1/8", label: "12.5% Crit"})}}>
               {"12.5% Chance (1)"}
             </Button>
-            <Button onClick={() => {handleChange("critRatio", {value: "1/2", label: "50% Crit"})}}>
+            <Button variant='outlined' onClick={() => {handleChange("critRatio", {value: "1/2", label: "50% Crit"})}}>
               {"50% Chance (2)"}
             </Button>
-            <Button onClick={() => {handleChange("critRatio", {value: "1/1", label: "100% Crit"})}}>
+            <Button variant='outlined' onClick={() => {handleChange("critRatio", {value: "1/1", label: "100% Crit"})}}>
               {"100% Chance (3 and above)"}
             </Button>
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Flinch Chance"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             {Object.values(FLINCH_RATIOS).map(flinchChance => {
               return (
                 <Button
                   key={`flinch-chance-${flinchChance}`}
-                  onClick={() => handleChange("flinchChance", {value: flinchChance, label: "0% Flinch"})}
+                  variant='outlined'
+                  onClick={() => handleChange("flinchChance", {value: flinchChance, label: `${flinchChance}% Flinch`})}
                 >
                   {`${flinchChance}% Chance`}
                 </Button>
@@ -525,11 +655,17 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Heal/Recoil Damage"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             {Object.values(DAMAGE_RECOVER_RATIO).map(damageRatio => {
               return (
                 <Button
                   key={`damage-ratio${damageRatio}`}
+                  variant='outlined'
                   onClick={() => handleChange("healDamage", {value: damageRatio, label: `${damageRatio} Damage`})}
                 >
                   {`${damageRatio}% Damage`}
@@ -539,11 +675,17 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"HP Recovery"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             {Object.values(HP_RECOVER_RATIO).map(hpRecoverRatio => {
               return (
                 <Button
                   key={`recover-ratio${hpRecoverRatio}`}
+                  variant='outlined'
                   onClick={() => handleChange("hpRecover", {value: hpRecoverRatio, label: `${hpRecoverRatio} Recovered`})}
                 >
                   {`${hpRecoverRatio}% Recovered`}
@@ -553,11 +695,17 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Targeting"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             {MOVE_TARGETING.map((target, index) => {
               return (
                 <Button
                   key={`target-${index}`}
+                  variant='outlined'
                   onClick={() => handleChange("target", {value: target, label: `Target ${target}`})}
                 >
                   {`Target ${target}`}
@@ -567,11 +715,17 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Move Class"}>
-          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
             {MOVE_CATEGORIES.map((moveClass, index) => {
               return (
                 <Button
                   key={`moveClass-${index}`}
+                  variant='outlined'
                   onClick={() => handleChange("moveClass", {value: moveClass, label: `${moveClass}`})}
                 >
                   {`${moveClass}`}
@@ -583,6 +737,27 @@ const MoveFilterDrawer = ({
         <PokemonAccordion title={"Flags"}>
           <Typography>Coming Soon.</Typography>
         </PokemonAccordion>
+      </Box>
+      <Box
+        bottom="0"
+        right="0"
+        backgroundColor="var(--ifm-background-color)"
+        borderTop="2px solid var(--ifm-table-border-color)"
+        zIndex="2"
+        padding="25px"
+        position="sticky"
+        justifyContent="end"
+        display="flex"
+      >
+        <Button
+          width="50%"
+          variant='contained'
+          onClick={() => setFilterDrawerOpen(false)}
+          endIcon={<DoubleArrow fontSize='large' />}
+          color='success'
+        >
+          Save Changes
+        </Button>
       </Box>
     </Drawer>
   )

@@ -158,6 +158,17 @@ const HP_RECOVER_RATIO = {
   HEAL25: "25",
 };
 
+const STAT_EFFECT_CHANCE = [
+  "0",
+  "10",
+  "20",
+  "30",
+  "40",
+  "50",
+  "70",
+  "100",
+];
+
 const STATUS_MOVE = 0;
 const PHYSICAL_MOVE = 1;
 const SPECIAL_MOVE = 2;
@@ -182,5 +193,6 @@ module.exports = {
   SPECIAL_MOVE,
   DAMAGE_RECOVER_RATIO,
   FLINCH_RATIOS,
-  HP_RECOVER_RATIO
+  HP_RECOVER_RATIO,
+  STAT_EFFECT_CHANCE
 };
