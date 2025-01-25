@@ -281,10 +281,108 @@ const MoveFilterDrawer = ({
           </Button>
         </PokemonAccordion>
         <PokemonAccordion title={"Power"}>
-          <Typography>Coming Soon.</Typography>
+          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("power", {value: "0-25", label: "0-25 Power"})}
+            >
+              {"0-25"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("power", {value: "26-50", label: "26-50 Power"})}
+            >
+              {"26-50"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("power", {value: "51-75", label: "51-75 Power"})}
+            >
+              {"51-75"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("power", {value: "76-100", label: "76-100 Power"})}
+            >
+              {"76-100"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("power", {value: "101-125", label: "101-125 Power"})}
+            >
+              {"101-125"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("power", {value: "126-150", label: "126-150 Power"})}
+            >
+              {"126-150"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("power", {value: "151-250", label: "151+ Power"})}
+            >
+              {"151+"}
+            </Button>
+          </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Accuracy"}>
-          <Typography>Coming Soon.</Typography>
+          <Box display="flex" flexWrap="wrap" maxWidth="350px">
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "0-60", label: "<= 60% Accuracy"})}
+            >
+              {"<= 60%"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "69-70", label: "70% Accuracy"})}
+            >
+              {"70%"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "74-75", label: "75%-75% Accuracy"})}
+            >
+              {"75%"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "79-80", label: "80%-80% Accuracy"})}
+            >
+              {"80%"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "84-85", label: "85% Accuracy"})}
+            >
+              {"85%"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "89-90", label: "90% Accuracy"})}
+            >
+              {"90%"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "94-95", label: "95% Accuracy"})}
+            >
+              {"95%"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "99-100", label: "100% Accuracy"})}
+            >
+              {"100%"}
+            </Button>
+            <Button
+              variant="outlined"
+              onClick={() => handleChange("accuracy", {value: "100-101", label: "Perfect Accuracy"})}
+            >
+              {"Never Misses"}
+            </Button>
+          </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Status Effect"}>
           <Box display="flex" flexWrap="wrap" maxWidth="350px">

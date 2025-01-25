@@ -4,6 +4,36 @@ import Fuse from 'fuse.js';
 
 import { defaultSearchTable } from './MoveListPageContent';
 
+function getPowerAccuracyFilter(searchTable, finalResults) {
+  if (searchTable?.power.value) {
+    const range = searchTable.power.value.split("-");
+
+    if (range.length === 2) {
+      const [minValue, maxValue] = range.map(Number); // Convert to numbers
+      finalResults = finalResults.filter((item) => {
+        const power = Number(item.power); // Convert item.power to a number
+        return !isNaN(power) && power > minValue && power <= maxValue; // Ensure power is valid
+      });
+    } else {
+      console.warn("Invalid range format for power filter:", searchTable.power.value);
+    }
+  }
+  if (searchTable?.accuracy.value) {
+    const range = searchTable.accuracy.value.split("-");
+
+    if (range.length === 2) {
+      const [minValue, maxValue] = range.map(Number); // Convert to numbers
+      finalResults = finalResults.filter((item) => {
+        const accuracy = Number(item.accuracy); // Convert item.accuracy to a number
+        return !isNaN(accuracy) && accuracy > minValue && accuracy <= maxValue; // Ensure accuracy is valid
+      });
+    } else {
+      console.warn("Invalid range format for accuracy filter:", searchTable.accuracy.value);
+    }
+  }
+  return finalResults;
+}
+
 const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => {
   const extractKeys = (obj, parentKey = "") => {
     let keys = [];
@@ -33,6 +63,10 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
 
   const buildQueryList = (obj, queryList, parentKey = "") => {
     Object.keys(obj).forEach((key) => {
+      if (key === "power" || key === "accuracy") {
+        return;
+      }
+
       const value = obj[key];
       const fullKey = parentKey ? `${parentKey}.${key}` : key;
 
@@ -46,6 +80,10 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
           actualValue = actualValue.trim();
         }
         if (fullKey !== "name") {
+          // The = makes an exact match for the specific values.
+          // Since every value besides the name is controlled, we want to be exact.
+          // The quotation marks are keys that have a space between them
+          // In useExtendedSearch mode spaces are counted as an "and" operator
           actualValue = `="${actualValue}"`
         }
         queryList.push({ [fullKey]: actualValue });
@@ -56,10 +94,13 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
   const fuzzySearch = useCallback(() => {
     const queryList = []
     buildQueryList(searchTable, queryList);
-    if (queryList.length === 0) return movesList; // Return all moves if no filters are applied
+    if (queryList.length === 0) {
+      return getPowerAccuracyFilter(searchTable, movesList)
+    }; // Return all moves if no filters are applied
 
     const results = fuse.search({ $and: queryList });
-    return results.map((r) => r.item);
+    let finalResults = results.map((r) => r.item);
+    return getPowerAccuracyFilter(searchTable, finalResults);
   }, [fuse, searchTable, movesList]);
 
   useEffect(() => {
