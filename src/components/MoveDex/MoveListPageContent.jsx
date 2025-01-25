@@ -600,10 +600,16 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Hit Count"}>
-          <Button onClick={() => {handleChange("maxHitCount", {value: "2", label: "2 hits"})}} >
+          <Button onClick={() => {
+            handleChange("minHitCount", {value: null, label: null})
+            handleChange("maxHitCount", {value: "2", label: "2 hits"})
+          }}>
             2 Times
           </Button>
-          <Button onClick={() => {handleChange("maxHitCount", {value: "3", label: "3 hits"})}} >
+          <Button onClick={() => {
+            handleChange("minHitCount", {value: null, label: null})
+            handleChange("maxHitCount", {value: "3", label: "3 hits"})
+          }}>
             3 Times
           </Button>
           <Button onClick={() => {
