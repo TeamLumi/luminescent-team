@@ -93,26 +93,26 @@ const STATS_TO_CHANGE = [
   "All Stats"
 ];
 
-const FLAG_STRINGS = {
-  0: "Makes Contact",
-  1: "Two Turn Move",
-  2: "Requires Recharge",
-  3: "Protect Effective",
-  4: "Magic Coat Effective",
-  5: "Snatch Effective",
-  6: "Mirror Move Effective",
-  7: "Punch Move",
-  8: "Sound Move",
-  9: "Gravity Effective",
-  10: "Thaws Frozen Targets",
-  11: "Unlimited Range",
-  12: "Heal Block Effective",
-  13: "Ignores Substitute",
-  14: "Fails in Sky Battle",
-  15: "EFFECT_TO_FRIEND",
-  16: "Dance Move",
-  17: "Metronome Valid"
-};
+const FLAG_STRINGS =[
+  "Makes Contact",
+  "Two Turn Move",
+  "Requires Recharge",
+  "Protect Effective",
+  "Magic Coat Effective",
+  "Snatch Effective",
+  "Mirror Move Effective",
+  "Punch Move",
+  "Sound Move",
+  "Gravity Effective",
+  "Thaws Frozen Targets",
+  "Unlimited Range",
+  "Heal Block Effective",
+  "Ignores Substitute",
+  "Fails in Sky Battle",
+  "EFFECT_TO_FRIEND",
+  "Dance Move",
+  "Metronome Valid"
+];
 
 const SICK_CONT_STRINGS = [
   "None",

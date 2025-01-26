@@ -16,6 +16,10 @@ import {
   Typography,
   IconButton,
   Divider,
+  Switch,
+  FormGroup,
+  FormControlLabel,
+  switchClasses,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -24,7 +28,7 @@ import { DMG_TYPE_ICONS, MoveIcon, PokemonMove, PokemonMoveType, TYPE_COLOR_MAP 
 import MoveSearchInput from './MoveSearchInput';
 
 import { normalizePokemonName } from '../../utils/dex/name';
-import { DAMAGE_RECOVER_RATIO, FLINCH_RATIOS, HP_RECOVER_RATIO, MOVE_CATEGORIES, MOVE_TARGETING, PHYSICAL_MOVE, SPECIAL_MOVE, STAT_EFFECT_CHANCE, STATS_TO_CHANGE, STATUS_EFFECTS, STATUS_MOVE } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
+import { DAMAGE_RECOVER_RATIO, FLAG_STRINGS, FLINCH_RATIOS, HP_RECOVER_RATIO, MOVE_CATEGORIES, MOVE_TARGETING, PHYSICAL_MOVE, SPECIAL_MOVE, STAT_EFFECT_CHANCE, STATS_TO_CHANGE, STATUS_EFFECTS, STATUS_MOVE } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
 import { DoubleArrow } from '@mui/icons-material';
 
 export const defaultSearchTable = {
@@ -54,7 +58,26 @@ export const defaultSearchTable = {
   healDamage: { label: null, value: null },
   hpRecover: { label: null, value: null },
   target: { label: null, value: null },
-  flags: { label: null, value: null },
+  moveFlags: [
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+    { label: null, value: null },
+  ],
 };
 
 const setNestedKey = (obj, path, value) => {
@@ -63,11 +86,35 @@ const setNestedKey = (obj, path, value) => {
 
   for (let i = 0; i < keys.length - 1; i++) {
     const key = keys[i];
-    if (!current[key]) current[key] = {}; // Ensure the path exists
-    current = current[key];
+
+    // Handle array indices
+    if (key.match(/^\d+$/)) {
+      const index = parseInt(key, 10);
+      if (!Array.isArray(current)) {
+        throw new Error(`Expected an array at ${keys.slice(0, i).join(".")}`);
+      }
+      current = current[index];
+    } else {
+      if (!current[key]) current[key] = {}; // Ensure the path exists
+      current = current[key];
+    }
   }
 
-  current[keys[keys.length - 1]] = value;
+  const lastKey = keys[keys.length - 1];
+
+  // Handle array index for the last key
+  if (lastKey.match(/^\d+$/)) {
+    const index = parseInt(lastKey, 10);
+    if (!Array.isArray(current)) {
+      throw new Error(`Expected an array at ${keys.slice(0, -1).join(".")}`);
+    }
+    current[index] = value; // Update array element
+  } else if (typeof value === "object" && !Array.isArray(value)) {
+    // Replace the entire object at the last key
+    current[lastKey] = value;
+  } else {
+    current[lastKey] = value; // Update specific property
+  }
 };
 
 const MoveListPageContent = ({ movesList }) => {
@@ -99,7 +146,27 @@ const MoveListPageContent = ({ movesList }) => {
         maxDuration: { label: null, value: null },
         rate: { label: null, value: null },
         sickCont: { label: null, value: null },
-      }
+      },
+      moveFlags: [
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+        { label: null, value: null },
+      ]
     });
   }
 
@@ -195,7 +262,7 @@ const MoveFilterDrawer = ({
           // Display key-value pair for objects with 'label' and 'value' props
           return (
             <Box key={fullKey} sx={{ margin: "8px 0" }}>
-              <Button onClick={() => handleChange(fullKey, {value: null, label: null})}>
+              <Button onClick={() => handleChange(fullKey, {value: null, label: value.label})}>
                 <CloseIcon sx={{ marginRight: "8px" }} /> {value.label}
               </Button>
             </Box>
@@ -210,17 +277,31 @@ const MoveFilterDrawer = ({
       open={filterOpen}
       onClose={() => setFilterDrawerOpen(false)}
       anchor="right"
-      sx={{ maxWidth: "50%"}}
+      sx={{ maxWidth: "50%" }}
     >
-      <Box role="presentation" height="100%" sx={{minWidth: "350px"}}>
-        <Box
-          display="flex"
-          sx={{padding: "1rem", justifyContent: "space-between", alignItems: "center"}}
-        >
-          <Typography variant="h5">Filter Menu</Typography>
-          <Button color='error' onClick={clearAllFilters}>Clear Filters</Button>
-          <IconButton onClick={() => setFilterDrawerOpen(false)}><CloseIcon /></IconButton>
-        </Box>
+      <Box
+        display="flex"
+        backgroundColor="var(--ifm-background-color)"
+        borderBottom="2px solid var(--ifm-table-border-color)"
+        zIndex="2"
+        padding="25px"
+        position="sticky"
+        top="0"
+        sx={{ padding: "1rem", justifyContent: "space-between", alignItems: "center" }}
+      >
+        <Typography variant="h5">Filter Menu</Typography>
+        <Button color='error' onClick={clearAllFilters}>Clear Filters</Button>
+        <IconButton onClick={() => setFilterDrawerOpen(false)}><CloseIcon /></IconButton>
+      </Box>
+      <Box
+        role="presentation"
+        sx={{
+          minWidth: "350px",
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100%"
+        }}
+      >
         <Box display="flex" flexWrap="wrap" maxWidth="350px">
           <DisplayValues data={searchTable} />
         </Box>
@@ -741,29 +822,85 @@ const MoveFilterDrawer = ({
           </Box>
         </PokemonAccordion>
         <PokemonAccordion title={"Flags"}>
-          <Typography>Coming Soon.</Typography>
+          <Typography display="flex" justifyContent="center">Click twice to search the opposite.</Typography>
+          <Divider variant="middle" sx={{
+            marginTop:".5rem",
+            marginBottom:".5rem",
+          }}/>
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            maxWidth="350px"
+            justifyContent="center"
+          >
+            <FormGroup>
+              {FLAG_STRINGS.map((flag, flagIndex) => {
+                let color = "default";
+                if (searchTable.moveFlags[flagIndex].value === null) {
+                  color = "default";
+                } else if (searchTable.moveFlags[flagIndex].value === true) {
+                  color = "success";
+                } else if (searchTable.moveFlags[flagIndex].value === false) {
+                  color = "error";
+                }
+                return (
+                  <FormControlLabel
+                    key={`flag-switch-${flagIndex}`}
+                    control={
+                      <Switch
+                        checked={searchTable.moveFlags[flagIndex]?.value ?? false}
+                        onChange={(event) => {
+                          const label = event.target.checked ? flag : `Not ${flag}`;
+                          return handleChange(`moveFlags.${flagIndex}`, { value: event.target.checked, label: label });
+                        }}
+                        sx={
+                          color === "error" && ({
+                            [`& .${switchClasses.track}`]: {
+                              backgroundColor: "var(--mui-palette-error-main)"
+                            },
+                            [`&.${switchClasses.switchBase}`]: {
+                              color: "var(--mui-palette-error-main)",
+                              "&:hover": {
+                                backgroundColor: "var(--mui-palette-error-main)",
+                              },
+                            },
+                            [`& .${switchClasses.thumb}`]: {
+                              backgroundColor: "var(--mui-palette-error-main)",
+                            },
+                          })
+                        }
+                      />
+                    }
+                    label={flag}
+                  />
+                );
+              })}
+            </FormGroup>
+          </Box>
         </PokemonAccordion>
-      </Box>
-      <Box
-        bottom="0"
-        right="0"
-        backgroundColor="var(--ifm-background-color)"
-        borderTop="2px solid var(--ifm-table-border-color)"
-        zIndex="2"
-        padding="25px"
-        position="sticky"
-        justifyContent="end"
-        display="flex"
-      >
-        <Button
-          width="50%"
-          variant='contained'
-          onClick={() => setFilterDrawerOpen(false)}
-          endIcon={<DoubleArrow fontSize='large' />}
-          color='success'
+        <Box
+          bottom="0"
+          right="0"
+          backgroundColor="var(--ifm-background-color)"
+          borderTop="2px solid var(--ifm-table-border-color)"
+          zIndex="2"
+          padding="25px"
+          position="sticky"
+          justifyContent="end"
+          display="flex"
+          width="100%"
+          marginTop="auto"
         >
-          Save Changes
-        </Button>
+          <Button
+            width="50%"
+            variant='contained'
+            onClick={() => setFilterDrawerOpen(false)}
+            endIcon={<DoubleArrow fontSize='large' />}
+            color='success'
+          >
+            Save Changes
+          </Button>
+        </Box>
       </Box>
     </Drawer>
   )

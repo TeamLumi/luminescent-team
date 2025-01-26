@@ -4,6 +4,16 @@ import Fuse from 'fuse.js';
 
 import { defaultSearchTable } from './MoveListPageContent';
 
+const moveFlags = (movesList, flags) => {
+  // Filters movesList based on the flags array
+  return movesList.filter((move) => {
+    return flags.every((flag, index) => {
+      if (flag.value === null) return true; // Skip if flag is not set
+      return move.moveFlags[index] === flag.value;
+    });
+  });
+};
+
 function getPowerAccuracyFilter(searchTable, finalResults) {
   if (searchTable?.power.value) {
     const range = searchTable.power.value.split("-");
@@ -46,6 +56,9 @@ function getPowerAccuracyFilter(searchTable, finalResults) {
       return move.statChanges.some((sc) => sc.statType === searchTable.statChanges.statType.value)
     });
   }
+  if (searchTable.moveFlags.some((flag) => flag.value !== null)) {
+    finalResults =  moveFlags(finalResults, searchTable.moveFlags);
+  }
   return finalResults;
 }
 
@@ -54,7 +67,13 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
     let keys = [];
     Object.keys(obj).forEach((key) => {
       const fullKey = parentKey ? `${parentKey}.${key}` : key;
-      if (obj[key] && typeof obj[key] === "object" && !("value" in obj[key])) {
+
+      if (Array.isArray(obj[key])) {
+        // Handle arrays (e.g., moveFlags)
+        obj[key].forEach((_, index) => {
+          keys.push(`${fullKey}.${index}.value`); // Add keys for each index
+        });
+      } else if (obj[key] && typeof obj[key] === "object" && !("value" in obj[key])) {
         keys.push(...extractKeys(obj[key], fullKey));
       } else {
         keys.push(fullKey); // Add key to list
@@ -78,7 +97,7 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
 
   const buildQueryList = (obj, queryList, parentKey = "") => {
     Object.keys(obj).forEach((key) => {
-      if (key === "power" || key === "accuracy" || key === "statChanges") {
+      if (key === "power" || key === "accuracy" || key === "statChanges" || key === "moveFlags") {
         return;
       }
 
