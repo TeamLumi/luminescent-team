@@ -56,6 +56,14 @@ const MoveContainer = ({ gameMode, move }) => {
 };
 
 const ExtendedMoveContainer = ({ gameMode, move }) => {
+  let hitCount = `${move.minHitCount}-${move.maxHitCount}`
+  if (move.minHitCount === 0 && move.maxHitCount === 0) {
+    hitCount = "0"
+  } else if (move.minHitCount === 2 && move.maxHitCount === 2) {
+    hitCount = "2"
+  } else if (move.minHitCount === 3 && move.maxHitCount === 3) {
+    hitCount = "3"
+  }
   return (
     <PokemonAccordion
       disabled={!move?.name}
@@ -63,24 +71,13 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
       id={`${move.name}-${gameMode}`}
     >
       {move?.name && (
-        <Box>
-          <Card>
-            <CardHeader title="Status Affliction" />
-            <CardContent>
-              <Typography>{`Status: ${move.statusEffects.status}`}</Typography>
-              <Typography>{`Affliction Rate: ${move.statusEffects.rate}`}</Typography>
-              <Typography>{`Status Type: ${move.statusEffects.sickCont}`}</Typography>
-              <Typography>
-                {`Duration: ${move.statusEffects.minDuration}-${move.statusEffects.maxDuration} turns`}
-              </Typography>
-            </CardContent>
-          </Card>
-          <Card>
+        <Box sx={{ display: { sm: "grid"}, gridTemplateAreas: { sm: "'a a' 'b d' 'c d'", md: "'a d' 'b d' 'c d'" }}}>
+          <Card sx={{gridArea: "a"}} variant='outlined'>
             <CardHeader title="Stat Changes" />
             {move.statChanges.some(stat => stat.statType !== "None") ? (
               <CardContent sx={{
                 display:"grid",
-                gridTemplateColumns:"1fr 1fr 1fr 1fr",
+                gridTemplateColumns:"1fr 2fr 1fr 1.5fr",
                 justifyItems:"center"
               }}>
                 <Typography></Typography>
@@ -113,12 +110,26 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
               </CardContent>
             ) : <CardContent>{"This move doesn't change stats"}</CardContent>}
           </Card>
-          <Card>
+          <Card sx={{gridArea: "b"}} variant='outlined'>
+            <CardHeader title="Status Affliction" />
+            {move.statusEffects.status !== "None" ? (
+              <CardContent>
+                <Typography>{`Status: ${move.statusEffects.status}`}</Typography>
+                <Typography>{`Affliction Rate: ${move.statusEffects.rate}`}</Typography>
+                <Typography>{`Status Type: ${move.statusEffects.sickCont}`}</Typography>
+                <Typography>
+                  {`Duration: ${move.statusEffects.minDuration}-${move.statusEffects.maxDuration} turns`}
+                </Typography>
+              </CardContent>
+            ) : <CardContent>{"This move doesn't inflict status"}</CardContent>}
+          </Card>
+          <Card sx={{gridArea: "c"}} variant='outlined'>
             <CardHeader title="Misc" />
             <CardContent>
+              <Typography>{`Move Id: ${move.moveId}`}</Typography>
               <Typography>{`Move Class: ${move.moveClass}`}</Typography>
               <Typography>{`Priority: ${move.priority}`}</Typography>
-              <Typography>{`Hit Count: ${move.minHitCount}-${move.maxHitCount} hits`}</Typography>
+              <Typography>{`Hit Count: ${hitCount} hit(s)`}</Typography>
               <Typography>{`Base Crit Ratio: ${move.critRatio}`}</Typography>
               <Typography>{`Flinch Chance: ${move.flinchChance}%`}</Typography>
               <Typography>{`Damage Healed: ${move.healDamage}%`}</Typography>
@@ -126,7 +137,7 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
               <Typography>{`Targeting: ${move.target}`}</Typography>
             </CardContent>
           </Card>
-          <Card>
+          <Card sx={{gridArea: "d"}} variant='outlined'>
             <CardHeader title="Flags" />
             <CardContent>
               <FormGroup>
