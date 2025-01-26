@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, ButtonBase, Container, Modal, Typography } from '@mui/material';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-const DMG_TYPE_ICONS = {
+export const DMG_TYPE_ICONS = {
   0: '/img/status_dmg_type.png',
   1: '/img/phys_dmg_type.png',
   2: '/img/special_dmg_type.png',
