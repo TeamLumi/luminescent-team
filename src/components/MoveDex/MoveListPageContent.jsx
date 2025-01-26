@@ -753,7 +753,7 @@ const MoveFilterDrawer = ({
                 <Button
                   key={`damage-ratio${damageRatio}`}
                   variant='outlined'
-                  onClick={() => handleChange("healDamage", {value: damageRatio, label: `${damageRatio} Damage`})}
+                  onClick={() => handleChange("healDamage", {value: damageRatio, label: `${damageRatio}% Damage`})}
                 >
                   {`${damageRatio}% Damage`}
                 </Button>
@@ -773,7 +773,7 @@ const MoveFilterDrawer = ({
                 <Button
                   key={`recover-ratio${hpRecoverRatio}`}
                   variant='outlined'
-                  onClick={() => handleChange("hpRecover", {value: hpRecoverRatio, label: `${hpRecoverRatio} Recovered`})}
+                  onClick={() => handleChange("hpRecover", {value: hpRecoverRatio, label: `${hpRecoverRatio}% Recovered`})}
                 >
                   {`${hpRecoverRatio}% Recovered`}
                 </Button>
