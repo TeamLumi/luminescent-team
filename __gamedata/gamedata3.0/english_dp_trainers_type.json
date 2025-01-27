@@ -3193,6 +3193,156 @@
                     "strWidth": 219.234375
                 }
             ]
+        },
+        {
+            "labelIndex": 106,
+            "arrayIndex": 106,
+            "labelName": "DP_Trainers_Type_TR_AKARI",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Trainer",
+                    "strWidth": 219.234375
+                }
+            ]
+        },
+        {
+            "labelIndex": 107,
+            "arrayIndex": 107,
+            "labelName": "DP_Trainers_Type_TR_REI",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Trainer",
+                    "strWidth": 219.234375
+                }
+            ]
+        },
+        {
+            "labelIndex": 108,
+            "arrayIndex": 108,
+            "labelName": "DP_Trainers_Type_TR_VOLO",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Trainer",
+                    "strWidth": 219.234375
+                }
+            ]
+        },
+        {
+            "labelIndex": 109,
+            "arrayIndex": 109,
+            "labelName": "DP_Trainers_Type_TR_DEV_DAHNI",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Luminescent Dev",
+                    "strWidth": 220.3125
+                }
+            ]
+        },
+        {
+            "labelIndex": 110,
+            "arrayIndex": 110,
+            "labelName": "DP_Trainers_Type_TR_BACKLOT",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Mr.",
+                    "strWidth": 43.546875
+                }
+            ]
         }
     ]
 }

@@ -31749,8 +31749,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Mr. Backlot",
-                    "strWidth": 110.75
+                    "str": "Backlot",
+                    "strWidth": 96.359375
                 }
             ]
         },
@@ -32591,6 +32591,126 @@
                     "tagValue": 0.0,
                     "str": "Steven",
                     "strWidth": 100.75
+                }
+            ]
+        },
+        {
+            "labelIndex": 1060,
+            "arrayIndex": 1087,
+            "labelName": "DP_Trainers_Type_TR_AKARI",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "AYou Akari",
+                    "strWidth": 148.359375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1061,
+            "arrayIndex": 1088,
+            "labelName": "DP_Trainers_Type_TR_REI",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "AYou Rei",
+                    "strWidth": 122.0625
+                }
+            ]
+        },
+        {
+            "labelIndex": 1062,
+            "arrayIndex": 1089,
+            "labelName": "DP_Trainers_Type_TR_VOLO",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Volo",
+                    "strWidth": 62.09375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1063,
+            "arrayIndex": 1090,
+            "labelName": "DP_Trainers_Type_TR_DEV_DAHNI",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Dahni",
+                    "strWidth": 76.171875
                 }
             ]
         }
