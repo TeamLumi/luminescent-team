@@ -24,15 +24,34 @@ import {
 import CloseIcon from '@mui/icons-material/Close';
 
 import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
-import { DMG_TYPE_ICONS, MoveIcon, PokemonMove, PokemonMoveType, TYPE_COLOR_MAP } from '../Pokedex2/PokemonMovesetList';
+import {
+  DMG_TYPE_ICONS,
+  MoveIcon,
+  PokemonMove,
+  PokemonMoveType,
+  TYPE_COLOR_MAP
+} from '../Pokedex2/PokemonMovesetList';
 import MoveSearchInput from './MoveSearchInput';
 
-import { normalizePokemonName } from '../../utils/dex/name';
-import { DAMAGE_RECOVER_RATIO, FLAG_STRINGS, FLINCH_RATIOS, HP_RECOVER_RATIO, MOVE_CATEGORIES, MOVE_TARGETING, PHYSICAL_MOVE, SPECIAL_MOVE, STAT_EFFECT_CHANCE, STATS_TO_CHANGE, STATUS_EFFECTS, STATUS_MOVE } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
+import {
+  DAMAGE_RECOVER_RATIO,
+  FLAG_STRINGS,
+  FLINCH_RATIOS,
+  HP_RECOVER_RATIO,
+  MOVE_CATEGORIES,
+  MOVE_TARGETING,
+  PHYSICAL_MOVE,
+  SPECIAL_MOVE,
+  STAT_EFFECT_CHANCE,
+  STATS_TO_CHANGE,
+  STATUS_EFFECTS,
+  STATUS_MOVE
+} from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
 import { DoubleArrow } from '@mui/icons-material';
 
 export const defaultSearchTable = {
   name: { label: "", value: "" },
+  id: {label: "", value: ""},
   type: { label: null, value: null },
   damageType: { label: null, value: null },
   power: { label: null, value: null },
@@ -239,7 +258,7 @@ const MoveFilterDrawer = ({
           const fullKey = prefix ? `${prefix}.${key}` : key;
 
           // Skip if value is null
-          if (value?.value === null || fullKey === "name") {
+          if (value?.value === null || fullKey === "name" || fullKey === "id") {
             return null;
           }
 
@@ -908,10 +927,9 @@ const MoveFilterDrawer = ({
 
 const MoveListEntry = ({ move, style }) => {
   const { path } = usePluginData('luminescent-movedex-data-plugin');
-  const movePath = normalizePokemonName(move.name);
 
   return (
-    <a href={useBaseUrl(`${path}/${movePath}`)} style={{ ...style, textDecoration: 'none' }}>
+    <a href={useBaseUrl(`${path}/${move.movePath}`)} style={{ ...style, textDecoration: 'none' }}>
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>

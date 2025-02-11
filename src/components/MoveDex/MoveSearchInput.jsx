@@ -92,7 +92,21 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
 
   const handleTextChange = (value) => {
     setText(value);
-    handleChange("name", {value: value, label: null});
+
+    if (value === null || value.trim().length === 0) {
+      handleChange("id", { value: "", label: null });
+      handleChange("name", { value: "", label: null });
+      return; // Exit early
+    }
+
+    const parsedValue = parseInt(value, 10);
+    if (!isNaN(parsedValue)) {
+      handleChange("name", { value: "", label: null });
+      handleChange("id", { value: parsedValue, label: null });
+    } else {
+      handleChange("id", { value: "", label: null });
+      handleChange("name", { value, label: null });
+    }
   };
 
   const buildQueryList = (obj, queryList, parentKey = "") => {
@@ -145,12 +159,6 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
   useEffect(() => {
     setMoves(fuzzySearch());
   }, [fuzzySearch, setMoves]);
-
-  useEffect(() => {
-    if (searchTable.name?.value !== undefined) {
-      setDebouncedText(searchTable.name.value);
-    }
-  }, [searchTable.name]);
 
   return (
     <TextField
