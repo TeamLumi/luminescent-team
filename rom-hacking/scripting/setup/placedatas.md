@@ -98,7 +98,7 @@ Stopdatas are your "trigger" events and require a Work variable to have a certai
 Stopdatas will only trigger when your work value has the specified param inside.
 For example, if you are using work value of 440 and a param of 1. If @440 does not equal to 1 in memory, the event will not trigger. In scripting you change what a work value holds by using `_LDVAL(@440, 1)`
 
-Not every zone has a stopdata available, which is problematic until we get monoscript insertion working. This means you are restricted in which zones you can add trigger events.
+In Vanilla BDSP not every zone has a stopdata available, which is problematic until we get monoscript insertion working. This means you are restricted in which zones you can add trigger events.
 
 ```json
 {
