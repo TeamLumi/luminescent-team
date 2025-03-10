@@ -1,6 +1,6 @@
 # Pokelist Set Proc List
 
-This is a list of all the pokemon that are highlighted when using the [`_POKELIST_SET_PROC` command](../scripting/commands/gamedata/264-pokelist-set-proc.md)
+This is a list of all the pokemon that are highlighted when using the [`_POKELIST_SET_PROC` command](../scripting/commands/gamedata/264-pokelist-set-proc.md). These values are set in the BoxOpenParam which is defined in the UIDatabase file found in the masterdatas bundle.
 
 | Index | Parameters | Pokemon Highlighted | Uses |
 | - | - | - | - |
