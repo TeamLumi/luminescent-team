@@ -7,7 +7,7 @@
 
 ## Effect
 
-Sets a work to a given value.
+Sets a work variable to a given value.
 
 ## Syntax
 
@@ -17,7 +17,7 @@ _LDVAL(work, value)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **work** | The work that gets set | Work | Required |
+| **work** | The work to set | Work | Required |
 | **value** | The value to set the work to | Work, Float | Required |
 
 ## Example

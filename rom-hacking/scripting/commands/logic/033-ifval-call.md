@@ -8,7 +8,7 @@
 
 Compares two values using the given comparison operator. Calls a script if the comparison is true.
 
-The position of the call is saved. Execution returns to this command once a _RET is executed.
+The position of a call is saved. Execution returns to this command once a _RET is executed.
 
 
 ## Syntax

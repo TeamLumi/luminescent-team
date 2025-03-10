@@ -4,11 +4,11 @@
 
 Checks the trainer flag of the given trainer and jumps to a script if the trainer is not defeated.
 
-The position of the jump is not saved. Execution does not return to this command once a _RET is executed.
+The position of a jump is not saved. Execution does not return to this command once a _RET is executed.
 
 :::info
 
-The VS. Seeker does not affect this result.
+The Vs. Seeker does not affect this result.
 
 :::
 
