@@ -50,3 +50,9 @@ If you have followed all of these instructions and the game still doesn't boot, 
 If they are instead displaying as files please make your own exefs and romfs in the appropriate spot and place the contents inside yourself. Check again in NX-Shell that everything is displaying as folders now.
 
 You may also need to redownload the mod entirely in case of a corruption.
+
+If you have uploaded the files through FTP, check that the file size of `exefs/subsdk1` remains the same. If it's different, your FTP client may have uploaded the mod files as ASCII instead of binary. In this case, you should force your FTP client to use binary mode. The specific steps for this will depend on the client you have used:
+
+- Filezilla: navigate to `Edit -> Settings -> Transfers -> FTP: File Types -> Default transfer type`. Change the selection from `Auto` to `Binary`.
+
+Once you've done this, restart the installation process, ensuring you remove the previously uploaded files of the mod.
