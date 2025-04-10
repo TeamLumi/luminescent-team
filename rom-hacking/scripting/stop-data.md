@@ -9,7 +9,7 @@ Stopdatas in BDSP are your "trigger" events and require a Work variable to have 
 Stopdatas will only trigger when your work value has the specified param inside.
 For example, if you are using work value of 440 and a param of 1. If @440 does not equal to 1 in memory, the event will not trigger. In scripting you change what a work value holds by using `_LDVAL(@440, 1)`
 
-In Vanilla BDSP not every zone has a stopdata available, which is problematic until we get monoscript insertion working. This means you are restricted in which zones you can add trigger events.
+In Vanilla BDSP not every zone has a stopdata available. This means you are restricted in which zones you can add trigger events. However, by ripping the masterdatas bundle to Unity using AssetRipper, we are able to add more to it (documentation surrounding this coming soon™).
 
 ```json
 {
