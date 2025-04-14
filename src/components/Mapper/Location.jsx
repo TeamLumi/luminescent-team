@@ -13,7 +13,7 @@ export const Location = ({
   const isMouseOver = isLocationWithinBounds({
     ...location,
     x: location.x + 2,
-    y: location.y - 2,
+    y: location.y + 2,
     width: location.width - 2,
     height: location.height - 2,
   }, mouseCoords);
