@@ -7,7 +7,8 @@ export const Location = ({
   location,
   mouseCoords,
   selectedLocation,
-  encounterLocations
+  encounterLocations,
+  colors
 }) => {
   const isSelected = selectedLocation === location.zoneId;
   const isMouseOver = isLocationWithinBounds({
@@ -22,20 +23,28 @@ export const Location = ({
   const fill = isSelected || isMouseOver || isEncounter;
   const showText = isMouseOver;
 
-  const colorMap = {
-    selected: "#00FFFF",
-    hover: "#FFF",
-    encounter: "#FF00FF",
-    default: "transparent",
-  };
+  function getHoverFillStyle() {
+    const { r, g, b, a } = colors.hov;
+    return `rgba(${r}, ${g}, ${b}, ${a})`;
+  }
 
-  let color = colorMap.default;
+  function getSelFillStyle() {
+    const { r, g, b, a } = colors.sel;
+    return `rgba(${r}, ${g}, ${b}, ${a})`;
+  }
+
+  function getEncFillStyle() {
+    const { r, g, b, a } = colors.enc;
+    return `rgba(${r}, ${g}, ${b}, ${a})`;
+  }
+
+  let color = colors.default;
   if (isSelected) {
-    color = colorMap.selected;
+    color = getSelFillStyle();
   } else if (isMouseOver) {
-    color = colorMap.hover;
+    color = getHoverFillStyle();
   } else if (isEncounter) {
-    color = colorMap.encounter;
+    color = getEncFillStyle();
   }
 
   return (
@@ -49,7 +58,13 @@ export const Location = ({
         fill={fill}
       />
       {showText && (
-        <Text x={location.x + location.width + 2} y={location.y - 2} font="18px Arial">
+        <Text
+          x={location.x + location.width + 2}
+          y={location.y - 2}
+          font="18px Arial"
+          background
+          backgroundColor={'rgba(255, 255, 255, 0.8)'}
+        >
           {location.name}
         </Text>
       )}

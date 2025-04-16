@@ -25,6 +25,9 @@ export const getLocationNames = () => {
 };
 
 export function getLocationCoordsFromName(name) {
+    if (!name) {
+        return null;
+    }
     return MapperCoordinates.find(coord => coord.name === name);
 };
 

@@ -145,3 +145,9 @@
     max-height: 80%;
     max-width: 1200px;
 }
+
+.ScrubLabel {
+    cursor: ew-resize;
+    font-weight: bold;
+    user-select: none;
+}

@@ -58,22 +58,6 @@ const canvasDimensions = {
 
 const versionNumber = "Beta 1.1.2";
 
-function useDebouncedValue(value, delay) {
-  const [debouncedValue, setDebouncedValue] = useState(value);
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [value, delay]);
-
-  return debouncedValue;
-}
-
 export const CLEAR_MODE = {
   HIGHLIGHT: "highlight",
   SELECT: "select",
@@ -87,7 +71,7 @@ export const Mapper = ({ pokemonList }) => {
   // }
   // const [rect, setRect] = useState(null);
   // const [hoveredZone, setHoveredZone] = useState(null);
-  // const [selectedZone, setSelectedZone] = useState(null);
+  const [selectedZone, setSelectedZone] = useState(null);
   // const [selectedZoneId, setSelectedZoneId] = useState(null);
   // const locationId = useRef("");
   // const [encOptions, setEncOptions] = useState({
@@ -98,12 +82,11 @@ export const Mapper = ({ pokemonList }) => {
   //   rod: "1",
   // });
 
-  // const [selectedPokemon, setSelectedPokemon] = useState(pokemonList[0] || '');
-  // const [pokemonName, setPokemonName] = useState('');
-  // const completedPokemonName = useDebouncedValue(pokemonName, 1500);
+  const [selectedPokemon, setSelectedPokemon] = useState(null);
+  const [pokemonName, setPokemonName] = useState('');
 
   // const selectedRef = useRef(selectedZone);
-  // const [selectedTrainer, setSelectedTrainer] = useState(null);
+  const [selectedTrainer, setSelectedTrainer] = useState(null);
 
   // useEffect(() => {
   //   if (selectedRef.current !== selectedZone) {
@@ -112,13 +95,13 @@ export const Mapper = ({ pokemonList }) => {
   //   }
   // }, [selectedZone]);
 
-  // const [showTrainerModal, setShowTrainerModal] = useState(false);
-  // const openTrainerModal = () => {
-  //   setShowTrainerModal(true);
-  // };
-  // const closeTrainerModal = () => {
-  //   setShowTrainerModal(false);
-  // };
+  const [showTrainerModal, setShowTrainerModal] = useState(false);
+  const openTrainerModal = () => {
+    setShowTrainerModal(true);
+  };
+  const closeTrainerModal = () => {
+    setShowTrainerModal(false);
+  };
 
   // let originalImageData = {
   //   highlight: {},
@@ -131,19 +114,13 @@ export const Mapper = ({ pokemonList }) => {
   //   enc: null,
   // };
 
-  // let colorSettings = {
-  //   hov: { r: 247, g: 100, b: 200, a: 0.7 },
-  //   sel: { r: 72, g: 113, b: 247, a: 0.8 },
-  //   enc: { r: 247, g: 0, b: 0, a: 0.7 },
-  // }
-
-  // const [locationList, setLocationList] = useState([]);
-  // const [showSettings, setShowSettings] = useState(false);
-  // const [colors, setColors] = useState({
-  //   hov: { r: 247, g: 148, b: 72, a: 0.7 },
-  //   sel: { r: 72, g: 113, b: 247, a: 0.8 },
-  //   enc: { r: 247, g: 0, b: 0, a: 0.7 },
-  // });
+  const [showSettings, setShowSettings] = useState(false);
+  const [colors, setColors] = useState({
+    hov: { r: 247, g: 100, b: 200, a: 0.7 },
+    sel: { r: 72, g: 113, b: 247, a: 0.8 },
+    enc: { r: 247, g: 0, b: 0, a: 0.7 },
+    default: "transparent"
+  });
 
   // const [encounterList, setEncounterList] = useState({
   //   GroundEnc: [],
@@ -487,9 +464,9 @@ export const Mapper = ({ pokemonList }) => {
   //   }
   // }, [encOptions, selectedZoneId])
 
-  // useEffect(() => {
-  //   setLocationList(getMapperRoutesFromPokemonId(getPokemonIdFromName(completedPokemonName)))
-  // }, [completedPokemonName])
+  useEffect(() => {
+    setEncounterLocations(getMapperRoutesFromPokemonId(selectedPokemon?.id));
+  }, [selectedPokemon]);
 
   // useEffect(() => {
   //   setTrainerList(getTrainersFromZoneId(selectedZoneId) || []) ;
@@ -502,17 +479,17 @@ export const Mapper = ({ pokemonList }) => {
   //   });
   // };
 
-  // const handlePokemonNameChange = (pokemonName) => {
-  //   setPokemonName(pokemonName);
-  // };
+  const handlePokemonNameChange = (pokemonName) => {
+    setPokemonName(pokemonName);
+  };
 
-  // const handleShowSettings = () => {
-  //   setShowSettings(true);
-  // };
+  const handleShowSettings = () => {
+    setShowSettings(true);
+  };
 
-  // const handleCloseSettings = () => {
-  //   setShowSettings(false);
-  // };
+  const handleCloseSettings = () => {
+    setShowSettings(false);
+  };
 
   // const setAllEncounters = (zoneId) => {
   //   const areaEncounters = getAreaEncounters(zoneId);
@@ -588,21 +565,6 @@ export const Mapper = ({ pokemonList }) => {
   //     honey: honeyTreeEnc,
   //     event: eventEncounters,
   //   }
-  // }
-
-  // function getHoverFillStyle() {
-  //   const { r, g, b, a } = colorSettings.hov;
-  //   return `rgba(${r}, ${g}, ${b}, ${a})`;
-  // }
-
-  // function getSelFillStyle() {
-  //   const { r, g, b, a } = colorSettings.sel;
-  //   return `rgba(${r}, ${g}, ${b}, ${a})`;
-  // }
-
-  // function getEncFillStyle() {
-  //   const { r, g, b, a } = colorSettings.enc;
-  //   return `rgba(${r}, ${g}, ${b}, ${a})`;
   // }
 
   // function drawRect(location, mode=CLEAR_MODE.HIGHLIGHT) {
@@ -692,16 +654,12 @@ export const Mapper = ({ pokemonList }) => {
     const location = getSelectedLocation(x, y);
     if (location) {
       setSelectedLocation(location.zoneId);
+      setSelectedZone(location.name);
     } else {
-      setSelectedLocation(-1);
+      setSelectedLocation(null);
+      setSelectedZone(null);
     }
   };
-
-  useEffect(() => {
-    if (selectedLocation === -1) {
-      setSelectedLocation(null);
-    }
-  }, [selectedLocation]);
 
   return (
     <div className="mapper">
@@ -733,6 +691,7 @@ export const Mapper = ({ pokemonList }) => {
                 mouseCoords={mouseCoords}
                 selectedLocation={selectedLocation}
                 encounterLocations={encounterLocations}
+                colors={colors}
               />
               <Rect
                 key={`outline-${location.zoneId}-${locationIndex}`}
@@ -759,15 +718,13 @@ export const Mapper = ({ pokemonList }) => {
           routeId={selectedZoneId}
         /> */}
       </div>
-      {/* <SearchBar
+      <SearchBar
         canvasDimensions={canvasDimensions}
         pokemonList={pokemonList}
-        debouncedText={pokemonName}
         handleDebouncedTextChange={handlePokemonNameChange}
         locationName={selectedZone}
         setLocationName={setSelectedZone}
-        setLocationZoneId={setSelectedZoneId}
-        canvasRef={canvasRef.current}
+        setLocationZoneId={setSelectedLocation}
         selectedPokemon={selectedPokemon}
         setSelectedPokemon={setSelectedPokemon}
         handleShowSettings={handleShowSettings}
@@ -777,7 +734,7 @@ export const Mapper = ({ pokemonList }) => {
         onHide={closeTrainerModal}
         pokemonList={pokemonList}
         selectedTrainer={selectedTrainer}
-      /> */}
+      />
       {/* <div>
         Field Items: 
         {fieldItemsList && fieldItemsList.map((fieldItem, index) => (
@@ -850,13 +807,12 @@ export const Mapper = ({ pokemonList }) => {
           </div>
         ))}
       </div> */}
-      {/* <SettingsModal
+      <SettingsModal
         colors={colors}
         setColors={setColors}
         showModal={showSettings}
         onHide={handleCloseSettings}
-        canvasRef={canvasRef.current}
-      /> */}
+      />
     </div>
   );
 }
