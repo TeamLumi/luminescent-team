@@ -4,8 +4,9 @@
 require('dotenv').config();
 
 const BASE_URL = '/';
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const {themes} = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 // Pokedex is disabled by default
 const isDexEnabled = process.env.DEX_ENABLED === 'true';
@@ -204,6 +205,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['bash', 'diff', 'json'],
       },
       colorMode: {
         defaultMode: 'dark',
