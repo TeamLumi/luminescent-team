@@ -17,7 +17,6 @@ const PokemonSearchInput = ({
 
   // Debouncing effect for searchText.
   useEffect(() => {
-    console.log('inputValue:', searchText);
     const timer = setTimeout(() => {
       setDebouncedText(searchText);
     }, 300);

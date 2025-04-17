@@ -74,13 +74,13 @@ export const Mapper = ({ pokemonList }) => {
   const [selectedZone, setSelectedZone] = useState(null);
   // const [selectedZoneId, setSelectedZoneId] = useState(null);
   // const locationId = useRef("");
-  // const [encOptions, setEncOptions] = useState({
-  //   swarm: false,
-  //   radar: false,
-  //   timeOfDay: "1",
-  //   incense: false,
-  //   rod: "1",
-  // });
+  const [encOptions, setEncOptions] = useState({
+    swarm: false,
+    radar: false,
+    timeOfDay: "1",
+    incense: false,
+    rod: "1",
+  });
 
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [pokemonName, setPokemonName] = useState('');
@@ -122,14 +122,14 @@ export const Mapper = ({ pokemonList }) => {
     default: "transparent"
   });
 
-  // const [encounterList, setEncounterList] = useState({
-  //   GroundEnc: [],
-  //   SurfEnc: [],
-  //   RodEnc: [],
-  //   honey: [],
-  //   event: [],
-  // });
-  // const [trainerList, setTrainerList] = useState([]);
+  const [encounterList, setEncounterList] = useState({
+    GroundEnc: [],
+    SurfEnc: [],
+    RodEnc: [],
+    honey: [],
+    event: [],
+  });
+  const [trainerList, setTrainerList] = useState([]);
   // const [fieldItemsList, setFieldItems] = useState([]);
   // const [hiddenItemsList, setHiddenItems] = useState([]);
   // const [shopItemsList, setShopItems] = useState([]);
@@ -458,26 +458,23 @@ export const Mapper = ({ pokemonList }) => {
   //   }
   // }, [canvasRef.current]); // Add canvasRef.current to the dependency array
 
-  // useEffect(() => {
-  //   if(locationId !== null) {
-  //     setEncounterList(setAllEncounters(locationId.current))
-  //   }
-  // }, [encOptions, selectedZoneId])
+  const locationId = useRef(null);
+  useEffect(() => {
+    if(locationId !== null) {
+      setEncounterList(setAllEncounters(locationId.current))
+    }
+  }, [encOptions]);
 
   useEffect(() => {
     setEncounterLocations(getMapperRoutesFromPokemonId(selectedPokemon?.id));
   }, [selectedPokemon]);
 
-  // useEffect(() => {
-  //   setTrainerList(getTrainersFromZoneId(selectedZoneId) || []) ;
-  // }, [selectedZoneId])
-
-  // const handleOptionChange = (option, value) => {
-  //   setEncOptions({
-  //     ...encOptions,
-  //     [option]: value,
-  //   });
-  // };
+  const handleOptionChange = (option, value) => {
+    setEncOptions({
+      ...encOptions,
+      [option]: value,
+    });
+  };
 
   const handlePokemonNameChange = (pokemonName) => {
     setPokemonName(pokemonName);
@@ -491,81 +488,81 @@ export const Mapper = ({ pokemonList }) => {
     setShowSettings(false);
   };
 
-  // const setAllEncounters = (zoneId) => {
-  //   const areaEncounters = getAreaEncounters(zoneId);
-  //   if (!areaEncounters) {
-  //     return {
-  //       GroundEnc: [],
-  //       SurfEnc: [],
-  //       RodEnc: [],
-  //       honey: [],
-  //       event: [],
-  //     };
-  //   }
+  const setAllEncounters = (zoneId) => {
+    const areaEncounters = getAreaEncounters(zoneId);
+    if (!areaEncounters) {
+      return {
+        GroundEnc: [],
+        SurfEnc: [],
+        RodEnc: [],
+        honey: [],
+        event: [],
+      };
+    }
 
-  //   const allGroundEnc = getAllGroundEncounters(areaEncounters);
-  //   const swarmEnc = getSwarmEncounter(areaEncounters);
-  //   const radarEnc = getRadarEncounter(areaEncounters);
-  //   const timeOfDayEnc = getTimeOfDayEncounters(areaEncounters);
-  //   const incenseEnc = getAllIncenseEncounters(areaEncounters);
-  //   const allSurfEnc = getAllSurfingEncounters(areaEncounters);
-  //   const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
-  //   const honeyTreeEnc = getAllHoneyTreeEncounters(areaEncounters);
-  //   const eventEncounters = getEventEncounters(areaEncounters);
+    const allGroundEnc = getAllGroundEncounters(areaEncounters);
+    const swarmEnc = getSwarmEncounter(areaEncounters);
+    const radarEnc = getRadarEncounter(areaEncounters);
+    const timeOfDayEnc = getTimeOfDayEncounters(areaEncounters);
+    const incenseEnc = getAllIncenseEncounters(areaEncounters);
+    const allSurfEnc = getAllSurfingEncounters(areaEncounters);
+    const surfIncenseEnc = getSurfingIncenseEncounter(areaEncounters);
+    const honeyTreeEnc = getAllHoneyTreeEncounters(areaEncounters);
+    const eventEncounters = getEventEncounters(areaEncounters);
 
-  //   // This section is for the grass encounters only
-  //   if (allGroundEnc.length > 0) {
-  //     if (encOptions.swarm) {
-  //       allGroundEnc[0] = swarmEnc[0]
-  //     }
-  //     if (encOptions.radar) {
-  //       allGroundEnc[9] = allGroundEnc[1]
-  //       allGroundEnc[9].encounterRate = "4%"
-  //       allGroundEnc[1] = radarEnc[0]
-  //     }
-  //     if (encOptions.timeOfDay === "2") {
-  //       allGroundEnc[2] = timeOfDayEnc[0]
-  //       allGroundEnc[3] = timeOfDayEnc[1]
-  //     } else if (encOptions.timeOfDay === "3") {
-  //       allGroundEnc[2] = timeOfDayEnc[2]
-  //       allGroundEnc[3] = timeOfDayEnc[3]
-  //     }
-  //     if (encOptions.incense) {
-  //       if (incenseEnc.length > 0) {
-  //         allGroundEnc[10] = allGroundEnc[4]
-  //         allGroundEnc[11] = allGroundEnc[5]
-  //         allGroundEnc[10].encounterRate = "1%"
-  //         allGroundEnc[11].encounterRate = "1%"
-  //         allGroundEnc[4] = incenseEnc[0]
-  //         allGroundEnc[5] = incenseEnc[1]
-  //       } else {
-  //         console.error("This Route should have Incense Encounters but doesn't", zoneId)
-  //       }
-  //     }
-  //   }
+    // This section is for the grass encounters only
+    if (allGroundEnc.length > 0) {
+      if (encOptions.swarm) {
+        allGroundEnc[0] = swarmEnc[0]
+      }
+      if (encOptions.radar) {
+        allGroundEnc[9] = allGroundEnc[1]
+        allGroundEnc[9].encounterRate = "4%"
+        allGroundEnc[1] = radarEnc[0]
+      }
+      if (encOptions.timeOfDay === "2") {
+        allGroundEnc[2] = timeOfDayEnc[0]
+        allGroundEnc[3] = timeOfDayEnc[1]
+      } else if (encOptions.timeOfDay === "3") {
+        allGroundEnc[2] = timeOfDayEnc[2]
+        allGroundEnc[3] = timeOfDayEnc[3]
+      }
+      if (encOptions.incense) {
+        if (incenseEnc.length > 0) {
+          allGroundEnc[10] = allGroundEnc[4]
+          allGroundEnc[11] = allGroundEnc[5]
+          allGroundEnc[10].encounterRate = "1%"
+          allGroundEnc[11].encounterRate = "1%"
+          allGroundEnc[4] = incenseEnc[0]
+          allGroundEnc[5] = incenseEnc[1]
+        } else {
+          console.error("This Route should have Incense Encounters but doesn't", zoneId)
+        }
+      }
+    }
 
-  //   // This section is for the surfing encounters only
-  //   if(allSurfEnc.length > 0) {
-  //     if (encOptions.incense) {
-  //       if (surfIncenseEnc.length > 0) {
-  //         allSurfEnc[1] = surfIncenseEnc[0]
-  //       } else {
-  //         console.error("This Route doesn't have Surf Incense Encounters but should:", zoneId);
-  //       }
-  //     }
-  //   }
+    // This section is for the surfing encounters only
+    if(allSurfEnc.length > 0) {
+      if (encOptions.incense) {
+        if (surfIncenseEnc.length > 0) {
+          allSurfEnc[1] = surfIncenseEnc[0]
+        } else {
+          console.error("This Route doesn't have Surf Incense Encounters but should:", zoneId);
+        }
+      }
+    }
 
-  //   // This section is for the Rod Encounters only
-  //   const rodEnc = getAllRodEncounters(areaEncounters, encOptions.rod)
+    // This section is for the Rod Encounters only
+    const rodEnc = getAllRodEncounters(areaEncounters, encOptions.rod)
 
-  //   return{
-  //     GroundEnc: allGroundEnc,
-  //     SurfEnc: allSurfEnc,
-  //     RodEnc: rodEnc,
-  //     honey: honeyTreeEnc,
-  //     event: eventEncounters,
-  //   }
-  // }
+    return{
+      GroundEnc: allGroundEnc,
+      SurfEnc: allSurfEnc,
+      RodEnc: rodEnc,
+      honey: honeyTreeEnc,
+      event: eventEncounters,
+    }
+  }
 
   // function drawRect(location, mode=CLEAR_MODE.HIGHLIGHT) {
   //   //If there was no previous rectangle, don't clear it
@@ -654,11 +651,21 @@ export const Mapper = ({ pokemonList }) => {
     const location = getSelectedLocation(x, y);
     if (location) {
       setSelectedLocation(location.zoneId);
+      locationId.current = location.zoneId;
+      setTrainerList(getTrainersFromZoneId(location.zoneId));
+      setEncounterList(setAllEncounters(location.zoneId) || []);
       setSelectedZone(location.name);
     } else {
       setSelectedLocation(null);
+      locationId.current = null;
+      setTrainerList([]);
       setSelectedZone(null);
     }
+  };
+
+  const handleSetLocationZoneId = (zoneId) => {
+    setTrainerList(getTrainersFromZoneId(zoneId) || []) ;
+    setEncounterList(setAllEncounters(zoneId) || []);
   };
 
   return (
@@ -705,7 +712,7 @@ export const Mapper = ({ pokemonList }) => {
             </>
           ))}
         </Canvas>
-        {/* <MapperTabPanel
+        <MapperTabPanel
           encOptions={encOptions}
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
@@ -715,8 +722,8 @@ export const Mapper = ({ pokemonList }) => {
           selectedTrainer={selectedTrainer}
           setSelectedTrainer={setSelectedTrainer}
           openTrainerModal={openTrainerModal}
-          routeId={selectedZoneId}
-        /> */}
+          routeId={selectedLocation}
+        />
       </div>
       <SearchBar
         canvasDimensions={canvasDimensions}
@@ -724,7 +731,7 @@ export const Mapper = ({ pokemonList }) => {
         handleDebouncedTextChange={handlePokemonNameChange}
         locationName={selectedZone}
         setLocationName={setSelectedZone}
-        setLocationZoneId={setSelectedLocation}
+        setLocationZoneId={handleSetLocationZoneId}
         selectedPokemon={selectedPokemon}
         setSelectedPokemon={setSelectedPokemon}
         handleShowSettings={handleShowSettings}
