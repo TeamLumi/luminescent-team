@@ -13,7 +13,7 @@ const MapperPage = ({ pokemonList }) => {
         </GlobalState>
       </LumiReactThemeProvider>
     </Layout>
-  )
-}
+  );
+};
 
 export default MapperPage;

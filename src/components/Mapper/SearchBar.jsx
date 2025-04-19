@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import IconButton from '@mui/material/IconButton';
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
 import SettingsIcon from '@mui/icons-material/Settings';
-import { Autocomplete, TextField } from '@mui/material';
 import Fuse from 'fuse.js';
 
 import { getLocationCoordsFromName, getLocationNames } from './coordinates';
@@ -13,7 +14,7 @@ const PokemonSearchInput = ({
   selectedPokemon,
   setSelectedPokemon,
 }) => {
-  const [searchText, setSearchText] = useState('');
+  const [searchText, setSearchText] = useState("");
 
   // Debouncing effect for searchText.
   useEffect(() => {
@@ -23,17 +24,17 @@ const PokemonSearchInput = ({
     return () => clearTimeout(timer);
   }, [searchText, setDebouncedText]);
 
-  const handlePokemonNameChange = (event, value, reason) => {
+  const handlePokemonNameChange = (_, value, reason) => {
     if (reason !== "clear" && value) {
       setSelectedPokemon(value);
-      setSearchText(value.name);
+      setSearchText(value?.name ?? "");
     } else {
       setSelectedPokemon(null);
       setSearchText("");
     }
   };
 
-  const handleInputChange = (event, value) => {
+  const handleInputChange = (_, value) => {
     setSearchText(value);
   };
 
@@ -41,6 +42,7 @@ const PokemonSearchInput = ({
     <div className="monSearchBar">
       <Autocomplete
         id="pokemon-search-input"
+        clearOnBlur={false}
         options={allPokemons}
         getOptionLabel={(option) => option.name}
         value={selectedPokemon}
@@ -82,6 +84,10 @@ const LocationNameDropdown = ({
         defaultValue={defaultOption}
         value={locationName}
         onChange={handleLocationChange}
+        inputValue={locationName}
+        onInputChange={(_, value) => {
+          setLocationName(value);
+        }}
         blurOnSelect
         renderInput={(params) => (
           <TextField
@@ -89,8 +95,6 @@ const LocationNameDropdown = ({
             type="search"
             label="Current Location"
             fullWidth
-            value={locationName}
-            onChange={(e) => setLocationName(e.target.value)}
           />
         )}
       />

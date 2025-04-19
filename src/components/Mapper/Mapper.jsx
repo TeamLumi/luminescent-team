@@ -65,15 +65,7 @@ export const CLEAR_MODE = {
 }
 
 export const Mapper = ({ pokemonList }) => {
-  // const isBrowser = useIsBrowser();
-  // if (!isBrowser) {
-  //   return null;
-  // }
-  // const [rect, setRect] = useState(null);
-  // const [hoveredZone, setHoveredZone] = useState(null);
   const [selectedZone, setSelectedZone] = useState(null);
-  // const [selectedZoneId, setSelectedZoneId] = useState(null);
-  // const locationId = useRef("");
   const [encOptions, setEncOptions] = useState({
     swarm: false,
     radar: false,
@@ -130,12 +122,12 @@ export const Mapper = ({ pokemonList }) => {
     event: [],
   });
   const [trainerList, setTrainerList] = useState([]);
-  // const [fieldItemsList, setFieldItems] = useState([]);
-  // const [hiddenItemsList, setHiddenItems] = useState([]);
-  // const [shopItemsList, setShopItems] = useState([]);
-  // const [scriptItemsList, setScriptItems] = useState([]);
-  // const [fixedShopList, setFixedShops] = useState([]);
-  // const [heartScaleShopList, setHeartScaleShop] = useState([]);
+  const [fieldItemsList, setFieldItems] = useState([]);
+  const [hiddenItemsList, setHiddenItems] = useState([]);
+  const [shopItemsList, setShopItems] = useState([]);
+  const [scriptItemsList, setScriptItems] = useState([]);
+  const [fixedShopList, setFixedShops] = useState([]);
+  const [heartScaleShopList, setHeartScaleShop] = useState([]);
 
   // const canvasRef = useRef(null);
   // //Component onMount
@@ -366,97 +358,7 @@ export const Mapper = ({ pokemonList }) => {
   //   setSelectedZoneId(location.zoneId)
   //   setEncounterList(setAllEncounters(location.zoneId));
   //   setTrainerList(getTrainersFromZoneId(location.zoneId));
-
-  //   setFieldItems(getFieldItemsFromZoneID(location.zoneId));
-  //   setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
-  //   setShopItems(getRegularShopItems(location.zoneId));
-  //   setScriptItems(getScriptItems(location.zoneId));
-  //   setFixedShops(getFixedShops(location.zoneId));
-  //   setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
   // };
-
-  // function handleMouseMove(event) {
-  //   if(rect === null) {//Shouldn't happen but let's make sure
-  //     return setRect(canvasRef.current.getBoundingClientRect());
-  //   }
-
-  //   // This system allows mobile users to make use of the mapper too
-  //   let scrollLeft = window.scrollX || document.documentElement.scrollLeft;
-  //   let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-  //   const mouseX = event.clientX - rect.left + scrollLeft;
-  //   const mouseY = event.clientY - rect.top + scrollTop;
-
-  //   const location = getSelectedLocation(mouseX, mouseY);
-  //   if (location && location.zoneId !== locationId.current) {
-  //     setHoveredZone(location.name);
-  //     drawRect(location); // Change the fill color
-  //   } else if (location && location.zoneId === locationId.current) {
-  //     // This prevents the selected location from being highlighted by the hover color
-  //     drawRect(location, CLEAR_MODE.SELECT);
-  //   } else {
-  //     if (location && previousRectangle.enc !== null) {
-  //       const hoveredEnc = previousRectangle.enc.find(
-  //         (encLocation) => {
-  //           return (isLocationExactlyEqual(location, encLocation));
-  //         }
-  //       )
-  //       if (hoveredEnc) {
-  //         clearRect(CLEAR_MODE.ENCOUNTER, hoveredEnc);
-  //       }
-  //     }
-  //     setHoveredZone(null);
-  //     if (previousRectangle.highlight !== null) {
-  //       clearRect(CLEAR_MODE.HIGHLIGHT);
-  //       previousRectangle.highlight = null;
-  //     }
-  //   }
-  // }
-
-  // const handleMouseLeave = () => {
-  //   // Clear the hovered zone when mouse leaves
-  //   setHoveredZone(null);
-  //   if (previousRectangle.highlight !== null) {
-  //     clearRect(CLEAR_MODE.HIGHLIGHT);
-  //   }
-  //   if (previousRectangle.enc !== null) {
-  //     clearRect(CLEAR_MODE.ENCOUNTER);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   const canvas = canvasRef.current;
-  //   if (canvas) {
-  //     // Get the bounding rectangle of the canvas
-  //     const r = canvas.getBoundingClientRect();
-  //     setRect(r);
-
-  //     // The passLocationNameToParent event was required so that the child could update the DOM
-  //     // This listener is created in the SearchBar.jsx and is listened to here
-  //     // This is how you would allow a useState from react to partially interact with the canvas
-  //     // Partially because useState is async and this is direct dom manipulation.
-  //     const eventListener = (locationNameEvent) => updateLocationDataFromDropdown(locationNameEvent);
-  //     const pokemonLocationsListener = (pokemonName) => updatePokemonLocationsFromDropdown(pokemonName);
-  //     const colorListener = (changeColorSettings) => updateColorSettings(changeColorSettings);
-
-  //     canvas.addEventListener('click', handleClick);
-  //     canvas.addEventListener('mousemove', handleMouseMove);
-  //     canvas.addEventListener('mouseleave', handleMouseLeave);
-  //     canvas.addEventListener('passLocationNameToParent', eventListener);
-  //     canvas.addEventListener('passPokemonNameLocation', pokemonLocationsListener);
-  //     canvas.addEventListener('changeColorSettings', colorListener);
-
-  //     // Clean up the event listener when the component is unmounted
-  //     return () => {
-  //       canvas.removeEventListener('click', handleClick);
-  //       canvas.removeEventListener('mousemove', handleMouseMove);
-  //       canvas.removeEventListener('mouseleave', handleMouseLeave);
-  //       canvas.removeEventListener('passLocationNameToParent', eventListener);
-  //       canvas.removeEventListener('passPokemonNameLocation', pokemonLocationsListener);
-  //       canvas.removeEventListener('changeColorSettings', colorListener);
-  //     };
-  //   }
-  // }, [canvasRef.current]); // Add canvasRef.current to the dependency array
 
   const locationId = useRef(null);
   useEffect(() => {
@@ -655,17 +557,36 @@ export const Mapper = ({ pokemonList }) => {
       setTrainerList(getTrainersFromZoneId(location.zoneId));
       setEncounterList(setAllEncounters(location.zoneId) || []);
       setSelectedZone(location.name);
+      setFieldItems(getFieldItemsFromZoneID(location.zoneId));
+      setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
+      setShopItems(getRegularShopItems(location.zoneId));
+      setScriptItems(getScriptItems(location.zoneId));
+      setFixedShops(getFixedShops(location.zoneId));
+      setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
     } else {
       setSelectedLocation(null);
       locationId.current = null;
       setTrainerList([]);
       setSelectedZone(null);
+      setFieldItems([]);
+      setHiddenItems([]);
+      setShopItems([]);
+      setScriptItems([]);
+      setFixedShops([]);
+      setHeartScaleShop([]);
     }
   };
 
   const handleSetLocationZoneId = (zoneId) => {
+    setSelectedLocation(zoneId);
     setTrainerList(getTrainersFromZoneId(zoneId) || []) ;
     setEncounterList(setAllEncounters(zoneId) || []);
+    setFieldItems(getFieldItemsFromZoneID(location.zoneId));
+    setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
+    setShopItems(getRegularShopItems(location.zoneId));
+    setScriptItems(getScriptItems(location.zoneId));
+    setFixedShops(getFixedShops(location.zoneId));
+    setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
   };
 
   return (
@@ -682,6 +603,7 @@ export const Mapper = ({ pokemonList }) => {
           height={canvasDimensions.height}
           onMouseMove={handleNewMouseMove}
           onMouseUp={handleMouseUpClick}
+          captureAllKeyEvents={false}
         >
           <Image
             x={0}

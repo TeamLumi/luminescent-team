@@ -43,27 +43,35 @@ function getBattleItemPrice(itemId = 0, mode = GAMEDATA2) {
   return ModeItemTable.Item[itemId].bp_price;
 }
 
-function getRegularShopItems(zoneId) {
+function getRegularShopItems(zoneId, mode=GAMEDATA2) {
+  const modeShopTable = ShopTable[mode];
   const excludedZones = [473, 456, 422];
   const zoneCode = getZoneCodeFromCSV(zoneId + 1);
+  if (!zoneCode) {
+    return [];
+  }
   if (
     zoneCode.startsWith("C") ||
     (zoneCode.startsWith("T") && !excludedZones.includes(zoneId))
     ) {
-    const shopItems = ShopTable.FS.filter(obj => obj.ZoneID === zoneId || obj.ZoneID === -1);
+    const shopItems = modeShopTable.FS.filter(obj => obj.ZoneID === zoneId || obj.ZoneID === -1);
     return shopItems;
   }
   return null;
 }
 
-function getScriptItems(zoneId) {
+function getScriptItems(zoneId, mode=GAMEDATA2) {
+  const modeItemMap = ItemMap[mode]
   const zoneCode = getZoneCodeFromCSV(zoneId);
+  if (!zoneCode) {
+    return [];
+  }
   const lookup = zoneCode.slice(0, 3).toLowerCase();
   const result = [];
 
-  Object.keys(ItemMap).forEach(key => {
+  Object.keys(modeItemMap).forEach(key => {
     if (key.startsWith(lookup)) {
-      const flattenedArray = ItemMap[key].flat(Infinity);
+      const flattenedArray = modeItemMap[key].flat(Infinity);
       const uniqueArray = [...new Set(flattenedArray)];
       result.push(...uniqueArray);
     }
@@ -72,19 +80,23 @@ function getScriptItems(zoneId) {
   return result;
 }
 
-function getFixedShops(zoneId) {
+function getFixedShops(zoneId, mode=GAMEDATA2) {
+  const modeFixedShop = FixedShop[mode];
   const zoneCode = getZoneCodeFromCSV(zoneId);
+  if (!zoneCode) {
+    return null;
+  }
   const lookup = zoneCode.slice(0, 3).toLowerCase();
   const groupedData = {};
 
-  Object.keys(FixedShop).forEach(key => {
+  Object.keys(modeFixedShop).forEach(key => {
     const prefix = key.slice(0, 3);
     
     if (!groupedData[prefix]) {
       groupedData[prefix] = {};
     }
   
-    groupedData[prefix][key] = FixedShop[key];
+    groupedData[prefix][key] = modeFixedShop[key];
   });
 
   const filteredData = groupedData[lookup] || {}

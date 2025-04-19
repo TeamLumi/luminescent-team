@@ -6,14 +6,12 @@ import { RodButtons, TimeOfDayButtons } from '../Encounters/Buttons';
 import { PokemonAccordion } from '../../Pokedex2/PokemonAccordion';
 import EncounterTable from '../Encounters/EncounterTable';
 import ".././style.css"
+import { caveIds, groundEncountersIds } from '../mapperConstants';
 
 const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemon, routeId }) => {
   const { colorMode, setColorMode } = useColorMode();
   const modeChangeTextColor = colorMode === "dark" ? "#F5FBF5" : "#000000";
   const boolOptions = Object.keys(encOptions).filter((key) => typeof encOptions[key] === 'boolean');
-
-  const caveIds = [252,264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 292, 293, 294, 295,296, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 255, 256, 195, 196, 244, 245, 246, 247, 248, 249, 225, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 299, 300, 301, 302, 303, 304,996,997,999];
-  const groundEncountersIds = [286,287,288,289,290,291,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,368,369,370,371,372];
 
   const getGroundTitle = () => {
     return  caveIds.includes(routeId) 
@@ -63,6 +61,7 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
               />
             }
             label={option.charAt(0).toUpperCase() + option.slice(1)}
+            disabled={option === "radar" && caveIds.includes(routeId)}
           />
         ))}
       </Box>
