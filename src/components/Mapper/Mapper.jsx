@@ -1,17 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import IconButton from '@mui/material/IconButton';
-import SettingsIcon from '@mui/icons-material/Settings';
-import useIsBrowser from '@docusaurus/useIsBrowser';
 
 import {
   sortedCoordinates,
-  getLocationCoordsFromName,
-  getLocationCoordsFromZoneId,
   getSelectedLocation,
-  isLocationExactlyEqual
 } from './coordinates';
 import { SearchBar } from './SearchBar';
-import { RodButtons, TimeOfDayButtons } from './Encounters/Buttons';
 import { MapperTabPanel } from './TabPanel/MapperTabPanel';
 import SettingsModal from './Settings/SettingsModal';
 import './style.css';
@@ -23,7 +16,6 @@ import {
   getHiddenItemsFromZoneID,
   getPokemonIdFromName
 } from '../../utils/dex';
-import { getZoneIdFromZoneName } from '../../utils/dex/location';
 import {
   getFixedShops,
   getItemPrice,
@@ -56,7 +48,7 @@ const canvasDimensions = {
   height: 720
 }
 
-const versionNumber = "Beta 1.1.2";
+const versionNumber = "Beta 1.2.0";
 
 export const CLEAR_MODE = {
   HIGHLIGHT: "highlight",
