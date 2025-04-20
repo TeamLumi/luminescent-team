@@ -43,13 +43,13 @@ const PokemonSearchInput = ({
       <Autocomplete
         id="pokemon-search-input"
         clearOnBlur={false}
+        blurOnSelect
         options={allPokemons}
         getOptionLabel={(option) => option.name}
         value={selectedPokemon}
         onChange={handlePokemonNameChange}
         inputValue={searchText}
         onInputChange={handleInputChange}
-        blurOnSelect
         renderInput={(params) => (
           <TextField
             {...params}
@@ -68,31 +68,34 @@ const LocationNameDropdown = ({
   setLocationZoneId,
 }) => {
   const locations = getLocationNames();
-  const handleLocationChange = (e, value) => {
-    setLocationName(value);
-    const location = getLocationCoordsFromName(value);
-    setLocationZoneId(location?.zoneId);
+  const handleLocationChange = (e, value, reason) => {
+    if (reason !== "clear" && value) {
+      setLocationName(value);
+      const location = getLocationCoordsFromName(value);
+      setLocationZoneId(location?.zoneId);
+    } else {
+      setLocationName(null);
+      setLocationZoneId(null);
+    }
   };
 
-  const defaultOption = locations.length > 0 ? locations[0] : '';
   return (
     <div className="location">
       <Autocomplete
         id="location-input"
+        clearOnBlur={false}
+        blurOnSelect
         options={locations}
         getOptionLabel={(option) => option}
-        defaultValue={defaultOption}
         value={locationName}
         onChange={handleLocationChange}
-        inputValue={locationName}
+        inputValue={locationName ?? ""}
         onInputChange={(_, value) => {
           setLocationName(value);
         }}
-        blurOnSelect
         renderInput={(params) => (
           <TextField
             {...params}
-            type="search"
             label="Current Location"
             fullWidth
           />

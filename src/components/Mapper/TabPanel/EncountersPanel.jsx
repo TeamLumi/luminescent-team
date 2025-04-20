@@ -61,7 +61,7 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
               />
             }
             label={option.charAt(0).toUpperCase() + option.slice(1)}
-            disabled={option === "radar" && caveIds.includes(routeId)}
+            disabled={option === "radar" && (caveIds.includes(routeId) || groundEncountersIds.includes(routeId))}
           />
         ))}
       </Box>
