@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 
 import { GlobalState } from '../components/common/GlobalState';
-import { PokemonPageContent } from '../components/Pokedex2/PokemonPageContent';
+import PokemonPageContent from '../components/Pokedex2/PokemonPageContent';
 import PokemonPageHeader from '../components/Pokedex2/PokemonPageHeader';
 import LumiReactThemeProvider from '../theme/LumiThemeProvider';
 

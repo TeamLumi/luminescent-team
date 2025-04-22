@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Canvas, Image, Rect } from '@bucky24/react-canvas/build/main';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
 import {
   sortedCoordinates,
@@ -39,7 +41,6 @@ import {
   getEventEncounters,
 } from '../../utils/dex/encounters';
 import TrainersModal from './Trainers/TrainersModal';
-import { Canvas, Image, Rect } from '@bucky24/react-canvas/build/main';
 import { Location } from './Location';
 import mapperImage from "../../../static/img/new_small_mapper.png";
 
@@ -57,6 +58,10 @@ export const CLEAR_MODE = {
 }
 
 export const Mapper = ({ pokemonList }) => {
+  const isBrowser = useIsBrowser();
+  if (!isBrowser) {
+    return null;
+  }
   const [mouseCoords, setMouseCoords] = useState({ x: 0, y: 0 });
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [selectedZone, setSelectedZone] = useState("");
