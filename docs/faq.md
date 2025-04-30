@@ -47,7 +47,7 @@ If it doesn't properly apply, you have likely done something wrong. Double check
 
 ### Will you be adding new Pokemon? What about regional forms?
 
-As of 2.0.2f, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. It also includes the Chandelure and Tinkaton lines as picked by our screenshot contest winners. Other Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
+As of 2.0.2f, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. It also includes the Chandelure and Tinkaton lines as picked by our screenshot contest winners, and the Pikipek line as an easter egg. Other Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
 
 ### How do I encounter regional Pokémon?
 
