@@ -7,11 +7,7 @@ toc_max_heading_level: 3
 
 ### What is Luminescent Platinum?
 
-Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond, inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
-
-### Wait, it doesn't work for Shining Pearl?
-
-Not yet. Please be patient. Adding the necessary changes to make it also work on Shining Pearl would double our testing workload, and we're saving it until we're finished with 2.0 completely.
+Luminescent Platinum is an enhancement/difficulty mod for Pokémon Brilliant Diamond and Shining Pearl, inspired heavily by Renegade Platinum by Drayano. It is a mod, but also a research project. Anything you see our mod doing will be open source and all methods shared with the public so that others can follow in our footsteps.
 
 ### What's so special about it?
 
@@ -51,7 +47,7 @@ If it doesn't properly apply, you have likely done something wrong. Double check
 
 ### Will you be adding new Pokemon? What about regional forms?
 
-As of 2.0.2f, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. It also includes the Chandelure and Tinkaton lines as picked by our screenshot contest winners. Other Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
+As of 2.0.2f, Luminescent Platinum includes Pokémon 1-493, their regional forms, and any associated evolutions. It also includes the Chandelure and Tinkaton lines as picked by our screenshot contest winners, and the Pikipek line as an easter egg. Other Generation 5+ Pokémon will not be added until 3.0. See [this page](incense-regional.mdx) for more info.
 
 ### How do I encounter regional Pokémon?
 
