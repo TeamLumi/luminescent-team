@@ -18242,6 +18242,11 @@
             "category": "Physical",
             "isZ": true
         },
+        "Blood Moon": {
+            "bp": 140,
+            "type": "Normal",
+            "category": "Special"
+        },
         "Bouncy Bubble": {
             "bp": 90,
             "type": "Water",

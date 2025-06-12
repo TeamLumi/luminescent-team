@@ -3343,6 +3343,126 @@
                     "strWidth": 43.546875
                 }
             ]
+        },
+        {
+            "labelIndex": 111,
+            "arrayIndex": 111,
+            "labelName": "DP_Trainers_Type_TR_RANGERM_02",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Ranger",
+                    "strWidth": 218.65625
+                }
+            ]
+        },
+        {
+            "labelIndex": 112,
+            "arrayIndex": 112,
+            "labelName": "DP_Trainers_Type_TR_RANGERW_02",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Ranger",
+                    "strWidth": 218.65625
+                }
+            ]
+        },
+        {
+            "labelIndex": 113,
+            "arrayIndex": 113,
+            "labelName": "DP_Trainers_Type_TR_RANGERM_03",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Ranger",
+                    "strWidth": 218.65625
+                }
+            ]
+        },
+        {
+            "labelIndex": 114,
+            "arrayIndex": 114,
+            "labelName": "DP_Trainers_Type_TR_RANGERW_03",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Pokémon Ranger",
+                    "strWidth": 218.65625
+                }
+            ]
         }
     ]
 }
