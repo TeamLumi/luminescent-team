@@ -50946,9 +50946,9 @@
         },
         {
             "no": 1306,
-            "type": 3,
-            "iconid": 1279,
-            "price": 20,
+            "type": 9,
+            "iconid": 1306,
+            "price": 0,
             "bp_price": 0,
             "eqp": 0,
             "atc": 0,
@@ -50956,11 +50956,11 @@
             "sizen_atc": 0,
             "sizen_type": 31,
             "tuibamu_eff": 0,
-            "sort": 254,
+            "sort": 69,
             "group": 0,
             "group_id": 0,
-            "fld_pocket": 4,
-            "field_func": 8,
+            "fld_pocket": 8,
+            "field_func": 15,
             "battle_func": 0,
             "wk_cmn": 0,
             "wk_critical_up": 0,
@@ -50981,7 +50981,7 @@
             "wk_friend2": 0,
             "wk_friend3": 0,
             "wk_prm_hp_rcv": 0,
-            "flags0": 2147483648
+            "flags0": 2
         },
         {
             "no": 1307,
