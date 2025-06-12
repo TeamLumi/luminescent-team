@@ -3700,10 +3700,10 @@
       "routeName": "Ruin Maniac Cave - Small",
       "pokemonName": "Diglett",
       "encounterType": "ground_mons",
-      "encounterRate": "20%",
+      "encounterRate": "10%",
       "minLevel": 32,
       "maxLevel": 32,
-      "encounterTypeIndex": 0,
+      "encounterTypeIndex": 5,
       "zoneId": 294
     },
     {
@@ -3720,10 +3720,10 @@
       "routeName": "Ruin Maniac Cave - Large",
       "pokemonName": "Diglett",
       "encounterType": "ground_mons",
-      "encounterRate": "20%",
+      "encounterRate": "10%",
       "minLevel": 32,
       "maxLevel": 32,
-      "encounterTypeIndex": 0,
+      "encounterTypeIndex": 5,
       "zoneId": 295
     },
     {
@@ -14400,20 +14400,20 @@
       "routeName": "Ruin Maniac Cave - Small",
       "pokemonName": "Ditto",
       "encounterType": "ground_mons",
-      "encounterRate": "10%",
+      "encounterRate": "20%",
       "minLevel": 32,
       "maxLevel": 32,
-      "encounterTypeIndex": 5,
+      "encounterTypeIndex": 0,
       "zoneId": 294
     },
     {
       "routeName": "Ruin Maniac Cave - Large",
       "pokemonName": "Ditto",
       "encounterType": "ground_mons",
-      "encounterRate": "10%",
+      "encounterRate": "20%",
       "minLevel": 32,
       "maxLevel": 32,
-      "encounterTypeIndex": 5,
+      "encounterTypeIndex": 0,
       "zoneId": 295
     },
     {
@@ -39601,6 +39601,28 @@
       "zoneId": 397
     }
   ],
+  "731": [
+    {
+      "routeName": "Lake Verity (Before)",
+      "pokemonName": "Pikipek",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 1,
+      "zoneId": 323
+    },
+    {
+      "routeName": "Lake Verity (After)",
+      "pokemonName": "Pikipek",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 1,
+      "zoneId": 324
+    }
+  ],
   "862": [
     {
       "routeName": "Route 230",
@@ -40313,16 +40335,6 @@
       "zoneId": 323
     },
     {
-      "routeName": "Lake Verity (Before)",
-      "pokemonName": "Alolan Meowth",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 5,
-      "maxLevel": 5,
-      "encounterTypeIndex": 1,
-      "zoneId": 323
-    },
-    {
       "routeName": "Lake Verity (After)",
       "pokemonName": "Alolan Meowth",
       "encounterType": "Incense",
@@ -40330,16 +40342,6 @@
       "minLevel": 5,
       "maxLevel": 5,
       "encounterTypeIndex": 0,
-      "zoneId": 324
-    },
-    {
-      "routeName": "Lake Verity (After)",
-      "pokemonName": "Alolan Meowth",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 5,
-      "maxLevel": 5,
-      "encounterTypeIndex": 1,
       "zoneId": 324
     }
   ],

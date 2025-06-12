@@ -16003,7 +16003,7 @@
         {
             "no": 410,
             "type": 7,
-            "iconid": 353,
+            "iconid": 332,
             "price": 3000,
             "bp_price": 0,
             "eqp": 0,
@@ -16661,7 +16661,7 @@
             "wk_friend2": 0,
             "wk_friend3": 0,
             "wk_prm_hp_rcv": 0,
-            "flags0": 64
+            "flags0": 2
         },
         {
             "no": 427,
@@ -16700,7 +16700,7 @@
             "wk_friend2": 0,
             "wk_friend3": 0,
             "wk_prm_hp_rcv": 0,
-            "flags0": 64
+            "flags0": 2
         },
         {
             "no": 428,
@@ -22667,7 +22667,7 @@
             "wk_friend2": 0,
             "wk_friend3": 0,
             "wk_prm_hp_rcv": 0,
-            "flags0": 2147483712
+            "flags0": 64
         },
         {
             "no": 581,
@@ -22784,7 +22784,7 @@
             "wk_friend2": 0,
             "wk_friend3": 0,
             "wk_prm_hp_rcv": 0,
-            "flags0": 2147483712
+            "flags0": 64
         },
         {
             "no": 584,
@@ -44273,7 +44273,7 @@
             "wk_friend2": 0,
             "wk_friend3": 0,
             "wk_prm_hp_rcv": 0,
-            "flags0": 2147483712
+            "flags0": 2147483650
         },
         {
             "no": 1135,
