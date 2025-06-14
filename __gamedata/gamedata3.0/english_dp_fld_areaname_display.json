@@ -1479,8 +1479,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Battle Park",
-                    "strWidth": 141.171875
+                    "str": "Battle Frontier",
+                    "strWidth": 186.953125
                 }
             ]
         },
@@ -4571,6 +4571,96 @@
                     "tagValue": 0.0,
                     "str": "Battle Arcade",
                     "strWidth": 177.40625
+                }
+            ]
+        },
+        {
+            "labelIndex": 152,
+            "arrayIndex": 152,
+            "labelName": "DP_fld_areaname_display_406",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iceberg Ruins",
+                    "strWidth": 173.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 153,
+            "arrayIndex": 153,
+            "labelName": "DP_fld_areaname_display_407",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Iron Ruins",
+                    "strWidth": 127.359375
+                }
+            ]
+        },
+        {
+            "labelIndex": 154,
+            "arrayIndex": 154,
+            "labelName": "DP_fld_areaname_display_408",
+            "styleInfo": {
+                "styleIndex": 48,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 672,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Rock Peak Ruins",
+                    "strWidth": 211.15625
                 }
             ]
         }

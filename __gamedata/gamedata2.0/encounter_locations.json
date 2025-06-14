@@ -21382,7 +21382,7 @@
   "294": [
     {
       "routeName": "Ruin Maniac Cave - Small",
-      "pokemonName": "Diglett",
+      "pokemonName": "Ditto",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
       "minLevel": 32,
@@ -21432,7 +21432,7 @@
     },
     {
       "routeName": "Ruin Maniac Cave - Small",
-      "pokemonName": "Ditto",
+      "pokemonName": "Diglett",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 32,
@@ -21584,7 +21584,7 @@
   "295": [
     {
       "routeName": "Ruin Maniac Cave - Large",
-      "pokemonName": "Diglett",
+      "pokemonName": "Ditto",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
       "minLevel": 32,
@@ -21634,7 +21634,7 @@
     },
     {
       "routeName": "Ruin Maniac Cave - Large",
-      "pokemonName": "Ditto",
+      "pokemonName": "Diglett",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 32,
@@ -25420,7 +25420,7 @@
     },
     {
       "routeName": "Lake Verity (Before)",
-      "pokemonName": "Alolan Meowth",
+      "pokemonName": "Pikipek",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 5,
@@ -25832,7 +25832,7 @@
     },
     {
       "routeName": "Lake Verity (After)",
-      "pokemonName": "Alolan Meowth",
+      "pokemonName": "Pikipek",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 5,
