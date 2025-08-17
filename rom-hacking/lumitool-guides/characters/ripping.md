@@ -17,32 +17,32 @@ To do this we sort by Type and left click the very top AnimationClip. Then scrol
 This should select all animation clips and your animator. Now click Export, Animator + selected AnimationClips.
 Save the output and you have successfully ripped a character.
 
-![ripping](/static/img/lumitool-guides/characters/ripping.webp)
+![ripping](/img/lumitool-guides/characters/ripping.webp)
 
 The FBX file that you find in the Animator folder can now be imported into your 3D Modelling software for you to make edits to use as a base
 for your new character. You'll be mostly on your own when it comes to the modelling but I will go over how to import them properly.
 
 ## 3ds Max:
 
-![3ds-max-1](/static/img/lumitool-guides/characters/3ds-max-1.webp)
+![3ds-max-1](/img/lumitool-guides/characters/3ds-max-1.webp)
 
 For both battle and field characters make sure that you do the following:
 
-![3ds-max-2](/static/img/lumitool-guides/characters/3ds-max-2.webp)
+![3ds-max-2](/img/lumitool-guides/characters/3ds-max-2.webp)
 
 For field player characters in particular you can delete all of these objects too:
 
-![3ds-max-3](/static/img/lumitool-guides/characters/3ds-max-3.webp)
+![3ds-max-3](/img/lumitool-guides/characters/3ds-max-3.webp)
 
 ## Blender:
 
-![3ds-max-1](/static/img/lumitool-guides/characters/3ds-max-1.webp)
+![3ds-max-1](/img/lumitool-guides/characters/3ds-max-1.webp)
 
 For both battle and field characters make sure that you do the following:
 
-![3ds-max-2](/static/img/lumitool-guides/characters/3ds-max-2.webp)
+![3ds-max-2](/img/lumitool-guides/characters/3ds-max-2.webp)
 
 For field player characters in particular you can delete all of these objects too:
 
-![3ds-max-3](/static/img/lumitool-guides/characters/3ds-max-3.webp)
+![3ds-max-3](/img/lumitool-guides/characters/3ds-max-3.webp)
 

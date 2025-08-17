@@ -8,12 +8,12 @@ applications of this shader, if any exist.
 
 **Bug Catcher with Character Depth Only material only on net:**
 
-![shaders-depth-only-1](/static/img/lumitool-guides/characters/shaders-depth-only-1.webp)
+![shaders-depth-only-1](/img/lumitool-guides/characters/shaders-depth-only-1.webp)
 
 **Bug Catcher with Character Standard material only on net:**
 
-![shaders-depth-only-2](/static/img/lumitool-guides/characters/shaders-depth-only-2.webp)
+![shaders-depth-only-2](/img/lumitool-guides/characters/shaders-depth-only-2.webp)
 
 **Bug Catcher with Character Standard material on net and Depth Only in bundle (vanilla):**
 
-![shaders-depth-only-3](/static/img/lumitool-guides/characters/shaders-depth-only-3.webp)
+![shaders-depth-only-3](/img/lumitool-guides/characters/shaders-depth-only-3.webp)

@@ -10,11 +10,11 @@ Note that some exefs modification with C++ is needed to add entirely new outfits
 I would always recommend adding a ripped prefab of a similar sized player character to your scene first. Then moving them to the side to be used as size reference.
 You can then import your FBX and add it to the scene too. If the size seems off then you can check the scale and also try toggling the Convert Units in the FBX import settings.
 
-![battle-player-1](/static/img/lumitool-guides/characters/battle-player-1.gif)
+![battle-player-1](/img/lumitool-guides/characters/battle-player-1.gif)
 
 With your model added to the scene and at the correct scale, check that it animates by selecting an animation (either one that you ripped with the Unity project or one that you have created for yourself if you happened to do so when making your model) and then dragging your custom prefab onto the preview window.
 
-![battle-player-2](/static/img/lumitool-guides/characters/battle-player-2.gif)
+![battle-player-2](/img/lumitool-guides/characters/battle-player-2.gif)
 
 With this you can be sure that your model is rigged and animating properly and you are ready to move on to implementation.
 
@@ -23,10 +23,10 @@ With this you can be sure that your model is rigged and animating properly and y
 3. Add the Animator, Battle Player Entity and (optionally) the Color Variation and UV connection components to your prefab. Fill out the information for each as described in the [Character Monobehaviours and Components]{.underline} section. To save time, you can copy the components from one of your ripped prefabs and paste them onto your custom one; modifying data as appropriate.
 4. Select each of your Mesh objects and in the Skinned Mesh Renderer component, ensure that Receive Shadows is disabled.
 
-    ![lighting](/static/img/lumitool-guides/characters/lighting.webp)
+    ![lighting](/img/lumitool-guides/characters/lighting.webp)
 5. Select your custom prefab and set the Layer to Character. Choose "Yes, change children" when prompted as well.
 
-    ![battle-player-3](/static/img/lumitool-guides/characters/battle-player-3.webp)
+    ![battle-player-3](/img/lumitool-guides/characters/battle-player-3.webp)
 6. From the Hierarchy tab, drag your custom prefab into a folder in the Project tab and select "Original Prefab" when prompted.
 7. Select Window, AssetBundle Browser from the top bar. Drag and drop your new Original Prefab from the Project tab into the "persons/battle" folder. Select Build at the top and then press the Build button below.
 
@@ -59,13 +59,13 @@ Therefore our mod needs to match the folder hierarchy of the game.
 3. Put your custom AssetBundle in the **battle** folder.
 4. With LumiTool, select the AssetAssistant Manifest Editor, open **Dpr.bin**, select Add Record and input data as below but named for your AssetBundle and the Dependencies that your bundle uses.
 
-    ![battle-player-4](/static/img/lumitool-guides/characters/battle-player-4.webp)
+    ![battle-player-4](/img/lumitool-guides/characters/battle-player-4.webp)
 5. Using [UABEA](https://github.com/nesrak1/UABEA), open **masterdatas** and expand the array to add an entry to the bottom of CharacterDressData for your new player. Iterate the Index and ID from the last BOY_STYLE or GIRL_STYLE in the file (Index 0-99 is for BOY_STYLE, 100-199 is for GIRL_STYLE). Make sure that the BattleGraphic name matches the file name of your AssetBundle. Making the AssetBundle for the FieldGraphic is explained in [Making a Field Player]{.underline} but you can copy from another for the moment. Make up a unique name for the MSLabel and take note of it.
 
-    ![battle-player-5](/static/img/lumitool-guides/characters/battle-player-5.webp)
+    ![battle-player-5](/img/lumitool-guides/characters/battle-player-5.webp)
 6. Save **masterdatas** and open **english** in UABEA and expand the array to add an entry to the bottom of **english_ss_fld_dressup_item_n**. Iterate the Indexes and make sure the labelName matches the MSLabel that you created. You can define the name of the outfit at the bottom in str. You can also calculate the strWidth with this [calc_strings](https://github.com/SaltContainer/Lumi_Small_Scripts/tree/main/calc_strings) python script.
 
-    ![battle-player-6](/static/img/lumitool-guides/characters/battle-player-6.webp)
+    ![battle-player-6](/img/lumitool-guides/characters/battle-player-6.webp)
 7. Save and close the file.
 8. This final step requires modifying exefs. Instructions for which are here https://luminescent.team/rom-hacking/category/exefs, however you will need some amount of knowledge in C++. The Re:Illuminated rombase will have a solution to add outfits without needing to modify exefs, when it releases.
     You must modify the **Dpr_UI_ShopBoutiqueChange_SetupBoutiqueItemParams** hook to increase the outfit limit. There are a myriad of ways to do this but keep in mind that the vanilla implementation expects an equal amount of outfits for Lucas and Dawn. So simply expanding the dressID number may not be suitable if you are not adding outfits for both. Also keep in mind that the final index outfit in the vanilla game is the bike outfit. So you will need to add a check to skip that one.

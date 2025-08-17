@@ -6,11 +6,11 @@ I am going to be demonstrating adding the Platinum Style Barry, as seen in Lumin
 I would always recommend adding a ripped prefab of a similar sized character to your scene first. Then moving them to the side to be used as size reference.
 You can then import your FBX and add it to the scene too. If the size seems off then you can check the scale and also try toggling the Convert Units in the FBX import settings.
 
-![field-npc-1](/static/img/lumitool-guides/characters/field-npc-1.gif)
+![field-npc-1](/img/lumitool-guides/characters/field-npc-1.gif)
 
 With your model added to the scene and at the correct scale, check that it animates by selecting an animation (either one that you ripped with the Unity project or one that you have created for yourself if you happened to do so when making your model) and then dragging your custom prefab onto the preview window.
 
-![field-npc-2](/static/img/lumitool-guides/characters/field-npc-2.gif)
+![field-npc-2](/img/lumitool-guides/characters/field-npc-2.gif)
 
 With this you can be sure that your model is rigged and animating properly and you are ready to move on to implementation.
 
@@ -19,7 +19,7 @@ With this you can be sure that your model is rigged and animating properly and y
 3. Add the Animator, Field Character Entity and (optionally) the Color Variation components to your prefab. Fill out the information for each as described in the [Character Monobehaviours and Components]{.underline} section. To save time, you can copy the components from one of your ripped prefabs and paste them onto your custom one; modifying data as appropriate.
 4. Select each of your Mesh objects and in the Skinned Mesh Renderer component, ensure that Receive Shadows is disabled.
 
-    ![lighting](/static/img/lumitool-guides/characters/lighting.webp)
+    ![lighting](/img/lumitool-guides/characters/lighting.webp)
 5. From the Hierarchy tab, drag your custom prefab into a folder in the Project tab and select "Original Prefab" when prompted.
 6. Select Window, AssetBundle Browser from the top bar. Drag and drop your new Original Prefab from the Project tab into the "persons/field" folder. Select Build at the top and then press the Build button below.
 
@@ -53,10 +53,10 @@ Therefore our mod needs to match the folder hierarchy of the game.
 3. Put your custom AssetBundle in the **field** folder.
 4. With LumiTool, select the AssetAssistant Manifest Editor, open **Dpr.bin**, select Add Record and input data as below but named for your AssetBundle.
 
-    ![field-npc-3](/static/img/lumitool-guides/characters/field-npc-3.webp)
+    ![field-npc-3](/img/lumitool-guides/characters/field-npc-3.webp)
 5. Using [UABEA](https://github.com/nesrak1/UABEA), open **masterdatas** and expand the array to add an entry to the bottom of CharacterGraphics_data for your new character. Make sure that the FieldGraphic name matches the file name of your AssetBundle and you can use 9223350612601226578 for your animTbl PathID. Take note of the ObjectGraphicIndex or OGI (142 in the example below) of the array entry.
 
-    ![field-npc-4](/static/img/lumitool-guides/characters/field-npc-4.webp)
+    ![field-npc-4](/img/lumitool-guides/characters/field-npc-4.webp)
 6. Still in **masterdatas** in UABEA. You can use the OGI of your new character in any of the [PlaceData](https://luminescent.team/rom-hacking/scripting/place-data) files to add it to the overworld.
 
 With all of your files saved, you can load your mod and your character should be in the game!

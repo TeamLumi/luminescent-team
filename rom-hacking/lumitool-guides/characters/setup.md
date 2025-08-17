@@ -26,15 +26,15 @@ Field **fc0001_00**, Default Dawn Battle **pc0002_00** and Field **fc0002_00**, 
 These bundles have some dependencies however that we also need to rip.
 Most of these are dependencies of the player field files. These are **fc0001_11**, **fc0002_11**, **pc_parts** and **shaders**.
 
-![files-1](/static/img/lumitool-guides/characters/files-1.webp)
+![files-1](/img/lumitool-guides/characters/files-1.webp)
 
-![files-2](/static/img/lumitool-guides/characters/files-2.webp)
+![files-2](/img/lumitool-guides/characters/files-2.webp)
 
-![files-3](/static/img/lumitool-guides/characters/files-3.webp)
+![files-3](/img/lumitool-guides/characters/files-3.webp)
 
-![files-4](/static/img/lumitool-guides/characters/files-4.webp)
+![files-4](/img/lumitool-guides/characters/files-4.webp)
 
-![files-5](/static/img/lumitool-guides/characters/files-5.webp)
+![files-5](/img/lumitool-guides/characters/files-5.webp)
 
 We need to use AssetRipper to rip these files back to the Unity editor.
 Before Loading the folder, open AssetRipper's settings and ensure that the following settings are set:
@@ -47,7 +47,7 @@ you that asset dependencies are missing, you can refer to our [CAB Sources](http
 
 Next, navigate to the **Assets** folder in your exported project and must delete and replace the **Scripts** folder with the Pre-Compiled Scripts folder that you downloaded earlier.
 
-![scripts](/static/img/lumitool-guides/characters/scripts.webp)
+![scripts](/img/lumitool-guides/characters/scripts.webp)
 
 Now you can open the **Scenes** folder and load the **level0.unity** file. Once it has loaded, before doing anything you\'ll need to install the following Packages with the Package Manager:
 
@@ -58,7 +58,7 @@ Now you can open the **Scenes** folder and load the **level0.unity** file. Once 
 
 You might also encounter some \"unsafe code\" errors, like below.
 
-![unsafe-code](/static/img/lumitool-guides/characters/unsafe-code.webp)
+![unsafe-code](/img/lumitool-guides/characters/unsafe-code.webp)
 
 If that\'s the case, you can turn on unsafe code from:  
 File \> Build Settings \> Player Settings\... \> Other Settings \> Configuration \> Allow \'unsafe\' Code

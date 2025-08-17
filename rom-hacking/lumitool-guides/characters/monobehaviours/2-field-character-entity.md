@@ -3,7 +3,7 @@
 This monobehaviour tells an object that it is a field character entity. These are the chibi people in the game.
 Let's take a look at one of our character rips. I'm only going to go over the sections that I have found to be relevant in my experience:
 
-![field-character-entity-1](/static/img/lumitool-guides/characters/field-character-entity-1.webp)
+![field-character-entity-1](/img/lumitool-guides/characters/field-character-entity-1.webp)
 
 - **Entity Name:** You should match this to the name of your prefab but don't strictly have to.
 - **Is Ignore Player Collision:** Allows the player to walk through the entity if true.
@@ -12,5 +12,5 @@ Let's take a look at one of our character rips. I'm only going to go over the se
 - **Blink Patterns:** This links to another monobehaviour that defines the pacing for the character's blinking. Most characters use BlinkCurves but there also exists ElderlyCurves and KidsCurves.
 - **Variations:** Field Characters always have a size of 1 for their Variations. Here you can define which bones in your character's rig are the Neck (used for having characters turn their neck to look at the player) the Hands (used for setting the hand scale as above) and setting the Face Renderer and materials. The Face Renderer is the SkinnedMeshRenderer that has your character's face and mouth materials on it. Below is example of where this info can be found:
 
-    ![field-character-entity-2](/static/img/lumitool-guides/characters/field-character-entity-2.webp)
+    ![field-character-entity-2](/img/lumitool-guides/characters/field-character-entity-2.webp)
 - **Watch Renderer:** A SkinnedMeshRenderer (usually used for poketches) that can be turned on or off with scripts.
