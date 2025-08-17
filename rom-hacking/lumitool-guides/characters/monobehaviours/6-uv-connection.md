@@ -4,8 +4,9 @@ This monobehaviour exists to solve a quirk with Unity's UV system that will tran
 It is primarily used by BDSP characters to offset the UVs of their eye materials between different sets of eyes.
 We cannot currently preview the results in the Unity editor but an animation with the values in the first image ought to provide the results found in the second:
 
-[uv-connection-1](../../static/img/lumitool-guides/characters/uv-connection-1.png)
-[uv-connection-2](../../static/img/lumitool-guides/characters/uv-connection-2.png)[uv-connection-3](../../static/img/lumitool-guides/characters/uv-connection-3.png)
+![uv-connection-1](/static/img/lumitool-guides/characters/uv-connection-1.webp)
+
+![uv-connection-2](/static/img/lumitool-guides/characters/uv-connection-2.webp) ![uv-connection-3](/static/img/lumitool-guides/characters/uv-connection-3.webp)
 
 In the above example, we offset the coordinates of the eye UVs (Material 0 and 1 on the SkinnedMeshRenderer of the breeder) by 0.75 on the Y axis
 via animation, using the UV Connection mono.

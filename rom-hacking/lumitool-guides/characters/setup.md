@@ -1,5 +1,11 @@
 # Setting up our Unity environment for Characters
 
+:::info
+Some of the information and methods in this documentation may be incomplete or yet to be finalised.
+
+If you require a portable version of the character modding guide. One can be exported from the original documentation [here](https://docs.google.com/document/d/17-ilwKgopvpniS9LXQpFMdDoMpMEBZLABntXTqmG-zE/edit?usp=sharing)
+:::
+
 To begin we need to grab certain files from our dump of BDSP 1.3.0, in particular these files in the **romfs\Data** path:
 
 - **boot.config**
@@ -20,11 +26,15 @@ Field **fc0001_00**, Default Dawn Battle **pc0002_00** and Field **fc0002_00**, 
 These bundles have some dependencies however that we also need to rip.
 Most of these are dependencies of the player field files. These are **fc0001_11**, **fc0002_11**, **pc_parts** and **shaders**.
 
-[files-1](../../static/img/lumitool-guides/characters/files-1.png)
-[files-2](../../static/img/lumitool-guides/characters/files-2.png)
-[files-3](../../static/img/lumitool-guides/characters/files-3.png)
-[files-4](../../static/img/lumitool-guides/characters/files-4.png)
-[files-5](../../static/img/lumitool-guides/characters/files-5.png)
+![files-1](/static/img/lumitool-guides/characters/files-1.webp)
+
+![files-2](/static/img/lumitool-guides/characters/files-2.webp)
+
+![files-3](/static/img/lumitool-guides/characters/files-3.webp)
+
+![files-4](/static/img/lumitool-guides/characters/files-4.webp)
+
+![files-5](/static/img/lumitool-guides/characters/files-5.webp)
 
 We need to use AssetRipper to rip these files back to the Unity editor.
 Before Loading the folder, open AssetRipper's settings and ensure that the following settings are set:
@@ -33,11 +43,11 @@ Before Loading the folder, open AssetRipper's settings and ensure that the follo
 - Shader Export Format: **Dummy Shader**
 
 With these set you can load your folder and export all assets to a folder of your choosing. If you see any errors in the console, informing
-you that asset dependencies are missing, you can refer to our [[CAB Sources]{.underline}](https://docs.google.com/spreadsheets/d/1BDHkJQX-N5ULClRdw3n0lsgjIJdMX22YmXVY28SSiFc/edit?gid=1878934111#gid=1878934111) documentation to find out what they are.
+you that asset dependencies are missing, you can refer to our [CAB Sources](https://docs.google.com/spreadsheets/d/1BDHkJQX-N5ULClRdw3n0lsgjIJdMX22YmXVY28SSiFc/edit?gid=1878934111#gid=1878934111) documentation to find out what they are.
 
 Next, navigate to the **Assets** folder in your exported project and must delete and replace the **Scripts** folder with the Pre-Compiled Scripts folder that you downloaded earlier.
 
-[scripts](../../static/img/lumitool-guides/characters/scripts.png)
+![scripts](/static/img/lumitool-guides/characters/scripts.webp)
 
 Now you can open the **Scenes** folder and load the **level0.unity** file. Once it has loaded, before doing anything you\'ll need to install the following Packages with the Package Manager:
 
@@ -48,7 +58,7 @@ Now you can open the **Scenes** folder and load the **level0.unity** file. Once 
 
 You might also encounter some \"unsafe code\" errors, like below.
 
-[unsafe-code](../../static/img/lumitool-guides/characters/unsafe-code.png)
+![unsafe-code](/static/img/lumitool-guides/characters/unsafe-code.webp)
 
 If that\'s the case, you can turn on unsafe code from:  
 File \> Build Settings \> Player Settings\... \> Other Settings \> Configuration \> Allow \'unsafe\' Code
