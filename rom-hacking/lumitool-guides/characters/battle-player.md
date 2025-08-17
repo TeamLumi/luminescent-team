@@ -1,6 +1,6 @@
 # Making a Battle Player
 
-In this guide I will be assuming that you have set up your Unity environment for characters, that you have ripped a character model and modified it in modelling software, that you have exported it as an FBX and that you have read the sections concerning the [Character Shaders](/rom-hacking/lumitool-guides/characters/shaders), the Animator component, Battle Player Entity Monobehaviour, and (optionally) the Color Variation and UV Connection Monobehaviour in [Monobehaviours](/rom-hacking/lumitool-guides/characters/monobehaviours).
+In this guide I will be assuming that you have set up your Unity environment for characters, that you have ripped a character model and modified it in modelling software, that you have exported it as an FBX and that you have read the sections concerning the [Character Shaders](/rom-hacking/category/character-shaders), the Animator component, Battle Player Entity Monobehaviour, and (optionally) the Color Variation and UV Connection Monobehaviour in [Monobehaviours](/rom-hacking/category/character-monobehaviours-and-components).
 I am going to be demonstrating adding the Cyber Style 2.0 Dawn, as seen in Re:Illuminated Platinum.
 
 :::info
