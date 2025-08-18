@@ -10,7 +10,7 @@ use Unity itself to build new AssetBundle packages that we can post-process with
 To get started you will need the following. Please note that some guides may suggest more tools in addition to these:
 
 - **Unity 2019.4.27f1:** https://unity.com/releases/editor/whats-new/2019.4.27
-- **AssetRipper:** https://github.com/AssetRipper/AssetRipper
+- **AssetRipper 1.1.8:** https://github.com/AssetRipper/AssetRipper/releases/tag/1.1.8
 - **Precompiled Unity Scripts:** [Pre-set up Scripts folder with no compilation errors](https://mega.nz/file/rw51VTpb#opq_OpwNj3zryiSnmEW1mS-zGIfXnHNFZYAzfsP2VJk)
 - **LumiTool:** https://github.com/SaltContainer/LumiTool
 - **A legally acquired romfs dump of BDSP 1.3.0**
