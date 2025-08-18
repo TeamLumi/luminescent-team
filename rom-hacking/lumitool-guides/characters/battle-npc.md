@@ -49,6 +49,7 @@ Therefore our mod needs to match the folder hierarchy of the game.
 
 1. Create a folder tree of the following folders:
 > "ModName\romfs\Data\StreamingAssets\AssetAssistant\Characters\persons\battle",
+
 > "ModName\romfs\Data\StreamingAssets\AssetAssistant\Dpr".
 
 2. Copy the **masterdatas** file from **Dpr** folder of your vanilla game romfs to the same folder in your new mod and copy **Dpr.bin** from the **AssetAssistant** folder of your vanilla game romfs to the same folder in your new mod.

@@ -1,4 +1,4 @@
-## Character Standard
+# Character Standard
 
 One of the first things you're likely to notice about characters are that they are mostly uncoloured outside of the game:
 

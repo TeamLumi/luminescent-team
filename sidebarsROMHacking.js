@@ -292,6 +292,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'documentation/map-info-locations',
+        'documentation/trainer-table',
       ],
     },
   ],

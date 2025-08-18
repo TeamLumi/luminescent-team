@@ -46,8 +46,8 @@ Therefore our mod needs to match the folder hierarchy of the game.
 ## Making a mod that replaces an existing Player:
 
 1. Create a folder tree of the following folders:
-> "ModName\romfs\Data\StreamingAssets\AssetAssistant\Characters\persons\field".
-2. Making sure that the file is named the same as the NPC that you are replacing, put the file in the **field** folder.
+> "ModName\romfs\Data\StreamingAssets\AssetAssistant\Characters\persons\battle".
+2. Making sure that the file is named the same as the NPC that you are replacing, put the file in the **battle** folder.
 
 ## Making a mod that adds a new Player: ***Requires exefs modification***
 
