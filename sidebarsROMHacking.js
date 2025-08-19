@@ -287,7 +287,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
         slug: 'category/documentation',
-        description: 'Guides for editing textures models and animations.',
+        description: 'Documentation of useful information.',
       },
       collapsed: true,
       items: [

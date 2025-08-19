@@ -99,9 +99,11 @@ Therefore our mod needs to match the folder hierarchy of the game.
 ## Making a mod that adds a new Player: ***Requires exefs modification***
 
 1. Create a folder tree of the following folders:
+
 > "ModName\romfs\Data\StreamingAssets\AssetAssistant\Characters\persons\field",
 
 > "ModName\romfs\Data\StreamingAssets\AssetAssistant\Dpr".
+
 2. Copy the **masterdatas** file from **Dpr** folder of your vanilla game romfs to the same folder in your new mod and copy **Dpr.bin** from the **AssetAssistant** folder of your vanilla game romfs to the same folder in your new mod.
 3. Put your custom AssetBundle in the **field** folder.
 4. With LumiTool, select the AssetAssistant Manifest Editor, open **Dpr.bin**, select Add Record and input data as below but named for your AssetBundle and the Dependencies that your bundle uses.

@@ -36,13 +36,13 @@ For field player characters in particular you can delete all of these objects to
 
 ## Blender:
 
-![3ds-max-1](/img/lumitool-guides/characters/3ds-max-1.webp)
+![blender-1](/img/lumitool-guides/characters/blender-1.webp)
 
 For both battle and field characters make sure that you do the following:
 
-![3ds-max-2](/img/lumitool-guides/characters/3ds-max-2.webp)
+![blender-2](/img/lumitool-guides/characters/blender-2.webp)
 
 For field player characters in particular you can delete all of these objects too:
 
-![3ds-max-3](/img/lumitool-guides/characters/3ds-max-3.webp)
+![blender-3](/img/lumitool-guides/characters/blender-3.webp)
 

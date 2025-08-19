@@ -48,6 +48,7 @@ Therefore our mod needs to match the folder hierarchy of the game.
 ## Making a mod that adds a new NPC:
 
 1. Create a folder tree of the following folders:
+
 > "ModName\romfs\Data\StreamingAssets\AssetAssistant\Characters\persons\battle",
 
 > "ModName\romfs\Data\StreamingAssets\AssetAssistant\Dpr".
