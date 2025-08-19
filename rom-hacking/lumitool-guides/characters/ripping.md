@@ -1,9 +1,6 @@
 # Ripping a character model for editing
 
-This step is optional, only move ahead if you want to rip models with animations included in their FBX files.
-I have pre-ripped the models for all of the game characters and they can be found [here](https://drive.google.com/drive/folders/1sg5d6WXiSiD0NfLLCb5zImnWnbwpiLrv?usp=sharing).
-
-If you want models with animations that display in your modelling software though you will need to open AssetStudio.
+If you want models with animations that display in your modelling software you will need to open AssetStudio.
 Select File, Load File and navigate to one of the following path in your BDSP romfs dump:
 
 - **romfs\Data\StreamingAssets\AssetAssistant\Characters\persons\field** for field characters
