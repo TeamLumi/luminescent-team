@@ -1,9 +1,11 @@
 # (1237) _TEMOTI_BOX_FORMNO
 
-:::warning
-FOR LUMINESCENT PLATINUM (2.1F) AND ABOVE ONLY
+:::caution
 
-DOES NOT WORK IN VANILLA BDSP
+Only usable in Luminescent Platinum (2.1F) and above
+
+Does NOT work in Vanilla BDSP
+
 :::
 
 ## Effect

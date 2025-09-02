@@ -11,12 +11,12 @@ A list of which Pokémon are highlighted for each index can be found [here](../.
 ## Syntax
 
 ```c
-_POKELIST_SET_PROC(BoxOpenParamIndex)
+_POKELIST_SET_PROC(box_open_param_index)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **BoxOpenParamIndex** | The index defined in BoxOpenParam | Number | Required |
+| **box_open_param_index** | The index defined in BoxOpenParam | Number | Required |
 
 ## Example
 
