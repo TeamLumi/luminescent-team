@@ -16,7 +16,7 @@ _POKELIST_SET_PROC(box_open_param_index)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **box_open_param_index** | The index defined in BoxOpenParam | Number | Required |
+| **box_open_param_index** | Which BoxOpenParam to use | Int | Required |
 
 ## Example
 
@@ -27,6 +27,6 @@ _POKELIST_SET_PROC(@LOCALWORK1)
 
 The above script will set the work variable @LOCALWORK1 to 1.
 
-Then, the PC UI window will open and highlight every Pokémon that isn't in your party.
+The PC UI window will then open and highlight every Pokémon that isn't in your party.
 
-Finally, the UI window is closed.
+The script will resume when the player closes the window.
