@@ -4,7 +4,7 @@
 
 Puts the Pokémon species name in the [Buffer](../../introduction.md#text-output-tag) at the given index. The tag was filled by a Pokémon in the party or box.
 
-Very similar in use as [_POKEMON_NAME](./309-pokemon-name.md). Often used with the [_POKELIST_GET_RESULT](../gamedata/267-pokelist-get-result.md) and [_POKELIST_SET_PROC](../gamedata//264-pokelist-set-proc.md) commands. 
+Very similar in use as [_POKEMON_NAME](./309-pokemon-name.md). Often used with the [_POKELIST_GET_RESULT](../gamedata/267-pokelist-get-result.md) and [_POKELIST_SET_PROC](../gamedata/264-pokelist-set-proc.md) commands. 
 
 ## Syntax
 
