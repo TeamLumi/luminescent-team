@@ -31,4 +31,4 @@ For example sake, imagine you have a party with a Bulbasaur in the lead, with Ch
 
 This script loads `@LOCALWORK1` as 0, and `@LOCALWORK2` as -1 into memory. `_TEMOTI_BOX_POKEMON_NAME` will then check the 1st Pokémon (0-indexed values) in the party (-1 is the party, everything above that is a box).
 
-The above script will then put the Pokémon name of Pokémon in the 1st position in my box, which is Bulbasaur in this case, in tag position 0 and then print out the message from `dp_dummy_file%dummy_msg`. This will also happen if we selected the 2nd position in the party for Charmander and Squirtle, if the 3rd position in party was chosen.
+The above script will then put the Pokémon name of Pokémon in the 1st position in my party, which is Bulbasaur in this case, in tag position 0 and then print out the message from `dp_dummy_file%dummy_msg`. This will also happen if we selected the 2nd position in the party for Charmander and Squirtle, if the 3rd position in party was chosen.
