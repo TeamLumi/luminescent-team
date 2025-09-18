@@ -150,23 +150,47 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
         </div>
       </div>
       <div className="container">
-        <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={1}>
-          <Box className={style.pokeColumn} gridColumn="span 1">
+        <Box display="grid" gridTemplateColumns="6fr 3fr 3fr" gap={1}>
+          <Box gridColumn={{xs: "span 3", md: "span 1"}}>
             <ImageWithFallback
               alt={pokemonInfo.name}
               src={pokemonInfo.imageSrc}
               fallbackSrc={pokemonInfo.forms[0].imageSrc}
-              style={{ objectFit: 'contain', margin: '16px' }}
+              style={{ objectFit: 'contain', margin: '8px' }}
+              width="80px"
+              height="80px"
+            />
+            <ImageWithFallback
+              alt={`Shiny ${pokemonInfo.name}`}
+              src={pokemonInfo.imageSrc}
+              fallbackSrc={pokemonInfo.forms[0].imageSrc}
+              style={{ objectFit: 'contain', margin: '8px' }}
+              width="80px"
+              height="80px"
+            />
+            <ImageWithFallback
+              alt={`Female ${pokemonInfo.name}`}
+              src={pokemonInfo.imageSrc}
+              fallbackSrc={pokemonInfo.forms[0].imageSrc}
+              style={{ objectFit: 'contain', margin: '8px' }}
+              width="80px"
+              height="80px"
+            />
+            <ImageWithFallback
+              alt={`Female ${pokemonInfo.name}`}
+              src={pokemonInfo.imageSrc}
+              fallbackSrc={pokemonInfo.forms[0].imageSrc}
+              style={{ objectFit: 'contain', margin: '8px' }}
               width="80px"
               height="80px"
             />
           </Box>
-          <Box className={style.pokeColumn} gridColumn="span 1">
-          <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
+          <Box gridColumn={{md: "span 1"}}>
+            <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
           </Box>
-          <Box className={style.pokeColumn} gridColumn="span 1">
+          <Box gridColumn={{xs: "span 2", md: "span 1"}}>
             <Typography variant="h6" component="h6">
-              <p className={style.flex}>Size:</p>
+              Size: <br />
               {pokemonInfo.height}m, {pokemonInfo.weight}kg
               <br />
               <span style={{ fontSize: '0.8rem' }}>

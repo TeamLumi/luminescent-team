@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './styles.module.css';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const TYPECOLOR_MAP = {
     'Normal': { '--type-color': '#929da3', padding: '2px' },
@@ -31,30 +31,40 @@ export default function Type(props) {
 
     if (props.type1 === props.type2) {
         return (
+            <>
+                <Typography variant="h6" component="h6" style={{ padding: '4px', gap: '0.25rem', display: 'flex-wrap' }}>
+                    Types:
+                </Typography>
+
+                <Typography variant="h6" component="h6" style={{ padding: '4px', gap: '0.25rem', display: 'flex-wrap' }}>
+                    <div className={style.typeBg} style={TYPECOLOR_MAP[props.type1]}>
+                        <div className={style.bTransparent}>
+                            {props.type1}
+                        </div>
+                    </div>
+                </Typography>
+            </>
+        )
+    }
+
+    return (
+        <>
             <Typography variant="h6" component="h6" style={{ padding: '4px', gap: '0.25rem', display: 'flex-wrap' }}>
-                Types: <br />
+                Types:
+            </Typography>
+
+            <Typography variant="h6" component="h6" className={style.flex}>
                 <div className={style.typeBg} style={TYPECOLOR_MAP[props.type1]}>
                     <div className={style.bTransparent}>
                         {props.type1}
                     </div>
                 </div>
+                <div className={style.typeBg} style={TYPECOLOR_MAP[props.type2]}>
+                    <div className={style.bTransparent}>
+                        {props.type2}
+                    </div>
+                </div>
             </Typography>
-        )
-    }
-
-    return (
-        <Typography variant="h6" component="h6" className={style.flex}>
-            <p style={{ width: '100%' }}>Types: </p>
-            <div className={style.typeBg} style={TYPECOLOR_MAP[props.type1]}>
-                <div className={style.bTransparent}>
-                    {props.type1}
-                </div>
-            </div>
-            <div className={style.typeBg} style={TYPECOLOR_MAP[props.type2]}>
-                <div className={style.bTransparent}>
-                    {props.type2}
-                </div>
-            </div>
-        </Typography>
+        </>
     )
 }
