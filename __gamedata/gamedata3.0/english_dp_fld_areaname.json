@@ -6823,6 +6823,246 @@
                     "strWidth": 211.15625
                 }
             ]
+        },
+        {
+            "labelIndex": 155,
+            "arrayIndex": 155,
+            "labelName": "DP_fld_arenames_409",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Electrical Ruins",
+                    "strWidth": 194.46875
+                }
+            ]
+        },
+        {
+            "labelIndex": 156,
+            "arrayIndex": 156,
+            "labelName": "DP_fld_arenames_410",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Draconic Ruins",
+                    "strWidth": 191.890625
+                }
+            ]
+        },
+        {
+            "labelIndex": 157,
+            "arrayIndex": 157,
+            "labelName": "DP_fld_arenames_411",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Strange Forest Space",
+                    "strWidth": 273.953125
+                }
+            ]
+        },
+        {
+            "labelIndex": 158,
+            "arrayIndex": 158,
+            "labelName": "DP_fld_arenames_412",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Strange Marsh Space",
+                    "strWidth": 271.484375
+                }
+            ]
+        },
+        {
+            "labelIndex": 159,
+            "arrayIndex": 159,
+            "labelName": "DP_fld_arenames_413",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Strange Plains Space",
+                    "strWidth": 267.515625
+                }
+            ]
+        },
+        {
+            "labelIndex": 160,
+            "arrayIndex": 160,
+            "labelName": "DP_fld_arenames_414",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Strange Snowfield Space",
+                    "strWidth": 319.859375
+                }
+            ]
+        },
+        {
+            "labelIndex": 161,
+            "arrayIndex": 161,
+            "labelName": "DP_fld_arenames_415",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Oldlore Town",
+                    "strWidth": 178.359375
+                }
+            ]
+        },
+        {
+            "labelIndex": 162,
+            "arrayIndex": 162,
+            "labelName": "DP_fld_arenames_416",
+            "styleInfo": {
+                "styleIndex": 125,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ilex Forest",
+                    "strWidth": 135.78125
+                }
+            ]
         }
     ]
 }

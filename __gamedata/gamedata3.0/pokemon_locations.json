@@ -51111,7 +51111,7 @@
       "zoneId": 263
     }
   ],
-  "1059": [
+  "1051": [
     {
       "routeName": "Route 222",
       "pokemonName": "Alolan Raichu",
@@ -51123,7 +51123,7 @@
       "zoneId": 407
     }
   ],
-  "1060": [
+  "1052": [
     {
       "routeName": "Route 216",
       "pokemonName": "Alolan Sandshrew",
@@ -51135,7 +51135,7 @@
       "zoneId": 395
     }
   ],
-  "1061": [
+  "1053": [
     {
       "routeName": "Snowpoint Temple - 1F",
       "pokemonName": "Alolan Sandslash",
@@ -51217,7 +51217,7 @@
       "zoneId": 397
     }
   ],
-  "1062": [
+  "1054": [
     {
       "routeName": "Route 216",
       "pokemonName": "Alolan Vulpix",
@@ -51229,7 +51229,7 @@
       "zoneId": 395
     }
   ],
-  "1063": [
+  "1055": [
     {
       "routeName": "Snowpoint Temple - 1F",
       "pokemonName": "Alolan Ninetales",
@@ -51311,7 +51311,7 @@
       "zoneId": 397
     }
   ],
-  "1064": [
+  "1056": [
     {
       "routeName": "Oreburgh Mine B1F",
       "pokemonName": "Alolan Diglett",
@@ -51403,7 +51403,7 @@
       "zoneId": 296
     }
   ],
-  "1065": [
+  "1057": [
     {
       "routeName": "Iron Island - 1F",
       "pokemonName": "Alolan Dugtrio",
@@ -51485,7 +51485,7 @@
       "zoneId": 416
     }
   ],
-  "1066": [
+  "1058": [
     {
       "routeName": "Lake Verity (Before)",
       "pokemonName": "Alolan Meowth",
@@ -51507,7 +51507,7 @@
       "zoneId": 324
     }
   ],
-  "1067": [
+  "1059": [
     {
       "routeName": "Oreburgh Gate - 1F",
       "pokemonName": "Galarian Meowth",
@@ -51539,7 +51539,7 @@
       "zoneId": 364
     }
   ],
-  "1069": [
+  "1061": [
     {
       "routeName": "Sendoff Spring",
       "pokemonName": "Alolan Persian",
@@ -51561,7 +51561,7 @@
       "zoneId": 412
     }
   ],
-  "1070": [
+  "1062": [
     {
       "routeName": "Valor Lakefront",
       "pokemonName": "Hisuian Growlithe",
@@ -51583,7 +51583,7 @@
       "zoneId": 392
     }
   ],
-  "1071": [
+  "1063": [
     {
       "routeName": "Victory Road - 1F",
       "pokemonName": "Hisuian Arcanine",
@@ -51665,7 +51665,7 @@
       "zoneId": 261
     }
   ],
-  "1075": [
+  "1066": [
     {
       "routeName": "Oreburgh Mine B1F",
       "pokemonName": "Alolan Geodude",
@@ -51707,7 +51707,7 @@
       "zoneId": 377
     }
   ],
-  "1076": [
+  "1067": [
     {
       "routeName": "Iron Island - 1F",
       "pokemonName": "Alolan Graveler",
@@ -51769,7 +51769,7 @@
       "zoneId": 304
     }
   ],
-  "1077": [
+  "1068": [
     {
       "routeName": "Victory Road - 1F",
       "pokemonName": "Alolan Golem",
@@ -51841,7 +51841,7 @@
       "zoneId": 414
     }
   ],
-  "1078": [
+  "1069": [
     {
       "routeName": "Route 204 (North)",
       "pokemonName": "Galarian Ponyta",
@@ -51853,7 +51853,7 @@
       "zoneId": 358
     }
   ],
-  "1079": [
+  "1070": [
     {
       "routeName": "Route 222",
       "pokemonName": "Galarian Rapidash",
@@ -51875,7 +51875,7 @@
       "zoneId": 487
     }
   ],
-  "1080": [
+  "1071": [
     {
       "routeName": "Mt. Coronet - Route 207 Entrance",
       "pokemonName": "Galarian Slowpoke",
@@ -51987,7 +51987,7 @@
       "zoneId": 422
     }
   ],
-  "1081": [
+  "1072": [
     {
       "routeName": "Route 218",
       "pokemonName": "Mega Slowbro",
@@ -51999,7 +51999,7 @@
       "zoneId": 400
     }
   ],
-  "1082": [
+  "1073": [
     {
       "routeName": "Victory Road - B1F",
       "pokemonName": "Galarian Slowbro",
@@ -52071,10 +52071,10 @@
       "zoneId": 485
     }
   ],
-  "1083": [
+  "1074": [
     {
       "routeName": "Route 207",
-      "pokemonName": "Galarian Farfetch'd",
+      "pokemonName": "Galarian Farfetch\u2019d",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 10,
@@ -52084,7 +52084,7 @@
     },
     {
       "routeName": "Route 208",
-      "pokemonName": "Galarian Farfetch'd",
+      "pokemonName": "Galarian Farfetch\u2019d",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 24,
@@ -52094,7 +52094,7 @@
     },
     {
       "routeName": "Route 214",
-      "pokemonName": "Galarian Farfetch'd",
+      "pokemonName": "Galarian Farfetch\u2019d",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 32,
@@ -52103,7 +52103,7 @@
       "zoneId": 392
     }
   ],
-  "1085": [
+  "1075": [
     {
       "routeName": "Ruin Maniac Cave - Small",
       "pokemonName": "Alolan Grimer",
@@ -52155,7 +52155,7 @@
       "zoneId": 373
     }
   ],
-  "1086": [
+  "1076": [
     {
       "routeName": "Turnback Cave - Entrance",
       "pokemonName": "Alolan Muk",
@@ -52357,7 +52357,7 @@
       "zoneId": 283
     }
   ],
-  "1093": [
+  "1082": [
     {
       "routeName": "Valley Windworks (Outside)",
       "pokemonName": "Hisuian Voltorb",
@@ -52389,7 +52389,7 @@
       "zoneId": 378
     }
   ],
-  "1096": [
+  "1084": [
     {
       "routeName": "Lake Valor (After)",
       "pokemonName": "Alolan Exeggutor",
@@ -52411,7 +52411,7 @@
       "zoneId": 420
     }
   ],
-  "1097": [
+  "1085": [
     {
       "routeName": "Stark Mountain (Overworld)",
       "pokemonName": "Alolan Marowak",
@@ -52443,7 +52443,7 @@
       "zoneId": 284
     }
   ],
-  "1099": [
+  "1087": [
     {
       "routeName": "Route 210 (North)",
       "pokemonName": "Galarian Weezing",
@@ -52465,7 +52465,7 @@
       "zoneId": 411
     }
   ],
-  "1101": [
+  "1089": [
     {
       "routeName": "Route 217",
       "pokemonName": "Galarian Mr. Mime",
@@ -52477,7 +52477,7 @@
       "zoneId": 397
     }
   ],
-  "1123": [
+  "1112": [
     {
       "routeName": "Turnback Cave - d17r0122",
       "pokemonName": "Hisuian Typhlosion",
@@ -52489,7 +52489,7 @@
       "zoneId": 284
     }
   ],
-  "1127": [
+  "1116": [
     {
       "routeName": "Pokemon League",
       "pokemonName": "Galarian Slowking",
@@ -52561,7 +52561,7 @@
       "zoneId": 489
     }
   ],
-  "1156": [
+  "1145": [
     {
       "routeName": "Canalave City",
       "pokemonName": "Hisuian Qwilfish",
@@ -52603,7 +52603,7 @@
       "zoneId": 404
     }
   ],
-  "1159": [
+  "1148": [
     {
       "routeName": "Acuity Lakefront",
       "pokemonName": "Hisuian Sneasel",
@@ -52635,7 +52635,7 @@
       "zoneId": 377
     }
   ],
-  "1160": [
+  "1149": [
     {
       "routeName": "Route 213",
       "pokemonName": "Galarian Corsola",
@@ -52657,7 +52657,7 @@
       "zoneId": 404
     }
   ],
-  "1167": [
+  "1156": [
     {
       "routeName": "Route 203",
       "pokemonName": "Galarian Zigzagoon",
@@ -52669,7 +52669,7 @@
       "zoneId": 356
     }
   ],
-  "1168": [
+  "1157": [
     {
       "routeName": "Route 213",
       "pokemonName": "Galarian Linoone",
@@ -52681,7 +52681,7 @@
       "zoneId": 385
     }
   ],
-  "1202": [
+  "1190": [
     {
       "routeName": "Pastoria City",
       "pokemonName": "East Sea Shellos",
@@ -52703,7 +52703,7 @@
       "zoneId": 383
     }
   ],
-  "1203": [
+  "1191": [
     {
       "routeName": "Route 213",
       "pokemonName": "East Sea Gastrodon",
@@ -52865,7 +52865,7 @@
       "zoneId": 489
     }
   ],
-  "1235": [
+  "1227": [
     {
       "routeName": "Route 230",
       "pokemonName": "Hisuian Samurott",
@@ -52877,7 +52877,7 @@
       "zoneId": 489
     }
   ],
-  "1237": [
+  "1229": [
     {
       "routeName": "Route 215",
       "pokemonName": "Hisuian Lilligant",
@@ -52899,7 +52899,7 @@
       "zoneId": 411
     }
   ],
-  "1239": [
+  "1230": [
     {
       "routeName": "Pokemon League",
       "pokemonName": "Blue-Striped Form Basculin",
@@ -52971,7 +52971,7 @@
       "zoneId": 473
     }
   ],
-  "1240": [
+  "1231": [
     {
       "routeName": "Eterna City",
       "pokemonName": "White-Striped Form Basculin",
@@ -53143,7 +53143,7 @@
       "zoneId": 422
     }
   ],
-  "1241": [
+  "1232": [
     {
       "routeName": "Mt. Coronet - Tunnel to Route 211 Entrance",
       "pokemonName": "Galarian Darumaka",
@@ -53185,7 +53185,7 @@
       "zoneId": 215
     }
   ],
-  "1242": [
+  "1233": [
     {
       "routeName": "Mt. Coronet - Snow Area",
       "pokemonName": "Zen Mode Darmanitan",
@@ -53257,7 +53257,7 @@
       "zoneId": 291
     }
   ],
-  "1245": [
+  "1236": [
     {
       "routeName": "Ruin Maniac Cave - Small",
       "pokemonName": "Galarian Yamask",
@@ -53379,7 +53379,7 @@
       "zoneId": 379
     }
   ],
-  "1247": [
+  "1238": [
     {
       "routeName": "Old Chateau - Lobby",
       "pokemonName": "Hisuian Zorua",
@@ -53451,7 +53451,7 @@
       "zoneId": 395
     }
   ],
-  "1248": [
+  "1239": [
     {
       "routeName": "Turnback Cave - Entrance",
       "pokemonName": "Hisuian Zoroark",
@@ -53713,7 +53713,7 @@
       "zoneId": 291
     }
   ],
-  "1249": [
+  "1240": [
     {
       "routeName": "Route 210 (South)",
       "pokemonName": "Summer Form Deerling",
@@ -53725,7 +53725,7 @@
       "zoneId": 373
     }
   ],
-  "1250": [
+  "1241": [
     {
       "routeName": "Route 210 (North)",
       "pokemonName": "Autumn Form Deerling",
@@ -53737,7 +53737,7 @@
       "zoneId": 375
     }
   ],
-  "1251": [
+  "1242": [
     {
       "routeName": "Route 216",
       "pokemonName": "Winter Form Deerling",
@@ -53749,7 +53749,7 @@
       "zoneId": 395
     }
   ],
-  "1252": [
+  "1243": [
     {
       "routeName": "Lake Valor (After)",
       "pokemonName": "Summer Form Sawsbuck",
@@ -53761,7 +53761,7 @@
       "zoneId": 327
     }
   ],
-  "1253": [
+  "1244": [
     {
       "routeName": "Route 222",
       "pokemonName": "Autumn Form Sawsbuck",
@@ -53773,7 +53773,7 @@
       "zoneId": 407
     }
   ],
-  "1254": [
+  "1245": [
     {
       "routeName": "Mt. Coronet - Snow Area",
       "pokemonName": "Winter Form Sawsbuck",
@@ -53785,7 +53785,7 @@
       "zoneId": 206
     }
   ],
-  "1255": [
+  "1246": [
     {
       "routeName": "Mt. Coronet - Route 207 Entrance",
       "pokemonName": "Galarian Stunfisk",
@@ -53847,7 +53847,7 @@
       "zoneId": 414
     }
   ],
-  "1256": [
+  "1247": [
     {
       "routeName": "Mt. Coronet - Snow Area",
       "pokemonName": "Hisuian Braviary",
@@ -53859,7 +53859,7 @@
       "zoneId": 206
     }
   ],
-  "1311": [
+  "1302": [
     {
       "routeName": "Route 215",
       "pokemonName": "Female Meowstic",
@@ -53881,7 +53881,7 @@
       "zoneId": 420
     }
   ],
-  "1313": [
+  "1304": [
     {
       "routeName": "Iron Island - 1F",
       "pokemonName": "Hisuian Sliggoo",
@@ -53943,7 +53943,7 @@
       "zoneId": 304
     }
   ],
-  "1314": [
+  "1305": [
     {
       "routeName": "Victory Road - 1F",
       "pokemonName": "Hisuian Goodra",
@@ -54005,7 +54005,7 @@
       "zoneId": 249
     }
   ],
-  "1321": [
+  "1312": [
     {
       "routeName": "Mt. Coronet - Summit",
       "pokemonName": "Hisuian Avalugg",
@@ -54027,7 +54027,7 @@
       "zoneId": 397
     }
   ],
-  "1330": [
+  "1322": [
     {
       "routeName": "Route 227",
       "pokemonName": "Hisuian Decidueye",
@@ -54039,7 +54039,7 @@
       "zoneId": 414
     }
   ],
-  "1333": [
+  "1323": [
     {
       "routeName": "Route 206",
       "pokemonName": "Pom-Pom Style Oricorio",
@@ -54061,7 +54061,7 @@
       "zoneId": 362
     }
   ],
-  "1334": [
+  "1324": [
     {
       "routeName": "Route 224",
       "pokemonName": "Pa\u2019u Style Oricorio",
@@ -54083,10 +54083,10 @@
       "zoneId": 411
     }
   ],
-  "1335": [
+  "1325": [
     {
       "routeName": "Valor Lakefront",
-      "pokemonName": "Rockruff Own-Tempo",
+      "pokemonName": "Sensu Style Oricorio",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 33,
@@ -54096,7 +54096,7 @@
     },
     {
       "routeName": "Valor Lakefront",
-      "pokemonName": "Rockruff Own-Tempo",
+      "pokemonName": "Sensu Style Oricorio",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 33,
@@ -54105,7 +54105,7 @@
       "zoneId": 347
     }
   ],
-  "1338": [
+  "1327": [
     {
       "routeName": "Route 218",
       "pokemonName": "Midnight Form Lycanroc",
@@ -54117,7 +54117,7 @@
       "zoneId": 400
     }
   ],
-  "1339": [
+  "1328": [
     {
       "routeName": "Route 221",
       "pokemonName": "Dusk Form Lycanroc",
@@ -54129,7 +54129,7 @@
       "zoneId": 404
     }
   ],
-  "1363": [
+  "1347": [
     {
       "routeName": "Mt. Coronet - 4F (Towards Spear Pillar)",
       "pokemonName": "Orange Meteor Form Minior",
@@ -54171,7 +54171,7 @@
       "zoneId": 215
     }
   ],
-  "1364": [
+  "1348": [
     {
       "routeName": "Mt. Coronet - 5F",
       "pokemonName": "Yellow Meteor Form Minior",
@@ -54213,7 +54213,7 @@
       "zoneId": 213
     }
   ],
-  "1365": [
+  "1349": [
     {
       "routeName": "Mt. Coronet - 6F",
       "pokemonName": "Green Meteor Form Minior",
@@ -54255,7 +54255,7 @@
       "zoneId": 212
     }
   ],
-  "1366": [
+  "1350": [
     {
       "routeName": "Mt. Coronet - Route 207 Entrance",
       "pokemonName": "Blue Meteor Form Minior",
@@ -54297,7 +54297,7 @@
       "zoneId": 206
     }
   ],
-  "1367": [
+  "1351": [
     {
       "routeName": "Mt. Coronet - 2F",
       "pokemonName": "Indigo Meteor Form Minior",
@@ -54319,7 +54319,7 @@
       "zoneId": 204
     }
   ],
-  "1368": [
+  "1352": [
     {
       "routeName": "Mt. Coronet - 3F",
       "pokemonName": "Violet Meteor Form Minior",
@@ -54341,7 +54341,7 @@
       "zoneId": 205
     }
   ],
-  "1470": [
+  "1396": [
     {
       "routeName": "Route 211 (East)",
       "pokemonName": "Female Indeedee",
