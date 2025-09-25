@@ -162,14 +162,14 @@ describe('Dex utils Name getters', () => {
     });
     test('getPokemonNames() returns an array of all pokemon names when maxMonsno is greater than the number of pokemon', () => {
       const names = getPokemonNames(10000, 0, MODE);
-      expect(names).toHaveLength(1533);
+      expect(names).toHaveLength(1440);
       expect(names[0]).toBe('Egg');
       expect(names[808]).toBe('Meltan');
     });
     it('should return the correct index for a valid form ID', () => {
-      expect(getPokemonFormId(25, 1042, MODE)).toBe(1);
+      expect(getPokemonFormId(25, 1042, MODE)).toBe(2);
       expect(getPokemonFormId(133, 133, MODE)).toBe(0);
-      expect(getPokemonFormId(800, 1382, MODE)).toBe(2);
+      expect(getPokemonFormId(800, 1362, MODE)).toBe(2);
     });
   });
 });
