@@ -76,8 +76,14 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = GAMEDATA2) {
 }
 
 function isValidPokemon(pokemonId, mode = GAMEDATA2) {
+  if (pokemonId === -1) {
+    return 0
+  }
   const ModePersonalTable = PersonalTable[mode];
   const p = ModePersonalTable.Personal[pokemonId];
+  if (!p) {
+    throw new Error(`Couldn't find this pokemon's valid flag: ${pokemonId}`);
+  }
   return p.valid_flag;
 }
 
