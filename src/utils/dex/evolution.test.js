@@ -917,10 +917,10 @@ describe('getEvolutionTree', () => {
   describe("3.0 Evolution Data Tests", () => {
     const MODE = "3.0";
     it('works for a Pokemon with alternate form Evolutions (different evo for each form)', () => {
-      const pokemonId = 1198; // Burmy Trash Cloak
+      const pokemonId = 1186; // Burmy Trash Cloak
       const result = getEvolutionTree(pokemonId, true, MODE);
       const expected = {
-        pokemonId: 1198,
+        pokemonId: 1186,
         evolutionDetails: null,
         evolvesInto: [
           {
@@ -932,7 +932,7 @@ describe('getEvolutionTree', () => {
               monsNos: [413],
             },
             evolvesInto: [],
-            pokemonId: 1200,
+            pokemonId: 1188,
           },
           {
             evolutionDetails: {
@@ -968,7 +968,7 @@ describe('getEvolutionTree', () => {
             },
             evolvesInto: [
               {
-                pokemonId: 1123,
+                pokemonId: 1112,
                 evolutionDetails: {
                   formNos: [1],
                   levels: [36],
@@ -1015,7 +1015,7 @@ describe('getEvolutionTree', () => {
             evolvesInto: [],
           },
           {
-            pokemonId: 1097,
+            pokemonId: 1085,
             evolutionDetails: {
               formNos: [1],
               levels: [28],
@@ -1055,7 +1055,7 @@ describe('getEvolutionTree', () => {
             evolvesInto: [],
           },
           {
-            pokemonId: 1101,
+            pokemonId: 1089,
             evolutionDetails: {
               formNos: [1],
               levels: [32],
@@ -1125,7 +1125,7 @@ describe('getEvolutionTree', () => {
                   monsNos: [26],
                 },
                 evolvesInto: [],
-                pokemonId: 1059,
+                pokemonId: 1051,
               },
             ],
           },

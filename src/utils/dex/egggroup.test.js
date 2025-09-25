@@ -112,8 +112,8 @@ describe('Dex Utils Egg Group Tests', () => {
     const MODE = "3.0";
     const validIds = [
       { id: 0, count: 1 },
-      { id: 5, count: 370 },
-      { id: 10, count: 122 },
+      { id: 5, count: 345 },
+      { id: 10, count: 120 },
     ];
 
     const invalidIds = [
