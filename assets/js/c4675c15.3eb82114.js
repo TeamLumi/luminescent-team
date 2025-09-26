@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[570849],{214496:e=>{e.exports="/pokedex/unova-cap-pikachu"}}]);

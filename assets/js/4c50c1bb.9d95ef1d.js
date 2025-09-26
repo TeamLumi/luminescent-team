@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[862238],{994766:e=>{e.exports="/pokedex/mega-mewtwo-y"}}]);

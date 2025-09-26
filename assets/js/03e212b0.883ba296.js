@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[28108],{228983:e=>{e.exports="/pokedex/partner-cap-pikachu"}}]);

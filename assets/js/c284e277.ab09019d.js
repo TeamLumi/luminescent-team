@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[947835],{927621:e=>{e.exports="/pokedex/titanic-okidogi"}}]);

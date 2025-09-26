@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[870975],{48169:e=>{e.exports="/pokedex/silvally-rock"}}]);

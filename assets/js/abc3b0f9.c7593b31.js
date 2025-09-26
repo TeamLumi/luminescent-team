@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[476989],{821358:e=>{e.exports="/pokedex/ruby-cream-ribbon-alcremie"}}]);

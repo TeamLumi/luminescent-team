@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[537409],{594030:e=>{e.exports="/pokedex/totem-togedemaru"}}]);

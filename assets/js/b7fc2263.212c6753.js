@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[699059],{943872:e=>{e.exports="/pokedex/haunter-ghost"}}]);

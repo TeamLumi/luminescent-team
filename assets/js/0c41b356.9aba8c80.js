@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[384407],{645626:e=>{e.exports="/pokedex/revravroom-schedar-starmobile-revavroom"}}]);

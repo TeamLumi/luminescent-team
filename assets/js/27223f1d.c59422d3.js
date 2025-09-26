@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[199435],{746903:e=>{e.exports="/pokedex/false-dragon-titan-dondozo"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[860548],{293470:e=>{e.exports="/pokedex/frenzied-lord-of-the-isles-hisui-arcanine"}}]);

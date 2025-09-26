@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[517652],{996180:e=>{e.exports="/pokedex/lurking-steel-titan-orthworm"}}]);

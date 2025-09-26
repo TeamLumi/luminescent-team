@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[964901],{469257:e=>{e.exports="/pokedex/silvally-water"}}]);

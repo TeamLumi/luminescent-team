@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[311967],{268623:e=>{e.exports="/pokedex/-ice-silvally"}}]);

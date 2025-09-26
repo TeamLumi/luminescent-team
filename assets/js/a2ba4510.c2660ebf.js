@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[282827],{563043:e=>{e.exports="/pokedex/totem-vikavolt"}}]);

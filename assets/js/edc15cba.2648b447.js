@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[829661],{986716:e=>{e.exports="/pokedex/caramel-swirl-strawberry-alcremie"}}]);

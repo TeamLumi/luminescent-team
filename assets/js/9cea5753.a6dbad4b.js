@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[110858],{416943:e=>{e.exports="/pokedex/quaking-earth-titan-great-tusk"}}]);

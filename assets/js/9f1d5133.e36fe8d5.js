@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[660591],{858160:e=>{e.exports="/pokedex/world-cap-pikachu"}}]);

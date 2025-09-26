@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[707833],{23584:e=>{e.exports="/pokedex/rainbow-swirl-star-alcremie"}}]);

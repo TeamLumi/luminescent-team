@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[766638],{344912:e=>{e.exports="/pokedex/kalos-cap-pikachu"}}]);
