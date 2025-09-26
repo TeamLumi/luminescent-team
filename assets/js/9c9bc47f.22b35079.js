@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[496699],{873224:e=>{e.exports="/pokedex/gmax-snorlax"}}]);

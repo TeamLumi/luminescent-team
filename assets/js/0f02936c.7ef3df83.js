@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[751310],{32877:e=>{e.exports="/pokedex/barboach"}}]);

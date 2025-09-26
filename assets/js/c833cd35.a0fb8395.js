@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[649336],{505317:e=>{e.exports="/luminescent-team-dev/pokedex/clawitzer"}}]);

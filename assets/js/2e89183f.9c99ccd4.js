@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[137996],{654502:e=>{e.exports="/luminescent-team-dev/pokedex/necrozma"}}]);

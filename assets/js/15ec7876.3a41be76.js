@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[821e3],{548099:e=>{e.exports="/luminescent-team-dev/pokedex/elgyem"}}]);

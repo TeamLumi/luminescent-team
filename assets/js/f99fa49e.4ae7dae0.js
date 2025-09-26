@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[604902],{674440:e=>{e.exports="/pokedex/flamigo"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[785880],{659865:e=>{e.exports="/pokedex/tyrogue"}}]);

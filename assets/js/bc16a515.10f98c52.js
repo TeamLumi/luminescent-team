@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[29698],{87969:e=>{e.exports="/pokedex/galar-corsola"}}]);

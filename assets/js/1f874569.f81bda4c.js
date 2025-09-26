@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[273473],{176905:e=>{e.exports="/pokedex/jumpluff"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[885371],{225332:e=>{e.exports="/pokedex/bayleef"}}]);

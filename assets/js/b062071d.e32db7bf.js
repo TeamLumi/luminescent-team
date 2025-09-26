@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[275635],{352672:e=>{e.exports="/pokedex/starly"}}]);

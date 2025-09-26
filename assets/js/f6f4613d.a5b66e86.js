@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[240294],{387183:e=>{e.exports="/pokedex/gmax-appletun"}}]);

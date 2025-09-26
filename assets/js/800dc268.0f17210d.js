@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[917286],{67588:e=>{e.exports="/pokedex/fomantis"}}]);

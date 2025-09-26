@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[710564],{795080:e=>{e.exports="/luminescent-team-dev/pokedex/hero-of-many-battles-zamazenta"}}]);

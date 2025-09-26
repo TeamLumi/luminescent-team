@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[980786],{986244:e=>{e.exports="/pokedex/kartana"}}]);

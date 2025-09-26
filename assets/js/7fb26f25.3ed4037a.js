@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[292710],{333632:e=>{e.exports="/luminescent-team-dev/pokedex/continental-pattern-vivillon"}}]);

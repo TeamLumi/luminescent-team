@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[413060],{442860:e=>{e.exports="/pokedex/furret"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[811903],{526350:e=>{e.exports="/pokedex/boldore"}}]);

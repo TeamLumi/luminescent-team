@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[362570],{367676:e=>{e.exports="/pokedex/shadow-mega-mewtwo"}}]);

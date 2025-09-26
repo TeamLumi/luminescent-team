@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[537870],{906648:e=>{e.exports="/luminescent-team-dev/pokedex/eldegoss"}}]);

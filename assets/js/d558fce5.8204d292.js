@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[116134],{938629:e=>{e.exports="/pokedex/wailord"}}]);

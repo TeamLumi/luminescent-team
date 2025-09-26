@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[341517],{165683:e=>{e.exports="/pokedex/dreepy"}}]);

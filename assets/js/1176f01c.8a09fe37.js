@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[75530],{117338:e=>{e.exports="/pokedex/yellow-flower-floette"}}]);

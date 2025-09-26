@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[977279],{911775:e=>{e.exports="/pokedex/machop"}}]);

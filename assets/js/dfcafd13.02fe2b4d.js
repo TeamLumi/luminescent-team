@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[684211],{107906:e=>{e.exports=JSON.parse('{"label":"alpha","permalink":"/luminescent-team-dev/blog/tags/alpha","allTagsPath":"/luminescent-team-dev/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[52868],{848215:e=>{e.exports="/pokedex/phanpy"}}]);

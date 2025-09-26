@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[561908],{49813:e=>{e.exports="/pokedex/douse-genesect"}}]);

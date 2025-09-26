@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[807658],{955654:e=>{e.exports="/pokedex/nidoking"}}]);

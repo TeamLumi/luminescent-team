@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[877738],{319210:e=>{e.exports="/pokedex/farfetchd"}}]);

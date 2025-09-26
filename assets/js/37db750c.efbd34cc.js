@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[300062],{154868:e=>{e.exports="/luminescent-team-dev/pokedex/curly-form-tatsugiri"}}]);

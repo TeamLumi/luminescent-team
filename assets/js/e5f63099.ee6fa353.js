@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[151219],{285840:e=>{e.exports="/pokedex/aria-forme-meloetta"}}]);

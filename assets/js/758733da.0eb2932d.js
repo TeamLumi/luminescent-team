@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[490626],{385875:e=>{e.exports="/luminescent-team-dev/pokedex/vaporeon"}}]);

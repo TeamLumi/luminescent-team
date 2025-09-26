@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[330209],{219336:e=>{e.exports="/pokedex/pupitar"}}]);

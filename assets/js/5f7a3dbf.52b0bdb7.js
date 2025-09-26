@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[585509],{514636:e=>{e.exports="/pokedex/drowzee"}}]);

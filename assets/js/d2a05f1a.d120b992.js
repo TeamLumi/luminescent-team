@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[189117],{588063:e=>{e.exports="/luminescent-team-dev/pokedex/bloodmoon-beast-ursaluna"}}]);

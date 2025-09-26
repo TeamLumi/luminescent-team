@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[313788],{678621:e=>{e.exports="/luminescent-team-dev/pokedex/full-belly-mode-morpeko"}}]);

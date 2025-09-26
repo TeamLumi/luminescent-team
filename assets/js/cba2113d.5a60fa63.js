@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[845314],{438460:e=>{e.exports="/pokedex/clone-venusaur"}}]);

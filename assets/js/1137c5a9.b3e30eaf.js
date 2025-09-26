@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[340275],{547125:e=>{e.exports="/luminescent-team-dev/pokedex/mega-latios"}}]);

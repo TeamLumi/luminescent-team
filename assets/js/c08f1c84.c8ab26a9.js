@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[10550],{11314:e=>{e.exports="/pokedex/raikou"}}]);

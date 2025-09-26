@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[33427],{601191:e=>{e.exports="/luminescent-team-dev/pokedex/gothita"}}]);

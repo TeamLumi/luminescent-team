@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[603929],{239794:e=>{e.exports="/luminescent-team-dev/pokedex/crowned-sword-zacian"}}]);

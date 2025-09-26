@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[196460],{304737:e=>{e.exports="/luminescent-team-dev/pokedex/-steel-silvally"}}]);

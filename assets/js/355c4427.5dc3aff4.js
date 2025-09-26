@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[502209],{393750:e=>{e.exports="/luminescent-team-dev/pokedex/gothorita"}}]);

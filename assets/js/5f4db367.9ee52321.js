@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[622354],{81274:e=>{e.exports="/luminescent-team-dev/pokedex/mareanie"}}]);

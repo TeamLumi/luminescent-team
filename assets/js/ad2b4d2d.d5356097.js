@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[330408],{447187:e=>{e.exports="/pokedex/electivire"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[908459],{418666:e=>{e.exports="/pokedex/rapidash"}}]);

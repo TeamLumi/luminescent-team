@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[757099],{851242:e=>{e.exports="/pokedex/quaxly"}}]);

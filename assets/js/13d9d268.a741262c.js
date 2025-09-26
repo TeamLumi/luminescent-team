@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[603455],{925804:e=>{e.exports="/luminescent-team-dev/pokedex/iron-valiant"}}]);

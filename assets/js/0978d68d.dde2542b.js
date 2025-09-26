@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[109560],{210883:e=>{e.exports="/luminescent-team-dev/pokedex/hitmontop"}}]);

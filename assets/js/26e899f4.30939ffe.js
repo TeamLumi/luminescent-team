@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[833797],{221236:e=>{e.exports="/pokedex/rampardos"}}]);

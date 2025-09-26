@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[216250],{781880:e=>{e.exports="/pokedex/persian"}}]);

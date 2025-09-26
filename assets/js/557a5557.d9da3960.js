@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[793238],{880056:e=>{e.exports="/luminescent-team-dev/pokedex/eelektross"}}]);

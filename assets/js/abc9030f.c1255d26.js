@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[767473],{7404:e=>{e.exports="/pokedex/goodra"}}]);

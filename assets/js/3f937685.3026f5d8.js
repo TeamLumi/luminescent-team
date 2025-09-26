@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[60843],{22754:e=>{e.exports="/pokedex/lairon"}}]);

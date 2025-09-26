@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[552901],{535349:e=>{e.exports="/pokedex/farigiraf"}}]);

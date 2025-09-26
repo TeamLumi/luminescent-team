@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[629115],{706140:e=>{e.exports="/luminescent-team-dev/pokedex/golduck"}}]);

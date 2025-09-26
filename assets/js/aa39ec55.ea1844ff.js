@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[155859],{310373:e=>{e.exports="/pokedex/gulping-form-cramorant"}}]);

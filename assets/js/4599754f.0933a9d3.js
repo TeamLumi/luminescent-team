@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[327502],{218961:e=>{e.exports="/luminescent-team-dev/pokedex/galar-stunfisk"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[469839],{292305:e=>{e.exports="/luminescent-team-dev/pokedex/whimsicott"}}]);

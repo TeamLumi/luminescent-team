@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[892409],{869561:e=>{e.exports="/pokedex/inteleon"}}]);

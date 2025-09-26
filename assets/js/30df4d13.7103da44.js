@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[776185],{146980:e=>{e.exports="/pokedex/crustle"}}]);

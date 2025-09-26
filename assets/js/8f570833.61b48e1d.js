@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[653804],{707308:e=>{e.exports="/pokedex/snom"}}]);

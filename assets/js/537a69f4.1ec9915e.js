@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[788495],{573823:e=>{e.exports="/pokedex/earth-plate-arceus"}}]);

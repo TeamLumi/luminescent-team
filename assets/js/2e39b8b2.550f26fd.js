@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[490073],{986383:e=>{e.exports="/pokedex/blaziken"}}]);

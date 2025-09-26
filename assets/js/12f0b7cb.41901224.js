@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[30160],{333811:e=>{e.exports="/luminescent-team-dev/pokedex/weedle"}}]);

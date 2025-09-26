@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[841362],{21490:e=>{e.exports="/pokedex/shellder"}}]);

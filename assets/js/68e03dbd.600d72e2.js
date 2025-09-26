@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[413625],{981388:e=>{e.exports="/luminescent-team-dev/pokedex/salazzle"}}]);

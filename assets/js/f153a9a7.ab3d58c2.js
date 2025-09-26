@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[803902],{292943:e=>{e.exports="/luminescent-team-dev/pokedex/disguised-form-mimikyu"}}]);

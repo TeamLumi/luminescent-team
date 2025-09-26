@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[848159],{600988:e=>{e.exports="/pokedex/beartic"}}]);

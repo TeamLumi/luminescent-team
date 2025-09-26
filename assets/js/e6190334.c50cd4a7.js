@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[809115],{857359:e=>{e.exports="/pokedex/tirtouga"}}]);

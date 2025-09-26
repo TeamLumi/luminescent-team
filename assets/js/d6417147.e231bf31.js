@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[42730],{462885:e=>{e.exports="/pokedex/chimecho"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[182751],{125779:e=>{e.exports="/pokedex/banette"}}]);

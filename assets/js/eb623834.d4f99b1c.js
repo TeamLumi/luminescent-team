@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[742240],{460239:e=>{e.exports="/luminescent-team-dev/pokedex/jynx"}}]);

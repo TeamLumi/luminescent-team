@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[900634],{12958:e=>{e.exports="/pokedex/gible"}}]);

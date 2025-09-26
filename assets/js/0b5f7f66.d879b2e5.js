@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[451611],{281633:e=>{e.exports="/pokedex/impidimp"}}]);

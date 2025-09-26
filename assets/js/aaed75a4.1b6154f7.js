@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[307309],{115228:e=>{e.exports="/pokedex/sky-forme-shaymin"}}]);

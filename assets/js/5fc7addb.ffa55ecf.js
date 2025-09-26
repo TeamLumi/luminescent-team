@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[992866],{943091:e=>{e.exports="/pokedex/alola-ninetales"}}]);

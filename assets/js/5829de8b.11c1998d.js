@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[536353],{338335:e=>{e.exports="/pokedex/skarmory"}}]);

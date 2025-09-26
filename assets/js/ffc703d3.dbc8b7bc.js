@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[802132],{912336:e=>{e.exports="/pokedex/pawmo"}}]);

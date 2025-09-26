@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[499740],{230196:e=>{e.exports="/luminescent-team-dev/pokedex/iron-bundle"}}]);
