@@ -1,4 +1,10 @@
-const { PersonalTable, PokedexInfo, GAMEDATA2, GAMEDATA3, GAMEDATAV } = require('../../../__gamedata');
+const {
+  PersonalTable,
+  PokedexInfo,
+  GAMEDATA2,
+  GAMEDATA3,
+  GAMEDATAV
+} = require('../../../__gamedata');
 const { LUMI_TO_RELUMI_PIKACHU_FORMS } = require('./nameConstants');
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.

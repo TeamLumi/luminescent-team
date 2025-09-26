@@ -30,7 +30,7 @@ const ModeSwitch = () => {
       >
         <MenuItem value={GAMEDATAV}>Vanilla BDSP</MenuItem>
         <MenuItem value={GAMEDATA2}>Luminescent 2.2F</MenuItem>
-        {/* <MenuItem value={GAMEDATA3}>Re:Illuminated</MenuItem> */}
+        <MenuItem value={GAMEDATA3}>Re:Illuminated</MenuItem>
       </Select>
     </FormControl>
   )  

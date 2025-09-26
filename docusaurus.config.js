@@ -3,7 +3,7 @@
 
 require('dotenv').config();
 
-const BASE_URL = '/';
+const BASE_URL = '/luminescent-team-dev/';
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -12,7 +12,10 @@ const isDexEnabled = process.env.DEX_ENABLED === 'true';
 const pageExclusions = !isDexEnabled ? ['**/dex.js'] : [];
 
 const isPokedexEnabled = process.env.POKEDEX_ENABLED === 'true';
+const isMoveDexEnabled = process.env.MOVEDEX_ENABLED === 'true';
+
 const POKEDEX_BASE_PATH = 'pokedex';
+const MOVEDEX_BASE_PATH = 'moves';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -113,6 +116,21 @@ const config = {
           ],
         ]
       : []),
+    ...(isMoveDexEnabled
+      ? [
+          [
+            './plugins/move-data-plugin',
+            {
+              path: MOVEDEX_BASE_PATH,
+              routeBasePath: BASE_URL,
+              moveComponent: '@site/src/pages/_move_page.jsx',
+              moveListComponent: '@site/src/pages/_move_list_page.jsx',
+              wrapperComponent: '@site/src/components/MoveDex/MoveDexPageWrapper.jsx'
+            }
+          ]
+        ]
+      : []
+    )
   ],
 
   themeConfig:

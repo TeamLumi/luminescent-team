@@ -8,9 +8,13 @@ const {
   MoveNames,
   MoveInfo,
   TutorMoves,
-  GAMEDATA2
+  GAMEDATA2,
+  GAMEDATAV,
+  GAMEDATA3
 } = require('../../../__gamedata');
-const { getPokemonFormId, getPokemonName } = require('./name');
+const { FORM_MAP, isValidPokemon } = require('./functions');
+const { STATUS_EFFECTS, SICK_CONT_STRINGS, CRITICAL_HIT_RATIO, MOVE_TARGETING, STATS_TO_CHANGE, MOVE_CATEGORIES } = require('./moveConstants');
+const { getPokemonFormId, getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
 
 const IS_MOVE_INDEX = false;
 const MAX_TM_COUNT = 104;
@@ -104,10 +108,17 @@ function findWazaNoByMachineNo(machineNo, mode = GAMEDATA2) {
   return null;
 }
 
-function getMoveProperties(moveId = 0, mode = GAMEDATA2) {
+function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false) {
+  if (![GAMEDATA2, GAMEDATA3, GAMEDATAV].includes(mode)) {
+    throw Error(`Incorrect mode provided: ${mode}`);
+  }
   const ModeMovesTable = MovesTable[mode];
   const ModeMoveNames = MoveNames[mode];
-  const move = ModeMovesTable.Waza[moveId];
+  const move = ModeMovesTable?.Waza?.[moveId];
+  if (!move) {
+    throw Error("There's a problem, move doesn't exist", moveId, mode);
+  }
+
   const type = move.type;
   const damageType = move.damageType;
   const power = move.power;
@@ -118,6 +129,41 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2) {
   const MAX_PP_MULTIPLIER = 1.6;
   const maxPP = BASE_PP * MAX_PP_MULTIPLIER;
 
+  let flagArray = null;
+  let statusEffects = null;
+  let critRatio = null;
+  let statChanges = null;
+
+  if (extendedDetails) {
+    const moveFlags = move.flags;
+    flagArray = new Array(32);
+    for (let i = 0; i < 32; i++) {
+      flagArray[i] = (moveFlags & (1 << i)) !== 0;
+    }
+
+    let effectRate = move.sickPer;
+
+    if (move.sickID !== 0 && effectRate === 0) {
+      effectRate = "—"
+    }
+
+    statusEffects = {
+      status: STATUS_EFFECTS[move.sickID],
+      rate: effectRate,
+      sickCont: SICK_CONT_STRINGS[move.sickCont],
+      minDuration: move.sickTurnMin,
+      maxDuration: move.sickTurnMax,
+    }
+
+    critRatio = CRITICAL_HIT_RATIO[move.criticalRank];
+
+    statChanges = [
+      {statType: STATS_TO_CHANGE[move.rankEffType1], stages: move.rankEffValue1, rate: move.rankEffPer1},
+      {statType: STATS_TO_CHANGE[move.rankEffType2], stages: move.rankEffValue2, rate: move.rankEffPer2},
+      {statType: STATS_TO_CHANGE[move.rankEffType3], stages: move.rankEffValue3, rate: move.rankEffPer3},
+    ];
+  }
+
   return {
     moveId: moveId,
     name: ModeMoveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
@@ -127,6 +173,20 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2) {
     maxPP,
     power,
     accuracy: hitPer,
+    ...(extendedDetails && {
+      statusEffects,
+      statChanges,
+      critRatio,
+      moveClass: MOVE_CATEGORIES[move.category],
+      priority: move.priority,
+      minHitCount: move.hitCountMin,
+      maxHitCount: move.hitCountMax,
+      flinchChance: move.shrinkPer,
+      healDamage: move.damageRecoverRatio,
+      hpRecover: move.hpRecoverRatio,
+      target: MOVE_TARGETING[move.target],
+      moveFlags: flagArray,
+    })
   };
 }
 
@@ -321,6 +381,60 @@ function getTutorMoves(monsno = 0, formno = 0, mode = GAMEDATA2) {
   return tutorSet;
 }
 
+function searchForMovesOnPokemon(moveId = 0, mode = GAMEDATA2) {
+  // This is a wild function.
+  // I may want to make a json specifically for loading this in the movedex
+  // Just depends on the load times for it
+  // This maps over every pokemon in a mode,
+  // then maps over their entire learnset to see if it can learn a move
+  return Object.values(FORM_MAP[mode])
+    .flat()
+    .slice(1)
+    .map((id) => {
+      // This is a map and not a filter because
+      // we want to return which method(s) a pokemon can learn a move
+      const isValid = isValidPokemon(id, mode);
+      if (!isValid) {
+        return null; // Skip invalid Pokémon
+      }
+      let monsNo = 0, formNo = 0;
+      try {
+        [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(id, mode);
+      } catch (error) {
+        console.log("This pokemonID didn't work", id, mode);
+      }
+      if (monsNo === 414 && formNo > 0) {
+        // Just hardcode out the Mothim forms that exist in Vanilla BDSP
+        return null
+      }
+      const learnsets = {
+        level: getLevelLearnset(id, mode),
+        tm: getTechMachineLearnset(id, mode),
+        egg: getEggMoves(id, mode),
+        tutor: getTutorMoves(monsNo, formNo, mode)
+      };
+
+      // Find which learnsets contain the move
+      const setsContainingMove = Object.entries(learnsets)
+        .filter(([key, moves]) => 
+          Array.isArray(moves) && 
+          moves.some(move => move.move?.moveId === moveId) // Check moveId
+        )
+        .map(([key]) => key); // Only keep the keys (e.g., "level", "tm")
+
+      if (setsContainingMove.length > 0) {
+        return {
+          id:`${monsNo}-${formNo}`,
+          mode,
+          learnsets: setsContainingMove // Include only the relevant learnset names
+        };
+      }
+
+      return null; // Skip if no learnsets contain the move
+    })
+    .filter(Boolean); // Remove null values}
+}
+
 module.exports = {
   generateMovesViaLearnset,
   getMoveId,
@@ -332,5 +446,6 @@ module.exports = {
   getPokemonLearnset,
   getMoveLevelLearned,
   getLevelLearnset,
-  getTutorMoves
+  getTutorMoves,
+  searchForMovesOnPokemon,
 };

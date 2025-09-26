@@ -182,7 +182,14 @@ export default function EvolutionGraph({ evolutionTree }) {
         Or
         <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
           {evoImages.map((image, index) => (
-            <img key={index} src={image} width="40" alt={image} title={image} />
+            <ImageWithFallback
+              key={index}
+              src={image}
+              fallbackSrc={`/img/pkm/pm0000_00_00_00_L.webp`}
+              width="40"
+              alt={image}
+              title={image}
+            />
           ))}
         </Box>
         {methodDetail.method}
@@ -216,7 +223,14 @@ export default function EvolutionGraph({ evolutionTree }) {
         {firstMethodDetail.method}
         <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
           {evoImages.map((image, index) => (
-            <img key={index} src={image} width="40" alt={image} title={image} />
+            <ImageWithFallback
+              key={index}
+              src={image}
+              fallbackSrc={`/img/pkm/pm0000_00_00_00_L.webp`}
+              width="40"
+              alt={image}
+              title={image}
+            />
           ))}
         </Box>
         {methodIds.length > 1 && (

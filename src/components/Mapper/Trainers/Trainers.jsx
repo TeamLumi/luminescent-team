@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Autocomplete, Box, MenuItem, Select, TextField, Typography } from '@mui/material';
 
 import { PokemonStats } from '../Encounters/PokemonStats';
@@ -8,6 +8,7 @@ import { ImageWithFallback } from '../../common/ImageWithFallback';
 
 import '.././style.css';
 import { PokemonAbility } from '../../Pokedex2/PokemonAbilities';
+import { GAMEDATA3 } from '../../../../__gamedata';
 
 const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };
 export const getSmallestResponsiveStyle = (smallest, property, values) => {
@@ -52,7 +53,7 @@ export const TrainerDropdown = ({ trainer, setTrainer, trainerList, smallest }) 
       <Autocomplete
         id="trainer-input"
         options={[defaultTrainer, ...trainerList]}
-        getOptionLabel={(option) => option.team_name}
+        getOptionLabel={(option) => `${option.team_name} (${option.trainer_id})`}
         defaultValue={defaultTrainer}
         value={trainer}
         onChange={(e, value) => setTrainer(value)}
@@ -115,7 +116,7 @@ const MonDetails = ({smallest, pokemon, pokemonInfo}) => {
         height="64px"
       />
       <Typography sx={{ ...responsiveFontSize }}>
-        {`${getPokemonName(pokemon.id)} Lv. ${pokemon.level}`}
+        {`${getPokemonName(pokemon.id, GAMEDATA3)} Lv. ${pokemon.level}`}
       </Typography>
       <Box display={"flex"}>
         <Box
@@ -188,7 +189,7 @@ const MoveList = ({smallest, pokemon}) => {
       }}
     >
       {pokemon.moves.map((move, index) => {
-        const moveInfo = getMoveProperties(move);
+        const moveInfo = getMoveProperties(move, GAMEDATA3);
         return (
           <Box
             key={`${move}-${index}`}
