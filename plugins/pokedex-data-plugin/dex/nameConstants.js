@@ -54,6 +54,20 @@ const REVERSE_ORDER_ARRAY = [
   "dawn",
   "dusk",
   "original",
-]
+];
 
-module.exports = { START_OF_LINE_FORMS, END_OF_LINE_FORMS, REVERSE_ORDER_ARRAY }
+const LUMI_TO_RELUMI_PIKACHU_FORMS = {
+  7: 7,
+  8: 7,
+  9: 7,
+  10: 7,
+  11: 7,
+  12: 7,
+  13: 7,
+  14: 7,
+  15: 8,
+  16: 9,
+  17: 10
+};
+
+module.exports = { START_OF_LINE_FORMS, END_OF_LINE_FORMS, REVERSE_ORDER_ARRAY, LUMI_TO_RELUMI_PIKACHU_FORMS }

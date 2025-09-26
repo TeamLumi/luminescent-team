@@ -1,4 +1,5 @@
 const { PersonalTable, PokedexInfo, GAMEDATA2, GAMEDATA3, GAMEDATAV } = require('../../../__gamedata');
+const { LUMI_TO_RELUMI_PIKACHU_FORMS } = require('./nameConstants');
 
 //BDSP does not stick to the same structure when working with forms, thus this map is necessary.
 const FORM_MAP = {
@@ -12,7 +13,13 @@ function createFormMap(formMap, currentPokemon) {
     formMap[currentPokemon.monsno] = [];
   }
 
-  formMap[currentPokemon.monsno].push(currentPokemon.id);
+  const isValid = currentPokemon.valid_flag;
+
+  if (isValid === 1) {
+    formMap[currentPokemon.monsno].push(currentPokemon.id);
+  } else {
+    formMap[currentPokemon.monsno].push(-1);
+  }
   return formMap;
 }
 
@@ -22,8 +29,13 @@ function getPokemonIdFromFormMap(monsNo = 0, formNo = 0, mode = GAMEDATA2) {
 }
 
 const getPokemonFormIndexById = (monsno, id, mode = GAMEDATA2) => {
-  const ModeFormMap = FORM_MAP[mode]
-  return ModeFormMap[monsno].findIndex((pokemonId) => pokemonId === id);
+  const ModeFormMap = FORM_MAP[mode];
+  const formNo = ModeFormMap[monsno].findIndex((pokemonId) => pokemonId === id);
+  if (mode === GAMEDATA2 && monsno === 25) {
+    const mapped_form_no = LUMI_TO_RELUMI_PIKACHU_FORMS[formNo]
+    if (mapped_form_no !== undefined) return mapped_form_no;
+  }
+  return formNo;
 };
 
 const getPokemonFormIds = (monsno, mode = GAMEDATA2) => {
@@ -64,8 +76,14 @@ function getPokemonIdFromMonsNoAndForm(monsno, formno, mode = GAMEDATA2) {
 }
 
 function isValidPokemon(pokemonId, mode = GAMEDATA2) {
+  if (pokemonId === -1) {
+    return 0
+  }
   const ModePersonalTable = PersonalTable[mode];
   const p = ModePersonalTable.Personal[pokemonId];
+  if (!p) {
+    throw new Error(`Couldn't find this pokemon's valid flag: ${pokemonId}`);
+  }
   return p.valid_flag;
 }
 
