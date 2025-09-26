@@ -8,13 +8,18 @@ const { getGrassKnotPower, getImage, getPokemonFormIndexById, getPokemonFormIds,
 const { getEggGroupViaPokemonId, getEggGroupNameById } = require('./egggroup');
 const { getItemString } = require('./item');
 const { getEvolutionTree } = require('./evolution');
+const { LUMI_TO_RELUMI_PIKACHU_FORMS } = require('./nameConstants');
 
 function getPokemon(pokemonId, mode = GAMEDATA2) {
   const ModePersonalTable = PersonalTable[mode];
   const p = ModePersonalTable.Personal[pokemonId];
   const id = p.id;
   const monsno = p.monsno;
-  const [_, formno] = getPokemonMonsNoAndFormNoFromPokemonId(p.id, mode);
+  let [_, formno] = getPokemonMonsNoAndFormNoFromPokemonId(p.id, mode);
+  if (mode === GAMEDATA2 && monsno === 25) {
+    const mapped_form_no = LUMI_TO_RELUMI_PIKACHU_FORMS[formno]
+    if (mapped_form_no !== undefined) formno = mapped_form_no;
+  }
   const name = getPokemonName(p.id, mode);
   const dexDescription = getDexDescription(p.id, mode)
   const baseStats = {
@@ -49,12 +54,15 @@ function getPokemon(pokemonId, mode = GAMEDATA2) {
     tutor: getTutorMoves(monsno, formno, mode)
   };
   const eggGroupNames = getEggGroupViaPokemonId(pokemonId, mode).map((eggId) => getEggGroupNameById(eggId));
-  const forms = getPokemonFormIds(p.monsno, mode).map((formId) => {
+  const _formIds = getPokemonFormIds(p.monsno, mode);
+  const _generatedForms = _formIds.map((formId) => {
     return {
+      formId,
       name: getPokemonName(formId, mode),
       imageSrc: getImage(p.monsno, getPokemonFormIndexById(p.monsno, formId, mode)),
     };
   });
+  const forms = _generatedForms.filter((f) => f.formId !== -1)
 
   const isValid = p.valid_flag === 1;
   const isBaseForm = p.form_index === 0;

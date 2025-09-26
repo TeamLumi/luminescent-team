@@ -1,10 +1,17 @@
 # (24) _JUMP
 
+## Synonyms
+
+- _SCENE_CHANGE_LABEL
+- _FLAG_CHANGE_LABEL
+- _OBJ_CHANGE_LABEL
+- _INIT_CHANGE_LABEL
+
 ## Effect
 
 Jumps to a script.
 
-The position of the jump is not saved. Execution does not return to this command once a _RET is executed.
+The position of a jump is not saved. Execution does not return to this command once a _RET is executed.
 
 ## Syntax
 

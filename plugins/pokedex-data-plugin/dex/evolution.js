@@ -77,10 +77,11 @@ function getEvolutionTree(pokemonId = 0, fromRoot = true, mode = GAMEDATA2) {
   const startPokemonId = fromRoot ? pokemon.path[0] : pokemonId;
 
   const evolution = ModeEvolutionData[startPokemonId];
+  const evolutionDetails = getEvolutionDetails(startPokemonId, mode);
 
   const evolutionTree = {
     pokemonId: startPokemonId,
-    evolutionDetails: getEvolutionDetails(startPokemonId, mode),
+    evolutionDetails: evolutionDetails,
     evolvesInto: evolution.targets.map((nextStagePokemonId) => getEvolutionTree(nextStagePokemonId, false, mode)),
   };
   return evolutionTree;

@@ -4,7 +4,7 @@
 
 Checks the value of a flag. Calls a script if it is true.
 
-The position of the call is saved. Execution returns to this command once a _RET is executed.
+The position of a call is saved. Execution returns to this command once a _RET is executed.
 
 ## Syntax
 
@@ -14,7 +14,7 @@ _IF_FLAGON_CALL(flag, label)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **flag** | The flag to check | Flag, SysFlag | Required |
+| **flag** | The flag to check | Flag, System Flag | Required |
 | **label** | The label to call | String | Required |
 
 ## Example
