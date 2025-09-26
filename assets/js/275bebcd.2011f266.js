@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[436697],{70994:e=>{e.exports="/pokedex/gogoat"}}]);

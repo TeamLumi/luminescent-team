@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[993228],{786133:e=>{e.exports="/pokedex/monferno"}}]);

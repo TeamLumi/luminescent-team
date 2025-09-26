@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[387134],{31287:e=>{e.exports="/luminescent-team-dev/pokedex/ariados"}}]);

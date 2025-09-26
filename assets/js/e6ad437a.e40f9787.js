@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[841686],{261806:e=>{e.exports="/luminescent-team-dev/pokedex/defense-forme-deoxys"}}]);

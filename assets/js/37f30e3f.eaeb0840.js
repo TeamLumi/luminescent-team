@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[251680],{735133:e=>{e.exports="/pokedex/orbeetle"}}]);

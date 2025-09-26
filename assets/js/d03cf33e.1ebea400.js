@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[650507],{946149:e=>{e.exports="/pokedex/palpitoad"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[382009],{475793:e=>{e.exports="/pokedex/emboar"}}]);

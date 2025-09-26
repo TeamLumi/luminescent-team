@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[278306],{742584:e=>{e.exports="/pokedex/gmax-amped-form-toxtricity"}}]);

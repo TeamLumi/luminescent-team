@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[961596],{413887:e=>{e.exports="/pokedex/mabosstiff"}}]);

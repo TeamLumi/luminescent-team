@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[563720],{482913:e=>{e.exports="/pokedex/seviper"}}]);

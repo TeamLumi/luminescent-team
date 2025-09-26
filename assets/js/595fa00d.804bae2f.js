@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[768068],{563303:e=>{e.exports="/pokedex/tauros"}}]);

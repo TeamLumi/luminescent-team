@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[141109],{79983:e=>{e.exports="/pokedex/male-oinkologne"}}]);

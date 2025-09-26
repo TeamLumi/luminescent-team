@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[779187],{584992:e=>{e.exports="/pokedex/cacturne"}}]);

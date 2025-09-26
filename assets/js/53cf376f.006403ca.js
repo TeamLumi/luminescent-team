@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[331152],{816445:e=>{e.exports="/luminescent-team-dev/pokedex/magmar"}}]);

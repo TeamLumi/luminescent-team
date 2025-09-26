@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[304375],{469191:e=>{e.exports="/pokedex/escavalier"}}]);

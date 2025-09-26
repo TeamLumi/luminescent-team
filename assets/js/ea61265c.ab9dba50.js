@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[277231],{315011:e=>{e.exports="/pokedex/frosmoth"}}]);

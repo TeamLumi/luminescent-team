@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[862986],{674334:e=>{e.exports="/pokedex/unremarkable-form-sinistcha"}}]);

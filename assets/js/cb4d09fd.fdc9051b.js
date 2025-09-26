@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[643814],{691270:e=>{e.exports="/pokedex/polluted-sky-forme-shaymin"}}]);

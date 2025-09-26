@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[307540],{797197:e=>{e.exports="/pokedex/kubfu"}}]);

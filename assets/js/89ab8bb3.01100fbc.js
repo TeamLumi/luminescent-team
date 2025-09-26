@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[586658],{560711:e=>{e.exports="/pokedex/dustox"}}]);

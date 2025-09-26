@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[319250],{945697:e=>{e.exports="/luminescent-team-dev/pokedex/skwovet"}}]);

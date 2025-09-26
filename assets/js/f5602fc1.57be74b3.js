@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[580206],{647099:e=>{e.exports="/pokedex/zapdos"}}]);

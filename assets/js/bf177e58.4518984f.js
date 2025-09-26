@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[173659],{9295:e=>{e.exports="/pokedex/glameow"}}]);

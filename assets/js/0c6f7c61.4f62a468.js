@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[903650],{689470:e=>{e.exports="/pokedex/trapinch"}}]);

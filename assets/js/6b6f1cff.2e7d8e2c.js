@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[977519],{775709:e=>{e.exports="/luminescent-team-dev/pokedex/arctovish"}}]);

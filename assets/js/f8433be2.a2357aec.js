@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[208373],{858589:e=>{e.exports="/pokedex/busted-form-mimikyu"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[602075],{76250:e=>{e.exports="/luminescent-team-dev/pokedex/arctibax"}}]);

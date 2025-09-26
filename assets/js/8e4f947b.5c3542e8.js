@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[525304],{421306:e=>{e.exports="/pokedex/diancie"}}]);

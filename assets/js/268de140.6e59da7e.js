@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[670450],{56931:e=>{e.exports="/luminescent-team-dev/pokedex/primal-groudon"}}]);

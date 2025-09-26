@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[254070],{93266:e=>{e.exports="/pokedex/rufflet"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[423680],{716006:e=>{e.exports="/luminescent-team-dev/pokedex/gouging-fire"}}]);

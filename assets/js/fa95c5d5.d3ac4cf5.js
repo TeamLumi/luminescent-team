@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[526304],{539358:e=>{e.exports="/luminescent-team-dev/pokedex/tropius"}}]);

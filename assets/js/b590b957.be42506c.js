@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[38691],{584537:e=>{e.exports="/luminescent-team-dev/pokedex/polluted-land-forme-shaymin"}}]);

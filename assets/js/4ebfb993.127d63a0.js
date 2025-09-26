@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[509167],{482570:e=>{e.exports="/pokedex/mk-ii-armored-mewtwo"}}]);

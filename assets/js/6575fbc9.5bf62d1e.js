@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[890437],{523005:e=>{e.exports="/pokedex/resolute-form-keldeo"}}]);

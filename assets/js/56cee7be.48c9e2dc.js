@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[938924],{120881:e=>{e.exports="/pokedex/clauncher"}}]);

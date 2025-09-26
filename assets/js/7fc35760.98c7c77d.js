@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[160605],{546917:e=>{e.exports="/luminescent-team-dev/pokedex/mega-x-charizard"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[923365],{721184:e=>{e.exports="/luminescent-team-dev/pokedex/naclstack"}}]);

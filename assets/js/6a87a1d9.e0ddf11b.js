@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[787663],{490384:e=>{e.exports="/pokedex/tapu-lele"}}]);

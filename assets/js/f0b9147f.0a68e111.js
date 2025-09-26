@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[671422],{875522:e=>{e.exports="/pokedex/aipom"}}]);

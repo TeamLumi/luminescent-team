@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[653866],{493891:e=>{e.exports="/luminescent-team-dev/pokedex/armaldo"}}]);

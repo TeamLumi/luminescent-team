@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[313353],{5223:e=>{e.exports="/luminescent-team-dev/pokedex/larvitar"}}]);

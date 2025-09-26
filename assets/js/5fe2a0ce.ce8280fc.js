@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[563235],{391891:e=>{e.exports="/pokedex/registeel"}}]);

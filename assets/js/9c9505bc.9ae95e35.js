@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[47089],{960713:e=>{e.exports="/luminescent-team-dev/pokedex/stunky"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[371775],{356803:e=>{e.exports="/luminescent-team-dev/pokedex/land-forme-shaymin"}}]);

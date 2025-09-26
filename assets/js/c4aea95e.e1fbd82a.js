@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[299434],{290019:e=>{e.exports="/pokedex/dragonite"}}]);

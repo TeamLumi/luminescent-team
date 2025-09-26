@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[705766],{88604:e=>{e.exports="/luminescent-team-dev/pokedex/hakamo-o"}}]);

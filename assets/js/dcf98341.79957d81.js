@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[454990],{642336:e=>{e.exports="/luminescent-team-dev/pokedex/hippowdon"}}]);

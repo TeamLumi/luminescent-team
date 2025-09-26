@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[386433],{897982:e=>{e.exports="/luminescent-team-dev/pokedex/cramorant"}}]);

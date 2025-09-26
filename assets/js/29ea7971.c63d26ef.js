@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[713473],{389155:e=>{e.exports="/luminescent-team-dev/pokedex/pidgey"}}]);

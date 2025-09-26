@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[725483],{601104:e=>{e.exports="/pokedex/bagon"}}]);

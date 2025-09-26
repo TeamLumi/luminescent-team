@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[831683],{785539:e=>{e.exports="/pokedex/iron-jugulis"}}]);

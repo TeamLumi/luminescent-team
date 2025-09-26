@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[978223],{196846:e=>{e.exports="/pokedex/growlithe"}}]);

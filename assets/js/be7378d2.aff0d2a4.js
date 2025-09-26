@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[685603],{48568:e=>{e.exports="/pokedex/dragalge"}}]);

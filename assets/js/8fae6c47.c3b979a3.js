@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[368768],{189752:e=>{e.exports="/pokedex/gmax-copperajah"}}]);

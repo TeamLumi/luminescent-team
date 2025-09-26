@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[797825],{573697:e=>{e.exports="/pokedex/manaphy"}}]);

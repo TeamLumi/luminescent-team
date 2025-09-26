@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[688966],{808911:e=>{e.exports="/pokedex/crowned-shield-zamazenta"}}]);

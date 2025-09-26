@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[573078],{809393:e=>{e.exports="/luminescent-team-dev/pokedex/-fairy-silvally"}}]);

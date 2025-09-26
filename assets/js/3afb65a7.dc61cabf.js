@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[149534],{392522:e=>{e.exports="/luminescent-team-dev/pokedex/drilbur"}}]);

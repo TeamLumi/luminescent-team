@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[21156],{733443:e=>{e.exports="/pokedex/klawf"}}]);

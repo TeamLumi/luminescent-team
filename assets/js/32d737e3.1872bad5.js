@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[949440],{681279:e=>{e.exports="/luminescent-team-dev/pokedex/gholdengo"}}]);

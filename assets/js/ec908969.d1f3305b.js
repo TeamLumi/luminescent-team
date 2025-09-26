@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[557206],{502725:e=>{e.exports="/pokedex/marowak"}}]);

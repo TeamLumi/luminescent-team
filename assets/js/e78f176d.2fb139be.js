@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[283626],{274549:e=>{e.exports="/pokedex/crabrawler"}}]);

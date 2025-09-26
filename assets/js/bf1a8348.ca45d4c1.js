@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[235976],{398323:e=>{e.exports="/pokedex/masquerain"}}]);

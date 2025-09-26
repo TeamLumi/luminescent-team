@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[257718],{418904:e=>{e.exports="/luminescent-team-dev/pokedex/ice-calyrex"}}]);

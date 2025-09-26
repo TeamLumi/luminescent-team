@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[391125],{211137:e=>{e.exports="/pokedex/turtwig"}}]);

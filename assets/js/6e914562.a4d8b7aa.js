@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[121759],{106625:e=>{e.exports="/luminescent-team-dev/pokedex/muk"}}]);

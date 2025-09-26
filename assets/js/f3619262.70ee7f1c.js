@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[480272],{977517:e=>{e.exports="/pokedex/mega-garchomp"}}]);

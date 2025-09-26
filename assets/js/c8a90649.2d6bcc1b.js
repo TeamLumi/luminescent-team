@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[804613],{288982:e=>{e.exports="/luminescent-team-dev/pokedex/hoppip"}}]);

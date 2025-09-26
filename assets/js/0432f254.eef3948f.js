@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[475703],{407307:e=>{e.exports="/luminescent-team-dev/pokedex/blue-core-minior"}}]);

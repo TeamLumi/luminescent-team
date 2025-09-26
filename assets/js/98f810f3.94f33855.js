@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[963097],{922328:e=>{e.exports="/pokedex/meganium"}}]);

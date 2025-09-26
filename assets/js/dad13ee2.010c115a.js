@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[873543],{895317:e=>{e.exports="/pokedex/chi-yu"}}]);

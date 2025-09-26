@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[706772],{254391:e=>{e.exports="/luminescent-team-dev/pokedex/illumise"}}]);

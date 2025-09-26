@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[934546],{851725:e=>{e.exports="/pokedex/cloyster"}}]);

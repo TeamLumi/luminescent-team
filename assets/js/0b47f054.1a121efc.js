@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[551230],{331701:e=>{e.exports="/pokedex/bronzor"}}]);

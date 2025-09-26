@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[812614],{377985:e=>{e.exports="/pokedex/baltoy"}}]);

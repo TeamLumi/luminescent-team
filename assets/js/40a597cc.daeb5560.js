@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[366315],{622092:e=>{e.exports="/luminescent-team-dev/pokedex/sprigatito"}}]);
