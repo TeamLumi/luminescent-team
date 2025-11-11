@@ -205,12 +205,26 @@ function getEggMoves(dexId = 0, mode = GAMEDATA2) {
 }
 
 function getMoveDescription(moveId = 0, mode = GAMEDATA2) {
-  const ModeMoveInfo = MoveInfo[mode];
-  const wordData = ModeMoveInfo.labelDataArray[moveId].wordDataArray;
-  const description = wordData.reduce((moveDescription, currentString) => {
-    return moveDescription + currentString.str + ' ';
-  }, '');
-  return description.trim();
+  const moveInfo = MoveInfo[mode];
+  const label = moveInfo.labelDataArray[moveId];
+  if (!label || !label.wordDataArray) return '';
+
+  const wordData = label.wordDataArray;
+  const len = wordData.length;
+
+  if (len === 0) return '';
+  if (len === 1) return wordData[0].str;
+
+  // Use manual accumulation with minimal allocations.
+  // Pre-size array to avoid push reallocation.
+  let result = '';
+  for (let i = 0; i < len - 1; i++) {
+    result += wordData[i].str + ' ';
+  }
+  // Append the last string without trailing space
+  result += wordData[len - 1].str;
+
+  return result;
 }
 
 function getTMCompatibility(pokemonId = 0, mode = GAMEDATA2) {

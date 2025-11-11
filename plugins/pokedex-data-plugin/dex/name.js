@@ -6,8 +6,23 @@ const {
   GAMEDATA3,
   GAMEDATAV,
 } = require('../../../__gamedata');
-const { START_OF_LINE_FORMS, END_OF_LINE_FORMS, REVERSE_ORDER_ARRAY } = require('./nameConstants')
+const {
+  START_OF_LINE_FORMS,
+  END_OF_LINE_FORMS,
+  REVERSE_ORDER_ARRAY,
+  RE_SPECIAL,
+  RE_ASCII_CHECK,
+  RE_MULTI_SEP,
+  RE_SPACE_OR_HYPHEN,
+  START_MAP,
+  START_REGEX,
+  END_REGEX,
+  END_MAP
+} = require('./nameConstants');
 const { FORM_MAP } = require('./functions');
+
+// Cache normalized names to avoid redundant work
+const normalizeCache = new Map();
 
 const POKEMON_NAME_MAPV = PersonalTable[GAMEDATAV].Personal.reduce((pokemonNameMap, currentPokemon) => {
   return createPokemonMap(pokemonNameMap, currentPokemon, GAMEDATAV);
@@ -148,45 +163,74 @@ function getPokemonFormId(monsno = 0, id, mode = GAMEDATA2) {
 }
 
 function normalizePokemonName(value, mode = GAMEDATA2) {
-  // Converts to lowercase, removes non-word characters,
-  // converts spaces to hyphens, and strips leading/trailing whitespace.
-  let initialValue = value;
-  value = value.replace(/[!]/g, 'emark')
-    .replace(/[?]/g, 'qmark')
-    .replace(/[♀]/g, '-f')
-    .replace(/[♂]/g, '-m')
-  value = value.normalize('NFKD').replace(/[^\w\s-]/g, '').trim().toLowerCase();
+  if (!value) return '';
 
-  if (mode === GAMEDATA2 ) {
-    return value.replace(/[-\s]+/g, '-');
+  const cacheKey = `${mode}:${value}`;
+  if (normalizeCache.has(cacheKey)) return normalizeCache.get(cacheKey);
+
+  // --- 1. Replace special symbols efficiently ---
+  let cleaned = value.replace(RE_SPECIAL, m => {
+    switch (m) {
+      case '!': return 'emark';
+      case '?': return 'qmark';
+      case '♀': return '-f';
+      case '♂': return '-m';
+      default: return ''; // remove other non-word chars
+    }
+  });
+
+  // --- 2. Normalize only if non-ASCII characters are found ---
+  if (RE_ASCII_CHECK.test(cleaned)) {
+    cleaned = cleaned.normalize('NFKD').replace(/[^\w\s-]/g, '');
   }
 
-  if (value.includes(' ') || value.includes('-')) {
-    // Split the string at the last space
-    for (const badValue in START_OF_LINE_FORMS) {
-      if (value.includes(badValue)) {
-        value = value.replace(badValue, START_OF_LINE_FORMS[badValue]);
-      }
-    }
+  cleaned = cleaned.trim().toLowerCase();
 
-    const lastWord = value.split(' ').pop();
-    for (const badEndValue in END_OF_LINE_FORMS) {
-      if (lastWord === badEndValue) {
-        value = value.replace(` ${badEndValue}`, END_OF_LINE_FORMS[badEndValue]);
-      }
-    }
+  if (START_REGEX) {
+    cleaned = cleaned.replace(START_REGEX, (m) => {
+      // we compiled START_MAP with lowercase keys, and cleaned is lowercase, so lookup succeeds
+      return START_MAP[m] ?? m;
+    });
+  }
 
-    const parts = value.split(' ').reverse();
+  if (END_REGEX) {
+    // END_REGEX captures the suffix as group 1; but because we used a group,
+    // replace callback receives the full match as first arg and group as second.
+    cleaned = cleaned.replace(END_REGEX, (fullMatch, group1) => {
+      const key = group1.toLowerCase();
+      // return replacement (could be empty string) - we preserve any leading separator from fullMatch if needed
+      return END_MAP[key] ?? '';
+    });
+  }
 
-    // Check if the first part is "Mega" or "Gigantamax"
-    if (REVERSE_ORDER_ARRAY.includes(parts[0]) || lastWord === 'genesect') {
-      // Rearrange string and join with hyphen
-      value = [parts[1], parts[0]].join('-');
-      return value;
+  // --- 3. Early return for common mode ---
+  if (mode === GAMEDATA2) {
+    const result = cleaned.replace(RE_MULTI_SEP, '-');
+    normalizeCache.set(cacheKey, result);
+    return result;
+  }
+
+  // --- 4. Handle name reordering and special suffix/prefix cases ---
+  if (RE_SPACE_OR_HYPHEN.test(cleaned)) {
+    // Replace known bad prefixes/suffixes using precompiled regex
+    cleaned = cleaned.replace(START_REGEX, m => START_OF_LINE_FORMS[m]);
+    cleaned = cleaned.replace(END_REGEX, m => END_OF_LINE_FORMS[m]);
+
+    // Extract last word efficiently
+    const lastSpace = cleaned.lastIndexOf(' ');
+    const lastWord = lastSpace === -1 ? cleaned : cleaned.slice(lastSpace + 1);
+
+    // Handle reverse-order names like "Mega" or "Gigantamax"
+    if (REVERSE_ORDER_ARRAY.includes(lastWord) || lastWord === 'genesect') {
+      const before = cleaned.slice(0, lastSpace).replace(RE_MULTI_SEP, '-');
+      cleaned = `${before}-${lastWord}`;
     }
   }
 
-  return value.replace(/[-\s]+/g, '-');
+  // --- 5. Final normalization for separators ---
+  const result = cleaned.replace(RE_MULTI_SEP, '-');
+  normalizeCache.set(cacheKey, result);
+  return result;
 }
 
 function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0, mode = GAMEDATA2) {
