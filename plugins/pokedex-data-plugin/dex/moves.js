@@ -390,6 +390,7 @@ function searchForMovesOnPokemon(moveId = 0, mode = GAMEDATA2) {
   return Object.values(FORM_MAP[mode])
     .flat()
     .slice(1)
+    .filter(id => id !== -1)
     .map((id) => {
       // This is a map and not a filter because
       // we want to return which method(s) a pokemon can learn a move

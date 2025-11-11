@@ -38,7 +38,7 @@ const getPokemonFormIndexById = (monsno, id, mode = GAMEDATA2) => {
   const ModeFormMap = FORM_MAP[mode];
   const formNo = ModeFormMap[monsno].findIndex((pokemonId) => pokemonId === id);
   if (mode === GAMEDATA2 && monsno === 25) {
-    const mapped_form_no = LUMI_TO_RELUMI_PIKACHU_FORMS[formNo]
+    const mapped_form_no = LUMI_TO_RELUMI_PIKACHU_FORMS[formNo];
     if (mapped_form_no !== undefined) return mapped_form_no;
   }
   return formNo;

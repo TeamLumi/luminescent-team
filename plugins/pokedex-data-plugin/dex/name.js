@@ -6,7 +6,7 @@ const {
   GAMEDATA3,
   GAMEDATAV,
 } = require('../../../__gamedata');
-const { START_OF_LINE_FORMS, END_OF_LINE_FORMS, REVERSE_ORDER_ARRAY } = require('./nameConstants')
+const { START_OF_LINE_FORMS, END_OF_LINE_FORMS, REVERSE_ORDER_ARRAY, LUMI_TO_RELUMI_PIKACHU_FORMS } = require('./nameConstants')
 const { FORM_MAP } = require('./functions');
 
 const POKEMON_NAME_MAPV = PersonalTable[GAMEDATAV].Personal.reduce((pokemonNameMap, currentPokemon) => {
@@ -194,8 +194,12 @@ function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0, mode = GAMEDATA2)
   const MODE_FORM_MAP = FORM_MAP[mode];
 
 	const { monsno } = ModePersonalTable.Personal[pokemonId];
-	const formno = MODE_FORM_MAP[monsno].indexOf(pokemonId);
-	return [monsno, formno];
+  const formNo = MODE_FORM_MAP[monsno].findIndex((id) => pokemonId === id);
+  if (mode === GAMEDATA2 && monsno === 25) {
+    const mapped_form_no = LUMI_TO_RELUMI_PIKACHU_FORMS[formNo];
+    if (mapped_form_no !== undefined) return [monsno, mapped_form_no];
+  }
+	return [monsno, formNo];
 }
 
 module.exports = {

@@ -12,7 +12,13 @@ function createFormMap(formMap, currentPokemon) {
     formMap[currentPokemon.monsno] = [];
   }
 
-  formMap[currentPokemon.monsno].push(currentPokemon.id);
+  const isValid = currentPokemon.valid_flag;
+
+  if (isValid === 1) {
+    formMap[currentPokemon.monsno].push(currentPokemon.id);
+  } else {
+    formMap[currentPokemon.monsno].push(-1);
+  }
   return formMap;
 }
 
