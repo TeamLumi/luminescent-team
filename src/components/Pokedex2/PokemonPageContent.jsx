@@ -15,7 +15,7 @@ import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
 import { getTechMachineLearnset } from '../../utils/dex/moves';
-import ModeSwitch from './ModeSwitch';
+import ModeSwitch from '../common/ModeSwitch';
 import { useGlobalState } from '../common/GlobalState';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex';
 import { PokemonLocations } from './PokemonLocations';

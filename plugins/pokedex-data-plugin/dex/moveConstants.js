@@ -200,6 +200,13 @@ const Z_MOVES = [
   "twinkle-tackle",
 ];
 
+const LEARNSET_TYPES_MAP = {
+  "level": "Level",
+  "egg": "Egg Move",
+  "tm": "TM",
+  "tutor": "Tutor Move"
+}
+
 module.exports = {
   STATUS_EFFECTS,
   MOVE_CATEGORIES,
@@ -216,5 +223,6 @@ module.exports = {
   FLINCH_RATIOS,
   HP_RECOVER_RATIO,
   STAT_EFFECT_CHANCE,
-  Z_MOVES
+  Z_MOVES,
+  LEARNSET_TYPES_MAP
 };

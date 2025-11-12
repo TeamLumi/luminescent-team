@@ -146,6 +146,12 @@ const GAMEDATAV = "vanilla";
 const GAMEDATA2 = "2.0";
 const GAMEDATA3 = "3.0";
 
+const GAME_MODE_STRINGS = {
+  [GAMEDATAV]: "Vanilla BDSP",
+  [GAMEDATA2]: "Luminescent 2.1F",
+  [GAMEDATA3]: "Re:Illuminated",
+}
+
 const PersonalTable = {
   [GAMEDATAV]: PersonalTableVanilla,
   [GAMEDATA2]: PersonalTable2,
@@ -336,6 +342,7 @@ module.exports = {
   GAMEDATA2,
   GAMEDATA3,
   GAMEDATAV,
+  GAME_MODE_STRINGS,
   PersonalTable,
   GrowTable,
   EvolveTable,

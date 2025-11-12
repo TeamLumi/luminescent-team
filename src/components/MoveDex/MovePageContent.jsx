@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from '@docusaurus/Link';
 import { Box, Container, FormGroup, Typography, Checkbox, FormControlLabel, Card, CardHeader, CardContent } from '@mui/material';
 
@@ -7,24 +7,23 @@ import { MovesetListItem } from '../Pokedex2/PokemonMovesetList';
 import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 
-import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
+import { GAME_MODE_STRINGS, GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 import { getImage } from '../../utils/dex';
 import { getMoveProperties, searchForMovesOnPokemon } from '../../../plugins/pokedex-data-plugin/dex/moves';
 import { getPokemonIdFromMonsNoAndForm } from '../../../plugins/pokedex-data-plugin/dex/functions';
 import { getPokemonName } from '../../../plugins/pokedex-data-plugin/dex/name';
-import { FLAG_STRINGS } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
+import { FLAG_STRINGS, LEARNSET_TYPES_MAP } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
+import { useGlobalState } from '../common/GlobalState';
+import ModeSwitch from '../common/ModeSwitch';
 
 const MoveContainer = ({ gameMode, move }) => {
   return (
     <Box
-      display="grid"
       border={"2px solid var(--ifm-table-border-color)"}
       borderRadius={"5px"}
       padding={"15px"}
       margin={"1rem 0"}
-      gridTemplateColumns={"1fr 11fr"}
     >
-      <Typography sx={{ margin: "1rem 0" }}>{gameMode}</Typography>
       {move?.name ? (
         <Box
           sx={{
@@ -166,14 +165,11 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
 const MoveLearnBox = ({ mode, moveset }) => {
   return (
     <>
-      {moveset?.[mode] && (
+      {moveset?.learnsets && (
         <>
-          <Typography>
-            {mode}
-          </Typography>
-          <Typography>
-            {moveset?.[mode]?.map(
-              (moveType) => (<li key={`${mode}-${moveType}`}>{`${moveType}`}</li>))
+          <Typography marginLeft={"1rem"}>
+            {moveset?.learnsets?.map(
+              (moveType) => (<li key={`${mode}-${moveType}`}>{`${LEARNSET_TYPES_MAP[moveType]}`}</li>))
               || ""
             }
           </Typography>
@@ -183,23 +179,23 @@ const MoveLearnBox = ({ mode, moveset }) => {
   )
 };
 
-const PokemonMovesetContainer = ({ moveset }) => {
+const PokemonMovesetContainer = ({ moveset, gameMode }) => {
   const [monsNo, formNo] = moveset.id.split("-");
-  const pokemonId = getPokemonIdFromMonsNoAndForm(parseInt(monsNo), parseInt(formNo), GAMEDATA3);
+  const pokemonId = getPokemonIdFromMonsNoAndForm(parseInt(monsNo), parseInt(formNo), gameMode);
   const pokemonPath = parseInt(formNo) === 0 ? monsNo : `${monsNo}_${formNo}`;
 
   return (
     <Box
       key={moveset.id}
       display="grid"
-      gridTemplateColumns=".5fr 1.5fr"
+      gridTemplateColumns=".75fr 1.5fr"
       rowGap="16px"
       height="min-content"
-      alignSelf="center"
       border="2px solid var(--ifm-table-border-color)"
       borderRadius="5px"
       margin={{ xs: "8px 0px", sm: "8px" }}
       padding="8px"
+      alignSelf={"start"}
       sx={{
         // If you don't split them up like this, then they will
         // have overlapping values and overwrite each other
@@ -241,9 +237,9 @@ const PokemonMovesetContainer = ({ moveset }) => {
         },
       }}
     >
-      <Box alignContent="center">
+      <Box margin={"auto"} textAlign={"center"}>
         <Link to={`/pokedex/${pokemonPath}`}>
-          <Typography>{getPokemonName(pokemonId, GAMEDATA3)}</Typography>
+          <Typography>{getPokemonName(pokemonId, gameMode)}</Typography>
         </Link>
         <ImageWithFallback
           alt={moveset.id}
@@ -255,25 +251,34 @@ const PokemonMovesetContainer = ({ moveset }) => {
         />
       </Box>
       <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: ".75fr .75fr",
-          padding: "8px"
-        }}
+        sx={{ padding: "8px", paddingTop: "0px" }}
       >
-        <Box gridColumn="span 2">
+        <Box>
           {"How to Learn it:"}
         </Box>
-        <MoveLearnBox mode={GAMEDATAV} moveset={moveset} />
-        <MoveLearnBox mode={GAMEDATA2} moveset={moveset} />
-        <MoveLearnBox mode={GAMEDATA3} moveset={moveset} />
+        <MoveLearnBox mode={gameMode} moveset={moveset} />
       </Box>
     </Box>
   );
 };
 
 const MovePageContent = ({ move2, move3, moveV, movesList }) => {
-  const [moveName, setMoveName] = useState(move3.name);
+  const MOVE_MODE_MAP = {
+    [GAMEDATAV]: moveV,
+    [GAMEDATA2]: move2,
+    [GAMEDATA3]: move3
+  }
+  const [globalState, updateMode] = useGlobalState();
+
+  const [move, setMove] = useState(MOVE_MODE_MAP[globalState.mode]);
+  const [validMoves, setValidMoves] = useState(
+    searchForMovesOnPokemon(MOVE_MODE_MAP[globalState.mode].moveId, globalState.mode)
+  );
+
+  useEffect(() => {
+    setMove(MOVE_MODE_MAP[globalState.mode]);
+    setValidMoves(searchForMovesOnPokemon(MOVE_MODE_MAP[globalState.mode].moveId, globalState.mode));
+  }, [globalState.mode]);
 
   const combineLearnsetsByMode = (data) => {
     const combinedData = {};
@@ -318,8 +323,8 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
           sx={{
             display: { xs: "grid", sm: "flex" },
             gridTemplate: {
-              xs: `"a b"
-                   "c c"`,
+              xs: `"a a"
+                   "b b"`,
               sm: "unset"
             },
             gap: { xs: ".5rem", sm: "unset" },
@@ -327,16 +332,13 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
             marginTop: "16px",
           }}
         >
-          <MoveSearchBox movesList={movesList} moveName={moveName} />
+          <MoveSearchBox movesList={movesList} moveName={move.name} />
+          <ModeSwitch />          
         </Box>
       </Container>
       <Container>
-        <MoveContainer gameMode={"Vanilla BDSP"} move={moveV} />
-        <ExtendedMoveContainer gameMode={GAMEDATAV} move={moveV} />
-        <MoveContainer gameMode={"Luminescent 2.1.1F"} move={move2} />
-        <ExtendedMoveContainer gameMode={GAMEDATA2} move={move2} />
-        <MoveContainer gameMode={"Re: Illuminated"} move={move3} />
-        <ExtendedMoveContainer gameMode={GAMEDATA3} move={move3} />
+        <MoveContainer gameMode={GAME_MODE_STRINGS[globalState.mode]} move={move} />
+        <ExtendedMoveContainer gameMode={globalState.mode} move={move} />
       </Container>
       <Container>
         <Box
@@ -348,9 +350,16 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
             lg: "1fr 1fr 1fr 1fr",
           }}
         >
-          {movesetLists.map((moveset, index) => (
-            <PokemonMovesetContainer key={`moveset-container-${moveset.id}-${index}`} moveset={moveset} />
-          ))}
+          {validMoves.map((moveset, index) => {
+            console.log(moveset, moveset.id);
+            return (
+              <PokemonMovesetContainer
+                key={`moveset-container-${moveset.id}-${index}`}
+                moveset={moveset}
+                gameMode={globalState.mode}
+              />
+            );
+          })}
         </Box>
       </Container>
     </Container>
