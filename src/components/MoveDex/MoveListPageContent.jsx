@@ -48,6 +48,7 @@ import {
   STATUS_MOVE
 } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
 import { DoubleArrow } from '@mui/icons-material';
+import ModeSwitch from '../common/ModeSwitch';
 
 export const defaultSearchTable = {
   name: { label: "", value: "" },
@@ -216,8 +217,14 @@ const MoveListPageContent = ({ movesList }) => {
               searchTable={searchTable}
               handleChange={handleChange}
             />
-            <Button onClick={() => setFilterDrawerOpen(true)}>
-              Open Filters
+            <ModeSwitch />
+            <Button
+              variant='outlined'
+              onClick={() => setFilterDrawerOpen(true)}
+              sx={{ marginLeft: { xs: "unset", sm: "0.25rem" }}}
+              gridArea={"b"}
+            >
+              Filters
             </Button>
           </Box>
 

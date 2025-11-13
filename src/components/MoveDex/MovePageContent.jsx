@@ -324,7 +324,7 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
             display: { xs: "grid", sm: "flex" },
             gridTemplate: {
               xs: `"a a"
-                   "b b"`,
+                   "c c"`,
               sm: "unset"
             },
             gap: { xs: ".5rem", sm: "unset" },
