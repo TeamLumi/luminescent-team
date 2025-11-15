@@ -33,7 +33,7 @@ function padNumberWithZeros(number) {
   }
 }
 
-export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNames3, pokemonV, pokemonNamesV }) => {
+const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNames3, pokemonV, pokemonNamesV }) => {
   const POKEMON_MODE_MAP = {
     [GAMEDATAV]: pokemonV,
     [GAMEDATA2]: pokemon,
@@ -288,3 +288,5 @@ export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNam
     </Container>
   );
 };
+
+export default PokemonPageContent;

@@ -293,6 +293,9 @@ function getEventEncounters(areaEncounters) {
 };
 
 function getMapperRoutesFromPokemonId(pokemonId, mode = GAMEDATA2) {
+  if (!pokemonId) {
+    return [];
+  }
   const routeNames = [];
   const ModePokemonLocations = PokemonLocations[mode];
   const ModeStaticLocations = StaticLocations[mode];

@@ -9,9 +9,9 @@ const { GAMEDATA2, GAMEDATA3, GAMEDATAV } = require('../../__gamedata');
 /**
  * @param {{path: string, routeBasePath: string, pokemonComponent: string, pokemonRedirectComponent: string, listComponent: string, wrapperComponent: string, mapComponent: string}} options
  * @param {import('@docusaurus/types').LoadContext} context
- * @returns {import('@docusaurus/types').Plugin<any>}
+ * @returns {Promise<import('@docusaurus/types').Plugin<any>>}
  */
-function pokedexDataPlugin(context, options) {
+export default async function pokedexDataPlugin(context, options) {
   return {
     name: 'luminescent-pokedex-data-plugin',
     async loadContent() {
@@ -199,5 +199,3 @@ pokedexDataPlugin.validateOptions = ({ options, validate }) => {
   const validatedOptions = validate(optionsSchema, options);
   return validatedOptions;
 };
-
-module.exports = pokedexDataPlugin;

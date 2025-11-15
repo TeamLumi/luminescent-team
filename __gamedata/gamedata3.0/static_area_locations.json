@@ -1583,7 +1583,7 @@
       "pokemonName": "Uxie"
     }
   ],
-  "326": [
+  "325": [
     {
       "routeName": "Lake Verity Cavern",
       "encounterType": "Legendaries",
@@ -1591,7 +1591,7 @@
       "minLevel": 60,
       "maxLevel": 60,
       "encounterTypeIndex": 0,
-      "zoneId": 326,
+      "zoneId": 325,
       "pokemonName": "Mesprit"
     }
   ],
