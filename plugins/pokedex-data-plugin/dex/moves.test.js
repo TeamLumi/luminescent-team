@@ -158,7 +158,7 @@ describe('Dex Utils Move Getters', () => {
 
   describe('getMoveProperties', () => {
     test.each([
-      [1, 'Pound', 'The target is physically pounded with a long tail, a foreleg, or the like.', 0, 1, 56, 40, 100],
+      [1, 'Pound', 'The target is physically pounded with a long tail, a foreleg, or the like.', 0, 1, 56, 40, 100, "pound"],
       [
         100,
         'Teleport',
@@ -168,6 +168,7 @@ describe('Dex Utils Move Getters', () => {
         32,
         0,
         101,
+        "teleport"
       ],
       [
         250,
@@ -178,10 +179,11 @@ describe('Dex Utils Move Getters', () => {
         24,
         35,
         85,
+        "whirlpool"
       ],
     ])(
       'returns the expected properties for moveId $moveId',
-      (moveId, name, desc, type, damageType, maxPP, power, accuracy) => {
+      (moveId, name, desc, type, damageType, maxPP, power, accuracy, movePath) => {
         expect(getMoveProperties(moveId)).toEqual({
           moveId,
           name,
@@ -191,6 +193,7 @@ describe('Dex Utils Move Getters', () => {
           maxPP,
           power,
           accuracy,
+          movePath,
         });
       },
     );
@@ -205,6 +208,7 @@ describe('Dex Utils Move Getters', () => {
         maxPP: 0,
         power: 0,
         accuracy: 0,
+        movePath: "",
       });
     });
   });
@@ -230,18 +234,19 @@ describe('Dex Utils Move Getters', () => {
     // Test case 4: Valid input, monsno and formno exist in tutorMoves
     it('returns an array of tutor moves for valid monsno and formno', () => {
       const expectedResult = [
-          {
-            "move": {
-              "accuracy": 95,
-              "damageType": 2,
-              "desc": "The user attacks and captures opposing Pokémon using an electric net. This lowers their Speed stats.",
-              "maxPP": 24,
-              "moveId": 527,
-              "name": "Electroweb",
-              "power": 55,
-              "type": 12,
-            },
-            "moveLevel": 0,
+        {
+          "move": {
+            "accuracy": 95,
+            "damageType": 2,
+            "desc": "The user attacks and captures opposing Pokémon using an electric net. This lowers their Speed stats.",
+            "maxPP": 24,
+            "moveId": 527,
+            "movePath": "electroweb",
+            "name": "Electroweb",
+            "power": 55,
+            "type": 12,
+          },
+          "moveLevel": 0,
         },
         {
           "move": {
@@ -250,6 +255,7 @@ describe('Dex Utils Move Getters', () => {
             "desc": "The user hardens its body’s surface like iron, sharply raising its Defense stat.",
             "maxPP": 24,
             "moveId": 334,
+            "movePath": "iron-defense",
             "name": "Iron Defense",
             "power": 0,
             "type": 8,

@@ -118,7 +118,7 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
     throw Error("There's a problem, move doesn't exist", moveId, mode);
   }
 
-  const moveName = getMoveString(moveId, mode);
+  const moveName = moveId === 0 ? "———" : getMoveString(moveId, mode);
   const type = move.type;
   const damageType = move.damageType;
   const power = move.power;
