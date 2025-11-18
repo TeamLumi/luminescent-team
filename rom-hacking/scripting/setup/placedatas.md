@@ -17,7 +17,7 @@ Placedatas are where you put any and all interactables that you want in your mod
 
 Placedatas are very powerful in what they allow you to express, allowing you to very simply edit the position, the size, movement or model referenced.
 
-Unlike in NDS scripting, external areas are condensed into areas. Ie. R201 and Jubilife are all a part of Placedata_A01. The zonemap will help you with location which zones are where in the files via Ctrl+F zoneID: "your zone ID".
+Unlike in NDS scripting, external areas are condensed into areas. Ie. R201 and Jubilife are all a part of Placedata_A01. The [zonemap](/rom-hacking/dictionary/zones) will help you with location which zones are where in the files via Ctrl+F zoneID: "your zone ID".
 
 When editing Placedatas, you may need to leave the area and come back to get the edited changes to occur, as the game likes to cache your immediate area.
 
