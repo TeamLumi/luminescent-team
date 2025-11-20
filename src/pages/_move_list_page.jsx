@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 
 import MoveListPageContent from '../components/MoveDex/MoveListPageContent';
+import { GlobalState } from '../components/common/GlobalState';
 
 const MoveDexListPage = ({ movesList }) => {
   return(
@@ -9,7 +10,9 @@ const MoveDexListPage = ({ movesList }) => {
       title="Move Dex"
       description="A Rom Hack for Pokémon Brilliant Diamond."
     >
-      <MoveListPageContent movesList={movesList}/>
+      <GlobalState>
+        <MoveListPageContent movesList={movesList}/>
+      </GlobalState>
     </Layout>
   );
 };

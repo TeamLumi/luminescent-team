@@ -8,7 +8,7 @@ import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { PokemonInfoButton } from './PokedexInfoButton';
 import { useGlobalState } from '../common/GlobalState';
-import ModeSwitch from './ModeSwitch';
+import ModeSwitch from '../common/ModeSwitch';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 

@@ -130,7 +130,7 @@ describe('Dex utils function tests', () => {
   describe('createFormMap', () => {
     test('should add an ID to an existing form array', () => {
       const formMap = { 25: [1, 2, 3] };
-      const currentPokemon = { monsno: 25, id: 4 };
+      const currentPokemon = { monsno: 25, id: 4, valid_flag: 1 };
       const expectedFormMap = { 25: [1, 2, 3, 4] };
       const actualFormMap = createFormMap(formMap, currentPokemon);
       expect(actualFormMap).toEqual(expectedFormMap);
@@ -138,7 +138,7 @@ describe('Dex utils function tests', () => {
 
     test('should create a new form array if none exists for the monsno', () => {
       const formMap = { 25: [1, 2, 3] };
-      const currentPokemon = { monsno: 700, id: 1 };
+      const currentPokemon = { monsno: 700, id: 1, valid_flag: 1 };
       const expectedFormMap = { 25: [1, 2, 3], 700: [1] };
       const actualFormMap = createFormMap(formMap, currentPokemon);
       expect(actualFormMap).toEqual(expectedFormMap);

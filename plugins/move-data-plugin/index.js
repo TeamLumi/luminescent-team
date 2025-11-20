@@ -5,6 +5,7 @@ const { GAMEDATA2, GAMEDATA3, GAMEDATAV, MovesTable } = require('../../__gamedat
 const { getMoveProperties } = require('../pokedex-data-plugin/dex/moves');
 const { normalizePokemonName } = require('../pokedex-data-plugin/dex/name');
 const { getTypeName } = require('../pokedex-data-plugin/dex/types');
+const { Z_MOVES } = require('../pokedex-data-plugin/dex/moveConstants');
 
 /**
  * @param {{path: string, routeBasePath: string, moveComponent: string, moveListComponent: string, wrapperComponent: string}} options
@@ -27,13 +28,27 @@ function moveDexDataPlugin(context, options) {
       const moves3 = MovesTable[GAMEDATA3].Waza.slice(1).map(
         (move) => getMoveProperties(move.wazaNo, GAMEDATA3, true)
       );
-      const movesList3 = moves3.map((m) => ({
-        ...m,
-        id: m.moveId,
-        name: m.name,
-        type: m.type,
-        typeName: getTypeName(m.type),
-      }));
+
+      const firstZMoveMap = Object.fromEntries(Z_MOVES.map(z => [z, 0]));
+
+      const movesList3 = moves3
+        .filter(m => {
+          if (!Z_MOVES.includes(m.movePath)) return true;
+
+          if (firstZMoveMap[m.movePath] === 0) {
+            firstZMoveMap[m.movePath] = 1;
+            return true; // keep first
+          }
+
+          return false; // skip duplicates
+        })
+        .map(m => ({
+          ...m,
+          id: m.moveId,
+          name: m.name,
+          type: m.type,
+          typeName: getTypeName(m.type),
+        }));
 
       return {
         movesV,
@@ -57,23 +72,32 @@ function moveDexDataPlugin(context, options) {
       };
 
       const moveRoutes = [];
+      const zMoveMap = {};
+      for (const item of Z_MOVES) {
+        zMoveMap[item] = 0;
+      }
       await Promise.all(
         content.moves3.map(async (move3) => {
-          const moveName = normalizePokemonName(move3.name, GAMEDATA3);
-          const movePath = `${moveDexPath}/${moveName}`;
+          if (Z_MOVES.includes(move3.movePath)) {
+            if (zMoveMap[move3.movePath] === 1) {
+              return
+            }
+            zMoveMap[move3.movePath] += 1
+          }
+          const movePath = `${moveDexPath}/${move3.movePath}`;
 
-          const moveJson3 = await actions.createData(`3.0lumi${moveName}.json`, JSON.stringify(move3));
+          const moveJson3 = await actions.createData(`3.0lumi-${move3.movePath}.json`, JSON.stringify(move3));
           let moveJson2 = null;
           let moveJsonV = null;
 
           const move2 = content.moves2.find((m2) => m2.name === move3.name);
           if (move2) {
-            moveJson2 = await actions.createData(`2.0lumi${moveName}.json`, JSON.stringify(move2));
+            moveJson2 = await actions.createData(`2.0lumi-${move3.movePath}.json`, JSON.stringify(move2));
           }
 
           const moveV = content.movesV.find((mV) => mV.name === move3.name);
           if (moveV) {
-            moveJsonV = await actions.createData(`VanilaBDSP${moveName}.json`, JSON.stringify(moveV));
+            moveJsonV = await actions.createData(`VanilaBDSP-${move3.movePath}.json`, JSON.stringify(moveV));
           }
 
           moveRoutes.push({

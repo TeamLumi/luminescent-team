@@ -179,6 +179,34 @@ const DAMAGE_TYPES = [
   "Special"
 ];
 
+const Z_MOVES = [
+  "acid-downpour",
+  "all-out-pummeling",
+  "black-hole-eclipse",
+  "bloom-doom",
+  "breakneck-blitz",
+  "continental-crush",
+  "corkscrew-crash",
+  "devastating-drake",
+  "gigavolt-havoc",
+  "hydro-vortex",
+  "inferno-overdrive",
+  "never-ending-nightmare",
+  "savage-spin-out",
+  "shattered-psyche",
+  "subzero-slammer",
+  "supersonic-skystrike",
+  "tectonic-rage",
+  "twinkle-tackle",
+];
+
+const LEARNSET_TYPES_MAP = {
+  "level": "Level",
+  "egg": "Egg Move",
+  "tm": "TM",
+  "tutor": "Tutor Move"
+}
+
 module.exports = {
   STATUS_EFFECTS,
   MOVE_CATEGORIES,
@@ -194,5 +222,7 @@ module.exports = {
   DAMAGE_RECOVER_RATIO,
   FLINCH_RATIOS,
   HP_RECOVER_RATIO,
-  STAT_EFFECT_CHANCE
+  STAT_EFFECT_CHANCE,
+  Z_MOVES,
+  LEARNSET_TYPES_MAP
 };

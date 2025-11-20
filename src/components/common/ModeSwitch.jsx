@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { useGlobalState } from '../common/GlobalState';
+import { useGlobalState } from './GlobalState';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
-import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
+import { GAMEDATA2, GAMEDATA3, GAMEDATAV, GAME_MODE_STRINGS } from '../../../__gamedata';
 import { useColorMode } from '@docusaurus/theme-common';
 
 const ModeSwitch = () => {
@@ -28,9 +28,9 @@ const ModeSwitch = () => {
         label="Version"
         onChange={handleChange}
       >
-        <MenuItem value={GAMEDATAV}>Vanilla BDSP</MenuItem>
-        <MenuItem value={GAMEDATA2}>Luminescent 2.2F</MenuItem>
-        <MenuItem value={GAMEDATA3}>Re:Illuminated</MenuItem>
+        <MenuItem value={GAMEDATAV}>{GAME_MODE_STRINGS[GAMEDATAV]}</MenuItem>
+        <MenuItem value={GAMEDATA2}>{GAME_MODE_STRINGS[GAMEDATA2]}</MenuItem>
+        <MenuItem value={GAMEDATA3}>{GAME_MODE_STRINGS[GAMEDATA3]}</MenuItem>
       </Select>
     </FormControl>
   )  

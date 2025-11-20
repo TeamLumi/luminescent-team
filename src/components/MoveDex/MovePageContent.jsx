@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from '@docusaurus/Link';
 import { Box, Container, FormGroup, Typography, Checkbox, FormControlLabel, Card, CardHeader, CardContent } from '@mui/material';
 
@@ -7,24 +7,23 @@ import { MovesetListItem } from '../Pokedex2/PokemonMovesetList';
 import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
 import { ImageWithFallback } from '../common/ImageWithFallback';
 
-import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
+import { GAME_MODE_STRINGS, GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 import { getImage } from '../../utils/dex';
 import { getMoveProperties, searchForMovesOnPokemon } from '../../../plugins/pokedex-data-plugin/dex/moves';
 import { getPokemonIdFromMonsNoAndForm } from '../../../plugins/pokedex-data-plugin/dex/functions';
 import { getPokemonName } from '../../../plugins/pokedex-data-plugin/dex/name';
-import { FLAG_STRINGS } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
+import { FLAG_STRINGS, LEARNSET_TYPES_MAP } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
+import { useGlobalState } from '../common/GlobalState';
+import ModeSwitch from '../common/ModeSwitch';
 
 const MoveContainer = ({ gameMode, move }) => {
   return (
     <Box
-      display="grid"
       border={"2px solid var(--ifm-table-border-color)"}
       borderRadius={"5px"}
       padding={"15px"}
       margin={"1rem 0"}
-      gridTemplateColumns={"1fr 11fr"}
     >
-      <Typography sx={{ margin: "1rem 0" }}>{gameMode}</Typography>
       {move?.name ? (
         <Box
           sx={{
@@ -56,6 +55,9 @@ const MoveContainer = ({ gameMode, move }) => {
 };
 
 const ExtendedMoveContainer = ({ gameMode, move }) => {
+  if (!move?.name) {
+    return null;
+  }
   let hitCount = `${move.minHitCount}-${move.maxHitCount}`
   if (move.minHitCount === 0 && move.maxHitCount === 0) {
     hitCount = "0"
@@ -65,115 +67,104 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
     hitCount = "3"
   }
   return (
-    <PokemonAccordion
-      disabled={!move?.name}
-      title="Extended Details"
-      id={`${move.name}-${gameMode}`}
-    >
-      {move?.name && (
-        <Box sx={{ display: { sm: "grid"}, gridTemplateAreas: { sm: "'a a' 'b d' 'c d'", md: "'a d' 'b d' 'c d'" }}}>
-          <Card sx={{gridArea: "a"}} variant='outlined'>
-            <CardHeader title="Stat Changes" />
-            {move.statChanges.some(stat => stat.statType !== "None") ? (
-              <CardContent sx={{
-                display:"grid",
-                gridTemplateColumns:"1fr 2fr 1fr 1.5fr",
-                justifyItems:"center"
-              }}>
-                <Typography></Typography>
-                <Typography>Stat Type</Typography>
-                <Typography>Stages</Typography>
-                <Typography>% Chance</Typography>
+    <Box sx={{ display: { sm: "grid"}, gridTemplateAreas: { sm: "'a a' 'b d' 'c d'", md: "'a d' 'b d' 'c d'" }}}>
+      <Card sx={{gridArea: "a"}} variant='outlined'>
+        <CardHeader title="Stat Changes" />
+        {move.statChanges.some(stat => stat.statType !== "None") ? (
+          <CardContent sx={{
+            display:"grid",
+            gridTemplateColumns:"1fr 2fr 1fr 1.5fr",
+            justifyItems:"center"
+          }}>
+            <Typography></Typography>
+            <Typography>Stat Type</Typography>
+            <Typography>Stages</Typography>
+            <Typography>% Chance</Typography>
 
-                <Typography>Stat 1</Typography>
-                <Typography>{move.statChanges[0].statType}</Typography>
-                <Typography>{move.statChanges[0].stages}</Typography>
-                <Typography>{move.statChanges[0].rate}</Typography>
+            <Typography>Stat 1</Typography>
+            <Typography>{move.statChanges[0].statType}</Typography>
+            <Typography>{move.statChanges[0].stages}</Typography>
+            <Typography>{move.statChanges[0].rate}</Typography>
 
-                {move.statChanges[1].statType !== "None" && (
-                  <>
-                    <Typography>Stat 2</Typography>
-                    <Typography>{move.statChanges[1].statType}</Typography>
-                    <Typography>{move.statChanges[1].stages}</Typography>
-                    <Typography>{move.statChanges[1].rate}</Typography>
-                  </>
-                )}
+            {move.statChanges[1].statType !== "None" && (
+              <>
+                <Typography>Stat 2</Typography>
+                <Typography>{move.statChanges[1].statType}</Typography>
+                <Typography>{move.statChanges[1].stages}</Typography>
+                <Typography>{move.statChanges[1].rate}</Typography>
+              </>
+            )}
 
-                {move.statChanges[2].statType !== "None" && (
-                  <>
-                    <Typography>Stat 3</Typography>
-                    <Typography>{move.statChanges[2].statType}</Typography>
-                    <Typography>{move.statChanges[2].stages}</Typography>
-                    <Typography>{move.statChanges[2].rate}</Typography>
-                  </>
-                )}
-              </CardContent>
-            ) : <CardContent>{"This move doesn't change stats"}</CardContent>}
-          </Card>
-          <Card sx={{gridArea: "b"}} variant='outlined'>
-            <CardHeader title="Status Affliction" />
-            {move.statusEffects.status !== "None" ? (
-              <CardContent>
-                <Typography>{`Status: ${move.statusEffects.status}`}</Typography>
-                <Typography>{`Affliction Rate: ${move.statusEffects.rate}`}</Typography>
-                <Typography>{`Status Type: ${move.statusEffects.sickCont}`}</Typography>
-                <Typography>
-                  {`Duration: ${move.statusEffects.minDuration}-${move.statusEffects.maxDuration} turns`}
-                </Typography>
-              </CardContent>
-            ) : <CardContent>{"This move doesn't inflict status"}</CardContent>}
-          </Card>
-          <Card sx={{gridArea: "c"}} variant='outlined'>
-            <CardHeader title="Misc" />
-            <CardContent>
-              <Typography>{`Move Id: ${move.moveId}`}</Typography>
-              <Typography>{`Move Class: ${move.moveClass}`}</Typography>
-              <Typography>{`Priority: ${move.priority}`}</Typography>
-              <Typography>{`Hit Count: ${hitCount} hit(s)`}</Typography>
-              <Typography>{`Base Crit Ratio: ${move.critRatio}`}</Typography>
-              <Typography>{`Flinch Chance: ${move.flinchChance}%`}</Typography>
-              <Typography>{`Damage Healed: ${move.healDamage}%`}</Typography>
-              <Typography>{`HP Recovery: ${move.hpRecover}%`}</Typography>
-              <Typography>{`Targeting: ${move.target}`}</Typography>
-            </CardContent>
-          </Card>
-          <Card sx={{gridArea: "d"}} variant='outlined'>
-            <CardHeader title="Flags" />
-            <CardContent>
-              <FormGroup>
-                {move.moveFlags.map((flag, index) => {
-                  if (index > 17) {
-                    return null;
-                  }
-                  const flagName = FLAG_STRINGS[index];
-                  return (
-                    <FormControlLabel
-                      key={`move-flag-${index}`}
-                      control={<Checkbox checked={flag} />}
-                      label={flagName}
-                    />
-                  )
-                })}
-              </FormGroup>
-            </CardContent>
-          </Card>
-        </Box>
-      )}
-    </PokemonAccordion>
+            {move.statChanges[2].statType !== "None" && (
+              <>
+                <Typography>Stat 3</Typography>
+                <Typography>{move.statChanges[2].statType}</Typography>
+                <Typography>{move.statChanges[2].stages}</Typography>
+                <Typography>{move.statChanges[2].rate}</Typography>
+              </>
+            )}
+          </CardContent>
+        ) : <CardContent>{"This move doesn't change stats"}</CardContent>}
+      </Card>
+      <Card sx={{gridArea: "b"}} variant='outlined'>
+        <CardHeader title="Status Affliction" />
+        {move.statusEffects.status !== "None" ? (
+          <CardContent>
+            <Typography>{`Status: ${move.statusEffects.status}`}</Typography>
+            <Typography>{`Affliction Rate: ${move.statusEffects.rate}`}</Typography>
+            <Typography>{`Status Type: ${move.statusEffects.sickCont}`}</Typography>
+            <Typography>
+              {`Duration: ${move.statusEffects.minDuration}-${move.statusEffects.maxDuration} turns`}
+            </Typography>
+          </CardContent>
+        ) : <CardContent>{"This move doesn't inflict status"}</CardContent>}
+      </Card>
+      <Card sx={{gridArea: "c"}} variant='outlined'>
+        <CardHeader title="Misc" />
+        <CardContent>
+          <Typography>{`Move Id: ${move.moveId}`}</Typography>
+          <Typography>{`Move Class: ${move.moveClass}`}</Typography>
+          <Typography>{`Priority: ${move.priority}`}</Typography>
+          <Typography>{`Hit Count: ${hitCount} hit(s)`}</Typography>
+          <Typography>{`Base Crit Ratio: ${move.critRatio}`}</Typography>
+          <Typography>{`Flinch Chance: ${move.flinchChance}%`}</Typography>
+          <Typography>{`Damage Healed: ${move.healDamage}%`}</Typography>
+          <Typography>{`HP Recovery: ${move.hpRecover}%`}</Typography>
+          <Typography>{`Targeting: ${move.target}`}</Typography>
+        </CardContent>
+      </Card>
+      <Card sx={{gridArea: "d"}} variant='outlined'>
+        <CardHeader title="Flags" />
+        <CardContent>
+          <FormGroup>
+            {move.moveFlags.map((flag, index) => {
+              if (index > 17) {
+                return null;
+              }
+              const flagName = FLAG_STRINGS[index];
+              return (
+                <FormControlLabel
+                  key={`move-flag-${index}`}
+                  control={<Checkbox checked={flag} />}
+                  label={flagName}
+                />
+              )
+            })}
+          </FormGroup>
+        </CardContent>
+      </Card>
+    </Box>
   );
 }
 
 const MoveLearnBox = ({ mode, moveset }) => {
   return (
     <>
-      {moveset?.[mode] && (
+      {moveset?.learnsets && (
         <>
-          <Typography>
-            {mode}
-          </Typography>
-          <Typography>
-            {moveset?.[mode]?.map(
-              (moveType) => (<li key={`${mode}-${moveType}`}>{`${moveType}`}</li>))
+          <Typography marginLeft={"1rem"}>
+            {moveset?.learnsets?.map(
+              (moveType) => (<li key={`${mode}-${moveType}`}>{`${LEARNSET_TYPES_MAP[moveType]}`}</li>))
               || ""
             }
           </Typography>
@@ -183,23 +174,23 @@ const MoveLearnBox = ({ mode, moveset }) => {
   )
 };
 
-const PokemonMovesetContainer = ({ moveset }) => {
+const PokemonMovesetContainer = ({ moveset, gameMode }) => {
   const [monsNo, formNo] = moveset.id.split("-");
-  const pokemonId = getPokemonIdFromMonsNoAndForm(parseInt(monsNo), parseInt(formNo), GAMEDATA3);
+  const pokemonId = getPokemonIdFromMonsNoAndForm(parseInt(monsNo), parseInt(formNo), gameMode);
   const pokemonPath = parseInt(formNo) === 0 ? monsNo : `${monsNo}_${formNo}`;
 
   return (
     <Box
       key={moveset.id}
       display="grid"
-      gridTemplateColumns=".5fr 1.5fr"
+      gridTemplateColumns=".75fr 1.5fr"
       rowGap="16px"
       height="min-content"
-      alignSelf="center"
       border="2px solid var(--ifm-table-border-color)"
       borderRadius="5px"
       margin={{ xs: "8px 0px", sm: "8px" }}
       padding="8px"
+      alignSelf={"start"}
       sx={{
         // If you don't split them up like this, then they will
         // have overlapping values and overwrite each other
@@ -241,9 +232,9 @@ const PokemonMovesetContainer = ({ moveset }) => {
         },
       }}
     >
-      <Box alignContent="center">
+      <Box margin={"auto"} textAlign={"center"}>
         <Link to={`/pokedex/${pokemonPath}`}>
-          <Typography>{getPokemonName(pokemonId, GAMEDATA3)}</Typography>
+          <Typography>{getPokemonName(pokemonId, gameMode)}</Typography>
         </Link>
         <ImageWithFallback
           alt={moveset.id}
@@ -255,70 +246,85 @@ const PokemonMovesetContainer = ({ moveset }) => {
         />
       </Box>
       <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: ".75fr .75fr",
-          padding: "8px"
-        }}
+        sx={{ padding: "8px", paddingTop: "0px" }}
       >
-        <Box gridColumn="span 2">
+        <Box>
           {"How to Learn it:"}
         </Box>
-        <MoveLearnBox mode={GAMEDATAV} moveset={moveset} />
-        <MoveLearnBox mode={GAMEDATA2} moveset={moveset} />
-        <MoveLearnBox mode={GAMEDATA3} moveset={moveset} />
+        <MoveLearnBox mode={gameMode} moveset={moveset} />
       </Box>
     </Box>
   );
 };
 
 const MovePageContent = ({ move2, move3, moveV, movesList }) => {
-  const [moveName, setMoveName] = useState(move3.name);
+  const MOVE_MODE_MAP = {
+    [GAMEDATAV]: moveV,
+    [GAMEDATA2]: move2,
+    [GAMEDATA3]: move3
+  }
+  const [globalState, updateMode] = useGlobalState();
 
-  const combineLearnsetsByMode = (data) => {
-    const combinedData = {};
+  const [move, setMove] = useState(MOVE_MODE_MAP[globalState.mode]);
+  const [validMoves, setValidMoves] = useState(
+    searchForMovesOnPokemon(MOVE_MODE_MAP[globalState.mode].moveId, globalState.mode)
+  );
 
-    // Iterate through each mode
-    Object.entries(data).forEach(([mode, entries]) => {
-      entries.forEach(({ id, learnsets }) => {
-        // Ensure the ID exists in the combinedData
-        if (!combinedData[id]) {
-          combinedData[id] = { id };
-        }
+  useEffect(() => {
+    setMove(MOVE_MODE_MAP[globalState.mode]);
+    setValidMoves(searchForMovesOnPokemon(MOVE_MODE_MAP[globalState.mode].moveId, globalState.mode));
+  }, [globalState.mode]);
 
-        // Add the mode and its learnsets
-        if (!combinedData[id][mode]) {
-          combinedData[id][mode] = [];
-        }
-        combinedData[id][mode].push(...learnsets);
+  // const combineLearnsetsByMode = (data) => {
+  //   const combinedData = {};
 
-        // Deduplicate the learnsets for this mode
-        combinedData[id][mode] = [...new Set(combinedData[id][mode])];
-      });
-    });
+  //   // Iterate through each mode
+  //   Object.entries(data).forEach(([mode, entries]) => {
+  //     entries.forEach(({ id, learnsets }) => {
+  //       // Ensure the ID exists in the combinedData
+  //       if (!combinedData[id]) {
+  //         combinedData[id] = { id };
+  //       }
 
-    // Convert combinedData back to an array
-    return Object.values(combinedData);
-  };
+  //       // Add the mode and its learnsets
+  //       if (!combinedData[id][mode]) {
+  //         combinedData[id][mode] = [];
+  //       }
+  //       combinedData[id][mode].push(...learnsets);
 
-  const validMovesV = searchForMovesOnPokemon(moveV.moveId, GAMEDATAV);
-  const validMoves2 = searchForMovesOnPokemon(move2.moveId, GAMEDATA2);  
-  const validMoves3 = searchForMovesOnPokemon(move3.moveId, GAMEDATA3);
+  //       // Deduplicate the learnsets for this mode
+  //       combinedData[id][mode] = [...new Set(combinedData[id][mode])];
+  //     });
+  //   });
 
-  const movesetLists = combineLearnsetsByMode({
-    [GAMEDATAV]: validMovesV,
-    [GAMEDATA2]: validMoves2,
-    [GAMEDATA3]: validMoves3
-  });
+  //   // Convert combinedData back to an array
+  //   return Object.values(combinedData);
+  // };
+
+  // const validMovesV = searchForMovesOnPokemon(moveV.moveId, GAMEDATAV);
+  // const validMoves2 = searchForMovesOnPokemon(move2.moveId, GAMEDATA2);  
+  // const validMoves3 = searchForMovesOnPokemon(move3.moveId, GAMEDATA3);
+
+  // const movesetLists = combineLearnsetsByMode({
+  //   [GAMEDATAV]: validMovesV,
+  //   [GAMEDATA2]: validMoves2,
+  //   [GAMEDATA3]: validMoves3
+  // });
 
   return (
     <Container>
-      <Container>
+      <Container
+        sx={{
+          position: "sticky",
+          top: "75px",
+          zIndex: 2,
+        }}
+      >
         <Box
           sx={{
             display: { xs: "grid", sm: "flex" },
             gridTemplate: {
-              xs: `"a b"
+              xs: `"a a"
                    "c c"`,
               sm: "unset"
             },
@@ -327,18 +333,16 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
             marginTop: "16px",
           }}
         >
-          <MoveSearchBox movesList={movesList} moveName={moveName} />
+          <MoveSearchBox movesList={movesList} moveName={move3.name} />
+          <ModeSwitch />          
         </Box>
       </Container>
       <Container>
-        <MoveContainer gameMode={"Vanilla BDSP"} move={moveV} />
-        <ExtendedMoveContainer gameMode={GAMEDATAV} move={moveV} />
-        <MoveContainer gameMode={"Luminescent 2.1.1F"} move={move2} />
-        <ExtendedMoveContainer gameMode={GAMEDATA2} move={move2} />
-        <MoveContainer gameMode={"Re: Illuminated"} move={move3} />
-        <ExtendedMoveContainer gameMode={GAMEDATA3} move={move3} />
+        <MoveContainer gameMode={GAME_MODE_STRINGS[globalState.mode]} move={move} />
+        <ExtendedMoveContainer gameMode={globalState.mode} move={move} />
       </Container>
       <Container>
+        <Typography variant='h4' textAlign={"center"} margin={".5rem"}>Pokemon that can learn {move3.name}:</Typography>
         <Box
           display="grid"
           gridTemplateColumns={{
@@ -348,9 +352,15 @@ const MovePageContent = ({ move2, move3, moveV, movesList }) => {
             lg: "1fr 1fr 1fr 1fr",
           }}
         >
-          {movesetLists.map((moveset, index) => (
-            <PokemonMovesetContainer key={`moveset-container-${moveset.id}-${index}`} moveset={moveset} />
-          ))}
+          {validMoves.map((moveset, index) => {
+            return (
+              <PokemonMovesetContainer
+                key={`moveset-container-${moveset.id}-${index}`}
+                moveset={moveset}
+                gameMode={globalState.mode}
+              />
+            );
+          })}
         </Box>
       </Container>
     </Container>

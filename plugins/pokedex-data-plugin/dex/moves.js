@@ -14,7 +14,7 @@ const {
 } = require('../../../__gamedata');
 const { FORM_MAP, isValidPokemon } = require('./functions');
 const { STATUS_EFFECTS, SICK_CONT_STRINGS, CRITICAL_HIT_RATIO, MOVE_TARGETING, STATS_TO_CHANGE, MOVE_CATEGORIES } = require('./moveConstants');
-const { getPokemonFormId, getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId } = require('./name');
+const { getPokemonFormId, getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId, normalizePokemonName } = require('./name');
 
 const IS_MOVE_INDEX = false;
 const MAX_TM_COUNT = 104;
@@ -113,12 +113,12 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
     throw Error(`Incorrect mode provided: ${mode}`);
   }
   const ModeMovesTable = MovesTable[mode];
-  const ModeMoveNames = MoveNames[mode];
   const move = ModeMovesTable?.Waza?.[moveId];
   if (!move) {
     throw Error("There's a problem, move doesn't exist", moveId, mode);
   }
 
+  const moveName = moveId === 0 ? "———" : getMoveString(moveId, mode);
   const type = move.type;
   const damageType = move.damageType;
   const power = move.power;
@@ -166,7 +166,8 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
 
   return {
     moveId: moveId,
-    name: ModeMoveNames.labelDataArray[moveId].wordDataArray[0]?.str ?? 'None',
+    name: moveName ?? 'None',
+    movePath: normalizePokemonName(moveName),
     desc: getMoveDescription(moveId, mode),
     type,
     damageType, //0 = Status, 1 = Physical, 2 = Special
@@ -204,12 +205,26 @@ function getEggMoves(dexId = 0, mode = GAMEDATA2) {
 }
 
 function getMoveDescription(moveId = 0, mode = GAMEDATA2) {
-  const ModeMoveInfo = MoveInfo[mode];
-  const wordData = ModeMoveInfo.labelDataArray[moveId].wordDataArray;
-  const description = wordData.reduce((moveDescription, currentString) => {
-    return moveDescription + currentString.str + ' ';
-  }, '');
-  return description.trim();
+  const moveInfo = MoveInfo[mode];
+  const label = moveInfo.labelDataArray[moveId];
+  if (!label || !label.wordDataArray) return '';
+
+  const wordData = label.wordDataArray;
+  const len = wordData.length;
+
+  if (len === 0) return '';
+  if (len === 1) return wordData[0].str;
+
+  // Use manual accumulation with minimal allocations.
+  // Pre-size array to avoid push reallocation.
+  let result = '';
+  for (let i = 0; i < len - 1; i++) {
+    result += wordData[i].str + ' ';
+  }
+  // Append the last string without trailing space
+  result += wordData[len - 1].str;
+
+  return result;
 }
 
 function getTMCompatibility(pokemonId = 0, mode = GAMEDATA2) {
