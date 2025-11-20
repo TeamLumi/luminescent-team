@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[493784],{420763:e=>{e.exports="/pokedex/pok-ball-pattern-vivillon"}}]);
