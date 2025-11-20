@@ -17,7 +17,7 @@ Placedatas are where you put any and all interactables that you want in your mod
 
 Placedatas are very powerful in what they allow you to express, allowing you to very simply edit the position, the size, movement or model referenced.
 
-Unlike in NDS scripting, external areas are condensed into areas. Ie. R201 and Jubilife are all a part of Placedata_A01. The zonemap will help you with location which zones are where in the files via Ctrl+F zoneID: "your zone ID".
+Unlike in NDS scripting, external areas are condensed into areas. Ie. R201 and Jubilife are all a part of Placedata_A01. The [zonemap](/rom-hacking/dictionary/zones) will help you with location which zones are where in the files via Ctrl+F zoneID: "your zone ID".
 
 When editing Placedatas, you may need to leave the area and come back to get the edited changes to occur, as the game likes to cache your immediate area.
 
@@ -98,7 +98,7 @@ Stopdatas are your "trigger" events and require a Work variable to have a certai
 Stopdatas will only trigger when your work value has the specified param inside.
 For example, if you are using work value of 440 and a param of 1. If @440 does not equal to 1 in memory, the event will not trigger. In scripting you change what a work value holds by using `_LDVAL(@440, 1)`
 
-Not every zone has a stopdata available, which is problematic until we get monoscript insertion working. This means you are restricted in which zones you can add trigger events.
+In Vanilla BDSP not every zone has a stopdata available. This means you are restricted in which zones you can add trigger events. However, by ripping the masterdatas bundle to Unity using AssetRipper, we are able to add more to it (documentation surrounding this coming soon™).
 
 ```json
 {

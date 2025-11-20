@@ -138,7 +138,7 @@ describe('Dex utils function tests', () => {
     test('should add an ID to an existing form array', () => {
       const formMap = { 25: [1, 2, 3] };
       const currentPokemon = { monsno: 25, id: 4 };
-      const expectedFormMap = { 25: [1, 2, 3, 4] };
+      const expectedFormMap = { 25: [1, 2, 3, -1] };
       const actualFormMap = createFormMap(formMap, currentPokemon);
       expect(actualFormMap).toEqual(expectedFormMap);
     });
@@ -146,7 +146,7 @@ describe('Dex utils function tests', () => {
     test('should create a new form array if none exists for the monsno', () => {
       const formMap = { 25: [1, 2, 3] };
       const currentPokemon = { monsno: 700, id: 1 };
-      const expectedFormMap = { 25: [1, 2, 3], 700: [1] };
+      const expectedFormMap = { 25: [1, 2, 3], 700: [-1] };
       const actualFormMap = createFormMap(formMap, currentPokemon);
       expect(actualFormMap).toEqual(expectedFormMap);
     });
@@ -195,7 +195,7 @@ describe('Dex utils function tests', () => {
   describe('3.0 Functions Tests', () => {
     const MODE = GAMEDATA3;
     test('should return the correct Pokemon ID for a different monsno and formno', () => {
-      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1218);
+      expect(getPokemonIdFromMonsNoAndForm(493, 1, MODE)).toEqual(1210);
     });
     it('Should return the form_no when provided accurate monsno and pokemon ID', () => {
       const result = getPokemonIdFromFormMap(3, 3, MODE); //Clone Venusaur

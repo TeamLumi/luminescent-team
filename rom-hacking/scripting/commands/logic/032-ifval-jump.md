@@ -8,7 +8,7 @@
 
 Compares two values using the given comparison operator. Jumps to a script if the comparison is true.
 
-The position of the jump is not saved. Execution does not return to this command once a _RET is executed.
+The position of a jump is not saved. Execution does not return to this command once a _RET is executed.
 
 
 ## Syntax

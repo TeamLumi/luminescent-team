@@ -1,14 +1,14 @@
 # (873) _SET_SYS_FLAG
 
+## Synonyms
+
+- _ARRIVE_FLAG_SET
+
 ## Effect
 
-Sets a System Flag to true.
+Sets the given system flag to true.
 
-A list of all System Flags can be found [here](../../../dictionary/system-flags.md).
-
-:::info
-System Flags are remembered when closing the game.
-:::
+A list of all system flags can be found [here](../../../dictionary/system-flags.md).
 
 ## Syntax
 
@@ -18,16 +18,12 @@ _SET_SYS_FLAG(flag)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **flag** | The System flag to set | SysFlag | Required |
+| **flag** | The system flag to set | System Flag | Required |
 
 ## Example
 
 ```c
-ev_dummy:
-_SET_SYS_FLAG($SYS_FLAG_AUTOSAVE_STOP)
-; my code
-_RESET_SYS_FLAG($SYS_FLAG_AUTOSAVE_STOP)
+_SET_SYS_FLAG($FLAG_STOP_EYE_ENCOUNT)
 ```
 
-The above script will disable then enable the auto save feature.
-
+The above script will set the $FLAG_STOP_EYE_ENCOUNT system flag.

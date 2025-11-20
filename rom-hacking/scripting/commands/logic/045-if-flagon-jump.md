@@ -4,7 +4,7 @@
 
 Checks the value of a flag. Jumps to a script if it is true.
 
-The position of the jump is not saved. Execution does not return to this command once a _RET is executed.
+The position of a jump is not saved. Execution does not return to this command once a _RET is executed.
 
 ## Syntax
 
@@ -14,7 +14,7 @@ _IF_FLAGON_JUMP(flag, label)
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
-| **flag** | The flag to check | Flag, SysFlag | Required |
+| **flag** | The flag to check | Flag, System Flag | Required |
 | **label** | The label to jump to | String | Required |
 
 ## Example

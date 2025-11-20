@@ -18,6 +18,7 @@ function pokedexDataPlugin(context, options) {
       const pokemonsV = Object.values(FORM_MAP[GAMEDATAV])
         .flat()
         .slice(1) // remove Egg
+        .filter((id) => id !== -1) // ignore invalid id -1
         .map((id) => getPokemon(id, GAMEDATAV))
         .filter((p) => p.isValid);
       const pokemonListV = pokemonsV.map((p) => ({
@@ -38,6 +39,7 @@ function pokedexDataPlugin(context, options) {
       const pokemons = Object.values(FORM_MAP[GAMEDATA2])
         .flat()
         .slice(1) // remove Egg
+        .filter((id) => id !== -1) // ignore invalid id -1
         .map((id) => getPokemon(id, GAMEDATA2))
         .filter((p) => p.isValid);
       const pokemonList = pokemons.map((p) => ({
@@ -58,6 +60,7 @@ function pokedexDataPlugin(context, options) {
       const pokemons3 = Object.values(FORM_MAP[GAMEDATA3])
         .flat()
         .slice(1) // remove Egg
+        .filter((id) => id !== -1) // ignore invalid id -1
         .map((id) => getPokemon(id, GAMEDATA3))
         .filter((p3) => p3.isValid);
       const pokemonList3 = pokemons3.map((p3) => ({

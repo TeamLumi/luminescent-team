@@ -141,122 +141,156 @@ const tutorMoves3 = require('./gamedata3.0/tutorMoves.json');
 const ItemMap3 = require('./gamedata3.0/item_map.json');
 const FixedShop3 = require('./gamedata3.0/fixed_shop.json');
 
-/******************** Gamedata Exports **********************/
+/*************************** Gamedata Exports ***************************/
+/**                                                                    **/
+/**      This section is organized by where the files are located      **/
+/**       For example the PersonalTable can be found in the file       **/
+/** romfs/Data/StreamingAssets/AssetAssistant/Pml/personal_masterdatas **/
+/**                                                                    **/
+/************************************************************************/
 const GAMEDATAV = "vanilla";
 const GAMEDATA2 = "2.0";
 const GAMEDATA3 = "3.0";
 
 const GAME_MODE_STRINGS = {
   [GAMEDATAV]: "Vanilla BDSP",
-  [GAMEDATA2]: "Luminescent 2.1F",
+  [GAMEDATA2]: "Luminescent 2.2F",
   [GAMEDATA3]: "Re:Illuminated",
 }
 
-const PersonalTable = {
-  [GAMEDATAV]: PersonalTableVanilla,
-  [GAMEDATA2]: PersonalTable2,
-  [GAMEDATA3]: PersonalTable3,
+// romfs/Data/StreamingAssets/AssetAssistant/Message/english
+const AreaNames = { // english_dp_fld_areaname.json
+  [GAMEDATAV]: areaNamesVanilla,
+  [GAMEDATA2]: areaNames2,
+  [GAMEDATA3]: areaNames3,
 };
-const GrowTable = {
-  [GAMEDATAV]: GrowTableVanilla,
-  [GAMEDATA2]: GrowTable2,
-  [GAMEDATA3]: GrowTable3,
+const DisplayNames = { // english_dp_fld_areaname_display.json
+  [GAMEDATAV]: displayNamesVanilla,
+  [GAMEDATA2]: displayNames2,
+  [GAMEDATA3]: displayNames3,
 };
-const EvolveTable = {
-  [GAMEDATAV]: EvolveTableVanilla,
-  [GAMEDATA2]: EvolveTable2,
-  [GAMEDATA3]: EvolveTable3,
+const ItemNames = { // english_ss_itemname.json
+  [GAMEDATAV]: itemNamesVanilla,
+  [GAMEDATA2]: itemNames2,
+  [GAMEDATA3]: itemNames3, // found in common_msbt for 3.0
 };
-const EggMovesTable = {
-  [GAMEDATAV]: EggMovesTableVanilla,
-  [GAMEDATA2]: EggMovesTable2,
-  [GAMEDATA3]: EggMovesTable3,
-};
-const LearnsetTable = {
-  [GAMEDATAV]: LearnsetTableVanilla,
-  [GAMEDATA2]: LearnsetTable2,
-  [GAMEDATA3]: LearnsetTable3,
-};
-const MovesTable = {
-  [GAMEDATAV]: MovesTableVanilla,
-  [GAMEDATA2]: MovesTable2,
-  [GAMEDATA3]: MovesTable3,
-};
-const EvolutionData = {
-  [GAMEDATAV]: EvolutionDataVanilla,
-  [GAMEDATA2]: EvolutionData2,
-  [GAMEDATA3]: EvolutionData3,
-};
-const BasePokemonNames = {
-  [GAMEDATAV]: basePokemonNamesVanilla,
-  [GAMEDATA2]: basePokemonNames2,
-  [GAMEDATA3]: basePokemonNames3,
-};
-const FormPokemonNames = {
-  [GAMEDATAV]: formPokemonNamesVanilla,
-  [GAMEDATA2]: formPokemonNames2,
-  [GAMEDATA3]: formPokemonNames3,
-};
-const PokemonHeight = {
-  [GAMEDATAV]: pokemonHeightVanilla,
-  [GAMEDATA2]: pokemonHeight2,
-  [GAMEDATA3]: pokemonHeight3,
-};
-const PokemonWeight = {
-  [GAMEDATAV]: pokemonWeightVanilla,
-  [GAMEDATA2]: pokemonWeight2,
-  [GAMEDATA3]: pokemonWeight3,
-};
-const PokemonDexType = {
-  [GAMEDATAV]: pokemonDexTypeVanilla,
-  [GAMEDATA2]: pokemonDexType2,
-  [GAMEDATA3]: pokemonDexType3,
-};
-const PokedexInfo = {
-  [GAMEDATAV]: PokedexInfoVanilla,
-  [GAMEDATA2]: PokedexInfo2,
-  [GAMEDATA3]: PokedexInfo3,
-};
-const NatureNames = {
+const NatureNames = { // english_ss_seikaku.json
   [GAMEDATAV]: natureNamesVanilla,
   [GAMEDATA2]: natureNames2,
   [GAMEDATA3]: natureNames3,
 };
-const AbilityNames = {
+const AbilityNames = { // english_ss_tokusei.json
   [GAMEDATAV]: abilityNamesVanilla,
   [GAMEDATA2]: abilityNames2,
-  [GAMEDATA3]: abilityNames3,
+  [GAMEDATA3]: abilityNames3, // found in the common_msbt for 3.0
 };
-const AbilityInfo = {
+const AbilityInfo = { // english_ss_tokuseiinfo.json
   [GAMEDATAV]: abilityInfoVanilla,
   [GAMEDATA2]: abilityInfo2,
   [GAMEDATA3]: abilityInfo3,
 };
-const TypeName = {
+const TypeName = { // english_ss_typename.json
   [GAMEDATAV]: typeNameVanilla,
   [GAMEDATA2]: typeName2,
   [GAMEDATA3]: typeName3,
 };
-const MoveNames = {
-  [GAMEDATAV]: moveNamesVanilla,
-  [GAMEDATA2]: moveNames2,
-  [GAMEDATA3]: moveNames3,
-};
-const MoveInfo = {
+const MoveInfo = { // english_ss_wazainfo.json
   [GAMEDATAV]: moveInfoVanilla,
   [GAMEDATA2]: moveInfo2,
   [GAMEDATA3]: moveInfo3,
 };
-const ItemTable = {
+const MoveNames = { // english_ss_wazaname.json
+  [GAMEDATAV]: moveNamesVanilla,
+  [GAMEDATA2]: moveNames2,
+  [GAMEDATA3]: moveNames3,
+};
+
+// romfs/Data/StreamingAssets/AssetAssistant/Pml/personal_masterdatas
+const EvolveTable = { // EvolveTable.json
+  [GAMEDATAV]: EvolveTableVanilla,
+  [GAMEDATA2]: EvolveTable2,
+  [GAMEDATA3]: EvolveTable3,
+};
+const GrowTable = { // GrowTable.json
+  // Not used by any files atm
+  [GAMEDATAV]: GrowTableVanilla,
+  [GAMEDATA2]: GrowTable2,
+  [GAMEDATA3]: GrowTable3,
+};
+const ItemTable = { // ItemTable.json
   [GAMEDATAV]: ItemTableVanilla,
   [GAMEDATA2]: ItemTable2,
   [GAMEDATA3]: ItemTable3,
 };
-const ItemNames = {
-  [GAMEDATAV]: itemNamesVanilla,
-  [GAMEDATA2]: itemNames2,
-  [GAMEDATA3]: itemNames3,
+const PersonalTable = { // PersonalTable.json
+  [GAMEDATAV]: PersonalTableVanilla,
+  [GAMEDATA2]: PersonalTable2,
+  [GAMEDATA3]: PersonalTable3,
 };
+const EggMovesTable = { // TamagoWazaTable.json
+  [GAMEDATAV]: EggMovesTableVanilla,
+  [GAMEDATA2]: EggMovesTable2,
+  [GAMEDATA3]: EggMovesTable3,
+};
+const LearnsetTable = { // WazaOboeTable.json
+  [GAMEDATAV]: LearnsetTableVanilla,
+  [GAMEDATA2]: LearnsetTable2,
+  [GAMEDATA3]: LearnsetTable3,
+};
+const MovesTable = { // WazaTable.json
+  [GAMEDATAV]: MovesTableVanilla,
+  [GAMEDATA2]: MovesTable2,
+  [GAMEDATA3]: MovesTable3,
+};
+
+// romfs/Data/StreamingAssets/AssetAssistant/Message/common_msbt
+const PokedexInfo = { // english_dp_pokedex_diamond.json
+  [GAMEDATAV]: PokedexInfoVanilla,
+  [GAMEDATA2]: PokedexInfo2,
+  [GAMEDATA3]: PokedexInfo3,
+};
+const BasePokemonNames = { // english_ss_monsname.json
+  [GAMEDATAV]: basePokemonNamesVanilla,
+  [GAMEDATA2]: basePokemonNames2,
+  [GAMEDATA3]: basePokemonNames3,
+};
+const FormPokemonNames = { // english_ss_zkn_form.json
+  [GAMEDATAV]: formPokemonNamesVanilla,
+  [GAMEDATA2]: formPokemonNames2,
+  [GAMEDATA3]: formPokemonNames3,
+};
+const PokemonHeight = { // english_ss_zkn_height.json
+  [GAMEDATAV]: pokemonHeightVanilla,
+  [GAMEDATA2]: pokemonHeight2,
+  [GAMEDATA3]: pokemonHeight3,
+};
+const PokemonWeight = { // english_ss_zkn_weight.json
+  [GAMEDATAV]: pokemonWeightVanilla,
+  [GAMEDATA2]: pokemonWeight2,
+  [GAMEDATA3]: pokemonWeight3,
+};
+const PokemonDexType = { // english_ss_zkn_type.json
+  [GAMEDATAV]: pokemonDexTypeVanilla,
+  [GAMEDATA2]: pokemonDexType2,
+  [GAMEDATA3]: pokemonDexType3,
+};
+
+// romfs/Data/StreamingAssets/AssetAssistant/Dpr/scriptableobjects/gamesettings
+const MapInfo = { // MapInfo.json
+  [GAMEDATAV]: mapInfoVanilla,
+  [GAMEDATA2]: mapInfo2,
+  [GAMEDATA3]: mapInfo3,
+};
+
+// romfs/Data/StreamingAssets/AssetAssistant/Dpr/masterdatas
+const ShopTable = { // ShopTable.json
+  [GAMEDATAV]: ShopTableVanilla,
+  [GAMEDATA2]: ShopTable2,
+  [GAMEDATA3]: ShopTable3,
+};
+
+// Custom files generated by the Gamedata repo
+// https://github.com/TeamLumi/Gamedata
 const MoveEnum = {
   [GAMEDATAV]: moveEnumVanilla,
   [GAMEDATA2]: moveEnum2,
@@ -272,20 +306,10 @@ const TutorMoves = {
   [GAMEDATA2]: tutorMoves2,
   [GAMEDATA3]: tutorMoves3,
 };
-const DisplayNames = {
-  [GAMEDATAV]: displayNamesVanilla,
-  [GAMEDATA2]: displayNames2,
-  [GAMEDATA3]: displayNames3,
-};
-const AreaNames = {
-  [GAMEDATAV]: areaNamesVanilla,
-  [GAMEDATA2]: areaNames2,
-  [GAMEDATA3]: areaNames3,
-};
-const MapInfo = {
-  [GAMEDATAV]: mapInfoVanilla,
-  [GAMEDATA2]: mapInfo2,
-  [GAMEDATA3]: mapInfo3,
+const EvolutionData = {
+  [GAMEDATAV]: EvolutionDataVanilla,
+  [GAMEDATA2]: EvolutionData2,
+  [GAMEDATA3]: EvolutionData3,
 };
 const EncounterLocations = {
   [GAMEDATAV]: encounterLocationsVanilla,
@@ -322,11 +346,6 @@ const StaticAreaLocations = {
   [GAMEDATA2]: staticAreaLocations2,
   [GAMEDATA3]: staticAreaLocations3,
 };
-const ShopTable = {
-  [GAMEDATAV]: ShopTableVanilla,
-  [GAMEDATA2]: ShopTable2,
-  [GAMEDATA3]: ShopTable3,
-};
 const ItemMap = {
   [GAMEDATAV]: ItemMapVanilla,
   [GAMEDATA2]: ItemMap2,
@@ -343,33 +362,34 @@ module.exports = {
   GAMEDATA3,
   GAMEDATAV,
   GAME_MODE_STRINGS,
-  PersonalTable,
-  GrowTable,
+  AreaNames,
+  DisplayNames,
+  ItemNames,
+  NatureNames,
+  AbilityNames,
+  AbilityInfo,
+  TypeName,
+  MoveInfo,
+  MoveNames,
   EvolveTable,
+  GrowTable,
+  ItemTable,
+  PersonalTable,
   EggMovesTable,
   LearnsetTable,
   MovesTable,
-  EvolutionData,
+  PokedexInfo,
   BasePokemonNames,
   FormPokemonNames,
   PokemonHeight,
   PokemonWeight,
   PokemonDexType,
-  PokedexInfo,
-  NatureNames,
-  AbilityNames,
-  AbilityInfo,
-  TypeName,
-  MoveNames,
-  MoveInfo,
-  ItemTable,
-  ItemNames,
+  MapInfo,
+  ShopTable,
   MoveEnum,
   SmogonMoves,
   TutorMoves,
-  DisplayNames,
-  AreaNames,
-  MapInfo,
+  EvolutionData,
   EncounterLocations,
   PokemonLocations,
   TrainerLocations,
@@ -377,7 +397,6 @@ module.exports = {
   HiddenItems,
   StaticLocations,
   StaticAreaLocations,
-  ShopTable,
   ItemMap,
-  FixedShop,
+  FixedShop
 };

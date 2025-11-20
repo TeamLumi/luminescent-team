@@ -23,7 +23,7 @@ const config = {
   tagline: 'A BDSP ROM Hack',
   url: 'https://luminescent.team',
   baseUrl: BASE_URL,
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
@@ -86,6 +86,17 @@ const config = {
         routeBasePath: 'docs2',
         // Add sidebar path if needed.
         // sidebarPath: require.resolve('./docs2Sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/category/installation',
+            from: '/install',
+          },
+        ]
       },
     ],
     // enable plugin

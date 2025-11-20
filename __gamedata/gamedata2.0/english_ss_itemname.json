@@ -12940,7 +12940,7 @@
                     "tagIndex": -1,
                     "tagValue": 0.0,
                     "str": "Rainbow Wing",
-                    "strWidth": 132.0625
+                    "strWidth": 187.015625
                 }
             ]
         },
@@ -13720,7 +13720,7 @@
                     "tagIndex": -1,
                     "tagValue": 0.0,
                     "str": "Tea",
-                    "strWidth": 78.90625
+                    "strWidth": 48.390625
                 }
             ]
         },
@@ -33939,8 +33939,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TR00",
-                    "strWidth": 70.71875
+                    "str": "TM101",
+                    "strWidth": 43.109375
                 }
             ]
         },
@@ -33969,8 +33969,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM101",
-                    "strWidth": 66.71875762939453
+                    "str": "TM102",
+                    "strWidth": 43.109375
                 }
             ]
         },
@@ -33999,8 +33999,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM102",
-                    "strWidth": 70.71875
+                    "str": "TM103",
+                    "strWidth": 43.109375
                 }
             ]
         },
@@ -34029,8 +34029,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM103",
-                    "strWidth": 70.71875
+                    "str": "TM104",
+                    "strWidth": 43.109375
                 }
             ]
         },
@@ -34059,8 +34059,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "TM104",
-                    "strWidth": 70.71875
+                    "str": "TM105",
+                    "strWidth": 43.109375
                 }
             ]
         },
@@ -51369,7 +51369,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Exp. Share",
+                    "str": "Kanto Slate",
                     "strWidth": 150.34375
                 }
             ]
@@ -51737,7 +51737,7 @@
         {
             "labelIndex": 1624,
             "arrayIndex": 1824,
-            "labelName": "ITEMINFO_1624",
+            "labelName": "ITEMNAME_1624",
             "styleInfo": {
                 "styleIndex": 121,
                 "colorIndex": -1,

@@ -2,7 +2,7 @@
 
 ## Effect
 
-Resets the trainer flag of the given trainer to false.
+Resets the trainer flag of the given trainer to false and disables them looking for a rematch due to the Vs. Seeker.
 
 ## Syntax
 
