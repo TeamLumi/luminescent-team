@@ -30,7 +30,7 @@ const ModeSwitch = () => {
       >
         <MenuItem value={GAMEDATAV}>{GAME_MODE_STRINGS[GAMEDATAV]}</MenuItem>
         <MenuItem value={GAMEDATA2}>{GAME_MODE_STRINGS[GAMEDATA2]}</MenuItem>
-        <MenuItem value={GAMEDATA3}>{GAME_MODE_STRINGS[GAMEDATA3]}</MenuItem>
+        {/* <MenuItem value={GAMEDATA3}>{GAME_MODE_STRINGS[GAMEDATA3]}</MenuItem> */}
       </Select>
     </FormControl>
   )  

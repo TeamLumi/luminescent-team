@@ -90,7 +90,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     rod: "1",
   });
 
-  const [selectedPokemon, setSelectedPokemon] = useState(pokemonList3[0] || '');
+  const [selectedPokemon, setSelectedPokemon] = useState(pokemonList[0] || '');
   const [pokemonName, setPokemonName] = useState('');
   const completedPokemonName = useDebouncedValue(pokemonName, 1500);
 
@@ -213,7 +213,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     locationId.current = location.zoneId;
 
     setEncounterList(setAllEncounters(location.zoneId));
-    setTrainerList(getTrainersFromZoneId(location.zoneId, GAMEDATA3));
+    setTrainerList(getTrainersFromZoneId(location.zoneId));
 
     setFieldItems(getFieldItemsFromZoneID(location.zoneId));
     setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
@@ -333,7 +333,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
       drawRect(location, CLEAR_MODE.SELECT);
     }
     setPokemonName("Bulbasaur");
-    setSelectedPokemon(pokemonList3[0])
+    setSelectedPokemon(pokemonList[0])
   }
 
   const handleClick = (event) => {
@@ -385,7 +385,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     setSelectedZone(location.name);
     setSelectedZoneId(location.zoneId)
     setEncounterList(setAllEncounters(location.zoneId));
-    setTrainerList(getTrainersFromZoneId(location.zoneId, GAMEDATA3));
+    setTrainerList(getTrainersFromZoneId(location.zoneId));
 
     setFieldItems(getFieldItemsFromZoneID(location.zoneId));
     setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
@@ -489,7 +489,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
   }, [completedPokemonName])
 
   useEffect(() => {
-    setTrainerList(getTrainersFromZoneId(selectedZoneId, GAMEDATA3) || []) ;
+    setTrainerList(getTrainersFromZoneId(selectedZoneId) || []) ;
   }, [selectedZoneId])
 
   const handleOptionChange = (option, value) => {
@@ -698,7 +698,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
           pokemonName={pokemonName}
-          pokemonList={pokemonList3}
+          pokemonList={pokemonList}
           trainerList={trainerList}
           selectedTrainer={selectedTrainer}
           setSelectedTrainer={setSelectedTrainer}
@@ -708,7 +708,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
       </div>
       <SearchBar
         canvasDimensions={canvasDimensions}
-        pokemonList={pokemonList3}
+        pokemonList={pokemonList}
         debouncedText={pokemonName}
         handleDebouncedTextChange={handlePokemonNameChange}
         locationName={selectedZone}
@@ -722,7 +722,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
       <TrainersModal
         showModal={showTrainerModal}
         onHide={closeTrainerModal}
-        pokemonList={pokemonList3}
+        pokemonList={pokemonList}
         selectedTrainer={selectedTrainer}
       />
       {/* <div>

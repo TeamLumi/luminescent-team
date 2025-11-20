@@ -53,7 +53,7 @@ export const TrainerDropdown = ({ trainer, setTrainer, trainerList, smallest }) 
       <Autocomplete
         id="trainer-input"
         options={[defaultTrainer, ...trainerList]}
-        getOptionLabel={(option) => `${option.team_name} (${option.trainer_id})`}
+        getOptionLabel={(option) => option.team_name}
         defaultValue={defaultTrainer}
         value={trainer}
         onChange={(e, value) => setTrainer(value)}
@@ -116,7 +116,7 @@ const MonDetails = ({smallest, pokemon, pokemonInfo}) => {
         height="64px"
       />
       <Typography sx={{ ...responsiveFontSize }}>
-        {`${getPokemonName(pokemon.id, GAMEDATA3)} Lv. ${pokemon.level}`}
+        {`${getPokemonName(pokemon.id)} Lv. ${pokemon.level}`}
       </Typography>
       <Box display={"flex"}>
         <Box
@@ -189,7 +189,7 @@ const MoveList = ({smallest, pokemon}) => {
       }}
     >
       {pokemon.moves.map((move, index) => {
-        const moveInfo = getMoveProperties(move, GAMEDATA3);
+        const moveInfo = getMoveProperties(move);
         return (
           <Box
             key={`${move}-${index}`}

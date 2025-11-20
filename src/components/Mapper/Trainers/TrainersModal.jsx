@@ -43,9 +43,9 @@ const TrainersModal = ({
         break;
     }
 
-    const moves = pokemon.moves.map(id => "- " + getMoveProperties(id, GAMEDATA3).name).join("\n");
+    const moves = pokemon.moves.map(id => "- " + getMoveProperties(id).name).join("\n");
 
-    return `${getPokemonName(pokemon.id, GAMEDATA3)} ${genderSymbol} @ ${pokemon.item}
+    return `${getPokemonName(pokemon.id)} ${genderSymbol} @ ${pokemon.item}
 Level: ${pokemon.level}
 ${pokemon.nature} Nature
 Ability: ${pokemon.ability}
@@ -61,7 +61,7 @@ ${moves}`;
       maxWidth="1108px"
     >
       <DialogTitle>
-        Trainer: {selectedTrainer?.team_name} ({selectedTrainer?.trainer_id})
+        Trainer: {selectedTrainer?.team_name}
       </DialogTitle>
       <IconButton
         aria-label="close"
