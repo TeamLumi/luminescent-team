@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Autocomplete, Box, MenuItem, Select, TextField, Typography } from '@mui/material';
 
 import { PokemonStats } from '../Encounters/PokemonStats';
@@ -8,6 +8,7 @@ import { ImageWithFallback } from '../../common/ImageWithFallback';
 
 import '.././style.css';
 import { PokemonAbility } from '../../Pokedex2/PokemonAbilities';
+import { GAMEDATA3 } from '../../../../__gamedata';
 
 const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };
 export const getSmallestResponsiveStyle = (smallest, property, values) => {

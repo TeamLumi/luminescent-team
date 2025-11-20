@@ -15,7 +15,7 @@ import { ImageWithFallback } from '../common/ImageWithFallback';
 import { PokemonItems } from './PokemonItems';
 import { PokemonInfoButton } from './PokedexInfoButton';
 import { getTechMachineLearnset } from '../../utils/dex/moves';
-import ModeSwitch from './ModeSwitch';
+import ModeSwitch from '../common/ModeSwitch';
 import { useGlobalState } from '../common/GlobalState';
 import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex';
 import { PokemonLocations } from './PokemonLocations';
@@ -33,7 +33,14 @@ function padNumberWithZeros(number) {
   }
 }
 
-export const PokemonPageContent = ({ pokemon, pokemonNames, pokemon3, pokemonNames3, pokemonV, pokemonNamesV }) => {
+export const PokemonPageContent = ({
+  pokemon,
+  pokemonNames,
+  pokemon3,
+  pokemonNames3,
+  pokemonV,
+  pokemonNamesV
+}) => {
   const POKEMON_MODE_MAP = {
     [GAMEDATAV]: pokemonV,
     [GAMEDATA2]: pokemon,

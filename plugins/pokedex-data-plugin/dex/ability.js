@@ -11,9 +11,12 @@ function getAbilityIdFromAbilityName(abilityString, mode = GAMEDATA2) {
   if (!abilityString) throw Error(`Bad ability string: ${abilityString}`);
   const ModeAbilityNames = AbilityNames[mode];
 
-  const abilityId = ModeAbilityNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === abilityString);
+  let abilityId = ModeAbilityNames.labelDataArray.findIndex((e) => e.wordDataArray[0].str === abilityString);
 
-  if (abilityId === -1) throw Error(`Bad ability string: ${abilityString}`);
+  if (abilityId === -1) {
+    abilityId = 0;
+    console.error(`Bad ability string: ${abilityString}`)
+  };
   return abilityId;
 }
 

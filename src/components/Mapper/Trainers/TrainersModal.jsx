@@ -5,6 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Tooltip from '@mui/material/Tooltip';
 import { getMoveProperties, getPokemonName } from '../../../utils/dex';
 import { Trainers } from "./Trainers";
+import { GAMEDATA3 } from "../../../../__gamedata";
 
 const TrainersModal = ({
   showModal,
@@ -22,7 +23,6 @@ const TrainersModal = ({
     navigator.clipboard.writeText(exportText).then(() => {
       setShowSnackbar(true);
     });
-
   };
 
   const handleCloseSnackbar = () => {

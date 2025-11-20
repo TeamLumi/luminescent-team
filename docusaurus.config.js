@@ -12,7 +12,10 @@ const isDexEnabled = process.env.DEX_ENABLED === 'true';
 const pageExclusions = !isDexEnabled ? ['**/dex.js'] : [];
 
 const isPokedexEnabled = process.env.POKEDEX_ENABLED === 'true';
+const isMoveDexEnabled = process.env.MOVEDEX_ENABLED === 'true';
+
 const POKEDEX_BASE_PATH = 'pokedex';
+const MOVEDEX_BASE_PATH = 'moves';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -113,6 +116,21 @@ const config = {
           ],
         ]
       : []),
+    ...(isMoveDexEnabled
+      ? [
+          [
+            './plugins/move-data-plugin',
+            {
+              path: MOVEDEX_BASE_PATH,
+              routeBasePath: BASE_URL,
+              moveComponent: '@site/src/pages/_move_page.jsx',
+              moveListComponent: '@site/src/pages/_move_list_page.jsx',
+              wrapperComponent: '@site/src/components/MoveDex/MoveDexPageWrapper.jsx'
+            }
+          ]
+        ]
+      : []
+    )
   ],
 
   themeConfig:
@@ -138,9 +156,16 @@ const config = {
           },
           { to: '/rom-hacking', label: 'ROM Hacking', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
-          ...(isDexEnabled ? [{ to: '/dex', label: 'Pokédex', position: 'left' }] : []),
-          ...(isPokedexEnabled ? [{ to: POKEDEX_BASE_PATH, label: 'Pokédex', position: 'left' }] : []),
-          { to: '/mapper', label: "Mapper (Beta)", position: "left" },
+          {
+            type: 'dropdown',
+            label: 'Pokemon Data',
+            position: 'left',
+            items: [
+              ...(isPokedexEnabled ? [{ to: POKEDEX_BASE_PATH, label: 'Pokédex' }] : []),
+              { to: '/mapper', label: "Mapper (Beta)" },
+              { to: '/moves', label: "Moves" },
+            ],
+          },
           {
             label: 'Discord',
             href: 'https://discord.gg/luminescent',

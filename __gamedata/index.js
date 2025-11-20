@@ -152,6 +152,12 @@ const GAMEDATAV = "vanilla";
 const GAMEDATA2 = "2.0";
 const GAMEDATA3 = "3.0";
 
+const GAME_MODE_STRINGS = {
+  [GAMEDATAV]: "Vanilla BDSP",
+  [GAMEDATA2]: "Luminescent 2.2F",
+  [GAMEDATA3]: "Re:Illuminated",
+}
+
 // romfs/Data/StreamingAssets/AssetAssistant/Message/english
 const AreaNames = { // english_dp_fld_areaname.json
   [GAMEDATAV]: areaNamesVanilla,
@@ -355,6 +361,7 @@ module.exports = {
   GAMEDATA2,
   GAMEDATA3,
   GAMEDATAV,
+  GAME_MODE_STRINGS,
   AreaNames,
   DisplayNames,
   ItemNames,

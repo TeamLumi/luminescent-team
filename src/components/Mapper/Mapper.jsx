@@ -47,6 +47,7 @@ import {
   getEventEncounters,
 } from '../../utils/dex/encounters';
 import TrainersModal from './Trainers/TrainersModal';
+import { GAMEDATA3 } from '../../../__gamedata';
 
 const canvasDimensions = {
   width: 1280,
@@ -71,7 +72,7 @@ function useDebouncedValue(value, delay) {
   return debouncedValue;
 }
 
-export const Mapper = ({ pokemonList }) => {
+export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
   const isBrowser = useIsBrowser();
   if (!isBrowser) {
     return null;
