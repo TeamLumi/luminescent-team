@@ -4,7 +4,7 @@
 
 Used in tandem with the [_POKELIST_SET_PROC](./264-pokelist-set-proc.md) command.
 
-Returns the values of which tray the selected Pokémon is in and the position within that tray. For context, the internal code refers to the Box and Party as "Trays".
+Returns the values of which box the selected Pokémon is in and the position within that box.
 
 :::info
 The selected Pokémon comes from the [_POKELIST_SET_PROC](./264-pokelist-set-proc.md) command.
@@ -13,13 +13,13 @@ The selected Pokémon comes from the [_POKELIST_SET_PROC](./264-pokelist-set-pro
 ## Syntax
 
 ```c
-_POKELIST_GET_RESULT(index, tray_index)
+_POKELIST_GET_RESULT(index, box_index)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
 | **index** | The position that the selected Pokémon is in the box. Returns -1 if no Pokémon is chosen | Work, Int | Required |
-| **tray_index** | The tray that the selected Pokémon is in (party is -1) | Work, Int | Required |
+| **box_index** | The box that the selected Pokémon is in (party is -1) | Work, Int | Required |
 
 ## Example
 

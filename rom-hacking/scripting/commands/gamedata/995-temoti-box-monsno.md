@@ -9,13 +9,13 @@ Often used with the [_POKELIST_GET_RESULT](./267-pokelist-get-result.md) and [_P
 ## Syntax
 
 ```c
-_TEMOTI_BOX_MONSNO(index, tray_index, result)
+_TEMOTI_BOX_MONSNO(index, box_index, result)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
 | **index** | The position that the selected Pokémon is in the box. | Work, Int | Required |
-| **tray_index** | The tray that the selected Pokémon is in (party is -1) | Work, Int | Required |
+| **box_index** | The box that the selected Pokémon is in (party is -1) | Work, Int | Required |
 | **result** | The Pokedex Number of the selected Pokémon | Work | Required |
 
 ## Example

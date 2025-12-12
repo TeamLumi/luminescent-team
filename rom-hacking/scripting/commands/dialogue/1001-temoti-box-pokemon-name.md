@@ -9,14 +9,14 @@ Very similar in use as [_POKEMON_NAME](./309-pokemon-name.md). Often used with t
 ## Syntax
 
 ```c
-_TEMOTI_BOX_POKEMON_NAME(tag_index, index, tray_index)
+_TEMOTI_BOX_POKEMON_NAME(tag_index, index, box_index)
 ```
 
 | Argument | Description | Types | Required |
 | - | - | - | - |
 | **tag_index** | The index of the tag to write the value to | Work, Float | Required |
 | **index** | The position that the selected Pokémon is in the box. | Work, Int | Required |
-| **tray_index** | The tray that the selected Pokémon is in (party is -1) | Work, Int | Required |
+| **box_index** | The box that the selected Pokémon is in (party is -1) | Work, Int | Required |
 
 ## Example
 
