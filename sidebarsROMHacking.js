@@ -30,6 +30,7 @@ const sidebars = {
         'dictionary/chibi-animations',
         'dictionary/chibi-emotions',
         'dictionary/system-flags',
+        'dictionary/pokelist-set-proc',
       ],
     },
     {
