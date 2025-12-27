@@ -1,5 +1,4 @@
 import React from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import {
   Box,
   Drawer,
@@ -11,11 +10,12 @@ import { DoubleArrow } from '@mui/icons-material';
 import CloseIcon from '@mui/icons-material/Close';
 
 export const FilterDrawer = ({
-  filterOpen,
-  setFilterDrawerOpen,
-  clearAllFilters,
-  searchTable,
-  children,
+    filterOpen,
+    setFilterDrawerOpen,
+    clearAllFilters,
+    searchTable,
+    handleChange,
+    children,
 }) => {
     return (
         <Drawer
@@ -24,60 +24,10 @@ export const FilterDrawer = ({
             anchor="right"
             sx={{ maxWidth: "50%" }}
         >
-            <Box
-                display="flex"
-                backgroundColor="var(--ifm-background-color)"
-                borderBottom="2px solid var(--ifm-table-border-color)"
-                zIndex="2"
-                padding="25px"
-                position="sticky"
-                top="0"
-                sx={{ padding: "1rem", justifyContent: "space-between", alignItems: "center" }}
-            >
-                <Typography variant="h5">Filter Menu</Typography>
-                <Button color='error' onClick={clearAllFilters}>Clear Filters</Button>
-                <IconButton onClick={() => setFilterDrawerOpen(false)}><CloseIcon /></IconButton>
-            </Box>
-            <Box
-                role="presentation"
-                sx={{
-                    minWidth: "350px",
-                    display: "flex",
-                    flexDirection: "column",
-                    minHeight: "fit-content"
-                }}
-            >
-                <Box display="flex" flexWrap="wrap" maxWidth="350px">
-                    <DisplayValues data={searchTable} />
-                </Box>
-            </Box>
-
+            <FilterHeader clearAllFilters={clearAllFilters} setFilterDrawerOpen={setFilterDrawerOpen} />
+            <DisplayValueContainer searchTable={searchTable} handleChange={handleChange} />
             {children}
-
-            <Box
-                bottom="0"
-                right="0"
-                backgroundColor="var(--ifm-background-color)"
-                borderTop="2px solid var(--ifm-table-border-color)"
-                zIndex="2"
-                padding="25px"
-                position="sticky"
-                justifyContent="end"
-                display="flex"
-                width="100%"
-                marginTop="auto"
-            >
-                <Button
-                    width="50%"
-                    variant='contained'
-                    onClick={() => setFilterDrawerOpen(false)}
-                    endIcon={<DoubleArrow fontSize='large' />}
-                    color='success'
-                >
-                    Save Changes
-                </Button>
-            </Box>
-
+            <SaveFilterContainer setFilterDrawerOpen={setFilterDrawerOpen} />
         </Drawer>
     );
 }
@@ -104,6 +54,7 @@ const DisplayValues = ({ data, handleChange, prefix = "" }) => {
                         <DisplayValues
                             data={value}
                             prefix={fullKey}
+                            handleChange={handleChange}
                         />
                     </React.Fragment>
                 ) : null;
@@ -121,3 +72,68 @@ const DisplayValues = ({ data, handleChange, prefix = "" }) => {
     </>
     );
 };
+
+const FilterHeader = ({ clearAllFilters, setFilterDrawerOpen }) => {
+    return (
+        <Box
+            display="flex"
+            backgroundColor="var(--ifm-background-color)"
+            borderBottom="2px solid var(--ifm-table-border-color)"
+            zIndex="2"
+            padding="25px"
+            position="sticky"
+            top="0"
+            sx={{ padding: "1rem", justifyContent: "space-between", alignItems: "center" }}
+        >
+            <Typography variant="h5">Filter Menu</Typography>
+            <Button color='error' onClick={clearAllFilters}>Clear Filters</Button>
+            <IconButton onClick={() => setFilterDrawerOpen(false)}><CloseIcon /></IconButton>
+        </Box>
+    );
+}
+
+const DisplayValueContainer = ({ searchTable, handleChange }) => {
+    return (
+            <Box
+                role="presentation"
+                sx={{
+                    minWidth: "350px",
+                    display: "flex",
+                    flexDirection: "column",
+                    minHeight: "fit-content"
+                }}
+            >
+                <Box display="flex" flexWrap="wrap" maxWidth="350px">
+                    <DisplayValues data={searchTable} handleChange={handleChange} />
+                </Box>
+            </Box>
+    );
+}
+
+const SaveFilterContainer = ({ setFilterDrawerOpen }) => {
+    return (
+        <Box
+            bottom="0"
+            right="0"
+            backgroundColor="var(--ifm-background-color)"
+            borderTop="2px solid var(--ifm-table-border-color)"
+            zIndex="2"
+            padding="25px"
+            position="sticky"
+            justifyContent="end"
+            display="flex"
+            width="100%"
+            marginTop="auto"
+        >
+            <Button
+                width="50%"
+                variant='contained'
+                onClick={() => setFilterDrawerOpen(false)}
+                endIcon={<DoubleArrow fontSize='large' />}
+                color='success'
+            >
+                Save Changes
+            </Button>
+        </Box>
+    )
+}

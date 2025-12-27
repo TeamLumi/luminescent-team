@@ -89,6 +89,7 @@ export const MoveFilterDrawer = ({
       setFilterDrawerOpen={setFilterDrawerOpen}
       clearAllFilters={clearAllFilters}
       searchTable={searchTable}
+      handleChange={handleChange}
     >
         <PokemonAccordion title={"Move Type"}>
           <Box
