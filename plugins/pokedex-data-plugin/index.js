@@ -5,6 +5,7 @@ const { getPokemon } = require('./dex/pokemon');
 const { FORM_MAP } = require('./dex/functions');
 const { normalizePokemonName } = require('./dex/name');
 const { GAMEDATA2, GAMEDATA3, GAMEDATAV } = require('../../__gamedata');
+const { getWeight } = require('./dex/details');
 
 /**
  * @param {{path: string, routeBasePath: string, pokemonComponent: string, pokemonRedirectComponent: string, listComponent: string, wrapperComponent: string, mapComponent: string}} options
@@ -75,7 +76,13 @@ function pokedexDataPlugin(context, options) {
         ability2: p3.ability2,
         abilityH: p3.abilityH,
         baseStats: p3.baseStats,
+        baseStatsTotal: p3.baseStatsTotal,
         forms: p3.forms,
+        catchChance: p3.catchChance,
+        eggGroupNames: p3.eggGroupNames,
+        gender: p3.genderDecimalValue,
+        height: p3.height,
+        weight: p3.weight,
       }));
 
       return {

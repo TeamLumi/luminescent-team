@@ -4,6 +4,9 @@ import { useHistory } from '@docusaurus/router';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useColorMode } from '@docusaurus/theme-common';
+import { MAX_CURRENT_POKEMON } from './pokedexConstants';
+
+const isValidPokemonDexId = (pokemonDexId) => pokemonDexId >= 0 && pokemonDexId <= MAX_CURRENT_POKEMON;
 
 export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
   const { colorMode, setColorMode } = useColorMode();
@@ -33,15 +36,17 @@ export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
       options={options}
       value={pokemonName}
       onChange={(_, pokemon) => {
-        history.push(`${pokedexPath}/${pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`}`);
+        const pokemonPath = pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`;
+        history.push(`${pokedexPath}/${isValidPokemonDexId(pokemon.monsno) ? pokemonPath : 0}`);
       }}
       isOptionEqualToValue={(option, value) => {
         return option.id === value.id;
       }}
-      renderOption={(props, option) => {
+      renderOption={(props, pokemon) => {
+        const pokemonPath = pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`;
         return (
-          <li {...props} key={`search-field-${option.id}`}>
-            {option.label}
+          <li {...props} key={`search-field-${pokemonPath}`}>
+            {pokemon.label}
           </li>
         );
       }}

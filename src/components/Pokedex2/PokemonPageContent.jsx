@@ -169,7 +169,7 @@ export const PokemonPageContent = ({
             />
           </Box>
           <Box className={style.pokeColumn} gridColumn="span 1">
-          <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
+            <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
           </Box>
           <Box className={style.pokeColumn} gridColumn="span 1">
             <Typography variant="h6" component="h6">
@@ -232,13 +232,19 @@ export const PokemonPageContent = ({
               sx={{
                 border: "2px solid var(--ifm-table-border-color)",
                 borderRadius: "5px",
-                height: {xs: "min-content", md: "244px"},
+                height: {xs: "min-content", md: "256px"},
                 padding: "12px !important"
               }}
             >
               <PokemonItems item1={pokemonInfo.item1} item2={pokemonInfo.item2} item3={pokemonInfo.item3}/>
               <PokemonEggGroups eggGroupNames={pokemonInfo.eggGroupNames} sx={{ marginTop: '16px' }} />
               <PokemonGenderRatio genderDecimalValue={pokemonInfo.genderDecimalValue} sx={{ marginTop: '16px' }} />
+              <Box sx={{ marginTop: "16px"}}>
+                <Typography sx={{ fontWeight: 800, fontSize: '0.8rem' }}>Catch Chance:</Typography>
+                <Container>
+                  <Typography>{pokemonInfo.catchChance}</Typography>
+                </Container>
+              </Box>
             </Container>
           </Box>
           <Box
