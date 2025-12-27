@@ -2,7 +2,8 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { TextField } from '@mui/material';
 import Fuse from 'fuse.js';
 
-import { defaultSearchTable } from './MoveListPageContent';
+import { defaultMoveSearchTable } from './MoveListPageContent';
+import { buildQueryList, extractKeys } from '../common/FilterDrawerFunction';
 
 const moveFlags = (movesList, flags) => {
   // Filters movesList based on the flags array
@@ -63,27 +64,8 @@ function getPowerAccuracyFilter(searchTable, finalResults) {
 }
 
 const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => {
-  const extractKeys = (obj, parentKey = "") => {
-    let keys = [];
-    Object.keys(obj).forEach((key) => {
-      const fullKey = parentKey ? `${parentKey}.${key}` : key;
-
-      if (Array.isArray(obj[key])) {
-        // Handle arrays (e.g., moveFlags)
-        obj[key].forEach((_, index) => {
-          keys.push(`${fullKey}.${index}.value`); // Add keys for each index
-        });
-      } else if (obj[key] && typeof obj[key] === "object" && !("value" in obj[key])) {
-        keys.push(...extractKeys(obj[key], fullKey));
-      } else {
-        keys.push(fullKey); // Add key to list
-      }
-    });
-    return keys;
-  };
-
   // Extract all keys from the search table
-  const fuseKeys = useMemo(() => extractKeys(defaultSearchTable), []);
+  const fuseKeys = useMemo(() => extractKeys(defaultMoveSearchTable), []);
   const fuse = useMemo(() => (
     new Fuse(movesList, { keys: fuseKeys, useExtendedSearch: true })
   ), [movesList, fuseKeys]);
@@ -99,7 +81,7 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
       return; // Exit early
     }
 
-    const parsedValue = parseInt(value, 10);
+    const parsedValue = parseInt(value);
     if (!isNaN(parsedValue)) {
       handleChange("name", { value: "", label: null });
       handleChange("id", { value: parsedValue, label: null });
@@ -107,36 +89,6 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
       handleChange("id", { value: "", label: null });
       handleChange("name", { value, label: null });
     }
-  };
-
-  const buildQueryList = (obj, queryList, parentKey = "") => {
-    Object.keys(obj).forEach((key) => {
-      if (key === "power" || key === "accuracy" || key === "statChanges" || key === "moveFlags") {
-        return;
-      }
-
-      const value = obj[key];
-      const fullKey = parentKey ? `${parentKey}.${key}` : key;
-
-      if (value && typeof value === "object" && !("value" in value)) {
-        // Recursively handle nested objects without a 'value' property
-        buildQueryList(value, queryList, fullKey);
-      } else if (value?.value !== null && value?.value !== "") {
-        // Add to query list if 'value' property is not null or undefined
-        let actualValue = value?.value;
-        if (typeof actualValue === "string") {
-          actualValue = actualValue.trim();
-        }
-        if (fullKey !== "name") {
-          // The = makes an exact match for the specific values.
-          // Since every value besides the name is controlled, we want to be exact.
-          // The quotation marks are keys that have a space between them
-          // In useExtendedSearch mode spaces are counted as an "and" operator
-          actualValue = `="${actualValue}"`
-        }
-        queryList.push({ [fullKey]: actualValue });
-      }
-    });
   };
 
   const fuzzySearch = useCallback(() => {

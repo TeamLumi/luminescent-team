@@ -21,8 +21,9 @@ import {
 import MoveSearchInput from './MoveSearchInput';
 import ModeSwitch from '../common/ModeSwitch';
 import { MoveFilterDrawer } from './MoveFilterDrawer';
+import { setNestedKey } from '../common/FilterDrawerFunction';
 
-export const defaultSearchTable = {
+export const defaultMoveSearchTable = {
   name: { label: "", value: "" },
   id: {label: "", value: ""},
   type: { label: null, value: null },
@@ -72,47 +73,10 @@ export const defaultSearchTable = {
   ],
 };
 
-const setNestedKey = (obj, path, value) => {
-  const keys = path.split(".");
-  let current = obj;
-
-  for (let i = 0; i < keys.length - 1; i++) {
-    const key = keys[i];
-
-    // Handle array indices
-    if (key.match(/^\d+$/)) {
-      const index = parseInt(key, 10);
-      if (!Array.isArray(current)) {
-        throw new Error(`Expected an array at ${keys.slice(0, i).join(".")}`);
-      }
-      current = current[index];
-    } else {
-      if (!current[key]) current[key] = {}; // Ensure the path exists
-      current = current[key];
-    }
-  }
-
-  const lastKey = keys[keys.length - 1];
-
-  // Handle array index for the last key
-  if (lastKey.match(/^\d+$/)) {
-    const index = parseInt(lastKey, 10);
-    if (!Array.isArray(current)) {
-      throw new Error(`Expected an array at ${keys.slice(0, -1).join(".")}`);
-    }
-    current[index] = value; // Update array element
-  } else if (typeof value === "object" && !Array.isArray(value)) {
-    // Replace the entire object at the last key
-    current[lastKey] = value;
-  } else {
-    current[lastKey] = value; // Update specific property
-  }
-};
-
 const MoveListPageContent = ({ movesList }) => {
   const [moves, setMoves] = useState(movesList);
   const [searchTable, setSearchTable] = useState({
-    ...defaultSearchTable,
+    ...defaultMoveSearchTable,
   });
   const [filterOpen, setFilterDrawerOpen] = useState(false);
 
@@ -126,7 +90,7 @@ const MoveListPageContent = ({ movesList }) => {
 
   const clearAllFilters = () => {
     setSearchTable({
-      ...defaultSearchTable,
+      ...defaultMoveSearchTable,
       statChanges: { // For some reason, React isn't able to see this deep into an object to tell it to default back to a state
         rate: { label: null, value: null },
         stages: { label: null, value: null },

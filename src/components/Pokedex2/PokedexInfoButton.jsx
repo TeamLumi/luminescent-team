@@ -18,9 +18,10 @@ export const PokemonInfoButton = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: "center",
-            marginLeft: { xs: "unset", sm: ".25rem" },
-            gridArea: "b"
+            justifyContent: "end",
+            marginLeft: { xs: ".25rem" },
+            gridArea: "b",
+            alignItems: "center"
           }}
         >
           <button onClick={handleOpen} className={styles.infoButton}>Features</button>

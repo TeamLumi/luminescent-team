@@ -131,13 +131,13 @@ const MonDetails = ({smallest, pokemon, pokemonInfo}) => {
           marginLeft="5px"
         >
           <PokemonMoveType
-            typeName={TYPE_COLOR_MAP[pokemonInfo.type1].name}
-            typeColor={TYPE_COLOR_MAP[pokemonInfo.type1].color}
+            typeName={TYPE_COLOR_MAP[pokemonInfo.types.type1].name}
+            typeColor={TYPE_COLOR_MAP[pokemonInfo.types.type1].color}
             fontSize={[".7rem", ".875rem"]}
             smallest={smallest}
           />
         </Box>
-        {pokemonInfo.type1 !== pokemonInfo.type2 && (
+        {pokemonInfo.types.type1 !== pokemonInfo.types.type2 && (
           <Box
             sx={{
               ...getSmallestResponsiveStyle(smallest, "width", {
@@ -150,8 +150,8 @@ const MonDetails = ({smallest, pokemon, pokemonInfo}) => {
             marginLeft="5px"
           >
             <PokemonMoveType
-              typeName={TYPE_COLOR_MAP[pokemonInfo.type2].name}
-              typeColor={TYPE_COLOR_MAP[pokemonInfo.type2].color}
+              typeName={TYPE_COLOR_MAP[pokemonInfo.types.type2].name}
+              typeColor={TYPE_COLOR_MAP[pokemonInfo.types.type2].color}
               fontSize={[".7rem", ".875rem"]}
               smallest={smallest}
             />

@@ -39,7 +39,7 @@ const DisplayValues = ({ data, handleChange, prefix = "" }) => {
             const fullKey = prefix ? `${prefix}.${key}` : key;
 
             // Skip if value is null
-            if (value?.value === null || fullKey === "name" || fullKey === "id") {
+            if (value?.value === null || fullKey === "name" || fullKey === "id" || fullKey === "monsno") {
                 return null;
             }
 

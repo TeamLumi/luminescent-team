@@ -6,6 +6,8 @@ const { FORM_MAP } = require('./dex/functions');
 const { normalizePokemonName } = require('./dex/name');
 const { GAMEDATA2, GAMEDATA3, GAMEDATAV } = require('../../__gamedata');
 const { getWeight } = require('./dex/details');
+const { getAbilityIdFromAbilityName } = require('./dex/ability');
+const { getItemIdFromItemName } = require('./dex/item');
 
 /**
  * @param {{path: string, routeBasePath: string, pokemonComponent: string, pokemonRedirectComponent: string, listComponent: string, wrapperComponent: string, mapComponent: string}} options
@@ -28,13 +30,27 @@ function pokedexDataPlugin(context, options) {
         formno: p.formno,
         name: p.name,
         imageSrc: p.imageSrc,
-        type1: p.type1Id,
-        type2: p.type2Id,
-        ability1: p.ability1,
-        ability2: p.ability2,
-        abilityH: p.abilityH,
+        types: {
+          type1: p.type1Id,
+          type2: p.type2Id,
+        },
+        abilities: {
+          ability1: getAbilityIdFromAbilityName(p.ability1, GAMEDATAV),
+          ability2: getAbilityIdFromAbilityName(p.ability2, GAMEDATAV),
+          abilityH: getAbilityIdFromAbilityName(p.abilityH, GAMEDATAV),
+        },
         baseStats: p.baseStats,
         forms: p.forms,
+        catchChance: p.catchChance,
+        eggGroupNames: p.eggGroupNames,
+        gender: p.genderDecimalValue,
+        height: p.height,
+        weight: p.weight,
+        items: {
+          item1: getItemIdFromItemName(p.item1, GAMEDATAV),
+          item2: getItemIdFromItemName(p.item2, GAMEDATAV),
+          item3: getItemIdFromItemName(p.item3, GAMEDATAV),
+        },
       }));
 
       const pokemons = Object.values(FORM_MAP[GAMEDATA2])
@@ -49,13 +65,27 @@ function pokedexDataPlugin(context, options) {
         formno: p.formno,
         name: p.name,
         imageSrc: p.imageSrc,
-        type1: p.type1Id,
-        type2: p.type2Id,
-        ability1: p.ability1,
-        ability2: p.ability2,
-        abilityH: p.abilityH,
+        types: {
+          type1: p.type1Id,
+          type2: p.type2Id,
+        },
+        abilities: {
+          ability1: getAbilityIdFromAbilityName(p.ability1, GAMEDATA2),
+          ability2: getAbilityIdFromAbilityName(p.ability2, GAMEDATA2),
+          abilityH: getAbilityIdFromAbilityName(p.abilityH, GAMEDATA2),
+        },
         baseStats: p.baseStats,
         forms: p.forms,
+        catchChance: p.catchChance,
+        eggGroupNames: p.eggGroupNames,
+        gender: p.genderDecimalValue,
+        height: p.height,
+        weight: p.weight,
+        items: {
+          item1: getItemIdFromItemName(p.item1, GAMEDATA2),
+          item2: getItemIdFromItemName(p.item2, GAMEDATA2),
+          item3: getItemIdFromItemName(p.item3, GAMEDATA2),
+        },
       }));
 
       const pokemons3 = Object.values(FORM_MAP[GAMEDATA3])
@@ -70,11 +100,15 @@ function pokedexDataPlugin(context, options) {
         formno: p3.formno,
         name: p3.name,
         imageSrc: p3.imageSrc,
-        type1: p3.type1Id,
-        type2: p3.type2Id,
-        ability1: p3.ability1,
-        ability2: p3.ability2,
-        abilityH: p3.abilityH,
+        types: {
+          type1: p3.type1Id,
+          type2: p3.type2Id,
+        },
+        abilities: {
+          ability1: getAbilityIdFromAbilityName(p3.ability1, GAMEDATA3),
+          ability2: getAbilityIdFromAbilityName(p3.ability2, GAMEDATA3),
+          abilityH: getAbilityIdFromAbilityName(p3.abilityH, GAMEDATA3),
+        },
         baseStats: p3.baseStats,
         baseStatsTotal: p3.baseStatsTotal,
         forms: p3.forms,
@@ -83,6 +117,11 @@ function pokedexDataPlugin(context, options) {
         gender: p3.genderDecimalValue,
         height: p3.height,
         weight: p3.weight,
+        items: {
+          item1: getItemIdFromItemName(p3.item1, GAMEDATA3),
+          item2: getItemIdFromItemName(p3.item2, GAMEDATA3),
+          item3: getItemIdFromItemName(p3.item3, GAMEDATA3),
+        },
       }));
 
       return {

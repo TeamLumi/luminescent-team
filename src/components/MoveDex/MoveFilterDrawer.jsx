@@ -10,15 +10,14 @@ import {
   FormControlLabel,
   switchClasses,
 } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
 
 import { PokemonAccordion } from '../Pokedex2/PokemonAccordion';
+import { FilterDrawer } from '../common/FilterDrawer';
 import {
   DMG_TYPE_ICONS,
   PokemonMoveType,
   TYPE_COLOR_MAP
 } from '../Pokedex2/PokemonMovesetList';
-
 import {
   DAMAGE_RECOVER_RATIO,
   FLAG_STRINGS,
@@ -33,7 +32,6 @@ import {
   STATUS_EFFECTS,
   STATUS_MOVE
 } from '../../../plugins/pokedex-data-plugin/dex/moveConstants';
-import { FilterDrawer } from '../common/FilterDrawer';
 
 export const MoveFilterDrawer = ({
   filterOpen,
@@ -42,47 +40,6 @@ export const MoveFilterDrawer = ({
   searchTable,
   handleChange,
 }) => {
-
-  const DisplayValues = ({ data, prefix = "" }) => {
-    return (
-      <>
-        {Object.entries(data).map(([key, value]) => {
-          const fullKey = prefix ? `${prefix}.${key}` : key;
-
-          // Skip if value is null
-          if (value?.value === null || fullKey === "name" || fullKey === "id") {
-            return null;
-          }
-
-          // If value is an object but doesn't have a 'value' property, recurse into it
-          if (value && typeof value === "object" && !("value" in value)) {
-            // Check if the nested object has any non-null values
-            const hasNestedValues = Object.values(value).some(
-              (nestedValue) => nestedValue?.value !== null
-            );
-            return hasNestedValues ? (
-              <React.Fragment key={fullKey}>
-                <DisplayValues
-                  data={value}
-                  prefix={fullKey}
-                />
-              </React.Fragment>
-            ) : null;
-          }
-
-          // Display key-value pair for objects with 'label' and 'value' props
-          return (
-            <Box key={fullKey} sx={{ margin: "8px 0" }}>
-              <Button onClick={() => handleChange(fullKey, {value: null, label: value.label})}>
-                <CloseIcon sx={{ marginRight: "8px" }} /> {value.label}
-              </Button>
-            </Box>
-          );
-        })}
-      </>
-    );
-  };
-
   return (
     <FilterDrawer
       filterOpen={filterOpen}
