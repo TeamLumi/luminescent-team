@@ -39,7 +39,7 @@ const DisplayValues = ({ data, handleChange, prefix = "" }) => {
             const fullKey = prefix ? `${prefix}.${key}` : key;
 
             // Skip if value is null
-            if (value?.value === null || fullKey === "name" || fullKey === "id" || fullKey === "monsno") {
+            if (value?.value === null || value?.value === "" || fullKey === "name" || fullKey === "id" || fullKey === "monsno") {
                 return null;
             }
 
@@ -60,10 +60,18 @@ const DisplayValues = ({ data, handleChange, prefix = "" }) => {
                 ) : null;
             }
 
+            const stringValues = [
+                "item",
+                "ability"
+            ];
+
+            const nullValue = stringValues.includes(fullKey) ? "" : null;
+            const nullLabel = stringValues.includes(fullKey) ? "" : value.label;
+
             // Display key-value pair for objects with 'label' and 'value' props
             return (
                 <Box key={fullKey} sx={{ margin: "8px 0" }}>
-                    <Button onClick={() => handleChange(fullKey, {value: null, label: value.label})}>
+                    <Button onClick={() => handleChange(fullKey, {value: nullValue, label: nullLabel})}>
                         <CloseIcon sx={{ marginRight: "8px" }} /> {value.label}
                     </Button>
                 </Box>

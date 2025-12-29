@@ -71,6 +71,12 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
   ), [movesList, fuseKeys]);
   const [text, setText] = useState('');
   const [debouncedText, setDebouncedText] = useState(text);
+  const MOVE_EXCLUDE_LIST = [
+    "power",
+    "accuracy",
+    "statChanges",
+    "moveFlags",
+  ];
 
   const handleTextChange = (value) => {
     setText(value);
@@ -93,7 +99,7 @@ const MoveSearchInput = ({ movesList, setMoves, searchTable, handleChange }) => 
 
   const fuzzySearch = useCallback(() => {
     const queryList = []
-    buildQueryList(searchTable, queryList);
+    buildQueryList(searchTable, queryList, MOVE_EXCLUDE_LIST);
     if (queryList.length === 0) {
       return getPowerAccuracyFilter(searchTable, movesList)
     }; // Return all moves if no filters are applied

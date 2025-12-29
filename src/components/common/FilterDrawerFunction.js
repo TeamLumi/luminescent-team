@@ -54,34 +54,18 @@ export const extractKeys = (obj, parentKey = "") => {
     return keys;
 };
 
-export const buildQueryList = (obj, queryList, parentKey = "") => {
+export const buildQueryList = (obj, queryList, excludeList = [], parentKey = "") => {
     Object.keys(obj).forEach((key) => {
-        const EXCLUDE_KEYS = [
-            // Move Values
-            "power",
-            "accuracy",
-            "statChanges",
-            "moveFlags",
-
-            // Pokemon Values
-            "baseStats",
-            "ability",
-            "types",
-        ];
-
-        if (EXCLUDE_KEYS.includes(key)) {
+        if (excludeList.includes(key)) {
             return;
         }
 
-        if (key === "baseStats") {
-            console.log("HELLO???");
-        }
         const value = obj[key];
         const fullKey = parentKey ? `${parentKey}.${key}` : key;
 
         if (value && typeof value === "object" && !("value" in value)) {
             // Recursively handle nested objects without a 'value' property
-            buildQueryList(value, queryList, fullKey);
+            buildQueryList(value, queryList, excludeList, fullKey);
         } else if (value?.value !== null && value?.value !== "") {
             // Add to query list if 'value' property is not null or undefined
             let actualValue = value?.value;

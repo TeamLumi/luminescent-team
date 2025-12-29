@@ -21,7 +21,7 @@ export const defaultPokemonSearchTable = {
     type1: { label: null, value: null },
     type2: { label: null, value: null },
   },
-  ability: { label: null, value: null },
+  ability: { label: "", value: "" },
   baseStats: {
     hp: { label: null, value: null },
     atk: { label: null, value: null },
@@ -32,13 +32,14 @@ export const defaultPokemonSearchTable = {
   },
   baseStatsTotal: { label: null, value: null },
   catchChance: { label: null, value: null },
-  eggGroups: [
-    { label: null, value: null },
-    { label: null, value: null },
-  ],
+  eggGroups: {
+    eggGroup1: { label: null, value: null },
+    eggGroup2: { label: null, value: null },
+  },
   gender: { label: null, value: null },
   height: { label: null, value: null },
   weight: { label: null, value: null },
+  item: { label: "", value: "" },
 };
 
 export const PokemonListPageContent = ({ pokemonList, pokemonList3, pokemonListV }) => {
@@ -67,6 +68,22 @@ export const PokemonListPageContent = ({ pokemonList, pokemonList3, pokemonListV
   const clearAllFilters = () => {
     setSearchTable({
       ...defaultPokemonSearchTable,
+      types: {
+        type1: { label: null, value: null },
+        type2: { label: null, value: null },
+      },
+      baseStats: {
+        hp: { label: null, value: null },
+        atk: { label: null, value: null },
+        def: { label: null, value: null },
+        spa: { label: null, value: null },
+        spd: { label: null, value: null },
+        spe: { label: null, value: null },
+      },
+      eggGroups: {
+        eggGroup1: { label: null, value: null },
+        eggGroup2: { label: null, value: null },
+      },
     });
   }
 

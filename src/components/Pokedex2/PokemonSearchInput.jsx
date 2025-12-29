@@ -5,6 +5,18 @@ import { buildQueryList, extractKeys } from '../common/FilterDrawerFunction';
 import { defaultPokemonSearchTable } from './PokemonListPageContent';
 
 function applyBaseStatRangeFilter(results, statKey, rangeValue) {
+  if (!rangeValue) return results;
+
+  if (rangeValue.startsWith(">")) {
+    const minValue = Number(rangeValue.slice(2));
+    const finalResults = results.filter(pokemon => {
+      const stat = Number(pokemon.baseStats?.[statKey]);
+      return !isNaN(stat) && stat >= minValue;
+    });
+
+    return finalResults
+  }
+
   const range = rangeValue?.split("-");
 
   if (range?.length !== 2) {
@@ -71,6 +83,24 @@ function getAdditionalFilters(searchTable, finalResults) {
     );
   }
 
+  // Egg Groups
+  const eggGroup1Value = searchTable.eggGroups?.eggGroup1.value;
+  const eggGroup2Value = searchTable.eggGroups?.eggGroup2.value;
+  if (eggGroup1Value && eggGroup2Value) {
+    // Both types are selected → Pokémon must have both
+    const requiredEggGroups = [eggGroup1Value, eggGroup2Value];
+
+    finalResults = finalResults.filter(pokemon => {
+      return requiredEggGroups.every(t => pokemon.eggGroupNames.includes(t));
+    });
+  } else if (eggGroup1Value || eggGroup2Value) {
+    // Only one type is selected → match either type
+    const requiredEggGroup = eggGroup1Value || eggGroup2Value;
+    finalResults = finalResults.filter(pokemon =>
+      pokemon.eggGroupNames.includes(requiredEggGroup)
+    );
+  }
+
   return finalResults;
 }
 
@@ -81,6 +111,13 @@ export const PokemonSearchInput = ({ allPokemons, setPokemons, searchTable, hand
   ), [allPokemons, fuseKeys]);
   const [text, setText] = useState('');
   const [debouncedText, setDebouncedText] = useState(text);
+  const POKEMON_EXCLUDE_LIST = [
+    "baseStats",
+    "ability",
+    "types",
+    "item",
+    "eggGroups",
+  ];
 
   const handleTextChange = (value) => {
     setText(value);
@@ -103,7 +140,7 @@ export const PokemonSearchInput = ({ allPokemons, setPokemons, searchTable, hand
 
   const fuzzySearch = useCallback(() => {
     const queryList = [];
-    buildQueryList(searchTable, queryList);
+    buildQueryList(searchTable, queryList, POKEMON_EXCLUDE_LIST);
 
     if (queryList.length === 0) {
       return getAdditionalFilters(searchTable, allPokemons);

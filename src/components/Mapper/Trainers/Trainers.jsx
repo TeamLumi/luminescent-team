@@ -60,7 +60,6 @@ export const TrainerDropdown = ({ trainer, setTrainer, trainerList, smallest }) 
         renderInput={(params) => (
           <TextField
             {...params}
-            type="search"
             label="Select Trainer"
           />
         )}
