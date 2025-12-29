@@ -18,9 +18,10 @@ export const PokemonInfoButton = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: "center",
-            marginLeft: { xs: "unset", sm: ".25rem" },
-            gridArea: "b"
+            justifyContent: "end",
+            marginLeft: { xs: ".25rem" },
+            gridArea: "b",
+            alignItems: "center"
           }}
         >
           <button onClick={handleOpen} className={styles.infoButton}>Features</button>
@@ -43,8 +44,19 @@ export const PokemonInfoButton = () => {
                   </li>
                   <li>A comparison toggle to view vanilla BDSP stats against any changes we have made.</li>
                   <li>The Search bar now scrolls with the page instead of staying at the top of the page.</li>
+                  <li>Added a search filter for type, base stats, ability, item, and egg groups.</li>
                 </ul>
                 Please keep an eye on this features section to see what other features may become available.
+                <br/><br/>
+                Coming Soon (TM):
+                <ul>
+                  <li>Search Filter for base stat total.</li>
+                  <li>Search Filter for catch chance.</li>
+                  <li>Search Filter for gender ratios.</li>
+                  <li>Search Filter for height.</li>
+                  <li>Search Filter for weight.</li>
+                </ul>
+                Let us know in the discord if there is a feature you would like here.
               </Typography>
             </Box>
           </Modal>

@@ -33,7 +33,10 @@ export const PokemonStats = ({ baseStats, baseStatsTotal }) => {
         sx={{
           border: "2px solid var(--ifm-table-border-color)",
           borderRadius: "5px",
-          padding: "12px !important"
+          padding: "12px !important",
+          height: "256px",
+          alignContent: "center",
+          alignItems: "center",
         }}
       >
         <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1}>

@@ -67,4 +67,4 @@ function getPokemonIdsInEggGroup(eggGroupId = 0, mode = GAMEDATA2) {
   return Array.from(PokemonByEggGroups[eggGroupId]); //Back to array for easier handling
 }
 
-module.exports = { getPokemonIdsInEggGroup, getEggGroupNameById, getEggGroupViaPokemonId };
+module.exports = { getPokemonIdsInEggGroup, getEggGroupNameById, getEggGroupViaPokemonId, EGG_GROUPS };

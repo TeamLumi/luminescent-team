@@ -38,4 +38,31 @@ function getAbilityInfo(id, mode = GAMEDATA2) {
   return description.trim();
 }
 
-module.exports = { makeSmogonAbilityObject, getAbilityIdFromAbilityName, getAbilityString, getAbilityInfo };
+function getAllAbilities(mode = GAMEDATA2) {
+  const ModeAbilityNames = AbilityNames[mode];
+
+  if (!ModeAbilityNames?.labelDataArray) {
+    throw new Error(`Invalid AbilityNames table for mode: ${mode}`);
+  }
+
+  return ModeAbilityNames.labelDataArray
+    .map((label, abilityId) => {
+      const name = label?.wordDataArray?.[0]?.str;
+      if (!name) return null;
+
+      return {
+        id: abilityId,
+        name,
+      };
+    })
+    .filter(Boolean) // remove null / invalid entries
+    .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+}
+
+module.exports = {
+  makeSmogonAbilityObject,
+  getAbilityIdFromAbilityName,
+  getAbilityString,
+  getAbilityInfo,
+  getAllAbilities,
+};

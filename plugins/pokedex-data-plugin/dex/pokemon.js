@@ -71,6 +71,8 @@ function getPokemon(pokemonId, mode = GAMEDATA2) {
   const item2 = getItemString(p.item2, mode)
   const item3 = getItemString(p.item3, mode)
 
+  const catchChance = p.get_rate;
+
   return {
     id,
     monsno,
@@ -100,6 +102,7 @@ function getPokemon(pokemonId, mode = GAMEDATA2) {
     item1,
     item2,
     item3,
+    catchChance,
   };
 }
 

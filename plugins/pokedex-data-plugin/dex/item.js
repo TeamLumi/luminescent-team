@@ -1,4 +1,4 @@
-const { GAMEDATA2, ItemNames } = require('../../../__gamedata');
+const { GAMEDATA2, ItemNames, ItemTable } = require('../../../__gamedata');
 
 function getItemIdFromItemName(itemName, mode = GAMEDATA2) {
   if (!itemName) throw Error(`Bad item name: ${itemName}`);
@@ -24,6 +24,48 @@ function getItemString(itemId = 1, mode = GAMEDATA2) {
   return itemObject.wordDataArray[0].str;
 }
 
+function getAllItems(mode = GAMEDATA2) {
+  const ModeItemNames = ItemNames[mode];
+
+  if (!ModeItemNames?.labelDataArray) {
+    throw new Error(`Invalid ItemNames table for mode: ${mode}`);
+  }
+
+  
+  return ModeItemNames.labelDataArray
+    .map((label, itemId) => {
+      const name = label?.wordDataArray?.[0]?.str;
+      if (!name) return null;
+
+      const itemProperties = getItemProperties(itemId, mode)
+      if (is31stBitSet(itemProperties.flags0)) {
+        return null;
+      }
+      return {
+        id: itemId,
+        name,
+      };
+    })
+    .filter(Boolean) // remove null / invalid entries
+    .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
+}
+
+function is31stBitSet(value) {
+  return ((value >>> 31) & 1) === 1;
+}
+
+function getItemProperties(itemId = 1, mode = GAMEDATA2) {
+  const ModeItemTable = ItemTable[mode];
+  const itemTableArray = ModeItemTable.Item;
+
+  if (itemId > itemTableArray.length) {
+    throw Error(`Bad Item Number: ${itemId}`)
+  }
+
+  const itemPropertyObject = itemTableArray[itemId];
+  return itemPropertyObject;
+}
+
 function getItemImageUrl(itemName="") {
   const splitItemName = itemName.replace("’", "").split(" ").join("_");
   return `/img/items/Item_${splitItemName}.webp`;
@@ -32,4 +74,4 @@ function getItemImageUrl(itemName="") {
 function getTMImageUrl(moveType="") {
   return `/img/tms/${moveType}.webp`
 }
-module.exports = { getItemIdFromItemName, getItemString, getItemImageUrl, getTMImageUrl };
+module.exports = { getItemIdFromItemName, getItemString, getItemImageUrl, getTMImageUrl, getAllItems };

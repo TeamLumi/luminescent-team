@@ -59,7 +59,6 @@ const PokemonSearchInput = ({
         renderInput={(params) => (
           <TextField
             {...params}
-            type="search"
             label="Search Pokémon Location"
             fullWidth
             onChange={handleInputChange}
@@ -99,7 +98,6 @@ const LocationNameDropdown = ({
         renderInput={(params) => (
           <TextField
             {...params}
-            type="search"
             label="Current Location"
             fullWidth
             value={locationName}
