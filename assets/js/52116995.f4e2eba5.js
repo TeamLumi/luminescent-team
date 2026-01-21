@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[192329],{494541(e){e.exports="/pokedex/meta-groudon"}}]);

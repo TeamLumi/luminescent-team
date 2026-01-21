@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[195462],{702784(e){e.exports="/pokedex/mega-aerodactyl"}}]);

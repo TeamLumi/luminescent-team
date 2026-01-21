@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[519158],{216663(e){e.exports="/pokedex/hawlucha"}}]);

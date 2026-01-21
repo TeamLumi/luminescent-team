@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[473836],{906304(e){e.exports="/pokedex/dread-plate-arceus"}}]);

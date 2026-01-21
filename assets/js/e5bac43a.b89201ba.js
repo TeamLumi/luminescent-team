@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[536651],{687114(e){e.exports="/pokedex/ting-lu"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[502689],{768618(e){e.exports="/pokedex/herdier"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[924732],{276237(e){e.exports="/pokedex/dada-zarude"}}]);

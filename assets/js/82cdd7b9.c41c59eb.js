@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[480496],{967347(e){e.exports="/pokedex/mega-scizor"}}]);

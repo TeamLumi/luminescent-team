@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[163487],{190760(e){e.exports="/pokedex/cyndaquil"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[428792],{936717:e=>{e.exports="/pokedex/mime-jr"}}]);

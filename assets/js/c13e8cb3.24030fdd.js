@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[666245],{7297(e){e.exports="/pokedex/dachsbun"}}]);

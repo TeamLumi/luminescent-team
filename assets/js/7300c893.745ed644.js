@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[19692],{304200(e){e.exports="/pokedex/ariados"}}]);

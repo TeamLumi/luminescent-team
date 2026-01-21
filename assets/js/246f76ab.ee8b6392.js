@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[54015],{606505(e){e.exports="/pokedex/eternamax-eternatus"}}]);

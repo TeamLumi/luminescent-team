@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[821103],{667e3(e){e.exports="/pokedex/hero-form-palafin"}}]);

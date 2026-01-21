@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[505859],{319007(e){e.exports="/pokedex/raticate"}}]);

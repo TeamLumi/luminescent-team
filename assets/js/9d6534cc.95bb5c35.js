@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[161280],{475207(e){e.exports="/pokedex/steelix"}}]);

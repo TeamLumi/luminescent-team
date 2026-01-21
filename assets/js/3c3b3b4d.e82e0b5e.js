@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[599925],{156948(e){e.exports="/pokedex/cofagrigus"}}]);

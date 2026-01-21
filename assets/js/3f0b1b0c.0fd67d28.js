@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[343648],{629656(e){e.exports="/pokedex/gumshoos"}}]);

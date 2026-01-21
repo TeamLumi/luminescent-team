@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[579309],{731680(e){e.exports="/pokedex/white-striped-form-basculin"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[336091],{354279(e){e.exports="/pokedex/core-forme-zygarde"}}]);

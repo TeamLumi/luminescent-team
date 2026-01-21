@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[110783],{255398:e=>{e.exports="/pokedex/i-form-unown"}}]);

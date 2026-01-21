@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[914192],{345534(e){e.exports="/pokedex/rowlet"}}]);

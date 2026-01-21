@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[670785],{238951(e){e.exports="/pokedex/staraptor"}}]);

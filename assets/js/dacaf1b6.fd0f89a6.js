@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[979353],{198353(e){e.exports="/pokedex/dragalge"}}]);

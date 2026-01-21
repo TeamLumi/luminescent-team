@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[328628],{415944(e){e.exports="/pokedex/farfetchd"}}]);

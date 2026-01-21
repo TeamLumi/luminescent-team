@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[399721],{335690(e){e.exports="/pokedex/cosmog"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[610298],{593971(e){e.exports="/pokedex/incarnate-forme-thundurus"}}]);

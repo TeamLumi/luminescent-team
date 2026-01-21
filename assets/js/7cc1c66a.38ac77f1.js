@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[291225],{558919(e){e.exports="/pokedex/alola-vulpix"}}]);

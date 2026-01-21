@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[12406],{171963(e){e.exports="/pokedex/galar-ponyta"}}]);

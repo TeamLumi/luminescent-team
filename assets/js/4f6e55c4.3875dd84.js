@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[859549],{574200(e){e.exports="/pokedex/mega-houndoom"}}]);

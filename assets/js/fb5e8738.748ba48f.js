@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[195531],{376326(e){e.exports="/pokedex/cottonee"}}]);

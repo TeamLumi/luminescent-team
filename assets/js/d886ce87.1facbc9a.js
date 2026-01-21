@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[350718],{974077(e){e.exports="/pokedex/taillow"}}]);

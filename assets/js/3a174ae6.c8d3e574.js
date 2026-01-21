@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[985567],{943916(e){e.exports="/pokedex/sizzlipede"}}]);

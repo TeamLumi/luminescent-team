@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[490213],{837265(e){e.exports="/pokedex/dandy-trim-furfrou"}}]);

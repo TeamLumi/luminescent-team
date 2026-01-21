@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[427002],{739522(e){e.exports="/pokedex/alola-golem"}}]);

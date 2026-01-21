@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[446586],{269424(e){e.exports="/pokedex/suicune"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[814851],{744275(e){e.exports="/pokedex/naclstack"}}]);

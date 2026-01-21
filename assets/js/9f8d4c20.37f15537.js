@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[483916],{356185:e=>{e.exports="/pokedex/eternatus"}}]);

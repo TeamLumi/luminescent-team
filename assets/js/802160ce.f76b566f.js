@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[366830],{521145(e){e.exports="/pokedex/hisui-avalugg"}}]);

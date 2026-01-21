@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[905806],{575906(e){e.exports="/pokedex/magearna"}}]);

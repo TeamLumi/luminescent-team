@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[378851],{557433(e){e.exports="/pokedex/crocalor"}}]);

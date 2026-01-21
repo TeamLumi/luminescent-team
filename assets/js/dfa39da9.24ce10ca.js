@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[252460],{547736(e){e.exports="/pokedex/alola-exeggutor"}}]);

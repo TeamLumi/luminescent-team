@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[203230],{95749(e){e.exports="/pokedex/alola-rattata"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[103381],{860423(e){e.exports="/pokedex/raging-bolt"}}]);

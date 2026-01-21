@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[751126],{363447(e){e.exports="/pokedex/zweilous"}}]);

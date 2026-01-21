@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[371322],{51555:e=>{e.exports="/pokedex/torracat"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[942408],{881120:e=>{e.exports="/pokedex/spearow"}}]);

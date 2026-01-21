@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[385159],{367594(e){e.exports="/pokedex/krokorok"}}]);

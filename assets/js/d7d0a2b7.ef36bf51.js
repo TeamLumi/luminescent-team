@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[282540],{390630(e){e.exports="/pokedex/omastar"}}]);

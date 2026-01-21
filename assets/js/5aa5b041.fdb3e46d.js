@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[991300],{829531(e){e.exports="/pokedex/braviary"}}]);

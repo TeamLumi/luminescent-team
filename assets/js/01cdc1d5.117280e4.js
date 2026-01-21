@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[227872],{240223:e=>{e.exports="/pokedex/mega-swampert"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[651232],{995199:e=>{e.exports="/pokedex/pikipek"}}]);

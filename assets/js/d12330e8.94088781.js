@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[223969],{392661(e){e.exports="/pokedex/-poison-silvally"}}]);

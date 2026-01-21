@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[350976],{805011(e){e.exports="/pokedex/brambleghast"}}]);

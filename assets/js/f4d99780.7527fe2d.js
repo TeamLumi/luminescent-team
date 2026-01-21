@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[640420],{120838(e){e.exports="/pokedex/super-size-gourgeist"}}]);

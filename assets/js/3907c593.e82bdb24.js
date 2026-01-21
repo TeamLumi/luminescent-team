@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[220032],{558956(a){a.exports="/pokedex/galar-standard-mode-darmanitan"}}]);

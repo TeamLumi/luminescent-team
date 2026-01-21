@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[626780],{586298(e){e.exports="/pokedex/brute-bonnet"}}]);

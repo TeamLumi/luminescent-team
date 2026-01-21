@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[47191],{893976(e){e.exports="/pokedex/ninetales"}}]);

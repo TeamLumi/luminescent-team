@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[681203],{607870(e){e.exports="/pokedex/clodsire"}}]);

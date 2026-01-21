@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[804988],{544939(e){e.exports="/pokedex/slugma"}}]);

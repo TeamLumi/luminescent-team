@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[998248],{463945(e){e.exports="/pokedex/metapod"}}]);

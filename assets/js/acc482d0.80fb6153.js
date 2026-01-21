@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[88216],{637708(e){e.exports="/pokedex/wash-rotom"}}]);

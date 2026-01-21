@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[109950],{194996:e=>{e.exports="/pokedex/pharaoh-trim-furfrou"}}]);

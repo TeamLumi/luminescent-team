@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[167411],{326211(e){e.exports="/pokedex/kabuto"}}]);

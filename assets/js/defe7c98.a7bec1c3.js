@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[471148],{327366(e){e.exports="/pokedex/shuppet"}}]);

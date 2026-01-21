@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[131389],{841111(e){e.exports="/pokedex/torkoal"}}]);

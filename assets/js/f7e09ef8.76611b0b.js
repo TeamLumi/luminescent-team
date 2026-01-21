@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[823473],{25253(e){e.exports="/pokedex/zap-plate-arceus"}}]);

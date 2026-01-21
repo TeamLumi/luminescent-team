@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[894493],{769863(e){e.exports="/pokedex/venonat"}}]);

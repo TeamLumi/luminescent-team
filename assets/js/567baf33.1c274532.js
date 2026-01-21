@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[20974],{729257(e){e.exports="/pokedex/rillaboom"}}]);

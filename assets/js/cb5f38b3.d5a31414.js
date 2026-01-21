@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[124877],{590249(e){e.exports="/pokedex/zoroark"}}]);

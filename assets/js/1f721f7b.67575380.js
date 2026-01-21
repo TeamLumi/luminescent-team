@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[927815],{883513(e){e.exports="/pokedex/murkrow"}}]);

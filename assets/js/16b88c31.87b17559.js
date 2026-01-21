@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[412363],{741319(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"docs2"}')}}]);

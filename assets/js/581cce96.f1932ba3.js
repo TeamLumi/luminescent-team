@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[572593],{859599(e){e.exports="/pokedex/archipelago-pattern-vivillon"}}]);

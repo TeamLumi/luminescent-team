@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[483259],{751981(e){e.exports="/pokedex/nosepass"}}]);

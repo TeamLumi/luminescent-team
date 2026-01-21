@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[984254],{561568(e){e.exports="/pokedex/comfey"}}]);

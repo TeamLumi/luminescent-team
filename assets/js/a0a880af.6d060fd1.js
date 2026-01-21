@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[279201],{421140:e=>{e.exports="/pokedex/wobbuffet"}}]);

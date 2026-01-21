@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[376619],{701799(e){e.exports="/pokedex/small-size-pumpkaboo"}}]);

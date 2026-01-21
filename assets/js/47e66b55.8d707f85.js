@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[851711],{558708(e){e.exports="/pokedex/plant-cloak-burmy"}}]);

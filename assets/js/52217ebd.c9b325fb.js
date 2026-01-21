@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[262731],{242912(e){e.exports="/pokedex/rhydon"}}]);

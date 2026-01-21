@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[257922],{132798(e){e.exports="/pokedex/hatenna"}}]);

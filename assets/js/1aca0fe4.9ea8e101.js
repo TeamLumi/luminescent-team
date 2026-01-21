@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[255760],{59959(e){e.exports="/pokedex/standard-mode-darmanitan"}}]);

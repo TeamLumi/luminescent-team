@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[698613],{850574(e){e.exports="/pokedex/noibat"}}]);

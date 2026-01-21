@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[883441],{277892:e=>{e.exports="/pokedex/linoone"}}]);

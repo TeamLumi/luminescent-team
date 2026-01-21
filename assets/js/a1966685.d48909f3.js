@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[315093],{63499(e){e.exports="/pokedex/yamper"}}]);

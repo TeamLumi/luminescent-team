@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[768579],{366198(e){e.exports="/pokedex/swellow"}}]);

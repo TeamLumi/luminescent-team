@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[919067],{618677(e){e.exports="/pokedex/gmax-gengar"}}]);

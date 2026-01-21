@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[100882],{718322(e){e.exports="/pokedex/frillish"}}]);

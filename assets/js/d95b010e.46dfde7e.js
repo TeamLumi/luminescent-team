@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[549111],{301624(e){e.exports="/pokedex/terastal-cornerstone-mask-ogerpon"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[966162],{634918(e){e.exports="/pokedex/timburr"}}]);

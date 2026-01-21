@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[183710],{746724(e){e.exports="/pokedex/wartortle"}}]);

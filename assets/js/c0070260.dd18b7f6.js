@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[201961],{148810(e){e.exports="/pokedex/bellibolt"}}]);

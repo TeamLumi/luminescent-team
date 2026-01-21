@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[737110],{348941(e){e.exports="/pokedex/spritzee"}}]);

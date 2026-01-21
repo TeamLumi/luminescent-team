@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[798148],{4142:e=>{e.exports="/pokedex/mismagius"}}]);

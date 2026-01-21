@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[224806],{660315(e){e.exports="/pokedex/carvanha"}}]);

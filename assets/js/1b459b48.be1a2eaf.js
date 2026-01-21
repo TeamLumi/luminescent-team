@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[555538],{266680(e){e.exports="/pokedex/speed-forme-deoxys"}}]);

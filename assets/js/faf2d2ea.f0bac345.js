@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[848020],{468509(e){e.exports="/pokedex/amped-form-toxtricity"}}]);

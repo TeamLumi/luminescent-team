@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[832923],{248531(e){e.exports="/pokedex/dipplin"}}]);

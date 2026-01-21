@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[102903],{41592(e){e.exports="/pokedex/duosion"}}]);

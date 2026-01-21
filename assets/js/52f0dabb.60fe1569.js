@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[934165],{856084(e){e.exports="/pokedex/-ghost-silvally"}}]);

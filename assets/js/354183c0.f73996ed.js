@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[44312],{328692(e){e.exports="/pokedex/sceptile"}}]);

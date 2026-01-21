@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[917059],{76946(e){e.exports="/pokedex/vileplume"}}]);

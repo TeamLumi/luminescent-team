@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[752885],{375522(e){e.exports="/pokedex/galar-rapidash"}}]);

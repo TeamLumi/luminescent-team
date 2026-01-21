@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[161166],{980231(e){e.exports="/pokedex/clefable"}}]);

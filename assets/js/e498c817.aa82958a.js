@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[886058],{216065(e){e.exports="/pokedex/drilbur"}}]);

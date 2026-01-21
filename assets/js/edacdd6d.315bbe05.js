@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[850546],{498563(e){e.exports="/pokedex/pancham"}}]);

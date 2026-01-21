@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[530797],{927347(e){e.exports="/pokedex/meowth"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[228640],{394923(e){e.exports="/pokedex/mega-pinsir"}}]);

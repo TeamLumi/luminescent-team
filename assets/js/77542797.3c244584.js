@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[704667],{425103(e){e.exports="/pokedex/galar-zigzagoon"}}]);

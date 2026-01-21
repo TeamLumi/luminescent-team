@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[923308],{867297(e){e.exports="/pokedex/cinderace"}}]);

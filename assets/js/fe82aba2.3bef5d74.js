@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[862290],{61661(e){e.exports="/pokedex/sandy-cloak-wormadam"}}]);

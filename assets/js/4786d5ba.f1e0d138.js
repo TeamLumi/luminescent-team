@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[249656],{124310(e){e.exports="/pokedex/kyurem"}}]);

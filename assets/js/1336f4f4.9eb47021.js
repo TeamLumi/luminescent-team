@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[991244],{520499:e=>{e.exports="/pokedex/mega-absol"}}]);

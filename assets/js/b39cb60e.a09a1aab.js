@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[996513],{965947:e=>{e.exports="/pokedex/darumaka"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[321419],{970635(e){e.exports="/pokedex/slaking"}}]);

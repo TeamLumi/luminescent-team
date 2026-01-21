@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[512158],{428451(e){e.exports="/pokedex/frost-rotom"}}]);

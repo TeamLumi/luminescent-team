@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[72412],{870932(e){e.exports="/pokedex/dracovish"}}]);

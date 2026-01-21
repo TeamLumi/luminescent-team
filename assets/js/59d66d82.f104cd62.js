@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[269995],{890500(e){e.exports="/pokedex/frogadier"}}]);

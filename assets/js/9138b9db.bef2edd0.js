@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[735925],{578192(e){e.exports="/pokedex/ferrothorn"}}]);

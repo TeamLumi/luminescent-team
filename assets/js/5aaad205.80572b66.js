@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[341148],{178144(e){e.exports="/pokedex/fennekin"}}]);

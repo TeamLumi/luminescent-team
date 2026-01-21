@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[984656],{689456(e){e.exports="/pokedex/snorunt"}}]);

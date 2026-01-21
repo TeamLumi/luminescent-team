@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[769699],{673972(e){e.exports="/pokedex/gmax-lapras"}}]);

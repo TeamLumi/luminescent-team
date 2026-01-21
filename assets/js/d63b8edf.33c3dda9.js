@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[385105],{349976(e){e.exports="/pokedex/alomomola"}}]);

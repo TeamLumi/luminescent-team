@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[270992],{260721(e){e.exports="/pokedex/dhelmise"}}]);

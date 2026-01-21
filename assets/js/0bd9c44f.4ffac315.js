@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[917015],{433993(e){e.exports="/pokedex/gmax-drednaw"}}]);

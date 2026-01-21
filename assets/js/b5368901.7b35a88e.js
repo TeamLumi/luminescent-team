@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[545759],{686208(e){e.exports="/pokedex/tarountula"}}]);

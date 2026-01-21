@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[652034],{465833(e){e.exports="/pokedex/orange-core-minior"}}]);

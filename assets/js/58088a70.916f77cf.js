@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[695092],{128145(e){e.exports="/pokedex/electabuzz"}}]);

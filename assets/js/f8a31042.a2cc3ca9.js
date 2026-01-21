@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[389388],{45956(e){e.exports="/pokedex/lillipup"}}]);

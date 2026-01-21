@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[663410],{427975(e){e.exports="/pokedex/normal-form-terapagos"}}]);

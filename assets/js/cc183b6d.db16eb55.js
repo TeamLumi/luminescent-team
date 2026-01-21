@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[90331],{369428(e){e.exports="/pokedex/terastal-wellspring-mask-ogerpon"}}]);

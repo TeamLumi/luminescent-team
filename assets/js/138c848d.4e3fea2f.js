@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[563679],{963404:e=>{e.exports="/pokedex/-electric-silvally"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[976629],{881402(e){e.exports="/pokedex/pidgeotto"}}]);

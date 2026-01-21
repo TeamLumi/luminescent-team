@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[184952],{42859(e){e.exports="/pokedex/capsakid"}}]);

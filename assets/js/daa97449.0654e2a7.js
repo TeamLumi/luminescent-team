@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[913056],{697321(e,t,a){a.r(t),a.d(t,{default:()=>r});a(296540);var n=a(956347),u=a(474848);function r({redirectPath:e}){return(0,u.jsx)(n.rd,{to:e})}}}]);

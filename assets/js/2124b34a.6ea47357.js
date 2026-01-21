@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[276862],{915358(e){e.exports="/pokedex/iron-hands"}}]);

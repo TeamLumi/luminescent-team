@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[633961],{213398(e){e.exports="/pokedex/gmax-rapid-strike-style-urshifu"}}]);

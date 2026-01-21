@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[707868],{316945(e){e.exports="/pokedex/mesprit"}}]);

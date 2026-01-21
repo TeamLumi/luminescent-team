@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[346916],{343116(e){e.exports="/pokedex/altaria"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[621688],{344834(e){e.exports=JSON.parse('{"name":"luminescent-pokedex-data-plugin","id":"default"}')}}]);

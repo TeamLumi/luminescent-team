@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[678160],{167002(e){e.exports="/pokedex/doduo"}}]);

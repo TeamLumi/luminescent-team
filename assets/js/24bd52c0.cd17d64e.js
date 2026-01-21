@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[777975],{86719(e){e.exports="/pokedex/dragonair"}}]);

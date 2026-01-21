@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[463734],{30694(e){e.exports="/pokedex/mega-manectric"}}]);

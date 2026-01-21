@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[2904],{79833(e){e.exports="/pokedex/zeraora"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[556267],{201169(e){e.exports="/pokedex/east-sea-gastrodon"}}]);

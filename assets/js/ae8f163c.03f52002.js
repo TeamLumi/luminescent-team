@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[604364],{407144(e){e.exports="/pokedex/mankey"}}]);

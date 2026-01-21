@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[510707],{433521(e){e.exports="/pokedex/uxie"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[548430],{11349(e){e.exports="/pokedex/purugly"}}]);

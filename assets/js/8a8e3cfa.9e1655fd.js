@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[749578],{110715(e){e.exports="/pokedex/thwackey"}}]);

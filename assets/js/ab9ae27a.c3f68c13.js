@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[262465],{932193(e){e.exports="/pokedex/garbodor"}}]);

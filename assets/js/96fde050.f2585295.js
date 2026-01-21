@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[281564],{213367(e){e.exports="/pokedex/cryogonal"}}]);

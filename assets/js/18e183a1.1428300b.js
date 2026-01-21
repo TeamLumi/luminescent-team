@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[107519],{465825(e){e.exports="/pokedex/grafaiai"}}]);

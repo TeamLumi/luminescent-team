@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[370053],{366262(e){e.exports="/pokedex/salazzle"}}]);

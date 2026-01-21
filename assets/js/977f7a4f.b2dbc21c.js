@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[903522],{255262(e){e.exports="/pokedex/phony-form-polteageist"}}]);

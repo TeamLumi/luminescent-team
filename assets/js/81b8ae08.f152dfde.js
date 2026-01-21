@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[222614],{75804(e){e.exports="/pokedex/arctibax"}}]);

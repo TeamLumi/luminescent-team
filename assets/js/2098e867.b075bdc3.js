@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[490640],{667209(e){e.exports="/pokedex/bergmite"}}]);

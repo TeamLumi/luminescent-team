@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[124733],{262070:e=>{e.exports="/pokedex/staravia"}}]);

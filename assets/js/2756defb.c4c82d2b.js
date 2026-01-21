@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[315910],{16058(e){e.exports="/pokedex/purrloin"}}]);

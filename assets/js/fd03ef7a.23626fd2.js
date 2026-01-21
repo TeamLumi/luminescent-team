@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[436931],{894470(e){e.exports="/pokedex/raikou"}}]);

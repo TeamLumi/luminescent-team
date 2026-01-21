@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[982135],{630749(e){e.exports="/pokedex/-ground-silvally"}}]);

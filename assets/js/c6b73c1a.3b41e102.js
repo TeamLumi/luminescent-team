@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[21197],{156551(e){e.exports="/pokedex/drifblim"}}]);

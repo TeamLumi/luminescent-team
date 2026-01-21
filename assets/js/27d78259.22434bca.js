@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[971461],{666008(e){e.exports="/pokedex/battle-bond-greninja"}}]);

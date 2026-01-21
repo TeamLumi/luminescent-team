@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[536104],{981585:e=>{e.exports="/pokedex/therian-forme-thundurus"}}]);

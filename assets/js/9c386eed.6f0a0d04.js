@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[153986],{82863(e){e.exports="/pokedex/navi-starmobile-revavroom"}}]);

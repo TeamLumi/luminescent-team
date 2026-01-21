@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[788016],{343890(e){e.exports="/pokedex/crawdaunt"}}]);

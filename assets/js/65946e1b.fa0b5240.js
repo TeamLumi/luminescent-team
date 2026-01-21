@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[307281],{625075(e){e.exports="/pokedex/mega-glalie"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[120519],{315705(e){e.exports="/pokedex/blitzle"}}]);

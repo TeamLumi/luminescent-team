@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[146935],{898649(e){e.exports="/pokedex/sewaddle"}}]);

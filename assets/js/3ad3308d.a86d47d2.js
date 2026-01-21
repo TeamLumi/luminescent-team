@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[537425],{743870(e){e.exports="/pokedex/clamperl"}}]);

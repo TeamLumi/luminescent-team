@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[595264],{856703(e){e.exports="/pokedex/mega-latias"}}]);

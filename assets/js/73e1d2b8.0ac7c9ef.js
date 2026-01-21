@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[508523],{497999(e){e.exports="/pokedex/chimchar"}}]);

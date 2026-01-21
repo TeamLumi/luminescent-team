@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[258931],{850913:e=>{e.exports="/pokedex/rockruff"}}]);

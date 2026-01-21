@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[978873],{772763(e){e.exports="/pokedex/alola-meowth"}}]);

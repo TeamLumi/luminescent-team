@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[727465],{547639(e){e.exports="/pokedex/mandibuzz"}}]);

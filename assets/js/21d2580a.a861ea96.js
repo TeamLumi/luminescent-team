@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[26480],{75911(e){e.exports="/pokedex/regigigas"}}]);

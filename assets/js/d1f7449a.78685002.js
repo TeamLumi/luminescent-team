@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[493037],{44398(e){e.exports="/pokedex/bibarel"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[519026],{458047:e=>{e.exports="/pokedex/hippopotas"}}]);

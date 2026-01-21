@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[840411],{914520(e){e.exports="/pokedex/goomy"}}]);

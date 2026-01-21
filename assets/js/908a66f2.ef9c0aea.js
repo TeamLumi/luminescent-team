@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[895761],{150825(e){e.exports="/pokedex/dialga"}}]);

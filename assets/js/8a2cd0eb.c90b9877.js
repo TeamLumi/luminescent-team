@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[798994],{853946(e){e.exports="/pokedex/west-sea-shellos"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[267125],{98097(e){e.exports="/pokedex/wooper"}}]);

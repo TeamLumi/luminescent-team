@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[929],{427901:e=>{e.exports="/pokedex/origin-forme-giratina"}}]);

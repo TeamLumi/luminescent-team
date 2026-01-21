@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[822950],{690805(e){e.exports="/pokedex/drapion"}}]);

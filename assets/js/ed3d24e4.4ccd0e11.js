@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[364300],{257932(e){e.exports="/pokedex/perrserker"}}]);

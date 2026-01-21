@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[666745],{969737(e){e.exports="/pokedex/copperajah"}}]);

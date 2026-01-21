@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[424704],{542913(e){e.exports="/pokedex/wo-chien"}}]);

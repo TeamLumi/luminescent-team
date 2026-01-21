@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[223864],{605480(e){e.exports="/pokedex/charcadet"}}]);

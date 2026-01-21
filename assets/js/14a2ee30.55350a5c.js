@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[453178],{572323(e){e.exports="/pokedex/weavile"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[887447],{676166(e){e.exports="/pokedex/bastiodon"}}]);

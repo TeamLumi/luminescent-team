@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[764521],{529716(e){e.exports="/pokedex/machoke"}}]);

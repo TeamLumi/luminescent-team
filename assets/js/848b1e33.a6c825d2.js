@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[530597],{995595(e){e.exports="/pokedex/kabutops"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[721529],{580095(e){e.exports="/pokedex/fletchling"}}]);

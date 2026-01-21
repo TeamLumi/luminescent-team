@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[356682],{886310(e){e.exports="/pokedex/sky-plate-arceus"}}]);

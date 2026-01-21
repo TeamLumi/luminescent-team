@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[200630],{261760(e){e.exports="/pokedex/rabsca"}}]);

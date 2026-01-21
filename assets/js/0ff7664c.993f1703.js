@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[908451],{2242(e){e.exports="/pokedex/chest-form-gimmighoul"}}]);

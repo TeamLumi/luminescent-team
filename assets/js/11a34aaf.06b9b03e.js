@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[308249],{808867(e){e.exports="/pokedex/togedemaru"}}]);

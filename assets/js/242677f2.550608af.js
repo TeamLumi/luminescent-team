@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[587707],{683196(e){e.exports="/pokedex/indigo-core-minior"}}]);

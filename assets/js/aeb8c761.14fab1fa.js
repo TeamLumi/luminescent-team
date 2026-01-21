@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[770433],{913704:e=>{e.exports=JSON.parse('{"name":"luminescent-movedex-data-plugin","id":"default"}')}}]);

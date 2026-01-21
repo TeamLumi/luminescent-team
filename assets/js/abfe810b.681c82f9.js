@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[409106],{571598(e){e.exports="/pokedex/pyukumuku"}}]);

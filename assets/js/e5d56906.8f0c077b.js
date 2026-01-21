@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[466817],{737015(e){e.exports="/pokedex/wyrdeer"}}]);

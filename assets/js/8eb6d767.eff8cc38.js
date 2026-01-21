@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[242688],{982071(e){e.exports="/pokedex/stone-plate-arceus"}}]);

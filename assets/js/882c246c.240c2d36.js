@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[179005],{798587(e){e.exports="/pokedex/rufflet"}}]);

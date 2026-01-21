@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[204598],{76055:e=>{e.exports="/pokedex/victini"}}]);

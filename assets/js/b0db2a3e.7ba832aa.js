@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[601916],{89565(e){e.exports="/pokedex/roaring-moon"}}]);

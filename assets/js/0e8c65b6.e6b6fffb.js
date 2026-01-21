@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[9106],{842227(e){e.exports="/pokedex/thievul"}}]);

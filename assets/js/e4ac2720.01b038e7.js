@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[629399],{59079(e){e.exports="/pokedex/teal-mask-ogerpon"}}]);

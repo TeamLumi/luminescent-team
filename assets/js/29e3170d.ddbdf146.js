@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[320528],{101661(e){e.exports="/pokedex/relicanth"}}]);

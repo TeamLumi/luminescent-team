@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[881189],{876482(e){e.exports="/pokedex/family-of-four-maushold"}}]);

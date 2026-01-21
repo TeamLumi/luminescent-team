@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[295325],{858216(e){e.exports="/pokedex/venusaur"}}]);

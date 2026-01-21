@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[656329],{359137(e){e.exports="/pokedex/dwebble"}}]);

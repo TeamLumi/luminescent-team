@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[980512],{199361(e){e.exports="/pokedex/flutter-mane"}}]);

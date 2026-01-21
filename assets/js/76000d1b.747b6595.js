@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[81901],{304518(e){e.exports="/pokedex/scolipede"}}]);

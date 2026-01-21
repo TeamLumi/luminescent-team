@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[884620],{998139(e){e.exports="/pokedex/gastly"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[209140],{587036(e){e.exports="/pokedex/exeggutor"}}]);

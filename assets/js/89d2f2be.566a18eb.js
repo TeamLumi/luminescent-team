@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[458579],{10077(e){e.exports="/pokedex/gmax-hatterene"}}]);

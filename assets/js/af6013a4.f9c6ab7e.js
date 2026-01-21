@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[277095],{323349(e){e.exports="/pokedex/vikavolt"}}]);

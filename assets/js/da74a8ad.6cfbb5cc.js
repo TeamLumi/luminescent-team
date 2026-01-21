@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[669739],{125621(e){e.exports="/pokedex/treecko"}}]);

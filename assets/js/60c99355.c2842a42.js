@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[776587],{390482(e){e.exports="/pokedex/trumbeak"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[993214],{278791(e){e.exports="/pokedex/excadrill"}}]);

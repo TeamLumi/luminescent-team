@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[519659],{916095(e){e.exports="/pokedex/vullaby"}}]);

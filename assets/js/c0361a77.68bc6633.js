@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[168817],{144610(e){e.exports="/pokedex/dartrix"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[80755],{129242:e=>{e.exports="/pokedex/lunala"}}]);

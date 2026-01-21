@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[580632],{371016(e){e.exports="/pokedex/whirlipede"}}]);

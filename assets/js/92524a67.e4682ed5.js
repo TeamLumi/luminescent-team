@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[891083],{307624:e=>{e.exports="/pokedex/turtonator"}}]);

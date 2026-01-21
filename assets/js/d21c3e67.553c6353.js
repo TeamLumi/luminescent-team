@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[742200],{517438(e){e.exports="/pokedex/spring-form-deerling"}}]);

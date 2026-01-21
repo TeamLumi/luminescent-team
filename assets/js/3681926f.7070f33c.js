@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[852796],{785625(e){e.exports="/pokedex/hisui-arcanine"}}]);

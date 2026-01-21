@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[239e3],{972520(e){e.exports="/pokedex/decidueye"}}]);

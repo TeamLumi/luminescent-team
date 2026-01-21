@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[954395],{19038(e){e.exports="/pokedex/apex-build-koraidon"}}]);

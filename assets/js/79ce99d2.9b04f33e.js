@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[301723],{795109(e){e.exports="/pokedex/gmax-eevee"}}]);

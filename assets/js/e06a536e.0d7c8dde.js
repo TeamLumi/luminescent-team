@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[994172],{730917(e){e.exports="/pokedex/darkrai"}}]);

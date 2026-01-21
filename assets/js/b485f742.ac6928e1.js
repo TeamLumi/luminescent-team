@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[446679],{932268(e){e.exports="/pokedex/ivysaur"}}]);

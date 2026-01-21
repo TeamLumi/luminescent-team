@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[423245],{143547(e){e.exports="/pokedex/scream-tail"}}]);

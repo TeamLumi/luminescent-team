@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[901799],{186734(e){e.exports="/pokedex/counterfeit-form-poltchageist"}}]);

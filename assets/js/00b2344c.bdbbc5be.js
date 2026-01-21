@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[759969],{923579(e){e.exports="/pokedex/alakazam"}}]);

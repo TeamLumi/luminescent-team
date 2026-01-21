@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[896927],{857504:e=>{e.exports="/pokedex/drednaw"}}]);

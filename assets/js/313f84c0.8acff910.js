@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[902389],{461258(e){e.exports="/pokedex/gyarados"}}]);

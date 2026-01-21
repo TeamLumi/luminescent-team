@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[8191],{182492(e){e.exports="/pokedex/watchog"}}]);

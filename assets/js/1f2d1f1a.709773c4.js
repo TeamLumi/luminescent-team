@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[392739],{543911(e){e.exports="/pokedex/inkay"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[413728],{74358(e){e.exports="/pokedex/vigoroth"}}]);

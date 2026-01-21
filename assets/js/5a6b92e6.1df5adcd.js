@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[828409],{803596(e){e.exports="/pokedex/gmax-inteleon"}}]);

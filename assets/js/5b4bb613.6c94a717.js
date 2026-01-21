@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[603516],{348360(e){e.exports="/pokedex/blue-flower-florges"}}]);

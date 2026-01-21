@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[746357],{480843(e){e.exports="/pokedex/revavroom"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[848840],{599306:e=>{e.exports="/pokedex/meltan"}}]);

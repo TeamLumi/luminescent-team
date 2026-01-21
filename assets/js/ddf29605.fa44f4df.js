@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[405619],{472084(e){e.exports="/pokedex/delphox"}}]);

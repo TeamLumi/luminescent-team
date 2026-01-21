@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[702120],{606210(e){e.exports="/pokedex/river-pattern-vivillon"}}]);

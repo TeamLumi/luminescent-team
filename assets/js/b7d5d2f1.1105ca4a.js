@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[674202],{227299(e){e.exports="/pokedex/torterra"}}]);

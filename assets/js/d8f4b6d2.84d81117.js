@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[632843],{91343(e){e.exports="/pokedex/aggron"}}]);

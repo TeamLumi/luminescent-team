@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[311248],{897923(e){e.exports="/pokedex/school-form-wishiwashi"}}]);

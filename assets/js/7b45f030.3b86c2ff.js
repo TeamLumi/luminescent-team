@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[272062],{546500(e){e.exports="/pokedex/overqwil"}}]);

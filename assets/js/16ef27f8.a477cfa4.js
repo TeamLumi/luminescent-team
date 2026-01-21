@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[911848],{383275(e){e.exports="/pokedex/kakuna"}}]);

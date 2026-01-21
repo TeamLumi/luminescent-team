@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[624892],{408959(e){e.exports="/pokedex/galar-zapdos"}}]);

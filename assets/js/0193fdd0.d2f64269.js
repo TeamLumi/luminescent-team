@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[73408],{457512(e){e.exports="/pokedex/cosmoem"}}]);

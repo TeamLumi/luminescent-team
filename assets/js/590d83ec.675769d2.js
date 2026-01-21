@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[595324],{989146:e=>{e.exports="/pokedex/milotic"}}]);

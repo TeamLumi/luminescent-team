@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[981657],{144895(e){e.exports="/pokedex/green-core-minior"}}]);

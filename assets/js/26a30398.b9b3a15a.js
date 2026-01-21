@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[846457],{207424:e=>{e.exports="/pokedex/rapid-strike-style-urshifu"}}]);

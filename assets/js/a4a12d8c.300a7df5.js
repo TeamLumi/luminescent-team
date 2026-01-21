@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[707651],{267157(e){e.exports="/pokedex/kleavor"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[631343],{377342(e){e.exports="/pokedex/lanturn"}}]);

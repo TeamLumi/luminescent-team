@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[659978],{291055(e){e.exports="/pokedex/pawmi"}}]);

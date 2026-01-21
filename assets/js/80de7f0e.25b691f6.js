@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[286613],{123770:e=>{e.exports="/pokedex/cradily"}}]);

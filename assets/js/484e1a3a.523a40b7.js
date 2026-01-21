@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[775188],{931055(e){e.exports="/pokedex/prinplup"}}]);

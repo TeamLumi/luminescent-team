@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[652683],{989971:e=>{e.exports="/pokedex/blade-forme-aegislash"}}]);

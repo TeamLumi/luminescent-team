@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[332232],{940283(e){e.exports="/pokedex/shiinotic"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[382443],{687985:e=>{e.exports="/pokedex/black-kyurem"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[75409],{98068(e){e.exports="/pokedex/eternal-flower-floette"}}]);

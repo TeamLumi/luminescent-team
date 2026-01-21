@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[957871],{124235:e=>{e.exports="/pokedex/buizel"}}]);

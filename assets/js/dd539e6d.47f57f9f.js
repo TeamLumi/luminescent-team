@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[857447],{744013(e){e.exports="/pokedex/dusk-necrozma"}}]);

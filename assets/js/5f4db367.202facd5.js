@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[778378],{254033(e){e.exports="/pokedex/mareanie"}}]);

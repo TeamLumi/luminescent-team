@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[95635],{267493(e){e.exports="/pokedex/low-key-form-toxtricity"}}]);

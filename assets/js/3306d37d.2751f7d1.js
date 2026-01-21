@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[51267],{567023:e=>{e.exports="/pokedex/wimpod"}}]);

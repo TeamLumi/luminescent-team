@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[805963],{378536(e){e.exports="/pokedex/unbound-hoopa"}}]);

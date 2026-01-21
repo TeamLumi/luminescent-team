@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[644926],{400709(e){e.exports="/pokedex/galar-slowbro"}}]);

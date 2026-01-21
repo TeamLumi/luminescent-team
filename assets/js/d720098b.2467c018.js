@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[183161],{978977(e){e.exports="/pokedex/amoonguss"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[564685],{849398(e){e.exports="/pokedex/clobbopus"}}]);

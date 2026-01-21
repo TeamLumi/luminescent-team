@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[233560],{761614(e){e.exports="/pokedex/female-indeedee"}}]);

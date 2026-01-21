@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[323208],{191351(e){e.exports="/pokedex/ursaring"}}]);

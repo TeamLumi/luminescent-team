@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[6527],{534416(e){e.exports="/pokedex/pinsir"}}]);

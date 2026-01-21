@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[503541],{790954(e){e.exports="/pokedex/haxorus"}}]);

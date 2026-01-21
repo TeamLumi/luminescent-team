@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[347946],{841462(e){e.exports="/pokedex/grubbin"}}]);

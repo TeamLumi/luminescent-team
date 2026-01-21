@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[772356],{978780(e){e.exports="/pokedex/vibrava"}}]);

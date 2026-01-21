@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[46680],{995244(e){e.exports="/pokedex/burn-genesect"}}]);

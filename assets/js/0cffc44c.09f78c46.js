@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[422490],{830197(e){e.exports="/pokedex/conkeldurr"}}]);

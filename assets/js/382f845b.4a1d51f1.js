@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[967783],{294257(e){e.exports="/pokedex/chill-genesect"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[360776],{733204(e){e.exports="/pokedex/segin-starmobile-revavroom"}}]);

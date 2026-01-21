@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[973158],{652648:e=>{e.exports="/pokedex/partner-pikachu"}}]);

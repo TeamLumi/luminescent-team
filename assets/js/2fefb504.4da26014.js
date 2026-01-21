@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[170557],{867374(e){e.exports="/pokedex/mega-audino"}}]);

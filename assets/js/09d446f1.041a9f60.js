@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[610359],{228364(e){e.exports="/pokedex/gmax-coalossal"}}]);

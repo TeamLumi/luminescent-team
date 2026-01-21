@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[176487],{825232(e){e.exports="/pokedex/stunfisk"}}]);

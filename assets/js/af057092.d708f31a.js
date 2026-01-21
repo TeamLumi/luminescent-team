@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[199219],{708337(e){e.exports="/pokedex/alola-raichu"}}]);

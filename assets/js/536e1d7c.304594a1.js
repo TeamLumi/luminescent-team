@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[977765],{325674(e){e.exports="/pokedex/glastrier"}}]);

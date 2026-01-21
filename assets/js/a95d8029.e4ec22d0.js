@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[800925],{816910(e){e.exports="/pokedex/overcast-form-cherrim"}}]);

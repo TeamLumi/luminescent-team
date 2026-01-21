@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[962828],{517979:e=>{e.exports="/pokedex/alola-rattata"}}]);

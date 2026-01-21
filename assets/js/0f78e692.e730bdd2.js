@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[854129],{221629:e=>{e.exports="/pokedex/anorith"}}]);

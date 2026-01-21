@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[387694],{330111(e){e.exports="/pokedex/vulpix"}}]);

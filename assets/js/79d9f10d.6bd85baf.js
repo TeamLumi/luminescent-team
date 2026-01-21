@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[93573],{892407(e){e.exports="/pokedex/beautifly"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[152903],{910987(e){e.exports="/pokedex/donphan"}}]);

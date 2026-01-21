@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[899386],{290274(e){e.exports="/pokedex/dedenne"}}]);

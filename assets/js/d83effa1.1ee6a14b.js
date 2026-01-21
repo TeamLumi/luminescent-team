@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[270649],{495150(e){e.exports="/pokedex/gmax-centiskorch"}}]);

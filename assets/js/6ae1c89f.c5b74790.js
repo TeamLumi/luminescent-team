@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[980921],{82660:e=>{e.exports="/pokedex/fist-plate-arceus"}}]);

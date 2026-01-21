@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[731045],{310295:e=>{e.exports="/pokedex/mega-steelix"}}]);

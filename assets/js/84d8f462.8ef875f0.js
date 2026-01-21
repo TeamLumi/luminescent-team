@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[752545],{333296(e){e.exports="/pokedex/barraskewda"}}]);

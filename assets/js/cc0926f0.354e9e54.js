@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[356693],{564869:e=>{e.exports="/pokedex/primarina"}}]);

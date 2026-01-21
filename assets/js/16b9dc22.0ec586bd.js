@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[952096],{369457:e=>{e.exports="/pokedex/summer-form-sawsbuck"}}]);

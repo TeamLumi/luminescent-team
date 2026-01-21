@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[254095],{127251:e=>{e.exports="/pokedex/la-reine-trim-furfrou"}}]);

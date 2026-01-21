@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[82620],{864896(e){e.exports="/pokedex/krabby"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[952771],{705429(e){e.exports="/pokedex/igglybuff"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[565083],{422987(e){e.exports="/pokedex/incarnate-forme-landorus"}}]);

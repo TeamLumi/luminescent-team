@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[219512],{981761(e){e.exports="/pokedex/violet-meteor-form-minior"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[732744],{450349(e){e.exports="/pokedex/ludicolo"}}]);

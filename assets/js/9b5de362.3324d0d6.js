@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[74277],{479252(e){e.exports="/pokedex/shiftry"}}]);

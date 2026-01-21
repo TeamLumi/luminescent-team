@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[998788],{667877(e){e.exports="/pokedex/garganacl"}}]);

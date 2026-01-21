@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[289276],{508729(e){e.exports="/pokedex/spiky-eared-pichu"}}]);

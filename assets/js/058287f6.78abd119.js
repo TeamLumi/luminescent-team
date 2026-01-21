@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[366847],{553756(e){e.exports="/pokedex/nihilego"}}]);

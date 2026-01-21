@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[218639],{339424(e){e.exports="/pokedex/snivy"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[479868],{833666(e){e.exports="/pokedex/tangrowth"}}]);

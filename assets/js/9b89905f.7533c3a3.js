@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[977797],{772715(e){e.exports="/pokedex/poliwrath"}}]);

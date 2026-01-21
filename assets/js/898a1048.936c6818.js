@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[993720],{122355(e){e.exports="/pokedex/hisui-goodra"}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[152630],{413660:e=>{e.exports="/pokedex/meadow-plate-arceus"}}]);

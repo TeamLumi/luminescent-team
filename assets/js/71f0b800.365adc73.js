@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[877939],{830199(e){e.exports="/pokedex/monsoon-pattern-vivillon"}}]);

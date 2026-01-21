@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[570698],{493483(e){e.exports="/pokedex/iron-bundle"}}]);

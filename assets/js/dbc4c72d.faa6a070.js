@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[313408],{614009(e){e.exports="/pokedex/ho-oh"}}]);

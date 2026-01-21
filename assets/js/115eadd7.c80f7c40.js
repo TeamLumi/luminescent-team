@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[387071],{993288(e){e.exports="/pokedex/mudsdale"}}]);

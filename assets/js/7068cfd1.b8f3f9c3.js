@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[999614],{802174(e){e.exports="/pokedex/hisui-zoroark"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[886174],{469629(e){e.exports="/pokedex/stretchy-form-tatsugiri"}}]);

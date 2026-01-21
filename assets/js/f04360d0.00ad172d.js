@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[270280],{765033(e){e.exports="/pokedex/ribombee"}}]);

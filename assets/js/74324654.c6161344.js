@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[543116],{476024(e){e.exports="/pokedex/marine-pattern-vivillon"}}]);

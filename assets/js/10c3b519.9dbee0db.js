@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[127211],{522052(e){e.exports="/pokedex/tadbulb"}}]);

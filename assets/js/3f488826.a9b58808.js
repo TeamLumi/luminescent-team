@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[882e3],{179480(e){e.exports="/pokedex/caterpie"}}]);

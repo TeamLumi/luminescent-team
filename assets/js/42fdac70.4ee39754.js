@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[327194],{322697(e){e.exports="/pokedex/sableye"}}]);

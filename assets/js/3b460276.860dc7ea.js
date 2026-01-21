@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[149699],{386115(e){e.exports="/pokedex/hoothoot"}}]);

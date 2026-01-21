@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[861939],{272504(e){e.exports="/pokedex/electrike"}}]);

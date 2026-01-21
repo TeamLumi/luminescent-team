@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[239030],{479458(e){e.exports="/pokedex/icy-snow-pattern-vivillon"}}]);

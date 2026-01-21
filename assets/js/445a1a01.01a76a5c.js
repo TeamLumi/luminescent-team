@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[319703],{963537:e=>{e.exports="/pokedex/shadow-calyrex"}}]);

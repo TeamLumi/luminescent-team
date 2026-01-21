@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[90742],{419805(e){e.exports="/pokedex/garden-pattern-vivillon"}}]);

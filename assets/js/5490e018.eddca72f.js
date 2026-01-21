@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[126811],{910147(e){e.exports="/pokedex/omanyte"}}]);

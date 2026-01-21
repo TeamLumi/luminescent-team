@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[174414],{713059(e){e.exports="/pokedex/ash-pikachu"}}]);

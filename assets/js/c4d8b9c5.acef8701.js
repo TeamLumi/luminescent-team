@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[263409],{232001(e){e.exports="/pokedex/antique-form-polteageist"}}]);

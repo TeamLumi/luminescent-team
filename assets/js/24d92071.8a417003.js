@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[660514],{748828(e){e.exports="/pokedex/kangaskhan"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[81064],{219003(e){e.exports="/pokedex/cosplay-belle-pikachu"}}]);

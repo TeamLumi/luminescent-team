@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[948361],{277313(e){e.exports="/pokedex/qwilfish"}}]);

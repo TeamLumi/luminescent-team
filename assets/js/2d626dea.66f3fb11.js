@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[287769],{346037(e){e.exports="/pokedex/lunatone"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[213473],{72044(e){e.exports="/pokedex/alola-marowak"}}]);

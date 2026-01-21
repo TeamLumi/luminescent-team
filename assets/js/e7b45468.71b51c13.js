@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[463076],{619135(e){e.exports="/pokedex/spewpa"}}]);

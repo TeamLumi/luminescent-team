@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[705421],{766052(e){e.exports="/pokedex/orthworm"}}]);

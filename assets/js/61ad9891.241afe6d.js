@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkluminescent_team=self.webpackChunkluminescent_team||[]).push([[818800],{856504:e=>{e.exports="/pokedex/komala"}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[389801],{768044(e){e.exports="/pokedex/honchkrow"}}]);
