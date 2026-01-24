@@ -53,7 +53,7 @@ export const TrainerDropdown = ({ trainer, setTrainer, trainerList, smallest }) 
       <Autocomplete
         id="trainer-input"
         options={[defaultTrainer, ...trainerList]}
-        getOptionLabel={(option) => option.team_name}
+        getOptionLabel={(option) => `${option.team_name} [${option.trainer_id}]`}
         defaultValue={defaultTrainer}
         value={trainer}
         onChange={(e, value) => setTrainer(value)}
