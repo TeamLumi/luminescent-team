@@ -1,334 +1,308 @@
 import * as React from 'react';
-import { Box, Grid, Typography } from '@mui/material';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Typography } from '@mui/material';
 import Link from '@docusaurus/Link';
-import { getEvolutionMethodDetail, getEvolutionTree } from '../../../plugins/pokedex-data-plugin/dex/evolution';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import { getPokemonImageFilename } from '../../core/pokemonFormSelector';
 import { getPokemonMonsNoAndFormNoFromPokemonId, getPokemonName } from '../../utils/dex/name';
-import { getItemImageUrl, getTMImageUrl } from '../../../plugins/pokedex-data-plugin/dex/item';
-import { getMoveString, getMoveProperties } from '../../../plugins/pokedex-data-plugin/dex/moves';
-import { getTypeName } from '../../utils/dex/types';
-import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
-import { getItemString } from '../../utils/dex/item';
 import { useGlobalState } from '../common/GlobalState';
 import { ImageWithFallback } from '../common/ImageWithFallback';
-import * as EvoConstants from "../../../plugins/pokedex-data-plugin/dex/evolutionConstants";
+import { getEdgeLabel } from '../../utils/dex/evolutionGraphUtils';
+import { getPokemonImageFilename } from '../../core/pokemonFormSelector';
+import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
 
-export default function EvolutionGraph({ evolutionTree }) {
-  const [globalState, updateMode] = useGlobalState();
-  const [secondEvolvesInto, setSecondEvolvesInto] = React.useState(evolutionTree.evolvesInto);
-  const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId, globalState.mode);
-  const firstPokemonPath = formNo === 0 ? monsNo : `${monsNo}_${formNo}`;
-  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, globalState.mode);
-  const defaultEvo = {
-    pokemonId: -1,
-    evolutionDetails: {
-      formNos: [-1],
-      levels: [-1],
-      methodIds: [-1],
-      methodParameters: [-1],
-      monsNos: [-1],
-    },
-    evolvesInto: [],
-  };
+const MILCERY_MONSNO = 868;
+const ALCREMIE_MONSNO = 869;
 
-  const DoesNotEvolve = () => {
-    return (
-      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-        <span className="col col-12">
-          <Typography variant="h6" sx={{ margin: 'auto' }}>
-            Does Not Evolve
-          </Typography>
-        </span>
-      </div>
-    )
+class EvolutionErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
   }
 
-  const AlcremieEvo = () => {
-    return (
-      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-        <span className="col col-12">
-          <Typography variant="h6" sx={{ margin: 'auto' }}>
-            <a href='https://luminescent.team/docs/special-evolutions#alcremie'>Alcremie Evolutions</a>
-          </Typography>
-        </span>
-      </div>
-    )
+  static getDerivedStateFromError() {
+    return { hasError: true };
   }
 
-  let fullEvolutionTree = (
-    <div className="container">
-      <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-        <span className="col col-12">
-          <Typography variant="h6" sx={{ margin: 'auto' }}>
-            Evolutions
-          </Typography>
-        </span>
-      </div>
-
-      {monsNo !== 868 && monsNo !== 869
-        ? (<DoesNotEvolve />)
-        : (<AlcremieEvo />)
-      }
-    </div>
-  );
-
-  React.useEffect(() => {
-    const newSecondEvolvesInto = evolutionTree.evolvesInto;
-    if (newSecondEvolvesInto.length > 1) {
-      if (
-        newSecondEvolvesInto[0].evolvesInto.length > 0
-        && newSecondEvolvesInto[0].evolvesInto.length < 2
-      ) {
-        newSecondEvolvesInto[0].evolvesInto.push(newSecondEvolvesInto[1].evolvesInto[0])
-      } else if (
-        newSecondEvolvesInto[newSecondEvolvesInto.length - 1].evolvesInto.length > 0
-        && newSecondEvolvesInto[0].evolvesInto.length < 2
-      ) {
-        for (const index in newSecondEvolvesInto ) {
-          if (parseInt(index) !== newSecondEvolvesInto.length - 1) {
-            newSecondEvolvesInto[0].evolvesInto.push(defaultEvo)
-          }
-        }
-        console.log("Adding a new one!")
-        newSecondEvolvesInto[0].evolvesInto.push(newSecondEvolvesInto[newSecondEvolvesInto.length - 1].evolvesInto[0])
-      }
-    }
-    setSecondEvolvesInto(newSecondEvolvesInto);
-  }, [evolutionTree]);
-
-  if (secondEvolvesInto.length === 0 || monsNo === 868 || monsNo === 869) {
-    return fullEvolutionTree
+  componentDidCatch(error, errorInfo) {
+    console.error('[EvolutionGraph] Render error:', error, errorInfo);
   }
 
-  const renderEvolutions = (methods, pokemonImages, methodIndex) => {
-    const methodStyle = methodIndex === 1 ? (
-      styles.firstMethodContainer
-      ) : (styles.secondMethodContainer)
-    return methods.map((method, index) => (
-      <Grid container className={styles.evolutionDetails} key={index}>
-        <Grid item xs={6} sm={6} className={methodStyle}>
-          {method}
-        </Grid>
-        <Grid item xs={6} sm={6} className={styles.imageColumn}>
-          {pokemonImages[index]}
-        </Grid>
-      </Grid>
-    ));
-  };
-
-  const renderItemImage = (evoMethod, methodParameter, methodDetail) => {
-    const evoFunction = methodDetail.function.name;
-    const evoImages = [];
-    if (methodDetail.method.includes(EvoConstants.FRIENDSHIP)) {
-      evoImages.push(getItemImageUrl("Soothe Bell"))
-    }
-    if (methodDetail.method.includes(EvoConstants.LEVEL)) {
-      evoImages.push(getItemImageUrl("Rare Candy"));
-    }
-    if (methodDetail.method.includes(EvoConstants.CRITICAL_HITS)) {
-      evoImages.push("/img/custom/criticalhits.webp")
-    }
-    if (methodDetail.method.includes(EvoConstants.RECEIVE_DAMAGE)) {
-      evoImages.push("/img/custom/receivedamage.webp")
-    }
-    if (methodDetail.method.includes(EvoConstants.FOLLOWER)) {
-      evoImages.push("/img/custom/followersteps.webp")
-    }
-    if (evoFunction === EvoConstants.ITEM_STRING_FUNCTION) {
-      evoImages.push(getItemImageUrl(evoMethod));
-    } else if (evoFunction === EvoConstants.MOVE_STRING_FUNCTION) {
-      const moveType = getTypeName(getMoveProperties(methodParameter, globalState.mode).type);
-      evoImages.push(getTMImageUrl(moveType));
-    } else if (evoFunction === EvoConstants.POKEMON_NAME_FUNCTION) {
-      evoImages.push(`/img/pkm/${getPokemonImageFilename(methodParameter, 0)}`);
-    } else if (evoFunction === EvoConstants.TYPE_NAME_FUNCTION) {
-      const moveType = getTypeName(methodParameter);
-      evoImages.push(getTMImageUrl(moveType));
-    }
-    if (methodDetail.method.includes(EvoConstants.RNG)) {
-      evoImages.push("/img/custom/randomchance.webp")
-    }
-    if (methodDetail.method.includes(EvoConstants.DAY)) {
-      evoImages.push("/img/custom/sun.webp")
-    } else if (methodDetail.method.includes(EvoConstants.NIGHT)) {
-      evoImages.push("/img/custom/moon.webp")
-    } else if (methodDetail.method.includes(EvoConstants.DUSK)) {
-      evoImages.push("/img/custom/dusk.webp")
-    }
-    if (methodDetail.method.includes(EvoConstants.MOSS_ROCK)) {
-      evoImages.push("/img/custom/mossyrock.webp")
-    } else if (methodDetail.method.includes(EvoConstants.ICE_ROCK)) {
-      evoImages.push("/img/custom/icyrock.webp")
-    }
-    if (methodDetail.method.includes(EvoConstants.MALE)) {
-      evoImages.push("/img/custom/male.webp")
-    } else if (methodDetail.method.includes(EvoConstants.FEMALE)) {
-      evoImages.push("/img/custom/female.webp")
-    }
-    if (methodDetail.method.includes(EvoConstants.BEAUTY)) {
-      evoImages.push(getItemImageUrl("Blue Scarf"))
-    }
-    return evoImages;
-  };
-
-  const renderSecondMethod = (methodId, methodParameter, level) => {
-    const [methodDetail, evoMethod] = getEvolutionMethodDetail(methodId, methodParameter, globalState.mode, level);
-    const evoImages = renderItemImage(evoMethod, methodParameter, methodDetail);
-
-    return (
-      <>
-        Or
-        <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
-          {evoImages.map((image, index) => (
-            <ImageWithFallback
-              key={index}
-              src={image}
-              fallbackSrc={`/img/pkm/pm0000_00_00_00_L.webp`}
-              width="40"
-              alt={image}
-              title={image}
-            />
-          ))}
-        </Box>
-        {methodDetail.method}
-      </>
-    )
-  };
-
-  const renderMethods = (methodIds, methodParameters, levels, pokemonId) => {
-    const firstMethodId = methodIds[0];
-    if (firstMethodId === -1) {
+  render() {
+    if (this.state.hasError) {
       return (
-        <Box className={styles.method}>
-        </Box>
-      )
-    }
-    const firstMethodParameter = parseInt(methodParameters[0]);
-    const [
-      firstMethodDetail,
-      firstEvoMethod
-    ] = getEvolutionMethodDetail(
-      firstMethodId,
-      firstMethodParameter,
-      globalState.mode,
-      levels[0],
-      pokemonId
-    );
-
-    const evoImages = renderItemImage(firstEvoMethod, firstMethodParameter, firstMethodDetail);
-    return (
-      <Box className={styles.method}>
-        {firstMethodDetail.method}
-        <Box className={styles.evoImages} style={{ justifyContent: evoImages.length > 1 ? 'space-between' : 'center' }}>
-          {evoImages.map((image, index) => (
-            <ImageWithFallback
-              key={index}
-              src={image}
-              fallbackSrc={`/img/pkm/pm0000_00_00_00_L.webp`}
-              width="40"
-              alt={image}
-              title={image}
-            />
-          ))}
-        </Box>
-        {methodIds.length > 1 && (
-          renderSecondMethod(methodIds[1], methodParameters[1], levels[1])
-        )}
-      </Box>
-    );
-  };
-
-  const renderEvolutionTree = (tree, methodIndex) => {
-    const evolutionStyle = methodIndex === 1 ? (
-      styles.firstEvolution
-      ) : (styles.secondEvolution)
-    const { pokemonId, evolvesInto } = tree;
-
-    // Collect data for methods and images from all evolutions
-    const allMethods = [];
-    const allImages = [];
-
-    evolvesInto.forEach((evolution) => {
-      const {
-        methodIds,
-        methodParameters,
-        monsNos,
-        formNos,
-        levels
-      } = evolution.evolutionDetails;
-      const methods = renderMethods(methodIds, methodParameters, levels, pokemonId);
-      allMethods.push(methods);
-
-      if (methodIds[0] === -1) {
-        const pokemonImages = (
-          <Box className={styles.imageRow} key="Blank"></Box>
-        );
-        allImages.push(pokemonImages);
-      } else {
-        const pokemonImages = monsNos.map((monsno, index) => {
-          const pokemonId = getPokemonIdFromMonsNoAndForm(monsno, formNos[index], globalState.mode);
-          const pokemonName = getPokemonName(pokemonId, globalState.mode);
-          const pokemonPath = formNos[index] === 0 ? monsno : `${monsno}_${formNos[index]}` ;
-          return (
-            index === 0 ? (
-              <Box className={styles.imageRow} key={monsno}>
-                <Link to={`/pokedex/${pokemonPath}`}>
-                  <ImageWithFallback 
-                    key={pokemonId}
-                    src={`/img/pkm/${getPokemonImageFilename(monsno, formNos[index])}`}
-                    fallbackSrc={`/img/pkm/${getPokemonImageFilename(monsno, 0)}`}
-                    alt={pokemonName}
-                    title={pokemonName}
-                  />
-                </Link>
-              </Box>
-            ) : ""
-          );
-        });
-        allImages.push(pokemonImages);
-      }
-    });
-
-    // Render a single firstEvolution component with all methods and images
-    return (
-      <Grid container className={evolutionStyle}>
-        {renderEvolutions(allMethods, allImages, methodIndex)}
-      </Grid>
-    );
-  };
-
-  if (secondEvolvesInto.length > 0) {
-    fullEvolutionTree = (
-      <Grid container>
-        <Grid item xs={12}>
+        <div className="container">
           <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
             Evolutions
           </Typography>
-        </Grid>
+          <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+            <span className="col col-12">
+              <Typography variant="h6" sx={{ margin: 'auto' }}>
+                Evolution data unavailable
+              </Typography>
+            </span>
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
 
-        <Grid container className={styles.evolutionContainer}>
-          <Grid item xs={12} className={styles.scrollContent}>
-            <Grid item xs={12} sm={6} className={styles.startPokemon}>
-              <Link to={`/pokedex/${firstPokemonPath}`}>
-                <ImageWithFallback
-                  key={pokemonID}
-                  src={`/img/pkm/${getPokemonImageFilename(monsNo, formNo)}`}
-                  fallbackSrc={`/img/pkm/${getPokemonImageFilename(monsNo, 0)}`}
-                  alt={getPokemonName(pokemonID, globalState.mode)}
-                  title={getPokemonName(pokemonID, globalState.mode)}
-                />
-              </Link>
-            </Grid>
-            {renderEvolutionTree(evolutionTree, 1)}
-            {secondEvolvesInto[0].evolvesInto.length >= 1 && (
-              renderEvolutionTree(secondEvolvesInto[0], 2)
-            )}
-          </Grid>
-        </Grid>
-      </Grid>
+export default function EvolutionGraph({ evolutionTree }) {
+  const [globalState] = useGlobalState();
+
+  if (!evolutionTree || !evolutionTree.pokemonId) {
+    return (
+      <div className="container">
+        <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
+          Evolutions
+        </Typography>
+        <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+          <span className="col col-12">
+            <Typography variant="h6" sx={{ margin: 'auto' }}>
+              Evolution data unavailable
+            </Typography>
+          </span>
+        </div>
+      </div>
     );
   }
-  return (fullEvolutionTree);
+
+  const [monsNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId, globalState.mode);
+
+  // Special case: Alcremie
+  if (monsNo === MILCERY_MONSNO || monsNo === ALCREMIE_MONSNO) {
+    return (
+      <div className="container">
+        <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
+          Evolutions
+        </Typography>
+        <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+          <span className="col col-12">
+            <Typography variant="h6" sx={{ margin: 'auto' }}>
+              <Link to="/docs/special-evolutions#alcremie">Alcremie Evolutions</Link>
+            </Typography>
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  // No evolution
+  if (!evolutionTree.evolvesInto || evolutionTree.evolvesInto.length === 0) {
+    return (
+      <div className="container">
+        <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
+          Evolutions
+        </Typography>
+        <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
+          <span className="col col-12">
+            <Typography variant="h6" sx={{ margin: 'auto' }}>
+              Does Not Evolve
+            </Typography>
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="container">
+      <Typography variant="h6" className={styles.evolutionHeader}>
+        Evolutions
+      </Typography>
+      <EvolutionErrorBoundary>
+        <EvolutionChainCards evolutionTree={evolutionTree} mode={globalState.mode} />
+      </EvolutionErrorBoundary>
+    </div>
+  );
+}
+
+function EvolutionChainCards({ evolutionTree, mode }) {
+  // Collect all root-to-leaf paths so each card shows one full chain
+  const chains = React.useMemo(() => {
+    function buildNodeData(node, parentPokemonId) {
+      const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(node.pokemonId, mode);
+      const pokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo, mode);
+      const name = getPokemonName(pokemonId, mode) || `Pokemon ${monsNo}`;
+      const imagePath = `/img/pkm/${getPokemonImageFilename(monsNo, formNo)}`;
+      const linkPath = formNo === 0 ? `${monsNo}` : `${monsNo}_${formNo}`;
+
+      let edgeInfo = null;
+      if (node.evolutionDetails) {
+        const { methodIds, methodParameters, levels } = node.evolutionDetails;
+        if (methodIds && methodIds[0] !== -1) {
+          edgeInfo = getEdgeLabel(methodIds, methodParameters, levels, parentPokemonId, mode);
+        }
+      }
+
+      return { monsNo, formNo, name, imagePath, linkPath, edgeInfo, pokemonId: node.pokemonId };
+    }
+
+    const paths = [];
+    const visited = new Set();
+
+    function traverse(node, currentPath, parentPokemonId) {
+      if (visited.has(node.pokemonId)) return;
+      visited.add(node.pokemonId);
+
+      const nodeData = buildNodeData(node, parentPokemonId);
+      const path = [...currentPath, nodeData];
+
+      if (!node.evolvesInto || node.evolvesInto.length === 0) {
+        paths.push(path);
+        return;
+      }
+
+      for (const child of node.evolvesInto) {
+        const { methodIds } = child.evolutionDetails || {};
+        if (!methodIds || methodIds[0] === -1) continue;
+        traverse(child, path, node.pokemonId);
+      }
+    }
+
+    traverse(evolutionTree, [], evolutionTree.pokemonId);
+    paths.sort((a, b) => {
+      const lastA = a[a.length - 1];
+      const lastB = b[b.length - 1];
+      return lastA.monsNo - lastB.monsNo || lastA.formNo - lastB.formNo;
+    });
+    return paths;
+  }, [evolutionTree.pokemonId, mode]);
+
+  return (
+    <div className={[styles.evolutionCardsContainer, chains.length > 4 && styles.twoColumn].filter(Boolean).join(' ')}>
+      {chains.map((chain) => (
+        <div
+          key={chain.map(n => `${n.monsNo}-${n.formNo}`).join('_')}
+          className={styles.evolutionChainCard}
+          role="group"
+          aria-label={buildChainAltText(chain) || `Evolution chain: ${chain.map(n => n.name).join(' to ')}`}
+        >
+          {chain.map((node, nodeIndex) => (
+            <React.Fragment key={`${node.monsNo}-${node.formNo}`}>
+              {nodeIndex > 0 && node.edgeInfo && (
+                <div className={styles.chainArrow}>
+                  {node.edgeInfo.methods && node.edgeInfo.methods.length > 1 ? (
+                    <>
+                      <MethodDisplay method={node.edgeInfo.methods[0]} />
+                      <div className={styles.chainArrowWithOr}>
+                        <div className={styles.chainArrowIcon} />
+                        <span className={styles.chainArrowOr}>OR</span>
+                      </div>
+                      {node.edgeInfo.methods.slice(1).map((method, idx) => (
+                        <MethodDisplay key={`${idx}-${method.label}`} method={method} />
+                      ))}
+                    </>
+                  ) : (
+                    <>
+                      {node.edgeInfo.icons && node.edgeInfo.icons.length > 0 && (
+                        <div className={styles.chainArrowIcons}>
+                          {node.edgeInfo.icons.map((iconSrc, idx) => (
+                            <ImageWithFallback
+                              key={`${idx}-${iconSrc}`}
+                              src={iconSrc}
+                              fallbackSrc="/img/pkm/pm0000_00_00_00_L.webp"
+                              alt=""
+                              className={styles.chainArrowIconImg}
+                            />
+                          ))}
+                        </div>
+                      )}
+                      <div className={styles.chainArrowIcon} />
+                      {node.edgeInfo.label && (
+                        <span className={styles.chainArrowLabel}>{node.edgeInfo.label}</span>
+                      )}
+                    </>
+                  )}
+                </div>
+              )}
+              <ChainNode node={node} />
+            </React.Fragment>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function formatMethodForAlt(text) {
+  if (!text) return 'unknown method';
+  // "Level 16" → "at Level 16"
+  if (/^Level\b/i.test(text)) return `at ${text}`;
+  // "Use Ice Stone" → "using a Ice Stone" etc.
+  if (/^Use\b/i.test(text)) return text.replace(/^Use\b/i, 'using a');
+  return `via ${text}`;
+}
+
+function extractGender(text) {
+  if (!text) return { gender: null, rest: text };
+  const match = text.match(/\b(Male|Female)\b/i);
+  if (!match) return { gender: null, rest: text };
+  const rest = text
+    .replace(match[0], '')
+    .replace(/[&,]+\s*$/, '')
+    .replace(/\s*[&,]+\s*/, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  return { gender: match[1], rest };
+}
+
+function buildChainAltText(chain) {
+  const parts = [];
+  for (let i = 1; i < chain.length; i++) {
+    const prev = chain[i - 1];
+    const curr = chain[i];
+    if (!curr.edgeInfo) continue;
+    const rawLabel = curr.edgeInfo.methods && curr.edgeInfo.methods.length > 1
+      ? curr.edgeInfo.methods.map(m => m.label).join('|||')
+      : curr.edgeInfo.label;
+    const { gender, rest } = extractGender(rawLabel);
+    const prevName = gender ? `${gender} ${prev.name}` : prev.name;
+    const method = rest.includes('|||')
+      ? rest.split('|||').map(m => formatMethodForAlt(m)).join(' or ')
+      : formatMethodForAlt(rest);
+    parts.push(`${prevName} evolves into ${curr.name} ${method}`);
+  }
+  return parts.join(', ');
+}
+
+function MethodDisplay({ method }) {
+  return (
+    <div className={styles.chainMethodGroup}>
+      {method.icons && method.icons.length > 0 && (
+        <div className={styles.chainArrowIcons}>
+          {method.icons.map((iconSrc, idx) => (
+            <ImageWithFallback
+              key={`${idx}-${iconSrc}`}
+              src={iconSrc}
+              fallbackSrc="/img/pkm/pm0000_00_00_00_L.webp"
+              alt=""
+              className={styles.chainArrowIconImg}
+            />
+          ))}
+        </div>
+      )}
+      {method.label && (
+        <span className={styles.chainArrowLabel}>{method.label}</span>
+      )}
+    </div>
+  );
+}
+
+function ChainNode({ node }) {
+  const linkTo = useBaseUrl(`/pokedex/${node.linkPath}`);
+
+  return (
+    <Link to={linkTo} className={styles.chainNode}>
+      <ImageWithFallback
+        src={node.imagePath}
+        fallbackSrc="/img/pkm/pm0000_00_00_00_L.webp"
+        alt=""
+        title={node.name}
+        className={styles.chainNodeSprite}
+      />
+      <span className={styles.chainNodeName}>{node.name}</span>
+    </Link>
+  );
 }
