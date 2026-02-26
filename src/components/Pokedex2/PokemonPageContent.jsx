@@ -161,7 +161,7 @@ export const PokemonPageContent = ({
       </div>
       <div className="container">
         <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={1}>
-          <Box className={style.pokeColumn} gridColumn="span 1">
+          <Box sx={{ gridColumn: { xs: 'span 3', md: 'span 1' } }}>
             <ImageWithFallback
               alt={pokemonInfo.name}
               src={pokemonInfo.imageSrc}
@@ -171,10 +171,10 @@ export const PokemonPageContent = ({
               height="80px"
             />
           </Box>
-          <Box className={style.pokeColumn} gridColumn="span 1">
+          <Box sx={{ gridColumn: { xs: 'span 3', md: 'span 1' } }}>
             <Type type1={pokemonInfo.type1} type2={pokemonInfo.type2} />
           </Box>
-          <Box className={style.pokeColumn} gridColumn="span 1">
+          <Box sx={{ gridColumn: { xs: 'span 3', md: 'span 1' } }}>
             <Typography variant="h6" component="h6">
               <p className={style.flex}>Size:</p>
               {pokemonInfo.height}m, {pokemonInfo.weight}kg

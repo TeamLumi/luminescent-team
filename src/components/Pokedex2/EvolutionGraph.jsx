@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
@@ -13,108 +13,49 @@ import { getPokemonIdFromMonsNoAndForm } from '../../utils/dex/functions';
 const MILCERY_MONSNO = 868;
 const ALCREMIE_MONSNO = 869;
 
-class EvolutionErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error, errorInfo) {
-    console.error('[EvolutionGraph] Render error:', error, errorInfo);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return (
-        <div className="container">
-          <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
-            Evolutions
-          </Typography>
-          <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-            <span className="col col-12">
-              <Typography variant="h6" sx={{ margin: 'auto' }}>
-                Evolution data unavailable
-              </Typography>
-            </span>
-          </div>
-        </div>
-      );
-    }
-    return this.props.children;
-  }
-}
-
 export default function EvolutionGraph({ evolutionTree }) {
   const [globalState] = useGlobalState();
 
   if (!evolutionTree || !evolutionTree.pokemonId) {
     return (
-      <div className="container">
-        <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
-          Evolutions
-        </Typography>
-        <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-          <span className="col col-12">
-            <Typography variant="h6" sx={{ margin: 'auto' }}>
-              Evolution data unavailable
-            </Typography>
-          </span>
-        </div>
-      </div>
+      <Box sx={{ textAlign: 'center' }}>
+        <Typography variant="h6">Evolutions</Typography>
+        <Typography variant="h6">Evolution data unavailable</Typography>
+      </Box>
     );
   }
 
-  const [monsNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId, globalState.mode);
+  const [monsNo, _formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId, globalState.mode);
 
   // Special case: Alcremie
   if (monsNo === MILCERY_MONSNO || monsNo === ALCREMIE_MONSNO) {
     return (
-      <div className="container">
-        <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
-          Evolutions
+      <Box sx={{ textAlign: 'center' }}>
+        <Typography variant="h6">Evolutions</Typography>
+        <Typography variant="h6">
+          <Link to="/docs/special-evolutions#alcremie">Alcremie Evolutions</Link>
         </Typography>
-        <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-          <span className="col col-12">
-            <Typography variant="h6" sx={{ margin: 'auto' }}>
-              <Link to="/docs/special-evolutions#alcremie">Alcremie Evolutions</Link>
-            </Typography>
-          </span>
-        </div>
-      </div>
+      </Box>
     );
   }
 
   // No evolution
   if (!evolutionTree.evolvesInto || evolutionTree.evolvesInto.length === 0) {
     return (
-      <div className="container">
-        <Typography variant="h6" sx={{ margin: 'auto', textAlign: 'center' }}>
-          Evolutions
-        </Typography>
-        <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
-          <span className="col col-12">
-            <Typography variant="h6" sx={{ margin: 'auto' }}>
-              Does Not Evolve
-            </Typography>
-          </span>
-        </div>
-      </div>
+      <Box sx={{ textAlign: 'center' }}>
+        <Typography variant="h6">Evolutions</Typography>
+        <Typography variant="h6">Does Not Evolve</Typography>
+      </Box>
     );
   }
 
   return (
-    <div className="container">
-      <Typography variant="h6" className={styles.evolutionHeader}>
+    <Box>
+      <Typography variant="h6" sx={{ textAlign: 'center', mb: 1 }}>
         Evolutions
       </Typography>
-      <EvolutionErrorBoundary>
-        <EvolutionChainCards evolutionTree={evolutionTree} mode={globalState.mode} />
-      </EvolutionErrorBoundary>
-    </div>
+      <EvolutionChainCards evolutionTree={evolutionTree} mode={globalState.mode} />
+    </Box>
   );
 }
 
@@ -171,7 +112,14 @@ function EvolutionChainCards({ evolutionTree, mode }) {
   }, [evolutionTree.pokemonId, mode]);
 
   return (
-    <div className={[styles.evolutionCardsContainer, chains.length > 4 && styles.twoColumn].filter(Boolean).join(' ')}>
+    <Box sx={{
+      display: 'grid',
+      gridTemplateColumns: chains.length > 4 ? { xs: '1fr', sm: 'repeat(2, 1fr)' } : '1fr',
+      padding: '8px 8px 24px',
+      gap: '6px',
+      width: chains.length > 4 ? { xs: 'fit-content', sm: '100%' } : 'fit-content',
+      margin: '0 auto',
+    }}>
       {chains.map((chain) => (
         <div
           key={chain.map(n => `${n.monsNo}-${n.formNo}`).join('_')}
@@ -222,7 +170,7 @@ function EvolutionChainCards({ evolutionTree, mode }) {
           ))}
         </div>
       ))}
-    </div>
+    </Box>
   );
 }
 

@@ -78,34 +78,6 @@
   font-size: 0.85rem;
 }
 
-.evolutionHeader {
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-@media (max-width: 800px) {
-  .pokeColumn {
-    grid-column: span 3 !important;
-  }
-}
-
-/* Evolution chain cards */
-.evolutionCardsContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 8px 8px 24px;
-  gap: 6px;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-@media (min-width: 640px) {
-  .evolutionCardsContainer.twoColumn {
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-  }
-}
-
 .evolutionChainCard {
   display: flex;
   flex-direction: row;
@@ -117,7 +89,6 @@
   border: 1px solid var(--ifm-table-border-color);
   background-color: var(--ifm-background-surface-color);
   align-self: stretch;
-  overflow-x: auto;
 }
 
 .chainNode {
