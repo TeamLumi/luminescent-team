@@ -228,7 +228,7 @@ export const PokemonPageContent = ({
               locations={pokemonLocations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
-              pokemonId={pokemon.id}
+              pokemonId={pokemonInfo.id}
               itemContainerHeight={containerHeight}
             />
           </Box>
@@ -265,7 +265,7 @@ export const PokemonPageContent = ({
               locations={pokemonLocations}
               showMore={showMoreLocations}
               setShowMoreLocations={setShowMoreLocations}
-              pokemonId={pokemon.id}
+              pokemonId={pokemonInfo.id}
             />
           </Box>
         </Box>
@@ -281,16 +281,16 @@ export const PokemonPageContent = ({
 
       <Container>
         <PokemonAccordion title="Moves learnt via level-up" id="levelMoveset">
-          <PokemonMovesetList moveset={pokemonInfo.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.level} movesetPrefix="levelup" pokemonDexId={pokemonInfo.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Technical Machine" id="tmMoveset">
-          <PokemonMovesetList moveset={pokemonInfo.learnset.tm} movesetPrefix="tm" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.tm} movesetPrefix="tm" pokemonDexId={pokemonInfo.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via breeding" id="eggMoveset">
-          <PokemonMovesetList moveset={pokemonInfo.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.egg} movesetPrefix="egg" pokemonDexId={pokemonInfo.id} />
         </PokemonAccordion>
         <PokemonAccordion title="Moves learnt via Tutor" id="eggMoveset">
-          <PokemonMovesetList moveset={pokemonInfo.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemon.id} />
+          <PokemonMovesetList moveset={pokemonInfo.learnset.tutor} movesetPrefix="tutor" pokemonDexId={pokemonInfo.id} />
         </PokemonAccordion>
       </Container>
 

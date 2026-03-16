@@ -1,4 +1,4 @@
-const { PokemonHeight, PokemonWeight, GAMEDATA2 } = require('../../../__gamedata');
+const { PokemonHeight, PokemonWeight, GAMEDATA2, GAMEDATAV } = require('../../../__gamedata');
 
 const FEET_TO_CM = 30.48;
 const INCHES_TO_CM = 2.54;
@@ -7,8 +7,14 @@ const POUNDS_TO_KG = 0.453592;
 function getHeight(pokemonId = 0, mode = GAMEDATA2) {
   const ModePokemonHeight = PokemonHeight[mode];
   if (pokemonId === 0) return 0;
-  
-  const heightString = ModePokemonHeight?.labelDataArray[pokemonId]?.wordDataArray[0]?.str || '0';
+  let heightEntry;
+  if (mode === GAMEDATAV) {
+    heightEntry = ModePokemonHeight.labelDataArray.find((ld) => ld?.labelIndex === pokemonId);
+  } else {
+    heightEntry = ModePokemonHeight.labelDataArray[pokemonId];
+  }
+
+  const heightString = heightEntry?.wordDataArray?.[0]?.str || '0';
   let feetString = '0';
   let inchesString = heightString;
 
@@ -26,7 +32,14 @@ function getHeight(pokemonId = 0, mode = GAMEDATA2) {
 
 function getWeight(pokemonId = 0, mode = GAMEDATA2) {
   const ModePokemonWeight = PokemonWeight[mode];
-  const weightString = ModePokemonWeight.labelDataArray[pokemonId]?.wordDataArray[0]?.str || null;
+  let weightEntry;
+  if (mode === GAMEDATAV) {
+    weightEntry = ModePokemonWeight.labelDataArray.find((ld) => ld?.labelIndex === pokemonId);
+  } else {
+    weightEntry = ModePokemonWeight.labelDataArray[pokemonId];
+  }
+
+  const weightString = weightEntry?.wordDataArray?.[0]?.str || null;
 
   if (weightString === null) return '0';
 

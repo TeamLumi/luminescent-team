@@ -81,6 +81,9 @@ function getFormName(id = 0, mode = GAMEDATA2) {
 // These are the exact same function -_-
 function getPokemonName(pokemonId = 0, mode = GAMEDATA2) {
   const MODE_POKEMON_NAME_MAP = POKEMON_NAME_MAP[mode];
+  if (!MODE_POKEMON_NAME_MAP[pokemonId]) {
+    return "Bad Egg"
+  }
   return MODE_POKEMON_NAME_MAP[pokemonId];
 }
 
@@ -195,9 +198,13 @@ function getPokemonMonsNoAndFormNoFromPokemonId(pokemonId = 0, mode = GAMEDATA2)
   const ModePersonalTable = PersonalTable[mode];
   const MODE_FORM_MAP = FORM_MAP[mode];
 
-	const { monsno } = ModePersonalTable.Personal[pokemonId];
-	const formno = MODE_FORM_MAP[monsno].indexOf(pokemonId);
-	return [monsno, formno];
+  try {
+    const { monsno } = ModePersonalTable.Personal[pokemonId];
+    const formno = MODE_FORM_MAP[monsno].indexOf(pokemonId);
+    return [monsno, formno];
+  } catch (error) {
+    return [0, 0];
+  }
 }
 
 export {
