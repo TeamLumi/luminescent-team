@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[559471],{452918(e){e.exports="/pokedex/partner-greninja"}}]);
