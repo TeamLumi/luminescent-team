@@ -14435,28 +14435,28 @@
             "RoomPanCamera": 0,
             "Locators": [
                 {
-                    "x": 9.0,
-                    "y": 22.0,
+                    "x": 4.0,
+                    "y": 9.0,
                     "z": 2.0,
                     "w": 0.0
                 },
                 {
-                    "x": 9.0,
+                    "x": 3.0,
                     "y": 4.0,
                     "z": 0.0,
-                    "w": 10.0
+                    "w": 0.0
                 },
                 {
-                    "x": 4.0,
-                    "y": 4.0,
+                    "x": 11.0,
+                    "y": 3.0,
                     "z": 0.0,
-                    "w": 10.0
+                    "w": 0.0
                 },
                 {
-                    "x": 14.0,
-                    "y": 4.0,
+                    "x": 0.0,
+                    "y": 0.0,
                     "z": 0.0,
-                    "w": 10.0
+                    "w": 0.0
                 },
                 {
                     "x": 0.0,
@@ -14616,7 +14616,7 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 3636546750207782922
+                "m_PathID": 668758490842360262
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -14624,7 +14624,7 @@
             "RoomPanCamera": 1,
             "Locators": [
                 {
-                    "x": 7.0,
+                    "x": 10.0,
                     "y": 10.0,
                     "z": 2.0,
                     "w": 0.0
@@ -14994,7 +14994,7 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 3636546750207782922
+                "m_PathID": -5545625246412548940
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -15002,28 +15002,28 @@
             "RoomPanCamera": 0,
             "Locators": [
                 {
-                    "x": 9.0,
-                    "y": 22.0,
+                    "x": 15.0,
+                    "y": 23.0,
                     "z": 2.0,
                     "w": 0.0
                 },
                 {
-                    "x": 9.0,
-                    "y": 4.0,
+                    "x": 0.0,
+                    "y": 0.0,
                     "z": 0.0,
-                    "w": 10.0
+                    "w": 0.0
                 },
                 {
-                    "x": 4.0,
-                    "y": 4.0,
+                    "x": 0.0,
+                    "y": 0.0,
                     "z": 0.0,
-                    "w": 10.0
+                    "w": 0.0
                 },
                 {
-                    "x": 14.0,
-                    "y": 4.0,
+                    "x": 0.0,
+                    "y": 0.0,
                     "z": 0.0,
-                    "w": 10.0
+                    "w": 0.0
                 },
                 {
                     "x": 0.0,
@@ -16703,8 +16703,8 @@
             "RoomPanCamera": 1,
             "Locators": [
                 {
-                    "x": 9.0,
-                    "y": 12.0,
+                    "x": 4.0,
+                    "y": 11.0,
                     "z": 2.0,
                     "w": 0.0
                 },
@@ -35184,7 +35184,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                70,
+                106,
                 7
             ],
             "ZoneID": 186,
@@ -53926,11 +53926,11 @@
             },
             "SubAttribute": {
                 "m_FileID": 0,
-                "m_PathID": -5071039068831716044
+                "m_PathID": 2482990492515583165
             },
             "SubAttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -6408653658813432091
+                "m_PathID": -6589064651743479618
             },
             "BGM": [
                 "W231_Day",
@@ -74681,7 +74681,7 @@
             "Caption": "Route 216",
             "MSLabel": "DP_fld_areaname_display_086",
             "PokePlaceName": "DP_fld_arenames_087",
-            "FlyingPlaceName": "",
+            "FlyingPlaceName": "DP_fld_arenames_087",
             "MapType": 1,
             "IsField": 1,
             "LandmarkType": -1,
@@ -77740,11 +77740,11 @@
             },
             "SubAttribute": {
                 "m_FileID": 0,
-                "m_PathID": -5071039068831716044
+                "m_PathID": 2482990492515583165
             },
             "SubAttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -6408653658813432091
+                "m_PathID": -6589064651743479618
             },
             "BGM": [
                 "R224_Day",
@@ -78288,7 +78288,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                106,
                 7
             ],
             "ZoneID": 414,
@@ -78666,7 +78666,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                106,
                 7
             ],
             "ZoneID": 416,
@@ -79422,7 +79422,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                106,
                 8
             ],
             "ZoneID": 420,
@@ -79833,7 +79833,7 @@
             "Weather": 5,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": -6135015053199916854
+                "m_PathID": -5829914377093390508
             },
             "ReflectionCamera": 0,
             "FixedTime": 0,
@@ -87927,7 +87927,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                0,
+                106,
                 7
             ],
             "ZoneID": 465,
@@ -89439,7 +89439,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                70,
+                106,
                 7
             ],
             "ZoneID": 473,
@@ -92085,7 +92085,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                106,
                 8
             ],
             "ZoneID": 487,
@@ -92463,7 +92463,7 @@
             "KuruKuru": 0,
             "Fall": 0,
             "BattleBg": [
-                64,
+                106,
                 8
             ],
             "ZoneID": 489,
@@ -92671,11 +92671,11 @@
             },
             "SubAttribute": {
                 "m_FileID": 0,
-                "m_PathID": -5071039068831716044
+                "m_PathID": 2482990492515583165
             },
             "SubAttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -6408653658813432091
+                "m_PathID": -6589064651743479618
             },
             "BGM": [
                 "W231_Day",
@@ -102651,12 +102651,12 @@
         },
         {
             "Caption": "UGSPACE01",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_146",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 11,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -102680,11 +102680,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 8033496209823477241
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 8759206733708934643
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -102702,11 +102702,11 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -8350374497033519170
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace01",
+            "AssetBundleName": "underground/ugspace26",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -103218,12 +103218,12 @@
         },
         {
             "Caption": "UGSPACE04",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_131",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 3,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -103247,11 +103247,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": -4856844644528746971
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 1902404145008026354
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -103265,15 +103265,15 @@
                 "UG",
                 "UG"
             ],
-            "EnvironmentalSound": "Env_Silence",
+            "EnvironmentalSound": "s_env002_1",
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": 379332602455077001
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace04",
+            "AssetBundleName": "underground/ugspace28",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -103407,12 +103407,12 @@
         },
         {
             "Caption": "UGSPACE05",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_143",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 9,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -103436,11 +103436,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 428467828577502944
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": -8353808102124043410
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -103455,14 +103455,14 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 6,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -5414109281054388276
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace05",
+            "AssetBundleName": "underground/ugspace47",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -103596,12 +103596,12 @@
         },
         {
             "Caption": "UGSPACE06",
-            "MSLabel": "DP_fld_areaname_display_139",
+            "MSLabel": "DP_fld_areaname_display_147",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 7,
+            "LandmarkType": 12,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -103625,11 +103625,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 1528267243757356944
+                "m_PathID": -6693606545451614090
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -6958224351779890261
+                "m_PathID": 2417451995154420681
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -103647,11 +103647,11 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": -902769129528006357
+                "m_PathID": 5245878088104878051
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace06",
+            "AssetBundleName": "underground/ugspace20",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -104022,7 +104022,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_3",
-            "Weather": 0,
+            "Weather": 4,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -4034488634124736662
@@ -104214,7 +104214,7 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -4645833813682900966
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -104400,7 +104400,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_4",
-            "Weather": 0,
+            "Weather": 4,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -8350374497033519170
@@ -104541,12 +104541,12 @@
         },
         {
             "Caption": "UGSPACE11",
-            "MSLabel": "DP_fld_areaname_display_133",
+            "MSLabel": "DP_fld_areaname_display_143",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 4,
+            "LandmarkType": 9,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -104570,11 +104570,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 8855943342283140654
+                "m_PathID": 428467828577502944
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": 7464477859674941652
+                "m_PathID": -8353808102124043410
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -104588,15 +104588,15 @@
                 "UG",
                 "UG"
             ],
-            "EnvironmentalSound": "s_env007_M_3",
-            "Weather": 0,
+            "EnvironmentalSound": "s_env009_1",
+            "Weather": 6,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": -4034488634124736662
+                "m_PathID": -5414109281054388276
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace11",
+            "AssetBundleName": "underground/ugspace44",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -104730,12 +104730,12 @@
         },
         {
             "Caption": "UGSPACE12",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_139",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 7,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -104759,11 +104759,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 1528267243757356944
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": -6958224351779890261
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -104778,14 +104778,14 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -902769129528006357
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace12",
+            "AssetBundleName": "underground/ugspace55",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -104919,12 +104919,12 @@
         },
         {
             "Caption": "UGSPACE13",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_141",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 8,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -104948,11 +104948,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": -5004291522032087065
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 3718648081572061018
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -104967,14 +104967,14 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": 7105699071131814605
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace12",
+            "AssetBundleName": "underground/ugspace38",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -105108,12 +105108,12 @@
         },
         {
             "Caption": "UGSPACE14",
-            "MSLabel": "DP_fld_areaname_display_135",
+            "MSLabel": "DP_fld_areaname_display_147",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 5,
+            "LandmarkType": 12,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -105137,11 +105137,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 440599530253882129
+                "m_PathID": -6693606545451614090
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": 247494704071696120
+                "m_PathID": 2417451995154420681
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -105159,11 +105159,11 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": -6442744264172511771
+                "m_PathID": 5245878088104878051
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace14",
+            "AssetBundleName": "underground/ugspace57",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -105345,7 +105345,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 9,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -7626005915603076135
@@ -105537,7 +105537,7 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -4645833813682900966
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -105723,7 +105723,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 10,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -6442744264172511771
@@ -105912,7 +105912,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 9,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -7626005915603076135
@@ -106101,7 +106101,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 7105699071131814605
@@ -106482,7 +106482,7 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -4645833813682900966
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -106620,12 +106620,12 @@
         },
         {
             "Caption": "UGSPACE22",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_146",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 11,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -106649,11 +106649,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 8033496209823477241
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 8759206733708934643
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -106671,11 +106671,11 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -8350374497033519170
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace01",
+            "AssetBundleName": "underground/ugspace26",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -106857,7 +106857,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 10,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -6442744264172511771
@@ -106998,12 +106998,12 @@
         },
         {
             "Caption": "UGSPACE24",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_135",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 5,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -107027,11 +107027,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 440599530253882129
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 247494704071696120
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -107046,14 +107046,14 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 10,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -6442744264172511771
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace24",
+            "AssetBundleName": "underground/ugspace17",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -107616,7 +107616,7 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -4645833813682900966
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -107991,7 +107991,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_3",
-            "Weather": 0,
+            "Weather": 4,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -4034488634124736662
@@ -108180,7 +108180,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -902769129528006357
@@ -108321,12 +108321,12 @@
         },
         {
             "Caption": "UGSPACE31",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_145",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 10,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -108350,11 +108350,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": -4570328714093474465
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 7082934604998042441
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -108368,15 +108368,15 @@
                 "UG",
                 "UG"
             ],
-            "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "EnvironmentalSound": "s_env007_M_5",
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -4877020615664196339
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace31",
+            "AssetBundleName": "underground/ugspace39",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -108561,7 +108561,7 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -4645833813682900966
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -108699,12 +108699,12 @@
         },
         {
             "Caption": "UGSPACE33",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_137",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 6,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -108728,11 +108728,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 678691725923482655
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 3304251795250868693
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -108747,14 +108747,14 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 9,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -7626005915603076135
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace31",
+            "AssetBundleName": "underground/ugspace15",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -108888,12 +108888,12 @@
         },
         {
             "Caption": "UGSPACE34",
-            "MSLabel": "DP_fld_areaname_display_139",
+            "MSLabel": "DP_fld_areaname_display_131",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 7,
+            "LandmarkType": 3,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -108917,11 +108917,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 1528267243757356944
+                "m_PathID": -4856844644528746971
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -6958224351779890261
+                "m_PathID": 1902404145008026354
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -108939,11 +108939,11 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": -902769129528006357
+                "m_PathID": 379332602455077001
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace06",
+            "AssetBundleName": "underground/ugspace25",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -109314,7 +109314,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_5",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -4877020615664196339
@@ -109503,7 +109503,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 7105699071131814605
@@ -109692,7 +109692,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 7105699071131814605
@@ -109881,7 +109881,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_5",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -4877020615664196339
@@ -110070,7 +110070,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_6",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -5717213592462094431
@@ -110259,7 +110259,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_5",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -4877020615664196339
@@ -110400,12 +110400,12 @@
         },
         {
             "Caption": "UGSPACE42",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_145",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 10,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -110429,11 +110429,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": -4570328714093474465
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 7082934604998042441
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -110448,14 +110448,14 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -4877020615664196339
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace31",
+            "AssetBundleName": "underground/ugspace39",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -110589,12 +110589,12 @@
         },
         {
             "Caption": "UGSPACE43",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_146",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 11,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -110618,11 +110618,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 8033496209823477241
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 8759206733708934643
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -110640,11 +110640,11 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -8350374497033519170
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace01",
+            "AssetBundleName": "underground/ugspace26",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -110826,7 +110826,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env009_1",
-            "Weather": 0,
+            "Weather": 6,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -5414109281054388276
@@ -111015,7 +111015,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env009_1",
-            "Weather": 0,
+            "Weather": 6,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -5414109281054388276
@@ -111204,7 +111204,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env009_1",
-            "Weather": 0,
+            "Weather": 6,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -5414109281054388276
@@ -111393,7 +111393,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env009_1",
-            "Weather": 0,
+            "Weather": 6,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -5414109281054388276
@@ -111582,7 +111582,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -902769129528006357
@@ -111771,7 +111771,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_4",
-            "Weather": 0,
+            "Weather": 4,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -8350374497033519170
@@ -111963,7 +111963,7 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -4645833813682900966
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
@@ -112149,7 +112149,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -902769129528006357
@@ -112290,12 +112290,12 @@
         },
         {
             "Caption": "UGSPACE52",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_147",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 12,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -112319,11 +112319,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": -6693606545451614090
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 2417451995154420681
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -112341,11 +112341,11 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": 5245878088104878051
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace24",
+            "AssetBundleName": "underground/ugspace67",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -112527,7 +112527,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_4",
-            "Weather": 0,
+            "Weather": 4,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -8350374497033519170
@@ -112716,7 +112716,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 10,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -6442744264172511771
@@ -112905,7 +112905,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -902769129528006357
@@ -113046,12 +113046,12 @@
         },
         {
             "Caption": "UGSPACE56",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_137",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 6,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -113075,11 +113075,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 678691725923482655
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 3304251795250868693
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -113094,14 +113094,14 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 9,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -7626005915603076135
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace32",
+            "AssetBundleName": "underground/ugspace60",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -113424,12 +113424,12 @@
         },
         {
             "Caption": "UGSPACE58",
-            "MSLabel": "DP_fld_areaname_display_137",
+            "MSLabel": "DP_fld_areaname_display_141",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 6,
+            "LandmarkType": 8,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -113453,11 +113453,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 678691725923482655
+                "m_PathID": -5004291522032087065
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": 3304251795250868693
+                "m_PathID": 3718648081572061018
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -113472,14 +113472,14 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": -7626005915603076135
+                "m_PathID": 7105699071131814605
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace58",
+            "AssetBundleName": "underground/ugspace19",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -113661,7 +113661,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 11,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": 7105699071131814605
@@ -113850,7 +113850,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 9,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -7626005915603076135
@@ -114039,7 +114039,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 10,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -6442744264172511771
@@ -114228,7 +114228,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_4",
-            "Weather": 0,
+            "Weather": 4,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -8350374497033519170
@@ -114558,12 +114558,12 @@
         },
         {
             "Caption": "UGSPACE64",
-            "MSLabel": "DP_fld_areaname_display_129",
+            "MSLabel": "DP_fld_areaname_display_146",
             "PokePlaceName": "DP_fld_arenames_226",
             "FlyingPlaceName": "",
             "MapType": 5,
             "IsField": 0,
-            "LandmarkType": 2,
+            "LandmarkType": 11,
             "MiniMapOffset": {
                 "x": 0.0,
                 "y": 0.0
@@ -114587,11 +114587,11 @@
             },
             "Attribute": {
                 "m_FileID": 0,
-                "m_PathID": 5187323139487363101
+                "m_PathID": 8033496209823477241
             },
             "AttributeEx": {
                 "m_FileID": 0,
-                "m_PathID": -3234081880867625319
+                "m_PathID": 8759206733708934643
             },
             "SubAttribute": {
                 "m_FileID": 0,
@@ -114609,11 +114609,11 @@
             "Weather": 0,
             "RenderSettings": {
                 "m_FileID": 0,
-                "m_PathID": 7377073318577339176
+                "m_PathID": -8350374497033519170
             },
             "ReflectionCamera": 0,
             "FixedTime": 1,
-            "AssetBundleName": "underground/ugspace01",
+            "AssetBundleName": "underground/ugspace26",
             "RoomPanCamera": 1,
             "Locators": [
                 {
@@ -114795,7 +114795,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 8,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -902769129528006357
@@ -114984,7 +114984,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 10,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -6442744264172511771
@@ -115362,7 +115362,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "Env_Silence",
-            "Weather": 0,
+            "Weather": 9,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -7626005915603076135
@@ -115551,7 +115551,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env007_M_2",
-            "Weather": 0,
+            "Weather": 3,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -2641838978250588950
@@ -116307,7 +116307,7 @@
                 "UG"
             ],
             "EnvironmentalSound": "s_env009_2",
-            "Weather": 0,
+            "Weather": 5,
             "RenderSettings": {
                 "m_FileID": 0,
                 "m_PathID": -340349835904849036
@@ -132126,9 +132126,9 @@
             "pitch": 45.0,
             "fov": 20.0,
             "targetRange": 30.0,
-            "panDistance": 25.0,
-            "panPitch": 25.0,
-            "panFov": 18.0,
+            "panDistance": 27.0,
+            "panPitch": 40.0,
+            "panFov": 20.0,
             "panpos_useflag": 1,
             "panMinposY": 0.0,
             "panMaxposY": 2.5,
@@ -132160,14 +132160,14 @@
             "pitch": 45.0,
             "fov": 20.0,
             "targetRange": 30.0,
-            "panDistance": 25.0,
-            "panPitch": 35.0,
+            "panDistance": 27.0,
+            "panPitch": 40.0,
             "panFov": 20.0,
             "panpos_useflag": 0,
             "panMinposY": 0.0,
-            "panMaxposY": 0.0,
-            "panMinposZ": 0.0,
-            "panMaxposZ": 0.0,
+            "panMaxposY": 2.5,
+            "panMinposZ": -5.900000095367432,
+            "panMaxposZ": 12.199999809265137,
             "defocusStart": 0.0,
             "defocusEnd": 12.600000381469727,
             "distance": 30.0
@@ -139011,14 +139011,14 @@
             "pitch": 45.0,
             "fov": 20.0,
             "targetRange": 30.0,
-            "panDistance": 25.0,
-            "panPitch": 25.0,
+            "panDistance": 30.0,
+            "panPitch": 40.0,
             "panFov": 17.75,
             "panpos_useflag": 1,
             "panMinposY": 0.0,
             "panMaxposY": 2.5,
-            "panMinposZ": -6.099999904632568,
-            "panMaxposZ": 10.100000381469727,
+            "panMinposZ": 4.0,
+            "panMaxposZ": 11.5,
             "defocusStart": 0.0,
             "defocusEnd": 14.0,
             "distance": 30.0
@@ -142367,7 +142367,7 @@
             "panMinposY": 0.0,
             "panMaxposY": 2.5,
             "panMinposZ": 0.800000011920929,
-            "panMaxposZ": 13.800000190734863,
+            "panMaxposZ": 15.800000190734863,
             "defocusStart": 0.0,
             "defocusEnd": 17.0,
             "distance": 30.0

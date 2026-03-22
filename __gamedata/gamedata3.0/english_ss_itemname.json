@@ -12849,7 +12849,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "???",
+                    "str": "TM100 Rock Climb",
                     "strWidth": 43.40625
                 }
             ]
@@ -39309,8 +39309,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "★Boo5435",
-                    "strWidth": 149.15625
+                    "str": "Clone Ball",
+                    "strWidth": 133.578125
                 }
             ]
         },
@@ -39339,8 +39339,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "★Boo5602",
-                    "strWidth": 149.15625
+                    "str": "Cynthia’s Rage Candy Bar",
+                    "strWidth": 335.21875
                 }
             ]
         },
