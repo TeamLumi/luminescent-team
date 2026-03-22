@@ -52074,7 +52074,7 @@
   "1074": [
     {
       "routeName": "Route 207",
-      "pokemonName": "Galarian Farfetch\u2019d",
+      "pokemonName": "Galarian Farfetch'd",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 10,
@@ -52084,7 +52084,7 @@
     },
     {
       "routeName": "Route 208",
-      "pokemonName": "Galarian Farfetch\u2019d",
+      "pokemonName": "Galarian Farfetch'd",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 24,
@@ -52094,7 +52094,7 @@
     },
     {
       "routeName": "Route 214",
-      "pokemonName": "Galarian Farfetch\u2019d",
+      "pokemonName": "Galarian Farfetch'd",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 32,
@@ -53862,7 +53862,7 @@
   "1302": [
     {
       "routeName": "Route 215",
-      "pokemonName": "Female Meowstic",
+      "pokemonName": "Meowstic-F",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 30,
@@ -53872,7 +53872,7 @@
     },
     {
       "routeName": "Route 229",
-      "pokemonName": "Female Meowstic",
+      "pokemonName": "Meowstic-F",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 67,
@@ -54344,7 +54344,7 @@
   "1396": [
     {
       "routeName": "Route 211 (East)",
-      "pokemonName": "Female Indeedee",
+      "pokemonName": "Indeedee-F",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 19,

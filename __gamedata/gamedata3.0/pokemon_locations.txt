@@ -699,7 +699,7 @@ Galarian Rapidash|Route 222|Incense|54|10%|Route 226|Incense|67|10%|
 Galarian Slowpoke|Twinleaf Town|Surfing Incense|40|30%|Lake Verity (Before)|Surfing Incense|40|30%|Route 204 (South)|Surfing Incense|40|30%|Route 205 (North)|Surfing Incense|40|30%|Mt. Coronet - B1F|Surfing Incense|45|30%|Mt. Coronet - Route 207 Entrance|Surfing Incense|40|30%|Route 208|Surfing Incense|40|30%|Route 209|Incense|24|10%|Route 214|Surfing Incense|40|30%|Route 210 (North)|Surfing Incense|40|30%|Lake Verity (After)|Surfing Incense|40|30%|
 Mega Slowbro|Route 218|Incense|39|10%|
 Galarian Slowbro|Route 219|Surfing Incense|45|30%|Route 220|Surfing Incense|45|30%|Lake Valor (After)|Surfing Incense|54|30%|Victory Road - B1F|Surfing Incense|60|30%|Victory Road - 1F Back (Marley)|Surfing Incense|60|30%|Route 224|Surfing Incense|60|30%|Route 229|Surfing Incense|67|30%|
-Galarian Farfetch’d|Route 207|Incense|10|10%|Route 208|Incense|24|10%|Route 214|Incense|32|10%|
+Galarian Farfetch'd|Route 207|Incense|10|10%|Route 208|Incense|24|10%|Route 214|Incense|32|10%|
 Alolan Grimer|Route 208|Incense|24|10%|Route 210 (South)|Incense|30|10%|Ruin Maniac Cave - Small|Incense|32|10%|Ruin Maniac Cave - Large|Incense|32|10%|Maniac Tunnel|Incense|32|10%|
 Alolan Muk|Turnback Cave - Entrance|Incense|66|10%|Turnback Cave - d17r0103|Incense|66|10%|Turnback Cave - d17r0104|Incense|66|10%|Turnback Cave - d17r0105|Incense|66|10%|Turnback Cave - d17r0106|Incense|66|10%|Turnback Cave - d17r0107|Incense|66|10%|Turnback Cave - d17r0108|Incense|66|10%|Turnback Cave - d17r0109|Incense|66|10%|Turnback Cave - d17r0110|Incense|66|10%|Turnback Cave - d17r0111|Incense|66|10%|Turnback Cave - d17r0112|Incense|66|10%|Turnback Cave - d17r0113|Incense|66|10%|Turnback Cave - d17r0114|Incense|66|10%|Turnback Cave - d17r0115|Incense|66|10%|Turnback Cave - d17r0116|Incense|66|10%|Turnback Cave - d17r0117|Incense|66|10%|Turnback Cave - d17r0118|Incense|66|10%|Turnback Cave - d17r0119|Incense|66|10%|Turnback Cave - d17r0120|Incense|66|10%|Turnback Cave - d17r0121|Incense|66|10%|
 Hisuian Voltorb|Valley Windworks (Outside)|Incense|13|10%|Route 211 (West)|Incense|18|10%|Route 211 (East)|Incense|19|10%|
@@ -733,7 +733,7 @@ Autumn Form Sawsbuck|Route 222|Incense|54|10%|
 Winter Form Sawsbuck|Mt. Coronet - Snow Area|Incense|54|10%|
 Galarian Stunfisk|Mt. Coronet - Route 211 Entrance|Incense|18|10%|Mt. Coronet - Tunnel to Route 211 Entrance|Incense|19|10%|Mt. Coronet - B1F|Incense|20|10%|Mt. Coronet - Route 216 Entrance|Incense|19|10%|Mt. Coronet - Route 207 Entrance|Incense|23|10%|Route 227|Incense|67|10%|
 Hisuian Braviary|Mt. Coronet - Snow Area|Incense|54|10%|
-Female Meowstic|Route 215|Incense|30|10%|Route 229|Incense|67|10%|
+Meowstic-F|Route 215|Incense|30|10%|Route 229|Incense|67|10%|
 Hisuian Sliggoo|Iron Island - 1F|Incense|45|10%|Iron Island - B1F Left|Incense|45|10%|Iron Island - B1F Right|Incense|45|10%|Iron Island - B2F Left (Riley's Room)|Incense|45|10%|Iron Island - B2F Right|Incense|45|10%|Iron Island - B3F|Incense|45|10%|
 Hisuian Goodra|Victory Road - 1F|Incense|59|10%|Victory Road - 2F|Incense|59|10%|Victory Road - B1F|Incense|59|10%|Victory Road - 1F Back (Marley)|Incense|59|10%|Victory Road - 1F Back (Entrance)|Incense|59|10%|Victory Road - 1F Back (214 Exit)|Incense|59|10%|
 Hisuian Avalugg|Route 217|Incense|48|10%|Mt. Coronet - Summit|Incense|52|10%|
@@ -749,4 +749,4 @@ Green Meteor Form Minior|Mt. Coronet - Tunnel to Route 211 Entrance|Incense|19|2
 Blue Meteor Form Minior|Mt. Coronet - Route 207 Entrance|Incense|23|20%|Mt. Coronet - Snow Area|Incense|54|20%|
 Indigo Meteor Form Minior|Mt. Coronet - 2F|Incense|51|20%|
 Violet Meteor Form Minior|Mt. Coronet - 3F|Incense|51|20%|
-Female Indeedee|Route 211 (East)|Incense|19|10%|
+Indeedee-F|Route 211 (East)|Incense|19|10%|
