@@ -50,8 +50,8 @@ export const PokemonListPageContent = ({ pokemonList, pokemonList3, pokemonListV
   };
 
   const [globalState, updateMode] = useGlobalState();
-  const allPokemons = POKEMON_LIST_MODE_MAP[globalState.mode];
-  const [pokemons, setPokemons] = useState(allPokemons);
+  const [pokemons, setPokemons] = useState(POKEMON_LIST_MODE_MAP[globalState.mode]);
+  const [filteredPokemons, setFilteredPokemons] = useState(pokemons);
   const [searchTable, setSearchTable] = useState({
     ...defaultPokemonSearchTable,
   });
@@ -123,8 +123,8 @@ export const PokemonListPageContent = ({ pokemonList, pokemonList3, pokemonListV
             }}
           >
             <PokemonSearchInput
-              allPokemons={allPokemons}
-              setPokemons={setPokemons}
+              allPokemons={pokemons}
+              setPokemons={setFilteredPokemons}
               searchTable={searchTable}
               handleFilterChange={handleChange}
             />
@@ -148,8 +148,8 @@ export const PokemonListPageContent = ({ pokemonList, pokemonList3, pokemonListV
           >
             <AutoSizer>
               {({ height, width }) => (
-                <FixedSizeList itemCount={pokemons.length} itemSize={60} height={height} width={width}>
-                  {({ index, style }) => <PokemonListEntry pokemon={pokemons[index]} style={style} />}
+                <FixedSizeList itemCount={filteredPokemons.length} itemSize={60} height={height} width={width}>
+                  {({ index, style }) => <PokemonListEntry pokemon={filteredPokemons[index]} style={style} />}
                 </FixedSizeList>
               )}
             </AutoSizer>

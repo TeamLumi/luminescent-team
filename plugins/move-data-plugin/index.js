@@ -31,6 +31,44 @@ function moveDexDataPlugin(context, options) {
 
       const firstZMoveMap = Object.fromEntries(Z_MOVES.map(z => [z, 0]));
 
+      const movesListV = movesV
+        .filter(m => {
+          if (!Z_MOVES.includes(m.movePath)) return true;
+
+          if (firstZMoveMap[m.movePath] === 0) {
+            firstZMoveMap[m.movePath] = 1;
+            return true; // keep first
+          }
+
+          return false; // skip duplicates
+        })
+        .map(m => ({
+          ...m,
+          id: m.moveId,
+          name: m.name,
+          type: m.type,
+          typeName: getTypeName(m.type, GAMEDATAV),
+        }));
+
+      const movesList2 = moves2
+        .filter(m => {
+          if (!Z_MOVES.includes(m.movePath)) return true;
+
+          if (firstZMoveMap[m.movePath] === 0) {
+            firstZMoveMap[m.movePath] = 1;
+            return true; // keep first
+          }
+
+          return false; // skip duplicates
+        })
+        .map(m => ({
+          ...m,
+          id: m.moveId,
+          name: m.name,
+          type: m.type,
+          typeName: getTypeName(m.type, GAMEDATA2),
+        }));
+
       const movesList3 = moves3
         .filter(m => {
           if (!Z_MOVES.includes(m.movePath)) return true;
@@ -47,27 +85,33 @@ function moveDexDataPlugin(context, options) {
           id: m.moveId,
           name: m.name,
           type: m.type,
-          typeName: getTypeName(m.type),
+          typeName: getTypeName(m.type, GAMEDATA3),
         }));
 
       return {
         movesV,
         moves2,
         moves3,
+        movesListV,
+        movesList2,
         movesList3,
       };
     },
 
     async contentLoaded({ content, actions }) {
       const moveDexPath = options.routeBasePath + options.path;
-      const movesListJson = await actions.createData('movesList.json', JSON.stringify(content.movesList3));
+      const movesListVJson = await actions.createData('movesListV.json', JSON.stringify(content.movesListV));
+      const movesList2Json = await actions.createData('movesList2.json', JSON.stringify(content.movesList2));
+      const movesList3Json = await actions.createData('movesList3.json', JSON.stringify(content.movesList3));
 
       const movesListRoute = {
         path: moveDexPath,
         component: options.moveListComponent,
         exact: true,
         modules: {
-          movesList: movesListJson,
+          movesListV: movesListVJson,
+          movesList2: movesList2Json,
+          movesList3: movesList3Json,
         }
       };
 
@@ -108,7 +152,9 @@ function moveDexDataPlugin(context, options) {
               move2: moveJson2,
               move3: moveJson3,
               moveV: moveJsonV,
-              moveList: movesListJson,
+              moveListV: movesListVJson,
+              moveList2: movesList2Json,
+              moveList3: movesList3Json,
             },
           });
         }),
