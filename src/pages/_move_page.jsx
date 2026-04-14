@@ -19,9 +19,9 @@ export default function MovePage({ move2, move3, moveV, moveListV, moveList3, mo
             move2={move2}
             move3={move3}
             moveV={moveV}
-            movesListV={moveListV}
-            movesList2={moveList2}
-            movesList3={moveList3}
+            moveListV={moveListV}
+            moveList2={moveList2}
+            moveList3={moveList3}
           />
         </GlobalState>
       </LumiReactThemeProvider>

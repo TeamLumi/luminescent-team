@@ -271,14 +271,14 @@ const MovePageContent = ({ move2, move3, moveV, moveListV, moveList2, moveList3 
   const [globalState, updateMode] = useGlobalState();
 
   const [move, setMove] = useState(MOVE_MODE_MAP[globalState.mode]);
-  const [movesList, setMovesList] = useState(MOVES_LIST_MODE_MAP[globalState.mode]);
+  const [movesList, setMovesList] = useState(MOVES_LIST_MODE_MAP[globalState.mode] || []);
   const [validMoves, setValidMoves] = useState(
     searchForMovesOnPokemon(MOVE_MODE_MAP[globalState.mode].moveId, globalState.mode)
   );
 
   useEffect(() => {
     setMove(MOVE_MODE_MAP[globalState.mode]);
-    setMovesList(MOVES_LIST_MODE_MAP[globalState.mode]);
+    setMovesList(MOVES_LIST_MODE_MAP[globalState.mode] || []);
     setValidMoves(searchForMovesOnPokemon(MOVE_MODE_MAP[globalState.mode].moveId, globalState.mode));
   }, [globalState.mode]);
 
