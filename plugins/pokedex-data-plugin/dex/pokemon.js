@@ -50,7 +50,7 @@ function getPokemon(pokemonId, mode = GAMEDATA2) {
   const learnset = {
     level: getLevelLearnset(pokemonId, mode),
     tm: getTechMachineLearnset(pokemonId, mode),
-    egg: getEggMoves(pokemonId, mode),
+    egg: getEggMoves(evolutionTree.pokemonId, mode), // Only the root of the evolution tree gets egg moves
     tutor: getTutorMoves(monsno, formno, mode)
   };
   const eggGroupNames = getEggGroupViaPokemonId(pokemonId, mode).map((eggId) => getEggGroupNameById(eggId));
