@@ -1,6 +1,7 @@
 import React from 'react';
 import { TextField, Typography, Button, Grid2 } from '@mui/material';
 import '../style.css';
+import { NumberField } from '@base-ui/react';
 
 const INPUT_MIN = 0;
 const TRANSPARENCY_MAX = 1;
