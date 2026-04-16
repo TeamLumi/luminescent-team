@@ -5,6 +5,10 @@ import { GlobalState } from '../components/common/GlobalState';
 import LumiReactThemeProvider from '../theme/LumiThemeProvider';
 
 const MapperPage = ({ pokemonList, pokemonListV, pokemonList3 }) => {
+  // required for webpack SSR
+  if (typeof pokemonList === 'undefined') {
+    return null;
+  }
   return (
     <Layout>
       <LumiReactThemeProvider>
@@ -13,7 +17,7 @@ const MapperPage = ({ pokemonList, pokemonListV, pokemonList3 }) => {
         </GlobalState>
       </LumiReactThemeProvider>
     </Layout>
-  )
-}
+  );
+};
 
 export default MapperPage;
