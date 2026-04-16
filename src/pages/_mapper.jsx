@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import { Mapper } from '../components/Mapper/Mapper';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import { GlobalState } from '../components/common/GlobalState';
 import LumiReactThemeProvider from '../theme/LumiThemeProvider';
 
@@ -13,7 +13,12 @@ const MapperPage = ({ pokemonList, pokemonListV, pokemonList3 }) => {
     <Layout>
       <LumiReactThemeProvider>
         <GlobalState>
-          <Mapper pokemonList={pokemonList} pokemonList3={pokemonList3} pokemonListV={pokemonListV} />
+          <BrowserOnly fallback={<div>Loading mapper...</div>}>
+            {() => {
+              const { Mapper } = require('../components/Mapper/Mapper');
+              return <Mapper pokemonList={pokemonList} pokemonList3={pokemonList3} pokemonListV={pokemonListV} />;
+            }}
+          </BrowserOnly>
         </GlobalState>
       </LumiReactThemeProvider>
     </Layout>

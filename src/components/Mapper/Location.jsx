@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { Rect, Text } from "@bucky24/react-canvas";
 import { isLocationWithinBounds } from "./coordinates";
-import { CLEAR_MODE } from "./Mapper";
 
 export const Location = ({
   location,
