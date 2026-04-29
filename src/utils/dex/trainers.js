@@ -4,7 +4,10 @@ function getTrainersFromZoneId(zoneId, mode = GAMEDATA2) {
   if (zoneId === null) {
     return [];
   }
-  const zoneKey = zoneId.toString();
+  let zoneKey = zoneId.toString();
+  if (zoneKey === "327") { // Put the Lake Valor Before trainers
+    zoneKey = "326" // To be at the Lake Valor After for ease of use.
+  }
   if (zoneKey in TrainerLocations[mode]) {
     return TrainerLocations[mode][zoneKey];
   }

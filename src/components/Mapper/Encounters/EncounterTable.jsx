@@ -1,5 +1,6 @@
 import React from 'react';
 import { useColorMode } from '@docusaurus/theme-common';
+import Link from '@docusaurus/Link';
 import {
   Table,
   TableBody,
@@ -13,6 +14,8 @@ import {
 
 import "../style.css";
 import { LINK_KEYS } from '../../../utils/dex/encountersConstants';
+import { normalizePokemonName } from '../../../utils/dex/name';
+import { GAMEDATA3 } from '../../../../__gamedata';
 
 const EncounterTable = ({ encounterList, pokemon }) => {
   const { colorMode, setColorMode } = useColorMode();
@@ -47,7 +50,11 @@ const EncounterTable = ({ encounterList, pokemon }) => {
                   key={index}
                   className={enc.pokemonName === pokemon ? highlightColor : ""}
                 >
-                  <TableCell>{enc.pokemonName}</TableCell>
+                  <TableCell>
+                    <Link to={`/pokedex/${normalizePokemonName(enc.pokemonName, GAMEDATA3)}`}>
+                      {enc.pokemonName}
+                    </Link>
+                  </TableCell>
                   <TableCell>
                     {enc.minLevel !== enc.maxLevel
                       ? `${enc.minLevel} - ${enc.maxLevel}`

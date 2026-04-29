@@ -3,7 +3,7 @@ import { Modal, Button, Typography, Box } from '@mui/material';
 import '../style.css';
 import { ChangeHighlightColors } from './HighlightColors';
 
-const SettingsModal = ({ colors, setColors, showModal, onHide, canvasRef }) => {
+const SettingsModal = ({ colors, setColors, showModal, onHide }) => {
   const [newColors, setNewColors] = useState(colors);
 
   const handleChange = (colorKey, subKey, value) => {
@@ -11,13 +11,12 @@ const SettingsModal = ({ colors, setColors, showModal, onHide, canvasRef }) => {
       ...newColors,
       [colorKey]: {
         ...newColors[colorKey],
-        [subKey]: parseInt(value),
+        [subKey]: value,
       },
     });
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
     const formData = new FormData(event.target);
     const updatedColors = {};
     for (let [key, value] of formData.entries()) {
@@ -27,20 +26,13 @@ const SettingsModal = ({ colors, setColors, showModal, onHide, canvasRef }) => {
       }
       updatedColors[colorKey][subKey] = value;
     }
-    updatedColors.hov.a = 0.7;
-    updatedColors.sel.a = 0.7;
-    updatedColors.enc.a = 0.7;
     setColors(newColors);
-    const colorSettingsEvent = new CustomEvent('changeColorSettings', { detail: updatedColors });
-    canvasRef.dispatchEvent(colorSettingsEvent);
     onHide();
   };
 
   const handleNoSaveClose = () => {
     setColors(colors);
     onHide();
-    const colorSettingsEvent = new CustomEvent('changeColorSettings', { detail: colors });
-    canvasRef.dispatchEvent(colorSettingsEvent);
   };
 
   const colorKeys = Object.keys(newColors);
