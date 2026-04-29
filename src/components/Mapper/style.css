@@ -57,17 +57,18 @@
     display: grid;
     grid-template-rows: 60px 25px;
     pointer-events: none;
+    touch-action: manipulation;
 }
 
 .monSearchBar {
-    pointer-events: all;
+    pointer-events: auto;
     width: 300px;
     margin-top: 10px;
     margin-right: 10px;
 }
 
 .location {
-    pointer-events: all;
+    pointer-events: auto;
     margin-top: 16px;
     margin-right: 10px;
 }
@@ -80,7 +81,7 @@
     height: fit-content;
     margin-left: 16rem;
     margin-top: 36rem;
-    pointer-events: all;
+    pointer-events: auto;
 }
 
 .stats {

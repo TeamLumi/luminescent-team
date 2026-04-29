@@ -17,7 +17,6 @@ const SettingsModal = ({ colors, setColors, showModal, onHide }) => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
     const formData = new FormData(event.target);
     const updatedColors = {};
     for (let [key, value] of formData.entries()) {
