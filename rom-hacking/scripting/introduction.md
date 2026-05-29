@@ -4,9 +4,11 @@ Scripting in BDSP allows you to influence different parts of the game.
 
 Be it showing dialogues, moving NPCs and the player around and setting various flags to make the game work.
 
+Before moving forward, make sure you've followed the setup steps in [EV-AS Guide](/setup/ev-as.md).
+
 ## Functions
 
-Functions are written in `.ev` files. These can be edited by unpacking the file `romfs/Data/StreamingAssets/AssetAssistant/Dpr/ev_script` using [Aldo's BDSP Repacker](https://github.com/Ai0796/BDSP-Repacker).
+Functions are written in `.ev` files. These can be obtained by using the Ev Parse function referenced in the [EV-AS Guide](/setup/ev-as.md)
 
 Each zone has it's own script file. The name is the [Zone](../dictionary/zones.md) code. For example `c01.ev` for Jubilife City.
 

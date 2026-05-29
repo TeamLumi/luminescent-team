@@ -1,16 +1,28 @@
-# PlaceData
+# PlaceDatas
 
-:::info
-This page is WIP and may not be complete in some parts.
-:::
+## Important Reminders
+An important thing to note with the terminology used in BDSP is that the term "Work", is used interchangeably throughout the ROM, however it means different things depending on where you are.
 
-PlaceData in BDSP are object in the game that are placed down throughout the world. This can be anything from NPCs to hidden items to static legendary encounters and more.
+- In Placedatas, the Work value refers to a flag (on/off value), this is prefixed in scripting by a # symbol, and there are 4000 of these in the basegame, with around 1800 of them being unused.
+- In Stopdatas, Work refers to an actual Work value, which is a variable that holds numerical data.
+- In Scripting, when we refer to a Work, we mean a Work value variable, which is prefixed in scripting with an @ symbol, there are around 440 of these in the basegame.
+- Some Work values and flags are referenced by the game as system flags/system work values, these are referenced in scripting by an $ prefix and should not be tampered with unless you know what you're doing.
+
+## What are Placedatas?
+
+Placedatas are where you put any and all interactables that you want in your mod. Any NPC, field item, television, or legendary encounter that does absolutely anything in BDSP is a placedata object.
+
+Placedatas are very powerful in what they allow you to express, allowing you to very simply edit the position, the size, movement or model referenced.
+
+Unlike in NDS scripting, external areas are condensed into areas. Ie. R201 and Jubilife are all a part of Placedata_A01. The [zonemap](/rom-hacking/dictionary/zones) will help you with location which zones are where in the files via Ctrl+F zoneID: "your zone ID".
+
+When editing Placedatas, you may need to leave the area and come back to get the edited changes to occur, as the game likes to cache your immediate area.
 
 ## JSON Structure
 
 Here is an example from `Placedata_A01`, which is a woman in T01 - Twinleaf Town, the starter town.
 
-```c
+```json
 {
     "ID": "T01_WOMAN1",
     "zoneID": 422,
@@ -52,13 +64,12 @@ Here is an example from `Placedata_A01`, which is a woman in T01 - Twinleaf Town
 }
 ```
 
-## Attributes
-
+## Params
 ### ID
 
 The unique identifier of the PlaceData. This can be referenced in Scripting for animation commands.
 
-The ID should follow this naming scheme.
+The ID should follow this naming scheme. It should also be capitalized.
 
 ```
 {zone_name}_{placedata_name}
@@ -82,7 +93,7 @@ This is what determines what your Placedata will look like.
 | 501-505 | Hidden machine blockers |
 | Assetbundle Number* | Pokémon |
 
-\* This might just be DexID/00/00, the zeroes referring to formID, gender, shiny status and so forth. Example: 1510000 would be Mew.
+\* This is typically just DexID/00/00, the zeroes referring to formID, gender, shiny status and so forth. Example: 1510000 would be Mew. The actual value references the numbers in the name of the assetBundle for the field model found in `romfs\Data\StreamingAssets\AssetAssistant\Pokemon Database\pokemons\field`.
 
 ### ColorIndex
 
@@ -93,7 +104,7 @@ The color variation that is used by the placedata. -1 matches the player's (used
 The X/Y position that your object will be placed at in the zone that you determined.
 
 :::info
-For overworld maps, 0,0 is in the top left of the whole map.
+For overworld maps, 0,0 is in the top left (North West) corner of the map.
 :::
 
 ### HeightLayer
@@ -166,7 +177,7 @@ Certain [MoveCodes](#movecode) require this, more research required, but when us
 
 ### TalkLabel
 
-This is the function name that will be called when you interact with the object and is how you get scripts called upon interaction.
+This is the function name that will be called when you interact with the object and is how you get scripts called upon interaction with an NPC.
 
 ### ContactLabel
 
@@ -194,7 +205,7 @@ Stubbed?
 
 ### TalkToRange
 
-Determines how far away you can be in order to interact with the object.
+Determines how far away you can be in order to interact with the object. 99% of the time, just leave this at 1.25
 
 ### TalkToSize
 
