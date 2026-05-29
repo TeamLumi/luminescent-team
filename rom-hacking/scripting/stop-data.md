@@ -52,7 +52,7 @@ POS_{zone_name}_{stopdata_name}
 The X/Y position of the initial tile. You'll want this to be in the top left or NorthWest most tile as the Size parameter adds tiles going East and South or right and down.
 
 ### HeightLayer:
-The height position.
+This actually does nothing as StopData colliders extend upwards and downwards infinitely as far as we can tell.
 
 ### Size:
 The size of the trigger in X/Y directions. Increasing the size will add to the East and South for the x and y parameters.

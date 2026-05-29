@@ -181,7 +181,7 @@ This is the function name that will be called when you interact with the object 
 
 ### ContactLabel
 
-Pretty sure this is stubbed. Never managed to get it working.
+This is the function name that will be called when you walk into range of the object's TalkToRange.
 
 ### Work
 
