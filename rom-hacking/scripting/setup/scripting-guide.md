@@ -1,6 +1,6 @@
 # Scripting Basics
 
-Once you have ev-as setup per the readme in the [repository](https://github.com/z80rotom/ev-as) I also highly recommend [Visual Studio Code](https://code.visualstudio.com/) and the [language support for evscript extension](https://marketplace.visualstudio.com/items?itemName=Heroj04.bdsp-evscript-language-support).
+Once you have ev-as setup per the [EV-AS Guide](ev-as.md), I also highly recommend [Visual Studio Code](https://code.visualstudio.com/) and the [language support for evscript extension](https://marketplace.visualstudio.com/items?itemName=Heroj04.bdsp-evscript-language-support).
 
 You need to move your edited scripts to the `scripts` folder, not parsed. If you don't have a scripts folder, make one and move your edited scripts here. This is important because ev-as will only build scripts from the `scripts` folder. It does not look at `parsed`.
 
@@ -28,6 +28,6 @@ Now what do we do? That's easy, you simply change the current `_EASY_OBJ_MSG` li
 
 `_MACRO_EASY_OBJ_MSG('dp_scenario1', '27-msg_c01_woman3_01', 'Spinda is the best Pokémon ever.')`
 
-Now all you need to do is save and compile your new script. I personally use `python3 src/ev_as.py` with my setup.
+Now all you need to do is save and compile your new script. Do this by Double-Clicking the `ev_parse.exe`.
 
-Once that completes (you may need to provide the dp_scenario1 message file in another folder).  Simply take `bin\ev_script` and put it in your mod folder in `Dpr`.
+Once that completes (you may need to provide the dp_scenario1 message file in another folder).  Simply take `bin\ev_script` and put it in your mod folder in `romfs\Data\StreamingAssets\AssetAssistant\Dpr`.
