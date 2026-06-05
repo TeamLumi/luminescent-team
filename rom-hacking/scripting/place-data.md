@@ -131,7 +131,9 @@ Determines the X/Y size of the object, 1 = 1 tile.
 
 ### Rotation
 
-Determines which directional rotation your correct will stand at. 0-360.
+Determines which directional rotation your correct will stand at. 0 degrees is pointing down, 90 degrees is pointing left. See the below image for reference:
+
+![rotation_image](/img/scripting-tutorials/PlaceData_Rotation.png)
 
 ### MoveLimit
 
@@ -145,31 +147,64 @@ This usually determines if something is a trainer, must be 1 if so. Otherwise, l
 
 Determines how your object will stand/act. Up/down/left/right/moving/sitting down are all determined by this.
 
-| Code | Description | MoveParam0 | MoveParam1 | MoveParam2 |
-| - | - | - | - | - |
-| 0 | | | | |
-| 1 | Static | | | |
-| 2 | Look around | | | |
-| 3 | Move around | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 7 | | | | |
-| 8 | | | | |
-| 9 | | | | |
-| 10 | | | | |
-| 12 | | | | |
-| 13 | | | | |
-| 14 | | | | |
-| 15 | | | | |
-| 16 | | | | |
-| 17 | | | | |
-| 20 | | | | |
-| 36 | | | | |
-| 40 | | | | |
-| 42 | | | | |
-| 45 | | | | |
-| 53 | | | | |
-| 54 | | | | |
+| Code | Enum Name | Description | MoveParam0 | MoveParam1 | MoveParam2 |
+| - | - | - | - | - | - |
+| 0 | MV_DMY | | | | |
+| 1 | MV_PLAYER | Static | | | |
+| 2 | MV_DIR_RND | Look around | | | |
+| 3 | MV_RND | Move around | | | |
+| 4 | MV_RND_V | | | | |
+| 5 | MV_RND_H | | | | |
+| 6 | MV_RND_UL | | | | |
+| 7 | MV_RND_UR | | | | |
+| 8 | MV_RND_DL | | | | |
+| 9 | MV_RND_DR | | | | |
+| 10 | MV_RND_UDL | | | | |
+| 11 | MV_RND_UDR | | | | |
+| 12 | MV_RND_ULR | | | | |
+| 13 | MV_RND_DLR | | | | |
+| 14 | MV_UP | | | | |
+| 15 | MV_DOWN | | | | |
+| 16 | MV_LEFT | | | | |
+| 17 | MV_RIGHT | | | | |
+| 18 | MV_SPIN_L | | | | |
+| 19 | MV_SPIN_R | | | | |
+| 20 | MV_RT2 | | | | |
+| 21 | MV_RTURLD | | | | |
+| 22 | MV_RTRLDU | | | | |
+| 23 | MV_RTDURL | | | | |
+| 24 | MV_RTLDUR | | | | |
+| 25 | MV_RTULRD | | | | |
+| 26 | MV_RTLRDU | | | | |
+| 27 | MV_RTDULR | | | | |
+| 28 | MV_RTRDUL | | | | |
+| 29 | MV_RTLUDR | | | | |
+| 30 | MV_RTUDRL | | | | |
+| 31 | MV_RTRLUD | | | | |
+| 32 | MV_RTDRLU | | | | |
+| 33 | MV_RTRUDL | | | | |
+| 34 | MV_RTUDLR | | | | |
+| 35 | MV_RTLRUD | | | | |
+| 36 | MV_RTDLRU | | | | |
+| 37 | MV_RTUL | | | | |
+| 38 | MV_RTDR | | | | |
+| 39 | MV_RTLD | | | | |
+| 40 | MV_RTRU | | | | |
+| 41 | MV_RTUR | | | | |
+| 42 | MV_RTDL | | | | |
+| 43 | MV_RTLU | | | | |
+| 44 | MV_RTRD | | | | |
+| 45 | MV_RND_UD | | | | |
+| 46 | MV_RND_LR | | | | |
+| 47 | MV_SEED | | | | |
+| 48 | MV_PAIR | | | | |
+| 49 | MV_REWAR | | | | |
+| 50 | MV_TR_PAIR | | | | |
+| 51 | MV_HIDE_SNOW | | | | |
+| 52 | MV_HIDE_SAND | | | | |
+| 53 | MV_HIDE_GRND | | | | |
+| 54 | MV_HIDE_KUSA | | | | |
+| 55 | MV_CODE_MAX | | | | |
 
 ### MoveParam0 MoveParam1 MoveParam2
 

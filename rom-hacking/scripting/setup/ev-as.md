@@ -4,11 +4,9 @@ This guide is for the setup of z80Rotom's [ev-as scripting tool](https://github.
 
 ## Setup
 
-1. Install your [preferred version of Python](https://www.python.org/downloads/)
-    - I personally use 3.10, but anything that doesn't make ev-as scream at you is good enough.
-    - While you're installing Python, make sure to click the option to add it to PATH.
-2. Install the latest release for [ev-as](https://github.com/z80rotom/ev-as/releases/latest)
-3. Install the [BDSP Repacker](https://github.com/Ai0796/BDSP-Repacker)
+1. Install the latest release for [ev-as](https://github.com/z80rotom/ev-as/releases/latest)
+2. Install the [BDSP Repacker](https://github.com/Ai0796/BDSP-Repacker)
+3. Dump either Brilliant Diamond or Shining Pearl based on [Ryubing's tutorials](https://docs.ryujinx.app/guides/dumping/game-content/)
 4. Find the `english` file that you'd like to use for this project which can be found at `romfs\Data\StreamingAssets\AssetAssistant\Message\english`.
 5. Follow the instructions for the BDSP Repacker to unpack your `english` file.
 6. Copy the entire `AssetFolder` into the same folder as the `ev.g4` file.

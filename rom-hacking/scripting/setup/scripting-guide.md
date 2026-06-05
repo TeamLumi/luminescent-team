@@ -28,6 +28,6 @@ Now what do we do? That's easy, you simply change the current `_EASY_OBJ_MSG` li
 
 `_MACRO_EASY_OBJ_MSG('dp_scenario1', '27-msg_c01_woman3_01', 'Spinda is the best Pokémon ever.')`
 
-Now all you need to do is save and compile your new script. I personally use `python3 src/ev_as.py` with my setup.
+Now all you need to do is save and compile your new script. Do this by Double-Clicking the `ev_parse.exe`.
 
 Once that completes (you may need to provide the dp_scenario1 message file in another folder).  Simply take `bin\ev_script` and put it in your mod folder in `romfs\Data\StreamingAssets\AssetAssistant\Dpr`.
