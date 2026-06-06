@@ -113,7 +113,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
   }, [encOptions]);
 
   useEffect(() => {
-    setEncounterLocations(getMapperRoutesFromPokemonId(selectedPokemon?.id));
+    setEncounterLocations(getMapperRoutesFromPokemonId(selectedPokemon?.id, GAMEDATA3));
   }, [selectedPokemon]);
 
   const openTrainerModal = () => {
@@ -143,7 +143,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
   };
 
   const setAllEncounters = (zoneId) => {
-    const areaEncounters = getAreaEncounters(zoneId);
+    const areaEncounters = getAreaEncounters(zoneId, GAMEDATA3);
     if (!areaEncounters) {
       return {
         GroundEnc: [],
@@ -227,15 +227,15 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     if (location) {
       setSelectedLocation(location.zoneId);
       locationId.current = location.zoneId;
-      setTrainerList(getTrainersFromZoneId(location.zoneId) || []);
+      setTrainerList(getTrainersFromZoneId(location.zoneId, GAMEDATA3) || []);
       setEncounterList(setAllEncounters(location.zoneId) || []);
       setSelectedZone(location.name);
-      setFieldItems(getFieldItemsFromZoneID(location.zoneId));
-      setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
-      setShopItems(getRegularShopItems(location.zoneId));
-      setScriptItems(getScriptItems(location.zoneId));
-      setFixedShops(getFixedShops(location.zoneId));
-      setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
+      setFieldItems(getFieldItemsFromZoneID(location.zoneId, GAMEDATA3));
+      setHiddenItems(getHiddenItemsFromZoneID(location.zoneId, GAMEDATA3));
+      setShopItems(getRegularShopItems(location.zoneId, GAMEDATA3));
+      setScriptItems(getScriptItems(location.zoneId, GAMEDATA3));
+      setFixedShops(getFixedShops(location.zoneId, GAMEDATA3));
+      setHeartScaleShop(getHeartScaleShopItems(location.zoneId, GAMEDATA3));
     } else {
       setSelectedLocation(null);
       locationId.current = null;
@@ -254,14 +254,14 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     const newZoneId = zoneId ?? null;
     setSelectedLocation(newZoneId);
     locationId.current = newZoneId;
-    setTrainerList(getTrainersFromZoneId(newZoneId));
+    setTrainerList(getTrainersFromZoneId(newZoneId, GAMEDATA3));
     setEncounterList(setAllEncounters(newZoneId) || []);
-    setFieldItems(getFieldItemsFromZoneID(newZoneId));
-    setHiddenItems(getHiddenItemsFromZoneID(newZoneId));
-    setShopItems(getRegularShopItems(newZoneId));
-    setScriptItems(getScriptItems(newZoneId));
-    setFixedShops(getFixedShops(newZoneId));
-    setHeartScaleShop(getHeartScaleShopItems(newZoneId));
+    setFieldItems(getFieldItemsFromZoneID(newZoneId, GAMEDATA3));
+    setHiddenItems(getHiddenItemsFromZoneID(newZoneId, GAMEDATA3));
+    setShopItems(getRegularShopItems(newZoneId, GAMEDATA3));
+    setScriptItems(getScriptItems(newZoneId, GAMEDATA3));
+    setFixedShops(getFixedShops(newZoneId, GAMEDATA3));
+    setHeartScaleShop(getHeartScaleShopItems(newZoneId, GAMEDATA3));
   };
 
   return (
