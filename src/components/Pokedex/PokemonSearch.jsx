@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Autocomplete, TextField } from '@mui/material';
 import { getPokemonNames, getPokemonIdFromName } from '../../utils/dex';
 import { MAX_CURRENT_POKEMON } from '../Pokedex2/pokedexConstants';
 
 export const PokemonSearch = ({ setPokemonDexId }) => {
   // pokemonNameEndRange number is not including
-  const pokemonNames = getPokemonNames(MAX_CURRENT_POKEMON + 1);
+  const pokemonNames = useMemo(() => getPokemonNames(MAX_CURRENT_POKEMON + 1), []);
   const [selectedPokemonName, setSelectedPokemonName] = useState(pokemonNames[1]);
   const [inputValue, setInputValue] = React.useState('');
 

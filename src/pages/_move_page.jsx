@@ -5,10 +5,9 @@ import MovePageContent from '../components/MoveDex/MovePageContent';
 import { GlobalState } from "../components/common/GlobalState";
 import LumiReactThemeProvider from '../theme/LumiThemeProvider';
 
-export default function MovePage({ move2, move3, moveV, moveList }) {
+export default function MovePage({ move2, move3, moveV, moveListV, moveList3, moveList2 }) {
   // required for webpack SSR
-  if (typeof move2 === 'undefined' || typeof moveList === 'undefined') {
-    console.error("ONE OF THE THINGS IS UNDEFINED!", move2, moveList);
+  if (typeof move2 === 'undefined' || typeof moveList2 === 'undefined') {
     return null;
   }
 
@@ -20,7 +19,9 @@ export default function MovePage({ move2, move3, moveV, moveList }) {
             move2={move2}
             move3={move3}
             moveV={moveV}
-            movesList={moveList}
+            moveListV={moveListV}
+            moveList2={moveList2}
+            moveList3={moveList3}
           />
         </GlobalState>
       </LumiReactThemeProvider>

@@ -54,7 +54,6 @@ const sidebars = {
           collapsed: true,
           items: [
             'scripting/setup/ev-as',
-            'scripting/setup/placedatas',
             'scripting/setup/scripting-guide',
           ],
         },

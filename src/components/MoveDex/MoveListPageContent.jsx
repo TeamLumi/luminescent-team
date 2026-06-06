@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import AutoSizer from 'react-virtualized-auto-sizer';
 import { FixedSizeList } from 'react-window';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -22,6 +22,8 @@ import MoveSearchInput from './MoveSearchInput';
 import ModeSwitch from '../common/ModeSwitch';
 import { MoveFilterDrawer } from './MoveFilterDrawer';
 import { setNestedKey } from '../common/FilterDrawerFunction';
+import { useGlobalState } from '../common/GlobalState';
+import { GAMEDATA2, GAMEDATA3, GAMEDATAV } from '../../../__gamedata';
 
 export const defaultMoveSearchTable = {
   name: { label: "", value: "" },
@@ -73,8 +75,16 @@ export const defaultMoveSearchTable = {
   ],
 };
 
-const MoveListPageContent = ({ movesList }) => {
-  const [moves, setMoves] = useState(movesList);
+const MoveListPageContent = ({ movesListV, movesList3, movesList2 }) => {
+  const MOVE_LIST_MODE_MAP = {
+    [GAMEDATAV]: movesListV,
+    [GAMEDATA2]: movesList2,
+    [GAMEDATA3]: movesList3,
+  };
+
+  const [globalState, updateMode] = useGlobalState();
+  const [moves, setMoves] = useState(MOVE_LIST_MODE_MAP[globalState.mode]);
+  const [filteredMoves, setFilteredMoves] = useState(moves);
   const [searchTable, setSearchTable] = useState({
     ...defaultMoveSearchTable,
   });
@@ -126,6 +136,11 @@ const MoveListPageContent = ({ movesList }) => {
     });
   }
 
+  useEffect(() => {
+    const updatedPokemons = MOVE_LIST_MODE_MAP[globalState.mode];
+    setMoves(updatedPokemons);
+  }, [globalState.mode]);
+
   return (
     <>
       <Container sx={{ flex: '1 1 auto', display: 'flex', flexDirection: 'column' }}>
@@ -148,8 +163,8 @@ const MoveListPageContent = ({ movesList }) => {
             }}
           >
             <MoveSearchInput
-              movesList={movesList}
-              setMoves={setMoves}
+              movesList={moves}
+              setMoves={setFilteredMoves}
               searchTable={searchTable}
               handleChange={handleChange}
             />
@@ -167,8 +182,8 @@ const MoveListPageContent = ({ movesList }) => {
           <Box flex="1 1 auto" paddingY="12px" minHeight={{ xs: '60vh', sm: '60vh' }}>
             <AutoSizer>
               {({ height, width }) => (
-                <FixedSizeList itemCount={moves.length} itemSize={60} height={height} width={width}>
-                  {({ index, style }) => <MoveListEntry move={moves[index]} style={style} />}
+                <FixedSizeList itemCount={filteredMoves.length} itemSize={60} height={height} width={width}>
+                  {({ index, style }) => <MoveListEntry move={filteredMoves[index]} style={style} />}
                 </FixedSizeList>
               )}
             </AutoSizer>

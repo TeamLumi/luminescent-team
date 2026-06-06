@@ -20,7 +20,7 @@ export default function EvolutionGraph({ evolutionTree }) {
   const [secondEvolvesInto, setSecondEvolvesInto] = React.useState(evolutionTree.evolvesInto);
   const [monsNo, formNo] = getPokemonMonsNoAndFormNoFromPokemonId(evolutionTree.pokemonId, globalState.mode);
   const firstPokemonPath = formNo === 0 ? monsNo : `${monsNo}_${formNo}`;
-  const pokemonID = getPokemonIdFromMonsNoAndForm(monsNo, formNo, globalState.mode);
+  const pokemonId = getPokemonIdFromMonsNoAndForm(monsNo, formNo, globalState.mode);
   const defaultEvo = {
     pokemonId: -1,
     evolutionDetails: {
@@ -50,7 +50,7 @@ export default function EvolutionGraph({ evolutionTree }) {
       <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
         <span className="col col-12">
           <Typography variant="h6" sx={{ margin: 'auto' }}>
-            <a href='https://luminescent.team/docs/special-evolutions#alcremie'>Alcremie Evolutions</a>
+            <Link href='https://luminescent.team/docs/special-evolutions#alcremie'>Alcremie Evolutions</Link>
           </Typography>
         </span>
       </div>
@@ -313,11 +313,11 @@ export default function EvolutionGraph({ evolutionTree }) {
             <Grid item xs={12} sm={6} className={styles.startPokemon}>
               <Link to={`/pokedex/${firstPokemonPath}`}>
                 <ImageWithFallback
-                  key={pokemonID}
+                  key={pokemonId}
                   src={`/img/pkm/${getPokemonImageFilename(monsNo, formNo)}`}
                   fallbackSrc={`/img/pkm/${getPokemonImageFilename(monsNo, 0)}`}
-                  alt={getPokemonName(pokemonID, globalState.mode)}
-                  title={getPokemonName(pokemonID, globalState.mode)}
+                  alt={getPokemonName(pokemonId, globalState.mode)}
+                  title={getPokemonName(pokemonId, globalState.mode)}
                 />
               </Link>
             </Grid>

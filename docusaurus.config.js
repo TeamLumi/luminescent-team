@@ -25,7 +25,11 @@ const config = {
   url: 'https://luminescent.team',
   baseUrl: BASE_URL,
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
@@ -121,11 +125,11 @@ const config = {
         searchBarShortcutKeymap: "ctrl+g",
         searchBarShortcutHint: true,
         ignoreFiles: [
-          "/docs/devquests",
-          "/docs/testing",
-          "/docs2",
+          "docs/devquests",
+          "docs/testing",
+          /^\/?docs2(?:\/.*)?$/,
           "docs/installation/yuzu",
-          "/_move_list_page",
+          "_move_list_page",
           "_dexlist"
         ]
       },
@@ -263,6 +267,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['bash', 'diff', 'json'],
       },
       colorMode: {
         defaultMode: 'dark',

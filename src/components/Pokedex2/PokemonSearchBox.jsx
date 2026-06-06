@@ -4,11 +4,11 @@ import { useHistory } from '@docusaurus/router';
 import { usePluginData } from '@docusaurus/useGlobalData';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useColorMode } from '@docusaurus/theme-common';
-import { MAX_CURRENT_POKEMON } from './pokedexConstants';
-
-const isValidPokemonDexId = (pokemonDexId) => pokemonDexId >= 0 && pokemonDexId <= MAX_CURRENT_POKEMON;
+import { useGlobalState } from '../common/GlobalState';
+import { isValidPokemon } from '../../../plugins/pokedex-data-plugin/dex/functions';
 
 export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
+  const [globalState, updateMode] = useGlobalState();
   const { colorMode, setColorMode } = useColorMode();
   const history = useHistory();
   const { path } = usePluginData('luminescent-pokedex-data-plugin');
@@ -37,7 +37,7 @@ export const PokemonSearchBox = ({ pokemonNames, formNo, monsNo }) => {
       value={pokemonName}
       onChange={(_, pokemon) => {
         const pokemonPath = pokemon.formno === 0 ? pokemon.monsno : `${pokemon.monsno}_${pokemon.formno}`;
-        history.push(`${pokedexPath}/${isValidPokemonDexId(pokemon.monsno) ? pokemonPath : 0}`);
+        history.push(`${pokedexPath}/${isValidPokemon(pokemon.monsno, globalState.mode) ? pokemonPath : 0}`);
       }}
       isOptionEqualToValue={(option, value) => {
         return option.id === value.id;

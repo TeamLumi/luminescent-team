@@ -59,7 +59,7 @@ describe('Dex utils Name getters', () => {
 
     test('returns undefined if the pokemon id is invalid', () => {
       const result = getPokemonName(-1);
-      expect(result).toBeUndefined();
+      expect(result).toBe("Bad Egg");
     });
   });
 

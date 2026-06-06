@@ -6,16 +6,18 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useColorMode } from '@docusaurus/theme-common';
 import { normalizePokemonName } from '../../utils/dex/name';
 
-export const MoveSearchBox = ({ movesList, moveName }) => {
+export const MoveSearchBox = ({ movesList = [], moveName }) => {
   const { colorMode, setColorMode } = useColorMode();
   const history = useHistory();
   const { path } = usePluginData('luminescent-movedex-data-plugin');
   const moveDexPath = useBaseUrl(path);
-  const [options, setOptions] = useState(movesList.map((move) => ({ value: move.name, label: move.name })));
+
+  const safeMoves = movesList || [];
+  const [options, setOptions] = useState(safeMoves.map((move) => ({ value: move.name, label: move.name })));
   const [selectedMoveName, setSelectedMoveName] = useState(options[0]);
 
   useEffect(() => {
-    setOptions(movesList.map((move) => ({ value: move.name, label: move.name })));
+    setOptions((movesList || []).map((move) => ({ value: move.name, label: move.name })));
   }, [movesList]);
 
   useEffect(() => {
