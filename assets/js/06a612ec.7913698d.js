@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[857281],{399765(e){e.exports="/pokedex/primal-palkia"}}]);
