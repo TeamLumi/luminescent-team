@@ -3189,8 +3189,8 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Pokémon Trainer",
-                    "strWidth": 219.234375
+                    "str": "Hoenn Champion",
+                    "strWidth": 226.40625
                 }
             ]
         },
@@ -3461,6 +3461,156 @@
                     "tagValue": 0.0,
                     "str": "Pokémon Ranger",
                     "strWidth": 218.65625
+                }
+            ]
+        },
+        {
+            "labelIndex": 115,
+            "arrayIndex": 115,
+            "labelName": "DP_Trainers_Type_TR_HALL_MATRON",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Hall Matron",
+                    "strWidth": 155.265625
+                }
+            ]
+        },
+        {
+            "labelIndex": 116,
+            "arrayIndex": 116,
+            "labelName": "DP_Trainers_Type_TR_RED",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Kanto Champion",
+                    "strWidth": 217.234375
+                }
+            ]
+        },
+        {
+            "labelIndex": 117,
+            "arrayIndex": 117,
+            "labelName": "DP_Trainers_Type_TR_ROSA",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Unova Champion",
+                    "strWidth": 223.5625
+                }
+            ]
+        },
+        {
+            "labelIndex": 118,
+            "arrayIndex": 118,
+            "labelName": "DP_Trainers_Type_TR_PLATINUM_CLAN_M",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Type Master",
+                    "strWidth": 161.859375
+                }
+            ]
+        },
+        {
+            "labelIndex": 119,
+            "arrayIndex": 119,
+            "labelName": "DP_Trainers_Type_TR_PLATINUM_CLAN_F",
+            "styleInfo": {
+                "styleIndex": 42,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 504,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                1
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Type Master",
+                    "strWidth": 161.859375
                 }
             ]
         }

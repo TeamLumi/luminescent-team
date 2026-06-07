@@ -40937,10 +40937,10 @@
                     "w": 0.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
+                    "x": 31.0,
+                    "y": 32.0,
                     "z": 0.0,
-                    "w": 0.0
+                    "w": 2.0
                 },
                 {
                     "x": 0.0,
@@ -49775,8 +49775,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "L04",
-                "L04"
+                "R210_DAY",
+                "R210_NIGHT"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -49820,10 +49820,10 @@
                     "w": 1.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
+                    "x": 32.0,
+                    "y": 17.0,
                     "z": 0.0,
-                    "w": 0.0
+                    "w": 2.0
                 },
                 {
                     "x": 0.0,
@@ -124430,8 +124430,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "C09_Day",
-                "C09_Night"
+                "LUMI_BGM_FIELD_009",
+                "LUMI_BGM_FIELD_009"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 6,
@@ -124619,8 +124619,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "C09_Day",
-                "C09_Night"
+                "LUMI_BGM_FIELD_009",
+                "LUMI_BGM_FIELD_009"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -124808,8 +124808,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_009",
+                "LUMI_BGM_FIELD_009"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -124997,8 +124997,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_000",
+                "LUMI_BGM_FIELD_000"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125012,82 +125012,82 @@
             "RoomPanCamera": 0,
             "Locators": [
                 {
-                    "x": 0.0,
-                    "y": 0.0,
+                    "x": 50.0,
+                    "y": 39.0,
+                    "z": 0.0,
+                    "w": 0.0
+                },
+                {
+                    "x": 30.0,
+                    "y": 53.0,
+                    "z": 1.0,
+                    "w": -16.0
+                },
+                {
+                    "x": 28.0,
+                    "y": 39.0,
                     "z": 2.0,
-                    "w": 0.0
+                    "w": -32.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 26.0,
+                    "y": 15.0,
+                    "z": 3.0,
+                    "w": -25.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 58.0,
+                    "y": 31.0,
+                    "z": 3.0,
+                    "w": -32.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
+                    "x": 60.0,
+                    "y": 36.0,
                     "z": 0.0,
-                    "w": 0.0
+                    "w": -48.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 85.0,
+                    "y": 41.0,
+                    "z": 1.0,
+                    "w": -103.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 67.0,
+                    "y": 78.0,
+                    "z": 1.0,
+                    "w": -80.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 69.0,
+                    "y": 62.0,
+                    "z": 1.0,
+                    "w": -48.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 85.0,
+                    "y": 68.0,
+                    "z": 1.0,
+                    "w": -80.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 96.0,
+                    "y": 68.0,
+                    "z": 1.0,
+                    "w": -103.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 82.0,
+                    "y": 62.0,
+                    "z": 2.0,
+                    "w": -119.0
                 },
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
-                },
-                {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
-                },
-                {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0,
-                    "w": 0.0
+                    "x": 80.0,
+                    "y": 81.0,
+                    "z": 2.0,
+                    "w": -150.0
                 },
                 {
                     "x": 0.0,
@@ -125186,8 +125186,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_008",
+                "LUMI_BGM_FIELD_008"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125375,8 +125375,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_008",
+                "LUMI_BGM_FIELD_008"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125564,8 +125564,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_008",
+                "LUMI_BGM_FIELD_008"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125753,8 +125753,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_007",
+                "LUMI_BGM_FIELD_007"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125942,8 +125942,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_007",
+                "LUMI_BGM_FIELD_007"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126131,8 +126131,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_007",
+                "LUMI_BGM_FIELD_007"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126320,8 +126320,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_005",
+                "LUMI_BGM_FIELD_005"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126509,8 +126509,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_005",
+                "LUMI_BGM_FIELD_005"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126698,8 +126698,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_005",
+                "LUMI_BGM_FIELD_005"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126887,8 +126887,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_006",
+                "LUMI_BGM_FIELD_006"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -127076,8 +127076,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_006",
+                "LUMI_BGM_FIELD_006"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -127265,8 +127265,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_006",
+                "LUMI_BGM_FIELD_006"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -128210,8 +128210,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D10R",
-                "D10R"
+                "LUMI_BGM_FIELD_000",
+                "LUMI_BGM_FIELD_000"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -128225,9 +128225,9 @@
             "RoomPanCamera": 0,
             "Locators": [
                 {
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 2.0,
+                    "x": 50.0,
+                    "y": 40.0,
+                    "z": 0.0,
                     "w": 0.0
                 },
                 {

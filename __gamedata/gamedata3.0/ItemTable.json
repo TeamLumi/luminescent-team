@@ -482,7 +482,7 @@
             "no": 12,
             "type": 5,
             "iconid": 12,
-            "price": 50,
+            "price": 250,
             "bp_price": 0,
             "eqp": 0,
             "atc": 0,
@@ -4470,7 +4470,7 @@
             "tuibamu_eff": 0,
             "sort": 255,
             "group": 0,
-            "group_id": 0,
+            "group_id": 100,
             "fld_pocket": 8,
             "field_func": 0,
             "battle_func": 0,
@@ -51034,11 +51034,11 @@
             "sizen_atc": 0,
             "sizen_type": 31,
             "tuibamu_eff": 0,
-            "sort": 18,
+            "sort": 2,
             "group": 0,
             "group_id": 0,
             "fld_pocket": 8,
-            "field_func": 8,
+            "field_func": 29,
             "battle_func": 0,
             "wk_cmn": 0,
             "wk_critical_up": 0,
@@ -51059,7 +51059,7 @@
             "wk_friend2": 0,
             "wk_friend3": 0,
             "wk_prm_hp_rcv": 0,
-            "flags0": 2
+            "flags0": 68
         },
         {
             "no": 1309,
@@ -100387,7 +100387,7 @@
             "wazaNo": 127
         },
         {
-            "itemNo": 114,
+            "itemNo": 427,
             "machineNo": 100,
             "wazaNo": 431
         },

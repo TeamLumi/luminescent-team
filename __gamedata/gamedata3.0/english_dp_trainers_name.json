@@ -32713,6 +32713,96 @@
                     "strWidth": 76.171875
                 }
             ]
+        },
+        {
+            "labelIndex": 1064,
+            "arrayIndex": 1091,
+            "labelName": "DP_Trainers_Type_TR_ARGENTA",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Argenta",
+                    "strWidth": 102.859375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1065,
+            "arrayIndex": 1092,
+            "labelName": "DP_Trainers_Type_TR_RED",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Red",
+                    "strWidth": 50.875
+                }
+            ]
+        },
+        {
+            "labelIndex": 1066,
+            "arrayIndex": 1093,
+            "labelName": "DP_Trainers_Type_TR_ROSA",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Rosa",
+                    "strWidth": 61.59375
+                }
+            ]
         }
     ]
 }
