@@ -72,7 +72,7 @@ export const PokemonAbility = ({
         sx={{
           textDecoration: 'underline',
           fontSize: '0.9rem',
-          marginRight: needsSpacing && '8px',
+          marginRight: needsSpacing ? '8px' : '',
           cursor: 'pointer',
           ...sx
         }}
