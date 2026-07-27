@@ -59,6 +59,6 @@ Therefore our mod needs to match the folder hierarchy of the game.
 5. Using [UABEA](https://github.com/nesrak1/UABEA), open **masterdatas** and expand the array to add an entry to the bottom of CharacterGraphics_data for your new character. Make sure that the FieldGraphic name matches the file name of your AssetBundle and you can use 9223350612601226578 for your animTbl PathID. Take note of the ObjectGraphicIndex or OGI (142 in the example below) of the array entry.
 
     ![field-npc-4](/img/lumitool-guides/characters/field-npc-4.webp)
-6. Still in **masterdatas** in UABEA. You can use the OGI of your new character in any of the [PlaceData](https://luminescent.team/rom-hacking/scripting/place-data) files to add it to the overworld.
+6. Still in **masterdatas** in UABEA. You can use the OGI of your new character in any of the [PlaceData](/rom-hacking/scripting/place-data) files to add it to the overworld.
 
 With all of your files saved, you can load your mod and your character should be in the game!
