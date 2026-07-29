@@ -107,7 +107,7 @@ ${moves}`;
           <CatchingPokemonIcon />
         </IconButton> */}
       </Tooltip>
-      <DialogContent dividers sx={{ maxWidth: "1108px", overflowY: "scroll" }}>
+      <DialogContent dividers sx={{ maxWidth: "1108px" }}>
         <Trainers
           pokemonList={pokemonList}
           selectedTrainer={selectedTrainer}
