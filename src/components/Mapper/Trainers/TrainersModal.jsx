@@ -30,12 +30,12 @@ const TrainersModal = ({
     setShowSnackbar(false);
   };
 
-  const handleOpenShowdown = () => {
-    if (!selectedTrainer?.trainerId) return;
+  // const handleOpenShowdown = () => {
+  //   if (!selectedTrainer?.trainerId) return;
 
-    const url = `https://calc.relumishowdown.dpdns.org/?mode=ingame&setSource=ingame&trainerId=${selectedTrainer.trainerId}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
+  //   const url = `https://calc.relumishowdown.dpdns.org/?mode=ingame&setSource=ingame&trainerId=${selectedTrainer.trainerId}`;
+  //   window.open(url, '_blank', 'noopener,noreferrer');
+  // };
 
   function transformToText(pokemon) {
     var genderSymbol = "";
