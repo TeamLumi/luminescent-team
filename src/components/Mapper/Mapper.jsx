@@ -45,7 +45,7 @@ import {
   getEventEncounters,
 } from '../../utils/dex/encounters';
 import TrainersModal from './Trainers/TrainersModal';
-import { GAMEDATA3 } from '../../../__gamedata';
+import { GAMEDATA2, GAMEDATA3 } from '../../../__gamedata';
 import { Location } from './Location';
 import mapperImage from "../../../static/img/new_small_mapper.png";
 
@@ -120,7 +120,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     const trainerId = params.get('trainerId');
 
     if (trainerId) {
-      const zoneId = getZoneIdFromTrainerId(trainerId, GAMEDATA3);
+      const zoneId = getZoneIdFromTrainerId(trainerId);
       if (zoneId) {
         const location = getLocationCoordsFromZoneId(zoneId);
         if (location) {
@@ -128,7 +128,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
         }
         handleSetLocationZoneId(zoneId);
 
-        const trainers = getTrainersFromZoneId(zoneId, GAMEDATA3);
+        const trainers = getTrainersFromZoneId(zoneId);
         const trainer = trainers.find(t => t.trainerId === parseInt(trainerId));
         if (trainer) {
           setSelectedTrainer(trainer);
@@ -145,7 +145,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
   }, [encOptions]);
 
   useEffect(() => {
-    setEncounterLocations(getMapperRoutesFromPokemonId(selectedPokemon?.id, GAMEDATA3));
+    setEncounterLocations(getMapperRoutesFromPokemonId(selectedPokemon?.id));
   }, [selectedPokemon]);
 
   // Clear SearchBar trainer selection when location or selected trainer changes
@@ -164,7 +164,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     setShowTrainerModal(false);
   };
 
-  const allTrainers = React.useMemo(() => getAllTrainers(GAMEDATA3), []);
+  const allTrainers = React.useMemo(() => getAllTrainers(GAMEDATA2), []);
 
   const handleTrainerSelect = (trainer) => {
     skipSearchClear.current = true;
@@ -176,7 +176,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
         setSelectedZone(location.name);
       }
       handleSetLocationZoneId(zoneId);
-      const fullTrainer = getFullTrainerById(trainer.trainerId, GAMEDATA3);
+      const fullTrainer = getFullTrainerById(trainer.trainerId);
       setSelectedTrainer(fullTrainer || trainer);
       setShowTrainerModal(true);
       setSelectedTab(1);
@@ -203,7 +203,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
   };
 
   const setAllEncounters = (zoneId) => {
-    const areaEncounters = getAreaEncounters(zoneId, GAMEDATA3);
+    const areaEncounters = getAreaEncounters(zoneId);
     if (!areaEncounters) {
       return {
         GroundEnc: [],
@@ -287,15 +287,15 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     if (location) {
       setSelectedLocation(location.zoneId);
       locationId.current = location.zoneId;
-      setTrainerList(getTrainersFromZoneId(location.zoneId, GAMEDATA3) || []);
+      setTrainerList(getTrainersFromZoneId(location.zoneId) || []);
       setEncounterList(setAllEncounters(location.zoneId) || []);
       setSelectedZone(location.name);
-      setFieldItems(getFieldItemsFromZoneID(location.zoneId, GAMEDATA3));
-      setHiddenItems(getHiddenItemsFromZoneID(location.zoneId, GAMEDATA3));
-      setShopItems(getRegularShopItems(location.zoneId, GAMEDATA3));
-      setScriptItems(getScriptItems(location.zoneId, GAMEDATA3));
-      setFixedShops(getFixedShops(location.zoneId, GAMEDATA3));
-      setHeartScaleShop(getHeartScaleShopItems(location.zoneId, GAMEDATA3));
+      setFieldItems(getFieldItemsFromZoneID(location.zoneId));
+      setHiddenItems(getHiddenItemsFromZoneID(location.zoneId));
+      setShopItems(getRegularShopItems(location.zoneId));
+      setScriptItems(getScriptItems(location.zoneId));
+      setFixedShops(getFixedShops(location.zoneId));
+      setHeartScaleShop(getHeartScaleShopItems(location.zoneId));
     } else {
       setSelectedLocation(null);
       locationId.current = null;
@@ -314,14 +314,14 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
     const newZoneId = zoneId ?? null;
     setSelectedLocation(newZoneId);
     locationId.current = newZoneId;
-    setTrainerList(getTrainersFromZoneId(newZoneId, GAMEDATA3));
+    setTrainerList(getTrainersFromZoneId(newZoneId));
     setEncounterList(setAllEncounters(newZoneId) || []);
-    setFieldItems(getFieldItemsFromZoneID(newZoneId, GAMEDATA3));
-    setHiddenItems(getHiddenItemsFromZoneID(newZoneId, GAMEDATA3));
-    setShopItems(getRegularShopItems(newZoneId, GAMEDATA3));
-    setScriptItems(getScriptItems(newZoneId, GAMEDATA3));
-    setFixedShops(getFixedShops(newZoneId, GAMEDATA3));
-    setHeartScaleShop(getHeartScaleShopItems(newZoneId, GAMEDATA3));
+    setFieldItems(getFieldItemsFromZoneID(newZoneId));
+    setHiddenItems(getHiddenItemsFromZoneID(newZoneId));
+    setShopItems(getRegularShopItems(newZoneId));
+    setScriptItems(getScriptItems(newZoneId));
+    setFixedShops(getFixedShops(newZoneId));
+    setHeartScaleShop(getHeartScaleShopItems(newZoneId));
   };
 
   return (
@@ -374,7 +374,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
           handleOptionChange={handleOptionChange}
           encounterList={encounterList}
           pokemonName={pokemonName}
-          pokemonList={pokemonList3}
+          pokemonList={pokemonList}
           trainerList={trainerList}
           selectedTrainer={selectedTrainer}
           setSelectedTrainer={setSelectedTrainer}
@@ -386,7 +386,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
       </div>
       <SearchBar
         canvasDimensions={canvasDimensions}
-        pokemonList={pokemonList3}
+        pokemonList={pokemonList}
         debouncedText={pokemonName}
         handleDebouncedTextChange={handlePokemonNameChange}
         locationName={selectedZone}
@@ -403,7 +403,7 @@ export const Mapper = ({ pokemonList3, pokemonList, pokemonListV }) => {
       <TrainersModal
         showModal={showTrainerModal}
         onHide={closeTrainerModal}
-        pokemonList={pokemonList3}
+        pokemonList={pokemonList}
         selectedTrainer={selectedTrainer}
       />
       {/* <div>

@@ -51,9 +51,9 @@ const TrainersModal = ({
         break;
     }
 
-    const moves = pokemon.moves.map(id => "- " + getMoveProperties(id, GAMEDATA3).name).join("\n");
+    const moves = pokemon.moves.map(id => "- " + getMoveProperties(id).name).join("\n");
 
-    return `${getPokemonName(pokemon.id, GAMEDATA3)} ${genderSymbol} @ ${pokemon.item}
+    return `${getPokemonName(pokemon.id)} ${genderSymbol} @ ${pokemon.item}
 Level: ${pokemon.level}
 ${pokemon.nature} Nature
 Ability: ${pokemon.ability}
@@ -69,7 +69,7 @@ ${moves}`;
       maxWidth="1108px"
     >
       <DialogTitle>
-        Trainer: {selectedTrainer?.team_name} ({selectedTrainer?.trainerId})
+        Trainer: {selectedTrainer?.team_name}
       </DialogTitle>
       <IconButton
         aria-label="close"
@@ -95,7 +95,7 @@ ${moves}`;
         </IconButton>
       </Tooltip>
       <Tooltip title="Open In Showdown">
-        <IconButton
+        {/* <IconButton
           aria-label="Open In Showdown"
           onClick={handleOpenShowdown}
           to={`https://calc.relumishowdown.dpdns.org/?mode=ingame&setSource=ingame&trainerId=` + selectedTrainer?.trainerId}
@@ -105,9 +105,9 @@ ${moves}`;
             top: 12,
           }}>
           <CatchingPokemonIcon />
-        </IconButton>
+        </IconButton> */}
       </Tooltip>
-      <DialogContent dividers sx={{ maxWidth: "1108px" }}>
+      <DialogContent dividers sx={{ maxWidth: "1108px", overflowY: "scroll" }}>
         <Trainers
           pokemonList={pokemonList}
           selectedTrainer={selectedTrainer}
