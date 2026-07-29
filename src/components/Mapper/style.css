@@ -53,11 +53,13 @@
 .infoCol {
     position: absolute;
     top: 122px;
-    justify-content: end;
     display: grid;
-    grid-template-rows: 60px 25px;
+    grid-template-rows: auto auto auto;
+    align-content: start;
+    justify-content: end;
     pointer-events: none;
     touch-action: manipulation;
+    overflow: hidden;
 }
 
 .monSearchBar {
@@ -69,18 +71,16 @@
 
 .location {
     pointer-events: auto;
-    margin-top: 16px;
+    margin-top: 10px;
     margin-right: 10px;
 }
 
 .settings {
-    display: grid;
-    align-content: end;
-    justify-content: end;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     width: fit-content;
     height: fit-content;
-    margin-left: 16rem;
-    margin-top: 36rem;
     pointer-events: auto;
 }
 

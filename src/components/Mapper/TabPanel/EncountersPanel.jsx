@@ -32,7 +32,7 @@ const EncountersPanel = ({ encOptions, handleOptionChange, encounterList, pokemo
   };
 
   const getGroundTextColor = () => {
-    if (encounterList.GroundEnc.lenth === 0) {
+    if (encounterList.GroundEnc.length === 0) {
       return modeChangeTextColor;
     } else if (groundEncountersIds.includes(routeId)) {
       return "#000000"

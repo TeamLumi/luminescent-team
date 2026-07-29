@@ -116,7 +116,7 @@ Therefore our mod needs to match the folder hierarchy of the game.
 
     ![field-player-12](/img/lumitool-guides/characters/field-player-12.webp)
 7. Save and close the file.
-8. This final step requires modifying exefs. Instructions for which are here https://luminescent.team/rom-hacking/category/exefs, however you will need some amount of knowledge in C++. The Re:Illuminated rombase will have a solution to add outfits without needing to modify exefs, when it releases.
+8. This final step requires modifying exefs. Instructions for which are [here](/rom-hacking/category/exefs), however you will need some amount of knowledge in C++. The Re:Illuminated rombase will have a solution to add outfits without needing to modify exefs, when it releases.
     
     You must modify the **Dpr_UI_ShopBoutiqueChange_SetupBoutiqueItemParams** hook to increase the outfit limit. There are a myriad of ways to do this but keep in mind that the vanilla implementation expects an equal amount of outfits for Lucas and Dawn. So simply expanding the dressID number may not be suitable if you are not adding outfits for both. Also keep in mind that the final index outfit in the vanilla game is the bike outfit. So you will need to add a check to skip that one.
 9. Compile your modified exefs and add them to:

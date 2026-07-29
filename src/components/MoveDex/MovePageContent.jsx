@@ -131,6 +131,7 @@ const ExtendedMoveContainer = ({ gameMode, move }) => {
           <Typography>{`Damage Healed: ${move.healDamage}%`}</Typography>
           <Typography>{`HP Recovery: ${move.hpRecover}%`}</Typography>
           <Typography>{`Targeting: ${move.target}`}</Typography>
+          <Typography>{`AI Seq No: ${move.aiSeqNo}`}</Typography>
         </CardContent>
       </Card>
       <Card sx={{gridArea: "d"}} variant='outlined'>

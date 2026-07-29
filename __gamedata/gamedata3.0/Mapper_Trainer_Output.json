@@ -626,7 +626,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Illuminate",
+          "ability": "Natural Cure",
           "gender": "MALE",
           "id": 120,
           "item": null,
@@ -2856,7 +2856,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Technician",
+          "ability": "Sticky Hold",
           "gender": "MALE",
           "id": 852,
           "item": "Expert Belt",
@@ -3208,7 +3208,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Guts",
+          "ability": "Hustle",
           "gender": "MALE",
           "id": 32,
           "item": "Expert Belt",
@@ -3384,7 +3384,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Sand Veil",
+          "ability": "Dry Skin",
           "gender": "MALE",
           "id": 694,
           "item": "Expert Belt",
@@ -3940,7 +3940,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Sturdy",
+          "ability": "Weak Armor",
           "gender": "MALE",
           "id": 524,
           "item": null,
@@ -4374,8 +4374,8 @@
           "evspeed": 0
         }
       ],
-      "team_name": "Pok\u00e9mon Trainer Steven (Oreburgh City)",
-      "name": "Pok\u00e9mon Trainer Steven",
+      "team_name": "Hoenn Champion Steven (Oreburgh City)",
+      "name": "Hoenn Champion Steven",
       "route": "Oreburgh City",
       "zoneId": 53,
       "trainerType": "Single Battle",
@@ -4690,7 +4690,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Solid Rock",
+          "ability": "Sturdy",
           "gender": "FEMALE",
           "id": 564,
           "item": "Muscle Band",
@@ -5284,7 +5284,7 @@
           "moves": [
             433,
             776,
-            446,
+            535,
             157
           ],
           "nature": "Adamant",
@@ -5302,13 +5302,13 @@
           "evspeed": 0
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sheer Force",
           "gender": "MALE",
           "id": 409,
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            457,
+            444,
             428,
             9,
             8
@@ -5357,24 +5357,24 @@
           "ability": "Sand Stream",
           "gender": "MALE",
           "id": 248,
-          "item": "Assault Vest",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            442,
             89,
             242,
-            9
+            9,
+            431
           ],
-          "nature": "Jolly",
+          "nature": "Adamant",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 128,
-          "evatk": 128,
-          "evdef": 0,
+          "evhp": 56,
+          "evatk": 0,
+          "evdef": 200,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 252
@@ -5386,7 +5386,7 @@
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            534,
+            444,
             89,
             746,
             423
@@ -5442,18 +5442,18 @@
     {
       "team": [
         {
-          "ability": "Sturdy",
+          "ability": "Clear Body",
           "gender": "FEMALE",
-          "id": 703,
-          "item": "Wise Glasses",
+          "id": 719,
+          "item": "Babiri Berry",
           "level": 100,
           "moves": [
+            591,
+            583,
             433,
-            446,
-            585,
-            408
+            523
           ],
-          "nature": "Modest",
+          "nature": "Adamant",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -5468,13 +5468,13 @@
           "evspeed": 0
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sheer Force",
           "gender": "MALE",
           "id": 409,
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            457,
+            444,
             428,
             9,
             8
@@ -5492,32 +5492,6 @@
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 0
-        },
-        {
-          "ability": "Sand Stream",
-          "gender": "MALE",
-          "id": 248,
-          "item": "Assault Vest",
-          "level": 100,
-          "moves": [
-            442,
-            89,
-            242,
-            9
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 128,
-          "evatk": 128,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
         },
         {
           "ability": "Solid Rock",
@@ -5546,6 +5520,32 @@
           "evspeed": 0
         },
         {
+          "ability": "Sand Stream",
+          "gender": "MALE",
+          "id": 248,
+          "item": "Weakness Policy",
+          "level": 100,
+          "moves": [
+            89,
+            242,
+            9,
+            431
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 56,
+          "evatk": 0,
+          "evdef": 200,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
           "ability": "Rock Head",
           "gender": "MALE",
           "id": 142,
@@ -5564,12 +5564,12 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 4,
-          "evdef": 252,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 200,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 56
         },
         {
           "ability": "Beast Boost",
@@ -5611,13 +5611,13 @@
           "ability": "Emergency Exit",
           "gender": "MALE",
           "id": 567,
-          "item": "Focus Sash",
+          "item": "Flying Gem",
           "level": 100,
           "moves": [
+            512,
             89,
-            157,
-            366,
-            512
+            431,
+            211
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -5629,6 +5629,58 @@
           "evhp": 4,
           "evatk": 252,
           "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Mold Breaker",
+          "gender": "MALE",
+          "id": 409,
+          "item": "Choice Scarf",
+          "level": 100,
+          "moves": [
+            431,
+            89,
+            0,
+            0
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Sand Stream",
+          "gender": "MALE",
+          "id": 248,
+          "item": "Weakness Policy",
+          "level": 100,
+          "moves": [
+            89,
+            242,
+            9,
+            431
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 56,
+          "evatk": 0,
+          "evdef": 200,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 252
@@ -5636,40 +5688,14 @@
         {
           "ability": "Rock Head",
           "gender": "MALE",
-          "id": 409,
+          "id": 1063,
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            457,
-            428,
-            9,
-            8
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 252,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Sand Stream",
-          "gender": "MALE",
-          "id": 248,
-          "item": "Assault Vest",
-          "level": 100,
-          "moves": [
-            442,
-            89,
-            242,
-            9
+            431,
+            245,
+            394,
+            528
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -5678,37 +5704,11 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 128,
-          "evatk": 128,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Sharpness",
-          "gender": "MALE",
-          "id": 141,
-          "item": "Focus Sash",
-          "level": 100,
-          "moves": [
-            400,
-            895,
-            157,
-            332
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
+          "evhp": 0,
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -5738,16 +5738,16 @@
           "evspeed": 164
         },
         {
-          "ability": "Rock Head",
+          "ability": "Strong Jaw",
           "gender": "MALE",
           "id": 697,
-          "item": "Wide Lens",
+          "item": "Assault Vest",
           "level": 100,
           "moves": [
-            457,
+            444,
             89,
-            337,
-            0
+            692,
+            422
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -5757,10 +5757,10 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 252,
+          "evspdef": 4,
           "evspeed": 252
         }
       ],
@@ -5774,16 +5774,16 @@
     {
       "team": [
         {
-          "ability": "Clear Body",
-          "gender": "FEMALE",
-          "id": 719,
-          "item": "Babiri Berry",
+          "ability": "Sand Stream",
+          "gender": "MALE",
+          "id": 248,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            591,
-            583,
-            433,
-            446
+            89,
+            242,
+            9,
+            431
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -5792,76 +5792,24 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 56,
           "evatk": 0,
-          "evdef": 128,
+          "evdef": 200,
           "evspatk": 0,
-          "evspdef": 128,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sharpness",
           "gender": "MALE",
-          "id": 409,
+          "id": 141,
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            457,
-            428,
-            9,
-            8
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 252,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Sand Stream",
-          "gender": "MALE",
-          "id": 526,
-          "item": "Assault Vest",
-          "level": 100,
-          "moves": [
-            776,
-            89,
-            157,
-            218
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 252,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 248,
-          "item": "Assault Vest",
-          "level": 100,
-          "moves": [
-            442,
-            89,
-            242,
-            9
+            400,
+            895,
+            431,
+            332
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -5870,8 +5818,60 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 128,
-          "evatk": 128,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Mold Breaker",
+          "gender": "MALE",
+          "id": 409,
+          "item": "Choice Scarf",
+          "level": 100,
+          "moves": [
+            431,
+            89,
+            0,
+            0
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Sharpness",
+          "gender": "MALE",
+          "id": 900,
+          "item": "Weakness Policy",
+          "level": 100,
+          "moves": [
+            830,
+            400,
+            427,
+            404
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 4,
           "evdef": 0,
           "evspatk": 0,
           "evspdef": 0,
@@ -6701,7 +6701,7 @@
         {
           "ability": "Fur Coat",
           "gender": "FEMALE",
-          "id": 1300,
+          "id": 1302,
           "item": "Muscle Band",
           "level": 18,
           "moves": [
@@ -6841,7 +6841,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Swarm",
+          "ability": "Insomnia",
           "gender": "MALE",
           "id": 167,
           "item": null,
@@ -6903,7 +6903,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Swarm",
+          "ability": "Insomnia",
           "gender": "MALE",
           "id": 167,
           "item": null,
@@ -6995,7 +6995,7 @@
       "name": "Team Galactic Grunt 3",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 222
     },
     {
@@ -7057,7 +7057,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Floaroma Meadow",
       "zoneId": 253,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 222
     }
   ],
@@ -7267,7 +7267,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Oblivious",
+          "ability": "Drought",
           "gender": "FEMALE",
           "id": 322,
           "item": null,
@@ -8462,7 +8462,7 @@
         {
           "ability": "Mimicry",
           "gender": "MALE",
-          "id": 1246,
+          "id": 1248,
           "item": null,
           "level": 18,
           "moves": [
@@ -8816,7 +8816,7 @@
     {
       "team": [
         {
-          "ability": "Rock Head",
+          "ability": "Sturdy",
           "gender": "NEUTRAL",
           "id": 208,
           "item": null,
@@ -8976,7 +8976,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Sheer Force",
+          "ability": "Hustle",
           "gender": "FEMALE",
           "id": 627,
           "item": null,
@@ -9076,9 +9076,9 @@
     {
       "team": [
         {
-          "ability": "Shell Armor",
+          "ability": "Sharpness",
           "gender": "FEMALE",
-          "id": 1227,
+          "id": 1229,
           "item": "Life Orb",
           "level": 95,
           "moves": [
@@ -9620,7 +9620,7 @@
           "gender": "FEMALE",
           "id": 184,
           "item": "Sitrus Berry",
-          "level": 100,
+          "level": 95,
           "moves": [
             453,
             401,
@@ -9784,7 +9784,7 @@
         {
           "ability": "Mind's Eye",
           "gender": "FEMALE",
-          "id": 1409,
+          "id": 1411,
           "item": "Assault Vest",
           "level": 80,
           "moves": [
@@ -9870,7 +9870,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Insomnia",
+          "ability": "Frisk",
           "gender": "MALE",
           "id": 711,
           "item": "Weakness Policy",
@@ -9924,7 +9924,7 @@
         {
           "ability": "Illusion",
           "gender": "MALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Focus Sash",
           "level": 80,
           "moves": [
@@ -10152,7 +10152,7 @@
         {
           "ability": "Shell Armor",
           "gender": "FEMALE",
-          "id": 1305,
+          "id": 1307,
           "item": "Assault Vest",
           "level": 80,
           "moves": [
@@ -11656,7 +11656,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Insomnia",
+          "ability": "Frisk",
           "gender": "FEMALE",
           "id": 711,
           "item": "White Herb",
@@ -11721,13 +11721,39 @@
           "ability": "Grassy Surge",
           "gender": "FEMALE",
           "id": 812,
-          "item": "Life Orb",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             409,
-            252,
-            803,
-            89
+            512,
+            778,
+            34
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 4,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Queenly Majesty",
+          "gender": "FEMALE",
+          "id": 763,
+          "item": "Wide Lens",
+          "level": 100,
+          "moves": [
+            136,
+            438,
+            583,
+            813
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -11740,32 +11766,6 @@
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Own Tempo",
-          "gender": "FEMALE",
-          "id": 272,
-          "item": "Throat Spray",
-          "level": 100,
-          "moves": [
-            304,
-            58,
-            57,
-            202
-          ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -11809,9 +11809,9 @@
           ],
           "nature": "Timid",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
-          "ivspatk": 31,
+          "ivspatk": 30,
           "ivspdef": 31,
           "ivspeed": 30,
           "evhp": 4,
@@ -11822,30 +11822,30 @@
           "evspeed": 252
         },
         {
-          "ability": "Unburden",
+          "ability": "Unnerve",
           "gender": "FEMALE",
-          "id": 254,
-          "item": "White Herb",
+          "id": 898,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            434,
-            437,
-            85,
-            237
+            94,
+            202,
+            237,
+            577
           ],
           "nature": "Timid",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
           "ivspatk": 30,
-          "ivspdef": 30,
-          "ivspeed": 31,
-          "evhp": 0,
+          "ivspdef": 31,
+          "ivspeed": 30,
+          "evhp": 252,
           "evatk": 0,
-          "evdef": 156,
-          "evspatk": 252,
+          "evdef": 0,
+          "evspatk": 4,
           "evspdef": 0,
-          "evspeed": 100
+          "evspeed": 252
         },
         {
           "ability": "Beast Boost",
@@ -11910,28 +11910,28 @@
           "evspeed": 252
         },
         {
-          "ability": "Rough Skin",
+          "ability": "Unnerve",
           "gender": "FEMALE",
-          "id": 652,
-          "item": "Rocky Helmet",
+          "id": 898,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            409,
-            596,
-            402,
-            89
+            94,
+            202,
+            237,
+            577
           ],
-          "nature": "Jolly",
+          "nature": "Timid",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
-          "ivspatk": 31,
+          "ivspatk": 30,
           "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
+          "ivspeed": 30,
+          "evhp": 252,
+          "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
+          "evspatk": 4,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -11949,9 +11949,9 @@
           ],
           "nature": "Timid",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
-          "ivspatk": 31,
+          "ivspatk": 30,
           "ivspdef": 31,
           "ivspeed": 30,
           "evhp": 4,
@@ -11997,15 +11997,15 @@
             437,
             406,
             237,
-            113
+            0
           ],
           "nature": "Modest",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
           "ivspatk": 30,
-          "ivspdef": 30,
-          "ivspeed": 31,
+          "ivspdef": 31,
+          "ivspeed": 30,
           "evhp": 56,
           "evatk": 0,
           "evdef": 0,
@@ -12058,22 +12058,22 @@
           "moves": [
             85,
             412,
-            113,
-            237
+            237,
+            0
           ],
-          "nature": "Timid",
+          "nature": "Modest",
           "ivatk": 31,
           "ivdef": 30,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 30,
           "ivspeed": 30,
-          "evhp": 252,
+          "evhp": 0,
           "evatk": 0,
-          "evdef": 4,
+          "evdef": 0,
           "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 0
+          "evspdef": 200,
+          "evspeed": 56
         },
         {
           "ability": "Grass Pelt",
@@ -12136,7 +12136,7 @@
           "moves": [
             94,
             247,
-            414,
+            246,
             412
           ],
           "nature": "Timid",
@@ -12167,9 +12167,9 @@
           ],
           "nature": "Timid",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
-          "ivspatk": 31,
+          "ivspatk": 30,
           "ivspdef": 31,
           "ivspeed": 30,
           "evhp": 4,
@@ -12219,13 +12219,13 @@
           "ability": "Grassy Surge",
           "gender": "FEMALE",
           "id": 3,
-          "item": "Life Orb",
+          "item": "Terrain Extender",
           "level": 100,
           "moves": [
-            414,
             412,
             188,
-            237
+            237,
+            0
           ],
           "nature": "Timid",
           "ivatk": 31,
@@ -12244,22 +12244,22 @@
         {
           "ability": "Serene Grace",
           "gender": "FEMALE",
-          "id": 1207,
+          "id": 1209,
           "item": "Focus Sash",
           "level": 100,
           "moves": [
             403,
-            414,
+            237,
             465,
             605
           ],
           "nature": "Modest",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
           "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
+          "ivspdef": 30,
+          "ivspeed": 30,
           "evhp": 128,
           "evatk": 0,
           "evdef": 0,
@@ -12281,9 +12281,9 @@
           ],
           "nature": "Timid",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
-          "ivspatk": 31,
+          "ivspatk": 30,
           "ivspdef": 31,
           "ivspeed": 30,
           "evhp": 4,
@@ -12320,15 +12320,15 @@
           "evspeed": 252
         },
         {
-          "ability": "Leaf Guard",
+          "ability": "Tough Claws",
           "gender": "FEMALE",
           "id": 893,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
             409,
-            157,
-            808,
+            431,
+            693,
             572
           ],
           "nature": "Jolly",
@@ -12802,7 +12802,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Iron Fist",
+          "ability": "Tough Claws",
           "gender": "FEMALE",
           "id": 375,
           "item": null,
@@ -13300,7 +13300,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Swarm",
+          "ability": "Guts",
           "gender": "FEMALE",
           "id": 214,
           "item": null,
@@ -13496,7 +13496,7 @@
     {
       "team": [
         {
-          "ability": "Unnerve",
+          "ability": "Strong Jaw",
           "gender": "FEMALE",
           "id": 142,
           "item": null,
@@ -13900,7 +13900,7 @@
     {
       "team": [
         {
-          "ability": "Iron Fist",
+          "ability": "Tough Claws",
           "gender": "MALE",
           "id": 376,
           "item": null,
@@ -14198,8 +14198,8 @@
           "item": null,
           "level": 55,
           "moves": [
-            253,
-            130,
+            662,
+            834,
             37,
             38
           ],
@@ -14282,7 +14282,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Unburden",
+          "ability": "Poison Touch",
           "gender": "MALE",
           "id": 903,
           "item": null,
@@ -14664,7 +14664,7 @@
         {
           "ability": "Chlorophyll",
           "gender": "FEMALE",
-          "id": 1242,
+          "id": 1244,
           "item": null,
           "level": 22,
           "moves": [
@@ -14840,7 +14840,7 @@
         {
           "ability": "Inner Focus",
           "gender": "MALE",
-          "id": 1232,
+          "id": 1234,
           "item": null,
           "level": 20,
           "moves": [
@@ -16846,7 +16846,7 @@
     {
       "team": [
         {
-          "ability": "Illuminate",
+          "ability": "Swarm",
           "gender": "FEMALE",
           "id": 313,
           "item": null,
@@ -17146,7 +17146,7 @@
     {
       "team": [
         {
-          "ability": "Sand Veil",
+          "ability": "Tangling Hair",
           "gender": "MALE",
           "id": 1057,
           "item": null,
@@ -17394,7 +17394,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Run Away",
+          "ability": "Hustle",
           "gender": "FEMALE",
           "id": 20,
           "item": null,
@@ -17432,7 +17432,7 @@
         {
           "ability": "Illusion",
           "gender": "FEMALE",
-          "id": 1238,
+          "id": 1240,
           "item": "Wise Glasses",
           "level": 27,
           "moves": [
@@ -17998,7 +17998,7 @@
           "evspeed": 76
         },
         {
-          "ability": "Technician",
+          "ability": "Limber",
           "gender": "MALE",
           "id": 852,
           "item": "Life Orb",
@@ -20270,7 +20270,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Insomnia",
+          "ability": "Frisk",
           "gender": "FEMALE",
           "id": 353,
           "item": null,
@@ -20368,7 +20368,7 @@
     {
       "team": [
         {
-          "ability": "Keen Eye",
+          "ability": "Magic Bounce",
           "gender": "FEMALE",
           "id": 302,
           "item": null,
@@ -20694,7 +20694,7 @@
     {
       "team": [
         {
-          "ability": "Insomnia",
+          "ability": "Frisk",
           "gender": "FEMALE",
           "id": 354,
           "item": null,
@@ -21002,7 +21002,7 @@
         {
           "ability": "Weak Armor",
           "gender": "FEMALE",
-          "id": 1383,
+          "id": 1385,
           "item": "Focus Sash",
           "level": 32,
           "moves": [
@@ -21168,7 +21168,7 @@
         {
           "ability": "Dancer",
           "gender": "FEMALE",
-          "id": 1325,
+          "id": 1327,
           "item": "Leftovers",
           "level": 32,
           "moves": [
@@ -21474,7 +21474,7 @@
         {
           "ability": "Cursed Body",
           "gender": "FEMALE",
-          "id": 1383,
+          "id": 1385,
           "item": "White Herb",
           "level": 100,
           "moves": [
@@ -21944,32 +21944,6 @@
     {
       "team": [
         {
-          "ability": "Unburden",
-          "gender": "FEMALE",
-          "id": 426,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            247,
-            85,
-            668,
-            237
-          ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 30,
-          "ivspdef": 30,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
           "ability": "Prankster",
           "gender": "FEMALE",
           "id": 302,
@@ -21994,6 +21968,32 @@
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 0
+        },
+        {
+          "ability": "Grim Neigh",
+          "gender": "FEMALE",
+          "id": 897,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            94,
+            247,
+            399,
+            577
+          ],
+          "nature": "Modest",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 4
         },
         {
           "ability": "Levitate",
@@ -22674,20 +22674,20 @@
           "gender": "FEMALE",
           "id": 416,
           "item": null,
-          "level": 100,
+          "level": 28,
           "moves": [
-            408,
-            207,
-            366,
-            194
+            455,
+            454,
+            312,
+            403
           ],
           "nature": "Hasty",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
           "evhp": 0,
           "evatk": 0,
           "evdef": 128,
@@ -22798,7 +22798,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 964
     },
     {
@@ -22860,7 +22860,7 @@
       "name": "Team Galactic Grunt 5",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 964
     },
     {
@@ -22922,7 +22922,7 @@
       "name": "Team Galactic Grunt 6",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 965
     },
     {
@@ -22984,7 +22984,7 @@
       "name": "Team Galactic Grunt 7",
       "route": "Route 212 (North)",
       "zoneId": 379,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 965
     }
   ],
@@ -24284,10 +24284,10 @@
           "item": null,
           "level": 38,
           "moves": [
-            97,
-            291,
+            812,
             673,
-            242
+            242,
+            710
           ],
           "nature": "Hardy",
           "ivatk": 25,
@@ -25160,7 +25160,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Soundproof",
+          "ability": "Filter",
           "gender": "FEMALE",
           "id": 439,
           "item": null,
@@ -25222,7 +25222,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Hustle",
+          "ability": "Super Luck",
           "gender": "FEMALE",
           "id": 175,
           "item": null,
@@ -25300,7 +25300,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Oblivious",
+          "ability": "Hydration",
           "gender": "FEMALE",
           "id": 238,
           "item": null,
@@ -25548,7 +25548,7 @@
     {
       "team": [
         {
-          "ability": "Run Away",
+          "ability": "Tangled Feet",
           "gender": "FEMALE",
           "id": 85,
           "item": null,
@@ -25973,9 +25973,9 @@
           "level": 33,
           "moves": [
             577,
+            500,
             312,
-            213,
-            151
+            213
           ],
           "nature": "Serious",
           "ivatk": 25,
@@ -26116,7 +26116,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Water Veil",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 320,
           "item": "Sitrus Berry",
@@ -30528,7 +30528,7 @@
         {
           "ability": "Psychic Surge",
           "gender": "FEMALE",
-          "id": 1396,
+          "id": 1398,
           "item": "Terrain Extender",
           "level": 35,
           "moves": [
@@ -30630,7 +30630,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Justified",
+          "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 475,
           "item": "Focus Sash",
@@ -30834,7 +30834,7 @@
     {
       "team": [
         {
-          "ability": "Levitate",
+          "ability": "Magic Guard",
           "gender": "FEMALE",
           "id": 577,
           "item": null,
@@ -31126,7 +31126,7 @@
     {
       "team": [
         {
-          "ability": "Run Away",
+          "ability": "Scrappy",
           "gender": "FEMALE",
           "id": 162,
           "item": null,
@@ -31296,7 +31296,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Defiant",
+          "ability": "Competitive",
           "gender": "FEMALE",
           "id": 394,
           "item": null,
@@ -31590,7 +31590,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Sap Sipper",
+          "ability": "Water Absorb",
           "gender": "FEMALE",
           "id": 705,
           "item": null,
@@ -31633,9 +31633,9 @@
           "level": 33,
           "moves": [
             577,
+            500,
             312,
-            213,
-            151
+            213
           ],
           "nature": "Hardy",
           "ivatk": 25,
@@ -32332,7 +32332,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Levitate",
+          "ability": "Compound Eyes",
           "gender": "FEMALE",
           "id": 329,
           "item": null,
@@ -33904,7 +33904,7 @@
     {
       "team": [
         {
-          "ability": "Own Tempo",
+          "ability": "Oblivious",
           "gender": "MALE",
           "id": 108,
           "item": null,
@@ -33992,7 +33992,7 @@
     {
       "team": [
         {
-          "ability": "Rock Head",
+          "ability": "Magnet Pull",
           "gender": "MALE",
           "id": 1066,
           "item": null,
@@ -34338,7 +34338,7 @@
         {
           "ability": "Chlorophyll",
           "gender": "MALE",
-          "id": 1229,
+          "id": 1231,
           "item": null,
           "level": 35,
           "moves": [
@@ -34460,7 +34460,7 @@
     {
       "team": [
         {
-          "ability": "Inner Focus",
+          "ability": "Analytic",
           "gender": "FEMALE",
           "id": 538,
           "item": null,
@@ -34472,12 +34472,12 @@
             269
           ],
           "nature": "Hardy",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
           "evhp": 4,
           "evatk": 252,
           "evdef": 0,
@@ -34498,12 +34498,12 @@
             213
           ],
           "nature": "Hardy",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
+          "ivatk": 25,
+          "ivdef": 25,
+          "ivhp": 25,
+          "ivspatk": 25,
+          "ivspdef": 25,
+          "ivspeed": 25,
           "evhp": 52,
           "evatk": 0,
           "evdef": 76,
@@ -34602,7 +34602,7 @@
         {
           "ability": "Scrappy",
           "gender": "FEMALE",
-          "id": 1322,
+          "id": 1324,
           "item": "Razor Claw",
           "level": 38,
           "moves": [
@@ -35378,30 +35378,30 @@
     {
       "team": [
         {
-          "ability": "Bulletproof",
-          "gender": "FEMALE",
-          "id": 784,
-          "item": "Throat Spray",
+          "ability": "Pure Power",
+          "gender": "MALE",
+          "id": 308,
+          "item": "Wide Lens",
           "level": 100,
           "moves": [
-            430,
-            691,
-            396,
-            586
+            136,
+            428,
+            8,
+            252
           ],
-          "nature": "Timid",
+          "nature": "Jolly",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
+          "evhp": 8,
+          "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 4,
-          "evspeed": 252
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 248
         },
         {
           "ability": "Adaptability",
@@ -35573,7 +35573,7 @@
           "ability": "Defiant",
           "gender": "FEMALE",
           "id": 766,
-          "item": "Focus Sash",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             409,
@@ -35674,29 +35674,29 @@
           "evspeed": 4
         },
         {
-          "ability": "Bulletproof",
+          "ability": "No Guard",
           "gender": "FEMALE",
-          "id": 784,
-          "item": "Throat Spray",
+          "id": 1324,
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
-            430,
-            691,
-            396,
-            586
+            542,
+            411,
+            412,
+            237
           ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
+          "nature": "Modest",
+          "ivatk": 30,
+          "ivdef": 30,
           "ivhp": 31,
           "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
+          "ivspdef": 30,
+          "ivspeed": 30,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 4,
+          "evspdef": 0,
           "evspeed": 252
         }
       ],
@@ -35712,16 +35712,16 @@
         {
           "ability": "Intimidate",
           "gender": "MALE",
-          "id": 1093,
-          "item": "Wide Lens",
+          "id": 1091,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            444,
+            89,
             528,
-            853,
-            224
+            873,
+            442
           ],
-          "nature": "Jolly",
+          "nature": "Adamant",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -35840,29 +35840,29 @@
           "evspeed": 4
         },
         {
-          "ability": "Bulletproof",
+          "ability": "No Guard",
           "gender": "FEMALE",
-          "id": 784,
-          "item": "Throat Spray",
+          "id": 1324,
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
-            430,
-            691,
-            396,
-            586
+            542,
+            411,
+            412,
+            237
           ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
+          "nature": "Modest",
+          "ivatk": 30,
+          "ivdef": 30,
           "ivhp": 31,
           "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
+          "ivspdef": 30,
+          "ivspeed": 30,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 4,
+          "evspdef": 0,
           "evspeed": 252
         }
       ],
@@ -36140,7 +36140,7 @@
     {
       "team": [
         {
-          "ability": "Healer",
+          "ability": "Magician",
           "gender": "FEMALE",
           "id": 857,
           "item": null,
@@ -36544,7 +36544,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Shield Dust",
+          "ability": "Tinted Lens",
           "gender": "MALE",
           "id": 49,
           "item": null,
@@ -36824,7 +36824,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Levitate",
+          "ability": "Tinted Lens",
           "gender": "FEMALE",
           "id": 329,
           "item": null,
@@ -37286,7 +37286,7 @@
         {
           "ability": "Regenerator",
           "gender": "FEMALE",
-          "id": 1072,
+          "id": 1073,
           "item": null,
           "level": 53,
           "moves": [
@@ -37612,7 +37612,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Weak Armor",
+          "ability": "Battle Armor",
           "gender": "FEMALE",
           "id": 630,
           "item": null,
@@ -37638,7 +37638,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Stench",
+          "ability": "Defiant",
           "gender": "FEMALE",
           "id": 625,
           "item": null,
@@ -37736,7 +37736,7 @@
     {
       "team": [
         {
-          "ability": "Stench",
+          "ability": "Poison Touch",
           "gender": "FEMALE",
           "id": 1076,
           "item": null,
@@ -37942,7 +37942,7 @@
         {
           "ability": "Illusion",
           "gender": "MALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Red Card",
           "level": 57,
           "moves": [
@@ -38018,9 +38018,9 @@
           "evspeed": 4
         },
         {
-          "ability": "Serene Grace",
+          "ability": "RKS System",
           "gender": "FEMALE",
-          "id": 1346,
+          "id": 1348,
           "item": "King\u2019s Rock",
           "level": 57,
           "moves": [
@@ -38824,7 +38824,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Gluttony",
+          "ability": "Tough Claws",
           "gender": "FEMALE",
           "id": 631,
           "item": null,
@@ -38987,41 +38987,15 @@
       "team": [
         {
           "ability": "Serene Grace",
-          "gender": "NEUTRAL",
+          "gender": "MALE",
           "id": 468,
-          "item": "Light Clay",
-          "level": 88,
+          "item": "Weakness Policy",
+          "level": 100,
           "moves": [
             585,
-            115,
-            113,
-            403
-          ],
-          "nature": "Naive",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 4,
-          "evspdef": 252,
-          "evspeed": 0
-        },
-        {
-          "ability": "Trace",
-          "gender": "NEUTRAL",
-          "id": 282,
-          "item": "Wise Glasses",
-          "level": 88,
-          "moves": [
-            94,
-            411,
-            585,
-            86
+            396,
+            403,
+            53
           ],
           "nature": "Timid",
           "ivatk": 31,
@@ -39032,47 +39006,21 @@
           "ivspeed": 31,
           "evhp": 0,
           "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 0
+          "evdef": 200,
+          "evspatk": 0,
+          "evspdef": 56,
+          "evspeed": 252
         },
         {
-          "ability": "Static",
-          "gender": "NEUTRAL",
-          "id": 181,
-          "item": "Leftovers",
-          "level": 88,
-          "moves": [
-            435,
-            411,
-            406,
-            294
-          ],
-          "nature": "Modest",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 0
-        },
-        {
-          "ability": "Natural Cure",
+          "ability": "Analytic",
           "gender": "FEMALE",
-          "id": 407,
+          "id": 121,
           "item": "Focus Sash",
-          "level": 88,
+          "level": 100,
           "moves": [
-            79,
-            188,
-            447,
+            58,
+            85,
+            57,
             605
           ],
           "nature": "Modest",
@@ -39082,24 +39030,76 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
+          "evhp": 56,
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 200
         },
         {
-          "ability": "Analytic",
+          "ability": "Infiltrator",
           "gender": "FEMALE",
-          "id": 121,
-          "item": "Life Orb",
-          "level": 88,
+          "id": 887,
+          "item": "Assault Vest",
+          "level": 100,
           "moves": [
-            57,
-            94,
+            751,
+            566,
+            389,
+            706
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 4
+        },
+        {
+          "ability": "Queenly Majesty",
+          "gender": "FEMALE",
+          "id": 763,
+          "item": "Wide Lens",
+          "level": 100,
+          "moves": [
+            136,
+            438,
+            583,
+            813
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Pixilate",
+          "gender": "MALE",
+          "id": 282,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            396,
+            304,
             85,
-            58
+            247
           ],
           "nature": "Timid",
           "ivatk": 31,
@@ -39110,36 +39110,36 @@
           "ivspeed": 31,
           "evhp": 0,
           "evatk": 0,
-          "evdef": 0,
+          "evdef": 4,
           "evspatk": 252,
-          "evspdef": 252,
-          "evspeed": 0
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
-          "ability": "Iron Fist",
+          "ability": "Levitate",
           "gender": "FEMALE",
-          "id": 392,
-          "item": "Expert Belt",
-          "level": 88,
+          "id": 609,
+          "item": "Focus Sash",
+          "level": 100,
           "moves": [
-            315,
-            370,
-            9,
-            252
+            412,
+            53,
+            247,
+            94
           ],
-          "nature": "Jolly",
+          "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
+          "evhp": 4,
+          "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         }
       ],
       "team_name": "Ace Trainer Drayano (Valor Lakefront - House 2 (NW))",
@@ -40456,8 +40456,8 @@
           "item": null,
           "level": 43,
           "moves": [
-            97,
-            291,
+            184,
+            812,
             673,
             242
           ],
@@ -40502,7 +40502,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Technician",
+          "ability": "Sticky Hold",
           "gender": "FEMALE",
           "id": 853,
           "item": null,
@@ -40962,7 +40962,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Hustle",
+          "ability": "Quick Draw",
           "gender": "FEMALE",
           "id": 223,
           "item": null,
@@ -41086,42 +41086,42 @@
     {
       "team": [
         {
-          "ability": "Infiltrator",
-          "gender": "MALE",
-          "id": 442,
-          "item": "Lum Berry",
-          "level": 90,
+          "ability": "Synchronize",
+          "gender": "NEUTRAL",
+          "id": 151,
+          "item": "Weakness Policy",
+          "level": 100,
           "moves": [
-            668,
-            399,
-            101,
-            261
+            605,
+            396,
+            53,
+            414
           ],
-          "nature": "Calm",
+          "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 4,
           "evatk": 0,
-          "evdef": 128,
-          "evspatk": 0,
-          "evspdef": 128,
-          "evspeed": 0
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
-          "ability": "Technician",
+          "ability": "Intimidate",
           "gender": "MALE",
-          "id": 424,
+          "id": 1091,
           "item": "Focus Sash",
-          "level": 90,
+          "level": 100,
           "moves": [
-            252,
-            8,
-            458,
-            332
+            89,
+            873,
+            370,
+            528
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -41138,70 +41138,44 @@
           "evspeed": 252
         },
         {
-          "ability": "Strong Jaw",
-          "gender": "MALE",
-          "id": 450,
-          "item": "Assault Vest",
-          "level": 90,
+          "ability": "Fairy Aura",
+          "gender": "NEUTRAL",
+          "id": 716,
+          "item": "Power Herb",
+          "level": 100,
           "moves": [
-            89,
-            242,
-            422,
-            423
-          ],
-          "nature": "Sassy",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
-        },
-        {
-          "ability": "Competitive",
-          "gender": "MALE",
-          "id": 135,
-          "item": "Air Balloon",
-          "level": 90,
-          "moves": [
-            435,
-            247,
-            113,
-            447
-          ],
-          "nature": "Modest",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 200,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 56
-        },
-        {
-          "ability": "Water Absorb",
-          "gender": "MALE",
-          "id": 134,
-          "item": "Weakness Policy",
-          "level": 90,
-          "moves": [
-            58,
-            304,
-            326,
-            503
+            601,
+            585,
+            85,
+            237
           ],
           "nature": "Timid",
+          "ivatk": 30,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 30,
+          "ivspdef": 30,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Multiscale",
+          "gender": "NEUTRAL",
+          "id": 249,
+          "item": "Weakness Policy",
+          "level": 100,
+          "moves": [
+            401,
+            428,
+            89,
+            814
+          ],
+          "nature": "Adamant",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -41209,23 +41183,49 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 4,
-          "evatk": 0,
-          "evdef": 252,
+          "evatk": 252,
+          "evdef": 0,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 252
         },
         {
-          "ability": "Guts",
-          "gender": "MALE",
-          "id": 136,
-          "item": "Flame Orb",
-          "level": 90,
+          "ability": "Intrepid Sword",
+          "gender": "NEUTRAL",
+          "id": 888,
+          "item": "Rusted Sword",
+          "level": 100,
           "moves": [
-            394,
-            528,
-            157,
-            276
+            442,
+            583,
+            533,
+            242
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 156,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 100
+        },
+        {
+          "ability": "Friend Guard",
+          "gender": "NEUTRAL",
+          "id": 486,
+          "item": "Life Orb",
+          "level": 100,
+          "moves": [
+            34,
+            89,
+            409,
+            8
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -41804,7 +41804,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Intimidate",
+          "ability": "Fluffy",
           "gender": "MALE",
           "id": 508,
           "item": "Life Orb",
@@ -43920,7 +43920,7 @@
     {
       "team": [
         {
-          "ability": "Water Veil",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 321,
           "item": null,
@@ -43974,7 +43974,7 @@
         {
           "ability": "Adaptability",
           "gender": "FEMALE",
-          "id": 1231,
+          "id": 1233,
           "item": null,
           "level": 39,
           "moves": [
@@ -44034,7 +44034,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Intimidate",
+          "ability": "Strong Jaw",
           "gender": "FEMALE",
           "id": 160,
           "item": null,
@@ -44096,7 +44096,7 @@
     {
       "team": [
         {
-          "ability": "Intimidate",
+          "ability": "Strong Jaw",
           "gender": "FEMALE",
           "id": 159,
           "item": null,
@@ -44236,7 +44236,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Hydration",
+          "ability": "Swift Swim",
           "gender": "FEMALE",
           "id": 87,
           "item": null,
@@ -44464,7 +44464,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Swift Swim",
+          "ability": "Storm Drain",
           "gender": "FEMALE",
           "id": 423,
           "item": "Leftovers",
@@ -44772,7 +44772,7 @@
         {
           "ability": "Sharpness",
           "gender": "FEMALE",
-          "id": 1227,
+          "id": 1229,
           "item": "Muscle Band",
           "level": 43,
           "moves": [
@@ -44945,7 +44945,7 @@
             89,
             127,
             8,
-            446
+            612
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -44960,58 +44960,6 @@
           "evspatk": 0,
           "evspdef": 4,
           "evspeed": 0
-        },
-        {
-          "ability": "Swift Swim",
-          "gender": "MALE",
-          "id": 230,
-          "item": "Life Orb",
-          "level": 100,
-          "moves": [
-            58,
-            406,
-            57,
-            430
-          ],
-          "nature": "Modest",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Drizzle",
-          "gender": "MALE",
-          "id": 9,
-          "item": "White Herb",
-          "level": 100,
-          "moves": [
-            396,
-            504,
-            57,
-            58
-          ],
-          "nature": "Modest",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 4,
-          "evspeed": 252
         },
         {
           "ability": "Swift Swim",
@@ -45037,6 +44985,58 @@
           "evdef": 128,
           "evspatk": 0,
           "evspdef": 128,
+          "evspeed": 0
+        },
+        {
+          "ability": "Drizzle",
+          "gender": "MALE",
+          "id": 9,
+          "item": "White Herb",
+          "level": 100,
+          "moves": [
+            396,
+            504,
+            57,
+            58
+          ],
+          "nature": "Timid",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
+        },
+        {
+          "ability": "Swift Swim",
+          "gender": "MALE",
+          "id": 230,
+          "item": "Life Orb",
+          "level": 100,
+          "moves": [
+            58,
+            406,
+            57,
+            430
+          ],
+          "nature": "Modest",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 0
         },
         {
@@ -45072,7 +45072,7 @@
           "item": "Assault Vest",
           "level": 100,
           "moves": [
-            396,
+            57,
             548,
             403,
             237
@@ -45102,16 +45102,16 @@
     {
       "team": [
         {
-          "ability": "Strong Jaw",
-          "gender": "FEMALE",
-          "id": 882,
-          "item": "Lum Berry",
+          "ability": "Sheer Force",
+          "gender": "MALE",
+          "id": 160,
+          "item": "Life Orb",
           "level": 100,
           "moves": [
-            755,
             89,
-            242,
-            200
+            8,
+            127,
+            242
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -45124,7 +45124,7 @@
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 4,
           "evspeed": 252
         },
         {
@@ -45160,7 +45160,7 @@
           "item": "Assault Vest",
           "level": 100,
           "moves": [
-            396,
+            57,
             548,
             403,
             237
@@ -45232,18 +45232,18 @@
           "evspeed": 252
         },
         {
-          "ability": "Torrent",
+          "ability": "Unseen Fist",
           "gender": "MALE",
-          "id": 818,
-          "item": "Focus Sash",
+          "id": 1405,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            58,
-            57,
-            247,
-            399
+            818,
+            8,
+            398,
+            409
           ],
-          "nature": "Modest",
+          "nature": "Jolly",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -45251,11 +45251,11 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 0,
-          "evatk": 0,
+          "evatk": 56,
           "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 252
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 200
         }
       ],
       "team_name": "Gym Leader Wake Rematch (Pastoria - Gym) [Team 2]",
@@ -45268,16 +45268,16 @@
     {
       "team": [
         {
-          "ability": "Intimidate",
-          "gender": "MALE",
-          "id": 130,
-          "item": "Lum Berry",
+          "ability": "Sharpness",
+          "gender": "FEMALE",
+          "id": 1229,
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
-            89,
-            401,
-            423,
-            200
+            845,
+            895,
+            533,
+            529
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -45286,21 +45286,21 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
+          "evhp": 4,
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 4,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
           "ability": "Analytic",
           "gender": "FEMALE",
           "id": 121,
-          "item": "Weakness Policy",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
-            58,
+            57,
             85,
             94,
             605
@@ -45312,37 +45312,11 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 4,
           "evatk": 0,
-          "evdef": 128,
-          "evspatk": 0,
-          "evspdef": 128,
-          "evspeed": 0
-        },
-        {
-          "ability": "Sheer Force",
-          "gender": "MALE",
-          "id": 160,
-          "item": "Life Orb",
-          "level": 100,
-          "moves": [
-            89,
-            8,
-            127,
-            242
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 4,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -45370,6 +45344,32 @@
           "evspatk": 0,
           "evspdef": 128,
           "evspeed": 0
+        },
+        {
+          "ability": "Moxie",
+          "gender": "MALE",
+          "id": 130,
+          "item": "Life Orb",
+          "level": 100,
+          "moves": [
+            89,
+            127,
+            423,
+            200
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
           "ability": "Hydration",
@@ -45404,7 +45404,7 @@
           "item": "Assault Vest",
           "level": 100,
           "moves": [
-            396,
+            57,
             548,
             403,
             237
@@ -45434,80 +45434,80 @@
     {
       "team": [
         {
-          "ability": "Limber",
-          "gender": "MALE",
-          "id": 748,
-          "item": "Rocky Helmet",
+          "ability": "Hydration",
+          "gender": "FEMALE",
+          "id": 490,
+          "item": "Wacan Berry",
           "level": 100,
           "moves": [
-            390,
-            398,
-            710,
-            371
+            412,
+            57,
+            294,
+            58
           ],
-          "nature": "Impish",
+          "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 4,
+          "evhp": 0,
           "evatk": 0,
-          "evdef": 252,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 4,
+          "evspeed": 252
         },
         {
-          "ability": "Schooling",
+          "ability": "Unseen Fist",
           "gender": "MALE",
-          "id": 1329,
+          "id": 1405,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            57,
-            58,
-            237,
-            251
+            818,
+            8,
+            398,
+            409
           ],
-          "nature": "Modest",
+          "nature": "Jolly",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
-          "ivspatk": 30,
-          "ivspdef": 30,
+          "ivspatk": 31,
+          "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 4,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 0
+          "evhp": 0,
+          "evatk": 56,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 200
         },
         {
-          "ability": "Merciless",
+          "ability": "Liquid Voice",
           "gender": "MALE",
-          "id": 73,
-          "item": "Wide Lens",
+          "id": 730,
+          "item": "Throat Spray",
           "level": 100,
           "moves": [
-            56,
+            586,
+            412,
             58,
-            202,
-            237
+            585
           ],
           "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
-          "ivspatk": 30,
-          "ivspdef": 30,
+          "ivspatk": 31,
+          "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 4,
+          "evhp": 0,
           "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
+          "evdef": 252,
+          "evspatk": 0,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -45538,18 +45538,18 @@
           "evspeed": 0
         },
         {
-          "ability": "Hydration",
-          "gender": "FEMALE",
-          "id": 490,
-          "item": "Wacan Berry",
+          "ability": "Torrent",
+          "gender": "MALE",
+          "id": 818,
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
-            412,
+            58,
             57,
-            294,
-            58
+            247,
+            399
           ],
-          "nature": "Timid",
+          "nature": "Modest",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -45560,7 +45560,7 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 4,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -45570,7 +45570,7 @@
           "item": "Assault Vest",
           "level": 100,
           "moves": [
-            396,
+            57,
             548,
             403,
             237
@@ -45692,7 +45692,7 @@
         {
           "ability": "Illusion",
           "gender": "MALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Wise Glasses",
           "level": 45,
           "moves": [
@@ -45768,7 +45768,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Pressure",
+          "ability": "Magic Bounce",
           "gender": "FEMALE",
           "id": 359,
           "item": "Black Glasses",
@@ -46036,7 +46036,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Clear Body",
+          "ability": "Liquid Ooze",
           "gender": "FEMALE",
           "id": 73,
           "item": null,
@@ -46850,7 +46850,7 @@
           "evspeed": 248
         },
         {
-          "ability": "Limber",
+          "ability": "Adaptability",
           "gender": "FEMALE",
           "id": 428,
           "item": null,
@@ -47054,7 +47054,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Iron Fist",
+          "ability": "Tough Claws",
           "gender": "FEMALE",
           "id": 376,
           "item": "Life Orb",
@@ -47258,9 +47258,9 @@
           "evspeed": 252
         },
         {
-          "ability": "Serene Grace",
+          "ability": "RKS System",
           "gender": "FEMALE",
-          "id": 1339,
+          "id": 1341,
           "item": "Choice Specs",
           "level": 60,
           "moves": [
@@ -47398,9 +47398,9 @@
           "evspeed": 252
         },
         {
-          "ability": "Serene Grace",
+          "ability": "RKS System",
           "gender": "FEMALE",
-          "id": 1340,
+          "id": 1342,
           "item": "Sitrus Berry",
           "level": 60,
           "moves": [
@@ -47426,7 +47426,7 @@
         {
           "ability": "Illusion",
           "gender": "MALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Choice Specs",
           "level": 59,
           "moves": [
@@ -47450,7 +47450,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Justified",
+          "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 475,
           "item": "Life Orb",
@@ -47566,7 +47566,7 @@
         {
           "ability": "Illusion",
           "gender": "MALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Choice Specs",
           "level": 59,
           "moves": [
@@ -47616,9 +47616,9 @@
           "evspeed": 252
         },
         {
-          "ability": "Serene Grace",
+          "ability": "RKS System",
           "gender": "FEMALE",
-          "id": 1338,
+          "id": 1340,
           "item": "Choice Band",
           "level": 60,
           "moves": [
@@ -47758,7 +47758,7 @@
         {
           "ability": "Illusion",
           "gender": "MALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Choice Specs",
           "level": 59,
           "moves": [
@@ -48002,7 +48002,7 @@
           "evspeed": 92
         },
         {
-          "ability": "Levitate",
+          "ability": "Overcoat",
           "gender": "FEMALE",
           "id": 330,
           "item": "Assault Vest",
@@ -48168,7 +48168,7 @@
           "evspeed": 92
         },
         {
-          "ability": "Levitate",
+          "ability": "Overcoat",
           "gender": "FEMALE",
           "id": 330,
           "item": "Assault Vest",
@@ -48230,7 +48230,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Rain Dish",
+          "ability": "Torrent",
           "gender": "MALE",
           "id": 9,
           "item": "Leftovers",
@@ -48364,7 +48364,7 @@
       "name": "Team Galactic Grunt 3",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 400
     },
     {
@@ -48396,7 +48396,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Rain Dish",
+          "ability": "Torrent",
           "gender": "MALE",
           "id": 9,
           "item": "Leftovers",
@@ -48530,7 +48530,7 @@
       "name": "Team Galactic Grunt 4",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 400
     },
     {
@@ -48640,7 +48640,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Intimidate",
+          "ability": "Fluffy",
           "gender": "MALE",
           "id": 508,
           "item": "Life Orb",
@@ -49114,7 +49114,7 @@
         {
           "ability": "Chlorophyll",
           "gender": "FEMALE",
-          "id": 1229,
+          "id": 1231,
           "item": "Big Root",
           "level": 57,
           "moves": [
@@ -49684,7 +49684,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Solid Rock",
+          "ability": "Sturdy",
           "gender": "FEMALE",
           "id": 565,
           "item": null,
@@ -49836,7 +49836,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Plus",
+          "ability": "Motor Drive",
           "gender": "FEMALE",
           "id": 600,
           "item": null,
@@ -49862,7 +49862,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sheer Force",
           "gender": "FEMALE",
           "id": 208,
           "item": null,
@@ -50040,7 +50040,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Intimidate",
+          "ability": "Fluffy",
           "gender": "MALE",
           "id": 508,
           "item": "Life Orb",
@@ -52016,7 +52016,7 @@
     {
       "team": [
         {
-          "ability": "No Guard",
+          "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 680,
           "item": null,
@@ -52068,7 +52068,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Iron Fist",
+          "ability": "Tough Claws",
           "gender": "MALE",
           "id": 375,
           "item": null,
@@ -52182,7 +52182,7 @@
           "evspeed": 0
         },
         {
-          "ability": "No Guard",
+          "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 679,
           "item": null,
@@ -52518,7 +52518,7 @@
     {
       "team": [
         {
-          "ability": "Defiant",
+          "ability": "Competitive",
           "gender": "FEMALE",
           "id": 395,
           "item": "Leftovers",
@@ -52876,7 +52876,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Iron Fist",
+          "ability": "Tough Claws",
           "gender": "FEMALE",
           "id": 376,
           "item": "Expert Belt",
@@ -52954,7 +52954,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Mirror Armor",
+          "ability": "Iron Barbs",
           "gender": "FEMALE",
           "id": 227,
           "item": "Leftovers",
@@ -53122,7 +53122,7 @@
         {
           "ability": "Shell Armor",
           "gender": "FEMALE",
-          "id": 1305,
+          "id": 1307,
           "item": "Choice Specs",
           "level": 52,
           "moves": [
@@ -53262,7 +53262,7 @@
         {
           "ability": "Shell Armor",
           "gender": "MALE",
-          "id": 1305,
+          "id": 1307,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
@@ -53289,12 +53289,12 @@
           "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 638,
-          "item": "Wide Lens",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             442,
             533,
-            444,
+            404,
             332
           ],
           "nature": "Jolly",
@@ -53319,7 +53319,7 @@
           "level": 100,
           "moves": [
             414,
-            126,
+            53,
             237,
             430
           ],
@@ -53377,12 +53377,12 @@
           "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 638,
-          "item": "Wide Lens",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             442,
             533,
-            444,
+            404,
             332
           ],
           "nature": "Jolly",
@@ -53428,7 +53428,7 @@
         {
           "ability": "Shell Armor",
           "gender": "MALE",
-          "id": 1305,
+          "id": 1307,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
@@ -53459,7 +53459,7 @@
           "level": 100,
           "moves": [
             414,
-            126,
+            53,
             237,
             430
           ],
@@ -53486,7 +53486,7 @@
           "moves": [
             280,
             869,
-            808,
+            442,
             332
           ],
           "nature": "Jolly",
@@ -53568,7 +53568,7 @@
         {
           "ability": "Shell Armor",
           "gender": "MALE",
-          "id": 1305,
+          "id": 1307,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
@@ -53621,12 +53621,12 @@
           "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 638,
-          "item": "Wide Lens",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             442,
             533,
-            444,
+            404,
             332
           ],
           "nature": "Jolly",
@@ -53651,7 +53651,7 @@
           "level": 100,
           "moves": [
             414,
-            126,
+            53,
             237,
             430
           ],
@@ -53687,7 +53687,7 @@
           "level": 100,
           "moves": [
             776,
-            446,
+            430,
             57,
             58
           ],
@@ -53760,7 +53760,7 @@
         {
           "ability": "Shell Armor",
           "gender": "MALE",
-          "id": 1305,
+          "id": 1307,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
@@ -53787,12 +53787,12 @@
           "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 638,
-          "item": "Wide Lens",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             442,
             533,
-            444,
+            404,
             332
           ],
           "nature": "Jolly",
@@ -53817,7 +53817,7 @@
           "level": 100,
           "moves": [
             414,
-            126,
+            53,
             237,
             430
           ],
@@ -53900,7 +53900,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Iron Fist",
+          "ability": "Tough Claws",
           "gender": "FEMALE",
           "id": 376,
           "item": "Liechi Berry",
@@ -54158,7 +54158,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Effect Spore",
+          "ability": "Technician",
           "gender": "FEMALE",
           "id": 286,
           "item": null,
@@ -54548,7 +54548,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sand Force",
           "gender": "FEMALE",
           "id": 208,
           "item": null,
@@ -55000,7 +55000,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Iron Fist",
+          "ability": "Tough Claws",
           "gender": "MALE",
           "id": 375,
           "item": null,
@@ -55288,7 +55288,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Levitate",
+          "ability": "Tinted Lens",
           "gender": "FEMALE",
           "id": 330,
           "item": "White Herb",
@@ -55758,7 +55758,7 @@
         {
           "ability": "Chlorophyll",
           "gender": "FEMALE",
-          "id": 1229,
+          "id": 1231,
           "item": "Big Root",
           "level": 52,
           "moves": [
@@ -55820,7 +55820,7 @@
     {
       "team": [
         {
-          "ability": "Overgrow",
+          "ability": "Chlorophyll",
           "gender": "FEMALE",
           "id": 3,
           "item": null,
@@ -56019,7 +56019,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Ice Body",
+          "ability": "Refrigerate",
           "gender": "FEMALE",
           "id": 362,
           "item": null,
@@ -56081,7 +56081,7 @@
     {
       "team": [
         {
-          "ability": "Snow Cloak",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 220,
           "item": null,
@@ -56107,7 +56107,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Snow Cloak",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 221,
           "item": null,
@@ -56133,7 +56133,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Snow Cloak",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 473,
           "item": null,
@@ -56691,7 +56691,7 @@
       "name": "Ace Trainer Aran",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Single Battle",
+      "trainerType": "Double Battle",
       "trainer_id": 735
     },
     {
@@ -56779,7 +56779,7 @@
       "name": "Ace Trainer Aran",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Double Battle",
+      "trainerType": "Single Battle",
       "trainer_id": 735
     },
     {
@@ -56811,7 +56811,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Leaf Guard",
+          "ability": "Serene Grace",
           "gender": "FEMALE",
           "id": 154,
           "item": null,
@@ -56899,7 +56899,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Leaf Guard",
+          "ability": "Serene Grace",
           "gender": "FEMALE",
           "id": 154,
           "item": null,
@@ -56989,7 +56989,7 @@
         {
           "ability": "Zen Mode",
           "gender": "FEMALE",
-          "id": 1234,
+          "id": 1236,
           "item": null,
           "level": 53,
           "moves": [
@@ -57515,7 +57515,7 @@
           "evspeed": 232
         },
         {
-          "ability": "Ice Body",
+          "ability": "Snow Warning",
           "gender": "FEMALE",
           "id": 87,
           "item": "Leftovers",
@@ -57683,7 +57683,7 @@
         {
           "ability": "Gorilla Tactics",
           "gender": "FEMALE",
-          "id": 1234,
+          "id": 1236,
           "item": "Choice Scarf",
           "level": 55,
           "moves": [
@@ -57875,7 +57875,7 @@
         {
           "ability": "Ice Body",
           "gender": "FEMALE",
-          "id": 1312,
+          "id": 1314,
           "item": "Chople Berry",
           "level": 55,
           "moves": [
@@ -58127,13 +58127,39 @@
     {
       "team": [
         {
-          "ability": "Zen Mode",
+          "ability": "Snow Warning",
           "gender": "FEMALE",
-          "id": 1234,
+          "id": 460,
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            8,
+            352,
+            412,
+            247,
+            59
+          ],
+          "nature": "Timid",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 4,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Zen Mode",
+          "gender": "FEMALE",
+          "id": 1236,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            556,
             428,
             89,
             7
@@ -58153,36 +58179,10 @@
           "evspeed": 252
         },
         {
-          "ability": "Thick Fat",
-          "gender": "FEMALE",
-          "id": 460,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            89,
-            402,
-            280,
-            8
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 4,
-          "evdef": 252,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
           "ability": "Snow Warning",
           "gender": "FEMALE",
           "id": 144,
-          "item": "Charti Berry",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             694,
@@ -58231,42 +58231,42 @@
           "evspeed": 0
         },
         {
-          "ability": "Vital Spirit",
+          "ability": "Screen Cleaner",
           "gender": "FEMALE",
-          "id": 1089,
-          "item": "Eviolite",
+          "id": 866,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            433,
             58,
-            115,
-            85
+            85,
+            94,
+            237
           ],
           "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
+          "ivspatk": 30,
+          "ivspdef": 30,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 0,
           "evatk": 0,
           "evdef": 200,
-          "evspatk": 56,
+          "evspatk": 108,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 200
         },
         {
-          "ability": "Chilling Neigh",
+          "ability": "As One",
           "gender": "FEMALE",
-          "id": 896,
-          "item": "Assault Vest",
+          "id": 898,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            776,
-            556,
+            824,
+            667,
             428,
-            667
+            776
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -58275,11 +58275,11 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 108,
-          "evatk": 200,
-          "evdef": 200,
+          "evhp": 252,
+          "evatk": 4,
+          "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         }
       ],
@@ -58293,68 +58293,16 @@
     {
       "team": [
         {
-          "ability": "Thick Fat",
-          "gender": "FEMALE",
-          "id": 460,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            89,
-            402,
-            280,
-            8
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 4,
-          "evdef": 252,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Slush Rush",
-          "gender": "FEMALE",
-          "id": 365,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            89,
-            127,
-            157,
-            59
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 0,
-          "evdef": 252,
-          "evspatk": 0,
-          "evspdef": 252,
-          "evspeed": 0
-        },
-        {
           "ability": "Snow Warning",
           "gender": "FEMALE",
-          "id": 144,
-          "item": "Charti Berry",
+          "id": 87,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            694,
-            246,
             59,
-            237
+            57,
+            237,
+            0
           ],
           "nature": "Timid",
           "ivatk": 31,
@@ -58365,36 +58313,10 @@
           "ivspeed": 31,
           "evhp": 4,
           "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
+          "evdef": 252,
+          "evspatk": 0,
           "evspdef": 0,
           "evspeed": 252
-        },
-        {
-          "ability": "Slush Rush",
-          "gender": "FEMALE",
-          "id": 471,
-          "item": "Assault Vest",
-          "level": 100,
-          "moves": [
-            58,
-            414,
-            605,
-            326
-          ],
-          "nature": "Modest",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 200,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 56,
-          "evspdef": 252,
-          "evspeed": 0
         },
         {
           "ability": "Thick Fat",
@@ -58423,46 +58345,10 @@
           "evspeed": 248
         },
         {
-          "ability": "Chilling Neigh",
-          "gender": "FEMALE",
-          "id": 896,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            776,
-            419,
-            428,
-            667
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 108,
-          "evatk": 200,
-          "evdef": 200,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Gym Leader Candice Rematch (Snowpoint - Gym) [Team 2]",
-      "name": "Gym Leader Candice Team 2",
-      "route": "Snowpoint - Gym",
-      "zoneId": 161,
-      "trainerType": "Single Battle",
-      "trainer_id": 916
-    },
-    {
-      "team": [
-        {
           "ability": "Snow Warning",
           "gender": "FEMALE",
           "id": 144,
-          "item": "Charti Berry",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             694,
@@ -58481,6 +58367,120 @@
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Thick Fat",
+          "gender": "FEMALE",
+          "id": 460,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            89,
+            420,
+            402,
+            157
+          ],
+          "nature": "Jolly",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Slush Rush",
+          "gender": "FEMALE",
+          "id": 471,
+          "item": "Assault Vest",
+          "level": 100,
+          "moves": [
+            58,
+            414,
+            605,
+            326
+          ],
+          "nature": "Modest",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 200,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 56,
+          "evspdef": 252,
+          "evspeed": 0
+        },
+        {
+          "ability": "As One",
+          "gender": "FEMALE",
+          "id": 1409,
+          "item": "Weakness Policy",
+          "level": 100,
+          "moves": [
+            824,
+            667,
+            428,
+            776
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 4,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Gym Leader Candice Rematch (Snowpoint - Gym) [Team 2]",
+      "name": "Gym Leader Candice Team 2",
+      "route": "Snowpoint - Gym",
+      "zoneId": 161,
+      "trainerType": "Single Battle",
+      "trainer_id": 916
+    },
+    {
+      "team": [
+        {
+          "ability": "Technician",
+          "gender": "FEMALE",
+          "id": 461,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            280,
+            372,
+            333,
+            252
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -58511,28 +58511,28 @@
           "evspeed": 0
         },
         {
-          "ability": "Thick Fat",
+          "ability": "Snow Warning",
           "gender": "FEMALE",
-          "id": 460,
+          "id": 144,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            89,
-            402,
-            280,
-            8
+            694,
+            246,
+            59,
+            237
           ],
-          "nature": "Jolly",
+          "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
+          "ivspatk": 30,
+          "ivspdef": 30,
           "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 4,
-          "evdef": 252,
-          "evspatk": 0,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -58589,16 +58589,16 @@
           "evspeed": 4
         },
         {
-          "ability": "Chilling Neigh",
+          "ability": "As One",
           "gender": "FEMALE",
-          "id": 896,
+          "id": 1409,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            776,
-            419,
+            824,
+            667,
             428,
-            667
+            776
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -58607,11 +58607,11 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 108,
-          "evatk": 200,
-          "evdef": 200,
+          "evhp": 252,
+          "evatk": 4,
+          "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         }
       ],
@@ -58631,9 +58631,61 @@
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            694,
+            430,
             59,
             304,
+            237
+          ],
+          "nature": "Timid",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 30,
+          "ivspdef": 30,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Slush Rush",
+          "gender": "FEMALE",
+          "id": 365,
+          "item": "Weakness Policy",
+          "level": 100,
+          "moves": [
+            89,
+            127,
+            157,
+            59
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 252,
+          "evspatk": 0,
+          "evspdef": 252,
+          "evspeed": 0
+        },
+        {
+          "ability": "Snow Warning",
+          "gender": "FEMALE",
+          "id": 144,
+          "item": "Weakness Policy",
+          "level": 100,
+          "moves": [
+            694,
+            246,
+            59,
             237
           ],
           "nature": "Timid",
@@ -58659,7 +58711,7 @@
           "moves": [
             754,
             556,
-            157,
+            444,
             707
           ],
           "nature": "Adamant",
@@ -58675,32 +58727,6 @@
           "evspatk": 0,
           "evspdef": 156,
           "evspeed": 100
-        },
-        {
-          "ability": "Snow Warning",
-          "gender": "FEMALE",
-          "id": 144,
-          "item": "Charti Berry",
-          "level": 100,
-          "moves": [
-            694,
-            246,
-            59,
-            237
-          ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 30,
-          "ivspdef": 30,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 252
         },
         {
           "ability": "Slush Rush",
@@ -58729,42 +58755,16 @@
           "evspeed": 0
         },
         {
-          "ability": "Thick Fat",
+          "ability": "As One",
           "gender": "FEMALE",
-          "id": 460,
+          "id": 1409,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            89,
-            402,
-            280,
-            8
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 4,
-          "evdef": 252,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Chilling Neigh",
-          "gender": "FEMALE",
-          "id": 896,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            776,
-            419,
+            824,
+            667,
             428,
-            667
+            776
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -58773,11 +58773,11 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 108,
-          "evatk": 200,
-          "evdef": 200,
+          "evhp": 252,
+          "evatk": 4,
+          "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
+          "evspdef": 252,
           "evspeed": 0
         }
       ],
@@ -58943,7 +58943,7 @@
     {
       "team": [
         {
-          "ability": "Suction Cups",
+          "ability": "Quick Draw",
           "gender": "FEMALE",
           "id": 224,
           "item": null,
@@ -59252,7 +59252,7 @@
             97,
             344,
             37,
-            833
+            394
           ],
           "nature": "Hardy",
           "ivatk": 25,
@@ -59295,7 +59295,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Illuminate",
+          "ability": "No Guard",
           "gender": "FEMALE",
           "id": 505,
           "item": null,
@@ -60105,7 +60105,7 @@
     {
       "team": [
         {
-          "ability": "Lightning Rod",
+          "ability": "Prankster",
           "gender": "MALE",
           "id": 311,
           "item": null,
@@ -60131,7 +60131,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Volt Absorb",
+          "ability": "Friend Guard",
           "gender": "FEMALE",
           "id": 312,
           "item": null,
@@ -60221,7 +60221,7 @@
         {
           "ability": "Punk Rock",
           "gender": "FEMALE",
-          "id": 1378,
+          "id": 1380,
           "item": null,
           "level": 60,
           "moves": [
@@ -61447,30 +61447,30 @@
     {
       "team": [
         {
-          "ability": "Guts",
+          "ability": "Volt Absorb",
           "gender": "MALE",
-          "id": 405,
-          "item": "Flame Orb",
+          "id": 1251,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            263,
-            528,
-            242,
-            423
+            447,
+            188,
+            85,
+            237
           ],
-          "nature": "Adamant",
+          "nature": "Timid",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
+          "ivspatk": 30,
+          "ivspdef": 30,
+          "ivspeed": 30,
+          "evhp": 128,
           "evatk": 0,
-          "evdef": 252,
+          "evdef": 200,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
+          "evspdef": 52,
+          "evspeed": 128
         },
         {
           "ability": "Iron Fist",
@@ -61499,58 +61499,6 @@
           "evspeed": 252
         },
         {
-          "ability": "Volt Absorb",
-          "gender": "MALE",
-          "id": 1249,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            447,
-            188,
-            85,
-            237
-          ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 30,
-          "ivhp": 31,
-          "ivspatk": 30,
-          "ivspdef": 30,
-          "ivspeed": 30,
-          "evhp": 128,
-          "evatk": 0,
-          "evdef": 200,
-          "evspatk": 0,
-          "evspdef": 52,
-          "evspeed": 128
-        },
-        {
-          "ability": "Galvanize",
-          "gender": "MALE",
-          "id": 26,
-          "item": "Focus Sash",
-          "level": 100,
-          "moves": [
-            252,
-            245,
-            8,
-            219
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
           "ability": "Beast Boost",
           "gender": "FEMALE",
           "id": 796,
@@ -61569,9 +61517,61 @@
           "ivspatk": 30,
           "ivspdef": 30,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 0,
           "evatk": 0,
           "evdef": 4,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Guts",
+          "gender": "MALE",
+          "id": 405,
+          "item": "Flame Orb",
+          "level": 100,
+          "moves": [
+            263,
+            528,
+            242,
+            423
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 252,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Galvanize",
+          "gender": "MALE",
+          "id": 26,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            252,
+            245,
+            8,
+            280
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 252
@@ -61586,7 +61586,7 @@
             721,
             409,
             583,
-            512
+            7
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -61620,8 +61620,8 @@
           "level": 100,
           "moves": [
             430,
-            115,
-            85,
+            161,
+            435,
             237
           ],
           "nature": "Timid",
@@ -61667,7 +61667,7 @@
         {
           "ability": "Volt Absorb",
           "gender": "MALE",
-          "id": 1249,
+          "id": 1251,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
@@ -61735,10 +61735,10 @@
           "ivspatk": 30,
           "ivspdef": 30,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 0,
           "evatk": 0,
           "evdef": 4,
-          "evspatk": 0,
+          "evspatk": 252,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -61752,7 +61752,7 @@
             721,
             409,
             583,
-            512
+            7
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -61782,7 +61782,7 @@
           "ability": "Electric Surge",
           "gender": "MALE",
           "id": 417,
-          "item": "Air Balloon",
+          "item": "Terrain Extender",
           "level": 100,
           "moves": [
             85,
@@ -61805,6 +61805,58 @@
           "evspeed": 252
         },
         {
+          "ability": "Volt Absorb",
+          "gender": "FEMALE",
+          "id": 807,
+          "item": "Air Balloon",
+          "level": 100,
+          "moves": [
+            721,
+            409,
+            583,
+            7
+          ],
+          "nature": "Adamant",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 252,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 4
+        },
+        {
+          "ability": "Beast Boost",
+          "gender": "FEMALE",
+          "id": 796,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            605,
+            412,
+            85,
+            237
+          ],
+          "nature": "Timid",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 30,
+          "ivspdef": 30,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 4,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
           "ability": "Transistor",
           "gender": "FEMALE",
           "id": 894,
@@ -61813,7 +61865,7 @@
           "moves": [
             246,
             819,
-            115,
+            0,
             0
           ],
           "nature": "Modest",
@@ -61833,7 +61885,7 @@
         {
           "ability": "Volt Absorb",
           "gender": "MALE",
-          "id": 1249,
+          "id": 1251,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
@@ -61881,58 +61933,6 @@
           "evspatk": 0,
           "evspdef": 4,
           "evspeed": 252
-        },
-        {
-          "ability": "Beast Boost",
-          "gender": "FEMALE",
-          "id": 796,
-          "item": "Air Balloon",
-          "level": 100,
-          "moves": [
-            605,
-            412,
-            85,
-            237
-          ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 30,
-          "ivspdef": 30,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 4,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Volt Absorb",
-          "gender": "FEMALE",
-          "id": 807,
-          "item": "Air Balloon",
-          "level": 100,
-          "moves": [
-            721,
-            409,
-            583,
-            512
-          ],
-          "nature": "Adamant",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 4
         }
       ],
       "team_name": "Gym Leader Volkner Rematch (Sunyshore - Gym Room 3) [Team 3]",
@@ -61971,32 +61971,6 @@
           "evspeed": 252
         },
         {
-          "ability": "Punk Rock",
-          "gender": "MALE",
-          "id": 849,
-          "item": "Throat Spray",
-          "level": 100,
-          "moves": [
-            586,
-            786,
-            188,
-            555
-          ],
-          "nature": "Hasty",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
           "ability": "Iron Fist",
           "gender": "MALE",
           "id": 466,
@@ -62025,7 +61999,7 @@
         {
           "ability": "Volt Absorb",
           "gender": "MALE",
-          "id": 1249,
+          "id": 1251,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
@@ -62067,10 +62041,10 @@
           "ivspatk": 30,
           "ivspdef": 30,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 0,
           "evatk": 0,
           "evdef": 4,
-          "evspatk": 0,
+          "evspatk": 252,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -62084,7 +62058,7 @@
             721,
             409,
             583,
-            512
+            7
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -62099,6 +62073,32 @@
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 4
+        },
+        {
+          "ability": "Punk Rock",
+          "gender": "MALE",
+          "id": 849,
+          "item": "Throat Spray",
+          "level": 100,
+          "moves": [
+            586,
+            786,
+            188,
+            555
+          ],
+          "nature": "Timid",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
         }
       ],
       "team_name": "Gym Leader Volkner Rematch (Sunyshore - Gym Room 3) [Team 4]",
@@ -62165,13 +62165,13 @@
           "evspeed": 0
         },
         {
-          "ability": "Rattled",
+          "ability": "Swift Swim",
           "gender": "FEMALE",
           "id": 902,
           "item": null,
           "level": 59,
           "moves": [
-            130,
+            834,
             37,
             38,
             457
@@ -62201,7 +62201,7 @@
     {
       "team": [
         {
-          "ability": "Clear Body",
+          "ability": "Liquid Ooze",
           "gender": "FEMALE",
           "id": 73,
           "item": null,
@@ -62377,7 +62377,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Suction Cups",
+          "ability": "Sniper",
           "gender": "FEMALE",
           "id": 224,
           "item": null,
@@ -62941,7 +62941,7 @@
     {
       "team": [
         {
-          "ability": "Clear Body",
+          "ability": "Liquid Ooze",
           "gender": "FEMALE",
           "id": 72,
           "item": null,
@@ -62967,7 +62967,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Own Tempo",
+          "ability": "Cloud Nine",
           "gender": "FEMALE",
           "id": 108,
           "item": null,
@@ -63055,7 +63055,7 @@
     {
       "team": [
         {
-          "ability": "Damp",
+          "ability": "Hydration",
           "gender": "MALE",
           "id": 55,
           "item": null,
@@ -63107,7 +63107,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Illuminate",
+          "ability": "Natural Cure",
           "gender": "FEMALE",
           "id": 121,
           "item": null,
@@ -63679,7 +63679,7 @@
     {
       "team": [
         {
-          "ability": "Keen Eye",
+          "ability": "No Guard",
           "gender": "FEMALE",
           "id": 18,
           "item": null,
@@ -63847,7 +63847,7 @@
         {
           "ability": "Keen Eye",
           "gender": "FEMALE",
-          "id": 1247,
+          "id": 1249,
           "item": null,
           "level": 63,
           "moves": [
@@ -64355,7 +64355,7 @@
     {
       "team": [
         {
-          "ability": "Own Tempo",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 463,
           "item": null,
@@ -64673,7 +64673,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Sheer Force",
+          "ability": "Defiant",
           "gender": "FEMALE",
           "id": 628,
           "item": null,
@@ -64787,7 +64787,7 @@
     {
       "team": [
         {
-          "ability": "Overgrow",
+          "ability": "Lightning Rod",
           "gender": "FEMALE",
           "id": 254,
           "item": null,
@@ -64867,7 +64867,7 @@
         {
           "ability": "Gooey",
           "gender": "FEMALE",
-          "id": 1305,
+          "id": 1307,
           "item": null,
           "level": 63,
           "moves": [
@@ -65015,7 +65015,7 @@
     {
       "team": [
         {
-          "ability": "Sturdy",
+          "ability": "Sand Stream",
           "gender": "FEMALE",
           "id": 526,
           "item": null,
@@ -65229,7 +65229,7 @@
     {
       "team": [
         {
-          "ability": "Levitate",
+          "ability": "Overcoat",
           "gender": "FEMALE",
           "id": 330,
           "item": null,
@@ -65405,7 +65405,7 @@
     {
       "team": [
         {
-          "ability": "Telepathy",
+          "ability": "Filter",
           "gender": "FEMALE",
           "id": 826,
           "item": null,
@@ -65497,7 +65497,7 @@
           "gender": "FEMALE",
           "id": 351,
           "item": null,
-          "level": 100,
+          "level": 65,
           "moves": [
             311,
             503,
@@ -65523,7 +65523,7 @@
           "gender": "FEMALE",
           "id": 713,
           "item": null,
-          "level": 100,
+          "level": 65,
           "moves": [
             776,
             174,
@@ -65549,7 +65549,7 @@
           "gender": "FEMALE",
           "id": 1053,
           "item": null,
-          "level": 100,
+          "level": 65,
           "moves": [
             419,
             280,
@@ -66135,7 +66135,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Damp",
+          "ability": "Iron Fist",
           "gender": "FEMALE",
           "id": 62,
           "item": null,
@@ -66197,7 +66197,7 @@
     {
       "team": [
         {
-          "ability": "Overgrow",
+          "ability": "Grassy Surge",
           "gender": "FEMALE",
           "id": 3,
           "item": null,
@@ -66223,7 +66223,7 @@
           "evspeed": 6
         },
         {
-          "ability": "Magma Armor",
+          "ability": "Drought",
           "gender": "FEMALE",
           "id": 323,
           "item": null,
@@ -66251,7 +66251,7 @@
         {
           "ability": "Torrent",
           "gender": "FEMALE",
-          "id": 1227,
+          "id": 1229,
           "item": null,
           "level": 64,
           "moves": [
@@ -66401,7 +66401,7 @@
         {
           "ability": "Adaptability",
           "gender": "FEMALE",
-          "id": 1410,
+          "id": 1412,
           "item": "Expert Belt",
           "level": 65,
           "moves": [
@@ -66593,7 +66593,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Intimidate",
+          "ability": "Fluffy",
           "gender": "MALE",
           "id": 508,
           "item": "Life Orb",
@@ -68559,7 +68559,7 @@
           "evspeed": 56
         },
         {
-          "ability": "Swarm",
+          "ability": "Hustle",
           "gender": "MALE",
           "id": 632,
           "item": "Life Orb",
@@ -69204,7 +69204,7 @@
           "level": 72,
           "moves": [
             89,
-            446,
+            444,
             422,
             423
           ],
@@ -69235,12 +69235,12 @@
             237
           ],
           "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
+          "ivatk": 30,
+          "ivdef": 30,
+          "ivhp": 30,
           "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
+          "ivspdef": 30,
+          "ivspeed": 30,
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
@@ -69324,7 +69324,7 @@
           "evdef": 0,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 252
+          "evspeed": 4
         },
         {
           "ability": "Sand Rush",
@@ -69562,9 +69562,9 @@
           "level": 72,
           "moves": [
             89,
-            359,
+            332,
             409,
-            38
+            34
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -70525,7 +70525,7 @@
     {
       "team": [
         {
-          "ability": "Inner Focus",
+          "ability": "Psychic Surge",
           "gender": "FEMALE",
           "id": 876,
           "item": "Terrain Extender",
@@ -71023,16 +71023,16 @@
     {
       "team": [
         {
-          "ability": "Psychic Surge",
+          "ability": "No Guard",
           "gender": "MALE",
           "id": 97,
-          "item": "White Herb",
+          "item": "Focus Sash",
           "level": 74,
           "moves": [
-            354,
-            605,
-            247,
-            115
+            95,
+            138,
+            192,
+            411
           ],
           "nature": "Timid",
           "ivatk": 31,
@@ -71217,7 +71217,7 @@
         {
           "ability": "Sharpness",
           "gender": "FEMALE",
-          "id": 1227,
+          "id": 1229,
           "item": "Choice Scarf",
           "level": 77,
           "moves": [
@@ -71295,7 +71295,7 @@
         {
           "ability": "Tinted Lens",
           "gender": "FEMALE",
-          "id": 1247,
+          "id": 1249,
           "item": "Wise Glasses",
           "level": 77,
           "moves": [
@@ -71409,7 +71409,7 @@
         {
           "ability": "Scrappy",
           "gender": "FEMALE",
-          "id": 1322,
+          "id": 1324,
           "item": "Heavy-Duty Boots",
           "level": 77,
           "moves": [
@@ -71627,7 +71627,7 @@
         {
           "ability": "Hustle",
           "gender": "FEMALE",
-          "id": 1229,
+          "id": 1231,
           "item": "Wide Lens",
           "level": 77,
           "moves": [
@@ -71715,7 +71715,7 @@
         {
           "ability": "Illusion",
           "gender": "FEMALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Choice Specs",
           "level": 77,
           "moves": [
@@ -71856,7 +71856,7 @@
           "ability": "Sheer Force",
           "gender": "MALE",
           "id": 617,
-          "item": "Life Orb",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             240,
@@ -71864,19 +71864,19 @@
             188,
             412
           ],
-          "nature": "Calm",
+          "nature": "Modest",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 200,
+          "evspatk": 252,
           "evspdef": 0,
-          "evspeed": 56
+          "evspeed": 252
         },
         {
           "ability": "Swarm",
@@ -71885,8 +71885,8 @@
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            418,
-            14,
+            404,
+            400,
             280,
             442
           ],
@@ -71908,13 +71908,13 @@
           "ability": "Battle Armor",
           "gender": "MALE",
           "id": 452,
-          "item": "Scope Lens",
+          "item": "Assault Vest",
           "level": 100,
           "moves": [
             400,
-            440,
+            398,
             423,
-            14
+            89
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -72022,13 +72022,13 @@
           "ability": "Battle Armor",
           "gender": "MALE",
           "id": 452,
-          "item": "Scope Lens",
+          "item": "Assault Vest",
           "level": 100,
           "moves": [
             400,
-            440,
+            398,
             423,
-            14
+            89
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -72074,7 +72074,7 @@
           "ability": "Compound Eyes",
           "gender": "MALE",
           "id": 596,
-          "item": "Throat Spray",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             87,
@@ -72185,24 +72185,24 @@
     {
       "team": [
         {
-          "ability": "Swarm",
+          "ability": "Filter",
           "gender": "MALE",
           "id": 826,
-          "item": "Light Clay",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             433,
-            113,
+            237,
             405,
             247
           ],
           "nature": "Calm",
-          "ivatk": 31,
+          "ivatk": 30,
           "ivdef": 31,
-          "ivhp": 31,
+          "ivhp": 30,
           "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
+          "ivspdef": 30,
+          "ivspeed": 30,
           "evhp": 252,
           "evatk": 0,
           "evdef": 128,
@@ -72266,13 +72266,13 @@
           "ability": "Battle Armor",
           "gender": "MALE",
           "id": 452,
-          "item": "Scope Lens",
+          "item": "Assault Vest",
           "level": 100,
           "moves": [
             400,
-            440,
+            398,
             423,
-            14
+            89
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -72380,7 +72380,7 @@
           "ability": "Swarm",
           "gender": "MALE",
           "id": 632,
-          "item": "Assault Vest",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             442,
@@ -72406,13 +72406,13 @@
           "ability": "Battle Armor",
           "gender": "MALE",
           "id": 452,
-          "item": "Scope Lens",
+          "item": "Assault Vest",
           "level": 100,
           "moves": [
             400,
-            440,
+            398,
             423,
-            14
+            89
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -72524,7 +72524,7 @@
           "level": 100,
           "moves": [
             89,
-            446,
+            444,
             422,
             423
           ],
@@ -72536,7 +72536,7 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 252,
-          "evatk": 0,
+          "evatk": 4,
           "evdef": 0,
           "evspatk": 0,
           "evspdef": 252,
@@ -72546,7 +72546,7 @@
           "ability": "Water Absorb",
           "gender": "FEMALE",
           "id": 537,
-          "item": "Throat Spray",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             304,
@@ -72555,13 +72555,13 @@
             237
           ],
           "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
+          "ivatk": 30,
+          "ivdef": 30,
+          "ivhp": 30,
           "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
+          "ivspdef": 30,
+          "ivspeed": 30,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
@@ -72572,11 +72572,11 @@
           "ability": "Sand Stream",
           "gender": "MALE",
           "id": 248,
-          "item": "Assault Vest",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             89,
-            9,
+            280,
             242,
             8
           ],
@@ -72686,11 +72686,11 @@
           "ability": "Sand Stream",
           "gender": "MALE",
           "id": 248,
-          "item": "Assault Vest",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             89,
-            9,
+            280,
             242,
             8
           ],
@@ -72761,30 +72761,30 @@
           "evspeed": 252
         },
         {
-          "ability": "Moxie",
+          "ability": "Aura Break",
           "gender": "FEMALE",
-          "id": 553,
-          "item": "Focus Sash",
+          "id": 1318,
+          "item": "Assault Vest",
           "level": 100,
           "moves": [
-            89,
-            280,
-            242,
-            200
+            687,
+            414,
+            482,
+            351
           ],
-          "nature": "Adamant",
+          "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
+          "evhp": 4,
+          "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 8,
-          "evspeed": 248
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
           "ability": "Thick Fat",
@@ -72882,9 +72882,9 @@
           "level": 100,
           "moves": [
             89,
-            359,
+            332,
             409,
-            38
+            34
           ],
           "nature": "Adamant",
           "ivatk": 31,
@@ -72904,11 +72904,11 @@
           "ability": "Sand Stream",
           "gender": "MALE",
           "id": 248,
-          "item": "Assault Vest",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             89,
-            9,
+            280,
             242,
             8
           ],
@@ -73070,11 +73070,11 @@
           "ability": "Sand Stream",
           "gender": "MALE",
           "id": 248,
-          "item": "Assault Vest",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
             89,
-            9,
+            280,
             242,
             8
           ],
@@ -73145,29 +73145,29 @@
           "evspeed": 252
         },
         {
-          "ability": "Sand Veil",
+          "ability": "Aura Break",
           "gender": "FEMALE",
-          "id": 472,
-          "item": "Flying Gem",
+          "id": 1318,
+          "item": "Assault Vest",
           "level": 100,
           "moves": [
-            512,
-            89,
-            422,
-            327
+            687,
+            414,
+            482,
+            351
           ],
-          "nature": "Adamant",
+          "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 252,
+          "evhp": 4,
+          "evatk": 0,
           "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 4,
+          "evspatk": 252,
+          "evspdef": 0,
           "evspeed": 252
         }
       ],
@@ -73189,7 +73189,7 @@
           "moves": [
             414,
             592,
-            528,
+            790,
             53
           ],
           "nature": "Timid",
@@ -73262,7 +73262,7 @@
           "ability": "Iron Fist",
           "gender": "MALE",
           "id": 392,
-          "item": "Life Orb",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             89,
@@ -73288,7 +73288,7 @@
           "ability": "Victory Star",
           "gender": "FEMALE",
           "id": 494,
-          "item": "Weakness Policy",
+          "item": "Wide Lens",
           "level": 100,
           "moves": [
             551,
@@ -73454,7 +73454,7 @@
           "ability": "Iron Fist",
           "gender": "MALE",
           "id": 392,
-          "item": "Life Orb",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             89,
@@ -73485,7 +73485,7 @@
           "moves": [
             414,
             592,
-            528,
+            790,
             53
           ],
           "nature": "Timid",
@@ -73513,6 +73513,32 @@
     {
       "team": [
         {
+          "ability": "Water Absorb",
+          "gender": "FEMALE",
+          "id": 721,
+          "item": "Lum Berry",
+          "level": 100,
+          "moves": [
+            414,
+            592,
+            790,
+            53
+          ],
+          "nature": "Timid",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
           "ability": "Intimidate",
           "gender": "MALE",
           "id": 727,
@@ -73535,32 +73561,6 @@
           "evatk": 4,
           "evdef": 0,
           "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
-          "ability": "Water Absorb",
-          "gender": "FEMALE",
-          "id": 721,
-          "item": "Lum Berry",
-          "level": 100,
-          "moves": [
-            414,
-            592,
-            528,
-            53
-          ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -73646,7 +73646,7 @@
           "ability": "Iron Fist",
           "gender": "MALE",
           "id": 392,
-          "item": "Life Orb",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             89,
@@ -73679,32 +73679,6 @@
     {
       "team": [
         {
-          "ability": "Water Absorb",
-          "gender": "FEMALE",
-          "id": 721,
-          "item": "Lum Berry",
-          "level": 100,
-          "moves": [
-            414,
-            592,
-            528,
-            53
-          ],
-          "nature": "Timid",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 4,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 252
-        },
-        {
           "ability": "Drought",
           "gender": "MALE",
           "id": 324,
@@ -73712,9 +73686,9 @@
           "level": 100,
           "moves": [
             436,
-            446,
+            153,
             76,
-            261
+            414
           ],
           "nature": "Bold",
           "ivatk": 31,
@@ -73734,25 +73708,25 @@
           "ability": "Levitate",
           "gender": "MALE",
           "id": 609,
-          "item": "Passho Berry",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             412,
             53,
             247,
-            433
+            101
           ],
-          "nature": "Calm",
+          "nature": "Modest",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 4,
+          "evspatk": 252,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -73812,7 +73786,7 @@
           "ability": "Iron Fist",
           "gender": "MALE",
           "id": 392,
-          "item": "Life Orb",
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
             89,
@@ -73833,6 +73807,32 @@
           "evspatk": 0,
           "evspdef": 0,
           "evspeed": 200
+        },
+        {
+          "ability": "Water Absorb",
+          "gender": "FEMALE",
+          "id": 721,
+          "item": "Assault Vest",
+          "level": 100,
+          "moves": [
+            414,
+            592,
+            790,
+            53
+          ],
+          "nature": "Timid",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
         }
       ],
       "team_name": "Elite Four Flint Rematch (Pokemon League) [Team 4]",
@@ -73844,32 +73844,6 @@
     },
     {
       "team": [
-        {
-          "ability": "Competitive",
-          "gender": "FEMALE",
-          "id": 1103,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            115,
-            403,
-            821,
-            247
-          ],
-          "nature": "Modest",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 200,
-          "evspatk": 0,
-          "evspdef": 56,
-          "evspeed": 252
-        },
         {
           "ability": "Psychic Surge",
           "gender": "FEMALE",
@@ -73949,16 +73923,16 @@
           "evspeed": 252
         },
         {
-          "ability": "Analytic",
+          "ability": "Competitive",
           "gender": "FEMALE",
-          "id": 121,
-          "item": "Weakness Policy",
+          "id": 482,
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
-            58,
+            53,
+            605,
             85,
-            94,
-            605
+            797
           ],
           "nature": "Modest",
           "ivatk": 31,
@@ -73967,12 +73941,38 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 4,
           "evatk": 0,
-          "evdef": 128,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Competitive",
+          "gender": "FEMALE",
+          "id": 1103,
+          "item": "Weakness Policy",
+          "level": 100,
+          "moves": [
+            246,
+            403,
+            821,
+            247
+          ],
+          "nature": "Modest",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 200,
           "evspatk": 0,
-          "evspdef": 128,
-          "evspeed": 0
+          "evspdef": 56,
+          "evspeed": 252
         },
         {
           "ability": "Levitate",
@@ -74011,16 +74011,42 @@
     {
       "team": [
         {
-          "ability": "Tough Claws",
+          "ability": "Analytic",
+          "gender": "FEMALE",
+          "id": 121,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            57,
+            85,
+            94,
+            605
+          ],
+          "nature": "Modest",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
+        },
+        {
+          "ability": "Clear Body",
           "gender": "FEMALE",
           "id": 376,
-          "item": "Wide Lens",
+          "item": "Assault Vest",
           "level": 100,
           "moves": [
             89,
             428,
             8,
-            309
+            442
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -74029,7 +74055,7 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
+          "evhp": 4,
           "evatk": 252,
           "evdef": 0,
           "evspatk": 0,
@@ -74037,30 +74063,30 @@
           "evspeed": 252
         },
         {
-          "ability": "Pure Power",
-          "gender": "MALE",
-          "id": 308,
-          "item": "Wide Lens",
+          "ability": "Levitate",
+          "gender": "FEMALE",
+          "id": 380,
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            136,
-            428,
-            8,
-            252
+            396,
+            57,
+            58,
+            247
           ],
-          "nature": "Jolly",
+          "nature": "Bold",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 8,
-          "evatk": 252,
-          "evdef": 0,
+          "evhp": 4,
+          "evatk": 0,
+          "evdef": 252,
           "evspatk": 0,
           "evspdef": 0,
-          "evspeed": 248
+          "evspeed": 252
         },
         {
           "ability": "Sap Sipper",
@@ -74115,32 +74141,6 @@
           "evspeed": 252
         },
         {
-          "ability": "Analytic",
-          "gender": "FEMALE",
-          "id": 121,
-          "item": "Weakness Policy",
-          "level": 100,
-          "moves": [
-            58,
-            85,
-            94,
-            605
-          ],
-          "nature": "Modest",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 128,
-          "evspatk": 0,
-          "evspdef": 128,
-          "evspeed": 0
-        },
-        {
           "ability": "Levitate",
           "gender": "FEMALE",
           "id": 381,
@@ -74180,15 +74180,15 @@
           "ability": "Psychic Surge",
           "gender": "MALE",
           "id": 97,
-          "item": "White Herb",
+          "item": "Terrain Extender",
           "level": 100,
           "moves": [
-            354,
-            605,
-            247,
-            115
+            409,
+            7,
+            428,
+            8
           ],
-          "nature": "Timid",
+          "nature": "Jolly",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -74196,9 +74196,9 @@
           "ivspdef": 31,
           "ivspeed": 31,
           "evhp": 4,
-          "evatk": 0,
+          "evatk": 252,
           "evdef": 0,
-          "evspatk": 252,
+          "evspatk": 0,
           "evspdef": 0,
           "evspeed": 252
         },
@@ -74343,7 +74343,7 @@
     {
       "team": [
         {
-          "ability": "Inner Focus",
+          "ability": "Psychic Surge",
           "gender": "FEMALE",
           "id": 876,
           "item": "Terrain Extender",
@@ -74369,18 +74369,18 @@
           "evspeed": 200
         },
         {
-          "ability": "Inner Focus",
-          "gender": "MALE",
-          "id": 765,
+          "ability": "Friend Guard",
+          "gender": "FEMALE",
+          "id": 481,
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            412,
-            304,
-            85,
-            94
+            797,
+            577,
+            58,
+            247
           ],
-          "nature": "Modest",
+          "nature": "Timid",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -74389,10 +74389,10 @@
           "ivspeed": 31,
           "evhp": 4,
           "evatk": 0,
-          "evdef": 252,
+          "evdef": 0,
           "evspatk": 252,
           "evspdef": 0,
-          "evspeed": 0
+          "evspeed": 252
         },
         {
           "ability": "Magician",
@@ -74509,6 +74509,58 @@
     {
       "team": [
         {
+          "ability": "Electric Surge",
+          "gender": "FEMALE",
+          "id": 785,
+          "item": "Air Balloon",
+          "level": 100,
+          "moves": [
+            237,
+            85,
+            605,
+            521
+          ],
+          "nature": "Modest",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 30,
+          "evhp": 100,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 156
+        },
+        {
+          "ability": "Surge Surfer",
+          "gender": "FEMALE",
+          "id": 604,
+          "item": "Focus Sash",
+          "level": 100,
+          "moves": [
+            85,
+            202,
+            53,
+            406
+          ],
+          "nature": "Modest",
+          "ivatk": 31,
+          "ivdef": 31,
+          "ivhp": 31,
+          "ivspatk": 31,
+          "ivspdef": 31,
+          "ivspeed": 31,
+          "evhp": 252,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 4
+        },
+        {
           "ability": "Soul-Heart",
           "gender": "FEMALE",
           "id": 801,
@@ -74535,67 +74587,15 @@
           "evspeed": 252
         },
         {
-          "ability": "Marvel Scale",
+          "ability": "Beast Boost",
           "gender": "FEMALE",
-          "id": 350,
-          "item": "Flame Orb",
+          "id": 804,
+          "item": "Focus Sash",
           "level": 100,
           "moves": [
-            503,
-            58,
-            585,
-            105
-          ],
-          "nature": "Bold",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
-        },
-        {
-          "ability": "Electric Surge",
-          "gender": "FEMALE",
-          "id": 785,
-          "item": "Air Balloon",
-          "level": 100,
-          "moves": [
-            528,
-            512,
-            442,
-            115
-          ],
-          "nature": "Jolly",
-          "ivatk": 31,
-          "ivdef": 31,
-          "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 252,
-          "evatk": 252,
-          "evdef": 0,
-          "evspatk": 252,
-          "evspdef": 4,
-          "evspeed": 0
-        },
-        {
-          "ability": "Surge Surfer",
-          "gender": "FEMALE",
-          "id": 604,
-          "item": "Assault Vest",
-          "level": 100,
-          "moves": [
-            85,
-            202,
             53,
+            188,
+            85,
             406
           ],
           "nature": "Modest",
@@ -74605,12 +74605,12 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 0,
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
-          "evspdef": 0,
-          "evspeed": 4
+          "evspdef": 56,
+          "evspeed": 200
         },
         {
           "ability": "Rough Skin",
@@ -74619,10 +74619,10 @@
           "item": "Focus Sash",
           "level": 100,
           "moves": [
+            89,
             337,
-            442,
-            245,
-            89
+            431,
+            245
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -74642,13 +74642,13 @@
           "ability": "Delta Stream",
           "gender": "FEMALE",
           "id": 384,
-          "item": "White Herb",
+          "item": "Life Orb",
           "level": 100,
           "moves": [
             89,
             245,
             620,
-            434
+            337
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -74681,24 +74681,24 @@
           "item": "Eviolite",
           "level": 100,
           "moves": [
-            435,
+            247,
             58,
-            94,
+            237,
             161
           ],
           "nature": "Timid",
-          "ivatk": 31,
+          "ivatk": 30,
           "ivdef": 31,
           "ivhp": 31,
-          "ivspatk": 31,
+          "ivspatk": 30,
           "ivspdef": 31,
-          "ivspeed": 31,
-          "evhp": 0,
+          "ivspeed": 30,
+          "evhp": 200,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 252,
+          "evspatk": 200,
           "evspdef": 0,
-          "evspeed": 252
+          "evspeed": 108
         },
         {
           "ability": "Marvel Scale",
@@ -74707,24 +74707,24 @@
           "item": "Flame Orb",
           "level": 100,
           "moves": [
-            503,
             58,
             585,
-            105
+            503,
+            577
           ],
-          "nature": "Bold",
+          "nature": "Modest",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
           "evspdef": 0,
-          "evspeed": 4
+          "evspeed": 252
         },
         {
           "ability": "Psychic Surge",
@@ -74736,15 +74736,15 @@
             585,
             473,
             85,
-            115
+            237
           ],
           "nature": "Timid",
-          "ivatk": 31,
+          "ivatk": 30,
           "ivdef": 31,
           "ivhp": 31,
-          "ivspatk": 31,
+          "ivspatk": 30,
           "ivspdef": 31,
-          "ivspeed": 31,
+          "ivspeed": 30,
           "evhp": 0,
           "evatk": 0,
           "evdef": 56,
@@ -74785,10 +74785,10 @@
           "item": "Focus Sash",
           "level": 100,
           "moves": [
+            89,
             337,
-            442,
-            245,
-            89
+            431,
+            245
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -74808,13 +74808,13 @@
           "ability": "Delta Stream",
           "gender": "FEMALE",
           "id": 384,
-          "item": "White Herb",
+          "item": "Life Orb",
           "level": 100,
           "moves": [
             89,
             245,
             620,
-            434
+            337
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -74870,13 +74870,13 @@
           "ability": "Misty Surge",
           "gender": "FEMALE",
           "id": 788,
-          "item": "Wide Lens",
+          "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            56,
+            57,
             58,
             585,
-            113
+            247
           ],
           "nature": "Timid",
           "ivatk": 31,
@@ -74895,22 +74895,22 @@
         {
           "ability": "Illusion",
           "gender": "FEMALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Focus Sash",
           "level": 100,
           "moves": [
-            247,
+            841,
             304,
             53,
-            280
+            237
           ],
-          "nature": "Mild",
+          "nature": "Modest",
           "ivatk": 31,
-          "ivdef": 31,
+          "ivdef": 30,
           "ivhp": 31,
-          "ivspatk": 31,
-          "ivspdef": 31,
-          "ivspeed": 31,
+          "ivspatk": 30,
+          "ivspdef": 30,
+          "ivspeed": 30,
           "evhp": 0,
           "evatk": 0,
           "evdef": 0,
@@ -74925,10 +74925,10 @@
           "item": "Focus Sash",
           "level": 100,
           "moves": [
+            89,
             337,
-            442,
-            245,
-            89
+            431,
+            245
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -74948,13 +74948,13 @@
           "ability": "Delta Stream",
           "gender": "FEMALE",
           "id": 384,
-          "item": "White Herb",
+          "item": "Life Orb",
           "level": 100,
           "moves": [
             89,
             245,
             620,
-            434
+            337
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -75007,33 +75007,33 @@
     {
       "team": [
         {
-          "ability": "Snow Warning",
+          "ability": "RKS System",
           "gender": "FEMALE",
-          "id": 1055,
-          "item": "Focus Sash",
+          "id": 1341,
+          "item": "Water Memory",
           "level": 100,
           "moves": [
-            694,
-            585,
-            59,
-            573
+            247,
+            53,
+            57,
+            85
           ],
-          "nature": "Timid",
+          "nature": "Modest",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 56,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
           "evspatk": 252,
           "evspdef": 0,
-          "evspeed": 200
+          "evspeed": 252
         },
         {
-          "ability": "Slush Rush",
+          "ability": "Snow Cloak",
           "gender": "FEMALE",
           "id": 471,
           "item": "Assault Vest",
@@ -75051,26 +75051,26 @@
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 252,
+          "evhp": 4,
           "evatk": 0,
           "evdef": 0,
-          "evspatk": 156,
-          "evspdef": 100,
-          "evspeed": 0
+          "evspatk": 252,
+          "evspdef": 0,
+          "evspeed": 252
         },
         {
-          "ability": "Sharpness",
+          "ability": "Magic Guard",
           "gender": "FEMALE",
-          "id": 1227,
-          "item": "Focus Sash",
+          "id": 1070,
+          "item": "Life Orb",
           "level": 100,
           "moves": [
-            845,
-            534,
-            332,
-            533
+            667,
+            394,
+            528,
+            583
           ],
-          "nature": "Jolly",
+          "nature": "Adamant",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
@@ -75091,23 +75091,23 @@
           "item": "Weakness Policy",
           "level": 100,
           "moves": [
-            396,
-            414,
-            247,
-            406
+            89,
+            467,
+            431,
+            337
           ],
-          "nature": "Modest",
+          "nature": "Jolly",
           "ivatk": 31,
           "ivdef": 31,
           "ivhp": 31,
           "ivspatk": 31,
           "ivspdef": 31,
           "ivspeed": 31,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 128,
+          "evhp": 4,
+          "evatk": 252,
+          "evdef": 0,
           "evspatk": 0,
-          "evspdef": 128,
+          "evspdef": 0,
           "evspeed": 252
         },
         {
@@ -75117,10 +75117,10 @@
           "item": "Focus Sash",
           "level": 100,
           "moves": [
+            89,
             337,
-            442,
-            245,
-            89
+            431,
+            245
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -75140,13 +75140,13 @@
           "ability": "Delta Stream",
           "gender": "FEMALE",
           "id": 384,
-          "item": "White Herb",
+          "item": "Life Orb",
           "level": 100,
           "moves": [
             89,
             245,
             620,
-            434
+            337
           ],
           "nature": "Jolly",
           "ivatk": 31,
@@ -75305,7 +75305,7 @@
         {
           "ability": "Mind's Eye",
           "gender": "FEMALE",
-          "id": 1409,
+          "id": 1411,
           "item": "Assault Vest",
           "level": 80,
           "moves": [
@@ -78367,7 +78367,7 @@
           "evspeed": 4
         },
         {
-          "ability": "Overgrow",
+          "ability": "Lightning Rod",
           "gender": "FEMALE",
           "id": 254,
           "item": null,
@@ -78429,7 +78429,7 @@
     {
       "team": [
         {
-          "ability": "Hyper Cutter",
+          "ability": "Guts",
           "gender": "FEMALE",
           "id": 127,
           "item": null,
@@ -78861,7 +78861,7 @@
         {
           "ability": "Friend Guard",
           "gender": "FEMALE",
-          "id": 1266,
+          "id": 1268,
           "item": null,
           "level": 73,
           "moves": [
@@ -79249,7 +79249,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Water Veil",
+          "ability": "Pressure",
           "gender": "FEMALE",
           "id": 321,
           "item": null,
@@ -79615,7 +79615,7 @@
         {
           "ability": "Illusion",
           "gender": "MALE",
-          "id": 1239,
+          "id": 1241,
           "item": "Choice Specs",
           "level": 80,
           "moves": [
@@ -79665,9 +79665,9 @@
           "evspeed": 0
         },
         {
-          "ability": "Strong Jaw",
+          "ability": "Technician",
           "gender": "MALE",
-          "id": 1312,
+          "id": 1314,
           "item": "Assault Vest",
           "level": 80,
           "moves": [
@@ -80003,7 +80003,7 @@
     {
       "team": [
         {
-          "ability": "Inner Focus",
+          "ability": "Trace",
           "gender": "FEMALE",
           "id": 765,
           "item": null,
@@ -80029,7 +80029,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Justified",
+          "ability": "Sharpness",
           "gender": "FEMALE",
           "id": 475,
           "item": null,
@@ -80331,7 +80331,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Sap Sipper",
+          "ability": "Water Absorb",
           "gender": "FEMALE",
           "id": 706,
           "item": null,
@@ -80747,7 +80747,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Shell Armor",
+          "ability": "Hyper Cutter",
           "gender": "FEMALE",
           "id": 342,
           "item": null,
@@ -80949,7 +80949,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Weak Armor",
+          "ability": "Cursed Body",
           "gender": "FEMALE",
           "id": 1149,
           "item": null,
@@ -81011,7 +81011,7 @@
     {
       "team": [
         {
-          "ability": "Vital Spirit",
+          "ability": "Technician",
           "gender": "FEMALE",
           "id": 225,
           "item": null,
@@ -81267,7 +81267,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Sap Sipper",
+          "ability": "Water Absorb",
           "gender": "FEMALE",
           "id": 706,
           "item": null,
@@ -81385,7 +81385,7 @@
         {
           "ability": "Chlorophyll",
           "gender": "FEMALE",
-          "id": 1229,
+          "id": 1231,
           "item": "Big Root",
           "level": 83,
           "moves": [
@@ -81549,7 +81549,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Rock Head",
+          "ability": "Adaptability",
           "gender": "FEMALE",
           "id": 902,
           "item": "Life Orb",
@@ -81841,7 +81841,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Levitate",
+          "ability": "Overcoat",
           "gender": "FEMALE",
           "id": 330,
           "item": null,
@@ -82307,7 +82307,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sturdy",
           "gender": "FEMALE",
           "id": 208,
           "item": null,
@@ -82783,7 +82783,7 @@
     {
       "team": [
         {
-          "ability": "Effect Spore",
+          "ability": "Technician",
           "gender": "FEMALE",
           "id": 286,
           "item": null,

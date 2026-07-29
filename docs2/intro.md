@@ -20,19 +20,19 @@ We hope you enjoy our romhack!
 
 ## Useful Links
 
-### [Pokédex](https://luminescent.team/pokedex)
+### [Pokédex](/pokedex)
 
 - Contains documents for all Pokémon currently obtainable in Luminescent Platinum. Stats, movesets, evolution methods, held items, etc. If you need information on individual Pokémon, this is the page you want to peruse!
 - Includes evolution methods for regional forms and Luminescent exclusives.
 - Balances are credit to Hudie and the balance team.
 
-### [Pokémon Locations By Route](https://luminescent.team/mapper) [Beta]
+### [Pokémon Locations By Route](/mapper) [Beta]
 
 - If you want to know what all Pokémon are on each route as you go, this document is for you. Pick a Route and it will show you all Pokémon that spawn there normally; add a specification (such as radar or incense) and it will show you how that affects your chances!
 - Eventually intended to show items/shops.
 - Made by Aaron.
 
-### [Trainer Documentation](https://luminescent.team/mapper) [Beta]
+### [Trainer Documentation](/mapper) [Beta]
 
 - Use this special mapper site to see all trainer teams. Luminescent Platinum has four potential teams per Gym Leader and Rival fight, our document will help you stay ahead!
 - Made by Aaron.

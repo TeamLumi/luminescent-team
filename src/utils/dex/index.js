@@ -51,7 +51,7 @@ import {
   getTimeOfDayEncounters,
   getAllHoneyTreeEncounters
 } from './encounters'
-import { getTrainersFromZoneId } from './trainers';
+import { getTrainersFromZoneId, getZoneIdFromTrainerId, getFullTrainerById, getAllTrainers } from './trainers';
 import { getFieldItemsFromZoneID, getHiddenItemsFromZoneID } from './location';
 import { getEvolutionTree } from './evolution';
 import { getEggGroupNameById, getEggGroupViaPokemonId } from './egggroup';
@@ -196,6 +196,9 @@ export {
   getTimeOfDayEncounters,
   getAllHoneyTreeEncounters,
   getTrainersFromZoneId,
+  getZoneIdFromTrainerId,
+  getFullTrainerById,
+  getAllTrainers,
   getFieldItemsFromZoneID,
   getHiddenItemsFromZoneID
 };

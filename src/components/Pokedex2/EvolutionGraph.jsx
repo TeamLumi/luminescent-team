@@ -50,7 +50,7 @@ export default function EvolutionGraph({ evolutionTree }) {
       <div className="row" style={{ margin: 'auto', textAlign: 'center' }}>
         <span className="col col-12">
           <Typography variant="h6" sx={{ margin: 'auto' }}>
-            <Link href='https://luminescent.team/docs/special-evolutions#alcremie'>Alcremie Evolutions</Link>
+            <Link href='/docs/special-evolutions#alcremie'>Alcremie Evolutions</Link>
           </Typography>
         </span>
       </div>

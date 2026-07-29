@@ -16,10 +16,12 @@ export const MapperTabPanel = ({
   selectedTrainer,
   setSelectedTrainer,
   openTrainerModal,
-  routeId
+  routeId,
+  selectedTab,
+  onTabChange,
 }) => {
   return (
-    <PokemonTabPanel tabNames={["Encounters", "Trainers", "Items", "Shops"]}>
+    <PokemonTabPanel tabNames={["Encounters", "Trainers", "Items", "Shops"]} selectedTab={selectedTab} onTabChange={onTabChange}>
       <EncountersPanel
         encOptions={encOptions}
         handleOptionChange={handleOptionChange}
