@@ -110,6 +110,7 @@
     display: grid;
     justify-items: center;
     gap: 10px;
+    overflow-y: scroll !important;
     padding-right: 10px;
     padding-left: 5px;
 }

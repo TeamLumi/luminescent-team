@@ -111,6 +111,7 @@ ${moves}`;
         <Trainers
           pokemonList={pokemonList}
           selectedTrainer={selectedTrainer}
+          modal={true}
         />
       </DialogContent>
       <Snackbar

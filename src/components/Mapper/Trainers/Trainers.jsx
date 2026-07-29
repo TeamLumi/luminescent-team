@@ -217,7 +217,7 @@ const MoveList = ({smallest, pokemon}) => {
   )
 }
 
-export const Trainers = ({ pokemonList, selectedTrainer, smallest = false }) => {
+export const Trainers = ({ pokemonList, selectedTrainer, smallest = false, modal = false }) => {
   return (
     <div>
       {selectedTrainer && (
@@ -239,7 +239,7 @@ export const Trainers = ({ pokemonList, selectedTrainer, smallest = false }) => 
             marginLeft: {sm: "unset"},
             margin: smallest ? "unset" : "10px",
             maxHeight: smallest ? "528px" : "unset",
-            overflowY: "hidden",
+            overflowY: modal ? "scroll" : "hidden",
             overflowX: "hidden",
           }}
         >
