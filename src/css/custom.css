@@ -84,17 +84,32 @@ div.evolutionTables > table td:nth-child(even) {
 
 /* navbar */
 .navbar--spanish-link {
-	width: 32px;
-	height: 32px;
-	padding: 6px;
-	margin-right: 6px;
-	margin-left: 6px;
 	border-radius: 50%;
 	transition: background var(--ifm-transition-fast);
 }
 
 .navbar--spanish-link:hover {
 	background: var(--ifm-color-emphasis-200);
+}
+
+/* Desktop: icon only */
+.navbar--spanish-link.navbar__link {
+	width: 32px;
+	height: 32px;
+	padding: 6px;
+	margin-right: 6px;
+	margin-left: 6px;
+	overflow: hidden;
+}
+
+/* Mobile sidebar: the icon link is replaced by the Language dropdown */
+.menu__list-item:has(> .menu__link.navbar--spanish-link) {
+	display: none;
+}
+
+/* Desktop: hide the mobile-only Language dropdown */
+.navbar__item.dropdown:has(> .navbar__link.navbar--language-dropdown) {
+	display: none;
 }
 
 .navbar--spanish-link:before {
