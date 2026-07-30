@@ -204,6 +204,12 @@ const config = {
             ],
           },
           {
+            'aria-label': 'Spanish Site',
+            className: 'navbar--spanish-link',
+            href: 'https://blupblurp.github.io/luminescent-team-esp/',
+            position: 'right',
+          },
+          {
             'aria-label': 'Discord Invite',
             className: 'navbar--discord-link',
             href: 'https://discord.gg/luminescent',
