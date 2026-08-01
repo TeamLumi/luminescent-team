@@ -14,7 +14,7 @@ const {
   TMLearnset
 } = require('../../../__gamedata');
 const { FORM_MAP, isValidPokemon } = require('./functions');
-const { STATUS_EFFECTS, SICK_CONT_STRINGS, CRITICAL_HIT_RATIO, MOVE_TARGETING, STATS_TO_CHANGE, MOVE_CATEGORIES } = require('./moveConstants');
+const { STATUS_EFFECTS, SICK_CONT_STRINGS, CRITICAL_HIT_RATIO, MOVE_TARGETING, STATS_TO_CHANGE, MOVE_CATEGORIES, HIDDEN_POWER_TYPES, HIDDEN_POWER_NAME } = require('./moveConstants');
 const { getPokemonFormId, getPokemonName, getPokemonMonsNoAndFormNoFromPokemonId, normalizePokemonName } = require('./name');
 
 const IS_MOVE_INDEX = false;
@@ -162,6 +162,7 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
     desc: getMoveDescription(moveId, mode),
     type,
     damageType, //0 = Status, 1 = Physical, 2 = Special
+    basePP,
     maxPP,
     power,
     accuracy: hitPer,
@@ -182,6 +183,37 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
     })
   };
 }
+
+function calcHiddenPower(pokemonStats) {
+  console.log("Calculating Hidden Power type for stats:", pokemonStats);
+  const ivSigBits = {
+    hp: pokemonStats.ivhp % 2,
+    atk: pokemonStats.ivatk % 2,
+    def: pokemonStats.ivdef % 2,
+    spe: pokemonStats.ivspeed % 2,
+    spa: pokemonStats.ivspatk % 2,
+    spd: pokemonStats.ivspdef % 2,
+  };
+  const sumIvs = Object.values(ivSigBits)
+    .map((value, index) => value * (2 ** index))
+    .reduce((acc, val) => acc + val, 0);
+  
+  console.log("Sum of IV signature bits:", sumIvs);
+
+  const hiddenPowerType = Math.floor((sumIvs * 15) / 63);
+  console.log("Calculated Hidden Power type:", hiddenPowerType);
+  return hiddenPowerType;
+}
+
+function getHiddenPowerNameWithType(hiddenPowerType) {
+  console.log("Getting Hidden Power name for type index:", hiddenPowerType);
+  if (hiddenPowerType < 0 || hiddenPowerType >= HIDDEN_POWER_TYPES.length) {
+    throw new Error(`Invalid Hidden Power type index: ${hiddenPowerType}`);
+  }
+  console.log(`Hidden Power type index ${hiddenPowerType} corresponds to type: ${HIDDEN_POWER_TYPES[hiddenPowerType]}`);
+  return `${HIDDEN_POWER_NAME} (${HIDDEN_POWER_TYPES[hiddenPowerType].slice(0,1)}${HIDDEN_POWER_TYPES[hiddenPowerType].slice(1).toLowerCase()})`;
+}
+
 
 function getEggMoves(dexId = 0, mode = GAMEDATA2) {
   const ModePersonalTable = PersonalTable[mode];
@@ -429,6 +461,8 @@ module.exports = {
   getEggMoves,
   getTechMachineLearnset,
   getMoveProperties,
+  calcHiddenPower,
+  getHiddenPowerNameWithType,
   getPokemonLearnset,
   getMoveLevelLearned,
   getLevelLearnset,

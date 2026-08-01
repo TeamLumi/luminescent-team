@@ -9,6 +9,8 @@ import { ImageWithFallback } from '../../common/ImageWithFallback';
 import '.././style.css';
 import { PokemonAbility } from '../../Pokedex2/PokemonAbilities';
 import { GAMEDATA3 } from '../../../../__gamedata';
+import { calcHiddenPower, getHiddenPowerNameWithType } from '../../../../plugins/pokedex-data-plugin/dex/moves';
+import { HIDDEN_POWER_NAME } from '../../../../plugins/pokedex-data-plugin/dex/moveConstants';
 
 const responsiveFontSize = { fontSize: { xs: '0.75rem', sm: '0.875rem', md: '1rem' } };
 export const getSmallestResponsiveStyle = (smallest, property, values) => {
@@ -189,6 +191,13 @@ const MoveList = ({smallest, pokemon}) => {
     >
       {pokemon.moves.map((move, index) => {
         const moveInfo = getMoveProperties(move);
+        let moveName = moveInfo.name;
+        let moveType = moveInfo.type;
+        if (moveName === HIDDEN_POWER_NAME) {
+          const hiddenPowerInt = calcHiddenPower(pokemon);
+          moveName = getHiddenPowerNameWithType(hiddenPowerInt);
+          moveType = hiddenPowerInt + 1;
+        }
         return (
           <Box
             key={`${move}-${index}`}
@@ -204,8 +213,8 @@ const MoveList = ({smallest, pokemon}) => {
           >
             <PokemonMove
               moveInfo={moveInfo}
-              typeName={moveInfo.name}
-              typeColor={TYPE_COLOR_MAP[moveInfo.type].color}
+              typeName={moveName}
+              typeColor={TYPE_COLOR_MAP[moveType].color}
               fontSize={[".7rem", ".875rem"]}
               smallest={smallest}
               width={"100%"}

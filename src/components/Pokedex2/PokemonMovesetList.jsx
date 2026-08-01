@@ -45,9 +45,9 @@ export const PokemonMovesetList = ({ moveset, movesetPrefix, pokemonDexId }) => 
       sx={{
         display: 'grid',
         gridTemplateColumns: {
-          xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
-          sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
-          md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
+          xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.6fr 0.5fr`,
+          sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.6fr 2fr`,
+          md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.6fr 2fr`,
         },
         alignItems: 'center',
         columnGap: '4px',
@@ -130,8 +130,8 @@ export const MovesetListItem = ({ moveLevel, move }) => {
       </Box>
 
       <Box display="flex" flexDirection="column" alignItems="center">
-        <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>PP</Typography>
-        <Typography sx={{ ...responsiveFontSize }}>{move.maxPP}</Typography>
+        <Typography sx={{ fontStyle: 'italic', ...responsiveFontSize }}>{"PP (Max)"}</Typography>
+        <Typography sx={{ ...responsiveFontSize }}>{`${move.basePP} (${move.maxPP})`}</Typography>
       </Box>
 
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
@@ -238,8 +238,8 @@ export const PokemonMove = ({moveInfo, ...props}) => {
               display: 'grid',
               gridTemplateColumns: {
                 xs: `0.5fr 1.5fr 50px 47px 0.5fr 0.5fr 0.5fr`,
-                sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.2fr 2fr`,
-                md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.2fr 2fr`,
+                sm: `0.3fr 1fr 54px 48px 0.3fr 0.3fr 0.6fr 2fr`,
+                md: `0.3fr 0.8fr 90px 70px 0.3fr 0.3fr 0.6fr 2fr`,
               },
               alignItems: 'center',
               columnGap: '4px',

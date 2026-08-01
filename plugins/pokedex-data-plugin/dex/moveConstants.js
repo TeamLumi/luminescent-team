@@ -179,6 +179,27 @@ const DAMAGE_TYPES = [
   "Special"
 ];
 
+const HIDDEN_POWER_NAME = "Hidden Power";
+
+const HIDDEN_POWER_TYPES = [
+  'FIGHTING',
+  'FLYING',
+  'POISON',
+  'GROUND',
+  'ROCK',
+  'BUG',
+  'GHOST',
+  'STEEL',
+  'FIRE',
+  'WATER',
+  'GRASS',
+  'ELECTRIC',
+  'PSYCHIC',
+  'ICE',
+  'DRAGON',
+  'DARK'
+];
+
 const Z_MOVES = [
   "acid-downpour",
   "all-out-pummeling",
@@ -223,6 +244,8 @@ module.exports = {
   FLINCH_RATIOS,
   HP_RECOVER_RATIO,
   STAT_EFFECT_CHANCE,
+  HIDDEN_POWER_NAME,
+  HIDDEN_POWER_TYPES,
   Z_MOVES,
   LEARNSET_TYPES_MAP
 };
