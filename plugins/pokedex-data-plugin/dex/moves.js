@@ -185,7 +185,6 @@ function getMoveProperties(moveId = 0, mode = GAMEDATA2, extendedDetails = false
 }
 
 function calcHiddenPower(pokemonStats) {
-  console.log("Calculating Hidden Power type for stats:", pokemonStats);
   const ivSigBits = {
     hp: pokemonStats.ivhp % 2,
     atk: pokemonStats.ivatk % 2,
@@ -197,21 +196,17 @@ function calcHiddenPower(pokemonStats) {
   const sumIvs = Object.values(ivSigBits)
     .map((value, index) => value * (2 ** index))
     .reduce((acc, val) => acc + val, 0);
-  
-  console.log("Sum of IV signature bits:", sumIvs);
 
   const hiddenPowerType = Math.floor((sumIvs * 15) / 63);
-  console.log("Calculated Hidden Power type:", hiddenPowerType);
   return hiddenPowerType;
 }
 
 function getHiddenPowerNameWithType(hiddenPowerType) {
-  console.log("Getting Hidden Power name for type index:", hiddenPowerType);
   if (hiddenPowerType < 0 || hiddenPowerType >= HIDDEN_POWER_TYPES.length) {
     throw new Error(`Invalid Hidden Power type index: ${hiddenPowerType}`);
   }
-  console.log(`Hidden Power type index ${hiddenPowerType} corresponds to type: ${HIDDEN_POWER_TYPES[hiddenPowerType]}`);
-  return `${HIDDEN_POWER_NAME} (${HIDDEN_POWER_TYPES[hiddenPowerType].slice(0,1)}${HIDDEN_POWER_TYPES[hiddenPowerType].slice(1).toLowerCase()})`;
+
+  return `${HIDDEN_POWER_NAME} (${HIDDEN_POWER_TYPES[hiddenPowerType]})`;
 }
 
 

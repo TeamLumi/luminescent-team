@@ -5,6 +5,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 100,
+    "basePP": 10,
     "damageType": 1,
     "desc": "The user tucks in its head to raise its Defense stat on the first turn, then rams the target on the next turn.",
     "maxPP": 16,
@@ -22,6 +23,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 100,
+    "basePP": 10,
     "damageType": 2,
     "desc": "The user attacks the target by scattering petals for two to three turns. The user then becomes confused.",
     "maxPP": 16,
@@ -39,6 +41,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 101,
+    "basePP": 10,
     "damageType": 0,
     "desc": "A move that works differently for the Ghost type than for all other types.",
     "maxPP": 16,
@@ -56,6 +59,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 101,
+    "basePP": 20,
     "damageType": 0,
     "desc": "The user lays roots that restore its HP on every turn. Because it’s rooted, it can’t switch out.",
     "maxPP": 32,
@@ -73,6 +77,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 101,
+    "basePP": 20,
     "damageType": 0,
     "desc": "This attack makes use of nature’s power. Its effects vary depending on the user’s environment.",
     "maxPP": 32,
@@ -90,6 +95,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 100,
+    "basePP": 20,
     "damageType": 0,
     "desc": "The user gazes at the target rather charmingly, making it less wary. This harshly lowers the target’s Attack stat.",
     "maxPP": 32,
@@ -107,6 +113,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 101,
+    "basePP": 20,
     "damageType": 2,
     "desc": "The user scatters curious leaves that chase the target. This attack never misses.",
     "maxPP": 32,
@@ -124,6 +131,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 101,
+    "basePP": 20,
     "damageType": 0,
     "desc": "The user temporarily empties its mind to forget its concerns. This sharply raises the user’s Sp. Def stat.",
     "maxPP": 32,
@@ -141,6 +149,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 90,
+    "basePP": 5,
     "damageType": 2,
     "desc": "The user whips up a storm of leaves around the target. The attack’s recoil harshly lowers the user’s Sp. Atk stat.",
     "maxPP": 8,
@@ -158,6 +167,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 85,
+    "basePP": 10,
     "damageType": 1,
     "desc": "The user violently whirls its vines, tentacles, or the like to harshly lash the target.",
     "maxPP": 16,
@@ -175,6 +185,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 100,
+    "basePP": 15,
     "damageType": 2,
     "desc": "Unsanitary sludge is hurled at the target. This may also poison the target.",
     "maxPP": 24,
@@ -192,6 +203,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 101,
+    "basePP": 10,
     "damageType": 0,
     "desc": "The user turns the ground to grass for five turns. This restores the HP of Pokémon on the ground a little every turn and powers up Grass-type moves.",
     "maxPP": 16,
@@ -209,6 +221,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 55,
+    "basePP": 15,
     "damageType": 0,
     "desc": "The user plays a pleasant melody that lulls the target into a deep sleep.",
     "maxPP": 24,
@@ -226,6 +239,7 @@ exports[`Dex Utils Move Getters getEggMoves returns an array of egg moves for a 
   "level": "egg",
   "move": {
     "accuracy": 100,
+    "basePP": 10,
     "damageType": 2,
     "desc": "In this two-turn attack, blades of wind hit opposing Pokémon on the second turn. Critical hits land more easily.",
     "maxPP": 16,
@@ -243,6 +257,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 90,
+    "basePP": 10,
     "damageType": 0,
     "desc": "A move that leaves the target badly poisoned. Its poison damage worsens every turn.",
     "maxPP": 16,
@@ -260,6 +275,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 30,
     "damageType": 1,
     "desc": "The user forcefully shoots seeds at the target two to five times in a row.",
     "maxPP": 48,
@@ -277,6 +293,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 15,
     "damageType": 2,
     "desc": "A unique attack that varies in type depending on the Pokémon using it.",
     "maxPP": 24,
@@ -294,6 +311,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 5,
     "damageType": 0,
     "desc": "The user intensifies the sun for five turns, powering up Fire-type moves. It lowers the power of Water-type moves.",
     "maxPP": 8,
@@ -311,6 +329,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 30,
     "damageType": 0,
     "desc": "A wondrous wall of light is put up to reduce damage from special attacks for five turns.",
     "maxPP": 48,
@@ -328,6 +347,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 10,
     "damageType": 0,
     "desc": "This move enables the user to protect itself from all attacks. Its chance of failing rises if it is used in succession.",
     "maxPP": 16,
@@ -345,6 +365,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 10,
     "damageType": 2,
     "desc": "A nutrient-draining attack. The user’s HP is restored by half the damage taken by the target.",
     "maxPP": 16,
@@ -362,6 +383,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 25,
     "damageType": 0,
     "desc": "The user creates a protective field that prevents status conditions for five turns.",
     "maxPP": 40,
@@ -379,6 +401,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 10,
     "damageType": 2,
     "desc": "In this two-turn attack, the user gathers light, then blasts a bundled beam on the next turn.",
     "maxPP": 16,
@@ -396,6 +419,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 15,
     "damageType": 0,
     "desc": "By moving rapidly, the user makes illusory copies of itself to raise its evasiveness.",
     "maxPP": 24,
@@ -413,6 +437,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 10,
     "damageType": 2,
     "desc": "Unsanitary sludge is hurled at the target. This may also poison the target.",
     "maxPP": 16,
@@ -430,6 +455,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 20,
     "damageType": 1,
     "desc": "This attack move doubles its power if the user is poisoned, burned, or paralyzed.",
     "maxPP": 32,
@@ -447,6 +473,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 10,
     "damageType": 0,
     "desc": "The user goes to sleep for two turns. This fully restores the user’s HP and heals any status conditions.",
     "maxPP": 16,
@@ -464,6 +491,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 15,
     "damageType": 0,
     "desc": "If it is the opposite gender of the user, the target becomes infatuated and less likely to attack.",
     "maxPP": 24,
@@ -481,6 +509,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 10,
     "damageType": 2,
     "desc": "The user draws power from nature and fires it at the target. This may also lower the target’s Sp. Def stat.",
     "maxPP": 16,
@@ -498,6 +527,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 40,
     "damageType": 1,
     "desc": "A restrained attack that prevents the target from fainting. The target is left with at least 1 HP.",
     "maxPP": 64,
@@ -515,6 +545,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 10,
     "damageType": 0,
     "desc": "The user endures any attack with at least 1 HP. Its chance of failing rises if it is used in succession.",
     "maxPP": 16,
@@ -532,6 +563,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 20,
     "damageType": 0,
     "desc": "The user flashes a light that lowers the target’s accuracy. It can also be used to illuminate caves.",
     "maxPP": 32,
@@ -549,6 +581,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 20,
     "damageType": 0,
     "desc": "A frenetic dance to uplift the fighting spirit. This sharply raises the user’s Attack stat.",
     "maxPP": 32,
@@ -566,6 +599,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 10,
     "damageType": 0,
     "desc": "While it is asleep, the user randomly uses one of the moves it knows.",
     "maxPP": 16,
@@ -583,6 +617,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 20,
     "damageType": 2,
     "desc": "The user snares the target with grass and trips it. The heavier the target, the greater the move’s power.",
     "maxPP": 32,
@@ -600,6 +635,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 85,
+    "basePP": 15,
     "damageType": 0,
     "desc": "The user enrages and confuses the target. However, this also sharply raises the target’s Attack stat.",
     "maxPP": 24,
@@ -617,6 +653,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 10,
     "damageType": 0,
     "desc": "The user creates a substitute for itself using some of its HP. The substitute serves as the user’s decoy.",
     "maxPP": 16,
@@ -634,6 +671,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 25,
     "damageType": 1,
     "desc": "The target is cut with a scythe or claw. It’s also one of the Pokétch’s hidden moves.",
     "maxPP": 40,
@@ -651,6 +689,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 15,
     "damageType": 1,
     "desc": "The target is slugged with a punch thrown at maximum power. It’s also one of the Pokétch’s hidden moves.",
     "maxPP": 24,
@@ -668,6 +707,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 100,
+    "basePP": 15,
     "damageType": 1,
     "desc": "The user attacks with a punch that may lower the target’s Defense stat. It’s also one of the Pokétch’s hidden moves.",
     "maxPP": 24,
@@ -685,6 +725,7 @@ exports[`Dex Utils Move Getters getTechMachineLearnset returns an array of TM mo
   "level": "tm",
   "move": {
     "accuracy": 101,
+    "basePP": 30,
     "damageType": 0,
     "desc": "The user is roused, and its Attack and Sp. Atk stats increase.",
     "maxPP": 48,
