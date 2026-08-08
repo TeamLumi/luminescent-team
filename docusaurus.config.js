@@ -207,7 +207,7 @@ const config = {
             'aria-label': 'Spanish Site',
             className: 'navbar--spanish-link',
             href: 'https://blupblurp.github.io/luminescent-team-esp/',
-            position: 'left',
+            position: 'right',
           },
           {
             type: 'dropdown',
