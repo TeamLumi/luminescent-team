@@ -8019,7 +8019,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "As One",
+                    "str": "As One With Glastrier",
                     "strWidth": 96.25
                 }
             ]
@@ -8049,7 +8049,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "As One",
+                    "str": "As One With Spectrier",
                     "strWidth": 96.25
                 }
             ]
@@ -9069,7 +9069,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Embody Aspect",
+                    "str": "Embody Teal Aspect",
                     "strWidth": 202.15625
                 }
             ]
@@ -9099,7 +9099,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Embody Aspect",
+                    "str": "Embody Wellspring Aspect",
                     "strWidth": 202.15625
                 }
             ]
@@ -9129,7 +9129,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Embody Aspect",
+                    "str": "Embody Hearthflame Aspect",
                     "strWidth": 202.15625
                 }
             ]
@@ -9159,7 +9159,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Embody Aspect",
+                    "str": "Embody Cornerstone Aspect",
                     "strWidth": 202.15625
                 }
             ]

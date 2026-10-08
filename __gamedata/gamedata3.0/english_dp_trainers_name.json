@@ -32803,6 +32803,66 @@
                     "strWidth": 61.59375
                 }
             ]
+        },
+        {
+            "labelIndex": 1067,
+            "arrayIndex": 1094,
+            "labelName": "DP_Trainers_Name_TR_MIRA_???",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "???",
+                    "strWidth": 43.40625
+                }
+            ]
+        },
+        {
+            "labelIndex": 1068,
+            "arrayIndex": 1095,
+            "labelName": "DP_Trainers_Name_TR_SATURN_???",
+            "styleInfo": {
+                "styleIndex": 0,
+                "colorIndex": -1,
+                "fontSize": 54,
+                "maxWidth": 1080,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "???",
+                    "strWidth": 43.40625
+                }
+            ]
         }
     ]
 }

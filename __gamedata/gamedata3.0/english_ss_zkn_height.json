@@ -21339,7 +21339,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "1'04\"",
+                    "str": "1'00\"",
                     "strWidth": 70.0
                 }
             ]
@@ -21369,7 +21369,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "2'11\"",
+                    "str": "2'04\"",
                     "strWidth": 70.0
                 }
             ]
@@ -39279,7 +39279,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "1'00\"",
+                    "str": "1'04\"",
                     "strWidth": 70.0
                 }
             ]
@@ -39369,7 +39369,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "2'04\"",
+                    "str": "2'11\"",
                     "strWidth": 70.0
                 }
             ]

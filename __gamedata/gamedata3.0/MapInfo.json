@@ -10271,7 +10271,7 @@
                 "m_FileID": 0,
                 "m_PathID": -6135015053199916854
             },
-            "ReflectionCamera": 1,
+            "ReflectionCamera": 0,
             "FixedTime": 0,
             "AssetBundleName": "fields/area003",
             "RoomPanCamera": 0,
@@ -124430,8 +124430,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_009",
-                "LUMI_BGM_FIELD_009"
+                "LUMI_BGM_FIELD_001",
+                "LUMI_BGM_FIELD_001"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 6,
@@ -124619,8 +124619,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_009",
-                "LUMI_BGM_FIELD_009"
+                "LUMI_BGM_FIELD_001",
+                "LUMI_BGM_FIELD_001"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -124808,8 +124808,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_009",
-                "LUMI_BGM_FIELD_009"
+                "LUMI_BGM_FIELD_001",
+                "LUMI_BGM_FIELD_001"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125186,8 +125186,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_008",
-                "LUMI_BGM_FIELD_008"
+                "LUMI_BGM_FIELD_005",
+                "LUMI_BGM_FIELD_005"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125375,8 +125375,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_008",
-                "LUMI_BGM_FIELD_008"
+                "LUMI_BGM_FIELD_005",
+                "LUMI_BGM_FIELD_005"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125564,8 +125564,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_008",
-                "LUMI_BGM_FIELD_008"
+                "LUMI_BGM_FIELD_005",
+                "LUMI_BGM_FIELD_005"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125753,8 +125753,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_007",
-                "LUMI_BGM_FIELD_007"
+                "LUMI_BGM_FIELD_004",
+                "LUMI_BGM_FIELD_004"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -125942,8 +125942,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_007",
-                "LUMI_BGM_FIELD_007"
+                "LUMI_BGM_FIELD_004",
+                "LUMI_BGM_FIELD_004"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126131,8 +126131,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_007",
-                "LUMI_BGM_FIELD_007"
+                "LUMI_BGM_FIELD_004",
+                "LUMI_BGM_FIELD_004"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126320,8 +126320,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_005",
-                "LUMI_BGM_FIELD_005"
+                "LUMI_BGM_FIELD_002",
+                "LUMI_BGM_FIELD_002"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126509,8 +126509,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_005",
-                "LUMI_BGM_FIELD_005"
+                "LUMI_BGM_FIELD_002",
+                "LUMI_BGM_FIELD_002"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126698,8 +126698,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_005",
-                "LUMI_BGM_FIELD_005"
+                "LUMI_BGM_FIELD_002",
+                "LUMI_BGM_FIELD_002"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -126887,8 +126887,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_006",
-                "LUMI_BGM_FIELD_006"
+                "LUMI_BGM_FIELD_003",
+                "LUMI_BGM_FIELD_003"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -127076,8 +127076,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_006",
-                "LUMI_BGM_FIELD_006"
+                "LUMI_BGM_FIELD_003",
+                "LUMI_BGM_FIELD_003"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -127265,8 +127265,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "LUMI_BGM_FIELD_006",
-                "LUMI_BGM_FIELD_006"
+                "LUMI_BGM_FIELD_003",
+                "LUMI_BGM_FIELD_003"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -128966,8 +128966,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D03_Day",
-                "D03_Night"
+                "LUMI_BGM_FIELD_012",
+                "LUMI_BGM_FIELD_012"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -129155,8 +129155,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D03_Day",
-                "D03_Night"
+                "LUMI_BGM_FIELD_012",
+                "LUMI_BGM_FIELD_012"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 2,
@@ -129344,8 +129344,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D03_Day",
-                "D03_Night"
+                "LUMI_BGM_FIELD_012",
+                "LUMI_BGM_FIELD_012"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 0,
@@ -129533,8 +129533,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D03_Day",
-                "D03_Night"
+                "LUMI_BGM_FIELD_012",
+                "LUMI_BGM_FIELD_012"
             ],
             "EnvironmentalSound": "Env_Silence",
             "Weather": 5,
@@ -130667,8 +130667,8 @@
                 "m_PathID": 0
             },
             "BGM": [
-                "D03_Day",
-                "D03_Night"
+                "LUMI_BGM_FIELD_010",
+                "LUMI_BGM_FIELD_010"
             ],
             "EnvironmentalSound": "s_env042",
             "Weather": 0,
@@ -130682,26 +130682,26 @@
             "RoomPanCamera": 0,
             "Locators": [
                 {
-                    "x": 49.0,
+                    "x": 16.0,
                     "y": 82.0,
                     "z": 1.0,
                     "w": 0.0
                 },
                 {
-                    "x": 49.0,
+                    "x": 16.0,
                     "y": 83.0,
                     "z": 1.0,
                     "w": 0.0
                 },
                 {
-                    "x": 46.0,
-                    "y": 18.0,
+                    "x": 14.0,
+                    "y": 21.0,
                     "z": 0.0,
                     "w": 0.0
                 },
                 {
-                    "x": 47.0,
-                    "y": 18.0,
+                    "x": 15.0,
+                    "y": 21.0,
                     "z": 0.0,
                     "w": 0.0
                 },

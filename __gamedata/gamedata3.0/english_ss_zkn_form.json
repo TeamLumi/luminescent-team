@@ -21339,7 +21339,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Average Size Pumpkaboo",
+                    "str": "Small Variety Pumpkaboo",
                     "strWidth": -1.0
                 }
             ]
@@ -21369,7 +21369,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Average Size Gourgeist",
+                    "str": "Small Variety Gourgeist",
                     "strWidth": -1.0
                 }
             ]
@@ -33279,7 +33279,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Mk II Armored Mewtwo",
+                    "str": "γ Armor Mewtwo",
                     "strWidth": 304.9375
                 }
             ]
@@ -33309,7 +33309,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Mk I Armored Mewtwo",
+                    "str": "χ Armor Mewtwo",
                     "strWidth": 296.546875
                 }
             ]
@@ -39279,7 +39279,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Small Size Pumpkaboo",
+                    "str": "Medium Variety Pumpkaboo",
                     "strWidth": -1.0
                 }
             ]
@@ -39309,7 +39309,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Large Size Pumpkaboo",
+                    "str": "Large Variety Pumpkaboo",
                     "strWidth": -1.0
                 }
             ]
@@ -39339,7 +39339,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Super Size Pumpkaboo",
+                    "str": "Jumbo Variety Pumpkaboo",
                     "strWidth": -1.0
                 }
             ]
@@ -39369,7 +39369,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Small Size Gourgeist",
+                    "str": "Medium Variety Gourgeist",
                     "strWidth": -1.0
                 }
             ]
@@ -39399,7 +39399,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Large Size Gourgeist",
+                    "str": "Large Variety Gourgeist",
                     "strWidth": -1.0
                 }
             ]
@@ -39429,7 +39429,7 @@
                     "eventID": 7,
                     "tagIndex": -1,
                     "tagValue": 0.0,
-                    "str": "Super Size Gourgeist",
+                    "str": "Jumbo Variety Gourgeist",
                     "strWidth": -1.0
                 }
             ]
