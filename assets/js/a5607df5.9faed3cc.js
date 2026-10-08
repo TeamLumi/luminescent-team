@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[561085],{314700(e){e.exports="/pokedex/jumbo-variety-pumpkaboo"}}]);

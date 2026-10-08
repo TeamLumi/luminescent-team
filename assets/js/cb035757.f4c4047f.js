@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkluminescent_team=globalThis.webpackChunkluminescent_team||[]).push([[167163],{416588(e){e.exports="/pokedex/armor-mewtwo"}}]);
