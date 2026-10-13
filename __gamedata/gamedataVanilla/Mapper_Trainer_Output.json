@@ -4135,94 +4135,6 @@
     {
       "team": [
         {
-          "ability": "Pure Power",
-          "gender": "FEMALE",
-          "id": 307,
-          "item": null,
-          "level": 23,
-          "moves": [
-            197,
-            364,
-            395,
-            60
-          ],
-          "nature": "Hardy",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "No Guard",
-          "gender": "FEMALE",
-          "id": 66,
-          "item": null,
-          "level": 22,
-          "moves": [
-            43,
-            490,
-            282,
-            184
-          ],
-          "nature": "Relaxed",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Pure Power",
-          "gender": "FEMALE",
-          "id": 307,
-          "item": null,
-          "level": 21,
-          "moves": [
-            197,
-            364,
-            395,
-            60
-          ],
-          "nature": "Hardy",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Black Belt Gregory (Route 211 (East))",
-      "name": "Black Belt Gregory",
-      "route": "Route 211 (East)",
-      "zoneId": 378,
-      "trainerType": "Single Battle",
-      "trainer_id": 97
-    },
-    {
-      "team": [
-        {
           "ability": "Heatproof",
           "gender": "FEMALE",
           "id": 436,
@@ -7605,6 +7517,94 @@
     {
       "team": [
         {
+          "ability": "Inner Focus",
+          "gender": "FEMALE",
+          "id": 42,
+          "item": null,
+          "level": 35,
+          "moves": [
+            212,
+            305,
+            314,
+            44
+          ],
+          "nature": "Sassy",
+          "ivatk": 0,
+          "ivdef": 0,
+          "ivhp": 0,
+          "ivspatk": 0,
+          "ivspdef": 0,
+          "ivspeed": 0,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Rock Head",
+          "gender": "FEMALE",
+          "id": 75,
+          "item": null,
+          "level": 35,
+          "moves": [
+            201,
+            106,
+            479,
+            523
+          ],
+          "nature": "Relaxed",
+          "ivatk": 0,
+          "ivdef": 0,
+          "ivhp": 0,
+          "ivspatk": 0,
+          "ivspdef": 0,
+          "ivspeed": 0,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Sturdy",
+          "gender": "FEMALE",
+          "id": 95,
+          "item": null,
+          "level": 35,
+          "moves": [
+            479,
+            174,
+            103,
+            328
+          ],
+          "nature": "Relaxed",
+          "ivatk": 0,
+          "ivdef": 0,
+          "ivhp": 0,
+          "ivspatk": 0,
+          "ivspdef": 0,
+          "ivspeed": 0,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Hiker Alexander (Route 208)",
+      "name": "Hiker Alexander",
+      "route": "Route 208",
+      "zoneId": 365,
+      "trainerType": "Single Battle",
+      "trainer_id": 36
+    },
+    {
+      "team": [
+        {
           "ability": "Sturdy",
           "gender": "FEMALE",
           "id": 95,
@@ -9825,286 +9825,6 @@
       "zoneId": 367,
       "trainerType": "Single Battle",
       "trainer_id": 43
-    },
-    {
-      "team": [
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 14,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 15,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 16,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 15,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 15,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Cowgirl Shelley (Route 209)",
-      "name": "Cowgirl Shelley",
-      "route": "Route 209",
-      "zoneId": 367,
-      "trainerType": "Single Battle",
-      "trainer_id": 44
-    },
-    {
-      "team": [
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 14,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 15,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 16,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 15,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Unaware",
-          "gender": "FEMALE",
-          "id": 399,
-          "item": null,
-          "level": 15,
-          "moves": [
-            45,
-            111,
-            205,
-            29
-          ],
-          "nature": "Jolly",
-          "ivatk": 0,
-          "ivdef": 0,
-          "ivhp": 0,
-          "ivspatk": 0,
-          "ivspdef": 0,
-          "ivspeed": 0,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        }
-      ],
-      "team_name": "Cowgirl Shelley (Route 209)",
-      "name": "Cowgirl Shelley",
-      "route": "Route 209",
-      "zoneId": 367,
-      "trainerType": "Single Battle",
-      "trainer_id": 44
     },
     {
       "team": [
@@ -12484,6 +12204,94 @@
     }
   ],
   "394": [
+    {
+      "team": [
+        {
+          "ability": "Pure Power",
+          "gender": "FEMALE",
+          "id": 307,
+          "item": null,
+          "level": 23,
+          "moves": [
+            197,
+            364,
+            395,
+            60
+          ],
+          "nature": "Hardy",
+          "ivatk": 0,
+          "ivdef": 0,
+          "ivhp": 0,
+          "ivspatk": 0,
+          "ivspdef": 0,
+          "ivspeed": 0,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "No Guard",
+          "gender": "FEMALE",
+          "id": 66,
+          "item": null,
+          "level": 22,
+          "moves": [
+            43,
+            490,
+            282,
+            184
+          ],
+          "nature": "Relaxed",
+          "ivatk": 0,
+          "ivdef": 0,
+          "ivhp": 0,
+          "ivspatk": 0,
+          "ivspdef": 0,
+          "ivspeed": 0,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        },
+        {
+          "ability": "Pure Power",
+          "gender": "FEMALE",
+          "id": 307,
+          "item": null,
+          "level": 21,
+          "moves": [
+            197,
+            364,
+            395,
+            60
+          ],
+          "nature": "Hardy",
+          "ivatk": 0,
+          "ivdef": 0,
+          "ivhp": 0,
+          "ivspatk": 0,
+          "ivspdef": 0,
+          "ivspeed": 0,
+          "evhp": 0,
+          "evatk": 0,
+          "evdef": 0,
+          "evspatk": 0,
+          "evspdef": 0,
+          "evspeed": 0
+        }
+      ],
+      "team_name": "Black Belt Gregory (Route 215)",
+      "name": "Black Belt Gregory",
+      "route": "Route 215",
+      "zoneId": 394,
+      "trainerType": "Single Battle",
+      "trainer_id": 97
+    },
     {
       "team": [
         {
