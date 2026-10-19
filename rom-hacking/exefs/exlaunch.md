@@ -13,7 +13,7 @@ This guide assumes you're using Windows Subsystem for Linux. The setup is pretty
 - I recommend [Windows Terminal](https://aka.ms/terminal) too (This is installed by default in Windows 11)
 - [devkitPro](https://devkitpro.org/)
 - Python
-- The [Keystone-Engine](https://www.keystone-engine.org/) Python Module
+- The Keystone-Engine Python Module
 - CMake
 - Either the [ExLaunch Template](https://github.com/Martmists-GH/BDSP_rombase) repo or the [Luminescent fork](https://github.com/TeamLumi/Luminescent_ExLaunch) of it
 
