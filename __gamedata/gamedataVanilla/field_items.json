@@ -1,12 +1,61 @@
 {
-    "596": [
+    "575": [
         {
-            "TalkLabel": "ev_fld_item_283",
-            "itemId": 366,
+            "TalkLabel": "ev_fld_item_270",
+            "itemId": 50,
             "quantity": 1,
             "Position": {
-                "x": 32.0,
-                "y": 29.0
+                "x": 33.0,
+                "y": 5.0
+            }
+        }
+    ],
+    "202": [
+        {
+            "TalkLabel": "ev_fld_item_120",
+            "itemId": 362,
+            "quantity": 1,
+            "Position": {
+                "x": 21.0,
+                "y": 21.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_122",
+            "itemId": 19,
+            "quantity": 1,
+            "Position": {
+                "x": 11.0,
+                "y": 7.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_121",
+            "itemId": 315,
+            "quantity": 1,
+            "Position": {
+                "x": 46.0,
+                "y": 20.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_123",
+            "itemId": 82,
+            "quantity": 1,
+            "Position": {
+                "x": 51.0,
+                "y": 6.0
+            }
+        }
+    ],
+    "310": [
+        {
+            "TalkLabel": "ev_fld_item_247",
+            "itemId": 312,
+            "quantity": 1,
+            "Position": {
+                "x": 3.0,
+                "y": 4.0
             }
         }
     ],
@@ -21,412 +70,123 @@
             }
         }
     ],
-    "616": [
+    "611": [
         {
-            "TalkLabel": "ev_fld_item_285",
-            "itemId": 346,
-            "quantity": 1,
-            "Position": {
-                "x": 59.0,
-                "y": 7.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_286",
-            "itemId": 108,
-            "quantity": 1,
-            "Position": {
-                "x": 8.0,
-                "y": 32.0
-            }
-        }
-    ],
-    "323": [
-        {
-            "TalkLabel": "ev_fld_item_238",
-            "itemId": 463,
-            "quantity": 1,
-            "Position": {
-                "x": 25.0,
-                "y": 54.0
-            }
-        }
-    ],
-    "382": [
-        {
-            "TalkLabel": "ev_fld_item_57",
-            "itemId": 414,
-            "quantity": 1,
-            "Position": {
-                "x": 21.0,
-                "y": 3.0
-            }
-        }
-    ],
-    "295": [
-        {
-            "TalkLabel": "ev_fld_item_116",
-            "itemId": 355,
-            "quantity": 1,
-            "Position": {
-                "x": 58.0,
-                "y": 3.0
-            }
-        }
-    ],
-    "355": [
-        {
-            "TalkLabel": "ev_fld_item_0",
-            "itemId": 17,
-            "quantity": 1,
-            "Position": {
-                "x": 162.0,
-                "y": 806.0
-            }
-        }
-    ],
-    "356": [
-        {
-            "TalkLabel": "ev_fld_item_1",
-            "itemId": 79,
-            "quantity": 1,
-            "Position": {
-                "x": 222.0,
-                "y": 745.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_2",
-            "itemId": 4,
-            "quantity": 1,
-            "Position": {
-                "x": 211.0,
-                "y": 750.0
-            }
-        }
-    ],
-    "357": [
-        {
-            "TalkLabel": "ev_fld_item_9",
-            "itemId": 254,
-            "quantity": 1,
-            "Position": {
-                "x": 162.0,
-                "y": 732.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_10",
-            "itemId": 45,
-            "quantity": 1,
-            "Position": {
-                "x": 189.0,
-                "y": 716.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_82",
-            "itemId": 22,
-            "quantity": 1,
-            "Position": {
-                "x": 177.0,
-                "y": 722.0
-            }
-        }
-    ],
-    "403": [
-        {
-            "TalkLabel": "ev_fld_item_124",
-            "itemId": 18,
-            "quantity": 1,
-            "Position": {
-                "x": 169.0,
-                "y": 877.0
-            }
-        }
-    ],
-    "404": [
-        {
-            "TalkLabel": "ev_fld_item_130",
-            "itemId": 46,
-            "quantity": 1,
-            "Position": {
-                "x": 239.0,
-                "y": 908.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_131",
-            "itemId": 408,
-            "quantity": 1,
-            "Position": {
-                "x": 295.0,
-                "y": 922.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_129",
-            "itemId": 94,
-            "quantity": 1,
-            "Position": {
-                "x": 256.0,
-                "y": 916.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_101",
-            "itemId": 320,
-            "quantity": 1,
-            "Position": {
-                "x": 250.0,
-                "y": 902.0
-            }
-        }
-    ],
-    "485": [
-        {
-            "TalkLabel": "ev_fld_item_127",
-            "itemId": 48,
-            "quantity": 1,
-            "Position": {
-                "x": 199.0,
-                "y": 917.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_125",
-            "itemId": 299,
-            "quantity": 1,
-            "Position": {
-                "x": 171.0,
-                "y": 918.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_128",
-            "itemId": 38,
-            "quantity": 1,
-            "Position": {
-                "x": 180.0,
-                "y": 910.0
-            }
-        }
-    ],
-    "240": [
-        {
-            "TalkLabel": "ev_fld_item_95",
-            "itemId": 307,
-            "quantity": 1,
-            "Position": {
-                "x": 4.0,
-                "y": 9.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_96",
-            "itemId": 314,
-            "quantity": 1,
-            "Position": {
-                "x": 6.0,
-                "y": 9.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_97",
-            "itemId": 92,
-            "quantity": 1,
-            "Position": {
-                "x": 4.0,
-                "y": 7.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_98",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 6.0,
-                "y": 7.0
-            }
-        }
-    ],
-    "214": [
-        {
-            "TalkLabel": "ev_fld_item_150",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 14.0,
-                "y": 26.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_148",
-            "itemId": 396,
-            "quantity": 1,
-            "Position": {
-                "x": 2.0,
-                "y": 31.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_149",
-            "itemId": 78,
-            "quantity": 1,
-            "Position": {
-                "x": 28.0,
-                "y": 43.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_174",
-            "itemId": 329,
-            "quantity": 1,
-            "Position": {
-                "x": 12.0,
-                "y": 60.0
-            }
-        }
-    ],
-    "246": [
-        {
-            "TalkLabel": "ev_fld_item_190",
-            "itemId": 386,
-            "quantity": 1,
-            "Position": {
-                "x": 13.0,
-                "y": 18.0
-            }
-        }
-    ],
-    "290": [
-        {
-            "TalkLabel": "ev_fld_item_243",
-            "itemId": 246,
-            "quantity": 1,
-            "Position": {
-                "x": 11.0,
-                "y": 18.0
-            }
-        }
-    ],
-    "543": [
-        {
-            "TalkLabel": "ev_fld_item_257",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 37.0,
-                "y": 13.0
-            }
-        }
-    ],
-    "576": [
-        {
-            "TalkLabel": "ev_fld_item_271",
-            "itemId": 333,
-            "quantity": 1,
-            "Position": {
-                "x": 17.0,
-                "y": 6.0
-            }
-        }
-    ],
-    "326": [
-        {
-            "TalkLabel": "ev_fld_item_240",
-            "itemId": 352,
-            "quantity": 1,
-            "Position": {
-                "x": 53.0,
-                "y": 46.0
-            }
-        }
-    ],
-    "502": [
-        {
-            "TalkLabel": "ev_fld_item_304",
-            "itemId": 211,
-            "quantity": 1,
-            "Position": {
-                "x": 12.0,
-                "y": 20.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_305",
-            "itemId": 212,
-            "quantity": 1,
-            "Position": {
-                "x": 19.0,
-                "y": 19.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_306",
-            "itemId": 686,
-            "quantity": 1,
-            "Position": {
-                "x": 21.0,
-                "y": 22.0
-            }
-        }
-    ],
-    "251": [
-        {
-            "TalkLabel": "ev_fld_item_51",
-            "itemId": 372,
+            "TalkLabel": "ev_fld_item_260",
+            "itemId": 336,
             "quantity": 1,
             "Position": {
                 "x": 32.0,
-                "y": 18.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_52",
-            "itemId": 370,
-            "quantity": 1,
-            "Position": {
-                "x": 25.0,
                 "y": 45.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_53",
-            "itemId": 310,
+            "TalkLabel": "ev_fld_item_261",
+            "itemId": 87,
             "quantity": 1,
             "Position": {
                 "x": 53.0,
+                "y": 8.0
+            }
+        }
+    ],
+    "313": [
+        {
+            "TalkLabel": "ev_fld_item_248",
+            "itemId": 417,
+            "quantity": 1,
+            "Position": {
+                "x": 20.0,
+                "y": 4.0
+            }
+        }
+    ],
+    "601": [
+        {
+            "TalkLabel": "ev_fld_item_287",
+            "itemId": 248,
+            "quantity": 1,
+            "Position": {
+                "x": 39.0,
+                "y": 20.0
+            }
+        }
+    ],
+    "499": [
+        {
+            "TalkLabel": "ev_fld_item_295",
+            "itemId": 225,
+            "quantity": 1,
+            "Position": {
+                "x": 8.0,
+                "y": 8.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_296",
+            "itemId": 204,
+            "quantity": 1,
+            "Position": {
+                "x": 10.0,
                 "y": 9.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_250",
-            "itemId": 223,
+            "TalkLabel": "ev_fld_item_297",
+            "itemId": 205,
             "quantity": 1,
             "Position": {
-                "x": 41.0,
-                "y": 10.0
+                "x": 4.0,
+                "y": 9.0
             }
         }
     ],
-    "216": [
+    "500": [
         {
-            "TalkLabel": "ev_fld_item_39",
-            "itemId": 136,
+            "TalkLabel": "ev_fld_item_298",
+            "itemId": 201,
             "quantity": 1,
             "Position": {
-                "x": 31.0,
-                "y": 10.0
+                "x": 12.0,
+                "y": 19.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_37",
-            "itemId": 135,
+            "TalkLabel": "ev_fld_item_299",
+            "itemId": 202,
             "quantity": 1,
             "Position": {
-                "x": 31.0,
-                "y": 10.0
+                "x": 21.0,
+                "y": 19.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_300",
+            "itemId": 203,
+            "quantity": 1,
+            "Position": {
+                "x": 13.0,
+                "y": 22.0
+            }
+        }
+    ],
+    "135": [
+        {
+            "TalkLabel": "ev_fld_item_111",
+            "itemId": 108,
+            "quantity": 1,
+            "Position": {
+                "x": 7.0,
+                "y": 4.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_236",
+            "itemId": 421,
+            "quantity": 1,
+            "Position": {
+                "x": 13.0,
+                "y": 8.0
             }
         }
     ],
@@ -450,27 +210,385 @@
             }
         }
     ],
-    "203": [
+    "624": [
         {
-            "TalkLabel": "ev_fld_item_46",
-            "itemId": 46,
+            "TalkLabel": "ev_fld_item_294",
+            "itemId": 112,
             "quantity": 1,
             "Position": {
-                "x": 13.0,
-                "y": 9.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_47",
-            "itemId": 109,
-            "quantity": 1,
-            "Position": {
-                "x": 28.0,
-                "y": 28.0
+                "x": 16.0,
+                "y": 21.0
             }
         }
     ],
-    "327": [
+    "556": [
+        {
+            "TalkLabel": "ev_fld_item_262",
+            "itemId": 331,
+            "quantity": 1,
+            "Position": {
+                "x": 30.0,
+                "y": 22.0
+            }
+        }
+    ],
+    "329": [
+        {
+            "TalkLabel": "ev_fld_item_241",
+            "itemId": 341,
+            "quantity": 1,
+            "Position": {
+                "x": 38.0,
+                "y": 8.0
+            }
+        }
+    ],
+    "594": [
+        {
+            "TalkLabel": "ev_fld_item_282",
+            "itemId": 53,
+            "quantity": 1,
+            "Position": {
+                "x": 21.0,
+                "y": 5.0
+            }
+        }
+    ],
+    "294": [
+        {
+            "TalkLabel": "ev_fld_item_116",
+            "itemId": 355,
+            "quantity": 1,
+            "Position": {
+                "x": 4.0,
+                "y": 3.0
+            }
+        }
+    ],
+    "599": [
+        {
+            "TalkLabel": "ev_fld_item_284",
+            "itemId": 250,
+            "quantity": 1,
+            "Position": {
+                "x": 34.0,
+                "y": 8.0
+            }
+        }
+    ],
+    "24": [
+        {
+            "TalkLabel": "ev_fld_item_134",
+            "itemId": 416,
+            "quantity": 1,
+            "Position": {
+                "x": 34.0,
+                "y": 762.0
+            }
+        }
+    ],
+    "400": [
+        {
+            "TalkLabel": "ev_fld_item_132",
+            "itemId": 50,
+            "quantity": 1,
+            "Position": {
+                "x": 117.0,
+                "y": 744.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_133",
+            "itemId": 94,
+            "quantity": 1,
+            "Position": {
+                "x": 93.0,
+                "y": 759.0
+            }
+        }
+    ],
+    "300": [
+        {
+            "TalkLabel": "ev_fld_item_135",
+            "itemId": 278,
+            "quantity": 1,
+            "Position": {
+                "x": 5.0,
+                "y": 6.0
+            }
+        }
+    ],
+    "596": [
+        {
+            "TalkLabel": "ev_fld_item_283",
+            "itemId": 366,
+            "quantity": 1,
+            "Position": {
+                "x": 32.0,
+                "y": 29.0
+            }
+        }
+    ],
+    "244": [
+        {
+            "TalkLabel": "ev_fld_item_183",
+            "itemId": 50,
+            "quantity": 1,
+            "Position": {
+                "x": 42.0,
+                "y": 48.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_182",
+            "itemId": 27,
+            "quantity": 1,
+            "Position": {
+                "x": 28.0,
+                "y": 46.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_181",
+            "itemId": 368,
+            "quantity": 1,
+            "Position": {
+                "x": 7.0,
+                "y": 61.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_185",
+            "itemId": 326,
+            "quantity": 1,
+            "Position": {
+                "x": 13.0,
+                "y": 38.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_184",
+            "itemId": 52,
+            "quantity": 1,
+            "Position": {
+                "x": 44.0,
+                "y": 36.0
+            }
+        }
+    ],
+    "215": [
+        {
+            "TalkLabel": "ev_fld_item_156",
+            "itemId": 28,
+            "quantity": 1,
+            "Position": {
+                "x": 17.0,
+                "y": 11.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_151",
+            "itemId": 237,
+            "quantity": 1,
+            "Position": {
+                "x": 6.0,
+                "y": 18.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_152",
+            "itemId": 269,
+            "quantity": 1,
+            "Position": {
+                "x": 22.0,
+                "y": 36.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_155",
+            "itemId": 41,
+            "quantity": 1,
+            "Position": {
+                "x": 26.0,
+                "y": 17.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_154",
+            "itemId": 23,
+            "quantity": 1,
+            "Position": {
+                "x": 29.0,
+                "y": 32.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_153",
+            "itemId": 90,
+            "quantity": 1,
+            "Position": {
+                "x": 2.0,
+                "y": 60.0
+            }
+        }
+    ],
+    "204": [
+        {
+            "TalkLabel": "ev_fld_item_170",
+            "itemId": 28,
+            "quantity": 1,
+            "Position": {
+                "x": 3.0,
+                "y": 31.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_172",
+            "itemId": 24,
+            "quantity": 1,
+            "Position": {
+                "x": 23.0,
+                "y": 37.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_171",
+            "itemId": 407,
+            "quantity": 1,
+            "Position": {
+                "x": 3.0,
+                "y": 55.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_173",
+            "itemId": 78,
+            "quantity": 1,
+            "Position": {
+                "x": 13.0,
+                "y": 60.0
+            }
+        }
+    ],
+    "426": [
+        {
+            "TalkLabel": "ev_fld_item_307",
+            "itemId": 455,
+            "quantity": 1,
+            "Position": {
+                "x": 6.0,
+                "y": 4.0
+            }
+        }
+    ],
+    "501": [
+        {
+            "TalkLabel": "ev_fld_item_301",
+            "itemId": 208,
+            "quantity": 1,
+            "Position": {
+                "x": 14.0,
+                "y": 17.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_302",
+            "itemId": 209,
+            "quantity": 1,
+            "Position": {
+                "x": 17.0,
+                "y": 22.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_303",
+            "itemId": 210,
+            "quantity": 1,
+            "Position": {
+                "x": 22.0,
+                "y": 19.0
+            }
+        }
+    ],
+    "304": [
+        {
+            "TalkLabel": "ev_fld_item_144",
+            "itemId": 107,
+            "quantity": 1,
+            "Position": {
+                "x": 14.0,
+                "y": 7.0
+            }
+        }
+    ],
+    "200": [
+        {
+            "TalkLabel": "ev_fld_item_18",
+            "itemId": 18,
+            "quantity": 1,
+            "Position": {
+                "x": 15.0,
+                "y": 81.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_19",
+            "itemId": 22,
+            "quantity": 1,
+            "Position": {
+                "x": 41.0,
+                "y": 59.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_20",
+            "itemId": 3,
+            "quantity": 1,
+            "Position": {
+                "x": 50.0,
+                "y": 85.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_21",
+            "itemId": 94,
+            "quantity": 1,
+            "Position": {
+                "x": 66.0,
+                "y": 42.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_85",
+            "itemId": 38,
+            "quantity": 1,
+            "Position": {
+                "x": 81.0,
+                "y": 12.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_249",
+            "itemId": 17,
+            "quantity": 1,
+            "Position": {
+                "x": 84.0,
+                "y": 82.0
+            }
+        }
+    ],
+    "567": [
+        {
+            "TalkLabel": "ev_fld_item_268",
+            "itemId": 389,
+            "quantity": 1,
+            "Position": {
+                "x": 17.0,
+                "y": 17.0
+            }
+        }
+    ],
+    "326": [
         {
             "TalkLabel": "ev_fld_item_240",
             "itemId": 352,
@@ -478,6 +596,489 @@
             "Position": {
                 "x": 53.0,
                 "y": 46.0
+            }
+        }
+    ],
+    "562": [
+        {
+            "TalkLabel": "ev_fld_item_265",
+            "itemId": 249,
+            "quantity": 1,
+            "Position": {
+                "x": 44.0,
+                "y": 12.0
+            }
+        }
+    ],
+    "565": [
+        {
+            "TalkLabel": "ev_fld_item_266",
+            "itemId": 92,
+            "quantity": 1,
+            "Position": {
+                "x": 9.0,
+                "y": 23.0
+            }
+        }
+    ],
+    "142": [
+        {
+            "TalkLabel": "ev_fld_item_177",
+            "itemId": 83,
+            "quantity": 1,
+            "Position": {
+                "x": 881.0,
+                "y": 779.0
+            }
+        }
+    ],
+    "411": [
+        {
+            "TalkLabel": "ev_fld_item_194",
+            "itemId": 326,
+            "quantity": 1,
+            "Position": {
+                "x": 884.0,
+                "y": 570.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_195",
+            "itemId": 50,
+            "quantity": 1,
+            "Position": {
+                "x": 904.0,
+                "y": 524.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_196",
+            "itemId": 280,
+            "quantity": 1,
+            "Position": {
+                "x": 907.0,
+                "y": 509.0
+            }
+        }
+    ],
+    "486": [
+        {
+            "TalkLabel": "ev_fld_item_180",
+            "itemId": 345,
+            "quantity": 1,
+            "Position": {
+                "x": 840.0,
+                "y": 684.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_178",
+            "itemId": 88,
+            "quantity": 1,
+            "Position": {
+                "x": 850.0,
+                "y": 649.0
+            }
+        }
+    ],
+    "324": [
+        {
+            "TalkLabel": "ev_fld_item_239",
+            "itemId": 365,
+            "quantity": 1,
+            "Position": {
+                "x": 25.0,
+                "y": 54.0
+            }
+        }
+    ],
+    "110": [
+        {
+            "TalkLabel": "ev_fld_item_74",
+            "itemId": 243,
+            "quantity": 1,
+            "Position": {
+                "x": 625.0,
+                "y": 829.0
+            }
+        }
+    ],
+    "379": [
+        {
+            "TalkLabel": "ev_fld_item_55",
+            "itemId": 318,
+            "quantity": 1,
+            "Position": {
+                "x": 456.0,
+                "y": 791.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_54",
+            "itemId": 338,
+            "quantity": 1,
+            "Position": {
+                "x": 453.0,
+                "y": 804.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_56",
+            "itemId": 40,
+            "quantity": 1,
+            "Position": {
+                "x": 459.0,
+                "y": 821.0
+            }
+        }
+    ],
+    "383": [
+        {
+            "TalkLabel": "ev_fld_item_59",
+            "itemId": 18,
+            "quantity": 1,
+            "Position": {
+                "x": 455.0,
+                "y": 860.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_60",
+            "itemId": 411,
+            "quantity": 1,
+            "Position": {
+                "x": 475.0,
+                "y": 852.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_61",
+            "itemId": 389,
+            "quantity": 1,
+            "Position": {
+                "x": 507.0,
+                "y": 846.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_62",
+            "itemId": 52,
+            "quantity": 1,
+            "Position": {
+                "x": 522.0,
+                "y": 842.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_63",
+            "itemId": 61,
+            "quantity": 1,
+            "Position": {
+                "x": 545.0,
+                "y": 835.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_64",
+            "itemId": 333,
+            "quantity": 1,
+            "Position": {
+                "x": 547.0,
+                "y": 862.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_65",
+            "itemId": 28,
+            "quantity": 1,
+            "Position": {
+                "x": 558.0,
+                "y": 844.0
+            }
+        }
+    ],
+    "252": [
+        {
+            "TalkLabel": "ev_fld_item_11",
+            "itemId": 366,
+            "quantity": 1,
+            "Position": {
+                "x": 7.0,
+                "y": 38.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_12",
+            "itemId": 319,
+            "quantity": 1,
+            "Position": {
+                "x": 17.0,
+                "y": 11.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_13",
+            "itemId": 330,
+            "quantity": 1,
+            "Position": {
+                "x": 28.0,
+                "y": 5.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_251",
+            "itemId": 18,
+            "quantity": 1,
+            "Position": {
+                "x": 22.0,
+                "y": 44.0
+            }
+        }
+    ],
+    "290": [
+        {
+            "TalkLabel": "ev_fld_item_243",
+            "itemId": 246,
+            "quantity": 1,
+            "Position": {
+                "x": 11.0,
+                "y": 18.0
+            }
+        }
+    ],
+    "550": [
+        {
+            "TalkLabel": "ev_fld_item_259",
+            "itemId": 414,
+            "quantity": 1,
+            "Position": {
+                "x": 25.0,
+                "y": 15.0
+            }
+        }
+    ],
+    "246": [
+        {
+            "TalkLabel": "ev_fld_item_190",
+            "itemId": 386,
+            "quantity": 1,
+            "Position": {
+                "x": 13.0,
+                "y": 18.0
+            }
+        }
+    ],
+    "292": [
+        {
+            "TalkLabel": "ev_fld_item_38",
+            "itemId": 353,
+            "quantity": 1,
+            "Position": {
+                "x": 56.0,
+                "y": 55.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_34",
+            "itemId": 359,
+            "quantity": 1,
+            "Position": {
+                "x": 8.0,
+                "y": 44.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_35",
+            "itemId": 50,
+            "quantity": 1,
+            "Position": {
+                "x": 7.0,
+                "y": 15.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_36",
+            "itemId": 78,
+            "quantity": 1,
+            "Position": {
+                "x": 44.0,
+                "y": 15.0
+            }
+        }
+    ],
+    "316": [
+        {
+            "TalkLabel": "ev_fld_item_167",
+            "itemId": 29,
+            "quantity": 1,
+            "Position": {
+                "x": 48.0,
+                "y": 21.0
+            }
+        }
+    ],
+    "247": [
+        {
+            "TalkLabel": "ev_fld_item_193",
+            "itemId": 89,
+            "quantity": 1,
+            "Position": {
+                "x": 44.0,
+                "y": 9.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_191",
+            "itemId": 40,
+            "quantity": 1,
+            "Position": {
+                "x": 14.0,
+                "y": 7.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_192",
+            "itemId": 108,
+            "quantity": 1,
+            "Position": {
+                "x": 14.0,
+                "y": 4.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_197",
+            "itemId": 234,
+            "quantity": 1,
+            "Position": {
+                "x": 27.0,
+                "y": 60.0
+            }
+        }
+    ],
+    "334": [
+        {
+            "TalkLabel": "ev_fld_item_245",
+            "itemId": 327,
+            "quantity": 1,
+            "Position": {
+                "x": 10.0,
+                "y": 52.0
+            }
+        }
+    ],
+    "123": [
+        {
+            "TalkLabel": "ev_fld_item_109",
+            "itemId": 316,
+            "quantity": 1,
+            "Position": {
+                "x": 690.0,
+                "y": 613.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_110",
+            "itemId": 51,
+            "quantity": 1,
+            "Position": {
+                "x": 710.0,
+                "y": 584.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_238",
+            "itemId": 463,
+            "quantity": 1,
+            "Position": {
+                "x": 721.0,
+                "y": 594.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_256",
+            "itemId": 251,
+            "quantity": 1,
+            "Position": {
+                "x": 731.0,
+                "y": 603.0
+            }
+        }
+    ],
+    "351": [
+        {
+            "TalkLabel": "ev_fld_item_163",
+            "itemId": 2,
+            "quantity": 1,
+            "Position": {
+                "x": 340.0,
+                "y": 230.0
+            }
+        }
+    ],
+    "395": [
+        {
+            "TalkLabel": "ev_fld_item_157",
+            "itemId": 340,
+            "quantity": 1,
+            "Position": {
+                "x": 377.0,
+                "y": 392.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_159",
+            "itemId": 20,
+            "quantity": 1,
+            "Position": {
+                "x": 342.0,
+                "y": 396.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_158",
+            "itemId": 219,
+            "quantity": 1,
+            "Position": {
+                "x": 358.0,
+                "y": 389.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_246",
+            "itemId": 45,
+            "quantity": 1,
+            "Position": {
+                "x": 367.0,
+                "y": 386.0
+            }
+        }
+    ],
+    "397": [
+        {
+            "TalkLabel": "ev_fld_item_161",
+            "itemId": 427,
+            "quantity": 1,
+            "Position": {
+                "x": 296.0,
+                "y": 305.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_162",
+            "itemId": 47,
+            "quantity": 1,
+            "Position": {
+                "x": 305.0,
+                "y": 330.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_160",
+            "itemId": 334,
+            "quantity": 1,
+            "Position": {
+                "x": 300.0,
+                "y": 316.0
             }
         }
     ],
@@ -624,14 +1225,36 @@
             }
         }
     ],
-    "606": [
+    "578": [
         {
-            "TalkLabel": "ev_fld_item_288",
-            "itemId": 107,
+            "TalkLabel": "ev_fld_item_293",
+            "itemId": 227,
             "quantity": 1,
             "Position": {
-                "x": 25.0,
-                "y": 5.0
+                "x": 24.0,
+                "y": 17.0
+            }
+        }
+    ],
+    "315": [
+        {
+            "TalkLabel": "ev_fld_item_165",
+            "itemId": 376,
+            "quantity": 1,
+            "Position": {
+                "x": 52.0,
+                "y": 14.0
+            }
+        }
+    ],
+    "587": [
+        {
+            "TalkLabel": "ev_fld_item_278",
+            "itemId": 244,
+            "quantity": 1,
+            "Position": {
+                "x": 39.0,
+                "y": 24.0
             }
         }
     ],
@@ -769,679 +1392,166 @@
             }
         }
     ],
-    "261": [
+    "613": [
         {
-            "TalkLabel": "ev_fld_item_216",
-            "itemId": 377,
-            "quantity": 1,
-            "Position": {
-                "x": 11.0,
-                "y": 44.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_223",
-            "itemId": 49,
-            "quantity": 1,
-            "Position": {
-                "x": 49.0,
-                "y": 49.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_222",
-            "itemId": 29,
-            "quantity": 1,
-            "Position": {
-                "x": 54.0,
-                "y": 3.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_220",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 12.0,
-                "y": 76.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_217",
-            "itemId": 278,
-            "quantity": 1,
-            "Position": {
-                "x": 56.0,
-                "y": 77.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_218",
-            "itemId": 41,
-            "quantity": 1,
-            "Position": {
-                "x": 69.0,
-                "y": 55.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_219",
-            "itemId": 92,
-            "quantity": 1,
-            "Position": {
-                "x": 92.0,
-                "y": 3.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_221",
-            "itemId": 2,
-            "quantity": 1,
-            "Position": {
-                "x": 38.0,
-                "y": 44.0
-            }
-        }
-    ],
-    "550": [
-        {
-            "TalkLabel": "ev_fld_item_259",
-            "itemId": 414,
-            "quantity": 1,
-            "Position": {
-                "x": 25.0,
-                "y": 15.0
-            }
-        }
-    ],
-    "501": [
-        {
-            "TalkLabel": "ev_fld_item_301",
-            "itemId": 208,
-            "quantity": 1,
-            "Position": {
-                "x": 14.0,
-                "y": 17.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_302",
-            "itemId": 209,
-            "quantity": 1,
-            "Position": {
-                "x": 17.0,
-                "y": 22.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_303",
-            "itemId": 210,
-            "quantity": 1,
-            "Position": {
-                "x": 22.0,
-                "y": 19.0
-            }
-        }
-    ],
-    "219": [
-        {
-            "TalkLabel": "ev_fld_item_66",
-            "itemId": 76,
-            "quantity": 1,
-            "Position": {
-                "x": 52.0,
-                "y": 32.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_67",
-            "itemId": 17,
-            "quantity": 1,
-            "Position": {
-                "x": 54.0,
-                "y": 49.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_68",
-            "itemId": 3,
-            "quantity": 1,
-            "Position": {
-                "x": 76.0,
-                "y": 36.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_70",
-            "itemId": 94,
-            "quantity": 1,
-            "Position": {
-                "x": 35.0,
-                "y": 71.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_71",
-            "itemId": 4,
-            "quantity": 1,
-            "Position": {
-                "x": 75.0,
-                "y": 71.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_69",
-            "itemId": 26,
-            "quantity": 1,
-            "Position": {
-                "x": 90.0,
-                "y": 77.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_72",
-            "itemId": 18,
-            "quantity": 1,
-            "Position": {
-                "x": 48.0,
-                "y": 112.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_73",
-            "itemId": 22,
-            "quantity": 1,
-            "Position": {
-                "x": 91.0,
-                "y": 105.0
-            }
-        }
-    ],
-    "316": [
-        {
-            "TalkLabel": "ev_fld_item_167",
-            "itemId": 29,
-            "quantity": 1,
-            "Position": {
-                "x": 48.0,
-                "y": 21.0
-            }
-        }
-    ],
-    "612": [
-        {
-            "TalkLabel": "ev_fld_item_267",
-            "itemId": 361,
-            "quantity": 1,
-            "Position": {
-                "x": 37.0,
-                "y": 17.0
-            }
-        }
-    ],
-    "587": [
-        {
-            "TalkLabel": "ev_fld_item_278",
-            "itemId": 244,
-            "quantity": 1,
-            "Position": {
-                "x": 39.0,
-                "y": 24.0
-            }
-        }
-    ],
-    "304": [
-        {
-            "TalkLabel": "ev_fld_item_144",
-            "itemId": 107,
-            "quantity": 1,
-            "Position": {
-                "x": 14.0,
-                "y": 7.0
-            }
-        }
-    ],
-    "365": [
-        {
-            "TalkLabel": "ev_fld_item_50",
-            "itemId": 4,
-            "quantity": 1,
-            "Position": {
-                "x": 416.0,
-                "y": 714.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_48",
-            "itemId": 48,
-            "quantity": 1,
-            "Position": {
-                "x": 401.0,
-                "y": 705.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_49",
-            "itemId": 59,
-            "quantity": 1,
-            "Position": {
-                "x": 399.0,
-                "y": 720.0
-            }
-        }
-    ],
-    "300": [
-        {
-            "TalkLabel": "ev_fld_item_135",
-            "itemId": 278,
-            "quantity": 1,
-            "Position": {
-                "x": 5.0,
-                "y": 6.0
-            }
-        }
-    ],
-    "317": [
-        {
-            "TalkLabel": "ev_fld_item_166",
-            "itemId": 348,
-            "quantity": 1,
-            "Position": {
-                "x": 36.0,
-                "y": 12.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_168",
-            "itemId": 40,
-            "quantity": 1,
-            "Position": {
-                "x": 50.0,
-                "y": 21.0
-            }
-        }
-    ],
-    "371": [
-        {
-            "TalkLabel": "ev_fld_item_94",
-            "itemId": 354,
-            "quantity": 1,
-            "Position": {
-                "x": 6.0,
-                "y": 12.0
-            }
-        }
-    ],
-    "334": [
-        {
-            "TalkLabel": "ev_fld_item_245",
-            "itemId": 327,
-            "quantity": 1,
-            "Position": {
-                "x": 10.0,
-                "y": 52.0
-            }
-        }
-    ],
-    "580": [
-        {
-            "TalkLabel": "ev_fld_item_276",
-            "itemId": 372,
-            "quantity": 1,
-            "Position": {
-                "x": 10.0,
-                "y": 5.0
-            }
-        }
-    ],
-    "245": [
-        {
-            "TalkLabel": "ev_fld_item_188",
-            "itemId": 406,
-            "quantity": 1,
-            "Position": {
-                "x": 16.0,
-                "y": 4.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_186",
-            "itemId": 39,
-            "quantity": 1,
-            "Position": {
-                "x": 4.0,
-                "y": 5.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_187",
-            "itemId": 23,
-            "quantity": 1,
-            "Position": {
-                "x": 34.0,
-                "y": 22.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_189",
-            "itemId": 398,
-            "quantity": 1,
-            "Position": {
-                "x": 43.0,
-                "y": 12.0
-            }
-        }
-    ],
-    "610": [
-        {
-            "TalkLabel": "ev_fld_item_289",
-            "itemId": 376,
-            "quantity": 1,
-            "Position": {
-                "x": 26.0,
-                "y": 34.0
-            }
-        }
-    ],
-    "562": [
-        {
-            "TalkLabel": "ev_fld_item_265",
-            "itemId": 249,
-            "quantity": 1,
-            "Position": {
-                "x": 44.0,
-                "y": 12.0
-            }
-        }
-    ],
-    "247": [
-        {
-            "TalkLabel": "ev_fld_item_193",
-            "itemId": 89,
-            "quantity": 1,
-            "Position": {
-                "x": 44.0,
-                "y": 9.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_191",
-            "itemId": 40,
-            "quantity": 1,
-            "Position": {
-                "x": 14.0,
-                "y": 7.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_192",
-            "itemId": 108,
-            "quantity": 1,
-            "Position": {
-                "x": 14.0,
-                "y": 4.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_197",
-            "itemId": 234,
-            "quantity": 1,
-            "Position": {
-                "x": 27.0,
-                "y": 60.0
-            }
-        }
-    ],
-    "252": [
-        {
-            "TalkLabel": "ev_fld_item_11",
-            "itemId": 366,
-            "quantity": 1,
-            "Position": {
-                "x": 7.0,
-                "y": 38.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_12",
-            "itemId": 319,
-            "quantity": 1,
-            "Position": {
-                "x": 17.0,
-                "y": 11.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_13",
-            "itemId": 330,
-            "quantity": 1,
-            "Position": {
-                "x": 28.0,
-                "y": 5.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_251",
-            "itemId": 18,
-            "quantity": 1,
-            "Position": {
-                "x": 22.0,
-                "y": 44.0
-            }
-        }
-    ],
-    "294": [
-        {
-            "TalkLabel": "ev_fld_item_116",
-            "itemId": 355,
-            "quantity": 1,
-            "Position": {
-                "x": 4.0,
-                "y": 3.0
-            }
-        }
-    ],
-    "310": [
-        {
-            "TalkLabel": "ev_fld_item_247",
-            "itemId": 312,
-            "quantity": 1,
-            "Position": {
-                "x": 3.0,
-                "y": 4.0
-            }
-        }
-    ],
-    "293": [
-        {
-            "TalkLabel": "ev_fld_item_42",
-            "itemId": 286,
-            "quantity": 1,
-            "Position": {
-                "x": 22.0,
-                "y": 9.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_40",
-            "itemId": 39,
+            "TalkLabel": "ev_fld_item_272",
+            "itemId": 408,
             "quantity": 1,
             "Position": {
                 "x": 31.0,
-                "y": 16.0
+                "y": 26.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_41",
-            "itemId": 28,
+            "TalkLabel": "ev_fld_item_273",
+            "itemId": 51,
             "quantity": 1,
             "Position": {
-                "x": 33.0,
-                "y": 8.0
+                "x": 5.0,
+                "y": 46.0
             }
         }
     ],
-    "313": [
+    "362": [
         {
-            "TalkLabel": "ev_fld_item_248",
-            "itemId": 417,
+            "TalkLabel": "ev_fld_item_30",
+            "itemId": 245,
             "quantity": 1,
             "Position": {
-                "x": 20.0,
-                "y": 4.0
-            }
-        }
-    ],
-    "567": [
-        {
-            "TalkLabel": "ev_fld_item_268",
-            "itemId": 389,
-            "quantity": 1,
-            "Position": {
-                "x": 17.0,
-                "y": 17.0
-            }
-        }
-    ],
-    "253": [
-        {
-            "TalkLabel": "ev_fld_item_146",
-            "itemId": 239,
-            "quantity": 1,
-            "Position": {
-                "x": 14.0,
-                "y": 15.0
+                "x": 292.0,
+                "y": 623.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_234",
-            "itemId": 85,
+            "TalkLabel": "ev_fld_item_31",
+            "itemId": 27,
             "quantity": 1,
             "Position": {
-                "x": 46.0,
-                "y": 28.0
-            }
-        }
-    ],
-    "24": [
-        {
-            "TalkLabel": "ev_fld_item_134",
-            "itemId": 416,
-            "quantity": 1,
-            "Position": {
-                "x": 34.0,
-                "y": 762.0
-            }
-        }
-    ],
-    "400": [
-        {
-            "TalkLabel": "ev_fld_item_132",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 117.0,
-                "y": 744.0
+                "x": 313.0,
+                "y": 679.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_133",
-            "itemId": 94,
+            "TalkLabel": "ev_fld_item_33",
+            "itemId": 19,
             "quantity": 1,
             "Position": {
-                "x": 93.0,
-                "y": 759.0
-            }
-        }
-    ],
-    "426": [
-        {
-            "TalkLabel": "ev_fld_item_307",
-            "itemId": 455,
-            "quantity": 1,
-            "Position": {
-                "x": 6.0,
-                "y": 4.0
-            }
-        }
-    ],
-    "292": [
-        {
-            "TalkLabel": "ev_fld_item_38",
-            "itemId": 353,
-            "quantity": 1,
-            "Position": {
-                "x": 56.0,
-                "y": 55.0
+                "x": 314.0,
+                "y": 631.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_34",
-            "itemId": 359,
-            "quantity": 1,
-            "Position": {
-                "x": 8.0,
-                "y": 44.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_35",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 7.0,
-                "y": 15.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_36",
-            "itemId": 78,
-            "quantity": 1,
-            "Position": {
-                "x": 44.0,
-                "y": 15.0
-            }
-        }
-    ],
-    "301": [
-        {
-            "TalkLabel": "ev_fld_item_137",
+            "TalkLabel": "ev_fld_item_32",
             "itemId": 76,
             "quantity": 1,
             "Position": {
-                "x": 21.0,
-                "y": 15.0
+                "x": 302.0,
+                "y": 652.0
+            }
+        }
+    ],
+    "364": [
+        {
+            "TalkLabel": "ev_fld_item_43",
+            "itemId": 4,
+            "quantity": 1,
+            "Position": {
+                "x": 291.0,
+                "y": 711.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_136",
-            "itemId": 78,
+            "TalkLabel": "ev_fld_item_44",
+            "itemId": 56,
             "quantity": 1,
             "Position": {
-                "x": 2.0,
-                "y": 17.0
+                "x": 323.0,
+                "y": 730.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_45",
+            "itemId": 47,
+            "quantity": 1,
+            "Position": {
+                "x": 335.0,
+                "y": 725.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_145",
+            "itemId": 26,
+            "quantity": 1,
+            "Position": {
+                "x": 327.0,
+                "y": 715.0
             }
         }
     ],
-    "589": [
+    "256": [
         {
-            "TalkLabel": "ev_fld_item_279",
-            "itemId": 109,
+            "TalkLabel": "ev_fld_item_3",
+            "itemId": 328,
             "quantity": 1,
             "Position": {
-                "x": 6.0,
-                "y": 19.0
+                "x": 8.0,
+                "y": 9.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_6",
+            "itemId": 305,
+            "quantity": 1,
+            "Position": {
+                "x": 7.0,
+                "y": 21.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_4",
+            "itemId": 358,
+            "quantity": 1,
+            "Position": {
+                "x": 23.0,
+                "y": 10.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_5",
+            "itemId": 397,
+            "quantity": 1,
+            "Position": {
+                "x": 57.0,
+                "y": 12.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_169",
+            "itemId": 90,
+            "quantity": 1,
+            "Position": {
+                "x": 41.0,
+                "y": 11.0
             }
         }
     ],
-    "571": [
+    "616": [
         {
-            "TalkLabel": "ev_fld_item_292",
-            "itemId": 226,
+            "TalkLabel": "ev_fld_item_285",
+            "itemId": 346,
             "quantity": 1,
             "Position": {
-                "x": 4.0,
-                "y": 18.0
+                "x": 59.0,
+                "y": 7.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_286",
+            "itemId": 108,
+            "quantity": 1,
+            "Position": {
+                "x": 8.0,
+                "y": 32.0
             }
         }
     ],
@@ -1617,244 +1727,6 @@
             }
         }
     ],
-    "196": [
-        {
-            "TalkLabel": "ev_fld_item_7",
-            "itemId": 78,
-            "quantity": 1,
-            "Position": {
-                "x": 4.0,
-                "y": 28.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_8",
-            "itemId": 17,
-            "quantity": 1,
-            "Position": {
-                "x": 26.0,
-                "y": 24.0
-            }
-        }
-    ],
-    "256": [
-        {
-            "TalkLabel": "ev_fld_item_3",
-            "itemId": 328,
-            "quantity": 1,
-            "Position": {
-                "x": 8.0,
-                "y": 9.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_6",
-            "itemId": 305,
-            "quantity": 1,
-            "Position": {
-                "x": 7.0,
-                "y": 21.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_4",
-            "itemId": 358,
-            "quantity": 1,
-            "Position": {
-                "x": 23.0,
-                "y": 10.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_5",
-            "itemId": 397,
-            "quantity": 1,
-            "Position": {
-                "x": 57.0,
-                "y": 12.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_169",
-            "itemId": 90,
-            "quantity": 1,
-            "Position": {
-                "x": 41.0,
-                "y": 11.0
-            }
-        }
-    ],
-    "370": [
-        {
-            "TalkLabel": "ev_fld_item_93",
-            "itemId": 28,
-            "quantity": 1,
-            "Position": {
-                "x": 1.0,
-                "y": 13.0
-            }
-        }
-    ],
-    "614": [
-        {
-            "TalkLabel": "ev_fld_item_274",
-            "itemId": 386,
-            "quantity": 1,
-            "Position": {
-                "x": 48.0,
-                "y": 7.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_275",
-            "itemId": 92,
-            "quantity": 1,
-            "Position": {
-                "x": 20.0,
-                "y": 37.0
-            }
-        }
-    ],
-    "-1": [
-        {
-            "TalkLabel": "ev_fld_item_142",
-            "itemId": 242,
-            "quantity": 1,
-            "Position": {
-                "x": 38.0,
-                "y": 15.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_140",
-            "itemId": 2,
-            "quantity": 1,
-            "Position": {
-                "x": 9.0,
-                "y": 3.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_141",
-            "itemId": 24,
-            "quantity": 1,
-            "Position": {
-                "x": 5.0,
-                "y": 16.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_143",
-            "itemId": 45,
-            "quantity": 1,
-            "Position": {
-                "x": 21.0,
-                "y": 38.0
-            }
-        }
-    ],
-    "330": [
-        {
-            "TalkLabel": "ev_fld_item_241",
-            "itemId": 341,
-            "quantity": 1,
-            "Position": {
-                "x": 38.0,
-                "y": 8.0
-            }
-        }
-    ],
-    "308": [
-        {
-            "TalkLabel": "ev_fld_item_22",
-            "itemId": 54,
-            "quantity": 1,
-            "Position": {
-                "x": 4.0,
-                "y": 6.0
-            }
-        }
-    ],
-    "142": [
-        {
-            "TalkLabel": "ev_fld_item_177",
-            "itemId": 83,
-            "quantity": 1,
-            "Position": {
-                "x": 881.0,
-                "y": 779.0
-            }
-        }
-    ],
-    "411": [
-        {
-            "TalkLabel": "ev_fld_item_194",
-            "itemId": 326,
-            "quantity": 1,
-            "Position": {
-                "x": 884.0,
-                "y": 570.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_195",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 904.0,
-                "y": 524.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_196",
-            "itemId": 280,
-            "quantity": 1,
-            "Position": {
-                "x": 907.0,
-                "y": 509.0
-            }
-        }
-    ],
-    "486": [
-        {
-            "TalkLabel": "ev_fld_item_180",
-            "itemId": 345,
-            "quantity": 1,
-            "Position": {
-                "x": 840.0,
-                "y": 684.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_178",
-            "itemId": 88,
-            "quantity": 1,
-            "Position": {
-                "x": 850.0,
-                "y": 649.0
-            }
-        }
-    ],
-    "135": [
-        {
-            "TalkLabel": "ev_fld_item_111",
-            "itemId": 108,
-            "quantity": 1,
-            "Position": {
-                "x": 7.0,
-                "y": 4.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_236",
-            "itemId": 421,
-            "quantity": 1,
-            "Position": {
-                "x": 13.0,
-                "y": 8.0
-            }
-        }
-    ],
     "296": [
         {
             "TalkLabel": "ev_fld_item_116",
@@ -1863,17 +1735,6 @@
             "Position": {
                 "x": 90.0,
                 "y": 3.0
-            }
-        }
-    ],
-    "287": [
-        {
-            "TalkLabel": "ev_fld_item_242",
-            "itemId": 49,
-            "quantity": 1,
-            "Position": {
-                "x": 12.0,
-                "y": 13.0
             }
         }
     ],
@@ -1888,159 +1749,14 @@
             }
         }
     ],
-    "324": [
+    "589": [
         {
-            "TalkLabel": "ev_fld_item_239",
-            "itemId": 365,
+            "TalkLabel": "ev_fld_item_279",
+            "itemId": 109,
             "quantity": 1,
             "Position": {
-                "x": 25.0,
-                "y": 54.0
-            }
-        }
-    ],
-    "200": [
-        {
-            "TalkLabel": "ev_fld_item_18",
-            "itemId": 18,
-            "quantity": 1,
-            "Position": {
-                "x": 15.0,
-                "y": 81.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_19",
-            "itemId": 22,
-            "quantity": 1,
-            "Position": {
-                "x": 41.0,
-                "y": 59.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_20",
-            "itemId": 3,
-            "quantity": 1,
-            "Position": {
-                "x": 50.0,
-                "y": 85.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_21",
-            "itemId": 94,
-            "quantity": 1,
-            "Position": {
-                "x": 66.0,
-                "y": 42.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_85",
-            "itemId": 38,
-            "quantity": 1,
-            "Position": {
-                "x": 81.0,
-                "y": 12.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_249",
-            "itemId": 17,
-            "quantity": 1,
-            "Position": {
-                "x": 84.0,
-                "y": 82.0
-            }
-        }
-    ],
-    "351": [
-        {
-            "TalkLabel": "ev_fld_item_163",
-            "itemId": 2,
-            "quantity": 1,
-            "Position": {
-                "x": 340.0,
-                "y": 230.0
-            }
-        }
-    ],
-    "395": [
-        {
-            "TalkLabel": "ev_fld_item_157",
-            "itemId": 340,
-            "quantity": 1,
-            "Position": {
-                "x": 377.0,
-                "y": 392.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_159",
-            "itemId": 20,
-            "quantity": 1,
-            "Position": {
-                "x": 342.0,
-                "y": 396.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_158",
-            "itemId": 219,
-            "quantity": 1,
-            "Position": {
-                "x": 358.0,
-                "y": 389.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_246",
-            "itemId": 45,
-            "quantity": 1,
-            "Position": {
-                "x": 367.0,
-                "y": 386.0
-            }
-        }
-    ],
-    "397": [
-        {
-            "TalkLabel": "ev_fld_item_161",
-            "itemId": 427,
-            "quantity": 1,
-            "Position": {
-                "x": 296.0,
-                "y": 305.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_162",
-            "itemId": 47,
-            "quantity": 1,
-            "Position": {
-                "x": 305.0,
-                "y": 330.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_160",
-            "itemId": 334,
-            "quantity": 1,
-            "Position": {
-                "x": 300.0,
-                "y": 316.0
-            }
-        }
-    ],
-    "594": [
-        {
-            "TalkLabel": "ev_fld_item_282",
-            "itemId": 53,
-            "quantity": 1,
-            "Position": {
-                "x": 21.0,
-                "y": 5.0
+                "x": 6.0,
+                "y": 19.0
             }
         }
     ],
@@ -2142,63 +1858,708 @@
             }
         }
     ],
-    "556": [
+    "580": [
         {
-            "TalkLabel": "ev_fld_item_262",
-            "itemId": 331,
+            "TalkLabel": "ev_fld_item_276",
+            "itemId": 372,
             "quantity": 1,
             "Position": {
-                "x": 30.0,
-                "y": 22.0
+                "x": 10.0,
+                "y": 5.0
             }
         }
     ],
-    "260": [
+    "370": [
         {
-            "TalkLabel": "ev_fld_item_212",
-            "itemId": 19,
+            "TalkLabel": "ev_fld_item_93",
+            "itemId": 28,
             "quantity": 1,
             "Position": {
-                "x": 6.0,
-                "y": 6.0
+                "x": 1.0,
+                "y": 13.0
+            }
+        }
+    ],
+    "355": [
+        {
+            "TalkLabel": "ev_fld_item_0",
+            "itemId": 17,
+            "quantity": 1,
+            "Position": {
+                "x": 162.0,
+                "y": 806.0
+            }
+        }
+    ],
+    "356": [
+        {
+            "TalkLabel": "ev_fld_item_1",
+            "itemId": 79,
+            "quantity": 1,
+            "Position": {
+                "x": 222.0,
+                "y": 745.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_213",
-            "itemId": 78,
+            "TalkLabel": "ev_fld_item_2",
+            "itemId": 4,
             "quantity": 1,
             "Position": {
-                "x": 8.0,
-                "y": 23.0
+                "x": 211.0,
+                "y": 750.0
+            }
+        }
+    ],
+    "357": [
+        {
+            "TalkLabel": "ev_fld_item_9",
+            "itemId": 254,
+            "quantity": 1,
+            "Position": {
+                "x": 162.0,
+                "y": 732.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_214",
-            "itemId": 51,
+            "TalkLabel": "ev_fld_item_10",
+            "itemId": 45,
             "quantity": 1,
             "Position": {
-                "x": 33.0,
-                "y": 25.0
+                "x": 189.0,
+                "y": 716.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_215",
-            "itemId": 23,
+            "TalkLabel": "ev_fld_item_82",
+            "itemId": 22,
+            "quantity": 1,
+            "Position": {
+                "x": 177.0,
+                "y": 722.0
+            }
+        }
+    ],
+    "403": [
+        {
+            "TalkLabel": "ev_fld_item_124",
+            "itemId": 18,
+            "quantity": 1,
+            "Position": {
+                "x": 169.0,
+                "y": 877.0
+            }
+        }
+    ],
+    "404": [
+        {
+            "TalkLabel": "ev_fld_item_130",
+            "itemId": 46,
+            "quantity": 1,
+            "Position": {
+                "x": 239.0,
+                "y": 908.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_131",
+            "itemId": 408,
+            "quantity": 1,
+            "Position": {
+                "x": 295.0,
+                "y": 922.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_129",
+            "itemId": 94,
+            "quantity": 1,
+            "Position": {
+                "x": 256.0,
+                "y": 916.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_101",
+            "itemId": 320,
+            "quantity": 1,
+            "Position": {
+                "x": 250.0,
+                "y": 902.0
+            }
+        }
+    ],
+    "485": [
+        {
+            "TalkLabel": "ev_fld_item_127",
+            "itemId": 48,
+            "quantity": 1,
+            "Position": {
+                "x": 199.0,
+                "y": 917.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_125",
+            "itemId": 299,
+            "quantity": 1,
+            "Position": {
+                "x": 171.0,
+                "y": 918.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_128",
+            "itemId": 38,
+            "quantity": 1,
+            "Position": {
+                "x": 180.0,
+                "y": 910.0
+            }
+        }
+    ],
+    "203": [
+        {
+            "TalkLabel": "ev_fld_item_46",
+            "itemId": 46,
+            "quantity": 1,
+            "Position": {
+                "x": 13.0,
+                "y": 9.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_47",
+            "itemId": 109,
+            "quantity": 1,
+            "Position": {
+                "x": 28.0,
+                "y": 28.0
+            }
+        }
+    ],
+    "216": [
+        {
+            "TalkLabel": "ev_fld_item_39",
+            "itemId": 136,
+            "quantity": 1,
+            "Position": {
+                "x": 31.0,
+                "y": 10.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_37",
+            "itemId": 135,
+            "quantity": 1,
+            "Position": {
+                "x": 31.0,
+                "y": 10.0
+            }
+        }
+    ],
+    "330": [
+        {
+            "TalkLabel": "ev_fld_item_241",
+            "itemId": 341,
+            "quantity": 1,
+            "Position": {
+                "x": 38.0,
+                "y": 8.0
+            }
+        }
+    ],
+    "327": [
+        {
+            "TalkLabel": "ev_fld_item_240",
+            "itemId": 352,
+            "quantity": 1,
+            "Position": {
+                "x": 53.0,
+                "y": 46.0
+            }
+        }
+    ],
+    "381": [
+        {
+            "TalkLabel": "ev_fld_item_58",
+            "itemId": 3,
+            "quantity": 1,
+            "Position": {
+                "x": 4.0,
+                "y": 3.0
+            }
+        }
+    ],
+    "251": [
+        {
+            "TalkLabel": "ev_fld_item_51",
+            "itemId": 372,
+            "quantity": 1,
+            "Position": {
+                "x": 32.0,
+                "y": 18.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_52",
+            "itemId": 370,
             "quantity": 1,
             "Position": {
                 "x": 25.0,
+                "y": 45.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_53",
+            "itemId": 310,
+            "quantity": 1,
+            "Position": {
+                "x": 53.0,
+                "y": 9.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_250",
+            "itemId": 223,
+            "quantity": 1,
+            "Position": {
+                "x": 41.0,
+                "y": 10.0
+            }
+        }
+    ],
+    "371": [
+        {
+            "TalkLabel": "ev_fld_item_94",
+            "itemId": 354,
+            "quantity": 1,
+            "Position": {
+                "x": 6.0,
+                "y": 12.0
+            }
+        }
+    ],
+    "258": [
+        {
+            "TalkLabel": "ev_fld_item_92",
+            "itemId": 453,
+            "quantity": 1,
+            "Position": {
+                "x": 16.0,
+                "y": 13.0
+            }
+        }
+    ],
+    "317": [
+        {
+            "TalkLabel": "ev_fld_item_166",
+            "itemId": 348,
+            "quantity": 1,
+            "Position": {
+                "x": 36.0,
+                "y": 12.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_168",
+            "itemId": 40,
+            "quantity": 1,
+            "Position": {
+                "x": 50.0,
+                "y": 21.0
+            }
+        }
+    ],
+    "545": [
+        {
+            "TalkLabel": "ev_fld_item_258",
+            "itemId": 87,
+            "quantity": 1,
+            "Position": {
+                "x": 26.0,
+                "y": 28.0
+            }
+        }
+    ],
+    "293": [
+        {
+            "TalkLabel": "ev_fld_item_42",
+            "itemId": 286,
+            "quantity": 1,
+            "Position": {
+                "x": 22.0,
+                "y": 9.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_40",
+            "itemId": 39,
+            "quantity": 1,
+            "Position": {
+                "x": 31.0,
+                "y": 16.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_41",
+            "itemId": 28,
+            "quantity": 1,
+            "Position": {
+                "x": 33.0,
+                "y": 8.0
+            }
+        }
+    ],
+    "369": [
+        {
+            "TalkLabel": "ev_fld_item_91",
+            "itemId": 110,
+            "quantity": 1,
+            "Position": {
+                "x": 8.0,
                 "y": 7.0
             }
         }
     ],
-    "599": [
+    "214": [
         {
-            "TalkLabel": "ev_fld_item_284",
-            "itemId": 250,
+            "TalkLabel": "ev_fld_item_150",
+            "itemId": 50,
+            "quantity": 1,
+            "Position": {
+                "x": 14.0,
+                "y": 26.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_148",
+            "itemId": 396,
+            "quantity": 1,
+            "Position": {
+                "x": 2.0,
+                "y": 31.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_149",
+            "itemId": 78,
+            "quantity": 1,
+            "Position": {
+                "x": 28.0,
+                "y": 43.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_174",
+            "itemId": 329,
+            "quantity": 1,
+            "Position": {
+                "x": 12.0,
+                "y": 60.0
+            }
+        }
+    ],
+    "253": [
+        {
+            "TalkLabel": "ev_fld_item_146",
+            "itemId": 239,
+            "quantity": 1,
+            "Position": {
+                "x": 14.0,
+                "y": 15.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_234",
+            "itemId": 85,
+            "quantity": 1,
+            "Position": {
+                "x": 46.0,
+                "y": 28.0
+            }
+        }
+    ],
+    "572": [
+        {
+            "TalkLabel": "ev_fld_item_269",
+            "itemId": 328,
+            "quantity": 1,
+            "Position": {
+                "x": 45.0,
+                "y": 19.0
+            }
+        }
+    ],
+    "614": [
+        {
+            "TalkLabel": "ev_fld_item_274",
+            "itemId": 386,
+            "quantity": 1,
+            "Position": {
+                "x": 48.0,
+                "y": 7.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_275",
+            "itemId": 92,
+            "quantity": 1,
+            "Position": {
+                "x": 20.0,
+                "y": 37.0
+            }
+        }
+    ],
+    "240": [
+        {
+            "TalkLabel": "ev_fld_item_95",
+            "itemId": 307,
+            "quantity": 1,
+            "Position": {
+                "x": 4.0,
+                "y": 9.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_96",
+            "itemId": 314,
+            "quantity": 1,
+            "Position": {
+                "x": 6.0,
+                "y": 9.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_97",
+            "itemId": 92,
+            "quantity": 1,
+            "Position": {
+                "x": 4.0,
+                "y": 7.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_98",
+            "itemId": 50,
+            "quantity": 1,
+            "Position": {
+                "x": 6.0,
+                "y": 7.0
+            }
+        }
+    ],
+    "245": [
+        {
+            "TalkLabel": "ev_fld_item_188",
+            "itemId": 406,
+            "quantity": 1,
+            "Position": {
+                "x": 16.0,
+                "y": 4.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_186",
+            "itemId": 39,
+            "quantity": 1,
+            "Position": {
+                "x": 4.0,
+                "y": 5.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_187",
+            "itemId": 23,
             "quantity": 1,
             "Position": {
                 "x": 34.0,
-                "y": 8.0
+                "y": 22.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_189",
+            "itemId": 398,
+            "quantity": 1,
+            "Position": {
+                "x": 43.0,
+                "y": 12.0
+            }
+        }
+    ],
+    "615": [
+        {
+            "TalkLabel": "ev_fld_item_280",
+            "itemId": 234,
+            "quantity": 1,
+            "Position": {
+                "x": 6.0,
+                "y": 19.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_281",
+            "itemId": 407,
+            "quantity": 1,
+            "Position": {
+                "x": 37.0,
+                "y": 17.0
+            }
+        }
+    ],
+    "571": [
+        {
+            "TalkLabel": "ev_fld_item_292",
+            "itemId": 226,
+            "quantity": 1,
+            "Position": {
+                "x": 4.0,
+                "y": 18.0
+            }
+        }
+    ],
+    "301": [
+        {
+            "TalkLabel": "ev_fld_item_137",
+            "itemId": 76,
+            "quantity": 1,
+            "Position": {
+                "x": 21.0,
+                "y": 15.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_136",
+            "itemId": 78,
+            "quantity": 1,
+            "Position": {
+                "x": 2.0,
+                "y": 17.0
+            }
+        }
+    ],
+    "502": [
+        {
+            "TalkLabel": "ev_fld_item_304",
+            "itemId": 211,
+            "quantity": 1,
+            "Position": {
+                "x": 12.0,
+                "y": 20.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_305",
+            "itemId": 212,
+            "quantity": 1,
+            "Position": {
+                "x": 19.0,
+                "y": 19.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_306",
+            "itemId": 686,
+            "quantity": 1,
+            "Position": {
+                "x": 21.0,
+                "y": 22.0
+            }
+        }
+    ],
+    "576": [
+        {
+            "TalkLabel": "ev_fld_item_271",
+            "itemId": 333,
+            "quantity": 1,
+            "Position": {
+                "x": 17.0,
+                "y": 6.0
+            }
+        }
+    ],
+    "308": [
+        {
+            "TalkLabel": "ev_fld_item_22",
+            "itemId": 54,
+            "quantity": 1,
+            "Position": {
+                "x": 4.0,
+                "y": 6.0
+            }
+        }
+    ],
+    "261": [
+        {
+            "TalkLabel": "ev_fld_item_216",
+            "itemId": 377,
+            "quantity": 1,
+            "Position": {
+                "x": 11.0,
+                "y": 44.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_223",
+            "itemId": 49,
+            "quantity": 1,
+            "Position": {
+                "x": 49.0,
+                "y": 49.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_222",
+            "itemId": 29,
+            "quantity": 1,
+            "Position": {
+                "x": 54.0,
+                "y": 3.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_220",
+            "itemId": 50,
+            "quantity": 1,
+            "Position": {
+                "x": 12.0,
+                "y": 76.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_217",
+            "itemId": 278,
+            "quantity": 1,
+            "Position": {
+                "x": 56.0,
+                "y": 77.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_218",
+            "itemId": 41,
+            "quantity": 1,
+            "Position": {
+                "x": 69.0,
+                "y": 55.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_219",
+            "itemId": 92,
+            "quantity": 1,
+            "Position": {
+                "x": 92.0,
+                "y": 3.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_221",
+            "itemId": 2,
+            "quantity": 1,
+            "Position": {
+                "x": 38.0,
+                "y": 44.0
             }
         }
     ],
@@ -2240,242 +2601,6 @@
             }
         }
     ],
-    "329": [
-        {
-            "TalkLabel": "ev_fld_item_241",
-            "itemId": 341,
-            "quantity": 1,
-            "Position": {
-                "x": 38.0,
-                "y": 8.0
-            }
-        }
-    ],
-    "499": [
-        {
-            "TalkLabel": "ev_fld_item_295",
-            "itemId": 225,
-            "quantity": 1,
-            "Position": {
-                "x": 8.0,
-                "y": 8.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_296",
-            "itemId": 204,
-            "quantity": 1,
-            "Position": {
-                "x": 10.0,
-                "y": 9.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_297",
-            "itemId": 205,
-            "quantity": 1,
-            "Position": {
-                "x": 4.0,
-                "y": 9.0
-            }
-        }
-    ],
-    "110": [
-        {
-            "TalkLabel": "ev_fld_item_74",
-            "itemId": 243,
-            "quantity": 1,
-            "Position": {
-                "x": 625.0,
-                "y": 829.0
-            }
-        }
-    ],
-    "379": [
-        {
-            "TalkLabel": "ev_fld_item_55",
-            "itemId": 318,
-            "quantity": 1,
-            "Position": {
-                "x": 456.0,
-                "y": 791.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_54",
-            "itemId": 338,
-            "quantity": 1,
-            "Position": {
-                "x": 453.0,
-                "y": 804.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_56",
-            "itemId": 40,
-            "quantity": 1,
-            "Position": {
-                "x": 459.0,
-                "y": 821.0
-            }
-        }
-    ],
-    "383": [
-        {
-            "TalkLabel": "ev_fld_item_59",
-            "itemId": 18,
-            "quantity": 1,
-            "Position": {
-                "x": 455.0,
-                "y": 860.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_60",
-            "itemId": 411,
-            "quantity": 1,
-            "Position": {
-                "x": 475.0,
-                "y": 852.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_61",
-            "itemId": 389,
-            "quantity": 1,
-            "Position": {
-                "x": 507.0,
-                "y": 846.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_62",
-            "itemId": 52,
-            "quantity": 1,
-            "Position": {
-                "x": 522.0,
-                "y": 842.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_63",
-            "itemId": 61,
-            "quantity": 1,
-            "Position": {
-                "x": 545.0,
-                "y": 835.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_64",
-            "itemId": 333,
-            "quantity": 1,
-            "Position": {
-                "x": 547.0,
-                "y": 862.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_65",
-            "itemId": 28,
-            "quantity": 1,
-            "Position": {
-                "x": 558.0,
-                "y": 844.0
-            }
-        }
-    ],
-    "320": [
-        {
-            "TalkLabel": "ev_fld_item_164",
-            "itemId": 363,
-            "quantity": 1,
-            "Position": {
-                "x": 29.0,
-                "y": 11.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_237",
-            "itemId": 440,
-            "quantity": 1,
-            "Position": {
-                "x": 20.0,
-                "y": 5.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_244",
-            "itemId": 52,
-            "quantity": 1,
-            "Position": {
-                "x": 62.0,
-                "y": 3.0
-            }
-        }
-    ],
-    "575": [
-        {
-            "TalkLabel": "ev_fld_item_270",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 33.0,
-                "y": 5.0
-            }
-        }
-    ],
-    "583": [
-        {
-            "TalkLabel": "ev_fld_item_277",
-            "itemId": 231,
-            "quantity": 1,
-            "Position": {
-                "x": 24.0,
-                "y": 17.0
-            }
-        }
-    ],
-    "613": [
-        {
-            "TalkLabel": "ev_fld_item_272",
-            "itemId": 408,
-            "quantity": 1,
-            "Position": {
-                "x": 31.0,
-                "y": 26.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_273",
-            "itemId": 51,
-            "quantity": 1,
-            "Position": {
-                "x": 5.0,
-                "y": 46.0
-            }
-        }
-    ],
-    "302": [
-        {
-            "TalkLabel": "ev_fld_item_138",
-            "itemId": 39,
-            "quantity": 1,
-            "Position": {
-                "x": 16.0,
-                "y": 2.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_139",
-            "itemId": 350,
-            "quantity": 1,
-            "Position": {
-                "x": 7.0,
-                "y": 17.0
-            }
-        }
-    ],
     "559": [
         {
             "TalkLabel": "ev_fld_item_263",
@@ -2496,34 +2621,88 @@
             }
         }
     ],
-    "258": [
+    "323": [
         {
-            "TalkLabel": "ev_fld_item_92",
-            "itemId": 453,
+            "TalkLabel": "ev_fld_item_238",
+            "itemId": 463,
             "quantity": 1,
             "Position": {
-                "x": 16.0,
-                "y": 13.0
+                "x": 25.0,
+                "y": 54.0
             }
         }
     ],
-    "611": [
+    "219": [
         {
-            "TalkLabel": "ev_fld_item_260",
-            "itemId": 336,
+            "TalkLabel": "ev_fld_item_66",
+            "itemId": 76,
             "quantity": 1,
             "Position": {
-                "x": 32.0,
-                "y": 45.0
+                "x": 52.0,
+                "y": 32.0
             }
         },
         {
-            "TalkLabel": "ev_fld_item_261",
-            "itemId": 87,
+            "TalkLabel": "ev_fld_item_67",
+            "itemId": 17,
             "quantity": 1,
             "Position": {
-                "x": 53.0,
-                "y": 8.0
+                "x": 54.0,
+                "y": 49.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_68",
+            "itemId": 3,
+            "quantity": 1,
+            "Position": {
+                "x": 76.0,
+                "y": 36.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_70",
+            "itemId": 94,
+            "quantity": 1,
+            "Position": {
+                "x": 35.0,
+                "y": 71.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_71",
+            "itemId": 4,
+            "quantity": 1,
+            "Position": {
+                "x": 75.0,
+                "y": 71.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_69",
+            "itemId": 26,
+            "quantity": 1,
+            "Position": {
+                "x": 90.0,
+                "y": 77.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_72",
+            "itemId": 18,
+            "quantity": 1,
+            "Position": {
+                "x": 48.0,
+                "y": 112.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_73",
+            "itemId": 22,
+            "quantity": 1,
+            "Position": {
+                "x": 91.0,
+                "y": 105.0
             }
         }
     ],
@@ -2667,25 +2846,43 @@
             }
         }
     ],
-    "315": [
+    "320": [
         {
-            "TalkLabel": "ev_fld_item_165",
-            "itemId": 376,
+            "TalkLabel": "ev_fld_item_164",
+            "itemId": 363,
             "quantity": 1,
             "Position": {
-                "x": 52.0,
-                "y": 14.0
+                "x": 29.0,
+                "y": 11.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_237",
+            "itemId": 440,
+            "quantity": 1,
+            "Position": {
+                "x": 20.0,
+                "y": 5.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_244",
+            "itemId": 52,
+            "quantity": 1,
+            "Position": {
+                "x": 62.0,
+                "y": 3.0
             }
         }
     ],
-    "578": [
+    "543": [
         {
-            "TalkLabel": "ev_fld_item_293",
-            "itemId": 227,
+            "TalkLabel": "ev_fld_item_257",
+            "itemId": 50,
             "quantity": 1,
             "Position": {
-                "x": 24.0,
-                "y": 17.0
+                "x": 37.0,
+                "y": 13.0
             }
         }
     ],
@@ -2700,422 +2897,225 @@
             }
         }
     ],
-    "601": [
+    "295": [
         {
-            "TalkLabel": "ev_fld_item_287",
-            "itemId": 248,
+            "TalkLabel": "ev_fld_item_116",
+            "itemId": 355,
             "quantity": 1,
             "Position": {
-                "x": 39.0,
-                "y": 20.0
-            }
-        }
-    ],
-    "244": [
-        {
-            "TalkLabel": "ev_fld_item_183",
-            "itemId": 50,
-            "quantity": 1,
-            "Position": {
-                "x": 42.0,
-                "y": 48.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_182",
-            "itemId": 27,
-            "quantity": 1,
-            "Position": {
-                "x": 28.0,
-                "y": 46.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_181",
-            "itemId": 368,
-            "quantity": 1,
-            "Position": {
-                "x": 7.0,
-                "y": 61.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_185",
-            "itemId": 326,
-            "quantity": 1,
-            "Position": {
-                "x": 13.0,
-                "y": 38.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_184",
-            "itemId": 52,
-            "quantity": 1,
-            "Position": {
-                "x": 44.0,
-                "y": 36.0
-            }
-        }
-    ],
-    "500": [
-        {
-            "TalkLabel": "ev_fld_item_298",
-            "itemId": 201,
-            "quantity": 1,
-            "Position": {
-                "x": 12.0,
-                "y": 19.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_299",
-            "itemId": 202,
-            "quantity": 1,
-            "Position": {
-                "x": 21.0,
-                "y": 19.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_300",
-            "itemId": 203,
-            "quantity": 1,
-            "Position": {
-                "x": 13.0,
-                "y": 22.0
-            }
-        }
-    ],
-    "202": [
-        {
-            "TalkLabel": "ev_fld_item_120",
-            "itemId": 362,
-            "quantity": 1,
-            "Position": {
-                "x": 21.0,
-                "y": 21.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_122",
-            "itemId": 19,
-            "quantity": 1,
-            "Position": {
-                "x": 11.0,
-                "y": 7.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_121",
-            "itemId": 315,
-            "quantity": 1,
-            "Position": {
-                "x": 46.0,
-                "y": 20.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_123",
-            "itemId": 82,
-            "quantity": 1,
-            "Position": {
-                "x": 51.0,
-                "y": 6.0
-            }
-        }
-    ],
-    "624": [
-        {
-            "TalkLabel": "ev_fld_item_294",
-            "itemId": 112,
-            "quantity": 1,
-            "Position": {
-                "x": 16.0,
-                "y": 21.0
-            }
-        }
-    ],
-    "615": [
-        {
-            "TalkLabel": "ev_fld_item_280",
-            "itemId": 234,
-            "quantity": 1,
-            "Position": {
-                "x": 6.0,
-                "y": 19.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_281",
-            "itemId": 407,
-            "quantity": 1,
-            "Position": {
-                "x": 37.0,
-                "y": 17.0
-            }
-        }
-    ],
-    "362": [
-        {
-            "TalkLabel": "ev_fld_item_30",
-            "itemId": 245,
-            "quantity": 1,
-            "Position": {
-                "x": 292.0,
-                "y": 623.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_31",
-            "itemId": 27,
-            "quantity": 1,
-            "Position": {
-                "x": 313.0,
-                "y": 679.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_33",
-            "itemId": 19,
-            "quantity": 1,
-            "Position": {
-                "x": 314.0,
-                "y": 631.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_32",
-            "itemId": 76,
-            "quantity": 1,
-            "Position": {
-                "x": 302.0,
-                "y": 652.0
-            }
-        }
-    ],
-    "364": [
-        {
-            "TalkLabel": "ev_fld_item_43",
-            "itemId": 4,
-            "quantity": 1,
-            "Position": {
-                "x": 291.0,
-                "y": 711.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_44",
-            "itemId": 56,
-            "quantity": 1,
-            "Position": {
-                "x": 323.0,
-                "y": 730.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_45",
-            "itemId": 47,
-            "quantity": 1,
-            "Position": {
-                "x": 335.0,
-                "y": 725.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_145",
-            "itemId": 26,
-            "quantity": 1,
-            "Position": {
-                "x": 327.0,
-                "y": 715.0
-            }
-        }
-    ],
-    "565": [
-        {
-            "TalkLabel": "ev_fld_item_266",
-            "itemId": 92,
-            "quantity": 1,
-            "Position": {
-                "x": 9.0,
-                "y": 23.0
-            }
-        }
-    ],
-    "204": [
-        {
-            "TalkLabel": "ev_fld_item_170",
-            "itemId": 28,
-            "quantity": 1,
-            "Position": {
-                "x": 3.0,
-                "y": 31.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_172",
-            "itemId": 24,
-            "quantity": 1,
-            "Position": {
-                "x": 23.0,
-                "y": 37.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_171",
-            "itemId": 407,
-            "quantity": 1,
-            "Position": {
-                "x": 3.0,
-                "y": 55.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_173",
-            "itemId": 78,
-            "quantity": 1,
-            "Position": {
-                "x": 13.0,
-                "y": 60.0
-            }
-        }
-    ],
-    "545": [
-        {
-            "TalkLabel": "ev_fld_item_258",
-            "itemId": 87,
-            "quantity": 1,
-            "Position": {
-                "x": 26.0,
-                "y": 28.0
-            }
-        }
-    ],
-    "123": [
-        {
-            "TalkLabel": "ev_fld_item_109",
-            "itemId": 316,
-            "quantity": 1,
-            "Position": {
-                "x": 690.0,
-                "y": 613.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_110",
-            "itemId": 51,
-            "quantity": 1,
-            "Position": {
-                "x": 710.0,
-                "y": 584.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_238",
-            "itemId": 463,
-            "quantity": 1,
-            "Position": {
-                "x": 721.0,
-                "y": 594.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_256",
-            "itemId": 251,
-            "quantity": 1,
-            "Position": {
-                "x": 731.0,
-                "y": 603.0
-            }
-        }
-    ],
-    "215": [
-        {
-            "TalkLabel": "ev_fld_item_156",
-            "itemId": 28,
-            "quantity": 1,
-            "Position": {
-                "x": 17.0,
-                "y": 11.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_151",
-            "itemId": 237,
-            "quantity": 1,
-            "Position": {
-                "x": 6.0,
-                "y": 18.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_152",
-            "itemId": 269,
-            "quantity": 1,
-            "Position": {
-                "x": 22.0,
-                "y": 36.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_155",
-            "itemId": 41,
-            "quantity": 1,
-            "Position": {
-                "x": 26.0,
-                "y": 17.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_154",
-            "itemId": 23,
-            "quantity": 1,
-            "Position": {
-                "x": 29.0,
-                "y": 32.0
-            }
-        },
-        {
-            "TalkLabel": "ev_fld_item_153",
-            "itemId": 90,
-            "quantity": 1,
-            "Position": {
-                "x": 2.0,
-                "y": 60.0
-            }
-        }
-    ],
-    "369": [
-        {
-            "TalkLabel": "ev_fld_item_91",
-            "itemId": 110,
-            "quantity": 1,
-            "Position": {
-                "x": 8.0,
-                "y": 7.0
-            }
-        }
-    ],
-    "381": [
-        {
-            "TalkLabel": "ev_fld_item_58",
-            "itemId": 3,
-            "quantity": 1,
-            "Position": {
-                "x": 4.0,
+                "x": 58.0,
                 "y": 3.0
             }
         }
     ],
-    "572": [
+    "606": [
         {
-            "TalkLabel": "ev_fld_item_269",
-            "itemId": 328,
+            "TalkLabel": "ev_fld_item_288",
+            "itemId": 107,
             "quantity": 1,
             "Position": {
-                "x": 45.0,
-                "y": 19.0
+                "x": 25.0,
+                "y": 5.0
+            }
+        }
+    ],
+    "260": [
+        {
+            "TalkLabel": "ev_fld_item_212",
+            "itemId": 19,
+            "quantity": 1,
+            "Position": {
+                "x": 6.0,
+                "y": 6.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_213",
+            "itemId": 78,
+            "quantity": 1,
+            "Position": {
+                "x": 8.0,
+                "y": 23.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_214",
+            "itemId": 51,
+            "quantity": 1,
+            "Position": {
+                "x": 33.0,
+                "y": 25.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_215",
+            "itemId": 23,
+            "quantity": 1,
+            "Position": {
+                "x": 25.0,
+                "y": 7.0
+            }
+        }
+    ],
+    "302": [
+        {
+            "TalkLabel": "ev_fld_item_138",
+            "itemId": 39,
+            "quantity": 1,
+            "Position": {
+                "x": 16.0,
+                "y": 2.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_139",
+            "itemId": 350,
+            "quantity": 1,
+            "Position": {
+                "x": 7.0,
+                "y": 17.0
+            }
+        }
+    ],
+    "583": [
+        {
+            "TalkLabel": "ev_fld_item_277",
+            "itemId": 231,
+            "quantity": 1,
+            "Position": {
+                "x": 24.0,
+                "y": 17.0
+            }
+        }
+    ],
+    "382": [
+        {
+            "TalkLabel": "ev_fld_item_57",
+            "itemId": 414,
+            "quantity": 1,
+            "Position": {
+                "x": 21.0,
+                "y": 3.0
+            }
+        }
+    ],
+    "287": [
+        {
+            "TalkLabel": "ev_fld_item_242",
+            "itemId": 49,
+            "quantity": 1,
+            "Position": {
+                "x": 12.0,
+                "y": 13.0
+            }
+        }
+    ],
+    "196": [
+        {
+            "TalkLabel": "ev_fld_item_7",
+            "itemId": 78,
+            "quantity": 1,
+            "Position": {
+                "x": 4.0,
+                "y": 28.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_8",
+            "itemId": 17,
+            "quantity": 1,
+            "Position": {
+                "x": 26.0,
+                "y": 24.0
+            }
+        }
+    ],
+    "610": [
+        {
+            "TalkLabel": "ev_fld_item_289",
+            "itemId": 376,
+            "quantity": 1,
+            "Position": {
+                "x": 26.0,
+                "y": 34.0
+            }
+        }
+    ],
+    "-1": [
+        {
+            "TalkLabel": "ev_fld_item_142",
+            "itemId": 242,
+            "quantity": 1,
+            "Position": {
+                "x": 38.0,
+                "y": 15.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_140",
+            "itemId": 2,
+            "quantity": 1,
+            "Position": {
+                "x": 9.0,
+                "y": 3.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_141",
+            "itemId": 24,
+            "quantity": 1,
+            "Position": {
+                "x": 5.0,
+                "y": 16.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_143",
+            "itemId": 45,
+            "quantity": 1,
+            "Position": {
+                "x": 21.0,
+                "y": 38.0
+            }
+        }
+    ],
+    "365": [
+        {
+            "TalkLabel": "ev_fld_item_50",
+            "itemId": 4,
+            "quantity": 1,
+            "Position": {
+                "x": 416.0,
+                "y": 714.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_48",
+            "itemId": 48,
+            "quantity": 1,
+            "Position": {
+                "x": 401.0,
+                "y": 705.0
+            }
+        },
+        {
+            "TalkLabel": "ev_fld_item_49",
+            "itemId": 59,
+            "quantity": 1,
+            "Position": {
+                "x": 399.0,
+                "y": 720.0
+            }
+        }
+    ],
+    "612": [
+        {
+            "TalkLabel": "ev_fld_item_267",
+            "itemId": 361,
+            "quantity": 1,
+            "Position": {
+                "x": 37.0,
+                "y": 17.0
             }
         }
     ]
